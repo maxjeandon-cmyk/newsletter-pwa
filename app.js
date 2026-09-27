@@ -42,7 +42,8 @@ function parseFeed(xmlText) {
       titre: it.querySelector('title')?.textContent?.trim() ?? '',
       lien: it.querySelector('link')?.textContent?.trim() || it.querySelector('link')?.getAttribute('href') || '',
       date: new Date(it.querySelector('pubDate, published, updated')?.textContent ?? Date.now()),
-      extrait: (it.querySelector('description, summary, content')?.textContent ?? '')
+      extrait: (it.querySelector('description, su
+mmary, content')?.textContent ?? '')
      
    .replace(/<[^>]*>/g, '').trim().slice(0, 220)
     })).filter(a => a.titre && !isNaN(a.date));
@@ -95,7 +96,8 @@ function generationTime() {
 function renderTabs() {
   const tabs = [
     { id:'edition', nom:'Édition du jour', emoji:'📬' },
-    { id:'sources', nom:'Sources', emoji:'📚' },
+    { id:'sources'
+, nom:'Sources', emoji:'📚' },
     { id:'archives', nom:'Archives', emoji:'🗄️' }
     ...chapte
 rsCfg.filter(c => !c.masque).map(c => ({ id:c.id, nom:c.nom, emoji:c.emoji }))
@@ -134,7 +136,8 @@ function renderView() {
     view.innerHTML =
       '<div class="summary-card"><h2>📚 Toutes les sources de l\u2019édition — ' + fmtDate(edition.date) + '</h2>' +
       '<p class="meta-count">' + edition.sources.length + ' sources · fiabilité sur 5</p></div>' +
-      '<table class="sources-table"><tr><th>Source</th><th>Fiabilité</th><th>MàJ</th></tr>' +
+      '<table class="sources-table"><tr><th>Source</th><th>Fiabilité</t
+h><th>MàJ</th></tr>' +
       edition.sources.map(s =>
         '<tr><td>' + s.label + '<div cla
 ss="src-ref">' + s.ref + '</div></td>' +
@@ -155,7 +158,7 @@ ss="src-ref">' + s.ref + '</div></td>' +
     }
     view.innerHTML =
       '<div class="summary-card"><h2>🗄️ Archives — newsletters des jours précédents</h2>' +
-      '<p class="meta-count">' + archiveIdx.length + ' édition(s) conservée(s), les 7 derniers jours.</p></div>' +
+      '<p class="meta-count">' + archiveIdx.length + ' édition(s) conservée(s) — historique intégral.</p></div>' +
       archiveIdx.map((e, i) =>
         '<div class="archive-item' + (edition && e.date === edition.date ? ' today' : '') + '" data-i="' + i + '">' +
         '<span class="date">' + fmtDate(e.date) + '</span>' +
@@ -171,7 +174,8 @@ ss="src-ref">' + s.ref + '</div></td>' +
   // --- Chapitre : articles parus APRÈS la génération de l'édition ---
   const gen = generationTime();
   const ch = chaptersCfg.find(c => c.id === activeTab);
-  const arts = (feedCache.articles || []).filter(a => a.chapitreId === activeTab && a.date.getTime() > gen);
+  const arts = (feedCache.articles || []).filter(a => a
+.chapitreId === activeTab && a.date.getTime() > gen);
   view.innerHTML =
     '<div class="chapter-resume"><h2>' + (ch?.emoji ?? '') + ' ' + (ch?.nom ?? '') + '</h2>' +
     '<p class="meta-count">Articles parus après la génération de l\u2019édition (' + fmtDateHour(edition?.genere_le ?? new Date().toISOString()) + '). L\u2019essentiel du chapitre est dans l\u2019Édition du jour.</p></div>' +
@@ -214,7 +218,8 @@ nction init() {
   $('#sel-theme').onchange = e => { setStore('theme', e.target.value); applyTheme(e.target.value); };
 
   $('#btn-refresh').onclick = async () => {
-    $('#stale-banner').hidden = false;
+    $('#stale-banner').hid
+den = false;
     $('#stale-banner').textContent = 'Actualisation en cours…';
     await refreshFeed();
     $('#stale-banner').hidden = true;
