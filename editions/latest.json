@@ -2,7 +2,8 @@
   "editions": [
     {
       "date": "2026-09-27",
-      "fichier": "editions/2026-09-27.json"
+      "fichier": "editions/2026-09-27.json",
+      "html": "editions/2026-09-27.html"
     }
   ]
 }

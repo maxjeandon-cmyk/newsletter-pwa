@@ -1,4 +1,4 @@
-/* Newsletter PWA — app.js v2 */
+/* Newsletter PWA — app.js v3 */
 const PROXIES = [
   u => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u),
   u => 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(u)
@@ -8,6 +8,8 @@ let chaptersCfg = null, edition = null, feedCache = { time: 0, articles: [] }, a
 const $ = s => document.querySelector(s);
 const fmtDate = iso => new Date(iso + 'T09:00:00+02:00').toLocaleDateString('fr-FR',
   { weekday:'long', day:'numeric', month:'long', year:'numeric' });
+const fmtDateHour = iso => new Date(iso).toLocaleString('fr-FR',
+  { weekday:'long', day:'numeric', month:'long', hour:'2-digit', minute:'2-digit' });
 
 function getStore(k, d){ try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch(e){ return d; } }
 function setStore(k, v){ localStorage.setItem(k, JSON.stringify(v)); }
@@ -35,7 +37,7 @@ function parseFeed(xmlText) {
     const items = [...doc.querySelectorAll('item')].length
       ? [...doc.querySelectorAll('item')]
       : [...doc.querySelectorAll('entry')];
-    return items.slice(0, 30).map(it => ({
+    return items.slice(0, 40).map(it => ({
       titre: it.querySelector('title')?.textContent?.trim() ?? '',
       lien: it.querySelector('link')?.textContent?.trim() || it.querySelector('link')?.getAttribute('href') || '',
       date: new Date(it.querySelector('pubDate, published, updated')?.textContent ?? Date.now()),
@@ -84,9 +86,16 @@ async function refreshFeed() {
   return feedCache;
 }
 
+function generationTime() {
+  return edition?.genere_le ? new Date(edition.genere_le).getTime() : Date.now() - 24 * 3600e3;
+}
+
 function renderTabs() {
-  const tabs = [{ id:'edition', nom:'Édition du jour', emoji:'📬' },
-    ...chaptersCfg.filter(c => !c.masque).map(c => ({ id:c.id, nom:c.nom, emoji:c.emoji }))];
+  const tabs = [
+    { id:'edition', nom:'Édition du jour', emoji:'📬' },
+    { id:'sources', nom:'Sources', emoji:'📚' },
+    ...chaptersCfg.filter(c => !c.masque).map(c => ({ id:c.id, nom:c.nom, emoji:c.emoji }))
+  ];
   $('#tabs').innerHTML = tabs.map(t =>
     '<button class="tab' + (t.id === activeTab ? ' active' : '') + '" data-id="' + t.id + '">' +
     t.emoji + ' ' + t.nom + '</button>').join('');
@@ -104,20 +113,40 @@ function articleHtml(a) {
 
 function renderView() {
   const view = $('#view');
+
+  // --- Édition complète ---
   if (activeTab === 'edition') {
     if (!edition) { view.innerHTML = '<div class="empty">Aucune édition disponible pour l\u2019instant.</div>'; return; }
-    const chapterBlocks = edition.chapitres.map(c =>
-      '<div class="chapter-resume"><h2>' + c.emoji + ' ' + c.nom + '</h2><p>' + c.resume + '</p></div>'
-    ).join('');
     view.innerHTML =
-      '<div class="summary-card"><h2>L\u2019essentiel en 5 points — ' + fmtDate(edition.date) + '</h2><ol>' +
-      edition.resume_executif.map(p => '<li>' + p + '</li>').join('') + '</ol></div>' + chapterBlocks;
+      '<div class="summary-card"><h2>Édition complète — ' + fmtDate(edition.date) + '</h2>' +
+      '<ol>' + edition.resume_executif.map(p => '<li>' + p + '</li>').join('') + '</ol></div>' +
+      '<iframe class="edition-frame" src="' + edition.html + '" title="Newsletter complète"></iframe>';
     return;
   }
-  const arts = (feedCache.articles || []).filter(a => a.chapitreId === activeTab);
-  view.innerHTML = arts.length
-    ? arts.map(articleHtml).join('')
-    : '<div class="empty">Pas d\u2019article récent dans ce chapitre — la veille continue. Réessayez après actualisation.</div>';
+
+  // --- Sources ---
+  if (activeTab === 'sources') {
+    if (!edition?.sources?.length) { view.innerHTML = '<div class="empty">Sources indisponibles.</div>'; return; }
+    view.innerHTML =
+      '<div class="summary-card"><h2>📚 Toutes les sources de l\u2019édition — ' + fmtDate(edition.date) + '</h2>' +
+      '<p class="meta-count">' + edition.sources.length + ' sources · fiabilité sur 5</p></div>' +
+      '<table class="sources-table"><tr><th>Source</th><th>Fiabilité</th><th>MàJ</th></tr>' +
+      edition.sources.map(s =>
+        '<tr><td>' + s.label + '<div class="src-ref">' + s.ref + '</div></td>' +
+        '<td>' + s.fiabilite + '</td><td>' + s.maj + '</td></tr>').join('') +
+      '</table>';
+    return;
+  }
+
+  // --- Chapitre : articles parus APRÈS la génération de l'édition ---
+  const gen = generationTime();
+  const ch = chaptersCfg.find(c => c.id === activeTab);
+  const arts = (feedCache.articles || []).filter(a => a.chapitreId === activeTab && a.date.getTime() > gen);
+  view.innerHTML =
+    '<div class="chapter-resume"><h2>' + (ch?.emoji ?? '') + ' ' + (ch?.nom ?? '') + '</h2>' +
+    '<p class="meta-count">Articles parus après la génération de l\u2019édition (' + fmtDateHour(edition?.genere_le ?? new Date().toISOString()) + '). L\u2019essentiel du chapitre est dans l\u2019Édition du jour.</p></div>' +
+    (arts.length ? arts.map(articleHtml).join('')
+      : '<div class="empty">Rien de neuf depuis l\u2019édition de ce matin dans ce chapitre — c\u2019est plutôt bon signe. 🌙</div>');
 }
 
 function renderChaptersEditor() {
@@ -146,7 +175,7 @@ async function loadEdition() {
 }
 
 async function init() {
-  // ===== 1. Toujours brancher l'interface AVANT tout réseau =====
+  // 1. Interface branchée AVANT tout réseau
   const theme = getStore('theme', 'dark');
   applyTheme(theme);
   $('#sel-theme').value = theme;
@@ -167,7 +196,7 @@ async function init() {
 
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
 
-  // ===== 2. Données : cache instantané, puis réseau en fond =====
+  // 2. Données : cache instantané, puis réseau en fond
   feedCache = getStore('feedCache', { time: 0, articles: [] });
   renderView();
 
@@ -177,15 +206,13 @@ async function init() {
   renderTabs(); renderChaptersEditor();
   renderView();
 
-  loadEdition().then(renderView);
+  await loadEdition();
+  renderTabs(); renderView();
 
-  // Rafraîchissement du flux en arrière-plan, sans bloquer l'UI
   $('#stale-banner').hidden = false;
   $('#stale-banner').textContent = 'Flux chaud en cours de récupération…';
-  refreshFeed().then(() => {
-    $('#stale-banner').hidden = true;
-    renderView();
-  }).catch(() => { $('#stale-banner').hidden = true; });
+  refreshFeed().then(() => { $('#stale-banner').hidden = true; renderView(); })
+    .catch(() => { $('#stale-banner').hidden = true; });
 
   setInterval(() => {
     if (document.visibilityState === 'visible') refreshFeed().then(renderView).catch(()=>{});

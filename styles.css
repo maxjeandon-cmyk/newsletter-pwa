@@ -5,8 +5,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--text);
-  font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  padding-bottom:calc(84px + env(safe-area-inset-bottom));}
+  font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;}
 #topbar{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:8px;
   padding:calc(10px + env(safe-area-inset-top)) 14px 10px;background:var(--bg);border-bottom:1px solid var(--border)}
 #topbar h1{font-size:17px;font-weight:600;margin:0;flex:1}
@@ -28,6 +27,13 @@ main{padding:0 14px;max-width:720px;margin:0 auto}
 .summary-card ol{margin:0;padding-left:20px}
 .summary-card li{margin:6px 0}
 .chapter-resume h2{margin:0 0 6px;font-size:16px}
+.meta-count{font-size:13px;color:var(--muted);margin:4px 0 0}
+.edition-frame{width:100%;border:1px solid var(--border);border-radius:12px;
+  background:var(--bg);height:calc(100vh - 210px);min-height:420px}
+.sources-table{width:100%;border-collapse:collapse;margin:10px 0;font-size:13.5px}
+.sources-table th,.sources-table td{border:1px solid var(--border);padding:7px 9px;text-align:left;vertical-align:top}
+.sources-table th{background:var(--card);color:var(--accent)}
+.src-ref{font-size:11px;color:var(--muted);font-family:monospace;margin-top:3px}
 .article{display:block;text-decoration:none;color:var(--text);
   background:var(--card);border:1px solid var(--border);border-radius:12px;
   padding:12px 14px;margin:10px 0}

@@ -1,5 +1,7 @@
 {
   "date": "2026-09-27",
+  "genere_le": "2026-09-27T09:00:00+02:00",
+  "html": "editions/2026-09-27.html",
   "resume_executif": [
     "OpenAI suspend l'entraînement de ses derniers modèles après la divulgation d'agents ayant exploré des sites gouvernementaux américains ; Washington et Pékin ouvrent un canal de communication dédié aux incidents IA.",
     "Le pape Léon XIV fascine la France : 800 000 personnes à la messe géante place de la Concorde, puis direction Lourdes pour un rendez-vous à huis clos avec des victimes de violences sexuelles.",
@@ -12,205 +14,429 @@
       "id": "politique-francaise",
       "emoji": "🇫🇷",
       "nom": "Politique française",
-      "resume": "Le pape Léon XIV est à Lourdes après la messe géante de la Concorde (800 000 personnes), où les candidats à la présidentielle 2027 se sont pressés. Sénatoriales décisives : le RN vise un groupe au Sénat. Attal joue son automne, Faure menace de censure, le budget 2027 prépare des hausses d'impôts ciblées, Viginum arme la société civile contre les ingérences.",
-      "articles": [
-        {
-          "titre": "Messe géante des Champs-Élysées : 800 000 personnes",
-          "source": "AFP"
-        },
-        {
-          "titre": "À Lourdes, face aux victimes de violences sexuelles",
-          "source": "AFP"
-        },
-        {
-          "titre": "Sénatoriales : journée décisive pour le RN",
-          "source": "AFP"
-        },
-        {
-          "titre": "Attal, un automne pour convaincre",
-          "source": "AFP"
-        },
-        {
-          "titre": "Budget 2027 : augmenter les impôts sans les généraliser",
-          "source": "AFP"
-        }
-      ]
+      "resume": "Pape à Lourdes, sénatoriales décisives, automne d'Attal, budget 2027, Viginum."
     },
     {
       "id": "intelligence-artificielle",
       "emoji": "🤖",
       "nom": "Intelligence artificielle",
-      "resume": "OpenAI suspend l'entraînement de ses modèles après des incidents graves (agents sur des sites gouvernementaux, images d'utilisateurs publiées). Les IPO d'Anthropic et OpenAI sont sous tension, et Washington ouvre avec Pékin un canal de communication sur les incidents d'IA. Côté français : souveraineté, Mistral et le placement de Paris dans la gouvernance mondiale de l'IA.",
-      "articles": [
-        {
-          "titre": "OpenAI suspend l'entraînement de ses modèles",
-          "source": "AP"
-        },
-        {
-          "titre": "OpenAI : images d'utilisateurs publiées par erreur",
-          "source": "AFP"
-        },
-        {
-          "titre": "Canal de communication USA-Chine sur l'IA",
-          "source": "AFP"
-        },
-        {
-          "titre": "Anthropic et OpenAI attendus en Bourse",
-          "source": "AFP"
-        }
-      ]
+      "resume": "Pause historique d'OpenAI, IPO sous tension, canal USA-Chine, IA française."
     },
     {
       "id": "geopolitique",
       "emoji": "🌍",
       "nom": "Géopolitique",
-      "resume": "Premier entretien germano-russe au niveau ministériel depuis 2022, en marge de l'ONU. En Ukraine, la guerre des infrastructures du quotidien continue. Trump rejette le plan iranien sur Ormuz (« Détroit Trump »), les Houthis visent Ryad. Conclusion France–Russie : la normalisation reste intenable.",
-      "articles": [
-        {
-          "titre": "Entretien germano-russe à l'ONU",
-          "source": "AP"
-        },
-        {
-          "titre": "L'Iran maintient ses conditions (« Détroit Trump »)",
-          "source": "AFP"
-        },
-        {
-          "titre": "Entrepôts de Kiev, cible privilégiée (analyse Acled)",
-          "source": "AFP"
-        },
-        {
-          "titre": "Écoles de Ryad en distanciel après les frappes houthis",
-          "source": "AFP"
-        }
-      ]
+      "resume": "Entretien germano-russe, Ukraine, Ormuz, Houthis, France-Russie."
     },
     {
       "id": "climat",
       "emoji": "🌡️",
       "nom": "Climat",
-      "resume": "Environ 260 marches en France après l'été record (« j'ai peur pour mes enfants »). Déclarations vs mesures : la Chine contourne sa promesse sur le charbon, le Népal découvre la vulnérabilité de son hydroélectricité, et les petits États insulaires font adopter à l'ONU une résolution historique sur les espaces maritimes.",
-      "articles": [
-        {
-          "titre": "Marches pour le climat partout en France",
-          "source": "AFP"
-        },
-        {
-          "titre": "La Chine et les failles du charbon outre-mer",
-          "source": "AP"
-        },
-        {
-          "titre": "Népal : l'hydroélectricité face aux aléas himalayens",
-          "source": "AFP"
-        },
-        {
-          "titre": "Les petits États insulaires, conscience du monde",
-          "source": "AP"
-        }
-      ]
+      "resume": "260 marches en France, charbon chinois, Népal, petits États insulaires."
     },
     {
       "id": "sciences",
       "emoji": "🔬",
       "nom": "Sciences",
-      "resume": "Dimanche creux côté publications — signalé honnêtement : E.coli dans l'Aisne (six bouchers mis en examen), quakers du Kenya, archéologie sous tension en Cisjordanie. La découverte du système ART par Claude (Anthropic) reste la nouvelle scientifique de la semaine.",
-      "articles": [
-        {
-          "titre": "E.coli dans l'Aisne : six bouchers mis en examen",
-          "source": "AFP"
-        },
-        {
-          "titre": "Black Forest Labs et l'optimisme européen",
-          "source": "AFP"
-        }
-      ]
+      "resume": "E.coli Aisne, quakers du Kenya, archéologie en Cisjordanie, système ART."
     },
     {
       "id": "etats-unis",
       "emoji": "🇺🇸",
       "nom": "États-Unis",
-      "resume": "Trump ouvre sa campagne midterm dans les États rouges plutôt que dans les 35 battlegrounds, exclut CNN d'Air Force One, et une candidate texane est arrêtée après une manifestation contre un tir ICE. La Cour suprême rejette la carte du Missouri ; TikTok accepte des limites ados. Avec la France : Paris prépare une résolution onusienne sur la liberté de navigation à Ormuz.",
-      "articles": [
-        {
-          "titre": "Trump ouvre sa campagne midterm dans les États rouges",
-          "source": "AP"
-        },
-        {
-          "titre": "CNN exclu d'Air Force One",
-          "source": "AP"
-        },
-        {
-          "titre": "Candidate texane arrêtée après un tir ICE",
-          "source": "AP"
-        },
-        {
-          "titre": "La France prépare une résolution sur Ormuz",
-          "source": "AP"
-        }
-      ]
+      "resume": "Campagne midterm, CNN exclu, candidate arrêtée, Cour suprême, TikTok, Ormuz."
     },
     {
       "id": "chine",
       "emoji": "🇨🇳",
       "nom": "Chine",
-      "resume": "Han Zheng plaide le développement à l'ONU contre le protectionnisme, retour de la « diplomatie du panda » avec deux pandas pour les États-Unis, canal d'alerte IA avec Washington, domination aux Jeux asiatiques. Relations avec la France : Ormuz, Taïwan, et l'IA souveraine européenne comme point aveugle.",
-      "articles": [
-        {
-          "titre": "Han Zheng à l'ONU",
-          "source": "AP"
-        },
-        {
-          "titre": "Deux pandas pour les États-Unis",
-          "source": "AFP"
-        },
-        {
-          "titre": "Le canal de communication USA-Chine sur l'IA",
-          "source": "AFP"
-        },
-        {
-          "titre": "La Chine domine les Jeux asiatiques",
-          "source": "AP"
-        }
-      ]
+      "resume": "Han Zheng à l'ONU, diplomatie du panda, canal IA, Jeux asiatiques."
     },
     {
       "id": "jeu-video-pop-culture",
       "emoji": "🎮",
       "nom": "Jeu vidéo & pop culture",
-      "resume": "Un Japonais de 11 ans champion esport aux Jeux asiatiques, Kenjiro Tsuda contre TikTok pour le clonage IA de sa voix (verdict mercredi), Coquille d'or pour Mike Leigh, crépuscule des cinémas single-screen en Inde, NBA Europe à Rome.",
-      "articles": [
-        {
-          "titre": "Or esport à 11 ans (Puyo Puyo)",
-          "source": "AFP"
-        },
-        {
-          "titre": "Tsuda contre TikTok, verdict mercredi",
-          "source": "AFP"
-        },
-        {
-          "titre": "Mike Leigh, Coquille d'or à Saint-Sébastien",
-          "source": "AFP"
-        },
-        {
-          "titre": "Fin des cinémas single-screen en Inde",
-          "source": "AFP"
-        }
-      ]
+      "resume": "Or esport à 11 ans, procès Tsuda, Mike Leigh, Inde, NBA Europe."
     },
     {
       "id": "grande-info-semaine",
       "emoji": "📰",
       "nom": "Grande info de la semaine",
-      "resume": "Manchester City reconnu coupable sur 114 des 115 chefs d'accusation financiers — sanctions non fixées, appel promis, jusqu'aux relégations et annulations de titres évoquées.",
-      "articles": [
-        {
-          "titre": "Manchester City coupable sur 114 charges",
-          "source": "AFP"
-        },
-        {
-          "titre": "Sanctions « drastiques » possibles (Bernstein)",
-          "source": "AFP"
-        }
-      ]
+      "resume": "Manchester City coupable sur 114 charges."
+    }
+  ],
+  "sources": [
+    {
+      "label": "AP — OpenAI suspend l'entraînement de ses modèles",
+      "ref": "news-ap-20260926-2f1075fd",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — OpenAI : images d'utilisateurs publiées par erreur",
+      "ref": "news-afp-20260926-c3ae4beb",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AP — Les agents d'OpenAI et les sites gouvernementaux",
+      "ref": "news-ap-20260926-9dffe275",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Anthropic et OpenAI attendus en Bourse",
+      "ref": "news-afp-20260926-1053e48b",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Canal de communication USA-Chine sur l'IA",
+      "ref": "news-afp-20260925-4e118e12",
+      "fiabilite": "5/5",
+      "maj": "2026-09-25"
+    },
+    {
+      "label": "AFP — La Chine « respecte » la « super-intelligence »",
+      "ref": "news-afp-20260926-81fe178b",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AP — Le pape et le « paradis des machines »",
+      "ref": "news-ap-20260925-dbcf460c",
+      "fiabilite": "5/5",
+      "maj": "2026-09-25"
+    },
+    {
+      "label": "AFP — Messe géante des Champs-Élysées (800 000)",
+      "ref": "news-afp-20260926-129d69c8",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Candidats à la messe du pape",
+      "ref": "news-afp-20260926-b0bdaa22",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Léon XIV prie pour la France à Lourdes",
+      "ref": "news-afp-20260926-0201bdae",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — À Lourdes, face aux victimes de violences sexuelles",
+      "ref": "news-afp-20260927-4dfce3fa",
+      "fiabilite": "5/5",
+      "maj": "2026-09-27"
+    },
+    {
+      "label": "AFP — Programme du dimanche à Lourdes",
+      "ref": "news-afp-20260927-e45c7d07",
+      "fiabilite": "5/5",
+      "maj": "2026-09-27"
+    },
+    {
+      "label": "AFP — Attal, un automne pour convaincre",
+      "ref": "news-afp-20260926-40c64fc4",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Faure : « si rien ne change, nous censurerons »",
+      "ref": "news-afp-20260926-5a36ebd6",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Budget 2027 : augmenter les impôts sans les généraliser",
+      "ref": "news-afp-20260927-7706e9d0",
+      "fiabilite": "5/5",
+      "maj": "2026-09-27"
+    },
+    {
+      "label": "AFP — Viginum et les ingérences avant 2027",
+      "ref": "news-afp-20260926-7b52448b",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Sénatoriales : journée décisive pour le RN",
+      "ref": "news-afp-20260926-753ecdf6",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Les points chauds des sénatoriales",
+      "ref": "news-afp-20260926-6931611c",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Actualités du dimanche 27 septembre",
+      "ref": "news-afp-20260927-9a669b48",
+      "fiabilite": "5/5",
+      "maj": "2026-09-27"
+    },
+    {
+      "label": "AP — Entretien germano-russe à l'ONU",
+      "ref": "news-ap-20260926-db2ac577",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Lavrov : objectifs atteints « peu importe les circonstances »",
+      "ref": "news-afp-20260926-ba5fef08",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — L'Europe « fait tout » pour torpiller la paix",
+      "ref": "news-afp-20260926-ea6bb2f9",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AP — 10 morts dans la guerre aérienne",
+      "ref": "news-ap-20260926-79048ee6",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — 16 morts en Ukraine et en Russie (bilan consolidé)",
+      "ref": "news-afp-20260926-7a7c9c31",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Entrepôts de Kiev, cible privilégiée (analyse Acled)",
+      "ref": "news-afp-20260926-540075a2",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Trump rejette le plan iranien pour Ormuz",
+      "ref": "news-afp-20260926-f13fe45a",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — L'Iran maintient ses conditions (« Détroit Trump »)",
+      "ref": "news-afp-20260927-43b3e735",
+      "fiabilite": "5/5",
+      "maj": "2026-09-27"
+    },
+    {
+      "label": "AFP — Drones et missile houthis interceptés",
+      "ref": "news-afp-20260926-e19d2394",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Écoles de Ryad en distanciel",
+      "ref": "news-afp-20260927-6a294c7c",
+      "fiabilite": "5/5",
+      "maj": "2026-09-27"
+    },
+    {
+      "label": "AFP — Kurdistan : le traumatisme de la guerre avec l'Iran",
+      "ref": "news-afp-20260926-7c3f667b",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AP — Colons et sources d'eau en Cisjordanie",
+      "ref": "news-ap-20260926-71ce8d68",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Oman appelle à la retenue",
+      "ref": "news-afp-20260926-8b54c88a",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — La Suisse vote sur sa neutralité",
+      "ref": "news-afp-20260926-a931d1db",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Marches pour le climat partout en France",
+      "ref": "news-afp-20260926-b943c763",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AP — La Chine et les failles du charbon outre-mer",
+      "ref": "news-ap-20260926-2b75e1d5",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Népal : l'hydroélectricité face aux aléas himalayens",
+      "ref": "news-afp-20260927-01dc6743",
+      "fiabilite": "5/5",
+      "maj": "2026-09-27"
+    },
+    {
+      "label": "AP — Les petits États insulaires, conscience du monde",
+      "ref": "news-ap-20260926-5a19462c",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Black Forest Labs et l'optimisme européen",
+      "ref": "news-afp-20260927-2385a402",
+      "fiabilite": "5/5",
+      "maj": "2026-09-27"
+    },
+    {
+      "label": "AFP — Acteur japonais contre le clonage IA de sa voix",
+      "ref": "news-afp-20260927-3f909269",
+      "fiabilite": "5/5",
+      "maj": "2026-09-27"
+    },
+    {
+      "label": "AFP — E.coli dans l'Aisne : six bouchers mis en examen",
+      "ref": "news-afp-20260926-634d1b85",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AP — Pezeshkian : Khamenei « en bonne santé »",
+      "ref": "news-ap-20260926-0ae95ab2",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Manchester City coupable sur 114 charges",
+      "ref": "news-afp-20260926-baa4ed04",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — « Procédure loin d'être terminée » (Al Mubarak)",
+      "ref": "news-afp-20260926-cfe58cb2",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Sanctions « drastiques » possibles (Bernstein)",
+      "ref": "news-afp-20260926-b385db61",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Madrid : manifestation sur Ceuta",
+      "ref": "news-afp-20260926-d37cfb1c",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AP — Trump ouvre sa campagne midterm dans les États rouges",
+      "ref": "news-ap-20260925-2d7b6cc5",
+      "fiabilite": "5/5",
+      "maj": "2026-09-25"
+    },
+    {
+      "label": "AP — CNN exclu d'Air Force One",
+      "ref": "news-ap-20260926-15a879ed",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AP — Candidate texane arrêtée après un tir ICE",
+      "ref": "news-ap-20260926-1c888d1e",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AP — La Cour suprême rejette la carte du Missouri",
+      "ref": "news-ap-20260925-e8b94a4b",
+      "fiabilite": "5/5",
+      "maj": "2026-09-25"
+    },
+    {
+      "label": "AFP — TikTok accepte des limites ados",
+      "ref": "news-afp-20260926-540d74fc",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Tempête majeure dans le nord-est des États-Unis",
+      "ref": "news-afp-20260926-40f938c7",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — La trêve commerciale US-Chine sous surveillance",
+      "ref": "news-afp-20260926-49ac07ce",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AP — La France prépare une résolution sur Ormuz",
+      "ref": "news-ap-20260925-d2df2705",
+      "fiabilite": "5/5",
+      "maj": "2026-09-25"
+    },
+    {
+      "label": "AP — Han Zheng à l'ONU",
+      "ref": "news-ap-20260926-0df466a4",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Deux pandas pour les États-Unis",
+      "ref": "news-afp-20260927-dbc05b51",
+      "fiabilite": "5/5",
+      "maj": "2026-09-27"
+    },
+    {
+      "label": "AFP — Le canal de communication USA-Chine sur l'IA",
+      "ref": "news-afp-20260926-0bfea65f",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AP — La Chine domine les Jeux asiatiques",
+      "ref": "news-ap-20260927-25730fc4",
+      "fiabilite": "5/5",
+      "maj": "2026-09-27"
+    },
+    {
+      "label": "AFP — Or esport à 11 ans (Puyo Puyo)",
+      "ref": "news-afp-20260926-a13f5b12",
+      "fiabilite": "5/5",
+      "maj": "2026-09-26"
+    },
+    {
+      "label": "AFP — Tsuda contre TikTok, verdict mercredi",
+      "ref": "news-afp-20260927-0b0c107b",
+      "fiabilite": "5/5",
+      "maj": "2026-09-27"
+    },
+    {
+      "label": "AFP — Mike Leigh, Coquille d'or à Saint-Sébastien",
+      "ref": "news-afp-20260927-044d171c",
+      "fiabilite": "5/5",
+      "maj": "2026-09-27"
+    },
+    {
+      "label": "AFP — Fin des cinémas single-screen en Inde",
+      "ref": "news-afp-20260927-249ce5be",
+      "fiabilite": "5/5",
+      "maj": "2026-09-27"
+    },
+    {
+      "label": "AFP — NBA Europe, le derby de Rome",
+      "ref": "news-afp-20260925-1df652ea",
+      "fiabilite": "5/5",
+      "maj": "2026-09-25"
     }
   ]
 }
