@@ -1,16 +1,33 @@
-/* Newsletter PWA — app.js v8 */
+/* Newsletter PWA — app.js v9 */
 const PROXIES = [
   u => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u),
   u => 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(u)
 ];
 let chaptersCfg = null, edition = null, feedCache = { time: 0, articles: [] }, activeTab = 'edition';
-let archiveIdx = null, archiveSel = null;
+let archiveIdx = null, archiveSel = null, archiveMonth = null;
+let weekData = null, weeksIdx = null;
 
 const $ = s => document.querySelector(s);
 const fmtDate = iso => new Date(iso + 'T09:00:00+02:00').toLocaleDateString('fr-FR',
   { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
 const fmtDateHour = iso => new Date(iso).toLocaleString('fr-FR',
   { weekday: 'long', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' });
+const fmtMonth = ym => new Date(ym + '-01T12:00:00').toLocaleDateString('fr-FR',
+  { month: 'long', year: 'numeric' });
+
+function isoWeek(d) {
+  const dt = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  const day = dt.getUTCDay() || 7;
+  dt.setUTCDate(dt.getUTCDate() + 4 - day);
+  const year = dt.getUTCFullYear();
+  const jan1 = new Date(Date.UTC(year, 0, 1));
+  const week = Math.ceil(((dt - jan1) / 86400000 + 1) / 7);
+  return { year, week };
+}
+function weekKeyOf(dateStr) {
+  const w = isoWeek(new Date(dateStr + 'T12:00:00'));
+  return w.year + '-S' + String(w.week).padStart(2, '0');
+}
 
 function getStore(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch (e) { return d; } }
 function setStore(k, v) { localStorage.setItem(k, JSON.stringify(v)); }
@@ -65,7 +82,7 @@ function jaccard(a, b) {
 }
 
 async function refreshFeed() {
-  const visible = chaptersCfg.filter(c => !c.masque);
+  const visible = chaptersCfg.filter(c => !c.masque && c.flux.length);
   const jobs = [];
   for (const ch of visible) for (const url of ch.flux) jobs.push({ ch, url });
   const results = await Promise.allSettled(jobs.map(j => fetchWithFallback(j.url)));
@@ -113,6 +130,10 @@ function articleHtml(a) {
     (a.extrait ? '<div class="excerpt">' + a.extrait + '</div>' : '') + '</a>';
 }
 
+function openArchive(html) {
+  archiveSel = html; renderView(); window.scrollTo(0, 0);
+}
+
 function renderView() {
   const view = $('#view');
 
@@ -138,8 +159,8 @@ function renderView() {
     return;
   }
 
+  // --- Archives : vue mensuelle (semaines + éditions quotidiennes) ---
   if (activeTab === 'archives') {
-    if (!archiveIdx?.length) { view.innerHTML = '<div class="empty">Aucune archive disponible pour l’instant — la première édition date d’aujourd’hui. Les jours passés s’y accumuleront tout seuls. 🌱</div>'; return; }
     if (archiveSel) {
       view.innerHTML =
         '<button class="back-btn" id="btn-back-archives">← Retour aux archives</button>' +
@@ -147,18 +168,67 @@ function renderView() {
       $('#btn-back-archives').onclick = () => { archiveSel = null; renderView(); window.scrollTo(0, 0); };
       return;
     }
+    if (!archiveIdx?.length) { view.innerHTML = '<div class="empty">Aucune archive disponible pour l’instant — la première édition date d’aujourd’hui. Les jours et semaines passés s’y accumuleront tout seuls. 🌱</div>'; return; }
+
+    const months = [...new Set(archiveIdx.map(e => e.date.slice(0, 7)))].sort().reverse();
+    const cur = archiveMonth && months.includes(archiveMonth) ? archiveMonth : months[0];
+    const monthEds = archiveIdx.filter(e => e.date.startsWith(cur)).sort((a, b) => a.date.localeCompare(b.date));
+    const weeks = weeksIdx?.semaines || [];
+
+    const groups = [];
+    for (const e of monthEds) {
+      const k = weekKeyOf(e.date);
+      let g = groups.find(x => x.k === k);
+      if (!g) { g = { k, days: [] }; groups.push(g); }
+      g.days.push(e);
+    }
+
     view.innerHTML =
-      '<div class="summary-card"><h2>🗄️ Archives — newsletters des jours précédents</h2>' +
-      '<p class="meta-count">' + archiveIdx.length + ' édition(s) conservée(s) — historique intégral.</p></div>' +
-      archiveIdx.map((e, i) =>
-        '<div class="archive-item' + (edition && e.date === edition.date ? ' today' : '') + '" data-i="' + i + '">' +
-        '<span class="date">' + fmtDate(e.date) + '</span>' +
-        (edition && e.date === edition.date ? '<span class="badge">Édition du jour</span>' : '') +
-        '<span class="open">Ouvrir →</span></div>').join('');
-    archiveIdx.forEach((e, i) => {
-      const el = document.querySelector('.archive-item[data-i="' + i + '"]');
-      el.onclick = () => { archiveSel = e.html; renderView(); window.scrollTo(0, 0); };
+      '<div class="summary-card"><h2>🗄️ Archives — ' + fmtMonth(cur) + '</h2>' +
+      '<p class="meta-count">' + monthEds.length + ' édition(s) quotidienne(s) · ' + groups.length + ' semaine(s) — historique intégral.</p>' +
+      '<select id="sel-month" class="month-select">' +
+      months.map(m => '<option value="' + m + '"' + (m === cur ? ' selected' : '') + '>' + fmtMonth(m) + '</option>').join('') +
+      '</select></div>' +
+      groups.map(g => {
+        const w = weeks.find(x => x.semaine === g.k);
+        return (w ? '<div class="archive-item week" data-w="' + g.k + '">' +
+          '<span class="date">📰 Récap de la semaine ' + g.k + '</span><span class="open">Ouvrir →</span></div>' : '') +
+          g.days.map(e =>
+            '<div class="archive-item' + (edition && e.date === edition.date ? ' today' : '') + '" data-d="' + e.date + '">' +
+            '<span class="date">' + fmtDate(e.date) + '</span>' +
+            (edition && e.date === edition.date ? '<span class="badge">Édition du jour</span>' : '') +
+            '<span class="open">Ouvrir →</span></div>').join('');
+      }).join('');
+
+    $('#sel-month').onchange = ev => { archiveMonth = ev.target.value; renderView(); };
+    groups.forEach(g => {
+      const w = weeks.find(x => x.semaine === g.k);
+      if (w) {
+        const el = document.querySelector('.archive-item[data-w="' + g.k + '"]');
+        if (el) el.onclick = () => openArchive(w.html);
+      }
+      g.days.forEach(e => {
+        const el = document.querySelector('.archive-item[data-d="' + e.date + '"]');
+        if (el) el.onclick = () => openArchive(e.html);
+      });
     });
+    return;
+  }
+
+  // --- Grande info de la semaine : essentiel de chaque journée, lundi → dimanche ---
+  if (activeTab === 'grande-info-semaine') {
+    if (!weekData) {
+      view.innerHTML = '<div class="empty">Le récapitulatif de la semaine en cours n’est pas encore disponible — il s’étoffera au fil des éditions quotidiennes. 🌱</div>';
+      return;
+    }
+    const jours = weekData.jours || [];
+    view.innerHTML =
+      '<div class="summary-card"><h2>📰 L’essentiel de la semaine — du ' + fmtDate(weekData.lundi) + ' au dimanche</h2>' +
+      '<p class="meta-count">' + jours.length + ' journée(s) résumée(s), du lundi au dimanche.</p></div>' +
+      (jours.length ? jours.map(j =>
+        '<div class="chapter-resume"><h2>' + j.jour.charAt(0).toUpperCase() + j.jour.slice(1) + (j.date ? ' — ' + fmtDate(j.date) : '') + '</h2>' +
+        '<p>' + j.essentiel + '</p></div>').join('')
+        : '<div class="empty">La semaine commence lundi — le récap s’écrit au fil des jours. 🌙</div>');
     return;
   }
 
@@ -196,6 +266,13 @@ async function loadEdition() {
     edition = await (await fetch(idx.editions[0].fichier, { cache: 'no-store' })).json();
     $('#edition-date').textContent = '· ' + fmtDate(edition.date);
   } catch (e) { edition = null; }
+  try {
+    weeksIdx = await (await fetch('editions/semaines/index.json', { cache: 'no-store' })).json();
+  } catch (e) { weeksIdx = null; }
+  const w = isoWeek(new Date());
+  try {
+    weekData = await (await fetch('editions/semaines/' + w.year + '-S' + String(w.week).padStart(2, '0') + '.json', { cache: 'no-store' })).json();
+  } catch (e) { weekData = null; }
 }
 
 async function init() {
