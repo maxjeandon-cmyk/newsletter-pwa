@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Newsletter</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0e0e12">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="titre-ligne">
+    <h1>Newsletter</h1>
+    <span id="date-edition"></span>
+    <button id="btn-reglages" class="btn-ghost" aria-label="Réglages">⚙︎</button>
+  </div>
+  <div id="bandeau-Offline" class="bandeau" hidden></div>
+</header>
+<main id="contenu"></main>
+<nav id="barre-onglets" aria-label="Chapitres"></nav>
+<div id="voile-reglages" class="voile" hidden>
+  <div class="panneau" role="dialog" aria-label="Réglages">
+    <div class="panneau-tete"><h2>Réglages</h2><button id="fermer-reglages" class="btn-ghost" aria-label="Fermer">✕</button></div>
+    <section>
+      <h3>Apparence</h3>
+      <label>Thème
+        <select id="sel-theme">
+          <option value="auto">Auto</option>
+          <option value="sombre">Sombre</option>
+          <option value="clair">Clair</option>
+        </select>
+      </label>
+    </section>
+    <section>
+      <h3>Mes chapitres</h3>
+      <p class="aide">Masquer, renommer ou réordonner (flèches). Les changements s'appliquent immédiatement.</p>
+      <div id="liste-chapitres"></div>
+      <button id="btn-restaurer" class="btn-texte">Restaurer par défaut</button>
+    </section>
+    <section>
+      <h3>Données</h3>
+      <button id="btn-purger" class="btn-texte">Purger le cache local</button>
+      <p class="aide" id="etat-cache"></p>
+    </section>
+    <section>
+      <h3>Installation</h3>
+      <p class="aide">iPhone : bouton Partager → « Sur l'écran d'accueil ». Ensuite, la Newsletter s'ouvre plein écran, comme une app.</p>
+    </section>
+  </div>
+</div>
+<div id="toast" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "chapitres": [
+    {
+      "id": "politique-francaise",
+      "emoji": "🇫🇷",
+      "nom": "Politique française",
+      "visible": true,
+      "inclure": [
+        "présidentielle",
+        "gouvernement",
+        "assemblée",
+        "sénat",
+        "attal",
+        "budget",
+        "ministre",
+        "macron",
+        " RN ",
+        "républicain",
+        "parti",
+        "candidat",
+        "élection",
+        "sondage"
+      ],
+      "exclure": [],
+      "flux": [
+        "https://www.lemonde.fr/politique/rss_full.xml",
+        "https://www.francetvinfo.fr/politique.rss",
+        "https://www.liberation.fr/arc/outboundfeeds/rss-all/politique/"
+      ]
+    },
+    {
+      "id": "intelligence-artificielle",
+      "emoji": "🤖",
+      "nom": "Intelligence artificielle",
+      "visible": true,
+      "inclure": [
+        "openai",
+        "anthropic",
+        "chatgpt",
+        "claude",
+        "mistral",
+        "hugging face",
+        "ia ",
+        " ai ",
+        "intelligence artificielle",
+        "llm",
+        "gpt",
+        "gemini",
+        "grok",
+        "copilot"
+      ],
+      "exclure": [],
+      "flux": [
+        "https://www.lemonde.fr/intelligence-artificielle/rss_full.xml",
+        "https://www.francetvinfo.fr/technologie.rss",
+        "https://feeds.a.dj.com/rss/RSSWorldNews.xml"
+      ]
+    },
+    {
+      "id": "geopolitique",
+      "emoji": "🌍",
+      "nom": "Géopolitique",
+      "visible": true,
+      "inclure": [
+        "ukraine",
+        "russie",
+        "otan",
+        "onu",
+        "israël",
+        "iran",
+        "gaza",
+        "chine",
+        "washington",
+        "poutine",
+        "zelensky",
+        "sanction",
+        "diplomat",
+        "guerre",
+        "drone",
+        "missile",
+        "ormuz"
+      ],
+      "exclure": [],
+      "flux": [
+        "https://www.lemonde.fr/international/rss_full.xml",
+        "https://www.francetvinfo.fr/monde.rss",
+        "https://feeds.bbci.co.uk/news/world/rss.xml"
+      ]
+    },
+    {
+      "id": "climat",
+      "emoji": "🌡️",
+      "nom": "Climat",
+      "visible": true,
+      "inclure": [
+        "climat",
+        "cop ",
+        "réchauffement",
+        "carbone",
+        "gaz à effet",
+        "charbon",
+        "pétrole",
+        "glacier",
+        "canicule",
+        "inondation",
+        "énergie renouvelable",
+        "transition",
+        "émission"
+      ],
+      "exclure": [],
+      "flux": [
+        "https://www.lemonde.fr/climat/rss_full.xml",
+        "https://www.francetvinfo.fr/planete.rss"
+      ]
+    },
+    {
+      "id": "sciences",
+      "emoji": "🔬",
+      "nom": "Sciences",
+      "visible": true,
+      "inclure": [
+        "recherche",
+        "étude",
+        "scientifique",
+        "découverte",
+        "expérience",
+        "lancé",
+        "spatial",
+        "nasa",
+        "es",
+        " médecine",
+        "génétique",
+        "physique",
+        "chimie",
+        "espèce"
+      ],
+      "exclure": [],
+      "flux": [
+        "https://www.lemonde.fr/sciences/rss_full.xml",
+        "https://www.francetvinfo.fr/sante.rss"
+      ]
+    },
+    {
+      "id": "etats-unis",
+      "emoji": "🇺🇸",
+      "nom": "États-Unis",
+      "visible": true,
+      "inclure": [
+        "trump",
+        "washington",
+        "maison blanche",
+        "congrès",
+        "sénat américain",
+        "midterm",
+        "républicain américain",
+        "démocrate",
+        "suprême",
+        "usa",
+        " états-unis",
+        "californie",
+        "new york"
+      ],
+      "exclure": [],
+      "flux": [
+        "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml",
+        "https://www.lemonde.fr/international/rss_full.xml"
+      ]
+    },
+    {
+      "id": "chine",
+      "emoji": "🇨🇳",
+      "nom": "Chine",
+      "visible": true,
+      "inclure": [
+        "chine",
+        "pékin",
+        "xi jinping",
+        "chinois",
+        "taïwan",
+        "shanghai",
+        "parti communiste chinois"
+      ],
+      "exclure": [],
+      "flux": [
+        "https://feeds.bbci.co.uk/news/world/asia/rss.xml",
+        "https://www.lemonde.fr/international/rss_full.xml"
+      ]
+    },
+    {
+      "id": "jeu-video-pop-culture",
+      "emoji": "🎮",
+      "nom": "Jeu vidéo & pop culture",
+      "visible": true,
+      "inclure": [
+        "jeu vidéo",
+        "playstation",
+        "xbox",
+        "nintendo",
+        "steam",
+        "esport",
+        "netflix",
+        "cinéma",
+        "film",
+        "série tv",
+        "disney",
+        "marvel",
+        "musique",
+        "album",
+        "festival",
+        "box-office"
+      ],
+      "exclure": [],
+      "flux": [
+        "https://www.francetvinfo.fr/culture.rss",
+        "https://www.gamekult.com/feed.xml"
+      ]
+    },
+    {
+      "id": "grande-info-semaine",
+      "emoji": "📰",
+      "nom": "Info de la semaine",
+      "visible": true,
+      "inclure": [
+        "*"
+      ],
+      "exclure": [],
+      "flux": [
+        "https://www.lemonde.fr/rss/une.xml",
+        "https://www.francetvinfo.fr/tous-les-articles.rss"
+      ]
+    }
+  ]
+}
