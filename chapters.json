@@ -1,20 +1,5 @@
 [
   {
-    "id": "grande-info-semaine",
-    "emoji": "📰",
-    "nom": "Grande info de la semaine",
-    "fenetreHeures": 48,
-    "flux": [
-      "https://www.lemonde.fr/rss/une.xml",
-      "https://feeds.bbci.co.uk/news/rss.xml",
-      "https://radiofrance.fr/franceinfo/rss"
-    ],
-    "motsCles": [
-      "*"
-    ],
-    "exclusion": []
-  },
-  {
     "id": "intelligence-artificielle",
     "emoji": "🤖",
     "nom": "Intelligence artificielle",
@@ -291,6 +276,21 @@
       "guerre",
       "alliance",
       "diplomat"
+    ],
+    "exclusion": []
+  },
+  {
+    "id": "grande-info-semaine",
+    "emoji": "📰",
+    "nom": "Grande info de la semaine",
+    "fenetreHeures": 48,
+    "flux": [
+      "https://www.lemonde.fr/rss/une.xml",
+      "https://feeds.bbci.co.uk/news/rss.xml",
+      "https://radiofrance.fr/franceinfo/rss"
+    ],
+    "motsCles": [
+      "*"
     ],
     "exclusion": []
   }

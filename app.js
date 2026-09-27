@@ -1,4 +1,4 @@
-/* Newsletter PWA — app.js v7 */
+/* Newsletter PWA — app.js v8 */
 const PROXIES = [
   u => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u),
   u => 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(u)
@@ -92,15 +92,11 @@ function generationTime() {
 }
 
 function renderTabs() {
-  const vis = chaptersCfg.filter(c => !c.masque);
-  const gi = vis.find(c => c.id === 'grande-info-semaine');
-  const rest = vis.filter(c => c.id !== 'grande-info-semaine');
   const tabs = [
-    ...(gi ? [{ id: gi.id, nom: gi.nom, emoji: gi.emoji }] : []),
     { id: 'edition', nom: 'Édition du jour', emoji: '📬' },
     { id: 'sources', nom: 'Sources', emoji: '📚' },
     { id: 'archives', nom: 'Archives', emoji: '🗄️' },
-    ...rest.map(c => ({ id: c.id, nom: c.nom, emoji: c.emoji }))
+    ...chaptersCfg.filter(c => !c.masque).map(c => ({ id: c.id, nom: c.nom, emoji: c.emoji }))
   ];
   $('#tabs').innerHTML = tabs.map(t =>
     '<button class="tab' + (t.id === activeTab ? ' active' : '') + '" data-id="' + t.id + '">' +
