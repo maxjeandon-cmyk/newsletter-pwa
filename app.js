@@ -4,6 +4,7 @@ const PROXIES = [
   u => 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(u)
 ];
 let chaptersCfg = null, edition = null, feedCache = { time: 0, articles: [] }, activeTab = 'edition';
+let archiveIdx = null, archiveSel = null;
 
 const $ = s => document.querySelector(s);
 const fmtDate = iso => new Date(iso + 'T09:00:00+02:00').toLocaleDateString('fr-FR',
@@ -42,7 +43,8 @@ function parseFeed(xmlText) {
       lien: it.querySelector('link')?.textContent?.trim() || it.querySelector('link')?.getAttribute('href') || '',
       date: new Date(it.querySelector('pubDate, published, updated')?.textContent ?? Date.now()),
       extrait: (it.querySelector('description, summary, content')?.textContent ?? '')
-        .replace(/<[^>]*>/g, '').trim().slice(0, 220)
+     
+   .replace(/<[^>]*>/g, '').trim().slice(0, 220)
     })).filter(a => a.titre && !isNaN(a.date));
   } catch (e) { return []; }
 }
@@ -94,7 +96,9 @@ function renderTabs() {
   const tabs = [
     { id:'edition', nom:'Édition du jour', emoji:'📬' },
     { id:'sources', nom:'Sources', emoji:'📚' },
-    ...chaptersCfg.filter(c => !c.masque).map(c => ({ id:c.id, nom:c.nom, emoji:c.emoji }))
+    { id:'archives', nom:'Archives', emoji:'🗄️' }
+    ...chapte
+rsCfg.filter(c => !c.masque).map(c => ({ id:c.id, nom:c.nom, emoji:c.emoji }))
   ];
   $('#tabs').innerHTML = tabs.map(t =>
     '<button class="tab' + (t.id === activeTab ? ' active' : '') + '" data-id="' + t.id + '">' +
@@ -132,9 +136,35 @@ function renderView() {
       '<p class="meta-count">' + edition.sources.length + ' sources · fiabilité sur 5</p></div>' +
       '<table class="sources-table"><tr><th>Source</th><th>Fiabilité</th><th>MàJ</th></tr>' +
       edition.sources.map(s =>
-        '<tr><td>' + s.label + '<div class="src-ref">' + s.ref + '</div></td>' +
+        '<tr><td>' + s.label + '<div cla
+ss="src-ref">' + s.ref + '</div></td>' +
         '<td>' + s.fiabilite + '</td><td>' + s.maj + '</td></tr>').join('') +
       '</table>';
+    return;
+  }
+
+  // --- Archives : éditions des jours précédents ---
+  if (activeTab === 'archives') {
+    if (!archiveIdx?.length) { view.innerHTML = '<div class="empty">Aucune archive disponible pour l\u2019instant — la première édition date d\u2019aujourd\u2019hui. Les jours passés s\u2019y accumuleront tout seuls. 🌱</div>'; return; }
+    if (archiveSel) {
+      view.innerHTML =
+        '<button class="back-btn" onclick="void(0)" id="btn-back-archives">← Retour aux archives</button>' +
+        '<iframe class="edition-frame" src="' + archiveSel + '" title="Newsletter archivée"></iframe>';
+      $('#btn-back-archives').onclick = () => { archiveSel = null; renderView(); window.scrollTo(0, 0); };
+      return;
+    }
+    view.innerHTML =
+      '<div class="summary-card"><h2>🗄️ Archives — newsletters des jours précédents</h2>' +
+      '<p class="meta-count">' + archiveIdx.length + ' édition(s) conservée(s), les 7 derniers jours.</p></div>' +
+      archiveIdx.map((e, i) =>
+        '<div class="archive-item' + (edition && e.date === edition.date ? ' today' : '') + '" data-i="' + i + '">' +
+        '<span class="date">' + fmtDate(e.date) + '</span>' +
+        (edition && e.date === edition.date ? '<span class="badge">Édition du jour</span>' : '') +
+        '<span class="open">Ouvrir →</span></div>').join('');
+    archiveIdx.forEach((e, i) => {
+      const el = document.querySelector('.archive-item[data-i="' + i + '"]');
+      el.onclick = () => { archiveSel = e.html; renderView(); window.scrollTo(0, 0); };
+    });
     return;
   }
 
@@ -169,12 +199,14 @@ function applyTheme(t) {
 async function loadEdition() {
   try {
     const idx = await (await fetch('editions/latest.json', { cache:'no-store' })).json();
+    archiveIdx = idx.editions || [];
     edition = await (await fetch(idx.editions[0].fichier, { cache:'no-store' })).json();
     $('#edition-date').textContent = '· ' + fmtDate(edition.date);
   } catch (e) { edition = null; }
 }
 
-async function init() {
+async fu
+nction init() {
   // 1. Interface branchée AVANT tout réseau
   const theme = getStore('theme', 'dark');
   applyTheme(theme);
@@ -215,7 +247,8 @@ async function init() {
     .catch(() => { $('#stale-banner').hidden = true; });
 
   setInterval(() => {
-    if (document.visibilityState === 'visible') refreshFeed().then(renderView).catch(()=>{});
+    if (document.visibilitySt
+ate === 'visible') refreshFeed().then(renderView).catch(()=>{});
   }, 15 * 60 * 1000);
 }
 init();
