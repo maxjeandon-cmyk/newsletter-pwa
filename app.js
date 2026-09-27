@@ -1,4 +1,4 @@
-/* Newsletter PWA — app.js v6 */
+/* Newsletter PWA — app.js v7 */
 const PROXIES = [
   u => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u),
   u => 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(u)
@@ -92,11 +92,15 @@ function generationTime() {
 }
 
 function renderTabs() {
+  const vis = chaptersCfg.filter(c => !c.masque);
+  const gi = vis.find(c => c.id === 'grande-info-semaine');
+  const rest = vis.filter(c => c.id !== 'grande-info-semaine');
   const tabs = [
+    ...(gi ? [{ id: gi.id, nom: gi.nom, emoji: gi.emoji }] : []),
     { id: 'edition', nom: 'Édition du jour', emoji: '📬' },
     { id: 'sources', nom: 'Sources', emoji: '📚' },
     { id: 'archives', nom: 'Archives', emoji: '🗄️' },
-    ...chaptersCfg.filter(c => !c.masque).map(c => ({ id: c.id, nom: c.nom, emoji: c.emoji }))
+    ...rest.map(c => ({ id: c.id, nom: c.nom, emoji: c.emoji }))
   ];
   $('#tabs').innerHTML = tabs.map(t =>
     '<button class="tab' + (t.id === activeTab ? ' active' : '') + '" data-id="' + t.id + '">' +
@@ -199,7 +203,6 @@ async function loadEdition() {
 }
 
 async function init() {
-  // 1. Interface branchée AVANT tout réseau
   const theme = getStore('theme', 'dark');
   applyTheme(theme);
   $('#sel-theme').value = theme;
@@ -220,7 +223,6 @@ async function init() {
 
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
 
-  // 2. Données : cache instantané, puis réseau en fond
   feedCache = getStore('feedCache', { time: 0, articles: [] });
   renderView();
 

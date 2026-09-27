@@ -1,29 +1,16 @@
 [
   {
-    "id": "politique-francaise",
-    "emoji": "🇫🇷",
-    "nom": "Politique française",
+    "id": "grande-info-semaine",
+    "emoji": "📰",
+    "nom": "Grande info de la semaine",
+    "fenetreHeures": 48,
     "flux": [
-      "https://www.lemonde.fr/politique/rss_full.xml",
-      "https://radiofrance.fr/franceinfo/rss",
-      "https://www.liberation.fr/arc/outboundfeeds/rss/politique/"
+      "https://www.lemonde.fr/rss/une.xml",
+      "https://feeds.bbci.co.uk/news/rss.xml",
+      "https://radiofrance.fr/franceinfo/rss"
     ],
     "motsCles": [
-      "président",
-      "gouvernement",
-      "assemblée",
-      "sénat",
-      "ministre",
-      "budget",
-      "impôt",
-      "présidentielle",
-      "attal",
-      "philippe",
-      "macron",
-      "2027",
-      "sondage",
-      "RN",
-      "national"
+      "*"
     ],
     "exclusion": []
   },
@@ -56,32 +43,104 @@
     "exclusion": []
   },
   {
-    "id": "geopolitique",
-    "emoji": "🌍",
-    "nom": "Géopolitique",
+    "id": "jeu-video-pop-culture",
+    "emoji": "🎮",
+    "nom": "Jeu vidéo & pop culture",
     "flux": [
-      "https://www.lemonde.fr/international/rss_full.xml",
-      "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "https://www.gamekult.com/feed.xml",
+      "https://www.jeuxvideo.com/rss/rss.xml",
+      "https://www.rockpapershotgun.com/feed",
+      "https://www.reddit.com/r/Games/.rss",
+      "https://www.reddit.com/r/jeuxvideo/.rss",
+      "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
+    ],
+    "motsCles": [
+      "jeu vidéo",
+      "gaming",
+      "esport",
+      "console",
+      "playstation",
+      "xbox",
+      "nintendo",
+      "steam",
+      "indie",
+      "early access",
+      "patch",
+      "DLC",
+      "speedrun",
+      "film",
+      "cinéma",
+      "série",
+      "netflix",
+      "musique",
+      "festival",
+      "acteur",
+      "réalisateur"
+    ],
+    "exclusion": []
+  },
+  {
+    "id": "culture",
+    "emoji": "🎭",
+    "nom": "Culture",
+    "fenetreHeures": 48,
+    "flux": [
+      "https://www.lemonde.fr/culture/rss_full.xml",
+      "https://www.lesinrocks.com/feed/",
+      "https://www.telerama.fr/rss/actualites-culture.xml",
       "https://radiofrance.fr/franceinfo/rss"
     ],
     "motsCles": [
-      "ukraine",
-      "russie",
-      "OTAN",
-      "ONU",
-      "gaza",
-      "israël",
-      "iran",
-      "ormuz",
-      "washington",
-      "moscou",
-      "kyiv",
-      "poutine",
-      "lavrov",
-      "trump",
-      "guerre",
-      "alliance",
-      "diplomat"
+      "livre",
+      "roman",
+      "rentrée littéraire",
+      "prix littéraire",
+      "Goncourt",
+      "poésie",
+      "bande dessinée",
+      "BD",
+      "film",
+      "cinéma",
+      "sortie",
+      "série",
+      "théâtre",
+      "pièce",
+      "album",
+      "concert",
+      "tournée",
+      "documentaire",
+      "exposition",
+      "musée",
+      "festival",
+      "Avignon",
+      "César",
+      "Oscar",
+      "francophone"
+    ],
+    "exclusion": []
+  },
+  {
+    "id": "sciences",
+    "emoji": "🔬",
+    "nom": "Sciences",
+    "flux": [
+      "https://www.lemonde.fr/sciences/rss_full.xml",
+      "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"
+    ],
+    "motsCles": [
+      "science",
+      "recherche",
+      "découverte",
+      "étude",
+      "espace",
+      "nasa",
+      "mars",
+      "santé",
+      "médecine",
+      "physique",
+      "biologie",
+      "astronomie",
+      "génétique"
     ],
     "exclusion": []
   },
@@ -114,27 +173,30 @@
     "exclusion": []
   },
   {
-    "id": "sciences",
-    "emoji": "🔬",
-    "nom": "Sciences",
+    "id": "politique-francaise",
+    "emoji": "🇫🇷",
+    "nom": "Politique française",
     "flux": [
-      "https://www.lemonde.fr/sciences/rss_full.xml",
-      "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"
+      "https://www.lemonde.fr/politique/rss_full.xml",
+      "https://radiofrance.fr/franceinfo/rss",
+      "https://www.liberation.fr/arc/outboundfeeds/rss/politique/"
     ],
     "motsCles": [
-      "science",
-      "recherche",
-      "découverte",
-      "étude",
-      "espace",
-      "nasa",
-      "mars",
-      "santé",
-      "médecine",
-      "physique",
-      "biologie",
-      "astronomie",
-      "génétique"
+      "président",
+      "gouvernement",
+      "assemblée",
+      "sénat",
+      "ministre",
+      "budget",
+      "impôt",
+      "présidentielle",
+      "attal",
+      "philippe",
+      "macron",
+      "2027",
+      "sondage",
+      "RN",
+      "national"
     ],
     "exclusion": []
   },
@@ -176,52 +238,59 @@
       "pékin",
       "xi jinping",
       "taïwan",
-      "shanghai",
-      "han zheng"
+      "shanghai"
     ],
     "exclusion": []
   },
   {
-    "id": "jeu-video-pop-culture",
-    "emoji": "🎮",
-    "nom": "Jeu vidéo & pop culture",
+    "id": "russie",
+    "emoji": "🇷🇺",
+    "nom": "Russie",
     "flux": [
-      "https://www.gamekult.com/feed.xml",
-      "https://www.lemonde.fr/culture/rss_full.xml",
-      "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
+      "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "https://www.lemonde.fr/international/rss_full.xml",
+      "https://meduza.io/rss/en"
     ],
     "motsCles": [
-      "jeu vidéo",
-      "gaming",
-      "esport",
-      "console",
-      "playstation",
-      "xbox",
-      "nintendo",
-      "steam",
-      "film",
-      "cinéma",
-      "série",
-      "netflix",
-      "musique",
-      "festival",
-      "acteur",
-      "réalisateur"
+      "russie",
+      "russe",
+      "poutine",
+      "kremlin",
+      "moscou",
+      "lavrov",
+      "sibérie",
+      "oligarque",
+      "gazprom"
     ],
     "exclusion": []
   },
   {
-    "id": "grande-info-semaine",
-    "emoji": "📰",
-    "nom": "Grande info de la semaine",
-    "fenetreHeures": 48,
+    "id": "geopolitique",
+    "emoji": "🌍",
+    "nom": "Géopolitique",
     "flux": [
-      "https://www.lemonde.fr/rss/une.xml",
-      "https://feeds.bbci.co.uk/news/rss.xml",
+      "https://www.lemonde.fr/international/rss_full.xml",
+      "https://feeds.bbci.co.uk/news/world/rss.xml",
       "https://radiofrance.fr/franceinfo/rss"
     ],
     "motsCles": [
-      "*"
+      "ukraine",
+      "russie",
+      "OTAN",
+      "ONU",
+      "gaza",
+      "israël",
+      "iran",
+      "ormuz",
+      "washington",
+      "moscou",
+      "kyiv",
+      "poutine",
+      "lavrov",
+      "trump",
+      "guerre",
+      "alliance",
+      "diplomat"
     ],
     "exclusion": []
   }
