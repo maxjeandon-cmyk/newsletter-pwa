@@ -1,220 +1,228 @@
-{
-  "version": 1,
-  "chapters": [
-    {
-      "id": "politique-francaise",
-      "emoji": "🇫🇷",
-      "nom": "Politique française",
-      "visible": true,
-      "include": [
-        "présidentielle",
-        "assemblée",
-        "sénat",
-        "gouvernement",
-        "attal",
-        "faure",
-        "macron",
-        "rn",
-        "naissance",
-        "premier ministre",
-        "ministre",
-        "parlement",
-        "budget",
-        "impôt",
-        "loi",
-        "élysée"
-      ],
-      "exclude": [
-        "etats-unis",
-        "chine"
-      ],
-      "feeds": []
-    },
-    {
-      "id": "intelligence-artificielle",
-      "emoji": "🤖",
-      "nom": "Intelligence artificielle",
-      "visible": true,
-      "include": [
-        "ia",
-        "intelligence artificielle",
-        "openai",
-        "anthropic",
-        "mistral",
-        "chatgpt",
-        "claude",
-        "gemini",
-        "grok",
-        "llm",
-        "hugging face",
-        "modèle",
-        "algorithm"
-      ],
-      "exclude": [],
-      "feeds": []
-    },
-    {
-      "id": "geopolitique",
-      "emoji": "🌍",
-      "nom": "Géopolitique",
-      "visible": true,
-      "include": [
-        "ukraine",
-        "russie",
-        "otan",
-        "onu",
-        "gaza",
-        "israël",
-        "iran",
-        "ormuz",
-        "israel",
-        "palestin",
-        "guerre",
-        "diplomat",
-        "lavr",
-        "poutine",
-        "zelensky",
-        "houthis",
-        "yemen",
-        "kirghizstan"
-      ],
-      "exclude": [],
-      "feeds": []
-    },
-    {
-      "id": "climat",
-      "emoji": "🌡️",
-      "nom": "Climat",
-      "visible": true,
-      "include": [
-        "climat",
-        "réchauffement",
-        "rechauffement",
-        "cop ",
-        "cop2",
-        "charbon",
-        "émission",
-        "emission",
-        "glacier",
-        "canicule",
-        "inondation",
-        "sécheresse",
-        "co2",
-        "fossile",
-        "renouvelable"
-      ],
-      "exclude": [],
-      "feeds": []
-    },
-    {
-      "id": "sciences",
-      "emoji": "🔬",
-      "nom": "Sciences",
-      "visible": true,
-      "include": [
-        "science",
-        "recherche",
-        "découverte",
-        "etude",
-        "étude",
-        "chercheur",
-        "nasa",
-        "espace",
-        "satellite",
-        "médecine",
-        "medecine",
-        "physique",
-        "biologie",
-        "archéolog",
-        "archeolog"
-      ],
-      "exclude": [],
-      "feeds": []
-    },
-    {
-      "id": "etats-unis",
-      "emoji": "🇺🇸",
-      "nom": "États-Unis",
-      "visible": true,
-      "include": [
-        "trump",
-        "washington",
-        "maison blanche",
-        "congrès",
-        "congres",
-        "sénat us",
-        "senat us",
-        "suprême",
-        "supreme",
-        "midterm",
-        "républicain",
-        "republicain",
-        "démocrate",
-        "democrate",
-        "ice "
-      ],
-      "exclude": [],
-      "feeds": []
-    },
-    {
-      "id": "chine",
-      "emoji": "🇨🇳",
-      "nom": "Chine",
-      "visible": true,
-      "include": [
-        "chine",
-        "chinois",
-        "pékin",
-        "pekin",
-        "xi jinping",
-        "tarifs",
-        "taïwan",
-        "taiwan",
-        "shanghai",
-        "panda"
-      ],
-      "exclude": [],
-      "feeds": []
-    },
-    {
-      "id": "jeu-video-pop-culture",
-      "emoji": "🎮",
-      "nom": "Jeu vidéo & pop culture",
-      "visible": true,
-      "include": [
-        "jeu vidéo",
-        "jeu video",
-        "gaming",
-        "esport",
-        "playstation",
-        "xbox",
-        "nintendo",
-        "steam",
-        "cinéma",
-        "cinema",
-        "film",
-        "série",
-        "serie netflix",
-        "musique",
-        "festival",
-        "césar",
-        "oscar"
-      ],
-      "exclude": [],
-      "feeds": []
-    },
-    {
-      "id": "grande-info-semaine",
-      "emoji": "📰",
-      "nom": "Grande info de la semaine",
-      "visible": true,
-      "include": [
-        "semaine",
-        "résumé",
-        "retour sur"
-      ],
-      "exclude": [],
-      "feeds": []
-    }
-  ]
-}
+[
+  {
+    "id": "politique-francaise",
+    "emoji": "🇫🇷",
+    "nom": "Politique française",
+    "flux": [
+      "https://www.lemonde.fr/politique/rss_full.xml",
+      "https://radiofrance.fr/franceinfo/rss",
+      "https://www.liberation.fr/arc/outboundfeeds/rss/politique/"
+    ],
+    "motsCles": [
+      "président",
+      "gouvernement",
+      "assemblée",
+      "sénat",
+      "ministre",
+      "budget",
+      "impôt",
+      "présidentielle",
+      "attal",
+      "philippe",
+      "macron",
+      "2027",
+      "sondage",
+      "RN",
+      "national"
+    ],
+    "exclusion": []
+  },
+  {
+    "id": "intelligence-artificielle",
+    "emoji": "🤖",
+    "nom": "Intelligence artificielle",
+    "flux": [
+      "https://www.theverge.com/rss/index.xml",
+      "https://arstechnica.com/feed/",
+      "https://radiofrance.fr/franceinfo/rss"
+    ],
+    "motsCles": [
+      "IA",
+      "intelligence artificielle",
+      "OpenAI",
+      "Anthropic",
+      "Google",
+      "Meta",
+      "xAI",
+      "Mistral",
+      "Hugging Face",
+      "GPT",
+      "Claude",
+      "Gemini",
+      "chatbot",
+      "modèle",
+      "AI"
+    ],
+    "exclusion": []
+  },
+  {
+    "id": "geopolitique",
+    "emoji": "🌍",
+    "nom": "Géopolitique",
+    "flux": [
+      "https://www.lemonde.fr/international/rss_full.xml",
+      "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "https://radiofrance.fr/franceinfo/rss"
+    ],
+    "motsCles": [
+      "ukraine",
+      "russie",
+      "OTAN",
+      "ONU",
+      "gaza",
+      "israël",
+      "iran",
+      "ormuz",
+      "washington",
+      "moscou",
+      "kyiv",
+      "poutine",
+      "lavrov",
+      "trump",
+      "guerre",
+      "alliance",
+      "diplomat"
+    ],
+    "exclusion": []
+  },
+  {
+    "id": "climat",
+    "emoji": "🌡️",
+    "nom": "Climat",
+    "flux": [
+      "https://www.lemonde.fr/environment/rss_full.xml",
+      "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+      "https://radiofrance.fr/franceinfo/rss"
+    ],
+    "motsCles": [
+      "climat",
+      "COP",
+      "réchauffement",
+      "carbone",
+      "CO2",
+      "charbon",
+      "pétrole",
+      "gaz",
+      "glacier",
+      "canicule",
+      "inondation",
+      "sécheresse",
+      "énergie",
+      "renouvelable",
+      "GIEC"
+    ],
+    "exclusion": []
+  },
+  {
+    "id": "sciences",
+    "emoji": "🔬",
+    "nom": "Sciences",
+    "flux": [
+      "https://www.lemonde.fr/sciences/rss_full.xml",
+      "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"
+    ],
+    "motsCles": [
+      "science",
+      "recherche",
+      "découverte",
+      "étude",
+      "espace",
+      "nasa",
+      "mars",
+      "santé",
+      "médecine",
+      "physique",
+      "biologie",
+      "astronomie",
+      "génétique"
+    ],
+    "exclusion": []
+  },
+  {
+    "id": "etats-unis",
+    "emoji": "🇺🇸",
+    "nom": "États-Unis",
+    "flux": [
+      "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "https://www.lemonde.fr/international/rss_full.xml"
+    ],
+    "motsCles": [
+      "états-unis",
+      "USA",
+      "américain",
+      "trump",
+      "washington",
+      "congrès",
+      "midterm",
+      "maison blanche",
+      "californie",
+      "new york",
+      "texas",
+      "US"
+    ],
+    "exclusion": []
+  },
+  {
+    "id": "chine",
+    "emoji": "🇨🇳",
+    "nom": "Chine",
+    "flux": [
+      "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "https://www.lemonde.fr/international/rss_full.xml"
+    ],
+    "motsCles": [
+      "chine",
+      "chinois",
+      "pékin",
+      "xi jinping",
+      "taïwan",
+      "shanghai",
+      "han zheng"
+    ],
+    "exclusion": []
+  },
+  {
+    "id": "jeu-video-pop-culture",
+    "emoji": "🎮",
+    "nom": "Jeu vidéo & pop culture",
+    "flux": [
+      "https://www.gamekult.com/feed.xml",
+      "https://www.lemonde.fr/culture/rss_full.xml",
+      "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
+    ],
+    "motsCles": [
+      "jeu vidéo",
+      "gaming",
+      "esport",
+      "console",
+      "playstation",
+      "xbox",
+      "nintendo",
+      "steam",
+      "film",
+      "cinéma",
+      "série",
+      "netflix",
+      "musique",
+      "festival",
+      "acteur",
+      "réalisateur"
+    ],
+    "exclusion": []
+  },
+  {
+    "id": "grande-info-semaine",
+    "emoji": "📰",
+    "nom": "Grande info de la semaine",
+    "fenetreHeures": 48,
+    "flux": [
+      "https://www.lemonde.fr/rss/une.xml",
+      "https://feeds.bbci.co.uk/news/rss.xml",
+      "https://radiofrance.fr/franceinfo/rss"
+    ],
+    "motsCles": [
+      "*"
+    ],
+    "exclusion": []
+  }
+]

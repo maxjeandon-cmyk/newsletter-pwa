@@ -3,131 +3,43 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>Newsletter — Maxime</title>
+<meta name="theme-color" content="#0e0e12"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-<meta name="theme-color" content="#0e0e12"/>
-<title>Newsletter</title>
 <link rel="manifest" href="manifest.webmanifest"/>
-<link rel="apple-touch-icon" href="icons/icon-192.png"/>
-<style>
-:root{
-  --bg:#0e0e12;--bg2:#16161d;--card:#1c1c25;--text:#eceaf3;--muted:#9a97a8;
-  --accent:#6ea8fe;--border:#2a2a36;--ok:#7ee0a3;
-  --radius:14px;--font:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
-}
-[data-theme="light"]{--bg:#fafafc;--bg2:#f2f2f6;--card:#fff;--text:#1a1a2e;--muted:#6b6880;--accent:#1652a0;--border:#e2e0ea}
-*{box-sizing:border-box}
-html,body{margin:0;padding:0}
-body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.55;padding-bottom:calc(72px + env(safe-area-inset-bottom))}
-button{font-family:var(--font)}
-a{color:var(--accent)}
-.topbar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:calc(10px + env(safe-area-inset-top)) 14px 10px;display:flex;align-items:center;gap:10px}
-.topbar h1{font-size:1.05rem;margin:0;flex:1;letter-spacing:.2px}
-.iconbtn{background:none;border:none;color:var(--muted);font-size:1.25rem;padding:6px 9px;cursor:pointer;border-radius:8px}
-.iconbtn:hover{background:var(--bg2)}
-.badge{font-size:.72rem;color:var(--muted);background:var(--bg2);padding:3px 8px;border-radius:99px;white-space:nowrap}
-main{max-width:720px;margin:0 auto;padding:16px}
-h2{font-size:1.15rem;margin:6px 0 2px}
-h3{font-size:1rem;margin:18px 0 6px}
-section{margin-bottom:26px}
-.lead{color:var(--muted);font-size:.9rem;margin:2px 0 18px}
-.exec li{margin:9px 0}
-.exec li::marker{color:var(--accent)}
-.chapter-head{display:flex;align-items:center;gap:8px;margin-top:22px}
-.chapter-head .e{font-size:1.15rem}
-.chapter-head h3{margin:0;flex:1}
-.chapter-head small{color:var(--muted);font-size:.72rem}
-.resume{color:var(--muted);font-size:.92rem;margin:6px 0 10px}
-.arts{list-style:none;padding:0;margin:0}
-.arts li{border:1px solid var(--border);background:var(--card);border-radius:var(--radius);padding:11px 13px;margin-bottom:8px}
-.arts a{text-decoration:none;color:var(--text);display:block}
-.arts a:active{opacity:.7}
-.arts .t{font-weight:600}
-.arts .s{display:flex;gap:8px;color:var(--muted);font-size:.78rem;margin-top:3px}
-.arts .src{color:var(--accent)}
-.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;gap:4px;overflow-x:auto;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(12px);border-top:1px solid var(--border);padding:8px 10px calc(8px + env(safe-area-inset-bottom));-webkit-overflow-scrolling:touch;scrollbar-width:none}
-.tabbar::-webkit-scrollbar{display:none}
-.tab{flex:0 0 auto;border:none;background:none;color:var(--muted);font-size:.95rem;padding:7px 11px;border-radius:10px;cursor:pointer;white-space:nowrap}
-.tab.active{background:var(--bg2);color:var(--text)}
-.tab.active .k{display:block;font-size:.62rem;color:var(--muted);letter-spacing:.3px;margin-top:1px}
-.tab .k{display:none}
-.offline{position:fixed;top:0;left:0;right:0;background:var(--bg2);color:var(--muted);text-align:center;font-size:.78rem;padding:4px 0;z-index:40;display:none}
-.empty{color:var(--muted);text-align:center;padding:30px 10px;font-size:.92rem}
-.loading{color:var(--muted);text-align:center;padding:24px}
-dialog{background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:18px;max-width:92vw;width:400px;padding:18px}
-dialog::backdrop{background:rgba(0,0,0,.6)}
-dialog h3{margin-top:0}
-.frow{display:flex;flex-direction:column;gap:3px;margin:12px 0}
-.frow label{font-size:.8rem;color:var(--muted)}
-.frow input{background:var(--bg2);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:9px 10px;font-size:.95rem}
-.btnrow{display:flex;gap:8px;justify-content:flex-end;margin-top:16px}
-.btn{border:none;border-radius:10px;padding:9px 14px;font-size:.9rem;cursor:pointer;background:var(--bg2);color:var(--text)}
-.btn.primary{background:var(--accent);color:#0b1220}
-.btn.danger{color:#ff9d9d}
-.chaplist{list-style:none;margin:0;padding:0}
-.chaplist li{display:flex;align-items:center;gap:9px;border-bottom:1px solid var(--border);padding:10px 2px}
-.chaplist .grip{color:var(--muted);cursor:grab;font-size:.9rem}
-.chaplist .nm{flex:1}
-.chaplist .nm small{display:block;color:var(--muted);font-size:.72rem}
-.switch{position:relative;width:44px;height:26px;flex:0 0 auto}
-.switch input{opacity:0;width:100%;height:100%;margin:0;cursor:pointer;position:relative;z-index:2}
-.switch .tr{position:absolute;inset:0;background:var(--bg2);border:1px solid var(--border);border-radius:99px}
-.switch input:checked + .tr{background:var(--accent);border-color:var(--accent)}
-.switch input:checked + .tr::after{content:"";position:absolute;top:3px;right:3px;width:18px;height:18px;background:#fff;border-radius:99px}
-.switch .tr::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;background:var(--muted);border-radius:99px}
-.toast{position:fixed;bottom:calc(84px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);background:var(--card);border:1px solid var(--border);color:var(--text);padding:10px 16px;border-radius:12px;font-size:.85rem;z-index:50;opacity:0;transition:opacity .25s;pointer-events:none;max-width:88vw;text-align:center}
-.toast.show{opacity:1}
-@media(min-width:700px){.tabbar{max-width:720px;left:50%;transform:translateX(-50%);border:1px solid var(--border);border-radius:16px;bottom:14px}}
-</style>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="icons/icon.svg"/>
 </head>
 <body>
-<div class="offline" id="offline">📴 Données du <span id="offlineTime"></span> (hors ligne)</div>
-<header class="topbar">
-  <h1>📬 Newsletter</h1>
-  <span class="badge" id="edDate"></span>
-  <button class="iconbtn" id="btnRefresh" title="Rafraîchir" aria-label="Rafraîchir">⟳</button>
-  <button class="iconbtn" id="btnTheme" title="Basculer le thème" aria-label="Basculer le thème">🌙</button>
-  <button class="iconbtn" id="btnSettings" title="Réglages" aria-label="Réglages">⚙️</button>
+<header id="topbar">
+  <h1>Newsletter <span id="edition-date"></span></h1>
+  <button id="btn-refresh" aria-label="Actualiser">⟳</button>
+  <button id="btn-settings" aria-label="Réglages">⚙️</button>
 </header>
-<main id="app"></main>
-<nav class="tabbar" id="tabbar" aria-label="Chapitres"></nav>
-<div class="toast" id="toast"></div>
-
-<dialog id="dlgSettings">
-  <h3>⚙️ Réglages</h3>
-  <div class="frow"><label>Apparence</label>
-    <select id="setTheme" class="btn" style="width:100%">
-      <option value="dark">Sombre (par défaut)</option>
-      <option value="light">Clair</option>
-      <option value="auto">Auto (système)</option>
-    </select>
+<div id="stale-banner" hidden></div>
+<nav id="tabs" aria-label="Chapitres"></nav>
+<main id="view"></main>
+<div id="settings-panel" hidden>
+  <div class="panel-card">
+    <h2>Réglages</h2>
+    <label>Apparence
+      <select id="sel-theme">
+        <option value="dark">Sombre (défaut)</option>
+        <option value="light">Clair</option>
+        <option value="auto">Auto</option>
+      </select>
+    </label>
+    <h3>Mes chapitres</h3>
+    <ul id="chapters-editor"></ul>
+    <button id="btn-reset-chapters">Restaurer par défaut</button>
+    <button id="btn-purge">Purger le cache</button>
+    <button id="btn-install-hint">Installer sur iPhone</button>
+    <p class="hint">Sur iPhone : bouton Partager ⬆️ puis « Sur l'écran d'accueil ».</p>
+    <button id="btn-close-settings">Fermer</button>
   </div>
-  <div class="frow"><label>Rafraîchissement auto du flux chaud</label>
-    <select id="setRefresh" class="btn" style="width:100%">
-      <option value="0">Désactivé</option>
-      <option value="15">Toutes les 15 minutes</option>
-      <option value="30">Toutes les 30 minutes</option>
-    </select>
-  </div>
-  <button id="btnChapters" class="btn" style="width:100%;margin-top:4px">✏️ Mes chapitres…</button>
-  <button id="btnPurge" class="btn" style="width:100%;margin-top:8px">🧹 Purger le cache local</button>
-  <details style="margin-top:14px;color:var(--muted);font-size:.85rem">
-    <summary>📱 Installer sur votre iPhone</summary>
-    <p>Safari → bouton Partager ⬆️ → « Sur l'écran d'accueil ». Le site s'ouvrira plein écran, comme une app.</p>
-  </details>
-  <div class="btnrow"><button class="btn primary" id="btnCloseSettings">Fermer</button></div>
-</dialog>
-
-<dialog id="dlgChapters">
-  <h3>✏️ Mes chapitres</h3>
-  <p style="color:var(--muted);font-size:.82rem;margin:4px 0 10px">Glissez la poignée ⠿ pour réordonner. L'interrupteur affiche/masque un chapitre.</p>
-  <ul class="chaplist" id="chapList"></ul>
-  <div class="btnrow">
-    <button class="btn" id="btnResetChap">Restaurer par défaut</button>
-    <button class="btn primary" id="btnCloseChap">Fermer</button>
-  </div>
-</dialog>
-
+</div>
 <script src="app.js"></script>
 </body>
 </html>

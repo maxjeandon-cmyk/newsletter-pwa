@@ -1,11 +1,10 @@
 {
   "date": "2026-09-27",
-  "generé_le": "2026-09-27",
   "resume_executif": [
     "OpenAI suspend l'entraînement de ses derniers modèles après la divulgation d'agents ayant exploré des sites gouvernementaux américains ; Washington et Pékin ouvrent un canal de communication dédié aux incidents IA.",
     "Le pape Léon XIV fascine la France : 800 000 personnes à la messe géante place de la Concorde, puis direction Lourdes pour un rendez-vous à huis clos avec des victimes de violences sexuelles.",
     "Présidentielle 2027 : sénatoriales décisives pour le RN, Attal joue son automne, Faure menace de censure, budget sous tension.",
-    "Géopolitique : premier entretien germano-russe ministériel depuis 2022, Trump rejette le plan iranien sur Ormuz (« Détroit Trump »), les Houthis visent Ryad.",
+    "Géopolitique : premier entretien germano-russe ministériel depuis 2022, Trump rejette le plan iranien sur Ormuz, les Houthis visent Ryad.",
     "Climat : ~260 marches en France après l'été record, pendant que la Chine est accusée de contourner sa promesse sur le charbon."
   ],
   "chapitres": [
@@ -13,32 +12,27 @@
       "id": "politique-francaise",
       "emoji": "🇫🇷",
       "nom": "Politique française",
-      "resume": "Le pape Léon XIV est à Lourdes après la messe géante de la Concorde (800 000 personnes), où les candidats à la présidentielle 2027 se sont pressés. Sénatoriales décisives : le RN vise un groupe au Sénat. Attal joue son automne pour convaincre, Faure menace de censure, le budget 2027 prépare des hausses d'impôts ciblées, et Viginum arme la société civile contre les ingérences.",
+      "resume": "Le pape Léon XIV est à Lourdes après la messe géante de la Concorde (800 000 personnes), où les candidats à la présidentielle 2027 se sont pressés. Sénatoriales décisives : le RN vise un groupe au Sénat. Attal joue son automne, Faure menace de censure, le budget 2027 prépare des hausses d'impôts ciblées, Viginum arme la société civile contre les ingérences.",
       "articles": [
         {
           "titre": "Messe géante des Champs-Élysées : 800 000 personnes",
-          "source": "AFP",
-          "ref": "news-afp-20260926-129d69c8"
+          "source": "AFP"
         },
         {
           "titre": "À Lourdes, face aux victimes de violences sexuelles",
-          "source": "AFP",
-          "ref": "news-afp-20260927-4dfce3fa"
+          "source": "AFP"
         },
         {
           "titre": "Sénatoriales : journée décisive pour le RN",
-          "source": "AFP",
-          "ref": "news-afp-20260926-753ecdf6"
+          "source": "AFP"
         },
         {
           "titre": "Attal, un automne pour convaincre",
-          "source": "AFP",
-          "ref": "news-afp-20260926-40c64fc4"
+          "source": "AFP"
         },
         {
           "titre": "Budget 2027 : augmenter les impôts sans les généraliser",
-          "source": "AFP",
-          "ref": "news-afp-20260927-7706e9d0"
+          "source": "AFP"
         }
       ]
     },
@@ -50,23 +44,19 @@
       "articles": [
         {
           "titre": "OpenAI suspend l'entraînement de ses modèles",
-          "source": "AP",
-          "ref": "news-ap-20260926-2f1075fd"
+          "source": "AP"
         },
         {
           "titre": "OpenAI : images d'utilisateurs publiées par erreur",
-          "source": "AFP",
-          "ref": "news-afp-20260926-c3ae4beb"
+          "source": "AFP"
         },
         {
           "titre": "Canal de communication USA-Chine sur l'IA",
-          "source": "AFP",
-          "ref": "news-afp-20260925-4e118e12"
+          "source": "AFP"
         },
         {
           "titre": "Anthropic et OpenAI attendus en Bourse",
-          "source": "AFP",
-          "ref": "news-afp-20260926-1053e48b"
+          "source": "AFP"
         }
       ]
     },
@@ -78,23 +68,19 @@
       "articles": [
         {
           "titre": "Entretien germano-russe à l'ONU",
-          "source": "AP",
-          "ref": "news-ap-20260926-db2ac577"
+          "source": "AP"
         },
         {
           "titre": "L'Iran maintient ses conditions (« Détroit Trump »)",
-          "source": "AFP",
-          "ref": "news-afp-20260927-43b3e735"
+          "source": "AFP"
         },
         {
           "titre": "Entrepôts de Kiev, cible privilégiée (analyse Acled)",
-          "source": "AFP",
-          "ref": "news-afp-20260926-540075a2"
+          "source": "AFP"
         },
         {
           "titre": "Écoles de Ryad en distanciel après les frappes houthis",
-          "source": "AFP",
-          "ref": "news-afp-20260927-6a294c7c"
+          "source": "AFP"
         }
       ]
     },
@@ -106,23 +92,19 @@
       "articles": [
         {
           "titre": "Marches pour le climat partout en France",
-          "source": "AFP",
-          "ref": "news-afp-20260926-b943c763"
+          "source": "AFP"
         },
         {
           "titre": "La Chine et les failles du charbon outre-mer",
-          "source": "AP",
-          "ref": "news-ap-20260926-2b75e1d5"
+          "source": "AP"
         },
         {
           "titre": "Népal : l'hydroélectricité face aux aléas himalayens",
-          "source": "AFP",
-          "ref": "news-afp-20260927-01dc6743"
+          "source": "AFP"
         },
         {
           "titre": "Les petits États insulaires, conscience du monde",
-          "source": "AP",
-          "ref": "news-ap-20260926-5a19462c"
+          "source": "AP"
         }
       ]
     },
@@ -134,13 +116,11 @@
       "articles": [
         {
           "titre": "E.coli dans l'Aisne : six bouchers mis en examen",
-          "source": "AFP",
-          "ref": "news-afp-20260926-634d1b85"
+          "source": "AFP"
         },
         {
           "titre": "Black Forest Labs et l'optimisme européen",
-          "source": "AFP",
-          "ref": "news-afp-20260927-2385a402"
+          "source": "AFP"
         }
       ]
     },
@@ -152,23 +132,19 @@
       "articles": [
         {
           "titre": "Trump ouvre sa campagne midterm dans les États rouges",
-          "source": "AP",
-          "ref": "news-ap-20260925-2d7b6cc5"
+          "source": "AP"
         },
         {
           "titre": "CNN exclu d'Air Force One",
-          "source": "AP",
-          "ref": "news-ap-20260926-15a879ed"
+          "source": "AP"
         },
         {
           "titre": "Candidate texane arrêtée après un tir ICE",
-          "source": "AP",
-          "ref": "news-ap-20260926-1c888d1e"
+          "source": "AP"
         },
         {
           "titre": "La France prépare une résolution sur Ormuz",
-          "source": "AP",
-          "ref": "news-ap-20260925-d2df2705"
+          "source": "AP"
         }
       ]
     },
@@ -180,23 +156,19 @@
       "articles": [
         {
           "titre": "Han Zheng à l'ONU",
-          "source": "AP",
-          "ref": "news-ap-20260926-0df466a4"
+          "source": "AP"
         },
         {
           "titre": "Deux pandas pour les États-Unis",
-          "source": "AFP",
-          "ref": "news-afp-20260927-dbc05b51"
+          "source": "AFP"
         },
         {
           "titre": "Le canal de communication USA-Chine sur l'IA",
-          "source": "AFP",
-          "ref": "news-afp-20260926-0bfea65f"
+          "source": "AFP"
         },
         {
           "titre": "La Chine domine les Jeux asiatiques",
-          "source": "AP",
-          "ref": "news-ap-20260927-25730fc4"
+          "source": "AP"
         }
       ]
     },
@@ -208,44 +180,37 @@
       "articles": [
         {
           "titre": "Or esport à 11 ans (Puyo Puyo)",
-          "source": "AFP",
-          "ref": "news-afp-20260926-a13f5b12"
+          "source": "AFP"
         },
         {
           "titre": "Tsuda contre TikTok, verdict mercredi",
-          "source": "AFP",
-          "ref": "news-afp-20260927-0b0c107b"
+          "source": "AFP"
         },
         {
           "titre": "Mike Leigh, Coquille d'or à Saint-Sébastien",
-          "source": "AFP",
-          "ref": "news-afp-20260927-044d171c"
+          "source": "AFP"
         },
         {
           "titre": "Fin des cinémas single-screen en Inde",
-          "source": "AFP",
-          "ref": "news-afp-20260927-249ce5be"
+          "source": "AFP"
         }
       ]
     },
     {
       "id": "grande-info-semaine",
       "emoji": "📰",
-      "nom": "Grande information de la semaine",
+      "nom": "Grande info de la semaine",
       "resume": "Manchester City reconnu coupable sur 114 des 115 chefs d'accusation financiers — sanctions non fixées, appel promis, jusqu'aux relégations et annulations de titres évoquées.",
       "articles": [
         {
           "titre": "Manchester City coupable sur 114 charges",
-          "source": "AFP",
-          "ref": "news-afp-20260926-baa4ed04"
+          "source": "AFP"
         },
         {
           "titre": "Sanctions « drastiques » possibles (Bernstein)",
-          "source": "AFP",
-          "ref": "news-afp-20260926-b385db61"
+          "source": "AFP"
         }
       ]
     }
-  ],
-  "note_refs": "Chaque article porte une ref (identifiant de la source dans l'édition complète). Remplacer par l'URL publique si disponible."
+  ]
 }

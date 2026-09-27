@@ -1,31 +1,19 @@
-# 📬 Newsletter — PWA personnelle
+# Newsletter PWA
 
-Newsletter quotidienne : **édition du jour** (rédigée, publiée chaque matin) + **flux chaud** (RSS filtrés sur les dernières 24 h), en 9 chapitres, dark mode par défaut, installable sur iPhone (« Ajouter à l'écran d'accueil »).
+Page web personnelle : édition du jour (newsletter rédigée) + flux chaud RSS agrégé, en 9 chapitres. Dark mode par défaut, installable sur l'écran d'accueil de l'iPhone.
 
-## Publier l'édition du jour
+## Activer GitHub Pages
+1. Sur GitHub : **Settings → Pages** → Source : *Deploy from a branch* → branche `main`, dossier `/ (root)`.
+2. Attendez 1–2 minutes, le site est sur `https://maxjeandon-cmyk.github.io/newsletter-pwa/`.
 
-La tâche Vibe de 9h pousse automatiquement `editions/<YYYY-MM-DD>.json` (et met à jour `editions/latest.json`) dans ce dépôt. GitHub Pages se met à jour à chaque push.
+## Installation sur iPhone
+Ouvrez l'URL dans Safari → bouton Partager → « Sur l'écran d'accueil ». L'icône ouvre le site plein écran, sans barre de navigation.
 
-## Activer GitHub Pages (une seule fois)
+## Mise à jour quotidienne
+Chaque matin, la tâche programmée pousse `editions/YYYY-MM-DD.json` et met à jour `editions/latest.json` dans ce dépôt — GitHub Pages redéploie automatiquement à chaque push.
 
-1. Ouvrir **Settings → Pages**
-2. Source : **Deploy from a branch**, branche `main`, dossier `/ (root)`
-3. Sauver — le site est sur `https://maxjeandon-cmyk.github.io/newsletter-pwa/`
-
-## Installer sur iPhone
-
-Safari → Partager ⬆️ → « Sur l'écran d'accueil ». La PWA s'ouvre plein écran, sans barre de navigateur.
-
-## Limites connues (honnêteté)
-
-- Le flux chaud passe par des proxys CORS publics (allorigins, rss2json) : parfois lents, d'où le cache local.
-- Pas de notifications push ni de widget d'écran d'accueil iOS : réservés aux apps natives. Le mail Gmail de 9h reste le réveil éditorial.
-- Le « temps réel » est un rafraîchissement périodique (réglable : 15/30 min).
-
-## Fichiers
-
-- `index.html`, `app.js`, `styles` (inline) — l'app
-- `sw.js` — service worker (cache, hors-ligne)
-- `manifest.webmanifest` — PWA
-- `chapters.json` — chapitres, mots-clés, visibilité (modifiable aussi dans l'app)
-- `editions/` — une édition par jour + `latest.json`
+## Limites connues (honnêteté technique)
+- **Flux chaud** : les flux RSS sont récupérés depuis le navigateur via des proxys CORS publics (allorigins, rss2json) — parfois lents ou indisponibles ; le cache local affiche toujours le dernier état connu.
+- **Pas de notifications push ni de widget iOS** : réservés aux apps natives.
+- **Icône SVG** : iOS préfère un PNG pour l'icône d'accueil ; si l'icône rend mal, remplacez `icons/icon.svg` par un PNG 180×180 nommé `apple-touch-icon.png` et référencez-le dans `index.html`.
+- Sources RSS configurables dans `chapters.json` (et masquables dans les réglages de l'app).

@@ -1,233 +1,176 @@
-'use strict';
-// ===== Newsletter PWA — Édition du jour + Flux chaud =====
+/* Newsletter PWA — app.js */
 const PROXIES = [
   u => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u),
   u => 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(u)
 ];
-const STATE = { edition:null, flux:{}, chapters:[], theme:'dark', refreshMin:15, lastRefresh:null, view:'edition', chapter:null };
+const DEFAULT_CHAPTERS = null; // chargé depuis chapters.json
+let chaptersCfg = null, edition = null, feedCache = {}, activeTab = 'edition';
+
 const $ = s => document.querySelector(s);
-const esc = s => (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-const LS = { theme:'nl_theme', refresh:'nl_refresh', chapters:'nl_chapters', fluxCache:'nl_flux_cache', fluxTime:'nl_flux_time', chapterState:'nl_chap_state' };
-const ls = { get:(k,f)=>{ try{ const v=localStorage.getItem(k); return v===null?f:JSON.parse(v);}catch(e){return f} }, set:(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}} };
+const fmtDate = iso => new Date(iso + 'T09:00:00+02:00').toLocaleDateString('fr-FR',
+  { weekday:'long', day:'numeric', month:'long', year:'numeric' });
 
-// ---------- Thème ----------
-function applyTheme(){
-  const t = STATE.theme==='auto' ? (matchMedia('(prefers-color-scheme: light)').matches?'light':'dark') : STATE.theme;
-  document.documentElement.dataset.theme = t;
-  $('#btnTheme').textContent = t==='dark' ? '🌙' : '☀️';
-}
-function cycleTheme(){ const order=['dark','light','auto']; STATE.theme = order[(order.indexOf(STATE.theme)+1)%3]; ls.set(LS.theme, STATE.theme); applyTheme(); toast('Apparence : '+({dark:'sombre',light:'clair',auto:'auto'}[STATE.theme])); }
+function getStore(k, d){ try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch(e){ return d; } }
+function setStore(k, v){ localStorage.setItem(k, JSON.stringify(v)); }
 
-// ---------- Édition du jour ----------
-async function loadEdition(){
-  const today = new Date().toISOString().slice(0,10);
-  const candidates = ['editions/'+today+'.json','editions/latest.json'];
-  for(const p of candidates){
-    try{ const r = await fetch(p,{cache:'no-store'}); if(!r.ok) continue; STATE.edition = await r.json(); STATE.edition._path=p; return; }catch(e){}
-  }
-  // fallback : cache
-  STATE.edition = ls.get('nl_edition_cache', null);
-  if(STATE.edition) STATE.edition._offline = true;
-}
-async function saveEditionCache(){ if(STATE.edition) ls.set('nl_edition_cache', STATE.edition); }
-
-// ---------- Flux chaud (RSS via proxy) ----------
-const FEEDS = [
-  'https://www.lemonde.fr/rss/une.xml',
-  'https://www.lemonde.fr/rss/international.xml',
-  'https://www.lemonde.fr/rss/sciences.xml',
-  'https://www.lemonde.fr/rss/culture.xml',
-  'https://feeds.leparisien.fr/leparisien/rss',
-  'https://www.francetvinfo.fr/titres.rss',
-  'https://www.huffingtonpost.fr/rss/index.xml',
-  'https://feeds.bbci.co.uk/news/world/rss.xml',
-  'https://feeds.bbci.co.uk/news/technology/rss.xml',
-  'https://www.techmeme.com/feed.xml'
-];
-async function fetchText(url, timeout=10000){
-  for(const px of PROXIES){
-    try{
-      const c = new AbortController(); const t = setTimeout(()=>c.abort(), timeout);
-      const r = await fetch(px(url), {signal:c.signal});
+async function fetchWithFallback(url, timeout = 10000) {
+  for (const p of PROXIES) {
+    try {
+      const ctl = new AbortController();
+      const t = setTimeout(() => ctl.abort(), timeout);
+      const r = await fetch(p(url), { signal: ctl.signal });
       clearTimeout(t);
-      if(!r.ok) continue;
-      const txt = await r.text();
-      if(txt && txt.length>50) return {txt, via:'proxy'};
-    }catch(e){}
+      if (r.ok) return await r.text();
+    } catch (e) { /* proxy suivant */ }
   }
   return null;
 }
-function parseFeed(xml, source){
-  const doc = new DOMParser().parseFromString(xml,'text/xml');
-  const items = [...doc.querySelectorAll('item'), ...doc.querySelectorAll('entry')];
-  return items.map(it=>{
-    const g = t => (it.querySelector(t)?.textContent||'').trim();
-    let link = g('link') || it.querySelector('link')?.getAttribute('href') || '';
-    const dt = g('pubDate') || g('updated') || g('published') || g('dc\\:date') || '';
-    return { title: g('title'), link, summary: (g('description')||g('summary')||'').replace(/<[^>]*>/g,'').slice(0,240), date: dt?new Date(dt):null, source };
-  }).filter(a=>a.title);
+
+function parseFeed(xmlText) {
+  try {
+    const doc = new DOMParser().parseFromString(xmlText, 'text/xml');
+    if (doc.querySelector('parsererror')) return [];
+    const items = [...doc.querySelectorAll('item')].length
+      ? [...doc.querySelectorAll('item')]
+      : [...doc.querySelectorAll('entry')];
+    return items.slice(0, 30).map(it => ({
+      titre: it.querySelector('title')?.textContent?.trim() ?? '',
+      lien: it.querySelector('link')?.textContent?.trim() || it.querySelector('link')?.getAttribute('href') || '',
+      date: new Date(it.querySelector('pubDate, published, updated')?.textContent ?? Date.now()),
+      extrait: (it.querySelector('description, summary, content')?.textContent ?? '')
+        .replace(/<[^>]*>/g, '').trim().slice(0, 220)
+    })).filter(a => a.titre && a.date);
+  } catch (e) { return []; }
 }
-function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').replace(/\\s+/g,' ').trim(); }
-function jaccard(a,b){ const A=new Set(a.split(' ').filter(w=>w.length>2)), B=new Set(b.split(' ').filter(w=>w.length>2)); let inter=0; A.forEach(w=>{if(B.has(w))inter++}); return inter/Math.max(1,Math.sqrt(A.size*B.size)); }
-function classify(articles, chapters){
-  const out = {}; chapters.forEach(c=>out[c.id]=[]);
-  const seen = [];
-  for(const a of articles){
-    const hay = norm(a.title+' '+a.summary);
-    // déduplication
-    if(seen.some(s=>jaccard(s,hay)>=0.7)) continue;
-    seen.push(hay);
-    let best=null, bestScore=0, second=null, secondScore=0;
-    for(const c of chapters){
-      let score=0;
-      c.include.forEach(k=>{ if(hay.includes(norm(k))) score+=2; });
-      c.exclude.forEach(k=>{ if(hay.includes(norm(k))) score-=4; });
-      if(score>bestScore){ second=best; secondScore=bestScore; best=c; bestScore=score; } else if(score>secondScore){ second=c; secondScore=score; }
+
+const norm = s => (s ?? '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+function scoreArticle(a, ch) {
+  const t = norm(a.titre + ' ' + a.extrait);
+  if ((ch.motsCles || []).includes('*')) return 1;
+  let s = 0;
+  for (const m of ch.motsCles || []) if (t.includes(norm(m))) s++;
+  for (const m of ch.exclusion || []) if (t.includes(norm(m))) return 0;
+  return s;
+}
+function jaccard(a, b) {
+  const A = new Set(norm(a).split(/[^a-z0-9]+/).filter(w => w.length > 2));
+  const B = new Set(norm(b).split(/[^a-z0-9]+/).filter(w => w.length > 2));
+  let inter = 0; for (const w of A) if (B.has(w)) inter++;
+  return inter / (A.size + B.size - inter || 1);
+}
+
+async function refreshFeed() {
+  const visible = chaptersCfg.filter(c => !c.masque);
+  const all = [];
+  for (const ch of visible) {
+    for (const url of ch.flux) {
+      const txt = await fetchWithFallback(url);
+      if (!txt) continue;
+      for (const a of parseFeed(txt)) {
+        const fenetre = (ch.fenetreHeures ?? 24) * 3600e3;
+        if (Date.now() - a.date.getTime() > fenetre) continue;
+        if (scoreArticle(a, ch) < 1) continue;
+        if (all.some(x => jaccard(x.titre, a.titre) >= 0.7)) continue;
+        all.push({ ...a, chapitreId: ch.id, chapitreNom: ch.nom });
+      }
     }
-    if(best && bestScore>0){ out[best.id].push({...a, score:bestScore}); if(second && secondScore>0) out[second.id].push({...a, score:secondScore}); }
   }
-  Object.keys(out).forEach(k=>{
-    out[k].sort((x,y)=> (y.date?.getTime?y.date.getTime():0)-(x.date?.getTime?x.date.getTime():0) || y.score-x.score);
-  });
-  return out;
-}
-async function refreshFlux(){
-  const results = await Promise.all(FEEDS.map(async f=>{
-    const r = await fetchText(f);
-    return r ? parseFeed(r.txt, f) : [];
-  }));
-  const all = results.flat().filter(a=>{
-    if(!a.date) return true;
-    return (Date.now()-a.date.getTime()) < 24*3600*1000;
-  });
-  STATE.flux = classify(all, STATE.chapters);
-  STATE.lastRefresh = new Date();
-  ls.set(LS.fluxCache, {flux:STATE.flux, time:STATE.lastRefresh.toISOString(), articles:all.length});
-  ls.set(LS.fluxTime, STATE.lastRefresh.toISOString());
-  $('#offline').style.display='none';
-}
-function restoreFlux(){
-  const c = ls.get(LS.fluxCache, null);
-  if(c){ STATE.flux=c.flux; STATE.lastRefresh=new Date(c.time); return true; }
-  return false;
+  all.sort((a, b) => b.date - a.date);
+  feedCache = { time: Date.now(), articles: all.slice(0, 200) };
+  setStore('feedCache', feedCache);
+  return feedCache;
 }
 
-// ---------- Chapitres (config utilisateur) ----------
-async function loadChapters(){
-  let remote=null;
-  try{ const r = await fetch('chapters.json',{cache:'no-store'}); if(r.ok) remote = await r.json(); }catch(e){}
-  const def = remote?.chapters || [];
-  const userState = ls.get(LS.chapterState, null);
-  if(userState){
-    STATE.chapters = def.map(d=>{ const u=userState.find(x=>x.id===d.id); return u ? {...d,...u,include:d.include,exclude:d.exclude,feeds:d.feeds} : d; })
-      .concat([]);
-    // garder l'ordre utilisateur
-    const order = userState.map(u=>u.id);
-    STATE.chapters.sort((a,b)=> (order.indexOf(a.id)+1||99) - (order.indexOf(b.id)+1||99));
-  } else STATE.chapters = def;
+function renderTabs() {
+  const tabs = [{ id:'edition', nom:'Édition du jour', emoji:'📬' },
+    ...chaptersCfg.filter(c => !c.masque).map(c => ({ id:c.id, nom:c.nom, emoji:c.emoji }))];
+  $('#tabs').innerHTML = tabs.map(t =>
+    '<button class="tab' + (t.id === activeTab ? ' active' : '') + '" data-id="' + t.id + '">' +
+    t.emoji + ' ' + t.nom + '</button>').join('');
+  [...document.querySelectorAll('.tab')].forEach(b =>
+    b.onclick = () => { activeTab = b.dataset.id; renderTabs(); renderView(); window.scrollTo(0,0); });
 }
 
-// ---------- Rendu ----------
-function render(){
-  const app = $('#app'); const tb = $('#tabbar');
-  const visible = STATE.chapters.filter(c=>c.visible);
-  // Onglets
-  tb.innerHTML = '<button class="tab'+(STATE.view==='edition'?' active':'')+'" data-v="edition">📬<span class="k">Édition du jour</span></button>' +
-    visible.map(c=>'<button class="tab'+(STATE.view==='chapter'&&STATE.chapter===c.id?' active':'')+'" data-v="'+c.id+'">'+c.emoji+'<span class="k">'+esc(c.nom)+'</span></button>').join('');
-  tb.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{
-    const v=b.dataset.v; if(v==='edition'){STATE.view='edition'}else{STATE.view='chapter';STATE.chapter=v} render(); window.scrollTo(0,0);
-  });
-  $('#edDate').textContent = STATE.edition ? (STATE.edition._offline?'en cache':'du '+STATE.edition.date.split('-').reverse().join('/')) : '';
-  if(STATE.view==='edition') renderEdition(app); else renderChapter(app, STATE.chapter);
+function articleHtml(a) {
+  const age = Math.round((Date.now() - a.date.getTime()) / 3600e3);
+  return '<a class="article" href="' + (a.lien || '#') + '" target="_blank" rel="noopener">' +
+    '<h3>' + a.titre + '</h3><div class="meta">' + a.chapitreNom + ' · il y a ' +
+    (age < 1 ? 'moins d’1 h' : age + ' h') + '</div>' +
+    (a.extrait ? '<div class="excerpt">' + a.extrait + '</div>' : '') + '</a>';
 }
-function renderEdition(app){
-  const ed = STATE.edition;
-  if(!ed){ app.innerHTML = '<div class="empty">📭 Aucune édition trouvée.<br/><small>Le fichier editions/latest.json arrivera avec la première publication.</small></div>'; return; }
-  let h = '<section class="exec"><h2>🎯 L\'essentiel</h2><ul>' + ed.resume_executif.map(x=>'<li>'+esc(x)+'</li>').join('') + '</ul></section>';
-  const visible = new Set(STATE.chapters.filter(c=>c.visible).map(c=>c.id));
-  for(const ch of (ed.chapitres||[])){
-    if(!visible.has(ch.id)) continue;
-    const hot = STATE.flux[ch.id]||[];
-    h += '<section><div class="chapter-head"><span class="e">'+ch.emoji+'</span><h3>'+esc(ch.nom)+'</h3><small>'+ch.articles.length+' article(s)</small></div>';
-    h += '<p class="resume">'+esc(ch.resume)+'</p>';
-    h += '<ul class="arts">' + ch.articles.map(a=>'<li>'+articleLink(a)+'</li>').join('') + '</ul>';
-    if(hot.length) h += '<p style="text-align:right;margin:4px 0"><button class="btn" data-goto="'+ch.id+'">🔥 ' + hot.length + ' en direct →</button></p>';
-    h += '</section>';
+
+function renderView() {
+  const view = $('#view');
+  if (activeTab === 'edition') {
+    if (!edition) { view.innerHTML = '<div class="empty">Aucune édition disponible pour l’instant.</div>'; return; }
+    const chapterBlocks = edition.chapitres.map(c =>
+      '<div class="chapter-resume"><h2>' + c.emoji + ' ' + c.nom + '</h2><p>' + c.resume + '</p></div>'
+    ).join('');
+    view.innerHTML =
+      '<div class="summary-card"><h2>L’essentiel en 5 points — ' + fmtDate(edition.date) + '</h2><ol>' +
+      edition.resume_executif.map(p => '<li>' + p + '</li>').join('') + '</ol></div>' + chapterBlocks;
+    return;
   }
-  app.innerHTML = h;
-  app.querySelectorAll('[data-goto]').forEach(b=>b.onclick=()=>{STATE.view='chapter';STATE.chapter=b.dataset.goto;render();window.scrollTo(0,0)});
+  const arts = (feedCache.articles || []).filter(a => a.chapitreId === activeTab);
+  view.innerHTML = arts.length
+    ? arts.map(articleHtml).join('')
+    : '<div class="empty">Pas d’article récent dans ce chapitre — la veille continue. Réessayez après actualisation.</div>';
 }
-function articleLink(a){
-  const src = '<span class="s"><span class="src">'+esc(a.source)+'</span><span>édition du jour</span></span>';
-  return '<a href="'+(a.url||'#')+'"'+(a.url?' target="_blank" rel="noopener"':'')+'><span class="t">'+esc(a.titre)+'</span>'+src+'</a>';
-}
-function renderChapter(app, id){
-  const ch = STATE.chapters.find(c=>c.id===id); if(!ch){ app.innerHTML='<div class="empty">Chapitre introuvable</div>'; return; }
-  const edCh = (STATE.edition?.chapitres||[]).find(c=>c.id===id);
-  let h = '<section><div class="chapter-head"><span class="e">'+ch.emoji+'</span><h3>'+esc(ch.nom)+'</h3><small>'+(STATE.lastRefresh?'flux du '+STATE.lastRefresh.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'}):'')+'</small></div>';
-  if(edCh){ h += '<p class="resume">'+esc(edCh.resume)+'</p><ul class="arts">'+edCh.articles.map(a=>'<li>'+articleLink(a)+'</li>').join('')+'</ul>'; }
-  const hot = STATE.flux[id]||[];
-  if(hot.length){
-    h += '<h3>🔥 En direct (24 h)</h3><ul class="arts">' + hot.slice(0,30).map(a=>{
-      const age = a.date? ilY a(a.date) : '';
-      return '<li><a href="'+a.link+'" target="_blank" rel="noopener"><span class="t">'+esc(a.title)+'</span><span class="s"><span class="src">'+esc(host(a.source))+'</span><span>'+age+'</span></span></a></li>';
-    }).join('') + '</ul>';
-  } else if(!edCh){
-    h += '<div class="empty">Aucun article en direct pour le moment.<br/><small>Le flux se rafraîchit automatiquement.</small></div>';
-  }
-  h += '</section>';
-  app.innerHTML = h;
-}
-function host(u){ try{ return new URL(u).hostname.replace(/^www\\./,'') }catch(e){ return u.slice(0,30) } }
-function ilY a(d){ const mn = Math.round((Date.now()-d.getTime())/60000); if(mn<60) return 'il y a '+mn+' min'; const h=Math.round(mn/60); if(h<24) return 'il y a '+h+' h'; return 'hier'; }
-function toast(msg){ const t=$('#toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2200); }
 
-// ---------- Réglages / chapitres ----------
-function openSettings(){
-  $('#setTheme').value = STATE.theme;
-  $('#setRefresh').value = String(STATE.refreshMin);
-  $('#dlgSettings').showModal();
+function renderChaptersEditor() {
+  $('#chapters-editor').innerHTML = chaptersCfg.map((c, i) =>
+    '<li><span>' + c.emoji + '</span><span class="name">' + c.nom + '</span>' +
+    '<label style="margin:0"><input type="checkbox" data-i="' + i + '"' + (c.masque ? '' : ' checked') + '> visible</label></li>'
+  ).join('');
+  [...document.querySelectorAll('#chapters-editor input')].forEach(cb =>
+    cb.onchange = () => {
+      chaptersCfg[cb.dataset.i].masque = !cb.checked;
+      setStore('chapters', chaptersCfg); renderTabs(); renderView();
+    });
 }
-function openChapters(){
-  const list = $('#chapList');
-  list.innerHTML = STATE.chapters.map((c,i)=>'<li data-i="'+i+'"><span class="grip" draggable="true">⠿</span><span class="nm">'+c.emoji+' '+esc(c.nom)+'<small>'+c.include.length+' mots-clés</small></span><span class="switch"><input type="checkbox" '+(c.visible?'checked':'')+' data-id="'+c.id+'"/><span class="tr"></span></span></li>').join('');
-  $('#dlgChapters').showModal();
-}
-function saveChapState(){ ls.set(LS.chapterState, STATE.chapters.map(c=>({id:c.id, visible:c.visible})).map((x,i)=>({...x, order:i}))); }
 
-// ---------- Init ----------
-async function init(){
-  STATE.theme = ls.get(LS.theme,'dark'); STATE.refreshMin = parseInt(ls.get(LS.refresh,'15'));
-  applyTheme();
-  await loadChapters();
-  const cached = restoreFlux();
-  await loadEdition(); await saveEditionCache();
-  if(cached){ $('#offline').style.display='block'; $('#offlineTime').textContent = STATE.lastRefresh?.toLocaleString('fr-FR')||''; }
-  render();
-  // rafraîchissement arrière-plan
-  refreshFlux().then(()=>{ render(); }).catch(()=>{});
-  if(STATE.refreshMin>0){ setInterval(async()=>{ if(document.visibilityState==='visible'){ await refreshFlux(); render(); } }, STATE.refreshMin*60000); }
-  document.addEventListener('visibilitychange', ()=>{ if(document.visibilityState==='visible' && STATE.lastRefresh && Date.now()-STATE.lastRefresh.getTime()>10*60000){ refreshFlux().then(render); } });
+async function init() {
+  // Thème
+  const theme = getStore('theme', 'dark');
+  const applyTheme = t => document.documentElement.dataset.theme =
+    t === 'auto' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : t;
+  applyTheme(theme);
+  $('#sel-theme').value = theme;
+  $('#sel-theme').onchange = e => { setStore('theme', e.target.value); applyTheme(e.target.value); };
+
+  // Chapitres
+  const def = await (await fetch('chapters.json')).json();
+  chaptersCfg = getStore('chapters', def);
+  renderTabs(); renderChaptersEditor();
+  $('#btn-reset-chapters').onclick = () => { setStore('chapters', def); chaptersCfg = def; renderTabs(); renderChaptersEditor(); };
+  $('#btn-purge').onclick = () => { localStorage.removeItem('feedCache'); feedCache = {}; renderView(); };
+
+  // Édition du jour
+  try {
+    const idx = await (await fetch('editions/latest.json', { cache:'no-store' })).json();
+    edition = await (await fetch(idx.editions[0].fichier, { cache:'no-store' })).json();
+    $('#edition-date').textContent = '· ' + fmtDate(edition.date);
+  } catch (e) { edition = null; }
+  renderView();
+
+  // Flux chaud : cache instantané puis rafraîchissement
+  feedCache = getStore('feedCache', { time: 0, articles: [] });
+  renderView();
+  const stale = Date.now() - feedCache.time > 24 * 3600e3 || !feedCache.articles.length;
+  $('#stale-banner').hidden = !stale || feedCache.articles.length > 0;
+  if (stale) $('#stale-banner').textContent = 'Flux chaud en cours de récupération…';
+  await refreshFeed();
+  $('#stale-banner').hidden = true;
+  if (activeTab !== 'edition') renderView();
+
+  setInterval(() => { if (document.visibilityState === 'visible') refreshFeed().then(renderView); }, 15 * 60 * 1000);
+  $('#btn-refresh').onclick = async () => { await refreshFeed(); renderView(); };
+
+  // Réglages
+  $('#btn-settings').onclick = () => { $('#settings-panel').hidden = false; };
+  $('#btn-close-settings').onclick = () => { $('#settings-panel').hidden = true; };
+  $('#btn-install-hint').onclick = () => alert('Sur iPhone : bouton Partager ⬆️ en bas de Safari, puis « Sur l’écran d’accueil ». L’app s’ouvrira plein écran, comme une vraie app.');
+
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
 }
-// wiring
-$('#btnRefresh').onclick = async ()=>{ toast('Rafraîchissement…'); await Promise.allSettled([loadEdition(), refreshFlux()]); render(); toast('À jour ✅'); };
-$('#btnTheme').onclick = cycleTheme;
-$('#btnSettings').onclick = openSettings;
-$('#btnChapters').onclick = openChapters;
-$('#btnCloseSettings').onclick = ()=>$('#dlgSettings').close();
-$('#btnCloseChap').onclick = ()=>{ $('#dlgChapters').close(); render(); };
-$('#btnResetChap').onclick = ()=>{ localStorage.removeItem(LS.chapterState); toast('Chapitres réinitialisés'); $('#dlgChapters').close(); init().then(render); };
-$('#btnPurge').onclick = ()=>{ [LS.fluxCache,LS.fluxTime].forEach(k=>localStorage.removeItem(k)); toast('Cache purgé 🧹'); };
-$('#setTheme').onchange = e=>{ STATE.theme=e.target.value; ls.set(LS.theme,STATE.theme); applyTheme(); };
-$('#setRefresh').onchange = e=>{ STATE.refreshMin=parseInt(e.target.value); ls.set(LS.refresh,STATE.refreshMin); toast('Enregistré'); };
-$('#chapList').addEventListener('change', e=>{ const id=e.target.dataset.id; if(!id) return; const c=STATE.chapters.find(x=>x.id===id); c.visible=e.target.checked; saveChapState(); });
-// drag & drop réordonnancement
-let dragEl=null;
-$('#chapList').addEventListener('dragstart', e=>{ dragEl = e.target.closest('li'); });
-$('#chapList').addEventListener('dragover', e=>{ e.preventDefault(); });
-$('#chapList').addEventListener('drop', e=>{ e.preventDefault(); const li = e.target.closest('li'); if(!li||!dragEl||li===dragEl) return; const from=+dragEl.dataset.i, to=+li.dataset.i; const [m]=STATE.chapters.splice(from,1); STATE.chapters.splice(to,0,m); saveChapState(); openChaptersRefresh(); });
-function openChaptersRefresh(){ openChapters(); }
-window.addEventListener('online', ()=>{ $('#offline').style.display='none'; });
-window.addEventListener('offline', ()=>{ $('#offline').style.display='block'; $('#offlineTime').textContent=STATE.lastRefresh?.toLocaleString('fr-FR')||''; });
-if('serviceWorker' in navigator){ navigator.serviceWorker.register('sw.js').catch(()=>{}); }
 init();
