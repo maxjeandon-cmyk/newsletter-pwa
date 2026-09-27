@@ -1,10 +1,9 @@
-/* Newsletter PWA — app.js */
+/* Newsletter PWA — app.js v2 */
 const PROXIES = [
   u => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u),
   u => 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(u)
 ];
-const DEFAULT_CHAPTERS = null; // chargé depuis chapters.json
-let chaptersCfg = null, edition = null, feedCache = {}, activeTab = 'edition';
+let chaptersCfg = null, edition = null, feedCache = { time: 0, articles: [] }, activeTab = 'edition';
 
 const $ = s => document.querySelector(s);
 const fmtDate = iso => new Date(iso + 'T09:00:00+02:00').toLocaleDateString('fr-FR',
@@ -20,7 +19,10 @@ async function fetchWithFallback(url, timeout = 10000) {
       const t = setTimeout(() => ctl.abort(), timeout);
       const r = await fetch(p(url), { signal: ctl.signal });
       clearTimeout(t);
-      if (r.ok) return await r.text();
+      if (r.ok) {
+        const txt = await r.text();
+        if (txt && txt.length > 50) return txt;
+      }
     } catch (e) { /* proxy suivant */ }
   }
   return null;
@@ -39,7 +41,7 @@ function parseFeed(xmlText) {
       date: new Date(it.querySelector('pubDate, published, updated')?.textContent ?? Date.now()),
       extrait: (it.querySelector('description, summary, content')?.textContent ?? '')
         .replace(/<[^>]*>/g, '').trim().slice(0, 220)
-    })).filter(a => a.titre && a.date);
+    })).filter(a => a.titre && !isNaN(a.date));
   } catch (e) { return []; }
 }
 
@@ -61,20 +63,21 @@ function jaccard(a, b) {
 
 async function refreshFeed() {
   const visible = chaptersCfg.filter(c => !c.masque);
+  const jobs = [];
+  for (const ch of visible) for (const url of ch.flux) jobs.push({ ch, url });
+  const results = await Promise.allSettled(jobs.map(j => fetchWithFallback(j.url)));
   const all = [];
-  for (const ch of visible) {
-    for (const url of ch.flux) {
-      const txt = await fetchWithFallback(url);
-      if (!txt) continue;
-      for (const a of parseFeed(txt)) {
-        const fenetre = (ch.fenetreHeures ?? 24) * 3600e3;
-        if (Date.now() - a.date.getTime() > fenetre) continue;
-        if (scoreArticle(a, ch) < 1) continue;
-        if (all.some(x => jaccard(x.titre, a.titre) >= 0.7)) continue;
-        all.push({ ...a, chapitreId: ch.id, chapitreNom: ch.nom });
-      }
+  results.forEach((r, i) => {
+    if (r.status !== 'fulfilled' || !r.value) return;
+    const ch = jobs[i].ch;
+    for (const a of parseFeed(r.value)) {
+      const fenetre = (ch.fenetreHeures ?? 24) * 3600e3;
+      if (Date.now() - a.date.getTime() > fenetre) continue;
+      if (scoreArticle(a, ch) < 1) continue;
+      if (all.some(x => jaccard(x.titre, a.titre) >= 0.7)) continue;
+      all.push({ ...a, chapitreId: ch.id, chapitreNom: ch.nom });
     }
-  }
+  });
   all.sort((a, b) => b.date - a.date);
   feedCache = { time: Date.now(), articles: all.slice(0, 200) };
   setStore('feedCache', feedCache);
@@ -92,29 +95,29 @@ function renderTabs() {
 }
 
 function articleHtml(a) {
-  const age = Math.round((Date.now() - a.date.getTime()) / 3600e3);
+  const age = Math.max(0, Math.round((Date.now() - a.date.getTime()) / 3600e3));
   return '<a class="article" href="' + (a.lien || '#') + '" target="_blank" rel="noopener">' +
     '<h3>' + a.titre + '</h3><div class="meta">' + a.chapitreNom + ' · il y a ' +
-    (age < 1 ? 'moins d’1 h' : age + ' h') + '</div>' +
+    (age < 1 ? 'moins d\u20191 h' : age + ' h') + '</div>' +
     (a.extrait ? '<div class="excerpt">' + a.extrait + '</div>' : '') + '</a>';
 }
 
 function renderView() {
   const view = $('#view');
   if (activeTab === 'edition') {
-    if (!edition) { view.innerHTML = '<div class="empty">Aucune édition disponible pour l’instant.</div>'; return; }
+    if (!edition) { view.innerHTML = '<div class="empty">Aucune édition disponible pour l\u2019instant.</div>'; return; }
     const chapterBlocks = edition.chapitres.map(c =>
       '<div class="chapter-resume"><h2>' + c.emoji + ' ' + c.nom + '</h2><p>' + c.resume + '</p></div>'
     ).join('');
     view.innerHTML =
-      '<div class="summary-card"><h2>L’essentiel en 5 points — ' + fmtDate(edition.date) + '</h2><ol>' +
+      '<div class="summary-card"><h2>L\u2019essentiel en 5 points — ' + fmtDate(edition.date) + '</h2><ol>' +
       edition.resume_executif.map(p => '<li>' + p + '</li>').join('') + '</ol></div>' + chapterBlocks;
     return;
   }
   const arts = (feedCache.articles || []).filter(a => a.chapitreId === activeTab);
   view.innerHTML = arts.length
     ? arts.map(articleHtml).join('')
-    : '<div class="empty">Pas d’article récent dans ce chapitre — la veille continue. Réessayez après actualisation.</div>';
+    : '<div class="empty">Pas d\u2019article récent dans ce chapitre — la veille continue. Réessayez après actualisation.</div>';
 }
 
 function renderChaptersEditor() {
@@ -129,48 +132,63 @@ function renderChaptersEditor() {
     });
 }
 
-async function init() {
-  // Thème
-  const theme = getStore('theme', 'dark');
-  const applyTheme = t => document.documentElement.dataset.theme =
+function applyTheme(t) {
+  document.documentElement.dataset.theme =
     t === 'auto' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : t;
-  applyTheme(theme);
-  $('#sel-theme').value = theme;
-  $('#sel-theme').onchange = e => { setStore('theme', e.target.value); applyTheme(e.target.value); };
+}
 
-  // Chapitres
-  const def = await (await fetch('chapters.json')).json();
-  chaptersCfg = getStore('chapters', def);
-  renderTabs(); renderChaptersEditor();
-  $('#btn-reset-chapters').onclick = () => { setStore('chapters', def); chaptersCfg = def; renderTabs(); renderChaptersEditor(); };
-  $('#btn-purge').onclick = () => { localStorage.removeItem('feedCache'); feedCache = {}; renderView(); };
-
-  // Édition du jour
+async function loadEdition() {
   try {
     const idx = await (await fetch('editions/latest.json', { cache:'no-store' })).json();
     edition = await (await fetch(idx.editions[0].fichier, { cache:'no-store' })).json();
     $('#edition-date').textContent = '· ' + fmtDate(edition.date);
   } catch (e) { edition = null; }
-  renderView();
+}
 
-  // Flux chaud : cache instantané puis rafraîchissement
-  feedCache = getStore('feedCache', { time: 0, articles: [] });
-  renderView();
-  const stale = Date.now() - feedCache.time > 24 * 3600e3 || !feedCache.articles.length;
-  $('#stale-banner').hidden = !stale || feedCache.articles.length > 0;
-  if (stale) $('#stale-banner').textContent = 'Flux chaud en cours de récupération…';
-  await refreshFeed();
-  $('#stale-banner').hidden = true;
-  if (activeTab !== 'edition') renderView();
+async function init() {
+  // ===== 1. Toujours brancher l'interface AVANT tout réseau =====
+  const theme = getStore('theme', 'dark');
+  applyTheme(theme);
+  $('#sel-theme').value = theme;
+  $('#sel-theme').onchange = e => { setStore('theme', e.target.value); applyTheme(e.target.value); };
 
-  setInterval(() => { if (document.visibilityState === 'visible') refreshFeed().then(renderView); }, 15 * 60 * 1000);
-  $('#btn-refresh').onclick = async () => { await refreshFeed(); renderView(); };
-
-  // Réglages
-  $('#btn-settings').onclick = () => { $('#settings-panel').hidden = false; };
-  $('#btn-close-settings').onclick = () => { $('#settings-panel').hidden = true; };
-  $('#btn-install-hint').onclick = () => alert('Sur iPhone : bouton Partager ⬆️ en bas de Safari, puis « Sur l’écran d’accueil ». L’app s’ouvrira plein écran, comme une vraie app.');
+  $('#btn-refresh').onclick = async () => {
+    $('#stale-banner').hidden = false;
+    $('#stale-banner').textContent = 'Actualisation en cours…';
+    await refreshFeed();
+    $('#stale-banner').hidden = true;
+    renderView();
+  };
+  $('#btn-settings').onclick = () => { $('#settings-panel').classList.add('open'); };
+  $('#btn-close-settings').onclick = () => { $('#settings-panel').classList.remove('open'); };
+  $('#settings-panel').onclick = e => { if (e.target.id === 'settings-panel') $('#settings-panel').classList.remove('open'); };
+  $('#btn-install-hint').onclick = () => alert('Sur iPhone : bouton Partager ⬆️ en bas de Safari, puis « Sur l\u2019écran d\u2019accueil ». L\u2019app s\u2019ouvrira plein écran, comme une vraie app.');
+  $('#btn-purge').onclick = () => { localStorage.removeItem('feedCache'); feedCache = { time: 0, articles: [] }; renderView(); };
 
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+
+  // ===== 2. Données : cache instantané, puis réseau en fond =====
+  feedCache = getStore('feedCache', { time: 0, articles: [] });
+  renderView();
+
+  const def = await (await fetch('chapters.json')).json();
+  chaptersCfg = getStore('chapters', def);
+  $('#btn-reset-chapters').onclick = () => { setStore('chapters', def); chaptersCfg = def; renderTabs(); renderChaptersEditor(); };
+  renderTabs(); renderChaptersEditor();
+  renderView();
+
+  loadEdition().then(renderView);
+
+  // Rafraîchissement du flux en arrière-plan, sans bloquer l'UI
+  $('#stale-banner').hidden = false;
+  $('#stale-banner').textContent = 'Flux chaud en cours de récupération…';
+  refreshFeed().then(() => {
+    $('#stale-banner').hidden = true;
+    renderView();
+  }).catch(() => { $('#stale-banner').hidden = true; });
+
+  setInterval(() => {
+    if (document.visibilityState === 'visible') refreshFeed().then(renderView).catch(()=>{});
+  }, 15 * 60 * 1000);
 }
 init();

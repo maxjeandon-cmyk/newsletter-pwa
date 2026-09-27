@@ -1,4 +1,4 @@
-const CACHE = 'newsletter-v1';
+const CACHE = 'newsletter-v2';
 const ASSETS = ['./', './index.html', './styles.css', './app.js', './manifest.webmanifest', './chapters.json'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
