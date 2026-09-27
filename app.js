@@ -1,4 +1,4 @@
-/* Newsletter PWA — app.js v3 */
+/* Newsletter PWA — app.js v6 */
 const PROXIES = [
   u => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u),
   u => 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(u)
@@ -8,12 +8,12 @@ let archiveIdx = null, archiveSel = null;
 
 const $ = s => document.querySelector(s);
 const fmtDate = iso => new Date(iso + 'T09:00:00+02:00').toLocaleDateString('fr-FR',
-  { weekday:'long', day:'numeric', month:'long', year:'numeric' });
+  { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
 const fmtDateHour = iso => new Date(iso).toLocaleString('fr-FR',
-  { weekday:'long', day:'numeric', month:'long', hour:'2-digit', minute:'2-digit' });
+  { weekday: 'long', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' });
 
-function getStore(k, d){ try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch(e){ return d; } }
-function setStore(k, v){ localStorage.setItem(k, JSON.stringify(v)); }
+function getStore(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch (e) { return d; } }
+function setStore(k, v) { localStorage.setItem(k, JSON.stringify(v)); }
 
 async function fetchWithFallback(url, timeout = 10000) {
   for (const p of PROXIES) {
@@ -42,10 +42,8 @@ function parseFeed(xmlText) {
       titre: it.querySelector('title')?.textContent?.trim() ?? '',
       lien: it.querySelector('link')?.textContent?.trim() || it.querySelector('link')?.getAttribute('href') || '',
       date: new Date(it.querySelector('pubDate, published, updated')?.textContent ?? Date.now()),
-      extrait: (it.querySelector('description, su
-mmary, content')?.textContent ?? '')
-     
-   .replace(/<[^>]*>/g, '').trim().slice(0, 220)
+      extrait: (it.querySelector('description, summary, content')?.textContent ?? '')
+        .replace(/<[^>]*>/g, '').trim().slice(0, 220)
     })).filter(a => a.titre && !isNaN(a.date));
   } catch (e) { return []; }
 }
@@ -95,34 +93,31 @@ function generationTime() {
 
 function renderTabs() {
   const tabs = [
-    { id:'edition', nom:'Édition du jour', emoji:'📬' },
-    { id:'sources'
-, nom:'Sources', emoji:'📚' },
-    { id:'archives', nom:'Archives', emoji:'🗄️' }
-    ...chapte
-rsCfg.filter(c => !c.masque).map(c => ({ id:c.id, nom:c.nom, emoji:c.emoji }))
+    { id: 'edition', nom: 'Édition du jour', emoji: '📬' },
+    { id: 'sources', nom: 'Sources', emoji: '📚' },
+    { id: 'archives', nom: 'Archives', emoji: '🗄️' },
+    ...chaptersCfg.filter(c => !c.masque).map(c => ({ id: c.id, nom: c.nom, emoji: c.emoji }))
   ];
   $('#tabs').innerHTML = tabs.map(t =>
     '<button class="tab' + (t.id === activeTab ? ' active' : '') + '" data-id="' + t.id + '">' +
     t.emoji + ' ' + t.nom + '</button>').join('');
   [...document.querySelectorAll('.tab')].forEach(b =>
-    b.onclick = () => { activeTab = b.dataset.id; renderTabs(); renderView(); window.scrollTo(0,0); });
+    b.onclick = () => { activeTab = b.dataset.id; renderTabs(); renderView(); window.scrollTo(0, 0); });
 }
 
 function articleHtml(a) {
   const age = Math.max(0, Math.round((Date.now() - a.date.getTime()) / 3600e3));
   return '<a class="article" href="' + (a.lien || '#') + '" target="_blank" rel="noopener">' +
     '<h3>' + a.titre + '</h3><div class="meta">' + a.chapitreNom + ' · il y a ' +
-    (age < 1 ? 'moins d\u20191 h' : age + ' h') + '</div>' +
+    (age < 1 ? 'moins d’1 h' : age + ' h') + '</div>' +
     (a.extrait ? '<div class="excerpt">' + a.extrait + '</div>' : '') + '</a>';
 }
 
 function renderView() {
   const view = $('#view');
 
-  // --- Édition complète ---
   if (activeTab === 'edition') {
-    if (!edition) { view.innerHTML = '<div class="empty">Aucune édition disponible pour l\u2019instant.</div>'; return; }
+    if (!edition) { view.innerHTML = '<div class="empty">Aucune édition disponible pour l’instant.</div>'; return; }
     view.innerHTML =
       '<div class="summary-card"><h2>Édition complète — ' + fmtDate(edition.date) + '</h2>' +
       '<ol>' + edition.resume_executif.map(p => '<li>' + p + '</li>').join('') + '</ol></div>' +
@@ -130,28 +125,24 @@ function renderView() {
     return;
   }
 
-  // --- Sources ---
   if (activeTab === 'sources') {
     if (!edition?.sources?.length) { view.innerHTML = '<div class="empty">Sources indisponibles.</div>'; return; }
     view.innerHTML =
-      '<div class="summary-card"><h2>📚 Toutes les sources de l\u2019édition — ' + fmtDate(edition.date) + '</h2>' +
+      '<div class="summary-card"><h2>📚 Toutes les sources de l’édition — ' + fmtDate(edition.date) + '</h2>' +
       '<p class="meta-count">' + edition.sources.length + ' sources · fiabilité sur 5</p></div>' +
-      '<table class="sources-table"><tr><th>Source</th><th>Fiabilité</t
-h><th>MàJ</th></tr>' +
+      '<table class="sources-table"><tr><th>Source</th><th>Fiabilité</th><th>MàJ</th></tr>' +
       edition.sources.map(s =>
-        '<tr><td>' + s.label + '<div cla
-ss="src-ref">' + s.ref + '</div></td>' +
+        '<tr><td>' + s.label + '<div class="src-ref">' + s.ref + '</div></td>' +
         '<td>' + s.fiabilite + '</td><td>' + s.maj + '</td></tr>').join('') +
       '</table>';
     return;
   }
 
-  // --- Archives : éditions des jours précédents ---
   if (activeTab === 'archives') {
-    if (!archiveIdx?.length) { view.innerHTML = '<div class="empty">Aucune archive disponible pour l\u2019instant — la première édition date d\u2019aujourd\u2019hui. Les jours passés s\u2019y accumuleront tout seuls. 🌱</div>'; return; }
+    if (!archiveIdx?.length) { view.innerHTML = '<div class="empty">Aucune archive disponible pour l’instant — la première édition date d’aujourd’hui. Les jours passés s’y accumuleront tout seuls. 🌱</div>'; return; }
     if (archiveSel) {
       view.innerHTML =
-        '<button class="back-btn" onclick="void(0)" id="btn-back-archives">← Retour aux archives</button>' +
+        '<button class="back-btn" id="btn-back-archives">← Retour aux archives</button>' +
         '<iframe class="edition-frame" src="' + archiveSel + '" title="Newsletter archivée"></iframe>';
       $('#btn-back-archives').onclick = () => { archiveSel = null; renderView(); window.scrollTo(0, 0); };
       return;
@@ -171,16 +162,14 @@ ss="src-ref">' + s.ref + '</div></td>' +
     return;
   }
 
-  // --- Chapitre : articles parus APRÈS la génération de l'édition ---
   const gen = generationTime();
   const ch = chaptersCfg.find(c => c.id === activeTab);
-  const arts = (feedCache.articles || []).filter(a => a
-.chapitreId === activeTab && a.date.getTime() > gen);
+  const arts = (feedCache.articles || []).filter(a => a.chapitreId === activeTab && a.date.getTime() > gen);
   view.innerHTML =
     '<div class="chapter-resume"><h2>' + (ch?.emoji ?? '') + ' ' + (ch?.nom ?? '') + '</h2>' +
-    '<p class="meta-count">Articles parus après la génération de l\u2019édition (' + fmtDateHour(edition?.genere_le ?? new Date().toISOString()) + '). L\u2019essentiel du chapitre est dans l\u2019Édition du jour.</p></div>' +
+    '<p class="meta-count">Articles parus après la génération de l’édition (' + fmtDateHour(edition?.genere_le ?? new Date().toISOString()) + '). L’essentiel du chapitre est dans l’Édition du jour.</p></div>' +
     (arts.length ? arts.map(articleHtml).join('')
-      : '<div class="empty">Rien de neuf depuis l\u2019édition de ce matin dans ce chapitre — c\u2019est plutôt bon signe. 🌙</div>');
+      : '<div class="empty">Rien de neuf depuis l’édition de ce matin dans ce chapitre — c’est plutôt bon signe. 🌙</div>');
 }
 
 function renderChaptersEditor() {
@@ -202,15 +191,14 @@ function applyTheme(t) {
 
 async function loadEdition() {
   try {
-    const idx = await (await fetch('editions/latest.json', { cache:'no-store' })).json();
+    const idx = await (await fetch('editions/latest.json', { cache: 'no-store' })).json();
     archiveIdx = idx.editions || [];
-    edition = await (await fetch(idx.editions[0].fichier, { cache:'no-store' })).json();
+    edition = await (await fetch(idx.editions[0].fichier, { cache: 'no-store' })).json();
     $('#edition-date').textContent = '· ' + fmtDate(edition.date);
   } catch (e) { edition = null; }
 }
 
-async fu
-nction init() {
+async function init() {
   // 1. Interface branchée AVANT tout réseau
   const theme = getStore('theme', 'dark');
   applyTheme(theme);
@@ -218,17 +206,16 @@ nction init() {
   $('#sel-theme').onchange = e => { setStore('theme', e.target.value); applyTheme(e.target.value); };
 
   $('#btn-refresh').onclick = async () => {
-    $('#stale-banner').hid
-den = false;
+    $('#stale-banner').hidden = false;
     $('#stale-banner').textContent = 'Actualisation en cours…';
     await refreshFeed();
     $('#stale-banner').hidden = true;
     renderView();
   };
-  $('#btn-settings').onclick = () => { $('#settings-panel').classList.add('open'); };
+  $('#btn-settings').onclick = () => { $('#settings-panel').removeAttribute('hidden'); $('#settings-panel').classList.add('open'); };
   $('#btn-close-settings').onclick = () => { $('#settings-panel').classList.remove('open'); };
   $('#settings-panel').onclick = e => { if (e.target.id === 'settings-panel') $('#settings-panel').classList.remove('open'); };
-  $('#btn-install-hint').onclick = () => alert('Sur iPhone : bouton Partager ⬆️ en bas de Safari, puis « Sur l\u2019écran d\u2019accueil ». L\u2019app s\u2019ouvrira plein écran, comme une vraie app.');
+  $('#btn-install-hint').onclick = () => alert('Sur iPhone : bouton Partager ⬆️ en bas de Safari, puis « Sur l’écran d’accueil ». L’app s’ouvrira plein écran, comme une vraie app.');
   $('#btn-purge').onclick = () => { localStorage.removeItem('feedCache'); feedCache = { time: 0, articles: [] }; renderView(); };
 
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
@@ -252,8 +239,7 @@ den = false;
     .catch(() => { $('#stale-banner').hidden = true; });
 
   setInterval(() => {
-    if (document.visibilitySt
-ate === 'visible') refreshFeed().then(renderView).catch(()=>{});
+    if (document.visibilityState === 'visible') refreshFeed().then(renderView).catch(() => {});
   }, 15 * 60 * 1000);
 }
 init();
