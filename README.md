@@ -1,29 +1,31 @@
-# Newsletter — PWA
+# 📬 Newsletter — PWA personnelle
 
-Page web personnelle : **édition du jour** (newsletter rédigée) + **flux chaud** (articles RSS des dernières 24 h, classés par chapitre). Dark mode par défaut, installable sur l'écran d'accueil de l'iPhone.
+Newsletter quotidienne : **édition du jour** (rédigée, publiée chaque matin) + **flux chaud** (RSS filtrés sur les dernières 24 h), en 9 chapitres, dark mode par défaut, installable sur iPhone (« Ajouter à l'écran d'accueil »).
 
-## Structure
+## Publier l'édition du jour
 
-- `index.html`, `app.js`, `styles.css` — la page
-- `sw.js`, `manifest.webmanifest`, `icon.svg` — PWA (offline + installation)
-- `chapters.json` — configuration des 9 chapitres (mots-clés, flux RSS)
-- `editions/<date>.json` + `editions/index.json` — l'édition du jour (mise à jour chaque matin, 9h)
+La tâche Vibe de 9h pousse automatiquement `editions/<YYYY-MM-DD>.json` (et met à jour `editions/latest.json`) dans ce dépôt. GitHub Pages se met à jour à chaque push.
 
-## Mise à jour quotidienne
+## Activer GitHub Pages (une seule fois)
 
-Une tâche automatisée pousse chaque matin `editions/<date>.json` et met à jour `editions/index.json` sur la branche `main`. GitHub Pages redéploie tout seul à chaque push.
+1. Ouvrir **Settings → Pages**
+2. Source : **Deploy from a branch**, branche `main`, dossier `/ (root)`
+3. Sauver — le site est sur `https://maxjeandon-cmyk.github.io/newsletter-pwa/`
 
-## Activer GitHub Pages
+## Installer sur iPhone
 
-Réglages du dépôt → **Pages** → Source : *Deploy from a branch* → branche `main`, dossier `/ (root)` → Save.
-L'adresse du site est alors `https://maxjeandon-cmyk.github.io/newsletter-pwa/`.
+Safari → Partager ⬆️ → « Sur l'écran d'accueil ». La PWA s'ouvre plein écran, sans barre de navigateur.
 
-## Installation sur iPhone
+## Limites connues (honnêteté)
 
-Ouvrir le site dans Safari → bouton **Partager** → **Sur l'écran d'accueil**. La Newsletter s'ouvre ensuite plein écran, sans barre de navigateur.
+- Le flux chaud passe par des proxys CORS publics (allorigins, rss2json) : parfois lents, d'où le cache local.
+- Pas de notifications push ni de widget d'écran d'accueil iOS : réservés aux apps natives. Le mail Gmail de 9h reste le réveil éditorial.
+- Le « temps réel » est un rafraîchissement périodique (réglable : 15/30 min).
 
-## Limites connues (honnêteté technique)
+## Fichiers
 
-- **Pas de widget d'écran d'accueil iOS** : réservé aux apps natives.
-- **Pas de notifications push** : le mail de 9h reste le réveil éditorial.
-- **Flux RSS via proxys CORS publics** (allorigins, rss2json) : parfois lents ou indisponibles — d'où le cache local de 15 minutes et le mode hors-ligne sur la dernière édition.
+- `index.html`, `app.js`, `styles` (inline) — l'app
+- `sw.js` — service worker (cache, hors-ligne)
+- `manifest.webmanifest` — PWA
+- `chapters.json` — chapitres, mots-clés, visibilité (modifiable aussi dans l'app)
+- `editions/` — une édition par jour + `latest.json`

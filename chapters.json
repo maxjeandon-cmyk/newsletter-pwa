@@ -1,234 +1,220 @@
 {
   "version": 1,
-  "chapitres": [
+  "chapters": [
     {
       "id": "politique-francaise",
       "emoji": "🇫🇷",
       "nom": "Politique française",
       "visible": true,
-      "inclure": [
+      "include": [
         "présidentielle",
-        "gouvernement",
         "assemblée",
         "sénat",
+        "gouvernement",
         "attal",
-        "budget",
-        "ministre",
+        "faure",
         "macron",
-        " RN ",
-        "républicain",
-        "parti",
-        "candidat",
-        "élection",
-        "sondage"
+        "rn",
+        "naissance",
+        "premier ministre",
+        "ministre",
+        "parlement",
+        "budget",
+        "impôt",
+        "loi",
+        "élysée"
       ],
-      "exclure": [],
-      "flux": [
-        "https://www.lemonde.fr/politique/rss_full.xml",
-        "https://www.francetvinfo.fr/politique.rss",
-        "https://www.liberation.fr/arc/outboundfeeds/rss-all/politique/"
-      ]
+      "exclude": [
+        "etats-unis",
+        "chine"
+      ],
+      "feeds": []
     },
     {
       "id": "intelligence-artificielle",
       "emoji": "🤖",
       "nom": "Intelligence artificielle",
       "visible": true,
-      "inclure": [
+      "include": [
+        "ia",
+        "intelligence artificielle",
         "openai",
         "anthropic",
+        "mistral",
         "chatgpt",
         "claude",
-        "mistral",
-        "hugging face",
-        "ia ",
-        " ai ",
-        "intelligence artificielle",
-        "llm",
-        "gpt",
         "gemini",
         "grok",
-        "copilot"
+        "llm",
+        "hugging face",
+        "modèle",
+        "algorithm"
       ],
-      "exclure": [],
-      "flux": [
-        "https://www.lemonde.fr/intelligence-artificielle/rss_full.xml",
-        "https://www.francetvinfo.fr/technologie.rss",
-        "https://feeds.a.dj.com/rss/RSSWorldNews.xml"
-      ]
+      "exclude": [],
+      "feeds": []
     },
     {
       "id": "geopolitique",
       "emoji": "🌍",
       "nom": "Géopolitique",
       "visible": true,
-      "inclure": [
+      "include": [
         "ukraine",
         "russie",
         "otan",
         "onu",
+        "gaza",
         "israël",
         "iran",
-        "gaza",
-        "chine",
-        "washington",
+        "ormuz",
+        "israel",
+        "palestin",
+        "guerre",
+        "diplomat",
+        "lavr",
         "poutine",
         "zelensky",
-        "sanction",
-        "diplomat",
-        "guerre",
-        "drone",
-        "missile",
-        "ormuz"
+        "houthis",
+        "yemen",
+        "kirghizstan"
       ],
-      "exclure": [],
-      "flux": [
-        "https://www.lemonde.fr/international/rss_full.xml",
-        "https://www.francetvinfo.fr/monde.rss",
-        "https://feeds.bbci.co.uk/news/world/rss.xml"
-      ]
+      "exclude": [],
+      "feeds": []
     },
     {
       "id": "climat",
       "emoji": "🌡️",
       "nom": "Climat",
       "visible": true,
-      "inclure": [
+      "include": [
         "climat",
-        "cop ",
         "réchauffement",
-        "carbone",
-        "gaz à effet",
+        "rechauffement",
+        "cop ",
+        "cop2",
         "charbon",
-        "pétrole",
+        "émission",
+        "emission",
         "glacier",
         "canicule",
         "inondation",
-        "énergie renouvelable",
-        "transition",
-        "émission"
+        "sécheresse",
+        "co2",
+        "fossile",
+        "renouvelable"
       ],
-      "exclure": [],
-      "flux": [
-        "https://www.lemonde.fr/climat/rss_full.xml",
-        "https://www.francetvinfo.fr/planete.rss"
-      ]
+      "exclude": [],
+      "feeds": []
     },
     {
       "id": "sciences",
       "emoji": "🔬",
       "nom": "Sciences",
       "visible": true,
-      "inclure": [
+      "include": [
+        "science",
         "recherche",
-        "étude",
-        "scientifique",
         "découverte",
-        "expérience",
-        "lancé",
-        "spatial",
+        "etude",
+        "étude",
+        "chercheur",
         "nasa",
-        "es",
-        " médecine",
-        "génétique",
+        "espace",
+        "satellite",
+        "médecine",
+        "medecine",
         "physique",
-        "chimie",
-        "espèce"
+        "biologie",
+        "archéolog",
+        "archeolog"
       ],
-      "exclure": [],
-      "flux": [
-        "https://www.lemonde.fr/sciences/rss_full.xml",
-        "https://www.francetvinfo.fr/sante.rss"
-      ]
+      "exclude": [],
+      "feeds": []
     },
     {
       "id": "etats-unis",
       "emoji": "🇺🇸",
       "nom": "États-Unis",
       "visible": true,
-      "inclure": [
+      "include": [
         "trump",
         "washington",
         "maison blanche",
         "congrès",
-        "sénat américain",
-        "midterm",
-        "républicain américain",
-        "démocrate",
+        "congres",
+        "sénat us",
+        "senat us",
         "suprême",
-        "usa",
-        " états-unis",
-        "californie",
-        "new york"
+        "supreme",
+        "midterm",
+        "républicain",
+        "republicain",
+        "démocrate",
+        "democrate",
+        "ice "
       ],
-      "exclure": [],
-      "flux": [
-        "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml",
-        "https://www.lemonde.fr/international/rss_full.xml"
-      ]
+      "exclude": [],
+      "feeds": []
     },
     {
       "id": "chine",
       "emoji": "🇨🇳",
       "nom": "Chine",
       "visible": true,
-      "inclure": [
+      "include": [
         "chine",
-        "pékin",
-        "xi jinping",
         "chinois",
+        "pékin",
+        "pekin",
+        "xi jinping",
+        "tarifs",
         "taïwan",
+        "taiwan",
         "shanghai",
-        "parti communiste chinois"
+        "panda"
       ],
-      "exclure": [],
-      "flux": [
-        "https://feeds.bbci.co.uk/news/world/asia/rss.xml",
-        "https://www.lemonde.fr/international/rss_full.xml"
-      ]
+      "exclude": [],
+      "feeds": []
     },
     {
       "id": "jeu-video-pop-culture",
       "emoji": "🎮",
       "nom": "Jeu vidéo & pop culture",
       "visible": true,
-      "inclure": [
+      "include": [
         "jeu vidéo",
+        "jeu video",
+        "gaming",
+        "esport",
         "playstation",
         "xbox",
         "nintendo",
         "steam",
-        "esport",
-        "netflix",
         "cinéma",
+        "cinema",
         "film",
-        "série tv",
-        "disney",
-        "marvel",
+        "série",
+        "serie netflix",
         "musique",
-        "album",
         "festival",
-        "box-office"
+        "césar",
+        "oscar"
       ],
-      "exclure": [],
-      "flux": [
-        "https://www.francetvinfo.fr/culture.rss",
-        "https://www.gamekult.com/feed.xml"
-      ]
+      "exclude": [],
+      "feeds": []
     },
     {
       "id": "grande-info-semaine",
       "emoji": "📰",
-      "nom": "Info de la semaine",
+      "nom": "Grande info de la semaine",
       "visible": true,
-      "inclure": [
-        "*"
+      "include": [
+        "semaine",
+        "résumé",
+        "retour sur"
       ],
-      "exclure": [],
-      "flux": [
-        "https://www.lemonde.fr/rss/une.xml",
-        "https://www.francetvinfo.fr/tous-les-articles.rss"
-      ]
+      "exclude": [],
+      "feeds": []
     }
   ]
 }

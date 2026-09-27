@@ -1,249 +1,233 @@
-/* Newsletter PWA — app.js */
-const CLES = { theme: "nl-theme", chapitres: "nl-chapitres", cacheFlux: "nl-flux", cacheEdition: "nl-edition" };
-const $ = (s) => document.querySelector(s);
-const PROXYS = [
-  (url) => "https://api.allorigins.win/raw?url=" + encodeURIComponent(url),
-  (url) => "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(url),
+'use strict';
+// ===== Newsletter PWA — Édition du jour + Flux chaud =====
+const PROXIES = [
+  u => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u),
+  u => 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(u)
 ];
-let CONFIG = null;
-let EDITION = null;
-let ONGLET = "edition";
+const STATE = { edition:null, flux:{}, chapters:[], theme:'dark', refreshMin:15, lastRefresh:null, view:'edition', chapter:null };
+const $ = s => document.querySelector(s);
+const esc = s => (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const LS = { theme:'nl_theme', refresh:'nl_refresh', chapters:'nl_chapters', fluxCache:'nl_flux_cache', fluxTime:'nl_flux_time', chapterState:'nl_chap_state' };
+const ls = { get:(k,f)=>{ try{ const v=localStorage.getItem(k); return v===null?f:JSON.parse(v);}catch(e){return f} }, set:(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}} };
 
-function toast(msg) {
-  const t = $("#toast"); t.textContent = msg; t.hidden = false;
-  setTimeout(() => { t.hidden = true; }, 2500);
+// ---------- Thème ----------
+function applyTheme(){
+  const t = STATE.theme==='auto' ? (matchMedia('(prefers-color-scheme: light)').matches?'light':'dark') : STATE.theme;
+  document.documentElement.dataset.theme = t;
+  $('#btnTheme').textContent = t==='dark' ? '🌙' : '☀️';
 }
-function sauverConfig() {
-  localStorage.setItem(CLES.chapitres, JSON.stringify(CONFIG.chapitres));
-}
-async function chargerConfig() {
-  const defaut = await (await fetch("chapters.json")).json();
-  let chapitres = defaut.chapitres;
-  const stocke = localStorage.getItem(CLES.chapitres);
-  if (stocke) {
-    try { chapitres = JSON.parse(stocke); } catch (e) { /* défaut */ }
+function cycleTheme(){ const order=['dark','light','auto']; STATE.theme = order[(order.indexOf(STATE.theme)+1)%3]; ls.set(LS.theme, STATE.theme); applyTheme(); toast('Apparence : '+({dark:'sombre',light:'clair',auto:'auto'}[STATE.theme])); }
+
+// ---------- Édition du jour ----------
+async function loadEdition(){
+  const today = new Date().toISOString().slice(0,10);
+  const candidates = ['editions/'+today+'.json','editions/latest.json'];
+  for(const p of candidates){
+    try{ const r = await fetch(p,{cache:'no-store'}); if(!r.ok) continue; STATE.edition = await r.json(); STATE.edition._path=p; return; }catch(e){}
   }
-  CONFIG = { chapitres };
+  // fallback : cache
+  STATE.edition = ls.get('nl_edition_cache', null);
+  if(STATE.edition) STATE.edition._offline = true;
 }
-function chapitre(id) { return CONFIG.chapitres.find((c) => c.id === id); }
+async function saveEditionCache(){ if(STATE.edition) ls.set('nl_edition_cache', STATE.edition); }
 
-/* ---------- Édition du jour ---------- */
-async function chargerEdition() {
-  const enCache = localStorage.getItem(CLES.cacheEdition);
-  let liste = [];
-  try {
-    const r = await fetch("editions/index.json", { cache: "no-store" });
-    liste = await r.json();
-  } catch (e) { /* hors ligne */ }
-  let date = null, data = null;
-  if (liste.length) date = liste.sort().at(-1);
-  if (date) {
-    try { data = await (await fetch("editions/" + date + ".json", { cache: "no-store" })).json(); } catch (e) {}
-  }
-  if (data) { EDITION = data; localStorage.setItem(CLES.cacheEdition, JSON.stringify(data)); }
-  else if (enCache) { EDITION = JSON.parse(enCache); bandeauOffline("Édition en cache local"); }
-  else { EDITION = null; }
-  if (EDITION) $("#date-edition").textContent = new Date(EDITION.date + "T12:00:00").toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
-}
-function bandeauOffline(txt) { const b = $("#bandeau-Offline"); b.textContent = txt; b.hidden = false; }
-
-function vueEdition() {
-  if (!EDITION) return '<p class="vide">Aucune édition disponible pour l\'instant.</p>';
-  let h = "<ol class='resume-exec'>";
-  EDITION.resume_executif.forEach((p) => { h += "<li>" + p + "</li>"; });
-  h += "</ol>";
-  EDITION.chapitres.forEach((c) => {
-    h += "<h2>" + (chapitre(c.id)?.emoji || "") + " " + c.nom + "</h2><p class='resume-chapitre'>" + c.resume + "</p>";
-  });
-  return h;
-}
-
-/* ---------- Flux chaud (RSS) ---------- */
-function normaliser(t) {
-  return (t || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9 ]/g, " ");
-}
-function jaccard(a, b) {
-  const A = new Set(normaliser(a).split(" ").filter((w) => w.length > 2));
-  const B = new Set(normaliser(b).split(" ").filter((w) => w.length > 2));
-  if (!A.size || !B.size) return 0;
-  let inter = 0; A.forEach((w) => { if (B.has(w)) inter++; });
-  return inter / (A.size + B.size - inter);
-}
-async function telechargerFlux(url) {
-  for (const p of PROXYS) {
-    try {
-      const ctrl = new AbortController();
-      const t = setTimeout(() => ctrl.abort(), 10000);
-      const r = await fetch(p(url), { signal: ctrl.signal });
+// ---------- Flux chaud (RSS via proxy) ----------
+const FEEDS = [
+  'https://www.lemonde.fr/rss/une.xml',
+  'https://www.lemonde.fr/rss/international.xml',
+  'https://www.lemonde.fr/rss/sciences.xml',
+  'https://www.lemonde.fr/rss/culture.xml',
+  'https://feeds.leparisien.fr/leparisien/rss',
+  'https://www.francetvinfo.fr/titres.rss',
+  'https://www.huffingtonpost.fr/rss/index.xml',
+  'https://feeds.bbci.co.uk/news/world/rss.xml',
+  'https://feeds.bbci.co.uk/news/technology/rss.xml',
+  'https://www.techmeme.com/feed.xml'
+];
+async function fetchText(url, timeout=10000){
+  for(const px of PROXIES){
+    try{
+      const c = new AbortController(); const t = setTimeout(()=>c.abort(), timeout);
+      const r = await fetch(px(url), {signal:c.signal});
       clearTimeout(t);
-      if (!r.ok) continue;
+      if(!r.ok) continue;
       const txt = await r.text();
-      let items = [];
-      if (txt.trim().startsWith("{")) {
-        const j = JSON.parse(txt);
-        (j.items || []).forEach((i) => items.push({ titre: i.title, lien: i.link, date: i.pubDate, extrait: (i.description || "").replace(/<[^>]*>/g, ""), source: new URL(url).hostname }));
-      } else {
-        const doc = new DOMParser().parseFromString(txt, "text/html");
-        doc.querySelectorAll("item, entry").forEach((n) => {
-          const titre = n.querySelector("title")?.textContent;
-          let lien = n.querySelector("link")?.textContent || n.querySelector("link")?.getAttribute("href") || "";
-          const dateN = n.querySelector("pubDate, published, updated, date")?.textContent;
-          const extraitN = n.querySelector("description, summary, content")?.textContent || "";
-          items.push({ titre, lien, date: dateN, extrait: extraitN.replace(/<[^>]*>/g, ""), source: new URL(url).hostname });
-        });
-      }
-      return items.filter((i) => i.titre && i.lien);
-    } catch (e) { /* proxy suivant */ }
+      if(txt && txt.length>50) return {txt, via:'proxy'};
+    }catch(e){}
   }
-  return [];
+  return null;
 }
-async function collecterFlux() {
-  const enCache = localStorage.getItem(CLES.cacheFlux);
-  let cache = enCache ? JSON.parse(enCache) : { ts: 0, items: [] };
-  const valide = Date.now() - cache.ts < 15 * 60 * 1000;
-  if (!valide) {
-    const urls = [...new Set(CONFIG.chapitres.filter((c) => c.visible).flatMap((c) => c.flux || []))];
-    const resultats = await Promise.all(urls.map(telechargerFlux));
-    let items = resultats.flat();
-    items = items.filter((i) => i.date && Date.now() - new Date(i.date).getTime() < 48 * 3600e3 && !isNaN(new Date(i.date).getTime()));
-    items.sort((a, b) => jaccard(a.titre, b.titre) > 0.7);
-    const uniques = [];
-    items.forEach((i) => { if (!uniques.some((u) => jaccard(u.titre, i.titre) >= 0.7)) uniques.push(i); });
-    cache = { ts: Date.now(), items: uniques.slice(0, 400) };
-    try { localStorage.setItem(CLES.cacheFlux, JSON.stringify(cache)); } catch (e) {}
+function parseFeed(xml, source){
+  const doc = new DOMParser().parseFromString(xml,'text/xml');
+  const items = [...doc.querySelectorAll('item'), ...doc.querySelectorAll('entry')];
+  return items.map(it=>{
+    const g = t => (it.querySelector(t)?.textContent||'').trim();
+    let link = g('link') || it.querySelector('link')?.getAttribute('href') || '';
+    const dt = g('pubDate') || g('updated') || g('published') || g('dc\\:date') || '';
+    return { title: g('title'), link, summary: (g('description')||g('summary')||'').replace(/<[^>]*>/g,'').slice(0,240), date: dt?new Date(dt):null, source };
+  }).filter(a=>a.title);
+}
+function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').replace(/\\s+/g,' ').trim(); }
+function jaccard(a,b){ const A=new Set(a.split(' ').filter(w=>w.length>2)), B=new Set(b.split(' ').filter(w=>w.length>2)); let inter=0; A.forEach(w=>{if(B.has(w))inter++}); return inter/Math.max(1,Math.sqrt(A.size*B.size)); }
+function classify(articles, chapters){
+  const out = {}; chapters.forEach(c=>out[c.id]=[]);
+  const seen = [];
+  for(const a of articles){
+    const hay = norm(a.title+' '+a.summary);
+    // déduplication
+    if(seen.some(s=>jaccard(s,hay)>=0.7)) continue;
+    seen.push(hay);
+    let best=null, bestScore=0, second=null, secondScore=0;
+    for(const c of chapters){
+      let score=0;
+      c.include.forEach(k=>{ if(hay.includes(norm(k))) score+=2; });
+      c.exclude.forEach(k=>{ if(hay.includes(norm(k))) score-=4; });
+      if(score>bestScore){ second=best; secondScore=bestScore; best=c; bestScore=score; } else if(score>secondScore){ second=c; secondScore=score; }
+    }
+    if(best && bestScore>0){ out[best.id].push({...a, score:bestScore}); if(second && secondScore>0) out[second.id].push({...a, score:secondScore}); }
   }
-  return cache;
-}
-function articlesDuChapitre(c, cache) {
-  const limite = c.id === "grande-info-semaine" ? 48 : 24;
-  return cache.items
-    .map((i) => {
-      const texte = normaliser(i.titre + " " + i.extrait);
-      let score = 0;
-      if ((c.inclure || []).includes("*")) score = 1;
-      else {
-        (c.inclure || []).forEach((k) => { if (texte.includes(normaliser(k))) score += 2; });
-        (c.exclure || []).forEach((k) => { if (texte.includes(normaliser(k))) score = -99; });
-      }
-      const h = (Date.now() - new Date(i.date).getTime()) / 3600e3;
-      return { ...i, score, heures: h };
-    })
-    .filter((i) => i.score > 0 && i.heures <= limite)
-    .sort((a, b) => b.score - a.score || a.heures - b.heures);
-}
-function vueFlux(c) {
-  const cache = ETAT_FLUX;
-  if (!cache.items.length) return "<p class='vide'>Aucun article récupéré — vérifiez la connexion ou réessayez dans un instant.</p>";
-  const items = articlesDuChapitre(c, cache);
-  if (!items.length) return "<p class='vide'>Rien dans les dernières 24 h pour ce chapitre. </p>";
-  let h = "";
-  items.forEach((i) => {
-    h += "<article><a href='" + i.lien + "' target='_blank' rel='noopener'>" + i.titre + "</a>" +
-      "<div class='meta'>" + i.source + " · il y a " + (i.heures < 1 ? Math.max(1, Math.round(i.heures * 60)) + " min" : Math.round(i.heures) + " h") + "</div>" +
-      (i.extrait ? "<p class='extrait'>" + i.extrait.slice(0, 200) + "</p>" : "") + "</article>";
+  Object.keys(out).forEach(k=>{
+    out[k].sort((x,y)=> (y.date?.getTime?y.date.getTime():0)-(x.date?.getTime?x.date.getTime():0) || y.score-x.score);
   });
-  return h;
+  return out;
+}
+async function refreshFlux(){
+  const results = await Promise.all(FEEDS.map(async f=>{
+    const r = await fetchText(f);
+    return r ? parseFeed(r.txt, f) : [];
+  }));
+  const all = results.flat().filter(a=>{
+    if(!a.date) return true;
+    return (Date.now()-a.date.getTime()) < 24*3600*1000;
+  });
+  STATE.flux = classify(all, STATE.chapters);
+  STATE.lastRefresh = new Date();
+  ls.set(LS.fluxCache, {flux:STATE.flux, time:STATE.lastRefresh.toISOString(), articles:all.length});
+  ls.set(LS.fluxTime, STATE.lastRefresh.toISOString());
+  $('#offline').style.display='none';
+}
+function restoreFlux(){
+  const c = ls.get(LS.fluxCache, null);
+  if(c){ STATE.flux=c.flux; STATE.lastRefresh=new Date(c.time); return true; }
+  return false;
 }
 
-/* ---------- Rendu ---------- */
-let ETAT_FLUX = { ts: 0, items: [] };
-function onglets() {
-  const b = $("#barre-onglets");
-  b.innerHTML = "";
-  const boutonEdition = document.createElement("button");
-  boutonEdition.textContent = "📬 Édition";
-  boutonEdition.dataset.id = "edition";
-  boutonEdition.onclick = () => selectionner("edition");
-  b.appendChild(boutonEdition);
-  CONFIG.chapitres.filter((c) => c.visible).forEach((c) => {
-    const bt = document.createElement("button");
-    bt.textContent = c.emoji + " " + c.nom.split(" ")[0];
-    bt.dataset.id = c.id;
-    bt.onclick = () => selectionner(c.id);
-    b.appendChild(bt);
+// ---------- Chapitres (config utilisateur) ----------
+async function loadChapters(){
+  let remote=null;
+  try{ const r = await fetch('chapters.json',{cache:'no-store'}); if(r.ok) remote = await r.json(); }catch(e){}
+  const def = remote?.chapters || [];
+  const userState = ls.get(LS.chapterState, null);
+  if(userState){
+    STATE.chapters = def.map(d=>{ const u=userState.find(x=>x.id===d.id); return u ? {...d,...u,include:d.include,exclude:d.exclude,feeds:d.feeds} : d; })
+      .concat([]);
+    // garder l'ordre utilisateur
+    const order = userState.map(u=>u.id);
+    STATE.chapters.sort((a,b)=> (order.indexOf(a.id)+1||99) - (order.indexOf(b.id)+1||99));
+  } else STATE.chapters = def;
+}
+
+// ---------- Rendu ----------
+function render(){
+  const app = $('#app'); const tb = $('#tabbar');
+  const visible = STATE.chapters.filter(c=>c.visible);
+  // Onglets
+  tb.innerHTML = '<button class="tab'+(STATE.view==='edition'?' active':'')+'" data-v="edition">📬<span class="k">Édition du jour</span></button>' +
+    visible.map(c=>'<button class="tab'+(STATE.view==='chapter'&&STATE.chapter===c.id?' active':'')+'" data-v="'+c.id+'">'+c.emoji+'<span class="k">'+esc(c.nom)+'</span></button>').join('');
+  tb.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{
+    const v=b.dataset.v; if(v==='edition'){STATE.view='edition'}else{STATE.view='chapter';STATE.chapter=v} render(); window.scrollTo(0,0);
   });
-  b.querySelectorAll("button").forEach((bt) => bt.classList.toggle("actif", bt.dataset.id === ONGLET));
+  $('#edDate').textContent = STATE.edition ? (STATE.edition._offline?'en cache':'du '+STATE.edition.date.split('-').reverse().join('/')) : '';
+  if(STATE.view==='edition') renderEdition(app); else renderChapter(app, STATE.chapter);
 }
-function selectionner(id) {
-  ONGLET = id;
-  onglets();
-  afficher();
-}
-function afficher() {
-  const m = $("#contenu");
-  if (ONGLET === "edition") {
-    m.innerHTML = "<div class='chargement'>Chargement de l'édition…</div>" + vueEdition();
-  } else {
-    const c = chapitre(ONGLET);
-    m.innerHTML = vueFlux(c);
+function renderEdition(app){
+  const ed = STATE.edition;
+  if(!ed){ app.innerHTML = '<div class="empty">📭 Aucune édition trouvée.<br/><small>Le fichier editions/latest.json arrivera avec la première publication.</small></div>'; return; }
+  let h = '<section class="exec"><h2>🎯 L\'essentiel</h2><ul>' + ed.resume_executif.map(x=>'<li>'+esc(x)+'</li>').join('') + '</ul></section>';
+  const visible = new Set(STATE.chapters.filter(c=>c.visible).map(c=>c.id));
+  for(const ch of (ed.chapitres||[])){
+    if(!visible.has(ch.id)) continue;
+    const hot = STATE.flux[ch.id]||[];
+    h += '<section><div class="chapter-head"><span class="e">'+ch.emoji+'</span><h3>'+esc(ch.nom)+'</h3><small>'+ch.articles.length+' article(s)</small></div>';
+    h += '<p class="resume">'+esc(ch.resume)+'</p>';
+    h += '<ul class="arts">' + ch.articles.map(a=>'<li>'+articleLink(a)+'</li>').join('') + '</ul>';
+    if(hot.length) h += '<p style="text-align:right;margin:4px 0"><button class="btn" data-goto="'+ch.id+'">🔥 ' + hot.length + ' en direct →</button></p>';
+    h += '</section>';
   }
-  window.scrollTo(0, 0);
+  app.innerHTML = h;
+  app.querySelectorAll('[data-goto]').forEach(b=>b.onclick=()=>{STATE.view='chapter';STATE.chapter=b.dataset.goto;render();window.scrollTo(0,0)});
 }
+function articleLink(a){
+  const src = '<span class="s"><span class="src">'+esc(a.source)+'</span><span>édition du jour</span></span>';
+  return '<a href="'+(a.url||'#')+'"'+(a.url?' target="_blank" rel="noopener"':'')+'><span class="t">'+esc(a.titre)+'</span>'+src+'</a>';
+}
+function renderChapter(app, id){
+  const ch = STATE.chapters.find(c=>c.id===id); if(!ch){ app.innerHTML='<div class="empty">Chapitre introuvable</div>'; return; }
+  const edCh = (STATE.edition?.chapitres||[]).find(c=>c.id===id);
+  let h = '<section><div class="chapter-head"><span class="e">'+ch.emoji+'</span><h3>'+esc(ch.nom)+'</h3><small>'+(STATE.lastRefresh?'flux du '+STATE.lastRefresh.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'}):'')+'</small></div>';
+  if(edCh){ h += '<p class="resume">'+esc(edCh.resume)+'</p><ul class="arts">'+edCh.articles.map(a=>'<li>'+articleLink(a)+'</li>').join('')+'</ul>'; }
+  const hot = STATE.flux[id]||[];
+  if(hot.length){
+    h += '<h3>🔥 En direct (24 h)</h3><ul class="arts">' + hot.slice(0,30).map(a=>{
+      const age = a.date? ilY a(a.date) : '';
+      return '<li><a href="'+a.link+'" target="_blank" rel="noopener"><span class="t">'+esc(a.title)+'</span><span class="s"><span class="src">'+esc(host(a.source))+'</span><span>'+age+'</span></span></a></li>';
+    }).join('') + '</ul>';
+  } else if(!edCh){
+    h += '<div class="empty">Aucun article en direct pour le moment.<br/><small>Le flux se rafraîchit automatiquement.</small></div>';
+  }
+  h += '</section>';
+  app.innerHTML = h;
+}
+function host(u){ try{ return new URL(u).hostname.replace(/^www\\./,'') }catch(e){ return u.slice(0,30) } }
+function ilY a(d){ const mn = Math.round((Date.now()-d.getTime())/60000); if(mn<60) return 'il y a '+mn+' min'; const h=Math.round(mn/60); if(h<24) return 'il y a '+h+' h'; return 'hier'; }
+function toast(msg){ const t=$('#toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2200); }
 
-/* ---------- Réglages ---------- */
-function reglagesOuvrir() {
-  $("#sel-theme").value = localStorage.getItem(CLES.theme) || "auto";
-  renduListeChapitres();
-  $("#voile-reglages").hidden = false;
+// ---------- Réglages / chapitres ----------
+function openSettings(){
+  $('#setTheme').value = STATE.theme;
+  $('#setRefresh').value = String(STATE.refreshMin);
+  $('#dlgSettings').showModal();
 }
-function renduListeChapitres() {
-  const div = $("#liste-chapitres");
-  div.innerHTML = "";
-  CONFIG.chapitres.forEach((c, i) => {
-    const ligne = document.createElement("div");
-    ligne.className = "ligne-chapitre";
-    const cb = document.createElement("input");
-    cb.type = "checkbox"; cb.checked = c.visible; cb.setAttribute("aria-label", "Afficher " + c.nom);
-    cb.onchange = () => { c.visible = cb.checked; sauverConfig(); onglets(); };
-    const nom = document.createElement("input");
-    nom.type = "text"; nom.value = c.nom;
-    nom.onchange = () => { c.nom = nom.value; sauverConfig(); onglets(); };
-    const haut = document.createElement("button");
-    haut.className = "btn-ghost"; haut.textContent = "↑"; haut.setAttribute("aria-label", "Monter");
-    haut.onclick = () => { if (i > 0) { CONFIG.chapitres.splice(i - 1, 0, CONFIG.chapitres.splice(i, 1)[0]); sauverConfig(); renduListeChapitres(); onglets(); } };
-    const bas = document.createElement("button");
-    bas.className = "btn-ghost"; bas.textContent = "↓"; bas.setAttribute("aria-label", "Descendre");
-    bas.onclick = () => { if (i < CONFIG.chapitres.length - 1) { CONFIG.chapitres.splice(i + 1, 0, CONFIG.chapitres.splice(i, 1)[0]); sauverConfig(); renduListeChapitres(); onglets(); } };
-    ligne.append(cb, nom, haut, bas);
-    div.appendChild(ligne);
-  });
+function openChapters(){
+  const list = $('#chapList');
+  list.innerHTML = STATE.chapters.map((c,i)=>'<li data-i="'+i+'"><span class="grip" draggable="true">⠿</span><span class="nm">'+c.emoji+' '+esc(c.nom)+'<small>'+c.include.length+' mots-clés</small></span><span class="switch"><input type="checkbox" '+(c.visible?'checked':'')+' data-id="'+c.id+'"/><span class="tr"></span></span></li>').join('');
+  $('#dlgChapters').showModal();
 }
+function saveChapState(){ ls.set(LS.chapterState, STATE.chapters.map(c=>({id:c.id, visible:c.visible})).map((x,i)=>({...x, order:i}))); }
 
-/* ---------- Thème ---------- */
-function appliquerTheme() {
-  const pref = localStorage.getItem(CLES.theme) || "auto";
-  const sombreSysteme = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const clair = pref === "clair" || (pref === "auto" && !sombreSysteme);
-  document.documentElement.setAttribute("data-theme", clair ? "clair" : "sombre");
+// ---------- Init ----------
+async function init(){
+  STATE.theme = ls.get(LS.theme,'dark'); STATE.refreshMin = parseInt(ls.get(LS.refresh,'15'));
+  applyTheme();
+  await loadChapters();
+  const cached = restoreFlux();
+  await loadEdition(); await saveEditionCache();
+  if(cached){ $('#offline').style.display='block'; $('#offlineTime').textContent = STATE.lastRefresh?.toLocaleString('fr-FR')||''; }
+  render();
+  // rafraîchissement arrière-plan
+  refreshFlux().then(()=>{ render(); }).catch(()=>{});
+  if(STATE.refreshMin>0){ setInterval(async()=>{ if(document.visibilityState==='visible'){ await refreshFlux(); render(); } }, STATE.refreshMin*60000); }
+  document.addEventListener('visibilitychange', ()=>{ if(document.visibilityState==='visible' && STATE.lastRefresh && Date.now()-STATE.lastRefresh.getTime()>10*60000){ refreshFlux().then(render); } });
 }
-
-/* ---------- Démarrage ---------- */
-async function demarrer() {
-  appliquerTheme();
-  await chargerConfig();
-  await chargerEdition();
-  ETAT_FLUX = await collecterFlux();
-  onglets();
-  afficher();
-  setInterval(async () => {
-    if (document.visibilityState === "visible") { ETAT_FLUX = await collecterFlux(); if (ONGLET !== "edition") afficher(); }
-  }, 15 * 60 * 1000);
-  document.addEventListener("visibilitychange", async () => {
-    if (document.visibilityState === "visible") { ETAT_FLUX = await collecterFlux(); }
-  });
-  $("#btn-reglages").onclick = reglagesOuvrir;
-  $("#fermer-reglages").onclick = () => { $("#voile-reglages").hidden = true; };
-  $("#sel-theme").onchange = (e) => { localStorage.setItem(CLES.theme, e.target.value); appliquerTheme(); };
-  $("#btn-restaurer").onclick = async () => {
-    localStorage.removeItem(CLES.chapitres);
-    await chargerConfig(); renduListeChapitres(); onglets(); toast("Chapitres restaurés");
-  };
-  $("#btn-purger").onclick = () => {
-    localStorage.removeItem(CLES.cacheFlux); localStorage.removeItem(CLES.cacheEdition);
-    $("#etat-cache").textContent = "Cache purgé — la page se recharge…";
-    setTimeout(() => location.reload(), 800);
-  };
-  $("#etat-cache").textContent = "Articles en cache : " + (ETAT_FLUX.items.length || 0);
-  if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
-}
-demarrer();
+// wiring
+$('#btnRefresh').onclick = async ()=>{ toast('Rafraîchissement…'); await Promise.allSettled([loadEdition(), refreshFlux()]); render(); toast('À jour ✅'); };
+$('#btnTheme').onclick = cycleTheme;
+$('#btnSettings').onclick = openSettings;
+$('#btnChapters').onclick = openChapters;
+$('#btnCloseSettings').onclick = ()=>$('#dlgSettings').close();
+$('#btnCloseChap').onclick = ()=>{ $('#dlgChapters').close(); render(); };
+$('#btnResetChap').onclick = ()=>{ localStorage.removeItem(LS.chapterState); toast('Chapitres réinitialisés'); $('#dlgChapters').close(); init().then(render); };
+$('#btnPurge').onclick = ()=>{ [LS.fluxCache,LS.fluxTime].forEach(k=>localStorage.removeItem(k)); toast('Cache purgé 🧹'); };
+$('#setTheme').onchange = e=>{ STATE.theme=e.target.value; ls.set(LS.theme,STATE.theme); applyTheme(); };
+$('#setRefresh').onchange = e=>{ STATE.refreshMin=parseInt(e.target.value); ls.set(LS.refresh,STATE.refreshMin); toast('Enregistré'); };
+$('#chapList').addEventListener('change', e=>{ const id=e.target.dataset.id; if(!id) return; const c=STATE.chapters.find(x=>x.id===id); c.visible=e.target.checked; saveChapState(); });
+// drag & drop réordonnancement
+let dragEl=null;
+$('#chapList').addEventListener('dragstart', e=>{ dragEl = e.target.closest('li'); });
+$('#chapList').addEventListener('dragover', e=>{ e.preventDefault(); });
+$('#chapList').addEventListener('drop', e=>{ e.preventDefault(); const li = e.target.closest('li'); if(!li||!dragEl||li===dragEl) return; const from=+dragEl.dataset.i, to=+li.dataset.i; const [m]=STATE.chapters.splice(from,1); STATE.chapters.splice(to,0,m); saveChapState(); openChaptersRefresh(); });
+function openChaptersRefresh(){ openChapters(); }
+window.addEventListener('online', ()=>{ $('#offline').style.display='none'; });
+window.addEventListener('offline', ()=>{ $('#offline').style.display='block'; $('#offlineTime').textContent=STATE.lastRefresh?.toLocaleString('fr-FR')||''; });
+if('serviceWorker' in navigator){ navigator.serviceWorker.register('sw.js').catch(()=>{}); }
+init();
