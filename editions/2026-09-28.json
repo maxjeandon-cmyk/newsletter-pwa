@@ -1,81 +1,688 @@
 {
   "date": "2026-09-28",
-  "genere_le": "2026-09-28T09:26:31+02:00",
+  "genere_le": "2026-09-28T10:21:35.990Z",
   "html": "editions/2026-09-28.html",
   "resume_executif": [
-    "Anthropic au cœur du jeu politique américain : dîner Amodei–Trump, exclusion de Claude du Pentagone validée par la justice, OpenAI suspend l’entraînement de ses modèles avancés et repousse son introduction en Bourse.",
-    "Percée historique du RN aux sénatoriales (premier groupe parlementaire) à sept mois de la présidentielle, où Marine Le Pen domine à 31 % (Cluster17) ; budget 2027 présenté jeudi dans l’incertitude.",
-    "La visite historique du pape Léon XIV en France s’achève à Metz après avoir rassemblé plus d’un million de personnes.",
-    "En Ukraine, les frappes russes tuent au moins huit personnes (Kiev, Zaporijjia, Odessa) ; Moscou revendique Khrypuny et promet une guerre « jusqu’au bout ».",
-    "Semaine chargée à suivre : tentative orbitale de Starship lundi, patrons de l’IA à la Maison-Blanche mardi, verdict Tsuda–TikTok mercredi, budget 2027 jeudi."
+    "Dîner Trump–Amodei à la Maison Blanche : : après des mois de conflit ouvert (classement « risque pour la chaîne d'approvisionnement » validé en appel vendredi), le patron d'Anthropic dîne seul à seul avec Donald Trump, qui balaie les alertes des laboratoires sur la sécurité de l'IA et reçoit mardi les grands patrons du secteur.",
+    "Record historique de l'extrême droite au Sénat : : le RN et ses alliés quadruplent leur nombre de sénateurs (une quinzaine de sièges) et formeront pour la première fois un groupe parlementaire, à moins de sept mois de la présidentielle où Marine Le Pen domine les sondages (31 % d'intentions de vote).",
+    "Budget 2027 présenté jeudi : : un effort d'environ 54 milliards d'euros, un gel du budget de l'État (hors dette et Armées, +6,4 Md), une mise à contribution des retraités — le tout dans un climat de méfiance, Olivier Faure (PS) jugeant le compromis « moins ouvert que jamais ».",
+    "Ukraine : : les frappes russes tuent au moins huit personnes dimanche (Kiev, Zaporijjia, Odessa), Moscou revendique la prise du village frontalier de Khrypuny (Kharkiv) et Sergueï Lavrov affirme devant l'ONU que la guerre continuera « jusqu'au bout ».",
+    "Pape Léon XIV achève sa visite en France à Metz : : après plus d'un million de personnes rassemblées à Paris et une rencontre à huis clos avec sept victimes de violences sexuelles à Lourdes, il plaide lundi pour une Europe source de paix — tandis que SpaceX tente pour la première fois d'atteindre l'orbite avec Starship."
   ],
   "chapitres": [
     {
       "id": "intelligence-artificielle",
       "emoji": "🤖",
       "nom": "Intelligence artificielle",
-      "resume": "Dario Amodei (Anthropic) dine dimanche soir en tête-à-tête avec Donald Trump, deux jours après la validation par la justice du classement « risque pour la chaîne d'approvisionnement » qui exclut Claude du Pentagone. Trump balaie les alertes sur la sécurité de l'IA (« Je ne m'en inquiète pas ») et reçoit mardi les patrons du secteur. OpenAI a suspendu l'entraînement de ses modèles les plus avancés et repousse son introduction en Bourse ; Emmanuel Macron appelle de son côté à une « coalition des indépendants » autour de Mistral, qui a annoncé l'acquisition de Pimento."
+      "resume": "Dîner Trump–Amodei à la Maison Blanche en plein conflit institutionnel ; OpenAI suspend l'entraînement de ses modèles avancés ; Anthropic lance un Claude haut de gamme moins cher ; sommet Trump–Xi et « super-intelligence » ; Black Forest Labs en contrepoint européen ; l'affaire Tsuda contre TikTok ; la « coalition des indépendants » de Macron et Mistral AI qui acquiert Pimento."
     },
     {
       "id": "jeu-video-pop-culture",
       "emoji": "🎮",
       "nom": "Jeu vidéo & pop culture",
-      "resume": "La rentrée gaming reste l'une des plus denses de l'année (EA SPORTS FC 27 sorti le 25 septembre, Marvel's Wolverine, Moonlighter 2). Un prodige japonais de 11 ans a décroché l'or esport aux Jeux asiatiques. Côté pop culture, le reboot de Resident Evil confirme qu'une adaptation peut « honorer les jeux » : 103,5 M$ cumulés en deux semaines, acclamé par la communauté."
+      "resume": "Rentrée gaming exceptionnellement dense (EA SPORTS FC 27, Marvel's Wolverine, Moonlighter 2) ; or esport aux Jeux asiatiques pour un Japonais de 11 ans ; le film « Resident Evil » cartonne au box-office ; ressortie record d'« Avengers : Endgame » ; ressenti communautaire Reddit mitigé-enthousiaste."
     },
     {
       "id": "culture",
       "emoji": "🎭",
       "nom": "Culture",
-      "resume": "Mike Leigh reçoit la Concha de Oro à Saint-Sébastien pour « Tender Loving Care », probablement son dernier film. La ressortie d'« Avengers : Endgame » prend la tête du box-office américain (26 M$). U2 annonce « Carnaval de Luz » (13 novembre) pour ses 50 ans ; Hervé Vilard repart en tournée. Disparitions : Marina Vlady (88 ans) et le scénariste de BD Rodolphe (78 ans)."
+      "resume": "Concha de Oro pour Mike Leigh à Saint-Sébastien ; box-office nord-américain dominé par Endgame et Resident Evil ; album de U2 annoncé pour le 13 novembre ; Hervé Vilard en tournée ; disparitions de Marina Vlady et du scénariste Rodolphe ; semaine de la mode de Paris clôturée."
     },
     {
       "id": "sciences",
       "emoji": "🔬",
       "nom": "Sciences",
-      "resume": "SpaceX tente lundi pour la première fois d'atteindre l'orbite terrestre avec Starship (14e vol d'essai, déploiement de 26 satellites Starlink prévu). L'USGS documente le recul des plages californiennes sous la pression de la montée des eaux, et les glaciers himalayens — source d'eau pour près de 2 milliards de personnes — plongent le pari hydroélectrique népalais dans l'incertitude."
+      "resume": "SpaceX tente pour la première fois d'atteindre l'orbite avec Starship (déploiement de 26 satellites Starlink) ; érosion côtière en Californie ; glaciers himalayens et hydroélectricité népalaise sous pression ; dix disparus après une avalanche au Himlung."
     },
     {
       "id": "climat",
-      "emoji": "🌡️",
+      "emoji": "🌍",
       "nom": "Climat",
-      "resume": "Environ 260 mobilisations ont eu lieu samedi partout en France après un été record (98 000 hectares brûlés, premier « orage de feu » jamais observé dans le pays). Un nor'easter rare a inondé le nord-est américain. Peu de déclarations de chefs d'État à l'horizon des 24 h : ce sont les chiffres qui parlent."
+      "resume": "Environ 260 mobilisations samedi en France après un été record (98 000 ha brûlés, premier pyrocumulonimbus observé) ; nor'easter inondant le nord-est américain ; évaluation d'Al Gore jugée correcte par des climatologues ; le budget 2027 français interroge la cohérence climatique."
     },
     {
       "id": "politique-francaise",
       "emoji": "🇫🇷",
       "nom": "Politique française",
-      "resume": "Percée historique du RN aux sénatoriales : une quinzaine de sièges, un groupe parlementaire pour la première fois, à sept mois de la présidentielle où Marine Le Pen domine à 31 % (Cluster17), devant Philippe et Mélenchon (19 % chacun). Le budget 2027 (effort de 54 Md) sera présenté jeudi dans l'incertitude politique ; le pape achève à Metz une visite qui a rassemblé plus d'un million de personnes."
+      "resume": "Percée historique de l'extrême droite au Sénat (RN et alliés quadruplés, premier groupe parlementaire) ; Le Pen à 31 % dans les sondages ; budget 2027 de 54 Md présenté jeudi avec mise à contribution des retraités ; grève mardi aux perturbations limitées ; visite du pape qui s'achève à Metz."
     },
     {
       "id": "etats-unis",
       "emoji": "🇺🇸",
       "nom": "États-Unis",
-      "resume": "À sept semaines des midterms : prolifération de sites de désinformation « pink slime », procédure contre les agents armés près des bureaux de vote, taux hypothécaires au plus haut de la présidence Trump (plus de 7 %). Sur l'Iran, Trump rejette le plan de réouverture du détroit d'Ormuz mais s'attend à une reprise des discussions cette semaine."
+      "resume": "Sites de désinformation « pink slime » avant les midterms ; contentieux électoraux et CNN exclu de l'Air Force One ; taux hypothécaires au-dessus de 7 % ; Trump rejette le plan iranien sur Ormuz mais espère reprendre les discussions."
     },
     {
       "id": "chine",
       "emoji": "🇨🇳",
       "nom": "Chine",
-      "resume": "Le sommet Xi–Trump s'achève « riche en symboles mais pauvre en avancées » : deux pandas géants vers Atlanta, un canal de communication sur les incidents d'IA, et une terminologie commune — la « super-intelligence » — que Pékin dit « respecter ». La production chinoise de cuivre raffiné entre en territoire négatif pour la première fois depuis fin 2024."
+      "resume": "Sommet Xi–Trump « riche en symboles, pauvre en avancées » : pandas vers Atlanta, APEC et G20 à venir ; Pékin « respecte » le passage à la « super-intelligence » ; canal de communication sur les incidents IA ; production de cuivre raffiné en territoire négatif."
     },
     {
       "id": "russie",
       "emoji": "🇷🇺",
       "nom": "Russie",
-      "resume": "Lavrov accuse l'Europe de « tout faire » pour contrecarrer la paix en Ukraine, tout en rencontrant son homologue allemand à l'ONU — une première depuis 2022. Paris dénonce un « acte hostile » après la prise de contrôle d'actifs français (Auchan, ex-Leroy Merlin) par Moscou ; le journaliste exilé Badanine met en garde le futur président français contre Poutine."
+      "resume": "Lavrov accuse l'Europe à l'ONU mais rencontre son homologue allemand ; Moscou « ne s'apprête pas » à attaquer l'Europe ; prise de contrôle d'actifs d'entreprises françaises dénoncée par Lescure ; Badanine raconte le système Poutine ; Séoul exige des excuses de Kiev sur les prisonniers nord-coréens."
     },
     {
       "id": "geopolitique",
-      "emoji": "🌍",
-      "nom": "Géopolitique",
-      "resume": "En Ukraine, les frappes russes tuent au moins huit personnes (Kiev, Zaporijjia, Odessa) et Moscou revendique la prise de Khrypuny ; Lavrov promet une guerre « jusqu'au bout ». Foyers du jour : le blocus du détroit d'Ormuz, la guerre saoudo-houthie (écoles de Ryad en distanciel), la démission de Vucic en Serbie, et le Venezuela qui réclame le retour de la prix Nobel Maria Corina Machado."
+      "emoji": "🌐",
+      "nom": "Géopolitique mondiale",
+      "resume": "Frappes russes meurtrières en Ukraine (huit morts) et Lavrov promet la guerre « jusqu'au bout » ; Ormuz, Yémen et Gaza sous tension ; démission de Vucic visant Matignon ; convois au Venezuela pour Maria Corina Machado ; congrès du Labour à Liverpool."
     },
     {
       "id": "grande-info-semaine",
       "emoji": "📰",
-      "nom": "Grande info de la semaine",
-      "resume": "La semaine restera celle de la visite historique du pape Léon XIV en France (plus d'un million de personnes, huis clos avec des victimes à Lourdes, discours sur l'Europe à Metz lundi), du sommet Trump–Xi à Washington, et du bras de fer iranien sur Ormuz. À suivre : Starship lundi, les patrons de l'IA mardi, le verdict Tsuda–TikTok mercredi, le budget 2027 jeudi."
+      "nom": "Grande information de la semaine",
+      "resume": "La visite historique du pape Léon XIV en France (plus d'un million de personnes à Paris, Lourdes, Metz) ; le sommet Trump–Xi à Washington ; la rupture iranienne sur Ormuz ; le premier appel au ralentissement de l'IA pris au sérieux ; le showdown budgétaire français de jeudi."
     }
   ],
-  "sources": []
+  "sources": [
+    {
+      "label": "AFP — Trump confirme dîner avec Amodei",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AP — Trump dîne avec le patron d'Anthropic",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "28/09/2026"
+    },
+    {
+      "label": "AP — Anthropic et OpenAI tirent la sonnette d'alarme sur la sécurité de l'IA",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Black Forest Labs appelle l'Europe à l'optimisme",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Macron appelle à une IA alternative",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "22/09/2026"
+    },
+    {
+      "label": "AFP — Mistral acquiert Pimento",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "21/09/2026"
+    },
+    {
+      "label": "AFP — Anthropic lance un modèle haut de gamme moins cher",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "22/09/2026"
+    },
+    {
+      "label": "AFP — La Chine « respecte » le passage à la « super-intelligence »",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — États-Unis et Chine ouvrent un canal de communication sur l'IA",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "25/09/2026"
+    },
+    {
+      "label": "AFP — Star japonaise des animés contre TikTok (clonage vocal)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AP — Box-office : retour en grâce d'« Endgame »",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Un prodige de 11 ans en or esport aux Jeux asiatiques",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "Ars Technica — Critique « Resident Evil »",
+      "ref": "https://arstechnica.com",
+      "fiabilite": 4,
+      "maj": "22/09/2026"
+    },
+    {
+      "label": "Reddit — r/movies, fil de critiques « Resident Evil »",
+      "ref": "https://www.reddit.com/r/movies",
+      "fiabilite": 2,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "Reddit — r/videogames « September 2026 is stacked »",
+      "ref": "https://www.reddit.com/r/videogames",
+      "fiabilite": 2,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Mike Leigh primé à Saint-Sébastien",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — U2 : « Carnaval de Luz » annoncé",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "23/09/2026"
+    },
+    {
+      "label": "AFP — U2 concerts surprise à Dublin",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "25/09/2026"
+    },
+    {
+      "label": "AFP — Hervé Vilard, 60 ans de carrière et une tournée",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Décès de Marina Vlady",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "24/09/2026"
+    },
+    {
+      "label": "AFP — Décès du scénariste de BD Rodolphe",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "23/09/2026"
+    },
+    {
+      "label": "AFP — Quand les écrivains se mettent en scène",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Semaine de la mode de Paris",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Manifestation anti-fourrure à Milan",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Inde : clap de fin pour les cinémas à l'ancienne",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Concerts annulés (nor'easter)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — SpaceX vise l'orbite avec Starship",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AP — Montée des eaux en Californie",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Népal : le pari du tout-hydroélectrique",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Glaciers himalayens, menace existentielle",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Avalanche au Népal, dix disparus",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AP — Al Gore : une Terre propre à portée de main",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "25/09/2026"
+    },
+    {
+      "label": "AP — Nor'easter : le nord-est américain inondé",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Pompiers mobilisés, record de 98 000 ha brûlés",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Sud-Ouest : mégafeux, garder « un coup d'avance »",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Record de l'extrême droite au Sénat",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Retailleau réélu sénateur de Vendée",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Sondage Cluster17 : Le Pen 31 %",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "24/09/2026"
+    },
+    {
+      "label": "AFP — Ce que l'on sait du budget 2027",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "28/09/2026"
+    },
+    {
+      "label": "AFP — Budget 2027 : copie rendue jeudi",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "28/09/2026"
+    },
+    {
+      "label": "AFP — Faure peu ouvert au compromis budgétaire",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Banque de France : « avoir un budget »",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "25/09/2026"
+    },
+    {
+      "label": "AFP — Entreprises inquiètes pour 2027",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Grève de mardi : SNCF et RATP quasi normales",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Viginum contre les ingérences avant 2027",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Procès Dati–Ghosn : ultime journée cruciale",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Messe du pape : foule de candidats 2027",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Le Pen, Philippe, Retailleau à la messe",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Sites de désinformation « pink slime » avant les midterms",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "28/09/2026"
+    },
+    {
+      "label": "AFP — Prolifération des sites de désinformation",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AP — CNN exclu de l'Air Force One",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Démocrates contre des agents armés aux bureaux de vote",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "24/09/2026"
+    },
+    {
+      "label": "AP — Cour suprême rejette la carte du Missouri",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "25/09/2026"
+    },
+    {
+      "label": "AFP — Taux hypothécaires au-dessus de 7 %",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "24/09/2026"
+    },
+    {
+      "label": "AP — Collins en difficulté dans le Maine",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Trump rejette le plan iranien sur Ormuz",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Trump rejette le plan de trêve (analyse)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Trump s'attend à une reprise des discussions avec l'Iran",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — L'Iran maintient ses conditions sur Ormuz",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Trésor américain revendique l'isolement de l'Iran",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Émirats : vols iraniens suspendus",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "24/09/2026"
+    },
+    {
+      "label": "AFP — Foie gras au menu des élections à Washington",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AP — Trump au Presidents Cup",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Pandas géants : arrivée aux États-Unis",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — La Chine envoie deux pandas",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Matières premières : cuivre chinois en baisse",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "25/09/2026"
+    },
+    {
+      "label": "AFP — Lescure dénonce un « acte hostile » russe",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "25/09/2026"
+    },
+    {
+      "label": "AFP — Lavrov accuse l'Europe sur l'Ukraine",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Lavrov rencontre Wadephul à l'ONU",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Journaliste russe Badanine : le système Poutine",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — La Russie ne s'apprête pas à attaquer l'Europe",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Serbie : prolongation de l'accord gazier avec la Russie",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Azerbaïdjan : un Français gracié",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "23/09/2026"
+    },
+    {
+      "label": "AFP — Séoul exige des excuses de Kiev (POW nord-coréens)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Frappes russes : huit morts en Ukraine",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Kiev : entrepôts ciblés (analyse ACLED)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Seize morts en Ukraine et en Russie",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Yémen : frappe saoudienne sur Taëz",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Ryad dénonce les « manquements » à l'ONU",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Écoles de Ryad en distanciel",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Israël tue le ravisseur d'un couple d'otages",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "28/09/2026"
+    },
+    {
+      "label": "AFP — Irlande domine Israël dans un stade vide",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Vote des joueurs irlandais de disputer le match",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Vucic annonce sa démission",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AP — Vucic démissionne pour viser Matignon",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Vucic : de Milosevic à Matignon",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Neuf Serbes arrêtés au Kosovo",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Venezuela : manifestations pour Machado",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Venezuela : proche de Machado accueillie à Caracas",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "28/09/2026"
+    },
+    {
+      "label": "AFP — Venezuela : libérations de prisonniers politiques",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Irlande du Nord : marche bloquée",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Labour en congrès à Liverpool",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AP — Congrès du Labour, lune de miel de Burnham",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Afrique du Sud : 11e femme retrouvée morte",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Burkina : Traoré face au mythe du « nouveau Sankara »",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Somalie : évasion de pirates présumés",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Pape Léon XIV achève sa visite à Metz",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "28/09/2026"
+    },
+    {
+      "label": "AFP — Programme de lundi à Metz",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "28/09/2026"
+    },
+    {
+      "label": "AFP — Pape encourage les évêques contre les violences sexuelles",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    },
+    {
+      "label": "AFP — Pape à Lourdes : prière pour la France",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "26/09/2026"
+    },
+    {
+      "label": "AFP — Mainlines du dimanche 27/09 (pape, sénatoriales, climat, Ormuz)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "27/09/2026"
+    }
+  ]
 }
