@@ -1,9 +1,9 @@
-/* Newsletter PWA — app.js v9 */
+/* Newsletter PWA — app.js v11 */
 const PROXIES = [
   u => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u),
   u => 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(u)
 ];
-let chaptersCfg = null, edition = null, feedCache = { time: 0, articles: [] }, activeTab = 'edition';
+let chaptersCfg = null, edition = null, editionVeille = null, feedCache = { time: 0, articles: [] }, activeTab = 'edition';
 let archiveIdx = null, archiveSel = null, archiveMonth = null;
 let weekData = null, weeksIdx = null;
 
@@ -110,6 +110,7 @@ function generationTime() {
 
 function renderTabs() {
   const tabs = [
+    { id: 'veille', nom: 'Édition de la veille', emoji: '🕘' },
     { id: 'edition', nom: 'Édition du jour', emoji: '📬' },
     { id: 'sources', nom: 'Sources', emoji: '📚' },
     { id: 'archives', nom: 'Archives', emoji: '🗄️' },
@@ -136,6 +137,16 @@ function openArchive(html) {
 
 function renderView() {
   const view = $('#view');
+
+  // --- Édition de la veille : l'édition complète de la veille --- 
+  if (activeTab === 'veille') {
+    if (!editionVeille) { view.innerHTML = '<div class="empty">Aucune édition de la veille disponible pour l’instant — elle apparaîtra dès la deuxième édition. 🌱</div>'; return; }
+    view.innerHTML =
+      '<div class="summary-card"><h2>🕘 Édition de la veille — ' + fmtDate(editionVeille.date) + '</h2>' +
+      '<ol>' + editionVeille.resume_executif.map(p => '<li>' + p + '</li>').join('') + '</ol></div>' +
+      '<iframe class="edition-frame" src="' + editionVeille.html + '" title="Newsletter de la veille"></iframe>';
+    return;
+  }
 
   if (activeTab === 'edition') {
     if (!edition) { view.innerHTML = '<div class="empty">Aucune édition disponible pour l’instant.</div>'; return; }
@@ -265,6 +276,15 @@ async function loadEdition() {
     archiveIdx = idx.editions || [];
     edition = await (await fetch(idx.editions[0].fichier, { cache: 'no-store' })).json();
     $('#edition-date').textContent = '· ' + fmtDate(edition.date);
+    editionVeille = null;
+    if ((idx.editions || []).length > 1) {
+      try {
+        editionVeille = await (await fetch(idx.editions[1].fichier, { cache: 'no-store' })).json();
+        if (editionVeille && editionVeille.date === edition.date && idx.editions.length > 2) {
+          editionVeille = await (await fetch(idx.editions[2].fichier, { cache: 'no-store' })).json();
+        }
+      } catch (e) { editionVeille = null; }
+    }
   } catch (e) { edition = null; }
   try {
     weeksIdx = await (await fetch('editions/semaines/index.json', { cache: 'no-store' })).json();
