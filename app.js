@@ -1,11 +1,11 @@
-/* Newsletter PWA — app.js v11 */
+/* Newsletter PWA — app.js v12 — onglets : Édition du {jour}, Sources, Archives, Articles d’aujourd’hui */
 const PROXIES = [
   u => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u),
   u => 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(u)
 ];
-let chaptersCfg = null, edition = null, editionVeille = null, feedCache = { time: 0, articles: [] }, activeTab = 'edition';
+let chaptersCfg = null, edition = null, feedCache = { time: 0, articles: [] }, activeTab = 'edition';
 let archiveIdx = null, archiveSel = null, archiveMonth = null;
-let weekData = null, weeksIdx = null;
+let weeksIdx = null;
 
 const $ = s => document.querySelector(s);
 const fmtDate = iso => new Date(iso + 'T09:00:00+02:00').toLocaleDateString('fr-FR',
@@ -14,6 +14,9 @@ const fmtDateHour = iso => new Date(iso).toLocaleString('fr-FR',
   { weekday: 'long', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' });
 const fmtMonth = ym => new Date(ym + '-01T12:00:00').toLocaleDateString('fr-FR',
   { month: 'long', year: 'numeric' });
+
+const JOURS = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
+const nomJourEdition = () => edition?.date ? JOURS[new Date(edition.date + 'T12:00:00').getDay()] : 'jour';
 
 function isoWeek(d) {
   const dt = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
@@ -110,11 +113,10 @@ function generationTime() {
 
 function renderTabs() {
   const tabs = [
-    { id: 'veille', nom: 'Édition de la veille', emoji: '🕘' },
-    { id: 'edition', nom: 'Édition du jour', emoji: '📬' },
+    { id: 'edition', nom: 'Édition du ' + nomJourEdition(), emoji: '📬' },
     { id: 'sources', nom: 'Sources', emoji: '📚' },
     { id: 'archives', nom: 'Archives', emoji: '🗄️' },
-    ...chaptersCfg.filter(c => !c.masque).map(c => ({ id: c.id, nom: c.nom, emoji: c.emoji }))
+    { id: 'articles', nom: 'Articles d’aujourd’hui', emoji: '🔥' }
   ];
   $('#tabs').innerHTML = tabs.map(t =>
     '<button class="tab' + (t.id === activeTab ? ' active' : '') + '" data-id="' + t.id + '">' +
@@ -138,22 +140,13 @@ function openArchive(html) {
 function renderView() {
   const view = $('#view');
 
-  // --- Édition de la veille : l'édition complète de la veille --- 
-  if (activeTab === 'veille') {
-    if (!editionVeille) { view.innerHTML = '<div class="empty">Aucune édition de la veille disponible pour l’instant — elle apparaîtra dès la deuxième édition. 🌱</div>'; return; }
-    view.innerHTML =
-      '<div class="summary-card"><h2>🕘 Édition de la veille — ' + fmtDate(editionVeille.date) + '</h2>' +
-      '<ol>' + editionVeille.resume_executif.map(p => '<li>' + p + '</li>').join('') + '</ol></div>' +
-      '<iframe class="edition-frame" src="' + editionVeille.html + '" title="Newsletter de la veille"></iframe>';
-    return;
-  }
-
+  // --- Édition du jour de la semaine : la plus récente édition publiée ---
   if (activeTab === 'edition') {
     if (!edition) { view.innerHTML = '<div class="empty">Aucune édition disponible pour l’instant.</div>'; return; }
     view.innerHTML =
-      '<div class="summary-card"><h2>Édition complète — ' + fmtDate(edition.date) + '</h2>' +
+      '<div class="summary-card"><h2>📬 Édition du ' + nomJourEdition() + ' — ' + fmtDate(edition.date) + '</h2>' +
       '<ol>' + edition.resume_executif.map(p => '<li>' + p + '</li>').join('') + '</ol></div>' +
-      '<iframe class="edition-frame" src="' + edition.html + '" title="Newsletter complète"></iframe>';
+      '<iframe class="edition-frame" src="' + edition.html + '" title="Newsletter du ' + nomJourEdition() + '"></iframe>';
     return;
   }
 
@@ -163,9 +156,14 @@ function renderView() {
       '<div class="summary-card"><h2>📚 Toutes les sources de l’édition — ' + fmtDate(edition.date) + '</h2>' +
       '<p class="meta-count">' + edition.sources.length + ' sources · fiabilité sur 5</p></div>' +
       '<table class="sources-table"><tr><th>Source</th><th>Fiabilité</th><th>MàJ</th></tr>' +
-      edition.sources.map(s =>
-        '<tr><td>' + s.label + '<div class="src-ref">' + s.ref + '</div></td>' +
-        '<td>' + s.fiabilite + '</td><td>' + s.maj + '</td></tr>').join('') +
+      edition.sources.map(s => {
+        const estLien = /^https?:\/\//.test(s.ref || '');
+        const label = estLien
+          ? '<a href="' + s.ref + '" target="_blank" rel="noopener">' + s.label + '</a>'
+          : s.label;
+        return '<tr><td>' + label + (s.ref ? '<div class="src-ref">' + s.ref + '</div>' : '') + '</td>' +
+          '<td>' + s.fiabilite + '</td><td>' + s.maj + '</td></tr>';
+      }).join('') +
       '</table>';
     return;
   }
@@ -226,37 +224,29 @@ function renderView() {
     return;
   }
 
-  // --- Grande info de la semaine : essentiel de chaque journée, lundi → dimanche ---
-  if (activeTab === 'grande-info-semaine') {
-    if (!weekData) {
-      view.innerHTML = '<div class="empty">Le récapitulatif de la semaine en cours n’est pas encore disponible — il s’étoffera au fil des éditions quotidiennes. 🌱</div>';
-      return;
-    }
-    const jours = weekData.jours || [];
+  // --- Articles d’aujourd’hui : tous les articles parus après la génération, toutes rubriques ---
+  if (activeTab === 'articles') {
+    const gen = generationTime();
+    const arts = (feedCache.articles || []).filter(a => a.date.getTime() > gen);
     view.innerHTML =
-      '<div class="summary-card"><h2>📰 L’essentiel de la semaine — du ' + fmtDate(weekData.lundi) + ' au dimanche</h2>' +
-      '<p class="meta-count">' + jours.length + ' journée(s) résumée(s), du lundi au dimanche.</p></div>' +
-      (jours.length ? jours.map(j =>
-        '<div class="chapter-resume"><h2>' + j.jour.charAt(0).toUpperCase() + j.jour.slice(1) + (j.date ? ' — ' + fmtDate(j.date) : '') + '</h2>' +
-        '<p>' + j.essentiel + '</p></div>').join('')
-        : '<div class="empty">La semaine commence lundi — le récap s’écrit au fil des jours. 🌙</div>');
+      '<div class="chapter-resume"><h2>🔥 Articles d’aujourd’hui</h2>' +
+      '<p class="meta-count">Articles parus après la génération de l’édition (' + fmtDateHour(edition?.genere_le ?? new Date().toISOString()) + ') · toutes rubriques confondues. L’essentiel du jour est dans l’Édition.</p></div>' +
+      (arts.length ? arts.map(articleHtml).join('')
+        : '<div class="empty">Rien de neuf depuis la génération de l’édition — c’est plutôt bon signe. 🌙</div>');
     return;
   }
 
-  const gen = generationTime();
-  const ch = chaptersCfg.find(c => c.id === activeTab);
-  const arts = (feedCache.articles || []).filter(a => a.chapitreId === activeTab && a.date.getTime() > gen);
-  view.innerHTML =
-    '<div class="chapter-resume"><h2>' + (ch?.emoji ?? '') + ' ' + (ch?.nom ?? '') + '</h2>' +
-    '<p class="meta-count">Articles parus après la génération de l’édition (' + fmtDateHour(edition?.genere_le ?? new Date().toISOString()) + '). L’essentiel du chapitre est dans l’Édition du jour.</p></div>' +
-    (arts.length ? arts.map(articleHtml).join('')
-      : '<div class="empty">Rien de neuf depuis l’édition de ce matin dans ce chapitre — c’est plutôt bon signe. 🌙</div>');
+  // Onglet inconnu (état résiduel) : retour à l’édition
+  activeTab = 'edition';
+  renderView();
 }
 
 function renderChaptersEditor() {
-  $('#chapters-editor').innerHTML = chaptersCfg.map((c, i) =>
+  $('#chapters-editor').innerHTML = chaptersCfg.map((c, i) => ({ c, i }))
+    .filter(x => x.c.flux.length)
+    .map(({ c, i }) =>
     '<li><span>' + c.emoji + '</span><span class="name">' + c.nom + '</span>' +
-    '<label style="margin:0"><input type="checkbox" data-i="' + i + '"' + (c.masque ? '' : ' checked') + '> visible</label></li>'
+    '<label style="margin:0"><input type="checkbox" data-i="' + i + '"' + (c.masque ? '' : ' checked') + '> suivi</label></li>'
   ).join('');
   [...document.querySelectorAll('#chapters-editor input')].forEach(cb =>
     cb.onchange = () => {
@@ -276,23 +266,10 @@ async function loadEdition() {
     archiveIdx = idx.editions || [];
     edition = await (await fetch(idx.editions[0].fichier, { cache: 'no-store' })).json();
     $('#edition-date').textContent = '· ' + fmtDate(edition.date);
-    editionVeille = null;
-    if ((idx.editions || []).length > 1) {
-      try {
-        editionVeille = await (await fetch(idx.editions[1].fichier, { cache: 'no-store' })).json();
-        if (editionVeille && editionVeille.date === edition.date && idx.editions.length > 2) {
-          editionVeille = await (await fetch(idx.editions[2].fichier, { cache: 'no-store' })).json();
-        }
-      } catch (e) { editionVeille = null; }
-    }
   } catch (e) { edition = null; }
   try {
     weeksIdx = await (await fetch('editions/semaines/index.json', { cache: 'no-store' })).json();
   } catch (e) { weeksIdx = null; }
-  const w = isoWeek(new Date());
-  try {
-    weekData = await (await fetch('editions/semaines/' + w.year + '-S' + String(w.week).padStart(2, '0') + '.json', { cache: 'no-store' })).json();
-  } catch (e) { weekData = null; }
 }
 
 async function init() {
