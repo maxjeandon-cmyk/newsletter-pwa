@@ -6,37 +6,13 @@
     {
       "jour": "lundi",
       "date": "2026-09-28",
-      "essentiel": "Anthropic et Trump : dîner Amodei à la Maison-Blanche, exclusion de Claude du Pentagone validée, OpenAI suspend l’entraînement de ses modèles avancés. Percée historique du RN aux sénatoriales (premier groupe parlementaire) à sept mois de la présidentielle. La visite du pape Léon XIV s’achève à Metz après plus d’un million de personnes. En Ukraine, les frappes russes tuent au moins huit personnes. SpaceX tente ce lundi l’orbite avec Starship."
+      "essentiel": "Le patron d'Anthropic Dario Amodei a dîné seul à seul avec Donald Trump à la Maison Blanche, deux jours après qu'une cour d'appel a validé l'exclusion des modèles Claude par le Pentagone ; Trump balaye les alertes de sécurité de l'IA, dans ce que le pape Léon XIV, au retour de sa visite en France, qualifie d'inquiétudes bien réelles — pas du fake news. Nvidia lance une plateforme de sécurité contre les agents fugueurs et autorise un rachat d'actions record de 150 milliards de dollars. En France, le RN et ses alliés (une quinzaine de sièges) formeront pour la première fois un groupe parlementaire au Sénat, tandis qu'un sondage Toluna-Harris donne Marine Le Pen gagnante au second tour de la présidentielle 2027 (57 % face à Édouard Philippe, 69 % face à Jean-Luc Mélenchon) ; le gouvernement présente jeudi un budget 2027 d'effort de 54 milliards d'euros. L'Ukraine subit une pression maximale : environ 3 900 drones, bombes et missiles russes en une semaine, l'Académie des sciences de Kiev frappée lundi (une morte), mais Kiev revendique 51 km² reconquis dans son offensive Vivaldi. Trump rejette le plan iranien de réouverture du détroit d'Ormuz en sept jours. SpaceX tente pour la première fois de mettre Starship en orbite, Taylor Swift devient l'artiste la plus récompensée de l'histoire des MTV VMA, et la visite du pape Léon XIV s'achève à Metz après avoir rassemblé 1,3 million de personnes."
     },
-    {
-      "jour": "mardi",
-      "date": null,
-      "essentiel": null
-    },
-    {
-      "jour": "mercredi",
-      "date": null,
-      "essentiel": null
-    },
-    {
-      "jour": "jeudi",
-      "date": null,
-      "essentiel": null
-    },
-    {
-      "jour": "vendredi",
-      "date": null,
-      "essentiel": null
-    },
-    {
-      "jour": "samedi",
-      "date": null,
-      "essentiel": null
-    },
-    {
-      "jour": "dimanche",
-      "date": null,
-      "essentiel": null
-    }
+    { "jour": "mardi", "date": null, "essentiel": null },
+    { "jour": "mercredi", "date": null, "essentiel": null },
+    { "jour": "jeudi", "date": null, "essentiel": null },
+    { "jour": "vendredi", "date": null, "essentiel": null },
+    { "jour": "samedi", "date": null, "essentiel": null },
+    { "jour": "dimanche", "date": null, "essentiel": null }
   ]
 }

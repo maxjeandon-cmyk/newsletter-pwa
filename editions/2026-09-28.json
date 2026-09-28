@@ -1,688 +1,202 @@
 {
   "date": "2026-09-28",
-  "genere_le": "2026-09-28T08:21:55.350Z",
+  "genere_le": "2026-09-29T00:50:00+02:00",
   "html": "editions/2026-09-28.html",
   "resume_executif": [
-    "Dîner Trump–Amodei à la Maison Blanche : après des mois de conflit ouvert (classement « risque pour la chaîne d'approvisionnement » validé en appel vendredi), le patron d'Anthropic dîne seul à seul avec Donald Trump, qui balaie les alertes des laboratoires sur la sécurité de l'IA et reçoit mardi les grands patrons du secteur.",
-    "Record historique de l'extrême droite au Sénat : le RN et ses alliés quadruplent leur nombre de sénateurs (une quinzaine de sièges) et formeront pour la première fois un groupe parlementaire, à moins de sept mois de la présidentielle où Marine Le Pen domine les sondages (31 % d'intentions de vote).",
-    "Budget 2027 présenté jeudi : un effort d'environ 54 milliards d'euros, un gel du budget de l'État (hors dette et Armées, +6,4 Md), une mise à contribution des retraités — le tout dans un climat de méfiance, Olivier Faure (PS) jugeant le compromis « moins ouvert que jamais ».",
-    "Ukraine : les frappes russes tuent au moins huit personnes dimanche (Kiev, Zaporijjia, Odessa), Moscou revendique la prise du village frontalier de Khrypuny (Kharkiv) et Sergueï Lavrov affirme devant l'ONU que la guerre continuera « jusqu'au bout ».",
-    "Pape Léon XIV achève sa visite en France à Metz : après plus d'un million de personnes rassemblées à Paris et une rencontre à huis clos avec sept victimes de violences sexuelles à Lourdes, il plaide lundi pour une Europe source de paix — tandis que SpaceX tente pour la première fois d'atteindre l'orbite avec Starship."
+    "IA, un jour de convergence improbable : Dario Amodei (Anthropic) a dîné seul à seul avec Donald Trump deux jours après la validation judiciaire de l'exclusion des modèles Claude par le Pentagone ; Trump balaye les alertes de sécurité tandis que le pape Léon XIV, en clôture de sa visite en France, affirme que les inquiétudes sur l'IA ne sont pas du fake news ; Nvidia lance une plateforme de sécurité anti-agents-fugueurs et un rachat d'actions record de 150 milliards de dollars.",
+    "France : le RN et ses alliés (une quinzaine de sièges) formeront pour la première fois un groupe parlementaire au Sénat ; un sondage Toluna-Harris donne Marine Le Pen gagnante au second tour de la présidentielle 2027 (57 % face à Édouard Philippe, 69 % face à Jean-Luc Mélenchon) ; le gouvernement présente jeudi un budget 2027 d'effort de 54 milliards d'euros, entre mouvement lycéen et grève de la fonction publique.",
+    "Ukraine sous pression maximale : environ 3 900 drones, bombes et missiles russes recensés en une semaine par Zelensky ; l'Académie des sciences de Kiev a été frappée lundi (une morte) tandis que Kiev revendique 51 km² reconquis dans son offensive Vivaldi.",
+    "Moyen-Orient verrouillé : Trump rejette le plan iranien de réouverture du détroit d'Ormuz en sept jours ; Ryad passe ses écoles en distanciel face aux attaques houthies ; le bilan de la guerre à Gaza dépasse 74 000 morts.",
+    "Une journée de records : le pape Léon XIV achève à Metz une visite qui a rassemblé 1,3 million de personnes ; SpaceX tente pour la première fois de mettre Starship en orbite ; Taylor Swift devient l'artiste la plus récompensée de l'histoire des MTV VMA."
   ],
   "chapitres": [
     {
       "id": "intelligence-artificielle",
       "emoji": "🤖",
       "nom": "Intelligence artificielle",
-      "resume": "Dîner Trump–Amodei à la Maison Blanche en plein conflit institutionnel ; OpenAI suspend l'entraînement de ses modèles avancés ; Anthropic lance un Claude haut de gamme moins cher ; sommet Trump–Xi et « super-intelligence » ; Black Forest Labs en contrepoint européen ; l'affaire Tsuda contre TikTok ; la « coalition des indépendants » de Macron et Mistral AI qui acquiert Pimento."
+      "resume": "Dîner Amodei-Trump à la Maison Blanche, exclusion des modèles Claude validée en appel, alertes conjointes Anthropic-OpenAI sur la sécurité, contradiction frontale du pape Léon XIV, plateforme de sécurité et rachat record de 150 Md$ chez Nvidia, actualités d'OpenAI, Google, Meta, xAI, Hugging Face et Mistral."
     },
     {
       "id": "jeu-video-pop-culture",
       "emoji": "🎮",
       "nom": "Jeu vidéo & pop culture",
-      "resume": "Rentrée gaming exceptionnellement dense (EA SPORTS FC 27, Marvel's Wolverine, Moonlighter 2) ; or esport aux Jeux asiatiques pour un Japonais de 11 ans ; le film « Resident Evil » cartonne au box-office ; ressortie record d'« Avengers : Endgame » ; ressenti communautaire Reddit mitigé-enthousiaste."
+      "resume": "Rentrée chargée (Wolverine, Minecraft Dungeons 2, GTA VI le 19 novembre), Nintendo réclame 4,5 M$ au modérateur Archbox, VMAs record pour Taylor Swift ; ce qu'en disent les joueurs : débats sur les remasters, la culture du crunch et l'emballement autour de GTA VI, recoupés avec la presse spécialisée."
     },
     {
       "id": "culture",
       "emoji": "🎭",
       "nom": "Culture",
-      "resume": "Concha de Oro pour Mike Leigh à Saint-Sébastien ; box-office nord-américain dominé par Endgame et Resident Evil ; album de U2 annoncé pour le 13 novembre ; Hervé Vilard en tournée ; disparitions de Marina Vlady et du scénariste Rodolphe ; semaine de la mode de Paris clôturée."
+      "resume": "Sorties francophones détaillées : Netflix adapte La vie est un long fleuve tranquille (Cornillac, Tillier, Sagnier), Aevum de Jordi Savall, pièces de théâtre, albums et expositions, avec extraits de critiques pour chaque sortie."
     },
     {
       "id": "sciences",
       "emoji": "🔬",
       "nom": "Sciences",
-      "resume": "SpaceX tente pour la première fois d'atteindre l'orbite avec Starship (déploiement de 26 satellites Starlink) ; érosion côtière en Californie ; glaciers himalayens et hydroélectricité népalaise sous pression ; dix disparus après une avalanche au Himlung."
+      "resume": "Starship vise pour la première fois une orbite complète (14e vol, 26 satellites Starlink), actualités de la recherche tous domaines : astronomie, médecine, climatologie."
     },
     {
       "id": "climat",
-      "emoji": "🌍",
+      "emoji": "🌡️",
       "nom": "Climat",
-      "resume": "Environ 260 mobilisations samedi en France après un été record (98 000 ha brûlés, premier pyrocumulonimbus observé) ; nor'easter inondant le nord-est américain ; évaluation d'Al Gore jugée correcte par des climatologues ; le budget 2027 français interroge la cohérence climatique."
+      "resume": "Marches climat mondiales (~260 villes) face aux discours des chefs d'État, bilan de plus de 8 000 morts liés aux canicules cette année, comparaison systématique entre déclarations et mesures réelles."
     },
     {
       "id": "politique-francaise",
       "emoji": "🇫🇷",
       "nom": "Politique française",
-      "resume": "Percée historique de l'extrême droite au Sénat (RN et alliés quadruplés, premier groupe parlementaire) ; Le Pen à 31 % dans les sondages ; budget 2027 de 54 Md présenté jeudi avec mise à contribution des retraités ; grève mardi aux perturbations limitées ; visite du pape qui s'achève à Metz."
+      "resume": "Présidentielle 2027 : sondage Toluna-Harris défavorable à tous les candidats du bloc face à Le Pen ; RN premier groupe d'extrême droite au Sénat, Retailleau réélu en Vendée ; budget 2027 de 54 Md€ présenté jeudi ; mobilisation lycéenne et grève de la fonction publique mardi."
     },
     {
       "id": "etats-unis",
       "emoji": "🇺🇸",
       "nom": "États-Unis",
-      "resume": "Sites de désinformation « pink slime » avant les midterms ; contentieux électoraux et CNN exclu de l'Air Force One ; taux hypothécaires au-dessus de 7 % ; Trump rejette le plan iranien sur Ormuz mais espère reprendre les discussions."
+      "resume": "Dîner Trump-Amodei et veto sur le plan iranien d'Ormuz analysés au regard des faits ; opinion publique américaine sur l'IA et l'économie ; relations avec la France après la visite du pape à Metz."
     },
     {
       "id": "chine",
       "emoji": "🇨🇳",
       "nom": "Chine",
-      "resume": "Sommet Xi–Trump « riche en symboles, pauvre en avancées » : pandas vers Atlanta, APEC et G20 à venir ; Pékin « respecte » le passage à la « super-intelligence » ; canal de communication sur les incidents IA ; production de cuivre raffiné en territoire négatif."
+      "resume": "Annonce du sommet Trump-Xi (pandas à Atlanta, démenti sur une vente d'armes), décisions et déclarations chinoises confrontées aux données économiques réelles, relations avec la France."
     },
     {
       "id": "russie",
       "emoji": "🇷🇺",
       "nom": "Russie",
-      "resume": "Lavrov accuse l'Europe à l'ONU mais rencontre son homologue allemand ; Moscou « ne s'apprête pas » à attaquer l'Europe ; prise de contrôle d'actifs d'entreprises françaises dénoncée par Lescure ; Badanine raconte le système Poutine ; Séoul exige des excuses de Kiev sur les prisonniers nord-coréens."
+      "resume": "Sanctions européennes visant Iabloko, saisie du groupe Metro en Russie, salve record de 3 900 engins contre l'Ukraine : décisions du Kremlin comparées au réel ; société, économie et relations avec la France."
     },
     {
       "id": "geopolitique",
-      "emoji": "🌐",
-      "nom": "Géopolitique mondiale",
-      "resume": "Frappes russes meurtrières en Ukraine (huit morts) et Lavrov promet la guerre « jusqu'au bout » ; Ormuz, Yémen et Gaza sous tension ; démission de Vucic visant Matignon ; convois au Venezuela pour Maria Corina Machado ; congrès du Labour à Liverpool."
+      "emoji": "🌍",
+      "nom": "Géopolitique",
+      "resume": "Ukraine en détail (frappe sur l'Académie des sciences de Kiev, offensive Vivaldi +51 km², villages de Novovodiane et Oulanove pris), détroit d'Ormuz, Gaza au-delà de 74 000 morts, alliances et économie de guerre."
     },
     {
       "id": "grande-info-semaine",
       "emoji": "📰",
-      "nom": "Grande information de la semaine",
-      "resume": "La visite historique du pape Léon XIV en France (plus d'un million de personnes à Paris, Lourdes, Metz) ; le sommet Trump–Xi à Washington ; la rupture iranienne sur Ormuz ; le premier appel au ralentissement de l'IA pris au sérieux ; le showdown budgétaire français de jeudi."
+      "nom": "Grande info de la semaine",
+      "resume": "Au-delà des 24 heures : visite historique du pape Léon XIV en France (1,3 million de personnes à Metz), Starship vers l'orbite, tournant politique français au Sénat, Oscars du cinéma russe et sortie de La vie est un long fleuve tranquille."
     }
   ],
   "sources": [
-    {
-      "label": "AFP — Trump confirme dîner avec Amodei",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AP — Trump dîne avec le patron d'Anthropic",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "28/09/2026"
-    },
-    {
-      "label": "AP — Anthropic et OpenAI tirent la sonnette d'alarme sur la sécurité de l'IA",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Black Forest Labs appelle l'Europe à l'optimisme",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Macron appelle à une IA alternative",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "22/09/2026"
-    },
-    {
-      "label": "AFP — Mistral acquiert Pimento",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "21/09/2026"
-    },
-    {
-      "label": "AFP — Anthropic lance un modèle haut de gamme moins cher",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "22/09/2026"
-    },
-    {
-      "label": "AFP — La Chine « respecte » le passage à la « super-intelligence »",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — États-Unis et Chine ouvrent un canal de communication sur l'IA",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "25/09/2026"
-    },
-    {
-      "label": "AFP — Star japonaise des animés contre TikTok (clonage vocal)",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AP — Box-office : retour en grâce d'« Endgame »",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Un prodige de 11 ans en or esport aux Jeux asiatiques",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "Ars Technica — Critique « Resident Evil »",
-      "ref": "https://arstechnica.com",
-      "fiabilite": 4,
-      "maj": "22/09/2026"
-    },
-    {
-      "label": "Reddit — r/movies, fil de critiques « Resident Evil »",
-      "ref": "https://www.reddit.com/r/movies",
-      "fiabilite": 2,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "Reddit — r/videogames « September 2026 is stacked »",
-      "ref": "https://www.reddit.com/r/videogames",
-      "fiabilite": 2,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Mike Leigh primé à Saint-Sébastien",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — U2 : « Carnaval de Luz » annoncé",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "23/09/2026"
-    },
-    {
-      "label": "AFP — U2 concerts surprise à Dublin",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "25/09/2026"
-    },
-    {
-      "label": "AFP — Hervé Vilard, 60 ans de carrière et une tournée",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Décès de Marina Vlady",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "24/09/2026"
-    },
-    {
-      "label": "AFP — Décès du scénariste de BD Rodolphe",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "23/09/2026"
-    },
-    {
-      "label": "AFP — Quand les écrivains se mettent en scène",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Semaine de la mode de Paris",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Manifestation anti-fourrure à Milan",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Inde : clap de fin pour les cinémas à l'ancienne",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Concerts annulés (nor'easter)",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — SpaceX vise l'orbite avec Starship",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AP — Montée des eaux en Californie",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Népal : le pari du tout-hydroélectrique",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Glaciers himalayens, menace existentielle",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Avalanche au Népal, dix disparus",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AP — Al Gore : une Terre propre à portée de main",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "25/09/2026"
-    },
-    {
-      "label": "AP — Nor'easter : le nord-est américain inondé",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Pompiers mobilisés, record de 98 000 ha brûlés",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Sud-Ouest : mégafeux, garder « un coup d'avance »",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Record de l'extrême droite au Sénat",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Retailleau réélu sénateur de Vendée",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Sondage Cluster17 : Le Pen 31 %",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "24/09/2026"
-    },
-    {
-      "label": "AFP — Ce que l'on sait du budget 2027",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "28/09/2026"
-    },
-    {
-      "label": "AFP — Budget 2027 : copie rendue jeudi",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "28/09/2026"
-    },
-    {
-      "label": "AFP — Faure peu ouvert au compromis budgétaire",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Banque de France : « avoir un budget »",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "25/09/2026"
-    },
-    {
-      "label": "AFP — Entreprises inquiètes pour 2027",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Grève de mardi : SNCF et RATP quasi normales",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Viginum contre les ingérences avant 2027",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Procès Dati–Ghosn : ultime journée cruciale",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Messe du pape : foule de candidats 2027",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Le Pen, Philippe, Retailleau à la messe",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Sites de désinformation « pink slime » avant les midterms",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "28/09/2026"
-    },
-    {
-      "label": "AFP — Prolifération des sites de désinformation",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AP — CNN exclu de l'Air Force One",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Démocrates contre des agents armés aux bureaux de vote",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "24/09/2026"
-    },
-    {
-      "label": "AP — Cour suprême rejette la carte du Missouri",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "25/09/2026"
-    },
-    {
-      "label": "AFP — Taux hypothécaires au-dessus de 7 %",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "24/09/2026"
-    },
-    {
-      "label": "AP — Collins en difficulté dans le Maine",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Trump rejette le plan iranien sur Ormuz",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Trump rejette le plan de trêve (analyse)",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Trump s'attend à une reprise des discussions avec l'Iran",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — L'Iran maintient ses conditions sur Ormuz",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Trésor américain revendique l'isolement de l'Iran",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Émirats : vols iraniens suspendus",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "24/09/2026"
-    },
-    {
-      "label": "AFP — Foie gras au menu des élections à Washington",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AP — Trump au Presidents Cup",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Pandas géants : arrivée aux États-Unis",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — La Chine envoie deux pandas",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Matières premières : cuivre chinois en baisse",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "25/09/2026"
-    },
-    {
-      "label": "AFP — Lescure dénonce un « acte hostile » russe",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "25/09/2026"
-    },
-    {
-      "label": "AFP — Lavrov accuse l'Europe sur l'Ukraine",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Lavrov rencontre Wadephul à l'ONU",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Journaliste russe Badanine : le système Poutine",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — La Russie ne s'apprête pas à attaquer l'Europe",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Serbie : prolongation de l'accord gazier avec la Russie",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Azerbaïdjan : un Français gracié",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "23/09/2026"
-    },
-    {
-      "label": "AFP — Séoul exige des excuses de Kiev (POW nord-coréens)",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Frappes russes : huit morts en Ukraine",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Kiev : entrepôts ciblés (analyse ACLED)",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Seize morts en Ukraine et en Russie",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Yémen : frappe saoudienne sur Taëz",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Ryad dénonce les « manquements » à l'ONU",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Écoles de Ryad en distanciel",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Israël tue le ravisseur d'un couple d'otages",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "28/09/2026"
-    },
-    {
-      "label": "AFP — Irlande domine Israël dans un stade vide",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Vote des joueurs irlandais de disputer le match",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Vucic annonce sa démission",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AP — Vucic démissionne pour viser Matignon",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Vucic : de Milosevic à Matignon",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Neuf Serbes arrêtés au Kosovo",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Venezuela : manifestations pour Machado",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Venezuela : proche de Machado accueillie à Caracas",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "28/09/2026"
-    },
-    {
-      "label": "AFP — Venezuela : libérations de prisonniers politiques",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Irlande du Nord : marche bloquée",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Labour en congrès à Liverpool",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AP — Congrès du Labour, lune de miel de Burnham",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Afrique du Sud : 11e femme retrouvée morte",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Burkina : Traoré face au mythe du « nouveau Sankara »",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Somalie : évasion de pirates présumés",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Pape Léon XIV achève sa visite à Metz",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "28/09/2026"
-    },
-    {
-      "label": "AFP — Programme de lundi à Metz",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "28/09/2026"
-    },
-    {
-      "label": "AFP — Pape encourage les évêques contre les violences sexuelles",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    },
-    {
-      "label": "AFP — Pape à Lourdes : prière pour la France",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "26/09/2026"
-    },
-    {
-      "label": "AFP — Mainlines du dimanche 27/09 (pape, sénatoriales, climat, Ormuz)",
-      "ref": "",
-      "fiabilite": 5,
-      "maj": "27/09/2026"
-    }
+    {"label": "AFP — A la une : pape à Metz, RN au Sénat, Dati, Iran, Starship", "ref": "news-afp-20260928-71d79dfa", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Actualités du dimanche 27 septembre 2026", "ref": "news-afp-20260927-9a669b48", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AFP — Dîner d'Amodei avec Trump à la Maison Blanche", "ref": "news-afp-20260927-7380a489", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AP — Anthropic et OpenAI sonnent l'alarme sur la sécurité de l'IA", "ref": "news-ap-20260927-33e0e580", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AP — Nvidia lance une plateforme de sécurité anti-agents", "ref": "news-ap-20260928-8633cbc7", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Nvidia autorise 150 Md$ de rachats d'actions", "ref": "news-afp-20260928-6fb083bc", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AP — Léon XIV : l'IA n'est pas du « fake news »", "ref": "news-ap-20260928-da567521", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — A Metz, le pape fustige le « mensonge » entre États", "ref": "news-afp-20260928-457f5b03", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Macron : l'Europe doit retrouver le « courage de ses fondateurs »", "ref": "news-afp-20260928-e841e2c6", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — L'IA d'OpenAI a infiltré un site du gouvernement australien", "ref": "news-afp-20260924-cd38fb05", "fiabilite": "5/5", "maj": "2026-09-24"},
+    {"label": "AFP — Le PM australien fustige OpenAI (site santé)", "ref": "news-afp-20260923-952c50c7", "fiabilite": "5/5", "maj": "2026-09-23"},
+    {"label": "AP — OpenAI : agents et sites gouvernementaux américains", "ref": "news-ap-20260926-9dffe275", "fiabilite": "5/5", "maj": "2026-09-26"},
+    {"label": "AFP — OpenAI : images d'utilisateurs publiées par erreur", "ref": "news-afp-20260926-c3ae4beb", "fiabilite": "5/5", "maj": "2026-09-26"},
+    {"label": "AP — Hacks autonomes : la question de la responsabilité juridique", "ref": "news-ap-20260924-b5abe809", "fiabilite": "5/5", "maj": "2026-09-24"},
+    {"label": "AFP — Anthropic et OpenAI attendus en Bourse", "ref": "news-afp-20260926-1053e48b", "fiabilite": "5/5", "maj": "2026-09-26"},
+    {"label": "AP — Meta mise tout sur Muse, agent et lunettes sans caméra", "ref": "news-ap-20260924-919c925a", "fiabilite": "5/5", "maj": "2026-09-24"},
+    {"label": "AFP — Meta lance ses lunettes IA sans caméra", "ref": "news-afp-20260924-c221e065", "fiabilite": "5/5", "maj": "2026-09-24"},
+    {"label": "AFP — Les actions Meta s'envolent après Muse", "ref": "news-afp-20260924-f36450fc", "fiabilite": "5/5", "maj": "2026-09-24"},
+    {"label": "AFP — Macron appelle à une IA alternative", "ref": "news-afp-20260922-d42df15b", "fiabilite": "5/5", "maj": "2026-09-22"},
+    {"label": "AFP — Mistral acquiert Pimento", "ref": "news-afp-20260921-785857a6", "fiabilite": "5/5", "maj": "2026-09-21"},
+    {"label": "AFP — Rapport sénatorial sur l'IA verte", "ref": "news-afp-20260921-9a9eb863", "fiabilite": "5/5", "maj": "2026-09-21"},
+    {"label": "AFP — Face à l'IA, la recherche en questionnement", "ref": "news-afp-20260925-055ffea5", "fiabilite": "5/5", "maj": "2026-09-25"},
+    {"label": "Game.fr — Les sorties jeux vidéo de septembre 2026", "ref": "https://www.game.fr/2026/09/sorties-jeux-video-septembre-2026/", "fiabilite": "4/5", "maj": "2026-09-28"},
+    {"label": "Developpez — Nintendo obtient 4,5 M$ contre un modérateur Reddit", "ref": "https://droit.developpez.com/actu/387586/Un-moderateur-de-Reddit-soupconne-d-avoir-vendu-des-jeux-Nintendo-Switch-pirates-doit-verser-4-5-millions-de-dollars-a-Nintendo-a-l-issue-d-un-proces/", "fiabilite": "4/5", "maj": "2026-09"},
+    {"label": "AFP — Or esport aux Jeux asiatiques à 11 ans", "ref": "news-afp-20260926-a13f5b12", "fiabilite": "5/5", "maj": "2026-09-26"},
+    {"label": "AFP — Taylor Swift record aux MTV VMA", "ref": "news-afp-20260928-8449251b", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Série Netflix « La vie est un long fleuve tranquille »", "ref": "news-afp-20260928-13b372a6", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Jordi Savall annonce la plateforme Aevum", "ref": "news-afp-20260928-3cd0e5c4", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Zviaguintsev : la France et les cinéastes dissidents aux Oscars", "ref": "news-afp-20260928-2d80fea7", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Mike Leigh primé à Saint-Sébastien", "ref": "news-afp-20260927-044d171c", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AFP — Décès de Janine Boissard", "ref": "news-afp-20260928-4af2bb74", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Décès du romancier Peter May", "ref": "news-afp-20260928-1632dfa3", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Le Goncourt retire Orélien de sa sélection", "ref": "news-afp-20260925-63a86f28", "fiabilite": "5/5", "maj": "2026-09-25"},
+    {"label": "AFP — Orélien de retour au Canada", "ref": "news-afp-20260928-cc918781", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Un écrivain accusé d'IA sur X", "ref": "news-afp-20260922-6975218a", "fiabilite": "5/5", "maj": "2026-09-22"},
+    {"label": "AFP — L'édition face à sa première crise IA", "ref": "news-afp-20260923-9ad3cd91", "fiabilite": "5/5", "maj": "2026-09-23"},
+    {"label": "AFP — Le milieu québécois « secoué »", "ref": "news-afp-20260925-6856b084", "fiabilite": "5/5", "maj": "2026-09-25"},
+    {"label": "AFP — Quand les écrivains se mettent en scène (Manosque)", "ref": "news-afp-20260927-b6c5ba47", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AFP — Pièce annulée à Vierzon", "ref": "news-afp-20260928-c16161fa", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Musip, musée de l'info et de la presse à Paris", "ref": "news-afp-20260928-03a2c01a", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Macron interpellé sur la TVA Canal+", "ref": "news-afp-20260928-eebc9116", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — En Inde, clap de fin pour les cinémas à l'ancienne", "ref": "news-afp-20260927-249ce5be", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AFP — Starship vise l'orbite terrestre", "ref": "news-afp-20260927-b233d17c", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AFP — Espèces invasives et montée des océans", "ref": "news-afp-20260928-52ad46b4", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AP — Maui : métaux et santé pulmonaire", "ref": "news-ap-20260928-3e71a513", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AP — Pacifica : la montée de la mer menace la ville et le rail", "ref": "news-ap-20260927-122a4e95", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AFP — Reconstruction mammaire : étude clinique", "ref": "news-afp-20260928-1503bcab", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Désindexation des retraites : étude", "ref": "news-afp-20260928-695d1b02", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Réseau électrique et cyberattaques", "ref": "news-afp-20260928-877097ca", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Marches pour le climat partout en France", "ref": "news-afp-20260926-a7a29dcb", "fiabilite": "5/5", "maj": "2026-09-26"},
+    {"label": "AFP — Bangkok inondé s'adapte", "ref": "news-afp-20260928-b62d6101", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Birmanie : huit morts dans des inondations", "ref": "news-afp-20260928-b4842533", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Népal : l'hydroélectricité face aux glaciers", "ref": "news-afp-20260927-01dc6743", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AP — Alito se récite d'un procès climat majeur", "ref": "news-ap-20260928-d9fbed00", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Les 27 adoptent de nouvelles sanctions contre la Russie", "ref": "news-afp-20260928-fdc63a53", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Sénatoriales : percée historique du RN", "ref": "news-afp-20260928-de4e7a6f", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Retailleau réélu en Vendée", "ref": "news-afp-20260927-3c49d5ac", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AFP — Le Pen creuse l'écart au second tour (Toluna-Harris)", "ref": "news-afp-20260928-38e167a6", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Budget 2027 : le gouvernement rend sa copie jeudi", "ref": "news-afp-20260928-e3d5faa5", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Ce que l'on sait du projet de budget", "ref": "news-afp-20260928-a0a1b80c", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Budget de la Sécurité sociale : les pistes", "ref": "news-afp-20260928-9c95a85a", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Banque de France : « avoir un budget »", "ref": "news-afp-20260925-b62a416d", "fiabilite": "5/5", "maj": "2026-09-25"},
+    {"label": "AFP — La Bourse de Paris, l'écart OAT-Bund à 112 pb", "ref": "news-afp-20260928-6a294c7c", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Grève « massive » de la fonction publique mardi", "ref": "news-afp-20260928-0cc8ff96", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Lecornu-Mélenchon : passe d'armes sur les lycées", "ref": "news-afp-20260928-5607a509", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Mélenchon dénonce la « répression »", "ref": "news-afp-20260928-fec4bca0", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Nuñez : « violences urbaines »", "ref": "news-afp-20260928-e0fc5b18", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Arabie saoudite : moyens français « défensifs »", "ref": "news-afp-20260927-6ca2e7e1", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AP — Un juge bloque les fonds antiterrorisme de Trump", "ref": "news-ap-20260928-531d1613", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AP — L'administration abaisse les normes de consommation", "ref": "news-ap-20260928-7348a2ae", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Trump accusé de « propagande » illégale", "ref": "news-afp-20260928-70a32e59", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AP — Trump-médias : le bras de fer en wait-and-see", "ref": "news-ap-20260928-42d676ce", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AP — Le Sud démocrate espère", "ref": "news-ap-20260926-86950ace", "fiabilite": "5/5", "maj": "2026-09-26"},
+    {"label": "AP — Les démocrates préparent l'oversight (impeachment en option)", "ref": "news-ap-20260926-0dbe981c", "fiabilite": "5/5", "maj": "2026-09-26"},
+    {"label": "AP — Caroline du Sud : tout est dans le 2028", "ref": "news-ap-20260928-858202eb", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AP — Trump campe dans les États rouges", "ref": "news-ap-20260925-2d7b6cc5", "fiabilite": "5/5", "maj": "2026-09-25"},
+    {"label": "AP — Les États-Unis gagnent le Presidents Cup", "ref": "news-ap-20260927-eddfdbcf", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AFP — Trump propose des armes à Xi (Perdue)", "ref": "news-afp-20260928-e4429d17", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Washington dément tout projet de ventes d'armes à la Chine", "ref": "news-afp-20260928-c3474f66", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Arrivée des pandas à Atlanta", "ref": "news-afp-20260927-14d2a192", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AFP — La Chine « respecte » la « super-intelligence »", "ref": "news-afp-20260926-81fe178b", "fiabilite": "5/5", "maj": "2026-09-26"},
+    {"label": "AFP — À Pékin, espoir de stabilisation", "ref": "news-afp-20260924-cc4f3331", "fiabilite": "5/5", "maj": "2026-09-24"},
+    {"label": "AFP — Chen Yujie, or du 100 m", "ref": "news-afp-20260926-c924cee1", "fiabilite": "5/5", "maj": "2026-09-26"},
+    {"label": "AFP — Le Japon brise 32 ans de suprématie chinoise", "ref": "news-afp-20260925-35e765f5", "fiabilite": "5/5", "maj": "2026-09-25"},
+    {"label": "AFP — Metro sous administration russe", "ref": "news-afp-20260928-1c4bd29d", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Lavrov à l'ONU : objectifs « peu importe les circonstances »", "ref": "news-afp-20260926-ba5fef08", "fiabilite": "5/5", "maj": "2026-09-26"},
+    {"label": "AFP — Lavrov-Wadephul à l'ONU", "ref": "news-afp-20260926-ea6bb2f9", "fiabilite": "5/5", "maj": "2026-09-26"},
+    {"label": "AFP — La Russie prête à aider sur Ormuz", "ref": "news-afp-20260926-f13fe45a", "fiabilite": "5/5", "maj": "2026-09-26"},
+    {"label": "AFP — Le journaliste russe qui raconte le système Poutine", "ref": "news-afp-20260926-bfcd4b19", "fiabilite": "5/5", "maj": "2026-09-26"},
+    {"label": "AFP — Turquie : l'humoriste Göktas condamné puis libéré", "ref": "news-afp-20260928-01151763", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AP — Vucic démissionne pour briguer la primature", "ref": "news-ap-20260927-5d299513", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AFP — La Serbie espère prolonger son accord gazier", "ref": "news-afp-20260926-2f7f5aaa", "fiabilite": "5/5", "maj": "2026-09-26"},
+    {"label": "AP — Drones russes : au moins 3 morts, offensive « Vivaldi »", "ref": "news-ap-20260928-f4e12e94", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — L'Académie des sciences de Kiev frappée", "ref": "news-afp-20260928-bcfcd60c", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Le Premier ministre ukrainien conseille de quitter Kiev", "ref": "news-afp-20260928-91781a2e", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — 3 900 drones/bombes/missiles en une semaine (Zelensky)", "ref": "news-afp-20260927-35698ce6", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AP — Zaporijjia : lignes électriques sous tension diplomatique", "ref": "news-ap-20260927-99b89ccb", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AFP — L'Iran maintient ses conditions sur Ormuz", "ref": "news-afp-20260927-43b3e735", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AFP — L'Iran dit n'avoir aucune discussion prévue", "ref": "news-afp-20260928-eeaf0c60", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Le guide suprême prédit le départ américain", "ref": "news-afp-20260928-465633cb", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Iran : plainte à l'OACI", "ref": "news-afp-20260928-79195ee3", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Sanctions sur l'aviation iranienne : Chine et Russie passent outre", "ref": "news-afp-20260928-dcd77bf0", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Ryad : écoles en distanciel", "ref": "news-afp-20260927-78f75312", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AFP — Taiz : frappes saoudiennes", "ref": "news-afp-20260927-acab0af5", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AP — Gaza > 74 000 morts, Yémen ~ 700 morts", "ref": "news-ap-20260927-b2931033", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AFP — Israël élimine le ravisseur d'un couple d'otages", "ref": "news-afp-20260928-c76f16bb", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AP — Irlande-Israël : jouer avec brassards noirs", "ref": "news-ap-20260926-7050626a", "fiabilite": "5/5", "maj": "2026-09-26"},
+    {"label": "AFP — Lula face à Flavio Bolsonaro", "ref": "news-afp-20260928-dacb7795", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Les grands enjeux des élections au Brésil", "ref": "news-afp-20260928-3f9c317e", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Venezuela : libérations de prisonniers politiques", "ref": "news-afp-20260926-e6e40aeb", "fiabilite": "5/5", "maj": "2026-09-26"},
+    {"label": "AFP — Venezuela : une proche de Machado accueillie à Caracas", "ref": "news-afp-20260928-7c1d9316", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Afrique du Sud : fusillades du week-end", "ref": "news-afp-20260927-37961e3f", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AFP — Afrique du Sud : 11 femmes assassinées", "ref": "news-afp-20260927-74e68186", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AFP — Madrid : la crise du logement en scène", "ref": "news-afp-20260927-a78968ef", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "AFP — Cachemire : résolution sur l'autonomie", "ref": "news-afp-20260928-207c8b72", "fiabilite": "5/5", "maj": "2026-09-28"},
+    {"label": "AFP — Trump rebaptise l'IA « super-intelligence »", "ref": "news-afp-20260922-c3c083ad", "fiabilite": "5/5", "maj": "2026-09-22"},
+    {"label": "AFP — Milei qualifie l'ONU « d'organisation inutile »", "ref": "news-afp-20260923-e783b04b", "fiabilite": "5/5", "maj": "2026-09-23"},
+    {"label": "AFP — Le G20 et les standards IA (Burnham)", "ref": "news-afp-20260922-2f2a4b96", "fiabilite": "5/5", "maj": "2026-09-22"},
+    {"label": "AP — Allemagne : polémique sur les Stolpersteine", "ref": "news-ap-20260927-58184756", "fiabilite": "5/5", "maj": "2026-09-27"},
+    {"label": "Reddit r/Games, r/gaming, r/jeuxvideo (sentiment, non vérifié)", "ref": "https://www.reddit.com/r/Games/", "fiabilite": "2/5", "maj": "2026-09-28"}
   ]
 }
