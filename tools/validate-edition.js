@@ -90,7 +90,9 @@ function main() {
   const htmlCandidate = htmlPath || (j && j.html ? j.html.replace(/^editions\//, 'editions/') : null);
   if (htmlCandidate) {
     try {
-      const html = fs.readFileSync(htmlCandidate, 'utf8');
+      // Décodage des entités numériques (&#233; etc.) : les éditions sont publiées en ASCII pur
+      // (contournement de la corruption de transport des charges non-ASCII > ~32 Ko, règle du 29/09/2026).
+      const html = fs.readFileSync(htmlCandidate, 'utf8').replace(/&#(\d+);/g, (m, n) => String.fromCodePoint(parseInt(n, 10)));
       check('HTML', 'fichier lisible', true);
       validateHtml(html);
       if (j) check('Cohérence', 'date dans le HTML', html.includes(fmtFR(j.date)),

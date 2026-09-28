@@ -19,8 +19,18 @@ if (!editions.length) {
   process.exit(1);
 }
 
+// Le format à 11 chapitres (Russie incluse) a été finalisé le 28/09/2026. Les éditions
+// antérieures sont historiques (ancien ordre, ancien schéma) : on ne les rétrofit pas,
+// on ne les fait pas échouer la CI non plus.
+const A_PARTIR_DE = '2026-09-28';
+const aValider = editions.slice(0, 3).filter((e) => e.date >= A_PARTIR_DE);
+if (!aValider.length) {
+  console.log('Aucune édition récente au format actuel à valider.');
+  process.exit(0);
+}
+
 let echecs = 0;
-for (const e of editions.slice(0, 3)) {
+for (const e of aValider) {
   const jsonPath = e.fichier;
   const htmlPath = e.html || jsonPath.replace(/\.json$/, '.html');
   console.log(`\n——— Édition ${e.date} ———`);

@@ -44,7 +44,10 @@ if (!htmlPath || !date) {
   console.error('Usage: node tools/build-edition-json.js <edition.html> <date> [out.json]');
   process.exit(2);
 }
-const j = build(fs.readFileSync(htmlPath, 'utf8'), date);
+// Les éditions sont publiées en ASCII pur (entités numériques) depuis le 29/09/2026 :
+// contourne la corruption de transport des charges non-ASCII > ~32 Ko.
+const decodeEntities = (s) => s.replace(/&#(\d+);/g, (m, n) => String.fromCodePoint(parseInt(n, 10)));
+const j = build(decodeEntities(fs.readFileSync(htmlPath, 'utf8')), date);
 fs.writeFileSync(outPath || 'editions/' + date + '.json', JSON.stringify(j, null, 2));
 console.log('JSON écrit : ' + (outPath || 'editions/' + date + '.json') + ' — ' + j.resume_executif.length + ' points, ' + j.chapitres.filter(c => c.resume).length + '/11 résumés, ' + j.sources.length + ' sources.');
 if (j.resume_executif.length !== 5) { console.error('ATTENTION : résumé exécutif != 5 points.'); process.exit(1); }
