@@ -1,11 +1,11 @@
-/* Newsletter PWA — app.js v12 — onglets : Édition du {jour}, Sources, Archives, Articles d’aujourd’hui */
+/* Newsletter PWA — app.js v13 — onglets : Édition du {jour}, Sources, Archives, Articles d’aujourd’hui (+ récap hebdo en clôture) */
 const PROXIES = [
   u => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u),
   u => 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(u)
 ];
 let chaptersCfg = null, edition = null, feedCache = { time: 0, articles: [] }, activeTab = 'edition';
 let archiveIdx = null, archiveSel = null, archiveMonth = null;
-let weeksIdx = null;
+let weeksIdx = null, weekData = null;
 
 const $ = s => document.querySelector(s);
 const fmtDate = iso => new Date(iso + 'T09:00:00+02:00').toLocaleDateString('fr-FR',
@@ -228,11 +228,19 @@ function renderView() {
   if (activeTab === 'articles') {
     const gen = generationTime();
     const arts = (feedCache.articles || []).filter(a => a.date.getTime() > gen);
+    const jours = (weekData?.jours || []).filter(j => j.essentiel);
     view.innerHTML =
       '<div class="chapter-resume"><h2>🔥 Articles d’aujourd’hui</h2>' +
       '<p class="meta-count">Articles parus après la génération de l’édition (' + fmtDateHour(edition?.genere_le ?? new Date().toISOString()) + ') · toutes rubriques confondues. L’essentiel du jour est dans l’Édition.</p></div>' +
       (arts.length ? arts.map(articleHtml).join('')
-        : '<div class="empty">Rien de neuf depuis la génération de l’édition — c’est plutôt bon signe. 🌙</div>');
+        : '<div class="empty">Rien de neuf depuis la génération de l’édition — c’est plutôt bon signe. 🌙</div>') +
+      (jours.length ?
+        '<div class="chapter-resume"><h2>📰 Grande info de la semaine — du ' + fmtDate(weekData.lundi) + ' au dimanche</h2>' +
+        '<p class="meta-count">L’essentiel de chaque journée de la semaine, pour compléter.</p></div>' +
+        jours.map(j =>
+          '<div class="chapter-resume"><h2>' + j.jour.charAt(0).toUpperCase() + j.jour.slice(1) + (j.date ? ' — ' + fmtDate(j.date) : '') + '</h2>' +
+          '<p>' + j.essentiel + '</p></div>').join('')
+        : '');
     return;
   }
 
@@ -270,6 +278,10 @@ async function loadEdition() {
   try {
     weeksIdx = await (await fetch('editions/semaines/index.json', { cache: 'no-store' })).json();
   } catch (e) { weeksIdx = null; }
+  const w = isoWeek(new Date());
+  try {
+    weekData = await (await fetch('editions/semaines/' + w.year + '-S' + String(w.week).padStart(2, '0') + '.json', { cache: 'no-store' })).json();
+  } catch (e) { weekData = null; }
 }
 
 async function init() {
