@@ -1,0 +1,14 @@
+{
+  "name": "newsletter-pwa-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Outillage backend de la Newsletter PWA : validation systématique des éditions et surveillance du site public.",
+  "scripts": {
+    "validate": "node tools/validate-edition.js",
+    "check-site": "node tools/check-site.js",
+    "validate:latest": "node tools/validate-latest.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
