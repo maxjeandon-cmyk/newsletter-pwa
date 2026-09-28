@@ -1,0 +1,42 @@
+{
+  "semaine": "2026-S40",
+  "lundi": "2026-09-28",
+  "html": "editions/semaines/2026-S40.html",
+  "jours": [
+    {
+      "jour": "lundi",
+      "date": "2026-09-28",
+      "essentiel": "Anthropic et Trump : dîner Amodei à la Maison-Blanche, exclusion de Claude du Pentagone validée, OpenAI suspend l’entraînement de ses modèles avancés. Percée historique du RN aux sénatoriales (premier groupe parlementaire) à sept mois de la présidentielle. La visite du pape Léon XIV s’achève à Metz après plus d’un million de personnes. En Ukraine, les frappes russes tuent au moins huit personnes. SpaceX tente ce lundi l’orbite avec Starship."
+    },
+    {
+      "jour": "mardi",
+      "date": null,
+      "essentiel": null
+    },
+    {
+      "jour": "mercredi",
+      "date": null,
+      "essentiel": null
+    },
+    {
+      "jour": "jeudi",
+      "date": null,
+      "essentiel": null
+    },
+    {
+      "jour": "vendredi",
+      "date": null,
+      "essentiel": null
+    },
+    {
+      "jour": "samedi",
+      "date": null,
+      "essentiel": null
+    },
+    {
+      "jour": "dimanche",
+      "date": null,
+      "essentiel": null
+    }
+  ]
+}
