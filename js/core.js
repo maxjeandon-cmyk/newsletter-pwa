@@ -21,7 +21,8 @@ export const state = {
   mediasMode: null,        // sous-vue de l'onglet Médias : null | 'ajout' | 'gerer'
   feed: { time: 0, articles: [] },       // flux chaud de l'onglet Articles
   feedStats: { ok: 0, total: 0, time: 0 },
-  mediaData: {}            // { mediaId: { time, articles, ok, total, stale } }
+  mediaData: {},           // { mediaId: { time, articles, ok, total, stale } }
+  publie: null             // dernier média publié pour tous les écrans (info affichée une fois dans 👁 Gérer)
 };
 
 /* --- Stockage local (clés préfixées « nl. » pour un nettoyage facile) --- */
@@ -33,8 +34,10 @@ export function setStore(k, v) {
   try { localStorage.setItem(PREFIX + k, JSON.stringify(v)); } catch (e) { /* quota plein */ }
 }
 /* Purge du cache : tout effacer SAUF les préférences (conservées même après
- * « Purger le cache » — un média ajouté ne doit jamais disparaître par accident). */
-const GARDEES = ['theme', 'masques', 'afpOnly', 'mediasPerso', 'mediasMasques'];
+ * « Purger le cache » — un média ajouté ne doit jamais disparaître par accident).
+ * v19 : mediasAffiches (médias « masqués par défaut » réaffichés ici) et jeton
+ * (GitHub, publication pour tous les écrans) sont aussi des préférences. */
+const GARDEES = ['theme', 'masques', 'afpOnly', 'mediasPerso', 'mediasMasques', 'mediasAffiches', 'jeton'];
 export function purgeStore() {
   Object.keys(localStorage)
     .filter(k => k.startsWith(PREFIX) && !GARDEES.includes(k.slice(PREFIX.length)))

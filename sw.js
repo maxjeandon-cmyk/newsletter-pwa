@@ -1,8 +1,8 @@
-/* sw.js v18 — Service worker de la PWA Newsletter.
+/* sw.js v19 — Service worker de la PWA Newsletter.
  * Stratégies : data/ et editions/ network-first (toujours frais en ligne, repli cache hors ligne) ;
  * le reste (coquille, js/, styles) cache-first pour un démarrage instantané.
- * À chaque déploiement de code : incrémenter CACHE (v18 → v19…) pour invalider les caches clients. */
-const CACHE = 'newsletter-v18';
+ * À chaque déploiement de code : incrémenter CACHE (v19 → v20…) pour invalider les caches clients. */
+const CACHE = 'newsletter-v19';
 const ASSETS = [
   './',
   './index.html',
@@ -11,6 +11,7 @@ const ASSETS = [
   './icons/icon.svg',
   './js/core.js',
   './js/feeds.js',
+  './js/github.js',
   './js/views.js',
   './js/app.js',
   './data/chapters.json',

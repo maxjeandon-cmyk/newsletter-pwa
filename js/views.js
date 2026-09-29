@@ -4,6 +4,7 @@
 import { $, state, esc, getStore, setStore, fmtDate, fmtDateHour, fmtHeure, fmtMonth, nomJourEdition, weekKeyOf, norm }
   from './core.js';
 import { estAFP, chargerMedia, chargerChapitres, trouverFlux } from './feeds.js';
+import { jetonPresent, publierMedia, enregistrerJeton, oublierJeton } from './github.js';
 
 const TABS = () => [
   { id: 'edition', nom: 'Édition du ' + nomJourEdition(), emoji: '📬' },
@@ -163,6 +164,13 @@ export function majMedias() {
   state.medias = (state.mediasBase || []).concat(getStore('mediasPerso', []));
 }
 
+/* Visibilité d'un média (v19) : masqué localement (👁), ou — si la config
+ * serveur le marque « masque » (masqué par défaut) — affiché seulement
+ * s'il a été explicitement réaffiché sur cet appareil (« nl.mediasAffiches »). */
+export function mediaVisible(m, masques, affiches) {
+  return !masques[m.id] && (!m.masque || !!affiches[m.id]);
+}
+
 /* Identifiant stable depuis le nom : minuscules, sans accents ni espaces. */
 const slugMedia = nom => norm(nom).replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 40) || 'media';
 
@@ -234,26 +242,57 @@ function formAjoutMedia() {
     '<p class="meta-count" id="mf-statut" aria-live="polite"></p>' +
     '<select id="mf-choix" class="month-select" hidden></select>' +
     '<label>Fenêtre d’affichage, en heures<input id="mf-fenetre" type="number" min="1" max="168" value="24"></label>' +
+    '<label style="margin:12px 0 0"><input id="mf-masque" type="checkbox" style="display:inline;width:auto;margin-right:6px">' +
+    'Masqué par défaut (chacun pourra l’afficher depuis 👁 Gérer)</label>' +
     '<p class="form-erreur" id="mf-erreur" hidden></p>' +
     '<div class="form-actions">' +
     '<button class="filter-btn" id="mf-annuler">Annuler</button>' +
     '<button class="filter-btn active" id="mf-valider">Ajouter ce média</button></div>' +
-    '<p class="hint">Enregistré sur cet appareil, comme ton thème. Pour l’avoir sur tous tes écrans, il faut l’ajouter à data/medias.json.</p>' +
+    '<p class="hint">' + (jetonPresent()
+      ? '🔑 Publication pour tous les écrans prête — ce média ira dans la config du site (data/medias.json).'
+      : 'Sans jeton GitHub, le média restera sur cet appareil. Pour le publier à tous les écrans : 👁 Gérer → 🔑.') + '</p>' +
     '</div>';
 }
 
-/* Gestion : afficher/masquer chaque média ; supprimer les médias ajoutés ici. */
+/* Gestion : afficher/masquer chaque média ; supprimer les médias ajoutés ici.
+ * v19 : un média « masqué par défaut » (config serveur) se réaffiche ici,
+ * appareil par appareil — réversibilité douce, le défaut ne bouge jamais. */
 function gestionMedias() {
   const masques = getStore('mediasMasques', {});
+  const affiches = getStore('mediasAffiches', {});
   const persoIds = getStore('mediasPerso', []).map(p => p.id);
-  return '<div class="summary-card"><h2>👁 Médias affichés dans l’onglet</h2>' +
+  const pub = state.publie
+    ? '<p class="meta-count">✓ ' + esc(state.publie.nom) + ' publié pour tous les écrans' +
+      (state.publie.masque ? ' — masqué par défaut, réaffiche-le ici.' : '.') + '</p>'
+    : '';
+  return '<div class="summary-card"><h2>👁 Médias affichés dans l’onglet</h2>' + pub +
     '<ul id="medias-editor">' + state.medias.map(m =>
       '<li><span>' + esc(m.emoji || '📰') + '</span><span class="name">' + esc(m.nom) +
-      (persoIds.includes(m.id) ? ' <span class="badge-perso">ajouté ici</span>' : '') + '</span>' +
-      '<label><input type="checkbox" data-id="' + esc(m.id) + '"' + (masques[m.id] ? '' : ' checked') + '> affiché</label>' +
+      (persoIds.includes(m.id) ? ' <span class="badge-perso">ajouté ici</span>' : '') +
+      (m.masque ? ' <span class="badge-perso">masqué par défaut</span>' : '') + '</span>' +
+      '<label><input type="checkbox" data-id="' + esc(m.id) + '"' +
+      (mediaVisible(m, masques, affiches) ? ' checked' : '') + '> affiché</label>' +
       (persoIds.includes(m.id) ? '<button class="mini-btn" data-sup="' + esc(m.id) + '" aria-label="Supprimer">🗑</button>' : '') +
       '</li>').join('') + '</ul>' +
-    '<p class="hint">Les médias ajoutés ici se suppriment (🗑) ; ceux de la config serveur se masquent simplement.</p></div>';
+    '<p class="hint">Les médias ajoutés ici se suppriment (🗑) ; ceux de la config serveur se masquent simplement.</p></div>' +
+    zoneJeton();
+}
+
+/* 🔑 Publication pour tous les écrans : le jeton GitHub vit sur cet appareil.
+ * Fine-grained, « Contents : Read and write », sur le seul dépôt newsletter-pwa. */
+function zoneJeton() {
+  const ok = jetonPresent();
+  return '<div class="summary-card"><h2>🔑 Publication pour tous les écrans</h2>' +
+    '<p class="meta-count">' + (ok
+      ? 'Jeton GitHub enregistré sur cet appareil — les médias ajoutés depuis ➕ se publient dans la config du site.'
+      : 'Sans jeton, un média ajouté reste visible sur cet appareil seulement.') + '</p>' +
+    (ok
+      ? '<div class="form-actions"><button class="filter-btn" id="jt-oublier">Oublier le jeton</button></div>'
+      : '<label>Jeton d’accès GitHub<input id="jt-jeton" type="password" autocomplete="off" placeholder="github_pat_…"></label>' +
+        '<div class="form-actions"><button class="filter-btn active" id="jt-enregistrer">Enregistrer le jeton</button></div>' +
+        '<p class="hint">À créer sur GitHub : Settings → Developer settings → Personal access tokens → Fine-grained. ' +
+        'Accès au seul dépôt newsletter-pwa, permission « Contents : Read and write ». Il reste sur cet appareil.</p>') +
+    '</div>';
 }
 
 function vueMedias() {
@@ -261,7 +300,8 @@ function vueMedias() {
   majMedias();
   const medias = state.medias;
   const masques = getStore('mediasMasques', {});
-  const visibles = medias.filter(m => !masques[m.id]);
+  const affiches = getStore('mediasAffiches', {});
+  const visibles = medias.filter(m => mediaVisible(m, masques, affiches));
   let mode = state.mediasMode || null;
   if (mode !== 'ajout' && mode !== 'gerer') mode = null;
   if (!visibles.length && mode !== 'ajout') mode = 'gerer'; /* tout masqué → gestion */
@@ -314,6 +354,7 @@ function vueMedias() {
       const emoji = ($('#mf-emoji').value || '').trim();
       const flux = ($('#mf-flux').value || '').trim();
       let fenetre = parseInt($('#mf-fenetre').value, 10);
+      const masqueDefaut = !!($('#mf-masque')?.checked);
       if (!nom) return erreur('Donne un nom à ton média.');
       let fluxFinal = /^https?:\/\/\S+$/.test(flux) ? flux : '';
       if (!fluxFinal) {
@@ -326,8 +367,42 @@ function vueMedias() {
       const id = slugMedia(nom);
       if (state.medias.some(m => m.id === id)) return erreur('Ce média existe déjà — choisis un autre nom.');
       if (!Number.isFinite(fenetre) || fenetre < 1 || fenetre > 168) fenetre = 24;
+      const media = { id, nom, emoji, flux: [fluxFinal], fenetreHeures: fenetre };
+      if (masqueDefaut) media.masque = true;
+
+      /* v19 : jeton présent → publication dans la config du site (tous les écrans). */
+      if (jetonPresent()) {
+        const statut = $('#mf-statut');
+        if (statut) statut.textContent = '🔑 Publication dans la config du site…';
+        bVal.disabled = true;
+        const r = await publierMedia(media);
+        bVal.disabled = false;
+        if (r.ok) {
+          state.mediasBase = r.medias;   /* la réponse porte la config à jour */
+          state.publie = { nom, masque: masqueDefaut };
+          majMedias();
+          state.activeMedia = id;
+          state.mediasMode = masqueDefaut ? 'gerer' : null; /* masqué → montrer où le réafficher */
+          renderView();
+          return;
+        }
+        if (r.erreur === 'existe') {
+          bVal.disabled = false;
+          return erreur('Ce média existe déjà dans la config du site — rafraîchis (⟳) ou choisis un autre nom.');
+        }
+        const motif = r.erreur === 'jeton' ? 'jeton GitHub refusé — vérifie-le dans 👁 Gérer → 🔑'
+          : r.erreur === 'conflit' ? 'la config vient d’être modifiée — retente'
+          : r.erreur === 'format' ? 'la config du site est illisible'
+          : 'GitHub est injoignable pour l’instant';
+        erreur('Publication impossible (' + motif + ') — en attendant, le média est enregistré sur cet appareil.');
+      }
+
+      /* Repli local (pas de jeton ou publication ratée) : jamais perdu —
+       * et visible d'office ici : « masqué par défaut » n'a de sens que côté site. */
+      const local = { ...media };
+      delete local.masque;
       const perso = getStore('mediasPerso', []);
-      perso.push({ id, nom, emoji, flux: [fluxFinal], fenetreHeures: fenetre });
+      perso.push(local);
       setStore('mediasPerso', perso);
       const masq = getStore('mediasMasques', {});
       delete masq[id];
@@ -339,14 +414,21 @@ function vueMedias() {
     };
   }
 
-  /* Gestion : bascule affichage, suppression d'un média ajouté ici */
+  /* Gestion : bascule affichage (masque local ou réaffichage d'un « masqué par défaut »),
+   * suppression d'un média ajouté ici, jeton de publication. */
   [...document.querySelectorAll('#medias-editor input')].forEach(cb =>
     cb.onchange = () => {
+      const id = cb.dataset.id;
+      const m = state.medias.find(x => x.id === id);
       const masq = getStore('mediasMasques', {});
-      masq[cb.dataset.id] = !cb.checked;
+      const aff = getStore('mediasAffiches', {});
+      if (cb.checked) { delete masq[id]; if (m?.masque) aff[id] = true; else delete aff[id]; }
+      else if (m?.masque) delete aff[id];
+      else masq[id] = true;
       setStore('mediasMasques', masq);
-      const vis = state.medias.filter(m => !masq[m.id]);
-      if (!vis.some(m => m.id === state.activeMedia)) state.activeMedia = vis[0]?.id || null;
+      setStore('mediasAffiches', aff);
+      const vis = state.medias.filter(x => mediaVisible(x, masq, aff));
+      if (!vis.some(x => x.id === state.activeMedia)) state.activeMedia = vis[0]?.id || null;
       renderView();
     });
   [...document.querySelectorAll('#medias-editor .mini-btn')].forEach(b =>
@@ -357,10 +439,24 @@ function vueMedias() {
       const masq = getStore('mediasMasques', {});
       delete masq[id];
       setStore('mediasMasques', masq);
+      const aff = getStore('mediasAffiches', {});
+      delete aff[id];
+      setStore('mediasAffiches', aff);
       majMedias();
-      if (state.activeMedia === id) state.activeMedia = state.medias.find(m => !masq[m.id])?.id || null;
+      if (state.activeMedia === id) state.activeMedia = state.medias.find(m => mediaVisible(m, masq, aff))?.id || null;
       renderView();
     });
+  const bJtOk = $('#jt-enregistrer');
+  if (bJtOk) {
+    bJtOk.onclick = () => {
+      const v = ($('#jt-jeton').value || '').trim();
+      if (!v) return;
+      enregistrerJeton(v);
+      renderView();
+    };
+  }
+  const bJtOub = $('#jt-oublier');
+  if (bJtOub) bJtOub.onclick = () => { oublierJeton(); renderView(); };
 
   /* Chargement à la demande du média actif (TTL 20 min), sans bloquer l'affichage */
   if (!mode && state.activeMedia) {

@@ -11,6 +11,8 @@ index.html          Coquille unique — tout le rendu se fait côté client en E
 js/core.js          État global (state), store localStorage (clés préfixées "nl."), échappement HTML (esc), dates
 js/feeds.js         Couche réseau : RSS direct → relais rss2json (JSON) → relais XML (allorigins/codetabs),
                     dédup par URL, caches TTL 20 min (onglet Articles et onglet Médias)
+js/github.js        Publication des médias dans data/medias.json via l'API GitHub (jeton fine-grained
+                    local, Contents Read/Write sur ce seul dépôt) — doux : { ok } ou { erreur }
 js/views.js         Rendu des 5 onglets : Édition, Sources, Archives, Articles, Médias
 js/app.js           Bootstrap : wiring des boutons, chargement data/*.json, service worker
 data/chapters.json  Chapitres de l'onglet Articles (flux + mots-clés + fenêtre horaire)
@@ -25,9 +27,13 @@ Sans framework, sans build : le site est 100 % statique, servi par le CDN GitHub
 
 Deux façons complémentaires :
 
-1. **Depuis l'app** (bouton « ➕ Ajouter » de l'onglet Médias) : nom, emoji, adresse du site ou du flux (le flux RSS est cherché automatiquement : liens <link rel="alternate"> de la page, chemins usuels /feed /rss /rss.xml…, validation du flux trouvé), fenêtre horaire — le sous-onglet est bâti exactement comme Blast. Enregistré dans l'appareil (`nl.mediasPerso`), comme le thème : invisible depuis les autres écrans. Le bouton « 👁 Gérer » affiche/masque chaque média ; les médias ajoutés ici peuvent être supprimés (🗑), ceux de la config serveur seulement masqués. « Purger le cache » ne touche jamais à ces préférences.
+1. **Depuis l'app** (bouton « ➕ Ajouter » de l'onglet Médias) : nom, emoji, adresse du site ou du flux (le flux RSS est cherché automatiquement : liens <link rel="alternate"> de la page, chemins usuels /feed /rss /rss.xml…, validation du flux trouvé), fenêtre horaire, case « Masqué par défaut » — le sous-onglet est bâti exactement comme Blast.
 
-2. **Pour tous les visiteurs** : dans `data/medias.json`, ajoute une entrée —
+   - **Publication pour tous les écrans (v19)** : si un jeton d'accès GitHub *fine-grained* est enregistré sur l'appareil (👁 Gérer → 🔑 — portée minimale : Contents Read/Write sur le seul dépôt `newsletter-pwa`, stocké dans `nl.jeton`, jamais affiché), « Ajouter ce média » écrit directement dans `data/medias.json` via l'API GitHub : visible sur tous les écrans, survivant aux purges. La case « Masqué par défaut » publie le média avec `"masque": true` (invisible partout tant que chacun ne l'a pas réaffiché depuis 👁 Gérer — préférence locale `nl.mediasAffiches`).
+   - **Sans jeton** (ou si GitHub est injoignable) : repli local — enregistré dans l'appareil (`nl.mediasPerso`), comme le thème, visible depuis cet écran seulement. Rien n'est jamais perdu.
+   - Le bouton « 👁 Gérer » affiche/masque chaque média ; les médias ajoutés localement peuvent être supprimés (🗑), ceux de la config serveur seulement masqués. « Purger le cache » ne touche jamais à ces préférences (jeton compris).
+
+2. **À la main, pour tous les visiteurs** : dans `data/medias.json`, ajoute une entrée —
 
 ```json
 {
@@ -35,13 +41,15 @@ Deux façons complémentaires :
   "nom": "Blast",
   "emoji": "🟥",
   "flux": ["https://api.blast-info.fr/rss_articles.xml"],
-  "fenetreHeures": 24
+  "fenetreHeures": 24,
+  "masque": true
 }
 ```
 
 - `id` : identifiant stable (lettres/tirets) ;
 - `flux` : liste de flux RSS — la couche `js/feeds.js` essaie le direct, puis deux familles de relais gratuits ;
-- `fenetreHeures` : fenêtre d'affichage des articles.
+- `fenetreHeures` : fenêtre d'affichage des articles ;
+- `masque` (facultatif) : média présent côté serveur mais masqué par défaut — chaque appareil peut le réafficher depuis 👁 Gérer.
 
 ## Ajouter / modifier un chapitre (onglet Articles)
 
