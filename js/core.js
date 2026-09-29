@@ -16,7 +16,9 @@ export const state = {
   archiveIdx: [],          // liste des éditions (editions/latest.json)
   weeksIdx: null,          // index des récaps hebdo (editions/semaines/index.json)
   chapters: [],            // config des flux par chapitre (data/chapters.json)
-  medias: [],              // médias suivis (data/medias.json)
+  mediasBase: [],          // médias de la config serveur (data/medias.json)
+  medias: [],              // médias effectifs = config serveur + ajouts personnels (nl.mediasPerso)
+  mediasMode: null,        // sous-vue de l'onglet Médias : null | 'ajout' | 'gerer'
   feed: { time: 0, articles: [] },       // flux chaud de l'onglet Articles
   feedStats: { ok: 0, total: 0, time: 0 },
   mediaData: {}            // { mediaId: { time, articles, ok, total, stale } }
@@ -30,8 +32,13 @@ export function getStore(k, d) {
 export function setStore(k, v) {
   try { localStorage.setItem(PREFIX + k, JSON.stringify(v)); } catch (e) { /* quota plein */ }
 }
+/* Purge du cache : tout effacer SAUF les préférences (conservées même après
+ * « Purger le cache » — un média ajouté ne doit jamais disparaître par accident). */
+const GARDEES = ['theme', 'masques', 'afpOnly', 'mediasPerso', 'mediasMasques'];
 export function purgeStore() {
-  Object.keys(localStorage).filter(k => k.startsWith(PREFIX)).forEach(k => localStorage.removeItem(k));
+  Object.keys(localStorage)
+    .filter(k => k.startsWith(PREFIX) && !GARDEES.includes(k.slice(PREFIX.length)))
+    .forEach(k => localStorage.removeItem(k));
 }
 
 /* --- Échappement HTML : tout texte venu de l'extérieur (flux RSS) passe par ici

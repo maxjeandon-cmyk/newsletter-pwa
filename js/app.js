@@ -5,7 +5,7 @@
 
 import { $, state, getStore, setStore, purgeStore, applyTheme, fmtDate } from './core.js';
 import { chargerChapitres, chargerMedia } from './feeds.js';
-import { renderTabs, renderView, renderChaptersEditor } from './views.js';
+import { renderTabs, renderView, renderChaptersEditor, majMedias } from './views.js';
 
 async function chargerJSON(url, def) {
   try { return await (await fetch(url, { cache: 'no-store' })).json(); } catch (e) { return def; }
@@ -52,7 +52,7 @@ async function init() {
   $('#settings-panel').onclick = e => { if (e.target.id === 'settings-panel') $('#settings-panel').classList.remove('open'); };
   $('#btn-install-hint').onclick = () => alert('Sur iPhone : bouton Partager ⬆️ en bas de Safari, puis « Sur l’écran d’accueil ». L’app s’ouvrira plein écran, comme une vraie app.');
   $('#btn-purge').onclick = () => {
-    purgeStore();
+    purgeStore(); // préférences (médias ajoutés, masques, thème) préservées
     state.feed = { time: 0, articles: [] };
     state.mediaData = {};
     renderView();
@@ -62,10 +62,12 @@ async function init() {
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
 
   /* Config éditoriale : data/ est servi network-first par le service worker —
-   * toujours frais en ligne, repli sur cache hors ligne. */
+   * toujours frais en ligne, repli sur cache hors ligne.
+   * Médias effectifs = data/medias.json + médias ajoutés depuis l'onglet Médias (nl.mediasPerso). */
   state.chapters = await chargerJSON('data/chapters.json', []);
   const jm = await chargerJSON('data/medias.json', {});
-  state.medias = jm.medias || [];
+  state.mediasBase = jm.medias || [];
+  majMedias();
 
   state.feed = getStore('feed', { time: 0, articles: [] });
 
