@@ -1,9 +1,13 @@
-/* Newsletter PWA — app.js v14 — onglets : Édition du {jour}, Sources, Archives, Articles d’aujourd’hui */
-const PROXIES = [
+/* Newsletter PWA — app.js v15 — onglets : Édition du {jour}, Sources, Archives, Articles d’aujourd’hui (+ relais dépêches AFP, bouton « AFP uniquement ») */
+/* Récupération des flux : essai direct → relais JSON (rss2json) → relais XML (allorigins, codetabs).
+ * Le relais JSON renvoie du JSON (≠ XML) : il est parsé à part. L’AFP n’a pas d’API publique gratuite ;
+ * ses dépêches sont suivies via les médias qui les republient (20 Minutes, BFM, France 24, RFI…). */
+const PROXIES_XML = [
   u => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u),
-  u => 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(u)
+  u => 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(u)
 ];
-let chaptersCfg = null, edition = null, feedCache = { time: 0, articles: [] }, activeTab = 'edition';
+const PROXY_JSON = u => 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(u);
+let chaptersCfg = null, edition = null, feedCache = { time: 0, articles: [] }, feedStats = { ok: 0, total: 0 }, activeTab = 'edition';
 let archiveIdx = null, archiveSel = null, archiveMonth = null;
 let weeksIdx = null;
 
@@ -35,20 +39,62 @@ function weekKeyOf(dateStr) {
 function getStore(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch (e) { return d; } }
 function setStore(k, v) { localStorage.setItem(k, JSON.stringify(v)); }
 
-async function fetchWithFallback(url, timeout = 10000) {
-  for (const p of PROXIES) {
+function parseRss2Json(text) {
+  try {
+    const j = JSON.parse(text);
+    if (j.status !== 'ok' || !Array.isArray(j.items)) return [];
+    return j.items.map(x => ({
+      titre: (x.title || '').trim(),
+      lien: (x.link || '').trim(),
+      date: new Date(String(x.pubDate || '').replace(' ', 'T') + 'Z'),
+      extrait: (x.description || '').replace(/<[^>]*>/g, '').trim().slice(0, 220),
+      auteur: (x.author || '').trim()
+    })).filter(a => a.titre && !isNaN(a.date));
+  } catch (e) { return []; }
+}
+
+async function fetchFeedItems(url, timeout = 7000) {
+  // 1) essai direct (certains flux autorisent CORS)
+  try {
+    const ctl = new AbortController();
+    const t = setTimeout(() => ctl.abort(), timeout);
+    const r = await fetch(url, { signal: ctl.signal });
+    clearTimeout(t);
+    if (r.ok) {
+      const txt = await r.text();
+      if (/<(rss|feed|item|entry)/i.test(txt.slice(0, 2000))) {
+        const arts = parseFeed(txt);
+        if (arts.length) return arts;
+      }
+    }
+  } catch (e) { /* CORS ou échec : on passe aux relais */ }
+  // 2) relais JSON (rapide et fiable, ~10 derniers items par flux)
+  try {
+    const ctl = new AbortController();
+    const t = setTimeout(() => ctl.abort(), timeout);
+    const r = await fetch(PROXY_JSON(url), { signal: ctl.signal });
+    clearTimeout(t);
+    if (r.ok) {
+      const arts = parseRss2Json(await r.text());
+      if (arts.length) return arts;
+    }
+  } catch (e) { /* relais suivant */ }
+  // 3) relais XML (plus riches — jusqu’à 40 items — mais parfois lents)
+  for (const p of PROXIES_XML) {
     try {
       const ctl = new AbortController();
       const t = setTimeout(() => ctl.abort(), timeout);
       const r = await fetch(p(url), { signal: ctl.signal });
       clearTimeout(t);
-      if (r.ok) {
-        const txt = await r.text();
-        if (txt && txt.length > 50) return txt;
+      if (!r.ok) continue;
+      const txt = await r.text();
+      if (/<(rss|feed)/i.test(txt.slice(0, 500))) {
+        const arts = parseFeed(txt);
+        if (arts.length) return arts;
       }
-    } catch (e) { /* proxy suivant */ }
+    } catch (e) { /* relais suivant */ }
   }
-  return null;
+  return [];
 }
 
 function parseFeed(xmlText) {
@@ -63,12 +109,19 @@ function parseFeed(xmlText) {
       lien: it.querySelector('link')?.textContent?.trim() || it.querySelector('link')?.getAttribute('href') || '',
       date: new Date(it.querySelector('pubDate, published, updated')?.textContent ?? Date.now()),
       extrait: (it.querySelector('description, summary, content')?.textContent ?? '')
-        .replace(/<[^>]*>/g, '').trim().slice(0, 220)
+        .replace(/<[^>]*>/g, '').trim().slice(0, 220),
+      auteur: it.querySelector('author')?.textContent?.trim()
+        || it.getElementsByTagNameNS('http://purl.org/dc/elements/1.1/', 'creator')[0]?.textContent?.trim()
+        || ''
     })).filter(a => a.titre && !isNaN(a.date));
   } catch (e) { return []; }
 }
 
 const norm = s => (s ?? '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+function estAFP(a) {
+  return a.chapitreId === 'depeches-afp'
+    || /\bAFP\b/i.test((a.auteur || '') + ' ' + a.titre + ' ' + (a.extrait || ''));
+}
 function scoreArticle(a, ch) {
   const t = norm(a.titre + ' ' + a.extrait);
   if ((ch.motsCles || []).includes('*')) return 1;
@@ -86,23 +139,32 @@ function jaccard(a, b) {
 
 async function refreshFeed() {
   const visible = chaptersCfg.filter(c => !c.masque && c.flux.length);
-  const jobs = [];
-  for (const ch of visible) for (const url of ch.flux) jobs.push({ ch, url });
-  const results = await Promise.allSettled(jobs.map(j => fetchWithFallback(j.url)));
+  // Déduplication : un même flux partagé par plusieurs chapitres n'est récupéré qu'une seule fois
+  const parUrl = new Map();
+  for (const ch of visible) for (const url of ch.flux) {
+    if (!parUrl.has(url)) parUrl.set(url, []);
+    parUrl.get(url).push(ch);
+  }
+  const urls = [...parUrl.keys()];
+  const results = await Promise.allSettled(urls.map(u => fetchFeedItems(u)));
   const all = [];
+  let fluxOk = 0;
   results.forEach((r, i) => {
-    if (r.status !== 'fulfilled' || !r.value) return;
-    const ch = jobs[i].ch;
-    for (const a of parseFeed(r.value)) {
-      const fenetre = (ch.fenetreHeures ?? 24) * 3600e3;
-      if (Date.now() - a.date.getTime() > fenetre) continue;
-      if (scoreArticle(a, ch) < 1) continue;
-      if (all.some(x => jaccard(x.titre, a.titre) >= 0.7)) continue;
-      all.push({ ...a, chapitreId: ch.id, chapitreNom: ch.nom });
+    if (r.status !== 'fulfilled' || !r.value || !r.value.length) return;
+    fluxOk++;
+    for (const ch of parUrl.get(urls[i])) {
+      for (const a of r.value) {
+        const fenetre = (ch.fenetreHeures ?? 24) * 3600e3;
+        if (Date.now() - a.date.getTime() > fenetre) continue;
+        if (scoreArticle(a, ch) < 1) continue;
+        if (all.some(x => jaccard(x.titre, a.titre) >= 0.7)) continue;
+        all.push({ ...a, chapitreId: ch.id, chapitreNom: ch.nom });
+      }
     }
   });
   all.sort((a, b) => b.date - a.date);
   feedCache = { time: Date.now(), articles: all.slice(0, 200) };
+  feedStats = { ok: fluxOk, total: urls.length, time: Date.now() };
   setStore('feedCache', feedCache);
   return feedCache;
 }
@@ -227,12 +289,19 @@ function renderView() {
   // --- Articles d’aujourd’hui : tous les articles parus après la génération, toutes rubriques ---
   if (activeTab === 'articles') {
     const gen = generationTime();
-    const arts = (feedCache.articles || []).filter(a => a.date.getTime() > gen);
+    const tous = (feedCache.articles || []).filter(a => a.date.getTime() > gen);
+    const afpOnly = getStore('afpOnly', false);
+    const arts = afpOnly ? tous.filter(estAFP) : tous;
     view.innerHTML =
       '<div class="chapter-resume"><h2>🔥 Articles d’aujourd’hui</h2>' +
-      '<p class="meta-count">Articles parus après la génération de l’édition (' + fmtDateHour(edition?.genere_le ?? new Date().toISOString()) + ') · toutes rubriques confondues. L’essentiel du jour est dans l’Édition.</p></div>' +
+      '<p class="meta-count">Articles parus après la génération de l’édition (' + fmtDateHour(edition?.genere_le ?? new Date().toISOString()) + ') · toutes rubriques confondues · ' + feedStats.ok + '/' + feedStats.total + ' flux actifs. L’essentiel du jour est dans l’Édition.</p>' +
+      '<button class="filter-btn' + (afpOnly ? ' active' : '') + '" id="btn-afp">📡 Dépêches AFP uniquement</button></div>' +
       (arts.length ? arts.map(articleHtml).join('')
-        : '<div class="empty">Rien de neuf depuis la génération de l’édition — c’est plutôt bon signe. 🌙</div>');
+        : '<div class="empty">' + (afpOnly
+          ? 'Aucune dépêche AFP repérée depuis la génération de l’édition pour l’instant — retente dans un instant. 🌱'
+          : 'Rien de neuf depuis la génération de l’édition — c’est plutôt bon signe. 🌙') + '</div>');
+    const bAfp = $('#btn-afp');
+    if (bAfp) bAfp.onclick = () => { setStore('afpOnly', !afpOnly); renderView(); };
     return;
   }
 
@@ -297,7 +366,13 @@ async function init() {
   renderView();
 
   const def = await (await fetch('chapters.json')).json();
-  chaptersCfg = getStore('chapters', def);
+  // Migration : si la config en cache locale est plus ancienne que celle du dépôt, on l’adopte
+  const VCFG = 2;
+  let stored = getStore('chapters', null);
+  if (!stored || getStore('chaptersV', 0) < VCFG) {
+    stored = def; setStore('chapters', def); setStore('chaptersV', VCFG);
+  }
+  chaptersCfg = stored;
   $('#btn-reset-chapters').onclick = () => { setStore('chapters', def); chaptersCfg = def; renderTabs(); renderChaptersEditor(); };
   renderTabs(); renderChaptersEditor();
   renderView();
@@ -311,7 +386,12 @@ async function init() {
     .catch(() => { $('#stale-banner').hidden = true; });
 
   setInterval(() => {
-    if (document.visibilityState === 'visible') refreshFeed().then(renderView).catch(() => {});
-  }, 15 * 60 * 1000);
+    // Actualisation du flux chaud uniquement quand l’onglet Articles est ouvert,
+    // la page visible, et le cache de plus de 20 minutes (économie des relais).
+    if (document.visibilityState === 'visible' && activeTab === 'articles'
+      && Date.now() - feedCache.time > 20 * 60e3) {
+      refreshFeed().then(renderView).catch(() => {});
+    }
+  }, 5 * 60 * 1000);
 }
 init();

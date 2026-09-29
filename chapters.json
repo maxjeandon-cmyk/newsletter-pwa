@@ -33,10 +33,8 @@
     "nom": "Jeu vidéo & pop culture",
     "flux": [
       "https://www.gamekult.com/feed.xml",
-      "https://www.jeuxvideo.com/rss/rss.xml",
       "https://www.rockpapershotgun.com/feed",
-      "https://www.reddit.com/r/Games/.rss",
-      "https://www.reddit.com/r/jeuxvideo/.rss",
+      "https://www.eurogamer.net/feed",
       "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
     ],
     "motsCles": [
@@ -72,7 +70,6 @@
     "flux": [
       "https://www.lemonde.fr/culture/rss_full.xml",
       "https://www.lesinrocks.com/feed/",
-      "https://www.telerama.fr/rss/actualites-culture.xml",
       "https://radiofrance.fr/franceinfo/rss"
     ],
     "motsCles": [
@@ -164,7 +161,7 @@
     "flux": [
       "https://www.lemonde.fr/politique/rss_full.xml",
       "https://radiofrance.fr/franceinfo/rss",
-      "https://www.liberation.fr/arc/outboundfeeds/rss/politique/"
+      "https://www.liberation.fr/arc/outboundfeeds/rss-all/"
     ],
     "motsCles": [
       "président",
@@ -175,8 +172,6 @@
       "budget",
       "impôt",
       "présidentielle",
-      "attal",
-      "philippe",
       "macron",
       "2027",
       "sondage",
@@ -233,8 +228,7 @@
     "nom": "Russie",
     "flux": [
       "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "https://www.lemonde.fr/international/rss_full.xml",
-      "https://meduza.io/rss/en"
+      "https://www.lemonde.fr/international/rss_full.xml"
     ],
     "motsCles": [
       "russie",
@@ -277,6 +271,20 @@
       "alliance",
       "diplomat"
     ],
+    "exclusion": []
+  },
+  {
+    "id": "depeches-afp",
+    "emoji": "📡",
+    "nom": "Dépêches AFP & agences",
+    "fenetreHeures": 24,
+    "flux": [
+      "https://www.20minutes.fr/feeds/rss-une.xml",
+      "https://www.bfmtv.com/rss/news-24-7/",
+      "https://www.france24.com/fr/rss",
+      "https://www.rfi.fr/fr/rss"
+    ],
+    "motsCles": ["*"],
     "exclusion": []
   },
   {
