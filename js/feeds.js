@@ -259,6 +259,19 @@ async function validerFlux(url, mode) {
     const arts = parseXml(t);
     return arts.length ? { url, articles: arts.length } : null;
   }
+  if (mode === 'budget') {
+    /* validation économique : direct court puis rss2json seul — les relais XML
+     * agonisants ne font ici que ralentir sans jamais aider. */
+    const t = await texteDirect(url, 3000);
+    if (t && /<(rss|feed|item|entry)/i.test(t.slice(0, 2000))) {
+      const arts = parseXml(t);
+      if (arts.length) return { url, articles: arts.length };
+    }
+    const j = await texteDirect(RELAIS_JSON(url), 6000);
+    if (!j) return null;
+    const arts = parseRss2Json(j);
+    return arts.length ? { url, articles: arts.length } : null;
+  }
   const arts = await fetchFeedItems(url, 6000);
   return arts.length ? { url, articles: arts.length } : null;
 }
@@ -308,14 +321,14 @@ export async function trouverFlux(saisie) {
   for (const u of restants) {
     if (budget <= 0) break;
     budget--;
-    const r = await validerFlux(u, 'complet');
+    const r = await validerFlux(u, 'budget');
     if (r) { trouves.push(r); break; }
   }
   if (!trouves.length) {
     for (const g of guesses.slice(0, 2)) {
       if (budget <= 0) break;
       budget--;
-      const r = await validerFlux(g, 'complet');
+      const r = await validerFlux(g, 'budget');
       if (r) { trouves.push(r); break; }
     }
   }
