@@ -82,3 +82,8 @@ main{padding:0 14px;max-width:720px;margin:0 auto}
 /* v15 : bouton filtre de l onglet Articles d aujourd hui */
 .filter-btn{display:inline-block;margin:10px 0 0;padding:7px 14px;border-radius:16px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:13.5px;cursor:pointer}
 .filter-btn.active{background:var(--accent);border-color:var(--accent);color:#0e0e12;font-weight:600}
+
+/* --- v16 : sous-onglets Médias (même famille visuelle que .filter-btn) --- */
+.subtabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 0;padding:0;list-style:none}
+.subtab{display:inline-block;padding:7px 14px;border-radius:16px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:13.5px;cursor:pointer}
+.subtab.active{background:var(--accent);border-color:var(--accent);color:#0e0e12;font-weight:600}

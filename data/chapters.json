@@ -1,0 +1,298 @@
+[
+  {
+    "id": "intelligence-artificielle",
+    "emoji": "🤖",
+    "nom": "Intelligence artificielle",
+    "flux": [
+      "https://www.theverge.com/rss/index.xml",
+      "https://arstechnica.com/feed/",
+      "https://radiofrance.fr/franceinfo/rss"
+    ],
+    "motsCles": [
+      "IA",
+      "intelligence artificielle",
+      "OpenAI",
+      "Anthropic",
+      "Google",
+      "Meta",
+      "xAI",
+      "Mistral",
+      "Hugging Face",
+      "GPT",
+      "Claude",
+      "Gemini",
+      "chatbot",
+      "modèle",
+      "AI"
+    ],
+    "exclusion": []
+  },
+  {
+    "id": "jeu-video-pop-culture",
+    "emoji": "🎮",
+    "nom": "Jeu vidéo & pop culture",
+    "flux": [
+      "https://www.gamekult.com/feed.xml",
+      "https://www.rockpapershotgun.com/feed",
+      "https://www.eurogamer.net/feed",
+      "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
+    ],
+    "motsCles": [
+      "jeu vidéo",
+      "gaming",
+      "esport",
+      "console",
+      "playstation",
+      "xbox",
+      "nintendo",
+      "steam",
+      "indie",
+      "early access",
+      "patch",
+      "DLC",
+      "speedrun",
+      "film",
+      "cinéma",
+      "série",
+      "netflix",
+      "musique",
+      "festival",
+      "acteur",
+      "réalisateur"
+    ],
+    "exclusion": []
+  },
+  {
+    "id": "culture",
+    "emoji": "🎭",
+    "nom": "Culture",
+    "fenetreHeures": 48,
+    "flux": [
+      "https://www.lemonde.fr/culture/rss_full.xml",
+      "https://www.lesinrocks.com/feed/",
+      "https://radiofrance.fr/franceinfo/rss"
+    ],
+    "motsCles": [
+      "livre",
+      "roman",
+      "rentrée littéraire",
+      "prix littéraire",
+      "Goncourt",
+      "poésie",
+      "bande dessinée",
+      "BD",
+      "film",
+      "cinéma",
+      "sortie",
+      "série",
+      "théâtre",
+      "pièce",
+      "album",
+      "concert",
+      "tournée",
+      "documentaire",
+      "exposition",
+      "musée",
+      "festival",
+      "Avignon",
+      "César",
+      "Oscar",
+      "francophone"
+    ],
+    "exclusion": []
+  },
+  {
+    "id": "sciences",
+    "emoji": "🔬",
+    "nom": "Sciences",
+    "flux": [
+      "https://www.lemonde.fr/sciences/rss_full.xml",
+      "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"
+    ],
+    "motsCles": [
+      "science",
+      "recherche",
+      "découverte",
+      "étude",
+      "espace",
+      "nasa",
+      "mars",
+      "santé",
+      "médecine",
+      "physique",
+      "biologie",
+      "astronomie",
+      "génétique"
+    ],
+    "exclusion": []
+  },
+  {
+    "id": "climat",
+    "emoji": "🌡️",
+    "nom": "Climat",
+    "flux": [
+      "https://www.lemonde.fr/environment/rss_full.xml",
+      "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+      "https://radiofrance.fr/franceinfo/rss"
+    ],
+    "motsCles": [
+      "climat",
+      "COP",
+      "réchauffement",
+      "carbone",
+      "CO2",
+      "charbon",
+      "pétrole",
+      "gaz",
+      "glacier",
+      "canicule",
+      "inondation",
+      "sécheresse",
+      "énergie",
+      "renouvelable",
+      "GIEC"
+    ],
+    "exclusion": []
+  },
+  {
+    "id": "politique-francaise",
+    "emoji": "🇫🇷",
+    "nom": "Politique française",
+    "flux": [
+      "https://www.lemonde.fr/politique/rss_full.xml",
+      "https://radiofrance.fr/franceinfo/rss",
+      "https://www.liberation.fr/arc/outboundfeeds/rss-all/"
+    ],
+    "motsCles": [
+      "président",
+      "gouvernement",
+      "assemblée",
+      "sénat",
+      "ministre",
+      "budget",
+      "impôt",
+      "présidentielle",
+      "macron",
+      "2027",
+      "sondage",
+      "RN",
+      "national"
+    ],
+    "exclusion": []
+  },
+  {
+    "id": "etats-unis",
+    "emoji": "🇺🇸",
+    "nom": "États-Unis",
+    "flux": [
+      "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "https://www.lemonde.fr/international/rss_full.xml"
+    ],
+    "motsCles": [
+      "états-unis",
+      "USA",
+      "américain",
+      "trump",
+      "washington",
+      "congrès",
+      "midterm",
+      "maison blanche",
+      "californie",
+      "new york",
+      "texas",
+      "US"
+    ],
+    "exclusion": []
+  },
+  {
+    "id": "chine",
+    "emoji": "🇨🇳",
+    "nom": "Chine",
+    "flux": [
+      "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "https://www.lemonde.fr/international/rss_full.xml"
+    ],
+    "motsCles": [
+      "chine",
+      "chinois",
+      "pékin",
+      "xi jinping",
+      "taïwan",
+      "shanghai"
+    ],
+    "exclusion": []
+  },
+  {
+    "id": "russie",
+    "emoji": "🇷🇺",
+    "nom": "Russie",
+    "flux": [
+      "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "https://www.lemonde.fr/international/rss_full.xml"
+    ],
+    "motsCles": [
+      "russie",
+      "russe",
+      "poutine",
+      "kremlin",
+      "moscou",
+      "lavrov",
+      "sibérie",
+      "oligarque",
+      "gazprom"
+    ],
+    "exclusion": []
+  },
+  {
+    "id": "geopolitique",
+    "emoji": "🌍",
+    "nom": "Géopolitique",
+    "flux": [
+      "https://www.lemonde.fr/international/rss_full.xml",
+      "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "https://radiofrance.fr/franceinfo/rss"
+    ],
+    "motsCles": [
+      "ukraine",
+      "russie",
+      "OTAN",
+      "ONU",
+      "gaza",
+      "israël",
+      "iran",
+      "ormuz",
+      "washington",
+      "moscou",
+      "kyiv",
+      "poutine",
+      "lavrov",
+      "trump",
+      "guerre",
+      "alliance",
+      "diplomat"
+    ],
+    "exclusion": []
+  },
+  {
+    "id": "depeches-afp",
+    "emoji": "📡",
+    "nom": "Dépêches AFP & agences",
+    "fenetreHeures": 24,
+    "flux": [
+      "https://www.20minutes.fr/feeds/rss-une.xml",
+      "https://www.bfmtv.com/rss/news-24-7/",
+      "https://www.france24.com/fr/rss",
+      "https://www.rfi.fr/fr/rss"
+    ],
+    "motsCles": ["*"],
+    "exclusion": []
+  },
+  {
+    "id": "grande-info-semaine",
+    "emoji": "📰",
+    "nom": "Grande info de la semaine",
+    "flux": [],
+    "motsCles": [],
+    "exclusion": []
+  }
+]

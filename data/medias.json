@@ -1,0 +1,11 @@
+{
+  "medias": [
+    {
+      "id": "blast",
+      "nom": "Blast",
+      "emoji": "🟥",
+      "flux": ["https://api.blast-info.fr/rss_articles.xml"],
+      "fenetreHeures": 24
+    }
+  ]
+}

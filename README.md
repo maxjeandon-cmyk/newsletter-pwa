@@ -1,19 +1,57 @@
 # Newsletter PWA
 
-Page web personnelle : édition du jour (newsletter rédigée) + flux chaud RSS agrégé, en 9 chapitres. Dark mode par défaut, installable sur l'écran d'accueil de l'iPhone.
+PWA statique hébergée sur GitHub Pages : l'édition quotidienne (générée chaque nuit à 23h59, Europe/Paris) y est publiée automatiquement, et le site agrège en continu les flux RSS des médias suivis.
 
-## Activer GitHub Pages
-1. Sur GitHub : **Settings → Pages** → Source : *Deploy from a branch* → branche `main`, dossier `/ (root)`.
-2. Attendez 1–2 minutes, le site est sur `https://maxjeandon-cmyk.github.io/newsletter-pwa/`.
+Site : https://maxjeandon-cmyk.github.io/newsletter-pwa/
 
-## Installation sur iPhone
-Ouvrez l'URL dans Safari → bouton Partager → « Sur l'écran d'accueil ». L'icône ouvre le site plein écran, sans barre de navigation.
+## Architecture (v16)
 
-## Mise à jour quotidienne
-Chaque matin, la tâche programmée pousse `editions/YYYY-MM-DD.json` et met à jour `editions/latest.json` dans ce dépôt — GitHub Pages redéploie automatiquement à chaque push.
+```
+index.html          Coquille unique — tout le rendu se fait côté client en ES modules
+js/core.js          État global (state), store localStorage (clés préfixées "nl."), échappement HTML (esc), dates
+js/feeds.js         Couche réseau : RSS direct → relais rss2json (JSON) → relais XML (allorigins/codetabs),
+                    dédup par URL, caches TTL 20 min (onglet Articles et onglet Médias)
+js/views.js         Rendu des 5 onglets : Édition, Sources, Archives, Articles, Médias
+js/app.js           Bootstrap : wiring des boutons, chargement data/*.json, service worker
+data/chapters.json  Chapitres de l'onglet Articles (flux + mots-clés + fenêtre horaire)
+data/medias.json    Médias suivis dans l'onglet Médias (sous-onglets)
+sw.js               Service worker : coquille cache-first, editions/ et data/ network-first
+styles.css          Thème sombre/clair, variables CSS
+```
 
-## Limites connues (honnêteté technique)
-- **Flux chaud** : les flux RSS sont récupérés depuis le navigateur via des proxys CORS publics (allorigins, rss2json) — parfois lents ou indisponibles ; le cache local affiche toujours le dernier état connu.
-- **Pas de notifications push ni de widget iOS** : réservés aux apps natives.
-- **Icône SVG** : iOS préfère un PNG pour l'icône d'accueil ; si l'icône rend mal, remplacez `icons/icon.svg` par un PNG 180×180 nommé `apple-touch-icon.png` et référencez-le dans `index.html`.
-- Sources RSS configurables dans `chapters.json` (et masquables dans les réglages de l'app).
+Sans framework, sans build : le site est 100 % statique, servi par le CDN GitHub Pages — la montée en charge se réduit à incrémenter un compteur côté CDN, et le service worker rend la coquille disponible hors ligne.
+
+## Ajouter un média (onglet Médias)
+
+Dans `data/medias.json`, ajoute une entrée :
+
+```json
+{
+  "id": "blast",
+  "nom": "Blast",
+  "emoji": "🟥",
+  "flux": ["https://api.blast-info.fr/rss_articles.xml"],
+  "fenetreHeures": 24
+}
+```
+
+- `id` : identifiant stable (lettres/tirets) ;
+- `flux` : liste de flux RSS — la couche `js/feeds.js` essaie le direct, puis deux familles de relais gratuits ;
+- `fenetreHeures` : fenêtre d'affichage des articles.
+
+## Ajouter / modifier un chapitre (onglet Articles)
+
+Éditer `data/chapters.json` : `flux`, `motsCles` (`["*"]` = tout garder), `exclusion`, `fenetreHeures` (défaut 24 h). Les préférences de l'utilisateur (masquer un chapitre) sont stockées côté client (`nl.masques`) et survivent donc aux déploiements.
+
+## Règles de déploiement
+
+1. **Chaque livraison de code** (js/, sw.js, index.html, styles.css) doit incrémenter `CACHE` dans `sw.js` (v16 → v17…) — sinon les clients gardent l'ancienne version en cache.
+2. **Le contrat `editions/` est figé** : la génération nocturne pousse `editions/YYYY-MM-DD.html` + `.json`, `editions/latest.json` et `editions/semaines/` — ne jamais renommer ni supprimer l'historique.
+3. `data/` est servi network-first : une modification de config y est visible immédiatement, sans bump de cache.
+4. Ne pas pousser de fichier non-ASCII de plus de ~32 Ko via l'outillage d'automatisation (risque de double-encodage au transport) — pour l'HTML d'édition, publier en entités numériques.
+
+## Outils repo
+
+- `tools/validate-edition.js <json> <html>` : 25 contrôles sur une édition ;
+- `tools/check-site.js` : état des flux et fichiers ;
+- CI `.github/workflows/validate.yml` : validation automatique à chaque push.
