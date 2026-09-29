@@ -202,3 +202,123 @@ export function chargerMedia(m, force = false) {
   mediasEnCours.set(m.id, p);
   return p;
 }
+
+/* --- v18 : découverte automatique du flux RSS d'un site (bouton « Ajouter un média »).
+ *     Ordre de dépenses : ce qui est gratuit d'abord (fetch direct, page HTML via relais),
+ *     puis un budget serré de validations rss2json (les nouveaux flux y sont limités).
+ *     Renvoie { trouves: [{url, articles}], erreur? } — jamais d'exception. --- */
+const CHEMINS_FLUX = ['feed', 'rss', 'rss.xml', 'feed.xml', 'atom.xml', 'index.xml'];
+
+async function texteDirect(url, timeout = 4500) {
+  try {
+    const ctl = new AbortController();
+    const t = setTimeout(() => ctl.abort(), timeout);
+    const r = await fetch(url, { signal: ctl.signal });
+    clearTimeout(t);
+    return r.ok ? await r.text() : null;
+  } catch (e) { return null; }
+}
+
+/* Page HTML d'un site via relais (lecture impossible en direct : CORS).
+ * Ne consomme aucun budget rss2json — juste la patience des relais, qui vivent leur vie. */
+async function pageHtmlRelais(url) {
+  for (const p of RELAIS_XML) {
+    const t = await texteDirect(p(url), 6000);
+    if (t && t.length > 500 && /<html|<!doctype/i.test(t.slice(0, 1000))) return t;
+  }
+  return null;
+}
+
+/* Candidats précis : <link rel="alternate" type="application/rss+xml"> puis ancres « rss/feed/atom ». */
+function extraireCandidats(html, base) {
+  const res = [];
+  const push = h => { try { const u = new URL(h, base); if (/^https?:$/.test(u.protocol)) res.push(u.href); } catch (e) {} };
+  for (const m of html.matchAll(/<link\b[^>]*>/gi)) {
+    const tag = m[0];
+    if (/rel=["']?alternate/i.test(tag) && /(rss|atom)\+xml/i.test(tag)) {
+      const h = (tag.match(/href=["']([^"']+)["']/i) || [])[1];
+      if (h) push(h);
+    }
+  }
+  for (const m of html.matchAll(/<a\b[^>]*>/gi)) {
+    const h = (m[0].match(/href=["']([^"']+)["']/i) || [])[1];
+    if (h && /(^|[/_.-])(rss|feed|atom)([/_.-]|$)/i.test(h)) push(h);
+  }
+  return [...new Set(res)]
+    .filter(u => !/\.(css|js|png|jpe?g|svg|ico|webp|woff2?)([?#]|$)/i.test(u))
+    .slice(0, 6);
+}
+
+/* Validation d'un flux. mode 'direct' : gratuit (fetch direct uniquement —
+ * ne coûte rien quand le site ferme CORS, honnête quand il l'ouvre).
+ * mode 'complet' : chaîne fetchFeedItems (budget rss2json si le flux est nouveau). */
+async function validerFlux(url, mode) {
+  if (mode === 'direct') {
+    const t = await texteDirect(url);
+    if (!t || !/<(rss|feed|item|entry)/i.test(t.slice(0, 2000))) return null;
+    const arts = parseXml(t);
+    return arts.length ? { url, articles: arts.length } : null;
+  }
+  const arts = await fetchFeedItems(url, 6000);
+  return arts.length ? { url, articles: arts.length } : null;
+}
+
+export async function trouverFlux(saisie) {
+  const entree = String(saisie || '').trim();
+  if (!entree) return { trouves: [], erreur: 'adresse' };
+  let url = entree;
+  if (!/^https?:\/\//i.test(entree)) {
+    if (!/^[\w.-]+\.[a-z]{2,}([/?#]\S*)?$/i.test(entree)) return { trouves: [], erreur: 'adresse' };
+    url = 'https://' + entree;
+  }
+  let origine;
+  try { origine = new URL(url).origin; } catch (e) { return { trouves: [], erreur: 'adresse' }; }
+
+  /* 1) l'entrée est-elle déjà un flux ? Essai direct gratuit, puis chaîne complète
+   *    seulement si elle ressemble à un flux (économise le budget rss2json sinon). */
+  const ressemblance = /(rss|feed|atom|xml)/i.test(url);
+  let v = await validerFlux(url, 'direct');
+  if (v) return { trouves: [v] };
+  if (ressemblance) {
+    v = await validerFlux(url, 'complet');
+    if (v) return { trouves: [v] };
+  }
+
+  /* 2) chemins usuels en essais directs gratuits, pendant que la page HTML
+   *    du site est demandée aux relais en parallèle (candidats plus précis). */
+  const guesses = [...new Set(CHEMINS_FLUX.map(c => origine + '/' + c))];
+  const htmlPromis = pageHtmlRelais(url);
+  const directs = (await Promise.all(guesses.map(g => validerFlux(g, 'direct')))).filter(Boolean);
+  const trouves = [...directs];
+  let restants = [];
+  if (!trouves.length) {
+    /* aucun chemin usuel n'a répondu en direct : on attend la page du site
+     * (relais parfois lents) pour des candidats plus précis. */
+    const html = await htmlPromis;
+    if (html) {
+      const precis = extraireCandidats(html, url)
+        .filter(u => !trouves.some(t => t.url === u) && !guesses.includes(u));
+      restants = precis.slice(0, 3);
+    }
+  }
+
+  /* 3) budget : au plus deux validations complètes, candidats précis d'abord.
+   *    On s'arrête dès qu'un flux répond — chaque miss coûte cher en quota. */
+  let budget = 2;
+  for (const u of restants) {
+    if (budget <= 0) break;
+    budget--;
+    const r = await validerFlux(u, 'complet');
+    if (r) { trouves.push(r); break; }
+  }
+  if (!trouves.length) {
+    for (const g of guesses.slice(0, 2)) {
+      if (budget <= 0) break;
+      budget--;
+      const r = await validerFlux(g, 'complet');
+      if (r) { trouves.push(r); break; }
+    }
+  }
+  trouves.sort((a, b) => b.articles - a.articles);
+  return { trouves };
+}

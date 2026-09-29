@@ -3,7 +3,7 @@
 
 import { $, state, esc, getStore, setStore, fmtDate, fmtDateHour, fmtHeure, fmtMonth, nomJourEdition, weekKeyOf, norm }
   from './core.js';
-import { estAFP, chargerMedia, chargerChapitres } from './feeds.js';
+import { estAFP, chargerMedia, chargerChapitres, trouverFlux } from './feeds.js';
 
 const TABS = () => [
   { id: 'edition', nom: 'Édition du ' + nomJourEdition(), emoji: '📬' },
@@ -166,6 +166,50 @@ export function majMedias() {
 /* Identifiant stable depuis le nom : minuscules, sans accents ni espaces. */
 const slugMedia = nom => norm(nom).replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 40) || 'media';
 
+/* Recherche automatique du flux RSS (v18) : l'utilisateur donne le site,
+ * l'app trouve le flux. Une seule recherche à la fois ; le résultat s'écrit
+ * dans le champ « flux », qui reste la seule source de vérité du formulaire. */
+let rechercheEnCours = null;
+let derniereRecherche = null;
+function lancerRecherche() {
+  if (rechercheEnCours) return rechercheEnCours;
+  const saisie = ($('#mf-flux')?.value || '').trim();
+  if (!saisie) return Promise.resolve(null);
+  derniereRecherche = saisie;
+  const statut = $('#mf-statut');
+  const choix = $('#mf-choix');
+  if (statut) statut.textContent = '🔎 Recherche du flux en cours… (jusqu’à une trentaine de secondes, je fouille partout)';
+  if (choix) choix.hidden = true;
+  rechercheEnCours = (async () => {
+    try {
+      const r = await trouverFlux(saisie);
+      if (statut) {
+        if (!r.trouves.length) {
+          statut.textContent = r.erreur === 'adresse'
+            ? 'Entre l’adresse du site (ex. liberation.fr) — ou colle directement l’adresse du flux RSS.'
+            : 'Aucun flux trouvé tout seul — vérifie l’adresse, ou colle le flux RSS à la main (souvent …/feed ou …/rss.xml).';
+        } else if (r.trouves.length === 1) {
+          statut.textContent = 'Flux trouvé ✓ ' + r.trouves[0].articles + ' articles — ' + r.trouves[0].url;
+        } else {
+          statut.textContent = r.trouves.length + ' flux trouvés — choisis celui qui te plaît :';
+          choix.innerHTML = r.trouves.map((t, i) =>
+            '<option value="' + esc(t.url) + '"' + (i === 0 ? ' selected' : '') + '>' +
+            esc(t.articles + ' articles — ' + t.url) + '</option>').join('');
+          choix.hidden = false;
+          choix.onchange = () => { $('#mf-flux').value = choix.value; };
+        }
+      }
+      if (r.trouves.length) {
+        $('#mf-flux').value = r.trouves[0].url;
+        const p = $('#mf-erreur');
+        if (p) p.hidden = true;
+      }
+      return r;
+    } finally { rechercheEnCours = null; }
+  })();
+  return rechercheEnCours;
+}
+
 function sousOngletsMedias(visibles, mode) {
   return '<div class="chapter-resume"><h2>🎬 Médias suivis</h2>' +
     '<p class="meta-count">Articles en continu, fenêtre propre à chaque média — indépendamment de l’édition du jour.</p>' +
@@ -185,7 +229,10 @@ function formAjoutMedia() {
     '<p class="meta-count">Un nouveau sous-onglet construit comme Blast : les articles du média, en continu.</p>' +
     '<label>Nom du média<input id="mf-nom" type="text" autocomplete="off" placeholder="Mediapart"></label>' +
     '<label>Emoji (facultatif)<input id="mf-emoji" type="text" maxlength="8" placeholder="📰"></label>' +
-    '<label>Adresse du flux RSS<input id="mf-flux" type="url" inputmode="url" placeholder="https://www.mediapart.fr/rss2/articles.xml"></label>' +
+    '<label>Adresse du site ou du flux RSS<input id="mf-flux" type="text" inputmode="url" autocomplete="off" placeholder="blast-info.fr ou https://…/rss.xml"></label>' +
+    '<div class="form-actions"><button class="filter-btn" id="mf-chercher">🔎 Trouver le flux tout seul</button></div>' +
+    '<p class="meta-count" id="mf-statut" aria-live="polite"></p>' +
+    '<select id="mf-choix" class="month-select" hidden></select>' +
     '<label>Fenêtre d’affichage, en heures<input id="mf-fenetre" type="number" min="1" max="168" value="24"></label>' +
     '<p class="form-erreur" id="mf-erreur" hidden></p>' +
     '<div class="form-actions">' +
@@ -256,19 +303,31 @@ function vueMedias() {
   const bVal = $('#mf-valider');
   if (bVal) {
     $('#mf-annuler').onclick = () => { state.mediasMode = null; renderView(); };
+    $('#mf-chercher').onclick = () => { lancerRecherche(); };
+    $('#mf-flux').onblur = () => {
+      const val = ($('#mf-flux').value || '').trim();
+      if (val && val !== derniereRecherche) lancerRecherche();
+    };
     const erreur = msg => { const p = $('#mf-erreur'); p.hidden = false; p.textContent = '⚠️ ' + msg; };
-    bVal.onclick = () => {
+    bVal.onclick = async () => {
       const nom = ($('#mf-nom').value || '').trim();
       const emoji = ($('#mf-emoji').value || '').trim();
       const flux = ($('#mf-flux').value || '').trim();
       let fenetre = parseInt($('#mf-fenetre').value, 10);
       if (!nom) return erreur('Donne un nom à ton média.');
-      if (!/^https?:\/\/\S+$/.test(flux)) return erreur('L’adresse du flux doit commencer par http(s):// — l’adresse RSS du média, pas son site.');
+      let fluxFinal = /^https?:\/\/\S+$/.test(flux) ? flux : '';
+      if (!fluxFinal) {
+        erreur('Adresse incomplète — je cherche le flux tout seul, un instant…');
+        const r = await lancerRecherche();
+        const val = ($('#mf-flux').value || '').trim();
+        if (r && r.trouves && r.trouves.length && /^https?:\/\/\S+$/.test(val)) fluxFinal = val;
+        else return erreur('Aucun flux trouvé automatiquement — colle l’adresse RSS du média (souvent …/feed ou …/rss.xml).');
+      }
       const id = slugMedia(nom);
       if (state.medias.some(m => m.id === id)) return erreur('Ce média existe déjà — choisis un autre nom.');
       if (!Number.isFinite(fenetre) || fenetre < 1 || fenetre > 168) fenetre = 24;
       const perso = getStore('mediasPerso', []);
-      perso.push({ id, nom, emoji, flux: [flux], fenetreHeures: fenetre });
+      perso.push({ id, nom, emoji, flux: [fluxFinal], fenetreHeures: fenetre });
       setStore('mediasPerso', perso);
       const masq = getStore('mediasMasques', {});
       delete masq[id];

@@ -25,7 +25,7 @@ Sans framework, sans build : le site est 100 % statique, servi par le CDN GitHub
 
 Deux façons complémentaires :
 
-1. **Depuis l'app** (bouton « ➕ Ajouter » de l'onglet Médias) : nom, emoji, flux RSS, fenêtre horaire — le sous-onglet est bâti exactement comme Blast. Enregistré dans l'appareil (`nl.mediasPerso`), comme le thème : invisible depuis les autres écrans. Le bouton « 👁 Gérer » affiche/masque chaque média ; les médias ajoutés ici peuvent être supprimés (🗑), ceux de la config serveur seulement masqués. « Purger le cache » ne touche jamais à ces préférences.
+1. **Depuis l'app** (bouton « ➕ Ajouter » de l'onglet Médias) : nom, emoji, adresse du site ou du flux (le flux RSS est cherché automatiquement : liens <link rel="alternate"> de la page, chemins usuels /feed /rss /rss.xml…, validation du flux trouvé), fenêtre horaire — le sous-onglet est bâti exactement comme Blast. Enregistré dans l'appareil (`nl.mediasPerso`), comme le thème : invisible depuis les autres écrans. Le bouton « 👁 Gérer » affiche/masque chaque média ; les médias ajoutés ici peuvent être supprimés (🗑), ceux de la config serveur seulement masqués. « Purger le cache » ne touche jamais à ces préférences.
 
 2. **Pour tous les visiteurs** : dans `data/medias.json`, ajoute une entrée —
 
