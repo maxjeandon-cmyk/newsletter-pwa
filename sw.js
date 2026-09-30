@@ -27,6 +27,9 @@ const ASSETS = [
   './data/chapters.json',
   './data/medias.json',
   './data/flux-rss.json',
+  './data/flux-rss-2.json',
+  './data/flux-rss-3.json',
+  './data/flux-rss-2.json',
   './data/climat.json'
 ];
 self.addEventListener('install', e => {

@@ -88,7 +88,7 @@ function blocCatalogue() {
     cats.map(c =>
       '<optgroup label="' + esc(c) + '">' +
       state.fluxCatalogue.filter(e => e.categorie === c)
-        .map(e => '<option value="' + esc(e.id) + '">' + esc((e.emoji ? e.emoji + ' ' : '') + e.nom) + '</option>').join('') +
+        .map(e => '<option value="' + esc(e.id) + '">' + esc((e.emoji ? e.emoji + ' ' : '') + e.nom + (e.ligne ? ' — ' + e.ligne : '')) + '</option>').join('') +
       '</optgroup>').join('') +
     '</select></label>';
 }

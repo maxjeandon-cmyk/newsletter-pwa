@@ -1,0 +1,824 @@
+{
+  "catalogue": [
+    {
+      "id": "it-connect",
+      "nom": "IT-Connect",
+      "emoji": "🛠️",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "sysadmin et Microsoft, tutoriels",
+      "flux": [
+        "https://www.it-connect.fr/feed/"
+      ]
+    },
+    {
+      "id": "undernews",
+      "nom": "UnderNews",
+      "emoji": "🕵️",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "cyber et numérique, indépendant",
+      "flux": [
+        "https://www.undernews.fr/feed"
+      ]
+    },
+    {
+      "id": "mit-technology-review",
+      "nom": "MIT Technology Review",
+      "emoji": "🤖",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "technologies émergentes, recherche MIT",
+      "flux": [
+        "https://www.technologyreview.com/feed/"
+      ]
+    },
+    {
+      "id": "petapixel",
+      "nom": "PetaPixel",
+      "emoji": "📷",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "photographie : actu et matériel",
+      "flux": [
+        "https://petapixel.com/feed/"
+      ]
+    },
+    {
+      "id": "le-mag-it",
+      "nom": "LeMagIT",
+      "emoji": "🖥️",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "IT pour dirigeants, cloud et sécurité",
+      "flux": [
+        "https://www.lemagit.fr/rss/ContentSyndication.xml"
+      ]
+    },
+    {
+      "id": "cnrs-le-journal",
+      "nom": "CNRS — Le Journal",
+      "emoji": "🔬",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://lejournal.cnrs.fr/rss"
+      ],
+      "ligne": "recherche publique française vulgarisée"
+    },
+    {
+      "id": "futura-sciences",
+      "nom": "Futura Sciences",
+      "emoji": "🔭",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.futura-sciences.com/rss/actualites.xml"
+      ],
+      "ligne": "sciences et espace, grand public"
+    },
+    {
+      "id": "science-vie",
+      "nom": "Science & Vie",
+      "emoji": "🧬",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.science-et-vie.com/feed/"
+      ],
+      "ligne": "vulgarisation centenaire"
+    },
+    {
+      "id": "le-monde-sciences",
+      "nom": "Le Monde — Sciences",
+      "emoji": "🧪",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.lemonde.fr/sciences/rss_full.xml"
+      ],
+      "ligne": "les sciences par le Monde"
+    },
+    {
+      "id": "bbc-science-environment",
+      "nom": "BBC — Science & Environment",
+      "emoji": "🌡️",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"
+      ],
+      "ligne": "science et environnement, BBC"
+    },
+    {
+      "id": "the-guardian-science",
+      "nom": "The Guardian — Science",
+      "emoji": "🔭",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.theguardian.com/science/rss"
+      ],
+      "ligne": "les sciences par le Guardian"
+    },
+    {
+      "id": "nature-news",
+      "nom": "Nature — News",
+      "emoji": "🍃",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.nature.com/nature.rss"
+      ],
+      "ligne": "recherche mondiale, référence"
+    },
+    {
+      "id": "new-scientist",
+      "nom": "New Scientist",
+      "emoji": "🧠",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.newscientist.com/feed/home/"
+      ],
+      "ligne": "hebdo scientifique anglophone"
+    },
+    {
+      "id": "science-actualites",
+      "nom": "Science — Actualités",
+      "emoji": "⚗️",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.science.org/rss/news_current.xml"
+      ],
+      "ligne": "recherche et politique scientifique"
+    },
+    {
+      "id": "quanta-magazine",
+      "nom": "Quanta Magazine",
+      "emoji": "🌌",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://api.quantamagazine.org/feed/"
+      ],
+      "ligne": "maths, physique et vivant, long format"
+    },
+    {
+      "id": "sciences-et-avenir",
+      "nom": "Sciences et Avenir",
+      "emoji": "🔭",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.sciencesetavenir.fr/rss.xml"
+      ],
+      "ligne": "recherche et sciences (fusion La Recherche)"
+    },
+    {
+      "id": "le-monde-planete",
+      "nom": "Le Monde — Planète",
+      "emoji": "🌱",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.lemonde.fr/planete/rss_full.xml"
+      ],
+      "ligne": "environnement et biodiversité"
+    },
+    {
+      "id": "nyt-science",
+      "nom": "NYT — Science",
+      "emoji": "🔬",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml"
+      ],
+      "ligne": "les sciences par le NYT"
+    },
+    {
+      "id": "the-guardian-environment",
+      "nom": "The Guardian — Environment",
+      "emoji": "🌿",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.theguardian.com/environment/rss"
+      ],
+      "ligne": "l'environnement par le Guardian"
+    },
+    {
+      "id": "trust-my-science",
+      "nom": "Trust My Science",
+      "emoji": "🧪",
+      "categorie": "Sciences 🔬",
+      "ligne": "veille scientifique mondiale",
+      "flux": [
+        "https://trustmyscience.com/feed/"
+      ]
+    },
+    {
+      "id": "pour-la-science",
+      "nom": "Pour la Science",
+      "emoji": "🧠",
+      "categorie": "Sciences 🔬",
+      "ligne": "édition française de Scientific American",
+      "flux": [
+        "https://www.pourlascience.fr/rss"
+      ]
+    },
+    {
+      "id": "inserm",
+      "nom": "Inserm",
+      "emoji": "🩺",
+      "categorie": "Sciences 🔬",
+      "ligne": "recherche biomédicale publique",
+      "flux": [
+        "https://www.inserm.fr/feed"
+      ]
+    },
+    {
+      "id": "pourquoi-docteur",
+      "nom": "Pourquoi Docteur",
+      "emoji": "💉",
+      "categorie": "Sciences 🔬",
+      "ligne": "santé et info patient",
+      "flux": [
+        "https://www.pourquoidocteur.fr/rss/actualites.xml"
+      ]
+    },
+    {
+      "id": "sciencedaily",
+      "nom": "ScienceDaily",
+      "emoji": "🧬",
+      "categorie": "Sciences 🔬",
+      "ligne": "communiqués de recherche mondiaux",
+      "flux": [
+        "https://www.sciencedaily.com/rss/all.xml"
+      ]
+    },
+    {
+      "id": "images-des-maths",
+      "nom": "Images des mathématiques (CNRS)",
+      "emoji": "➗",
+      "categorie": "Sciences 🔬",
+      "ligne": "maths élégamment vulgarisées",
+      "flux": [
+        "https://images.math.cnrs.fr/feed"
+      ]
+    },
+    {
+      "id": "sciences-humaines",
+      "nom": "Sciences Humaines",
+      "emoji": "🧠",
+      "categorie": "Sciences 🔬",
+      "ligne": "SHS : psycho, socio, idées",
+      "flux": [
+        "https://www.scienceshumaines.com/rss"
+      ]
+    },
+    {
+      "id": "nautilus",
+      "nom": "Nautilus",
+      "emoji": "🐚",
+      "categorie": "Sciences 🔬",
+      "ligne": "science et culture, essais élégants",
+      "flux": [
+        "https://nautil.us/feed/"
+      ]
+    },
+    {
+      "id": "knowable",
+      "nom": "Knowable Magazine",
+      "emoji": "🔍",
+      "categorie": "Sciences 🔬",
+      "ligne": "science des solutions, journalisme de fond",
+      "flux": [
+        "https://www.knowablemagazine.org/rss"
+      ]
+    },
+    {
+      "id": "science-news",
+      "nom": "Science News",
+      "emoji": "🧪",
+      "categorie": "Sciences 🔬",
+      "ligne": "actualité recherche grand public US",
+      "flux": [
+        "https://www.sciencenews.org/feed"
+      ]
+    },
+    {
+      "id": "aeon",
+      "nom": "Aeon",
+      "emoji": "🌀",
+      "categorie": "Sciences 🔬",
+      "ligne": "essais longs sciences et philosophie",
+      "flux": [
+        "https://aeon.co/feed.rss"
+      ]
+    },
+    {
+      "id": "scientific-american",
+      "nom": "Scientific American",
+      "emoji": "🧬",
+      "categorie": "Sciences 🔬",
+      "ligne": "vulgarisation scientifique historique",
+      "flux": [
+        "https://www.scientificamerican.com/platform/syndication/rss/"
+      ]
+    },
+    {
+      "id": "smithsonian",
+      "nom": "Smithsonian Magazine",
+      "emoji": "🏛️",
+      "categorie": "Sciences 🔬",
+      "ligne": "science, histoire et culture américaine",
+      "flux": [
+        "https://www.smithsonianmag.com/rss/latest_articles/"
+      ]
+    },
+    {
+      "id": "physics-world",
+      "nom": "Physics World",
+      "emoji": "⚛️",
+      "categorie": "Sciences 🔬",
+      "ligne": "actualité physique, recherche et métier",
+      "flux": [
+        "https://physicsworld.com/feed/"
+      ]
+    },
+    {
+      "id": "the-transmitter",
+      "nom": "The Transmitter",
+      "emoji": "🧠",
+      "categorie": "Sciences 🔬",
+      "ligne": "journalisme spécialisé neurosciences",
+      "flux": [
+        "https://www.thetransmitter.org/feed/"
+      ]
+    },
+    {
+      "id": "psychomedia",
+      "nom": "Psychomédia",
+      "emoji": "🧠",
+      "categorie": "Sciences 🔬",
+      "ligne": "psycho et neurosciences, Québec",
+      "flux": [
+        "https://www.psychomedia.qc.ca/rss.xml"
+      ]
+    },
+    {
+      "id": "nasa-breaking-news",
+      "nom": "NASA — Breaking News",
+      "emoji": "🛰️",
+      "categorie": "Spatial 🚀",
+      "flux": [
+        "https://www.nasa.gov/rss/dyn/breaking_news.rss"
+      ],
+      "ligne": "l'agence spatiale américaine"
+    },
+    {
+      "id": "spacenews",
+      "nom": "SpaceNews",
+      "emoji": "🌑",
+      "categorie": "Spatial 🚀",
+      "flux": [
+        "https://spacenews.com/feed/"
+      ],
+      "ligne": "industrie spatiale, business"
+    },
+    {
+      "id": "spaceflight-now",
+      "nom": "Spaceflight Now",
+      "emoji": "🛫",
+      "categorie": "Spatial 🚀",
+      "flux": [
+        "https://spaceflightnow.com/feed/"
+      ],
+      "ligne": "lancements en direct"
+    },
+    {
+      "id": "ciel-et-espace",
+      "nom": "Ciel & Espace",
+      "emoji": "🔭",
+      "categorie": "Spatial 🚀",
+      "flux": [
+        "https://www.cieletespace.fr/rss"
+      ],
+      "ligne": "astronomie de l'AFA, pratique amateur"
+    },
+    {
+      "id": "esa",
+      "nom": "ESA",
+      "emoji": "🛰️",
+      "categorie": "Spatial 🚀",
+      "ligne": "agence spatiale européenne, exploration",
+      "flux": [
+        "https://www.esa.int/rssfeed/Our_Activities/Space_News"
+      ]
+    },
+    {
+      "id": "cnes",
+      "nom": "CNES",
+      "emoji": "🚀",
+      "categorie": "Spatial 🚀",
+      "ligne": "espace français, missions et innovations",
+      "flux": [
+        "https://cnes.fr/rss.xml"
+      ]
+    },
+    {
+      "id": "reporterre",
+      "nom": "Reporterre",
+      "emoji": "🌳",
+      "categorie": "Écologie & climat 🌿",
+      "ligne": "quotidien de l'écologie, engagé",
+      "flux": [
+        "https://reporterre.net/spip.php?page=backend"
+      ]
+    },
+    {
+      "id": "bon-pote",
+      "nom": "Bon Pote",
+      "emoji": "🌱",
+      "categorie": "Écologie & climat 🌿",
+      "ligne": "le climat expliqué, solutions",
+      "flux": [
+        "https://bonpote.com/feed/"
+      ]
+    },
+    {
+      "id": "vert-eco",
+      "nom": "Vert.eco",
+      "emoji": "🍃",
+      "categorie": "Écologie & climat 🌿",
+      "ligne": "écologie utile au quotidien",
+      "flux": [
+        "https://vert.eco/feed/"
+      ]
+    },
+    {
+      "id": "carbon-brief",
+      "nom": "Carbon Brief",
+      "emoji": "🌡️",
+      "categorie": "Écologie & climat 🌿",
+      "ligne": "climat et énergie, chiffres (anglo)",
+      "flux": [
+        "https://www.carbonbrief.org/feed/"
+      ]
+    },
+    {
+      "id": "greenpeace-fr",
+      "nom": "Greenpeace France",
+      "emoji": "🌊",
+      "categorie": "Écologie & climat 🌿",
+      "ligne": "ONG militante, campagnes",
+      "flux": [
+        "https://www.greenpeace.fr/feed/"
+      ]
+    },
+    {
+      "id": "greenunivers",
+      "nom": "GreenUnivers",
+      "emoji": "⚡",
+      "categorie": "Écologie & climat 🌿",
+      "ligne": "énergie verte et climat business",
+      "flux": [
+        "https://www.greenunivers.com/feed/"
+      ]
+    },
+    {
+      "id": "connaissances-energies",
+      "nom": "Connaissances des énergies",
+      "emoji": "🔌",
+      "categorie": "Écologie & climat 🌿",
+      "ligne": "pédagogie énergie et climat",
+      "flux": [
+        "https://www.connaissancedesenergies.org/rss.xml"
+      ]
+    },
+    {
+      "id": "france-24-sport",
+      "nom": "France 24 — Sport",
+      "emoji": "🏅",
+      "categorie": "Sport ⚽",
+      "flux": [
+        "https://www.france24.com/fr/sports/rss"
+      ],
+      "ligne": "le sport mondial en continu"
+    },
+    {
+      "id": "le-monde-sport",
+      "nom": "Le Monde — Sport",
+      "emoji": "🏆",
+      "categorie": "Sport ⚽",
+      "flux": [
+        "https://www.lemonde.fr/sport/rss_full.xml"
+      ],
+      "ligne": "le sport par le Monde"
+    },
+    {
+      "id": "rfi-sport",
+      "nom": "RFI — Sport",
+      "emoji": "⚽",
+      "categorie": "Sport ⚽",
+      "flux": [
+        "https://www.rfi.fr/fr/sport/rss"
+      ],
+      "ligne": "le sport par RFI"
+    },
+    {
+      "id": "rugbyrama",
+      "nom": "Rugbyrama",
+      "emoji": "🏉",
+      "categorie": "Sport ⚽",
+      "ligne": "rugby, Top 14 et internationaux",
+      "flux": [
+        "https://www.rugbyrama.fr/rss.xml"
+      ]
+    },
+    {
+      "id": "directvelo",
+      "nom": "DirectVélo",
+      "emoji": "🚴",
+      "categorie": "Sport ⚽",
+      "ligne": "cyclisme, du club au pro",
+      "flux": [
+        "https://www.directvelo.com/rss/actualites"
+      ]
+    },
+    {
+      "id": "lequipe",
+      "nom": "L’Équipe",
+      "emoji": "🏆",
+      "categorie": "Sport ⚽",
+      "ligne": "référence du sport français",
+      "flux": [
+        "https://dwh.lequipe.fr/api/edito/rss?path=/"
+      ]
+    },
+    {
+      "id": "jeuxvideo-com",
+      "nom": "Jeuxvideo.com",
+      "emoji": "🎮",
+      "categorie": "Jeux 🎮",
+      "ligne": "référence JV française, tests et actus",
+      "flux": [
+        "https://www.jeuxvideo.com/rss/rss.xml"
+      ]
+    },
+    {
+      "id": "gamekult",
+      "nom": "Gamekult",
+      "emoji": "🕹️",
+      "categorie": "Jeux 🎮",
+      "ligne": "magazine JV, critiques décalées",
+      "flux": [
+        "https://www.gamekult.com/feed.xml"
+      ]
+    },
+    {
+      "id": "actugaming",
+      "nom": "ActuGaming",
+      "emoji": "🎲",
+      "categorie": "Jeux 🎮",
+      "ligne": "actu JV, e-sport et streaming",
+      "flux": [
+        "https://www.actugaming.net/feed/"
+      ]
+    },
+    {
+      "id": "gameblog",
+      "nom": "Gameblog.fr",
+      "emoji": "🕹️",
+      "categorie": "Jeux 🎮",
+      "ligne": "actu JV quotidienne, tests",
+      "flux": [
+        "https://www.gameblog.fr/rss"
+      ]
+    },
+    {
+      "id": "factornews",
+      "nom": "FactorNews",
+      "emoji": "📰",
+      "categorie": "Jeux 🎮",
+      "ligne": "JV indépendant, dossiers de fond",
+      "flux": [
+        "https://www.factornews.com/rss.xml"
+      ]
+    },
+    {
+      "id": "origames",
+      "nom": "Origames",
+      "emoji": "🕹️",
+      "categorie": "Jeux 🎮",
+      "ligne": "JV indépendant, culture geek",
+      "flux": [
+        "https://www.origames.fr/feed"
+      ]
+    },
+    {
+      "id": "canard-pc",
+      "nom": "Canard PC",
+      "emoji": "🦆",
+      "categorie": "Jeux 🎮",
+      "ligne": "presse JV légendaire, humour mordant",
+      "flux": [
+        "https://www.canardpc.com/feed/"
+      ]
+    },
+    {
+      "id": "polygon",
+      "nom": "Polygon",
+      "emoji": "🎮",
+      "categorie": "Jeux 🎮",
+      "ligne": "JV anglo premium, culture gaming",
+      "flux": [
+        "https://www.polygon.com/rss/index.xml"
+      ]
+    },
+    {
+      "id": "rock-paper-shotgun",
+      "nom": "Rock Paper Shotgun",
+      "emoji": "🖥️",
+      "categorie": "Jeux 🎮",
+      "ligne": "jeux PC britanniques, curation",
+      "flux": [
+        "https://www.rockpapershotgun.com/feed"
+      ]
+    },
+    {
+      "id": "eurogamer",
+      "nom": "Eurogamer",
+      "emoji": "🎮",
+      "categorie": "Jeux 🎮",
+      "ligne": "JV européen, analyses sérieuses",
+      "flux": [
+        "https://www.eurogamer.net/feed"
+      ]
+    },
+    {
+      "id": "pc-gamer",
+      "nom": "PC Gamer",
+      "emoji": "🖥️",
+      "categorie": "Jeux 🎮",
+      "ligne": "jeux PC US, guides et tests",
+      "flux": [
+        "https://www.pcgamer.com/rss"
+      ]
+    },
+    {
+      "id": "ign",
+      "nom": "IGN",
+      "emoji": "🎮",
+      "categorie": "Jeux 🎮",
+      "ligne": "géant JV US, grosses exclusivités",
+      "flux": [
+        "https://feeds.ign.com/ign/all"
+      ]
+    },
+    {
+      "id": "kotaku",
+      "nom": "Kotaku",
+      "emoji": "🕹️",
+      "categorie": "Jeux 🎮",
+      "ligne": "JV et culture US, ton libre",
+      "flux": [
+        "https://kotaku.com/rss"
+      ]
+    },
+    {
+      "id": "gamesindustry",
+      "nom": "GamesIndustry.biz",
+      "emoji": "💼",
+      "categorie": "Jeux 🎮",
+      "ligne": "économie et industrie du JV",
+      "flux": [
+        "https://www.gamesindustry.biz/feed"
+      ]
+    },
+    {
+      "id": "jeuxactu",
+      "nom": "JeuxActu",
+      "emoji": "🎲",
+      "categorie": "Jeux 🎮",
+      "ligne": "actu JV et streaming, réseau FR",
+      "flux": [
+        "https://www.jeuxactu.com/rss/ja.rss"
+      ]
+    },
+    {
+      "id": "telerama-a-la-une",
+      "nom": "Télérama — À la une",
+      "emoji": "🎭",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.telerama.fr/rss/une.xml"
+      ],
+      "ligne": "culture et sorties, critiques"
+    },
+    {
+      "id": "les-inrockuptibles",
+      "nom": "Les Inrockuptibles",
+      "emoji": "🎸",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.lesinrocks.com/feed/"
+      ],
+      "ligne": "pop, musique et cinéma"
+    },
+    {
+      "id": "slate-fr",
+      "nom": "Slate.fr",
+      "emoji": "💡",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.slate.fr/rss.xml"
+      ],
+      "ligne": "éclairages courts et malins"
+    },
+    {
+      "id": "france-culture",
+      "nom": "France Culture",
+      "emoji": "🎻",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.radiofrance.fr/franceculture/rss"
+      ],
+      "ligne": "la radio des idées et des savoirs"
+    },
+    {
+      "id": "france-inter",
+      "nom": "France Inter",
+      "emoji": "🎙️",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.radiofrance.fr/franceinter/rss"
+      ],
+      "ligne": "radio généraliste du service public"
+    },
+    {
+      "id": "le-monde-culture",
+      "nom": "Le Monde — Culture",
+      "emoji": "🎨",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.lemonde.fr/culture/rss_full.xml"
+      ],
+      "ligne": "la culture par le Monde"
+    },
+    {
+      "id": "le-monde-diplomatique",
+      "nom": "Le Monde diplomatique",
+      "emoji": "🌍",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.monde-diplomatique.fr/rss"
+      ],
+      "ligne": "géopolitique critique, essais"
+    },
+    {
+      "id": "france-24-culture",
+      "nom": "France 24 — Culture",
+      "emoji": "🎨",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.france24.com/fr/culture/rss"
+      ],
+      "ligne": "la culture mondiale en continu"
+    },
+    {
+      "id": "le-monde-idees",
+      "nom": "Le Monde — Idées",
+      "emoji": "💭",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.lemonde.fr/idees/rss_full.xml"
+      ],
+      "ligne": "débats et essais du Monde"
+    },
+    {
+      "id": "the-guardian-culture",
+      "nom": "The Guardian — Culture",
+      "emoji": "🎭",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.theguardian.com/culture/rss"
+      ],
+      "ligne": "la culture par le Guardian"
+    },
+    {
+      "id": "tetu",
+      "nom": "Têtu",
+      "emoji": "🏳️‍🌈",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.tetu.com/feed/"
+      ],
+      "ligne": "LGBTQ+, combats et cultures"
+    },
+    {
+      "id": "society",
+      "nom": "Society",
+      "emoji": "👥",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.society.fr/feed"
+      ],
+      "ligne": "grand reportage social, bimensuel"
+    },
+    {
+      "id": "polka",
+      "nom": "Polka",
+      "emoji": "📸",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.polkamagazine.com/feed/"
+      ],
+      "ligne": "photographie et photojournalisme"
+    }
+  ]
+}

@@ -83,8 +83,12 @@ async function init() {
   ]);
   state.chapters = chapters;
   state.mediasBase = jm.medias || [];
-  /* Catalogue de flux RSS vérifiés (v21) : propose les médias connus dans ➕ Ajouter */
-  state.fluxCatalogue = fluxRss.catalogue || [];
+  /* Catalogue de flux RSS vérifiés (v21) : propose les médias connus dans ➕ Ajouter.
+   * v23 : le catalogue est découpé en shards (limite ~32 Ko par fichier poussé) ;
+   * flux-rss.json liste ses compléments dans « suite » — on charge tout en parallèle. */
+  const shards = await Promise.all((fluxRss.suite || []).map(u => chargerJSON(u, {})));
+  state.fluxCatalogue = shards.reduce((acc, s) => acc.concat(s.catalogue || []), fluxRss.catalogue || []);
+
   /* Bulletin climat Copernicus (v22) : onglet Climat */
   state.climat = climat;
   majMedias();
