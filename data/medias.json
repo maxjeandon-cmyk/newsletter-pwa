@@ -17,6 +17,15 @@
         "https://www.lemonde.fr/international/rss_full.xml"
       ],
       "fenetreHeures": 24
+    },
+    {
+      "id": "l-usine-digitale",
+      "nom": "L’Usine Digitale",
+      "emoji": "🏭",
+      "flux": [
+        "https://www.usine-digitale.fr/rss"
+      ],
+      "fenetreHeures": 24
     }
   ]
 }
