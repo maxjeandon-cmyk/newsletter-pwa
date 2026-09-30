@@ -53,6 +53,15 @@
         "https://www.lemonde.fr/rss/une.xml"
       ],
       "fenetreHeures": 24
+    },
+    {
+      "id": "nasa-breaking-news",
+      "nom": "NASA — Breaking News",
+      "emoji": "🛰️",
+      "flux": [
+        "https://www.nasa.gov/rss/dyn/breaking_news.rss"
+      ],
+      "fenetreHeures": 24
     }
   ]
 }
