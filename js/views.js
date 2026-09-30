@@ -301,7 +301,8 @@ function sousOngletsMedias(visibles, mode) {
 }
 
 /* Catalogue de flux RSS vérifiés (v21) : médias francophones et anglophones
- * classés par catégorie — un choix ici préremplit tout le formulaire. */
+ * classés par catégorie — un choix ici préremplit tout le formulaire.
+ * v23 : chaque média affiche sa ligne éditoriale après son nom (champ « ligne »). */
 function blocCatalogue() {
   if (!state.fluxCatalogue.length) return '';
   const cats = [];
@@ -311,7 +312,7 @@ function blocCatalogue() {
     cats.map(c =>
       '<optgroup label="' + esc(c) + '">' +
       state.fluxCatalogue.filter(e => e.categorie === c)
-        .map(e => '<option value="' + esc(e.id) + '">' + esc((e.emoji ? e.emoji + ' ' : '') + e.nom) + '</option>').join('') +
+        .map(e => '<option value="' + esc(e.id) + '">' + esc((e.emoji ? e.emoji + ' ' : '') + e.nom + (e.ligne ? ' — ' + e.ligne : '')) + '</option>').join('') +
       '</optgroup>').join('') +
     '</select></label>';
 }

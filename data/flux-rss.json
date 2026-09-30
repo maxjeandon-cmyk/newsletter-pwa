@@ -7,7 +7,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://www.lemonde.fr/rss/une.xml"
-      ]
+      ],
+      "ligne": "référence du soir, analyse approfondie"
     },
     {
       "id": "le-monde-international",
@@ -16,7 +17,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://www.lemonde.fr/international/rss_full.xml"
-      ]
+      ],
+      "ligne": "l'international décrypté par le Monde"
     },
     {
       "id": "liberation-tout",
@@ -25,7 +27,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://www.liberation.fr/arc/outboundfeeds/rss-all/"
-      ]
+      ],
+      "ligne": "gauche culturelle, ton libre et direct"
     },
     {
       "id": "le-figaro-a-la-une",
@@ -34,7 +37,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://www.lefigaro.fr/rss/figaro_actualites.xml"
-      ]
+      ],
+      "ligne": "doyen centre droit, débats classiques"
     },
     {
       "id": "france-info",
@@ -43,7 +47,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://radiofrance.fr/franceinfo/rss"
-      ]
+      ],
+      "ligne": "service public continu, factuel"
     },
     {
       "id": "france-tv-info-titres",
@@ -52,7 +57,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://www.francetvinfo.fr/titres.rss"
-      ]
+      ],
+      "ligne": "audiovisuel public, titres en continu"
     },
     {
       "id": "france-tv-info-france",
@@ -61,7 +67,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://www.francetvinfo.fr/france.rss"
-      ]
+      ],
+      "ligne": "info société France, service public"
     },
     {
       "id": "france-24",
@@ -70,7 +77,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://www.france24.com/fr/rss"
-      ]
+      ],
+      "ligne": "géopolitique mondiale en français"
     },
     {
       "id": "rfi-a-la-une",
@@ -79,7 +87,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://www.rfi.fr/fr/rss"
-      ]
+      ],
+      "ligne": "radio mondiale, francophonie et Afrique"
     },
     {
       "id": "bfm-tv",
@@ -88,7 +97,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://www.bfmtv.com/rss/news-24-7/"
-      ]
+      ],
+      "ligne": "actualité en continu, décryptage express"
     },
     {
       "id": "20-minutes-a-la-une",
@@ -97,7 +107,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://www.20minutes.fr/feeds/rss-une.xml"
-      ]
+      ],
+      "ligne": "gratuit urbain, info concise"
     },
     {
       "id": "europe-1",
@@ -106,7 +117,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://www.europe1.fr/rss.xml"
-      ]
+      ],
+      "ligne": "radio généraliste, talk et actu"
     },
     {
       "id": "ouest-france-a-la-une",
@@ -115,7 +127,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://www.ouest-france.fr/rss.xml"
-      ]
+      ],
+      "ligne": "première diffusion française, proximité"
     },
     {
       "id": "la-croix-a-la-une",
@@ -124,7 +137,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://www.la-croix.com/rss.xml"
-      ]
+      ],
+      "ligne": "quotidien catholique ouvert, éthique"
     },
     {
       "id": "le-parisien-a-la-une",
@@ -133,7 +147,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://feeds.leparisien.fr/leparisien/rss"
-      ]
+      ],
+      "ligne": "Île-de-France et national, grand public"
     },
     {
       "id": "l-obs",
@@ -142,7 +157,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://www.nouvelobs.com/rss.xml"
-      ]
+      ],
+      "ligne": "news de gauche, idées et culture"
     },
     {
       "id": "l-express-a-la-une",
@@ -151,7 +167,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://www.lexpress.fr/rss/une.xml"
-      ]
+      ],
+      "ligne": "news centriste, enquêtes"
     },
     {
       "id": "mediapart-articles",
@@ -160,7 +177,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://www.mediapart.fr/articles/feed"
-      ]
+      ],
+      "ligne": "journal en ligne indépendant, enquêtes"
     },
     {
       "id": "l-humanite",
@@ -169,7 +187,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://www.humanite.fr/feed"
-      ]
+      ],
+      "ligne": "proche du PCF, luttes sociales"
     },
     {
       "id": "paris-match",
@@ -178,7 +197,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://www.parismatch.com/rss.xml"
-      ]
+      ],
+      "ligne": "people et images, grands reportages"
     },
     {
       "id": "le-jdd",
@@ -187,7 +207,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://www.lejdd.fr/rss.xml"
-      ]
+      ],
+      "ligne": "hebdo du dimanche, grands entretiens"
     },
     {
       "id": "valeurs-actuelles",
@@ -196,7 +217,8 @@
       "categorie": "Presse généraliste 🇫🇷",
       "flux": [
         "https://www.valeursactuelles.com/feed"
-      ]
+      ],
+      "ligne": "hebdo de droite, conservateur-libéral"
     },
     {
       "id": "sud-ouest",
@@ -205,7 +227,8 @@
       "categorie": "Presse régionale 🗺️",
       "flux": [
         "https://www.sudouest.fr/rss.xml"
-      ]
+      ],
+      "ligne": "grand Sud-Ouest, vignoble et littoral"
     },
     {
       "id": "le-dauphine-libere",
@@ -214,7 +237,8 @@
       "categorie": "Presse régionale 🗺️",
       "flux": [
         "https://www.ledauphine.com/rss"
-      ]
+      ],
+      "ligne": "Alpes, montagne et Grenoble"
     },
     {
       "id": "la-depeche",
@@ -223,7 +247,8 @@
       "categorie": "Presse régionale 🗺️",
       "flux": [
         "https://www.ladepeche.fr/rss.xml"
-      ]
+      ],
+      "ligne": "Midi toulousain, Occitanie"
     },
     {
       "id": "le-progres",
@@ -232,7 +257,8 @@
       "categorie": "Presse régionale 🗺️",
       "flux": [
         "https://www.leprogres.fr/rss"
-      ]
+      ],
+      "ligne": "Lyon et Rhône-Alpes"
     },
     {
       "id": "le-telegramme",
@@ -241,7 +267,8 @@
       "categorie": "Presse régionale 🗺️",
       "flux": [
         "https://www.letelegramme.fr/rss.xml"
-      ]
+      ],
+      "ligne": "Bretagne ouest, Brest et Quimper"
     },
     {
       "id": "l-est-republicain",
@@ -250,7 +277,8 @@
       "categorie": "Presse régionale 🗺️",
       "flux": [
         "https://www.estrepublicain.fr/rss"
-      ]
+      ],
+      "ligne": "Grand Est, Nancy et Lorraine"
     },
     {
       "id": "nice-matin",
@@ -259,7 +287,8 @@
       "categorie": "Presse régionale 🗺️",
       "flux": [
         "https://www.nicematin.com/rss"
-      ]
+      ],
+      "ligne": "Côte d'Azur et Var"
     },
     {
       "id": "actu-fr",
@@ -268,7 +297,8 @@
       "categorie": "Presse régionale 🗺️",
       "flux": [
         "https://www.actu.fr/rss.xml"
-      ]
+      ],
+      "ligne": "réseau national d'actualités locales"
     },
     {
       "id": "midi-libre",
@@ -277,7 +307,8 @@
       "categorie": "Presse régionale 🗺️",
       "flux": [
         "https://www.midilibre.fr/rss.xml"
-      ]
+      ],
+      "ligne": "Occitanie et Hérault, proximité"
     },
     {
       "id": "charente-libre",
@@ -286,7 +317,8 @@
       "categorie": "Presse régionale 🗺️",
       "flux": [
         "https://www.charentelibre.fr/rss.xml"
-      ]
+      ],
+      "ligne": "Charente, quotidien rural"
     },
     {
       "id": "les-echos-economie",
@@ -295,7 +327,8 @@
       "categorie": "Économie 💰",
       "flux": [
         "https://services.lesechos.fr/rss/les-echos-economie.xml"
-      ]
+      ],
+      "ligne": "quotidien éco de référence"
     },
     {
       "id": "la-tribune",
@@ -304,7 +337,8 @@
       "categorie": "Économie 💰",
       "flux": [
         "https://www.latribune.fr/feed.xml"
-      ]
+      ],
+      "ligne": "éco en ligne, entreprises et tech"
     },
     {
       "id": "challenges",
@@ -313,7 +347,8 @@
       "categorie": "Économie 💰",
       "flux": [
         "https://www.challenges.fr/rss.xml"
-      ]
+      ],
+      "ligne": "entrepreneurs, réussite et classements"
     },
     {
       "id": "l-obs-economie",
@@ -322,7 +357,8 @@
       "categorie": "Économie 💰",
       "flux": [
         "https://www.nouvelobs.com/economie/rss.xml"
-      ]
+      ],
+      "ligne": "l'économie vue par L'Obs"
     },
     {
       "id": "le-monde-economie",
@@ -331,7 +367,8 @@
       "categorie": "Économie 💰",
       "flux": [
         "https://www.lemonde.fr/economie/rss_full.xml"
-      ]
+      ],
+      "ligne": "économie décryptée par le Monde"
     },
     {
       "id": "france-24-economie",
@@ -340,7 +377,8 @@
       "categorie": "Économie 💰",
       "flux": [
         "https://www.france24.com/fr/economie/rss"
-      ]
+      ],
+      "ligne": "économie mondiale en continu"
     },
     {
       "id": "cnbc-top-news",
@@ -349,7 +387,8 @@
       "categorie": "Économie 💰",
       "flux": [
         "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114"
-      ]
+      ],
+      "ligne": "marchés américains en continu"
     },
     {
       "id": "nyt-business",
@@ -358,7 +397,8 @@
       "categorie": "Économie 💰",
       "flux": [
         "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
-      ]
+      ],
+      "ligne": "business et économie américains"
     },
     {
       "id": "financial-times-world",
@@ -367,7 +407,8 @@
       "categorie": "Économie 💰",
       "flux": [
         "https://www.ft.com/rss/home"
-      ]
+      ],
+      "ligne": "éco mondiale, référence libérale"
     },
     {
       "id": "bloomberg-markets",
@@ -376,7 +417,8 @@
       "categorie": "Économie 💰",
       "flux": [
         "https://feeds.bloomberg.com/markets/news.rss"
-      ]
+      ],
+      "ligne": "marchés en temps réel"
     },
     {
       "id": "the-economist-latest",
@@ -385,7 +427,8 @@
       "categorie": "Économie 💰",
       "flux": [
         "https://www.economist.com/latest/rss.xml"
-      ]
+      ],
+      "ligne": "hebdo libéral britannique, analyse"
     },
     {
       "id": "the-guardian-business",
@@ -394,7 +437,8 @@
       "categorie": "Économie 💰",
       "flux": [
         "https://www.theguardian.com/uk/business/rss"
-      ]
+      ],
+      "ligne": "l'éco par le Guardian"
     },
     {
       "id": "washington-post-business",
@@ -403,7 +447,8 @@
       "categorie": "Économie 💰",
       "flux": [
         "https://feeds.washingtonpost.com/rss/business"
-      ]
+      ],
+      "ligne": "business américain, WaPo"
     },
     {
       "id": "marketwatch",
@@ -412,7 +457,8 @@
       "categorie": "Économie 💰",
       "flux": [
         "https://feeds.content.dowjones.io/public/rss/mw_topstories"
-      ]
+      ],
+      "ligne": "Wall Street et épargne"
     },
     {
       "id": "l-usine-nouvelle",
@@ -421,7 +467,8 @@
       "categorie": "Économie 💰",
       "flux": [
         "https://www.usinenouvelle.com/rss"
-      ]
+      ],
+      "ligne": "l'industrie, manufacturing et innovation"
     },
     {
       "id": "le-nouvel-economiste",
@@ -430,7 +477,8 @@
       "categorie": "Économie 💰",
       "flux": [
         "https://www.lenouveleconomiste.fr/feed/"
-      ]
+      ],
+      "ligne": "économie des décideurs"
     },
     {
       "id": "alternatives-economiques",
@@ -439,6 +487,37 @@
       "categorie": "Économie 💰",
       "flux": [
         "https://www.alternatives-economiques.fr/rss.xml"
+      ],
+      "ligne": "économie critique, sociale et écologique"
+    },
+    {
+      "id": "cfdt",
+      "nom": "CFDT",
+      "emoji": "🤝",
+      "categorie": "Travail & syndicats 🤝",
+      "ligne": "syndicat réformiste, dialogue social",
+      "flux": [
+        "https://www.cfdt.fr/feed"
+      ]
+    },
+    {
+      "id": "cgt",
+      "nom": "CGT",
+      "emoji": "✊",
+      "categorie": "Travail & syndicats 🤝",
+      "ligne": "syndicat de combat, revendications",
+      "flux": [
+        "https://www.cgt.fr/rss.xml"
+      ]
+    },
+    {
+      "id": "force-ouvriere",
+      "nom": "Force Ouvrière",
+      "emoji": "🛠️",
+      "categorie": "Travail & syndicats 🤝",
+      "ligne": "indépendant, défense des travailleurs",
+      "flux": [
+        "https://www.force-ouvriere.fr/spip.php?page=backend"
       ]
     },
     {
@@ -448,7 +527,8 @@
       "categorie": "Tech & numérique 💻",
       "flux": [
         "https://www.numerama.com/feed/"
-      ]
+      ],
+      "ligne": "tech et numérique au quotidien"
     },
     {
       "id": "journal-du-net",
@@ -457,7 +537,8 @@
       "categorie": "Tech & numérique 💻",
       "flux": [
         "https://www.journaldunet.com/rss/"
-      ]
+      ],
+      "ligne": "éco du numérique, web et emploi"
     },
     {
       "id": "01net",
@@ -466,7 +547,8 @@
       "categorie": "Tech & numérique 💻",
       "flux": [
         "https://www.01net.com/actualites/feed/"
-      ]
+      ],
+      "ligne": "high-tech grand public, tests"
     },
     {
       "id": "next-inpact",
@@ -475,7 +557,8 @@
       "categorie": "Tech & numérique 💻",
       "flux": [
         "https://next.ink/feed/"
-      ]
+      ],
+      "ligne": "numérique et droits, décryptage pointu"
     },
     {
       "id": "zdnet-france",
@@ -484,7 +567,8 @@
       "categorie": "Tech & numérique 💻",
       "flux": [
         "https://www.zdnet.fr/feeds/rss/actualites/"
-      ]
+      ],
+      "ligne": "IT et entreprises"
     },
     {
       "id": "l-usine-digitale",
@@ -493,7 +577,8 @@
       "categorie": "Tech & numérique 💻",
       "flux": [
         "https://www.usine-digitale.fr/rss"
-      ]
+      ],
+      "ligne": "le numérique industriel"
     },
     {
       "id": "ars-technica",
@@ -502,7 +587,8 @@
       "categorie": "Tech & numérique 💻",
       "flux": [
         "https://arstechnica.com/feed/"
-      ]
+      ],
+      "ligne": "tech et science, analyse pointue"
     },
     {
       "id": "the-verge",
@@ -511,7 +597,8 @@
       "categorie": "Tech & numérique 💻",
       "flux": [
         "https://www.theverge.com/rss/index.xml"
-      ]
+      ],
+      "ligne": "culture tech et gadgets"
     },
     {
       "id": "wired",
@@ -520,7 +607,8 @@
       "categorie": "Tech & numérique 💻",
       "flux": [
         "https://www.wired.com/feed/rss"
-      ]
+      ],
+      "ligne": "le futur et l'impact du numérique"
     },
     {
       "id": "techcrunch",
@@ -529,7 +617,8 @@
       "categorie": "Tech & numérique 💻",
       "flux": [
         "https://techcrunch.com/feed/"
-      ]
+      ],
+      "ligne": "startups et capital-risque"
     },
     {
       "id": "engadget",
@@ -538,7 +627,8 @@
       "categorie": "Tech & numérique 💻",
       "flux": [
         "https://www.engadget.com/rss.xml"
-      ]
+      ],
+      "ligne": "gadgets et tech grand public"
     },
     {
       "id": "nyt-technology",
@@ -547,7 +637,8 @@
       "categorie": "Tech & numérique 💻",
       "flux": [
         "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml"
-      ]
+      ],
+      "ligne": "la tech par le New York Times"
     },
     {
       "id": "bbc-technology",
@@ -556,7 +647,8 @@
       "categorie": "Tech & numérique 💻",
       "flux": [
         "https://feeds.bbci.co.uk/news/technology/rss.xml"
-      ]
+      ],
+      "ligne": "la tech par la BBC"
     },
     {
       "id": "the-guardian-tech",
@@ -565,7 +657,8 @@
       "categorie": "Tech & numérique 💻",
       "flux": [
         "https://www.theguardian.com/uk/technology/rss"
-      ]
+      ],
+      "ligne": "la tech par le Guardian"
     },
     {
       "id": "frandroid",
@@ -574,7 +667,8 @@
       "categorie": "Tech & numérique 💻",
       "flux": [
         "https://www.frandroid.com/feed"
-      ]
+      ],
+      "ligne": "Android et mobile, tests"
     },
     {
       "id": "les-numeriques",
@@ -583,7 +677,8 @@
       "categorie": "Tech & numérique 💻",
       "flux": [
         "https://www.lesnumeriques.com/rss.xml"
-      ]
+      ],
+      "ligne": "produits tech, tests et achats"
     },
     {
       "id": "le-monde-technologies",
@@ -592,6 +687,47 @@
       "categorie": "Tech & numérique 💻",
       "flux": [
         "https://www.lemonde.fr/technologies/rss_full.xml"
+      ],
+      "ligne": "la tech décryptée par le Monde"
+    },
+    {
+      "id": "la-quadrature-du-net",
+      "nom": "La Quadrature du Net",
+      "emoji": "🕶️",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "libertés numériques, militant",
+      "flux": [
+        "https://www.laquadrature.net/feed/"
+      ]
+    },
+    {
+      "id": "iphon-fr",
+      "nom": "iPhon.fr",
+      "emoji": "📱",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "Apple et iPhone, astuces",
+      "flux": [
+        "https://www.iphon.fr/feed/rss"
+      ]
+    },
+    {
+      "id": "mac4ever",
+      "nom": "Mac4Ever",
+      "emoji": "🍏",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "écosystème Apple, rumeurs et tests",
+      "flux": [
+        "https://www.mac4ever.com/flux/rss/content/all"
+      ]
+    },
+    {
+      "id": "linuxfr",
+      "nom": "LinuxFr",
+      "emoji": "🐧",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "logiciels libres, communauté",
+      "flux": [
+        "https://linuxfr.org/news.atom"
       ]
     },
     {
@@ -601,7 +737,8 @@
       "categorie": "Sciences 🔬",
       "flux": [
         "https://lejournal.cnrs.fr/rss"
-      ]
+      ],
+      "ligne": "recherche publique française vulgarisée"
     },
     {
       "id": "futura-sciences",
@@ -610,7 +747,8 @@
       "categorie": "Sciences 🔬",
       "flux": [
         "https://www.futura-sciences.com/rss/actualites.xml"
-      ]
+      ],
+      "ligne": "sciences et espace, grand public"
     },
     {
       "id": "science-vie",
@@ -619,7 +757,8 @@
       "categorie": "Sciences 🔬",
       "flux": [
         "https://www.science-et-vie.com/feed/"
-      ]
+      ],
+      "ligne": "vulgarisation centenaire"
     },
     {
       "id": "le-monde-sciences",
@@ -628,7 +767,8 @@
       "categorie": "Sciences 🔬",
       "flux": [
         "https://www.lemonde.fr/sciences/rss_full.xml"
-      ]
+      ],
+      "ligne": "les sciences par le Monde"
     },
     {
       "id": "bbc-science-environment",
@@ -637,7 +777,8 @@
       "categorie": "Sciences 🔬",
       "flux": [
         "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"
-      ]
+      ],
+      "ligne": "science et environnement, BBC"
     },
     {
       "id": "the-guardian-science",
@@ -646,7 +787,8 @@
       "categorie": "Sciences 🔬",
       "flux": [
         "https://www.theguardian.com/science/rss"
-      ]
+      ],
+      "ligne": "les sciences par le Guardian"
     },
     {
       "id": "nature-news",
@@ -655,7 +797,8 @@
       "categorie": "Sciences 🔬",
       "flux": [
         "https://www.nature.com/nature.rss"
-      ]
+      ],
+      "ligne": "recherche mondiale, référence"
     },
     {
       "id": "new-scientist",
@@ -664,7 +807,8 @@
       "categorie": "Sciences 🔬",
       "flux": [
         "https://www.newscientist.com/feed/home/"
-      ]
+      ],
+      "ligne": "hebdo scientifique anglophone"
     },
     {
       "id": "science-actualites",
@@ -673,7 +817,8 @@
       "categorie": "Sciences 🔬",
       "flux": [
         "https://www.science.org/rss/news_current.xml"
-      ]
+      ],
+      "ligne": "recherche et politique scientifique"
     },
     {
       "id": "quanta-magazine",
@@ -682,7 +827,8 @@
       "categorie": "Sciences 🔬",
       "flux": [
         "https://api.quantamagazine.org/feed/"
-      ]
+      ],
+      "ligne": "maths, physique et vivant, long format"
     },
     {
       "id": "sciences-et-avenir",
@@ -691,7 +837,8 @@
       "categorie": "Sciences 🔬",
       "flux": [
         "https://www.sciencesetavenir.fr/rss.xml"
-      ]
+      ],
+      "ligne": "recherche et sciences (fusion La Recherche)"
     },
     {
       "id": "le-monde-planete",
@@ -700,7 +847,8 @@
       "categorie": "Sciences 🔬",
       "flux": [
         "https://www.lemonde.fr/planete/rss_full.xml"
-      ]
+      ],
+      "ligne": "environnement et biodiversité"
     },
     {
       "id": "nyt-science",
@@ -709,7 +857,8 @@
       "categorie": "Sciences 🔬",
       "flux": [
         "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml"
-      ]
+      ],
+      "ligne": "les sciences par le NYT"
     },
     {
       "id": "the-guardian-environment",
@@ -718,520 +867,61 @@
       "categorie": "Sciences 🔬",
       "flux": [
         "https://www.theguardian.com/environment/rss"
+      ],
+      "ligne": "l'environnement par le Guardian"
+    },
+    {
+      "id": "trust-my-science",
+      "nom": "Trust My Science",
+      "emoji": "🧪",
+      "categorie": "Sciences 🔬",
+      "ligne": "veille scientifique mondiale",
+      "flux": [
+        "https://trustmyscience.com/feed/"
       ]
     },
     {
-      "id": "nasa-breaking-news",
-      "nom": "NASA — Breaking News",
-      "emoji": "🛰️",
-      "categorie": "Spatial 🚀",
+      "id": "pour-la-science",
+      "nom": "Pour la Science",
+      "emoji": "🧠",
+      "categorie": "Sciences 🔬",
+      "ligne": "édition française de Scientific American",
       "flux": [
-        "https://www.nasa.gov/rss/dyn/breaking_news.rss"
+        "https://www.pourlascience.fr/rss"
       ]
     },
     {
-      "id": "spacenews",
-      "nom": "SpaceNews",
-      "emoji": "🌑",
-      "categorie": "Spatial 🚀",
+      "id": "inserm",
+      "nom": "Inserm",
+      "emoji": "🩺",
+      "categorie": "Sciences 🔬",
+      "ligne": "recherche biomédicale publique",
       "flux": [
-        "https://spacenews.com/feed/"
+        "https://www.inserm.fr/feed"
       ]
     },
     {
-      "id": "spaceflight-now",
-      "nom": "Spaceflight Now",
-      "emoji": "🛫",
-      "categorie": "Spatial 🚀",
+      "id": "pourquoi-docteur",
+      "nom": "Pourquoi Docteur",
+      "emoji": "💉",
+      "categorie": "Sciences 🔬",
+      "ligne": "santé et info patient",
       "flux": [
-        "https://spaceflightnow.com/feed/"
+        "https://www.pourquoidocteur.fr/rss/actualites.xml"
       ]
     },
     {
-      "id": "ciel-et-espace",
-      "nom": "Ciel & Espace",
-      "emoji": "🔭",
-      "categorie": "Spatial 🚀",
+      "id": "sciencedaily",
+      "nom": "ScienceDaily",
+      "emoji": "🧬",
+      "categorie": "Sciences 🔬",
+      "ligne": "communiqués de recherche mondiaux",
       "flux": [
-        "https://www.cieletespace.fr/rss"
-      ]
-    },
-    {
-      "id": "france-24-sport",
-      "nom": "France 24 — Sport",
-      "emoji": "🏅",
-      "categorie": "Sport ⚽",
-      "flux": [
-        "https://www.france24.com/fr/sports/rss"
-      ]
-    },
-    {
-      "id": "le-monde-sport",
-      "nom": "Le Monde — Sport",
-      "emoji": "🏆",
-      "categorie": "Sport ⚽",
-      "flux": [
-        "https://www.lemonde.fr/sport/rss_full.xml"
-      ]
-    },
-    {
-      "id": "rfi-sport",
-      "nom": "RFI — Sport",
-      "emoji": "⚽",
-      "categorie": "Sport ⚽",
-      "flux": [
-        "https://www.rfi.fr/fr/sport/rss"
-      ]
-    },
-    {
-      "id": "telerama-a-la-une",
-      "nom": "Télérama — À la une",
-      "emoji": "🎭",
-      "categorie": "Culture & idées 🎭",
-      "flux": [
-        "https://www.telerama.fr/rss/une.xml"
-      ]
-    },
-    {
-      "id": "les-inrockuptibles",
-      "nom": "Les Inrockuptibles",
-      "emoji": "🎸",
-      "categorie": "Culture & idées 🎭",
-      "flux": [
-        "https://www.lesinrocks.com/feed/"
-      ]
-    },
-    {
-      "id": "slate-fr",
-      "nom": "Slate.fr",
-      "emoji": "💡",
-      "categorie": "Culture & idées 🎭",
-      "flux": [
-        "https://www.slate.fr/rss.xml"
-      ]
-    },
-    {
-      "id": "france-culture",
-      "nom": "France Culture",
-      "emoji": "🎻",
-      "categorie": "Culture & idées 🎭",
-      "flux": [
-        "https://www.radiofrance.fr/franceculture/rss"
-      ]
-    },
-    {
-      "id": "france-inter",
-      "nom": "France Inter",
-      "emoji": "🎙️",
-      "categorie": "Culture & idées 🎭",
-      "flux": [
-        "https://www.radiofrance.fr/franceinter/rss"
-      ]
-    },
-    {
-      "id": "le-monde-culture",
-      "nom": "Le Monde — Culture",
-      "emoji": "🎨",
-      "categorie": "Culture & idées 🎭",
-      "flux": [
-        "https://www.lemonde.fr/culture/rss_full.xml"
-      ]
-    },
-    {
-      "id": "le-monde-diplomatique",
-      "nom": "Le Monde diplomatique",
-      "emoji": "🌍",
-      "categorie": "Culture & idées 🎭",
-      "flux": [
-        "https://www.monde-diplomatique.fr/rss"
-      ]
-    },
-    {
-      "id": "france-24-culture",
-      "nom": "France 24 — Culture",
-      "emoji": "🎨",
-      "categorie": "Culture & idées 🎭",
-      "flux": [
-        "https://www.france24.com/fr/culture/rss"
-      ]
-    },
-    {
-      "id": "le-monde-idees",
-      "nom": "Le Monde — Idées",
-      "emoji": "💭",
-      "categorie": "Culture & idées 🎭",
-      "flux": [
-        "https://www.lemonde.fr/idees/rss_full.xml"
-      ]
-    },
-    {
-      "id": "the-guardian-culture",
-      "nom": "The Guardian — Culture",
-      "emoji": "🎭",
-      "categorie": "Culture & idées 🎭",
-      "flux": [
-        "https://www.theguardian.com/culture/rss"
-      ]
-    },
-    {
-      "id": "tetu",
-      "nom": "Têtu",
-      "emoji": "🏳️‍🌈",
-      "categorie": "Culture & idées 🎭",
-      "flux": [
-        "https://www.tetu.com/feed/"
-      ]
-    },
-    {
-      "id": "society",
-      "nom": "Society",
-      "emoji": "👥",
-      "categorie": "Culture & idées 🎭",
-      "flux": [
-        "https://www.society.fr/feed"
-      ]
-    },
-    {
-      "id": "polka",
-      "nom": "Polka",
-      "emoji": "📸",
-      "categorie": "Culture & idées 🎭",
-      "flux": [
-        "https://www.polkamagazine.com/feed/"
-      ]
-    },
-    {
-      "id": "philosophie-magazine",
-      "nom": "Philosophie Magazine",
-      "emoji": "🤔",
-      "categorie": "Culture & idées 🎭",
-      "flux": [
-        "https://www.philomag.com/feed/"
-      ]
-    },
-    {
-      "id": "revue-des-deux-mondes",
-      "nom": "Revue des Deux Mondes",
-      "emoji": "📚",
-      "categorie": "Culture & idées 🎭",
-      "flux": [
-        "https://www.revuedesdeuxmondes.fr/feed/"
-      ]
-    },
-    {
-      "id": "psychologies",
-      "nom": "Psychologies",
-      "emoji": "💭",
-      "categorie": "Culture & idées 🎭",
-      "flux": [
-        "https://www.psychologies.com/feed"
-      ]
-    },
-    {
-      "id": "la-libre-belgique",
-      "nom": "La Libre Belgique",
-      "emoji": "🇧🇪",
-      "categorie": "Belgique / Suisse / Québec 🍁",
-      "flux": [
-        "https://www.lalibre.be/rss.xml"
-      ]
-    },
-    {
-      "id": "le-temps",
-      "nom": "Le Temps",
-      "emoji": "🇨🇭",
-      "categorie": "Belgique / Suisse / Québec 🍁",
-      "flux": [
-        "https://www.letemps.ch/feed"
-      ]
-    },
-    {
-      "id": "radio-canada-a-la-une",
-      "nom": "Radio-Canada — À la une",
-      "emoji": "🇨🇦",
-      "categorie": "Belgique / Suisse / Québec 🍁",
-      "flux": [
-        "https://ici.radio-canada.ca/rss/4159"
-      ]
-    },
-    {
-      "id": "jeune-afrique",
-      "nom": "Jeune Afrique",
-      "emoji": "🌍",
-      "categorie": "Afrique francophone 🌍",
-      "flux": [
-        "https://www.jeuneafrique.com/feed/"
-      ]
-    },
-    {
-      "id": "rfi-afrique",
-      "nom": "RFI — Afrique",
-      "emoji": "📻",
-      "categorie": "Afrique francophone 🌍",
-      "flux": [
-        "https://www.rfi.fr/fr/afrique/rss"
-      ]
-    },
-    {
-      "id": "france-24-afrique",
-      "nom": "France 24 — Afrique",
-      "emoji": "🌍",
-      "categorie": "Afrique francophone 🌍",
-      "flux": [
-        "https://www.france24.com/fr/afrique/rss"
-      ]
-    },
-    {
-      "id": "le-monde-afrique",
-      "nom": "Le Monde — Afrique",
-      "emoji": "🌍",
-      "categorie": "Afrique francophone 🌍",
-      "flux": [
-        "https://www.lemonde.fr/afrique/rss_full.xml"
-      ]
-    },
-    {
-      "id": "africanews",
-      "nom": "Africanews",
-      "emoji": "🌍",
-      "categorie": "Afrique francophone 🌍",
-      "flux": [
-        "https://www.africanews.com/feed/"
-      ]
-    },
-    {
-      "id": "seneweb",
-      "nom": "Seneweb — Sénégal",
-      "emoji": "🇸🇳",
-      "categorie": "Afrique francophone 🌍",
-      "flux": [
-        "https://seneweb.com/feed"
-      ]
-    },
-    {
-      "id": "gabon-review",
-      "nom": "Gabon Review — Gabon",
-      "emoji": "🇬🇦",
-      "categorie": "Afrique francophone 🌍",
-      "flux": [
-        "https://gabonreview.com/feed"
-      ]
-    },
-    {
-      "id": "radio-okapi",
-      "nom": "Radio Okapi — RDC",
-      "emoji": "🇨🇩",
-      "categorie": "Afrique francophone 🌍",
-      "flux": [
-        "https://www.radiookapi.net/feed"
-      ]
-    },
-    {
-      "id": "the-guardian-world",
-      "nom": "The Guardian — World",
-      "emoji": "🥇",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://www.theguardian.com/world/rss"
-      ]
-    },
-    {
-      "id": "the-guardian-international",
-      "nom": "The Guardian — International",
-      "emoji": "🌍",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://www.theguardian.com/international/rss"
-      ]
-    },
-    {
-      "id": "bbc-news-world",
-      "nom": "BBC News — World",
-      "emoji": "🌍",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://feeds.bbci.co.uk/news/world/rss.xml"
-      ]
-    },
-    {
-      "id": "bbc-news-top",
-      "nom": "BBC News — Top",
-      "emoji": "📺",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://feeds.bbci.co.uk/news/rss.xml"
-      ]
-    },
-    {
-      "id": "nyt-world",
-      "nom": "NYT — World",
-      "emoji": "🗽",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
-      ]
-    },
-    {
-      "id": "washington-post-world",
-      "nom": "Washington Post — World",
-      "emoji": "🏛️",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://feeds.washingtonpost.com/rss/world"
-      ]
-    },
-    {
-      "id": "npr-news",
-      "nom": "NPR — News",
-      "emoji": "🎙️",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://feeds.npr.org/1001/rss.xml"
-      ]
-    },
-    {
-      "id": "npr-world",
-      "nom": "NPR — World",
-      "emoji": "🌐",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://feeds.npr.org/1004/rss.xml"
-      ]
-    },
-    {
-      "id": "al-jazeera-news",
-      "nom": "Al Jazeera — News",
-      "emoji": "🏜️",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://www.aljazeera.com/xml/rss/all.xml"
-      ]
-    },
-    {
-      "id": "sky-news-world",
-      "nom": "Sky News — World",
-      "emoji": "☁️",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://feeds.skynews.com/feeds/rss/world.xml"
-      ]
-    },
-    {
-      "id": "dw-top-stories",
-      "nom": "DW — Top Stories",
-      "emoji": "🇩🇪",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://rss.dw.com/rdf/rss-en-all"
-      ]
-    },
-    {
-      "id": "euronews-top",
-      "nom": "Euronews — Top",
-      "emoji": "🔵",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://www.euronews.com/rss?level=theme&name=news"
-      ]
-    },
-    {
-      "id": "cbs-news",
-      "nom": "CBS News",
-      "emoji": "👁️",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://www.cbsnews.com/latest/rss/main"
-      ]
-    },
-    {
-      "id": "abc-news",
-      "nom": "ABC News",
-      "emoji": "🇺🇸",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://abcnews.go.com/abcnews/topstories"
-      ]
-    },
-    {
-      "id": "nbc-news",
-      "nom": "NBC News",
-      "emoji": "🦅",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://feeds.nbcnews.com/nbcnews/public/news"
-      ]
-    },
-    {
-      "id": "cbc-news-world",
-      "nom": "CBC News — World",
-      "emoji": "🍁",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://www.cbc.ca/webfeed/rss/rss-world"
-      ]
-    },
-    {
-      "id": "south-china-morning-post",
-      "nom": "South China Morning Post",
-      "emoji": "🇭🇰",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://www.scmp.com/rss/4/feed"
-      ]
-    },
-    {
-      "id": "times-of-india-top",
-      "nom": "Times of India — Top",
-      "emoji": "🇮🇳",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://timesofindia.indiatimes.com/rssfeedstopstories.cms"
-      ]
-    },
-    {
-      "id": "the-japan-times",
-      "nom": "The Japan Times",
-      "emoji": "🇯🇵",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://www.japantimes.co.jp/feed/"
-      ]
-    },
-    {
-      "id": "the-hindu-national",
-      "nom": "The Hindu — National",
-      "emoji": "🇮🇳",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://www.thehindu.com/news/national/feeder/default.rss"
-      ]
-    },
-    {
-      "id": "the-atlantic",
-      "nom": "The Atlantic",
-      "emoji": "🐋",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://www.theatlantic.com/feed/all/"
-      ]
-    },
-    {
-      "id": "vox",
-      "nom": "Vox",
-      "emoji": "🗨️",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://www.vox.com/rss/index.xml"
-      ]
-    },
-    {
-      "id": "the-hill",
-      "nom": "The Hill",
-      "emoji": "🏛️",
-      "categorie": "Anglophone généraliste 🌐",
-      "flux": [
-        "https://thehill.com/feed/"
+        "https://www.sciencedaily.com/rss/all.xml"
       ]
     }
+  ],
+  "suite": [
+    "data/flux-rss-2.json"
   ]
 }
