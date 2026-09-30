@@ -1,6 +1,6 @@
 {
   "date": "2026-09-29",
-  "genere_le": "2026-09-30T07:45:00+02:00",
+  "genere_le": "2026-09-30T09:00:00+02:00",
   "html": "editions/2026-09-29.html",
   "resume_executif": [
     "IA : sommet \u00e0 la Maison Blanche : Donald Trump re\u00e7oit Zuckerberg, Pichai, Amodei, Huang et Brockman, plaide pour l\u2019\u00ab auto-r\u00e9gulation \u00bb, signe un document rebaptisant officiellement l\u2019IA \u00ab super intelligence \u00bb et annonce un \u00ab accord contraignant sur le plan moral \u00bb \u2014 pendant qu\u2019OpenAI, d\u00e9pass\u00e9 par Anthropic en revenus (11,6 contre 6,7 Md$ au T2), renonce \u00e0 GPT-6.1 Astra jug\u00e9 incontr\u00f4lable, lance Sol au DevDay et revendique 1,2 milliard d\u2019utilisateurs hebdomadaires de ChatGPT.",
@@ -15,6 +15,18 @@
       "emoji": "\ud83e\udd16",
       "nom": "Intelligence artificielle",
       "resume": "Sommet IA \u00e0 la Maison Blanche (Zuckerberg, Pichai, Amodei, Huang, Brockman) : \u00ab auto-r\u00e9gulation \u00bb et renommage officiel de l\u2019IA en \u00ab super intelligence \u00bb ; DevDay d\u2019OpenAI (agent personnel persistant, GPT-6.1 Sol, renoncement au mod\u00e8le Astra, incidents d\u2019agents en s\u00e9rie) ; Anthropic d\u00e9passe OpenAI en revenus, ChatGPT \u00e0 1,2 Md d\u2019utilisateurs hebdo, une ONG attaque OpenAI en justice, Google d\u00e9fie Bruxelles."
+    },
+    {
+      "id": "economie-pour-les-nuls",
+      "emoji": "\ud83d\udcb0",
+      "nom": "L\u2019\u00c9conomie pour les nuls",
+      "resume": "Nouveau chapitre quotidien, expliqu\u00e9 comme \u00e0 un d\u00e9butant : dans le monde, les Bourses h\u00e9sitent entre p\u00e9trole qui rench\u00e9rit et taux qui montent, et la banque centrale d\u2019Australie rel\u00e8ve son taux directeur \u00e0 4,60 %, son plus haut depuis quinze ans ; c\u00f4t\u00e9 France, l\u2019\u00c9tat devra emprunter un record de 340 milliards d\u2019euros en 2027, la dette atteint 3 595,5 milliards d\u2019euros (119 % du PIB selon l\u2019Insee) et le taux \u00e0 dix ans d\u00e9passe 4,80 % \u2014 inflation, PIB, taux directeur, obligation d\u2019\u00c9tat : chaque notion est d\u00e9finie en chemin, avec un mini-lexique en fin de chapitre."
+    },
+    {
+      "id": "droit-pour-les-nuls",
+      "emoji": "\u2696\ufe0f",
+      "nom": "Le Droit pour les nuls",
+      "resume": "Concept du jour : le droit de r\u00e9tractation de 14 jours pour les achats \u00e0 distance \u2014 comment annuler sans se justifier, obtenir un remboursement int\u00e9gral sous 14 jours (jamais un avoir impos\u00e9), \u00e9viter les pi\u00e8ges des exceptions et des frais de retour, et passer par le m\u00e9diateur de la consommation en cas de blocage ; les articles L221-18 \u00e0 L221-28 du Code de la consommation sont d\u00e9taill\u00e9s un par un en fin de chapitre."
     },
     {
       "id": "jeu-video-pop-culture",
@@ -539,6 +551,164 @@
       "ref": "https://maxjeandon-cmyk.github.io/newsletter-pwa/editions/2026-09-28.html",
       "fiabilite": 5,
       "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Wall Street ouvre sans direction claire, surveille le p\u00e9trole et les taux",
+      "ref": "news-afp-20260929-620147cb",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 France : la dette publique a atteint 119 % du PIB au deuxi\u00e8me trimestre (Insee)",
+      "ref": "news-afp-20260929-0b470d9e",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 La Bourse de Paris lest\u00e9e par les incertitudes budg\u00e9taires, le taux fran\u00e7ais d\u00e9passe 4,80 %",
+      "ref": "news-afp-20260929-60584c99",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Dette fran\u00e7aise : pourquoi les hedge funds peuvent amplifier les tensions sur les taux",
+      "ref": "news-afp-20260929-df2cd541",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Anthropic alerte sur des \u00ab risques existentiels pour l\u2019humanit\u00e9 \u00bb avant son entr\u00e9e en Bourse",
+      "ref": "news-afp-20260929-de129e9f",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "L\u00e9gifrance \u2014 Article L221-18 du Code de la consommation (d\u00e9lai de r\u00e9tractation de 14 jours)",
+      "ref": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032226842/",
+      "fiabilite": 5,
+      "maj": "30/09/2026"
+    },
+    {
+      "label": "L\u00e9gifrance \u2014 Code de la consommation, section 6 : droit de r\u00e9tractation (L221-18 \u00e0 L221-28)",
+      "ref": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000032226844",
+      "fiabilite": 5,
+      "maj": "30/09/2026"
+    },
+    {
+      "label": "Service-Public \u2014 Achat \u00e0 distance : droit de r\u00e9tractation du consommateur",
+      "ref": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10485",
+      "fiabilite": 5,
+      "maj": "30/09/2026"
+    },
+    {
+      "label": "economie.gouv.fr \u2014 Vente \u00e0 distance : tout savoir sur votre droit de r\u00e9tractation",
+      "ref": "https://www.economie.gouv.fr/particuliers/mes-droits-conso/bien-consommer/vente-distance-tout-savoir-sur-votre-droit-de-retractation",
+      "fiabilite": 5,
+      "maj": "30/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Ligue des nations : l\u2019Espagne r\u00e9ussit son retour \u00e0 la maison, Lamine Yamal inarr\u00eatable",
+      "ref": "news-afp-20260929-ed205ae2",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Ligue des nations : l\u2019Angleterre s\u2019impose 2-0 en R\u00e9publique tch\u00e8que",
+      "ref": "news-afp-20260929-5e6161bb",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Ligue des champions f\u00e9minine : premier test pour Lyon, encore un choc pour le PFC",
+      "ref": "news-afp-20260929-654a9ffe",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 \u00c9quipe de France : Da Cunha, Jacquet, Diouf, les Bleus des Bleus assurent",
+      "ref": "news-afp-20260929-14b214d3",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Manchester City reconnu \u00ab coupable \u00bb de \u00ab graves \u00bb infractions financi\u00e8res 2009-2018",
+      "ref": "news-afp-20260929-636fbaec",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Tennis : Medvedev gagne \u00e0 Hangzhou le 24e titre de sa carri\u00e8re",
+      "ref": "news-afp-20260929-09bbd9f9",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Tennis : Davidovich remporte \u00e0 Chengdu le deuxi\u00e8me tournoi de sa carri\u00e8re",
+      "ref": "news-afp-20260929-dba6e38a",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 ATP 500 de Tokyo : Arthur Fils qualifi\u00e9 pour le grand tableau",
+      "ref": "news-afp-20260929-1007bfe5",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 \u00ab Une intelligence de jeu incroyable \u00bb : Wembanyama impressionne ses co\u00e9quipiers",
+      "ref": "news-afp-20260929-3d7e4416",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Rugby : retraite imm\u00e9diate pour Sekou Macalou au Stade fran\u00e7ais",
+      "ref": "news-afp-20260929-4eb69ef5",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Cyclisme : Kasia Niewiadoma rejoint Lidl-Trek",
+      "ref": "news-afp-20260929-0819e7af",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Remboursement des culottes menstruelles : un \u00ab d\u00e9fi industriel \u00bb pour le made in France",
+      "ref": "news-afp-20260929-0880979f",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Tour Eiffel : le directeur annonce son d\u00e9part apr\u00e8s la mise \u00e0 l\u2019\u00e9cart d\u2019employ\u00e9es",
+      "ref": "news-afp-20260929-5a9b950c",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Slovaquie : une enseignante tu\u00e9e et deux bless\u00e9s dans une attaque au couteau dans une \u00e9cole",
+      "ref": "news-afp-20260929-c7ac2231",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Gr\u00e8ce : Thymaina, l\u2019\u00eele qui ne compte plus que deux \u00e9coliers",
+      "ref": "news-afp-20260929-eba969e0",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
     }
+  ],
+  "hors_chapitres": [
+    "\u26bd Espagne 4-1 Croatie : Lamine Yamal porte les champions du monde \u00e0 S\u00e9ville en Ligue des nations.",
+    "\u26bd Ligue des nations : l\u2019Angleterre s\u2019impose 2-0 en R\u00e9publique tch\u00e8que (Gordon-Kane).",
+    "\u26bd Ligue des champions f\u00e9minine : premier test des OL Lyonnes contre Chelsea mercredi, Paris FC-Arsenal, PSG-Louvain jeudi.",
+    "\u26bd Bleus : les novices Da Cunha, Jacquet et Diouf r\u00e9ussissent leur premi\u00e8re s\u00e9lection (1-0 contre la Belgique lundi).",
+    "\u26bd Manchester City reconnu coupable de \u00ab graves \u00bb infractions financi\u00e8res 2009-2018 (plus d\u2019un milliard d\u2019euros dissimul\u00e9) ; le club fait appel.",
+    "\ud83c\udfbe Tennis : Medvedev gagne \u00e0 Hangzhou son 24e titre, Davidovich s\u2019impose \u00e0 Chengdu, Fils qualifi\u00e9 \u00e0 Tokyo.",
+    "\ud83c\udfc0 Wembanyama : \u00ab une intelligence de jeu incroyable \u00bb selon ses co\u00e9quipiers, la panoplie offensive \u00e0 \u00e9toffer.",
+    "\ud83c\udfc9\ud83d\udeb4 Br\u00e8ves : retraite imm\u00e9diate de Sekou Macalou (Stade fran\u00e7ais) ; Kasia Niewiadoma rejoint Lidl-Trek.",
+    "\ud83e\ude78 Le remboursement des culottes menstruelles entre en vigueur jeudi : pris en charge \u00e0 100 % pour les moins de 26 ans et les b\u00e9n\u00e9ficiaires de la C2S.",
+    "\ud83d\uddfc Tour Eiffel : le directeur de la SETE annonce son d\u00e9part apr\u00e8s la mise \u00e0 l\u2019\u00e9cart d\u2019employ\u00e9es pour un groupe hindou.",
+    "\ud83c\uddf8\ud83c\uddf0 Slovaquie : une enseignante tu\u00e9e et deux bless\u00e9s dans une attaque au couteau dans une \u00e9cole.",
+    "\ud83c\uddec\ud83c\uddf7 Gr\u00e8ce : l\u2019\u00eele de Thymaina ne compte plus que deux \u00e9coliers, symbole de la d\u00e9population des petites \u00eeles."
   ]
 }

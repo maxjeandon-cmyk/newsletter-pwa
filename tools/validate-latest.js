@@ -19,9 +19,11 @@ if (!editions.length) {
   process.exit(1);
 }
 
-// Le format à 11 chapitres (Russie incluse) a été finalisé le 28/09/2026. Les éditions
+// Le format à 11 chapitres (Russie incluse) a été finalisé le 28/09/2026 ; le format à
+// 13 chapitres (+ economie-pour-les-nuls, droit-pour-les-nuls, section « Hors des chapitres »)
+// s'applique aux éditions datées du 29/09/2026 ou après (règle du 30/09/2026). Les éditions
 // antérieures sont historiques (ancien ordre, ancien schéma) : on ne les rétrofit pas,
-// on ne les fait pas échouer la CI non plus.
+// on ne les fait pas échouer la CI non plus. Les deux formats cohabitent ici.
 const A_PARTIR_DE = '2026-09-28';
 const aValider = editions.slice(0, 3).filter((e) => e.date >= A_PARTIR_DE);
 if (!aValider.length) {
