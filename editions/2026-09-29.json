@@ -1,0 +1,544 @@
+{
+  "date": "2026-09-29",
+  "genere_le": "2026-09-30T07:45:00+02:00",
+  "html": "editions/2026-09-29.html",
+  "resume_executif": [
+    "IA : sommet \u00e0 la Maison Blanche : Donald Trump re\u00e7oit Zuckerberg, Pichai, Amodei, Huang et Brockman, plaide pour l\u2019\u00ab auto-r\u00e9gulation \u00bb, signe un document rebaptisant officiellement l\u2019IA \u00ab super intelligence \u00bb et annonce un \u00ab accord contraignant sur le plan moral \u00bb \u2014 pendant qu\u2019OpenAI, d\u00e9pass\u00e9 par Anthropic en revenus (11,6 contre 6,7 Md$ au T2), renonce \u00e0 GPT-6.1 Astra jug\u00e9 incontr\u00f4lable, lance Sol au DevDay et revendique 1,2 milliard d\u2019utilisateurs hebdomadaires de ChatGPT.",
+    "Fonction publique : \u00ab journ\u00e9e noire \u00bb : environ 10 % des agents d\u2019\u00c9tat en gr\u00e8ve, plus de 170 manifestations, 8 000 pompiers \u00e0 Paris et des blocus de lyc\u00e9es, \u00e0 deux jours du budget 2027 \u2014 la France empruntera un montant record de 340 milliards d\u2019euros l\u2019an prochain ; \u00c9douard Philippe d\u00e9voile sa retraite \u00e0 65 ans et 45 annuit\u00e9s.",
+    "Guerre hybride : l\u2019Estonie accuse les services russes d\u2019avoir commandit\u00e9 l\u2019incendie du fabricant de drones Milrem Robotics, l\u2019UE se dit \u00ab pleinement solidaire \u00bb et l\u2019OTAN condamne la \u00ab rh\u00e9torique nucl\u00e9aire \u00bb autour de Kaliningrad ; le nouveau ministre ukrainien de la D\u00e9fense annule Berlin face \u00e0 l\u2019intensification des attaques.",
+    "Climat : Tokyo enregistre 34 jours de pluie cons\u00e9cutifs (record depuis 1886), la Tha\u00eflande d\u00e9plore 23 morts et 1,7 million de personnes touch\u00e9es, et l\u2019UE pr\u00e9vient d\u2019un hiver \u00e9nerg\u00e9tique aux prix \u00ab tr\u00e8s \u00e9lev\u00e9s \u00bb \u2014 l\u2019Espagne et l\u2019Italie plafonnent d\u00e9j\u00e0.",
+    "Monde : le Maroc nomme sa premi\u00e8re femme cheffe du gouvernement (Fatima Ezzahra El Mansouri), le G20 du commerce s\u2019ouvre \u00e0 Milwaukee sous la menace des droits de douane, la Lettonie vote samedi \u2014 des russophones r\u00e9fractaires au \u00ab Russki mir \u00bb \u2014 et Isra\u00ebl s\u2019approche de ses l\u00e9gislatives sous des \u00ab indices \u00bb d\u2019attaques."
+  ],
+  "chapitres": [
+    {
+      "id": "intelligence-artificielle",
+      "emoji": "\ud83e\udd16",
+      "nom": "Intelligence artificielle",
+      "resume": "Sommet IA \u00e0 la Maison Blanche (Zuckerberg, Pichai, Amodei, Huang, Brockman) : \u00ab auto-r\u00e9gulation \u00bb et renommage officiel de l\u2019IA en \u00ab super intelligence \u00bb ; DevDay d\u2019OpenAI (agent personnel persistant, GPT-6.1 Sol, renoncement au mod\u00e8le Astra, incidents d\u2019agents en s\u00e9rie) ; Anthropic d\u00e9passe OpenAI en revenus, ChatGPT \u00e0 1,2 Md d\u2019utilisateurs hebdo, une ONG attaque OpenAI en justice, Google d\u00e9fie Bruxelles."
+    },
+    {
+      "id": "jeu-video-pop-culture",
+      "emoji": "\ud83c\udfae",
+      "nom": "Jeu vid\u00e9o & pop culture",
+      "resume": "Minecraft Dungeons 2 sort le jour m\u00eame et GTA VI reste attendu le 19 novembre ; journ\u00e9e pauvre en actualit\u00e9 jeu vid\u00e9o dans les sources crois\u00e9es \u2014 le buzz pop culture est du c\u00f4t\u00e9 de la t\u00e9l\u00e9 : les T\u00e9l\u00e9-Loisirs Awards couronnent Club Doroth\u00e9e et les Guignols de l\u2019info."
+    },
+    {
+      "id": "culture",
+      "emoji": "\ud83c\udfad",
+      "nom": "Culture",
+      "resume": "\u00ab Digger \u00bb d\u2019I\u00f1\u00e1rritu avec Tom Cruise en contre-emploi (sortie mercredi), la chute du romancier Th\u00e9lyson Or\u00e9lien \u00e9cart\u00e9 du Goncourt (plagiat et IA), Peter Zumthor \u00e0 83 ans en documentaire 3D sign\u00e9 Wim Wenders, et la Semaine de la mode de Paris (Jonathan Anderson chez Dior, MaXhosa)."
+    },
+    {
+      "id": "sciences",
+      "emoji": "\ud83d\udd2c",
+      "nom": "Sciences",
+      "resume": "Selon l\u2019ONU, l\u2019IA fait rebondir les d\u00e9penses mondiales de R&D \u00e0 des niveaux records ; Blue Origin l\u00e8ve des fonds ext\u00e9rieurs pour la premi\u00e8re fois ; le Pentagone choisit Boeing pour le futur avion de combat embarqu\u00e9 de l\u2019US Navy ; pas de publication scientifique majeure crois\u00e9e ce mardi."
+    },
+    {
+      "id": "climat",
+      "emoji": "\ud83c\udf0d",
+      "nom": "Climat",
+      "resume": "Tokyo : 34 jours de pluie cons\u00e9cutifs, record depuis 1886 (El Ni\u00f1o et oc\u00e9ans r\u00e9chauff\u00e9s) ; Tha\u00eflande : 23 morts et 1,7 million de personnes touch\u00e9es ; l\u2019UE annonce un hiver \u00e9nerg\u00e9tique aux prix \u00ab tr\u00e8s \u00e9lev\u00e9s \u00bb, l\u2019Espagne et l\u2019Italie plafonnent ; en France, 55 000 pompes \u00e0 chaleur en leasing pour les m\u00e9nages modestes."
+    },
+    {
+      "id": "politique-francaise",
+      "emoji": "\ud83c\uddeb\ud83c\uddf7",
+      "nom": "Politique fran\u00e7aise",
+      "resume": "\u00ab Journ\u00e9e noire \u00bb : ~10 % de gr\u00e9vistes, 170 manifestations, 8 000 pompiers \u00e0 Paris, blocus de lyc\u00e9es ; budget 2027 jeudi \u2014 340 Md\u20ac d\u2019emprunt record, p\u00e9ages autoroutiers tax\u00e9s \u00e0 plus de 50 % ; \u00c9douard Philippe propose la retraite \u00e0 65 ans et 45 annuit\u00e9s ; un sondage donne M\u00e9lenchon qualifi\u00e9 au second tour."
+    },
+    {
+      "id": "etats-unis",
+      "emoji": "\ud83c\uddfa\ud83c\uddf8",
+      "nom": "\u00c9tats-Unis",
+      "resume": "Trump arbitre l\u2019IA envers et contre tout (auto-r\u00e9gulation, \u00ab super intelligence \u00bb) \u00e0 cinq semaines des l\u00e9gislatives ; Jack Smith d\u00e9nonce des atteintes \u00e0 l\u2019\u00c9tat de droit ; le G20 du commerce s\u2019ouvre sous la menace des tarifs ; durcissement contre Cuba et le Canada ; l\u2019Iran attend une r\u00e9ponse sur Ormuz ; Wall Street sous pression des taux."
+    },
+    {
+      "id": "chine",
+      "emoji": "\ud83c\udde8\ud83c\uddf3",
+      "nom": "Chine",
+      "resume": "Wang Yi presse Tokyo sur Ta\u00efwan en recevant un ancien ministre japonais ; le G20 s\u2019ouvre sur fond d\u2019accusations de surcapacit\u00e9s que P\u00e9kin d\u00e9ment ; Novo Nordisk mise sur une pilule anti-ob\u00e9sit\u00e9 chinoise (Hengrui) ; Shein d\u00e9visse \u00e0 Hong Kong ; pas d\u2019annonce int\u00e9rieure majeure ce mardi."
+    },
+    {
+      "id": "russie",
+      "emoji": "\ud83c\uddf7\ud83c\uddfa",
+      "nom": "Russie",
+      "resume": "L\u2019\u00e9missaire Dmitriev re\u00e7u \u00e0 Washington pour des discussions \u00ab constructives \u00bb, Lavrov refuse tout pourparler \u00e0 l\u2019ONU ; l\u2019OTAN condamne la \u00ab rh\u00e9torique nucl\u00e9aire \u00bb autour de Kaliningrad ; quatre paramilitaires russes tu\u00e9s au Mali ; en Lettonie, les russophones r\u00e9fractaires au \u00ab Russki mir \u00bb avant le vote de samedi."
+    },
+    {
+      "id": "geopolitique",
+      "emoji": "\ud83c\udf10",
+      "nom": "G\u00e9opolitique",
+      "resume": "L\u2019Estonie accuse Moscou du sabotage de Milrem Robotics \u2014 solidarit\u00e9 UE et OTAN ; le ministre ukrainien de la D\u00e9fense annule Berlin ; fin de la mission de la coalition en Irak ; Syrie : gazoduc sabot\u00e9, UE renforc\u00e9e vers Damas ; Netanyahu \u00e9voque des \u00ab indices \u00bb d\u2019attaques ; le Maroc nomme sa premi\u00e8re femme cheffe du gouvernement."
+    },
+    {
+      "id": "grande-info-semaine",
+      "emoji": "\ud83d\udcf0",
+      "nom": "Grande information de la semaine",
+      "resume": "Deux jours denses pour ouvrir la semaine S40 : sommet IA et \u00ab super intelligence \u00bb \u00e0 Washington, journ\u00e9e noire dans la fonction publique et budget record en France, sabotage estonien et pression maximale sur l\u2019Ukraine, records de pluie \u00e0 Tokyo, premi\u00e8re femme cheffe du gouvernement au Maroc."
+    }
+  ],
+  "sources": [
+    {
+      "label": "AFP \u2014 Les patrons de l\u2019IA \u00e0 la Maison Blanche mardi, la supervision au menu",
+      "ref": "news-afp-20260929-ca788fe9",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 IA : Trump plaide pour l\u2019auto-r\u00e9gulation avec les patrons du secteur",
+      "ref": "news-afp-20260929-8dbfd444",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 R\u00e9gulation de l\u2019IA : Trump affirme un accord contraignant sur le plan moral",
+      "ref": "news-afp-20260929-e106880d",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 L\u2019extension internet de la Slov\u00e9nie dop\u00e9e par le renommage \u00ab super intelligence \u00bb",
+      "ref": "news-afp-20260929-696d0e73",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 OpenAI pr\u00e9sente ses nouveaut\u00e9s \u00e0 San Francisco, entre incidents et rivalit\u00e9",
+      "ref": "news-afp-20260929-60c7ab70",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 OpenAI lance un mod\u00e8le d\u2019IA moins cher, apr\u00e8s en avoir \u00e9cart\u00e9 un autre jug\u00e9 trop risqu\u00e9",
+      "ref": "news-afp-20260929-02ef90c3",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 OpenAI renonce \u00e0 lancer une nouvelle IA, jug\u00e9e insuffisamment contr\u00f4l\u00e9e",
+      "ref": "news-afp-20260929-09d54f0b",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 ChatGPT utilis\u00e9 chaque semaine par plus de 1,2 milliard de personnes",
+      "ref": "news-afp-20260929-d719bd6d",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Une ONG attaque OpenAI pour infraction \u00e0 la loi sur les cyberattaques (incident Hugging Face)",
+      "ref": "news-afp-20260929-6363d6cf",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Google attaque en justice des d\u00e9cisions de Bruxelles (Android, recherche en ligne)",
+      "ref": "news-afp-20260929-9f92f548",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 L\u2019IA stimule les investissements dans l\u2019innovation, selon l\u2019ONU",
+      "ref": "news-afp-20260929-98af865a",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Les march\u00e9s boursiers mondiaux sans \u00e9lan, l\u2019\u0153il sur le p\u00e9trole et les taux",
+      "ref": "news-afp-20260929-3c616823",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Australie : la banque centrale rel\u00e8ve son taux directeur \u00e0 4,6 %",
+      "ref": "news-afp-20260929-0658bdb0",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Wall Street cl\u00f4ture en baisse, les taux touchent des sommets",
+      "ref": "news-afp-20260929-d34ac63d",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "Game.fr \u2014 Sorties jeux vid\u00e9o de septembre 2026",
+      "ref": "https://www.game.fr/2026/09/sorties-jeux-video-septembre-2026/",
+      "fiabilite": 4,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Club Doroth\u00e9e et Les Guignols favoris des t\u00e9l\u00e9spectateurs sur les 40 derni\u00e8res ann\u00e9es (T\u00e9l\u00e9-Loisirs Awards)",
+      "ref": "news-afp-20260929-1305f611",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Tom Cruise \u00e0 contre-emploi dans l\u2019\u00e9pop\u00e9e \u00e9cologique satirique \u00ab Digger \u00bb",
+      "ref": "news-afp-20260929-73688b60",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Th\u00e9lyson Or\u00e9lien, l\u2019\u00e9toile fuyante",
+      "ref": "news-afp-20260929-0a863b62",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Peter Zumthor, l\u2019architecte suisse discret qui prend la lumi\u00e8re \u00e0 83 ans",
+      "ref": "news-afp-20260929-8919e84d",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Chez Dior, Jonathan Anderson, floral et folk, prend sa marque",
+      "ref": "news-afp-20260929-799bd114",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Semaine de la mode \u00e0 Paris : MaXhosa porte avec style le continent africain",
+      "ref": "news-afp-20260929-3e804d47",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Blue Origin l\u00e8ve pour la premi\u00e8re fois des fonds ext\u00e9rieurs",
+      "ref": "news-afp-20260929-03b60529",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Le Pentagone choisit Boeing pour le futur avion de combat de l\u2019US Navy",
+      "ref": "news-afp-20260929-205d5edd",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Le r\u00e9seau \u00e9lectrique, infrastructure cruciale \u00e0 prot\u00e9ger des cyberattaques",
+      "ref": "news-afp-20260929-7cbe7e01",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Japon : Tokyo conna\u00eet sa plus longue s\u00e9rie de jours de pluie jamais enregistr\u00e9e",
+      "ref": "news-afp-20260929-9c81cac9",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Inondations : le bilan monte \u00e0 23 morts en Tha\u00eflande",
+      "ref": "news-afp-20260929-912cd2e4",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 \u00c9nergie : l\u2019UE s\u2019attend \u00e0 un hiver difficile, avec des prix tr\u00e8s \u00e9lev\u00e9s",
+      "ref": "news-afp-20260929-bc4a8ba0",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 L\u2019Espagne va plafonner l\u2019augmentation du prix du gaz et le tarif du butane",
+      "ref": "news-afp-20260929-b23bbc1b",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Carburants : prix plafonn\u00e9s dans pr\u00e8s de la moiti\u00e9 des stations-service d\u2019Italie",
+      "ref": "news-afp-20260929-070cdd1f",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Le gouvernement va aider 55 000 m\u00e9nages modestes \u00e0 installer une pompe \u00e0 chaleur (Bregeon)",
+      "ref": "news-afp-20260929-7110199d",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Le pr\u00e9sident de l\u2019Ademe rappelle l\u2019urgence \u00e9conomique de la transition \u00e9nerg\u00e9tique",
+      "ref": "news-afp-20260929-85a7ec0f",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 En France, des apiculteurs d\u00e9munis face au frelon asiatique",
+      "ref": "news-afp-20260929-b8bd2a69",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 \u00ab Ras-le-bol des bas salaires \u00bb : la fonction publique dans la rue",
+      "ref": "news-afp-20260929-2221fe6a",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Gr\u00e8ve : plus de 170 manifestations attendues mardi",
+      "ref": "news-afp-20260929-1c0ea380",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 P\u00e9tards et sir\u00e8nes hurlantes : 8 000 pompiers manifestent \u00e0 Paris",
+      "ref": "news-afp-20260929-72f0d42b",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Blocus des lyc\u00e9es : la mobilisation s\u2019amplifie",
+      "ref": "news-afp-20260929-5e1bb5c4",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Dette : la France va emprunter 340 milliards d\u2019euros en 2027, un record",
+      "ref": "news-afp-20260929-12a29aae",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Budget 2027 : les p\u00e9ages d\u2019autoroutes tax\u00e9s \u00e0 plus de 50 %",
+      "ref": "news-afp-20260929-2558fbdc",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Budget : enqu\u00eate ouverte apr\u00e8s un signalement de Lecornu sur des fuites",
+      "ref": "news-afp-20260929-1b0ba10c",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 La pr\u00e9sidente de la Cour des comptes appelle la classe politique \u00e0 se r\u00e9veiller",
+      "ref": "news-afp-20260929-2d4fa916",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Grand Paris Express : des retards si l\u2019\u00c9tat r\u00e9duit le budget d\u2019IDFM",
+      "ref": "news-afp-20260929-28b47e9b",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Maternit\u00e9s : un mod\u00e8le insoutenable, selon la mission p\u00e9rinatalit\u00e9",
+      "ref": "news-afp-20260929-38cb5782",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Tour Eiffel : le directeur quitte ses fonctions",
+      "ref": "news-afp-20260929-b5a81286",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Pr\u00e9sidentielle : \u00c9douard Philippe abat sa carte retraites",
+      "ref": "news-afp-20260929-79746a93",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 L\u2019extr\u00eame droite d\u00e9nonce une d\u00e9stabilisation (affaire Bardella)",
+      "ref": "news-afp-20260929-32251edd",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Un ministre isra\u00e9lien prend la d\u00e9fense de Bardella",
+      "ref": "news-afp-20260929-4f230835",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 L\u2019\u00e9lection de la premi\u00e8re maire RN d\u2019Alsace devant la justice administrative",
+      "ref": "news-afp-20260929-35f95674",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Les ministres du Commerce du G20 r\u00e9unis aux \u00c9tats-Unis, les droits de douane en embuscade",
+      "ref": "news-afp-20260929-2f55dd46",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Les \u00c9tats-Unis durcissent encore les sanctions contre Cuba",
+      "ref": "news-afp-20260929-21c5da44",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 L\u2019interdiction d\u2019importer des produits canadiens entre en vigueur",
+      "ref": "news-afp-20260929-59f9a055",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 L\u2019Iran attend une r\u00e9ponse des \u00c9tats-Unis sur son plan pour rouvrir Ormuz",
+      "ref": "news-afp-20260929-ef6e79d3",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Les \u00c9tats-Unis autorisent les vols de p\u00e8lerins iraniens vers l\u2019Irak",
+      "ref": "news-afp-20260929-6046831a",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 L\u2019ex-procureur f\u00e9d\u00e9ral Jack Smith d\u00e9nonce des atteintes \u00e0 l\u2019\u00c9tat de droit",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 P\u00e9kin presse Tokyo au sujet de Ta\u00efwan (Wang Yi re\u00e7oit un ancien ministre japonais)",
+      "ref": "news-afp-20260929-86335203",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Novo Nordisk mise sur une pilule anti-ob\u00e9sit\u00e9 du chinois Hengrui",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 L\u2019\u00e9missaire russe Dmitriev a rencontr\u00e9 des responsables am\u00e9ricains \u00e0 Washington",
+      "ref": "news-afp-20260929-62458e7b",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Ukraine : la Russie pas du tout int\u00e9ress\u00e9e par des pourparlers (Lavrov \u00e0 l\u2019ONU)",
+      "ref": "news-afp-20260929-5d538fb1",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 L\u2019OTAN condamne la rh\u00e9torique nucl\u00e9aire de la Russie autour de Kaliningrad",
+      "ref": "news-afp-20260929-5c06db1f",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Mali : au moins 3 militaires et 4 paramilitaires russes tu\u00e9s",
+      "ref": "news-afp-20260929-efb5bbc4",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Appel\u00e9s aux urnes, les russophones de Lettonie ne veulent pas \u00eatre sauv\u00e9s par Poutine",
+      "ref": "news-afp-20260929-05d7a95e",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Le ministre ukrainien de la D\u00e9fense annule une visite \u00e0 Berlin",
+      "ref": "news-afp-20260929-5e049af0",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 L\u2019Estonie accuse Moscou d\u2019avoir commandit\u00e9 l\u2019incendie de Milrem Robotics",
+      "ref": "news-afp-20260929-3a583dca",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 L\u2019UE pleinement solidaire de l\u2019Estonie face au sabotage",
+      "ref": "news-afp-20260929-13926956",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 L\u2019OTAN : les attaques hybrides n\u2019affaibliront pas le soutien \u00e0 l\u2019Ukraine (Rutte)",
+      "ref": "news-afp-20260929-f5e1ec47",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Fin de la mission en Irak de la coalition antijihadiste dirig\u00e9e par les \u00c9tats-Unis",
+      "ref": "news-afp-20260929-d9dcb6b5",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Syrie : un gazoduc sabot\u00e9 dans l\u2019est",
+      "ref": "news-afp-20260929-43bf1885",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 L\u2019UE veut renforcer son partenariat avec Damas",
+      "ref": "news-afp-20260929-c37c1860",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Syrie : arrestation d\u2019une cellule affili\u00e9e au Hezbollah pr\u00e8s du Golan",
+      "ref": "news-afp-20260929-6c286131",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Isra\u00ebl : Netanyahu \u00e9voque des indices d\u2019attaques avant les l\u00e9gislatives",
+      "ref": "news-afp-20260929-23e65d8d",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP/AP \u2014 Maroc : le roi nomme Fatima Ezzahra El Mansouri cheffe du gouvernement, une premi\u00e8re",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Malouines : nouvelle route maritime avec le Chili",
+      "ref": "news-afp-20260929-9cdacc3f",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Colombie : des femmes dans la rue pour d\u00e9fendre le droit \u00e0 l\u2019avortement",
+      "ref": "news-afp-20260929-e50a9733",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Afrique du Sud : le pr\u00e9sident annonce des mesures apr\u00e8s une s\u00e9rie de meurtres de femmes",
+      "ref": "news-afp-20260929-466a09fc",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Nigeria : la police d\u00e9couvre des ossements de 28 victimes pr\u00e9sum\u00e9es d\u2019enl\u00e8vements",
+      "ref": "news-afp-20260929-fe945249",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Somalie : la Turquie happ\u00e9e dans les rivalit\u00e9s internes",
+      "ref": "news-afp-20260929-71e181f9",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "AFP \u2014 Le youtubeur Greg Guillotin sera jug\u00e9 le 27 novembre pour des violences conjugales",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    },
+    {
+      "label": "Newsletter PWA \u2014 \u00c9dition du 28/09/2026 (rappels hebdo)",
+      "ref": "https://maxjeandon-cmyk.github.io/newsletter-pwa/editions/2026-09-28.html",
+      "fiabilite": 5,
+      "maj": "29/09/2026"
+    }
+  ]
+}
