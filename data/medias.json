@@ -44,6 +44,15 @@
         "https://lejournal.cnrs.fr/rss"
       ],
       "fenetreHeures": 24
+    },
+    {
+      "id": "le-monde-a-la-une",
+      "nom": "Le Monde — À la une",
+      "emoji": "🌍",
+      "flux": [
+        "https://www.lemonde.fr/rss/une.xml"
+      ],
+      "fenetreHeures": 24
     }
   ]
 }
