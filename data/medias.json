@@ -62,6 +62,15 @@
         "https://www.nasa.gov/rss/dyn/breaking_news.rss"
       ],
       "fenetreHeures": 24
+    },
+    {
+      "id": "ciel-espace",
+      "nom": "Ciel & Espace",
+      "emoji": "🔭",
+      "flux": [
+        "https://www.cieletespace.fr/rss"
+      ],
+      "fenetreHeures": 24
     }
   ]
 }
