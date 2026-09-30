@@ -181,6 +181,24 @@
       ]
     },
     {
+      "id": "le-jdd",
+      "nom": "Le JDD",
+      "emoji": "🗞️",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.lejdd.fr/rss.xml"
+      ]
+    },
+    {
+      "id": "valeurs-actuelles",
+      "nom": "Valeurs actuelles",
+      "emoji": "🗣️",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.valeursactuelles.com/feed"
+      ]
+    },
+    {
       "id": "sud-ouest",
       "nom": "Sud Ouest",
       "emoji": "🍷",
@@ -250,6 +268,24 @@
       "categorie": "Presse régionale 🗺️",
       "flux": [
         "https://www.actu.fr/rss.xml"
+      ]
+    },
+    {
+      "id": "midi-libre",
+      "nom": "Midi Libre",
+      "emoji": "🌞",
+      "categorie": "Presse régionale 🗺️",
+      "flux": [
+        "https://www.midilibre.fr/rss.xml"
+      ]
+    },
+    {
+      "id": "charente-libre",
+      "nom": "Charente Libre",
+      "emoji": "🍇",
+      "categorie": "Presse régionale 🗺️",
+      "flux": [
+        "https://www.charentelibre.fr/rss.xml"
       ]
     },
     {
@@ -376,6 +412,33 @@
       "categorie": "Économie 💰",
       "flux": [
         "https://feeds.content.dowjones.io/public/rss/mw_topstories"
+      ]
+    },
+    {
+      "id": "l-usine-nouvelle",
+      "nom": "L'Usine Nouvelle",
+      "emoji": "🏭",
+      "categorie": "Économie 💰",
+      "flux": [
+        "https://www.usinenouvelle.com/rss"
+      ]
+    },
+    {
+      "id": "le-nouvel-economiste",
+      "nom": "Le Nouvel Économiste",
+      "emoji": "💼",
+      "categorie": "Économie 💰",
+      "flux": [
+        "https://www.lenouveleconomiste.fr/feed/"
+      ]
+    },
+    {
+      "id": "alternatives-economiques",
+      "nom": "Alternatives Économiques",
+      "emoji": "🌱",
+      "categorie": "Économie 💰",
+      "flux": [
+        "https://www.alternatives-economiques.fr/rss.xml"
       ]
     },
     {
@@ -685,6 +748,15 @@
       ]
     },
     {
+      "id": "ciel-et-espace",
+      "nom": "Ciel & Espace",
+      "emoji": "🔭",
+      "categorie": "Spatial 🚀",
+      "flux": [
+        "https://www.cieletespace.fr/rss"
+      ]
+    },
+    {
       "id": "france-24-sport",
       "nom": "France 24 — Sport",
       "emoji": "🏅",
@@ -799,6 +871,60 @@
       "categorie": "Culture & idées 🎭",
       "flux": [
         "https://www.theguardian.com/culture/rss"
+      ]
+    },
+    {
+      "id": "tetu",
+      "nom": "Têtu",
+      "emoji": "🏳️‍🌈",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.tetu.com/feed/"
+      ]
+    },
+    {
+      "id": "society",
+      "nom": "Society",
+      "emoji": "👥",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.society.fr/feed"
+      ]
+    },
+    {
+      "id": "polka",
+      "nom": "Polka",
+      "emoji": "📸",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.polkamagazine.com/feed/"
+      ]
+    },
+    {
+      "id": "philosophie-magazine",
+      "nom": "Philosophie Magazine",
+      "emoji": "🤔",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.philomag.com/feed/"
+      ]
+    },
+    {
+      "id": "revue-des-deux-mondes",
+      "nom": "Revue des Deux Mondes",
+      "emoji": "📚",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.revuedesdeuxmondes.fr/feed/"
+      ]
+    },
+    {
+      "id": "psychologies",
+      "nom": "Psychologies",
+      "emoji": "💭",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.psychologies.com/feed"
       ]
     },
     {
