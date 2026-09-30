@@ -128,3 +128,8 @@ main{padding:0 14px;max-width:720px;margin:0 auto}
 .lec-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
 .lec-actions .filter-btn{margin:0}
 .lecteur-corps{font-size:15.5px;line-height:1.75}
+
+/* --- v20 : lecteur d'ouvrage intégré (texte intégral paginé, versions) --- */
+.lec-nav{display:flex;align-items:center;gap:12px;margin-top:10px}
+.lec-nav .filter-btn{margin:0}
+.lecteur-corps{white-space:pre-wrap}

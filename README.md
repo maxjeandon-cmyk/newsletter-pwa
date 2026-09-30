@@ -14,7 +14,10 @@ js/feeds.js         Couche réseau : RSS direct → relais rss2json (JSON) → r
 js/lecture.js       Agent de documentation numérique (v19) : livres et magazines via Open Library /
                     Internet Archive, patrimoine francophone via Gallica / BnF, revues via Crossref et
                     DOAJ, prépublications via arXiv, archive ouverte française HAL, biomédecine Europe PMC —
-                    badge paywall, résumés dans le lecteur intégré, recommandations (data/lecture-reco.json)
+                    badge paywall, résumés dans le lecteur intégré, recommandations (data/lecture-reco.json).
+                    v20 : agent d'ouverture — « Ouvrir » deep-search les éditions numérisées (Internet Archive),
+                    affiche le texte intégral paginé dans le lecteur intégré, ou les conditions d'emprunt
+                    du premier ouvrage prêtable ; changeur de version (autant d'éditions que trouvées).
 js/github.js        Publication des médias dans data/medias.json via l'API GitHub (jeton fine-grained
                     local, Contents Read/Write sur ce seul dépôt) — doux : { ok } ou { erreur }
 js/router.js        Routeur URL (v17) : l'onglet ouvert vit dans le hash (#medias/blast, #archives/droit…) —
