@@ -1,0 +1,841 @@
+{
+  "catalogue": [
+    {
+      "id": "le-monde-a-la-une",
+      "nom": "Le Monde — À la une",
+      "emoji": "🌍",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.lemonde.fr/rss/une.xml"
+      ]
+    },
+    {
+      "id": "le-monde-international",
+      "nom": "Le Monde — International",
+      "emoji": "🌍",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.lemonde.fr/international/rss_full.xml"
+      ]
+    },
+    {
+      "id": "liberation-tout",
+      "nom": "Libération — Tout",
+      "emoji": "📰",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.liberation.fr/arc/outboundfeeds/rss-all/"
+      ]
+    },
+    {
+      "id": "le-figaro-a-la-une",
+      "nom": "Le Figaro — À la une",
+      "emoji": "📰",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.lefigaro.fr/rss/figaro_actualites.xml"
+      ]
+    },
+    {
+      "id": "france-info",
+      "nom": "France Info",
+      "emoji": "📡",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://radiofrance.fr/franceinfo/rss"
+      ]
+    },
+    {
+      "id": "france-tv-info-titres",
+      "nom": "France TV Info — Titres",
+      "emoji": "📺",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.francetvinfo.fr/titres.rss"
+      ]
+    },
+    {
+      "id": "france-tv-info-france",
+      "nom": "France TV Info — France",
+      "emoji": "📺",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.francetvinfo.fr/france.rss"
+      ]
+    },
+    {
+      "id": "france-24",
+      "nom": "France 24",
+      "emoji": "🌐",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.france24.com/fr/rss"
+      ]
+    },
+    {
+      "id": "rfi-a-la-une",
+      "nom": "RFI — À la une",
+      "emoji": "📡",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.rfi.fr/fr/rss"
+      ]
+    },
+    {
+      "id": "bfm-tv",
+      "nom": "BFM TV",
+      "emoji": "📺",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.bfmtv.com/rss/news-24-7/"
+      ]
+    },
+    {
+      "id": "20-minutes-a-la-une",
+      "nom": "20 Minutes — À la une",
+      "emoji": "⏱️",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.20minutes.fr/feeds/rss-une.xml"
+      ]
+    },
+    {
+      "id": "europe-1",
+      "nom": "Europe 1",
+      "emoji": "📻",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.europe1.fr/rss.xml"
+      ]
+    },
+    {
+      "id": "ouest-france-a-la-une",
+      "nom": "Ouest-France — À la une",
+      "emoji": "📰",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.ouest-france.fr/rss.xml"
+      ]
+    },
+    {
+      "id": "la-croix-a-la-une",
+      "nom": "La Croix — À la une",
+      "emoji": "✝️",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.la-croix.com/rss.xml"
+      ]
+    },
+    {
+      "id": "le-parisien-a-la-une",
+      "nom": "Le Parisien — À la une",
+      "emoji": "🗼",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://feeds.leparisien.fr/leparisien/rss"
+      ]
+    },
+    {
+      "id": "l-obs",
+      "nom": "L’Obs",
+      "emoji": "🔍",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.nouvelobs.com/rss.xml"
+      ]
+    },
+    {
+      "id": "l-express-a-la-une",
+      "nom": "L’Express — À la une",
+      "emoji": "📰",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.lexpress.fr/rss/une.xml"
+      ]
+    },
+    {
+      "id": "mediapart-articles",
+      "nom": "Mediapart — Articles",
+      "emoji": "🔎",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.mediapart.fr/articles/feed"
+      ]
+    },
+    {
+      "id": "l-humanite",
+      "nom": "L’Humanité",
+      "emoji": "🌹",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.humanite.fr/feed"
+      ]
+    },
+    {
+      "id": "les-echos-economie",
+      "nom": "Les Échos — Économie",
+      "emoji": "💼",
+      "categorie": "Économie 💰",
+      "flux": [
+        "https://services.lesechos.fr/rss/les-echos-economie.xml"
+      ]
+    },
+    {
+      "id": "la-tribune",
+      "nom": "La Tribune",
+      "emoji": "📈",
+      "categorie": "Économie 💰",
+      "flux": [
+        "https://www.latribune.fr/feed.xml"
+      ]
+    },
+    {
+      "id": "challenges",
+      "nom": "Challenges",
+      "emoji": "💰",
+      "categorie": "Économie 💰",
+      "flux": [
+        "https://www.challenges.fr/rss.xml"
+      ]
+    },
+    {
+      "id": "l-obs-economie",
+      "nom": "L’Obs — Économie",
+      "emoji": "💼",
+      "categorie": "Économie 💰",
+      "flux": [
+        "https://www.nouvelobs.com/economie/rss.xml"
+      ]
+    },
+    {
+      "id": "le-monde-economie",
+      "nom": "Le Monde — Économie",
+      "emoji": "💶",
+      "categorie": "Économie 💰",
+      "flux": [
+        "https://www.lemonde.fr/economie/rss_full.xml"
+      ]
+    },
+    {
+      "id": "france-24-economie",
+      "nom": "France 24 — Économie",
+      "emoji": "💶",
+      "categorie": "Économie 💰",
+      "flux": [
+        "https://www.france24.com/fr/economie/rss"
+      ]
+    },
+    {
+      "id": "cnbc-top-news",
+      "nom": "CNBC — Top news",
+      "emoji": "💵",
+      "categorie": "Économie 💰",
+      "flux": [
+        "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114"
+      ]
+    },
+    {
+      "id": "nyt-business",
+      "nom": "NYT — Business",
+      "emoji": "💹",
+      "categorie": "Économie 💰",
+      "flux": [
+        "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
+      ]
+    },
+    {
+      "id": "financial-times-world",
+      "nom": "Financial Times — World",
+      "emoji": "🏦",
+      "categorie": "Économie 💰",
+      "flux": [
+        "https://www.ft.com/rss/home"
+      ]
+    },
+    {
+      "id": "bloomberg-markets",
+      "nom": "Bloomberg — Markets",
+      "emoji": "📊",
+      "categorie": "Économie 💰",
+      "flux": [
+        "https://feeds.bloomberg.com/markets/news.rss"
+      ]
+    },
+    {
+      "id": "the-economist-latest",
+      "nom": "The Economist — Latest",
+      "emoji": "🎩",
+      "categorie": "Économie 💰",
+      "flux": [
+        "https://www.economist.com/latest/rss.xml"
+      ]
+    },
+    {
+      "id": "the-guardian-business",
+      "nom": "The Guardian — Business",
+      "emoji": "💷",
+      "categorie": "Économie 💰",
+      "flux": [
+        "https://www.theguardian.com/uk/business/rss"
+      ]
+    },
+    {
+      "id": "washington-post-business",
+      "nom": "Washington Post — Business",
+      "emoji": "🇺🇸",
+      "categorie": "Économie 💰",
+      "flux": [
+        "https://feeds.washingtonpost.com/rss/business"
+      ]
+    },
+    {
+      "id": "numerama",
+      "nom": "Numerama",
+      "emoji": "🤖",
+      "categorie": "Tech & numérique 💻",
+      "flux": [
+        "https://www.numerama.com/feed/"
+      ]
+    },
+    {
+      "id": "journal-du-net",
+      "nom": "Journal du Net",
+      "emoji": "🔑",
+      "categorie": "Tech & numérique 💻",
+      "flux": [
+        "https://www.journaldunet.com/rss/"
+      ]
+    },
+    {
+      "id": "01net",
+      "nom": "01net",
+      "emoji": "💻",
+      "categorie": "Tech & numérique 💻",
+      "flux": [
+        "https://www.01net.com/actualites/feed/"
+      ]
+    },
+    {
+      "id": "next-inpact",
+      "nom": "Next INpact",
+      "emoji": "🛡️",
+      "categorie": "Tech & numérique 💻",
+      "flux": [
+        "https://next.ink/feed/"
+      ]
+    },
+    {
+      "id": "zdnet-france",
+      "nom": "ZDNet France",
+      "emoji": "💾",
+      "categorie": "Tech & numérique 💻",
+      "flux": [
+        "https://www.zdnet.fr/feeds/rss/actualites/"
+      ]
+    },
+    {
+      "id": "l-usine-digitale",
+      "nom": "L’Usine Digitale",
+      "emoji": "🏭",
+      "categorie": "Tech & numérique 💻",
+      "flux": [
+        "https://www.usine-digitale.fr/rss"
+      ]
+    },
+    {
+      "id": "ars-technica",
+      "nom": "Ars Technica",
+      "emoji": "⚙️",
+      "categorie": "Tech & numérique 💻",
+      "flux": [
+        "https://arstechnica.com/feed/"
+      ]
+    },
+    {
+      "id": "the-verge",
+      "nom": "The Verge",
+      "emoji": "⚡",
+      "categorie": "Tech & numérique 💻",
+      "flux": [
+        "https://www.theverge.com/rss/index.xml"
+      ]
+    },
+    {
+      "id": "wired",
+      "nom": "Wired",
+      "emoji": "🔌",
+      "categorie": "Tech & numérique 💻",
+      "flux": [
+        "https://www.wired.com/feed/rss"
+      ]
+    },
+    {
+      "id": "techcrunch",
+      "nom": "TechCrunch",
+      "emoji": "🚀",
+      "categorie": "Tech & numérique 💻",
+      "flux": [
+        "https://techcrunch.com/feed/"
+      ]
+    },
+    {
+      "id": "engadget",
+      "nom": "Engadget",
+      "emoji": "📱",
+      "categorie": "Tech & numérique 💻",
+      "flux": [
+        "https://www.engadget.com/rss.xml"
+      ]
+    },
+    {
+      "id": "nyt-technology",
+      "nom": "NYT — Technology",
+      "emoji": "🖥️",
+      "categorie": "Tech & numérique 💻",
+      "flux": [
+        "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml"
+      ]
+    },
+    {
+      "id": "bbc-technology",
+      "nom": "BBC — Technology",
+      "emoji": "📻",
+      "categorie": "Tech & numérique 💻",
+      "flux": [
+        "https://feeds.bbci.co.uk/news/technology/rss.xml"
+      ]
+    },
+    {
+      "id": "the-guardian-tech",
+      "nom": "The Guardian — Tech",
+      "emoji": "🥁",
+      "categorie": "Tech & numérique 💻",
+      "flux": [
+        "https://www.theguardian.com/uk/technology/rss"
+      ]
+    },
+    {
+      "id": "cnrs-le-journal",
+      "nom": "CNRS — Le Journal",
+      "emoji": "🔬",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://lejournal.cnrs.fr/rss"
+      ]
+    },
+    {
+      "id": "futura-sciences",
+      "nom": "Futura Sciences",
+      "emoji": "🔭",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.futura-sciences.com/rss/actualites.xml"
+      ]
+    },
+    {
+      "id": "science-vie",
+      "nom": "Science & Vie",
+      "emoji": "🧬",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.science-et-vie.com/feed/"
+      ]
+    },
+    {
+      "id": "le-monde-sciences",
+      "nom": "Le Monde — Sciences",
+      "emoji": "🧪",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.lemonde.fr/sciences/rss_full.xml"
+      ]
+    },
+    {
+      "id": "bbc-science-environment",
+      "nom": "BBC — Science & Environment",
+      "emoji": "🌡️",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"
+      ]
+    },
+    {
+      "id": "the-guardian-science",
+      "nom": "The Guardian — Science",
+      "emoji": "🔭",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.theguardian.com/science/rss"
+      ]
+    },
+    {
+      "id": "nature-news",
+      "nom": "Nature — News",
+      "emoji": "🍃",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.nature.com/nature.rss"
+      ]
+    },
+    {
+      "id": "new-scientist",
+      "nom": "New Scientist",
+      "emoji": "🧠",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.newscientist.com/feed/home/"
+      ]
+    },
+    {
+      "id": "science-actualites",
+      "nom": "Science — Actualités",
+      "emoji": "⚗️",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.science.org/rss/news_current.xml"
+      ]
+    },
+    {
+      "id": "quanta-magazine",
+      "nom": "Quanta Magazine",
+      "emoji": "🌌",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://api.quantamagazine.org/feed/"
+      ]
+    },
+    {
+      "id": "nasa-breaking-news",
+      "nom": "NASA — Breaking News",
+      "emoji": "🛰️",
+      "categorie": "Spatial 🚀",
+      "flux": [
+        "https://www.nasa.gov/rss/dyn/breaking_news.rss"
+      ]
+    },
+    {
+      "id": "spacenews",
+      "nom": "SpaceNews",
+      "emoji": "🌑",
+      "categorie": "Spatial 🚀",
+      "flux": [
+        "https://spacenews.com/feed/"
+      ]
+    },
+    {
+      "id": "spaceflight-now",
+      "nom": "Spaceflight Now",
+      "emoji": "🛫",
+      "categorie": "Spatial 🚀",
+      "flux": [
+        "https://spaceflightnow.com/feed/"
+      ]
+    },
+    {
+      "id": "france-24-sport",
+      "nom": "France 24 — Sport",
+      "emoji": "🏅",
+      "categorie": "Sport ⚽",
+      "flux": [
+        "https://www.france24.com/fr/sports/rss"
+      ]
+    },
+    {
+      "id": "le-monde-sport",
+      "nom": "Le Monde — Sport",
+      "emoji": "🏆",
+      "categorie": "Sport ⚽",
+      "flux": [
+        "https://www.lemonde.fr/sport/rss_full.xml"
+      ]
+    },
+    {
+      "id": "telerama-a-la-une",
+      "nom": "Télérama — À la une",
+      "emoji": "🎭",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.telerama.fr/rss/une.xml"
+      ]
+    },
+    {
+      "id": "les-inrockuptibles",
+      "nom": "Les Inrockuptibles",
+      "emoji": "🎸",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.lesinrocks.com/feed/"
+      ]
+    },
+    {
+      "id": "slate-fr",
+      "nom": "Slate.fr",
+      "emoji": "💡",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.slate.fr/rss.xml"
+      ]
+    },
+    {
+      "id": "france-culture",
+      "nom": "France Culture",
+      "emoji": "🎻",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.radiofrance.fr/franceculture/rss"
+      ]
+    },
+    {
+      "id": "france-inter",
+      "nom": "France Inter",
+      "emoji": "🎙️",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.radiofrance.fr/franceinter/rss"
+      ]
+    },
+    {
+      "id": "le-monde-culture",
+      "nom": "Le Monde — Culture",
+      "emoji": "🎨",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.lemonde.fr/culture/rss_full.xml"
+      ]
+    },
+    {
+      "id": "le-monde-diplomatique",
+      "nom": "Le Monde diplomatique",
+      "emoji": "🌍",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.monde-diplomatique.fr/rss"
+      ]
+    },
+    {
+      "id": "la-libre-belgique",
+      "nom": "La Libre Belgique",
+      "emoji": "🇧🇪",
+      "categorie": "Belgique / Suisse / Québec 🍁",
+      "flux": [
+        "https://www.lalibre.be/rss.xml"
+      ]
+    },
+    {
+      "id": "le-temps",
+      "nom": "Le Temps",
+      "emoji": "🇨🇭",
+      "categorie": "Belgique / Suisse / Québec 🍁",
+      "flux": [
+        "https://www.letemps.ch/feed"
+      ]
+    },
+    {
+      "id": "radio-canada-a-la-une",
+      "nom": "Radio-Canada — À la une",
+      "emoji": "🇨🇦",
+      "categorie": "Belgique / Suisse / Québec 🍁",
+      "flux": [
+        "https://ici.radio-canada.ca/rss/4159"
+      ]
+    },
+    {
+      "id": "the-guardian-world",
+      "nom": "The Guardian — World",
+      "emoji": "🥇",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://www.theguardian.com/world/rss"
+      ]
+    },
+    {
+      "id": "the-guardian-international",
+      "nom": "The Guardian — International",
+      "emoji": "🌍",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://www.theguardian.com/international/rss"
+      ]
+    },
+    {
+      "id": "bbc-news-world",
+      "nom": "BBC News — World",
+      "emoji": "🌍",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://feeds.bbci.co.uk/news/world/rss.xml"
+      ]
+    },
+    {
+      "id": "bbc-news-top",
+      "nom": "BBC News — Top",
+      "emoji": "📺",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://feeds.bbci.co.uk/news/rss.xml"
+      ]
+    },
+    {
+      "id": "nyt-world",
+      "nom": "NYT — World",
+      "emoji": "🗽",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
+      ]
+    },
+    {
+      "id": "washington-post-world",
+      "nom": "Washington Post — World",
+      "emoji": "🏛️",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://feeds.washingtonpost.com/rss/world"
+      ]
+    },
+    {
+      "id": "npr-news",
+      "nom": "NPR — News",
+      "emoji": "🎙️",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://feeds.npr.org/1001/rss.xml"
+      ]
+    },
+    {
+      "id": "npr-world",
+      "nom": "NPR — World",
+      "emoji": "🌐",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://feeds.npr.org/1004/rss.xml"
+      ]
+    },
+    {
+      "id": "al-jazeera-news",
+      "nom": "Al Jazeera — News",
+      "emoji": "🏜️",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://www.aljazeera.com/xml/rss/all.xml"
+      ]
+    },
+    {
+      "id": "sky-news-world",
+      "nom": "Sky News — World",
+      "emoji": "☁️",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://feeds.skynews.com/feeds/rss/world.xml"
+      ]
+    },
+    {
+      "id": "dw-top-stories",
+      "nom": "DW — Top Stories",
+      "emoji": "🇩🇪",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://rss.dw.com/rdf/rss-en-all"
+      ]
+    },
+    {
+      "id": "euronews-top",
+      "nom": "Euronews — Top",
+      "emoji": "🔵",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://www.euronews.com/rss?level=theme&name=news"
+      ]
+    },
+    {
+      "id": "cbs-news",
+      "nom": "CBS News",
+      "emoji": "👁️",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://www.cbsnews.com/latest/rss/main"
+      ]
+    },
+    {
+      "id": "abc-news",
+      "nom": "ABC News",
+      "emoji": "🇺🇸",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://abcnews.go.com/abcnews/topstories"
+      ]
+    },
+    {
+      "id": "nbc-news",
+      "nom": "NBC News",
+      "emoji": "🦅",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://feeds.nbcnews.com/nbcnews/public/news"
+      ]
+    },
+    {
+      "id": "cbc-news-world",
+      "nom": "CBC News — World",
+      "emoji": "🍁",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://www.cbc.ca/webfeed/rss/rss-world"
+      ]
+    },
+    {
+      "id": "south-china-morning-post",
+      "nom": "South China Morning Post",
+      "emoji": "🇭🇰",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://www.scmp.com/rss/4/feed"
+      ]
+    },
+    {
+      "id": "times-of-india-top",
+      "nom": "Times of India — Top",
+      "emoji": "🇮🇳",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://timesofindia.indiatimes.com/rssfeedstopstories.cms"
+      ]
+    },
+    {
+      "id": "the-japan-times",
+      "nom": "The Japan Times",
+      "emoji": "🇯🇵",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://www.japantimes.co.jp/feed/"
+      ]
+    },
+    {
+      "id": "the-hindu-national",
+      "nom": "The Hindu — National",
+      "emoji": "🇮🇳",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://www.thehindu.com/news/national/feeder/default.rss"
+      ]
+    },
+    {
+      "id": "the-atlantic",
+      "nom": "The Atlantic",
+      "emoji": "🐋",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://www.theatlantic.com/feed/all/"
+      ]
+    },
+    {
+      "id": "vox",
+      "nom": "Vox",
+      "emoji": "🗨️",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://www.vox.com/rss/index.xml"
+      ]
+    }
+  ]
+}

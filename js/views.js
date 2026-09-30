@@ -276,6 +276,22 @@ function sousOngletsMedias(visibles, mode) {
     '</div></div>';
 }
 
+/* Catalogue de flux RSS vérifiés (v21) : médias francophones et anglophones
+ * classés par catégorie — un choix ici préremplit tout le formulaire. */
+function blocCatalogue() {
+  if (!state.fluxCatalogue.length) return '';
+  const cats = [];
+  state.fluxCatalogue.forEach(e => { if (!cats.includes(e.categorie)) cats.push(e.categorie); });
+  return '<label>Piocher un média dans le catalogue <select id="mf-catalogue" class="month-select">' +
+    '<option value="">— ' + state.fluxCatalogue.length + ' flux vérifiés au choix…</option>' +
+    cats.map(c =>
+      '<optgroup label="' + esc(c) + '">' +
+      state.fluxCatalogue.filter(e => e.categorie === c)
+        .map(e => '<option value="' + esc(e.id) + '">' + esc((e.emoji ? e.emoji + ' ' : '') + e.nom) + '</option>').join('') +
+      '</optgroup>').join('') +
+    '</select></label>';
+}
+
 /* Formulaire d'ajout : bâtir un sous-onglet exactement comme Blast.
  * Les valeurs tapées survivent aux erreurs (pas de re-rendu en cas d'erreur). */
 function formAjoutMedia() {
@@ -284,6 +300,7 @@ function formAjoutMedia() {
     '<label>Nom du média<input id="mf-nom" type="text" autocomplete="off" placeholder="Mediapart"></label>' +
     '<label>Emoji (facultatif)<input id="mf-emoji" type="text" maxlength="8" placeholder="📰"></label>' +
     '<label>Adresse du site ou du flux RSS<input id="mf-flux" type="text" inputmode="url" autocomplete="off" placeholder="blast-info.fr ou https://…/rss.xml"></label>' +
+    blocCatalogue() +
     '<div class="form-actions"><button class="filter-btn" id="mf-chercher">🔎 Trouver le flux tout seul</button></div>' +
     '<p class="meta-count" id="mf-statut" aria-live="polite"></p>' +
     '<select id="mf-choix" class="month-select" hidden></select>' +
@@ -390,6 +407,17 @@ function vueMedias() {
   if (bVal) {
     $('#mf-annuler').onclick = () => { state.mediasMode = null; renderView(); };
     $('#mf-chercher').onclick = () => { lancerRecherche(); };
+    const selCat = $('#mf-catalogue');
+    if (selCat) selCat.onchange = () => {
+      const e = state.fluxCatalogue.find(x => x.id === selCat.value);
+      if (!e) return;
+      $('#mf-nom').value = e.nom;
+      $('#mf-emoji').value = e.emoji || '';
+      $('#mf-flux').value = e.flux[0] || '';
+      const p = $('#mf-erreur'); if (p) p.hidden = true;
+      const st = $('#mf-statut');
+      if (st) st.textContent = '✓ ' + e.nom + ' prérempli depuis le catalogue — ajuste si tu veux, puis « Ajouter ce média ».';
+    };
     $('#mf-flux').onblur = () => {
       const val = ($('#mf-flux').value || '').trim();
       if (val && val !== derniereRecherche) lancerRecherche();

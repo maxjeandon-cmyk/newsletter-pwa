@@ -19,6 +19,7 @@ export const state = {
   archivesThema: {},        // index des archives thématiques (editions/archives/{droit,economie}.json, v20)
   chapters: [],            // config des flux par chapitre (data/chapters.json)
   mediasBase: [],          // médias de la config serveur (data/medias.json)
+  fluxCatalogue: [],       // catalogue de flux RSS vérifiés (data/flux-rss.json, v21)
   medias: [],              // médias effectifs = config serveur + ajouts personnels (nl.mediasPerso)
   mediasMode: null,        // sous-vue de l'onglet Médias : null | 'ajout' | 'gerer'
   feed: { time: 0, articles: [] },       // flux chaud de l'onglet Articles

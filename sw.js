@@ -1,8 +1,8 @@
-/* sw.js v20 — Service worker de la PWA Newsletter.
+/* sw.js v21 — Service worker de la PWA Newsletter.
  * Stratégies : data/ et editions/ network-first (toujours frais en ligne, repli cache hors ligne) ;
  * le reste (coquille, js/, styles) cache-first pour un démarrage instantané.
- * À chaque déploiement de code : incrémenter CACHE (v20 → v21…) pour invalider les caches clients. */
-const CACHE = 'newsletter-v20';
+ * À chaque déploiement de code : incrémenter CACHE (v21 → v22…) pour invalider les caches clients. */
+const CACHE = 'newsletter-v21';
 const ASSETS = [
   './',
   './index.html',
@@ -15,7 +15,8 @@ const ASSETS = [
   './js/views.js',
   './js/app.js',
   './data/chapters.json',
-  './data/medias.json'
+  './data/medias.json',
+  './data/flux-rss.json'
 ];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));

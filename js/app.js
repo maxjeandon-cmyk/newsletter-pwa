@@ -72,6 +72,8 @@ async function init() {
   state.chapters = await chargerJSON('data/chapters.json', []);
   const jm = await chargerJSON('data/medias.json', {});
   state.mediasBase = jm.medias || [];
+  /* Catalogue de flux RSS vérifiés (v21) : propose les médias connus dans ➕ Ajouter */
+  state.fluxCatalogue = (await chargerJSON('data/flux-rss.json', {})).catalogue || [];
   majMedias();
 
   state.feed = getStore('feed', { time: 0, articles: [] });
