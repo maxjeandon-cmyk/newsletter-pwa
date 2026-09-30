@@ -26,7 +26,8 @@ export const state = {
   feed: { time: 0, articles: [] },       // flux chaud de l'onglet Articles
   feedStats: { ok: 0, total: 0, time: 0 },
   mediaData: {},           // { mediaId: { time, articles, ok, total, stale } }
-  publie: null             // dernier média publié pour tous les écrans (info affichée une fois dans 👁 Gérer)
+  publie: null,            // dernier média publié pour tous les écrans (info affichée une fois dans 👁 Gérer)
+  lecture: null            // état de l'onglet Lecture : { q, cat, resultats, etat } (v18)
 };
 
 /* --- Stockage local (clés préfixées « nl. » pour un nettoyage facile) --- */
@@ -82,6 +83,10 @@ export function weekKeyOf(dateStr) {
 
 /* --- Normalisation de texte (recherche, déduplication) --- */
 export const norm = s => (s ?? '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+/* --- URL sûre : seuls http(s) sortent de l'app — bloque javascript:, data:, etc.
+     dans les href venus des flux RSS, que l'échappement seul ne neutralise pas. --- */
+export const urlSure = u => /^https?:\/\//i.test(String(u || '')) ? u : '#';
 
 /* --- Thème --- */
 export function applyTheme(t) {

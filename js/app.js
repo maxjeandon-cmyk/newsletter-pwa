@@ -6,6 +6,7 @@
 import { $, state, getStore, setStore, purgeStore, applyTheme, fmtDate } from './core.js';
 import { chargerChapitres, chargerMedia } from './feeds.js';
 import { renderTabs, renderView, renderChaptersEditor, majMedias } from './views.js';
+import { initRouter } from './router.js';
 
 async function chargerJSON(url, def) {
   try { return await (await fetch(url, { cache: 'no-store' })).json(); } catch (e) { return def; }
@@ -34,6 +35,9 @@ async function init() {
   }
   ['chapters', 'chaptersV', 'feedCache', 'afpOnly', 'theme'].forEach(k => localStorage.removeItem(k));
 
+  /* Routeur URL (v17) : l'onglet ouvert vit dans le hash — lien partageable,
+     bouton retour fonctionnel. L'URL pilote l'état au chargement, puis suit. */
+  initRouter(() => { renderTabs(); renderView(); });
   const theme = getStore('theme', 'dark');
   applyTheme(theme);
   $('#sel-theme').value = theme;
@@ -68,23 +72,31 @@ async function init() {
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
 
   /* Config éditoriale : data/ est servi network-first par le service worker —
-   * toujours frais en ligne, repli sur cache hors ligne.
+   * toujours frais en ligne, repli sur cache hors ligne. Tout est chargé en
+   * parallèle : le premier rendu n'attend que le plus lent de ces fichiers.
    * Médias effectifs = data/medias.json + médias ajoutés depuis l'onglet Médias (nl.mediasPerso). */
-  state.chapters = await chargerJSON('data/chapters.json', []);
-  const jm = await chargerJSON('data/medias.json', {});
+  const [chapters, jm, fluxRss, climat] = await Promise.all([
+    chargerJSON('data/chapters.json', []),
+    chargerJSON('data/medias.json', {}),
+    chargerJSON('data/flux-rss.json', {}),
+    chargerJSON('data/climat.json', null)
+  ]);
+  state.chapters = chapters;
   state.mediasBase = jm.medias || [];
   /* Catalogue de flux RSS vérifiés (v21) : propose les médias connus dans ➕ Ajouter.
    * v23 : le catalogue est découpé en shards (limite ~32 Ko par fichier poussé) ;
-   * flux-rss.json liste ses compléments dans « suite » — on charge et concatène. */
-  const jFlux = await chargerJSON('data/flux-rss.json', {});
-  state.fluxCatalogue = jFlux.catalogue || [];
-  for (const u of jFlux.suite || []) {
-    const shard = await chargerJSON(u, {});
-    state.fluxCatalogue = state.fluxCatalogue.concat(shard.catalogue || []);
-  }
+   * flux-rss.json liste ses compléments dans « suite » — on charge tout en parallèle. */
+  const shards = await Promise.all((fluxRss.suite || []).map(u => chargerJSON(u, {})));
+  state.fluxCatalogue = shards.reduce((acc, s) => acc.concat(s.catalogue || []), fluxRss.catalogue || []);
+
   /* Bulletin climat Copernicus (v22) : onglet Climat */
-  state.climat = await chargerJSON('data/climat.json', null);
+  state.climat = climat;
   majMedias();
+  /* Hygiène localStorage : les caches media:* des médias supprimés ne servent plus. */
+  const idsConnus = new Set(state.medias.map(m => m.id));
+  Object.keys(localStorage)
+    .filter(k => k.startsWith('nl.media:') && !idsConnus.has(k.slice('nl.media:'.length)))
+    .forEach(k => localStorage.removeItem(k));
 
   state.feed = getStore('feed', { time: 0, articles: [] });
 

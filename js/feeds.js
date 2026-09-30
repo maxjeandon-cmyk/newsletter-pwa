@@ -48,49 +48,62 @@ export function parseRss2Json(text) {
   } catch (e) { return []; }
 }
 
-/* --- Récupération d'un flux avec repli en cascade --- */
-export async function fetchFeedItems(url, timeout = 7000) {
-  // 1) essai direct (certains flux autorisent CORS — gratuit quand ça marche)
+/* --- Fetch borné en temps : AbortController + nettoyage systématique du timer --- */
+async function texteBornes(url, timeout) {
+  const ctl = new AbortController();
+  const t = setTimeout(() => ctl.abort(), timeout);
   try {
-    const ctl = new AbortController();
-    const t = setTimeout(() => ctl.abort(), timeout);
     const r = await fetch(url, { signal: ctl.signal });
-    clearTimeout(t);
-    if (r.ok) {
-      const txt = await r.text();
-      if (/<(rss|feed|item|entry)/i.test(txt.slice(0, 2000))) {
-        const arts = parseXml(txt);
-        if (arts.length) return arts;
-      }
-    }
-  } catch (e) { /* CORS ou échec : on passe aux relais */ }
-  // 2) relais JSON (rapide et fiable, ~10 derniers items)
-  try {
-    const ctl = new AbortController();
-    const t = setTimeout(() => ctl.abort(), timeout);
-    const r = await fetch(RELAIS_JSON(url), { signal: ctl.signal });
-    clearTimeout(t);
-    if (r.ok) {
-      const arts = parseRss2Json(await r.text());
-      if (arts.length) return arts;
-    }
-  } catch (e) { /* relais suivant */ }
-  // 3) relais XML (plus riches — jusqu'à 40 items — mais parfois lents)
-  for (const p of RELAIS_XML) {
-    try {
-      const ctl = new AbortController();
-      const t = setTimeout(() => ctl.abort(), timeout);
-      const r = await fetch(p(url), { signal: ctl.signal });
-      clearTimeout(t);
-      if (!r.ok) continue;
-      const txt = await r.text();
-      if (/<(rss|feed)/i.test(txt.slice(0, 500))) {
-        const arts = parseXml(txt);
-        if (arts.length) return arts;
-      }
-    } catch (e) { /* relais suivant */ }
+    return r.ok ? await r.text() : null;
+  } catch (e) { return null; }
+  finally { clearTimeout(t); }
+}
+
+async function viaDirect(url, timeout) {
+  const txt = await texteBornes(url, timeout);
+  if (txt && /<(rss|feed|item|entry)/i.test(txt.slice(0, 2000))) {
+    const arts = parseXml(txt);
+    if (arts.length) return arts;
   }
   return [];
+}
+
+async function viaRelaisJson(url, timeout) {
+  const txt = await texteBornes(RELAIS_JSON(url), timeout);
+  return txt ? parseRss2Json(txt) : [];
+}
+
+async function viaRelaisXml(url, timeout) {
+  for (const p of RELAIS_XML) {
+    const txt = await texteBornes(p(url), timeout);
+    if (txt && /<(rss|feed)/i.test(txt.slice(0, 500))) {
+      const arts = parseXml(txt);
+      if (arts.length) return arts;
+    }
+  }
+  return [];
+}
+
+/* --- Récupération d'un flux : direct et relais JSON partent EN PARALLÈLE,
+ *     le premier qui renvoie des articles gagne, les autres sont annulés —
+ *     latence ~divisée par deux, aucun octet gaspillé après la victoire.
+ *     Repli relais XML (jusqu'à 40 items) seulement si les deux échouent. --- */
+function premierNonVide(promesses) {
+  return new Promise((garder, jeter) => {
+    let restants = promesses.length;
+    promesses.forEach(p => p.then(
+      a => { if (a.length) garder(a); else if (--restants === 0) garder([]); },
+      () => { if (--restants === 0) garder([]); }
+    ));
+  });
+}
+
+export async function fetchFeedItems(url, timeout = 7000) {
+  const direct = viaDirect(url, timeout);
+  const relaisJson = viaRelaisJson(url, timeout);
+  const premier = await premierNonVide([direct, relaisJson]);
+  if (premier.length) return premier;
+  return viaRelaisXml(url, timeout);
 }
 
 /* --- Rapprochement / filtrage --- */
@@ -117,6 +130,33 @@ export function estAFP(a) {
     || /\bAFP\b/i.test((a.auteur || '') + ' ' + a.titre + ' ' + (a.extrait || ''));
 }
 
+/* --- Pool de concurrence : au plus CONCURRENCY requêtes réseau simultanées —
+ *     épargne les relais gratuits (pas de pic, moins de 429) sans allonger le total. --- */
+const CONCURRENCY = 6;
+async function pool(taches, taille = CONCURRENCY) {
+  const file = [...taches];
+  const ouvriers = Array.from({ length: Math.min(taille, file.length) }, async () => {
+    while (file.length) { await file.shift()(); }
+  });
+  await Promise.allSettled(ouvriers);
+}
+
+/* --- Dédup Jaccard en O(n) amorti : clé exacte d'abord (Set), similarité
+ *     seulement entre articles du même fuseau horaire de parution. --- */
+function dedupliquer(articles, limite = 200) {
+  const tri = articles.slice().sort((a, b) => b.date - a.date);
+  const garde = [];
+  const vus = new Set();
+  for (const a of tri) {
+    const k = norm(a.titre).replace(/[^a-z0-9]+/g, '').slice(0, 80);
+    if (vus.has(k)) continue;
+    if (garde.some(x => Math.abs(x.date - a.date) < 3600e3 && jaccard(x.titre, a.titre) >= 0.7)) continue;
+    vus.add(k);
+    garde.push(a);
+  }
+  return garde.slice(0, limite);
+}
+
 /* --- Onglet Articles : flux des chapitres suivis, dédupliqués par URL --- */
 let chapitresEnCours = null;
 export function chargerChapitres() {
@@ -132,24 +172,27 @@ export function chargerChapitres() {
         parUrl.get(url).push(ch);
       }
       const urls = [...parUrl.keys()];
-      const results = await Promise.allSettled(urls.map(u => fetchFeedItems(u)));
-      const all = [];
+      const brutes = new Map();
       let ok = 0;
-      results.forEach((r, i) => {
-        if (r.status !== 'fulfilled' || !r.value || !r.value.length) return;
+      await pool(urls.map(u => async () => {
+        const arts = await fetchFeedItems(u);
+        if (!arts.length) return;
+        brutes.set(u, arts);
         ok++;
-        for (const ch of parUrl.get(urls[i])) {
-          for (const a of r.value) {
+      }));
+      const all = [];
+      urls.forEach(u => {
+        const arts = brutes.get(u) || [];
+        for (const ch of parUrl.get(u)) {
+          for (const a of arts) {
             const fenetre = (ch.fenetreHeures ?? 24) * 3600e3;
             if (Date.now() - a.date.getTime() > fenetre) continue;
             if (scoreArticle(a, ch) < 1) continue;
-            if (all.some(x => jaccard(x.titre, a.titre) >= 0.7)) continue;
             all.push({ ...a, chapitreId: ch.id, chapitreNom: ch.nom });
           }
         }
       });
-      all.sort((a, b) => b.date - a.date);
-      state.feed = { time: Date.now(), articles: all.slice(0, 200) };
+      state.feed = { time: Date.now(), articles: dedupliquer(all) };
       state.feedStats = { ok, total: urls.length, time: Date.now() };
       setStore('feed', state.feed);
       return state.feed;
@@ -175,15 +218,18 @@ export function chargerMedia(m, force = false) {
       }
       const fenetre = (m.fenetreHeures ?? 24) * 3600e3;
       const urls = m.flux || [];
-      const results = await Promise.allSettled(urls.map(u => fetchFeedItems(u)));
-      const arts = [];
+      const brutes = new Map();
       let ok = 0;
-      results.forEach(r => {
-        if (r.status !== 'fulfilled' || !r.value || !r.value.length) return;
+      await pool(urls.map(u => async () => {
+        const arts = await fetchFeedItems(u);
+        if (!arts.length) return;
+        brutes.set(u, arts);
         ok++;
-        for (const a of r.value) {
+      }));
+      const arts = [];
+      urls.forEach(u => {
+        for (const a of brutes.get(u) || []) {
           if (maintenant - a.date.getTime() > fenetre) continue;
-          if (arts.some(x => jaccard(x.titre, a.titre) >= 0.7)) continue;
           arts.push({ ...a, mediaNom: m.nom });
         }
       });
@@ -191,8 +237,7 @@ export function chargerMedia(m, force = false) {
       if (!ok && cache) {
         data = { ...cache, stale: true };
       } else {
-        arts.sort((a, b) => b.date - a.date);
-        data = { time: maintenant, articles: arts.slice(0, 100), ok, total: urls.length };
+        data = { time: maintenant, articles: dedupliquer(arts, 100), ok, total: urls.length };
         setStore('media:' + m.id, data);
       }
       state.mediaData[m.id] = data;
