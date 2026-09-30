@@ -61,11 +61,22 @@ async function init() {
   $('#btn-close-settings').onclick = () => { $('#settings-panel').classList.remove('open'); };
   $('#settings-panel').onclick = e => { if (e.target.id === 'settings-panel') $('#settings-panel').classList.remove('open'); };
   $('#btn-install-hint').onclick = () => alert('Sur iPhone : bouton Partager ⬆️ en bas de Safari, puis « Sur l’écran d’accueil ». L’app s’ouvrira plein écran, comme une vraie app.');
-  $('#btn-purge').onclick = () => {
+  $('#btn-purge').onclick = async () => {
+    const b = $('#btn-purge');
+    b.disabled = true; b.textContent = 'Purge en cours…';
     purgeStore(); // préférences (médias ajoutés, masques, thème) préservées
     state.feed = { time: 0, articles: [] };
     state.mediaData = {};
-    renderView();
+    /* CacheStorage (coquille, js/, data/ mis en cache par le service worker) :
+     * c'est LUI qui garde les anciennes versions du site — sans cette purge,
+     * le bouton ne nettoyait que le stockage local. */
+    try {
+      if (window.caches) {
+        const noms = await caches.keys();
+        await Promise.all(noms.map(n => caches.delete(n)));
+      }
+    } catch (e) { /* pas de CacheStorage (navigateur ancien) : localStorage déjà purgé */ }
+    location.reload(); // la coquille fraîche se recharge et se re-cache d'office
   };
   $('#btn-reset-chapters').onclick = () => { setStore('masques', {}); renderChaptersEditor(); chargerChapitres().then(renderView).catch(() => {}); };
 
