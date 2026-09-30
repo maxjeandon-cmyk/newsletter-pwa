@@ -26,6 +26,15 @@
         "https://www.usine-digitale.fr/rss"
       ],
       "fenetreHeures": 24
+    },
+    {
+      "id": "mediapart-articles",
+      "nom": "Mediapart — Articles",
+      "emoji": "🔎",
+      "flux": [
+        "https://www.mediapart.fr/articles/feed"
+      ],
+      "fenetreHeures": 24
     }
   ]
 }
