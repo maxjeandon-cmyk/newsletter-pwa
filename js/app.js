@@ -68,16 +68,27 @@ async function init() {
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
 
   /* Config éditoriale : data/ est servi network-first par le service worker —
-   * toujours frais en ligne, repli sur cache hors ligne.
+   * toujours frais en ligne, repli sur cache hors ligne. Tout est chargé en
+   * parallèle : le premier rendu n'attend que le plus lent de ces fichiers.
    * Médias effectifs = data/medias.json + médias ajoutés depuis l'onglet Médias (nl.mediasPerso). */
-  state.chapters = await chargerJSON('data/chapters.json', []);
-  const jm = await chargerJSON('data/medias.json', {});
+  const [chapters, jm, fluxRss, climat] = await Promise.all([
+    chargerJSON('data/chapters.json', []),
+    chargerJSON('data/medias.json', {}),
+    chargerJSON('data/flux-rss.json', {}),
+    chargerJSON('data/climat.json', null)
+  ]);
+  state.chapters = chapters;
   state.mediasBase = jm.medias || [];
   /* Catalogue de flux RSS vérifiés (v21) : propose les médias connus dans ➕ Ajouter */
-  state.fluxCatalogue = (await chargerJSON('data/flux-rss.json', {})).catalogue || [];
+  state.fluxCatalogue = fluxRss.catalogue || [];
   /* Bulletin climat Copernicus (v22) : onglet Climat */
-  state.climat = await chargerJSON('data/climat.json', null);
+  state.climat = climat;
   majMedias();
+  /* Hygiène localStorage : les caches media:* des médias supprimés ne servent plus. */
+  const idsConnus = new Set(state.medias.map(m => m.id));
+  Object.keys(localStorage)
+    .filter(k => k.startsWith('nl.media:') && !idsConnus.has(k.slice('nl.media:'.length)))
+    .forEach(k => localStorage.removeItem(k));
 
   state.feed = getStore('feed', { time: 0, articles: [] });
 

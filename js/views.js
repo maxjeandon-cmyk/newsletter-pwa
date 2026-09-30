@@ -1,7 +1,7 @@
 /* views.js — rendu des onglets (v16). Chaque onglet a sa fonction vue*(), appelée par renderView().
  * Règle d'hygiène : tout texte externe (flux RSS, éditions) passe par esc() avant innerHTML. */
 
-import { $, state, esc, getStore, setStore, fmtDate, fmtDateHour, fmtHeure, fmtMonth, nomJourEdition, weekKeyOf, norm }
+import { $, state, esc, urlSure, getStore, setStore, fmtDate, fmtDateHour, fmtHeure, fmtMonth, nomJourEdition, weekKeyOf, norm }
   from './core.js';
 import { estAFP, chargerMedia, chargerChapitres, trouverFlux } from './feeds.js';
 import { jetonPresent, publierMedia, enregistrerJeton, oublierJeton } from './github.js';
@@ -27,7 +27,7 @@ export function renderTabs() {
 function articleHtml(a) {
   const age = Math.max(0, Math.round((Date.now() - a.date.getTime()) / 3600e3));
   const origine = a.chapitreNom || a.mediaNom || '';
-  return '<a class="article" href="' + esc(a.lien || '#') + '" target="_blank" rel="noopener">' +
+  return '<a class="article" href="' + esc(urlSure(a.lien)) + '" target="_blank" rel="noopener">' +
     '<h3>' + esc(a.titre) + '</h3><div class="meta">' + esc(origine) + ' · il y a ' +
     (age < 1 ? 'moins d’1 h' : age + ' h') + '</div>' +
     (a.extrait ? '<div class="excerpt">' + esc(a.extrait) + '</div>' : '') + '</a>';

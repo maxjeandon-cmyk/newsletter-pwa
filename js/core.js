@@ -83,6 +83,10 @@ export function weekKeyOf(dateStr) {
 /* --- Normalisation de texte (recherche, déduplication) --- */
 export const norm = s => (s ?? '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 
+/* --- URL sûre : seuls http(s) sortent de l'app — bloque javascript:, data:, etc.
+     dans les href venus des flux RSS, que l'échappement seul ne neutralise pas. --- */
+export const urlSure = u => /^https?:\/\//i.test(String(u || '')) ? u : '#';
+
 /* --- Thème --- */
 export function applyTheme(t) {
   document.documentElement.dataset.theme =
