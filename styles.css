@@ -108,3 +108,12 @@ main{padding:0 14px;max-width:720px;margin:0 auto}
 .badge-perso{font-size:10.5px;color:var(--accent);border:1px solid var(--accent);border-radius:8px;padding:1px 6px;margin-left:6px}
 .mini-btn{background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:4px 8px;
   font-size:13px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+
+/* --- v18 : onglet Lecture (recherche de documentation numérique) --- */
+.badge-access{display:inline-block;font-size:11px;font-weight:600;border-radius:8px;padding:2px 8px;margin-top:6px;border:1px solid var(--border)}
+.badge-access.ok{color:#4caf7d;border-color:#4caf7d}
+.badge-access.mid{color:var(--accent);border-color:var(--accent)}
+.badge-access.warn{color:#e2b07a;border-color:#e2b07a}
+#lec-form input[type=search]{display:block;width:100%;margin-top:5px;padding:9px;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:8px;font-size:15px}
+#lec-form label{display:block;font-size:13px;color:var(--muted);margin:12px 0 0}
+.lec-histo{white-space:nowrap;margin:2px}

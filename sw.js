@@ -1,8 +1,8 @@
-/* sw.js v24 — Service worker de la PWA Newsletter.
+/* sw.js v25 — Service worker de la PWA Newsletter.
  * Stratégies : data/ et editions/ network-first (toujours frais en ligne, repli cache hors ligne) ;
  * le reste (coquille, js/, styles) cache-first pour un démarrage instantané.
  * À chaque déploiement de code : incrémenter CACHE (v22 → v23…) pour invalider les caches clients. */
-const CACHE = 'newsletter-v24';
+const CACHE = 'newsletter-v25';
 const ASSETS = [
   './',
   './index.html',
@@ -20,6 +20,8 @@ const ASSETS = [
   './js/views/archives.js',
   './js/views/articles.js',
   './js/views/medias.js',
+  './js/views/lecture.js',
+  './js/lecture.js',
   './js/router.js',
   './js/app.js',
   './data/chapters.json',

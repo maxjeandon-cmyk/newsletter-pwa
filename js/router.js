@@ -1,13 +1,13 @@
 /* router.js — routeur URL (v17) : l'onglet ouvert vit dans le hash de l'URL.
  * Partager un lien, revenir en arrière, rouvrir un onglet direct : tout passe par là.
- * Schéma : #<onglet> · #medias/<id|ajout|gerer> · #archives[/<sous-onglet>][?h=<archive>]
+ * Schéma : #<onglet> · #medias/<id|ajout|gerer> · #lecture[/<categorie>][?q=<recherche>] · #archives[/<sous-onglet>][?h=<archive>]
  * Le hash est la source de vérité au chargement ; l'état l'alimente ensuite
  * (pushState au changement d'onglet — le bouton retour fonctionne — replaceState
  * pour les re-rendus internes, sans polluer l'historique). */
 
 import { state } from './core.js';
 
-const ONGLETS = ['edition', 'sources', 'archives', 'climat', 'articles', 'medias'];
+const ONGLETS = ['edition', 'sources', 'archives', 'climat', 'articles', 'medias', 'lecture'];
 const SOUS_ARCHIVES = ['editions', 'droit', 'economie'];
 
 /* L'URL qui représente l'état courant */
@@ -16,6 +16,9 @@ export function hashFromState() {
   if (h === 'medias') {
     if (state.mediasMode === 'ajout' || state.mediasMode === 'gerer') h += '/' + state.mediasMode;
     else if (state.activeMedia) h += '/' + encodeURIComponent(state.activeMedia);
+  } else if (h === 'lecture') {
+    if (state.lecture?.cat && state.lecture.cat !== 'tout') h += '/' + state.lecture.cat;
+    if (state.lecture?.q) h += '?q=' + encodeURIComponent(state.lecture.q);
   } else if (h === 'archives') {
     if (SOUS_ARCHIVES.includes(state.archiveSub) && state.archiveSub !== 'editions') h += '/' + state.archiveSub;
     if (state.archiveSel) h += '?h=' + encodeURIComponent(state.archiveSel);
@@ -38,6 +41,12 @@ export function stateFromHash() {
     state.archiveSub = SOUS_ARCHIVES.includes(parties[1]) ? parties[1] : 'editions';
     const h = new URLSearchParams(query || '').get('h');
     state.archiveSel = h && /^[\w./-]+$/.test(h) ? h : null;
+  }
+  if (tab === 'lecture') {
+    const cat = ['tout', 'livres', 'publications'].includes(parties[1]) ? parties[1] : 'tout';
+    const q = new URLSearchParams(query || '').get('q');
+    state.lecture = q ? { q, cat, resultats: [], etat: 'encours' } : { q: '', cat, resultats: [], etat: null };
+    if (q) import('./views/lecture.js').then(m => m.lancerRechercheLecture(q, cat));
   }
 }
 
