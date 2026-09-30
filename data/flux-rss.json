@@ -1,4 +1,8 @@
 {
+  "suite": [
+    "data/flux-rss-2.json",
+    "data/flux-rss-3.json"
+  ],
   "catalogue": [
     {
       "id": "le-monde-a-la-une",
@@ -219,6 +223,16 @@
         "https://www.valeursactuelles.com/feed"
       ],
       "ligne": "hebdo de droite, conservateur-libéral"
+    },
+    {
+      "id": "disclose",
+      "nom": "Disclose",
+      "emoji": "🔎",
+      "categorie": "Presse généraliste 🇫🇷",
+      "ligne": "journalisme d’investigation indépendant",
+      "flux": [
+        "https://disclose.ngo/feed/"
+      ]
     },
     {
       "id": "sud-ouest",
@@ -491,6 +505,76 @@
       "ligne": "économie critique, sociale et écologique"
     },
     {
+      "id": "maddyness",
+      "nom": "Maddyness",
+      "emoji": "🚀",
+      "categorie": "Économie 💰",
+      "ligne": "startups et innovation FR",
+      "flux": [
+        "https://www.maddyness.com/feed/"
+      ]
+    },
+    {
+      "id": "frenchweb",
+      "nom": "FrenchWeb",
+      "emoji": "🌐",
+      "categorie": "Économie 💰",
+      "ligne": "écosystème digital et entrepreneurs",
+      "flux": [
+        "https://frenchweb.fr/feed"
+      ]
+    },
+    {
+      "id": "silicon",
+      "nom": "Silicon",
+      "emoji": "💼",
+      "categorie": "Économie 💰",
+      "ligne": "tech B2B pour dirigeants",
+      "flux": [
+        "https://www.silicon.fr/feed"
+      ]
+    },
+    {
+      "id": "l-opinion",
+      "nom": "L’Opinion",
+      "emoji": "📊",
+      "categorie": "Économie 💰",
+      "ligne": "économie, énergie et politique",
+      "flux": [
+        "https://www.lopinion.fr/index.rss"
+      ]
+    },
+    {
+      "id": "web-agri",
+      "nom": "Web-agri",
+      "emoji": "🌾",
+      "categorie": "Économie 💰",
+      "ligne": "agriculture : marchés et techniques",
+      "flux": [
+        "https://www.web-agri.fr/rss"
+      ]
+    },
+    {
+      "id": "la-france-agricole",
+      "nom": "La France agricole",
+      "emoji": "🌾",
+      "categorie": "Économie 💰",
+      "ligne": "hebdo agricole de référence",
+      "flux": [
+        "https://www.lafranceagricole.fr/rss"
+      ]
+    },
+    {
+      "id": "terre-net",
+      "nom": "Terre-net",
+      "emoji": "🚜",
+      "categorie": "Économie 💰",
+      "ligne": "portail agricole, marchés et météo",
+      "flux": [
+        "https://www.terre-net.fr/rss"
+      ]
+    },
+    {
       "id": "cfdt",
       "nom": "CFDT",
       "emoji": "🤝",
@@ -731,197 +815,14 @@
       ]
     },
     {
-      "id": "cnrs-le-journal",
-      "nom": "CNRS — Le Journal",
-      "emoji": "🔬",
-      "categorie": "Sciences 🔬",
+      "id": "zataz",
+      "nom": "ZATAZ",
+      "emoji": "🔐",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "cybersécurité FR, alertes et enquêtes",
       "flux": [
-        "https://lejournal.cnrs.fr/rss"
-      ],
-      "ligne": "recherche publique française vulgarisée"
-    },
-    {
-      "id": "futura-sciences",
-      "nom": "Futura Sciences",
-      "emoji": "🔭",
-      "categorie": "Sciences 🔬",
-      "flux": [
-        "https://www.futura-sciences.com/rss/actualites.xml"
-      ],
-      "ligne": "sciences et espace, grand public"
-    },
-    {
-      "id": "science-vie",
-      "nom": "Science & Vie",
-      "emoji": "🧬",
-      "categorie": "Sciences 🔬",
-      "flux": [
-        "https://www.science-et-vie.com/feed/"
-      ],
-      "ligne": "vulgarisation centenaire"
-    },
-    {
-      "id": "le-monde-sciences",
-      "nom": "Le Monde — Sciences",
-      "emoji": "🧪",
-      "categorie": "Sciences 🔬",
-      "flux": [
-        "https://www.lemonde.fr/sciences/rss_full.xml"
-      ],
-      "ligne": "les sciences par le Monde"
-    },
-    {
-      "id": "bbc-science-environment",
-      "nom": "BBC — Science & Environment",
-      "emoji": "🌡️",
-      "categorie": "Sciences 🔬",
-      "flux": [
-        "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"
-      ],
-      "ligne": "science et environnement, BBC"
-    },
-    {
-      "id": "the-guardian-science",
-      "nom": "The Guardian — Science",
-      "emoji": "🔭",
-      "categorie": "Sciences 🔬",
-      "flux": [
-        "https://www.theguardian.com/science/rss"
-      ],
-      "ligne": "les sciences par le Guardian"
-    },
-    {
-      "id": "nature-news",
-      "nom": "Nature — News",
-      "emoji": "🍃",
-      "categorie": "Sciences 🔬",
-      "flux": [
-        "https://www.nature.com/nature.rss"
-      ],
-      "ligne": "recherche mondiale, référence"
-    },
-    {
-      "id": "new-scientist",
-      "nom": "New Scientist",
-      "emoji": "🧠",
-      "categorie": "Sciences 🔬",
-      "flux": [
-        "https://www.newscientist.com/feed/home/"
-      ],
-      "ligne": "hebdo scientifique anglophone"
-    },
-    {
-      "id": "science-actualites",
-      "nom": "Science — Actualités",
-      "emoji": "⚗️",
-      "categorie": "Sciences 🔬",
-      "flux": [
-        "https://www.science.org/rss/news_current.xml"
-      ],
-      "ligne": "recherche et politique scientifique"
-    },
-    {
-      "id": "quanta-magazine",
-      "nom": "Quanta Magazine",
-      "emoji": "🌌",
-      "categorie": "Sciences 🔬",
-      "flux": [
-        "https://api.quantamagazine.org/feed/"
-      ],
-      "ligne": "maths, physique et vivant, long format"
-    },
-    {
-      "id": "sciences-et-avenir",
-      "nom": "Sciences et Avenir",
-      "emoji": "🔭",
-      "categorie": "Sciences 🔬",
-      "flux": [
-        "https://www.sciencesetavenir.fr/rss.xml"
-      ],
-      "ligne": "recherche et sciences (fusion La Recherche)"
-    },
-    {
-      "id": "le-monde-planete",
-      "nom": "Le Monde — Planète",
-      "emoji": "🌱",
-      "categorie": "Sciences 🔬",
-      "flux": [
-        "https://www.lemonde.fr/planete/rss_full.xml"
-      ],
-      "ligne": "environnement et biodiversité"
-    },
-    {
-      "id": "nyt-science",
-      "nom": "NYT — Science",
-      "emoji": "🔬",
-      "categorie": "Sciences 🔬",
-      "flux": [
-        "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml"
-      ],
-      "ligne": "les sciences par le NYT"
-    },
-    {
-      "id": "the-guardian-environment",
-      "nom": "The Guardian — Environment",
-      "emoji": "🌿",
-      "categorie": "Sciences 🔬",
-      "flux": [
-        "https://www.theguardian.com/environment/rss"
-      ],
-      "ligne": "l'environnement par le Guardian"
-    },
-    {
-      "id": "trust-my-science",
-      "nom": "Trust My Science",
-      "emoji": "🧪",
-      "categorie": "Sciences 🔬",
-      "ligne": "veille scientifique mondiale",
-      "flux": [
-        "https://trustmyscience.com/feed/"
-      ]
-    },
-    {
-      "id": "pour-la-science",
-      "nom": "Pour la Science",
-      "emoji": "🧠",
-      "categorie": "Sciences 🔬",
-      "ligne": "édition française de Scientific American",
-      "flux": [
-        "https://www.pourlascience.fr/rss"
-      ]
-    },
-    {
-      "id": "inserm",
-      "nom": "Inserm",
-      "emoji": "🩺",
-      "categorie": "Sciences 🔬",
-      "ligne": "recherche biomédicale publique",
-      "flux": [
-        "https://www.inserm.fr/feed"
-      ]
-    },
-    {
-      "id": "pourquoi-docteur",
-      "nom": "Pourquoi Docteur",
-      "emoji": "💉",
-      "categorie": "Sciences 🔬",
-      "ligne": "santé et info patient",
-      "flux": [
-        "https://www.pourquoidocteur.fr/rss/actualites.xml"
-      ]
-    },
-    {
-      "id": "sciencedaily",
-      "nom": "ScienceDaily",
-      "emoji": "🧬",
-      "categorie": "Sciences 🔬",
-      "ligne": "communiqués de recherche mondiaux",
-      "flux": [
-        "https://www.sciencedaily.com/rss/all.xml"
+        "https://www.zataz.com/feed/"
       ]
     }
-  ],
-  "suite": [
-    "data/flux-rss-2.json"
   ]
 }
