@@ -4,7 +4,7 @@ PWA statique hébergée sur GitHub Pages : l'édition quotidienne (générée ch
 
 Site : https://maxjeandon-cmyk.github.io/newsletter-pwa/
 
-## Architecture (v16)
+## Architecture (v17)
 
 ```
 index.html          Coquille unique — tout le rendu se fait côté client en ES modules
@@ -13,8 +13,16 @@ js/feeds.js         Couche réseau : RSS direct → relais rss2json (JSON) → r
                     dédup par URL, caches TTL 20 min (onglet Articles et onglet Médias)
 js/github.js        Publication des médias dans data/medias.json via l'API GitHub (jeton fine-grained
                     local, Contents Read/Write sur ce seul dépôt) — doux : { ok } ou { erreur }
-js/views.js         Rendu des 6 onglets : Édition, Sources, Archives (sous-onglets Éditions / Droit /
-                    Économie, v20), Climat (dernier bulletin Copernicus, v22), Articles, Médias
+js/router.js        Routeur URL (v17) : l'onglet ouvert vit dans le hash (#medias/blast, #archives/droit…) —
+                    lien partageable, bouton retour du navigateur fonctionnel
+js/views.js         Dispatcher des onglets : enregistre chaque vue et expose l'API (renderView, renderTabs)
+js/views/common.js   Briques partagées (bloc article, registre des vues, sync du hash après chaque rendu)
+js/views/edition.js  📄 Onglet Édition du jour
+js/views/sources.js  📚 Onglet Sources de l'édition
+js/views/archives.js 🗄️ Onglet Archives (sous-onglets Éditions / Droit / Économie, v20)
+js/views/climat.js  🌡️ Onglet Climat (dernier bulletin Copernicus, v22)
+js/views/articles.js 🔥 Onglet Articles d'aujourd'hui
+js/views/medias.js   🎬 Onglet Médias (sous-onglets, formulaire d'ajout, gestion, jeton)
 js/app.js           Bootstrap : wiring des boutons, chargement data/*.json, service worker
 data/chapters.json  Chapitres de l'onglet Articles (flux + mots-clés + fenêtre horaire)
 data/medias.json    Médias suivis dans l'onglet Médias (sous-onglets)

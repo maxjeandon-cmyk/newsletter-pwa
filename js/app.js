@@ -6,6 +6,7 @@
 import { $, state, getStore, setStore, purgeStore, applyTheme, fmtDate } from './core.js';
 import { chargerChapitres, chargerMedia } from './feeds.js';
 import { renderTabs, renderView, renderChaptersEditor, majMedias } from './views.js';
+import { initRouter } from './router.js';
 
 async function chargerJSON(url, def) {
   try { return await (await fetch(url, { cache: 'no-store' })).json(); } catch (e) { return def; }
@@ -34,6 +35,9 @@ async function init() {
   }
   ['chapters', 'chaptersV', 'feedCache', 'afpOnly', 'theme'].forEach(k => localStorage.removeItem(k));
 
+  /* Routeur URL (v17) : l'onglet ouvert vit dans le hash — lien partageable,
+     bouton retour fonctionnel. L'URL pilote l'état au chargement, puis suit. */
+  initRouter(() => { renderTabs(); renderView(); });
   const theme = getStore('theme', 'dark');
   applyTheme(theme);
   $('#sel-theme').value = theme;
