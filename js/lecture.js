@@ -177,6 +177,119 @@ export async function chercherEpmc(q) {
   })).filter(x => x.titre);
 }
 
+/* --- Agent d'ouverture (v20) : « Ouvrir » lance un deep-search des versions
+ *     numériques de l'ouvrage — éditions Internet Archive (via Open Library),
+ *     priorité aux libres (domaine public, texte intégral téléchargeable),
+ *     arrêt au premier ouvrage pertinent ET disponible trouvé.
+ *     Livre emprunté : pas de texte (401), on renvoie les conditions d'emprunt
+ *     trouvées dans les métadonnées IA (message de confirmation).
+ *     Un changeur de version liste les autres éditions numérisées. --- */
+
+/* Lister les éditions numérisées d'une œuvre, avec leur accès : les « public »
+ * d'abord (texte intégral), puis les « borrowable ». Renvoie [] si rien. */
+async function editionsNumeriques(r) {
+  const q = [r.titre].concat(r.auteurs || []).filter(Boolean).join(' ');
+  const j = await getJson('https://openlibrary.org/search.json?limit=16&fields=key,title,ia,ebook_access,edition_count&q=' +
+    encodeURIComponent(q));
+  const vues = [];
+  const vus = new Set();
+  for (const d of j?.docs || []) {
+    for (const ocaid of d.ia || []) {
+      if (vus.has(ocaid)) continue;
+      vus.add(ocaid);
+      vues.push({
+        ocaid,
+        titre: d.title || r.titre,
+        acces: d.ebook_access === 'public' ? 'ouvert'
+          : d.ebook_access === 'borrowable' ? 'emprunt' : null
+      });
+    }
+  }
+  return vues.filter(v => v.acces)
+    .sort((a, b) => (a.acces === 'ouvert' ? -1 : 1) - (b.acces === 'ouvert' ? -1 : 1));
+}
+
+/* Texte intégral d'une édition IA libre (OCR djvu.txt) — segmenté en pages
+ * lisibles (~30 000 caractères), car un livre entier fait 0,5–1 Mo. */
+async function texteIntegal(ocaid) {
+  const txt = await getText('https://archive.org/download/' + ocaid + '/' + ocaid + '_djvu.txt', 20000);
+  if (!txt || txt.length < 500 || /<html|401 Authorization/i.test(txt.slice(0, 400))) return null;
+  return txt;
+}
+
+/* Conditions d'emprunt d'une édition borrowable : deep-search dans les
+ * métadonnées IA — statut de prêt, collections, durée. */
+async function conditionsEmprunt(ocaid) {
+  const m = await getJson('https://archive.org/metadata/' + ocaid);
+  const meta = m?.metadata || {};
+  const colls = Array.isArray(meta.collection) ? meta.collection : [meta.collection].filter(Boolean);
+  return {
+    ocaid,
+    pretable: colls.includes('inlibrary') || colls.includes('internetarchivebooks') || !!meta.lending,
+    statut: meta.lending || null,
+    collections: colls,
+    lien: 'https://archive.org/details/' + ocaid
+  };
+}
+
+/* L'agent : ouvrir un résultat de recherche dans le lecteur intégré.
+ * Renvoie doucement : { type: 'texte'|'emprunt'|'indisponible', ... } */
+export async function ouvrirOuvrage(r) {
+  /* Gallica / BnF : lien ark directement lisible ? On propose le lecteur du site
+   * Gallica (pas de texte brut fiable) — on ne bloque pas, l'utilisateur y va. */
+  if (r.source === 'Gallica (BnF)') {
+    return { type: 'indisponible', raison: 'gallica', lien: r.lien, titre: r.titre };
+  }
+  const editions = await editionsNumeriques(r);
+  if (!editions.length) {
+    return { type: 'indisponible', raison: 'numerique', lien: r.lien, titre: r.titre };
+  }
+  const versions = editions.slice(0, 12);
+  /* Deep-search : première version libre avec du texte intégral disponible —
+   * on s'arrête au premier trouvé (ordre : libres d'abord). */
+  for (const v of versions) {
+    if (v.acces !== 'ouvert') continue;
+    const texte = await texteIntegal(v.ocaid);
+    if (texte) {
+      return {
+        type: 'texte',
+        titre: v.titre,
+        ocaid: v.ocaid,
+        texte,
+        versions,
+        lien: 'https://archive.org/details/' + v.ocaid
+      };
+    }
+  }
+  /* Aucune version libre : première version empruntable — conditions d'emprunt
+   * (message de confirmation), arrêt au premier pertinent et disponible. */
+  for (const v of versions) {
+    if (v.acces !== 'emprunt') continue;
+    const cond = await conditionsEmprunt(v.ocaid);
+    if (cond.pretable) {
+      return {
+        type: 'emprunt',
+        titre: v.titre,
+        ocaid: v.ocaid,
+        conditions: cond,
+        versions,
+        lien: cond.lien
+      };
+    }
+  }
+  return { type: 'indisponible', raison: 'protege', lien: r.lien, titre: r.titre, versions };
+}
+
+/* Changement de version : recharger une autre édition numérisée dans le lecteur. */
+export async function ouvrirVersion(ocaid, versions) {
+  const texte = await texteIntegal(ocaid);
+  if (texte) {
+    return { type: 'texte', ocaid, texte, versions, lien: 'https://archive.org/details/' + ocaid };
+  }
+  const cond = await conditionsEmprunt(ocaid);
+  return { type: 'emprunt', ocaid, conditions: cond, versions, lien: cond.lien };
+}
+
 /* --- Recherche unifiée : catégorie 'livres', 'publications' ou 'tout'.
  *     Chaque catégorie interroge ses sources en parallèle et fusionne —
  *     une source injoignable ne bloque jamais les autres. --- */
