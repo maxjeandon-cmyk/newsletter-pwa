@@ -11,6 +11,9 @@
  *    ouverte dans la réponse vaut accès libre, son absence vaut paywall probable.
  *  - Patrimoine francophone : Gallica / BnF — livres, revues et presse numérisés,
  *    consultation libre (domaine public ou communicable).
+ *  - Prépublications scientifiques : arXiv — physique, maths, info, éco… libre par définition.
+ *  - Archive ouverte française : HAL — dépôts français, souvent libres (openAccess_bool).
+ *  - Biomédecine : Europe PMC — résumés systématiques, libre si isOpenAccess.
  * Résultats doux : [] en cas d'échec — jamais d'exception, comme feeds.js. */
 
 const TIMEOUT = 9000;
@@ -118,6 +121,62 @@ export async function chercherGallica(q) {
   }).filter(x => x.lien);
 }
 
+/* --- arXiv : prépublications scientifiques — libres par définition --- */
+export async function chercherArxiv(q) {
+  const xml = await getText('https://export.arxiv.org/api/query?search_query=' +
+    encodeURIComponent('all:' + q) + '&max_results=12&sortBy=relevance');
+  if (!xml) return [];
+  const extraire = (bloc, tag) => (bloc.match(new RegExp('<' + tag + '[^>]*>([\\s\\S]*?)</' + tag + '>')) || [])[1] || '';
+  return [...xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].slice(0, 12).map(m => {
+    const bloc = m[1];
+    const pdf = (bloc.match(/<link[^>]*href="([^"]+)"[^>]*title="pdf"/) || [])[1] || '';
+    return {
+      titre: extraire(bloc, 'title').replace(/\s+/g, ' ').trim(),
+      auteurs: [...bloc.matchAll(/<name>([^<]+)<\/name>/g)].slice(0, 3).map(x => x[1]),
+      annee: (extraire(bloc, 'updated').match(/\d{4}/) || [])[0] || null,
+      source: 'arXiv',
+      acces: 'ouvert',
+      lien: (bloc.match(/<id>([^<]+)<\/id>/) || [])[1] || '',
+      pdf: pdf,
+      extrait: extraire(bloc, 'summary').replace(/\s+/g, ' ').trim().slice(0, 1200),
+      type: 'publication'
+    };
+  }).filter(x => x.titre && x.lien);
+}
+
+/* --- HAL : archive ouverte française — livres, thèses, articles --- */
+export async function chercherHal(q) {
+  const j = await getJson('https://api.archives-ouvertes.fr/search/?q=' + encodeURIComponent(q) +
+    '&wt=json&rows=12&fl=label_s,authFullName_s,producedDate_s,uri_s,openAccess_bool,abstract_s');
+  return (j?.response?.docs || []).map(d => ({
+    titre: (d.label_s || '').replace(/<[^>]*>/g, '').trim(),
+    auteurs: (d.authFullName_s || []).slice(0, 3),
+    annee: (d.producedDate_s || '').match(/\d{4}/)?.[0] || null,
+    source: 'HAL',
+    acces: d.openAccess_bool ? 'ouvert' : 'paywall',
+    lien: d.uri_s || '',
+    extrait: ((d.abstract_s && d.abstract_s[0]) || '').replace(/<[^>]*>/g, '').trim().slice(0, 1200),
+    type: 'publication'
+  })).filter(x => x.titre && x.lien);
+}
+
+/* --- Europe PMC : biomédecine — résumés systématiques, même paywall --- */
+export async function chercherEpmc(q) {
+  const j = await getJson('https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=' +
+    encodeURIComponent(q) + '&format=json&pageSize=12&resultType=core');
+  return (j?.resultList?.result || []).map(it => ({
+    titre: (it.title || '').replace(/<[^>]*>/g, ''),
+    auteurs: (it.authorString || '').split(',').slice(0, 3).map(s => s.trim()),
+    annee: it.pubYear || null,
+    revue: it.journalInfo?.journal?.title || '',
+    source: 'Europe PMC',
+    acces: it.isOpenAccess === 'Y' ? 'ouvert' : 'paywall',
+    lien: 'https://doi.org/' + (it.doi || '') || 'https://europepmc.org',
+    extrait: (it.abstractText || '').replace(/<[^>]*>/g, '').trim().slice(0, 1500),
+    type: 'publication'
+  })).filter(x => x.titre);
+}
+
 /* --- Recherche unifiée : catégorie 'livres', 'publications' ou 'tout'.
  *     Chaque catégorie interroge ses sources en parallèle et fusionne —
  *     une source injoignable ne bloque jamais les autres. --- */
@@ -127,11 +186,14 @@ export async function chercher(categorie, q) {
     return ol.concat(gallica);
   }
   if (categorie === 'publications') {
-    const [crossref, doaj] = await Promise.all([chercherPublications(q), chercherDoaj(q)]);
-    return crossref.concat(doaj);
+    const [crossref, doaj, arxiv, hal, epmc] = await Promise.all([
+      chercherPublications(q), chercherDoaj(q), chercherArxiv(q), chercherHal(q), chercherEpmc(q)
+    ]);
+    return crossref.concat(doaj, arxiv, hal, epmc);
   }
-  const [livres, gallica, crossref, doaj] = await Promise.all([
-    chercherLivres(q), chercherGallica(q), chercherPublications(q), chercherDoaj(q)
+  const [livres, gallica, crossref, doaj, arxiv, hal, epmc] = await Promise.all([
+    chercherLivres(q), chercherGallica(q), chercherPublications(q), chercherDoaj(q),
+    chercherArxiv(q), chercherHal(q), chercherEpmc(q)
   ]);
-  return livres.concat(gallica, crossref, doaj);
+  return livres.concat(gallica, crossref, doaj, arxiv, hal, epmc);
 }

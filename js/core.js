@@ -27,7 +27,9 @@ export const state = {
   feedStats: { ok: 0, total: 0, time: 0 },
   mediaData: {},           // { mediaId: { time, articles, ok, total, stale } }
   publie: null,            // dernier média publié pour tous les écrans (info affichée une fois dans 👁 Gérer)
-  lecture: null            // état de l'onglet Lecture : { q, cat, resultats, etat } (v18)
+  lecture: null,           // état de l'onglet Lecture : { q, cat, resultats, etat } (v18)
+  lectureLecture: null,    // document ouvert dans le lecteur intégré (v19)
+  lectureRecos: [],        // recommandations par catégories (data/lecture-reco.json, v19)
 };
 
 /* --- Stockage local (clés préfixées « nl. » pour un nettoyage facile) --- */

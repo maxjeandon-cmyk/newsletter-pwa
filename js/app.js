@@ -75,11 +75,12 @@ async function init() {
    * toujours frais en ligne, repli sur cache hors ligne. Tout est chargé en
    * parallèle : le premier rendu n'attend que le plus lent de ces fichiers.
    * Médias effectifs = data/medias.json + médias ajoutés depuis l'onglet Médias (nl.mediasPerso). */
-  const [chapters, jm, fluxRss, climat] = await Promise.all([
+  const [chapters, jm, fluxRss, climat, recos] = await Promise.all([
     chargerJSON('data/chapters.json', []),
     chargerJSON('data/medias.json', {}),
     chargerJSON('data/flux-rss.json', {}),
-    chargerJSON('data/climat.json', null)
+    chargerJSON('data/climat.json', null),
+    chargerJSON('data/lecture-reco.json', {})
   ]);
   state.chapters = chapters;
   state.mediasBase = jm.medias || [];
@@ -91,6 +92,8 @@ async function init() {
 
   /* Bulletin climat Copernicus (v22) : onglet Climat */
   state.climat = climat;
+  /* Recommandations de lecture par catégories (v19) : affichées quand aucune recherche n'est active */
+  state.lectureRecos = recos.recommandations || [];
   majMedias();
   /* Hygiène localStorage : les caches media:* des médias supprimés ne servent plus. */
   const idsConnus = new Set(state.medias.map(m => m.id));
