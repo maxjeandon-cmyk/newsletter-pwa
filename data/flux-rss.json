@@ -172,6 +172,87 @@
       ]
     },
     {
+      "id": "paris-match",
+      "nom": "Paris Match",
+      "emoji": "✨",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.parismatch.com/rss.xml"
+      ]
+    },
+    {
+      "id": "sud-ouest",
+      "nom": "Sud Ouest",
+      "emoji": "🍷",
+      "categorie": "Presse régionale 🗺️",
+      "flux": [
+        "https://www.sudouest.fr/rss.xml"
+      ]
+    },
+    {
+      "id": "le-dauphine-libere",
+      "nom": "Le Dauphiné libéré",
+      "emoji": "🏔️",
+      "categorie": "Presse régionale 🗺️",
+      "flux": [
+        "https://www.ledauphine.com/rss"
+      ]
+    },
+    {
+      "id": "la-depeche",
+      "nom": "La Dépêche",
+      "emoji": "📯",
+      "categorie": "Presse régionale 🗺️",
+      "flux": [
+        "https://www.ladepeche.fr/rss.xml"
+      ]
+    },
+    {
+      "id": "le-progres",
+      "nom": "Le Progrès",
+      "emoji": "🦁",
+      "categorie": "Presse régionale 🗺️",
+      "flux": [
+        "https://www.leprogres.fr/rss"
+      ]
+    },
+    {
+      "id": "le-telegramme",
+      "nom": "Le Télégramme",
+      "emoji": "🌊",
+      "categorie": "Presse régionale 🗺️",
+      "flux": [
+        "https://www.letelegramme.fr/rss.xml"
+      ]
+    },
+    {
+      "id": "l-est-republicain",
+      "nom": "L’Est Républicain",
+      "emoji": "🌲",
+      "categorie": "Presse régionale 🗺️",
+      "flux": [
+        "https://www.estrepublicain.fr/rss"
+      ]
+    },
+    {
+      "id": "nice-matin",
+      "nom": "Nice-Matin",
+      "emoji": "☀️",
+      "categorie": "Presse régionale 🗺️",
+      "flux": [
+        "https://www.nicematin.com/rss"
+      ]
+    },
+    {
+      "id": "actu-fr",
+      "nom": "actu.fr — local",
+      "emoji": "📍",
+      "categorie": "Presse régionale 🗺️",
+      "flux": [
+        "https://www.actu.fr/rss.xml"
+      ]
+    },
+    {
       "id": "les-echos-economie",
       "nom": "Les Échos — Économie",
       "emoji": "💼",
@@ -286,6 +367,15 @@
       "categorie": "Économie 💰",
       "flux": [
         "https://feeds.washingtonpost.com/rss/business"
+      ]
+    },
+    {
+      "id": "marketwatch",
+      "nom": "MarketWatch",
+      "emoji": "💰",
+      "categorie": "Économie 💰",
+      "flux": [
+        "https://feeds.content.dowjones.io/public/rss/mw_topstories"
       ]
     },
     {
@@ -415,6 +505,33 @@
       ]
     },
     {
+      "id": "frandroid",
+      "nom": "Frandroid",
+      "emoji": "🤖",
+      "categorie": "Tech & numérique 💻",
+      "flux": [
+        "https://www.frandroid.com/feed"
+      ]
+    },
+    {
+      "id": "les-numeriques",
+      "nom": "Les Numériques",
+      "emoji": "📱",
+      "categorie": "Tech & numérique 💻",
+      "flux": [
+        "https://www.lesnumeriques.com/rss.xml"
+      ]
+    },
+    {
+      "id": "le-monde-technologies",
+      "nom": "Le Monde — Technologies",
+      "emoji": "📡",
+      "categorie": "Tech & numérique 💻",
+      "flux": [
+        "https://www.lemonde.fr/technologies/rss_full.xml"
+      ]
+    },
+    {
       "id": "cnrs-le-journal",
       "nom": "CNRS — Le Journal",
       "emoji": "🔬",
@@ -505,6 +622,42 @@
       ]
     },
     {
+      "id": "sciences-et-avenir",
+      "nom": "Sciences et Avenir",
+      "emoji": "🔭",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.sciencesetavenir.fr/rss.xml"
+      ]
+    },
+    {
+      "id": "le-monde-planete",
+      "nom": "Le Monde — Planète",
+      "emoji": "🌱",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.lemonde.fr/planete/rss_full.xml"
+      ]
+    },
+    {
+      "id": "nyt-science",
+      "nom": "NYT — Science",
+      "emoji": "🔬",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml"
+      ]
+    },
+    {
+      "id": "the-guardian-environment",
+      "nom": "The Guardian — Environment",
+      "emoji": "🌿",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.theguardian.com/environment/rss"
+      ]
+    },
+    {
       "id": "nasa-breaking-news",
       "nom": "NASA — Breaking News",
       "emoji": "🛰️",
@@ -547,6 +700,15 @@
       "categorie": "Sport ⚽",
       "flux": [
         "https://www.lemonde.fr/sport/rss_full.xml"
+      ]
+    },
+    {
+      "id": "rfi-sport",
+      "nom": "RFI — Sport",
+      "emoji": "⚽",
+      "categorie": "Sport ⚽",
+      "flux": [
+        "https://www.rfi.fr/fr/sport/rss"
       ]
     },
     {
@@ -613,6 +775,33 @@
       ]
     },
     {
+      "id": "france-24-culture",
+      "nom": "France 24 — Culture",
+      "emoji": "🎨",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.france24.com/fr/culture/rss"
+      ]
+    },
+    {
+      "id": "le-monde-idees",
+      "nom": "Le Monde — Idées",
+      "emoji": "💭",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.lemonde.fr/idees/rss_full.xml"
+      ]
+    },
+    {
+      "id": "the-guardian-culture",
+      "nom": "The Guardian — Culture",
+      "emoji": "🎭",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.theguardian.com/culture/rss"
+      ]
+    },
+    {
       "id": "la-libre-belgique",
       "nom": "La Libre Belgique",
       "emoji": "🇧🇪",
@@ -637,6 +826,78 @@
       "categorie": "Belgique / Suisse / Québec 🍁",
       "flux": [
         "https://ici.radio-canada.ca/rss/4159"
+      ]
+    },
+    {
+      "id": "jeune-afrique",
+      "nom": "Jeune Afrique",
+      "emoji": "🌍",
+      "categorie": "Afrique francophone 🌍",
+      "flux": [
+        "https://www.jeuneafrique.com/feed/"
+      ]
+    },
+    {
+      "id": "rfi-afrique",
+      "nom": "RFI — Afrique",
+      "emoji": "📻",
+      "categorie": "Afrique francophone 🌍",
+      "flux": [
+        "https://www.rfi.fr/fr/afrique/rss"
+      ]
+    },
+    {
+      "id": "france-24-afrique",
+      "nom": "France 24 — Afrique",
+      "emoji": "🌍",
+      "categorie": "Afrique francophone 🌍",
+      "flux": [
+        "https://www.france24.com/fr/afrique/rss"
+      ]
+    },
+    {
+      "id": "le-monde-afrique",
+      "nom": "Le Monde — Afrique",
+      "emoji": "🌍",
+      "categorie": "Afrique francophone 🌍",
+      "flux": [
+        "https://www.lemonde.fr/afrique/rss_full.xml"
+      ]
+    },
+    {
+      "id": "africanews",
+      "nom": "Africanews",
+      "emoji": "🌍",
+      "categorie": "Afrique francophone 🌍",
+      "flux": [
+        "https://www.africanews.com/feed/"
+      ]
+    },
+    {
+      "id": "seneweb",
+      "nom": "Seneweb — Sénégal",
+      "emoji": "🇸🇳",
+      "categorie": "Afrique francophone 🌍",
+      "flux": [
+        "https://seneweb.com/feed"
+      ]
+    },
+    {
+      "id": "gabon-review",
+      "nom": "Gabon Review — Gabon",
+      "emoji": "🇬🇦",
+      "categorie": "Afrique francophone 🌍",
+      "flux": [
+        "https://gabonreview.com/feed"
+      ]
+    },
+    {
+      "id": "radio-okapi",
+      "nom": "Radio Okapi — RDC",
+      "emoji": "🇨🇩",
+      "categorie": "Afrique francophone 🌍",
+      "flux": [
+        "https://www.radiookapi.net/feed"
       ]
     },
     {
@@ -835,6 +1096,15 @@
       "categorie": "Anglophone généraliste 🌐",
       "flux": [
         "https://www.vox.com/rss/index.xml"
+      ]
+    },
+    {
+      "id": "the-hill",
+      "nom": "The Hill",
+      "emoji": "🏛️",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://thehill.com/feed/"
       ]
     }
   ]
