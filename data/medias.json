@@ -35,6 +35,15 @@
         "https://www.mediapart.fr/articles/feed"
       ],
       "fenetreHeures": 24
+    },
+    {
+      "id": "cnrs-le-journal",
+      "nom": "CNRS — Le Journal",
+      "emoji": "🔬",
+      "flux": [
+        "https://lejournal.cnrs.fr/rss"
+      ],
+      "fenetreHeures": 24
     }
   ]
 }
