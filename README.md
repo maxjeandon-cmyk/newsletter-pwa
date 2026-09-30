@@ -13,11 +13,13 @@ js/feeds.js         Couche réseau : RSS direct → relais rss2json (JSON) → r
                     dédup par URL, caches TTL 20 min (onglet Articles et onglet Médias)
 js/github.js        Publication des médias dans data/medias.json via l'API GitHub (jeton fine-grained
                     local, Contents Read/Write sur ce seul dépôt) — doux : { ok } ou { erreur }
-js/views.js         Rendu des 5 onglets : Édition, Sources, Archives (sous-onglets Éditions / Droit /
-                    Économie, v20), Articles, Médias
+js/views.js         Rendu des 6 onglets : Édition, Sources, Archives (sous-onglets Éditions / Droit /
+                    Économie, v20), Climat (dernier bulletin Copernicus, v22), Articles, Médias
 js/app.js           Bootstrap : wiring des boutons, chargement data/*.json, service worker
 data/chapters.json  Chapitres de l'onglet Articles (flux + mots-clés + fenêtre horaire)
 data/medias.json    Médias suivis dans l'onglet Médias (sous-onglets)
+data/climat.json    Dernier bulletin Copernicus résumé dans l'onglet Climat (rafraîchi par la
+                    maintenance quotidienne — maj/titre/resume/points/lien)
 sw.js               Service worker : coquille cache-first, editions/ et data/ network-first
 styles.css          Thème sombre/clair, variables CSS
 ```

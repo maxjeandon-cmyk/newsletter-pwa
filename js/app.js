@@ -42,7 +42,8 @@ async function init() {
   $('#btn-refresh').onclick = async () => {
     $('#stale-banner').hidden = false;
     $('#stale-banner').textContent = 'Actualisation en cours…';
-    const taches = [loadEdition(), chargerChapitres()];
+    const taches = [loadEdition(), chargerChapitres(),
+      chargerJSON('data/climat.json', null).then(c => { state.climat = c; })];
     if (state.activeTab === 'medias') {
       const m = state.medias.find(x => x.id === state.activeMedia);
       if (m) taches.push(chargerMedia(m, true));
@@ -74,6 +75,8 @@ async function init() {
   state.mediasBase = jm.medias || [];
   /* Catalogue de flux RSS vérifiés (v21) : propose les médias connus dans ➕ Ajouter */
   state.fluxCatalogue = (await chargerJSON('data/flux-rss.json', {})).catalogue || [];
+  /* Bulletin climat Copernicus (v22) : onglet Climat */
+  state.climat = await chargerJSON('data/climat.json', null);
   majMedias();
 
   state.feed = getStore('feed', { time: 0, articles: [] });

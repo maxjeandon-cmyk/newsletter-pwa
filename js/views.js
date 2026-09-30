@@ -10,6 +10,7 @@ const TABS = () => [
   { id: 'edition', nom: 'Édition du ' + nomJourEdition(), emoji: '📬' },
   { id: 'sources', nom: 'Sources', emoji: '📚' },
   { id: 'archives', nom: 'Archives', emoji: '🗄️' },
+  { id: 'climat', nom: 'Climat', emoji: '🌡️' },
   { id: 'articles', nom: 'Articles d’aujourd’hui', emoji: '🔥' },
   { id: 'medias', nom: 'Médias', emoji: '🎬' }
 ];
@@ -37,7 +38,7 @@ function generationTime() {
 }
 
 export function renderView() {
-  const vues = { edition: vueEdition, sources: vueSources, archives: vueArchives, articles: vueArticles, medias: vueMedias };
+  const vues = { edition: vueEdition, sources: vueSources, archives: vueArchives, climat: vueClimat, articles: vueArticles, medias: vueMedias };
   const vue = vues[state.activeTab] || vueEdition;
   if (!vues[state.activeTab]) state.activeTab = 'edition'; // état résiduel
   vue();
@@ -71,6 +72,29 @@ function vueSources() {
         '<td>' + esc(s.fiabilite) + '</td><td>' + esc(s.maj) + '</td></tr>';
     }).join('') +
     '</table>';
+}
+
+/* --- 🌡️ Climat (v22) : résumé + lien du dernier bulletin Copernicus (data/climat.json) --- */
+function vueClimat() {
+  const view = $('#view');
+  const c = state.climat;
+  if (!c || !c.titre) {
+    view.innerHTML = '<div class="empty">Bulletin climatique indisponible pour l’instant — il reviendra dès que data/climat.json répondra. 🌱</div>';
+    return;
+  }
+  view.innerHTML =
+    '<div class="summary-card"><h2>🌡️ ' + esc(c.titre) + '</h2>' +
+    '<p class="meta-count">' + esc(c.source || '') + (c.periode ? ' · ' + esc(c.periode) : '') + '</p>' +
+    (c.resume ? '<p>' + esc(c.resume) + '</p>' : '') + '</div>' +
+    (c.points?.length
+      ? '<div class="summary-card"><h2>Ce que dit le bulletin</h2><ul>' +
+        c.points.map(p => '<li>' + esc(p) + '</li>').join('') + '</ul></div>'
+      : '') +
+    '<div class="form-actions">' +
+    '<a class="filter-btn active" href="' + esc(c.lien || '#') + '" target="_blank" rel="noopener">📄 Lire le rapport Copernicus</a>' +
+    (c.lien_rapport ? '<a class="filter-btn" href="' + esc(c.lien_rapport) + '" target="_blank" rel="noopener">Tous les bulletins</a>' : '') +
+    '</div>' +
+    '<p class="hint">Mis à jour le ' + esc(c.maj || '?') + ' — le bulletin mensuel Copernicus paraît vers le 10 de chaque mois ; cet onglet est rafraîchi par la maintenance quotidienne.</p>';
 }
 
 /* --- 🗄️ Archives (v20) : éditions quotidiennes, récaps hebdo + archives thématiques --- */
