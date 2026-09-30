@@ -13,7 +13,8 @@ js/feeds.js         Couche réseau : RSS direct → relais rss2json (JSON) → r
                     dédup par URL, caches TTL 20 min (onglet Articles et onglet Médias)
 js/lecture.js       Agent de documentation numérique (v18) : livres et magazines via Open Library /
                     Internet Archive (ebook_access : public, borrowable, papier), revues scientifiques et
-                    de presse via Crossref (licence CC = accès libre, sinon alerte paywall)
+                    de presse via Crossref (licence CC = accès libre, sinon alerte paywall), revues en
+                    accès ouvert via DOAJ, patrimoine francophone numérisé via Gallica / BnF
 js/github.js        Publication des médias dans data/medias.json via l'API GitHub (jeton fine-grained
                     local, Contents Read/Write sur ce seul dépôt) — doux : { ok } ou { erreur }
 js/router.js        Routeur URL (v17) : l'onglet ouvert vit dans le hash (#medias/blast, #archives/droit…) —
