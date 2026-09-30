@@ -1,0 +1,52 @@
+{
+  "recommandations": [
+    {
+      "categorie": "🏛️ Classiques & patrimoine",
+      "titre": "Les grandes œuvres de la littérature française",
+      "suggestion": "Zola Victor Hugo",
+      "texte": "Romans fondateurs numérisés sur Gallica et Open Library — domaine public, lecture immédiate."
+    },
+    {
+      "categorie": "🏛️ Classiques & patrimoine",
+      "titre": "Philosophie des Lumières",
+      "suggestion": "Rousseau Voltaire Diderot",
+      "texte": "Les textes originaux des Lumières, en accès libre sur les bibliothèques numériques."
+    },
+    {
+      "categorie": "🔬 Science & recherche",
+      "titre": "Climat et environnement",
+      "suggestion": "climate change",
+      "texte": "Articles en accès ouvert (DOAJ, Europe PMC) et prépublications arXiv sur le climat."
+    },
+    {
+      "categorie": "🔬 Science & recherche",
+      "titre": "Intelligence artificielle",
+      "suggestion": "artificial intelligence",
+      "texte": "L'état de l'art sur arXiv — prépublications libres, résumés lisibles dans le lecteur."
+    },
+    {
+      "categorie": "🇫🇷 Recherche francophone",
+      "titre": "Sciences humaines en français",
+      "suggestion": "histoire France",
+      "texte": "Thèses et articles déposés sur HAL, l'archive ouverte française."
+    },
+    {
+      "categorie": "🇫🇷 Recherche francophone",
+      "titre": "Médecine et santé publique",
+      "suggestion": "santé publique",
+      "texte": "Résumés Europe PMC et dépôts HAL — la recherche médicale francophone."
+    },
+    {
+      "categorie": "📰 Presse & magazines",
+      "titre": "Revue de presse historique",
+      "suggestion": "Le Monde diplomatique",
+      "texte": "Numéros historiques numérisés sur Gallica — la presse comme matériau d'époque."
+    },
+    {
+      "categorie": "📰 Presse & magazines",
+      "titre": "Économie et société",
+      "suggestion": "économie inégalités",
+      "texte": "Revues d'économie en accès ouvert — le débat intellectuel, sans paywall."
+    }
+  ]
+}

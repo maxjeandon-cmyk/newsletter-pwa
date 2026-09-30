@@ -11,10 +11,10 @@ index.html          Coquille unique — tout le rendu se fait côté client en E
 js/core.js          État global (state), store localStorage (clés préfixées "nl."), échappement HTML (esc), dates
 js/feeds.js         Couche réseau : RSS direct → relais rss2json (JSON) → relais XML (allorigins/codetabs),
                     dédup par URL, caches TTL 20 min (onglet Articles et onglet Médias)
-js/lecture.js       Agent de documentation numérique (v18) : livres et magazines via Open Library /
-                    Internet Archive (ebook_access : public, borrowable, papier), revues scientifiques et
-                    de presse via Crossref (licence CC = accès libre, sinon alerte paywall), revues en
-                    accès ouvert via DOAJ, patrimoine francophone numérisé via Gallica / BnF
+js/lecture.js       Agent de documentation numérique (v19) : livres et magazines via Open Library /
+                    Internet Archive, patrimoine francophone via Gallica / BnF, revues via Crossref et
+                    DOAJ, prépublications via arXiv, archive ouverte française HAL, biomédecine Europe PMC —
+                    badge paywall, résumés dans le lecteur intégré, recommandations (data/lecture-reco.json)
 js/github.js        Publication des médias dans data/medias.json via l'API GitHub (jeton fine-grained
                     local, Contents Read/Write sur ce seul dépôt) — doux : { ok } ou { erreur }
 js/router.js        Routeur URL (v17) : l'onglet ouvert vit dans le hash (#medias/blast, #archives/droit…) —
@@ -27,7 +27,7 @@ js/views/archives.js 🗄️ Onglet Archives (sous-onglets Éditions / Droit / �
 js/views/climat.js  🌡️ Onglet Climat (dernier bulletin Copernicus, v22)
 js/views/articles.js 🔥 Onglet Articles d'aujourd'hui
 js/views/medias.js   🎬 Onglet Médias (sous-onglets, formulaire d'ajout, gestion, jeton)
-js/views/lecture.js 📖 Onglet Lecture : recherche de livres, magazines, revues — badge paywall
+js/views/lecture.js 📖 Onglet Lecture : recherche 7 sources, recommandations par catégories, lecteur intégré
 js/app.js           Bootstrap : wiring des boutons, chargement data/*.json, service worker
 data/chapters.json  Chapitres de l'onglet Articles (flux + mots-clés + fenêtre horaire)
 data/medias.json    Médias suivis dans l'onglet Médias (sous-onglets)
