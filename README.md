@@ -13,7 +13,8 @@ js/feeds.js         Couche réseau : RSS direct → relais rss2json (JSON) → r
                     dédup par URL, caches TTL 20 min (onglet Articles et onglet Médias)
 js/github.js        Publication des médias dans data/medias.json via l'API GitHub (jeton fine-grained
                     local, Contents Read/Write sur ce seul dépôt) — doux : { ok } ou { erreur }
-js/views.js         Rendu des 5 onglets : Édition, Sources, Archives, Articles, Médias
+js/views.js         Rendu des 5 onglets : Édition, Sources, Archives (sous-onglets Éditions / Droit /
+                    Économie, v20), Articles, Médias
 js/app.js           Bootstrap : wiring des boutons, chargement data/*.json, service worker
 data/chapters.json  Chapitres de l'onglet Articles (flux + mots-clés + fenêtre horaire)
 data/medias.json    Médias suivis dans l'onglet Médias (sous-onglets)
@@ -58,12 +59,15 @@ Deux façons complémentaires :
 ## Règles de déploiement
 
 1. **Chaque livraison de code** (js/, sw.js, index.html, styles.css) doit incrémenter `CACHE` dans `sw.js` (v16 → v17…) — sinon les clients gardent l'ancienne version en cache.
-2. **Le contrat `editions/` est figé** : la génération nocturne pousse `editions/YYYY-MM-DD.html` + `.json`, `editions/latest.json` et `editions/semaines/` — ne jamais renommer ni supprimer l'historique.
+2. **Le contrat `editions/` est figé** : la génération nocturne pousse `editions/YYYY-MM-DD.html` + `.json`, `editions/latest.json`, `editions/semaines/` et `editions/archives/` (chapitres Droit & Économie archivés chaque édition) — ne jamais renommer ni supprimer l'historique.
 3. `data/` est servi network-first : une modification de config y est visible immédiatement, sans bump de cache.
 4. Ne pas pousser de fichier non-ASCII de plus de ~32 Ko via l'outillage d'automatisation (risque de double-encodage au transport) — pour l'HTML d'édition, publier en entités numériques.
 
 ## Outils repo
 
-- `tools/validate-edition.js <json> <html>` : 25 contrôles sur une édition ;
+- `tools/validate-edition.js <json> <html>` : relecture d'une édition (25 contrôles, 27 pour les éditions récentes ; date-aware : 11 chapitres avant le 29/09/2026, 13 pour le 29/09, 14 avec le chapitre Spatial à partir du 30/09) ;
+- `tools/build-edition-json.js <html> <date>` : génère le JSON d'édition depuis le HTML ;
+- `tools/build-archives.js <html> <date> "<titre-droit>" "<titre-eco>"` : archive les chapitres Droit & Économie de l'édition dans `editions/archives/` + index ;
+- `tools/validate-latest.js` : valide les 3 dernières éditions (utilisé par la CI) ;
 - `tools/check-site.js` : état des flux et fichiers ;
 - CI `.github/workflows/validate.yml` : validation automatique à chaque push.

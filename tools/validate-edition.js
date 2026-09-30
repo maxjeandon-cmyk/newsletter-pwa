@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 /* validate-edition.js — Relecture complète et systématique d'une édition de la newsletter.
- * Implémente les règles de relecture du format (format.md, règle du 28/09/2026, étendue le 30/09/2026).
+ * Implémente les règles de relecture du format (format.md, règle du 28/09/2026, étendues le 30/09/2026).
  *
- * Date-aware depuis le 30/09/2026 :
- *   - éditions datées du 29/09/2026 ou après : format à 13 chapitres
- *     (economie-pour-les-nuls et droit-pour-les-nuls après intelligence-artificielle),
- *     section « Hors des chapitres » obligatoire (10 à 12 infos), h2 >= 17 ;
+ * Date-aware (30/09/2026, trois formats cohabitent) :
+ *   - éditions datées du 30/09/2026 ou après : 14 chapitres (le chapitre Spatial est inséré
+ *     juste après l'IA), section « Hors des chapitres » obligatoire (10 à 12 infos), h2 >= 18 ;
+ *   - édition du 29/09/2026 : format à 13 chapitres (+ economie-pour-les-nuls, droit-pour-les-nuls),
+ *     section « Hors des chapitres » obligatoire, h2 >= 17 ;
  *   - éditions du 27-28/09/2026 : format historique à 11 chapitres, h2 >= 14.
  *
  * Usage :
@@ -18,9 +19,29 @@
 
 const fs = require('fs');
 
-// Format à 13 chapitres (règle du 30/09/2026, première édition : 29/09/2026)
+// Format à 14 chapitres (règle du 30/09/2026 au soir, première édition : 30/09/2026)
+const FORMAT_14_A_PARTIR_DE = '2026-09-30';
+// Format à 13 chapitres (règle du 30/09/2026 au matin, seule édition concernée : 29/09/2026)
 const FORMAT_13_A_PARTIR_DE = '2026-09-29';
 
+const ORDRE_CHAPITRES_14 = [
+  'intelligence-artificielle',
+  'spatial',
+  'economie-pour-les-nuls',
+  'droit-pour-les-nuls',
+  'jeu-video-pop-culture',
+  'culture',
+  'sciences',
+  'climat',
+  'politique-francaise',
+  'etats-unis',
+  'chine',
+  'russie',
+  'geopolitique',
+  'grande-info-semaine',
+];
+
+// Format à 13 chapitres (29/09/2026)
 const ORDRE_CHAPITRES_13 = [
   'intelligence-artificielle',
   'economie-pour-les-nuls',
@@ -52,13 +73,24 @@ const ORDRE_CHAPITRES_11 = [
   'grande-info-semaine',
 ];
 
+function formatDe(date) {
+  const d = String(date || '');
+  if (d >= FORMAT_14_A_PARTIR_DE) return 14;
+  if (d >= FORMAT_13_A_PARTIR_DE) return 13;
+  return 11;
+}
+
 const results = [];
 function check(bloc, nom, ok, detail) {
   results.push({ bloc, nom, ok: !!ok, detail: detail || '' });
 }
 
-function validateHtml(html, format13) {
+function validateHtml(html, fmt) {
   const cnt = (s) => html.split(s).length - 1;
+  const detailFmt = fmt === 14
+    ? 'résumé + hors chapitres + 14 chapitres + notes + questions'
+    : fmt === 13 ? 'résumé + hors chapitres + 13 chapitres + notes + questions'
+    : 'résumé + 11 chapitres + notes + questions';
   check('HTML', '<style> équilibré', cnt('<style>') === 1 && cnt('</style>') === 1,
     `ouvrant(s)=${cnt('<style>')} fermant(s)=${cnt('</style>')}`);
   check('HTML', '<head> équilibré', cnt('<head>') === 1 && cnt('</head>') === 1);
@@ -70,18 +102,16 @@ function validateHtml(html, format13) {
   check('HTML', 'section Notes de sources', html.includes('Notes de sources'));
   check('HTML', 'section Questions ouvertes', html.includes('Questions ouvertes'));
   const nbH2 = cnt('<h2>');
-  const minH2 = format13 ? 17 : 14;
-  check('HTML', `sections h2 >= ${minH2} (${format13 ? 'résumé + hors chapitres + 13 chapitres + notes + questions' : 'résumé + 11 chapitres + notes + questions'})`,
-    nbH2 >= minH2, `trouvé(s)=${nbH2}`);
-  if (format13) {
+  const minH2 = fmt === 14 ? 18 : fmt === 13 ? 17 : 14;
+  check('HTML', `sections h2 >= ${minH2} (${detailFmt})`, nbH2 >= minH2, `trouvé(s)=${nbH2}`);
+  if (fmt >= 13) {
     check('HTML', 'section « Hors des chapitres »', html.includes('Hors des chapitres'));
   }
 }
 
 function validateJson(j) {
-  const format13 = String(j.date || '') >= FORMAT_13_A_PARTIR_DE;
-  const nbChapitres = format13 ? 13 : 11;
-  const ordre = format13 ? ORDRE_CHAPITRES_13 : ORDRE_CHAPITRES_11;
+  const fmt = formatDe(j.date);
+  const ordre = fmt === 14 ? ORDRE_CHAPITRES_14 : fmt === 13 ? ORDRE_CHAPITRES_13 : ORDRE_CHAPITRES_11;
 
   check('JSON', 'champ date (YYYY-MM-DD)', /^\d{4}-\d{2}-\d{2}$/.test(j.date || ''), j.date || '');
   check('JSON', 'champ genere_le (ISO)', typeof j.genere_le === 'string' && !isNaN(Date.parse(j.genere_le)), j.genere_le || '');
@@ -92,14 +122,14 @@ function validateJson(j) {
   check('JSON', 'points sans « : : » doublé', points.every((p) => !/: {2,}:|::/.test(String(p).replace(/\s/g, '')) && !p.includes(' : :')));
 
   const chaps = j.chapitres || [];
-  check('JSON', `${nbChapitres} chapitres`, chaps.length === nbChapitres, `chapitres=${chaps.length}`);
+  check('JSON', `${fmt} chapitres`, chaps.length === fmt, `chapitres=${chaps.length}`);
   check('JSON', 'ordre des chapitres imposé',
-    chaps.length === nbChapitres && ordre.every((id, i) => chaps[i] && chaps[i].id === id),
+    chaps.length === fmt && ordre.every((id, i) => chaps[i] && chaps[i].id === id),
     chaps.map((c) => c.id).join(', '));
   check('JSON', 'chaque chapitre a id/emoji/nom/resume',
     chaps.every((c) => c && c.id && c.emoji && c.nom && typeof c.resume === 'string' && c.resume.length > 30));
 
-  if (format13) {
+  if (fmt >= 13) {
     const hors = j.hors_chapitres;
     check('JSON', 'hors_chapitres (10 à 12 infos hors chapitres)',
       Array.isArray(hors) && hors.length >= 10 && hors.length <= 12 && hors.every((h) => typeof h === 'string' && h.trim().length > 10),
@@ -111,7 +141,7 @@ function validateJson(j) {
   check('JSON', 'fiabilités entre 1 et 5', sources.every((s) => Number.isInteger(s.fiabilite) && s.fiabilite >= 1 && s.fiabilite <= 5));
   check('JSON', 'chaque source a label/fiabilite/maj', sources.every((s) => s.label && s.maj && s.fiabilite));
   check('JSON', 'dates maj au format JJ/MM/AAAA', sources.every((s) => /^\d{2}\/\d{2}\/\d{4}$/.test(s.maj || '')));
-  return format13;
+  return fmt;
 }
 
 function main() {
@@ -128,8 +158,8 @@ function main() {
   } catch (e) {
     check('JSON', 'JSON.parse valide', false, String(e).slice(0, 120));
   }
-  let format13 = String((j && j.date) || '') >= FORMAT_13_A_PARTIR_DE;
-  if (j) format13 = validateJson(j) || format13;
+  let fmt = formatDe(j && j.date);
+  if (j) fmt = validateJson(j) || fmt;
 
   const htmlCandidate = htmlPath || (j && j.html ? j.html.replace(/^editions\//, 'editions/') : null);
   if (htmlCandidate) {
@@ -138,7 +168,7 @@ function main() {
       // (contournement de la corruption de transport des charges non-ASCII > ~32 Ko, règle du 29/09/2026).
       const html = fs.readFileSync(htmlCandidate, 'utf8').replace(/&#(\d+);/g, (m, n) => String.fromCodePoint(parseInt(n, 10)));
       check('HTML', 'fichier lisible', true);
-      validateHtml(html, format13);
+      validateHtml(html, fmt);
       if (j) check('Cohérence', 'date dans le HTML', html.includes(fmtFR(j.date)),
         `recherche de « ${fmtFR(j.date)} »`);
     } catch (e) {
@@ -155,7 +185,7 @@ function main() {
     for (const r of rs) console.log(`  ${r.ok ? '✅' : '❌'} ${r.nom}${r.detail ? ' — ' + r.detail : ''}`);
   }
   const echecs = results.filter((r) => !r.ok);
-  console.log(`\n${results.length - echecs.length}/${results.length} contrôles passés (format ${format13 ? '13 chapitres' : 'historique 11 chapitres'})`);
+  console.log(`\n${results.length - echecs.length}/${results.length} contrôles passés (format ${fmt} chapitres)`);
   if (echecs.length) {
     console.log('ÉCHECS BLOQUANTS — ne pas valider la publication.');
     process.exit(1);

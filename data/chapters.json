@@ -28,6 +28,46 @@
     "exclusion": []
   },
   {
+    "id": "spatial",
+    "emoji": "🚀",
+    "nom": "Spatial",
+    "flux": [
+      "https://www.nasa.gov/rss/dyn/breaking_news.rss",
+      "https://spacenews.com/feed/",
+      "https://spaceflightnow.com/feed/"
+    ],
+    "motsCles": [
+      "spatial",
+      "nasa",
+      "esa",
+      "fusée",
+      "fusées",
+      "spacex",
+      "station spatiale",
+      "artemis",
+      "lune",
+      "mars",
+      "téléscope",
+      "télescope",
+      "james webb",
+      "jwst",
+      "satellite",
+      "ariane",
+      "astronaute",
+      "spationaute",
+      "orbite",
+      "cosmodrome",
+      "isro",
+      "blue origin",
+      "rover",
+      "sonde",
+      "astéroïde",
+      "comète",
+      "espace"
+    ],
+    "exclusion": []
+  },
+  {
     "id": "jeu-video-pop-culture",
     "emoji": "🎮",
     "nom": "Jeu vidéo & pop culture",

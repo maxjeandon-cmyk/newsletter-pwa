@@ -20,6 +20,11 @@ async function loadEdition() {
     if (state.edition) $('#edition-date').textContent = '· ' + fmtDate(state.edition.date);
   } else { state.archiveIdx = []; state.edition = null; }
   state.weeksIdx = await chargerJSON('editions/semaines/index.json', null);
+  /* Archives thématiques (v20) : chapitres Droit & Économie conservés édition après édition */
+  state.archivesThema = {
+    droit: await chargerJSON('editions/archives/droit.json', null),
+    economie: await chargerJSON('editions/archives/economie.json', null)
+  };
 }
 
 async function init() {

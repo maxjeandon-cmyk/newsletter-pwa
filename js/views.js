@@ -73,9 +73,28 @@ function vueSources() {
     '</table>';
 }
 
-/* --- 🗄️ Archives : vue mensuelle (récaps hebdo + éditions quotidiennes) --- */
+/* --- 🗄️ Archives (v20) : éditions quotidiennes, récaps hebdo + archives thématiques --- */
 function openArchive(html) {
   state.archiveSel = html; renderView(); window.scrollTo(0, 0);
+}
+
+/* Sous-onglets : éditions complètes, chapitre Droit du jour, chapitre Économie du jour.
+ * Les chapitres thématiques sont archivés à chaque édition (editions/archives/) pour
+ * pouvoir y revenir — l'index porte des titres datés et liés au contenu. */
+const SOUS_ONGLETS_ARCHIVES = () => [
+  { id: 'editions', nom: '📰 Éditions' },
+  { id: 'droit', nom: '⚖️ Droit' },
+  { id: 'economie', nom: '💰 Économie' }
+];
+
+function sousOngletsArchives(sub) {
+  return '<div class="subtabs">' + SOUS_ONGLETS_ARCHIVES().map(x =>
+    '<button class="subtab' + (x.id === sub ? ' active' : '') + '" data-s="' + x.id + '">' + esc(x.nom) + '</button>').join('') + '</div>';
+}
+
+function wireSousOngletsArchives() {
+  [...document.querySelectorAll('.subtab[data-s]')].forEach(b =>
+    b.onclick = () => { state.archiveSub = b.dataset.s; renderView(); });
 }
 
 function vueArchives() {
@@ -87,8 +106,34 @@ function vueArchives() {
     $('#btn-back-archives').onclick = () => { state.archiveSel = null; renderView(); window.scrollTo(0, 0); };
     return;
   }
+  const sub = SOUS_ONGLETS_ARCHIVES().some(x => x.id === state.archiveSub) ? state.archiveSub : 'editions';
+
+  /* Sous-onglet thématique : le chapitre Droit (ou Économie) de chaque édition, archivé */
+  if (sub !== 'editions') {
+    const estDroit = sub === 'droit';
+    const meta = estDroit
+      ? { emoji: '⚖️', nom: 'Droit pour les nuls', chapitre: 'de droit' }
+      : { emoji: '💰', nom: 'Économie pour les nuls', chapitre: 'd\u2019économie' };
+    const entrees = (state.archivesThema?.[sub]?.entrees || []).slice().sort((a, b) => b.date.localeCompare(a.date));
+    view.innerHTML =
+      '<div class="summary-card"><h2>🗄️ Archives — ' + meta.emoji + ' ' + esc(meta.nom) + '</h2>' +
+      '<p class="meta-count">Le chapitre ' + meta.chapitre + ' de chaque édition, conservé jour après jour pour pouvoir y revenir.</p>' +
+      sousOngletsArchives(sub) + '</div>' +
+      (entrees.length ? entrees.map(e =>
+        '<div class="archive-item thema" data-h="' + esc(e.html) + '">' +
+        '<span class="date">' + esc(fmtDate(e.date)) + '</span>' +
+        '<span class="titre">' + esc(e.titre) + '</span>' +
+        '<span class="open">Ouvrir →</span></div>').join('')
+        : '<div class="empty">Pas encore de chapitre ' + meta.chapitre + ' archivé — le premier arrive avec la prochaine édition. 🌱</div>');
+    wireSousOngletsArchives();
+    [...document.querySelectorAll('.archive-item.thema')].forEach(el =>
+      el.onclick = () => openArchive(el.dataset.h));
+    return;
+  }
+
   if (!state.archiveIdx?.length) {
-    view.innerHTML = '<div class="empty">Aucune archive disponible pour l’instant — la première édition date d’aujourd’hui. Les jours et semaines passés s’y accumuleront tout seuls. 🌱</div>';
+    view.innerHTML = '<div class="empty">Aucune archive disponible pour l’instant — la première édition date d’aujourd’hui. Les jours et semaines passés s’y accumuleront tout seuls. 🌱</div>' + sousOngletsArchives('editions');
+    wireSousOngletsArchives();
     return;
   }
 
@@ -110,7 +155,7 @@ function vueArchives() {
     '<p class="meta-count">' + monthEds.length + ' édition(s) quotidienne(s) · ' + groups.length + ' semaine(s) — historique intégral.</p>' +
     '<select id="sel-month" class="month-select">' +
     months.map(m => '<option value="' + m + '"' + (m === cur ? ' selected' : '') + '>' + esc(fmtMonth(m)) + '</option>').join('') +
-    '</select></div>' +
+    '</select>' + sousOngletsArchives('editions') + '</div>' +
     groups.map(g => {
       const w = weeks.find(x => x.semaine === g.k);
       return (w ? '<div class="archive-item week" data-w="' + g.k + '">' +
@@ -123,6 +168,7 @@ function vueArchives() {
     }).join('');
 
   $('#sel-month').onchange = ev => { state.archiveMonth = ev.target.value; renderView(); };
+  wireSousOngletsArchives();
   groups.forEach(g => {
     const w = weeks.find(x => x.semaine === g.k);
     if (w) {
