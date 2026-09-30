@@ -4,7 +4,18 @@
       "id": "blast",
       "nom": "Blast",
       "emoji": "🟥",
-      "flux": ["https://api.blast-info.fr/rss_articles.xml"],
+      "flux": [
+        "https://api.blast-info.fr/rss_articles.xml"
+      ],
+      "fenetreHeures": 24
+    },
+    {
+      "id": "le-monde-international",
+      "nom": "Le Monde — International",
+      "emoji": "🌍",
+      "flux": [
+        "https://www.lemonde.fr/international/rss_full.xml"
+      ],
       "fenetreHeures": 24
     }
   ]
