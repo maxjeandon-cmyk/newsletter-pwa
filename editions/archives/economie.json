@@ -2,8 +2,13 @@
   "domaine": "economie",
   "entrees": [
     {
+      "date": "2026-09-30",
+      "titre": "Inflation qui repart et taux records c\u00f4t\u00e9 monde, budget 2027 sous pression c\u00f4t\u00e9 France",
+      "html": "editions/archives/economie/2026-09-30.html"
+    },
+    {
       "date": "2026-09-29",
-      "titre": "Pétrole et taux côté monde, 340 milliards d'emprunt côté France",
+      "titre": "P\u00e9trole et taux c\u00f4t\u00e9 monde, 340 milliards d'emprunt c\u00f4t\u00e9 France",
       "html": "editions/archives/economie/2026-09-29.html"
     }
   ]

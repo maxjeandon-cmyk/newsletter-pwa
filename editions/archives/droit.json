@@ -2,8 +2,13 @@
   "domaine": "droit",
   "entrees": [
     {
+      "date": "2026-09-30",
+      "titre": "La garantie catastrophes naturelles : quand l'eau monte",
+      "html": "editions/archives/droit/2026-09-30.html"
+    },
+    {
       "date": "2026-09-29",
-      "titre": "Le droit de rétractation : 14 jours pour changer d'avis",
+      "titre": "Le droit de r\u00e9tractation : 14 jours pour changer d'avis",
       "html": "editions/archives/droit/2026-09-29.html"
     }
   ]
