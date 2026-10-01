@@ -169,7 +169,8 @@ function blocVersion(ouverture) {
       '<li><button class="reco-btn" data-vers="' + esc(v.origine + ':' + v.id) + '">' +
       '<strong>' + esc(v.titre) + '</strong>' +
       '<span>' + (v.acces === 'ouvert' ? '✓ libre' : '⤴ emprunt') +
-      ' · ' + esc(v.format || 'ebook') + ' · ' + esc(v.origine === 'gutenberg' ? 'Gutenberg #' + v.id : v.id) + '</span></button></li>').join('') +
+      ' · ' + esc(v.format || 'ebook') + (v.fr ? ' · 🇫🇷 français' : '') +
+      ' · ' + esc(v.origine === 'gutenberg' ? 'Gutenberg #' + v.id : v.id) + '</span></button></li>').join('') +
     '</ul></div>';
 }
 

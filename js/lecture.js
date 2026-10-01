@@ -213,13 +213,15 @@ async function editionsNumeriques(r) {
       origine: 'gutenberg', id: String(b.id),
       titre: b.title || r.titre,
       acces: 'ouvert', format: 'ebook natif',
+      fr: (b.languages || []).includes('fr'),
       texte, epub: b.formats?.['application/epub+zip'] || null,
       lien: 'https://www.gutenberg.org/ebooks/' + b.id
     });
   }
-  const j = await getJson('https://openlibrary.org/search.json?limit=16&fields=key,title,ia,ebook_access&q=' +
+  const j = await getJson('https://openlibrary.org/search.json?limit=16&fields=key,title,ia,ebook_access,language&q=' +
     encodeURIComponent(q));
   for (const d of j?.docs || []) {
+    const langues = Array.isArray(d.language) ? d.language : [d.language].filter(Boolean);
     for (const ocaid of d.ia || []) {
       if (vus.has(ocaid)) continue;
       vus.add(ocaid);
@@ -229,11 +231,15 @@ async function editionsNumeriques(r) {
         acces: d.ebook_access === 'public' ? 'ouvert'
           : d.ebook_access === 'borrowable' ? 'emprunt' : null,
         format: 'ebook (OCR)',
+        fr: langues.includes('fre') || langues.includes('fra') || langues.includes('fr'),
         lien: 'https://archive.org/details/' + ocaid
       });
     }
   }
-  return editions.filter(v => v.acces);
+  /* Priorité francophone : les éditions en français passent en tête,
+   * l'ordre relatif est conservé (tri stable) et rien n'est perdu. */
+  return editions.filter(v => v.acces)
+    .sort((a, b) => (b.fr ? 1 : 0) - (a.fr ? 1 : 0));
 }
 
 /* Texte d'un ebook : natif Gutenberg (propre), sinon OCR IA (variable). */
