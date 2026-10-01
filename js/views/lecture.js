@@ -163,13 +163,13 @@ function blocVersion(ouverture) {
   const versions = ouverture.versions || [];
   if (versions.length < 2) return '';
   return '<div class="summary-card"><h2>🔀 Autres versions</h2>' +
-    '<p class="meta-count">Autres éditions numérisées — si la qualité OCR déçoit, change de version.</p>' +
+    '<p class="meta-count">Autres éditions numériques — si la qualité déçoit (OCR, mise en page), change de version.</p>' +
     '<ul class="reco-list">' +
     versions.map(v =>
-      '<li><button class="reco-btn" data-vers="' + esc(v.ocaid) + '">' +
+      '<li><button class="reco-btn" data-vers="' + esc(v.origine + ':' + v.id) + '">' +
       '<strong>' + esc(v.titre) + '</strong>' +
-      '<span>' + (v.acces === 'ouvert' ? '✓ accès libre' : '⤴ emprunt gratuit') +
-      ' · ' + esc(v.ocaid) + '</span></button></li>').join('') +
+      '<span>' + (v.acces === 'ouvert' ? '✓ libre' : '⤴ emprunt') +
+      ' · ' + esc(v.format || 'ebook') + ' · ' + esc(v.origine === 'gutenberg' ? 'Gutenberg #' + v.id : v.id) + '</span></button></li>').join('') +
     '</ul></div>';
 }
 
@@ -184,13 +184,18 @@ function vueOuverture() {
     view.innerHTML =
       '<button class="back-btn" id="btn-back-lecture">← Retour aux résultats</button>' +
       '<div class="summary-card"><h2>📖 ' + esc(o.titre || o.base?.titre || '') + '</h2>' +
-      '<p class="meta-count">Édition : ' + esc(o.ocaid) + ' · domaine public · texte OCR (qualité variable selon l\u2019édition)</p>' +
+      '<p class="meta-count">Édition : ' + esc(o.edition) + ' · ' +
+      (o.natif ? 'ebook natif (texte propre)' : 'OCR (qualité variable)') + '</p>' +
       '<div class="lec-nav">' +
       '<button class="filter-btn" id="lec-prev"' + (o.page === 0 ? ' disabled' : '') + '>← Précédent</button>' +
       '<span class="meta-count">Page ' + (o.page + 1) + ' / ' + o.pages.length + '</span>' +
       '<button class="filter-btn" id="lec-next"' + (o.page >= o.pages.length - 1 ? ' disabled' : '') + '>Suivant →</button>' +
       '</div></div>' +
       '<div class="summary-card lecteur-corps"><p>' + esc(o.pages[o.page]) + '</p></div>' +
+      '<div class="form-actions">' +
+      (o.epub ? '<a class="filter-btn" href="' + esc(urlSure(o.epub)) + '" target="_blank" rel="noopener" download>⤓ Télécharger l\u2019EPUB</a>' : '') +
+      '<a class="filter-btn" href="' + esc(urlSure(o.lien)) + '" target="_blank" rel="noopener">Fiche complète ↗</a>' +
+      '</div>' +
       blocVersion(o);
   } else if (o.type === 'emprunt') {
     const c = o.conditions;
@@ -203,6 +208,7 @@ function vueOuverture() {
       '<p>✓ Cette édition est <strong>prêtable gratuitement</strong> via Internet Archive (contrôle : un lecteur à la fois, comme une vraie bibliothèque).</p>' +
       '<p>· Statut de prêt : <strong>' + esc(c.statut || 'prêtable') + '</strong></p>' +
       '<p>· Collections : ' + esc(c.collections.join(', ')) + '</p>' +
+      (c.formats?.length ? '<p>· Formats numériques : ' + esc(c.formats.join(', ')) + '</p>' : '') +
       '<p>· Durée usuelle : 1 heure (lecture en ligne) ou 14 jours (emprunt EPUB/PDF, selon l\u2019édition).</p>' +
       '<p>· Un <strong>compte Internet Archive gratuit</strong> est nécessaire pour emprunter.</p>' +
       '</div>' +
@@ -233,9 +239,11 @@ function vueOuverture() {
   if (next) next.onclick = () => { if (o.page < o.pages.length - 1) { o.page++; renderView(); window.scrollTo(0, 0); } };
   [...document.querySelectorAll('[data-vers]')].forEach(b =>
     b.onclick = () => {
+      const v = (o.versions || []).find(x => x.origine + ':' + x.id === b.dataset.vers);
+      if (!v) return;
       o.etat = 'encours';
       renderView();
-      ouvrirVersion(b.dataset.vers, o.versions)
+      ouvrirVersion(v, o.versions)
         .then(res => {
           if (res.type === 'texte') { res.pages = paginer(res.texte); res.page = 0; }
           state.lectureOuverture = { ...res, etat: res.type, base: o.base };

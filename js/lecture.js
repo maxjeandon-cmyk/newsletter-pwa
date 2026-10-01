@@ -177,66 +177,106 @@ export async function chercherEpmc(q) {
   })).filter(x => x.titre);
 }
 
-/* --- Agent d'ouverture (v20) : « Ouvrir » lance un deep-search des versions
- *     numériques de l'ouvrage — éditions Internet Archive (via Open Library),
- *     priorité aux libres (domaine public, texte intégral téléchargeable),
+/* --- Agent d'ouverture (v21) : « Ouvrir » cherche l'OUVRAGE NUMÉRIQUE (ebook)
+ *     de l'œuvre — natif de préférence (Project Gutenberg : EPUB + texte plein,
+ *     qualité native, pas d'OCR), puis les formats numériques d'Internet Archive,
  *     arrêt au premier ouvrage pertinent ET disponible trouvé.
- *     Livre emprunté : pas de texte (401), on renvoie les conditions d'emprunt
- *     trouvées dans les métadonnées IA (message de confirmation).
- *     Un changeur de version liste les autres éditions numérisées. --- */
+ *     Livre sous droits : l'agent renvoie les conditions d'emprunt
+ *     (deep-search métadonnées IA : EPUB chiffré = prêtable).
+ *     Un changeur de version liste les autres éditions numériques. --- */
 
-/* Lister les éditions numérisées d'une œuvre, avec leur accès : les « public »
- * d'abord (texte intégral), puis les « borrowable ». Renvoie [] si rien. */
+/* Gutendex (catalogue Project Gutenberg) : ebooks natifs libres.
+ * Parfois lent — deux essais, et on n'insiste pas. */
+async function gutendex(url) {
+  for (let i = 0; i < 2; i++) {
+    const j = await getJson(url, 14000);
+    if (j) return j;
+  }
+  return null;
+}
+
+/* Lister les éditions NUMÉRIQUES (ebooks) d'une œuvre :
+ * 1. ebooks natifs Gutenberg (texte plein + EPUB) — libres, qualité native ;
+ * 2. éditions Internet Archive (via Open Library) avec formats numériques. */
 async function editionsNumeriques(r) {
   const q = [r.titre].concat(r.auteurs || []).filter(Boolean).join(' ');
-  const j = await getJson('https://openlibrary.org/search.json?limit=16&fields=key,title,ia,ebook_access,edition_count&q=' +
-    encodeURIComponent(q));
-  const vues = [];
+  const editions = [];
   const vus = new Set();
+  const g = await gutendex('https://gutendex.com/books?search=' + encodeURIComponent(q));
+  for (const b of g?.results || []) {
+    const texte = b.formats?.['text/plain; charset=utf-8'] || b.formats?.['text/plain; charset=us-ascii'];
+    if (!texte) continue;
+    const cle = 'gut:' + b.id;
+    if (vus.has(cle)) continue;
+    vus.add(cle);
+    editions.push({
+      origine: 'gutenberg', id: String(b.id),
+      titre: b.title || r.titre,
+      acces: 'ouvert', format: 'ebook natif',
+      texte, epub: b.formats?.['application/epub+zip'] || null,
+      lien: 'https://www.gutenberg.org/ebooks/' + b.id
+    });
+  }
+  const j = await getJson('https://openlibrary.org/search.json?limit=16&fields=key,title,ia,ebook_access&q=' +
+    encodeURIComponent(q));
   for (const d of j?.docs || []) {
     for (const ocaid of d.ia || []) {
       if (vus.has(ocaid)) continue;
       vus.add(ocaid);
-      vues.push({
-        ocaid,
+      editions.push({
+        origine: 'ia', id: ocaid,
         titre: d.title || r.titre,
         acces: d.ebook_access === 'public' ? 'ouvert'
-          : d.ebook_access === 'borrowable' ? 'emprunt' : null
+          : d.ebook_access === 'borrowable' ? 'emprunt' : null,
+        format: 'ebook (OCR)',
+        lien: 'https://archive.org/details/' + ocaid
       });
     }
   }
-  return vues.filter(v => v.acces)
-    .sort((a, b) => (a.acces === 'ouvert' ? -1 : 1) - (b.acces === 'ouvert' ? -1 : 1));
+  return editions.filter(v => v.acces);
 }
 
-/* Texte intégral d'une édition IA libre (OCR djvu.txt) — segmenté en pages
- * lisibles (~30 000 caractères), car un livre entier fait 0,5–1 Mo. */
-async function texteIntegal(ocaid) {
-  const txt = await getText('https://archive.org/download/' + ocaid + '/' + ocaid + '_djvu.txt', 20000);
-  if (!txt || txt.length < 500 || /<html|401 Authorization/i.test(txt.slice(0, 400))) return null;
-  return txt;
+/* Texte d'un ebook : natif Gutenberg (propre), sinon OCR IA (variable). */
+async function texteEbook(e) {
+  if (e.origine === 'gutenberg' && e.texte) {
+    const txt = await getText(e.texte, 20000);
+    if (txt && txt.length > 1000) {
+      const debut = txt.search(/\*\*\* ?START OF (THIS|THE) .*?\*\*\*/i);
+      const corps = debut > 0 ? txt.slice(debut).replace(/^\*\*\*.*?\*\*\*/s, '') : txt;
+      return { texte: corps, natif: true };
+    }
+    return null;
+  }
+  if (e.origine === 'ia') {
+    const txt = await getText('https://archive.org/download/' + e.id + '/' + e.id + '_djvu.txt', 20000);
+    if (!txt || txt.length < 500 || /<html|401 Authorization/i.test(txt.slice(0, 400))) return null;
+    return { texte: txt, natif: false };
+  }
+  return null;
 }
 
-/* Conditions d'emprunt d'une édition borrowable : deep-search dans les
- * métadonnées IA — statut de prêt, collections, durée. */
-async function conditionsEmprunt(ocaid) {
-  const m = await getJson('https://archive.org/metadata/' + ocaid);
+/* Conditions d'emprunt d'une édition IA : deep-search métadonnées —
+ * EPUB chiffré (LCP) ou PDF protégé = prêtable ; collections de prêt. */
+async function conditionsEmprunt(e) {
+  const m = await getJson('https://archive.org/metadata/' + e.id);
   const meta = m?.metadata || {};
+  const fichiers = (m?.files || []).map(f => f.name);
+  const epubChiffre = fichiers.some(f => /_lcp\.epub$|_encrypted\.pdf$/i.test(f));
   const colls = Array.isArray(meta.collection) ? meta.collection : [meta.collection].filter(Boolean);
   return {
-    ocaid,
-    pretable: colls.includes('inlibrary') || colls.includes('internetarchivebooks') || !!meta.lending,
+    id: e.id,
+    pretable: epubChiffre || colls.includes('inlibrary') || colls.includes('internetarchivebooks') || !!meta.lending,
+    formats: fichiers.filter(f => /\.(epub|pdf)$/i.test(f)).slice(0, 4),
     statut: meta.lending || null,
     collections: colls,
-    lien: 'https://archive.org/details/' + ocaid
+    lien: 'https://archive.org/details/' + e.id
   };
 }
 
-/* L'agent : ouvrir un résultat de recherche dans le lecteur intégré.
+/* L'agent : ouvrir un résultat dans le lecteur — ebook natif prioritaire.
  * Renvoie doucement : { type: 'texte'|'emprunt'|'indisponible', ... } */
 export async function ouvrirOuvrage(r) {
-  /* Gallica / BnF : lien ark directement lisible ? On propose le lecteur du site
-   * Gallica (pas de texte brut fiable) — on ne bloque pas, l'utilisateur y va. */
+  if (!r || !r.titre) return { type: 'indisponible', raison: 'numerique', lien: '', titre: '' };
   if (r.source === 'Gallica (BnF)') {
     return { type: 'indisponible', raison: 'gallica', lien: r.lien, titre: r.titre };
   }
@@ -244,50 +284,39 @@ export async function ouvrirOuvrage(r) {
   if (!editions.length) {
     return { type: 'indisponible', raison: 'numerique', lien: r.lien, titre: r.titre };
   }
-  const versions = editions.slice(0, 12);
-  /* Deep-search : première version libre avec du texte intégral disponible —
-   * on s'arrête au premier trouvé (ordre : libres d'abord). */
+  const versions = editions.slice(0, 14);
+  /* Deep-search : premier ebook pertinent et disponible — les natifs Gutenberg
+   * d'abord (texte propre), puis les IA publics. Arrêt au premier trouvé. */
   for (const v of versions) {
     if (v.acces !== 'ouvert') continue;
-    const texte = await texteIntegal(v.ocaid);
-    if (texte) {
+    const res = await texteEbook(v);
+    if (res) {
       return {
-        type: 'texte',
-        titre: v.titre,
-        ocaid: v.ocaid,
-        texte,
-        versions,
-        lien: 'https://archive.org/details/' + v.ocaid
+        type: 'texte', titre: v.titre, edition: v.id, natif: res.natif,
+        texte: res.texte, versions, epub: v.epub || null,
+        lien: v.lien
       };
     }
   }
-  /* Aucune version libre : première version empruntable — conditions d'emprunt
-   * (message de confirmation), arrêt au premier pertinent et disponible. */
+  /* Aucun ebook libre : premier prêtable — conditions d'emprunt (confirmation). */
   for (const v of versions) {
     if (v.acces !== 'emprunt') continue;
-    const cond = await conditionsEmprunt(v.ocaid);
+    const cond = await conditionsEmprunt(v);
     if (cond.pretable) {
-      return {
-        type: 'emprunt',
-        titre: v.titre,
-        ocaid: v.ocaid,
-        conditions: cond,
-        versions,
-        lien: cond.lien
-      };
+      return { type: 'emprunt', titre: v.titre, edition: v.id, conditions: cond, versions, lien: cond.lien };
     }
   }
   return { type: 'indisponible', raison: 'protege', lien: r.lien, titre: r.titre, versions };
 }
 
-/* Changement de version : recharger une autre édition numérisée dans le lecteur. */
-export async function ouvrirVersion(ocaid, versions) {
-  const texte = await texteIntegal(ocaid);
-  if (texte) {
-    return { type: 'texte', ocaid, texte, versions, lien: 'https://archive.org/details/' + ocaid };
+/* Changement de version : charger une autre édition numérique dans le lecteur. */
+export async function ouvrirVersion(v, versions) {
+  if (v.acces === 'ouvert') {
+    const res = await texteEbook(v);
+    if (res) return { type: 'texte', titre: v.titre, edition: v.id, natif: res.natif, texte: res.texte, epub: v.epub || null, versions, lien: v.lien };
   }
-  const cond = await conditionsEmprunt(ocaid);
-  return { type: 'emprunt', ocaid, conditions: cond, versions, lien: cond.lien };
+  const cond = await conditionsEmprunt(v);
+  return { type: 'emprunt', titre: v.titre, edition: v.id, conditions: cond, versions, lien: cond.lien };
 }
 
 /* --- Recherche unifiée : catégorie 'livres', 'publications' ou 'tout'.
