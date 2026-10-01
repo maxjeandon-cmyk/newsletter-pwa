@@ -1,6 +1,6 @@
 {
-  "name": "Newsletter — Maxime",
-  "short_name": "Newsletter",
+  "name": "Des Infos, y’en a H24 — Maxime",
+  "short_name": "Des Infos H24",
   "description": "Newsletter quotidienne : édition du jour + flux chaud, par chapitre.",
   "lang": "fr",
   "start_url": "./index.html",
