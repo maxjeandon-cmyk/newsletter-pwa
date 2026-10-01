@@ -3,10 +3,11 @@
  * Contrat de données : editions/ (généré chaque nuit à 23h59) n'est jamais modifié ici ;
  * la config éditoriale vit dans data/chapters.json (chapitres) et data/medias.json (médias suivis). */
 
-import { $, state, getStore, setStore, purgeStore, applyTheme, fmtDate } from './core.js';
+import { $, state, getStore, setStore, purgeStore, applyTheme, fmtDate, esc } from './core.js';
 import { chargerChapitres, chargerMedia } from './feeds.js';
 import { renderTabs, renderView, renderChaptersEditor, majMedias } from './views.js';
 import { initRouter } from './router.js';
+import { inscrire, connecter, deconnecter, restaurerSession, synchroniserPrefs, envoyerPrefs, abonne, estConnecte } from './compte.js';
 
 async function chargerJSON(url, def) {
   try { return await (await fetch(url, { cache: 'no-store' })).json(); } catch (e) { return def; }
@@ -60,6 +61,77 @@ async function init() {
   $('#btn-settings').onclick = () => { $('#settings-panel').removeAttribute('hidden'); $('#settings-panel').classList.add('open'); };
   $('#btn-close-settings').onclick = () => { $('#settings-panel').classList.remove('open'); };
   $('#settings-panel').onclick = e => { if (e.target.id === 'settings-panel') $('#settings-panel').classList.remove('open'); };
+  /* Compte (v23) : inscription/connexion synchronisent les préférences entre
+   * appareils. Sans compte, tout continue de marcher via localStorage.
+   * Rendu du bloc dans le panneau Réglages : formulaire si déconnecté,
+   * e-mail + boutons si connecté. */
+  function rendreCompte(msg, type) {
+    const bloc = $('#compte-bloc');
+    const u = abonne();
+    if (estConnecte() && u) {
+      bloc.innerHTML = '<p class="hint">Connecté : ' + esc(u.email) + '</p>' +
+        (msg ? '<p class="hint">' + esc(msg) + '</p>' : '') +
+        '<button id="btn-sync-prefs">Synchroniser mes préférences</button>' +
+        '<button id="btn-logout">Se déconnecter</button>';
+      $('#btn-logout').onclick = async () => {
+        await deconnecter();
+        state.compte = null;
+        rendreCompte('', null);
+      };
+      $('#btn-sync-prefs').onclick = async () => {
+        const r = await envoyerPrefs();
+        rendreCompte(r.ok ? 'Préférences enregistrées ✓' : 'Sync impossible pour le moment', null);
+      };
+    } else {
+      bloc.innerHTML =
+        '<p class="hint">Un compte enregistre tes médias, revues et réglages — retrouvés sur tous tes appareils. Le site marche aussi très bien sans compte.</p>' +
+        '<label>E-mail <input type="email" id="in-email" autocomplete="email" placeholder="toi@exemple.fr"/></label>' +
+        '<label>Mot de passe <input type="password" id="in-mdp" autocomplete="new-password" minlength="6" placeholder="6 caractères minimum"/></label>' +
+        (msg ? '<p class="hint">' + esc(msg) + '</p>' : '') +
+        '<button id="btn-inscrire">Créer un compte</button>' +
+        '<button id="btn-connecter">Se connecter</button>';
+      $('#btn-inscrire').onclick = async () => {
+        const email = $('#in-email').value.trim();
+        const mdp = $('#in-mdp').value;
+        if (!email || mdp.length < 6) { rendreCompte('E-mail valide + mot de passe de 6 caractères minimum.', 'err'); return; }
+        const r = await inscrire(email, mdp);
+        if (r.erreur) { rendreCompte(MSGS[r.erreur] || 'Inscription impossible pour le moment.', 'err'); return; }
+        if (r.confirmation) { rendreCompte('Compte créé ✓ — va vérifier ta boîte mail : un lien de confirmation t’attend.', 'ok'); return; }
+        if (r.session) { await connecter(email, mdp); }
+        await finaliserConnexion();
+      };
+      $('#btn-connecter').onclick = async () => {
+        const email = $('#in-email').value.trim();
+        const mdp = $('#in-mdp').value;
+        const r = await connecter(email, mdp);
+        if (r.erreur) { rendreCompte(MSGS[r.erreur] || 'Connexion impossible pour le moment.', 'err'); return; }
+        await finaliserConnexion();
+      };
+    }
+  }
+  const MSGS = {
+    'existe': 'Un compte existe déjà avec cet e-mail — connecte-toi plutôt.',
+    'identifiants': 'E-mail ou mot de passe incorrect.',
+    'mdp-court': 'Mot de passe trop court : 6 caractères minimum.',
+    'email-invalide': 'Cette adresse e-mail ne semble pas valide.',
+    'trop-de-demandes': 'Trop de tentatives — patiente un instant et réessaie.',
+    'configuration': 'Service de comptes pas encore configuré (voir README).',
+    'reseau': 'Pas de réseau — réessaie quand tu es en ligne.',
+    'indisponible': 'Service momentanément indisponible — réessaie plus tard.'
+  };
+  async function finaliserConnexion() {
+    const u = await restaurerSession();
+    if (!u) { rendreCompte('Connexion impossible pour le moment.', 'err'); return; }
+    state.compte = { id: u.id, email: u.email };
+    const syn = await synchroniserPrefs();
+    rendreCompte(syn.ok ? 'Connecté ✓ — préférences synchronisées.' : 'Connecté ✓', 'ok');
+    renderChaptersEditor();
+    renderView();
+  }
+  rendreCompte('', null);
+  restaurerSession().then(u => {
+    if (u) { state.compte = { id: u.id, email: u.email }; synchroniserPrefs().then(() => { rendreCompte('', null); renderView(); }); }
+  }).catch(() => {});
   $('#btn-install-hint').onclick = () => alert('Sur iPhone : bouton Partager ⬆️ en bas de Safari, puis « Sur l’écran d’accueil ». L’app s’ouvrira plein écran, comme une vraie app.');
   $('#btn-purge').onclick = async () => {
     const b = $('#btn-purge');

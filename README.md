@@ -36,6 +36,10 @@ data/chapters.json  Chapitres de l'onglet Articles (flux + mots-clés + fenêtre
 data/medias.json    Médias suivis dans l'onglet Médias (sous-onglets)
 data/climat.json    Dernier bulletin Copernicus résumé dans l'onglet Climat (rafraîchi par la
                     maintenance quotidienne — maj/titre/resume/points/lien)
+js/compte.js       Comptes utilisateurs (v23) : inscription/connexion Supabase (fetch direct, zéro
+                    dépendance), synchronisation des préférences (theme, masques, mediasPerso…) entre
+                    appareils — le site reste pleinement utilisable sans comptedata/compte.json    Config du service de comptes (url + anon_key du projet Supabase)
+supabase/schema.sql Table preferences + politiques RLS à exécuter une fois dans la console Supabase
 sw.js               Service worker : coquille cache-first, editions/ et data/ network-first
 styles.css          Thème sombre/clair, variables CSS
 ```
@@ -75,6 +79,22 @@ Deux façons complémentaires :
 ## Ajouter / modifier un chapitre (onglet Articles)
 
 Éditer `data/chapters.json` : `flux`, `motsCles` (`["*"]` = tout garder), `exclusion`, `fenetreHeures` (défaut 24 h). Les préférences de l'utilisateur (masquer un chapitre) sont stockées côté client (`nl.masques`) et survivent donc aux déploiements.
+
+## Comptes utilisateurs (v23)
+
+Le site propose des comptes facultatifs (Réglages > Mon compte) pour retrouver ses préférences
+(médias, revues, thème) sur tous ses appareils. **Sans compte, tout fonctionne** via localStorage.
+
+Mise en place (une seule fois) :
+1. Créer un projet sur supabase.com (gratuit) ; noter `url` et `anon_key` (Settings > API).
+2. Les renseigner dans `data/compte.json`.
+3. Dans la console Supabase, exécuter `supabase/schema.sql` (éditeur SQL) — crée la table
+   `preferences` et active les politiques RLS (chaque utilisateur ne voit que sa ligne).
+
+Sécurité : les mots de passe sont hachés par l'API auth de Supabase (bcrypt), ils ne transitent
+jamais par ce dépôt. La clé `anon` est publique par conception — la protection des données repose
+sur le RLS, pas sur le secret de la clé. La table ne stocke que des préférences d'affichage,
+aucune donnée personnelle au-delà de l'e-mail géré par l'auth.
 
 ## Règles de déploiement
 

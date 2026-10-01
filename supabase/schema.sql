@@ -1,0 +1,56 @@
+-- schema.sql — comptes & préférences de la PWA Newsletter (v23).
+-- À exécuter UNE FOIS dans l'éditeur SQL de la console Supabase
+-- (Database > SQL Editor > New query > coller > Run).
+--
+-- Sécurité — les 3 règles d'or :
+--   1. Les mots de passe ne passent JAMAIS ici : ils sont hachés (bcrypt)
+--      par l'API auth de Supabase. Cette base ne stocke que les préférences.
+--   2. Row Level Security (RLS) : chaque utilisateur ne peut lire/écrire QUE
+--      la ligne qui porte son id. La clé anon publique ne peut rien voir
+--      d'autre, même en fabriquant des requêtes à la main.
+--   3. Moins de privilèges = mieux : la table ne retient ni IP, ni date de
+--      naissance, ni aucune donnée personnelle au-delà de l'e-mail (géré par
+--      l'auth, pas ici) et des préférences d'affichage.
+
+-- 1. Table des préférences : une ligne par utilisateur.
+create table if not exists public.preferences (
+  user_id uuid not null primary key references auth.users (id) on delete cascade,
+  prefs jsonb not null default '{}'::jsonb,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+-- 2. RLS obligatoire : sans politique, tout est interdit par défaut.
+alter table public.preferences enable row level security;
+
+-- 3. Politiques : chaque utilisateur ne touche que SA ligne.
+drop policy if exists "prefs_select" on public.preferences;
+create policy "prefs_select" on public.preferences
+  for select using (auth.uid() = user_id);
+
+drop policy if exists "prefs_insert" on public.preferences;
+create policy "prefs_insert" on public.preferences
+  for insert with check (auth.uid() = user_id);
+
+drop policy if exists "prefs_update" on public.preferences;
+create policy "prefs_update" on public.preferences
+  for update using (auth.uid() = user_id) with check (auth.uid() = user_id);
+
+-- 4. user_id forcé = utilisateur connecté (impossible d'écrire pour un autre).
+alter table public.preferences
+  alter column user_id set default auth.uid();
+
+-- 5. updated_at mis à jour automatiquement à chaque écriture.
+create or replace function public.set_updated_at()
+returns trigger language plpgsql as $$
+begin
+  new.updated_at = now();
+  return new;
+end $$;
+
+drop trigger if exists trg_prefs_updated on public.preferences;
+create trigger trg_prefs_updated before update on public.preferences
+  for each row execute function public.set_updated_at();
+
+-- 6. Hygiène : quand un compte est supprimé, ses préférences partent avec lui.
+--    (on delete cascade déjà posé sur la clé primaire.)
