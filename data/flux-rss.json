@@ -235,6 +235,16 @@
       ]
     },
     {
+      "id": "public-senat",
+      "nom": "Public Sénat",
+      "emoji": "🏛️",
+      "categorie": "Presse généraliste 🇫🇷",
+      "ligne": "l’actualité parlementaire du Sénat en continu",
+      "flux": [
+        "https://www.publicsenat.fr/rss"
+      ]
+    },
+    {
       "id": "sud-ouest",
       "nom": "Sud Ouest",
       "emoji": "🍷",
@@ -822,6 +832,16 @@
       "ligne": "cybersécurité FR, alertes et enquêtes",
       "flux": [
         "https://www.zataz.com/feed/"
+      ]
+    },
+    {
+      "id": "anssi-cert-fr",
+      "nom": "ANSSI — CERT-FR",
+      "emoji": "🔒",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "alertes et avis de cybersécurité de l’État",
+      "flux": [
+        "https://www.cert.ssi.gouv.fr/feed/"
       ]
     }
   ]

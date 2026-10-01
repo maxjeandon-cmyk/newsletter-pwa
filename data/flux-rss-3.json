@@ -411,6 +411,16 @@
       ]
     },
     {
+      "id": "tva-nouvelles",
+      "nom": "TVA Nouvelles",
+      "emoji": "🇨🇦",
+      "categorie": "Belgique / Suisse / Québec 🍁",
+      "ligne": "chaîne d’info généraliste du Québec",
+      "flux": [
+        "https://www.tvanouvelles.ca/rss"
+      ]
+    },
+    {
       "id": "jeune-afrique",
       "nom": "Jeune Afrique",
       "emoji": "🌍",
@@ -808,6 +818,26 @@
       "ligne": "hétérodoxe, contre les consensus",
       "flux": [
         "https://unherd.com/feed/"
+      ]
+    },
+    {
+      "id": "the-intercept",
+      "nom": "The Intercept",
+      "emoji": "🕵️",
+      "categorie": "Anglophone généraliste 🌐",
+      "ligne": "journalisme d’investigation indépendant",
+      "flux": [
+        "https://theintercept.com/feed/"
+      ]
+    },
+    {
+      "id": "abc-news-au",
+      "nom": "ABC News (AU)",
+      "emoji": "🇦🇺",
+      "categorie": "Anglophone généraliste 🌐",
+      "ligne": "service public d’info australien",
+      "flux": [
+        "https://www.abc.net.au/news/feed/51120/rss.xml"
       ]
     }
   ]

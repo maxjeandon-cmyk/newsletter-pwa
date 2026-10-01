@@ -411,6 +411,26 @@
       ]
     },
     {
+      "id": "nasaspaceflight",
+      "nom": "NASASpaceflight",
+      "emoji": "🛰️",
+      "categorie": "Spatial 🚀",
+      "ligne": "lancements et programmes spatiaux, couverture pointue",
+      "flux": [
+        "https://www.nasaspaceflight.com/feed/"
+      ]
+    },
+    {
+      "id": "universe-today",
+      "nom": "Universe Today",
+      "emoji": "🔭",
+      "categorie": "Spatial 🚀",
+      "ligne": "astronomie et exploration spatiale, vulgarisation",
+      "flux": [
+        "https://www.universetoday.com/feed/"
+      ]
+    },
+    {
       "id": "reporterre",
       "nom": "Reporterre",
       "emoji": "🌳",
@@ -478,6 +498,16 @@
       "ligne": "pédagogie énergie et climat",
       "flux": [
         "https://www.connaissancedesenergies.org/rss.xml"
+      ]
+    },
+    {
+      "id": "actu-environnement",
+      "nom": "Actu-Environnement",
+      "emoji": "♻️",
+      "categorie": "Écologie & climat 🌿",
+      "ligne": "l’actualité des professionnels de l’environnement",
+      "flux": [
+        "https://www.actu-environnement.com/rss"
       ]
     },
     {
