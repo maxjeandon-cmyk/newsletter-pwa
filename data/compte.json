@@ -1,0 +1,5 @@
+{
+  "url": "",
+  "anon_key": "",
+  "note": "Renseigner url (https://xxx.supabase.co) et anon_key après création du projet Supabase. Exécuter supabase/schema.sql dans l'éditeur SQL Supabase. La clé anon est publique par conception — la sécurité des données repose sur les politiques RLS."
+}

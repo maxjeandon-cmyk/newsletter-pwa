@@ -31,6 +31,8 @@ export const state = {
   lectureLecture: null,    // document ouvert dans le lecteur intégré (v19)
   lectureOuverture: null,  // ouvrage ouvert par l'agent : { type, texte, pages, page, versions } (v20)
   lectureRecos: [],        // recommandations par catégories (data/lecture-reco.json, v19)
+  compteCfg: null,         // config du service de comptes (data/compte.json, v23)
+  compte: null,            // utilisateur connecté : { id, email } ou null (v23)
 };
 
 /* --- Stockage local (clés préfixées « nl. » pour un nettoyage facile) --- */
@@ -45,7 +47,7 @@ export function setStore(k, v) {
  * « Purger le cache » — un média ajouté ne doit jamais disparaître par accident).
  * v19 : mediasAffiches (médias « masqués par défaut » réaffichés ici) et jeton
  * (GitHub, publication pour tous les écrans) sont aussi des préférences. */
-const GARDEES = ['theme', 'masques', 'afpOnly', 'mediasPerso', 'mediasMasques', 'mediasAffiches', 'jeton'];
+const GARDEES = ['theme', 'masques', 'afpOnly', 'mediasPerso', 'mediasMasques', 'mediasAffiches', 'jeton', 'compte.abonne', 'compte.session'];
 export function purgeStore() {
   Object.keys(localStorage)
     .filter(k => k.startsWith(PREFIX) && !GARDEES.includes(k.slice(PREFIX.length)))
