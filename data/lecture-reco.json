@@ -1,52 +1,226 @@
 {
   "recommandations": [
     {
-      "categorie": "🏛️ Classiques & patrimoine",
-      "titre": "Les grandes œuvres de la littérature française",
-      "suggestion": "Zola Victor Hugo",
-      "texte": "Romans fondateurs numérisés sur Gallica et Open Library — domaine public, lecture immédiate."
+      "categorie": "🏛️ Classiques français",
+      "titre": "Le Rouge et le Noir — Stendhal",
+      "suggestion": "Le Rouge et le Noir Stendhal",
+      "texte": "L'ascension sociale de Julien Sorel, portrait féroce de la France de la Restauration. L'un des romans les plus modernes du XIXe siècle — lucide, psychologique, ironique."
     },
     {
-      "categorie": "🏛️ Classiques & patrimoine",
-      "titre": "Philosophie des Lumières",
-      "suggestion": "Rousseau Voltaire Diderot",
-      "texte": "Les textes originaux des Lumières, en accès libre sur les bibliothèques numériques."
+      "categorie": "🏛️ Classiques français",
+      "titre": "Madame Bovary — Flaubert",
+      "suggestion": "Madame Bovary Flaubert",
+      "texte": "Emma Bovary étouffe dans sa vie provinciale et cherche l'absolu dans les rêves romantiques. Le style parfait de Flaubert, mot par mot, page à savourer lentement."
     },
     {
-      "categorie": "🔬 Science & recherche",
-      "titre": "Climat et environnement",
-      "suggestion": "climate change",
-      "texte": "Articles en accès ouvert (DOAJ, Europe PMC) et prépublications arXiv sur le climat."
+      "categorie": "🏛️ Classiques français",
+      "titre": "Les Misérables — Victor Hugo",
+      "suggestion": "Les Misérables Victor Hugo",
+      "texte": "Jean Valjean, Cosette, Javert, la barricade. Une fresque monumentale sur la misère, la justice et la rédemption — le roman français le plus lu au monde."
     },
     {
-      "categorie": "🔬 Science & recherche",
-      "titre": "Intelligence artificielle",
-      "suggestion": "artificial intelligence",
-      "texte": "L'état de l'art sur arXiv — prépublications libres, résumés lisibles dans le lecteur."
+      "categorie": "🏛️ Classiques français",
+      "titre": "Germinal — Émile Zola",
+      "suggestion": "Germinal Zola",
+      "texte": "La grève des mineurs, Étienne Lantier, la faim, la lutte. Le roman le plus puissant de Zola sur le monde ouvrier — toujours brûlant d'actualité."
     },
     {
-      "categorie": "🇫🇷 Recherche francophone",
-      "titre": "Sciences humaines en français",
-      "suggestion": "histoire France",
-      "texte": "Thèses et articles déposés sur HAL, l'archive ouverte française."
+      "categorie": "🏛️ Classiques français",
+      "titre": "Le Comte de Monte-Cristo — Alexandre Dumas",
+      "suggestion": "Comte de Monte-Cristo Dumas",
+      "texte": "Edmond Dantès, trahi et emprisonné, revient se venger avec une fortune colossale. Le roman d'aventures et de vengeance le plus haletant de la littérature."
     },
     {
-      "categorie": "🇫🇷 Recherche francophone",
-      "titre": "Médecine et santé publique",
-      "suggestion": "santé publique",
-      "texte": "Résumés Europe PMC et dépôts HAL — la recherche médicale francophone."
+      "categorie": "🏛️ Classiques français",
+      "titre": "À la recherche du temps perdu — Marcel Proust",
+      "suggestion": "Du côté de chez Swann Proust",
+      "texte": "Commence par Du côté de chez Swann : la madeleine, Combray, les Guermantes. L'œuvre-monument sur la mémoire et le temps — à lire par tomes, comme une vie."
     },
     {
-      "categorie": "📰 Presse & magazines",
-      "titre": "Revue de presse historique",
-      "suggestion": "Le Monde diplomatique",
-      "texte": "Numéros historiques numérisés sur Gallica — la presse comme matériau d'époque."
+      "categorie": "🌍 Classiques étrangers",
+      "titre": "Guerre et Paix — Tolstoï",
+      "suggestion": "War and Peace Tolstoy",
+      "texte": "La Russie de Napoléon vue par les familles Rostov, Bolkonski et Bézoukhov. La fresque totale : l'Histoire, l'amour, la mort, la vie — immense et humaine."
     },
     {
-      "categorie": "📰 Presse & magazines",
-      "titre": "Économie et société",
-      "suggestion": "économie inégalités",
-      "texte": "Revues d'économie en accès ouvert — le débat intellectuel, sans paywall."
+      "categorie": "🌍 Classiques étrangers",
+      "titre": "Crime et Châtiment — Dostoïevski",
+      "suggestion": "Crime and Punishment Dostoevsky",
+      "texte": "Raskolnikov tue et s'effondre. Le plus grand roman sur la culpabilité et la rédemption — tourmenté, prophétique, inoubliable."
+    },
+    {
+      "categorie": "🌍 Classiques étrangers",
+      "titre": "Orgueil et Préjugés — Jane Austen",
+      "suggestion": "Pride and Prejudice Austen",
+      "texte": "Elizabeth Bennet, Mr Darcy, et les erreurs de premier regard. L'ironie d'Austen sur le mariage et la société anglaise — le roman parfait, tout simplement."
+    },
+    {
+      "categorie": "🌍 Classiques étrangers",
+      "titre": "Moby Dick — Herman Melville",
+      "suggestion": "Moby Dick Melville",
+      "texte": "Le capitaine Achab traque la baleine blanche. Roman totalitaire d'obsession, d'aventure et de métaphysique — fou, génial, unique."
+    },
+    {
+      "categorie": "🌍 Classiques étrangers",
+      "titre": "Cent ans de solitude — Gabriel García Márquez",
+      "suggestion": "One Hundred Years of Solitude Marquez",
+      "texte": "Cent ans de la famille Buendía à Macondo, entre réalisme magique et Histoire. L'œuvre fondatrice du boom latino-américain."
+    },
+    {
+      "categorie": "🌍 Classiques étrangers",
+      "titre": "Le Vieil Homme et la Mer — Hemingway",
+      "suggestion": "The Old Man and the Sea Hemingway",
+      "texte": "Un vieux pêcheur, un marlin géant, trois jours en mer. La quintessence d'Hemingway : la dignité dans la lutte, la beauté dans la perte. Court, parfait."
+    },
+    {
+      "categorie": "🚀 Science-fiction & anticipation",
+      "titre": "1984 — George Orwell",
+      "suggestion": "1984 Orwell",
+      "texte": "Big Brother, la novlangue, la pensée contrôlée. La dystopie de référence sur le totalitarisme — à relire chaque décennie."
+    },
+    {
+      "categorie": "🚀 Science-fiction & anticipation",
+      "titre": "Le Meilleur des mondes — Aldous Huxley",
+      "suggestion": "Brave New World Huxley",
+      "texte": "Le bonheur chimiquement obligatoire, les castes génétiques. L'autre grande dystopie : on ne vous force pas, on vous divertit jusqu'à l'oubli."
+    },
+    {
+      "categorie": "🚀 Science-fiction & anticipation",
+      "titre": "Fahrenheit 451 — Ray Bradbury",
+      "suggestion": "Fahrenheit 451 Bradbury",
+      "texte": "Des pompiers qui brûlent les livres. Un hymne à la lecture contre la société des écrans — plus d'actualité que jamais."
+    },
+    {
+      "categorie": "🚀 Science-fiction & anticipation",
+      "titre": "Dune — Frank Herbert",
+      "suggestion": "Dune Herbert",
+      "texte": "Arrakis, l'épice, les Fremen, l'écologie planétaire et le messianisme. La référence absolue de la SF — politique, écologique, visionnaire."
+    },
+    {
+      "categorie": "🚀 Science-fiction & anticipation",
+      "titre": "Chroniques martiennes — Ray Bradbury",
+      "suggestion": "Martian Chronicles Bradbury",
+      "texte": "La colonisation de Mars comme miroir de l'humanité. Poétique, mélancolique, humain — de la SF qui parle de nous."
+    },
+    {
+      "categorie": "🕵️ Polars & mystères",
+      "titre": "Le Nom de la rose — Umberto Eco",
+      "suggestion": "Il nome della rosa Eco",
+      "texte": "Un meurtre dans une abbaye du XIVe siècle, une enquête sémiotique, des bibliothèques labyrinthiques. Le polar médiéval-philosophique culte."
+    },
+    {
+      "categorie": "🕵️ Polars & mystères",
+      "titre": "Sherlock Holmes — l'intégrale",
+      "suggestion": "Adventures of Sherlock Holmes Doyle",
+      "texte": "Commence par Les Aventures de Sherlock Holmes. Le canon du genre : déduction pure, Londres victorien, l'amitié Holmes-Watson."
+    },
+    {
+      "categorie": "🕵️ Polars & mystères",
+      "titre": "Le Grand Sommeil — Raymond Chandler",
+      "suggestion": "The Big Sleep Chandler",
+      "texte": "Philip Marlowe, Los Angeles, corruption et répliques en or. Le roman noir fondateur — Chandler écrit comme personne."
+    },
+    {
+      "categorie": "🕵️ Polars & mystères",
+      "titre": "Dix petits nègres — Agatha Christie",
+      "suggestion": "And Then There Were None Christie",
+      "texte": "Dix invités sur une île, éliminés un à un. Le chef-d'œuvre absolu de la Christie — la mécanique parfaite du mystère."
+    },
+    {
+      "categorie": "❤️ Grands récits contemporains",
+      "titre": "L'Étranger — Albert Camus",
+      "suggestion": "The Stranger Camus",
+      "texte": "Meursault, le soleil, l'absurde. Court, sec, immense — le roman de l'absurde qui a changé la littérature du XXe siècle."
+    },
+    {
+      "categorie": "❤️ Grands récits contemporains",
+      "titre": "Le Vieil Homme et la Mort des autres… Steinbeck",
+      "suggestion": "The Grapes of Wrath Steinbeck",
+      "texte": "Les Raisins de la colère : la famille Joad fuit le Dust Bowl vers la Californie. La Grande Dépression en chair et en sang, un triptyque de dignité."
+    },
+    {
+      "categorie": "❤️ Grands récits contemporains",
+      "titre": "Ne tirez pas sur l'oiseau moqueur — Harper Lee",
+      "suggestion": "To Kill a Mockingbird Harper Lee",
+      "texte": "Scout, Atticus Finch, et la justice dans l'Alabama des années 30. Le roman le plus aimé sur l'enfance et la conscience morale."
+    },
+    {
+      "categorie": "❤️ Grands récits contemporains",
+      "titre": "1984 de Milan Kundera : Le Livre du rire et de l'oubli",
+      "suggestion": "The Book of Laughter and Forgetting Kundera",
+      "texte": "Sept variations sur le rire, l'oubli et la Tchécoslovaquie. Kundera entre roman et essai — léger et vertigineux."
+    },
+    {
+      "categorie": "❤️ Grands récits contemporains",
+      "titre": "L'Homme sans qualités — Musil",
+      "suggestion": "The Man Without Qualities Musil",
+      "texte": "Vienne avant 1914, Ulrich scrute l'effondrement d'un monde. L'un des plus grands romans inachevés du XXe siècle — cerebral et sublime."
+    },
+    {
+      "categorie": "🇫🇷 Trésors francophones",
+      "titre": "Voyage au bout de la nuit — Céline",
+      "suggestion": "Voyage au bout de la nuit Celine",
+      "texte": "Bardamu de la guerre 14 à l'Afrique coloniale. La langue inventée par Céline, le roman le plus violent et vivant du siècle. (Céline est indissociable de ses pamphlets — sépare l'œuvre et l'homme en connaissance de cause.)"
+    },
+    {
+      "categorie": "🇫🇷 Trésors francophones",
+      "titre": "Bel-Ami — Maupassant",
+      "suggestion": "Bel-Ami Maupassant",
+      "texte": "Georges Duroy, journaliste arriviste et séducteur, gravit le Paris de la presse. Le roman du cynisme social, d'une modernité confondante."
+    },
+    {
+      "categorie": "🇫🇷 Trésors francophones",
+      "titre": "Père Goriot — Balzac",
+      "suggestion": "Pere Goriot Balzac",
+      "texte": "La pension Vauquer, Rastignac, le père Goriot. La Comédie humaine commence ici : l'argent, l'ambition, Paris qui dévore."
+    },
+    {
+      "categorie": "🇫🇷 Trésors francophones",
+      "titre": "Salammbô — Flaubert",
+      "suggestion": "Salammbô Flaubert",
+      "texte": "Carthage, les mercenaires, la déesse Tanit. Le délire archéologique et sensuel de Flaubert — pour sortir des sentiers battus."
+    },
+    {
+      "categorie": "🇫🇷 Trésors francophones",
+      "titre": "Le Grand Meaulnes — Alain-Fournier",
+      "suggestion": "Le Grand Meaulnes Alain-Fournier",
+      "texte": "Le domaine perdu, la fête étrange, Yvonne de Galais. Le roman de l'adolescence et du mystère, écrit dans un français de neige."
+    },
+    {
+      "categorie": "🎭 Théâtre & poésie (à lire comme des romans)",
+      "titre": "Cyrano de Bergerac — Rostand",
+      "suggestion": "Cyrano de Bergerac Rostand",
+      "texte": "Le panache ! Le nez, les mots, Roxane. Le théâtre français le plus romantique — en vers, à lire d'une traite comme un roman d'aventures."
+    },
+    {
+      "categorie": "🎭 Théâtre & poésie (à lire comme des romans)",
+      "titre": "Hamlet — Shakespeare",
+      "suggestion": "Hamlet Shakespeare",
+      "texte": "Être ou ne pas être. La tragédie des tragédies — à lire en bilingue pour les répliques cultes."
+    },
+    {
+      "categorie": "🎭 Théâtre & poésie (à lire comme des romans)",
+      "titre": "Les Fleurs du mal — Baudelaire",
+      "suggestion": "Les Fleurs du mal Baudelaire",
+      "texte": "Spleen et idéal. Le recueil qui a inventé la modernité poétique — court, à emporter partout."
+    },
+    {
+      "categorie": "📖 Longues séries à dévorer",
+      "titre": "Les Trois Mousquetaires — Dumas",
+      "suggestion": "Three Musketeers Dumas",
+      "texte": "D'Artagnan, Athos, Porthos, Aramis. L'aventure pure, l'amitié virile, les complots de Richelieu. Puis Vingt ans après et Le Vicomte de Bragelonne."
+    },
+    {
+      "categorie": "📖 Longues séries à dévorer",
+      "titre": "La Comédie humaine — Balzac (par où commencer)",
+      "suggestion": "Eugenie Grandet Balzac",
+      "texte": "Commence léger avec Eugénie Grandet ou Le Père Goriot, puis explore les 90 romans du monde balzacien — le plus grand projet littéraire de tous les temps."
+    },
+    {
+      "categorie": "📖 Longues séries à dévorer",
+      "titre": "Rougon-Macquart — Zola (par où commencer)",
+      "suggestion": "La bete humaine Zola",
+      "texte": "Germinal, La Bête humaine, L'Assommoir, Nana… 20 romans d'une famille sous le Second Empire. Le cycle naturaliste par excellence."
     }
   ]
 }
