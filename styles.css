@@ -133,3 +133,19 @@ main{padding:0 14px;max-width:720px;margin:0 auto}
 .lec-nav{display:flex;align-items:center;gap:12px;margin-top:10px}
 .lec-nav .filter-btn{margin:0}
 .lecteur-corps{white-space:pre-wrap}
+
+/* --- v24 : réglages en onglet, barre supérieure repensée --- */
+.reglages{display:grid;gap:14px;max-width:640px;margin:0 auto}
+.reglages .summary-card h2{margin:2px 0 10px;font-size:17px}
+.regl-label{display:block;font-size:13px;color:var(--muted);margin:10px 0}
+.regl-label select,.regl-label input{width:100%;padding:9px;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:10px;margin-top:4px;box-sizing:border-box}
+.ordre-liste{list-style:none;padding:0;margin:8px 0}
+.ordre-liste li{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px 0;border-bottom:1px solid var(--border)}
+.ordre-liste li:last-child{border-bottom:none}
+.ordre-nom{font-size:14px}
+.ordre-btns{display:flex;gap:6px}
+.btn-sec{display:block;width:100%;margin:8px 0;padding:10px;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:10px;font-size:14px;cursor:pointer}
+.btn-sec:active{background:var(--border)}
+.ordre-btns .btn-sec{width:38px;margin:0}
+#btn-profil{font-size:15px}
+.switch{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);margin:0}
