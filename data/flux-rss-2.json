@@ -51,6 +51,36 @@
       ]
     },
     {
+      "id": "javascript-weekly",
+      "nom": "JavaScript Weekly",
+      "emoji": "🟨",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "hebdo anglo du développement JavaScript",
+      "flux": [
+        "https://javascriptweekly.com/rss"
+      ]
+    },
+    {
+      "id": "node-weekly",
+      "nom": "Node Weekly",
+      "emoji": "🟩",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "hebdo anglo de l'écosystème Node.js",
+      "flux": [
+        "https://nodeweekly.com/rss"
+      ]
+    },
+    {
+      "id": "lwn",
+      "nom": "LWN.net",
+      "emoji": "🐧",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "hebdo Linux et logiciel libre, référence",
+      "flux": [
+        "https://lwn.net/headlines/rss"
+      ]
+    },
+    {
       "id": "cnrs-le-journal",
       "nom": "CNRS — Le Journal",
       "emoji": "🔬",
@@ -508,6 +538,26 @@
       "ligne": "l’actualité des professionnels de l’environnement",
       "flux": [
         "https://www.actu-environnement.com/rss"
+      ]
+    },
+    {
+      "id": "franceinfo-env",
+      "nom": "franceinfo — Environnement",
+      "emoji": "🌡️",
+      "categorie": "Écologie & climat 🌿",
+      "ligne": "l'environnement au quotidien, service public",
+      "flux": [
+        "https://www.francetvinfo.fr/environnement.rss"
+      ]
+    },
+    {
+      "id": "goodplanet",
+      "nom": "GoodPlanet Info",
+      "emoji": "🐋",
+      "categorie": "Écologie & climat 🌿",
+      "ligne": "magazine environnement de la fondation GoodPlanet",
+      "flux": [
+        "https://www.goodplanet.info/feed/"
       ]
     },
     {

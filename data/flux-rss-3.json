@@ -191,6 +191,16 @@
       ]
     },
     {
+      "id": "diacritik",
+      "nom": "Diacritik",
+      "emoji": "✒️",
+      "categorie": "Livres & BD 📖",
+      "ligne": "magazine culturel, littérature et essais",
+      "flux": [
+        "https://www.diacritik.com/feed"
+      ]
+    },
+    {
       "id": "diploweb",
       "nom": "Diploweb",
       "emoji": "🗺️",
@@ -288,6 +298,16 @@
       "ligne": "revue de presse mondiale traduite",
       "flux": [
         "https://www.courrierinternational.com/feed/all/rss.xml"
+      ]
+    },
+    {
+      "id": "aoc",
+      "nom": "AOC",
+      "emoji": "🖋️",
+      "categorie": "Géopolitique & idées 🧭",
+      "ligne": "lettres géopolitiques, analyses et critique",
+      "flux": [
+        "https://aoc.media/feed/"
       ]
     },
     {
@@ -838,6 +858,16 @@
       "ligne": "service public d’info australien",
       "flux": [
         "https://www.abc.net.au/news/feed/51120/rss.xml"
+      ]
+    },
+    {
+      "id": "longreads",
+      "nom": "Longreads",
+      "emoji": "☕",
+      "categorie": "Anglophone généraliste 🌐",
+      "ligne": "best-of longform, récits de fond",
+      "flux": [
+        "https://longreads.com/feed/"
       ]
     }
   ]

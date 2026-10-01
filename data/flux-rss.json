@@ -585,6 +585,16 @@
       ]
     },
     {
+      "id": "bfmtv-eco",
+      "nom": "BFM Business — Économie",
+      "emoji": "💶",
+      "categorie": "Économie 💰",
+      "ligne": "l'éco en continu, marchés et entreprises",
+      "flux": [
+        "https://www.bfmtv.com/rss/economie/"
+      ]
+    },
+    {
       "id": "cfdt",
       "nom": "CFDT",
       "emoji": "🤝",
