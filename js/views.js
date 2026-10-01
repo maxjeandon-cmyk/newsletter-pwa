@@ -27,7 +27,7 @@ const TABS = () => [
   { id: 'climat', nom: 'Climat', emoji: '🌡️' },
   { id: 'articles', nom: 'Articles d’aujourd’hui', emoji: '🔥' },
   { id: 'medias', nom: 'Médias', emoji: '🎬' },
-  { id: 'lecture', nom: 'Lecture', emoji: '📖' }];
+  { id: 'lecture', nom: 'Lecture (WiP)', emoji: '📖' }];
 
 export function renderTabs() {
   $('#tabs').innerHTML = TABS().map(t =>
