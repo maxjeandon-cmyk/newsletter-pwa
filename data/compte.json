@@ -1,5 +1,5 @@
 {
-  "url": "",
-  "anon_key": "",
-  "note": "Renseigner url (https://xxx.supabase.co) et anon_key après création du projet Supabase. Exécuter supabase/schema.sql dans l'éditeur SQL Supabase. La clé anon est publique par conception — la sécurité des données repose sur les politiques RLS."
+  "url": "https://dymizsdqtmkwinfoynet.supabase.co",
+  "anon_key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR5bWl6c2RxdG1rd2luZm95bmV0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA4ODAwOTgsImV4cCI6MjEwNjQ1NjA5OH0._KIFj1KHmdIewtnLdTkhTmS1IwvtKAX4GhLke6E2mQE",
+  "note": " Exécuter supabase/schema.sql dans l'éditeur SQL Supabase. La clé anon est publique par conception — la sécurité des données repose sur les politiques RLS."
 }
