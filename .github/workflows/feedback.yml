@@ -1,0 +1,21 @@
+name: Resume feedback
+on:
+  schedule:
+    - cron: '17 3 * * *'   # chaque nuit à 3h17 : lit, résume et publie les retours
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  resumer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Résumer les messages des dernières 48 h
+        run: node tools/feedback.js
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
+          GH_TOKEN: ${{ secrets.FEEDBACK_TOKEN }}
