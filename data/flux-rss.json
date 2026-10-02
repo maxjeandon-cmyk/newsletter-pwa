@@ -245,6 +245,26 @@
       ]
     },
     {
+      "id": "euronews-fr",
+      "nom": "Euronews — FR",
+      "emoji": "🇪🇺",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://fr.euronews.com/rss"
+      ],
+      "ligne": "info européenne en continu"
+    },
+    {
+      "id": "france-bleu",
+      "nom": "France Bleu — ICI",
+      "emoji": "🔵",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.radiofrance.fr/francebleu/rss"
+      ],
+      "ligne": "réseau local de Radio France, proximité"
+    },
+    {
       "id": "sud-ouest",
       "nom": "Sud Ouest",
       "emoji": "🍷",
@@ -623,6 +643,16 @@
       "flux": [
         "https://www.force-ouvriere.fr/spip.php?page=backend"
       ]
+    },
+    {
+      "id": "unsa",
+      "nom": "UNSA",
+      "emoji": "✊",
+      "categorie": "Travail & syndicats 🤝",
+      "flux": [
+        "https://www.unsa.org/feed"
+      ],
+      "ligne": "syndicat autonome, actualité sociale"
     },
     {
       "id": "numerama",

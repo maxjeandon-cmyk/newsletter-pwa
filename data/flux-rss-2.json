@@ -81,6 +81,26 @@
       ]
     },
     {
+      "id": "reflets-info",
+      "nom": "Reflets.info",
+      "emoji": "🪞",
+      "categorie": "Tech & numérique 💻",
+      "flux": [
+        "https://reflets.info/feed/"
+      ],
+      "ligne": "numérique engagé, enquêtes et libertés"
+    },
+    {
+      "id": "l-adn",
+      "nom": "L’ADN",
+      "emoji": "🧬",
+      "categorie": "Tech & numérique 💻",
+      "flux": [
+        "https://www.ladn.eu/feed/"
+      ],
+      "ligne": "magazine digital, innovation et culture"
+    },
+    {
       "id": "cnrs-le-journal",
       "nom": "CNRS — Le Journal",
       "emoji": "🔬",
@@ -769,6 +789,16 @@
       "flux": [
         "https://www.jeuxactu.com/rss/ja.rss"
       ]
+    },
+    {
+      "id": "nintendo-life",
+      "nom": "Nintendo Life",
+      "emoji": "🍄",
+      "categorie": "Jeux 🎮",
+      "flux": [
+        "https://www.nintendolife.com/feeds/news.xml"
+      ],
+      "ligne": "actu Nintendo, tests et rumeurs"
     },
     {
       "id": "telerama-a-la-une",
