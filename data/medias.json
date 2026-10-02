@@ -7,7 +7,8 @@
       "flux": [
         "https://api.blast-info.fr/rss_articles.xml"
       ],
-      "fenetreHeures": 24
+      "fenetreHeures": 24,
+      "masque": true
     },
     {
       "id": "le-monde-international",
@@ -16,7 +17,8 @@
       "flux": [
         "https://www.lemonde.fr/international/rss_full.xml"
       ],
-      "fenetreHeures": 24
+      "fenetreHeures": 24,
+      "masque": true
     },
     {
       "id": "l-usine-digitale",
@@ -25,7 +27,8 @@
       "flux": [
         "https://www.usine-digitale.fr/rss"
       ],
-      "fenetreHeures": 24
+      "fenetreHeures": 24,
+      "masque": true
     },
     {
       "id": "mediapart-articles",
@@ -43,7 +46,8 @@
       "flux": [
         "https://lejournal.cnrs.fr/rss"
       ],
-      "fenetreHeures": 24
+      "fenetreHeures": 24,
+      "masque": true
     },
     {
       "id": "le-monde-a-la-une",
@@ -52,7 +56,8 @@
       "flux": [
         "https://www.lemonde.fr/rss/une.xml"
       ],
-      "fenetreHeures": 24
+      "fenetreHeures": 24,
+      "masque": true
     },
     {
       "id": "nasa-breaking-news",
@@ -61,7 +66,8 @@
       "flux": [
         "https://www.nasa.gov/rss/dyn/breaking_news.rss"
       ],
-      "fenetreHeures": 24
+      "fenetreHeures": 24,
+      "masque": true
     },
     {
       "id": "ciel-espace",
@@ -70,7 +76,8 @@
       "flux": [
         "https://www.cieletespace.fr/rss"
       ],
-      "fenetreHeures": 24
+      "fenetreHeures": 24,
+      "masque": true
     }
   ]
 }

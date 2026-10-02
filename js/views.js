@@ -22,13 +22,13 @@ Object.entries({ edition: vueEdition, sources: vueSources, archives: vueArchives
   .forEach(([id, vue]) => enregistrerVue(id, vue));
 
 const TABS_BASE = [
+  { id: 'medias', nom: () => 'Médias', emoji: '🎬' },
+  { id: 'articles', nom: () => 'Articles', emoji: '🔥' },
   { id: 'edition', nom: () => 'Édition du ' + nomJourEdition(), emoji: '📄' },
   { id: 'sources', nom: () => 'Sources', emoji: '📚' },
-  { id: 'articles', nom: () => 'Articles', emoji: '🔥' },
-  { id: 'medias', nom: () => 'Médias', emoji: '🎬' },
-  { id: 'lecture', nom: () => 'Lecture (WiP)', emoji: '📖' },
-  { id: 'climat', nom: () => 'Climat', emoji: '🌡️' },
   { id: 'archives', nom: () => 'Archives', emoji: '🗄️' },
+  { id: 'climat', nom: () => 'Climat', emoji: '🌡️' },
+  { id: 'lecture', nom: () => 'Lecture (WiP)', emoji: '📖' },
   { id: 'reglages', nom: () => 'Réglages', emoji: '⚙️' }];
 /* Ordre des onglets : préférence locale (nl.ordreOnglets), sinon défaut ci-dessus */
 const TABS = () => {
