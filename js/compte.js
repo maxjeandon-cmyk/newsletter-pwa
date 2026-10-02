@@ -25,7 +25,8 @@ import { $, state, getStore, setStore, esc } from './core.js';
 
 const CFG_URL = 'data/compte.json';
 const ABONNE = 'nl.compte.abonne';      // id + e-mail de l'utilisateur connecté
-const SESSION = 'nl.compte.session';    // jeton de session Supabase (access/refresh)
+const SESSION = 'nl.compte.session';    // jeton de session Supabase (access/refresh) — persisté SI « Rester connecté »
+const SOUVENIR = 'nl.compte.souvenir';  // « Rester connecté » coché : la session survit aux purges et redémarrages
 const PREFS = 'nl.compte.prefs';        // prefs distantes écrasées -> merge local
 
 /* --- Config (chargée au démarrage, network-first par le SW) --- */
@@ -78,12 +79,14 @@ function traduire(j) {
 /* --- Session locale --- */
 function rangerSession(s) {
   sessions = s;
-  setStore(SESSION, s);
+  if (s && getStore(SOUVENIR, false)) setStore(SESSION, s);
+  else localStorage.removeItem('nl.' + 'compte.session');
 }
 export function deconnexionLocale() {
   sessions = null;
   localStorage.removeItem('nl.' + 'compte.session');
   localStorage.removeItem('nl.' + 'compte.abonne');
+  localStorage.removeItem('nl.' + 'compte.souvenir');
 }
 
 async function rafraichirSiExpiré() {
@@ -116,9 +119,10 @@ export async function inscrire(email, mdp) {
   return { erreur: 'indisponible' };
 }
 
-export async function connecter(email, mdp) {
+export async function connecter(email, mdp, souvenir) {
+  if (souvenir) setStore(SOUVENIR, true);
   const j = await appelAPI('/auth/v1/token?grant_type=password', { email, password: mdp });
-  if (j.erreur) return j;
+  if (j.erreur) { if (souvenir) localStorage.removeItem('nl.' + 'compte.souvenir'); return j; }
   if (j.access_token) { rangerSession(j); return { ok: true }; }
   return { erreur: 'identifiants' };
 }
@@ -208,3 +212,4 @@ export async function synchroniserPrefs() {
 
 export const abonne = () => getStore(ABONNE, null);
 export const estConnecte = () => !!sessions?.access_token;
+export const veutResterConnecte = () => getStore(SOUVENIR, false);

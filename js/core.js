@@ -47,7 +47,7 @@ export function setStore(k, v) {
  * « Purger le cache » — un média ajouté ne doit jamais disparaître par accident).
  * v19 : mediasAffiches (médias « masqués par défaut » réaffichés ici) et jeton
  * (GitHub, publication pour tous les écrans) sont aussi des préférences. */
-const GARDEES = ['theme', 'masques', 'afpOnly', 'mediasPerso', 'mediasMasques', 'mediasAffiches', 'jeton', 'compte.abonne', 'compte.session'];
+const GARDEES = ['theme', 'masques', 'afpOnly', 'mediasPerso', 'mediasMasques', 'mediasAffiches', 'jeton', 'compte.abonne', 'compte.session', 'compte.souvenir'];
 export function purgeStore() {
   Object.keys(localStorage)
     .filter(k => k.startsWith(PREFIX) && !GARDEES.includes(k.slice(PREFIX.length)))
