@@ -12,22 +12,32 @@ import { vueArchives } from './views/archives.js';
 import { vueArticles } from './views/articles.js';
 import { vueMedias, majMedias as maj, mediaVisible } from './views/medias.js';
 import { vueLecture } from './views/lecture.js';
+import { vueReglages } from './views/reglages.js';
 
 export const renderView = rendu;
 export const majMedias = maj;
 export { mediaVisible };
 
-Object.entries({ edition: vueEdition, sources: vueSources, archives: vueArchives, climat: vueClimat, articles: vueArticles, medias: vueMedias, lecture: vueLecture })
+Object.entries({ edition: vueEdition, sources: vueSources, archives: vueArchives, climat: vueClimat, articles: vueArticles, medias: vueMedias, lecture: vueLecture, reglages: vueReglages })
   .forEach(([id, vue]) => enregistrerVue(id, vue));
 
-const TABS = () => [
-  { id: 'edition', nom: 'Édition du ' + nomJourEdition(), emoji: '📄' },
-  { id: 'sources', nom: 'Sources', emoji: '📚' },
-  { id: 'archives', nom: 'Archives', emoji: '🗄️' },
-  { id: 'climat', nom: 'Climat', emoji: '🌡️' },
-  { id: 'articles', nom: 'Articles d’aujourd’hui', emoji: '🔥' },
-  { id: 'medias', nom: 'Médias', emoji: '🎬' },
-  { id: 'lecture', nom: 'Lecture (WiP)', emoji: '📖' }];
+const TABS_BASE = [
+  { id: 'edition', nom: () => 'Édition du ' + nomJourEdition(), emoji: '📄' },
+  { id: 'sources', nom: () => 'Sources', emoji: '📚' },
+  { id: 'articles', nom: () => 'Articles', emoji: '🔥' },
+  { id: 'medias', nom: () => 'Médias', emoji: '🎬' },
+  { id: 'lecture', nom: () => 'Lecture (WiP)', emoji: '📖' },
+  { id: 'climat', nom: () => 'Climat', emoji: '🌡️' },
+  { id: 'archives', nom: () => 'Archives', emoji: '🗄️' },
+  { id: 'reglages', nom: () => 'Réglages', emoji: '⚙️' }];
+/* Ordre des onglets : préférence locale (nl.ordreOnglets), sinon défaut ci-dessus */
+const TABS = () => {
+  const pref = getStore('ordreOnglets', []);
+  const base = TABS_BASE.map(t => ({ ...t, nom: t.nom() }));
+  return pref.filter(id => base.some(t => t.id === id))
+    .map(id => base.find(t => t.id === id))
+    .concat(base.filter(t => !pref.includes(t.id)));
+};
 
 export function renderTabs() {
   $('#tabs').innerHTML = TABS().map(t =>

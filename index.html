@@ -15,33 +15,13 @@
 <body>
 <header id="topbar">
   <h1>Des Infos, y’en a H24 <span id="edition-date"></span></h1>
-  <button id="btn-refresh" aria-label="Actualiser">⟳</button>
-  <button id="btn-settings" aria-label="Réglages">⚙️</button>
+  <button id="btn-profil" aria-label="Profil et réglages">👤</button>
+  <button id="btn-refresh" aria-label="Purger le cache et actualiser">⟳</button>
 </header>
 <div id="stale-banner" hidden></div>
 <nav id="tabs" aria-label="Chapitres"></nav>
 <main id="view"></main>
-<div id="settings-panel" hidden>
-  <div class="panel-card">
-    <h2>Réglages</h2>
-    <label>Apparence
-      <select id="sel-theme">
-        <option value="dark">Sombre (défaut)</option>
-        <option value="light">Clair</option>
-        <option value="auto">Auto</option>
-      </select>
-    </label>
-    <h3>Mes flux suivis</h3>
-    <ul id="chapters-editor"></ul>
-    <button id="btn-reset-chapters">Restaurer par défaut</button>
-    <button id="btn-purge">Purger le cache</button>
-    <button id="btn-install-hint">Installer sur iPhone</button>
-    <p class="hint">Sur iPhone : bouton Partager ⬆️ puis « Sur l'écran d'accueil ».</p>
-    <h3 id="titre-compte">Mon compte</h3>
-    <div id="compte-bloc"></div>
-    <button id="btn-close-settings">Fermer</button>
-  </div>
-</div>
+
 <script type="module" src="js/app.js"></script>
 </body>
 </html>

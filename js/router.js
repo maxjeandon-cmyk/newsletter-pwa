@@ -7,7 +7,7 @@
 
 import { state } from './core.js';
 
-const ONGLETS = ['edition', 'sources', 'archives', 'climat', 'articles', 'medias', 'lecture'];
+const ONGLETS = ['edition', 'sources', 'archives', 'climat', 'articles', 'medias', 'lecture', 'reglages'];
 const SOUS_ARCHIVES = ['editions', 'droit', 'economie'];
 
 /* L'URL qui représente l'état courant */
