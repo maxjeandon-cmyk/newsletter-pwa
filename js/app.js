@@ -84,6 +84,7 @@ async function init() {
     .filter(k => k.startsWith('nl.media:') && !idsConnus.has(k.slice('nl.media:'.length)))
     .forEach(k => localStorage.removeItem(k));
   state.feed = getStore('feed', { time: 0, articles: [] });
+  (state.feed.articles || []).forEach(a => { if (!(a.date instanceof Date)) a.date = new Date(a.date); });
   renderTabs();
   renderView();
   /* Session de compte restaurée en silence : la sync des préférences suit si connecté */
