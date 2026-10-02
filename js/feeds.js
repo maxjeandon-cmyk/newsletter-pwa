@@ -407,3 +407,106 @@ export async function trouverFlux(saisie) {
   trouves.sort((a, b) => b.articles - a.articles);
   return { trouves };
 }
+
+/* --- Onglet Vidéos (v50) : agrégation des flux RSS YouTube des médias
+ *     sélectionnés dans l'onglet Médias (mêmes règles de visibilité).
+ *     YouTube n'est pas dans la config serveur : la chaîne de chaque média
+ *     est découverte automatiquement (lien youtube.com/@... sur son site,
+ *     via le même budget de découverte que l'ajout d'un média) puis mise en
+ *     cache localement (nl.chaine:<id>). Les flux Atom youtube.com/feeds/videos.xml
+ *     passent par la même cascade direct → rss2json → relais XML.
+ *     Cache agrégé TTL 20 min, clé nl.videos — jamais touché par la purge
+ *     des préférences (ce n'en est pas une). --- */
+export function mediasVisibles() {
+  const masquesM = getStore('mediasMasques', {});
+  const affichesM = getStore('mediasAffiches', {});
+  return (state.medias || []).filter(m =>
+    !masquesM[m.id] && (!m.masque || !!affichesM[m.id]) && (m.flux || []).length);
+}
+
+/* Découverte de la chaîne : scrutée depuis le premier flux/site du média,
+ * une seule fois puis cachée pour toujours (chaîne renommée = cache mort,
+ * nettoyé par « Purger le cache »). Renvoie l'ID de chaîne ou null. */
+const decouvertesEnCours = new Map();
+export async function decouvrirChaine(m) {
+  const cache = getStore('chaine:' + m.id, null);
+  if (cache !== null) return cache.chaine || null;
+  if (decouvertesEnCours.has(m.id)) return decouvertesEnCours.get(m.id);
+  const p = (async () => {
+    let chaine = null;
+    try {
+      const page = await pageHtmlRelais(m.flux[0]);
+      if (page) {
+        const m1 = page.match(/youtube\.com\/(?:@|channel\/|c\/|user\/)?([\w.-]+)/i);
+        if (m1) {
+          const c = m1[1].replace(/[\"'?#].*$/, '');
+          /* l'identifiant doit exister côté YouTube : le flux vidéo en fait foi */
+          const arts = await fetchFeedItems('https://www.youtube.com/feeds/videos.xml?channel_id=' + encodeURIComponent(c), 5000);
+          if (arts.length) chaine = c;
+        }
+      }
+    } catch (e) { /* pas de chaîne trouvée : média sans YouTube */ }
+    setStore('chaine:' + m.id, { chaine });
+    decouvertesEnCours.delete(m.id);
+    return chaine;
+  })();
+  decouvertesEnCours.set(m.id, p);
+  return p;
+}
+
+/* Flux Atom YouTube → articles au même format que le reste de l'app.
+ * L'ID vidéo vit dans l'URL ; la miniature est déduite de l'ID (img.youtube.com). */
+export function idVideoYoutube(lien) {
+  const m = String(lien || '').match(/(?:watch\?v=|youtu\.be\/|\/v\/|\/embed\/|\/shorts\/)([\w-]{11})/);
+  return m ? m[1] : null;
+}
+
+let videosEnCours = null;
+export function chargerVideos(force = false) {
+  const cache = getStore('videos', null);
+  if (cache && Array.isArray(cache.videos)) cache.videos.forEach(v => { if (!(v.date instanceof Date)) v.date = new Date(v.date); });
+  if (!force && cache && Date.now() - cache.time < 20 * 60e3) {
+    state.videosData = cache;
+    return Promise.resolve(cache);
+  }
+  if (videosEnCours) return videosEnCours;
+  videosEnCours = (async () => {
+    try {
+      const cibles = [];
+      for (const m of mediasVisibles()) {
+        if (/youtube\.com/i.test((m.flux || []).join(' '))) {
+          /* flux RSS YouTube saisi directement dans Médias : aucune découverte nécessaire */
+          const u = m.flux.find(f => /youtube\.com/i.test(f));
+          cibles.push({ m, url: u });
+        } else {
+          const chaine = await decouvrirChaine(m);
+          if (chaine) cibles.push({ m, url: 'https://www.youtube.com/feeds/videos.xml?channel_id=' + encodeURIComponent(chaine) });
+        }
+      }
+      const videos = [];
+      await pool(cibles.map(({ m, url }) => async () => {
+        const arts = await fetchFeedItems(url, 7000);
+        for (const a of arts) {
+          const id = idVideoYoutube(a.lien) || (a.lien.match(/videos\/([\w-]{11})/) || [])[1] || null;
+          if (!id) continue;
+          videos.push({ ...a, mediaNom: m.nom, videoId: id });
+        }
+      }));
+      videos.sort((a, b) => b.date - a.date);
+      let ok = 0; const vus = new Set();
+      const garde = [];
+      for (const v of videos) {
+        if (vus.has(v.videoId)) continue;
+        vus.add(v.videoId);
+        ok++;
+        garde.push(v);
+        if (garde.length >= 100) break;
+      }
+      const data = { time: Date.now(), videos: garde, ok, total: cibles.length };
+      setStore('videos', data);
+      state.videosData = data;
+      return data;
+    } finally { videosEnCours = null; }
+  })();
+  return videosEnCours;
+}
