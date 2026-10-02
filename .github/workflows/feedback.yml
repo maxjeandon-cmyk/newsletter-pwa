@@ -18,4 +18,4 @@ jobs:
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
-          GH_TOKEN: ${{ secrets.FEEDBACK_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
