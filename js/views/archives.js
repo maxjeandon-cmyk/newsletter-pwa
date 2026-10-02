@@ -2,6 +2,7 @@
  * récaps hebdo + archives thématiques (chapitres Droit & Économie archivés chaque édition). */
 import { $, state, esc, fmtDate, fmtMonth, weekKeyOf } from '../core.js';
 import { renderView } from './common.js';
+import { vueSources } from './sources.js';
 
 function openArchive(html) {
   state.archiveSel = html; renderView(); window.scrollTo(0, 0);
@@ -12,6 +13,7 @@ function openArchive(html) {
  * pouvoir y revenir — l'index porte des titres datés et liés au contenu. */
 const SOUS_ONGLETS_ARCHIVES = () => [
   { id: 'editions', nom: '📰 Éditions' },
+  { id: 'sources', nom: '📚 Sources' },
   { id: 'droit', nom: '⚖️ Droit' },
   { id: 'economie', nom: '💰 Économie' }
 ];
@@ -36,6 +38,15 @@ export function vueArchives() {
     return;
   }
   const sub = SOUS_ONGLETS_ARCHIVES().some(x => x.id === state.archiveSub) ? state.archiveSub : 'editions';
+  /* Sous-onglet Sources : le tableau des sources de l'édition du jour (v30, intégré aux archives) */
+  if (sub === 'sources') {
+    vueSources();
+    const bandeau = document.createElement('div');
+    bandeau.innerHTML = sousOngletsArchives(sub);
+    view.prepend(bandeau.firstChild);
+    wireSousOngletsArchives();
+    return;
+  }
   /* Sous-onglet thématique : le chapitre Droit (ou Économie) de chaque édition, archivé */
   if (sub !== 'editions') {
     const estDroit = sub === 'droit';

@@ -208,7 +208,17 @@ export function chargerChapitres() {
           }
         }
       });
-      state.feed = { time: Date.now(), articles: dedupliquer(all) };
+      /* v30 : flux des medias affiches (onglet Medias) fusionnes dans l'onglet Articles.
+         Reutilise le cache/TTL de chargerMedia — pas de double requete si l'onglet Medias charge aussi. */
+      const masquesM = getStore('mediasMasques', {});
+      const affichesM = getStore('mediasAffiches', {});
+      const mediasVis = (state.medias || []).filter(m =>
+        !masquesM[m.id] && (!m.masque || !!affichesM[m.id]) && (m.flux || []).length);
+      const artsMedia = [];
+      await Promise.allSettled(mediasVis.map(m => chargerMedia(m).then(d => {
+        for (const a of (d?.articles || [])) artsMedia.push({ ...a, mediaNom: m.nom });
+      }).catch(() => {})));
+      state.feed = { time: Date.now(), articles: dedupliquer(all.concat(artsMedia)) };
       state.feedStats = { ok, total: urls.length, time: Date.now() };
       setStore('feed', state.feed);
       return state.feed;

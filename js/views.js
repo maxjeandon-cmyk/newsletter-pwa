@@ -6,7 +6,6 @@ import { $, state, esc, getStore, setStore, nomJourEdition } from './core.js';
 import { chargerChapitres } from './feeds.js';
 import { enregistrerVue, renderView as rendu } from './views/common.js';
 import { vueEdition } from './views/edition.js';
-import { vueSources } from './views/sources.js';
 import { vueClimat } from './views/climat.js';
 import { vueArchives } from './views/archives.js';
 import { vueArticles } from './views/articles.js';
@@ -18,15 +17,14 @@ export const renderView = rendu;
 export const majMedias = maj;
 export { mediaVisible };
 
-Object.entries({ edition: vueEdition, sources: vueSources, archives: vueArchives, climat: vueClimat, articles: vueArticles, medias: vueMedias, lecture: vueLecture, reglages: vueReglages })
+Object.entries({ edition: vueEdition, archives: vueArchives, climat: vueClimat, articles: vueArticles, medias: vueMedias, lecture: vueLecture, reglages: vueReglages })
   .forEach(([id, vue]) => enregistrerVue(id, vue));
 
 const TABS_BASE = [
-  { id: 'medias', nom: () => 'Médias', emoji: '🎬' },
   { id: 'articles', nom: () => 'Articles', emoji: '🔥' },
   { id: 'edition', nom: () => 'Édition du ' + nomJourEdition(), emoji: '📄' },
-  { id: 'sources', nom: () => 'Sources', emoji: '📚' },
   { id: 'archives', nom: () => 'Archives', emoji: '🗄️' },
+  { id: 'medias', nom: () => 'Médias', emoji: '🎬' },
   { id: 'climat', nom: () => 'Climat', emoji: '🌡️' },
   { id: 'lecture', nom: () => 'Lecture (WiP)', emoji: '📖' },
   { id: 'reglages', nom: () => 'Réglages', emoji: '⚙️' }];
