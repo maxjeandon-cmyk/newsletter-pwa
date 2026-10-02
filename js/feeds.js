@@ -48,12 +48,28 @@ export function parseRss2Json(text) {
   } catch (e) { return []; }
 }
 
+/* --- Back-off des relais (v29) : un relais qui répond 429 (quota épuisé) est
+ * mis au repos 5 minutes — la cascade le saute au lieu d'insister et de
+ * griller le budget des autres visiteurs. Map mémoire, par onglet : gratuit. --- */
+const REPOS = new Map();
+const REPOS_MS = 5 * 60e3;
+function auRepos(url) {
+  const cle = new URL(url, location.href).host;
+  const jusque = REPOS.get(cle) || 0;
+  return Date.now() < jusque;
+}
+function marquer429(url) {
+  try { REPOS.set(new URL(url, location.href).host, Date.now() + REPOS_MS); } catch (e) { /* URL relative */ }
+}
+
 /* --- Fetch borné en temps : AbortController + nettoyage systématique du timer --- */
 async function texteBornes(url, timeout) {
+  if (auRepos(url)) return null;
   const ctl = new AbortController();
   const t = setTimeout(() => ctl.abort(), timeout);
   try {
     const r = await fetch(url, { signal: ctl.signal });
+    if (r.status === 429) { marquer429(url); return null; }
     return r.ok ? await r.text() : null;
   } catch (e) { return null; }
   finally { clearTimeout(t); }

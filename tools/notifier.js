@@ -57,8 +57,9 @@ async function main() {
     aNotifier.push({ abonnement: a, message: msgs[0], reste: msgs.length - 1, prefs: p, envoyes });
   }
 
-  /* 5. Envoi, parallelisme 4, nettoyage des morts */
+  /* 5. Envoi, parallelisme 4, nettoyage des morts, PATCH par lot (v29) */
   let envoyes = 0, morts = 0;
+  const majPrefs = new Map();
   const file = [...aNotifier];
   const ouvriers = Array.from({ length: Math.min(4, file.length) }, async () => {
     while (file.length) {
@@ -70,10 +71,9 @@ async function main() {
         );
         envoyes++;
         /* mémo : cet utilisateur a reçu edition/copernicus courant */
-        const prefs = { ...t.prefs, notif_envoyees: { ...(t.envoyes || {}), ...(t.message.url === './#edition' ? { edition: dateEdition } : t.message.url === './#climat' ? { copernicus: majClimat } : {}) } };
-        await api('/rest/v1/preferences?user_id=eq.' + t.abonnement.user_id, {
-          method: 'PATCH', body: JSON.stringify({ prefs })
-        });
+        const prefs = { __uid: t.abonnement.user_id, ...t.prefs, notif_envoyees: { ...(t.envoyes || {}), ...(t.message.url === './#edition' ? { edition: dateEdition } : t.message.url === './#climat' ? { copernicus: majClimat } : {}) } };
+        /* PATCH différé : on accumule et on écrit par lot après la boucle (v29). */
+        majPrefs.set(t.abonnement.user_id, prefs);
       } catch (e) {
         if (e.statusCode === 410 || e.statusCode === 404) {
           morts++;
@@ -83,7 +83,16 @@ async function main() {
     }
   });
   await Promise.all(ouvriers);
-  console.log('Notifications envoyées : ' + envoyes + ' ; abonnements morts nettoyés : ' + morts + '.');
+  /* Écriture des préférences en lot : 1 requête par tranche de 100 (limite PostgREST) */
+  const lots = [...majPrefs.values()];
+  for (let i = 0; i < lots.length; i += 100) {
+    await api('/rest/v1/preferences?on_conflict=user_id', {
+      method: 'POST',
+      headers: { Prefer: 'resolution=merge-duplicates' },
+      body: JSON.stringify(lots.slice(i, i + 100).map(({ __uid, ...p }) => ({ user_id: __uid, prefs: p })))
+    }).catch(() => {});
+  }
+  console.log('Notifications envoyées : ' + envoyes + ' ; abonnements morts nettoyés : ' + morts + ' ; prefs mises à jour : ' + lots.length + '.');
 }
 
 main().catch(e => { console.error(e); process.exit(1); });
