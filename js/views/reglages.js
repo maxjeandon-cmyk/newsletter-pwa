@@ -56,12 +56,12 @@ export async function vueReglages() {
     '</select></label>' +
     '<label class="regl-label">Taille du texte <span id="taille-val" class="hint"></span>' +
     '<input type="range" id="in-taille" min="0.85" max="1.3" step="0.05" value="' + (getStore('taillePolice', 1)) + '"/>' +
-    '</label></div>' +
+    '</label></details>' +
     /* --- Ordre des onglets --- */
     '<details class="carte-regl"><summary>🧭 Ordre des onglets</summary>' +
     '<p class="meta-count">Réorganise la barre des chapitres — tes onglets préférés en premier.</p>' +
     '<ul id="ordre-liste" class="ordre-liste"></ul>' +
-    '<button class="btn-sec" id="btn-reset-ordre">Rétablir l\u2019ordre par défaut</button></div>' +
+    '<button class="btn-sec" id="btn-reset-ordre">Rétablir l\u2019ordre par défaut</button></details>' +
     /* --- Chapitres suivis --- */
     '<details class="carte-regl"><summary>🔥 Mes flux suivis</summary>' +
     '<ul id="chapters-editor" class="ordre-liste"></ul>' +
@@ -72,7 +72,7 @@ export async function vueReglages() {
     '<details class="carte-regl"><summary>🧰 Maintenance</summary>' +
     '<button id="btn-purge">Purger le cache</button>' +
     '</details>' +
-    '<div class="summary-card"><h2>📲 Installer sur l\u2019écran d\u2019accueil</h2>' +
+    '<details class="carte-regl"><summary>📲 Installer sur l\u2019écran d\u2019accueil</summary>' +
     '<p class="meta-count">L\u2019app s\u2019installe comme une vraie application : icône dédiée, plein écran, fonctionne hors ligne.</p>' +
     '<div id="guide-install"></div>' + BIENTOT +
     '</details></section>';
