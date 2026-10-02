@@ -151,11 +151,18 @@ export async function restaurerSession() {
 }
 
 /* --- Préférences : une ligne par utilisateur, protégée par RLS --- */
-const CLES_SYNCO = ['theme', 'masques', 'afpOnly', 'mediasPerso', 'mediasMasques', 'mediasAffiches', 'ordreOnglets', 'taillePolice'];
-
+/* v27 : TOUT ce qui vit dans localStorage (clés nl.*) voyage avec le profil — présent et futur.
+ * Seules exceptions : jetons de session (liés à l'appareil) et jeton GitHub (secret local).
+ * Un futur réglage ajouté dans l'onglet Réglages sera donc synchronisé automatiquement. */
+const HORS_SYNCO = ['compte.session', 'compte.abonne', 'compte.souvenir', 'jeton'];
 function prefsLocales() {
   const p = {};
-  for (const k of CLES_SYNCO) p[k] = getStore(k, null);
+  for (const k of Object.keys(localStorage)) {
+    if (!k.startsWith('nl.')) continue;
+    const cle = k.slice('nl.'.length);
+    if (HORS_SYNCO.includes(cle)) continue;
+    try { p[cle] = JSON.parse(localStorage.getItem(k)); } catch (e) { /* illisible : ignorée */ }
+  }
   return p;
 }
 
@@ -203,7 +210,8 @@ export async function synchroniserPrefs() {
   const dist = await chargerPrefs();
   if (dist.ok) {
     for (const [k, v] of Object.entries(dist.prefs)) {
-      if (v !== null && v !== undefined) setStore(k, v);
+      if (v === null || v === undefined || HORS_SYNCO.includes(k)) continue;
+      setStore(k, v);
     }
   }
   await envoyerPrefs();
