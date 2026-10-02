@@ -12,12 +12,13 @@ import { vueArticles } from './views/articles.js';
 import { vueMedias, majMedias as maj, mediaVisible } from './views/medias.js';
 import { vueLecture } from './views/lecture.js';
 import { vueReglages } from './views/reglages.js';
+import { vueFeedback } from './views/feedback.js';
 
 export const renderView = rendu;
 export const majMedias = maj;
 export { mediaVisible };
 
-Object.entries({ edition: vueEdition, archives: vueArchives, climat: vueClimat, articles: vueArticles, medias: vueMedias, lecture: vueLecture, reglages: vueReglages })
+Object.entries({ edition: vueEdition, archives: vueArchives, climat: vueClimat, articles: vueArticles, medias: vueMedias, lecture: vueLecture, reglages: vueReglages, feedback: vueFeedback })
   .forEach(([id, vue]) => enregistrerVue(id, vue));
 
 const TABS_BASE = [
