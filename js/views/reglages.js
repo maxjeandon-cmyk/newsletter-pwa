@@ -7,6 +7,7 @@ import { $, state, esc, getStore, setStore, applyTheme, applyTaille, THEMES } fr
 import { chargerChapitres } from '../feeds.js';
 import { renderView } from './common.js';
 import { inscrire, connecter, deconnecter, restaurerSession, synchroniserPrefs, envoyerPrefs, abonne, estConnecte, veutResterConnecte } from '../compte.js';
+import { pushDisponible, prefsNotifications, basculerNotification, desabonner } from '../push.js';
 
 const ORDRE_DEFAUT = ['edition', 'sources', 'articles', 'medias', 'lecture', 'climat', 'archives', 'reglages'];
 const NOMS = {
@@ -38,9 +39,9 @@ export async function vueReglages() {
   $('#view').innerHTML =
     '<section class="reglages">' +
     /* --- Profil / compte --- */
-    '<div class="summary-card" id="carte-compte"><h2>👤 Profil</h2><div id="compte-bloc"></div></div>' +
+    '<details class="carte-regl" open><summary>👤 Profil</summary><div id="compte-bloc"></div></details>' +
     /* --- Apparence --- */
-    '<div class="summary-card"><h2>🎨 Apparence</h2>' +
+    '<details class="carte-regl"><summary>🎨 Apparence</summary>' +
     '<label class="regl-label">Thème' +
     '<select id="sel-theme">' +
     '<optgroup label="Sobres">' + THEMES.sobres.map(t =>
@@ -57,22 +58,24 @@ export async function vueReglages() {
     '<input type="range" id="in-taille" min="0.85" max="1.3" step="0.05" value="' + (getStore('taillePolice', 1)) + '"/>' +
     '</label></div>' +
     /* --- Ordre des onglets --- */
-    '<div class="summary-card"><h2>🧭 Ordre des onglets</h2>' +
+    '<details class="carte-regl"><summary>🧭 Ordre des onglets</summary>' +
     '<p class="meta-count">Réorganise la barre des chapitres — tes onglets préférés en premier.</p>' +
     '<ul id="ordre-liste" class="ordre-liste"></ul>' +
     '<button class="btn-sec" id="btn-reset-ordre">Rétablir l\u2019ordre par défaut</button></div>' +
     /* --- Chapitres suivis --- */
-    '<div class="summary-card"><h2>🔥 Mes flux suivis</h2>' +
+    '<details class="carte-regl"><summary>🔥 Mes flux suivis</summary>' +
     '<ul id="chapters-editor" class="ordre-liste"></ul>' +
-    '<button class="btn-sec" id="btn-reset-chapters">Tout suivre</button></div>' +
+    '<button class="btn-sec" id="btn-reset-chapters">Tout suivre</button></details>' +
     /* --- Maintenance + Installation (guide par navigateur) --- */
-    '<div class="summary-card"><h2>🧰 Maintenance</h2>' +
+    '<details class="carte-regl"><summary>🔔 Notifications</summary>' +
+    '<div id="notifs-bloc"></div></details>' +
+    '<details class="carte-regl"><summary>🧰 Maintenance</summary>' +
     '<button id="btn-purge">Purger le cache</button>' +
-    '</div>' +
+    '</details>' +
     '<div class="summary-card"><h2>📲 Installer sur l\u2019écran d\u2019accueil</h2>' +
     '<p class="meta-count">L\u2019app s\u2019installe comme une vraie application : icône dédiée, plein écran, fonctionne hors ligne.</p>' +
     '<div id="guide-install"></div>' + BIENTOT +
-    '</div></section>';
+    '</details></section>';
 
   $('#sel-theme').onchange = e => { setStore('theme', e.target.value); applyTheme(e.target.value); };
   applyTaille(getStore('taillePolice', 1));
@@ -92,6 +95,7 @@ export async function vueReglages() {
     location.reload();
   };
   rendreGuideInstall();
+  rendreNotifications();
   rendreChapitres();
 }
 
@@ -226,4 +230,36 @@ function rendreGuideInstall() {
       '<ol>' + g.etapes.map(e => '<li>' + esc(e) + '</li>').join('') + '</ol>' +
       '</details>';
   }).join('');
+}
+
+
+/* --- Notifications (v28) : toggles édition / Copernicus / chaque média --- */
+function rendreNotifications() {
+  const bloc = $('#notifs-bloc');
+  if (!bloc) return;
+  const p = prefsNotifications();
+  const medias = (state.medias || []);
+  if (!pushDisponible()) {
+    bloc.innerHTML = '<p class="hint">Les notifications ne sont pas disponibles sur ce navigateur. Sur iPhone : installe l\u2019app depuis Safari (iOS 16.4+).</p>';
+    return;
+  }
+  if (!estConnecte()) {
+    bloc.innerHTML = '<p class="hint">Connecte-toi pour activer les notifications — elles suivent ton profil et tes médias.</p>';
+    return;
+  }
+  const toggle = (id, on, label) =>
+    '<label class="switch notif-ligne"><input type="checkbox" data-notif="' + id + '"' + (on ? ' checked' : '') + '/><span>' + esc(label) + '</span></label>';
+  bloc.innerHTML =
+    '<p class="hint">Active ce que tu veux recevoir dès que c\u2019est prêt — envoi groupé et limité pour ne jamais spammer.</p>' +
+    toggle('edition', p.edition, '📰 L\u2019édition du jour') +
+    toggle('copernicus', p.copernicus, '🌡️ Le bulletin Copernicus') +
+    (medias.length ? '<p class="meta-count" style="margin:10px 0 2px">Médias suivis</p>' : '') +
+    medias.map(m => toggle('media:' + esc(m.id), p.medias?.[m.id], m.nom ? esc(m.nom) : esc(m.id))).join('');
+  [...bloc.querySelectorAll('[data-notif]')].forEach(cb =>
+    cb.onchange = async () => {
+      const id = cb.dataset.notif;
+      const prefs = await basculerNotification(id.startsWith('media:') ? 'medias' : id, id.startsWith('media:') ? id.slice(6) : null);
+      /* plus aucun toggle actif → désabonnement silencieux du push */
+      if (!prefs.edition && !prefs.copernicus && !Object.values(prefs.medias || {}).some(Boolean)) await desabonner();
+    });
 }

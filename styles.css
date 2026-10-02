@@ -177,3 +177,14 @@ main{padding:0 14px;max-width:720px;margin:0 auto}
 .install-guide summary{padding:11px 13px;font-size:14px;font-weight:600;cursor:pointer;list-style-position:inside}
 .install-guide ol{margin:0;padding:2px 16px 12px 30px;font-size:14px;color:var(--muted)}
 .install-guide li{margin:6px 0}
+
+/* v28 : cartes Réglages repliables + lignes de notification */
+.carte-regl{border:1px solid var(--border);border-radius:14px;margin:0;background:var(--card)}
+.carte-regl summary{padding:13px 15px;font-size:15px;font-weight:600;cursor:pointer;list-style-position:inside}
+.carte-regl[open] summary{border-bottom:1px solid var(--border)}
+.carte-regl > *:not(summary){margin:0 15px}
+.carte-regl p,.carte-regl ul,.carte-regl label,.carte-regl button{margin-left:15px;margin-right:15px}
+.carte-regl ul{padding-left:15px}
+.notif-ligne{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text)}
+.notif-ligne:last-child{border-bottom:none}
+.reglages{gap:10px}

@@ -1,0 +1,24 @@
+name: Notifications push
+on:
+  schedule:
+    - cron: '21 */2 * * *'   # toutes les 2 h : vérifie et envoie dès que possible, sans risquer l'overload
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  notifier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Installer web-push
+        run: npm install --no-save web-push
+      - name: Envoyer les notifications (groupées, limitées)
+        run: node tools/notifier.js
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
+          VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}

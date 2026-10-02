@@ -116,6 +116,16 @@ export function applyTheme(t) {
     t === 'auto' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
       : connu ? t : 'dark';
 }
+/* Clé VAPID base64 -> Uint8Array pour pushManager.subscribe (v28) */
+export function urlBase64ToUint8Array(b64) {
+  const pad = '='.repeat((4 - b64.length % 4) % 4);
+  const base64 = (b64 + pad).replace(/-/g, '+').replace(/_/g, '/');
+  const brut = atob(base64);
+  const arr = new Uint8Array(brut.length);
+  for (let i = 0; i < brut.length; i++) arr[i] = brut.charCodeAt(i);
+  return arr;
+}
+
 /* Taille de police : 0.85 à 1.3, défaut 1 — variable CSS sur <html> */
 export function applyTaille(t) {
   const v = Math.min(1.3, Math.max(0.85, Number(t) || 1));

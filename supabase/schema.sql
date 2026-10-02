@@ -54,3 +54,33 @@ create trigger trg_prefs_updated before update on public.preferences
 
 -- 6. Hygiène : quand un compte est supprimé, ses préférences partent avec lui.
 --    (on delete cascade déjà posé sur la clé primaire.)
+
+-- v28 : notifications push — abonnements Web Push par utilisateur.
+-- Une ligne par endpoint de navigateur ; les toggles (édition/Copernicus/médias)
+-- vivent dans les préférences (table preferences) — pas ici.
+create table if not exists public.abonnements_push (
+  id bigint generated always as identity primary key,
+  user_id uuid not null default auth.uid() references auth.users (id) on delete cascade,
+  endpoint text not null unique,
+  p256dh text,
+  auth text,
+  created_at timestamptz not null default now()
+);
+
+alter table public.abonnements_push enable row level security;
+
+drop policy if exists "push_select" on public.abonnements_push;
+create policy "push_select" on public.abonnements_push
+  for select using (auth.uid() = user_id);
+
+drop policy if exists "push_insert" on public.abonnements_push;
+create policy "push_insert" on public.abonnements_push
+  for insert with check (auth.uid() = user_id);
+
+drop policy if exists "push_delete" on public.abonnements_push;
+create policy "push_delete" on public.abonnements_push
+  for delete using (auth.uid() = user_id);
+
+-- Le workflow d'envoi (GitHub Actions) lit via la clé service_role (secret
+-- SUPABASE_SERVICE_ROLE) qui contourne le RLS : à ranger dans les secrets du
+-- dépôt, jamais dans le code.

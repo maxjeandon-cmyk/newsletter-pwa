@@ -1,5 +1,8 @@
 {
   "url": "https://dymizsdqtmkwinfoynet.supabase.co",
   "anon_key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR5bWl6c2RxdG1rd2luZm95bmV0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA4ODAwOTgsImV4cCI6MjEwNjQ1NjA5OH0._KIFj1KHmdIewtnLdTkhTmS1IwvtKAX4GhLke6E2mQE",
-  "note": " Exécuter supabase/schema.sql dans l'éditeur SQL Supabase. La clé anon est publique par conception — la sécurité des données repose sur les politiques RLS."
+  "note": " Exécuter supabase/schema.sql dans l'éditeur SQL Supabase. La clé anon est publique par conception — la sécurité des données repose sur les politiques RLS.",
+  "push": {
+    "cle_publique": "BEIWkIKXWO3anISHkuSCsVHdYkGa4xc7Bi1ETyp1Gvi2eu5LN5V3LmeFxgpGO7Xx8fy4IsfEamM6jjRicDQbo3I"
+  }
 }

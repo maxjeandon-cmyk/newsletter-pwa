@@ -2,7 +2,7 @@
  * Stratégies : data/ et editions/ network-first (toujours frais en ligne, repli cache hors ligne) ;
  * le reste (coquille, js/, styles) cache-first pour un démarrage instantané.
  * À chaque déploiement de code : incrémenter CACHE (v22 → v23…) pour invalider les caches clients. */
-const CACHE = 'newsletter-v40';
+const CACHE = 'newsletter-v41';
 const ASSETS = [
   './',
   './index.html',
@@ -24,6 +24,7 @@ const ASSETS = [
   './js/views/reglages.js',
   './js/lecture.js',
   './js/compte.js',
+  './js/push.js',
   './js/router.js',
   './js/app.js',
   './data/chapters.json',
@@ -55,4 +56,19 @@ self.addEventListener('fetch', e => {
   } else {
     e.respondWith(caches.match(e.request).then(r => r || fetch(e.request)));
   }
+});
+
+/* v28 : notifications push — affichage réceptionné depuis le serveur */
+self.addEventListener('push', e => {
+  const d = e.data ? e.data.json() : {};
+  e.waitUntil(self.registration.showNotification(d.titre || 'Des Infos, y\u2019en a H24', {
+    body: d.corps || '',
+    icon: './icons/icon.svg',
+    badge: './icons/icon.svg',
+    data: { url: d.url || './' }
+  }));
+});
+self.addEventListener('notificationclick', e => {
+  e.notification.close();
+  e.waitUntil(clients.openWindow(e.notification.data?.url || './'));
 });
