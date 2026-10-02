@@ -3,7 +3,7 @@
  * v24 : les réglages vivent dans un onglet (#reglages, vue dédiée) — plus de panneau flottant.
  * Le bouton 👤 mène au profil, ⟳ purge le cache (CacheStorage) puis recharge la page fraîche.
  * Contrat de données : editions/ n'est jamais modifié ici ; la config éditoriale vit dans data/. */
-import { $, state, getStore, setStore, applyTheme, fmtDate } from './core.js';
+import { $, state, getStore, setStore, applyTheme, applyTaille, fmtDate } from './core.js';
 import { chargerChapitres, chargerMedia } from './feeds.js';
 import { renderTabs, renderView, majMedias } from './views.js';
 import { initRouter } from './router.js';
@@ -52,6 +52,7 @@ async function init() {
   ['chapters', 'chaptersV', 'feedCache', 'afpOnly', 'theme'].forEach(k => localStorage.removeItem(k));
   initRouter(() => { renderTabs(); renderView(); });
   applyTheme(getStore('theme', 'dark'));
+  applyTaille(getStore('taillePolice', 1));
   /* ⟳ purge le cache et recharge — plus de doute sur la fraîcheur de ce qu'on lit */
   $('#btn-refresh').onclick = purgeEtRecharger;
   /* 👤 mène au profil/compte dans l'onglet Réglages */
