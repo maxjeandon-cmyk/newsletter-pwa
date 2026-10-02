@@ -42,7 +42,7 @@ function extraireChapitre(html, nomH2) {
 function pageArchive(dom, date, titre, chapitre, editionDate) {
   const [y, mo, d] = date.split('-');
   const dateFR = d + '/' + mo + '/' + y;
-  const style = 'body{background:#0e0e12;color:#e8e8ec;font-family:Georgia,serif;max-width:820px;margin:0 auto;padding:24px;line-height:1.7}h1,h2{border-bottom:1px solid #333;padding-bottom:4px}h3{color:#aab4c8}a{color:#6ea8fe}table{border-collapse:collapse;width:100%;font-size:0.85em;margin:12px 0}th,td{border:1px solid #333;padding:6px 8px;text-align:left;vertical-align:top}th{background:#1a1a22}hr{border:none;border-top:1px solid #333}li{margin:6px 0}';
+  const style = 'body{background:#0e0e12;color:#e8e8ec;font-family:Georgia,serif;max-width:820px;margin:0 auto;padding:24px;line-height:1.7}h1,h2{border-bottom:1px solid #333;padding-bottom:4px}h3{color:#aab4c8}a{color:#6ea8fe}table{border-collapse:collapse;width:100%;font-size:0.85em;margin:12px 0}th,td{border:1px solid #333;padding:6px 8px;text-align:left;vertical-align:top}th{background:#1a1a22}hr{border:none;border-top:1px solid #333}li{margin:6px 0}table{table-layout:fixed}td,th{overflow-wrap:anywhere;word-break:break-word}td:first-child{width:70%}td:not(:first-child){width:15%}';
   const provenance = '<p style="font-size:0.85em;color:#aab4c8">Chapitre extrait de l\u2019édition du ' + editionDate +
     ' — archivé pour pouvoir y revenir à tout moment.</p>';
   return '<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' +
