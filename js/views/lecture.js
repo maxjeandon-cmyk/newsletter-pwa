@@ -143,7 +143,7 @@ const LIVRES_RECOS = {
     ['Confessions — Rousseau', 'L’autobiographie qui invente l’intériorité moderne.', 'Confessions Rousseau'],
     ['La Vie de Samuel Johnson — Boswell', 'Le modèle de toutes les biographies.', 'Life of Samuel Johnson Boswell'],
     ['Marie Curie — Ève Curie', 'Une fille raconte sa mère, deux prix Nobel.', 'Madame Curie Eve Curie'],
-    ['Autobiographie — Benjamin Franklin', 'Le self-made man à l'ancienne, raconté par lui-même.', 'Autobiography Benjamin Franklin']
+    ['Autobiographie — Benjamin Franklin', 'Le self-made man à l\u2019ancienne, raconté par lui-même.', 'Autobiography Benjamin Franklin']
   ],
   enfance: [
     ['Le Petit Prince — Saint-Exupéry', '« Dessine-moi un mouton » — le plus lu des livres français.', 'The Little Prince Saint-Exupery'],
@@ -376,7 +376,7 @@ const BD_RECOS = {
   'bd-humour': [
     ['Gaston Lagaffe — Franquin', 'Le gaffophone, les gadgets et les plantes vertes.', 'Gaston Lagaffe'],
     ['Le Chat — Philippe Geluck', 'Un chat philosophe, drôle et sans complaisance.', 'Le Chat Geluck'],
-    ['Le Génie des alpages — F'murr', 'Des moutons philosophes dans un alpage absurde.', 'Le Genie des alpages Fmurr'],
+    ['Le Génie des alpages — F’murr', 'Des moutons philosophes dans un alpage absurde.', 'Le Genie des alpages Fmurr'],
     ['Sillage — Morvan & Buche', 'Une humaine adoptée par une galaxie — le best-seller de Soleil.', 'Sillage Morvan'],
     ['Lucien — Frank Margerin', 'Le rock, la banlieue et l’humour, depuis 1975.', 'Lucien Frank Margerin']
   ]
@@ -411,7 +411,7 @@ const MANGA_RECOS = {
     ['Astro Boy — Osamu Tezuka', 'Le dieu du manga, fondateur de tout le reste.', 'Astro Boy Tezuka'],
     ['Gon — Masashi Tanaka', 'Un petit dinosaure furieux — une BD muette virtuose.', 'Gon Masashi Tanaka'],
     ['Le Gen d’Hiroshima — Keiji Nakazawa', 'Le bombardement atomique raconté par un survivant.', 'Barefoot Gen Nakazawa'],
-    ['Opus — Satoshi Kon', 'Le monde intérieur d'un mangaka — le dernier testament d'un cinéaste du neuf.', 'Opus Satoshi Kon'],
+    ['Opus — Satoshi Kon', 'Le monde intérieur d\u2019un mangaka — le dernier testament d\u2019un cinéaste.', 'Opus Satoshi Kon'],
     ['GeGeGe no Kitaro — Shigeru Mizuki', 'Le maître du folklore et des yōkai.', 'Kitaro Shigeru Mizuki']
   ]
 };
