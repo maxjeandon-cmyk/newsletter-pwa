@@ -3,7 +3,7 @@
  * v24 : les réglages vivent dans un onglet (#reglages, vue dédiée) — plus de panneau flottant.
  * Le bouton 👤 mène au profil, ⟳ purge le cache (CacheStorage) puis recharge la page fraîche.
  * Contrat de données : editions/ n'est jamais modifié ici ; la config éditoriale vit dans data/. */
-import { $, state, getStore, setStore, applyTheme, applyTaille, fmtDate } from './core.js';
+import { $, state, getStore, setStore, applyTheme, applyTaille } from './core.js';
 import { chargerChapitres, chargerMedia } from './feeds.js';
 import { renderTabs, renderView, majMedias } from './views.js';
 import { initRouter } from './router.js';
@@ -19,7 +19,6 @@ async function loadEdition() {
   if (idx?.editions?.length) {
     state.archiveIdx = idx.editions;
     state.edition = await chargerJSON(idx.editions[0].fichier, null);
-    if (state.edition) $('#edition-date').textContent = '· ' + fmtDate(state.edition.date);
   } else { state.archiveIdx = []; state.edition = null; }
   state.weeksIdx = await chargerJSON('editions/semaines/index.json', null);
   state.archivesThema = {
@@ -46,6 +45,12 @@ async function actualiser() {
   renderView();
 }
 
+function afficherDateJour() {
+  const d = new Date();
+  const opts = { weekday: 'long', day: 'numeric', month: 'long' };
+  $('#date-jour').textContent = new Intl.DateTimeFormat('fr-FR', opts).format(d);
+}
+
 async function init() {
   if (getStore('theme', null) === null && localStorage.getItem('theme') !== null) {
     try { setStore('theme', JSON.parse(localStorage.getItem('theme'))); } catch (e) { /* défaut */ }
@@ -53,6 +58,7 @@ async function init() {
   ['chapters', 'chaptersV', 'feedCache', 'afpOnly', 'theme'].forEach(k => localStorage.removeItem(k));
   initRouter(() => { renderTabs(); renderView(); });
   applyTheme(getStore('theme', 'dark'));
+  afficherDateJour();
   applyTaille(getStore('taillePolice', 1));
   /* ⟳ purge le cache et recharge — plus de doute sur la fraîcheur de ce qu'on lit */
   $('#btn-refresh').onclick = actualiser;
