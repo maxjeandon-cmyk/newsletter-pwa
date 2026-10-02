@@ -65,11 +65,13 @@ export async function vueReglages() {
     '<div class="summary-card"><h2>🔥 Mes flux suivis</h2>' +
     '<ul id="chapters-editor" class="ordre-liste"></ul>' +
     '<button class="btn-sec" id="btn-reset-chapters">Tout suivre</button></div>' +
-    /* --- Maintenance --- */
+    /* --- Maintenance + Installation (guide par navigateur) --- */
     '<div class="summary-card"><h2>🧰 Maintenance</h2>' +
     '<button id="btn-purge">Purger le cache</button>' +
-    '<button id="btn-install-hint" class="btn-sec">Installer sur iPhone</button>' +
-    '<p class="hint">Sur iPhone : bouton Partager ⬆️ puis « Sur l\u2019écran d\u2019accueil ».</p>' +
+    '</div>' +
+    '<div class="summary-card"><h2>📲 Installer sur l\u2019écran d\u2019accueil</h2>' +
+    '<p class="meta-count">L\u2019app s\u2019installe comme une vraie application : icône dédiée, plein écran, fonctionne hors ligne.</p>' +
+    '<div id="guide-install"></div>' + BIENTOT +
     '</div></section>';
 
   $('#sel-theme').onchange = e => { setStore('theme', e.target.value); applyTheme(e.target.value); };
@@ -89,7 +91,7 @@ export async function vueReglages() {
     try { if (window.caches) { const noms = await caches.keys(); await Promise.all(noms.map(n => caches.delete(n))); } } catch (e) { /* rien */ }
     location.reload();
   };
-  $('#btn-install-hint').onclick = () => alert('Sur iPhone : bouton Partager ⬆️ en bas de Safari, puis « Sur l\u2019écran d\u2019accueil ». L\u2019app s\u2019ouvrira plein écran, comme une vraie app.');
+  rendreGuideInstall();
   rendreChapitres();
 }
 
@@ -181,4 +183,47 @@ async function finaliserConnexion() {
   state.compte = { id: u.id, email: u.email };
   const syn = await synchroniserPrefs();
   rendreCompte(syn.ok ? 'Connecté ✓ — préférences synchronisées.' : 'Connecté ✓');
+}
+
+
+/* --- Guide d'installation : la procédure du navigateur courant en premier --- */
+const GUIDES = {
+  ios: {
+    titre: 'iPhone / iPad (Safari)',
+    etapes: ['Ouvre le site dans Safari (obligatoire — pas depuis Chrome)',
+      'Touche le bouton Partager ⬆️ (le carré avec une flèche, en bas)',
+      'Fais défiler et touche « Sur l\u2019écran d\u2019accueil »',
+      'Valide avec « Ajouter » — l\u2019app apparaît avec son icône']
+  },
+  android: {
+    titre: 'Android (Chrome, Firefox, Brave…)',
+    etapes: ['Ouvre le site dans ton navigateur',
+      'Touche le menu ⋮ (en haut à droite)',
+      'Touche « Installer l\u2019application » ou « Ajouter à l\u2019écran d\u2019accueil »',
+      'Valide — l\u2019app s\u2019installe comme les autres']
+  },
+  desktop: {
+    titre: 'Ordinateur (Chrome, Edge, Safari…)',
+    etapes: ['Une icône d\u2019installation ➕ apparaît dans la barre d\u2019adresse (à droite)',
+      'Clique dessus, ou ouvre le menu du navigateur',
+      'Choisis « Installer » — l\u2019app s\u2019ouvre dans sa propre fenêtre']
+  },
+};
+const BIENTOT = '<p class="hint">📱 Une version « App » pour les magasins (App Store / Play Store) est à l’étude — en attendant, l’installation ci-dessus donne exactement la même expérience.</p>';
+
+function rendreGuideInstall() {
+  const bloc = $('#guide-install');
+  if (!bloc) return;
+  const ua = navigator.userAgent;
+  const courant = /iPhone|iPad|iPod/i.test(ua) ? 'ios'
+    : /Android/i.test(ua) ? 'android' : 'desktop';
+  const ordre = [courant, ...Object.keys(GUIDES).filter(k => k !== courant)];
+  bloc.innerHTML = ordre.map((k, i) => {
+    const g = GUIDES[k];
+    if (!g.etapes.length) return '';
+    return '<details class="install-guide"' + (i === 0 ? ' open' : '') + '>' +
+      '<summary>' + esc(g.titre) + (i === 0 ? ' — recommandé pour ton appareil' : '') + '</summary>' +
+      '<ol>' + g.etapes.map(e => '<li>' + esc(e) + '</li>').join('') + '</ol>' +
+      '</details>';
+  }).join('');
 }

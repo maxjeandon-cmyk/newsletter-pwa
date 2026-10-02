@@ -28,21 +28,22 @@ async function loadEdition() {
   };
 }
 
-/* Purge complète : localStorage hors préférences + CacheStorage, puis rechargement frais */
-async function purgeEtRecharger() {
+/* Actualisation (⟳) : recharge les données réseau — édition, climat, flux chaud,
+ * média ouvert — SANS toucher au cache ni aux préférences. Rapide et sans risque.
+ * La purge complète (CacheStorage) vit dans Réglages > Maintenance. */
+async function actualiser() {
   const b = $('#btn-refresh');
   if (b) { b.disabled = true; b.textContent = '…'; }
-  const purgeStore = (await import('./core.js')).purgeStore;
-  purgeStore();
-  state.feed = { time: 0, articles: [] };
-  state.mediaData = {};
-  try {
-    if (window.caches) {
-      const noms = await caches.keys();
-      await Promise.all(noms.map(n => caches.delete(n)));
-    }
-  } catch (e) { /* pas de CacheStorage : localStorage déjà purgé */ }
-  location.reload();
+  const taches = [loadEdition(), chargerChapitres(),
+    chargerJSON('data/climat.json', null).then(c => { state.climat = c; })];
+  if (state.activeTab === 'medias') {
+    const m = state.medias.find(x => x.id === state.activeMedia);
+    if (m) taches.push(chargerMedia(m, true));
+  }
+  await Promise.allSettled(taches);
+  if (b) { b.disabled = false; b.textContent = '⟳'; }
+  renderTabs();
+  renderView();
 }
 
 async function init() {
@@ -54,7 +55,7 @@ async function init() {
   applyTheme(getStore('theme', 'dark'));
   applyTaille(getStore('taillePolice', 1));
   /* ⟳ purge le cache et recharge — plus de doute sur la fraîcheur de ce qu'on lit */
-  $('#btn-refresh').onclick = purgeEtRecharger;
+  $('#btn-refresh').onclick = actualiser;
   /* 👤 mène au profil/compte dans l'onglet Réglages */
   $('#btn-profil').onclick = () => { location.hash = '#reglages'; };
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
