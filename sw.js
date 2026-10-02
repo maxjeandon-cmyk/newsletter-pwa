@@ -2,7 +2,7 @@
  * Stratégies : data/ et editions/ network-first (toujours frais en ligne, repli cache hors ligne) ;
  * le reste (coquille, js/, styles) cache-first pour un démarrage instantané.
  * À chaque déploiement de code : incrémenter CACHE (v22 → v23…) pour invalider les caches clients. */
-const CACHE = 'newsletter-v49';
+const CACHE = 'newsletter-v50';
 const ASSETS = [
   './',
   './index.html',
@@ -21,6 +21,7 @@ const ASSETS = [
   './js/views/articles.js',
   './js/views/medias.js',
   './js/views/lecture.js',
+  './js/views/videos.js',
   './js/views/reglages.js',
   './js/feedback.js',
   './js/views/feedback.js',

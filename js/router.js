@@ -7,7 +7,7 @@
 
 import { state } from './core.js';
 
-const ONGLETS = ['articles', 'edition', 'archives', 'climat', 'medias', 'lecture', 'reglages', 'sources'];
+const ONGLETS = ['articles', 'edition', 'archives', 'climat', 'medias', 'lecture', 'videos', 'reglages', 'sources'];
 const SOUS_ARCHIVES = ['editions', 'sources', 'droit', 'economie'];
 
 /* L'URL qui représente l'état courant */
@@ -19,6 +19,8 @@ export function hashFromState() {
   } else if (h === 'lecture') {
     if (state.lecture?.cat && state.lecture.cat !== 'tout') h += '/' + state.lecture.cat;
     if (state.lecture?.q) h += '?q=' + encodeURIComponent(state.lecture.q);
+  } else if (h === 'videos') {
+    if (state.videoLecture?.video) h += '/' + encodeURIComponent(state.videoLecture.video);
   } else if (h === 'archives') {
     if (SOUS_ARCHIVES.includes(state.archiveSub) && state.archiveSub !== 'editions') h += '/' + state.archiveSub;
     if (state.archiveSel) h += '?h=' + encodeURIComponent(state.archiveSel);
@@ -43,6 +45,9 @@ export function stateFromHash() {
     state.archiveSub = SOUS_ARCHIVES.includes(parties[1]) ? parties[1] : 'editions';
     const h = new URLSearchParams(query || '').get('h');
     state.archiveSel = h && /^[\w./-]+$/.test(h) ? h : null;
+  }
+  if (tab === 'videos') {
+    state.videoLecture = /^[\w-]{11}$/.test(parties[1]) ? { video: parties[1] } : null;
   }
   if (tab === 'lecture') {
     const cat = ['tout', 'livres', 'publications'].includes(parties[1]) ? parties[1] : 'tout';
