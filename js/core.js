@@ -47,7 +47,7 @@ export function setStore(k, v) {
  * « Purger le cache » — un média ajouté ne doit jamais disparaître par accident).
  * v19 : mediasAffiches (médias « masqués par défaut » réaffichés ici) et jeton
  * (GitHub, publication pour tous les écrans) sont aussi des préférences. */
-const GARDEES = ['theme', 'masques', 'afpOnly', 'mediasPerso', 'mediasMasques', 'mediasAffiches', 'jeton', 'compte.abonne', 'compte.session', 'compte.souvenir'];
+const GARDEES = ['theme', 'masques', 'afpOnly', 'mediasPerso', 'mediasMasques', 'mediasAffiches', 'jeton', 'compte.abonne', 'compte.session', 'compte.souvenir', 'taillePolice'];
 export function purgeStore() {
   Object.keys(localStorage)
     .filter(k => k.startsWith(PREFIX) && !GARDEES.includes(k.slice(PREFIX.length)))
@@ -93,8 +93,32 @@ export const norm = s => (s ?? '').toLowerCase().normalize('NFD').replace(/[\u03
      dans les href venus des flux RSS, que l'échappement seul ne neutralise pas. --- */
 export const urlSure = u => /^https?:\/\//i.test(String(u || '')) ? u : '#';
 
-/* --- Thème --- */
+/* --- Thème (v25 : 10 thèmes en 3 catégories) + taille de police réglable --- */
+export const THEMES = {
+  sobres: [
+    { id: 'dark', nom: 'Sombre (défaut)' },
+    { id: 'light', nom: 'Clair' },
+    { id: 'nuit', nom: 'Nuit profonde' },
+    { id: 'sepia', nom: 'Sépia' }
+  ],
+  colores: [
+    { id: 'forest', nom: 'Forêt' },
+    { id: 'ocean', nom: 'Océan' },
+    { id: 'bordeaux', nom: 'Bordeaux' },
+    { id: 'violet', nom: 'Violet' },
+    { id: 'sunrise', nom: 'Aube' }
+  ],
+  auto: [{ id: 'auto', nom: 'Auto (système)' }]
+};
 export function applyTheme(t) {
+  const connu = t === 'auto' || Object.values(THEMES).flat().some(x => x.id === t);
   document.documentElement.dataset.theme =
-    t === 'auto' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : t;
+    t === 'auto' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+      : connu ? t : 'dark';
+}
+/* Taille de police : 0.85 à 1.3, défaut 1 — variable CSS sur <html> */
+export function applyTaille(t) {
+  const v = Math.min(1.3, Math.max(0.85, Number(t) || 1));
+  document.documentElement.style.setProperty('--fs', String(v));
+  return v;
 }

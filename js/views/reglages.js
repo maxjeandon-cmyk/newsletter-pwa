@@ -3,7 +3,7 @@
  * Tout ce qui vivait dans l'ancien panneau flottant est ici, réorganisé,
  * consultable via #reglages (lien partageable, bouton retour fonctionnel).
  * Le bouton 👤 de la barre supérieure y mène directement. */
-import { $, state, esc, getStore, setStore, applyTheme } from '../core.js';
+import { $, state, esc, getStore, setStore, applyTheme, applyTaille, THEMES } from '../core.js';
 import { chargerChapitres } from '../feeds.js';
 import { renderView } from './common.js';
 import { inscrire, connecter, deconnecter, restaurerSession, synchroniserPrefs, envoyerPrefs, abonne, estConnecte, veutResterConnecte } from '../compte.js';
@@ -43,10 +43,19 @@ export async function vueReglages() {
     '<div class="summary-card"><h2>🎨 Apparence</h2>' +
     '<label class="regl-label">Thème' +
     '<select id="sel-theme">' +
-    '<option value="dark"' + (theme === 'dark' ? ' selected' : '') + '>Sombre (défaut)</option>' +
-    '<option value="light"' + (theme === 'light' ? ' selected' : '') + '>Clair</option>' +
-    '<option value="auto"' + (theme === 'auto' ? ' selected' : '') + '>Auto (système)</option>' +
-    '</select></label></div>' +
+    '<optgroup label="Sobres">' + THEMES.sobres.map(t =>
+      '<option value="' + t.id + '"' + (theme === t.id ? ' selected' : '') + '>' + esc(t.nom) + '</option>').join('') +
+    '</optgroup>' +
+    '<optgroup label="Colorés">' + THEMES.colores.map(t =>
+      '<option value="' + t.id + '"' + (theme === t.id ? ' selected' : '') + '>' + esc(t.nom) + '</option>').join('') +
+    '</optgroup>' +
+    '<optgroup label="Automatique">' + THEMES.auto.map(t =>
+      '<option value="' + t.id + '"' + (theme === t.id ? ' selected' : '') + '>' + esc(t.nom) + '</option>').join('') +
+    '</optgroup>' +
+    '</select></label>' +
+    '<label class="regl-label">Taille du texte <span id="taille-val" class="hint"></span>' +
+    '<input type="range" id="in-taille" min="0.85" max="1.3" step="0.05" value="' + (getStore('taillePolice', 1)) + '"/>' +
+    '</label></div>' +
     /* --- Ordre des onglets --- */
     '<div class="summary-card"><h2>🧭 Ordre des onglets</h2>' +
     '<p class="meta-count">Réorganise la barre des chapitres — tes onglets préférés en premier.</p>' +
@@ -64,6 +73,13 @@ export async function vueReglages() {
     '</div></section>';
 
   $('#sel-theme').onchange = e => { setStore('theme', e.target.value); applyTheme(e.target.value); };
+  applyTaille(getStore('taillePolice', 1));
+  $('#in-taille').oninput = e => {
+    const v = applyTaille(e.target.value);
+    setStore('taillePolice', v);
+    $('#taille-val').textContent = Math.round(v * 100) + ' %';
+  };
+  $('#taille-val').textContent = Math.round(getStore('taillePolice', 1) * 100) + ' %';
   rendreOrdre();
   rendreCompte('', null);
   $('#btn-reset-ordre').onclick = () => { setStore('ordreOnglets', ORDRE_DEFAUT); rendreOrdre(); rendreBarre(); };

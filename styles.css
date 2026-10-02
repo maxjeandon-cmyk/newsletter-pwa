@@ -2,10 +2,26 @@
   --bg:#0e0e12; --card:#17171d; --text:#e8e8ec; --muted:#9a9aa5; --accent:#6ea8fe; --border:#26262e;
 }
 [data-theme="light"]{ --bg:#fafafc; --card:#fff; --text:#1a1a2e; --muted:#666; --accent:#1652a0; --border:#ddd; }
+
+/* --- v25 : thèmes en 3 catégories --- */
+/* Sobres */
+[data-theme="sepia"]{ --bg:#f4ecd8; --card:#faf5e9; --text:#43321b; --muted:#8a7454; --accent:#a05a2c; --border:#e2d5b8; }
+[data-theme="nuit"]{ --bg:#05060a; --card:#0c0e14; --text:#d8dbe4; --muted:#7c8394; --accent:#8fb8d8; --border:#1a1e28; }
+/* Colorés */
+[data-theme="forest"]{ --bg:#0d1512; --card:#142019; --text:#e2ece4; --muted:#8fa898; --accent:#5fbf7a; --border:#1f2e26; }
+[data-theme="ocean"]{ --bg:#0a1220; --card:#101b30; --text:#dde7f4; --muted:#7f95b3; --accent:#54a8e8; --border:#1c2c48; }
+[data-theme="bordeaux"]{ --bg:#160b0e; --card:#22121a; --text:#f0e2e6; --muted:#b38f9a; --accent:#d96a8b; --border:#38202c; }
+[data-theme="violet"]{ --bg:#120e1c; --card:#1a1528; --text:#e8e2f4; --muted:#9a8fb8; --accent:#a78bfa; --border:#282042; }
+[data-theme="sunrise"]{ --bg:#1c1410; --card:#281c15; --text:#f4e8dd; --muted:#b89a80; --accent:#f2a35c; --border:#3a2a1e; }
+/* Thèmes à texte sombre sur accent clair : le texte actif des boutons reste lisible */
+[data-theme="sepia"] .tab.active, [data-theme="sepia"] .filter-btn.active, [data-theme="sepia"] .subtab.active{ color:#fffaf0; }
+
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--text);
   font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;}
+/* v25 : taille de police réglable — html porte la variable, body la consomme */
+html{font-size:calc(16px * var(--fs, 1));}
 #topbar{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:8px;
   padding:calc(10px + env(safe-area-inset-top)) 14px 10px;background:var(--bg);border-bottom:1px solid var(--border)}
 #topbar h1{font-size:17px;font-weight:600;margin:0;flex:1}
@@ -149,3 +165,7 @@ main{padding:0 14px;max-width:720px;margin:0 auto}
 .ordre-btns .btn-sec{width:38px;margin:0}
 #btn-profil{font-size:15px}
 .switch{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);margin:0}
+
+/* v25 : slider taille de texte */
+.regl-label input[type="range"]{width:100%;accent-color:var(--accent);padding:0;border:none;background:none}
+.regl-label .hint{float:right;font-size:12px}

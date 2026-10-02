@@ -151,7 +151,7 @@ export async function restaurerSession() {
 }
 
 /* --- Préférences : une ligne par utilisateur, protégée par RLS --- */
-const CLES_SYNCO = ['theme', 'masques', 'afpOnly', 'mediasPerso', 'mediasMasques', 'mediasAffiches', 'ordreOnglets'];
+const CLES_SYNCO = ['theme', 'masques', 'afpOnly', 'mediasPerso', 'mediasMasques', 'mediasAffiches', 'ordreOnglets', 'taillePolice'];
 
 function prefsLocales() {
   const p = {};
