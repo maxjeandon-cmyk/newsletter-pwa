@@ -20,7 +20,7 @@ export function hashFromState() {
     if (state.lecture?.cat && state.lecture.cat !== 'tout') h += '/' + state.lecture.cat;
     if (state.lecture?.q) h += '?q=' + encodeURIComponent(state.lecture.q);
   } else if (h === 'videos') {
-    if (state.videoLecture?.video) h += '/' + encodeURIComponent(state.videoLecture.video);
+    if (state.videoLecture?.videoId) h += '/' + encodeURIComponent(state.videoLecture.videoId);
   } else if (h === 'archives') {
     if (SOUS_ARCHIVES.includes(state.archiveSub) && state.archiveSub !== 'editions') h += '/' + state.archiveSub;
     if (state.archiveSel) h += '?h=' + encodeURIComponent(state.archiveSel);
@@ -47,7 +47,7 @@ export function stateFromHash() {
     state.archiveSel = h && /^[\w./-]+$/.test(h) ? h : null;
   }
   if (tab === 'videos') {
-    state.videoLecture = /^[\w-]{11}$/.test(parties[1]) ? { video: parties[1] } : null;
+    state.videoLecture = /^[\w-]{11}$/.test(parties[1]) ? { videoId: parties[1] } : null;
   }
   if (tab === 'lecture') {
     const cat = ['tout', 'livres', 'publications'].includes(parties[1]) ? parties[1] : 'tout';
