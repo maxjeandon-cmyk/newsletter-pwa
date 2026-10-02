@@ -28,9 +28,11 @@ async function getJson(url, timeout = TIMEOUT) {
   finally { clearTimeout(t); }
 }
 
-/* --- Livres, magazines numérisés (Open Library / Internet Archive) --- */
-export async function chercherLivres(q) {
-  const j = await getJson('https://openlibrary.org/search.json?limit=24&q=' + encodeURIComponent(q) +
+/* --- Livres, magazines numérisés (Open Library / Internet Archive) ---
+ *     `sujet` restreint la recherche à un sujet Open Library (bd, manga…). --- */
+export async function chercherLivres(q, sujet) {
+  const j = await getJson('https://openlibrary.org/search.json?limit=24&q=' +
+    encodeURIComponent(q + (sujet ? ' subject:' + sujet : '')) +
     '&fields=key,title,author_name,first_publish_year,ebook_access');
   const docs = j?.docs || [];
   return docs.map(d => ({
@@ -142,6 +144,28 @@ export async function chercherArxiv(q) {
       type: 'publication'
     };
   }).filter(x => x.titre && x.lien);
+}
+
+/* --- BD (Open Library, sujet comics) --- */
+export function chercherBd(q) { return chercherLivres(q, 'comics'); }
+
+/* --- Manga (Open Library, sujet manga) --- */
+export function chercherManga(q) { return chercherLivres(q, 'manga'); }
+
+/* --- Thèses de doctorat (HAL, docType_s:THESE — textes intégraux souvent libres) --- */
+export async function chercherTheses(q) {
+  const j = await getJson('https://api.archives-ouvertes.fr/search/?q=' + encodeURIComponent(q) +
+    '&fq=docType_s:THESE&wt=json&rows=12&fl=label_s,authFullName_s,producedDate_s,uri_s,openAccess_bool,abstract_s');
+  return (j?.response?.docs || []).map(d => ({
+    titre: (d.label_s || '').replace(/<[^>]*>/g, '').trim(),
+    auteurs: (d.authFullName_s || []).slice(0, 3),
+    annee: (d.producedDate_s || '').match(/\d{4}/)?.[0] || null,
+    source: 'HAL (thèse)',
+    acces: d.openAccess_bool ? 'ouvert' : 'paywall',
+    lien: d.uri_s || '',
+    extrait: ((d.abstract_s && d.abstract_s[0]) || '').replace(/<[^>]*>/g, '').trim().slice(0, 1200),
+    type: 'these'
+  })).filter(x => x.titre && x.lien);
 }
 
 /* --- HAL : archive ouverte française — livres, thèses, articles --- */
@@ -333,6 +357,20 @@ export async function chercher(categorie, q) {
     const [ol, gallica] = await Promise.all([chercherLivres(q), chercherGallica(q)]);
     return ol.concat(gallica);
   }
+  if (categorie === 'journaux') return chercherGallica(q);
+  if (categorie === 'magazines') {
+    const [ol, gallica] = await Promise.all([chercherLivres(q), chercherGallica(q)]);
+    return ol.concat(gallica);
+  }
+  if (categorie === 'revues') {
+    const [crossref, doaj, arxiv, hal, epmc] = await Promise.all([
+      chercherPublications(q), chercherDoaj(q), chercherArxiv(q), chercherHal(q), chercherEpmc(q)
+    ]);
+    return crossref.concat(doaj, arxiv, hal, epmc);
+  }
+  if (categorie === 'theses') return chercherTheses(q);
+  if (categorie === 'bd') return chercherBd(q);
+  if (categorie === 'manga') return chercherManga(q);
   if (categorie === 'publications') {
     const [crossref, doaj, arxiv, hal, epmc] = await Promise.all([
       chercherPublications(q), chercherDoaj(q), chercherArxiv(q), chercherHal(q), chercherEpmc(q)

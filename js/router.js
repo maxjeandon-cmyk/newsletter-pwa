@@ -50,7 +50,8 @@ export function stateFromHash() {
     state.videoLecture = /^[\w-]{11}$/.test(parties[1]) ? { videoId: parties[1] } : null;
   }
   if (tab === 'lecture') {
-    const cat = ['tout', 'livres', 'publications'].includes(parties[1]) ? parties[1] : 'tout';
+    const cat = ['tout', 'livres', 'journaux', 'magazines', 'revues', 'theses', 'bd', 'manga'].includes(parties[1]) ? parties[1]
+      : parties[1] === 'publications' ? 'revues' /* héritage */ : 'tout';
     const q = new URLSearchParams(query || '').get('q');
     state.lecture = q ? { q, cat, resultats: [], etat: 'encours' } : { q: '', cat, resultats: [], etat: null };
     if (q) import('./views/lecture.js').then(m => m.lancerRechercheLecture(q, cat));
