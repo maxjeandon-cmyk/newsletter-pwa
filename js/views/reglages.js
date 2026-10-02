@@ -9,9 +9,9 @@ import { renderView } from './common.js';
 import { inscrire, connecter, deconnecter, restaurerSession, synchroniserPrefs, envoyerPrefs, abonne, estConnecte, veutResterConnecte } from '../compte.js';
 import { pushDisponible, prefsNotifications, basculerNotification, desabonner } from '../push.js';
 
-const ORDRE_DEFAUT = ['medias', 'articles', 'edition', 'sources', 'archives', 'climat', 'lecture', 'reglages'];
+const ORDRE_DEFAUT = ['articles', 'edition', 'archives', 'medias', 'climat', 'lecture', 'reglages'];
 const NOMS = {
-  edition: 'Édition du jour', sources: 'Sources', articles: 'Articles', medias: 'Médias',
+  edition: 'Édition du jour', articles: 'Articles', medias: 'Médias',
   lecture: 'Lecture (WiP)', climat: 'Climat', archives: 'Archives', reglages: 'Réglages'
 };
 

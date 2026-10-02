@@ -7,8 +7,8 @@
 
 import { state } from './core.js';
 
-const ONGLETS = ['edition', 'sources', 'archives', 'climat', 'articles', 'medias', 'lecture', 'reglages'];
-const SOUS_ARCHIVES = ['editions', 'droit', 'economie'];
+const ONGLETS = ['articles', 'edition', 'archives', 'climat', 'medias', 'lecture', 'reglages', 'sources'];
+const SOUS_ARCHIVES = ['editions', 'sources', 'droit', 'economie'];
 
 /* L'URL qui représente l'état courant */
 export function hashFromState() {
@@ -31,8 +31,10 @@ export function stateFromHash() {
   const brut = decodeURIComponent(location.hash.slice(1));
   const [chemin, query] = brut.split('?');
   const parties = chemin.split('/').filter(Boolean);
-  const tab = ONGLETS.includes(parties[0]) ? parties[0] : 'edition';
+  let tab = ONGLETS.includes(parties[0]) ? parties[0] : 'edition';
+  if (tab === 'sources') tab = 'archives'; /* héritage : l'onglet Sources vit désormais dans Archives */
   state.activeTab = tab;
+  if (parties[0] === 'sources') state.archiveSub = 'sources';
   if (tab === 'medias') {
     if (parties[1] === 'ajout' || parties[1] === 'gerer') { state.mediasMode = parties[1]; }
     else { state.mediasMode = null; if (parties[1]) state.activeMedia = parties[1]; }
