@@ -24,9 +24,9 @@
 import { $, state, getStore, setStore, esc } from './core.js';
 
 const CFG_URL = 'data/compte.json';
-const ABONNE = 'nl.compte.abonne';      // id + e-mail de l'utilisateur connecté
-const SESSION = 'nl.compte.session';    // jeton de session Supabase (access/refresh) — persisté SI « Rester connecté »
-const SOUVENIR = 'nl.compte.souvenir';  // « Rester connecté » coché : la session survit aux purges et redémarrages
+const ABONNE = 'compte.abonne';      // id + e-mail de l'utilisateur connecté
+const SESSION = 'compte.session';    // jeton de session Supabase (access/refresh) — persisté SI « Rester connecté »
+const SOUVENIR = 'compte.souvenir';  // « Rester connecté » coché : la session survit aux purges et redémarrages
 const PREFS = 'nl.compte.prefs';        // prefs distantes écrasées -> merge local
 
 /* --- Config (chargée au démarrage, network-first par le SW) --- */
@@ -80,13 +80,13 @@ function traduire(j) {
 function rangerSession(s) {
   sessions = s;
   if (s && getStore(SOUVENIR, false)) setStore(SESSION, s);
-  else localStorage.removeItem('nl.' + 'compte.session');
+  else localStorage.removeItem('nl.' + SESSION);
 }
 export function deconnexionLocale() {
   sessions = null;
-  localStorage.removeItem('nl.' + 'compte.session');
-  localStorage.removeItem('nl.' + 'compte.abonne');
-  localStorage.removeItem('nl.' + 'compte.souvenir');
+  localStorage.removeItem('nl.' + SESSION);
+  localStorage.removeItem('nl.' + ABONNE);
+  localStorage.removeItem('nl.' + SOUVENIR);
 }
 
 async function rafraichirSiExpiré() {
@@ -122,7 +122,7 @@ export async function inscrire(email, mdp) {
 export async function connecter(email, mdp, souvenir) {
   if (souvenir) setStore(SOUVENIR, true);
   const j = await appelAPI('/auth/v1/token?grant_type=password', { email, password: mdp });
-  if (j.erreur) { if (souvenir) localStorage.removeItem('nl.' + 'compte.souvenir'); return j; }
+  if (j.erreur) { if (souvenir) localStorage.removeItem('nl.' + SOUVENIR); return j; }
   if (j.access_token) { rangerSession(j); return { ok: true }; }
   return { erreur: 'identifiants' };
 }
@@ -151,7 +151,7 @@ export async function restaurerSession() {
 }
 
 /* --- Préférences : une ligne par utilisateur, protégée par RLS --- */
-const CLES_SYNCO = ['theme', 'masques', 'afpOnly', 'mediasPerso', 'mediasMasques', 'mediasAffiches'];
+const CLES_SYNCO = ['theme', 'masques', 'afpOnly', 'mediasPerso', 'mediasMasques', 'mediasAffiches', 'ordreOnglets'];
 
 function prefsLocales() {
   const p = {};
