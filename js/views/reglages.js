@@ -6,7 +6,7 @@
 import { $, state, esc, getStore, setStore, applyTheme } from '../core.js';
 import { chargerChapitres } from '../feeds.js';
 import { renderView } from './common.js';
-import { inscrire, connecter, deconnecter, restaurerSession, synchroniserPrefs, envoyerPrefs, abonne, estConnecte } from '../compte.js';
+import { inscrire, connecter, deconnecter, restaurerSession, synchroniserPrefs, envoyerPrefs, abonne, estConnecte, veutResterConnecte } from '../compte.js';
 
 const ORDRE_DEFAUT = ['edition', 'sources', 'articles', 'medias', 'lecture', 'climat', 'archives', 'reglages'];
 const NOMS = {
@@ -138,6 +138,7 @@ function rendreCompte(msg) {
       '<label class="regl-label">E-mail <input type="email" id="in-email" autocomplete="email" placeholder="toi@exemple.fr"/></label>' +
       '<label class="regl-label">Mot de passe <input type="password" id="in-mdp" autocomplete="new-password" minlength="6" placeholder="6 caractères minimum"/></label>' +
       (msg ? '<p class="hint">' + esc(msg) + '</p>' : '') +
+      '<label class="switch" style="margin:10px 0"><input type="checkbox" id="in-souvenir"' + (veutResterConnecte() ? ' checked' : '') + '/><span>Rester connecté sur cet appareil</span></label>' +
       '<button id="btn-inscrire">Créer un compte</button>' +
       '<button id="btn-connecter" class="btn-sec">Se connecter</button>';
     $('#btn-inscrire').onclick = async () => {
@@ -147,11 +148,11 @@ function rendreCompte(msg) {
       const r = await inscrire(email, mdp);
       if (r.erreur) { rendreCompte(MSGS[r.erreur] || 'Inscription impossible pour le moment.'); return; }
       if (r.confirmation) { rendreCompte('Compte créé ✓ — va vérifier ta boîte mail : un lien de confirmation t\u2019attend.'); return; }
-      if (r.session) await connecter(email, mdp);
+      if (r.session) await connecter(email, mdp, $('#in-souvenir')?.checked);
       await finaliserConnexion();
     };
     $('#btn-connecter').onclick = async () => {
-      const r = await connecter($('#in-email').value.trim(), $('#in-mdp').value);
+      const r = await connecter($('#in-email').value.trim(), $('#in-mdp').value, $('#in-souvenir')?.checked);
       if (r.erreur) { rendreCompte(MSGS[r.erreur] || 'Connexion impossible pour le moment.'); return; }
       await finaliserConnexion();
     };
