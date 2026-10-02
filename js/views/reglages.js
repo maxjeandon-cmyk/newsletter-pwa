@@ -9,7 +9,7 @@ import { renderView } from './common.js';
 import { inscrire, connecter, deconnecter, restaurerSession, synchroniserPrefs, envoyerPrefs, abonne, estConnecte, veutResterConnecte } from '../compte.js';
 import { pushDisponible, prefsNotifications, basculerNotification, desabonner } from '../push.js';
 
-const ORDRE_DEFAUT = ['edition', 'sources', 'articles', 'medias', 'lecture', 'climat', 'archives', 'reglages'];
+const ORDRE_DEFAUT = ['medias', 'articles', 'edition', 'sources', 'archives', 'climat', 'lecture', 'reglages'];
 const NOMS = {
   edition: 'Édition du jour', sources: 'Sources', articles: 'Articles', medias: 'Médias',
   lecture: 'Lecture (WiP)', climat: 'Climat', archives: 'Archives', reglages: 'Réglages'
@@ -35,7 +35,7 @@ const MSGS = {
 
 export async function vueReglages() {
   const u = abonne();
-  const theme = getStore('theme', 'dark');
+  const theme = getStore('theme', 'nuit');
   $('#view').innerHTML =
     '<section class="reglages">' +
     /* --- Profil / compte --- */

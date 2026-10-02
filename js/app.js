@@ -57,7 +57,7 @@ async function init() {
   }
   ['chapters', 'chaptersV', 'feedCache', 'afpOnly', 'theme'].forEach(k => localStorage.removeItem(k));
   initRouter(() => { renderTabs(); renderView(); });
-  applyTheme(getStore('theme', 'dark'));
+  applyTheme(getStore('theme', 'nuit'));
   afficherDateJour();
   applyTaille(getStore('taillePolice', 1));
   /* ⟳ purge le cache et recharge — plus de doute sur la fraîcheur de ce qu'on lit */
