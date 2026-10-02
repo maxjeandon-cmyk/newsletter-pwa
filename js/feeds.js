@@ -433,20 +433,38 @@ export async function decouvrirChaine(m) {
   if (cache !== null) return cache.chaine || null;
   if (decouvertesEnCours.has(m.id)) return decouvertesEnCours.get(m.id);
   const p = (async () => {
+    /* Le lien YouTube vit sur la page d'accueil du média, pas dans son flux RSS :
+     * on part de l'origine du premier flux, puis on cherche un identifiant UC… */
     let chaine = null;
+    let conclude = false; /* vrai = page lue, réponse définitive (cachée) */
     try {
-      const page = await pageHtmlRelais(m.flux[0]);
+      let origine = '';
+      try { origine = new URL(m.flux[0]).origin; } catch (e) {}
+      const page = origine ? await pageHtmlRelais(origine + '/') : null;
       if (page) {
-        const m1 = page.match(/youtube\.com\/(?:@|channel\/|c\/|user\/)?([\w.-]+)/i);
-        if (m1) {
-          const c = m1[1].replace(/[\"'?#].*$/, '');
+        conclude = true;
+        const uc = page.match(/youtube\.com\/channel\/(UC[\w-]{22})/i)
+          || page.match(/"channelId"\s*:\s*"(UC[\w-]{22})"/i);
+        if (uc) chaine = uc[1];
+        else {
+          /* handle @nom : sa page YouTube révèle le vrai identifiant UC… */
+          const h = page.match(/youtube\.com\/@([\w.-]+)/i);
+          if (h) {
+            const manche = h[1].replace(/["'?#].*$/, '');
+            const pYt = await pageHtmlRelais('https://www.youtube.com/@' + manche);
+            const uc2 = pYt && (pYt.match(/"channelId"\s*:\s*"(UC[\w-]{22})"/i)
+              || pYt.match(/youtube\.com\/channel\/(UC[\w-]{22})/i));
+            if (uc2) chaine = uc2[1];
+          }
+        }
+        if (chaine) {
           /* l'identifiant doit exister côté YouTube : le flux vidéo en fait foi */
-          const arts = await fetchFeedItems('https://www.youtube.com/feeds/videos.xml?channel_id=' + encodeURIComponent(c), 5000);
-          if (arts.length) chaine = c;
+          const arts = await fetchFeedItems('https://www.youtube.com/feeds/videos.xml?channel_id=' + chaine, 5000);
+          if (!arts.length) chaine = null;
         }
       }
-    } catch (e) { /* pas de chaîne trouvée : média sans YouTube */ }
-    setStore('chaine:' + m.id, { chaine });
+    } catch (e) { /* relais muet : rien à conclure, on réessaiera plus tard */ }
+    if (conclude) setStore('chaine:' + m.id, { chaine });
     decouvertesEnCours.delete(m.id);
     return chaine;
   })();
