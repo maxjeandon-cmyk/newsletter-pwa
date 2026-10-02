@@ -216,7 +216,7 @@ export function chargerChapitres() {
         !masquesM[m.id] && (!m.masque || !!affichesM[m.id]) && (m.flux || []).length);
       const artsMedia = [];
       await Promise.allSettled(mediasVis.map(m => chargerMedia(m).then(d => {
-        for (const a of (d?.articles || [])) artsMedia.push({ ...a, mediaNom: m.nom });
+        for (const a of (d?.articles || [])) artsMedia.push({ ...a, date: new Date(a.date), mediaNom: m.nom });
       }).catch(() => {})));
       state.feed = { time: Date.now(), articles: dedupliquer(all.concat(artsMedia)) };
       state.feedStats = { ok, total: urls.length, time: Date.now() };
@@ -238,6 +238,7 @@ export function chargerMedia(m, force = false) {
       const maintenant = Date.now();
       const TTL = 20 * 60e3;
       const cache = getStore('media:' + m.id, null);
+      if (cache && Array.isArray(cache.articles)) cache.articles.forEach(a => { if (!(a.date instanceof Date)) a.date = new Date(a.date); });
       if (!force && cache && maintenant - cache.time < TTL) {
         state.mediaData[m.id] = cache;
         return cache;
