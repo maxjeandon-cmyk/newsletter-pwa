@@ -34,12 +34,43 @@ function runTool(cmd, args) {
   }
 }
 
+/* Sonde chaîne notifications (v67) : compte les lignes côté Supabase.
+ * ok si au moins un abonnement ; silence normal si aucun toggle actif ;
+ * échec si des toggles sont actifs sans abonnement — le maillon
+ * navigateur→Supabase casse (permission iOS, session, INSERT refusé). */
+async function sondeNotifications() {
+  const base = (URL || '').replace(/\/+$/, '').replace(/\/rest\/v1$/, '');
+  const H = { apikey: KEY, authorization: 'Bearer ' + KEY };
+  try {
+    const [rA, rP] = await Promise.all([
+      fetch(base + '/rest/v1/abonnements_push?select=id', { headers: H }),
+      fetch(base + '/rest/v1/preferences?select=user_id,prefs', { headers: H })
+    ]);
+    if (!rA.ok || !rP.ok) return { nom: 'sonde notifications', ok: false, detail: 'Supabase injoignable (' + rA.status + '/' + rP.status + ')' };
+    const abonnements = await rA.json();
+    const prefs = await rP.json();
+    const togglesActifs = (prefs || []).filter(p => p.prefs && (p.prefs.edition || p.prefs.copernicus || p.prefs.feedback || Object.values(p.prefs.medias || {}).some(Boolean)));
+    const n = abonnements.length;
+    const detail = n + ' abonnement(s) push, ' + togglesActifs.length + ' utilisateur(s) avec toggles actifs';
+    if (n > 0) return { nom: 'sonde notifications', ok: true, detail };
+    if (!togglesActifs.length) return { nom: 'sonde notifications', ok: true, detail: detail + ' — aucun toggle actif, silence normal' };
+    return { nom: 'sonde notifications', ok: false, detail: detail + ' — toggles actifs sans abonnement enregistré : enregistrement navigateur→Supabase en échec (voir Réglages → Notifications sur l\'appareil)' };
+  } catch (e) {
+    return { nom: 'sonde notifications', ok: false, detail: 'sonde impossible : ' + String(e.message || e).slice(0, 120) };
+  }
+}
+
 async function maintenance(editions, feedbackOk) {
   const verifs = [];
   const editionsOk = runTool(process.execPath, ['tools/validate-latest.js']);
   verifs.push({ nom: 'validate-latest.js', ok: editionsOk.ok, detail: editionsOk.sortie });
   const siteOk = runTool(process.execPath, ['tools/check-site.js']);
   verifs.push({ nom: 'check-site.js', ok: siteOk.ok, detail: siteOk.sortie });
+  /* Sonde chaîne push (v67) : compte les abonnements et préférences de notification
+   * via la clé service_role — un abonnement bloqué en amont (permission iOS, session,
+   * INSERT refusé) se voit ici : 0 abonnement alors que des toggles sont actifs. */
+  const sondePush = await sondeNotifications();
+  verifs.push(sondePush);
 
   const problemes = verifs.filter(v => !v.ok).map(v => v.nom);
   if (!feedbackOk) problemes.push('récupération feedback');
