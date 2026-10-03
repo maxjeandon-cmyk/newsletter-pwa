@@ -76,7 +76,7 @@ async function main() {
   }
 
   /* 1. Récupération et résumé des messages (tools/feedback.js, 48 dernières heures) */
-  let resume = { total: 0, themes: [], citations: [] };
+  let resume = { total: 0, points: [], condenses: [] };
   let feedbackOk = true;
   try {
     const sortie = execFileSync(process.execPath, ['tools/feedback.js'], {
@@ -92,8 +92,8 @@ async function main() {
   const heureFr = maintenant.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
   const points = [];
   if (!feedbackOk) points.push('Récupération des messages momentanément impossible — résumé non actualisé.');
-  if (resume.total) points.push('Thèmes récurrents (mots les plus fréquents, hors mots vides) : ' + resume.themes.join(', '));
-  for (const c of resume.citations) points.push('Message détaillé (citation exacte) : « ' + c + ' »');
+  if (resume.total) points.push('Points les plus demandés : ' + resume.points.join(', '));
+  for (const c of resume.condenses) points.push('Message condensé : « ' + c + ' »');
   if (feedbackOk && !resume.total) points.push('Aucun message reçu sur les dernières 48 h.');
 
   const contenuFeedback = JSON.stringify({
@@ -110,7 +110,7 @@ async function main() {
   try {
     await publierFichier(FICHIER, contenuFeedback,
       'Résumé feedback du ' + dateFr + ' (' + resume.total + ' message(s))');
-    console.log('Résumé publié — ' + resume.total + ' message(s), ' + resume.themes.length + ' thème(s).');
+    console.log('Résumé publié — ' + resume.total + ' message(s), ' + resume.points.length + ' point(s) demandé(s).');
   } catch (e) {
     console.error('Publication feedback échouée : ' + e.message);
     erreursFeedback = true;

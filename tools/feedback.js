@@ -8,7 +8,7 @@
  * tools/maintenance.js.
  * Aucune dépendance : fetch natif (Node >= 18).
  * Env : SUPABASE_URL, SUPABASE_SERVICE_ROLE.
- * Usage : node tools/feedback.js   (sortie : JSON {total, themes, citations})
+ * Usage : node tools/feedback.js   (sortie : JSON {total, points, condenses})
  */
 'use strict';
 
@@ -30,22 +30,28 @@ const MOTS_VIDES = new Set(('le la les un une des de du au aux et ou mais donc o
 
 /* Résumé heuristique, strictement factuel : comptages et citations exactes. */
 function resumer(messages) {
-  const freq = new Map();
+  /* Points les plus demandés : mots-clés fréquents regroupés par radical simple
+   * (troncature 5 derniers caractères), triés par nombre de messages distincts. */
+  const norm = s => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ');
+  const racine = w => w.length > 7 ? w.slice(0, 7) : w;
+  const demandes = new Map();
   for (const m of messages) {
-    for (const mot of String(m.message || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-      .replace(/[^a-z0-9]+/g, ' ').split(/\s+/).filter(mot => mot.length > 3 && !MOTS_VIDES.has(mot))) {
-      freq.set(mot, (freq.get(mot) || 0) + 1);
+    const vus = new Set();
+    for (const mot of norm(m.message).split(/\s+/).filter(w => w.length > 3 && !MOTS_VIDES.has(w))) {
+      const r = racine(mot);
+      if (vus.has(r)) continue;
+      vus.add(r);
+      demandes.set(r, (demandes.get(r) || 0) + 1);
     }
   }
-  const themes = [...freq.entries()].sort((a, b) => b[1] - a[1]).slice(0, 6)
-    .map(([w, n]) => w + ' (' + n + ')');
-  /* Citations verbatim (tronquées avec marque de troncature), les plus longues d'abord. */
-  const citations = messages.slice().sort((a, b) => String(b.message || '').length - String(a.message || '').length).slice(0, 3)
-    .map(m => {
-      const t = String(m.message || '').trim().replace(/\s+/g, ' ');
-      return t.length > 200 ? t.slice(0, 200).trimEnd() + '…' : t;
-    }).filter(Boolean);
-  return { themes, citations };
+  const points = [...demandes.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8).map(([r, n]) => r + ' (' + n + ')');
+  /* Condensé : chaque message réduit à une ligne courte (max 110 caractères),
+   * sans citation intégrale. */
+  const condenses = messages.slice(-10).map(m => {
+    const t = m.message.replace(/\s+/g, ' ').trim();
+    return t.length > 110 ? t.slice(0, 110) + '…' : t;
+  });
+  return { points, condenses };
 }
 
 async function main() {
