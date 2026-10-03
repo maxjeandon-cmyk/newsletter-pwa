@@ -213,7 +213,8 @@ export function chargerChapitres() {
       const masquesM = getStore('mediasMasques', {});
       const affichesM = getStore('mediasAffiches', {});
       const mediasVis = (state.medias || []).filter(m =>
-        !masquesM[m.id] && (!m.masque || !!affichesM[m.id]) && (m.flux || []).length);
+        !masquesM[m.id] && (!m.masque || !!affichesM[m.id]) && (m.flux || []).length &&
+        !(m.flux || []).every(f => /youtube\.com/i.test(f))); /* chaînes YouTube : onglet Vidéos uniquement */
       const artsMedia = [];
       await Promise.allSettled(mediasVis.map(m => chargerMedia(m).then(d => {
         for (const a of (d?.articles || [])) artsMedia.push({ ...a, date: new Date(a.date), mediaNom: m.nom });
@@ -470,6 +471,30 @@ export async function decouvrirChaine(m) {
   })();
   decouvertesEnCours.set(m.id, p);
   return p;
+}
+
+/* Résoudre une saisie utilisateur en identifiant de chaîne YouTube :
+ * accepte un @handle, une URL youtube.com/@..., /channel/UC…, ou un UC brut.
+ * Vérifie l'existence via le flux vidéo — renvoie { chaine } ou { erreur }. */
+export async function resoudreChaineYoutube(saisie) {
+  const s = String(saisie || '').trim();
+  if (!s) return { erreur: 'vide' };
+  let chaine = null;
+  const mUC = s.match(/(UC[\w-]{22})/);
+  if (mUC) chaine = mUC[1];
+  else {
+    const mHandle = s.match(/@([\w.-]+)/);
+    if (mHandle) {
+      const page = await pageHtmlRelais('https://www.youtube.com/@' + mHandle[1].replace(/["'?#].*$/, ''));
+      const uc = page && (page.match(/"channelId"\s*:\s*"(UC[\w-]{22})"/i)
+        || page.match(/youtube\.com\/channel\/(UC[\w-]{22})/i));
+      if (uc) chaine = uc[1];
+    }
+  }
+  if (!chaine) return { erreur: 'introuvable' };
+  const arts = await fetchFeedItems('https://www.youtube.com/feeds/videos.xml?channel_id=' + chaine, 6000);
+  if (!arts.length) return { erreur: 'inactif' };
+  return { chaine, videos: arts.length };
 }
 
 /* Flux Atom YouTube → articles au même format que le reste de l'app.
