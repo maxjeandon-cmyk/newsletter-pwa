@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-03T11:06:32.207Z",
+  "etapes": {
+    "abonnements": {
+      "ok": false,
+      "erreur": "Supabase 404 : {\"code\":\"PGRST125\",\"details\":null,\"hint\":null,\"message\":\"Invalid path specified in request URL\"}"
+    },
+    "memo_tests": {
+      "ok": false,
+      "erreur": "Supabase 404 : {\"code\":\"PGRST125\",\"details\":null,\"hint\":null,\"message\":\"Invalid path specified in request URL\"}"
+    }
+  }
+}
