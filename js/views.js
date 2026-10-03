@@ -4,6 +4,7 @@
  * Règle d'hygiène : tout texte externe (flux RSS, éditions) passe par esc() avant innerHTML. */
 import { $, state, esc, getStore, setStore, nomJourEdition } from './core.js';
 import { chargerChapitres } from './feeds.js';
+import { ONGLETS_BASE } from './onglets.js';
 import { enregistrerVue, renderView as rendu } from './views/common.js';
 import { vueEdition } from './views/edition.js';
 import { vueClimat } from './views/climat.js';
@@ -22,15 +23,9 @@ export { mediaVisible };
 Object.entries({ edition: vueEdition, archives: vueArchives, climat: vueClimat, articles: vueArticles, medias: vueMedias, lecture: vueLecture, videos: vueVideos, reglages: vueReglages, feedback: vueFeedback })
   .forEach(([id, vue]) => enregistrerVue(id, vue));
 
-const TABS_BASE = [
-  { id: 'articles', nom: () => 'Articles', emoji: '🔥' },
-  { id: 'edition', nom: () => 'Édition du ' + nomJourEdition(), emoji: '📄' },
-  { id: 'archives', nom: () => 'Archives', emoji: '🗄️' },
-  { id: 'medias', nom: () => 'Médias', emoji: '🎬' },
-  { id: 'climat', nom: () => 'Climat', emoji: '🌡️' },
-  { id: 'lecture', nom: () => 'Lecture', emoji: '📖' },  { id: 'videos', nom: () => 'Vidéos', emoji: '📺' },
-  { id: 'feedback', nom: () => 'Feedback', emoji: '💬' },
-  { id: 'reglages', nom: () => 'Réglages', emoji: '⚙️' }];
+/* Barre d'onglets : definitions centrales dans onglets.js — tout nouvel
+ * onglet ajoute la-bas apparait ici automatiquement. */
+const TABS_BASE = ONGLETS_BASE.map(o => ({ ...o, nom: () => o.id === 'edition' ? 'Édition du ' + nomJourEdition() : o.nom }));
 /* Ordre des onglets : préférence locale (nl.ordreOnglets), sinon défaut ci-dessus */
 const TABS = () => {
   const pref = getStore('ordreOnglets', []);
