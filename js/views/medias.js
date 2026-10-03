@@ -65,17 +65,27 @@ function lancerRecherche() {
   return rechercheEnCours;
 }
 
+/* Un média « vidéo » expose un flux YouTube (chaîne) ; les autres sont des
+ * sources d'articles. Séparation douce : un média hybride apparaît des deux côtés. */
+const estVideo = m => (m.flux || []).some(f => /youtube\.com\/feeds\/videos\.xml/i.test(f));
+
+/* Deux encarts — Articles 📰 et Vidéos 📺 — pour séparer les sources choisies. */
 function sousOngletsMedias(visibles, mode) {
-  return '<div class="chapter-resume"><h2>🎬 Médias suivis</h2>' +
-    '<p class="meta-count">Articles en continu, fenêtre propre à chaque média — indépendamment de l’édition du jour.</p>' +
+  const encart = (titre, emoji, liste, modeAjout, dataAjout, libelleAjout) =>
+    '<div class="chapter-resume medias-encart"><h2>' + emoji + ' ' + titre + '</h2>' +
     '<div class="subtabs">' +
-    visibles.map(x =>
-      '<button class="subtab' + (x.id === state.activeMedia && !mode ? ' active' : '') + '" data-m="' + esc(x.id) + '">' +
-      (x.emoji ? x.emoji + ' ' : '') + esc(x.nom) + '</button>').join('') +
-    '<button class="subtab add' + (mode === 'ajout' ? ' active' : '') + '" data-m="__ajout">➕ Articles</button>' +
-    '<button class="subtab add' + (mode === 'ajoutvideo' ? ' active' : '') + '" data-m="__ajoutvideo">➕ Vidéos</button>' +
-    '<button class="subtab' + (mode === 'gerer' ? ' active' : '') + '" data-m="__gerer">👁 ' + (mode === 'gerer' ? 'Terminer' : 'Gérer') + '</button>' +
+    (liste.length
+      ? liste.map(x =>
+        '<button class="subtab' + (x.id === state.activeMedia && !mode ? ' active' : '') + '" data-m="' + esc(x.id) + '">' +
+        (x.emoji ? x.emoji + ' ' : '') + esc(x.nom) + '</button>').join('')
+      : '<span class="meta-count">Aucune source suivie — ajoute-en une avec ➕.</span>') +
+    '<button class="subtab add' + (mode === modeAjout ? ' active' : '') + '" data-m="' + dataAjout + '">' + libelleAjout + '</button>' +
     '</div></div>';
+  const articles = visibles.filter(m => !estVideo(m));
+  const videos = visibles.filter(estVideo);
+  return encart('Articles', '📰', articles, 'ajout', '__ajout', '➕ Articles') +
+    encart('Vidéos', '📺', videos, 'ajoutvideo', '__ajoutvideo', '➕ Vidéos') +
+    '<div class="subtabs"><button class="subtab' + (mode === 'gerer' ? ' active' : '') + '" data-m="__gerer">👁 ' + (mode === 'gerer' ? 'Terminer la gestion' : 'Gérer') + '</button></div>';
 }
 
 /* Catalogue de flux RSS vérifiés (v21) : médias francophones et anglophones
