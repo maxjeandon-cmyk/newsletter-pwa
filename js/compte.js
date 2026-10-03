@@ -171,11 +171,6 @@ function prefsLocales() {
   return p;
 }
 
-async function jetonActif() {
-  const t = await rafraichirSiExpiré();
-  return t;
-}
-
 export async function envoyerPrefs() {
   const t = await jetonActif();
   if (!t) return { erreur: 'deconnecte' };
