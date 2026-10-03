@@ -50,8 +50,8 @@ async function clePublique() {
 
 /* S'abonner au push (crée ou réutilise l'abonnement navigateur) puis l'enregistrer dans Supabase */
 export async function souscrire() {
-  if (!pushDisponible()) return { erreur: 'non-supporte' };
-  const perm = await Notification.requestPermission();
+  if (!pushDisponible()) { noterEssai({ ok: false, etape: 'support', message: "push indisponible dans ce contexte (Safari iOS ? installe l'app sur l'écran d'accueil)" }); return { erreur: 'non-supporte' }; }
+  let perm; try { perm = await Notification.requestPermission(); } catch (e) { noterEssai({ ok: false, etape: 'permission', message: String(e && e.message || e).slice(0, 140) }); return { erreur: 'permission' }; }
   if (perm !== 'granted') { noterEssai({ ok: false, etape: 'permission', message: 'permission refusée ou non donnée' }); return { erreur: 'permission' }; }
   const cle = await clePublique();
   if (!cle) { noterEssai({ ok: false, etape: 'configuration', message: 'clé publique push introuvable (data/compte.json)' }); return { erreur: 'configuration' }; }

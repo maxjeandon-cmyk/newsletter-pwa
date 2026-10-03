@@ -292,7 +292,9 @@ function rendreNotifications() {
   [...bloc.querySelectorAll('[data-notif]')].forEach(cb =>
     cb.onchange = async () => {
       const id = cb.dataset.notif;
-      const prefs = await basculerNotification(id.startsWith('media:') ? 'medias' : id, id.startsWith('media:') ? id.slice(6) : null);
+      let prefs;
+      try { prefs = await basculerNotification(id.startsWith('media:') ? 'medias' : id, id.startsWith('media:') ? id.slice(6) : null); }
+      catch (e) { console.error('toggle notif', e); prefs = prefsNotifications(); }
       /* v66 : résultat exact du dernier enregistrement, affiché tel quel — même
        * si un vieux endpoint local traînait (époque où l'échec était silencieux). */
       afficherEssaiPush(prefs);
