@@ -485,10 +485,12 @@ export async function resoudreChaineYoutube(saisie) {
   else {
     const mHandle = s.match(/@([\w.-]+)/);
     if (mHandle) {
-      const page = await pageHtmlRelais('https://www.youtube.com/@' + mHandle[1].replace(/["'?#].*$/, ''));
-      const uc = page && (page.match(/"channelId"\s*:\s*"(UC[\w-]{22})"/i)
-        || page.match(/youtube\.com\/channel\/(UC[\w-]{22})/i));
-      if (uc) chaine = uc[1];
+      /* @handle : la page du handle résiste aux relais, mais la RECHERCHE
+       * YouTube renvoie les channelIds en clair dans son HTML. */
+      const manche = mHandle[1].replace(/["'?#].*$/, '');
+      const page = await texteDirect('https://www.youtube.com/results?search_query=' + encodeURIComponent(manche), 8000);
+      const ucs = page && [...page.matchAll(/"channelId":"(UC[\w-]{22})"/g)].map(x => x[1]);
+      if (ucs && ucs.length) chaine = ucs[0];
     }
   }
   if (!chaine) return { erreur: 'introuvable' };
