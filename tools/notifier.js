@@ -25,12 +25,19 @@ async function main() {
   webpush.setVapidDetails('mailto:contact@desinfos.h24', process.env.VAPID_PUBLIC_KEY, process.env.VAPID_PRIVATE_KEY);
 
   /* 1. Quoi de neuf ? édition du jour + bulletin climat côté dépôt (fichiers générés) */
-  const [idx, climat] = await Promise.all([
+  const [idx, climat, feedback] = await Promise.all([
     fetch('https://maxjeandon-cmyk.github.io/newsletter-pwa/editions/latest.json').then(r => r.json()).catch(() => null),
-    fetch('https://maxjeandon-cmyk.github.io/newsletter-pwa/data/climat.json').then(r => r.json()).catch(() => null)
+    fetch('https://maxjeandon-cmyk.github.io/newsletter-pwa/data/climat.json').then(r => r.json()).catch(() => null),
+    fetch('https://maxjeandon-cmyk.github.io/newsletter-pwa/data/feedback.json').then(r => r.json()).catch(() => null)
   ]);
   const dateEdition = idx?.editions?.[0]?.date || null;
   const majClimat = climat?.maj || climat?.date || null;
+  /* Résumé feedback : identifié par date + nombre de messages (l'agent maintenance
+   * régénère data/feedback.json toutes les 6 h ; on ne notifie qu'une fois par
+   * résumé réellement différent). */
+  const majFeedback = feedback && (feedback.date || feedback.total)
+    ? (feedback.date || '') + '/' + (feedback.total || 0)
+    : null;
 
   /* 2. État d'envoi (mémo partagé, une ligne dédiée par service dans preferences d'un compte système) */
   const abonnements = await api('/rest/v1/abonnements_push?select=endpoint,p256dh,auth,user_id,prefs')
@@ -52,6 +59,8 @@ async function main() {
       msgs.push({ titre: '📰 Édition du ' + dateEdition, corps: 'La nouvelle édition est prête.', url: './#edition' });
     if (p.copernicus && majClimat && envoyes.copernicus !== majClimat)
       msgs.push({ titre: '🌡️ Bulletin Copernicus', corps: 'Nouveau bulletin climat disponible.', url: './#climat' });
+    if (p.feedback && majFeedback && envoyes.feedback !== majFeedback)
+      msgs.push({ titre: '💬 Résumé de tes retours', corps: (feedback.total || 0) + ' message(s) de feedback pris en compte.', url: './#feedback' });
     for (const m of (p.mediasNotifies || [])) msgs.push(m); /* réservé : alertes média futures */
     if (!msgs.length) continue;
     aNotifier.push({ abonnement: a, message: msgs[0], reste: msgs.length - 1, prefs: p, envoyes });
@@ -71,7 +80,7 @@ async function main() {
         );
         envoyes++;
         /* mémo : cet utilisateur a reçu edition/copernicus courant */
-        const prefs = { __uid: t.abonnement.user_id, ...t.prefs, notif_envoyees: { ...(t.envoyes || {}), ...(t.message.url === './#edition' ? { edition: dateEdition } : t.message.url === './#climat' ? { copernicus: majClimat } : {}) } };
+        const prefs = { __uid: t.abonnement.user_id, ...t.prefs, notif_envoyees: { ...(t.envoyes || {}), ...(t.message.url === './#edition' ? { edition: dateEdition } : t.message.url === './#climat' ? { copernicus: majClimat } : t.message.url === './#feedback' ? { feedback: majFeedback } : {}) } };
         /* PATCH différé : on accumule et on écrit par lot après la boucle (v29). */
         majPrefs.set(t.abonnement.user_id, prefs);
       } catch (e) {

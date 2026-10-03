@@ -257,6 +257,7 @@ function rendreNotifications() {
     '<p class="hint">Active ce que tu veux recevoir dès que c\u2019est prêt — envoi groupé et limité pour ne jamais spammer.</p>' +
     toggle('edition', p.edition, '📰 L\u2019édition du jour') +
     toggle('copernicus', p.copernicus, '🌡️ Le bulletin Copernicus') +
+    toggle('feedback', p.feedback, '💬 Le résumé des retours feedback') +
     (medias.length ? '<p class="meta-count" style="margin:10px 0 2px">Médias suivis</p>' : '') +
     medias.map(m => toggle('media:' + esc(m.id), p.medias?.[m.id], m.nom ? esc(m.nom) : esc(m.id))).join('');
   [...bloc.querySelectorAll('[data-notif]')].forEach(cb =>
@@ -264,6 +265,6 @@ function rendreNotifications() {
       const id = cb.dataset.notif;
       const prefs = await basculerNotification(id.startsWith('media:') ? 'medias' : id, id.startsWith('media:') ? id.slice(6) : null);
       /* plus aucun toggle actif → désabonnement silencieux du push */
-      if (!prefs.edition && !prefs.copernicus && !Object.values(prefs.medias || {}).some(Boolean)) await desabonner();
+      if (!prefs.edition && !prefs.copernicus && !prefs.feedback && !Object.values(prefs.medias || {}).some(Boolean)) await desabonner();
     });
 }
