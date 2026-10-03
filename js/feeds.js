@@ -489,8 +489,13 @@ export async function resoudreChaineYoutube(saisie) {
     const mHandle = s.match(/@([\w.-]+)/);
     if (!mHandle && /channel\/(UC[\w-]{22})/.test(s)) chaine = s.match(/channel\/(UC[\w-]{22})/)[1];
     else if (mHandle) {
-      const page = await texteDirect('https://www.youtube.com/results?search_query=' + encodeURIComponent(mHandle[1].replace(/["'?#].*$/, '')), 8000);
-      const ucs = page && [...page.matchAll(/"channelId":"(UC[\w-]{22})"/g)].map(x => x[1]);
+      /* La page @handle et la recherche YouTube bloquent les relais classiques
+       * et le direct navigateur (CORS) : r.jina.ai (proxy de lecture, CORS
+       * ouvert) rend la page en texte avec le channelId en clair. */
+      const page = await texteDirect('https://r.jina.ai/https://www.youtube.com/@' + mHandle[1].replace(/["'?#].*$/, ''), 20000);
+      /* le rendu contient des UC parasites (tokens d'URL) : on ne retient
+       * que ceux qui vivent dans un lien youtube.com/channel/UC… */
+      const ucs = page && [...page.matchAll(/channel\/(UC[\w-]{22})/g)].map(x => x[1]);
       if (ucs && ucs.length) chaine = ucs[0];
     }
   }
