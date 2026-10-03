@@ -15,8 +15,8 @@
 const URL = process.env.SUPABASE_URL;
 const KEY = process.env.SUPABASE_SERVICE_ROLE;
 
-async function apiSupabase(chemin) {
-  const r = await fetch(URL + chemin, {
+async function apiSupabase(url) {
+  const r = await fetch(url, {
     headers: { apikey: KEY, authorization: 'Bearer ' + KEY }
   });
   /* Le corps d'erreur aide au diagnostic (jeton expiré, projet erroné…) sans jamais contenir la clé. */
@@ -53,8 +53,12 @@ async function main() {
     console.error('Il manque SUPABASE_URL ou SUPABASE_SERVICE_ROLE.');
     process.exit(1);
   }
+  /* L'hôte est public (présent dans data/compte.json) : l'afficher aide au diagnostic.
+   * On normalise aussi un éventuel slash final, cause classique de PGRST125. */
+  const base = URL.replace(/\/+$/, '');
+  console.error('Supabase hôte : ' + base);
   const depuis = new Date(Date.now() - 48 * 3600e3).toISOString();
-  const messages = (await apiSupabase('/rest/v1/feedback?select=id,message,created_at&created_at=gte.' + depuis + '&order=created_at.asc&limit=500')) || [];
+  const messages = (await apiSupabase(base + '/rest/v1/feedback?select=id,message,created_at&created_at=gte.' + depuis + '&order=created_at.asc&limit=500')) || [];
   const resume = resumer(messages);
   process.stdout.write(JSON.stringify({ total: messages.length, ...resume }) + '\n');
 }
