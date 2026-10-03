@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-03T11:08:32.172Z",
+  "date": "2026-10-03T12:06:42.418Z",
   "etapes": {
     "forme_url": {
       "ok": true,
@@ -35,8 +35,7 @@
       "total_officiel": "0",
       "total_corps": 0,
       "utilisateurs": 0,
-      "plus_recent": null,
-      "liste": []
+      "plus_recent": null
     }
   }
 }
