@@ -1,0 +1,25 @@
+{
+  "date": "03/10/2026",
+  "heure": "07:56",
+  "feedback": {
+    "messages": 0,
+    "recupere": false,
+    "publie": true
+  },
+  "verifs": [
+    {
+      "nom": "validate-latest.js",
+      "ok": true,
+      "detail": "\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 30/09/2026 »\n\n27/27 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n\nToutes les éditions récentes sont conformes. 🌱"
+    },
+    {
+      "nom": "check-site.js",
+      "ok": true,
+      "detail": "=== check-site ===\nℹ️  latest.json : 6 édition(s), plus récente 2026-10-02\nℹ️  édition 2026-10-02 : JSON OK, HTML 92699 octets, structure OK\nℹ️  site public joignable (1330 octets)\n\nSite et édition conformes. 🌱"
+    }
+  ],
+  "problemes": [
+    "récupération feedback"
+  ],
+  "intervention": "Anomalies détectées — aucune correction automatique appliquée (éditions/ figé) : correction manuelle requise."
+}
