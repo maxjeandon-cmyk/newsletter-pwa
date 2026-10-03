@@ -53,9 +53,9 @@ async function main() {
     console.error('Il manque SUPABASE_URL ou SUPABASE_SERVICE_ROLE.');
     process.exit(1);
   }
-  /* L'hôte est public (présent dans data/compte.json) : l'afficher aide au diagnostic.
-   * On normalise aussi un éventuel slash final, cause classique de PGRST125. */
-  const base = URL.replace(/\/+$/, '');
+  /* Normalisation : certains secrets contiennent déjà « /rest/v1 » (ou des slashes
+   * finaux) — on les retire pour reconstruire un chemin propre et éviter PGRST125. */
+  const base = URL.replace(/\/+$/, '').replace(/\/rest\/v1$/, '');
   console.error('Supabase hôte : ' + base);
   const depuis = new Date(Date.now() - 48 * 3600e3).toISOString();
   const messages = (await apiSupabase(base + '/rest/v1/feedback?select=id,message,created_at&created_at=gte.' + depuis + '&order=created_at.asc&limit=500')) || [];
