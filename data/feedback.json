@@ -2,9 +2,12 @@
   "date": "03/10/2026",
   "total": 6,
   "points": [
-    "Thèmes récurrents (mots les plus fréquents, hors mots vides) : onglet (4), test (3), nettoyer (2), lecture (2), optimiser (1), video (1)",
-    "Message détaillé (citation exacte) : « (Implantation de l'onglet feedback, les précédents messages et celui ci servent de test de la fonction résumé) »",
-    "Message détaillé (citation exacte) : « Le site est super, mais un peu lent et pas genial sur ordinateur »",
-    "Message détaillé (citation exacte) : « Nettoyer l'onglet Lecture et optimiser l'onglet vidéo. »"
+    "Points les plus demandés : onglet (3), test (3), nettoye (2), lecture (2), optimis (1), video (1), site (1), super (1)",
+    "Message condensé : « Nettoyer l'onglet Lecture et optimiser l'onglet vidéo. »",
+    "Message condensé : « Le site est super, mais un peu lent et pas genial sur ordinateur »",
+    "Message condensé : « g pa aimé lé media jé pas trouvé comen en avoir plus »",
+    "Message condensé : « (Implantation de l'onglet feedback, les précédents messages et celui ci servent de test de la fonction résumé) »",
+    "Message condensé : « test technique 2026-10-03T07:59:45.870Z »",
+    "Message condensé : « test, nettoyer l'onglet lecture »"
   ]
 }
