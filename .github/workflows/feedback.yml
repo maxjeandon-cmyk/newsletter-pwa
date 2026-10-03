@@ -1,20 +1,21 @@
-name: Resume feedback
+name: Agent maintenance
 on:
   schedule:
-    - cron: '17 3 * * *'   # chaque nuit à 3h17 : lit, résume et publie les retours
+    # toutes les 6 h : 3 h, 9 h, 15 h et 21 h heure de Paris (GitHub schedule utilise UTC ; +1 h en été)
+    - cron: '17 3,9,15,21 * * *'
   workflow_dispatch:
 permissions:
   contents: write
 jobs:
-  resumer:
+  agent:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Résumer les messages des dernières 48 h
-        run: node tools/feedback.js
+      - name: Récupérer et résumer les feedback + maintenance du site
+        run: node tools/maintenance.js
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
