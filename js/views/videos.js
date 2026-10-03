@@ -5,8 +5,11 @@
  * Un clic sur une carte lance la lecture intégrée (youtube-nocookie) —
  * le reste est identique à une carte d'article : titre · média · il y a X h. */
 import { $, state, esc, fmtDateHour } from '../core.js';
-import { chargerVideos } from '../feeds.js';
+import { chargerVideos, mediasVisibles } from '../feeds.js';
 import { renderView } from './common.js';
+
+/* Médias avec une chaîne YouTube suivie (flux youtube.com) — vide = rien à charger. */
+const chainesYoutube = () => mediasVisibles().filter(m => /youtube\.com/i.test((m.flux || []).join(' ')));
 
 /* Carte vidéo : même gabarit visuel qu'une carte article, miniature en tête */
 function videoHtml(v, i) {
@@ -42,8 +45,12 @@ export function vueVideos() {
     ' · actualisé ' + (d.time ? esc(fmtDateHour(new Date(d.time).toISOString())) : '\u2014') + '</p></div>' +
     (d.videos.length
       ? d.videos.map(videoHtml).join('')
-      : '<div class="empty">Aucune vidéo pour l\u2019instant — les chaînes YouTube des médias sont en cours de découverte, ouvre l\u2019onglet dans un instant. 📺</div>');
+      : chainesYoutube().length
+        ? '<div class="empty">Aucune vidéo pour l\u2019instant — les chaînes YouTube des médias sont en cours de découverte, ouvre l\u2019onglet dans un instant. 📺</div>'
+      : '<div class="empty">Aucune chaîne YouTube suivie — ajoute-en une depuis l\u2019onglet Médias avec \u2795 Vidéos. 📺</div>');
 
+  /* Pas de chaîne YouTube suivie : rien à charger — message explicite. */
+  if (!chainesYoutube().length) return;
   chargerVideos().then(d2 => {
     /* re-rendu seulement si des vidéos arrivent — jamais en boucle quand le
      * cache est frais (chargerVideos résout alors la même promesse) */
