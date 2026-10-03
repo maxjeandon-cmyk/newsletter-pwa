@@ -243,6 +243,10 @@ function rendreNotifications() {
   if (!bloc) return;
   const p = prefsNotifications();
   const medias = (state.medias || []);
+  if (safariOngletSansPush()) {
+    bloc.innerHTML = '<p class="hint">📱 Sur iPhone/iPad, les notifications ne fonctionnent que dans l\u2019app installée sur l\u2019écran d\u2019accueil — pas dans l\u2019onglet Safari. Ouvre le menu Partager → « Sur l\u2019écran d\u2019accueil », puis active les toggles depuis l\u2019app.</p>';
+    return;
+  }
   if (!pushDisponible()) {
     bloc.innerHTML = '<p class="hint">Les notifications ne sont pas disponibles sur ce navigateur. Sur iPhone : installe l\u2019app depuis Safari (iOS 16.4+).</p>';
     return;
@@ -254,9 +258,6 @@ function rendreNotifications() {
   const toggle = (id, on, label) =>
     '<label class="switch notif-ligne"><input type="checkbox" data-notif="' + id + '"' + (on ? ' checked' : '') + '/><span>' + esc(label) + '</span></label>';
   bloc.innerHTML =
-    (safariOngletSansPush()
-      ? '<p class="hint" style="border:1px solid var(--border);padding:8px 10px;border-radius:8px">📱 Sur iPhone/iPad, les notifications ne fonctionnent que dans l\u2019app installée sur l\u2019écran d\u2019accueil — pas dans l\u2019onglet Safari. Ouvre le menu Partager → « Sur l\u2019écran d\u2019accueil », puis active les toggles depuis l\u2019app.</p>'
-      : '') +
     '<p class="hint">Active ce que tu veux recevoir dès que c\u2019est prêt — envoi groupé et limité pour ne jamais spammer.</p>' +
     toggle('edition', p.edition, '📰 L\u2019édition du jour') +
     toggle('copernicus', p.copernicus, '🌡️ Le bulletin Copernicus') +
