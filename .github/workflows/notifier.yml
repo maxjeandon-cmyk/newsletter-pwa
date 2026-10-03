@@ -1,7 +1,11 @@
 name: Notifications push
 on:
+  push:
+    paths:
+      - 'editions/latest.json'
+      - 'data/climat.json'
   schedule:
-    - cron: '21 * * * *'   # toutes les heures : vérifie et envoie dès que possible, sans risquer l'overload
+    - cron: '21 * * * *'   # filet de securite horaire
   workflow_dispatch:
 permissions:
   contents: read

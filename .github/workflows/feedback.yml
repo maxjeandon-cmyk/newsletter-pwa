@@ -19,4 +19,6 @@ jobs:
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # PAT fine-grained (Contents: RW, Actions: write) — permet à l'agent
+          # de déclencher le workflow Notifications push juste après publication.
+          GH_TOKEN: ${{ secrets.NOTIF_DISPATCH_TOKEN }}

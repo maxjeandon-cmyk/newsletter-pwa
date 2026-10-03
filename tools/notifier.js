@@ -26,9 +26,9 @@ async function main() {
 
   /* 1. Quoi de neuf ? édition du jour + bulletin climat côté dépôt (fichiers générés) */
   const [idx, climat, feedback] = await Promise.all([
-    fetch('https://maxjeandon-cmyk.github.io/newsletter-pwa/editions/latest.json').then(r => r.json()).catch(() => null),
-    fetch('https://maxjeandon-cmyk.github.io/newsletter-pwa/data/climat.json').then(r => r.json()).catch(() => null),
-    fetch('https://maxjeandon-cmyk.github.io/newsletter-pwa/data/feedback.json').then(r => r.json()).catch(() => null)
+    fetch('https://raw.githubusercontent.com/maxjeandon-cmyk/newsletter-pwa/main/editions/latest.json').then(r => r.json()).catch(() => null),
+    fetch('https://raw.githubusercontent.com/maxjeandon-cmyk/newsletter-pwa/main/data/climat.json').then(r => r.json()).catch(() => null),
+    fetch('https://raw.githubusercontent.com/maxjeandon-cmyk/newsletter-pwa/main/data/feedback.json').then(r => r.json()).catch(() => null)
   ]);
   const dateEdition = idx?.editions?.[0]?.date || null;
   const majClimat = climat?.maj || climat?.date || null;
