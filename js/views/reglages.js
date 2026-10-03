@@ -8,7 +8,7 @@ import { ONGLETS_BASE } from '../onglets.js';
 import { chargerChapitres } from '../feeds.js';
 import { renderView } from './common.js';
 import { inscrire, connecter, deconnecter, restaurerSession, synchroniserPrefs, envoyerPrefs, abonne, estConnecte, veutResterConnecte } from '../compte.js';
-import { pushDisponible, prefsNotifications, basculerNotification, desabonner } from '../push.js';
+import { pushDisponible, prefsNotifications, basculerNotification, desabonner, safariOngletSansPush } from '../push.js';
 
 /* Ordre par défaut : source unique dans js/onglets.js — tout nouvel onglet
  * s'y ajoute et apparaît automatiquement ici et dans la barre (pas de doublon
@@ -254,16 +254,26 @@ function rendreNotifications() {
   const toggle = (id, on, label) =>
     '<label class="switch notif-ligne"><input type="checkbox" data-notif="' + id + '"' + (on ? ' checked' : '') + '/><span>' + esc(label) + '</span></label>';
   bloc.innerHTML =
+    (safariOngletSansPush()
+      ? '<p class="hint" style="border:1px solid var(--border);padding:8px 10px;border-radius:8px">📱 Sur iPhone/iPad, les notifications ne fonctionnent que dans l\u2019app installée sur l\u2019écran d\u2019accueil — pas dans l\u2019onglet Safari. Ouvre le menu Partager → « Sur l\u2019écran d\u2019accueil », puis active les toggles depuis l\u2019app.</p>'
+      : '') +
     '<p class="hint">Active ce que tu veux recevoir dès que c\u2019est prêt — envoi groupé et limité pour ne jamais spammer.</p>' +
     toggle('edition', p.edition, '📰 L\u2019édition du jour') +
     toggle('copernicus', p.copernicus, '🌡️ Le bulletin Copernicus') +
     toggle('feedback', p.feedback, '💬 Le résumé des retours feedback') +
     (medias.length ? '<p class="meta-count" style="margin:10px 0 2px">Médias suivis</p>' : '') +
-    medias.map(m => toggle('media:' + esc(m.id), p.medias?.[m.id], m.nom ? esc(m.nom) : esc(m.id))).join('');
+    medias.map(m => toggle('media:' + esc(m.id), p.medias?.[m.id], m.nom ? esc(m.nom) : esc(m.id))).join('') +
+    '<p class="hint" id="notif-info" style="min-height:16px;margin:8px 0 0"></p>';
   [...bloc.querySelectorAll('[data-notif]')].forEach(cb =>
     cb.onchange = async () => {
       const id = cb.dataset.notif;
       const prefs = await basculerNotification(id.startsWith('media:') ? 'medias' : id, id.startsWith('media:') ? id.slice(6) : null);
+      /* Échec d'abonnement visible : sans ça, le toggle paraît actif mais rien ne part. */
+      const info = $('#notif-info');
+      if (info) {
+        const actifs = prefs.edition || prefs.copernicus || prefs.feedback || Object.values(prefs.medias || {}).some(Boolean);
+        info.textContent = actifs && !getStore('push.endpoint', '') ? '⚠️ Abonnement push non confirmé — vérifie la permission et ta connexion.' : '';
+      }
       /* plus aucun toggle actif → désabonnement silencieux du push */
       if (!prefs.edition && !prefs.copernicus && !prefs.feedback && !Object.values(prefs.medias || {}).some(Boolean)) await desabonner();
     });

@@ -24,9 +24,18 @@ export async function basculerNotification(categorie, mediaId) {
   return p;
 }
 
-/* Support : HTTPS + service worker + Push API (iOS 16.4+ installé, Android, desktop) */
+/* Support : HTTPS + service worker + Push API. Sur iOS, le push n'existe que
+ * dans la PWA installée sur l'écran d'accueil (iOS 16.4+) — jamais dans l'onglet
+ * Safari : on le détecte pour guider l'utilisateur au lieu d'échouer en silence. */
 export function pushDisponible() {
   return 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
+}
+
+/* iOS dans l'onglet Safari : PushManager absent — la PWA installée l'expose. */
+export function safariOngletSansPush() {
+  const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent)
+    || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1); /* iPadOS */
+  return iOS && !pushDisponible();
 }
 
 async function clePublique() {
