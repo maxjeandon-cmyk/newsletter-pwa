@@ -1,13 +1,42 @@
 {
-  "date": "2026-10-03T11:06:32.207Z",
+  "date": "2026-10-03T11:08:32.172Z",
   "etapes": {
+    "forme_url": {
+      "ok": true,
+      "scheme": "https:",
+      "host": "dymizsdqtmkwinfoynet.supabase.co",
+      "pathname": "/rest/v1/",
+      "finit_par_slash": true,
+      "se_termine_par_rest_v1": true
+    },
+    "sondes": {
+      "brut_plus_rest": {
+        "status": 404,
+        "ok": false,
+        "corps": "{\"code\":\"PGRST125\",\"details\":null,\"hint\":null,\"message\":\"Invalid path specified in request URL\"}"
+      },
+      "sans_rest_eventuel": {
+        "status": 200,
+        "ok": true,
+        "corps": "[]"
+      },
+      "racine_rest": {
+        "status": 404,
+        "ok": false,
+        "corps": "{\"code\":\"PGRST125\",\"details\":null,\"hint\":null,\"message\":\"Invalid path specified in request URL\"}"
+      }
+    },
     "abonnements": {
       "ok": false,
-      "erreur": "Supabase 404 : {\"code\":\"PGRST125\",\"details\":null,\"hint\":null,\"message\":\"Invalid path specified in request URL\"}"
+      "erreur": "sonde brut en echec : 404"
     },
-    "memo_tests": {
-      "ok": false,
-      "erreur": "Supabase 404 : {\"code\":\"PGRST125\",\"details\":null,\"hint\":null,\"message\":\"Invalid path specified in request URL\"}"
+    "abonnements_variante": {
+      "ok": true,
+      "total_officiel": "0",
+      "total_corps": 0,
+      "utilisateurs": 0,
+      "plus_recent": null,
+      "liste": []
     }
   }
 }
