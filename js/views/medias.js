@@ -339,7 +339,7 @@ export function vueMedias() {
       const fluxYt = 'https://www.youtube.com/feeds/videos.xml?channel_id=' + r.chaine;
       const id = slugMedia(nom);
       if (state.medias.some(m => m.id === id)) return erreurV('Ce média existe déjà — choisis un autre nom.');
-      const media = { id, nom, emoji, flux: [fluxYt], fenetreHeures: 168 };
+      const media = { id, nom, emoji, flux: [fluxYt], fenetreHeures: 24 };
       if (jetonPresent()) {
         if (statut) statut.textContent = '🔑 Publication dans la config du site…';
         bVid.disabled = true;
