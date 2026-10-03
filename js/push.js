@@ -12,6 +12,7 @@ import { jetonActif } from './compte.js';
 
 const ABONNEMENTS = 'notifications';  // préférences locales : { edition, copernicus, medias: {id:bool} }
 const ENDPOINT = 'push.endpoint';     // endpoint local pour éviter les doublons d'abonnement
+const ESSAI = 'push.dernier_essai';   // v66 : dernier résultat d'enregistrement, affiché dans Réglages
 
 /* Préférences de notification (toggles) — préférences locales classiques (nl.*) */
 export function prefsNotifications() { return getStore(ABONNEMENTS, { edition: false, copernicus: false, feedback: false, medias: {} }); }
@@ -51,9 +52,9 @@ async function clePublique() {
 export async function souscrire() {
   if (!pushDisponible()) return { erreur: 'non-supporte' };
   const perm = await Notification.requestPermission();
-  if (perm !== 'granted') return { erreur: 'permission' };
+  if (perm !== 'granted') { noterEssai({ ok: false, etape: 'permission', message: 'permission refusée ou non donnée' }); return { erreur: 'permission' }; }
   const cle = await clePublique();
-  if (!cle) return { erreur: 'configuration' };
+  if (!cle) { noterEssai({ ok: false, etape: 'configuration', message: 'clé publique push introuvable (data/compte.json)' }); return { erreur: 'configuration' }; }
   try {
     const reg = await navigator.serviceWorker.ready;
     let sub = await reg.pushManager.getSubscription();
@@ -63,13 +64,19 @@ export async function souscrire() {
         applicationServerKey: urlBase64ToUint8Array(cle)
       });
     }
-    const ok = await enregistrerDistant(sub.toJSON());
-    /* v64 : on ne mémorise l'endpoint QUE si l'enregistrement serveur a réussi,
-     * sinon l'avertissement ⚠️ de reglages.js croit à tort que tout va bien. */
-    if (ok) setStore(ENDPOINT, sub.endpoint);
-    return { ok };
-  } catch (e) { return { erreur: 'reseau' }; }
+    const res = await enregistrerDistant(sub.toJSON());
+    /* v64 : on ne mémorise l'endpoint QUE si l'enregistrement serveur a réussi.
+     * v66 : le résultat complet (statut HTTP, message serveur) est conservé et
+     * affiché dans Réglages — plus aucun échec ne peut passer pour un succès. */
+    noterEssai(res);
+    if (res.ok) setStore(ENDPOINT, sub.endpoint);
+    return { ok: res.ok };
+  } catch (e) { noterEssai({ ok: false, etape: 'abonnement', message: String(e && e.message || e).slice(0, 140) }); return { erreur: 'reseau' }; }
 }
+
+/* v66 : mémorise le dernier essai d'enregistrement (statut + message serveur),
+ * affiché tel quel dans Réglages > Notifications. */
+function noterEssai(res) { setStore(ESSAI, { quand: Date.now(), ...res }); }
 
 /* Se désabonner complètement (plus aucun toggle actif) */
 export async function desabonner() {
@@ -91,7 +98,7 @@ async function jeton() {
 
 async function enregistrerDistant(sub) {
   const t = await jeton();
-  if (!t) return false;
+  if (!t) return { ok: false, etape: 'session', message: 'session expirée — reconnecte-toi dans Profil puis re-bascule le toggle' };
   const cfg = state.compteCfg || {};
   try {
     const r = await fetch(cfg.url + '/rest/v1/abonnements_push?on_conflict=endpoint', {
@@ -102,8 +109,11 @@ async function enregistrerDistant(sub) {
       },
       body: JSON.stringify({ endpoint: sub.endpoint, p256dh: sub.keys?.p256dh, auth: sub.keys?.auth })
     });
-    return r.ok;
-  } catch (e) { return false; }
+    if (r.ok) return { ok: true, status: r.status, message: 'enregistré côté serveur' };
+    let corps = '';
+    try { corps = (await r.text()).slice(0, 140); } catch (e) { /* rien */ }
+    return { ok: false, status: r.status, message: corps || ('HTTP ' + r.status) };
+  } catch (e) { return { ok: false, etape: 'réseau', message: String(e && e.message || e).slice(0, 140) }; }
 }
 
 async function supprimerDistant(endpoint) {

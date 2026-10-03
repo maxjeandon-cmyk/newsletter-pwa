@@ -269,11 +269,16 @@ function rendreNotifications() {
     cb.onchange = async () => {
       const id = cb.dataset.notif;
       const prefs = await basculerNotification(id.startsWith('media:') ? 'medias' : id, id.startsWith('media:') ? id.slice(6) : null);
-      /* Échec d'abonnement visible : sans ça, le toggle paraît actif mais rien ne part. */
+      /* v66 : résultat exact du dernier enregistrement, affiché tel quel — même
+       * si un vieux endpoint local traînait (époque où l'échec était silencieux). */
       const info = $('#notif-info');
       if (info) {
         const actifs = prefs.edition || prefs.copernicus || prefs.feedback || Object.values(prefs.medias || {}).some(Boolean);
-        info.textContent = actifs && !getStore('push.endpoint', '') ? '⚠️ Abonnement push non confirmé — vérifie la permission et ta connexion.' : '';
+        const essai = getStore('push.dernier_essai', null);
+        if (!actifs) info.textContent = '';
+        else if (essai && essai.ok) info.textContent = '✅ Abonnement push confirmé côté serveur.';
+        else if (essai) info.textContent = '⚠️ ' + (essai.message || 'échec') + (essai.status ? ' (HTTP ' + essai.status + ')' : '') + (essai.etape ? ' — ' + essai.etape : '');
+        else info.textContent = '⚠️ Abonnement non confirmé — bascule le toggle à nouveau.';
       }
       /* plus aucun toggle actif → désabonnement silencieux du push */
       if (!prefs.edition && !prefs.copernicus && !prefs.feedback && !Object.values(prefs.medias || {}).some(Boolean)) await desabonner();

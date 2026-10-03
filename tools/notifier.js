@@ -55,7 +55,7 @@ async function main() {
   webpush.setVapidDetails('mailto:contact@desinfos.h24', process.env.VAPID_PUBLIC_KEY, process.env.VAPID_PRIVATE_KEY);
 
   /* 1. Abonnements push + préférences par utilisateur (toggles) */
-  const abonnements = await api('/rest/v1/abonnements_push?select=endpoint,p256dh,auth,user_id,prefs')
+  const abonnements = await api('/rest/v1/abonnements_push?select=endpoint,p256dh,auth,user_id')
     .then(r => { if (!r.ok) throw new Error('Supabase ' + r.status + ' sur ' + r.url.slice(0, 80)); return r.json(); })
     .catch(e => { console.error('ERREUR lecture abonnements (envoye comme 0) : ' + (e && e.message ? e.message : e)); return []; });
   if (!Array.isArray(abonnements) || !abonnements.length) { console.log('Aucun abonnement.'); return; }
