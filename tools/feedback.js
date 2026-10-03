@@ -19,7 +19,8 @@ async function apiSupabase(chemin) {
   const r = await fetch(URL + chemin, {
     headers: { apikey: KEY, authorization: 'Bearer ' + KEY }
   });
-  if (!r.ok) throw new Error('Supabase ' + r.status);
+  /* Le corps d'erreur aide au diagnostic (jeton expiré, projet erroné…) sans jamais contenir la clé. */
+  if (!r.ok) throw new Error('Supabase ' + r.status + ' : ' + (await r.text()).slice(0, 200));
   return r.json();
 }
 
