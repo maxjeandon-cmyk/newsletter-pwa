@@ -128,7 +128,7 @@ function formAjoutVideo() {
     '<p class="meta-count">La chaîne YouTube d\u2019un média — ses vidéos arrivent dans l\u2019onglet 📺 Vidéos.</p>' +
     '<label>Nom du média<input id="mv-nom" type="text" autocomplete="off" placeholder="Hugo Décrypte"></label>' +
     '<label>Emoji (facultatif)<input id="mv-emoji" type="text" maxlength="8" placeholder="📺"></label>' +
-    '<label>Nom de la chaîne YouTube<input id="mv-chaine" type="text" autocomplete="off" placeholder="Hugo Décrypte, @hugodecrypte, lien ou UC…"></label>' +
+    '<label>Chaîne YouTube — @handle, lien ou identifiant<input id="mv-chaine" type="text" inputmode="url" autocomplete="off" placeholder="@hugodecrypte, youtube.com/@… ou UC…"></label>' +
     '<p class="meta-count" id="mv-statut" aria-live="polite"></p>' +
     '<p class="form-erreur" id="mv-erreur" hidden></p>' +
     '<div class="form-actions">' +
@@ -321,7 +321,7 @@ export function vueMedias() {
       const emoji = ($('#mv-emoji').value || '').trim();
       const saisie = ($('#mv-chaine').value || '').trim();
       if (!nom) return erreurV('Donne un nom à ton média.');
-      if (!saisie) return erreurV('Indique le nom de la chaîne YouTube.');
+      if (!saisie) return erreurV('Indique la chaîne YouTube (@handle, lien ou identifiant UC…).');
       const statut = $('#mv-statut');
       if (statut) statut.textContent = '🔎 Vérification de la chaîne…';
       bVid.disabled = true;
@@ -330,7 +330,7 @@ export function vueMedias() {
       if (!r.chaine) {
         if (statut) statut.textContent = '';
         return erreurV(r.erreur === 'introuvable'
-          ? 'Chaîne introuvable — vérifie l’orthographe du nom.'
+          ? 'Chaîne introuvable — vérifie le @handle ou le lien (ex. youtube.com/@hugodecrypte).'
           : r.erreur === 'inactif'
             ? 'Cette chaîne semble sans vidéos — vérifie l\u2019identifiant.'
             : 'Réseau indisponible — retente dans un instant.');
