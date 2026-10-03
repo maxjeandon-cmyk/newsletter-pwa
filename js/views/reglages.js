@@ -237,6 +237,27 @@ function rendreGuideInstall() {
 }
 
 
+/* État de l'abonnement push, restitué à chaque rendu (v67). */
+function afficherEssaiPush(prefs) {
+  const info = $('#notif-info');
+  if (!info) return;
+  const essai = getStore('push.dernier_essai', null);
+  const actifs = prefs && (prefs.edition || prefs.copernicus || prefs.feedback || Object.values(prefs.medias || {}).some(Boolean));
+  if (!essai) {
+    info.textContent = actifs
+      ? '⚠️ Abonnement jamais confirmé — bascule un toggle pour relancer l\'enregistrement.'
+      : '';
+  } else if (essai.ok) {
+    info.textContent = '✅ Abonnement push confirmé côté serveur.';
+  } else {
+    const quand = essai.quand ? new Date(essai.quand).toLocaleString('fr-FR') : '';
+    info.textContent = '⚠️ ' + (essai.message || 'échec') +
+      (essai.status ? ' (HTTP ' + essai.status + ')' : '') +
+      (essai.etape ? ' — ' + essai.etape : '') +
+      (quand ? ' · ' + quand : '');
+  }
+}
+
 /* --- Notifications (v28) : toggles édition / Copernicus / chaque média --- */
 function rendreNotifications() {
   const bloc = $('#notifs-bloc');
@@ -265,21 +286,16 @@ function rendreNotifications() {
     (medias.length ? '<p class="meta-count" style="margin:10px 0 2px">Médias suivis</p>' : '') +
     medias.map(m => toggle('media:' + esc(m.id), p.medias?.[m.id], m.nom ? esc(m.nom) : esc(m.id))).join('') +
     '<p class="hint" id="notif-info" style="min-height:16px;margin:8px 0 0"></p>';
+  /* v67 : le dernier résultat d'enregistrement s'affiche dès l'ouverture —
+   * pas seulement après une bascule. Un échec ancien reste visible et daté. */
+  afficherEssaiPush(p);
   [...bloc.querySelectorAll('[data-notif]')].forEach(cb =>
     cb.onchange = async () => {
       const id = cb.dataset.notif;
       const prefs = await basculerNotification(id.startsWith('media:') ? 'medias' : id, id.startsWith('media:') ? id.slice(6) : null);
       /* v66 : résultat exact du dernier enregistrement, affiché tel quel — même
        * si un vieux endpoint local traînait (époque où l'échec était silencieux). */
-      const info = $('#notif-info');
-      if (info) {
-        const actifs = prefs.edition || prefs.copernicus || prefs.feedback || Object.values(prefs.medias || {}).some(Boolean);
-        const essai = getStore('push.dernier_essai', null);
-        if (!actifs) info.textContent = '';
-        else if (essai && essai.ok) info.textContent = '✅ Abonnement push confirmé côté serveur.';
-        else if (essai) info.textContent = '⚠️ ' + (essai.message || 'échec') + (essai.status ? ' (HTTP ' + essai.status + ')' : '') + (essai.etape ? ' — ' + essai.etape : '');
-        else info.textContent = '⚠️ Abonnement non confirmé — bascule le toggle à nouveau.';
-      }
+      afficherEssaiPush(prefs);
       /* plus aucun toggle actif → désabonnement silencieux du push */
       if (!prefs.edition && !prefs.copernicus && !prefs.feedback && !Object.values(prefs.medias || {}).some(Boolean)) await desabonner();
     });
