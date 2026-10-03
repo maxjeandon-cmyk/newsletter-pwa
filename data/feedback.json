@@ -1,7 +1,10 @@
 {
   "date": "03/10/2026",
-  "total": 0,
+  "total": 6,
   "points": [
-    "Récupération des messages momentanément impossible — résumé non actualisé."
+    "Thèmes récurrents (mots les plus fréquents, hors mots vides) : onglet (4), test (3), nettoyer (2), lecture (2), optimiser (1), video (1)",
+    "Message détaillé (citation exacte) : « (Implantation de l'onglet feedback, les précédents messages et celui ci servent de test de la fonction résumé) »",
+    "Message détaillé (citation exacte) : « Le site est super, mais un peu lent et pas genial sur ordinateur »",
+    "Message détaillé (citation exacte) : « Nettoyer l'onglet Lecture et optimiser l'onglet vidéo. »"
   ]
 }
