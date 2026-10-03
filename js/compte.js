@@ -106,6 +106,11 @@ async function rafraichirSiExpiré() {
   } catch (e) { return null; }
 }
 
+/* Jeton actif, rafraichi si expiré — partagé avec push.js (v64) :
+ * l'enregistrement des abonnements push partait avant avec un jeton brut
+ * potentiellement périmé (401 silencieux côté Supabase, aucun abonnement créé). */
+export async function jetonActif() { return await rafraichirSiExpiré(); }
+
 /* --- Authentification --- */
 export async function inscrire(email, mdp) {
   const j = await appelAPI('/auth/v1/signup', { email, password: mdp });

@@ -8,6 +8,7 @@
  * Clés VAPID : la publique dans data/compte.json (push.cle_publique), la
  * privée dans les secrets GitHub Actions (VAPID_PRIVATE_KEY). */
 import { state, getStore, setStore, urlBase64ToUint8Array } from './core.js';
+import { jetonActif } from './compte.js';
 
 const ABONNEMENTS = 'notifications';  // préférences locales : { edition, copernicus, medias: {id:bool} }
 const ENDPOINT = 'push.endpoint';     // endpoint local pour éviter les doublons d'abonnement
@@ -63,7 +64,9 @@ export async function souscrire() {
       });
     }
     const ok = await enregistrerDistant(sub.toJSON());
-    setStore(ENDPOINT, sub.endpoint);
+    /* v64 : on ne mémorise l'endpoint QUE si l'enregistrement serveur a réussi,
+     * sinon l'avertissement ⚠️ de reglages.js croit à tort que tout va bien. */
+    if (ok) setStore(ENDPOINT, sub.endpoint);
     return { ok };
   } catch (e) { return { erreur: 'reseau' }; }
 }
@@ -81,8 +84,9 @@ export async function desabonner() {
 
 /* --- Enregistrement dans Supabase (fetch direct, jeton de session) --- */
 async function jeton() {
-  const s = getStore('compte.session', null);
-  return s?.access_token || null;
+  /* v64 : jeton rafraichi si expiré (avant : jeton brut du store, qui
+   * expirait au bout d'une heure et faisait échouer l'insertion en silence). */
+  return await jetonActif();
 }
 
 async function enregistrerDistant(sub) {
