@@ -4,9 +4,15 @@ on:
     paths:
       - 'editions/latest.json'
       - 'data/climat.json'
+      - 'data/notif-test.json'
   schedule:
     - cron: '21 * * * *'   # filet de securite horaire
   workflow_dispatch:
+    inputs:
+      test:
+        description: 'Notification test a tous les abonnements (hors prefs et hors dedup)'
+        type: boolean
+        default: false
 permissions:
   contents: read
 jobs:
@@ -26,3 +32,4 @@ jobs:
           SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
           VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
           VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          NOTIF_TEST: ${{ inputs.test }}
