@@ -130,6 +130,17 @@ async function main() {
     await publierFichier(RAPPORT, contenuRapport,
       'Rapport de maintenance du ' + dateFr + ' ' + heureFr + ' (' + etat.problemes.length + ' problème(s))');
     console.log('Rapport de maintenance publié — ' + etat.problemes.length + ' problème(s).');
+    /* Notifications quasi instantanées : on déclenche le workflow push juste
+     * après la publication — l'anti-spam de notifier.js (notif_envoyees) rend
+     * l'appel sans risque, il n'enverra que ce qui est nouveau. */
+    try {
+      const r = await fetch('https://api.github.com/repos/' + REPO + '/actions/workflows/notifier.yml/dispatches', {
+        method: 'POST',
+        headers: { authorization: 'Bearer ' + GH_TOKEN, accept: 'application/vnd.github+json' },
+        body: JSON.stringify({ ref: 'main' })
+      });
+      console.log(r.ok ? 'Workflow notifications déclenché.' : 'Déclenchement notifications ignoré (HTTP ' + r.status + ').');
+    } catch (e) { console.error('Déclenchement notifications impossible : ' + e.message); }
   } catch (e) {
     console.error('Publication du rapport échouée : ' + e.message);
     process.exit(1);
