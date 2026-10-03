@@ -33,8 +33,8 @@ function resumer(messages) {
   const freq = new Map();
   for (const m of messages) {
     for (const mot of String(m.message || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-      .replace(/[^a-z0-9]+/g, ' ').split(/\s+/).filter(w => w.length > 3 && !MOTS_VIDES.has(w))) {
-      freq.set(w, (freq.get(w) || 0) + 1);
+      .replace(/[^a-z0-9]+/g, ' ').split(/\s+/).filter(mot => mot.length > 3 && !MOTS_VIDES.has(mot))) {
+      freq.set(mot, (freq.get(mot) || 0) + 1);
     }
   }
   const themes = [...freq.entries()].sort((a, b) => b[1] - a[1]).slice(0, 6)
@@ -56,7 +56,6 @@ async function main() {
   /* Normalisation : certains secrets contiennent déjà « /rest/v1 » (ou des slashes
    * finaux) — on les retire pour reconstruire un chemin propre et éviter PGRST125. */
   const base = URL.replace(/\/+$/, '').replace(/\/rest\/v1$/, '');
-  console.error('Supabase hôte : ' + base);
   const depuis = new Date(Date.now() - 48 * 3600e3).toISOString();
   const messages = (await apiSupabase(base + '/rest/v1/feedback?select=id,message,created_at&created_at=gte.' + depuis + '&order=created_at.asc&limit=500')) || [];
   const resume = resumer(messages);
