@@ -44,7 +44,11 @@ export function vueVideos() {
       ? d.videos.map(videoHtml).join('')
       : '<div class="empty">Aucune vidéo pour l\u2019instant — les chaînes YouTube des médias sont en cours de découverte, ouvre l\u2019onglet dans un instant. 📺</div>');
 
-  chargerVideos().then(() => { if (state.activeTab === 'videos') renderView(); }).catch(() => {});
+  chargerVideos().then(d2 => {
+    /* re-rendu seulement si des vidéos arrivent — jamais en boucle quand le
+     * cache est frais (chargerVideos résout alors la même promesse) */
+    if (state.activeTab === 'videos' && !state.videoLecture && d2.videos.length && !d.videos.length) renderView();
+  }).catch(() => {});
 
   [...document.querySelectorAll('.vid-carte')].forEach(b =>
     b.onclick = () => {
