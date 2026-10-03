@@ -108,6 +108,9 @@ main{padding:0 14px;max-width:720px;margin:0 auto}
 
 /* --- v16 : sous-onglets Médias (même famille visuelle que .filter-btn) --- */
 .subtabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 0;padding:0;list-style:none}
+.medias-encart{margin-bottom:10px;padding:10px 12px}
+.medias-encart h2{margin:0 0 6px;font-size:14px}
+.medias-encart .subtabs{margin:6px 0 0}
 .subtab{display:inline-block;padding:7px 14px;border-radius:16px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:13.5px;cursor:pointer}
 .subtab.active{background:var(--accent);border-color:var(--accent);color:#0e0e12;font-weight:600}
 
