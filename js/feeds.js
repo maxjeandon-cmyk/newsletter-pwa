@@ -483,11 +483,10 @@ export async function resoudreChaineYoutube(saisie) {
   const mUC = s.match(/(UC[\w-]{22})/);
   if (mUC) chaine = mUC[1];
   else {
-    const mHandle = s.match(/@([\w.-]+)/);
-    if (mHandle) {
-      /* @handle : la page du handle résiste aux relais, mais la RECHERCHE
-       * YouTube renvoie les channelIds en clair dans son HTML. */
-      const manche = mHandle[1].replace(/["'?#].*$/, '');
+    const manche = s.replace(/^https?:\/\/(www\.)?youtube\.com\//i, '').replace(/^@/, '').trim();
+    if (manche) {
+      /* @handle, lien YouTube, ou simple nom de chaîne : tout passe par la
+       * recherche YouTube, qui renvoie les channelIds en clair dans son HTML. */
       const page = await texteDirect('https://www.youtube.com/results?search_query=' + encodeURIComponent(manche), 8000);
       const ucs = page && [...page.matchAll(/"channelId":"(UC[\w-]{22})"/g)].map(x => x[1]);
       if (ucs && ucs.length) chaine = ucs[0];
