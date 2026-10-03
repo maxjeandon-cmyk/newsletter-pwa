@@ -19,7 +19,10 @@
 const webpush = require('web-push');
 const fs = require('fs');
 
-const URL = process.env.SUPABASE_URL;
+/* URL de base Supabase : le secret peut contenir une barre finale ou un suffixe
+ * /rest/v1 (cas observe en prod) — on normalise, sinon le chemin double
+ * (/rest/v1/rest/v1/...) echoue en PGRST125 et le run croit a zero abonnement. */
+const URL = (process.env.SUPABASE_URL || '').replace(/\/+$/, '').replace(/\/rest\/v1$/i, '');
 const CLE = process.env.SUPABASE_SERVICE_ROLE;
 const H = { apikey: CLE, Authorization: 'Bearer ' + CLE, 'Content-Type': 'application/json' };
 
@@ -53,7 +56,8 @@ async function main() {
 
   /* 1. Abonnements push + préférences par utilisateur (toggles) */
   const abonnements = await api('/rest/v1/abonnements_push?select=endpoint,p256dh,auth,user_id,prefs')
-    .then(r => r.json()).catch(() => []);
+    .then(r => { if (!r.ok) throw new Error('Supabase ' + r.status + ' sur ' + r.url.slice(0, 80)); return r.json(); })
+    .catch(e => { console.error('ERREUR lecture abonnements (envoye comme 0) : ' + (e && e.message ? e.message : e)); return []; });
   if (!Array.isArray(abonnements) || !abonnements.length) { console.log('Aucun abonnement.'); return; }
 
   const prefs = await api('/rest/v1/preferences?select=user_id,prefs')
