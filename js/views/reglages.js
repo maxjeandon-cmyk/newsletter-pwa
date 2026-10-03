@@ -12,7 +12,7 @@ import { pushDisponible, prefsNotifications, basculerNotification, desabonner } 
 const ORDRE_DEFAUT = ['articles', 'edition', 'archives', 'medias', 'climat', 'lecture', 'reglages'];
 const NOMS = {
   edition: 'Édition du jour', articles: 'Articles', medias: 'Médias',
-  lecture: 'Lecture (WiP)', climat: 'Climat', archives: 'Archives', reglages: 'Réglages'
+  lecture: 'Lecture', climat: 'Climat', archives: 'Archives', reglages: 'Réglages'
 };
 
 function ordreOnglets() {

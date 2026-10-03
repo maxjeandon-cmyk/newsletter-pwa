@@ -28,8 +28,7 @@ const TABS_BASE = [
   { id: 'archives', nom: () => 'Archives', emoji: '🗄️' },
   { id: 'medias', nom: () => 'Médias', emoji: '🎬' },
   { id: 'climat', nom: () => 'Climat', emoji: '🌡️' },
-  { id: 'lecture', nom: () => 'Lecture (WiP)', emoji: '📖' },
-  { id: 'videos', nom: () => 'Vidéos', emoji: '📺' },
+  { id: 'lecture', nom: () => 'Lecture', emoji: '📖' },  { id: 'videos', nom: () => 'Vidéos', emoji: '📺' },
   { id: 'reglages', nom: () => 'Réglages', emoji: '⚙️' }];
 /* Ordre des onglets : préférence locale (nl.ordreOnglets), sinon défaut ci-dessus */
 const TABS = () => {
