@@ -13,14 +13,14 @@ const ABONNEMENTS = 'notifications';  // préférences locales : { edition, cope
 const ENDPOINT = 'push.endpoint';     // endpoint local pour éviter les doublons d'abonnement
 
 /* Préférences de notification (toggles) — préférences locales classiques (nl.*) */
-export function prefsNotifications() { return getStore(ABONNEMENTS, { edition: false, copernicus: false, medias: {} }); }
+export function prefsNotifications() { return getStore(ABONNEMENTS, { edition: false, copernicus: false, feedback: false, medias: {} }); }
 export async function basculerNotification(categorie, mediaId) {
   const p = prefsNotifications();
   if (categorie === 'medias') p.medias[mediaId] = !p.medias[mediaId];
   else p[categorie] = !p[categorie];
   setStore(ABONNEMENTS, p);
   /* S'assurer qu'un abonnement push existe si au moins un toggle est actif */
-  if (p.edition || p.copernicus || Object.values(p.medias).some(Boolean)) await souscrire();
+  if (p.edition || p.copernicus || p.feedback || Object.values(p.medias).some(Boolean)) await souscrire();
   return p;
 }
 
