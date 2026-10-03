@@ -1,0 +1,22 @@
+name: Diagnostic notifs
+on:
+  push:
+    paths:
+      - 'data/notif-diag-go.json'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Compter les abonnements push et publier le diagnostic
+        run: node tools/notif-diag.js
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
+          GH_TOKEN: ${{ secrets.NOTIF_DISPATCH_TOKEN }}
