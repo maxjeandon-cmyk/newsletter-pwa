@@ -575,6 +575,8 @@ export function vueLecture() {
   };
   [...document.querySelectorAll('[data-cat]')].forEach(b =>
     b.onclick = () => {
+      /* Déjà sur cette catégorie, sans recherche en cours : rien à re-rendre. */
+      if (recherche.cat === b.dataset.cat && !recherche.etat) return;
       state.lecture = { q: '', cat: b.dataset.cat, sousCat: null, resultats: [], etat: null };
       renderView();
     });
