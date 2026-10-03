@@ -1,7 +1,7 @@
 name: Notifications push
 on:
   schedule:
-    - cron: '21 */2 * * *'   # toutes les 2 h : vérifie et envoie dès que possible, sans risquer l'overload
+    - cron: '21 * * * *'   # toutes les heures : vérifie et envoie dès que possible, sans risquer l'overload
   workflow_dispatch:
 permissions:
   contents: read
