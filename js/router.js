@@ -1,6 +1,6 @@
 /* router.js — routeur URL (v17) : l'onglet ouvert vit dans le hash de l'URL.
  * Partager un lien, revenir en arrière, rouvrir un onglet direct : tout passe par là.
- * Schéma : #<onglet> · #medias/<id|ajout|gerer> · #lecture[/<categorie>][?q=<recherche>] · #archives[/<sous-onglet>][?h=<archive>]
+ * Schéma : #<onglet> · #medias/<id|ajout|ajoutvideo|gerer> · #lecture[/<categorie>][?q=<recherche>] · #archives[/<sous-onglet>][?h=<archive>]
  * Le hash est la source de vérité au chargement ; l'état l'alimente ensuite
  * (pushState au changement d'onglet — le bouton retour fonctionne — replaceState
  * pour les re-rendus internes, sans polluer l'historique). */
@@ -14,7 +14,7 @@ const SOUS_ARCHIVES = ['editions', 'sources', 'droit', 'economie'];
 export function hashFromState() {
   let h = ONGLETS.includes(state.activeTab) ? state.activeTab : 'edition';
   if (h === 'medias') {
-    if (state.mediasMode === 'ajout' || state.mediasMode === 'gerer') h += '/' + state.mediasMode;
+    if (state.mediasMode === 'ajout' || state.mediasMode === 'ajoutvideo' || state.mediasMode === 'gerer') h += '/' + state.mediasMode;
     else if (state.activeMedia) h += '/' + encodeURIComponent(state.activeMedia);
   } else if (h === 'lecture') {
     if (state.lecture?.cat && state.lecture.cat !== 'tout') h += '/' + state.lecture.cat;
@@ -38,7 +38,7 @@ export function stateFromHash() {
   state.activeTab = tab;
   if (parties[0] === 'sources') state.archiveSub = 'sources';
   if (tab === 'medias') {
-    if (parties[1] === 'ajout' || parties[1] === 'gerer') { state.mediasMode = parties[1]; }
+    if (parties[1] === 'ajout' || parties[1] === 'ajoutvideo' || parties[1] === 'gerer') { state.mediasMode = parties[1]; }
     else { state.mediasMode = null; if (parties[1]) state.activeMedia = parties[1]; }
   }
   if (tab === 'archives') {

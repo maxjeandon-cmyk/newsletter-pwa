@@ -2,7 +2,7 @@
  * (config data/medias.json + médias ajoutés sur l'appareil), formulaire d'ajout,
  * gestion, jeton de publication. */
 import { $, state, esc, getStore, setStore, fmtHeure, norm } from '../core.js';
-import { chargerMedia, trouverFlux } from '../feeds.js';
+import { chargerMedia, trouverFlux, resoudreChaineYoutube } from '../feeds.js';
 import { jetonPresent, publierMedia, enregistrerJeton, oublierJeton } from '../github.js';
 import { articleHtml, renderView } from './common.js';
 
@@ -72,7 +72,8 @@ function sousOngletsMedias(visibles, mode) {
     visibles.map(x =>
       '<button class="subtab' + (x.id === state.activeMedia && !mode ? ' active' : '') + '" data-m="' + esc(x.id) + '">' +
       (x.emoji ? x.emoji + ' ' : '') + esc(x.nom) + '</button>').join('') +
-    '<button class="subtab add' + (mode === 'ajout' ? ' active' : '') + '" data-m="__ajout">➕ Ajouter</button>' +
+    '<button class="subtab add' + (mode === 'ajout' ? ' active' : '') + '" data-m="__ajout">➕ Articles</button>' +
+    '<button class="subtab add' + (mode === 'ajoutvideo' ? ' active' : '') + '" data-m="__ajoutvideo">➕ Vidéos</button>' +
     '<button class="subtab' + (mode === 'gerer' ? ' active' : '') + '" data-m="__gerer">👁 ' + (mode === 'gerer' ? 'Terminer' : 'Gérer') + '</button>' +
     '</div></div>';
 }
@@ -96,7 +97,7 @@ function blocCatalogue() {
 /* Formulaire d'ajout : bâtir un sous-onglet exactement comme Blast.
  * Les valeurs tapées survivent aux erreurs (pas de re-rendu en cas d'erreur). */
 function formAjoutMedia() {
-  return '<div class="summary-card media-form"><h2>➕ Ajouter un média</h2>' +
+  return '<div class="summary-card media-form"><h2>➕ Ajouter un média (articles)</h2>' +
     '<p class="meta-count">Un nouveau sous-onglet construit comme Blast : les articles du média, en continu.</p>' +
     '<label>Nom du média<input id="mf-nom" type="text" autocomplete="off" placeholder="Mediapart"></label>' +
     '<label>Emoji (facultatif)<input id="mf-emoji" type="text" maxlength="8" placeholder="📰"></label>' +
@@ -112,6 +113,27 @@ function formAjoutMedia() {
     '<div class="form-actions">' +
     '<button class="filter-btn" id="mf-annuler">Annuler</button>' +
     '<button class="filter-btn active" id="mf-valider">Ajouter ce média</button></div>' +
+    '<p class="hint">' + (jetonPresent()
+      ? '🔑 Publication pour tous les écrans prête — ce média ira dans la config du site (data/medias.json).'
+      : 'Sans jeton GitHub, le média restera sur cet appareil. Pour le publier à tous les écrans : 👁 Gérer → 🔑.') + '</p>' +
+    '</div>';
+}
+
+
+/* ➕ Vidéos : ajouter la chaîne YouTube d'un média — recherche par
+ * @handle, URL ou identifiant UC ; la chaîne est stockée dans le même
+ * modèle de média (flux RSS YouTube), visible dans l'onglet Vidéos. */
+function formAjoutVideo() {
+  return '<div class="summary-card media-form"><h2>➕ Ajouter un média (vidéos)</h2>' +
+    '<p class="meta-count">La chaîne YouTube d\u2019un média — ses vidéos arrivent dans l\u2019onglet 📺 Vidéos.</p>' +
+    '<label>Nom du média<input id="mv-nom" type="text" autocomplete="off" placeholder="Hugo Décrypte"></label>' +
+    '<label>Emoji (facultatif)<input id="mv-emoji" type="text" maxlength="8" placeholder="📺"></label>' +
+    '<label>Chaîne YouTube — @handle, lien ou identifiant<input id="mv-chaine" type="text" inputmode="url" autocomplete="off" placeholder="@hugodecrypte ou youtube.com/@… ou UC…"></label>' +
+    '<p class="meta-count" id="mv-statut" aria-live="polite"></p>' +
+    '<p class="form-erreur" id="mv-erreur" hidden></p>' +
+    '<div class="form-actions">' +
+    '<button class="filter-btn" id="mv-annuler">Annuler</button>' +
+    '<button class="filter-btn active" id="mv-valider">Ajouter cette chaîne</button></div>' +
     '<p class="hint">' + (jetonPresent()
       ? '🔑 Publication pour tous les écrans prête — ce média ira dans la config du site (data/medias.json).'
       : 'Sans jeton GitHub, le média restera sur cet appareil. Pour le publier à tous les écrans : 👁 Gérer → 🔑.') + '</p>' +
@@ -167,12 +189,14 @@ export function vueMedias() {
   const affiches = getStore('mediasAffiches', {});
   const visibles = medias.filter(m => mediaVisible(m, masques, affiches));
   let mode = state.mediasMode || null;
-  if (mode !== 'ajout' && mode !== 'gerer') mode = null;
+  if (mode !== 'ajout' && mode !== 'ajoutvideo' && mode !== 'gerer') mode = null;
   if (!visibles.length && mode !== 'ajout') mode = 'gerer'; /* tout masqué → gestion */
   if (!visibles.some(m => m.id === state.activeMedia)) state.activeMedia = visibles[0]?.id || null;
   let html = sousOngletsMedias(visibles, mode);
   if (mode === 'ajout') {
     html += formAjoutMedia();
+  } else if (mode === 'ajoutvideo') {
+    html += formAjoutVideo();
   } else if (mode === 'gerer') {
     html += (visibles.length ? '' : '<div class="empty">Tous les médias sont masqués — réaffiche-en au moins un ci-dessous. 🌱</div>');
     html += gestionMedias();
@@ -184,7 +208,10 @@ export function vueMedias() {
       '<p class="meta-count">' + (d
         ? (d.articles.length + ' article(s) · ' + d.ok + '/' + d.total + ' flux actifs · actualisé à ' + fmtHeure(d.time) +
           (d.stale ? ' (dernier état connu, flux injoignable)' : ''))
-        : 'Récupération du flux…') + '</p></div>' +
+        : 'Récupération du flux…') + '</p>' +
+      '<p class="hint">' + (m.flux || []).map(f =>
+        (/youtube\.com/i.test(f) ? '📺 Chaîne YouTube — vidéos' : '📠 Articles — ' + esc(f))
+      ).join('<br>') + '</p></div>' +
       (d && d.articles.length ? d.articles.map(articleHtml).join('')
         : '<div class="empty">' + (d
           ? 'Aucun article publié dans les dernières ' + fenetre + ' h. 🌙'
@@ -196,6 +223,7 @@ export function vueMedias() {
     b.onclick = () => {
       const id = b.dataset.m;
       if (id === '__ajout') state.mediasMode = state.mediasMode === 'ajout' ? null : 'ajout';
+      else if (id === '__ajoutvideo') state.mediasMode = state.mediasMode === 'ajoutvideo' ? null : 'ajoutvideo';
       else if (id === '__gerer') state.mediasMode = state.mediasMode === 'gerer' ? null : 'gerer';
       else { state.activeMedia = id; state.mediasMode = null; }
       renderView();
@@ -273,6 +301,64 @@ export function vueMedias() {
       delete local.masque;
       const perso = getStore('mediasPerso', []);
       perso.push(local);
+      setStore('mediasPerso', perso);
+      const masq = getStore('mediasMasques', {});
+      delete masq[id];
+      setStore('mediasMasques', masq);
+      majMedias();
+      state.activeMedia = id;
+      state.mediasMode = null;
+      renderView();
+    };
+  }
+  /* ➕ Vidéos : résoudre la chaîne saisie, puis même mécanique que Articles */
+  const bVid = $('#mv-valider');
+  if (bVid) {
+    $('#mv-annuler').onclick = () => { state.mediasMode = null; renderView(); };
+    const erreurV = msg => { const p = $('#mv-erreur'); p.hidden = false; p.textContent = '⚠️ ' + msg; };
+    bVid.onclick = async () => {
+      const nom = ($('#mv-nom').value || '').trim();
+      const emoji = ($('#mv-emoji').value || '').trim();
+      const saisie = ($('#mv-chaine').value || '').trim();
+      if (!nom) return erreurV('Donne un nom à ton média.');
+      if (!saisie) return erreurV('Indique la chaîne YouTube (@handle, lien ou identifiant UC…).');
+      const statut = $('#mv-statut');
+      if (statut) statut.textContent = '🔎 Vérification de la chaîne…';
+      bVid.disabled = true;
+      const r = await resoudreChaineYoutube(saisie);
+      bVid.disabled = false;
+      if (!r.chaine) {
+        if (statut) statut.textContent = '';
+        return erreurV(r.erreur === 'introuvable'
+          ? 'Chaîne introuvable — vérifie le @handle ou le lien (ex. youtube.com/@hugodecrypte).'
+          : r.erreur === 'inactif'
+            ? 'Cette chaîne semble sans vidéos — vérifie l\u2019identifiant.'
+            : 'Réseau indisponible — retente dans un instant.');
+      }
+      if (statut) statut.textContent = '✓ Chaîne trouvée — ' + r.videos + ' vidéo(s) récentes.';
+      const fluxYt = 'https://www.youtube.com/feeds/videos.xml?channel_id=' + r.chaine;
+      const id = slugMedia(nom);
+      if (state.medias.some(m => m.id === id)) return erreurV('Ce média existe déjà — choisis un autre nom.');
+      const media = { id, nom, emoji, flux: [fluxYt], fenetreHeures: 168 };
+      if (jetonPresent()) {
+        if (statut) statut.textContent = '🔑 Publication dans la config du site…';
+        bVid.disabled = true;
+        const pub = await publierMedia(media);
+        bVid.disabled = false;
+        if (pub.ok) {
+          state.mediasBase = pub.medias;
+          state.publie = { nom, masque: false };
+          majMedias();
+          state.activeMedia = id;
+          state.mediasMode = null;
+          renderView();
+          return;
+        }
+        if (pub.erreur === 'existe') return erreurV('Ce média existe déjà dans la config du site — choisis un autre nom.');
+        erreurV('Publication impossible — en attendant, la chaîne est enregistrée sur cet appareil.');
+      }
+      const perso = getStore('mediasPerso', []);
+      perso.push(media);
       setStore('mediasPerso', perso);
       const masq = getStore('mediasMasques', {});
       delete masq[id];
