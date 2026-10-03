@@ -15,11 +15,12 @@
 const URL = process.env.SUPABASE_URL;
 const KEY = process.env.SUPABASE_SERVICE_ROLE;
 
-async function apiSupabase(chemin) {
-  const r = await fetch(URL + chemin, {
+async function apiSupabase(url) {
+  const r = await fetch(url, {
     headers: { apikey: KEY, authorization: 'Bearer ' + KEY }
   });
-  if (!r.ok) throw new Error('Supabase ' + r.status);
+  /* Le corps d'erreur aide au diagnostic (jeton expiré, projet erroné…) sans jamais contenir la clé. */
+  if (!r.ok) throw new Error('Supabase ' + r.status + ' : ' + (await r.text()).slice(0, 200));
   return r.json();
 }
 
@@ -32,8 +33,8 @@ function resumer(messages) {
   const freq = new Map();
   for (const m of messages) {
     for (const mot of String(m.message || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-      .replace(/[^a-z0-9]+/g, ' ').split(/\s+/).filter(w => w.length > 3 && !MOTS_VIDES.has(w))) {
-      freq.set(w, (freq.get(w) || 0) + 1);
+      .replace(/[^a-z0-9]+/g, ' ').split(/\s+/).filter(mot => mot.length > 3 && !MOTS_VIDES.has(mot))) {
+      freq.set(mot, (freq.get(mot) || 0) + 1);
     }
   }
   const themes = [...freq.entries()].sort((a, b) => b[1] - a[1]).slice(0, 6)
@@ -52,8 +53,11 @@ async function main() {
     console.error('Il manque SUPABASE_URL ou SUPABASE_SERVICE_ROLE.');
     process.exit(1);
   }
+  /* Normalisation : certains secrets contiennent déjà « /rest/v1 » (ou des slashes
+   * finaux) — on les retire pour reconstruire un chemin propre et éviter PGRST125. */
+  const base = URL.replace(/\/+$/, '').replace(/\/rest\/v1$/, '');
   const depuis = new Date(Date.now() - 48 * 3600e3).toISOString();
-  const messages = (await apiSupabase('/rest/v1/feedback?select=id,message,created_at&created_at=gte.' + depuis + '&order=created_at.asc&limit=500')) || [];
+  const messages = (await apiSupabase(base + '/rest/v1/feedback?select=id,message,created_at&created_at=gte.' + depuis + '&order=created_at.asc&limit=500')) || [];
   const resume = resumer(messages);
   process.stdout.write(JSON.stringify({ total: messages.length, ...resume }) + '\n');
 }
