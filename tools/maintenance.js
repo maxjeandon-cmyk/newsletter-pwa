@@ -1,0 +1,145 @@
+#!/usr/bin/env node
+/* tools/maintenance.js — Agent de maintenance (v32).
+ * Toutes les 6 h (3 h, 9 h, 15 h, 21 h heure de Paris) :
+ *   1. Récupère les messages de feedback de ces dernières 48 h dans Supabase
+ *      (clé service_role) et construit un résumé STRICTEMENT factuel :
+ *      thèmes par mots fréquents (hors mots vides), comptages exacts et
+ *      citations verbatim tronquées — rien n'est inventé ni reformulé.
+ *   2. Exécute la maintenance du site : validation des éditions récentes
+ *      (validate-latest.js) et contrôle du site public (check-site.js).
+ *   3. Publie data/feedback.json + un rapport data/maintenance.json sur
+ *      main via l'API GitHub (data/ est network-first : effet immédiat).
+ * Aucune dépendance : fetch natif (Node >= 18).
+ * Env : SUPABASE_URL, SUPABASE_SERVICE_ROLE, GH_TOKEN (Contents: RW).
+ */
+'use strict';
+
+const { execFileSync } = require('child_process');
+
+const URL = process.env.SUPABASE_URL;
+const KEY = process.env.SUPABASE_SERVICE_ROLE;
+const GH_TOKEN = process.env.GH_TOKEN;
+const REPO = process.env.GITHUB_REPOSITORY || 'maxjeandon-cmyk/newsletter-pwa';
+const FICHIER = 'data/feedback.json';
+const RAPPORT = 'data/maintenance.json';
+
+/* ————— Maintenance : validations locales + contrôle du site public ————— */
+
+function runTool(cmd, args) {
+  try {
+    const out = execFileSync(cmd, args, { encoding: 'utf8' });
+    return { ok: true, sortie: out.trim().split('\n').slice(-8).join('\n') };
+  } catch (e) {
+    return { ok: false, sortie: (e.stdout || '').trim().split('\n').slice(-8).join('\n') + (e.stderr || '') };
+  }
+}
+
+async function maintenance(editions, feedbackOk) {
+  const verifs = [];
+  const editionsOk = runTool(process.execPath, ['tools/validate-latest.js']);
+  verifs.push({ nom: 'validate-latest.js', ok: editionsOk.ok, detail: editionsOk.sortie });
+  const siteOk = runTool(process.execPath, ['tools/check-site.js']);
+  verifs.push({ nom: 'check-site.js', ok: siteOk.ok, detail: siteOk.sortie });
+
+  const problemes = verifs.filter(v => !v.ok).map(v => v.nom);
+  if (!feedbackOk) problemes.push('récupération feedback');
+  return {
+    editions,
+    verifs,
+    problemes,
+    intervention: problemes.length === 0
+      ? 'Aucune intervention nécessaire : éditions et site publics conformes.'
+      /* Aucune correction automatique risquée : l\'agent signale, l\'équipe corrige. */
+      : 'Anomalies détectées — aucune correction automatique appliquée (éditions/ figé) : correction manuelle requise.'
+  };
+}
+
+/* ————— Publication GitHub (contenu versionné) ————— */
+
+async function publierFichier(chemin, contenu, message) {
+  const headers = { authorization: 'Bearer ' + GH_TOKEN, accept: 'application/vnd.github+json' };
+  let sha = null;
+  const actuel = await fetch('https://api.github.com/repos/' + REPO + '/contents/' + chemin, { headers });
+  if (actuel.ok) sha = (await actuel.json()).sha;
+  const put = await fetch('https://api.github.com/repos/' + REPO + '/contents/' + chemin, {
+    method: 'PUT',
+    headers: { ...headers, 'content-type': 'application/json' },
+    body: JSON.stringify({ message, content: Buffer.from(contenu).toString('base64'), sha: sha || undefined })
+  });
+  if (!put.ok) throw new Error('GitHub ' + put.status + ' : ' + (await put.text()).slice(0, 200));
+}
+
+async function main() {
+  if (!URL || !KEY || !GH_TOKEN) {
+    console.error('Il manque SUPABASE_URL, SUPABASE_SERVICE_ROLE ou GH_TOKEN.');
+    process.exit(1);
+  }
+
+  /* 1. Récupération et résumé des messages (tools/feedback.js, 48 dernières heures) */
+  let resume = { total: 0, themes: [], citations: [] };
+  let feedbackOk = true;
+  try {
+    const sortie = execFileSync(process.execPath, ['tools/feedback.js'], {
+      encoding: 'utf8', env: process.env
+    });
+    resume = JSON.parse(sortie);
+  } catch (e) {
+    console.error('Récupération feedback impossible : ' + (e.message || ''));
+    feedbackOk = false;
+  }
+  const maintenant = new Date();
+  const dateFr = maintenant.toLocaleDateString('fr-FR');
+  const heureFr = maintenant.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
+  const points = [];
+  if (!feedbackOk) points.push('Récupération des messages momentanément impossible — résumé non actualisé.');
+  if (resume.total) points.push('Thèmes récurrents (mots les plus fréquents, hors mots vides) : ' + resume.themes.join(', '));
+  for (const c of resume.citations) points.push('Message détaillé (citation exacte) : « ' + c + ' »');
+  if (feedbackOk && !resume.total) points.push('Aucun message reçu sur les dernières 48 h.');
+
+  const contenuFeedback = JSON.stringify({
+    date: dateFr,
+    total: resume.total,
+    points
+  }, null, 2) + '\n';
+
+  /* 2. Maintenance : validation des éditions + contrôle du site */
+  const etat = await maintenance(maintenant.toISOString(), feedbackOk);
+
+  /* 3. Publication */
+  let erreursFeedback = false;
+  try {
+    await publierFichier(FICHIER, contenuFeedback,
+      'Résumé feedback du ' + dateFr + ' (' + resume.total + ' message(s))');
+    console.log('Résumé publié — ' + resume.total + ' message(s), ' + resume.themes.length + ' thème(s).');
+  } catch (e) {
+    console.error('Publication feedback échouée : ' + e.message);
+    erreursFeedback = true;
+    etat.problemes.push('publication feedback');
+  }
+
+  const contenuRapport = JSON.stringify({
+    date: dateFr,
+    heure: heureFr,
+    feedback: { messages: resume.total, recupere: feedbackOk, publie: !erreursFeedback },
+    verifs: etat.verifs,
+    problemes: etat.problemes,
+    intervention: etat.intervention
+  }, null, 2) + '\n';
+
+  try {
+    await publierFichier(RAPPORT, contenuRapport,
+      'Rapport de maintenance du ' + dateFr + ' ' + heureFr + ' (' + etat.problemes.length + ' problème(s))');
+    console.log('Rapport de maintenance publié — ' + etat.problemes.length + ' problème(s).');
+  } catch (e) {
+    console.error('Publication du rapport échouée : ' + e.message);
+    process.exit(1);
+  }
+
+  if (etat.problemes.length) {
+    console.error('Anomalies : ' + etat.problemes.join(', '));
+    process.exit(1);
+  }
+  console.log('Maintenance complète : site et éditions conformes. ♻️');
+}
+
+main().catch(e => { console.error(e.message); process.exit(1); });
