@@ -95,7 +95,7 @@ async function main() {
       total_corps: abos.length,
       utilisateurs: users.size,
       plus_recent: dates.length ? dates[dates.length - 1] : null,
-      liste: abos.map(a => ({ user_id: a.user_id || null, created_at: a.created_at || null, endpoint_debut: typeof a.endpoint === 'string' ? a.endpoint.slice(0, 55) : null }))
+      /* details prives retires (v4) : comptages seulement */
     };
   })());
 
@@ -112,7 +112,7 @@ async function main() {
         total_corps: abos.length,
         utilisateurs: users.size,
         plus_recent: dates.length ? dates[dates.length - 1] : null,
-        liste: abos.map(a => ({ user_id: a.user_id || null, created_at: a.created_at || null, endpoint_debut: typeof a.endpoint === 'string' ? a.endpoint.slice(0, 55) : null }))
+        /* details prives retires (v4) : comptages seulement */
       };
     })());
   }
