@@ -6,8 +6,11 @@
  * pour les re-rendus internes, sans polluer l'historique). */
 
 import { state } from './core.js';
+import { ONGLETS_BASE } from './onglets.js';
 
-const ONGLETS = ['articles', 'edition', 'archives', 'climat', 'medias', 'lecture', 'videos', 'feedback', 'reglages', 'sources'];
+/* Onglets routables : dérivés de la définition centrale (js/onglets.js) + sources
+ * (onglet technique accessible via #sources, non affiché dans la barre). */
+const ONGLETS = [...ONGLETS_BASE.map(o => o.id), 'sources'];
 const SOUS_ARCHIVES = ['editions', 'sources', 'droit', 'economie'];
 
 /* L'URL qui représente l'état courant */

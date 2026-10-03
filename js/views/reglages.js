@@ -4,21 +4,25 @@
  * consultable via #reglages (lien partageable, bouton retour fonctionnel).
  * Le bouton 👤 de la barre supérieure y mène directement. */
 import { $, state, esc, getStore, setStore, applyTheme, applyTaille, THEMES } from '../core.js';
+import { ONGLETS_BASE } from '../onglets.js';
 import { chargerChapitres } from '../feeds.js';
 import { renderView } from './common.js';
 import { inscrire, connecter, deconnecter, restaurerSession, synchroniserPrefs, envoyerPrefs, abonne, estConnecte, veutResterConnecte } from '../compte.js';
 import { pushDisponible, prefsNotifications, basculerNotification, desabonner } from '../push.js';
 
-const ORDRE_DEFAUT = ['articles', 'edition', 'archives', 'medias', 'climat', 'lecture', 'reglages'];
-const NOMS = {
-  edition: 'Édition du jour', articles: 'Articles', medias: 'Médias',
-  lecture: 'Lecture', climat: 'Climat', archives: 'Archives', reglages: 'Réglages'
-};
+/* Ordre par défaut : source unique dans js/onglets.js — tout nouvel onglet
+ * s'y ajoute et apparaît automatiquement ici et dans la barre (pas de doublon
+ * de liste à maintenir). */
+const ORDRE_DEFAUT = ONGLETS_BASE.map(o => o.id);
+const NOMS = Object.fromEntries(ONGLETS_BASE.map(o => [o.id, o.nom]));
 
 function ordreOnglets() {
   const pref = getStore('ordreOnglets', []);
-  return ORDRE_DEFAUT.filter(id => !pref.includes(id)).length === ORDRE_DEFAUT.length - pref.filter(id => ORDRE_DEFAUT.includes(id)).length
-    ? pref.filter(id => ORDRE_DEFAUT.includes(id)).concat(ORDRE_DEFAUT.filter(id => !pref.includes(id)))
+  const connus = pref.filter(id => ORDRE_DEFAUT.includes(id));
+  /* Préférence valide si elle couvre tous les onglets ; les onglets ajoutés
+   * depuis (nouvel onglet dans onglets.js) se rabattent en fin d'ordre. */
+  return connus.length === pref.length
+    ? connus.concat(ORDRE_DEFAUT.filter(id => !connus.includes(id)))
     : ORDRE_DEFAUT;
 }
 
