@@ -92,7 +92,14 @@ export async function souscrire() {
 
 /* v66 : mémorise le dernier essai d'enregistrement (statut + message serveur),
  * affiché tel quel dans Réglages > Notifications. */
-function noterEssai(res) { setStore(ESSAI, { quand: Date.now(), ...res }); }
+/* v74 : chaque jalon est aussi diffusé comme événement — la ligne d'état
+ * dans Réglages se rafraîchit EN DIRECT pendant l'abonnement, au lieu
+ * d'attendre la fin du await (qui peut se bloquer). */
+function noterEssai(res) {
+  const essai = { quand: Date.now(), ...res };
+  setStore(ESSAI, essai);
+  try { window.dispatchEvent(new CustomEvent('push-essai', { detail: essai })); } catch (e) { /* rien */ }
+}
 
 /* Se désabonner complètement (plus aucun toggle actif) */
 export async function desabonner() {
