@@ -1,10 +1,10 @@
 {
   "date": "04/10/2026",
-  "heure": "15:57",
+  "heure": "21:37",
   "feedback": {
-    "messages": 12,
-    "nouveaux": 6,
-    "recupere": true,
+    "messages": 0,
+    "nouveaux": 0,
+    "recupere": false,
     "publie": true
   },
   "relevesOng": {
@@ -29,6 +29,8 @@
       "detail": "4 abonnement(s) push, 0 utilisateur(s) avec toggles actifs"
     }
   ],
-  "problemes": [],
-  "intervention": "Aucune intervention nécessaire : éditions et site publics conformes."
+  "problemes": [
+    "récupération feedback"
+  ],
+  "intervention": "Anomalies détectées — aucune correction automatique appliquée (éditions/ figé) : correction manuelle requise."
 }
