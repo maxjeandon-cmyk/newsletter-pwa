@@ -249,6 +249,12 @@ function rendreGuideInstall() {
 
 
 /* État de l'abonnement push, restitué à chaque rendu (v67). */
+/* v74 : écouteur global (posé une seule fois) — chaque jalon de push.js
+ * met à jour la ligne en direct, même pendant un await bloqué. */
+if (!window.__essaiPushBound) {
+  window.__essaiPushBound = true;
+  window.addEventListener('push-essai', () => afficherEssaiPush(prefsNotifications()));
+}
 function afficherEssaiPush(prefs) {
   const info = $('#notif-info');
   if (!info) return;
