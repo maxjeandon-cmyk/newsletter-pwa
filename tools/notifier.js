@@ -27,8 +27,24 @@ const CLE = process.env.SUPABASE_SERVICE_ROLE;
 const H = { apikey: CLE, Authorization: 'Bearer ' + CLE, 'Content-Type': 'application/json' };
 
 async function api(chemin, opts = {}) {
-  const r = await fetch(URL + chemin, { ...opts, headers: { ...H, ...(opts.headers || {}) } });
+  const r = await AVEC_DELAI(fetch(URL + chemin, { ...opts, headers: { ...H, ...(opts.headers || {}) } }));
   return r;
+}
+
+/* v88 : garde-fou anti-blocage. Un appel réseau qui ne répond JAMAIS (endpoint
+ * push mort, Supabase ou raw.githubusercontent muet) suspendait le run entier
+ * — observe en prod le 05/10/2026 : deux runs test restes in_progress plus
+ * de 15 min. On abandonne apres 30 s : l'envoi est traite comme temporaire
+ * (le prochain cycle reessaiera), le run se termine proprement. */
+const DELAI_MS = +(process.env.NOTIF_DELAI_MS || 30000);
+function AVEC_DELAI(promesse, ms = DELAI_MS) {
+  return Promise.race([
+    promesse,
+    new Promise((_, rej) => {
+      const t = setTimeout(() => rej(new Error('delai depasse (' + ms + ' ms) — appel reseau muet, on passe a la suite')), ms);
+      if (t.unref) t.unref(); /* ne retient pas le processus a la fin du travail */
+    })
+  ]);
 }
 
 /* Mode test : input dispatch (NOTIF_TEST=true) ou marqueur data/notif-test.json (token unique). */
@@ -89,10 +105,10 @@ async function main() {
       const memo = p.notif_envoyees || {};
       if (test !== 'dispatch' && memo.test === test) continue; /* déjà testé pour ce marqueur */
       try {
-        await webpush.sendNotification(
+        await AVEC_DELAI(webpush.sendNotification(
           { endpoint: a.endpoint, keys: { p256dh: a.p256dh, auth: a.auth } },
           JSON.stringify({ titre: '🔔 Test des notifications', corps: 'Si tu lis ça, le push fonctionne !', url: './#reglages' })
-        );
+        ));
         envoyes++;
         majPrefs.set(a.user_id, { __uid: a.user_id, ...p, notif_envoyees: { ...memo, test } });
       } catch (e) {
@@ -109,9 +125,9 @@ async function main() {
 
   /* 3. Quoi de neuf ? édition du jour + bulletin climat + résumé feedback côté dépôt (fichiers générés) */
   const [idx, climat, feedback] = await Promise.all([
-    fetch('https://raw.githubusercontent.com/maxjeandon-cmyk/newsletter-pwa/main/editions/latest.json').then(r => r.json()).catch(() => null),
-    fetch('https://raw.githubusercontent.com/maxjeandon-cmyk/newsletter-pwa/main/data/climat.json').then(r => r.json()).catch(() => null),
-    fetch('https://raw.githubusercontent.com/maxjeandon-cmyk/newsletter-pwa/main/data/feedback.json').then(r => r.json()).catch(() => null)
+    AVEC_DELAI(fetch('https://raw.githubusercontent.com/maxjeandon-cmyk/newsletter-pwa/main/editions/latest.json').then(r => r.json())).catch(() => null),
+    AVEC_DELAI(fetch('https://raw.githubusercontent.com/maxjeandon-cmyk/newsletter-pwa/main/data/climat.json').then(r => r.json())).catch(() => null),
+    AVEC_DELAI(fetch('https://raw.githubusercontent.com/maxjeandon-cmyk/newsletter-pwa/main/data/feedback.json').then(r => r.json())).catch(() => null)
   ]);
   const dateEdition = idx?.editions?.[0]?.date || null;
   const majClimat = climat?.maj || climat?.date || null;
@@ -148,10 +164,10 @@ async function main() {
     while (file.length) {
       const t = file.shift();
       try {
-        await webpush.sendNotification(
+        await AVEC_DELAI(webpush.sendNotification(
           { endpoint: t.abonnement.endpoint, keys: { p256dh: t.abonnement.p256dh, auth: t.abonnement.auth } },
           JSON.stringify(t.message)
-        );
+        ));
         envoyes++;
         /* mémo : cet utilisateur a reçu edition/copernicus/feedback courant */
         const memo = { ...(t.envoyes || {}), ...(t.message.url === './#edition' ? { edition: dateEdition } : t.message.url === './#climat' ? { copernicus: majClimat } : t.message.url === './#feedback' ? { feedback: majFeedback } : {}) };
