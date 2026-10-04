@@ -1,0 +1,24 @@
+name: Icones PNG
+on:
+  push:
+    branches: [main]
+    paths: ['tools/gen-icons.js']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Generer les icones PNG DiYeaH24
+        run: node tools/gen-icons.js
+      - name: Committer les PNG si necessaire
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add icons/*.png
+          git diff --staged --quiet || (git commit -m "Icones PNG DiYeaH24 generees [skip ci]" && git push)
