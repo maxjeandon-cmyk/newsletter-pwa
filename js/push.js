@@ -71,7 +71,15 @@ export async function souscrire() {
     /* v77 : avant d'attendre .ready (qui ne revient JAMAIS s'il n'y a pas
      * de SW actif), on inspecte l'enregistrement réel et on pose un
      * timeout — le gel devient un diagnostic explicite. */
-    const reg0 = await navigator.serviceWorker.getRegistration();
+    /* v78 : auto-réparation — si aucun SW n'est enregistré (échec silencieux
+     * au chargement), on retente ICI et on note le résultat. */
+    let reg0 = await navigator.serviceWorker.getRegistration();
+    if (!reg0) {
+      try { reg0 = await navigator.serviceWorker.register('sw.js'); } catch (e) {
+        noterEssai({ ok: false, etape: 'support', message: 'enregistrement du service worker impossible : ' + String(e && e.message || e).slice(0, 140) });
+        return { erreur: 'sw' };
+      }
+    }
     const etatSW = !reg0 ? 'aucun service worker enregistré — recharge la page d\u2019abord'
       : !reg0.active ? ('SW pas actif (installing=' + (reg0.installing ? reg0.installing.state : 'non') + ', waiting=' + (reg0.waiting ? reg0.waiting.state : 'non') + ') — purge le cache puis recharge')
       : 'actif (' + (reg0.active.state || '?') + ')';

@@ -69,9 +69,12 @@ async function init() {
    * navigator.serviceWorker.ready attend indéfiniment : c'est ce qui bloquait
    * l'abonnement push (figé sur « service worker prêt ? »). */
   if ('serviceWorker' in navigator) {
+    /* v78 : l'échec d'enregistrement est LOGUÉ — l'avaler en silence
+     * laissait la PWA sans service worker (donc sans push possible)
+     * sans aucun indice. */
     navigator.serviceWorker.register('sw.js')
       .then(reg => { reg.update().catch(() => {}); if (reg.waiting) reg.waiting.postMessage({ type: 'SKIP_WAITING' }); })
-      .catch(() => {});
+      .catch(err => console.error('[sw] échec enregistrement :', err));
     navigator.serviceWorker.addEventListener('message', e => {
       if (e.data && e.data.type === 'SW_ACTIF') console.info('[sw] actif :', e.data.version);
     });
