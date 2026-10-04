@@ -68,8 +68,18 @@ export async function souscrire() {
    * revient jamais (permission ou abonnement navigateur). */
   noterEssai({ ok: false, etape: 'abonnement', message: 'abonnement navigateur en cours…' });
   try {
-    noterEssai({ ok: false, etape: 'abonnement', message: 'service worker prêt ?' });
-    const reg = await navigator.serviceWorker.ready;
+    /* v77 : avant d'attendre .ready (qui ne revient JAMAIS s'il n'y a pas
+     * de SW actif), on inspecte l'enregistrement réel et on pose un
+     * timeout — le gel devient un diagnostic explicite. */
+    const reg0 = await navigator.serviceWorker.getRegistration();
+    const etatSW = !reg0 ? 'aucun service worker enregistré — recharge la page d\u2019abord'
+      : !reg0.active ? ('SW pas actif (installing=' + (reg0.installing ? reg0.installing.state : 'non') + ', waiting=' + (reg0.waiting ? reg0.waiting.state : 'non') + ') — purge le cache puis recharge')
+      : 'actif (' + (reg0.active.state || '?') + ')';
+    noterEssai({ ok: false, etape: 'abonnement', message: 'service worker : ' + etatSW });
+    const reg = await Promise.race([
+      navigator.serviceWorker.ready,
+      new Promise((_, rej) => setTimeout(() => rej(new Error('service worker jamais prêt : ' + etatSW)), 10000))
+    ]);
     noterEssai({ ok: false, etape: 'abonnement', message: 'lecture abonnement existant…' });
     let sub = await reg.pushManager.getSubscription();
     if (!sub) {
