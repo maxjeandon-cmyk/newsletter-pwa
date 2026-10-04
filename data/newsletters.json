@@ -1,6 +1,6 @@
 {
   "intro": "Les lettres d’information des grandes ONG et le bulletin climatique Copernicus — humanitaire, environnement, droits humains, enfance. Chaque carte se déplie à la demande ; l’abonnement se fait sur le site de chaque organisation.",
-  "note_releve": "Les encadrés « Dernière édition en ligne » sont des relevés manuels du 04/10/2026 : titres et faits relevés sur le site de chaque organisation à cette date.",
+  "note_releve": "Les encadrés « Dernière édition en ligne » sont rafraîchis automatiquement par la maintenance : titres des dernières actualités publiées par chaque organisation. En cas d’échec d’un site, son relevé précédent reste affiché.",
   "organisations": [
     {
       "id": "acf",
@@ -14,9 +14,10 @@
       "derniere": {
         "releve": "04/10/2026",
         "points": [
-          "Baloutchistan : améliorer l’accès aux soins dans cette région reculée du Pakistan.",
-          "Madagascar : la pêche artisanale comme levier de sécurité alimentaire, et une planification sanitaire que l’association contribue à transformer.",
-          "Zones sinistrées : accès obtenu aux populations et réponse d’urgence déployée."
+          "Améliorer l’accès aux soins de santé au Baloutchistan",
+          "Pêche artisanale : un levier pour la sécurité alimentaire et la résilience des ménages du sud-ouest de Madagascar",
+          "Action contre la Faim contribue à transformer la planification sanitaire à Madagascar",
+          "Des déchets aux zones humides : des communautés restaurent leur environnement à l’aide de solutions innovantes"
         ]
       }
     },
@@ -33,10 +34,10 @@
       "derniere": {
         "releve": "04/10/2026",
         "points": [
-          "30/09 — « Quand alerter peut coûter cher » : les risques pesant sur ceux qui alertent.",
-          "02/09 — Omnibus pesticides : mobilisation contre le projet, rassemblements partout en France les 10 et 11 octobre.",
-          "02/09 — Changement climatique : les énergies les plus résilientes.",
-          "31/08 — Pesticides : « toutes nos colères convergent vers Syngenta »."
+          "Quand alerter peut coûter cher",
+          "Pesticides à vie ? Non merci. Mobilisons-nous contre l’Omnibus pesticides",
+          "Changement climatique : les énergies les plus résilientes",
+          "Canicules suffocantes, incendies dévastateurs : ne pas oublier l’été 2026"
         ]
       }
     },
@@ -53,9 +54,10 @@
       "derniere": {
         "releve": "04/10/2026",
         "points": [
-          "Israël-Gaza : « Seule la fin des violences peut rouvrir un chemin vers la dignité et vers la paix », alerte humanitaire.",
-          "17/09 — Burundi : faire face à l’urgence et au manque d’eau ; série NOMADE, « À l’hôpital, on n’a pas de dromadaires… ».",
-          "Journée mondiale des premiers secours (12/09) : apprendre les gestes qui sauvent."
+          "Seule la fin des violences peut rouvrir un chemin vers la dignité et vers la paix",
+          "Au centre Richelieu de La Rochelle, l’art et le soin ne font qu’un",
+          "Journée mondiale des premiers secours : “C’est super de nous enseigner ces gestes simples qui peuvent sauver des vies”",
+          "Burundi : face à l'urgence et au manque d'eau, nous apportons des solutions durables"
         ]
       }
     },
@@ -71,10 +73,10 @@
       "derniere": {
         "releve": "04/10/2026",
         "points": [
-          "Gaza : trois ans après, un cessez-le-feu en trompe-l’œil.",
-          "Malaisie : appel à suspendre l’expulsion de réfugiés vers le Myanmar ; accord migratoire « One in, one out » aux conséquences jugées désastreuses.",
-          "Syrie : à Daraa, restaurer l’accès aux soins ; Éthiopie : action renforcée après la reprise des combats.",
-          "Somalie : soignants et hôpitaux attaqués à Baidoa."
+          "Gaza : trois ans après, un cessez-le-feu en trompe-l’œil, et une « ligne jaune …",
+          "Malaisie : MSF appelle à suspendre d’urgence l’expulsion de réfugiés vers le…",
+          "Accord migratoire « One in, one out » : des conséquences désastreuses pour les…",
+          "Syrie : à Daraa, restaurer l'accès aux soins après la guerre"
         ]
       }
     },
@@ -90,10 +92,10 @@
       "derniere": {
         "releve": "04/10/2026",
         "points": [
-          "16/09 — Golfe de Gascogne : malgré sa condamnation, l’État persiste et reconduit 30 jours de fermeture seulement pour 2027 face aux captures de dauphins.",
-          "05/09 — Ceuta : « Ne volez pas au dauphin sa mort ».",
-          "Marineland : bataille sur le sort des orques et des dauphins, transfert vers l’Espagne contesté ; pétition en ligne.",
-          "La fédération fête ses 20 ans : billetterie ouverte."
+          "Dauphins dans le golfe de Gascogne : malgré sa condamnation, l’état persiste avec une fermeture de la pêche insuffisante",
+          "CEUTA : NE VOLEZ PAS AU DAUPHIN SA MORT",
+          "AFFAIRE MARINELAND : Beauval ou l'exil ?",
+          "DAUPHINS DU MARINELAND : Le ministre nie avoir décidé de leur sort"
         ]
       }
     },
@@ -109,10 +111,10 @@
       "derniere": {
         "releve": "04/10/2026",
         "points": [
-          "18/09 — Premier talk-show du WWF France : « 33 Minutes avant que la planète… ».",
-          "18/09 — Journées européennes du patrimoine : protégeons aussi le vivant.",
-          "10/09 — Créer des « intérêts Nature » pour financer la restauration des écosystèmes.",
-          "04/09 — Plan Climat : adaptation, sécheresse, incendies ; ZEvent 2026 soutenu dès le 01/09."
+          "Le WWF France lance son premier talk-show",
+          "Journées Européennes du patrimoine : Protégeons aussi le vivant",
+          "Créer des « intérêts Nature » pour financer la restauration des écosystèmes",
+          "Plan « Climat, Adaptation, Sécheresse, Incendies » : les aides d'urgence sont nécessaires. Elles ne suffiront pas."
         ]
       }
     },
@@ -129,10 +131,10 @@
       "derniere": {
         "releve": "04/10/2026",
         "points": [
-          "Mouvement lycéen : des mineurs face à la répression des forces de l’ordre — point sur la situation.",
-          "Turquie : « un embrasement autoritaire » — l’alerte de Milena Buyum face à la vague de répression anti-LGBTI+.",
-          "Iran : crimes contre l’humanité — comment l’enquête a été menée, et la « fabrique de l’atrocité ».",
-          "Prix Bayeux des correspondants de guerre : le reflet de la montée des pratiques autoritaires."
+          "Mouvement lycéen : des mineurs face à la répression des forces de l’ordre",
+          "Au Prix Bayeux Calvados-Normandie des correspondants de guerre, le reflet de la montée des pratiques autoritaires",
+          "« Mémoire de fille » : rencontre avec la réalisatrice Judith Godrèche",
+          "« La Turquie connaît un embrasement autoritaire » : l’alerte de Milena Buyum face à la vague de répression anti-LGBTI+"
         ]
       }
     },
@@ -148,10 +150,10 @@
       "derniere": {
         "releve": "04/10/2026",
         "points": [
-          "30/09 — Financement du développement (FfD4, Séville) : Oxfam appelle à taxer les ultra-riches pour lutter contre les inégalités.",
-          "08/09 — La France annonce son intention d’interdire le commerce de biens avec les colonies israéliennes : Oxfam France réagit.",
-          "Financement climatique : sur les 136,7 milliards de dollars déclarés en 2024, seuls 32,5 à 44,5 en auraient une valeur réelle selon Oxfam.",
-          "Été 2026 : une analyse inédite des impacts de l’enchaînement des crises climatiques en France."
+          "Budget 2027 : un Projet de Loi Finance catastrophique",
+          "Pacte Dutreil, la grande arnaque : pourquoi il faut le réformer",
+          "Les femmes ne sont pas à l’abri du sexisme dans les grandes entreprises européennes",
+          "Seconde main : le réemploi solidaire, la seconde chance de la mode"
         ]
       }
     },
@@ -167,9 +169,10 @@
       "derniere": {
         "releve": "04/10/2026",
         "points": [
-          "Bangladesh : Sokhina et Rozina, deux parcours racontés.",
-          "Syrie : l’éducation aux risques ; Colombie : Gloria, démineuse.",
-          "Bolivie : Noemy et Michael, l’accompagnement de l’autisme."
+          "Bénin : Souleyman",
+          "Madagascar : Odile",
+          "Ouganda : Salama",
+          "Cambodge : Channa"
         ]
       }
     },
@@ -185,10 +188,10 @@
       "derniere": {
         "releve": "04/10/2026",
         "points": [
-          "02/10 — Budget 2027 : alerte sur les coupes d’aide publique au développement (près de 400 millions d’euros en moins, −11 %) qui fragilisent les enfants les plus vulnérables.",
-          "02/10 — Soudan : 13 enfants tués ou blessés dans une frappe de drone à Al-Obeid.",
-          "01/10 — Éthiopie : appel à protéger les enfants face à la résurgence des hostilités.",
-          "Avec VersLeHaut : appeler à réinvestir 100 % de la marge budgétaire dans la qualité du système éducatif."
+          "Budget 2027 : l’UNICEF France alerte sur des coupes qui menacent les enfants les plus vulnérables",
+          "Soudan : 13 enfants tués ou blessés dans une frappe de drone à Al-Obeid",
+          "Éthiopie : face à la résurgence des hostilités, l’UNICEF appelle à protéger les enfants",
+          "Syrie : l’UNICEF appelle à placer les enfants au cœur de la reconstruction du pays"
         ]
       }
     }

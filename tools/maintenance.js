@@ -9,12 +9,17 @@
  *      (validate-latest.js) et contrôle du site public (check-site.js).
  *   3. Publie data/feedback.json + un rapport data/maintenance.json sur
  *      main via l'API GitHub (data/ est network-first : effet immédiat).
+ *   4. Relevés ONG (ong-releve.js) : une fois par jour, relève les titres
+ *      des dernières actualités des 10 ONG de l'onglet Newsletters et
+ *      publie data/newsletters.json si un relevé a été rafraîchi (les sites
+ *      muets ou injoignables conservent leur relevé précédent).
  * Aucune dépendance : fetch natif (Node >= 18).
  * Env : SUPABASE_URL, SUPABASE_SERVICE_ROLE, GH_TOKEN (Contents: RW).
  */
 'use strict';
 
 const { execFileSync } = require('child_process');
+const fs = require('fs');
 
 const URL = process.env.SUPABASE_URL;
 const KEY = process.env.SUPABASE_SERVICE_ROLE;
@@ -22,6 +27,7 @@ const GH_TOKEN = process.env.GH_TOKEN;
 const REPO = process.env.GITHUB_REPOSITORY || 'maxjeandon-cmyk/newsletter-pwa';
 const FICHIER = 'data/feedback.json';
 const RAPPORT = 'data/maintenance.json';
+const RELEVES = 'data/newsletters.json';
 
 /* ————— Maintenance : validations locales + contrôle du site public ————— */
 
@@ -136,6 +142,18 @@ async function main() {
   /* 2. Maintenance : validation des éditions + contrôle du site */
   const etat = await maintenance(maintenant.toISOString(), feedbackOk);
 
+  /* 2 bis. Relevés ONG : rafraîchis une fois par jour par ong-releve.js
+   * (les orgs déjà relevées aujourd'hui sont sautées, les échecs
+   * conservent le relevé précédent — un site bloqué n'efface rien). */
+  let ong = { modifie: false, rafraichis: 0, echecs: 10, details: {} };
+  try {
+    ong = JSON.parse(execFileSync(process.execPath, ['tools/ong-releve.js'], { encoding: 'utf8', env: process.env, timeout: 300000 }));
+    console.log('Relevés ONG : ' + ong.rafraichis + ' rafraîchi(s), ' + ong.echecs + ' échec(s).');
+  } catch (e) {
+    console.error('Relevés ONG impossibles : ' + (e.stdout || e.message));
+    ong.erreur = String(e.stdout || e.message || e).slice(0, 150);
+  }
+
   /* 3. Publication */
   let erreursFeedback = false;
   try {
@@ -148,10 +166,33 @@ async function main() {
     etat.problemes.push('publication feedback');
   }
 
+  /* 3 bis. Publication des relevés ONG (data/ network-first, pas de bump CACHE). */
+  if (ong.modifie) {
+    try {
+      await publierFichier(RELEVES, fs.readFileSync(RELEVES, 'utf8'),
+        'Releves ONG du ' + dateFr + ' (' + ong.rafraichis + ' organisation(s) rafraichie(s))');
+      console.log('Relevés ONG publiés (' + ong.rafraichis + ' organisation(s)).');
+    } catch (e) {
+      console.error('Publication des relevés ONG échouée : ' + e.message);
+      ong.erreur = 'publication : ' + String(e.message).slice(0, 120);
+    }
+  }
+  if (ong.rafraichis || ong.echecs || ong.erreur) {
+    etat.verifs.push({
+      nom: 'ong-releve.js',
+      ok: !ong.erreur && (!ong.echecs || ong.rafraichis > 0 || Object.keys(ong.details).length === 0),
+      detail: ong.erreur
+        ? ong.erreur
+        : ong.rafraichis + ' rafraîchi(s), ' + ong.echecs + ' échec(s) — relevé précédent conservé pour les sites muets'
+    });
+    if (ong.erreur) etat.problemes.push('relevés ONG');
+  }
+
   const contenuRapport = JSON.stringify({
     date: dateFr,
     heure: heureFr,
     feedback: { messages: resume.total, recupere: feedbackOk, publie: !erreursFeedback },
+    relevesOng: { rafraichis: ong.rafraichis, echecs: ong.echecs, publie: ong.modifie && !ong.erreur },
     verifs: etat.verifs,
     problemes: etat.problemes,
     intervention: etat.intervention
