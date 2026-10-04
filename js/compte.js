@@ -159,7 +159,11 @@ export async function restaurerSession() {
 /* v27 : TOUT ce qui vit dans localStorage (clés nl.*) voyage avec le profil — présent et futur.
  * Seules exceptions : jetons de session (liés à l'appareil) et jeton GitHub (secret local).
  * Un futur réglage ajouté dans l'onglet Réglages sera donc synchronisé automatiquement. */
-const HORS_SYNCO = ['compte.session', 'compte.abonne', 'compte.souvenir', 'jeton'];
+/* v76 : l'état push est PROPRE À CHAQUE APPAREIL (endpoint navigateur,
+ * dernier essai daté). Le laisser synchroniser écrasait l'essai local
+ * par un vieux snapshot serveur — l'abonnement semblait « revenir en
+ * arrière » à chaque chargement, faussant tout le diagnostic. */
+const HORS_SYNCO = ['compte.session', 'compte.abonne', 'compte.souvenir', 'jeton', 'push.endpoint', 'push.dernier_essai'];
 function prefsLocales() {
   const p = {};
   for (const k of Object.keys(localStorage)) {
