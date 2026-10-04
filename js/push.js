@@ -98,7 +98,13 @@ export async function souscrire() {
       });
     }
     noterEssai({ ok: false, etape: 'serveur', message: 'enregistrement dans Supabase…' });
-    const res = await enregistrerDistant(sub.toJSON());
+    /* v80 : si CET endpoint est déjà enregistré côté serveur, on ne
+     * re-POSTe pas — l'UPSERT déclencherait un UPDATE exigé par une
+     * policy qui manquait (42501 au 2e toggle). */
+    const dejaLa = getStore(ENDPOINT, '') === sub.endpoint;
+    const res = dejaLa && sub.endpoint
+      ? { ok: true, status: 200, message: 'déjà enregistré côté serveur' }
+      : await enregistrerDistant(sub.toJSON());
     /* v64 : on ne mémorise l'endpoint QUE si l'enregistrement serveur a réussi.
      * v66 : le résultat complet (statut HTTP, message serveur) est conservé et
      * affiché dans Réglages — plus aucun échec ne peut passer pour un succès. */
