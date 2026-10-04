@@ -77,6 +77,13 @@ drop policy if exists "push_insert" on public.abonnements_push;
 create policy "push_insert" on public.abonnements_push
   for insert with check (auth.uid() = user_id);
 
+-- v80 : UPSERT — le client réenregistre son endpoint avec
+-- Prefer: resolution=merge-duplicates : en cas de conflit sur endpoint,
+-- PostgREST bascule en UPDATE, qui exige une policy update (sinon 42501).
+drop policy if exists "push_update" on public.abonnements_push;
+create policy "push_update" on public.abonnements_push
+  for update using (auth.uid() = user_id) with check (auth.uid() = user_id);
+
 drop policy if exists "push_delete" on public.abonnements_push;
 create policy "push_delete" on public.abonnements_push
   for delete using (auth.uid() = user_id);
