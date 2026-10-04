@@ -5,13 +5,13 @@
  * liste dupliquée à maintenir.
  */
 export const ONGLETS_BASE = [
-  { id: 'articles', nom: 'Articles', emoji: '🔥' },
+  { id: 'articles', nom: 'Articles du jour', emoji: '🔥' },
   { id: 'edition', nom: 'Édition du jour', emoji: '📄' },
   { id: 'archives', nom: 'Archives', emoji: '🗄️' },
-  { id: 'medias', nom: 'Médias', emoji: '🎬' },
-  { id: 'climat', nom: 'Climat', emoji: '🌡️' },
-  { id: 'lecture', nom: 'Lecture', emoji: '📖' },
-  { id: 'videos', nom: 'Vidéos', emoji: '📺' },
+  { id: 'medias', nom: 'Médias suivis', emoji: '🎬' },
+  { id: 'climat', nom: 'Newsletters', emoji: '🗞️' },
+  { id: 'lecture', nom: 'Lecture WiP', emoji: '📖' },
+  { id: 'videos', nom: 'Vidéos du jour', emoji: '📺' },
   { id: 'feedback', nom: 'Feedback', emoji: '💬' },
   { id: 'reglages', nom: 'Réglages', emoji: '⚙️' }
 ];
