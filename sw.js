@@ -2,7 +2,7 @@
  * Stratégies : data/ et editions/ network-first (toujours frais en ligne, repli cache hors ligne) ;
  * le reste (coquille, js/, styles) cache-first pour un démarrage instantané.
  * À chaque déploiement de code : incrémenter CACHE (v22 → v23…) pour invalider les caches clients. */
-const CACHE = 'newsletter-v78';
+const CACHE = 'newsletter-v79';
 const ASSETS = [
   './',
   './index.html',
@@ -42,8 +42,19 @@ const ASSETS = [
   './data/flux-rss-2.json',
   './data/climat.json'
 ];
+/* v79 : mise en cache RESILIENTE — addAll() est tout-ou-rien : une seule
+ * ressource lente ou en échec laissait le SW bloqué en « installing »
+ * pour toujours (donc .ready jamais résolu, push impossible). Chaque
+ * ressource est cachée indépendamment ; un échec est logué mais n'empêche
+ * plus l'activation. */
 self.addEventListener('install', e => {
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
+  e.waitUntil(
+    caches.open(CACHE).then(async c => {
+      await Promise.all(ASSETS.map(async a => {
+        try { await c.add(a); } catch (err) { console.warn('[sw] pas caché :', a, err && err.message); }
+      }));
+    }).then(() => self.skipWaiting())
+  );
 });
 /* v75 : SKIP_WAITING à la demande de la page + message d'activation —
  * sans ça, un SW « waiting » (ancien onglet ouvert, iOS Safari) n'active
