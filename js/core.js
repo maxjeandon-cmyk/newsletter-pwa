@@ -21,6 +21,7 @@ export const state = {
   mediasBase: [],          // médias de la config serveur (data/medias.json)
   fluxCatalogue: [],       // catalogue de flux RSS vérifiés (data/flux-rss.json, v21)
   climat: null,            // dernier bulletin Copernicus (data/climat.json, v22)
+  newsletters: null,       // lettres des ONG de l'onglet Newsletters (data/newsletters.json, v84)
   medias: [],              // médias effectifs = config serveur + ajouts personnels (nl.mediasPerso)
   mediasMode: null,        // sous-vue de l'onglet Médias : null | 'ajout' | 'gerer'
   feed: { time: 0, articles: [] },       // flux chaud de l'onglet Articles

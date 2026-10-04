@@ -1,0 +1,99 @@
+{
+  "intro": "Les lettres d’information des grandes ONG et le bulletin climatique Copernicus — humanitaire, environnement, droits humains, enfance. Chaque carte se déplie à la demande ; l’abonnement se fait sur le site de chaque organisation.",
+  "organisations": [
+    {
+      "id": "acf",
+      "nom": "Action contre la Faim",
+      "emoji": "🌾",
+      "theme": "Lutte contre la faim",
+      "description": "Les dernières actualités de la lutte contre la faim dans le monde : terrains d’intervention, situations d’urgence et actions de plaidoyer.",
+      "lien": "https://www.actioncontrelafaim.org/newsletter/",
+      "libelle": "S’abonner"
+    },
+    {
+      "id": "greenpeace",
+      "nom": "Greenpeace France",
+      "emoji": "🌱",
+      "theme": "Environnement",
+      "frequence": "environ hebdomadaire",
+      "description": "L’actualité environnementale décryptée : scandales dénoncés, analyses scientifiques indépendantes et mobilisations citoyennes à rejoindre.",
+      "lien": "https://www.greenpeace.fr/agir/abonnement-newsletter/",
+      "libelle": "S’abonner"
+    },
+    {
+      "id": "croix-rouge",
+      "nom": "Croix-Rouge française",
+      "emoji": "🚑",
+      "theme": "Secours et action sociale",
+      "description": "Pas d’infolettre nationale unique : la Fondation Croix-Rouge publie sa lettre d’information (recherche et formation), l’actualité nationale vit sur le site de l’association, et de nombreuses unités locales diffusent la leur.",
+      "lien": "https://www.fondation-croix-rouge.fr/newsletter/",
+      "libelle": "Lettre de la Fondation",
+      "lien_autre": "https://www.croix-rouge.fr/actualite",
+      "libelle_autre": "Actualité nationale"
+    },
+    {
+      "id": "msf",
+      "nom": "Médecins Sans Frontières",
+      "emoji": "🩺",
+      "theme": "Urgences médicales",
+      "description": "L’actu MSF : nouvelles des terrains, situations d’urgence, décryptages et témoignages des équipes soignantes.",
+      "lien": "https://www.msf.fr/inscription-newsletter",
+      "libelle": "S’abonner"
+    },
+    {
+      "id": "sea-shepherd",
+      "nom": "Sea Shepherd France",
+      "emoji": "🌊",
+      "theme": "Protection des océans",
+      "description": "Missions et campagnes de défense de l’océan et du vivant : communiqués, reportages et actualités des combats en France et à l’international.",
+      "lien": "https://seashepherd.fr/inscription-a-la-newsletter/",
+      "libelle": "S’abonner"
+    },
+    {
+      "id": "wwf",
+      "nom": "WWF France",
+      "emoji": "🐼",
+      "theme": "Protection de la nature",
+      "description": "Actualités du réseau WWF, remontées d’information du terrain et conseils pour agir au quotidien pour la planète.",
+      "lien": "https://www.wwf.fr/newsletter",
+      "libelle": "S’abonner"
+    },
+    {
+      "id": "amnesty",
+      "nom": "Amnesty International France",
+      "emoji": "🕊️",
+      "theme": "Droits humains",
+      "frequence": "hebdomadaire",
+      "description": "Alertes urgentes, campagnes en cours et analyses pour la défense des droits humains dans le monde.",
+      "lien": "https://www.amnesty.fr/newsletter/",
+      "libelle": "S’abonner"
+    },
+    {
+      "id": "oxfam",
+      "nom": "Oxfam France",
+      "emoji": "🤝",
+      "theme": "Lutte contre les inégalités",
+      "description": "Campagnes, analyses et actualités de la lutte contre la pauvreté et les inégalités.",
+      "lien": "https://www.oxfamfrance.org/restez-informe/",
+      "libelle": "S’abonner"
+    },
+    {
+      "id": "hi",
+      "nom": "Handicap International",
+      "emoji": "🦽",
+      "theme": "Solidarité et handicap",
+      "description": "Actualités de l’association : actions auprès des personnes handicapées, urgences et plaidoyer, notamment dans les situations de conflit.",
+      "lien": "https://www.handicap-international.fr/fr/newsletter",
+      "libelle": "S’abonner"
+    },
+    {
+      "id": "unicef",
+      "nom": "UNICEF France",
+      "emoji": "🧒",
+      "theme": "Droits de l’enfant",
+      "description": "Rapports, campagnes et actualités pour les droits de l’enfant et l’enfance dans le monde.",
+      "lien": "https://www.unicef.fr/inscription/",
+      "libelle": "S’abonner"
+    }
+  ]
+}

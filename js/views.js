@@ -7,7 +7,7 @@ import { chargerChapitres } from './feeds.js';
 import { ONGLETS_BASE } from './onglets.js';
 import { enregistrerVue, renderView as rendu } from './views/common.js';
 import { vueEdition } from './views/edition.js';
-import { vueClimat } from './views/climat.js';
+import { vueNewsletters } from './views/newsletters.js';
 import { vueArchives } from './views/archives.js';
 import { vueArticles } from './views/articles.js';
 import { vueMedias, majMedias as maj, mediaVisible } from './views/medias.js';
@@ -20,7 +20,7 @@ export const renderView = rendu;
 export const majMedias = maj;
 export { mediaVisible };
 
-Object.entries({ edition: vueEdition, archives: vueArchives, climat: vueClimat, articles: vueArticles, medias: vueMedias, lecture: vueLecture, videos: vueVideos, reglages: vueReglages, feedback: vueFeedback })
+Object.entries({ edition: vueEdition, archives: vueArchives, climat: vueNewsletters, articles: vueArticles, medias: vueMedias, lecture: vueLecture, videos: vueVideos, reglages: vueReglages, feedback: vueFeedback })
   .forEach(([id, vue]) => enregistrerVue(id, vue));
 
 /* Barre d'onglets : definitions centrales dans onglets.js — tout nouvel

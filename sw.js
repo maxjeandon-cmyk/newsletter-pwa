@@ -2,7 +2,7 @@
  * Stratégies : data/ et editions/ network-first (toujours frais en ligne, repli cache hors ligne) ;
  * le reste (coquille, js/, styles) cache-first pour un démarrage instantané.
  * À chaque déploiement de code : incrémenter CACHE (v22 → v23…) pour invalider les caches clients. */
-const CACHE = 'newsletter-v83';
+const CACHE = 'newsletter-v84';
 const ASSETS = [
   './',
   './index.html',
@@ -21,7 +21,7 @@ const ASSETS = [
   './js/views/common.js',
   './js/views/edition.js',
   './js/views/sources.js',
-  './js/views/climat.js',
+  './js/views/newsletters.js',
   './js/views/archives.js',
   './js/views/articles.js',
   './js/views/medias.js',
@@ -44,7 +44,8 @@ const ASSETS = [
   './data/lecture-reco.json',
   './data/compte.json',
   './data/flux-rss-2.json',
-  './data/climat.json'
+  './data/climat.json',
+  './data/newsletters.json'
 ];
 /* v79 : mise en cache RESILIENTE — addAll() est tout-ou-rien : une seule
  * ressource lente ou en échec laissait le SW bloqué en « installing »
