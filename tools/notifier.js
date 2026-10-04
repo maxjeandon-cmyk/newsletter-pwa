@@ -70,14 +70,17 @@ async function ecrirePrefs(lots) {
 async function main() {
   webpush.setVapidDetails('mailto:contact@desinfos.h24', process.env.VAPID_PUBLIC_KEY, process.env.VAPID_PRIVATE_KEY);
 
-  /* 1. Abonnements push + préférences par utilisateur (toggles) */
-  const abonnements = await api('/rest/v1/abonnements_push?select=endpoint,p256dh,auth,user_id')
-    .then(r => { if (!r.ok) throw new Error('Supabase ' + r.status + ' sur ' + r.url.slice(0, 80)); return r.json(); })
+  /* 1. Abonnements push + préférences par utilisateur (toggles).
+   * AVEC_DELAI emballe TOUTE la chaine (en-têtes + lecture du corps .json()) :
+   * une réponse qui envoie ses en-têtes puis stall son corps pendant des
+   * heures ne bloque plus le run — cas observe le 05/10/2026 (Supabase muet
+   * en pleine nuit : trois runs test restes in_progress). */
+  const abonnements = await AVEC_DELAI(api('/rest/v1/abonnements_push?select=endpoint,p256dh,auth,user_id')
+    .then(r => { if (!r.ok) throw new Error('Supabase ' + r.status + ' sur ' + r.url.slice(0, 80)); return r.json(); }))
     .catch(e => { console.error('ERREUR lecture abonnements (envoye comme 0) : ' + (e && e.message ? e.message : e)); return []; });
   if (!Array.isArray(abonnements) || !abonnements.length) { console.log('Aucun abonnement.'); return; }
 
-  const prefs = await api('/rest/v1/preferences?select=user_id,prefs')
-    .then(r => r.json()).catch(() => []);
+  const prefs = await AVEC_DELAI(api('/rest/v1/preferences?select=user_id,prefs').then(r => r.json())).catch(() => []);
   const parUtilisateur = new Map((prefs || []).map(p => [p.user_id, p.prefs || {}]));
 
   /* v88 : l'app enregistre les toggles sous prefs.notifications (la clé
