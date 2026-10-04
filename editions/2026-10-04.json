@@ -1,0 +1,588 @@
+{
+  "date": "2026-10-04",
+  "genere_le": "2026-10-04T22:25:32.058Z",
+  "html": "editions/2026-10-04.html",
+  "resume_executif": [
+    "IA : le renseignement \u00e0 la barre : Donald Trump a officiellement nomm\u00e9 dimanche Jay Clayton, son chef du renseignement, \u00e0 la t\u00eate d'une \u00ab Super Intelligence Force \u00bb \u2014 un groupe de travail charg\u00e9 de coordonner l'\u00c9tat f\u00e9d\u00e9ral sur l'IA \u00ab tout en pr\u00e9venant la surr\u00e9gulation \u00bb, avec un rapport attendu sous 120 jours ; le m\u00eame jour, les m\u00e9dias d'\u00c9tat nord-cor\u00e9ens affirmaient que Kim Jong Un avait supervis\u00e9 le tir d'un missile \u00ab utilisant l'IA \u00bb pour ajuster sa trajectoire.",
+    "Sophie Adenot : le retour encore report\u00e9 : la Nasa a annonc\u00e9 que le retour de l'astronaute fran\u00e7aise, recordwoman europ\u00e9enne avec plus de 230 jours en orbite, est report\u00e9 \u00e0 mercredi au plus t\u00f4t en raison de la m\u00e9t\u00e9o \u2014 l'amerrissage est attendu au plus t\u00f4t jeudi au large des \u00c9tats-Unis, apr\u00e8s 200 exp\u00e9riences, trois sorties dans le vide et 19 h 42 hors de la station.",
+    "France : veille de \u00ab l'acte III \u00bb lyc\u00e9en : les cours seront \u00ab totalement ou partiellement \u00bb suspendus lundi dans 400 \u00e0 500 lyc\u00e9es (24 \u00e9tablissements incendi\u00e9s ou saccag\u00e9s, 78 personnels bless\u00e9s, plus de 160 lyc\u00e9es ferm\u00e9s en \u00cele-de-France) ; la loi \u00ab casseurs-payeurs \u00bb sera inscrite d\u00e8s octobre au S\u00e9nat, l'Iran d\u00e9nonce une \u00ab violence disproportionn\u00e9e \u00bb, et \u00e0 Belfort deux mineurs de 17 et 15 ans sont poursuivis pour violences aggrav\u00e9es apr\u00e8s le passage \u00e0 tabac d'un policier.",
+    "Ukraine : Merz \u00e0 Kiev, Moscou promet des frappes \u00ab intensifi\u00e9es \u00bb : le chancelier allemand est arriv\u00e9 dimanche en visite surprise \u00e0 Kiev avec environ 1,3 milliard d'euros d'aide nouvelle, alors qu'un pont de la capitale \u00e9tait de nouveau frapp\u00e9 ; la Russie a annonc\u00e9 l'intensification de ses frappes en repr\u00e9sailles aux menaces de Volodymyr Zelensky sur les raffineries \u2014 le pr\u00e9sident ukrainien r\u00e9v\u00e9lant que Washington propose des pourparlers trilat\u00e9raux fin octobre.",
+    "Le monde se rend aux urnes et se souvient : le Br\u00e9sil vote entre Lula et Flavio Bolsonaro sous l'\u0153il de Trump, la Bosnie et la Lettonie scrutent des urnes clefs, Isra\u00ebl comm\u00e9more les trois ans du 7-Octobre, et la pr\u00e9-COP s'ouvre lundi \u00e0 Nadi (Fidji) avec Tuvalu en travers du cort\u00e8ge \u2014 99,9 % de ses coraux morts."
+  ],
+  "chapitres": [
+    {
+      "id": "intelligence-artificielle",
+      "emoji": "\ud83e\udd16",
+      "nom": "Intelligence artificielle",
+      "resume": "L'actualit\u00e9 IA de dimanche a eu un parfum de s\u00e9curit\u00e9 nationale : Donald Trump a officiellement confi\u00e9 le dossier \u00e0 son chef du renseignement, la Cor\u00e9e du Nord a revendiqu\u00e9 un missile \u00ab utilisant l'IA \u00bb, et les garde-fous restent \u00e0 \u00e9crire \u2014 la Maison Blanche assumant une doctrine de coordination plut\u00f4t que de r\u00e9gulation."
+    },
+    {
+      "id": "spatial",
+      "emoji": "\ud83d\ude80",
+      "nom": "Spatial",
+      "resume": "Le retour de Sophie Adenot, report\u00e9 \u00e0 mercredi au plus t\u00f4t en raison de la m\u00e9t\u00e9o, prolonge d'autant un record : plus de 230 jours en orbite, la plus longue mission d'un Europ\u00e9en \u2014 et un corps que la science va observer de pr\u00e8s, de l'os \u00e0 la vue."
+    },
+    {
+      "id": "economie-pour-les-nuls",
+      "emoji": "\ud83d\udcb0",
+      "nom": "L\u2019\u00c9conomie pour les nuls",
+      "resume": "Deux infos \u00e0 d\u00e9cortiquer ce dimanche : en Turquie, un scandale financier qui touche 455 000 petits \u00e9pargnants \u2014 l'occasion de comprendre ce qu'est un fonds d'investissement et pourquoi la diversification compte ; en France, un budget 2027 dont la droite ne veut pas \u00eatre le tombeur, \u00e0 condition d'y ajouter 20 milliards d'\u00e9conomies."
+    },
+    {
+      "id": "droit-pour-les-nuls",
+      "emoji": "\u2696\ufe0f",
+      "nom": "Le Droit pour les nuls",
+      "resume": "Le passage \u00e0 tabac d'un policier \u00e0 Belfort \u2014 deux mineurs de 17 et 15 ans poursuivis pour violences aggrav\u00e9es \u2014 et la vague d'interpellations de mineurs dans les blocages lyc\u00e9ens rendent la question br\u00fblante : jusqu'o\u00f9 un mineur r\u00e9pond-il p\u00e9nalement de ses actes ? Mode d'emploi."
+    },
+    {
+      "id": "jeu-video-pop-culture",
+      "emoji": "\ud83c\udfae",
+      "nom": "Jeu vid\u00e9o & pop culture",
+      "resume": "Dimanche sans sortie majeure, mais une semaine charg\u00e9e \u00e0 r\u00e9sumer : PlayStation a d\u00e9ploy\u00e9 son QSSR sur toutes les PS5, Naughty Dog a confirm\u00e9 deux nouveaux projets The Last of Us, et GTA VI a encore fait parler \u2014 en enfermant ses informations derri\u00e8re un partenariat payant."
+    },
+    {
+      "id": "culture",
+      "emoji": "\ud83c\udfad",
+      "nom": "Culture",
+      "resume": "Une plume africaine s'est \u00e9teinte, un mastodonte d'Hollywood s'est plant\u00e9 \u00e0 quelques heures de sa fusion, et un film de 2019 est redevenu le plus gros succ\u00e8s de l'histoire : la culture de ce dimanche a des allures de bascule."
+    },
+    {
+      "id": "sciences",
+      "emoji": "\ud83d\udd2c",
+      "nom": "Sciences",
+      "resume": "Le corps de Sophie Adenot devient un cas d'\u00e9cole pour la m\u00e9decine, l'ombre des arbres une denr\u00e9e rare \u00e0 Tokyo, et le sport s'organise contre les violences sexuelles : la science de ce dimanche s'\u00e9crit sur le terrain."
+    },
+    {
+      "id": "climat",
+      "emoji": "\ud83c\udf0d",
+      "nom": "Climat",
+      "resume": "\u00c0 la veille de la pr\u00e9-COP de Nadi (Fidji), Tuvalu expose ses r\u00e9cifs morts \u00e0 99,9 % \u2014 \u00ab une machine \u00e0 remonter le temps \u00bb \u2014, les pluies torrentielles noient la Catalogne, et les financements s'\u00e9puisent plus vite que les promesses : le foss\u00e9 entre d\u00e9clarations et mesures ne s'est jamais aussi bien vu."
+    },
+    {
+      "id": "politique-francaise",
+      "emoji": "\ud83c\uddeb\ud83c\uddf7",
+      "nom": "Politique fran\u00e7aise",
+      "resume": "\u00c0 la veille de \u00ab l'acte III \u00bb du mouvement lyc\u00e9en, le gouvernement multiplie les annonces \u2014 cours suspendus lundi dans 400 \u00e0 500 lyc\u00e9es, loi \u00ab casseurs-payeurs \u00bb au S\u00e9nat d\u00e8s octobre \u2014 pendant que l'Iran s'invite dans le d\u00e9bat, que la primaire de la gauche tient son dernier d\u00e9bat et que le Sommet de l'\u00e9levage s'annonce comme le prochain rendez-vous de la pr\u00e9sidentielle."
+    },
+    {
+      "id": "etats-unis",
+      "emoji": "\ud83c\uddfa\ud83c\uddf8",
+      "nom": "\u00c9tats-Unis",
+      "resume": "La Cour supr\u00eame ouvre lundi sa session annuelle sous pression record, le Tennessee panse l'ex\u00e9cution la plus rat\u00e9e de son histoire, et la diplomatie am\u00e9ricaine multiplie les fronts : l'Am\u00e9rique de ce dimanche est sous tension institutionnelle."
+    },
+    {
+      "id": "chine",
+      "emoji": "\ud83c\udde8\ud83c\uddf3",
+      "nom": "Chine",
+      "resume": "P\u00e9kin a justifi\u00e9 l'\u00e9chec du G20 commercial et accus\u00e9 Washington de diviser le monde, Manille d\u00e9nonce un harc\u00e8lement en mer de Chine m\u00e9ridionale : la comp\u00e9tition sino-am\u00e9ricaine s'affiche au grand jour."
+    },
+    {
+      "id": "russie",
+      "emoji": "\ud83c\uddf7\ud83c\uddfa",
+      "nom": "Russie",
+      "resume": "\u00ab Les frappes seront intensifi\u00e9es \u00bb : Moscou a officialis\u00e9 l'escalade, en repr\u00e9sailles aux menaces de Zelensky sur les raffineries, et l'Inde propose ses bons offices \u2014 la Russie de ce dimanche joue la montre et la force."
+    },
+    {
+      "id": "geopolitique",
+      "emoji": "\ud83c\udf10",
+      "nom": "G\u00e9opolitique",
+      "resume": "Une visite surprise \u00e0 Kiev, un pont encore frapp\u00e9, une offensive g\u00e9n\u00e9rale annonc\u00e9e au Y\u00e9men, Mekele qui tombe et le 7-Octobre qui revient : le monde de ce dimanche concentre toutes ses lignes de fracture."
+    },
+    {
+      "id": "grande-info-semaine",
+      "emoji": "\ud83d\udcf0",
+      "nom": "Grande information de la semaine",
+      "resume": "Budget de rigueur, lyc\u00e9es en feu diplomatique, taux record, Ukraine au bord du d\u00e9cisif, IA confi\u00e9e aux espions : la semaine du 28 septembre au 4 octobre a compress\u00e9 des mois d'actualit\u00e9 en sept jours \u2014 le r\u00e9capitulatif."
+    }
+  ],
+  "hors_chapitres": [
+    "Arc de Triomphe : Daryz r\u00e9ussit le doubl\u00e9 : le pur-sang fran\u00e7ais de 4 ans Daryz, portant les couleurs de l'Aga Khan et mont\u00e9 par Micka\u00ebl Barzalona, a remport\u00e9 dimanche le 105e Prix de l'Arc de Triomphe pour la deuxi\u00e8me ann\u00e9e d'affil\u00e9e, au terme d'un week-end de courses o\u00f9 il partait favori.",
+    "Judo : Boukli en bronze \u00e0 Bakou : la Fran\u00e7aise Shirine Boukli (-48 kg) a pris le bronze aux Mondiaux de Bakou, deuxi\u00e8me m\u00e9daille mondiale de sa carri\u00e8re ; chez les hommes, l'Az\u00e9ri Ahmad Yusifov a \u00e9t\u00e9 sacr\u00e9 \u00e0 domicile en -60 kg devant Sherzod Davlatov \u2014 les Bleus visent la suite avec Clarisse Agb\u00e9gn\u00e9nou, sept mois apr\u00e8s la naissance de son deuxi\u00e8me enfant.",
+    "F1 : Verstappen gagne sous la mousson, Hadjar 5e : le Grand Prix de Bahre\u00efn, d\u00e9localis\u00e9 \u00e0 Sepang, est parti avec plus d'une heure et demie de retard apr\u00e8s un fiasco de d\u00e9marrage \u2014 les logiciels des voitures 2026, mi-essence mi-batterie, n'ont pas dig\u00e9r\u00e9 la piste d\u00e9tremp\u00e9e ; Max Verstappen s'est impos\u00e9 devant Kimi Antonelli et Lewis Hamilton, avec le Fran\u00e7ais Isack Hadjar 5e et un meilleur tour \u00e0 1:38.220.",
+    "Tennis : Alcaraz en demi-finale \u00e0 Tokyo : Carlos Alcaraz a profit\u00e9 de l'abandon de Denis Shapovalov (7-6, 2-1) pour rejoindre le dernier carr\u00e9 du ATP 500 de Tokyo ; \u00e0 P\u00e9kin, Aryna Sabalenka a \u00e9t\u00e9 \u00e9limin\u00e9e d\u00e8s le 3e tour du WTA 1000 par la Tch\u00e8que Nikola Bartunkov\u00e1, et la num\u00e9ro un mondiale Elena Rybakina, bless\u00e9e au pied, a d\u00e9clar\u00e9 forfait pour Wuhan.",
+    "Cyclisme : Evenepoel champion d'Europe : le Belge Remco Evenepoel a remport\u00e9 les Championnats d'Europe sur route au photo-finish, devenant le deuxi\u00e8me Belge laur\u00e9at depuis l'ouverture de l'\u00e9preuve \u00e0 l'\u00e9lite \u2014 une course marqu\u00e9e par l'absence des favoris bless\u00e9s, Tadej Pogacar et Jonas Vingegaard en t\u00eate.",
+    "MotoGP : Marquez confirme au Japon : Marc Marquez (Ducati) a remport\u00e9 le Grand Prix du Japon \u00e0 Motegi en 41:31.467, devant Jorge Mart\u00edn (Aprilia) et Marco Bezzecchi \u2014 Mart\u00edn, leader du championnat, avait d\u00e9j\u00e0 \u00e9t\u00e9 r\u00e9trograd\u00e9 sur la sprint de samedi.",
+    "Football : l'Espagne continue sa f\u00eate, les Bleus pr\u00e9parent la Belgique : port\u00e9e par Lamine Yamal, l'Espagne, championne du monde en titre, a battu la R\u00e9publique tch\u00e8que (3-1) en Ligue des nations ; les Bleus de Zin\u00e9dine Zidane, tenus en \u00e9chec par l'Italie (1-1) vendredi, re\u00e7oivent la Belgique lundi \u00e0 Saint-Denis pour clore leur premier stage, avec un turn-over attendu.",
+    "Paris : cambriolage avort\u00e9 au mus\u00e9e Nissim de Camondo : un homme de 27 ans a \u00e9t\u00e9 plac\u00e9 en garde \u00e0 vue apr\u00e8s une tentative de vol par effraction samedi soir dans ce mus\u00e9e du 8e arrondissement, ferm\u00e9 pour travaux jusqu'en 2030 \u2014 aucune \u0153uvre ne semble d\u00e9rob\u00e9e ; l'\u00e9pisode s'inscrit dans une s\u00e9rie noire pour les mus\u00e9es fran\u00e7ais, apr\u00e8s le retentissant casse du Louvre d'octobre 2025 et le vol de 27 pi\u00e8ces de joaillerie au mus\u00e9e Lalique d\u00e9but juillet.",
+    "Mort de Dafroza Gauthier, la \u00ab Klarsfeld du Rwanda \u00bb : celle qui a consacr\u00e9 pr\u00e8s de 30 ans, aux c\u00f4t\u00e9s de son mari Alain, \u00e0 traquer les g\u00e9nocidaires rwandais r\u00e9fugi\u00e9s en France \u2014 cofondatrice du Collectif des parties civiles pour le Rwanda \u2014 est morte samedi \u00e0 Reims \u00e0 72 ans ; sa m\u00e8re et \u00ab 70 \u00e0 80 personnes \u00bb de sa famille maternelle avaient \u00e9t\u00e9 extermin\u00e9es en 1994.",
+    "Italie : incendie dans un camping du lac de Garde : un feu a d\u00e9truit dimanche matin 20 bungalows et plusieurs voitures du camping Bella Italia de Peschiera del Garda, faisant au moins un br\u00fbl\u00e9 grave ; quatre pompiers allemands en vacances se sont improvis\u00e9s sauveteurs \u2014 r\u00e9veil des vacanciers, bouteilles de gaz \u00e9loign\u00e9es, un bless\u00e9 transport\u00e9 \u00e0 l'h\u00f4pital.",
+    "Loir-et-Cher : Su\u00e8vres esp\u00e8re \u00ab tourner la page \u00bb : \u00e0 un mois du proc\u00e8s de la \u00ab martyre de l'A10 \u00bb \u2014 la petite Inass Touloub, 4 ans, retrouv\u00e9e morte en 1987, dont la m\u00e8re, 72 ans, et le p\u00e8re, 74 ans, compara\u00eetront \u00e0 partir du 2 novembre devant les assises du Loir-et-Cher pour torture et actes de barbarie \u2014 la commune qui fleurit sa tombe depuis pr\u00e8s de 40 ans pr\u00e9voit d'assister en nombre aux audiences.",
+    "Antilles : le retour de l'\u00e9pandage par drone divise : cinq associations ont saisi le Conseil d'\u00c9tat contre les textes autorisant l'\u00e9pandage a\u00e9rien par drones dans les bananeraies ; en Martinique, les producteurs y voient \u00ab l'avenir \u00bb contre la cercosporiose noire, quand la Guadeloupe redoute les \u00ab effets cocktails \u00bb avec le chlord\u00e9cone qui empoisonne encore ses sols \u2014 l'Anses juge trop peu robustes les essais de s\u00e9curit\u00e9 men\u00e9s en Martinique."
+  ],
+  "sources": [
+    {
+      "label": "AFP \u2014 Trump confie le dossier IA au chef du renseignement am\u00e9ricain, priorit\u00e9 \u00e0 la coordination, pas \u00e0 la r\u00e9gulation",
+      "ref": "news-afp-20261004-00b649a3",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AP \u2014 Trump nomme le directeur du renseignement national Jay Clayton \u00e0 la t\u00eate d'un groupe de travail f\u00e9d\u00e9ral sur l'IA",
+      "ref": "news-ap-20261004-02af7055",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Le directeur du renseignement am\u00e9ricain missionn\u00e9 sur les menaces de l'IA mais aussi pour \u00ab pr\u00e9venir la surr\u00e9gulation \u00bb (Wall Street Journal)",
+      "ref": "news-afp-20261004-1a01bf60",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Jay Clayton, le nouveau r\u00e9f\u00e9rent IA de Trump, un pragmatique qui pla\u00eet aux patrons et aux \u00e9lus",
+      "ref": "news-afp-20261004-392129e2",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 \u00ab Spy chief Clayton \u00bb, l'homme de confiance des patrons de la tech pour l'IA",
+      "ref": "news-afp-20261004-385f6612",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Cor\u00e9e du Nord : Kim Jong Un a supervis\u00e9 le lancement d'un missile utilisant l'IA",
+      "ref": "news-afp-20261004-936809a8",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Une ville finnoise se pr\u00e9pare au changement apport\u00e9 par les data centers de Google",
+      "ref": "news-afp-20261004-6c45b6a9",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Le retour sur Terre de Sophie Adenot report\u00e9 en raison de la m\u00e9t\u00e9o (Nasa)",
+      "ref": "news-afp-20261003-c5b01c60",
+      "fiabilite": 5,
+      "maj": "03/10/2026"
+    },
+    {
+      "label": "AFP \u2014 La mission de Sophie Adenot dans l'ISS en chiffres",
+      "ref": "news-afp-20261004-d34b2da5",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Apr\u00e8s huit mois dans l'ISS, Sophie Adenot va devoir se r\u00e9adapter \u00e0 la gravit\u00e9 (Pesquet, CNES, ESA)",
+      "ref": "news-afp-20261004-b454b2d1",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Scandale financier en Turquie : l'ex-directeur de l'autorit\u00e9 de r\u00e9gulation dans le viseur de la justice",
+      "ref": "news-afp-20261004-b184b7f4",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Budget 2027 : Wauquiez affirme que LR ne pratiquera pas \u00ab le petit jeu de la censure \u00bb (Les \u00c9chos)",
+      "ref": "news-afp-20261004-1db89081",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "L\u00e9gifrance \u2014 Article 122-8 du code p\u00e9nal",
+      "ref": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039099354",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "L\u00e9gifrance \u2014 Code de la justice p\u00e9nale des mineurs, retenue et garde \u00e0 vue",
+      "ref": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000039086952/LEGISCTA000039088189/",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "Service-Public \u2014 Fiche F1469, retenue ou garde \u00e0 vue d'un mineur",
+      "ref": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1469",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "Dalloz actualit\u00e9 \u2014 R\u00e9gime de d\u00e9signation d'un avocat pour assister un mineur en garde \u00e0 vue",
+      "ref": "https://www.dalloz-actualite.fr/flash/regime-de-designation-d-un-avocat-pour-assister-un-mineur-garde-vue",
+      "fiabilite": 4,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Policier rou\u00e9 de coups \u00e0 Belfort : deux lyc\u00e9ens mineurs poursuivis pour violences aggrav\u00e9es",
+      "ref": "news-afp-20261004-0108338b",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Blocages de lyc\u00e9es en France : deux interpellations apr\u00e8s le passage \u00e0 tabac d'un policier",
+      "ref": "news-afp-20261004-5d4ad26c",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "New Game Plus \u2014 PlayStation lance le QSSR, Naughty Dog et GTA VI : l'essentiel de la semaine",
+      "ref": "https://new-game-plus.fr/actualites-s40-2026/",
+      "fiabilite": 4,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "GamingBible \u2014 PS5 : le boost graphique gratuit QSSR, \u00e0 point pour GTA 6",
+      "ref": "https://www.gamingbible.com/news/platform/playstation/ps5-free-graphics-boost-qssr-gta-6-662666-20261002",
+      "fiabilite": 4,
+      "maj": "02/10/2026"
+    },
+    {
+      "label": "PlayStation Lifestyle \u2014 GTA VI, PS5 et PS5 Pro : le QSSR succ\u00e8de au PSSR",
+      "ref": "https://www.playstationlifestyle.net/2026/10/02/gta-vi-playstation-5-ps5-pro-qssr-pssr",
+      "fiabilite": 4,
+      "maj": "02/10/2026"
+    },
+    {
+      "label": "AFP \u2014 S\u00e9n\u00e9gal : d\u00e9c\u00e8s de l'\u00e9crivain Cheikh Hamidou Kane \u00e0 98 ans",
+      "ref": "news-afp-20261004-0a6083ee",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AP \u2014 \u00c0 la veille de la fusion, \u00ab Digger \u00bb s'effondre pour Warner Bros., \u00ab Verity \u00bb prend la t\u00eate du box-office ; \u00ab Avengers: Endgame \u00bb redevient le plus gros film de tous les temps",
+      "ref": "news-ap-20261004-b1d3970e",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AP \u2014 Le peuple Akuapem au Ghana c\u00e9l\u00e8bre le 200e anniversaire de sa victoire sur l'empire ashanti",
+      "ref": "news-ap-20261004-90fe3039",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 \u00ab Agir avant qu'il ne soit trop tard \u00bb : \u00e0 Tokyo, l'ombre des arbres devient une denr\u00e9e rare",
+      "ref": "news-afp-20261004-78008ba9",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 \u00ab R\u00e9agir vite et t\u00f4t \u00bb face aux violences sexuelles dans le sport, plaide la gendarme C\u00e9cile Peronnet",
+      "ref": "news-afp-20261004-61aa5a37",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Pr\u00e9-COP : Tuvalu invite les dirigeants \u00e0 constater la d\u00e9vastation due au changement climatique",
+      "ref": "news-afp-20261004-441cd175",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Pluies torrentielles en Espagne : deux morts dans la province de Barcelone",
+      "ref": "news-afp-20261004-f4e3a0e0",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 France : les cours suspendus lundi dans \u00ab 400 \u00e0 500 \u00bb lyc\u00e9es, d\u00e9bat sur les violences",
+      "ref": "news-afp-20261004-1720e216",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 France : 400 \u00e0 500 lyc\u00e9es totalement ou \u00ab partiellement \u00bb ferm\u00e9s lundi (ministre Geffray)",
+      "ref": "news-afp-20261004-c87eb999",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Faire payer les casseurs : le gouvernement acc\u00e9l\u00e8re, l'efficacit\u00e9 des mesures en question",
+      "ref": "news-afp-20261004-f6875306",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Blocages de lyc\u00e9es en France : l'Iran d\u00e9nonce une \u00ab violence disproportionn\u00e9e \u00bb contre les manifestants",
+      "ref": "news-afp-20261004-a700f037",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Des violences urbaines sporadiques en r\u00e9gion lyonnaise et \u00e0 Tours",
+      "ref": "news-afp-20261004-94e3fc68",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Un dernier d\u00e9bat pour d\u00e9partager les candidats de la primaire de la gauche",
+      "ref": "news-afp-20261003-7347596f",
+      "fiabilite": 5,
+      "maj": "03/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Accusations d'antis\u00e9mitisme : le RN \u00ab fait bloc \u00bb derri\u00e8re Bardella et vise Mediapart",
+      "ref": "news-afp-20261004-1b551283",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Podcasts politiques : l'Arcom r\u00e9fl\u00e9chit \u00e0 \u00ab de nouvelles r\u00e8gles \u00bb avant 2027",
+      "ref": "news-afp-20261003-46d8e010",
+      "fiabilite": 5,
+      "maj": "03/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Au Sommet de l'\u00e9levage, la pluie plus attendue que les promesses politiques",
+      "ref": "news-afp-20261004-61a021a2",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Roussel (PCF) appelle \u00e0 soutenir et accompagner les lyc\u00e9ens mardi",
+      "ref": "news-afp-20261004-bae6a1a5",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Un juge conservateur se dit \u00ab inquiet \u00bb des cons\u00e9quences des attaques contre la Cour supr\u00eame am\u00e9ricaine (Alito, Fox News)",
+      "ref": "news-afp-20261004-13cd8fd6",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Le chef de l'administration p\u00e9nitentiaire du Tennessee d\u00e9missionne apr\u00e8s l'ex\u00e9cution rat\u00e9e d'une femme",
+      "ref": "news-afp-20261003-aa297c67",
+      "fiabilite": 5,
+      "maj": "03/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Une femme dans un \u00e9tat critique, son pronostic vital inconnu apr\u00e8s son ex\u00e9cution rat\u00e9e aux \u00c9tats-Unis (avocat de Christa Pike)",
+      "ref": "news-afp-20261004-0616aef0",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 L'Iran dit aux \u00c9tats-Unis qu'il n'y a pas de \u00ab solution militaire \u00bb \u00e0 leur conflit (Araghchi)",
+      "ref": "news-afp-20261004-a93672e8",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Sanctions am\u00e9ricaines : reprise des vols iraniens vers la ville sainte de Najaf en Irak",
+      "ref": "news-afp-20261004-508daebc",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Un marine am\u00e9ricain arr\u00eat\u00e9 pour meurtre au Japon",
+      "ref": "news-afp-20261004-35b1c393",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 G20 : la Chine d\u00e9fend l'absence d'accord sur le travail forc\u00e9 et les surcapacit\u00e9s",
+      "ref": "news-afp-20261004-cdcbd1dd",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Les Philippines accusent la Chine de harceler ses patrouilles dans des eaux disput\u00e9es",
+      "ref": "news-afp-20261004-c190c080",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 La Russie va \u00ab intensifier \u00bb ses frappes sur l'Ukraine en r\u00e9ponse \u00e0 des menaces de Zelensky",
+      "ref": "news-afp-20261004-95026f50",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 L'Inde cherche un r\u00f4le accru de m\u00e9diateur entre Moscou et Kiev (Jaishankar)",
+      "ref": "news-afp-20261004-15dd4b88",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Le chancelier allemand Merz en visite en Ukraine, un pont de Kiev attaqu\u00e9 de nouveau",
+      "ref": "news-afp-20261004-f7cfc4d9",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AP \u2014 Merz annonce une nouvelle aide \u00e0 Kiev, alors que la Russie intensifie ses attaques (pourparlers trilat\u00e9raux fin octobre)",
+      "ref": "news-ap-20261004-5fcefc60",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Y\u00e9men : le pr\u00e9sident al-Alimi annonce une offensive pour reprendre l'ensemble du pays aux Houthis",
+      "ref": "news-afp-20261004-75bcf4e6",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AP \u2014 Le gouvernement y\u00e9m\u00e9nite d\u00e9clare une offensive majeure contre les Houthis, et le reste de l'actualit\u00e9 au Moyen-Orient",
+      "ref": "news-ap-20261004-b53076fb",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Les combattants houthis revendiquent des frappes sur un site d'Aramco \u00e0 Ryad",
+      "ref": "news-afp-20261004-561033aa",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Arabie saoudite : les revendications houthies d'une attaque sur Ryad sont \u00ab trompeuses \u00bb (coalition)",
+      "ref": "news-afp-20261004-5edd4e98",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Y\u00e9men : Sanaa bombard\u00e9e, les Houthis revendiquent une attaque contre un site d'Aramco",
+      "ref": "news-afp-20261003-ca5eb061",
+      "fiabilite": 5,
+      "maj": "03/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Les Houthis coupent la route vitale vers Taiz",
+      "ref": "news-afp-20261004-df367d2f",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 L'arm\u00e9e r\u00e9guli\u00e8re y\u00e9m\u00e9nite dit avoir frapp\u00e9 des cibles houthies",
+      "ref": "news-afp-20261003-798c00d5",
+      "fiabilite": 5,
+      "maj": "03/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Lula ou Flavio Bolsonaro ? Le Br\u00e9sil se rend aux urnes, sous l'\u0153il de Trump",
+      "ref": "news-afp-20261003-31bca091",
+      "fiabilite": 5,
+      "maj": "03/10/2026"
+    },
+    {
+      "label": "AP \u2014 Les bureaux de vote ferment en Bosnie, avec un politicien pro-russe qui p\u00e8se sur la pr\u00e9sidentielle",
+      "ref": "news-ap-20261004-ef10f06b",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Actualit\u00e9s du dimanche 4 octobre 2026 : 7-Octobre, Lettonie, Corne de l'Afrique, mises en examen li\u00e9es au Hamas",
+      "ref": "news-afp-20261004-db027080",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Le pur-sang fran\u00e7ais Daryz remporte le 105e Prix de l'Arc de Triomphe, un doubl\u00e9",
+      "ref": "news-afp-20261004-17778821",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Mondiaux de judo : Shirine Boukli en bronze en -48 kg \u00e0 Bakou",
+      "ref": "news-afp-20261004-d469a4ed",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Mondiaux de judo : l'Az\u00e9ri Ahmad Yusifov sacr\u00e9 \u00e0 domicile",
+      "ref": "news-afp-20261004-24872c6c",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 F1 : Max Verstappen remporte le Grand Prix de Bahre\u00efn disput\u00e9 en Malaisie",
+      "ref": "news-afp-20261004-a7bcf5fe",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Le GP de F1 de Bahre\u00efn en Malaisie part avec une heure et demie de retard en raison de la mousson",
+      "ref": "news-afp-20261004-4a66ca79",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 F1 : classement du Grand Prix de Bahre\u00efn disput\u00e9 en Malaisie",
+      "ref": "news-afp-20261004-f3fb229a",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 ATP 500 de Tokyo : Alcaraz dans le dernier carr\u00e9",
+      "ref": "news-afp-20261004-6cb2a411",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 WTA 1000 de P\u00e9kin : Sabalenka \u00e9limin\u00e9e d\u00e8s le 3e tour",
+      "ref": "news-afp-20261004-42f667da",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Tennis : la num\u00e9ro un mondiale Rybakina, bless\u00e9e, forfait pour le tournoi de Wuhan",
+      "ref": "news-afp-20261004-5bb06c11",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Cyclisme : Evenepoel champion d'Europe \u00e0 la photo-finish",
+      "ref": "news-afp-20261004-b34f60d0",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 MotoGP : les classements apr\u00e8s le Grand Prix du Japon",
+      "ref": "news-afp-20261004-47bfd96d",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Ligue des nations : op\u00e9ration rachat pour les Bleus de Zidane avant la Belgique",
+      "ref": "news-afp-20261004-b26d591d",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Ligue des nations : Eduardo Camavinga revit en bleu (Espagne-Tch\u00e9quie 3-1)",
+      "ref": "news-afp-20261004-9508738c",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Garde \u00e0 vue apr\u00e8s un cambriolage avort\u00e9 au mus\u00e9e Nissim de Camondo \u00e0 Paris",
+      "ref": "news-afp-20261004-e08a5578",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Mort de Dafroza Gauthier, apr\u00e8s une vie \u00e0 traquer les g\u00e9nocidaires rwandais en France",
+      "ref": "news-afp-20261004-f4061ac2",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Italie : grave incendie dans un camping sur le lac de Garde",
+      "ref": "news-afp-20261004-d51528da",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Proc\u00e8s de la \u00ab martyre de l'A10 \u00bb : Su\u00e8vres, o\u00f9 est enterr\u00e9e Inass Touloub, veut \u00ab tourner la page \u00bb",
+      "ref": "news-afp-20261004-db8f7461",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Aux Antilles, le retour de l'\u00e9pandage de pesticides par drone divise",
+      "ref": "news-afp-20261004-cb84d9e4",
+      "fiabilite": 5,
+      "maj": "04/10/2026"
+    },
+    {
+      "label": "Newsletter \u00ab Des infos, y'en a H24 \u00bb \u2014 \u00e9ditions de la semaine du 28/09 au 03/10 : contexte v\u00e9rifi\u00e9 (Bull, Lagarde, sommet IA du 29/09, incidents de l'\u00e9t\u00e9, G7 et p\u00e9trole, Vivaldi, ponts de Kiev, F-16V, Latinobar\u00f3metro, M\u00e9t\u00e9o-France, glaciers suisses, Mekele, Moldavie)",
+      "ref": "https://diyeah.fr/",
+      "fiabilite": 4,
+      "maj": "04/10/2026"
+    }
+  ]
+}
