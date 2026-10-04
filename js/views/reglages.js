@@ -305,7 +305,11 @@ function rendreNotifications() {
       const id = cb.dataset.notif;
       let prefs;
       try { prefs = await basculerNotification(id.startsWith('media:') ? 'medias' : id, id.startsWith('media:') ? id.slice(6) : null); }
-      catch (e) { console.error('toggle notif', e); prefs = prefsNotifications(); }
+      catch (e) { console.error('toggle notif', e);
+        /* v71 : l'exception elle-même est notée comme essai — elle s'affiche
+         * dans la ligne d'état au lieu de rester invisible (console seule). */
+        setStore('push.dernier_essai', { quand: Date.now(), ok: false, etape: 'bascule', message: String(e && e.message || e).slice(0, 140) });
+        prefs = prefsNotifications(); }
       /* v66 : résultat exact du dernier enregistrement, affiché tel quel — même
        * si un vieux endpoint local traînait (époque où l'échec était silencieux). */
       afficherEssaiPush(prefs);
