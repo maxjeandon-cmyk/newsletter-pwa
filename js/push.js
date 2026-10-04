@@ -68,14 +68,18 @@ export async function souscrire() {
    * revient jamais (permission ou abonnement navigateur). */
   noterEssai({ ok: false, etape: 'abonnement', message: 'abonnement navigateur en cours…' });
   try {
+    noterEssai({ ok: false, etape: 'abonnement', message: 'service worker prêt ?' });
     const reg = await navigator.serviceWorker.ready;
+    noterEssai({ ok: false, etape: 'abonnement', message: 'lecture abonnement existant…' });
     let sub = await reg.pushManager.getSubscription();
     if (!sub) {
+      noterEssai({ ok: false, etape: 'abonnement', message: 'création abonnement navigateur…' });
       sub = await reg.pushManager.subscribe({
         userVisibleOnly: true,
         applicationServerKey: urlBase64ToUint8Array(cle)
       });
     }
+    noterEssai({ ok: false, etape: 'serveur', message: 'enregistrement dans Supabase…' });
     const res = await enregistrerDistant(sub.toJSON());
     /* v64 : on ne mémorise l'endpoint QUE si l'enregistrement serveur a réussi.
      * v66 : le résultat complet (statut HTTP, message serveur) est conservé et
