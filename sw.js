@@ -2,7 +2,7 @@
  * Stratégies : data/ et editions/ network-first (toujours frais en ligne, repli cache hors ligne) ;
  * le reste (coquille, js/, styles) cache-first pour un démarrage instantané.
  * À chaque déploiement de code : incrémenter CACHE (v22 → v23…) pour invalider les caches clients. */
-const CACHE = 'newsletter-v74';
+const CACHE = 'newsletter-v75';
 const ASSETS = [
   './',
   './index.html',
@@ -45,8 +45,14 @@ const ASSETS = [
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
 });
+/* v75 : SKIP_WAITING à la demande de la page + message d'activation —
+ * sans ça, un SW « waiting » (ancien onglet ouvert, iOS Safari) n'active
+ * jamais et navigator.serviceWorker.ready attend pour toujours. */
+self.addEventListener('message', e => { if (e.data && e.data.type === 'SKIP_WAITING') self.skipWaiting(); });
 self.addEventListener('activate', e => {
-  e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim()));
+  e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim()).then(() => {
+    self.clients.matchAll().then(cs => cs.forEach(c => c.postMessage({ type: 'SW_ACTIF', version: CACHE })));
+  }));
 });
 self.addEventListener('fetch', e => {
   const url = new URL(e.request.url);
