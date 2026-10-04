@@ -75,6 +75,7 @@ export async function vueReglages() {
     '<div id="notifs-bloc"></div></details>' +
     '<details class="carte-regl"><summary>🧰 Maintenance</summary>' +
     '<button id="btn-purge">Purger le cache</button>' +
+    '<p class="hint" id="ver-info" style="min-height:16px;margin:8px 0 0"></p>' +
     '</details>' +
     '<details class="carte-regl"><summary>📲 Installer sur l\u2019écran d\u2019accueil</summary>' +
     '<p class="meta-count">L\u2019app s\u2019installe comme une vraie application : icône dédiée, plein écran, fonctionne hors ligne.</p>' +
@@ -93,6 +94,16 @@ export async function vueReglages() {
   rendreCompte('', null);
   $('#btn-reset-ordre').onclick = () => { setStore('ordreOnglets', ORDRE_DEFAUT); rendreOrdre(); rendreBarre(); };
   $('#btn-reset-chapters').onclick = () => { setStore('masques', {}); rendreChapitres(); chargerChapitres().then(renderView).catch(() => {}); };
+  /* v69 : versions visibles — déployée sur le serveur vs cache local, pour
+   * diagnostiquer un service worker resté sur une ancienne version. */
+  (async () => {
+    const vi = $('#ver-info'); if (!vi) return;
+    let deployee = '?', locale = '?';
+    try { deployee = ((await (await fetch('sw.js', { cache: 'no-store' })).text()).match(/CACHE = '([^']+)/) || [])[1] || '?'; } catch (e) { /* rien */ }
+    try { const noms = await caches.keys(); locale = noms.filter(n => n.startsWith('newsletter-')).join(', ') || 'aucun'; } catch (e) { /* rien */ }
+    vi.textContent = 'Version déployée : ' + deployee + ' · cache local : ' + locale;
+    if (locale !== '?' && locale !== deployee) vi.textContent += ' — purge le cache pour actualiser.';
+  })();
   $('#btn-purge').onclick = async () => {
     const b = $('#btn-purge'); b.disabled = true; b.textContent = 'Purge en cours…';
     try { if (window.caches) { const noms = await caches.keys(); await Promise.all(noms.map(n => caches.delete(n))); } } catch (e) { /* rien */ }
