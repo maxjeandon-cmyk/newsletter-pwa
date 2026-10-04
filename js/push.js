@@ -15,10 +15,17 @@ const ENDPOINT = 'push.endpoint';     // endpoint local pour éviter les doublon
 const ESSAI = 'push.dernier_essai';   // v66 : dernier résultat d'enregistrement, affiché dans Réglages
 
 /* Préférences de notification (toggles) — préférences locales classiques (nl.*) */
-export function prefsNotifications() { return getStore(ABONNEMENTS, { edition: false, copernicus: false, feedback: false, medias: {} }); }
+/* v70 : normalisation — une préférence sauvegardée par une ancienne version
+ * peut ne pas avoir la clé medias (ou feedback) : Object.values(undefined)
+ * levait une TypeError dans basculerNotification AVANT tout noterEssai,
+ * laissant la ligne d'état sur « jamais confirmé » en boucle. */
+export function prefsNotifications() {
+  const p = getStore(ABONNEMENTS, {}) || {};
+  return { edition: !!p.edition, copernicus: !!p.copernicus, feedback: !!p.feedback, medias: (p.medias && typeof p.medias === 'object') ? p.medias : {} };
+}
 export async function basculerNotification(categorie, mediaId) {
   const p = prefsNotifications();
-  if (categorie === 'medias') p.medias[mediaId] = !p.medias[mediaId];
+  if (categorie === 'medias') { if (!p.medias) p.medias = {}; p.medias[mediaId] = !p.medias[mediaId]; }
   else p[categorie] = !p[categorie];
   setStore(ABONNEMENTS, p);
   /* S'assurer qu'un abonnement push existe si au moins un toggle est actif */
