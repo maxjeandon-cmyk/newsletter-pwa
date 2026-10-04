@@ -15,12 +15,13 @@ import { vueLecture } from './views/lecture.js';
 import { vueReglages } from './views/reglages.js';
 import { vueVideos } from './views/videos.js';
 import { vueFeedback } from './views/feedback.js';
+import { vueLyceens } from './views/lyceens.js';
 
 export const renderView = rendu;
 export const majMedias = maj;
 export { mediaVisible };
 
-Object.entries({ edition: vueEdition, archives: vueArchives, climat: vueNewsletters, articles: vueArticles, medias: vueMedias, lecture: vueLecture, videos: vueVideos, reglages: vueReglages, feedback: vueFeedback })
+Object.entries({ edition: vueEdition, archives: vueArchives, climat: vueNewsletters, articles: vueArticles, medias: vueMedias, lecture: vueLecture, videos: vueVideos, reglages: vueReglages, feedback: vueFeedback, lyceens: vueLyceens })
   .forEach(([id, vue]) => enregistrerVue(id, vue));
 
 /* Barre d'onglets : definitions centrales dans onglets.js — tout nouvel

@@ -12,6 +12,7 @@ export const ONGLETS_BASE = [
   { id: 'climat', nom: 'Newsletters', emoji: '🗞️' },
   { id: 'lecture', nom: 'Lecture WiP', emoji: '📖' },
   { id: 'videos', nom: 'Vidéos du jour', emoji: '📺' },
+  { id: 'lyceens', nom: 'Lycéens 2026', emoji: '✊' },
   { id: 'feedback', nom: 'Feedback', emoji: '💬' },
   { id: 'reglages', nom: 'Réglages', emoji: '⚙️' }
 ];

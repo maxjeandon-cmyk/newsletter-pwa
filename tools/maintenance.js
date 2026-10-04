@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* tools/maintenance.js — Agent de maintenance (v33).
+/* tools/maintenance.js — Agent de maintenance (v34).
  * Toutes les 6 h (3 h, 9 h, 15 h, 21 h heure de Paris) :
  *   1. Fusionne les NOUVEAUX messages de feedback de Supabase (clé
  *      service_role) dans le résumé global persistant via tools/feedback.js :
@@ -15,6 +15,10 @@
  *      des dernières actualités des 10 ONG de l'onglet Newsletters et
  *      publie data/newsletters.json si un relevé a été rafraîchi (les sites
  *      muets ou injoignables conservent leur relevé précédent).
+ *   5. Relevé « Lycéens 2026 » (lyceens.js) : moissonne les flux RSS de la
+ *      presse, classe chaque info (version lycéens / version gouvernement /
+ *      faits corroborés) et publie data/lyceens.json si le contenu a
+ *      vraiment changé (pas de commit fantôme toutes les 6 h).
  * Aucune dépendance : fetch natif (Node >= 18).
  * Env : SUPABASE_URL, SUPABASE_SERVICE_ROLE, GH_TOKEN (Contents: RW).
  */
@@ -30,6 +34,7 @@ const REPO = process.env.GITHUB_REPOSITORY || 'maxjeandon-cmyk/newsletter-pwa';
 const FICHIER = 'data/feedback.json';
 const RAPPORT = 'data/maintenance.json';
 const RELEVES = 'data/newsletters.json';
+const LYCEENS = 'data/lyceens.json';
 
 /* ————— Maintenance : validations locales + contrôle du site public ————— */
 
@@ -157,6 +162,21 @@ async function main() {
     ong.erreur = String(e.stdout || e.message || e).slice(0, 150);
   }
 
+  /* 2 ter. Relevé « Lycéens 2026 » : tools/lyceens.js moissonne les flux
+   * RSS de la presse (fenêtre 8 j), classe les infos en trois versions
+   * (lycéens / gouvernement / faits corroborés) et réécrit lui-même
+   * data/lyceens.json si le contenu a changé (hors horodatage : pas de
+   * commit fantôme). La curation épinglée est préservée. */
+  let lyc = { modifie: false, nouvelles: 0, fusionnees: 0, moissonnes: 0, total: 0, echecs: 0 };
+  try {
+    lyc = JSON.parse(execFileSync(process.execPath, ['tools/lyceens.js'], { encoding: 'utf8', env: process.env, timeout: 240000 }));
+    console.log('Lycéens : ' + lyc.nouvelles + ' nouvelle(s) info, ' + lyc.fusionnees +
+      ' fusionnée(s) sur ' + lyc.moissonnes + ' moissonnée(s) — ' + lyc.total + ' au total.');
+  } catch (e) {
+    console.error('Relevé lycéens impossible : ' + (e.stdout || e.message));
+    lyc.erreur = String(e.stdout || e.message || e).slice(0, 150);
+  }
+
   /* 3. Publication du résumé : tools/feedback.js a lui-même réécrit
    * data/feedback.json (fusion des nouveaux messages dans le résumé
    * global persistant) — on publie le fichier tel quel (data/ est
@@ -197,11 +217,33 @@ async function main() {
     if (ong.erreur) etat.problemes.push('relevés ONG');
   }
 
+  /* 3 ter. Publication du relevé « Lycéens 2026 » (data/ network-first, pas de bump CACHE). */
+  if (lyc.modifie && !lyc.erreur) {
+    try {
+      await publierFichier(LYCEENS, fs.readFileSync(LYCEENS, 'utf8'),
+        'Releve lyceens du ' + dateFr + ' (' + lyc.nouvelles + ' nouvelle(s) info)');
+      console.log('Relevé lycéens publié (' + lyc.nouvelles + ' nouvelle(s) info).');
+    } catch (e) {
+      console.error('Publication du relevé lycéens échouée : ' + e.message);
+      lyc.erreur = 'publication : ' + String(e.message).slice(0, 120);
+    }
+  }
+  etat.verifs.push({
+    nom: 'lyceens.js',
+    ok: !lyc.erreur,
+    detail: lyc.erreur
+      ? lyc.erreur
+      : lyc.nouvelles + ' nouvelle(s) info, ' + lyc.fusionnees + ' fusionnée(s) sur ' +
+        lyc.moissonnes + ' moissonnée(s) — ' + lyc.total + ' au total'
+  });
+  if (lyc.erreur) etat.problemes.push('relevé lycéens');
+
   const contenuRapport = JSON.stringify({
     date: dateFr,
     heure: heureFr,
     feedback: { messages: resume.total, nouveaux: resume.nouveaux, recupere: feedbackOk, publie: !erreursFeedback },
     relevesOng: { rafraichis: ong.rafraichis, echecs: ong.echecs, publie: ong.modifie && !ong.erreur },
+    lyceens: { nouvelles: lyc.nouvelles, fusionnees: lyc.fusionnees, moissonnes: lyc.moissonnes, total: lyc.total, publie: lyc.modifie && !lyc.erreur },
     verifs: etat.verifs,
     problemes: etat.problemes,
     intervention: etat.intervention

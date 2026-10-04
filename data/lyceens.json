@@ -1,0 +1,444 @@
+{
+  "maj": "05/10/2026 01:10",
+  "titre": "Révolte lycéenne — France 2026",
+  "intro": "Mouvement lycéen et étudiant de septembre-octobre 2026 : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Trois lectures séparées : ce que disent les lycéens, ce que dit le gouvernement, et les seules informations corroborées par plusieurs médias indépendants.",
+  "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les « versions » sont celles rapportées par la presse ; les déclarations sont attribuées à leurs auteurs, jamais reformulées. Aucun flux RSS officiel du gouvernement n'étant accessible, la version du gouvernement est relevée via les dépêches et articles qui rapportent ses déclarations.",
+  "contexte": [
+    "Le mouvement démarre vers le 17-18 septembre au lycée Saint-Exupéry de Créteil (Val-de-Marne), en soutien aux enseignants en grève contre le manque de personnel et de moyens, puis s'étend en Île-de-France et gagne toute la France la semaine du 28 septembre.",
+    "Jeudi 1er octobre (« acte deux ») : les étudiants rejoignent le mouvement (une trentaine de campus bloqués) ; le Premier ministre convoque une cellule interministérielle de crise.",
+    "Depuis lundi 28 septembre, plus de 5.000 personnes ont été interpellées en lien avec les blocages (chiffre du ministre de l'Intérieur, 02/10) ; les régions estiment les dégâts matériels à plusieurs millions d'euros.",
+    "Écho international (AP, AFP en anglais) ; à ce stade, aucune mobilisation lycéenne comparable n'est recensée ailleurs en Europe — le mouvement est français.",
+    "Amnesty France (04/10) appelle les autorités au dialogue et à la désescalade, dénonçant un usage disproportionné de la force face à des mineurs ; la FCPE a demandé au ministre d'écouter les « demandes légitimes » des lycéens."
+  ],
+  "version_lyceens": [
+    {
+      "id": "l6",
+      "date": "04/10/2026",
+      "titre": "Roussel appelle à « accompagner » la mobilisation de mardi",
+      "texte": "Le candidat communiste Fabien Roussel a appelé enseignants, salariés et militants à soutenir les lycéens mardi, « afin que les revendications émergent plutôt que la violence ».",
+      "source": "AFP",
+      "sources": [
+        "AFP"
+      ],
+      "url": null,
+      "verifie": false
+    },
+    {
+      "id": "amuufolfn-2dl9",
+      "date": "04/10/2026",
+      "titre": "BFM, LCI, CNews… Sur les chaînes d’info, le mouvement lycéen réduit aux violences, le RN propulsé comme expert",
+      "texte": "La couverture du mouvement lycéen sur BFMTV, LCI ou CNews affiche plusieurs constantes, parmi lesquelles le mépris pour les revendications de la jeunesse et l’obsession des violences. Une grille de l…",
+      "source": "L'Humanité",
+      "sources": [
+        "L'Humanité"
+      ],
+      "url": "https://www.humanite.fr/medias/chaines-dinfo/bfm-lci-cnews-sur-les-chaines-dinfo-le-mouvement-lyceen-reduit-aux-violences-le-rn-catapulte-comme-expert",
+      "verifie": false
+    },
+    {
+      "id": "amuufolfo-jjbt",
+      "date": "04/10/2026",
+      "titre": "Au lycée du Nord de Mayotte, cinq semaines de blocage et une reprise en trompe-l’œil",
+      "texte": "Le lycée de Mtsangadoua a été bloqué pendant cinq semaines, en raison des conditions d’accueil déplorables des élèves. Leurs revendications ressemblent fortement à celles qui s’expriment ces derniers…",
+      "source": "Mediapart",
+      "sources": [
+        "Mediapart"
+      ],
+      "url": "https://www.mediapart.fr/journal/france/041026/au-lycee-du-nord-de-mayotte-cinq-semaines-de-blocage-et-une-reprise-en-trompe-l-oeil",
+      "verifie": false
+    },
+    {
+      "id": "amuufolfp-c69s",
+      "date": "04/10/2026",
+      "titre": "Mobilisation lycéenne : Fabien Roussel appelle les organisations de jeunesse à «sécuriser les parcours»",
+      "texte": "Alors qu’une nouvelle journée de contestation est prévue mardi, Fabien Roussel a appelé ce dimanche les militants communistes à apporter leur aide aux lycéens pour leur permettre de faire «émerger le…",
+      "source": "Libération",
+      "sources": [
+        "Libération"
+      ],
+      "url": "https://www.liberation.fr/politique/mobilisation-lyceenne-fabien-roussel-appelle-les-organisations-de-jeunesse-a-securiser-les-parcours-20261004_23GONLVI2JECRFH3UNGMKZLQPE/",
+      "verifie": false
+    },
+    {
+      "id": "l5",
+      "date": "03/10/2026",
+      "titre": "Mardi 6 octobre : journée de mobilisation, « brassards blancs »",
+      "texte": "La nouvelle journée de mobilisation est prévue mardi 6 octobre : la CGT et Solidaires appellent à y participer en dénonçant la « répression » ; Jean-Luc Mélenchon appelle à porter des « brassards blancs » pour « protéger nos jeunes » ; une intersyndicale de l'éducation appelle à la grève.",
+      "source": "AFP / L'Internaute",
+      "sources": [
+        "AFP",
+        "L'Internaute"
+      ],
+      "url": "https://www.linternaute.com/actualite/faits-divers/11306009-blocage-des-lycees-le-mouvement-reconduit-mais-jusqu-a-quand-la-date-d-une-grande-manifestation-avancee/",
+      "verifie": true
+    },
+    {
+      "id": "l7",
+      "date": "03/10/2026",
+      "titre": "Un député appelle les parents à être « casque blanc sur la tête »",
+      "texte": "Le député écologiste Pouria Amirshahi appelle, dans un communiqué, les parents et tous les adultes à se tenir aux côtés des lycéens « casque blanc sur la tête » pour la prochaine journée de mobilisation.",
+      "source": "AFP",
+      "sources": [
+        "AFP"
+      ],
+      "url": null,
+      "verifie": false
+    },
+    {
+      "id": "l2",
+      "date": "02/10/2026",
+      "titre": "Une mobilisation « partie du bas », accélérée par les réseaux sociaux",
+      "texte": "Selon une analyse relayée par l'AFP, la mobilisation n'a pas été enclenchée par une organisation syndicale lycéenne : elle serait « partie du bas » et accélérée par les réseaux sociaux.",
+      "source": "AFP",
+      "sources": [
+        "AFP"
+      ],
+      "url": null,
+      "verifie": false
+    },
+    {
+      "id": "l4",
+      "date": "02/10/2026",
+      "titre": "Faute de « mesures concrètes », la mobilisation continue",
+      "texte": "Vendredi 2 octobre, après être reçus par le ministre, les organisations lycéennes et étudiantes ont poursuivi la mobilisation, faute de « mesures concrètes ».",
+      "source": "France 24 / L'Internaute",
+      "sources": [
+        "France 24",
+        "L'Internaute"
+      ],
+      "url": "https://www.linternaute.com/actualite/faits-divers/11306009-blocage-des-lycees-le-mouvement-reconduit-mais-jusqu-a-quand-la-date-d-une-grande-manifestation-avancee/",
+      "verifie": true
+    },
+    {
+      "id": "l1",
+      "date": "01/10/2026",
+      "titre": "Revendications : moyens, remplacements, Parcoursup",
+      "texte": "Les lycéens mobilisés réclament plus de moyens humains et financiers pour l'Éducation nationale : professeurs non remplacés, bâtiments délabrés, emplois du temps trop chargés, pression de Parcoursup — que certains demandent purement et simplement de supprimer.",
+      "source": "AFP (via La Libre)",
+      "sources": [
+        "AFP",
+        "La Libre",
+        "Café pédagogique",
+        "AP"
+      ],
+      "url": "https://www.lalibre.be/dernieres-depeches/2026/10/01/les-revendications-des-lyceens-des-moyens-supplementaires-a-la-suppression-de-parcoursup-JFOY7L6V6RGXNHOQJHVG2KM6JU/",
+      "verifie": true
+    },
+    {
+      "id": "l3",
+      "date": "30/09/2026",
+      "titre": "« Acte deux » : lycéens et étudiants appelés à se mobiliser ensemble",
+      "texte": "Les organisations lycéennes appelaient à un « acte deux » jeudi, avec les étudiants qui devaient se joindre à eux ; une trentaine de campus étaient bloqués et le mouvement reconduit.",
+      "source": "AFP / Banque des territoires",
+      "sources": [
+        "AFP",
+        "Banque des territoires",
+        "franceinfo"
+      ],
+      "url": "https://www.banquedesterritoires.fr/rejoint-par-les-etudiants-le-mouvement-lyceen-prend-de-lampleur-et-le-premier-ministre-convoque-une",
+      "verifie": true
+    }
+  ],
+  "version_gouvernement": [
+    {
+      "id": "g4",
+      "date": "04/10/2026",
+      "titre": "Lecornu : reprise des cours lundi « partout » où la sécurité le permet",
+      "texte": "Le Premier ministre a demandé que les cours reprennent dès lundi « partout » où la sécurité le permet, et fixé un calendrier pour répondre à une partie des revendications, à commencer par les remplacements des professeurs.",
+      "source": "20 minutes / AFP",
+      "sources": [
+        "20 minutes",
+        "AFP"
+      ],
+      "url": "https://www.20minutes.fr/societe/4251181-20261004-blocus-lycees-lecornu-demande-cours-reprennent-lundi-partout-securite-permet",
+      "verifie": true
+    },
+    {
+      "id": "amuufolfb-guqv",
+      "date": "04/10/2026",
+      "titre": "Blocage des lycées : cours suspendus dans 400 à 500 établissements lundi, 24 ont été «saccagés ou incendiés», selon Edo…",
+      "texte": "Le ministre a recensé ce dimanche 4 octobre les établissements où les conditions de sécurité ne seraient pas réunies pour une réouverture lundi, veille de la mobilisation de l’intersyndicale de l’édu…",
+      "source": "20 minutes / Europe 1 / Le Figaro / France 24 / La Croix / Libération",
+      "sources": [
+        "20 minutes",
+        "Europe 1",
+        "Le Figaro",
+        "France 24",
+        "La Croix",
+        "Libération"
+      ],
+      "url": "https://www.liberation.fr/societe/education/blocage-des-lycees-cours-suspendus-dans-400-a-500-etablissements-lundi-24-ont-ete-saccages-ou-incendies-selon-edouard-geffray-20261004_O2BAPA2UTNFEXD76FJUZUSBUFU/",
+      "verifie": true
+    },
+    {
+      "id": "amuufolfc-ghfr",
+      "date": "04/10/2026",
+      "titre": "Blocus des lycées : la feuille de route de Sébastien Lecornu à ses ministres pour éteindre la colère",
+      "texte": "Remplacement des professeurs, transition climatique, représentation des lycéens… Le premier ministre attend des propositions avant la fin du mois d’octobre.",
+      "source": "Europe 1 / Public Sénat / Le Figaro / Ouest-France / Libération",
+      "sources": [
+        "Europe 1",
+        "Public Sénat",
+        "Le Figaro",
+        "Ouest-France",
+        "Libération"
+      ],
+      "url": "https://www.lefigaro.fr/politique/blocus-des-lycees-la-feuille-de-route-de-sebastien-lecornu-a-ses-ministres-pour-eteindre-la-colere-20261004",
+      "verifie": true
+    },
+    {
+      "id": "amuufolfd-9jod",
+      "date": "04/10/2026",
+      "titre": "Blocus des lycées : plus d'un tiers des lycées franciliens fermés lundi",
+      "texte": "Plus d'un tiers des lycées franciliens, soit plus de 160 établissements, seront fermés lundi, a annoncé Valérie Pécresse. La présidente de la région dénonce une \"logique d'émeute urbaine\" et promet q…",
+      "source": "Europe 1 / franceinfo",
+      "sources": [
+        "Europe 1",
+        "franceinfo"
+      ],
+      "url": "https://www.europe1.fr/societe/blocus-des-lycees-plus-dun-tiers-des-lycees-franciliens-fermes-lundi-1122788?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
+      "verifie": true
+    },
+    {
+      "id": "g3",
+      "date": "01/10/2026",
+      "titre": "« Violences urbaines », « manœuvre organisée » : la version de l'exécutif",
+      "texte": "Le gouvernement affirme que le mouvement a « basculé vers des violences urbaines » et évoque, en s'appuyant sur les services de renseignement, une « manœuvre organisée » — affirmation gouvernementale, contestée par LFI, non corroborée à ce stade.",
+      "source": "AFP / Banque des territoires",
+      "sources": [
+        "AFP",
+        "Banque des territoires"
+      ],
+      "url": "https://www.banquedesterritoires.fr/rejoint-par-les-etudiants-le-mouvement-lyceen-prend-de-lampleur-et-le-premier-ministre-convoque-une",
+      "verifie": false
+    },
+    {
+      "id": "g5",
+      "date": "01/10/2026",
+      "titre": "Budget 2027 : +1,2 milliard d'euros pour l'Éducation",
+      "texte": "Le ministre Édouard Geffray défend un budget 2027 pour l'Éducation nationale en hausse de 1,2 milliard d'euros : « on ne fait pas d'économies sur la jeunesse », la priorité à l'éducation est « objectivement préservée ».",
+      "source": "AFP",
+      "sources": [
+        "AFP"
+      ],
+      "url": null,
+      "verifie": false
+    },
+    {
+      "id": "g10",
+      "date": "01/10/2026",
+      "titre": "Cellule interministérielle de crise convoquée par Matignon",
+      "texte": "Alors que le mouvement prend de l'ampleur avec les étudiants, le Premier ministre a convoqué une cellule interministérielle de crise.",
+      "source": "Banque des territoires / AFP",
+      "sources": [
+        "Banque des territoires",
+        "AFP"
+      ],
+      "url": "https://www.banquedesterritoires.fr/rejoint-par-les-etudiants-le-mouvement-lyceen-prend-de-lampleur-et-le-premier-ministre-convoque-une",
+      "verifie": true
+    },
+    {
+      "id": "g1",
+      "date": "30/09/2026",
+      "titre": "Geffray : « violences inqualifiables », 119 blessés élèves et personnels",
+      "texte": "Le ministre de l'Éducation nationale a dénoncé des « violences inqualifiables » et communiqué un bilan de 119 élèves et personnels blessés depuis le début des troubles, dont 34 personnels — « inédit » selon lui ; il a aussi demandé l'aide des parents (« dans la rue, les enfants sont en danger »).",
+      "source": "AFP",
+      "sources": [
+        "AFP"
+      ],
+      "url": null,
+      "verifie": false
+    },
+    {
+      "id": "g2",
+      "date": "30/09/2026",
+      "titre": "Plateforme de concertation pour les lycéens",
+      "texte": "Le gouvernement a annoncé l'ouverture lundi d'une « plateforme de concertation » à laquelle « tous les lycéens pourront contribuer », suivie d'un « événement de restitution nationale » pour « apporter des réponses structurées ».",
+      "source": "AFP / Les Français Press",
+      "sources": [
+        "AFP",
+        "Les Français Press"
+      ],
+      "url": "https://lesfrancais.press/la-jeunesse-francaise-dans-la-rue-entre-revendications-et-tensions/",
+      "verifie": true
+    },
+    {
+      "id": "g7",
+      "date": "30/09/2026",
+      "titre": "Macron accuse des politiques de « légitimer la violence »",
+      "texte": "Le président Emmanuel Macron a vertement critiqué des responsables politiques qu'il accuse de « légitimer la violence » des mouvements lycéens, visant la gauche radicale.",
+      "source": "AFP",
+      "sources": [
+        "AFP"
+      ],
+      "url": null,
+      "verifie": false
+    },
+    {
+      "id": "g8",
+      "date": "30/09/2026",
+      "titre": "Attal : les lycéens sont « de la chair à canon » pour LFI",
+      "texte": "Le candidat Renaissance Gabriel Attal accuse La France insoumise de « se servir de la jeunesse comme de la chair à canon » pour « mettre le bordel » en « instrumentalisant » les revendications des lycéens.",
+      "source": "AFP",
+      "sources": [
+        "AFP"
+      ],
+      "url": null,
+      "verifie": false
+    },
+    {
+      "id": "g9",
+      "date": "28/09/2026",
+      "titre": "Lecornu dénonce une « surenchère irresponsable » de LFI",
+      "texte": "Le Premier ministre Sébastien Lecornu a dénoncé sur X une « surenchère irresponsable » d'élus LFI qui « appellent à étendre » le mouvement de blocus des lycées, citant « tirs de mortiers, incendies, violences aux abords des établissements ».",
+      "source": "AFP / Public Sénat",
+      "sources": [
+        "AFP",
+        "Public Sénat"
+      ],
+      "url": "https://www.publicsenat.fr/actualites/politique/mouvements-des-lyceens-je-comprends-les-raisons-de-la-colere-mais-je-denonce-toutes-les-formes-de-violence-reagit-patrick-kanner",
+      "verifie": true
+    }
+  ],
+  "faits": [
+    {
+      "id": "amuufolfi-2q06",
+      "date": "05/10/2026",
+      "titre": "Colère lycéenne, retraites, guerre en Ukraine… Ce qu'il faut retenir du dernier débat entre les candidats de la primair…",
+      "texte": "Olivier Faure, Raphaël Glucksmann, Jérôme Guedj, Ségolène Royal et Emmanuel Maurel ont débattu ce dimanche 4 octobre au soir sur BFMTV, en partenariat avec Libération. Un troisième débat avant le pre…",
+      "source": "Le Figaro / BFMTV / Libération",
+      "sources": [
+        "Le Figaro",
+        "BFMTV",
+        "Libération"
+      ],
+      "url": "https://www.bfmtv.com/politique/elections/presidentielle/colere-lyceenne-retraites-guerre-en-ukraine-ce-qu-il-faut-retenir-du-dernier-debat-entre-les-candidats-de-la-primaire-sociale-democrate-sur-bfmtv_AN-202610040470.html",
+      "verifie": true
+    },
+    {
+      "id": "amuufolfb-ia6i",
+      "date": "04/10/2026",
+      "titre": "Policier roué de coups à Belfort en marge de la mobilisation lycéenne : deux mineurs de 15 et 17 ans poursuivis pour vi…",
+      "texte": "Le procureur a requis ce dimanche le placement en détention provisoire de l’adolescent que l’agent de police avait tenté d’interpeller au bord d’un ruisseau avant son agression. Ce même mineur a dépo…",
+      "source": "20 minutes / Europe 1 / RFI / Libération / Mediapart",
+      "sources": [
+        "20 minutes",
+        "Europe 1",
+        "RFI",
+        "Libération",
+        "Mediapart"
+      ],
+      "url": "https://www.liberation.fr/societe/police-justice/policier-tabasse-a-belfort-en-marge-de-la-mobilisation-lyceenne-deux-personnes-en-garde-a-vue-20261004_DH4YX6F6AVEZ7P7MWX4I3FNLW4/",
+      "verifie": true
+    },
+    {
+      "id": "amuufolfb-e86y",
+      "date": "04/10/2026",
+      "titre": "Blocage des lycées en France : l'Iran dénonce une «violence disproportionnée» contre les manifestants",
+      "texte": "L’Iran a dénoncé dimanche une \"violence disproportionnée\" contre les lycéens mobilisés en France, évoquant des informations sur des violences policières. Une prise de position qui intervient alors qu…",
+      "source": "20 minutes / Europe 1 / Le Figaro / franceinfo",
+      "sources": [
+        "20 minutes",
+        "Europe 1",
+        "Le Figaro",
+        "franceinfo"
+      ],
+      "url": "https://www.europe1.fr/international/blocage-des-lycees-en-france-liran-denonce-une-violence-disproportionnee-contre-les-manifestants-1122170?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
+      "verifie": true
+    },
+    {
+      "id": "amuufolfc-ctr8",
+      "date": "04/10/2026",
+      "titre": "La famille du jeune blessé au visage à Saint-Ouen-l'Aumône, lors d'un rassemblement de lycéens, porte plainte pour tent…",
+      "texte": "L'adolescent souffre notamment d'une double fracture de la mâchoire. Deux enquêtes sont ouvertes pour établir les faits, l'attitude du jeune avant le tir et la responsabilité du policier.",
+      "source": "20 minutes / franceinfo",
+      "sources": [
+        "20 minutes",
+        "franceinfo"
+      ],
+      "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/la-famille-du-jeune-blesse-au-visage-a-saint-ouen-l-aumone-lors-d-un-rassemblement-de-lyceens-porte-plainte-pour-tentative-d-homicide-volontaire_8221393.html#xtor=RSS-3-%5Bgeneral%5D",
+      "verifie": true
+    },
+    {
+      "id": "amuufolfc-82ja",
+      "date": "04/10/2026",
+      "titre": "Agression au spray inflammable à Marseille : vers une mise en examen d'un lycéen pour «acte de barbarie»",
+      "texte": "Un adolescent soupçonné d'avoir actionné un spray enflammé sur le visage d'une passante à Marseille en marge des manifestations lycéennes a été déféré dimanche en vue de sa mise en examen pour \"acte …",
+      "source": "20 minutes / Europe 1 / franceinfo / Le Figaro",
+      "sources": [
+        "20 minutes",
+        "Europe 1",
+        "franceinfo",
+        "Le Figaro"
+      ],
+      "url": "https://www.europe1.fr/police-justice/agression-au-spray-inflammable-a-marseille-vers-une-mise-en-examen-dun-lyceen-pour-acte-de-barbarie-1122230?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
+      "verifie": true
+    },
+    {
+      "id": "amuufolfd-bf7o",
+      "date": "04/10/2026",
+      "titre": "Un adolescent de 16 ans interpellé, soupçonné d'avoir aspergé d'essence un professeur d'un lycée à La Ciotat",
+      "texte": "Le jeune homme a été placé en garde à vue. L'enseignant, un professeur de physique-chimie, a porté plainte.",
+      "source": "Europe 1 / franceinfo",
+      "sources": [
+        "Europe 1",
+        "franceinfo"
+      ],
+      "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/un-adolescent-de-16-ans-interpelle-soupconne-d-avoir-asperge-d-essence-un-professeur-d-un-lycee-a-la-ciotat_8222296.html#xtor=RSS-3-%5Bgeneral%5D",
+      "verifie": true
+    },
+    {
+      "id": "f5",
+      "date": "02/10/2026",
+      "titre": "Vendredi 02/10 : 1.747 interpellations, plus de 5.000 depuis lundi",
+      "texte": "Selon le ministre de l'Intérieur Laurent Nuñez, il y a eu 1.747 interpellations vendredi et plus de 5.000 depuis lundi en lien avec les blocages ; 735 établissements ont été concernés vendredi, soit 30 % de moins que jeudi.",
+      "source": "AFP / L'Internaute",
+      "sources": [
+        "AFP",
+        "L'Internaute"
+      ],
+      "url": "https://www.linternaute.com/actualite/faits-divers/11306009-blocage-des-lycees-le-mouvement-reconduit-mais-jusqu-a-quand-la-date-d-une-grande-manifestation-avancee/",
+      "verifie": true
+    },
+    {
+      "id": "f3",
+      "date": "01/10/2026",
+      "titre": "Jeudi 01/10 : les étudiants rejoignent, une trentaine de campus bloqués",
+      "texte": "Pour l'« acte deux », les étudiants ont rejoint les lycéens ; une trentaine de campus universitaires étaient bloqués, dont Rennes 2 où le blocus a été voté.",
+      "source": "AFP / franceinfo",
+      "sources": [
+        "AFP",
+        "franceinfo"
+      ],
+      "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/reportage-si-c-est-le-seul-moyen-de-se-faire-ecouter-a-saint-denis-les-lyceens-reconduisent-le-mouvement-et-reaffirment-leurs-revendications_8222419.html",
+      "verifie": true
+    },
+    {
+      "id": "f2",
+      "date": "29/09/2026",
+      "titre": "Mardi 29/09 : 338 établissements concernés, 40 interpellations",
+      "texte": "Selon le ministère de l'Éducation, 338 établissements ont été concernés mardi 29 septembre (45 bloqués), avec 40 interpellations et 10 blessés parmi les élèves et les personnels.",
+      "source": "AFP / Wikipédia",
+      "sources": [
+        "AFP",
+        "Wikipédia"
+      ],
+      "url": "https://fr.wikipedia.org/wiki/Mouvement_lyc%C3%A9en_et_blocus_de_2026_en_France",
+      "verifie": true
+    },
+    {
+      "id": "f1",
+      "date": "17/09/2026",
+      "titre": "Point de départ : lycée Saint-Exupéry de Créteil",
+      "texte": "Le mouvement démarre vers le 17-18 septembre au lycée Saint-Exupéry de Créteil (Val-de-Marne), en soutien aux professeurs en grève contre le manque de personnel et de moyens, avant de s'étendre en Île-de-France puis partout en France (les sources divergent d'un jour sur la date exacte).",
+      "source": "AFP / Wikipédia",
+      "sources": [
+        "AFP",
+        "Wikipédia"
+      ],
+      "url": "https://fr.wikipedia.org/wiki/Mouvement_lyc%C3%A9en_et_blocus_de_2026_en_France",
+      "verifie": true
+    }
+  ],
+  "prochaine_echeance": "Mardi 6 octobre : journée de mobilisation lycéenne et étudiante, soutenue par la CGT, Solidaires et une intersyndicale de l'Éducation nationale ; le Premier ministre demande pour lundi la reprise des cours « partout » où la sécurité le permet."
+}
