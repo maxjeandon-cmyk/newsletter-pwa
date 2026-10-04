@@ -64,7 +64,18 @@ async function init() {
   $('#btn-refresh').onclick = actualiser;
   /* 👤 mène au profil/compte dans l'onglet Réglages */
   $('#btn-profil').onclick = () => { location.hash = '#reglages'; };
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+  /* v75 : enregistrement + actualisation du SW. Sans update() explicite, un SW
+   * « waiting » (ancien onglet ouvert, iOS) n'active JAMAIS — et
+   * navigator.serviceWorker.ready attend indéfiniment : c'est ce qui bloquait
+   * l'abonnement push (figé sur « service worker prêt ? »). */
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+      .then(reg => { reg.update().catch(() => {}); if (reg.waiting) reg.waiting.postMessage({ type: 'SKIP_WAITING' }); })
+      .catch(() => {});
+    navigator.serviceWorker.addEventListener('message', e => {
+      if (e.data && e.data.type === 'SW_ACTIF') console.info('[sw] actif :', e.data.version);
+    });
+  }
   const [chapters, jm, fluxRss, climat, recos] = await Promise.all([
     chargerJSON('data/chapters.json', []),
     chargerJSON('data/medias.json', {}),
