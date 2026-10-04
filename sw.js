@@ -2,7 +2,7 @@
  * Stratégies : data/ et editions/ network-first (toujours frais en ligne, repli cache hors ligne) ;
  * le reste (coquille, js/, styles) cache-first pour un démarrage instantané.
  * À chaque déploiement de code : incrémenter CACHE (v22 → v23…) pour invalider les caches clients. */
-const CACHE = 'newsletter-v81';
+const CACHE = 'newsletter-v82';
 const ASSETS = [
   './',
   './index.html',
@@ -87,7 +87,7 @@ self.addEventListener('fetch', e => {
 /* v28 : notifications push — affichage réceptionné depuis le serveur */
 self.addEventListener('push', e => {
   const d = e.data ? e.data.json() : {};
-  e.waitUntil(self.registration.showNotification(d.titre || 'DiYeaH24', {
+  e.waitUntil(self.registration.showNotification(d.titre || 'DiY/H24', {
     body: d.corps || '',
     icon: './icons/icon.svg',
     badge: './icons/icon.svg',

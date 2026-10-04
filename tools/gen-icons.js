@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-/* tools/gen-icons.js — Genere les icones PNG RGBA de la PWA DiYeaH24 (v81).
- * Design "chaine d'info en continu" : grand 24 blanc, bandeau de news bleu,
- * point rouge "en direct" — aux couleurs du site (fond #0e0e12).
- * Le meme motif vit dans icons/icon.svg (source vectorielle).
+/* tools/gen-icons.js — Genere les icones PNG RGBA de la PWA DiY/H24 (v82).
+ * Design "media journalistique independant" : la une d'un journal — page
+ * blanche, bandeau de titre bleu, colonnes d'articles, bloc photo — aux
+ * couleurs du site (fond #0e0e12). Le meme motif vit dans icons/icon.svg.
  * PNG 100% Node (zlib inclus), aucune dependance.
  * Sorties :
  *   icons/icon-192.png         (favicon PNG / manifest, coins arrondis + transparence)
@@ -18,33 +18,29 @@ const path = require('path');
 
 /* Couleurs de la marque */
 const FOND = [0x0e, 0x0e, 0x12];
-const BLANC = [0xe8, 0xe8, 0xee];
+const PAPIER = [0xe8, 0xe8, 0xee];
 const BLEU = [0x7f, 0xb4, 0xff];
-const ROUGE = [0xff, 0x5d, 0x5d];
+const ENCRE = [0x0e, 0x0e, 0x12];
+const PHOTO_C = [0x6a, 0x6a, 0x76];
 
 /* Geometrie, tout en espace 512 — identique a icons/icon.svg */
 const COIN = 96; /* rayon des coins du fond (variantes "any") */
-const TRAITS = [
-  /* "2" */
-  [[120, 187], [238, 187], [238, 258], [120, 357], [238, 357]],
-  /* "4" : diagonale, tige, barre */
-  [[274, 286], [345, 187]],
-  [[345, 187], [345, 357]],
-  [[274, 286], [383, 286]]
+const JOURNAL = { x: 112, y: 100, w: 288, h: 312, r: 20 }; /* la une : page blanche */
+const TITRE = { x: 144, y: 128, w: 224, h: 48, r: 10 };    /* bandeau de titre bleu */
+const EPAISSEUR = 14;                                      /* traits des colonnes */
+const LIGNES = [
+  /* colonne de gauche */
+  [144, 216, 248, 216], [144, 252, 248, 252], [144, 288, 248, 288], [144, 324, 220, 324],
+  /* colonne de droite */
+  [264, 216, 368, 216], [264, 252, 368, 252], [264, 288, 368, 288], [264, 324, 320, 324]
 ];
-const EPAISSEUR = 38;
-const BANDEAU = { x: 140, y: 424, w: 232, h: 28, r: 14 }; /* bandeau de news */
-const LIVE = { x: 416, y: 100, r: 26 };                    /* point "en direct" */
+const PHOTO = { x: 144, y: 352, w: 224, h: 32, r: 6 };     /* bloc photo */
 
 /* ————— Primitives (espace 512) ————— */
 function dansRectArrondi(px, py, x, y, w, h, r) {
   if (px < x || px > x + w || py < y || py > y + h) return false;
   const cx = Math.min(Math.max(px, x + r), x + w - r);
   const cy = Math.min(Math.max(py, y + r), y + h - r);
-  const dx = px - cx, dy = py - cy;
-  return dx * dx + dy * dy <= r * r;
-}
-function dansCercle(px, py, cx, cy, r) {
   const dx = px - cx, dy = py - cy;
   return dx * dx + dy * dy <= r * r;
 }
@@ -66,7 +62,6 @@ function rendre(N, plein) {
   const k = plein ? 0.75 : 1;         /* echelle du contenu en espace 512 */
   const off = plein ? 64 : 0;         /* recentrage (256 - 0.75*256)      */
   const tr = p => [off + p[0] * k, off + p[1] * k];
-  const demi = EPAISSEUR * k / 2;
 
   /* pred est evalue en espace 512 ; bbox [x0, y0, x1, y1] en espace 512 */
   function peindre(pred, bbox, couleur) {
@@ -85,6 +80,11 @@ function rendre(N, plein) {
       }
     }
   }
+  function rectArrondi(forme, couleur) {
+    const c = tr([forme.x, forme.y]);
+    const w = forme.w * k, h = forme.h * k, r = forme.r * k;
+    peindre((px, py) => dansRectArrondi(px, py, c[0], c[1], w, h, r), [c[0], c[1], c[0] + w, c[1] + h], couleur);
+  }
 
   /* fond */
   if (plein) {
@@ -92,27 +92,21 @@ function rendre(N, plein) {
   } else {
     peindre((px, py) => dansRectArrondi(px, py, 0, 0, 512, 512, COIN), [0, 0, 512, 512], FOND);
   }
-  /* "24" */
-  for (const ligne of TRAITS) {
-    const a = tr(ligne[0]), b = tr(ligne[ligne.length - 1]);
+  /* la une du journal */
+  rectArrondi(JOURNAL, PAPIER);
+  rectArrondi(TITRE, BLEU);
+  /* colonnes d'articles */
+  const demi = EPAISSEUR * k / 2;
+  for (const l of LIGNES) {
+    const a = tr([l[0], l[1]]), b = tr([l[2], l[3]]);
     const bbox = [
       Math.min(a[0], b[0]) - demi, Math.min(a[1], b[1]) - demi,
       Math.max(a[0], b[0]) + demi, Math.max(a[1], b[1]) + demi
     ];
-    peindre((px, py) => distSeg(px, py, a[0], a[1], b[0], b[1]) <= demi, bbox, BLANC);
+    peindre((px, py) => distSeg(px, py, a[0], a[1], b[0], b[1]) <= demi, bbox, ENCRE);
   }
-  /* bandeau de news */
-  {
-    const c = tr([BANDEAU.x, BANDEAU.y]);
-    const w = BANDEAU.w * k, h = BANDEAU.h * k, r = BANDEAU.r * k;
-    peindre((px, py) => dansRectArrondi(px, py, c[0], c[1], w, h, r), [c[0], c[1], c[0] + w, c[1] + h], BLEU);
-  }
-  /* point "en direct" */
-  {
-    const c = tr([LIVE.x, LIVE.y]);
-    const r = LIVE.r * k;
-    peindre((px, py) => dansCercle(px, py, c[0], c[1], r), [c[0] - r, c[1] - r, c[0] + r, c[1] + r], ROUGE);
-  }
+  /* bloc photo */
+  rectArrondi(PHOTO, PHOTO_C);
 
   /* moyennage S x S (premultiplie sur l'alpha pour des bords propres) */
   const img = Buffer.alloc(N * N * 4);
