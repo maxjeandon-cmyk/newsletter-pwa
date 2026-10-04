@@ -1,10 +1,16 @@
 {
   "date": "04/10/2026",
-  "heure": "05:17",
+  "heure": "15:57",
   "feedback": {
-    "messages": 6,
+    "messages": 12,
+    "nouveaux": 6,
     "recupere": true,
     "publie": true
+  },
+  "relevesOng": {
+    "rafraichis": 0,
+    "echecs": 0,
+    "publie": false
   },
   "verifs": [
     {
@@ -15,12 +21,12 @@
     {
       "nom": "check-site.js",
       "ok": true,
-      "detail": "=== check-site ===\nℹ️  latest.json : 7 édition(s), plus récente 2026-10-03\nℹ️  édition 2026-10-03 : JSON OK, HTML 103309 octets, structure OK\nℹ️  site public joignable (1330 octets)\n\nSite et édition conformes. 🌱"
+      "detail": "=== check-site ===\nℹ️  latest.json : 7 édition(s), plus récente 2026-10-03\nℹ️  édition 2026-10-03 : JSON OK, HTML 103309 octets, structure OK\nℹ️  site public joignable (1383 octets)\n\nSite et édition conformes. 🌱"
     },
     {
       "nom": "sonde notifications",
       "ok": true,
-      "detail": "3 abonnement(s) push, 0 utilisateur(s) avec toggles actifs"
+      "detail": "4 abonnement(s) push, 0 utilisateur(s) avec toggles actifs"
     }
   ],
   "problemes": [],
