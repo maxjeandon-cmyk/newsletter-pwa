@@ -1,10 +1,12 @@
 #!/usr/bin/env node
-/* tools/maintenance.js — Agent de maintenance (v32).
+/* tools/maintenance.js — Agent de maintenance (v33).
  * Toutes les 6 h (3 h, 9 h, 15 h, 21 h heure de Paris) :
- *   1. Récupère les messages de feedback de ces dernières 48 h dans Supabase
- *      (clé service_role) et construit un résumé STRICTEMENT factuel :
- *      thèmes par mots fréquents (hors mots vides), comptages exacts et
- *      citations verbatim tronquées — rien n'est inventé ni reformulé.
+ *   1. Fusionne les NOUVEAUX messages de feedback de Supabase (clé
+ *      service_role) dans le résumé global persistant via tools/feedback.js :
+ *      seuls les messages postérieurs au watermark sont traités (thèmes,
+ *      intentions, demandes) — rien n'est inventé ni reformulé, chaque
+ *      demande tronquée est verbatim. Les demandes réalisées par un commit
+ *      récent basculent d'elles-mêmes en « mises en place ».
  *   2. Exécute la maintenance du site : validation des éditions récentes
  *      (validate-latest.js) et contrôle du site public (check-site.js).
  *   3. Publie data/feedback.json + un rapport data/maintenance.json sur
@@ -112,12 +114,16 @@ async function main() {
     process.exit(1);
   }
 
-  /* 1. Récupération et résumé des messages (tools/feedback.js, 48 dernières heures) */
-  let resume = { total: 0, points: [], condenses: [] };
+  /* 1. Résumé dynamique des messages (tools/feedback.js) : le script lit le
+   * résumé global persistant, fusionne les NOUVEAUX messages (thèmes,
+   * intentions, demandes) et écrit data/feedback.json lui-même ; les
+   * demandes réalisées par un commit passent d'elles-mêmes en « mises en
+   * place » et quittent le résumé. */
+  let resume = { total: 0, nouveaux: 0, themes: 0, en_attente: 0, mises_en_place: 0, deplacees: [] };
   let feedbackOk = true;
   try {
     const sortie = execFileSync(process.execPath, ['tools/feedback.js'], {
-      encoding: 'utf8', env: process.env
+      encoding: 'utf8', env: process.env, timeout: 120000
     });
     resume = JSON.parse(sortie);
   } catch (e) {
@@ -127,17 +133,14 @@ async function main() {
   const maintenant = new Date();
   const dateFr = maintenant.toLocaleDateString('fr-FR');
   const heureFr = maintenant.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
-  const points = [];
-  if (!feedbackOk) points.push('Récupération des messages momentanément impossible — résumé non actualisé.');
-  if (resume.total) points.push('Points les plus demandés : ' + resume.points.join(', '));
-  for (const c of resume.condenses) points.push('Message condensé : « ' + c + ' »');
-  if (feedbackOk && !resume.total) points.push('Aucun message reçu sur les dernières 48 h.');
-
-  const contenuFeedback = JSON.stringify({
-    date: dateFr,
-    total: resume.total,
-    points
-  }, null, 2) + '\n';
+  if (feedbackOk) {
+    console.log('Feedback : ' + resume.nouveaux + ' nouveau(x) message(s) fusionné(s) — ' +
+      resume.total + ' au total, ' + resume.themes + ' thème(s), ' +
+      resume.en_attente + ' demande(s) en attente, ' + resume.mises_en_place + ' mise(s) en place.');
+    for (const d of (resume.deplacees || [])) {
+      console.log('Demande réalisée et déplacée : « ' + d.demande + ' » via ' + d.via);
+    }
+  }
 
   /* 2. Maintenance : validation des éditions + contrôle du site */
   const etat = await maintenance(maintenant.toISOString(), feedbackOk);
@@ -154,16 +157,22 @@ async function main() {
     ong.erreur = String(e.stdout || e.message || e).slice(0, 150);
   }
 
-  /* 3. Publication */
+  /* 3. Publication du résumé : tools/feedback.js a lui-même réécrit
+   * data/feedback.json (fusion des nouveaux messages dans le résumé
+   * global persistant) — on publie le fichier tel quel (data/ est
+   * network-first : aucun bump CACHE requis). */
   let erreursFeedback = false;
-  try {
-    await publierFichier(FICHIER, contenuFeedback,
-      'Résumé feedback du ' + dateFr + ' (' + resume.total + ' message(s))');
-    console.log('Résumé publié — ' + resume.total + ' message(s), ' + resume.points.length + ' point(s) demandé(s).');
-  } catch (e) {
-    console.error('Publication feedback échouée : ' + e.message);
-    erreursFeedback = true;
-    etat.problemes.push('publication feedback');
+  if (feedbackOk) {
+    try {
+      await publierFichier(FICHIER, fs.readFileSync(FICHIER, 'utf8'),
+        'Resume feedback du ' + dateFr + ' (' + resume.nouveaux + ' nouveau(x), ' + resume.total + ' au total)');
+      console.log('Résumé publié — ' + resume.nouveaux + ' nouveau(x), ' + resume.total +
+        ' au total, ' + resume.en_attente + ' demande(s) en attente, ' + resume.mises_en_place + ' mise(s) en place.');
+    } catch (e) {
+      console.error('Publication feedback échouée : ' + e.message);
+      erreursFeedback = true;
+      etat.problemes.push('publication feedback');
+    }
   }
 
   /* 3 bis. Publication des relevés ONG (data/ network-first, pas de bump CACHE). */
@@ -191,7 +200,7 @@ async function main() {
   const contenuRapport = JSON.stringify({
     date: dateFr,
     heure: heureFr,
-    feedback: { messages: resume.total, recupere: feedbackOk, publie: !erreursFeedback },
+    feedback: { messages: resume.total, nouveaux: resume.nouveaux, recupere: feedbackOk, publie: !erreursFeedback },
     relevesOng: { rafraichis: ong.rafraichis, echecs: ong.echecs, publie: ong.modifie && !ong.erreur },
     verifs: etat.verifs,
     problemes: etat.problemes,
