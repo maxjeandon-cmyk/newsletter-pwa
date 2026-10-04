@@ -1,4 +1,4 @@
-/* views/newsletters.js — 🗞️ Newsletters (v84) : bulletin climatique Copernicus
+/* views/newsletters.js — 🗞️ Newsletters (v85) : Bulletin Copernicus
  * et lettres d’information des grandes ONG. Chaque source vit dans une carte
  * repliable (<details> natifs, même accordéons que Réglages) pour économiser
  * l’espace ; l’abonnement se fait sur le site de chaque organisation.
@@ -20,8 +20,8 @@ async function chargerNewsletters() {
 function carteCopernicus() {
   const c = state.climat;
   if (!c || !c.titre) return '';
-  return '<details class="carte-regl"><summary>🌡️ ' + esc(c.titre) + '</summary>' +
-    '<p class="meta-count">' + esc(c.source || '') + (c.periode ? ' · ' + esc(c.periode) : '') + '</p>' +
+  return '<details class="carte-regl"><summary>🌡️ Bulletin Copernicus</summary>' +
+    '<p class="meta-count">' + esc(c.titre) + (c.source ? ' · ' + esc(c.source) : '') + (c.periode ? ' · ' + esc(c.periode) : '') + '</p>' +
     (c.resume ? '<p>' + esc(c.resume) + '</p>' : '') +
     (c.points?.length
       ? '<ul>' + c.points.map(p => '<li>' + esc(p) + '</li>').join('') + '</ul>'
@@ -41,9 +41,16 @@ function carteOng(o) {
     '</summary>' +
     (o.frequence ? '<p class="meta-count">Fréquence : ' + esc(o.frequence) + '</p>' : '') +
     (o.description ? '<p>' + esc(o.description) + '</p>' : '') +
+    (o.derniere
+      ? '<p class="meta-count">🗞️ Dernière édition en ligne — relevé du ' + esc(o.derniere.releve || '?') + '</p>' +
+        (o.derniere.points?.length
+          ? '<ul>' + o.derniere.points.map(p => '<li>' + esc(p) + '</li>').join('') + '</ul>'
+          : '')
+      : '') +
     '<div class="form-actions">' +
     (o.lien ? '<a class="filter-btn active" href="' + esc(o.lien) + '" target="_blank" rel="noopener">✉️ ' + esc(o.libelle || 'S’abonner') + '</a>' : '') +
     (o.lien_autre ? '<a class="filter-btn" href="' + esc(o.lien_autre) + '" target="_blank" rel="noopener">' + esc(o.libelle_autre || 'En savoir plus') + '</a>' : '') +
+    (o.lien_actu ? '<a class="filter-btn" href="' + esc(o.lien_actu) + '" target="_blank" rel="noopener">📰 Lire l’actualité du site</a>' : '') +
     '</div>' +
     '</details>';
 }
@@ -55,7 +62,9 @@ export function vueNewsletters() {
   const ong = (d && Array.isArray(d.organisations)) ? d.organisations : [];
   view.innerHTML =
     '<div class="summary-card"><h2>🗞️ Newsletters</h2>' +
-    '<p class="meta-count">' + esc((d && d.intro) || 'Les lettres d’information des grandes ONG et le bulletin climatique Copernicus. Chaque carte se déplie à la demande.') + '</p></div>' +
+    '<p class="meta-count">' + esc((d && d.intro) || 'Les lettres d’information des grandes ONG et le bulletin climatique Copernicus. Chaque carte se déplie à la demande.') + '</p>' +
+    ((d && d.note_releve) ? '<p class="hint">📌 ' + esc(d.note_releve) + '</p>' : '') +
+    '</div>' +
     carteCopernicus() +
     (d && d.erreur
       ? '<div class="empty">Lettres des ONG momentanément indisponibles — elles reviennent dès que data/newsletters.json répondra.</div>'
