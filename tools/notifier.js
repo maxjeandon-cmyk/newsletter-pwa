@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* notifier.js — envoi des notifications push (v28).
+/* notifier.js — envoi des notifications push (v88).
  * Tourne dans GitHub Actions (filet horaire + push sur editions/latest.json,
  * data/climat.json, data/notif-test.json) : lit les préférences de
  * notification (toggles édition / Copernicus / médias) et les abonnements
@@ -64,6 +64,21 @@ async function main() {
     .then(r => r.json()).catch(() => []);
   const parUtilisateur = new Map((prefs || []).map(p => [p.user_id, p.prefs || {}]));
 
+  /* v88 : l'app enregistre les toggles sous prefs.notifications (la clé
+   * locale nl.notifications est remontée telle quelle par envoyerPrefs) —
+   * avant ce correctif, le notifier cherchait prefs.edition au niveau du
+   * haut : aucun toggle n'était jamais vu, donc AUCUNE notification envoyée
+   * malgré des abonnements enregistrés (runs verts silencieux). On lit les
+   * deux formes : imbriquée (réelle) + niveau du haut (historique). */
+  function togglesActifs(p) {
+    const n = (p && typeof p.notifications === 'object' && p.notifications) || {};
+    return {
+      edition: !!(p.edition || n.edition),
+      copernicus: !!(p.copernicus || n.copernicus),
+      feedback: !!(p.feedback || n.feedback)
+    };
+  }
+
   /* 2. MODE TEST : notification test à chaque abonnement, hors préférences et hors dédup */
   const test = modeTest();
   if (test) {
@@ -112,12 +127,13 @@ async function main() {
   for (const a of abonnements) {
     const p = parUtilisateur.get(a.user_id) || {};
     const envoyes = p.notif_envoyees || {};
+    const t = togglesActifs(p);
     const msgs = [];
-    if (p.edition && dateEdition && envoyes.edition !== dateEdition)
+    if (t.edition && dateEdition && envoyes.edition !== dateEdition)
       msgs.push({ titre: '📰 Édition du ' + dateEdition, corps: 'La nouvelle édition est prête.', url: './#edition' });
-    if (p.copernicus && majClimat && envoyes.copernicus !== majClimat)
+    if (t.copernicus && majClimat && envoyes.copernicus !== majClimat)
       msgs.push({ titre: '🌡️ Bulletin Copernicus', corps: 'Nouveau bulletin climat disponible.', url: './#climat' });
-    if (p.feedback && majFeedback && envoyes.feedback !== majFeedback)
+    if (t.feedback && majFeedback && envoyes.feedback !== majFeedback)
       msgs.push({ titre: '💬 Résumé de tes retours', corps: (feedback.total || 0) + ' message(s) de feedback pris en compte.', url: './#feedback' });
     for (const m of (p.mediasNotifies || [])) msgs.push(m); /* réservé : alertes média futures */
     if (!msgs.length) continue;

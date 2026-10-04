@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* tools/maintenance.js — Agent de maintenance (v34).
+/* tools/maintenance.js — Agent de maintenance (v35).
  * Toutes les 6 h (3 h, 9 h, 15 h, 21 h heure de Paris) :
  *   1. Fusionne les NOUVEAUX messages de feedback de Supabase (clé
  *      service_role) dans le résumé global persistant via tools/feedback.js :
@@ -62,7 +62,16 @@ async function sondeNotifications() {
     if (!rA.ok || !rP.ok) return { nom: 'sonde notifications', ok: false, detail: 'Supabase injoignable (' + rA.status + '/' + rP.status + ')' };
     const abonnements = await rA.json();
     const prefs = await rP.json();
-    const togglesActifs = (prefs || []).filter(p => p.prefs && (p.prefs.edition || p.prefs.copernicus || p.prefs.feedback || Object.values(p.prefs.medias || {}).some(Boolean)));
+    /* v88 : les toggles de notification vivent sous prefs.notifications (la
+     * clé locale nl.notifications est remontée telle quelle par envoyerPrefs)
+     * — avant ce correctif, la sonde cherchait prefs.edition au niveau du haut
+     * et annonçait toujours « 0 toggle actif » alors que tout était en ordre. */
+    const togglesActifs = (prefs || []).filter(p => {
+      const pr = (p && p.prefs) || {};
+      const n = (typeof pr.notifications === 'object' && pr.notifications) || {};
+      return !!(pr.edition || pr.copernicus || pr.feedback || Object.values(pr.medias || {}).some(Boolean)
+        || n.edition || n.copernicus || n.feedback || Object.values(n.medias || {}).some(Boolean));
+    });
     const n = abonnements.length;
     const detail = n + ' abonnement(s) push, ' + togglesActifs.length + ' utilisateur(s) avec toggles actifs';
     if (n > 0) return { nom: 'sonde notifications', ok: true, detail };
