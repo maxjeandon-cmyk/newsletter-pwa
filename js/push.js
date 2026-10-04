@@ -58,10 +58,15 @@ async function clePublique() {
 /* S'abonner au push (crée ou réutilise l'abonnement navigateur) puis l'enregistrer dans Supabase */
 export async function souscrire() {
   if (!pushDisponible()) { noterEssai({ ok: false, etape: 'support', message: "push indisponible dans ce contexte (Safari iOS ? installe l'app sur l'écran d'accueil)" }); return { erreur: 'non-supporte' }; }
+  noterEssai({ ok: false, etape: 'permission', message: 'demande de permission en cours…' });
   let perm; try { perm = await Notification.requestPermission(); } catch (e) { noterEssai({ ok: false, etape: 'permission', message: String(e && e.message || e).slice(0, 140) }); return { erreur: 'permission' }; }
   if (perm !== 'granted') { noterEssai({ ok: false, etape: 'permission', message: 'permission refusée ou non donnée' }); return { erreur: 'permission' }; }
   const cle = await clePublique();
   if (!cle) { noterEssai({ ok: false, etape: 'configuration', message: 'clé publique push introuvable (data/compte.json)' }); return { erreur: 'configuration' }; }
+  /* v72 : chaque étape est marquée AVANT d'être attendue — si la ligne
+   * reste sur une étape « en cours… », on sait exactement quel await ne
+   * revient jamais (permission ou abonnement navigateur). */
+  noterEssai({ ok: false, etape: 'abonnement', message: 'abonnement navigateur en cours…' });
   try {
     const reg = await navigator.serviceWorker.ready;
     let sub = await reg.pushManager.getSubscription();
