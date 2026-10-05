@@ -1,10 +1,10 @@
 {
   "date": "05/10/2026",
-  "heure": "09:31",
+  "heure": "15:30",
   "feedback": {
-    "messages": 0,
+    "messages": 12,
     "nouveaux": 0,
-    "recupere": false,
+    "recupere": true,
     "publie": true
   },
   "relevesOng": {
@@ -13,9 +13,9 @@
     "publie": false
   },
   "lyceens": {
-    "nouvelles": 6,
-    "fusionnees": 17,
-    "moissonnes": 95,
+    "nouvelles": 7,
+    "fusionnees": 15,
+    "moissonnes": 93,
     "total": 34,
     "publie": true
   },
@@ -38,11 +38,9 @@
     {
       "nom": "lyceens.js",
       "ok": true,
-      "detail": "6 nouvelle(s) info, 17 fusionnée(s) sur 95 moissonnée(s) — 34 au total"
+      "detail": "7 nouvelle(s) info, 15 fusionnée(s) sur 93 moissonnée(s) — 34 au total"
     }
   ],
-  "problemes": [
-    "récupération feedback"
-  ],
-  "intervention": "Anomalies détectées — aucune correction automatique appliquée (éditions/ figé) : correction manuelle requise."
+  "problemes": [],
+  "intervention": "Aucune intervention nécessaire : éditions et site publics conformes."
 }
