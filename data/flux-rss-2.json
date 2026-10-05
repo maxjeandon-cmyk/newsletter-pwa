@@ -481,6 +481,26 @@
       ]
     },
     {
+      "id": "npr-space",
+      "nom": "NPR — Space",
+      "emoji": "🪐",
+      "categorie": "Spatial 🚀",
+      "flux": [
+        "https://feeds.npr.org/1026/rss.xml"
+      ],
+      "ligne": "l'actualité spatiale et astronomique par NPR"
+    },
+    {
+      "id": "collectspace",
+      "nom": "CollectSpace",
+      "emoji": "🛸",
+      "categorie": "Spatial 🚀",
+      "flux": [
+        "https://feeds.feedburner.com/CollectspaceSpaceHistoryNews"
+      ],
+      "ligne": "l'histoire de l'espace et les collections"
+    },
+    {
       "id": "reporterre",
       "nom": "Reporterre",
       "emoji": "🌳",

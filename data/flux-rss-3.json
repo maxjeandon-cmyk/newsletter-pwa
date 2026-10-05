@@ -869,6 +869,16 @@
       "flux": [
         "https://longreads.com/feed/"
       ]
+    },
+    {
+      "id": "wsj-world",
+      "nom": "WSJ — World",
+      "emoji": "🌏",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+      ],
+      "ligne": "l'international par le Wall Street Journal"
     }
   ]
 }
