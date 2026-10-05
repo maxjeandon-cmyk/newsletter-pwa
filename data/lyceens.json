@@ -1,5 +1,5 @@
 {
-  "maj": "05/10/2026 05:29",
+  "maj": "05/10/2026 11:32",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant de septembre-octobre 2026 : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Trois lectures séparées : ce que disent les lycéens, ce que dit le gouvernement, et les seules informations corroborées par plusieurs médias indépendants.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les « versions » sont celles rapportées par la presse ; les déclarations sont attribuées à leurs auteurs, jamais reformulées. Aucun flux RSS officiel du gouvernement n'étant accessible, la version du gouvernement est relevée via les dépêches et articles qui rapportent ses déclarations.",
@@ -11,6 +11,18 @@
     "Amnesty France (04/10) appelle les autorités au dialogue et à la désescalade, dénonçant un usage disproportionné de la force face à des mineurs ; la FCPE a demandé au ministre d'écouter les « demandes légitimes » des lycéens."
   ],
   "version_lyceens": [
+    {
+      "id": "amuv1wckm-96uy",
+      "date": "05/10/2026",
+      "titre": "Craignez-vous que le mouvement de contestation s'étende au-delà des lycéens et des étudiants ?",
+      "texte": "",
+      "source": "Le Figaro",
+      "sources": [
+        "Le Figaro"
+      ],
+      "url": "https://www.lefigaro.fr/actualite-france/craignez-vous-que-le-mouvement-de-contestation-s-etende-au-dela-des-lyceens-et-des-etudiants-20261005",
+      "verifie": false
+    },
     {
       "id": "l6",
       "date": "04/10/2026",
@@ -85,6 +97,18 @@
       "verifie": false
     },
     {
+      "id": "amuv1wck5-iwq8",
+      "date": "03/10/2026",
+      "titre": "Comment, en 1990, les lycéens et lycéennes dans la rue ont obtenu 4,5 milliards de francs de l’État",
+      "texte": "Les récents blocus de lycées rappellent d’autres mouvements passés. En novembre 1990, des lycéens et lycéennes manifestent à Paris contre le manque de moyens et l’insécurité. Une mobilisation gagnant…",
+      "source": "20 minutes",
+      "sources": [
+        "20 minutes"
+      ],
+      "url": "https://www.20minutes.fr/societe/4250775-20261003-comment-1990-lyceens-lyceennes-rue-obtenu-4-5-milliards-francs-etat?at_medium=display&at_campaign=149",
+      "verifie": false
+    },
+    {
       "id": "l2",
       "date": "02/10/2026",
       "titre": "Une mobilisation « partie du bas », accélérée par les réseaux sociaux",
@@ -145,59 +169,57 @@
       "date": "05/10/2026",
       "titre": "Blocus des lycées : pour le gouvernement et les forces de l’ordre, une semaine de tous les dangers",
       "texte": "Alors que des syndicats lycéens et étudiants appellent à une manifestation commune ce mardi, les blocus devant les établissements devraient se poursuivre ce lundi. L’exécutif se prépare à de nouveaux…",
-      "source": "Europe 1 / Le Figaro / BFMTV",
+      "source": "Europe 1 / Le Figaro / BFMTV / 20 minutes / franceinfo / L'Humanité",
       "sources": [
         "Europe 1",
         "Le Figaro",
-        "BFMTV"
+        "BFMTV",
+        "20 minutes",
+        "franceinfo",
+        "L'Humanité"
       ],
       "url": "https://www.lefigaro.fr/actualite-france/blocus-des-lycees-pour-le-gouvernement-et-les-forces-de-l-ordre-une-semaine-de-tous-les-dangers-20261004",
       "verifie": true
+    },
+    {
+      "id": "amuv1wck7-iarx",
+      "date": "05/10/2026",
+      "titre": "Blocus des lycées : «Nous allons poursuivre et rechercher les casseurs», promet le président de la région Auvergne-Rhôn…",
+      "texte": "Face aux dégradations qui ont touché de nombreux lycées, le président de la région Auvergne-Rhône-Alpes, Fabrice Pannekoucke, affirme vouloir engager des poursuites contre les auteurs des faits. Invi…",
+      "source": "Europe 1",
+      "sources": [
+        "Europe 1"
+      ],
+      "url": "https://www.europe1.fr/societe/blocus-des-lycees-nous-allons-poursuivre-et-rechercher-les-casseurs-promet-le-president-de-la-region-auvergne-rhone-alpes-1124189?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
+      "verifie": false
+    },
+    {
+      "id": "amuv1wck7-67cv",
+      "date": "05/10/2026",
+      "titre": "Blocus des lycées : comment l'exécutif veut reprendre le contrôle du mouvement",
+      "texte": "Après une semaine de manifestations et d'affrontements entre casseurs et forces de l'ordre, le gouvernement souhaite reprendre le contrôle sur le mouvement des lycéens. Alors qu'une nouvelle semaine …",
+      "source": "Europe 1",
+      "sources": [
+        "Europe 1"
+      ],
+      "url": "https://www.europe1.fr/societe/blocus-des-lycees-comment-lexecutif-veut-reprendre-le-controle-du-mouvement-1123835?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
+      "verifie": false
     },
     {
       "id": "g4",
       "date": "04/10/2026",
       "titre": "Lecornu : reprise des cours lundi « partout » où la sécurité le permet",
       "texte": "Le Premier ministre a demandé que les cours reprennent dès lundi « partout » où la sécurité le permet, et fixé un calendrier pour répondre à une partie des revendications, à commencer par les remplacements des professeurs.",
-      "source": "20 minutes / AFP",
+      "source": "20 minutes / AFP / Europe 1 / BFMTV / France 24 / RFI",
       "sources": [
         "20 minutes",
-        "AFP"
+        "AFP",
+        "Europe 1",
+        "BFMTV",
+        "France 24",
+        "RFI"
       ],
       "url": "https://www.20minutes.fr/societe/4251181-20261004-blocus-lycees-lecornu-demande-cours-reprennent-lundi-partout-securite-permet",
-      "verifie": true
-    },
-    {
-      "id": "amuufolfb-guqv",
-      "date": "04/10/2026",
-      "titre": "Blocage des lycées : cours suspendus dans 400 à 500 établissements lundi, 24 ont été «saccagés ou incendiés», selon Edo…",
-      "texte": "Le ministre a recensé ce dimanche 4 octobre les établissements où les conditions de sécurité ne seraient pas réunies pour une réouverture lundi, veille de la mobilisation de l’intersyndicale de l’édu…",
-      "source": "20 minutes / Europe 1 / Le Figaro / France 24 / La Croix / Libération",
-      "sources": [
-        "20 minutes",
-        "Europe 1",
-        "Le Figaro",
-        "France 24",
-        "La Croix",
-        "Libération"
-      ],
-      "url": "https://www.liberation.fr/societe/education/blocage-des-lycees-cours-suspendus-dans-400-a-500-etablissements-lundi-24-ont-ete-saccages-ou-incendies-selon-edouard-geffray-20261004_O2BAPA2UTNFEXD76FJUZUSBUFU/",
-      "verifie": true
-    },
-    {
-      "id": "amuufolfc-ghfr",
-      "date": "04/10/2026",
-      "titre": "Blocus des lycées : la feuille de route de Sébastien Lecornu à ses ministres pour éteindre la colère",
-      "texte": "Remplacement des professeurs, transition climatique, représentation des lycéens… Le premier ministre attend des propositions avant la fin du mois d’octobre.",
-      "source": "Europe 1 / Public Sénat / Le Figaro / Ouest-France / Libération",
-      "sources": [
-        "Europe 1",
-        "Public Sénat",
-        "Le Figaro",
-        "Ouest-France",
-        "Libération"
-      ],
-      "url": "https://www.lefigaro.fr/politique/blocus-des-lycees-la-feuille-de-route-de-sebastien-lecornu-a-ses-ministres-pour-eteindre-la-colere-20261004",
       "verifie": true
     },
     {
@@ -307,13 +329,42 @@
       "date": "05/10/2026",
       "titre": "Colère lycéenne, retraites, guerre en Ukraine… Ce qu'il faut retenir du dernier débat entre les candidats de la primair…",
       "texte": "Olivier Faure, Raphaël Glucksmann, Jérôme Guedj, Ségolène Royal et Emmanuel Maurel ont débattu ce dimanche 4 octobre au soir sur BFMTV, en partenariat avec Libération. Un troisième débat avant le pre…",
-      "source": "Le Figaro / BFMTV / Libération",
+      "source": "Le Figaro / BFMTV / Libération / 20 minutes / RFI",
       "sources": [
         "Le Figaro",
         "BFMTV",
-        "Libération"
+        "Libération",
+        "20 minutes",
+        "RFI"
       ],
       "url": "https://www.bfmtv.com/politique/elections/presidentielle/colere-lyceenne-retraites-guerre-en-ukraine-ce-qu-il-faut-retenir-du-dernier-debat-entre-les-candidats-de-la-primaire-sociale-democrate-sur-bfmtv_AN-202610040470.html",
+      "verifie": true
+    },
+    {
+      "id": "amuv1wck6-hbdv",
+      "date": "05/10/2026",
+      "titre": "Mobilisations lycéennes : à Tours, le lycéen visé par un tir de LBD a perdu l’usage de son œil droit, sa famille porte …",
+      "texte": "Les images du jeune homme de 16 ans, gisant à terre dans une flaque de sang, avaient fait le tour d’internet. La procureure de Tours a confirmé, dans la soirée du 2 octobre, que son œil n’est plus fo…",
+      "source": "20 minutes / franceinfo / L'Humanité",
+      "sources": [
+        "20 minutes",
+        "franceinfo",
+        "L'Humanité"
+      ],
+      "url": "https://www.humanite.fr/politique/flash-ball/mobilisations-lyceennes-a-tours-le-lyceen-vise-par-un-tir-de-lbd-a-perdu-lusage-de-son-oeil-droit",
+      "verifie": true
+    },
+    {
+      "id": "amuv1wckt-iwux",
+      "date": "05/10/2026",
+      "titre": "Colère des lycéens : les parents tiraillés entre soutien et inquiétude",
+      "texte": "Alors que de nombreux lycéens français manifestent leur colère aux quatre coins du pays et que des heurts en surviennent, les parents doivent également se positionner.",
+      "source": "franceinfo / La Croix",
+      "sources": [
+        "franceinfo",
+        "La Croix"
+      ],
+      "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/colere-des-lyceens-les-parents-tirailles-entre-soutien-et-inquietude_8221501.html#xtor=RSS-3-%5Bgeneral%5D",
       "verifie": true
     },
     {
@@ -321,13 +372,14 @@
       "date": "04/10/2026",
       "titre": "Policier roué de coups à Belfort en marge de la mobilisation lycéenne : deux mineurs de 15 et 17 ans poursuivis pour vi…",
       "texte": "Le procureur a requis ce dimanche le placement en détention provisoire de l’adolescent que l’agent de police avait tenté d’interpeller au bord d’un ruisseau avant son agression. Ce même mineur a dépo…",
-      "source": "20 minutes / Europe 1 / RFI / Libération / Mediapart",
+      "source": "20 minutes / Europe 1 / RFI / Libération / Mediapart / BFMTV",
       "sources": [
         "20 minutes",
         "Europe 1",
         "RFI",
         "Libération",
-        "Mediapart"
+        "Mediapart",
+        "BFMTV"
       ],
       "url": "https://www.liberation.fr/societe/police-justice/policier-tabasse-a-belfort-en-marge-de-la-mobilisation-lyceenne-deux-personnes-en-garde-a-vue-20261004_DH4YX6F6AVEZ7P7MWX4I3FNLW4/",
       "verifie": true
@@ -359,34 +411,6 @@
         "RFI"
       ],
       "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/la-famille-du-jeune-blesse-au-visage-a-saint-ouen-l-aumone-lors-d-un-rassemblement-de-lyceens-porte-plainte-pour-tentative-d-homicide-volontaire_8221393.html#xtor=RSS-3-%5Bgeneral%5D",
-      "verifie": true
-    },
-    {
-      "id": "amuufolfc-82ja",
-      "date": "04/10/2026",
-      "titre": "Agression au spray inflammable à Marseille : vers une mise en examen d'un lycéen pour «acte de barbarie»",
-      "texte": "Un adolescent soupçonné d'avoir actionné un spray enflammé sur le visage d'une passante à Marseille en marge des manifestations lycéennes a été déféré dimanche en vue de sa mise en examen pour \"acte …",
-      "source": "20 minutes / Europe 1 / franceinfo / Le Figaro",
-      "sources": [
-        "20 minutes",
-        "Europe 1",
-        "franceinfo",
-        "Le Figaro"
-      ],
-      "url": "https://www.europe1.fr/police-justice/agression-au-spray-inflammable-a-marseille-vers-une-mise-en-examen-dun-lyceen-pour-acte-de-barbarie-1122230?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
-      "verifie": true
-    },
-    {
-      "id": "amuufolfd-bf7o",
-      "date": "04/10/2026",
-      "titre": "Un adolescent de 16 ans interpellé, soupçonné d'avoir aspergé d'essence un professeur d'un lycée à La Ciotat",
-      "texte": "Le jeune homme a été placé en garde à vue. L'enseignant, un professeur de physique-chimie, a porté plainte.",
-      "source": "Europe 1 / franceinfo",
-      "sources": [
-        "Europe 1",
-        "franceinfo"
-      ],
-      "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/un-adolescent-de-16-ans-interpelle-soupconne-d-avoir-asperge-d-essence-un-professeur-d-un-lycee-a-la-ciotat_8222296.html#xtor=RSS-3-%5Bgeneral%5D",
       "verifie": true
     },
     {
