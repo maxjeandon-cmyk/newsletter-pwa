@@ -1,0 +1,42 @@
+{
+  "semaine": "2026-S41",
+  "lundi": "2026-10-05",
+  "html": "editions/semaines/2026-S41.html",
+  "jours": [
+    {
+      "jour": "lundi",
+      "date": "2026-10-05",
+      "essentiel": "L'\u00e9dition du lundi 5 ouvre la semaine 41 : le prix Nobel de m\u00e9decine 2026 r\u00e9compense Karl Deisseroth, Peter Hegemann et Georg Nagel pour l'optog\u00e9n\u00e9tique (canaux ioniques activ\u00e9s par la lumi\u00e8re), ouvrant la saison des Nobel. C\u00f4t\u00e9 lyc\u00e9es, 413 \u00e9tablissements \u00e9taient perturb\u00e9s (\u221227 % par rapport \u00e0 vendredi) avant un \u00ab acte III \u00bb appel\u00e9 mardi, la CGT voulant \u00ab prot\u00e9ger le droit \u00e0 manifester \u00bb et le gouvernement inscrivant la loi \u00ab casseurs-payeurs \u00bb au S\u00e9nat le 27 octobre. La France restait sous la surveillance des march\u00e9s : dette \u00e0 119 % du PIB, CAC 40 en baisse de 1,04 % \u00e0 contre-courant de l'Europe, budget 2027 de 54 milliards d'effort en jeu. En Ukraine, des frappes russes de bombes guid\u00e9es ont tu\u00e9 au moins cinq personnes \u00e0 Kharkiv, Emmanuel Macron d\u00e9non\u00e7ant un \u00ab choix irresponsable \u00bb de Moscou. La pr\u00e9-COP s'est ouverte \u00e0 Nadi (Fidji), o\u00f9 Tuvalu pleure 99,9 % de ses coraux, et Flavio Bolsonaro (47 % au premier tour) est \u00ab en position de force \u00bb avant le second tour br\u00e9silien du 25 octobre."
+    },
+    {
+      "jour": "mardi",
+      "date": "2026-10-06",
+      "essentiel": null
+    },
+    {
+      "jour": "mercredi",
+      "date": "2026-10-07",
+      "essentiel": null
+    },
+    {
+      "jour": "jeudi",
+      "date": "2026-10-08",
+      "essentiel": null
+    },
+    {
+      "jour": "vendredi",
+      "date": "2026-10-09",
+      "essentiel": null
+    },
+    {
+      "jour": "samedi",
+      "date": "2026-10-10",
+      "essentiel": null
+    },
+    {
+      "jour": "dimanche",
+      "date": "2026-10-11",
+      "essentiel": null
+    }
+  ]
+}

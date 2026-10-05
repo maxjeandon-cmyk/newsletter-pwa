@@ -1,6 +1,12 @@
 {
   "semaines": [
     {
+      "semaine": "2026-S41",
+      "lundi": "2026-10-05",
+      "json": "editions/semaines/2026-S41.json",
+      "html": "editions/semaines/2026-S41.html"
+    },
+    {
       "semaine": "2026-S40",
       "lundi": "2026-09-28",
       "json": "editions/semaines/2026-S40.json",

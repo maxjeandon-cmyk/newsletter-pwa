@@ -2,6 +2,11 @@
   "domaine": "droit",
   "entrees": [
     {
+      "date": "2026-10-05",
+      "titre": "La garde \u00e0 vue : dur\u00e9es, droits et pi\u00e8ges, textes \u00e0 l\u2019appui",
+      "html": "editions/archives/droit/2026-10-05.html"
+    },
+    {
       "date": "2026-10-04",
       "titre": "La responsabilit\u00e9 p\u00e9nale des mineurs : jusqu\u2019o\u00f9 un mineur r\u00e9pond-il de ses actes ?",
       "html": "editions/archives/droit/2026-10-04.html"
@@ -13,7 +18,7 @@
     },
     {
       "date": "2026-10-02",
-      "titre": "La responsabilit\u00e9 civile des parents : quand les d\u00e9g\u00e2ts de l'enfant retombent sur la famille",
+      "titre": "La responsabilit\u00e9 civile des parents : quand les d\u00e9g\u00e2ts de l\u2019enfant retombent sur la famille",
       "html": "editions/archives/droit/2026-10-02.html"
     },
     {
@@ -23,12 +28,12 @@
     },
     {
       "date": "2026-09-30",
-      "titre": "La garantie catastrophes naturelles : quand l'eau monte",
+      "titre": "La garantie catastrophes naturelles : quand l\u2019eau monte",
       "html": "editions/archives/droit/2026-09-30.html"
     },
     {
       "date": "2026-09-29",
-      "titre": "Le droit de r\u00e9tractation : 14 jours pour changer d'avis",
+      "titre": "Le droit de r\u00e9tractation : 14 jours pour changer d\u2019avis",
       "html": "editions/archives/droit/2026-09-29.html"
     }
   ]
