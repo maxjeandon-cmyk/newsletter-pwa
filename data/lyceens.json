@@ -1,5 +1,5 @@
 {
-  "maj": "05/10/2026 01:10",
+  "maj": "05/10/2026 05:29",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant de septembre-octobre 2026 : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Trois lectures séparées : ce que disent les lycéens, ce que dit le gouvernement, et les seules informations corroborées par plusieurs médias indépendants.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les « versions » sont celles rapportées par la presse ; les déclarations sont attribuées à leurs auteurs, jamais reformulées. Aucun flux RSS officiel du gouvernement n'étant accessible, la version du gouvernement est relevée via les dépêches et articles qui rapportent ses déclarations.",
@@ -141,6 +141,20 @@
   ],
   "version_gouvernement": [
     {
+      "id": "amuuoxqas-2ps2",
+      "date": "05/10/2026",
+      "titre": "Blocus des lycées : pour le gouvernement et les forces de l’ordre, une semaine de tous les dangers",
+      "texte": "Alors que des syndicats lycéens et étudiants appellent à une manifestation commune ce mardi, les blocus devant les établissements devraient se poursuivre ce lundi. L’exécutif se prépare à de nouveaux…",
+      "source": "Europe 1 / Le Figaro / BFMTV",
+      "sources": [
+        "Europe 1",
+        "Le Figaro",
+        "BFMTV"
+      ],
+      "url": "https://www.lefigaro.fr/actualite-france/blocus-des-lycees-pour-le-gouvernement-et-les-forces-de-l-ordre-une-semaine-de-tous-les-dangers-20261004",
+      "verifie": true
+    },
+    {
       "id": "g4",
       "date": "04/10/2026",
       "titre": "Lecornu : reprise des cours lundi « partout » où la sécurité le permet",
@@ -184,19 +198,6 @@
         "Libération"
       ],
       "url": "https://www.lefigaro.fr/politique/blocus-des-lycees-la-feuille-de-route-de-sebastien-lecornu-a-ses-ministres-pour-eteindre-la-colere-20261004",
-      "verifie": true
-    },
-    {
-      "id": "amuufolfd-9jod",
-      "date": "04/10/2026",
-      "titre": "Blocus des lycées : plus d'un tiers des lycées franciliens fermés lundi",
-      "texte": "Plus d'un tiers des lycées franciliens, soit plus de 160 établissements, seront fermés lundi, a annoncé Valérie Pécresse. La présidente de la région dénonce une \"logique d'émeute urbaine\" et promet q…",
-      "source": "Europe 1 / franceinfo",
-      "sources": [
-        "Europe 1",
-        "franceinfo"
-      ],
-      "url": "https://www.europe1.fr/societe/blocus-des-lycees-plus-dun-tiers-des-lycees-franciliens-fermes-lundi-1122788?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
     },
     {
@@ -351,10 +352,11 @@
       "date": "04/10/2026",
       "titre": "La famille du jeune blessé au visage à Saint-Ouen-l'Aumône, lors d'un rassemblement de lycéens, porte plainte pour tent…",
       "texte": "L'adolescent souffre notamment d'une double fracture de la mâchoire. Deux enquêtes sont ouvertes pour établir les faits, l'attitude du jeune avant le tir et la responsabilité du policier.",
-      "source": "20 minutes / franceinfo",
+      "source": "20 minutes / franceinfo / RFI",
       "sources": [
         "20 minutes",
-        "franceinfo"
+        "franceinfo",
+        "RFI"
       ],
       "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/la-famille-du-jeune-blesse-au-visage-a-saint-ouen-l-aumone-lors-d-un-rassemblement-de-lyceens-porte-plainte-pour-tentative-d-homicide-volontaire_8221393.html#xtor=RSS-3-%5Bgeneral%5D",
       "verifie": true
