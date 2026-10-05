@@ -1,5 +1,5 @@
 {
-  "maj": "05/10/2026 17:30",
+  "maj": "05/10/2026 23:31",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant de septembre-octobre 2026 : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Trois lectures séparées : ce que disent les lycéens, ce que dit le gouvernement, et les seules informations corroborées par plusieurs médias indépendants.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les « versions » sont celles rapportées par la presse ; les déclarations sont attribuées à leurs auteurs, jamais reformulées. Aucun flux RSS officiel du gouvernement n'étant accessible, la version du gouvernement est relevée via les dépêches et articles qui rapportent ses déclarations.",
@@ -28,24 +28,26 @@
       "date": "05/10/2026",
       "titre": "Les lycéens français sont-ils vraiment les champions du nombre d’heures de cours par semaine ?",
       "texte": "Depuis le début des blocus des lycéens, les étudiants dénoncent leur emploi du temps, trop chargé, selon eux. Mais passent-ils plus de temps en classe par rapport aux autres pays européens ? (Spoiler…",
-      "source": "20 minutes",
+      "source": "20 minutes / La Croix",
       "sources": [
-        "20 minutes"
+        "20 minutes",
+        "La Croix"
       ],
       "url": "https://www.20minutes.fr/societe/4251417-20261005-lyceens-francais-vraiment-champions-nombre-heures-cours-semaine?at_medium=display&at_campaign=149",
-      "verifie": false
+      "verifie": true
     },
     {
       "id": "amuveprko-2ffo",
       "date": "05/10/2026",
       "titre": "«La forme vient complètement annuler le fond» : pourquoi les revendications lycéennes deviennent inaudibles selon Bruno…",
       "texte": "S'il affirme entendre plusieurs revendications portées par les lycéens, Bruno Bobkiewicz estime que les violences observées devant de nombreux établissements empêchent tout débat de fond. Le secrétai…",
-      "source": "Europe 1",
+      "source": "Europe 1 / Libération",
       "sources": [
-        "Europe 1"
+        "Europe 1",
+        "Libération"
       ],
       "url": "https://www.europe1.fr/societe/la-forme-vient-completement-annuler-le-fond-pourquoi-les-revendications-lyceennes-deviennent-inaudibles-selon-bruno-bobkiewicz-1124333?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
-      "verifie": false
+      "verifie": true
     },
     {
       "id": "amuveprkp-7v2m",
@@ -88,12 +90,14 @@
       "date": "03/10/2026",
       "titre": "Mardi 6 octobre : journée de mobilisation, « brassards blancs »",
       "texte": "La nouvelle journée de mobilisation est prévue mardi 6 octobre : la CGT et Solidaires appellent à y participer en dénonçant la « répression » ; Jean-Luc Mélenchon appelle à porter des « brassards blancs » pour « protéger nos jeunes » ; une intersyndicale de l'éducation appelle à la grève.",
-      "source": "AFP / L'Internaute / Ouest-France / L'Humanité",
+      "source": "AFP / L'Internaute / Ouest-France / L'Humanité / 20 minutes / Europe 1",
       "sources": [
         "AFP",
         "L'Internaute",
         "Ouest-France",
-        "L'Humanité"
+        "L'Humanité",
+        "20 minutes",
+        "Europe 1"
       ],
       "url": "https://www.linternaute.com/actualite/faits-divers/11306009-blocage-des-lycees-le-mouvement-reconduit-mais-jusqu-a-quand-la-date-d-une-grande-manifestation-avancee/",
       "verifie": true
@@ -200,11 +204,12 @@
       "date": "05/10/2026",
       "titre": "Blocus des lycées : comment l'exécutif veut reprendre le contrôle du mouvement",
       "texte": "Après une semaine de manifestations et d'affrontements entre casseurs et forces de l'ordre, le gouvernement souhaite reprendre le contrôle sur le mouvement des lycéens. Alors qu'une nouvelle semaine …",
-      "source": "Europe 1 / 20 minutes / La Croix",
+      "source": "Europe 1 / 20 minutes / La Croix / RFI",
       "sources": [
         "Europe 1",
         "20 minutes",
-        "La Croix"
+        "La Croix",
+        "RFI"
       ],
       "url": "https://www.europe1.fr/societe/blocus-des-lycees-comment-lexecutif-veut-reprendre-le-controle-du-mouvement-1123835?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
@@ -363,11 +368,12 @@
       "date": "05/10/2026",
       "titre": "Colère des lycéens : les parents tiraillés entre soutien et inquiétude",
       "texte": "Alors que de nombreux lycéens français manifestent leur colère aux quatre coins du pays et que des heurts en surviennent, les parents doivent également se positionner.",
-      "source": "franceinfo / La Croix / Public Sénat",
+      "source": "franceinfo / La Croix / Public Sénat / Libération",
       "sources": [
         "franceinfo",
         "La Croix",
-        "Public Sénat"
+        "Public Sénat",
+        "Libération"
       ],
       "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/colere-des-lyceens-les-parents-tirailles-entre-soutien-et-inquietude_8221501.html#xtor=RSS-3-%5Bgeneral%5D",
       "verifie": true
@@ -377,16 +383,14 @@
       "date": "05/10/2026",
       "titre": "Blocage des lycées : à Lens, un adolescent a eu la main arrachée en ramassant une grenade lors d’affrontements avec la …",
       "texte": "Une source policière indique au Figaro qu’il aurait perdu sa main après avoir ramassé une grenade de désencerclement pour la relancer vers les forces de l’ordre.",
-      "source": "20 minutes / Europe 1 / Le Figaro / BFMTV / France Inter / La Croix / L'Humanité / Libération",
+      "source": "20 minutes / Europe 1 / Le Figaro / BFMTV / France Inter / La Croix",
       "sources": [
         "20 minutes",
         "Europe 1",
         "Le Figaro",
         "BFMTV",
         "France Inter",
-        "La Croix",
-        "L'Humanité",
-        "Libération"
+        "La Croix"
       ],
       "url": "https://www.lefigaro.fr/faits-divers/blocage-des-lycees-a-lens-un-adolescent-a-eu-la-main-arrachee-en-ramassant-une-grenade-lors-d-affrontements-avec-la-police-20261005",
       "verifie": true
@@ -396,10 +400,11 @@
       "date": "05/10/2026",
       "titre": "Blocus des lycées : un mineur interpellé, soupçonné d’avoir jeté une pierre dans l’œil d’une passante à Aix-en-Provence",
       "texte": "Cet adolescent de 17 ans est soupçonné d’avoir lancé des pierres en direction des forces de l’ordre en marge du blocage d’un établissement aixois. L’une des pierres a atteint une passante qui a perdu…",
-      "source": "Le Figaro / franceinfo",
+      "source": "Le Figaro / franceinfo / Europe 1",
       "sources": [
         "Le Figaro",
-        "franceinfo"
+        "franceinfo",
+        "Europe 1"
       ],
       "url": "https://www.lefigaro.fr/marseille/blocus-des-lycees-un-mineur-interpelle-soupconne-d-avoir-jete-une-pierre-dans-l-oeil-d-une-passante-a-aix-en-provence-20261005",
       "verifie": true
@@ -409,10 +414,11 @@
       "date": "05/10/2026",
       "titre": "Le procureur de la République \"se comporte comme l'avocat du fonctionnaire de police\", dénonce l'avocat du lycéen pours…",
       "texte": "Le jeune homme de 17 ans a été arrêté à Belfort, dans l'eau, par un policier qui a ensuite été passé à tabac. L'avocat de l'adolescent regrette qu'il n'y ait pas d'enquête sur les conditions de l'int…",
-      "source": "franceinfo / France Inter",
+      "source": "franceinfo / France Inter / La Croix",
       "sources": [
         "franceinfo",
-        "France Inter"
+        "France Inter",
+        "La Croix"
       ],
       "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/le-procureur-de-la-republique-se-comporte-comme-l-avocat-du-fonctionnaire-de-police-denonce-l-avocat-du-lyceen-poursuivi-pour-violences-aggravees-sur-un-policier-a-belfort_8222923.html#xtor=RSS-3-%5Bgeneral%5D",
       "verifie": true
@@ -422,10 +428,13 @@
       "date": "02/10/2026",
       "titre": "Vendredi 02/10 : 1.747 interpellations, plus de 5.000 depuis lundi",
       "texte": "Selon le ministre de l'Intérieur Laurent Nuñez, il y a eu 1.747 interpellations vendredi et plus de 5.000 depuis lundi en lien avec les blocages ; 735 établissements ont été concernés vendredi, soit 30 % de moins que jeudi.",
-      "source": "AFP / L'Internaute",
+      "source": "AFP / L'Internaute / BFMTV / La Croix / L'Humanité",
       "sources": [
         "AFP",
-        "L'Internaute"
+        "L'Internaute",
+        "BFMTV",
+        "La Croix",
+        "L'Humanité"
       ],
       "url": "https://www.linternaute.com/actualite/faits-divers/11306009-blocage-des-lycees-le-mouvement-reconduit-mais-jusqu-a-quand-la-date-d-une-grande-manifestation-avancee/",
       "verifie": true
