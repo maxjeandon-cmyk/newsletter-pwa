@@ -189,4 +189,8 @@ async function main() {
   console.log('Notifications envoyées : ' + envoyes + ' ; abonnements morts nettoyés : ' + morts + ' ; prefs mises à jour : ' + majPrefs.size + '.');
 }
 
-main().catch(e => { console.error(e); process.exit(1); });
+/* v88 : sortie explicite des que le travail est fini — un envoi abandonne
+ * par le delai laisse sa requete https ouverte en arriere-plan (socket
+ * zombie) et le processus Node restait vivant des minutes apres la fin
+ * reelle du travail, laissant le run Actions « in_progress » pour rien. */
+main().then(() => process.exit(0)).catch(e => { console.error(e); process.exit(1); });

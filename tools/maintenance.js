@@ -51,17 +51,29 @@ function runTool(cmd, args) {
  * ok si au moins un abonnement ; silence normal si aucun toggle actif ;
  * échec si des toggles sont actifs sans abonnement — le maillon
  * navigateur→Supabase casse (permission iOS, session, INSERT refusé). */
+/* Délai de sécurité : un fetch qui ne répond jamais ne doit pas suspendre
+ * le run de maintenance pendant des heures (cas Supabase muet observe le
+ * 05/10/2026 — le notifier a eu le meme piege, corrige pareil). */
+const AVEC_DELAI = (promesse, ms = 30000) => Promise.race([
+  promesse,
+  new Promise((_, rej) => {
+    const t = setTimeout(() => rej(new Error('delai depasse (' + ms + ' ms)')), ms);
+    if (t.unref) t.unref();
+  })
+]);
+
 async function sondeNotifications() {
   const base = (URL || '').replace(/\/+$/, '').replace(/\/rest\/v1$/, '');
   const H = { apikey: KEY, authorization: 'Bearer ' + KEY };
   try {
     const [rA, rP] = await Promise.all([
-      fetch(base + '/rest/v1/abonnements_push?select=id', { headers: H }),
-      fetch(base + '/rest/v1/preferences?select=user_id,prefs', { headers: H })
+      AVEC_DELAI(fetch(base + '/rest/v1/abonnements_push?select=id', { headers: H })
+        .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })),
+      AVEC_DELAI(fetch(base + '/rest/v1/preferences?select=user_id,prefs', { headers: H })
+        .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }))
     ]);
-    if (!rA.ok || !rP.ok) return { nom: 'sonde notifications', ok: false, detail: 'Supabase injoignable (' + rA.status + '/' + rP.status + ')' };
-    const abonnements = await rA.json();
-    const prefs = await rP.json();
+    const abonnements = rA;
+    const prefs = rP;
     /* v88 : les toggles de notification vivent sous prefs.notifications (la
      * clé locale nl.notifications est remontée telle quelle par envoyerPrefs)
      * — avant ce correctif, la sonde cherchait prefs.edition au niveau du haut
