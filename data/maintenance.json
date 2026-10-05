@@ -1,6 +1,6 @@
 {
   "date": "05/10/2026",
-  "heure": "15:30",
+  "heure": "21:31",
   "feedback": {
     "messages": 12,
     "nouveaux": 0,
@@ -13,9 +13,9 @@
     "publie": false
   },
   "lyceens": {
-    "nouvelles": 7,
-    "fusionnees": 15,
-    "moissonnes": 93,
+    "nouvelles": 0,
+    "fusionnees": 26,
+    "moissonnes": 120,
     "total": 34,
     "publie": true
   },
@@ -38,7 +38,7 @@
     {
       "nom": "lyceens.js",
       "ok": true,
-      "detail": "7 nouvelle(s) info, 15 fusionnée(s) sur 93 moissonnée(s) — 34 au total"
+      "detail": "0 nouvelle(s) info, 26 fusionnée(s) sur 120 moissonnée(s) — 34 au total"
     }
   ],
   "problemes": [],
