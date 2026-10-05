@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* tools/feedback.js — Résumé dynamique des messages de feedback (v86).
+/* tools/feedback.js — Résumé dynamique des messages de feedback (v88).
  * Étape 1 de l'agent de maintenance (tools/maintenance.js) : ce script
  * lit le résumé global persistant (data/feedback.json), récupère les
  * NOUVEAUX messages Supabae (watermark du dernier traité) et les FUSIONNE :
@@ -203,6 +203,23 @@ async function deplacerRealisees(etat, journal) {
 
 /* ————— Récupération Supabase ————— */
 
+/* v88 : un horodatage Postgres revient avec un décalage « +00:00 ». Concatené
+ * tel quel dans l'URL (created_at=gt.…+00:00), le « + » était décodé en
+ * ESPACE par le serveur : Postgres rejetait « …695113 00:00 » (code 22007,
+ * invalid input syntax for type timestamp with time zone) et CHAQUE run de
+ * maintenance échouait sur la récupération du feedback (cas observé du 04 au
+ * 05/10/2026 — l'erreur était persistante, pas transitoire). On encode
+ * désormais la valeur dans l'URL, et on assainit les formes douteuses au
+ * passage : suffixe « espace + HH:MM » (le décalage cassé tel qu'interprété
+ * par le serveur) remis en forme, absence de zone = UTC (les created_at
+ * Supabase sont en UTC). */
+function horodatageValide(v) {
+  let s = String(v || '').trim();
+  s = s.replace(/\s+(\d{2}):(\d{2})$/, '+$1:$2'); /* « … 00:00 » → « …+00:00 » */
+  if (!/[Zz]$/.test(s) && !/[+-]\d{2}:\d{2}$/.test(s)) s += 'Z';
+  return s;
+}
+
 async function apiSupabase(url) {
   const r = await fetch(url, { headers: { apikey: KEY, authorization: 'Bearer ' + KEY } });
   /* Le corps d'erreur aide au diagnostic (jeton expiré, projet erroné…) sans jamais contenir la clé. */
@@ -233,7 +250,7 @@ async function main() {
   } catch (e) { /* premier run : résumé global vierge */ }
 
   /* Nouveaux messages seulement (watermark = dernier created_at traité). */
-  const filtre = etat.watermark ? '&created_at=gt.' + etat.watermark : '';
+  const filtre = etat.watermark ? '&created_at=gt.' + encodeURIComponent(horodatageValide(etat.watermark)) : '';
   const q = 'select=id,message,created_at&order=created_at.asc&limit=500' + filtre;
   const messages = (await apiSupabase(base + '/rest/v1/feedback?' + q)) || [];
 
@@ -263,7 +280,8 @@ async function main() {
   etat.mises_en_place = etat.mises_en_place.slice(0, 50);
 
   if (messages.length) {
-    etat.watermark = messages[messages.length - 1].created_at;
+    /* v88 : on ne stocke que des horodatages ISO propres (voir horodatageValide). */
+    etat.watermark = horodatageValide(messages[messages.length - 1].created_at);
   }
   etat.date = dateFr();
   etat.heure = new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris', hour: '2-digit', minute: '2-digit' }).format(new Date());
