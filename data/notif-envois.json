@@ -1,34 +1,14 @@
 {
-  "date": "2026-10-06T23:13:06.203Z",
+  "date": "2026-10-06T23:14:28.661Z",
   "mode": "test",
-  "abonnements": 6,
+  "abonnements": 2,
   "envoyes": 1,
-  "morts": 4,
+  "morts": 1,
   "resultats": [
-    {
-      "domaine": "web.push.apple.com",
-      "ok": false,
-      "status": 403
-    },
-    {
-      "domaine": "web.push.apple.com",
-      "ok": false,
-      "status": 403
-    },
     {
       "domaine": "updates.push.services.mozilla.com",
       "ok": true,
       "status": 201
-    },
-    {
-      "domaine": "web.push.apple.com",
-      "ok": false,
-      "status": null
-    },
-    {
-      "domaine": "web.push.apple.com",
-      "ok": false,
-      "status": 403
     },
     {
       "domaine": "web.push.apple.com",
