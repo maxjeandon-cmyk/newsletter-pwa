@@ -125,12 +125,15 @@ export async function souscrire() {
       });
     }
     noterEssai({ ok: false, etape: 'serveur', message: 'enregistrement dans Supabase…' });
-    /* v80 : si CET endpoint est déjà enregistré côté serveur, on ne
-     * re-POSTe pas — l'UPSERT déclencherait un UPDATE exigé par une
-     * policy qui manquait (42501 au 2e toggle). */
-    const dejaLa = getStore(ENDPOINT, '') === sub.endpoint;
-    const res = dejaLa && sub.endpoint
-      ? { ok: true, status: 200, message: 'déjà enregistré côté serveur' }
+    /* v102 : le contournement v80 (skip du POST si l'endpoint est en stockage
+     * local) créait des « confirmé » de FANTÔME : la ligne serveur peut avoir
+     * été supprimée (purge des abonnements morts côté Actions, purge du cache
+     * côté utilisateur) alors que le cache local gardait l'endpoint — l'app
+     * affichait « déjà enregistré » sans jamais re-POSTer. Désormais on
+     * VÉRIFIE en table : absent → POST ; présent → vrai déjà-enregistré. */
+    const dejaLa = await dejaEnregistreDistant(sub.endpoint);
+    const res = dejaLa
+      ? { ok: true, status: 200, message: 'déjà enregistré côté serveur (vérifié en table)' }
       : await enregistrerDistant(sub.toJSON());
     /* v64 : on ne mémorise l'endpoint QUE si l'enregistrement serveur a réussi.
      * v66 : le résultat complet (statut HTTP, message serveur) est conservé et
@@ -186,8 +189,28 @@ async function enregistrerDistant(sub) {
     if (r.ok) return { ok: true, status: r.status, message: 'enregistré côté serveur' };
     let corps = '';
     try { corps = (await r.text()).slice(0, 140); } catch (e) { /* rien */ }
+    /* 42501 : l'upsert a buté sur la policy UPDATE (l'endpoint existe déjà en
+     * table) — la ligne EST enregistrée, on ne fait pas passer ça pour un échec
+     * (c'était le piège que le contournement v80 essayait d'éviter). */
+    if (r.status === 42501) return { ok: true, status: 200, message: 'déjà enregistré (mise à jour non nécessaire)' };
     return { ok: false, status: r.status, message: corps || ('HTTP ' + r.status) };
   } catch (e) { return { ok: false, etape: 'réseau', message: String(e && e.message || e).slice(0, 140) }; }
+}
+
+/* v102 : l'endpoint est-il réellement en table ? (vrai vérification serveur,
+ * remplace la confiance aveugle au cache local du contournement v80). */
+async function dejaEnregistreDistant(endpoint) {
+  const t = await jeton();
+  if (!t || !endpoint) return false;
+  const cfg = state.compteCfg || {};
+  try {
+    const r = await fetch(cfg.url + '/rest/v1/abonnements_push?endpoint=eq.' + encodeURIComponent(endpoint) + '&select=endpoint', {
+      headers: { 'apikey': cfg.anon_key, 'Authorization': 'Bearer ' + t }
+    });
+    if (!r.ok) return false; /* SELECT impossible (policy ?) : on tente le POST */
+    const lignes = await r.json();
+    return Array.isArray(lignes) && lignes.length > 0;
+  } catch (e) { return false; }
 }
 
 async function supprimerDistant(endpoint) {
