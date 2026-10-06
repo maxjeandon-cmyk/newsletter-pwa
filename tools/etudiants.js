@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /* tools/etudiants.js — Relevé automatique 6 h de la chronique « Version des étudiants »
- * (onglet ✊ Lycéens 2026, sous-onglet Version des lycéens).
+ * (onglet ✊ Lycéens 2026, sous-onglet Version des étudiants).
  * Appelé par tools/maintenance.js à chaque run (3 h, 9 h, 15 h, 21 h Paris) :
  *   1. Moissonne les flux RSS de la presse (même catalogue que lyceens.js)
  *      et ne retient que les items du mouvement lycéen/étudiant.

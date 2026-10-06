@@ -1,22 +1,25 @@
-/* views/lyceens.js — ✊ Lycéens (v89) : suivre le mouvement lycéen et étudiant
- * de 2026 en France, en séparant quatre lectures : la version des lycéens,
+/* views/lyceens.js — ✊ Lycéens 2026 (v90) : suivre le mouvement lycéen et étudiant
+ * de 2026 en France, en séparant trois lectures : la chronique étudiante,
  * la version du gouvernement, et les seules informations corroborées par
  * plusieurs médias indépendants. Chaque info porte un badge ✅ (vérifiée,
  * au moins deux médias indépendants) ou ⚠️ (une seule source à ce stade).
  * Données : data/lyceens.json (network-first, rafraîchi toutes les 6 h par
- * la maintenance via tools/lyceens.js — modifier les données suffit, sans
- * livraison de code). Règle d'hygiène : tout texte des données passe par esc(). */
+ * la maintenance — modifier les données suffit, sans livraison de code).
+ * Règle d'hygiène : tout texte des données passe par esc().
+ */
 import { $, state, esc } from '../core.js';
 import { renderView } from './common.js';
 
 const SOUS_ONGLETS_LYCEENS = () => [
-  { id: 'lyceens', nom: '✊ Version des lycéens' },
   { id: 'etudiants', nom: '🎓 Version des étudiants' },
   { id: 'gouvernement', nom: '🏛️ Version du gouvernement' },
-  { id: 'faits', nom: '✅ Faits vérifiés uniquement' }
+  { id: 'faits', nom: '✅ Faits vérifiés' }
 ];
 
-/* Chargement paresseux, en cache dans state après le premier passage. */
+/* Chargement paresseux, en cache dans state après le premier passage.
+ * data/lyceens.json n'a plus de champ version_lyceens : seules les versions
+ * gouvernement et faits y sont lues.
+ */
 async function chargerLyceens() {
   if (!state.lyceens) {
     try { state.lyceens = await (await fetch('data/lyceens.json', { cache: 'no-store' })).json(); }
@@ -33,7 +36,8 @@ function sousOnglets(sub) {
 /* Chronique « Version des étudiants » : data/etudiants/index.json (network-first),
  * puis, dans l'ordre, chaque fichier data/etudiants/chapitres/NN.json listé dans
  * chapitres[]. Tout est stocké UNE fois dans state.etudiants (index + chapitres
- * chargés) : aucun rechargement ni re-render complet ensuite. */
+ * chargés) : aucun rechargement ni re-render complet ensuite.
+ */
 async function chargerEtudiants() {
   if (state.etudiants) return state.etudiants;
   const etu = { index: null, chapitres: [], erreur: false, promesse: null };
@@ -176,21 +180,16 @@ function trier(liste) {
 
 export function vueLyceens() {
   const view = $('#view');
-  if (state.lyceensSub === 'etudiants' && !state.etudiants) chargerEtudiants().catch(() => {});
+  const sous = SOUS_ONGLETS_LYCEENS().some(x => x.id === state.lyceensSub) ? state.lyceensSub : 'etudiants';
+  if (sous === 'etudiants' && !state.etudiants) chargerEtudiants().catch(() => {});
   const d = state.lyceens;
   if (!d) {
     view.innerHTML = '<div class="empty">Chargement du suivi du mouvement lycéen…</div>';
     chargerLyceens().then(() => { if (state.activeTab === 'lyceens') vueLyceens(); }).catch(() => {});
     return;
   }
-  const sous = SOUS_ONGLETS_LYCEENS().some(x => x.id === state.lyceensSub) ? state.lyceensSub : 'lyceens';
-  const lyceens = trier(Array.isArray(d.version_lyceens) ? d.version_lyceens : []);
   const gouv = trier(Array.isArray(d.version_gouvernement) ? d.version_gouvernement : []);
-  const faitsPurs = trier(Array.isArray(d.faits) ? d.faits : []);
-  /* « Faits vérifiés uniquement » : les faits neutres corroborés + les infos
-   * vérifiées des deux versions — rien d'autre n'entre dans ce sous-onglet. */
-  const faits = faitsPurs.concat(lyceens.filter(i => i.verifie), gouv.filter(i => i.verifie));
-
+  const faits = trier(Array.isArray(d.faits) ? d.faits : []);
   view.innerHTML =
     '<div class="summary-card"><h2>✊ ' + esc(d.titre || 'Mouvement lycéen') + '</h2>' +
     (d.intro ? '<p class="meta-count">' + esc(d.intro) + '</p>' : '') +
@@ -199,21 +198,18 @@ export function vueLyceens() {
     (d.maj ? '<p class="hint">Mis à jour le ' + esc(d.maj) + ' — rafraîchi automatiquement toutes les 6 h par la maintenance.</p>' : '') +
     '</div>' +
     (Array.isArray(d.contexte) && d.contexte.length
-      ? '<div class="chapter-resume"><h2>📌 Chronologie</h2><ul>' +
+      ? '<div class="chapter-resume"><h2>📍 Chronologie</h2><ul>' +
         d.contexte.map(c => '<li>' + esc(c) + '</li>').join('') + '</ul></div>'
       : '') +
     sousOnglets(sous) +
     (d.erreur
       ? '<div class="empty">Suivi momentanément indisponible — il revient dès que data/lyceens.json répondra.</div>'
       : '') +
-    (sous === 'lyceens'
-      ? '<p class="meta-count">' + compteListe(lyceens) + '</p>' + (lyceens.length ? lyceens.map(carteInfo).join('') : '<div class="empty">Aucune info côté lycéens pour l\u2019instant.</div>')
-      : sous === 'etudiants'
-        ? blocEtudiants(state.etudiants && state.etudiants.index ? state.etudiants.index : {})
-        : sous === 'gouvernement'
-        ? '<p class="meta-count">' + compteListe(gouv) + '</p>' + (gouv.length ? gouv.map(carteInfo).join('') : '<div class="empty">Aucune info côté gouvernement pour l\u2019instant.</div>')
-        : '<p class="meta-count">' + compteListe(faits) + '</p>' + (faits.length ? faits.map(carteInfo).join('') : '<div class="empty">Aucune information corroborée à ce stade.</div>'));
-
+    (sous === 'etudiants'
+      ? blocEtudiants(state.etudiants && state.etudiants.index ? state.etudiants.index : {})
+      : sous === 'gouvernement'
+      ? '<p class="meta-count">' + compteListe(gouv) + '</p>' + (gouv.length ? gouv.map(carteInfo).join('') : '<div class="empty">Aucune info côté gouvernement pour l\u2019instant.</div>')
+      : '<p class="meta-count">' + compteListe(faits) + '</p>' + (faits.length ? faits.map(carteInfo).join('') : '<div class="empty">Aucune information corroborée à ce stade.</div>'));
   if (sous === 'etudiants') {
     const conteneur = document.getElementById('bloc-etudiants');
     if (conteneur) initEtudiants(conteneur).catch(() => {});
