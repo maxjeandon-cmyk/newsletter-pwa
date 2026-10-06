@@ -1,5 +1,5 @@
 {
-  "maj": "06/10/2026 11:29",
+  "maj": "06/10/2026",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Deux relevés ici : ce que dit le gouvernement, et les seules informations corroborées par plusieurs médias indépendants. La parole des élèves vit dans la chronique « Version des étudiants ».",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -167,14 +167,46 @@
   ],
   "faits": [
     {
+      "id": "aetumuwu2bov-2",
+      "date": "06/10/2026",
+      "titre": "EN DIRECT - Mobilisation des lycéens : 256 000 manifestants en France selon les autorités, 450 000 d’après les organisateurs",
+      "texte": "La préfecture de police de Paris fait état d’une situation tendue ce mardi dans la capitale, avec 300 individus hostiles présents place de la Nation en marge de l’Acte III de la mobilisation des lycéens.",
+      "source": "Le Figaro / BFMTV / France 24",
+      "sources": [
+        "Le Figaro",
+        "BFMTV",
+        "France 24"
+      ],
+      "url": "https://www.lefigaro.fr/actualite-france/en-direct-blocage-des-lycees-des-dizaines-de-milliers-de-lyceens-dans-la-rue-pour-un-acte-iii-sous-haute-surveillance-20261006",
+      "verifie": true
+    },
+    {
+      "id": "aetumuwu2bov-1",
+      "date": "06/10/2026",
+      "titre": "DIRECT. Crise des lycées : Lecornu annonce une suspension des cours, tensions à Paris",
+      "texte": "Paris, Lyon, Nantes… Les organisations lycéennes appellent à un « acte III » de la mobilisation ce mardi 6 octobre 2026. Des tensions apparaissent dans la manifestation parisienne. Lecornu a annoncé aujourd’hui une suspension des cours pour organiser un « temps de démocratie » d…",
+      "source": "La Croix / BFMTV / Le Figaro",
+      "sources": [
+        "La Croix",
+        "BFMTV",
+        "Le Figaro"
+      ],
+      "url": "https://www.la-croix.com/societe/irect-manifestation-mardi-6-octobre-blocus-lycees-mobilisation-lyceen-aujourdhui-20261006",
+      "verifie": true
+    },
+    {
       "id": "amuwh8t4q-7g99",
       "date": "06/10/2026",
       "titre": "Colère des lycéens : Pourquoi le maintien de l’ordre face aux mineurs est un casse-tête",
       "texte": "Entre impératifs de sécurité et règles de procédure renforcées pour les mineurs, la mobilisation lycéenne de cet « acte III » met police et justice sous tension ce mardi jour de manifestation",
-      "source": "20 minutes / BFMTV",
+      "source": "20 minutes / BFMTV / Europe 1 / Public Sénat / Le Figaro / France 24",
       "sources": [
         "20 minutes",
-        "BFMTV"
+        "BFMTV",
+        "Europe 1",
+        "Public Sénat",
+        "Le Figaro",
+        "France 24"
       ],
       "url": "https://www.20minutes.fr/societe/4251568-20261006-colere-lyceens-pourquoi-maintien-ordre-face-mineurs-casse-tete?at_medium=display&at_campaign=149",
       "verifie": true
@@ -184,11 +216,13 @@
       "date": "06/10/2026",
       "titre": "\"Acte III\" : nouvelle journée de mobilisation lycéenne sous haute tension en France",
       "texte": "Des dizaines de milliers de lycéens manifestent sous haute surveillance, mardi, à travers la France pour réclamer des moyens, un \"Acte III\" soutenu par une intersyndicale de l'Éducation nationale. Pl…",
-      "source": "20 minutes / France 24 / Libération",
+      "source": "20 minutes / France 24 / Libération / Europe 1 / Le Figaro",
       "sources": [
         "20 minutes",
         "France 24",
-        "Libération"
+        "Libération",
+        "Europe 1",
+        "Le Figaro"
       ],
       "url": "https://www.france24.com/fr/france/20261006-acte-iii-nouvelle-journ%C3%A9e-de-mobilisation-lyc%C3%A9enne-sous-haute-tension-en-france",
       "verifie": true
@@ -217,37 +251,6 @@
         "franceinfo"
       ],
       "url": "https://www.lefigaro.fr/marseille/le-combustible-est-arrive-directement-sur-mon-visage-le-professeur-la-ciotat-asperge-d-essence-par-un-lyceen-temoigne-aupres-du-figaro-20261006",
-      "verifie": true
-    },
-    {
-      "id": "amuufolfi-2q06",
-      "date": "05/10/2026",
-      "titre": "Colère lycéenne, retraites, guerre en Ukraine… Ce qu'il faut retenir du dernier débat entre les candidats de la primair…",
-      "texte": "Olivier Faure, Raphaël Glucksmann, Jérôme Guedj, Ségolène Royal et Emmanuel Maurel ont débattu ce dimanche 4 octobre au soir sur BFMTV, en partenariat avec Libération. Un troisième débat avant le pre…",
-      "source": "Le Figaro / BFMTV / Libération / 20 minutes / RFI / Europe 1",
-      "sources": [
-        "Le Figaro",
-        "BFMTV",
-        "Libération",
-        "20 minutes",
-        "RFI",
-        "Europe 1"
-      ],
-      "url": "https://www.bfmtv.com/politique/elections/presidentielle/colere-lyceenne-retraites-guerre-en-ukraine-ce-qu-il-faut-retenir-du-dernier-debat-entre-les-candidats-de-la-primaire-sociale-democrate-sur-bfmtv_AN-202610040470.html",
-      "verifie": true
-    },
-    {
-      "id": "amuv1wck6-hbdv",
-      "date": "05/10/2026",
-      "titre": "Mobilisations lycéennes : à Tours, le lycéen visé par un tir de LBD a perdu l’usage de son œil droit, sa famille porte …",
-      "texte": "Les images du jeune homme de 16 ans, gisant à terre dans une flaque de sang, avaient fait le tour d’internet. La procureure de Tours a confirmé, dans la soirée du 2 octobre, que son œil n’est plus fo…",
-      "source": "20 minutes / franceinfo / L'Humanité",
-      "sources": [
-        "20 minutes",
-        "franceinfo",
-        "L'Humanité"
-      ],
-      "url": "https://www.humanite.fr/politique/flash-ball/mobilisations-lyceennes-a-tours-le-lyceen-vise-par-un-tir-de-lbd-a-perdu-lusage-de-son-oeil-droit",
       "verifie": true
     },
     {
