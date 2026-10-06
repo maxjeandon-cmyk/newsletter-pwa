@@ -98,13 +98,17 @@ function paragrapheHtml(p, dernier) {
       : '');
 }
 
-/* Un chapitre : bloc <h3> (titre + période), puis ses paragraphes. */
-function chapitreHtml(ch, dernier) {
+/* Un chapitre : carte repliable <details class="carte-regl"> (même style que
+ * les lettres d ONG de l onglet Newsletters), titre + période en <summary>,
+ * paragraphes dedans une fois déplié. ouvert=true ajoute l attribut open
+ * (tous les chapitres côté Version des étudiants, seul le premier côté
+ * Complément). dernier=true garde l ancre fin-texte sur le dernier paragraphe. */
+function chapitreHtml(ch, dernier, ouvert) {
   const ps = Array.isArray(ch.paragraphes) ? ch.paragraphes : [];
-  return '<section class="chapter-resume chapitre-etudiant" id="chapitre-' + esc(String(ch.id || '')) + '">' +
-    '<h3>' + esc(ch.titre || '') + (ch.periode ? ' <span class="meta-count">' + esc(ch.periode) + '</span>' : '') + '</h3>' +
+  return '<details class="carte-regl chapitre-etudiant"' + (ouvert ? ' open' : '') + ' id="chapitre-' + esc(String(ch.id || '')) + '">' +
+    '<summary>' + esc(ch.titre || '') + (ch.periode ? ' <span class="meta-count">' + esc(ch.periode) + '</span>' : '') + '</summary>' +
     ps.map((p, i) => paragrapheHtml(p, dernier && i === ps.length - 1)).join('') +
-    '</section>';
+    '</details>';
 }
 
 /* Tête d'une section : titre + description de l'index. */
@@ -146,7 +150,7 @@ async function initSection(conteneur, idSection, avecFinTexte) {
     return;
   }
   conteneur.innerHTML = chapitres.map((c, i) =>
-    chapitreHtml(c, avecFinTexte && i === chapitres.length - 1)).join('');
+    chapitreHtml(c, avecFinTexte && i === chapitres.length - 1, avecFinTexte || i === 0)).join('');
 }
 
 /* « ⬇️ Aller à la fin du texte » : attend que les chapitres soient chargés

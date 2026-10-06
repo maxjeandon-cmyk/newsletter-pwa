@@ -189,6 +189,42 @@ const tests = [
       assert(!html.includes('bloc-etudiants'), 'pas de bloc etudiants sous faits');
     } },
 
+  { nom: 'chapitres en cartes repliables details.carte-regl, summary titre + periode',
+    fn: async () => {
+      creerDocumentMinimal(); brancherFetch();
+      const { m, core } = await importerVue();
+      await ouvrirVue(m, core, 'etudiants');
+      const bloc = document.getElementById('bloc-etudiants');
+      const html = bloc._html || bloc.innerHTML;
+      const chrono = INDEX.sections.find(s => s.id === 'chronique');
+      assert(html.includes('<details class="carte-regl chapitre-etudiant"'), 'carte details par chapitre');
+      assert(html.includes('<summary>' + chrono.chapitres[0].titre.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))), 'titre de chapitre en summary');
+      assert(html.includes(chrono.chapitres[0].periode), 'periode dans le summary');
+      assert(!/<h3>/.test(html), 'plus de h3 de chapitre');
+    } },
+
+  { nom: 'Version des etudiants : tous les chapitres ouverts ; Complement : seul le premier ouvert',
+    fn: async () => {
+      creerDocumentMinimal(); brancherFetch();
+      const { m, core } = await importerVue();
+      await ouvrirVue(m, core, 'etudiants', true);
+      let bloc = document.getElementById('bloc-etudiants');
+      let html = bloc._html || bloc.innerHTML;
+      let ouvertes = (html.match(/<details class="carte-regl chapitre-etudiant" open/g) || []).length;
+      let total = (html.match(/<details class="carte-regl chapitre-etudiant"/g) || []).length;
+      assert(total === 10 && ouvertes === 10, 'chronique : ' + ouvertes + '/' + total + ' cartes ouvertes, attendu 10/10');
+      assert(html.includes('id="fin-texte"'), 'ancre fin-texte conservee');
+      await ouvrirVue(m, core, 'complement');
+      bloc = document.getElementById('bloc-etudiants');
+      html = bloc._html || bloc.innerHTML;
+      ouvertes = (html.match(/<details class="carte-regl chapitre-etudiant" open/g) || []).length;
+      total = (html.match(/<details class="carte-regl chapitre-etudiant"/g) || []).length;
+      assert(total === 7 && ouvertes === 1, 'complement : ' + ouvertes + '/' + total + ' cartes ouvertes, attendu 1/7');
+      assert(!html.includes('fin-texte'), 'pas d ancre fin-texte dans le Complement');
+      const premiere = INDEX.sections.find(s => s.id === 'complement').chapitres[0];
+      assert(html.includes('<details class="carte-regl chapitre-etudiant" open id="chapitre-' + premiere.id + '"'), 'premiere carte du Complement ouverte par defaut');
+    } },
+
   { nom: 'contenu echappe : une source malveillante ne casse pas le HTML',
     fn: async () => {
       creerDocumentMinimal();
