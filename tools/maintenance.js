@@ -289,6 +289,15 @@ async function main() {
       await publierFichier('data/etudiants/index.json', fs.readFileSync('data/etudiants/index.json', 'utf8'),
         'Index chronique etudiants du ' + dateFr);
       console.log('Chronique étudiants publiée (' + etu.items + ' info(s)).');
+      /* Les items corroborés du relevé alimentent aussi les « faits
+       * vérifiés » de data/lyceens.json : on publie le fichier mis à jour
+       * par etudiants.js si le relevé lyceens lui-même n'a rien changé
+       * (sinon le bloc 3 ter l'a déjà publié à l'identique ou mieux). */
+      if (etu.faits && !lyc.modifie) {
+        await publierFichier(LYCEENS, fs.readFileSync(LYCEENS, 'utf8'),
+          'Releve lyceens du ' + dateFr + ' (' + etu.faits + ' fait(s) verifie(s) via chronique etudiants)');
+        console.log('Faits vérifiés enrichis (' + etu.faits + ' fait(s)).');
+      }
     } catch (e) {
       console.error('Publication de la chronique étudiants échouée : ' + e.message);
       etu.erreur = 'publication : ' + String(e.message).slice(0, 120);

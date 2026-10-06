@@ -109,6 +109,58 @@ async function moissonSource(src, depuis) {
 const tronc = (s, n) => (s.length > n ? s.slice(0, n - 1) + '…' : s);
 const dateHeureFr = () => new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris', dateStyle: 'long', timeStyle: 'short' }).format(new Date());
 
+/* Ajoute au tableau « faits » de data/lyceens.json les items corroborés
+ * (≥ 2 médias distincts) du relevé : mêmes champs que lyceens.js (id
+ * préfixé « a » = auto, jamais évincés par la curation épinglée), titre
+ * verbatim tronqué, texte = description tronquée, badge verifie:true.
+ * Dédoublonnage contre les faits existants (racines + chiffres, comme
+ * lyceens.js) ; cap 10 en évitant du bout les seuls items préfixés « a ». */
+async function verserFaitsCorrobores(uniques, journal) {
+  const FIC_LYCEENS = path.join(__dirname, '..', 'data', 'lyceens.json');
+  if (!fs.existsSync(FIC_LYCEENS)) return 0;
+  const lycee = JSON.parse(fs.readFileSync(FIC_LYCEENS, 'utf8'));
+  const faits = Array.isArray(lycee.faits) ? lycee.faits : [];
+  const dejaLa = it => {
+    const sig = signature(it.titre);
+    return faits.some(f => {
+      const s1 = racines(f.titre).slice(0, 4).sort();
+      const s2 = racines(it.titre).slice(0, 4).sort();
+      const communs = s1.filter(r => s2.includes(r)).length;
+      const chiffres = (norm(it.titre).match(/\d{3,}/g) || []).some(c => (norm(f.titre).match(/\d{3,}/g) || []).includes(c));
+      return sig === signature(f.titre) || communs >= 3 || (communs >= 1 && chiffres);
+    });
+  };
+  let ajoutes = 0;
+  const stamp = Date.now().toString(36);
+  for (const it of uniques) {
+    if (it.sources.length < 2) continue;      /* corroboré seulement */
+    if (dejaLa(it)) continue;
+    faits.unshift({
+      id: 'aetu' + stamp + '-' + (ajoutes + 1),
+      date: new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris' }).format(new Date(it.date)),
+      titre: tronc(it.titre, 200),
+      texte: tronc(it.desc || it.titre, 280),
+      source: it.sources.join(' / '),
+      sources: it.sources.slice(),
+      url: it.lien || '',
+      verifie: true
+    });
+    ajoutes++;
+  }
+  if (ajoutes) {
+    /* cap 10 : on retire par la fin uniquement les items automatiques. */
+    while (faits.length > 10) {
+      const i = faits.map((f, k) => k).reverse().find(k => /^a/.test(faits[k].id || ''));
+      if (i === undefined) break;
+      faits.splice(i, 1);
+    }
+    lycee.faits = faits;
+    lycee.maj = journal;
+    fs.writeFileSync(FIC_LYCEENS, JSON.stringify(lycee, null, 2) + '\n');
+  }
+  return ajoutes;
+}
+
 async function main() {
   const aujourdhui = new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris' }).format(new Date());
   const depuis = new Date(Date.now() - FENETRE_HEURES * 3600 * 1000);
@@ -123,14 +175,29 @@ async function main() {
     process.stdout.write(JSON.stringify({ date: aujourdhui, modifie: false, ajoutes: 0, items: 0, echecs }) + '\n');
     return;
   }
-  /* Dédoublonnage par signature (même événement relayé par plusieurs flux). */
-  const vus = new Map();
-  for (const it of tous) {
-    const sig = signature(it.titre);
-    if (!vus.has(sig)) vus.set(sig, { ...it, sources: [it.source] });
-    else if (!vus.get(sig).sources.includes(it.source)) vus.get(sig).sources.push(it.source);
+  /* Dédoublonnage par événement (rapprochement souple, comme lyceens.js) :
+   * les médias formulent leurs titres différemment — on fusionne les items
+   * partageant ≥ 3 racines discriminantes communes, ou ≥ 1 racine commune
+   * ET un même chiffre significatif. Chaque événement garde toutes ses
+   * sources (corroboration = sources.length >= 2). */
+  const memeEvenement = (a, b) => {
+    const r1 = racines(a.titre), r2 = racines(b.titre);
+    const communs = r1.filter(r => r2.includes(r)).length;
+    if (communs >= 3) return true;
+    if (communs >= 1) {
+      const c1 = (norm(a.titre).match(/\d{3,}/g) || []).filter(n => +n < 2000 || +n > 2100);
+      const c2 = (norm(b.titre).match(/\d{3,}/g) || []).filter(n => +n < 2000 || +n > 2100);
+      if (c1.some(c => c2.includes(c))) return true;
+    }
+    return false;
+  };
+  const vus = [];
+  for (const it of tous.sort((a, b) => (a.date < b.date ? 1 : -1))) {
+    const existant = vus.find(v => memeEvenement(v, it));
+    if (!existant) vus.push({ ...it, sources: [it.source] });
+    else if (!existant.sources.includes(it.source)) existant.sources.push(it.source);
   }
-  const uniques = [...vus.values()].sort((a, b) => (a.date < b.date ? 1 : -1)).slice(0, 12);
+  const uniques = vus.slice(0, 12);
 
   /* Idempotence : si le dernier relevé (stocké dans l'index) contenait
    * exactement les mêmes items, on ne publie rien — pas de commit fantôme
@@ -198,11 +265,16 @@ async function main() {
   index.totalParagraphes = index.chapitres.reduce((a, c) => a + c.paragraphes, 0);
   fs.writeFileSync(FICHIER_INDEX, JSON.stringify(index, null, 2) + '\n');
 
+  /* Versionnement croisé : les items corroborés (≥ 2 médias) du relevé
+   * alimentent aussi le sous-onglet « ✅ Faits vérifiés » (data/lyceens.json). */
+  const faitsAjoutes = await verserFaitsCorrobores(uniques, aujourdhui);
+
   process.stdout.write(JSON.stringify({
     date: aujourdhui,
     modifie: true,
     ajoutes: 1,
     items: uniques.length,
+    faits: faitsAjoutes,
     chapitre: chap.id,
     fichier: 'data/etudiants/chapitres/' + dernierFichier,
     nouveauChapitre,
