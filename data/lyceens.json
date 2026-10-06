@@ -167,15 +167,44 @@
   ],
   "faits": [
     {
+      "id": "aetumux6uk70-2",
+      "date": "06/10/2026",
+      "titre": "Blocage, mobilisation lycéenne: \"Ce qui les caractérise, c'est la grande angoisse par rapport à leur avenir\", raconte Stéphane Troussel, président du département de la Seine-Saint-Denis",
+      "texte": "Grande journée de manifestation partout en France pour l'acte III de la mobilisation lycéenne. Soutenus par les syndicats, notamment de l'Éducation nationale qui appelle à faire grève, les lycéens manifestent ce mardi. Selon l'Union syndicale, ce sont 450.000 manifestants qui on…",
+      "source": "BFMTV / Europe 1",
+      "sources": [
+        "BFMTV",
+        "Europe 1"
+      ],
+      "url": "https://www.bfmtv.com/politique/video-blocage-mobilisation-lyceenne-ce-qui-les-caracterise-c-est-la-grande-angoisse-par-rapport-a-leur-avenir-raconte-stephane-troussel-president-du-departement-de-la-seine-saint-denis_VN-202610060954.html",
+      "verifie": true
+    },
+    {
+      "id": "aetumux6uk70-1",
+      "date": "06/10/2026",
+      "titre": "Blocage, mobilisation lycéenne: la liste des revendications",
+      "texte": "Grande journée de manifestation partout en France pour l'acte III de la mobilisation lycéenne. Soutenus par les syndicats, notamment de l'Éducation nationale qui appelle à faire grève, les lycéens manifestent ce mardi. Selon l'Union syndicale, ce sont 450.000 manifestants qui on…",
+      "source": "BFMTV / L'Humanité",
+      "sources": [
+        "BFMTV",
+        "L'Humanité"
+      ],
+      "url": "https://www.bfmtv.com/societe/manifestations/video-blocage-mobilisation-lyceenne-la-liste-des-revendications_VN-202610060957.html",
+      "verifie": true
+    },
+    {
       "id": "aetumuwu2bov-2",
       "date": "06/10/2026",
       "titre": "EN DIRECT - Mobilisation des lycéens : 256 000 manifestants en France selon les autorités, 450 000 d’après les organisateurs",
       "texte": "La préfecture de police de Paris fait état d’une situation tendue ce mardi dans la capitale, avec 300 individus hostiles présents place de la Nation en marge de l’Acte III de la mobilisation des lycéens.",
-      "source": "Le Figaro / BFMTV / France 24",
+      "source": "Le Figaro / BFMTV / France 24 / Europe 1 / RFI / La Croix",
       "sources": [
         "Le Figaro",
         "BFMTV",
-        "France 24"
+        "France 24",
+        "Europe 1",
+        "RFI",
+        "La Croix"
       ],
       "url": "https://www.lefigaro.fr/actualite-france/en-direct-blocage-des-lycees-des-dizaines-de-milliers-de-lyceens-dans-la-rue-pour-un-acte-iii-sous-haute-surveillance-20261006",
       "verifie": true
@@ -185,11 +214,14 @@
       "date": "06/10/2026",
       "titre": "DIRECT. Crise des lycées : Lecornu annonce une suspension des cours, tensions à Paris",
       "texte": "Paris, Lyon, Nantes… Les organisations lycéennes appellent à un « acte III » de la mobilisation ce mardi 6 octobre 2026. Des tensions apparaissent dans la manifestation parisienne. Lecornu a annoncé aujourd’hui une suspension des cours pour organiser un « temps de démocratie » d…",
-      "source": "La Croix / BFMTV / Le Figaro",
+      "source": "La Croix / BFMTV / Le Figaro / Public Sénat / Libération / France Inter",
       "sources": [
         "La Croix",
         "BFMTV",
-        "Le Figaro"
+        "Le Figaro",
+        "Public Sénat",
+        "Libération",
+        "France Inter"
       ],
       "url": "https://www.la-croix.com/societe/irect-manifestation-mardi-6-octobre-blocus-lycees-mobilisation-lyceen-aujourdhui-20261006",
       "verifie": true
@@ -225,32 +257,6 @@
         "Le Figaro"
       ],
       "url": "https://www.france24.com/fr/france/20261006-acte-iii-nouvelle-journ%C3%A9e-de-mobilisation-lyc%C3%A9enne-sous-haute-tension-en-france",
-      "verifie": true
-    },
-    {
-      "id": "amuwh8t5e-dr15",
-      "date": "06/10/2026",
-      "titre": "EN DIRECT - Blocus des lycées : à Paris, Emmanuel Grégoire va ouvrir des mairies aux lycéens pour qu’ils puissent se ré…",
-      "texte": "Les mairies d’arrondissement, a minima celles qui sont tenues par la gauche (9 sur 17), devraient ouvrir leurs portes dans les prochains jours pour que les lycéens viennent «se réunir, débattre et or…",
-      "source": "Le Figaro / L'Humanité",
-      "sources": [
-        "Le Figaro",
-        "L'Humanité"
-      ],
-      "url": "https://www.lefigaro.fr/actualite-france/en-direct-blocage-des-lycees-des-dizaines-de-milliers-de-lyceens-dans-la-rue-pour-un-acte-iii-sous-haute-surveillance-20261006",
-      "verifie": true
-    },
-    {
-      "id": "amuwh8t5f-6hy6",
-      "date": "06/10/2026",
-      "titre": "« Le combustible est arrivé directement sur mon visage» : le professeur de La Ciotat aspergé d’essence par un lycéen té…",
-      "texte": "TÉMOIGNAGE - Thierry Laurent a été aspergé d’hydrocarbure et frappé par un élève de son lycée, qui a depuis été interpellé. L’enseignant déplore la conduite « néfaste » de nombreux jeunes galvanisés …",
-      "source": "Le Figaro / franceinfo",
-      "sources": [
-        "Le Figaro",
-        "franceinfo"
-      ],
-      "url": "https://www.lefigaro.fr/marseille/le-combustible-est-arrive-directement-sur-mon-visage-le-professeur-la-ciotat-asperge-d-essence-par-un-lyceen-temoigne-aupres-du-figaro-20261006",
       "verifie": true
     },
     {
