@@ -1,40 +1,10 @@
 {
-  "date": "2026-10-06T23:32:37.449Z",
+  "date": "2026-10-06T23:34:16.985Z",
   "mode": "test",
-  "abonnements": 13,
+  "abonnements": 5,
   "envoyes": 1,
-  "morts": 8,
+  "morts": 3,
   "resultats": [
-    {
-      "domaine": "web.push.apple.com",
-      "ok": false,
-      "status": 403
-    },
-    {
-      "domaine": "web.push.apple.com",
-      "ok": false,
-      "status": 403
-    },
-    {
-      "domaine": "web.push.apple.com",
-      "ok": false,
-      "status": null
-    },
-    {
-      "domaine": "web.push.apple.com",
-      "ok": false,
-      "status": 403
-    },
-    {
-      "domaine": "web.push.apple.com",
-      "ok": false,
-      "status": 403
-    },
-    {
-      "domaine": "web.push.apple.com",
-      "ok": false,
-      "status": null
-    },
     {
       "domaine": "web.push.apple.com",
       "ok": false,
@@ -59,16 +29,6 @@
       "domaine": "web.push.apple.com",
       "ok": false,
       "status": 403
-    },
-    {
-      "domaine": "web.push.apple.com",
-      "ok": false,
-      "status": 403
-    },
-    {
-      "domaine": "web.push.apple.com",
-      "ok": false,
-      "status": null
     }
   ]
 }
