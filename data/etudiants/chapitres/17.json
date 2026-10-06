@@ -68,6 +68,19 @@
         "Reddit — r/etudiants, fils « et maintenant ? » (06/10/2026)",
         "Assemblées des blocus — comptes rendus des votes (octobre 2026)"
       ]
+    },
+    {
+      "id": "c17p8",
+      "texte": "Relevé automatique du 6 octobre 2026 à 17:28 : 12 information(s) des dernières heures. — DIRECT. Crise des lycées : Lecornu annonce une suspension des cours, tensions à Paris (La Croix, BFMTV, Le Figaro) — EN DIRECT - Mobilisation des lycéens : 256 000 manifestants en France selon les autorités, 450 000 d’après les organisateurs (Le Figaro, BFMTV, France 24) — Les blocus lycéens en France instrumentalisés par des comptes d'extrême droite étrangers (France 24) — Noisy-le-Grand: interpellé pour des tirs de mortiers, un jeune homme victime de convulsions \"vraisemblablement en lien avec l’inhalation\" de gaz lacrymogène, s… (BFMTV) — Blocus des lycées : poubelles incendiées, gaz lacrymogènes, jets de pierre… Les images de cette nouvelle journée de mobilisation (Le Figaro) — Mobilisation lycéenne: un lycéen et un policier font un bras de fer en marge d'un blocus (BFMTV) — Les ministres Laurent Nuñez et Édouard Geffray auditionnés ce mercredi à l’Assemblée nationale (L'Humanité) — «Cyberblocages» : quand les lycéens paralysent aussi les cours en visio (Libération) — Blocage des lycées : « Il faut donner aux jeunes les moyens de transformer le monde » (La Croix) — Blocage des lycées: À Mâcon, un policier fait une \"battle d'aura\" avec des lycéens (BFMTV) — France : Parcoursup dans le viseur des lycéens pour ses critères de sélection flous (France 24) — Lecornu promet de « corriger » Parcoursup… Huit ans après (L'Humanité) Faits bruts repris des titres, non reformulés.",
+      "sources": [
+        "La Croix",
+        "BFMTV",
+        "Le Figaro",
+        "France 24",
+        "L'Humanité",
+        "Libération"
+      ],
+      "auto": true
     }
   ]
 }
