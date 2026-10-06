@@ -1,4 +1,4 @@
-/* views/lyceens.js — ✊ Lycéens (v88) : suivre le mouvement lycéen et étudiant
+/* views/lyceens.js — ✊ Lycéens (v89) : suivre le mouvement lycéen et étudiant
  * de 2026 en France, en séparant quatre lectures : la version des lycéens,
  * la version du gouvernement, et les seules informations corroborées par
  * plusieurs médias indépendants. Chaque info porte un badge ✅ (vérifiée,
@@ -30,68 +30,95 @@ function sousOnglets(sub) {
     '<button class="subtab' + (x.id === sub ? ' active' : '') + '" data-s="' + x.id + '">' + esc(x.nom) + '</button>').join('') + '</div>';
 }
 
-/* Chronologie « Version des étudiants » : data/etudiants.json (network-first),
- * chargé paresseux et mis en cache dans state, comme lyceens.json. Le fichier
- * peut dépasser 32 Ko : on le fetch en entier, mais on rend les chapitres par
- * tranches pour ne pas bloquer le fil principal. */
+/* Chronique « Version des étudiants » : data/etudiants/index.json (network-first),
+ * puis, dans l'ordre, chaque fichier data/etudiants/chapitres/NN.json listé dans
+ * chapitres[]. Tout est stocké UNE fois dans state.etudiants (index + chapitres
+ * chargés) : aucun rechargement ni re-render complet ensuite. */
 async function chargerEtudiants() {
-  if (!state.etudiants) {
-    try { state.etudiants = await (await fetch('data/etudiants.json', { cache: 'no-store' })).json(); }
-    catch (e) { state.etudiants = { erreur: true }; }
-  }
-  return state.etudiants;
+  if (state.etudiants) return state.etudiants;
+  const etu = { index: null, chapitres: [], erreur: false, promesse: null };
+  state.etudiants = etu;
+  etu.promesse = (async () => {
+    try {
+      etu.index = await (await fetch('data/etudiants/index.json', { cache: 'no-store' })).json();
+    } catch (e) { etu.erreur = true; return; }
+    const liste = Array.isArray(etu.index.chapitres) ? etu.index.chapitres : [];
+    /* Les chapitres sont chargés les uns après les autres, dans l'ordre de
+     * l'index ; un chapitre manquant devient un bloc vide, sans casser la suite. */
+    for (const e of liste) {
+      try {
+        etu.chapitres.push(await (await fetch('data/etudiants/' + e.fichier, { cache: 'no-store' })).json());
+      } catch (err) {
+        etu.chapitres.push({ id: e.id, periode: e.periode, titre: e.titre, paragraphes: [] });
+      }
+    }
+  })();
+  return etu;
 }
 
-/* Un chapitre de la chronologie : <details> repliable, paragraphes horodatés,
- * sources cliquables en pied de carte. Tout texte passe par esc(). */
-function carteChapitre(ch, dernier) {
-  const paragraphes = Array.isArray(ch.paragraphes) ? ch.paragraphes : [];
-  let html = '<details class="carte-regl" id="chapitre-' + esc(String(ch.id || '')) + '"><summary>' +
-    '<span class="meta-count">' + esc(ch.periode || '?') + '</span> ' + esc(ch.titre || '') + '</summary>';
-  paragraphes.forEach(p => {
-    html += '<p>' + (p.horodatage ? '<span class="meta-count">' + esc(p.horodatage) + '</span> — ' : '') +
-      esc(p.texte || '') + '</p>';
-  });
-  if (paragraphes.length) {
-    html += '<p' + (dernier ? ' id="fin-texte"' : '') + ' class="meta-count">Fin du chapitre — ' + paragraphes.length +
-      ' paragraphe' + (paragraphes.length > 1 ? 's' : '') + '.</p>';
-  }
-  /* Les sources vivent au niveau du paragraphe : on les rassemble en un
-   * footer cliquable, dedupliquées et dans l'ordre. */
-  const sources = [];
-  paragraphes.forEach(p => (Array.isArray(p.sources) ? p.sources : []).forEach(s => {
-    const u = String(s || '');
-    if (u && !sources.includes(u)) sources.push(u);
-  }));
-  if (sources.length) {
-    html += '<footer class="form-actions">' + sources.map(s =>
-      '<a class="filter-btn active" href="' + esc(s) + '" target="_blank" rel="noopener">🔗 ' + esc(s) + '</a>').join('') + '</footer>';
-  }
-  return html + '</details>';
+/* Un paragraphe : <p> échappé, sources en petites lignes dessous. Les
+ * paragraphes auto: true portent la classe releve-auto (style discret) et un
+ * badge « relevé auto ». Le DERNIER paragraphe du DERNIER chapitre reçoit
+ * id="fin-texte" pour le bouton d'accès rapide à la fin. */
+function paragrapheHtml(p, dernier) {
+  const auto = p && p.auto === true;
+  const sources = Array.isArray(p.sources) ? p.sources.filter(Boolean) : [];
+  return '<p' + (dernier ? ' id="fin-texte"' : '') + (auto ? ' class="releve-auto"' : '') + '>' +
+    (auto ? '<span class="badge-auto">relevé auto</span> ' : '') +
+    esc(p.texte || '') + '</p>' +
+    (sources.length
+      ? '<p class="meta-count">' + sources.map(s =>
+        '<a href="' + esc(s) + '" target="_blank" rel="noopener">🔗 ' + esc(s) + '</a>').join(' · ') + '</p>'
+      : '');
 }
 
-/* Rendu progressif par tranches de chapitres : le fil principal reste libre
- * même sur un gros fichier. */
-function rendreChapitresProgressif(conteneur, chapitres) {
-  const TRANCHE = 5;
-  let i = 0;
-  function tranche() {
-    conteneur.insertAdjacentHTML('beforeend', chapitres.slice(i, i + TRANCHE).map(([c, der]) => carteChapitre(c, der)).join(''));
-    i += TRANCHE;
-    if (i < chapitres.length) (window.requestAnimationFrame || (f => setTimeout(f, 16)))(tranche);
-  }
-  tranche();
+/* Un chapitre : bloc <h3> (titre + période), puis ses paragraphes. */
+function chapitreHtml(ch, dernier) {
+  const ps = Array.isArray(ch.paragraphes) ? ch.paragraphes : [];
+  return '<section class="chapter-resume chapitre-etudiant" id="chapitre-' + esc(String(ch.id || '')) + '">' +
+    '<h3>' + esc(ch.titre || '') + (ch.periode ? ' <span class="meta-count">' + esc(ch.periode) + '</span>' : '') + '</h3>' +
+    ps.map((p, i) => paragrapheHtml(p, dernier && i === ps.length - 1)).join('') +
+    '</section>';
 }
 
-/* « ⬇️ Aller à la fin du texte » : déroule le dernier chapitre, défile jusqu'au
- * dernier paragraphe (#fin-texte) puis le surligne brièvement. */
-function allerFinTexte() {
+/* Compteur discret : total de caractères (somme des octets déclarés par
+ * l'index), date de mise à jour et nombre de paragraphes. */
+function compteurEtudiants(d) {
+  const octets = (Array.isArray(d.chapitres) ? d.chapitres : []).reduce((a, c) => a + (+c.octets || 0), 0);
+  const cars = octets >= 100000 ? '100\u00a0000+ caractères' : (octets ? octets.toLocaleString('fr-FR') + ' caractères' : '');
+  const morceaux = [];
+  if (cars) morceaux.push(cars);
+  if (d.maj) morceaux.push('mis à jour le ' + esc(d.maj));
+  if (d.totalParagraphes) morceaux.push(esc(String(d.totalParagraphes)) + ' paragraphes');
+  return morceaux.length ? '<p class="meta-count">' + morceaux.join(' · ') + '</p>' : '';
+}
+
+/* Montage du bloc : attend la fin du chargement (index + chapitres) puis rend
+ * la chronique une seule fois dans le conteneur frais de l'onglet. */
+async function initEtudiants(conteneur) {
+  const etu = state.etudiants;
+  if (!etu || !etu.promesse) return;
+  await etu.promesse;
+  if (!document.getElementById('bloc-etudiants')) return;
+  if (etu.erreur) {
+    conteneur.innerHTML = '<div class="empty">Chronologie étudiante momentanément indisponible — data/etudiants/index.json ne répond pas.</div>';
+    return;
+  }
+  if (!etu.chapitres.length) {
+    conteneur.innerHTML = '<div class="empty">Chronologie pas encore publiée — elle apparaîtra ici dès que data/etudiants/ sera rempli.</div>';
+    return;
+  }
+  conteneur.innerHTML = etu.chapitres.map((c, i) => chapitreHtml(c, i === etu.chapitres.length - 1)).join('');
+}
+
+/* « ⬇️ Aller à la fin du texte » : attend que tous les chapitres soient
+ * chargés si c'est encore en cours, puis défile jusqu'à #fin-texte et le
+ * surligne brièvement. */
+async function allerFinTexte() {
+  const etu = state.etudiants;
+  if (etu && etu.promesse) await etu.promesse;
   const fin = document.getElementById('fin-texte') || document.getElementById('bloc-etudiants');
   if (!fin) return;
-  if (typeof fin.closest === 'function') {
-    const det = fin.closest('details');
-    if (det) det.open = true;
-  }
   if (typeof fin.scrollIntoView === 'function') fin.scrollIntoView({ behavior: 'smooth', block: 'end' });
   fin.style.transition = 'background-color 0.3s';
   fin.style.backgroundColor = 'rgba(255, 213, 79, 0.45)';
@@ -99,16 +126,19 @@ function allerFinTexte() {
 }
 
 function blocEtudiants(d) {
-  return (d.intro ? '<p>' + esc(d.intro) + '</p>' : '') +
+  return '<div class="summary-card">' +
+    '<h2>🎓 ' + esc(d.titre || 'Version des étudiants') + '</h2>' +
+    (d.intro ? '<p class="meta-count">' + esc(d.intro) + '</p>' : '') +
     (d.note ? '<p class="hint">🔎 ' + esc(d.note) + '</p>' : '') +
-    (d.maj ? '<p class="hint">Mis à jour le ' + esc(d.maj) + '.</p>' : '') +
+    compteurEtudiants(d) +
+    '</div>' +
     '<div class="form-actions"><button class="filter-btn active" id="btn-fin-texte" type="button">⬇️ Aller à la fin du texte</button></div>' +
-    '<div id="bloc-etudiants"></div>';
+    '<div id="bloc-etudiants"><div class="empty">Chargement de la chronologie étudiante…</div></div>';
 }
 
 function wireBlocEtudiants() {
   const b = document.getElementById('btn-fin-texte');
-  if (b) b.onclick = allerFinTexte;
+  if (b) b.onclick = () => { allerFinTexte().catch(() => {}); };
 }
 
 function wireSousOnglets() {
@@ -146,9 +176,7 @@ function trier(liste) {
 
 export function vueLyceens() {
   const view = $('#view');
-  if (state.lyceensSub === 'etudiants' && !state.etudiants) {
-    chargerEtudiants().then(() => { if (state.activeTab === 'lyceens') vueLyceens(); }).catch(() => {});
-  }
+  if (state.lyceensSub === 'etudiants' && !state.etudiants) chargerEtudiants().catch(() => {});
   const d = state.lyceens;
   if (!d) {
     view.innerHTML = '<div class="empty">Chargement du suivi du mouvement lycéen…</div>';
@@ -181,21 +209,14 @@ export function vueLyceens() {
     (sous === 'lyceens'
       ? '<p class="meta-count">' + compteListe(lyceens) + '</p>' + (lyceens.length ? lyceens.map(carteInfo).join('') : '<div class="empty">Aucune info côté lycéens pour l\u2019instant.</div>')
       : sous === 'etudiants'
-        ? blocEtudiants(state.etudiants || { erreur: true })
+        ? blocEtudiants(state.etudiants && state.etudiants.index ? state.etudiants.index : {})
         : sous === 'gouvernement'
         ? '<p class="meta-count">' + compteListe(gouv) + '</p>' + (gouv.length ? gouv.map(carteInfo).join('') : '<div class="empty">Aucune info côté gouvernement pour l\u2019instant.</div>')
         : '<p class="meta-count">' + compteListe(faits) + '</p>' + (faits.length ? faits.map(carteInfo).join('') : '<div class="empty">Aucune information corroborée à ce stade.</div>'));
 
-  if (sous === 'etudiants' && state.etudiants && !state.etudiants.erreur) {
+  if (sous === 'etudiants') {
     const conteneur = document.getElementById('bloc-etudiants');
-    if (conteneur) {
-      const chapitres = Array.isArray(state.etudiants.chapitres) ? state.etudiants.chapitres : [];
-      if (!chapitres.length) {
-        conteneur.innerHTML = '<div class="empty">Chronologie étudiante pas encore publiée — elle apparaîtra ici dès que data/etudiants.json sera rempli.</div>';
-      } else {
-        rendreChapitresProgressif(conteneur, chapitres.map((c, i) => [c, i === chapitres.length - 1]));
-      }
-    }
+    if (conteneur) initEtudiants(conteneur).catch(() => {});
   }
   wireBlocEtudiants();
   wireSousOnglets();
