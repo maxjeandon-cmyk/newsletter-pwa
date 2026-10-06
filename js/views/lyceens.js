@@ -1,5 +1,5 @@
-/* views/lyceens.js — ✊ Lycéens (v87) : suivre le mouvement lycéen et étudiant
- * de 2026 en France, en séparant trois lectures : la version des lycéens,
+/* views/lyceens.js — ✊ Lycéens (v88) : suivre le mouvement lycéen et étudiant
+ * de 2026 en France, en séparant quatre lectures : la version des lycéens,
  * la version du gouvernement, et les seules informations corroborées par
  * plusieurs médias indépendants. Chaque info porte un badge ✅ (vérifiée,
  * au moins deux médias indépendants) ou ⚠️ (une seule source à ce stade).
@@ -11,6 +11,7 @@ import { renderView } from './common.js';
 
 const SOUS_ONGLETS_LYCEENS = () => [
   { id: 'lyceens', nom: '✊ Version des lycéens' },
+  { id: 'etudiants', nom: '🎓 Version des étudiants' },
   { id: 'gouvernement', nom: '🏛️ Version du gouvernement' },
   { id: 'faits', nom: '✅ Faits vérifiés uniquement' }
 ];
@@ -27,6 +28,87 @@ async function chargerLyceens() {
 function sousOnglets(sub) {
   return '<div class="subtabs">' + SOUS_ONGLETS_LYCEENS().map(x =>
     '<button class="subtab' + (x.id === sub ? ' active' : '') + '" data-s="' + x.id + '">' + esc(x.nom) + '</button>').join('') + '</div>';
+}
+
+/* Chronologie « Version des étudiants » : data/etudiants.json (network-first),
+ * chargé paresseux et mis en cache dans state, comme lyceens.json. Le fichier
+ * peut dépasser 32 Ko : on le fetch en entier, mais on rend les chapitres par
+ * tranches pour ne pas bloquer le fil principal. */
+async function chargerEtudiants() {
+  if (!state.etudiants) {
+    try { state.etudiants = await (await fetch('data/etudiants.json', { cache: 'no-store' })).json(); }
+    catch (e) { state.etudiants = { erreur: true }; }
+  }
+  return state.etudiants;
+}
+
+/* Un chapitre de la chronologie : <details> repliable, paragraphes horodatés,
+ * sources cliquables en pied de carte. Tout texte passe par esc(). */
+function carteChapitre(ch, dernier) {
+  const paragraphes = Array.isArray(ch.paragraphes) ? ch.paragraphes : [];
+  let html = '<details class="carte-regl" id="chapitre-' + esc(String(ch.id || '')) + '"><summary>' +
+    '<span class="meta-count">' + esc(ch.periode || '?') + '</span> ' + esc(ch.titre || '') + '</summary>';
+  paragraphes.forEach(p => {
+    html += '<p>' + (p.horodatage ? '<span class="meta-count">' + esc(p.horodatage) + '</span> — ' : '') +
+      esc(p.texte || '') + '</p>';
+  });
+  if (paragraphes.length) {
+    html += '<p' + (dernier ? ' id="fin-texte"' : '') + ' class="meta-count">Fin du chapitre — ' + paragraphes.length +
+      ' paragraphe' + (paragraphes.length > 1 ? 's' : '') + '.</p>';
+  }
+  /* Les sources vivent au niveau du paragraphe : on les rassemble en un
+   * footer cliquable, dedupliquées et dans l'ordre. */
+  const sources = [];
+  paragraphes.forEach(p => (Array.isArray(p.sources) ? p.sources : []).forEach(s => {
+    const u = String(s || '');
+    if (u && !sources.includes(u)) sources.push(u);
+  }));
+  if (sources.length) {
+    html += '<footer class="form-actions">' + sources.map(s =>
+      '<a class="filter-btn active" href="' + esc(s) + '" target="_blank" rel="noopener">🔗 ' + esc(s) + '</a>').join('') + '</footer>';
+  }
+  return html + '</details>';
+}
+
+/* Rendu progressif par tranches de chapitres : le fil principal reste libre
+ * même sur un gros fichier. */
+function rendreChapitresProgressif(conteneur, chapitres) {
+  const TRANCHE = 5;
+  let i = 0;
+  function tranche() {
+    conteneur.insertAdjacentHTML('beforeend', chapitres.slice(i, i + TRANCHE).map(([c, der]) => carteChapitre(c, der)).join(''));
+    i += TRANCHE;
+    if (i < chapitres.length) (window.requestAnimationFrame || (f => setTimeout(f, 16)))(tranche);
+  }
+  tranche();
+}
+
+/* « ⬇️ Aller à la fin du texte » : déroule le dernier chapitre, défile jusqu'au
+ * dernier paragraphe (#fin-texte) puis le surligne brièvement. */
+function allerFinTexte() {
+  const fin = document.getElementById('fin-texte') || document.getElementById('bloc-etudiants');
+  if (!fin) return;
+  if (typeof fin.closest === 'function') {
+    const det = fin.closest('details');
+    if (det) det.open = true;
+  }
+  if (typeof fin.scrollIntoView === 'function') fin.scrollIntoView({ behavior: 'smooth', block: 'end' });
+  fin.style.transition = 'background-color 0.3s';
+  fin.style.backgroundColor = 'rgba(255, 213, 79, 0.45)';
+  setTimeout(() => { fin.style.backgroundColor = ''; }, 1600);
+}
+
+function blocEtudiants(d) {
+  return (d.intro ? '<p>' + esc(d.intro) + '</p>' : '') +
+    (d.note ? '<p class="hint">🔎 ' + esc(d.note) + '</p>' : '') +
+    (d.maj ? '<p class="hint">Mis à jour le ' + esc(d.maj) + '.</p>' : '') +
+    '<div class="form-actions"><button class="filter-btn active" id="btn-fin-texte" type="button">⬇️ Aller à la fin du texte</button></div>' +
+    '<div id="bloc-etudiants"></div>';
+}
+
+function wireBlocEtudiants() {
+  const b = document.getElementById('btn-fin-texte');
+  if (b) b.onclick = allerFinTexte;
 }
 
 function wireSousOnglets() {
@@ -64,6 +146,9 @@ function trier(liste) {
 
 export function vueLyceens() {
   const view = $('#view');
+  if (state.lyceensSub === 'etudiants' && !state.etudiants) {
+    chargerEtudiants().then(() => { if (state.activeTab === 'lyceens') vueLyceens(); }).catch(() => {});
+  }
   const d = state.lyceens;
   if (!d) {
     view.innerHTML = '<div class="empty">Chargement du suivi du mouvement lycéen…</div>';
@@ -95,9 +180,23 @@ export function vueLyceens() {
       : '') +
     (sous === 'lyceens'
       ? '<p class="meta-count">' + compteListe(lyceens) + '</p>' + (lyceens.length ? lyceens.map(carteInfo).join('') : '<div class="empty">Aucune info côté lycéens pour l\u2019instant.</div>')
-      : sous === 'gouvernement'
+      : sous === 'etudiants'
+        ? blocEtudiants(state.etudiants || { erreur: true })
+        : sous === 'gouvernement'
         ? '<p class="meta-count">' + compteListe(gouv) + '</p>' + (gouv.length ? gouv.map(carteInfo).join('') : '<div class="empty">Aucune info côté gouvernement pour l\u2019instant.</div>')
         : '<p class="meta-count">' + compteListe(faits) + '</p>' + (faits.length ? faits.map(carteInfo).join('') : '<div class="empty">Aucune information corroborée à ce stade.</div>'));
 
+  if (sous === 'etudiants' && state.etudiants && !state.etudiants.erreur) {
+    const conteneur = document.getElementById('bloc-etudiants');
+    if (conteneur) {
+      const chapitres = Array.isArray(state.etudiants.chapitres) ? state.etudiants.chapitres : [];
+      if (!chapitres.length) {
+        conteneur.innerHTML = '<div class="empty">Chronologie étudiante pas encore publiée — elle apparaîtra ici dès que data/etudiants.json sera rempli.</div>';
+      } else {
+        rendreChapitresProgressif(conteneur, chapitres.map((c, i) => [c, i === chapitres.length - 1]));
+      }
+    }
+  }
+  wireBlocEtudiants();
   wireSousOnglets();
 }
