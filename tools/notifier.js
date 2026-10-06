@@ -126,11 +126,13 @@ async function main() {
     return;
   }
 
-  /* 3. Quoi de neuf ? édition du jour + bulletin climat + relevé lycéens côté dépôt (fichiers générés) */
-  const [idx, climat, lyceens] = await Promise.all([
+  /* 3. Quoi de neuf ? édition du jour + bulletin climat + relevé lycéens
+   * + chronique « Version des étudiants » côté dépôt (fichiers générés) */
+  const [idx, climat, lyceens, etudiants] = await Promise.all([
     AVEC_DELAI(fetch('https://raw.githubusercontent.com/maxjeandon-cmyk/newsletter-pwa/main/editions/latest.json').then(r => r.json())).catch(() => null),
     AVEC_DELAI(fetch('https://raw.githubusercontent.com/maxjeandon-cmyk/newsletter-pwa/main/data/climat.json').then(r => r.json())).catch(() => null),
-    AVEC_DELAI(fetch('https://raw.githubusercontent.com/maxjeandon-cmyk/newsletter-pwa/main/data/lyceens.json').then(r => r.json())).catch(() => null)
+    AVEC_DELAI(fetch('https://raw.githubusercontent.com/maxjeandon-cmyk/newsletter-pwa/main/data/lyceens.json').then(r => r.json())).catch(() => null),
+    AVEC_DELAI(fetch('https://raw.githubusercontent.com/maxjeandon-cmyk/newsletter-pwa/main/data/etudiants/index.json').then(r => r.json())).catch(() => null)
   ]);
   const dateEdition = idx?.editions?.[0]?.date || null;
   const majClimat = climat?.maj || climat?.date || null;
@@ -140,6 +142,15 @@ async function main() {
    * le fichier est republié). */
   const majLyceens = lyceens && (lyceens.maj || (lyceens.faits || []).length)
     ? (lyceens.maj || '') + '/' + (lyceens.faits || []).length + '/' + (lyceens.version_gouvernement || []).length
+    : null;
+  /* Chronique « Version des étudiants » : notifiée seulement quand un NOUVEAU
+   * chapitre est publié — la signature change si et seulement si le nombre de
+   * chapitres bouge ou que l'identifiant du dernier chapitre change (ni maj,
+   * ni taille de fichiers : éditer un chapitre existant ne notifie pas). */
+  const chapitres = (etudiants && Array.isArray(etudiants.chapitres) && etudiants.chapitres) || [];
+  const dernierChapitre = chapitres.length ? chapitres[chapitres.length - 1] : null;
+  const majEtudiants = dernierChapitre
+    ? chapitres.length + '/' + dernierChapitre.id
     : null;
 
   /* 4. Déjà envoyé ? (dans prefs.notif_envoyees, mis à jour après succès) */
@@ -155,6 +166,8 @@ async function main() {
       msgs.push({ titre: '🌡️ Bulletin Copernicus', corps: 'Nouveau bulletin climat disponible.', url: './#climat' });
     if (t.lyceens && majLyceens && envoyes.lyceens !== majLyceens)
       msgs.push({ titre: '✊ Lycéens 2026', corps: (lyceens.faits || []).length + ' fait(s) vérifié(s) sur le mouvement lycéen — relevé actualisé.', url: './#lyceens' });
+    if (t.lyceens && majEtudiants && envoyes.etudiants !== majEtudiants)
+      msgs.push({ titre: '✊ Lycéens 2026', corps: 'Nouveau chapitre de la chronique « Version des étudiants » : « ' + (dernierChapitre.titre || dernierChapitre.id) + ' ».', url: './#lyceens/etudiants' });
     for (const m of (p.mediasNotifies || [])) msgs.push(m); /* réservé : alertes média futures */
     if (!msgs.length) continue;
     aNotifier.push({ abonnement: a, message: msgs[0], reste: msgs.length - 1, prefs: p, envoyes });
@@ -173,8 +186,8 @@ async function main() {
           JSON.stringify(t.message)
         ));
         envoyes++;
-        /* mémo : cet utilisateur a reçu edition/copernicus/lyceens courant */
-        const memo = { ...(t.envoyes || {}), ...(t.message.url === './#edition' ? { edition: dateEdition } : t.message.url === './#climat' ? { copernicus: majClimat } : t.message.url === './#lyceens' ? { lyceens: majLyceens } : {}) };
+        /* mémo : cet utilisateur a reçu edition/copernicus/lyceens/etudiants courant */
+        const memo = { ...(t.envoyes || {}), ...(t.message.url === './#edition' ? { edition: dateEdition } : t.message.url === './#climat' ? { copernicus: majClimat } : t.message.url === './#lyceens' ? { lyceens: majLyceens } : t.message.url === './#lyceens/etudiants' ? { etudiants: majEtudiants } : {}) };
         /* PATCH différé : on accumule et on écrit par lot après la boucle (v29). */
         majPrefs.set(t.abonnement.user_id, { __uid: t.abonnement.user_id, ...t.prefs, notif_envoyees: memo });
       } catch (e) {
