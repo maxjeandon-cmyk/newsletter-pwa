@@ -35,24 +35,39 @@ const EMOJIS14 = ['🤖','🚀','💰','⚖️','🎮','🎭','🔬','🌍','�
 // Les apostrophes peuvent être droites (') ou typographiques (U+2019) selon le fichier source.
 const AP = "['\u2019]";
 
+// Éditions déroulantes (06/10/2026 et après) : chapitres en <details open id="c-…">.
+const DEROULANT_A_PARTIR_DE = '2026-10-06';
+
 function escapeRe(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-function resumeDeChapitre(html, nom) {
-  const re = new RegExp('<h2>\\d+\\.\\s*[^<]*' + escapeRe(nom).replace(/'/g, AP) + '\\s*</h2>([\\s\\S]*?)(?=<hr>|<h2>|$)');
-  const m = html.match(re);
-  if (!m) return '';
-  const bloc = m[1];
+function resumeDeChapitre(html, nom, id, v15) {
+  let bloc = '';
+  if (v15) {
+    const m15 = html.match(new RegExp('<details[^>]*id="c-' + id + '"[^>]*>([\\s\\S]*?)(?=<details|<hr|<h2>|$)'));
+    if (m15) bloc = m15[1];
+  } else {
+    const re = new RegExp('<h2>\\d+\\.\\s*[^<]*' + escapeRe(nom).replace(/'/g, AP) + '\\s*</h2>([\\s\\S]*?)(?=<hr>|<h2>|$)');
+    const m = html.match(re);
+    if (m) bloc = m[1];
+  }
+  if (!bloc) return '';
   const p = bloc.match(/<p>([\s\S]*?)<\/p>/) || bloc.match(/<li>([\s\S]*?)<\/li>/);
   if (!p) return '';
   return p[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim().slice(0, 400);
 }
 
-function horsChapitres(html) {
-  const m = html.match(/<h2>[^<]*Hors des chapitres[^<]*<\/h2>([\s\S]*?)(?=<hr>|<h2>|$)/);
-  if (!m) return [];
-  const bloc = m[1];
+function horsChapitres(html, v15) {
+  let bloc = '';
+  if (v15) {
+    const m15 = html.match(/<details[^>]*id="c-hors-chapitres"[^>]*>([\s\S]*?)(?=<details|<hr|<h2>|$)/);
+    if (m15) bloc = m15[1];
+  } else {
+    const m = html.match(/<h2>[^<]*Hors des chapitres[^<]*<\/h2>([\s\S]*?)(?=<hr>|<h2>|$)/);
+    if (m) bloc = m[1];
+  }
+  if (!bloc) return [];
   return [...bloc.matchAll(/<li>([\s\S]*?)<\/li>/g)].map((li) =>
     li[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').replace(/\s*:\s*:/g, ' :').trim());
 }
@@ -64,6 +79,7 @@ function build(html, date) {
   else if (d >= FORMAT_13_A_PARTIR_DE) { IDS = IDS13; NOMS = NOMS13; EMOJIS = EMOJIS13; }
   else { IDS = IDS11; NOMS = NOMS11; EMOJIS = EMOJIS11; }
   const thematique = d >= FORMAT_13_A_PARTIR_DE;
+  const v15 = d >= DEROULANT_A_PARTIR_DE;
 
   const reSection = html.split(/<h2>[^<]*Résumé exécutif[^<]*<\/h2>/)[1] || '';
   const corpsResume = reSection.split('<hr>')[0];
@@ -81,9 +97,9 @@ function build(html, date) {
     if (urlM) label = label.replace(/\s*\([^)]*\)\s*$/, '').trim();
     return { label, ref: urlM ? urlM[1] : '', fiabilite: parseInt(m[2], 10), maj: m[3] };
   });
-  const chapitres = IDS.map((id, i) => ({ id, emoji: EMOJIS[i], nom: NOMS[i], resume: resumeDeChapitre(html, NOMS[i]) }));
+  const chapitres = IDS.map((id, i) => ({ id, emoji: EMOJIS[i], nom: NOMS[i], resume: resumeDeChapitre(html, NOMS[i], id, v15) }));
   const j = { date, genere_le: new Date().toISOString(), html: 'editions/' + date + '.html', resume_executif: points, chapitres, sources };
-  if (thematique) j.hors_chapitres = horsChapitres(html);
+  if (thematique) j.hors_chapitres = horsChapitres(html, v15);
   return { j, nb: IDS.length };
 }
 

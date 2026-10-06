@@ -21,6 +21,12 @@ const fs = require('fs');
 
 // Format à 14 chapitres (règle du 30/09/2026 au soir, première édition : 30/09/2026)
 const FORMAT_14_A_PARTIR_DE = '2026-09-30';
+// Chapitres deroulants (regle du 06/10/2026, premiere edition : 06/10/2026) :
+// chaque chapitre + la section « Hors des chapitres » vivent dans un
+// <details open id="c-…"> avec <summary> et bouton de partage (btn-partage,
+// data-id/data-titre/data-resume). Les h2 restent pour : resume executif,
+// Notes de sources, Questions ouvertes.
+const DEROULANT_A_PARTIR_DE = '2026-10-06';
 // Format à 13 chapitres (règle du 30/09/2026 au matin, seule édition concernée : 29/09/2026)
 const FORMAT_13_A_PARTIR_DE = '2026-09-29';
 
@@ -85,9 +91,11 @@ function check(bloc, nom, ok, detail) {
   results.push({ bloc, nom, ok: !!ok, detail: detail || '' });
 }
 
-function validateHtml(html, fmt) {
+function validateHtml(html, fmt, v15) {
   const cnt = (s) => html.split(s).length - 1;
-  const detailFmt = fmt === 14
+  const detailFmt = v15
+    ? 'résumé + hors chapitres + 14 chapitres déroulants + notes + questions'
+    : fmt === 14
     ? 'résumé + hors chapitres + 14 chapitres + notes + questions'
     : fmt === 13 ? 'résumé + hors chapitres + 13 chapitres + notes + questions'
     : 'résumé + 11 chapitres + notes + questions';
@@ -102,10 +110,24 @@ function validateHtml(html, fmt) {
   check('HTML', 'section Notes de sources', html.includes('Notes de sources'));
   check('HTML', 'section Questions ouvertes', html.includes('Questions ouvertes'));
   const nbH2 = cnt('<h2>');
-  const minH2 = fmt === 14 ? 18 : fmt === 13 ? 17 : 14;
+  const minH2 = v15 ? 3 : fmt === 14 ? 18 : fmt === 13 ? 17 : 14;
   check('HTML', `sections h2 >= ${minH2} (${detailFmt})`, nbH2 >= minH2, `trouvé(s)=${nbH2}`);
   if (fmt >= 13) {
     check('HTML', 'section « Hors des chapitres »', html.includes('Hors des chapitres'));
+  }
+  if (v15) {
+    /* Structure déroulante (règle du 06/10/2026) : 14 chapitres + hors chapitres
+     * en <details open id="c-…">, summary, bouton de partage complet. */
+    const ids = [...ORDRE_CHAPITRES_14, 'hors-chapitres'];
+    check('HTML', 'chapitres déroulants <details open> (15)', cnt('<details open') >= 15, `trouvé(s)=${cnt('<details open')}`);
+    check('HTML', '<summary> pour chaque bloc déroulant', cnt('<summary') >= 15, `trouvé(s)=${cnt('<summary')}`);
+    for (const id of ids) {
+      check('HTML', `ancre déroulante id="c-${id}"`, html.includes(`id="c-${id}"`));
+    }
+    check('HTML', 'bouton de partage par chapitre (15)', cnt('class="btn-partage"') >= 15, `trouvé(s)=${cnt('class="btn-partage"')}`);
+    check('HTML', 'boutons avec data-titre', cnt('data-titre=') >= 15, `trouvé(s)=${cnt('data-titre=')}`);
+    check('HTML', 'boutons avec data-resume', cnt('data-resume=') >= 15, `trouvé(s)=${cnt('data-resume=')}`);
+    check('HTML', '<script> de partage équilibré', cnt('<script>') === 1 && cnt('</script>') === 1);
   }
 }
 
@@ -168,7 +190,8 @@ function main() {
       // (contournement de la corruption de transport des charges non-ASCII > ~32 Ko, règle du 29/09/2026).
       const html = fs.readFileSync(htmlCandidate, 'utf8').replace(/&#(\d+);/g, (m, n) => String.fromCodePoint(parseInt(n, 10)));
       check('HTML', 'fichier lisible', true);
-      validateHtml(html, fmt);
+      const v15 = !!(j && j.date >= DEROULANT_A_PARTIR_DE);
+      validateHtml(html, fmt, v15);
       if (j) check('Cohérence', 'date dans le HTML', html.includes(fmtFR(j.date)),
         `recherche de « ${fmtFR(j.date)} »`);
     } catch (e) {

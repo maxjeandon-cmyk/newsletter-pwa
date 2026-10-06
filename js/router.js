@@ -27,6 +27,9 @@ export function hashFromState() {
   } else if (h === 'archives') {
     if (SOUS_ARCHIVES.includes(state.archiveSub) && state.archiveSub !== 'editions') h += '/' + state.archiveSub;
     if (state.archiveSel) h += '?h=' + encodeURIComponent(state.archiveSel);
+  } else if (h === 'edition') {
+    /* v96 : lien profond vers un chapitre déroulant de l'édition (partage) */
+    if (state.editionChapitre) h += '?c=' + encodeURIComponent(state.editionChapitre);
   }
   return h;
 }
@@ -39,6 +42,9 @@ export function stateFromHash() {
   let tab = ONGLETS.includes(parties[0]) ? parties[0] : 'edition';
   if (tab === 'sources') tab = 'archives'; /* héritage : l'onglet Sources vit désormais dans Archives */
   state.activeTab = tab;
+  /* le chapitre partagé ne survit qu'à l'écran édition : quitter l'onglet l'efface
+   * (sinon revenir à l'édition par le tab rescrollerait vers lui toute la session) */
+  if (tab !== 'edition') state.editionChapitre = null;
   if (parties[0] === 'sources') state.archiveSub = 'sources';
   if (tab === 'medias') {
     if (parties[1] === 'ajout' || parties[1] === 'ajoutvideo' || parties[1] === 'gerer') { state.mediasMode = parties[1]; }
@@ -48,6 +54,12 @@ export function stateFromHash() {
     state.archiveSub = SOUS_ARCHIVES.includes(parties[1]) ? parties[1] : 'editions';
     const h = new URLSearchParams(query || '').get('h');
     state.archiveSel = h && /^[\w./-]+$/.test(h) ? h : null;
+  }
+  if (tab === 'edition') {
+    /* v96 : #edition?c=<id-chapitre> — le partage d'un chapitre déroulant
+     * ouvre l'édition directement sur le bon bloc (scroll dans l'iframe). */
+    const c = new URLSearchParams(query || '').get('c');
+    state.editionChapitre = /^[a-z0-9-]+$/i.test(c || '') ? c : null;
   }
   if (tab === 'videos') {
     state.videoLecture = /^[\w-]{11}$/.test(parties[1]) ? { videoId: parties[1] } : null;

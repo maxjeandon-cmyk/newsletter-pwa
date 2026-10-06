@@ -31,6 +31,15 @@ export function vueEdition() {
         btn.remove();
       });
       if (tbl) tbl.after(btn);
+      /* v96 : lien profond #edition?c=<id> — l'édition s'ouvre sur le chapitre
+       * partagé (les blocs déroulants portent id="c-<id>" dans le HTML généré). */
+      if (state.editionChapitre) {
+        const cible = frame.contentDocument.getElementById('c-' + state.editionChapitre);
+        if (cible) {
+          if (cible.open === false) cible.open = true;
+          cible.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
     } catch (e) { /* cross-origin */ }
   });
 }
