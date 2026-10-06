@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-06T23:37:33.593Z",
+  "date": "2026-10-06T23:43:55.135Z",
   "mode": "test",
-  "abonnements": 2,
+  "abonnements": 4,
   "envoyes": 1,
-  "morts": 1,
+  "morts": 2,
   "resultats": [
     {
       "domaine": "updates.push.services.mozilla.com",
@@ -13,7 +13,21 @@
     {
       "domaine": "web.push.apple.com",
       "ok": false,
-      "status": 403
+      "status": 403,
+      "corps": "{\"reason\":\"BadJwtToken\"}"
+    },
+    {
+      "domaine": "web.push.apple.com",
+      "ok": false,
+      "status": 403,
+      "corps": "{\"reason\":\"BadJwtToken\"}"
+    },
+    {
+      "domaine": "web.push.apple.com",
+      "ok": false,
+      "status": null,
+      "corps": "delai depasse (30000 ms) — appel reseau muet, on passe a la suite"
     }
-  ]
+  ],
+  "cleMatch": true
 }
