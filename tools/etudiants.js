@@ -263,6 +263,27 @@ async function main() {
   index.maj = aujourdhui;
   index.releveSigs = sigs;
   index.totalParagraphes = index.chapitres.reduce((a, c) => a + c.paragraphes, 0);
+  /* v91 : l index porte des sections (chronique / complement) et la vue lit
+   * uniquement sections[].chapitres. On met donc chaque section a jour a partir
+   * de index.chapitres pour que les releves auto restent visibles cote client.
+   * Un releve auto appartiendra toujours a la section chronique (les nouveaux
+   * chapitres cibles sont numerotes, pas c10-c16) ; les sections conserve leur
+   * ordre et leurs entrees existantes. */
+  if (Array.isArray(index.sections)) {
+    for (const section of index.sections) {
+      const deja = Array.isArray(section.chapitres) ? section.chapitres : [];
+      const ids = deja.map(c => c.id);
+      const aJour = id => index.chapitres.find(c => c.id === id);
+      let chapitres = ids.map(id => aJour(id) || deja.find(c => c.id === id)).filter(Boolean);
+      if (section.id === 'chronique') {
+        /* Les releves auto vont a la fin de la chronique (apres c17), jamais
+         * dans le Complement (c10-c16). */
+        const nouveaux = index.chapitres.filter(c => !ids.includes(c.id) && !/^c1[0-6]$/.test(c.id));
+        chapitres = chapitres.concat(nouveaux);
+      }
+      section.chapitres = chapitres;
+    }
+  }
   fs.writeFileSync(FICHIER_INDEX, JSON.stringify(index, null, 2) + '\n');
 
   /* Versionnement croisé : les items corroborés (≥ 2 médias) du relevé
