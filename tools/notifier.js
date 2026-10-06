@@ -33,7 +33,7 @@ const STATS = {
 };
 function noterEnvoi(endpoint, ok, status) {
   let domaine = '?';
-  try { domaine = new URL(endpoint).host; } catch (e) { /* endpoint illisible */ }
+  try { domaine = String(endpoint).split('/')[2] || '?'; } catch (e) { /* endpoint illisible */ }
   STATS.resultats.push({ domaine, ok: !!ok, status: status || null });
 }
 async function publierJournal() {
@@ -159,7 +159,8 @@ async function main() {
         majPrefs.set(a.user_id, { __uid: a.user_id, ...p, notif_envoyees: { ...memo, test } });
       } catch (e) {
         noterEnvoi(a.endpoint, false, e.statusCode || null);
-        if (e.statusCode === 410 || e.statusCode === 404) {
+        /* v90 : 403 = abonnement cree avec une autre cle VAPID — irrecuperable, on nettoie aussi */
+        if (e.statusCode === 410 || e.statusCode === 404 || e.statusCode === 403) {
           morts++;
           await api('/rest/v1/abonnements_push?endpoint=eq.' + encodeURIComponent(a.endpoint), { method: 'DELETE' });
         } /* 429 / erreurs temporaires : ignorées */
@@ -239,7 +240,8 @@ async function main() {
         majPrefs.set(t.abonnement.user_id, { __uid: t.abonnement.user_id, ...t.prefs, notif_envoyees: memo });
       } catch (e) {
         noterEnvoi(t.abonnement.endpoint, false, e.statusCode || null);
-        if (e.statusCode === 410 || e.statusCode === 404) {
+        /* v90 : 403 = abonnement cree avec une autre cle VAPID — irrecuperable, on nettoie aussi */
+        if (e.statusCode === 410 || e.statusCode === 404 || e.statusCode === 403) {
           morts++;
           await api('/rest/v1/abonnements_push?endpoint=eq.' + encodeURIComponent(t.abonnement.endpoint), { method: 'DELETE' });
         } /* 429 / erreurs temporaires : ignorées, le prochain cycle réessaie */
