@@ -1,12 +1,12 @@
-/* views/edition.js — 📄 Édition du jour (v17, extrait de views.js). */
-import { $, state, esc, fmtDate, nomJourEdition } from '../core.js';
+/* views/edition.js — 📄 Édition du jour (v17, extrait de views.js).
+ * v97 : plus de carte « 5 points du jour » au-dessus de l'iframe — l'édition
+ * HTML commence déjà par le résumé exécutif, c'était redondant. */
+import { $, state, esc, nomJourEdition } from '../core.js';
 
 export function vueEdition() {
   const view = $('#view');
   if (!state.edition) { view.innerHTML = '<div class="empty">Aucune édition disponible pour l’instant.</div>'; return; }
   view.innerHTML =
-    '<div class="summary-card"><h2>📄 Édition du ' + esc(nomJourEdition()) + ' — ' + esc(fmtDate(state.edition.date)) + '</h2>' +
-    '<ol>' + (state.edition.resume_executif || []).map(p => '<li>' + esc(p) + '</li>').join('') + '</ol></div>' +
     '<iframe class="edition-frame" id="edition-frame" src="' + esc(state.edition.html) + '" title="Newsletter du ' + esc(nomJourEdition()) + '"></iframe>';
   const frame = $('#edition-frame');
   if (frame) frame.addEventListener('load', () => {
