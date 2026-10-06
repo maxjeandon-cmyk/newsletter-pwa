@@ -18,6 +18,7 @@ function afficherMeteo() {
     if (!d) { el.innerHTML = '📍 ' + esc(v.nom) + ' — météo momentanément indisponible.'; return; }
     el.innerHTML = d.emoji + ' <strong>' + esc(d.ville) + '</strong> — ' + d.temp + '°, ' + esc(d.desc) +
       ' · max ' + d.max + '° / min ' + d.min + '° · vent ' + d.vent + ' km/h' +
+      (d.tendance ? ' · journée : ' + esc(d.tendance) : '') +
       ' <span class="hint">(actualisé à ' + d.heure + ')</span>';
   }).catch(() => { el.hidden = true; });
 }

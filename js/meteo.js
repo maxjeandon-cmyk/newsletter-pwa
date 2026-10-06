@@ -58,6 +58,37 @@ export async function chercherVilles(q) {
   } catch (e) { return []; }
 }
 
+/* Tendance de la journée : l'emoji dominant de chaque moment (matin 6-12 h,
+ * après-midi 12-18 h, soirée 18-24 h) d'après les codes horaires — ex.
+ * « ☀️ matin · ⛅ après-midi · 🌧️ soirée ». Renvoie '' si pas d'heures. */
+function tendanceJournee(j) {
+  const h = j.hourly || {};
+  const heures = h.time || [], codes = h.weather_code || [];
+  if (!heures.length || codes.length !== heures.length) return '';
+  const segments = [
+    { nom: 'matin', debut: 6, fin: 12 },
+    { nom: 'après-midi', debut: 12, fin: 18 },
+    { nom: 'soirée', debut: 18, fin: 24 }
+  ];
+  const morceaux = [];
+  for (const s of segments) {
+    /* code dominant du segment (le plus fréquent ; à égalité, le premier gagne) */
+    const compte = new Map();
+    for (let i = 0; i < heures.length; i++) {
+      const heur = parseInt(String(heures[i]).slice(11, 13), 10);
+      if (heur >= s.debut && heur < s.fin) {
+        const c = codes[i];
+        compte.set(c, (compte.get(c) || 0) + 1);
+      }
+    }
+    if (!compte.size) continue;
+    let code = 0, max = -1;
+    for (const [c, n] of compte) if (n > max) { max = n; code = c; }
+    morceaux.push((CODES_WMO[code] || ['🌡️'])[0] + ' ' + s.nom);
+  }
+  return morceaux.join(' · ');
+}
+
 /* Charger la météo de la ville choisie (cache 30 min dans nl.meteoCache).
  * Renvoie null si aucune ville n'est choisie ou si l'API échoue. */
 export async function chargerMeteo() {
@@ -73,6 +104,7 @@ export async function chargerMeteo() {
     const r = await fetch(PREVISION +
       '?latitude=' + v.lat + '&longitude=' + v.lon +
       '&current=temperature_2m,weather_code,wind_speed_10m' +
+      '&hourly=weather_code' +
       '&daily=temperature_2m_max,temperature_2m_min,weather_code&timezone=auto&forecast_days=1');
     const j = await r.json();
     const c = j.current || {}, d = j.daily || {};
@@ -84,7 +116,8 @@ export async function chargerMeteo() {
       min: Math.round(d.temperature_2m_min?.[0]),
       max: Math.round(d.temperature_2m_max?.[0]),
       vent: Math.round(c.wind_speed_10m),
-      heure: new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })
+      heure: new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }),
+      tendance: tendanceJournee(j)
     };
     state.meteo = donnees;
     setStore('meteoCache', { ville: v, time: maintenant, donnees });
