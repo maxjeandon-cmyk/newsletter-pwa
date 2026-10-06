@@ -7,6 +7,7 @@ import { $, state, getStore, setStore, applyTheme, applyTaille } from './core.js
 import { chargerChapitres, chargerMedia } from './feeds.js';
 import { renderTabs, renderView, majMedias } from './views.js';
 import { initRouter } from './router.js';
+import { ONGLETS_BASE } from './onglets.js';
 import { restaurerSession, synchroniserPrefs } from './compte.js';
 
 async function chargerJSON(url, def) {
@@ -64,6 +65,27 @@ async function init() {
   $('#btn-refresh').onclick = actualiser;
   /* 👤 mène au profil/compte dans l'onglet Réglages */
   $('#btn-profil').onclick = () => { location.hash = '#reglages'; };
+  /* 🔗 partage l'onglet en cours : feuille native du système quand elle
+   * existe (iOS, Android, Chrome desktop récent), sinon copie du lien.
+   * Le routeur vit dans le hash : location.href EST le lien profond de
+   * l'écran courant (onglet, média ouvert, vidéo, recherche…). */
+  $('#btn-partage').onclick = async () => {
+    const b = $('#btn-partage');
+    const onglet = ONGLETS_BASE.find(o => o.id === state.activeTab);
+    const texte = 'DiY/H24 — ' + (onglet ? onglet.emoji + ' ' + onglet.nom : 'l\'actu en continu');
+    const url = location.href;
+    if (navigator.share) {
+      /* AbortError = feuille refermée par l'utilisateur : rien à faire */
+      try { await navigator.share({ title: 'DiY/H24', text: texte, url }); return; } catch (e) { if (e.name === 'AbortError') return; }
+    }
+    /* Repli : copier le lien, retour visuel sur le bouton (pas de toast dans l'app) */
+    let ok = false;
+    try { await navigator.clipboard.writeText(texte + ' ' + url); ok = true; } catch (e) { /* clipboard indisponible (http, vieux navigateur) */ }
+    if (!ok) { /* dernier recours : sélection manuelle via invite */
+      try { ok = window.prompt('Copie le lien :', url) !== null; } catch (e) { ok = false; }
+    }
+    if (ok) { b.textContent = '✅'; setTimeout(() => { b.textContent = '🔗'; }, 1600); }
+  };
   /* v75 : enregistrement + actualisation du SW. Sans update() explicite, un SW
    * « waiting » (ancien onglet ouvert, iOS) n'active JAMAIS — et
    * navigator.serviceWorker.ready attend indéfiniment : c'est ce qui bloquait
