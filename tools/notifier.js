@@ -83,12 +83,17 @@ function AVEC_DELAI(promesse, ms = DELAI_MS) {
   ]);
 }
 
-/* Mode test : input dispatch (NOTIF_TEST=true) ou marqueur data/notif-test.json (token unique). */
+/* Mode test : input dispatch (NOTIF_TEST=true) ou marqueur data/notif-test.json (token unique).
+ * v89 : le marqueur historique est { "test": "…" } — l'ancien code lisait
+ * m.token (champ inexistant) et renvoyait donc TOUJOURS la constante
+ * 'marqueur' : apres le premier test, memo.test === 'marqueur' et TOUS les
+ * tests suivants etaient sautes en silence (runs verts, 0 envoi). On accepte
+ * les deux formes de champ. */
 function modeTest() {
   if (process.env.NOTIF_TEST === 'true') return 'dispatch';
   try {
     const m = JSON.parse(fs.readFileSync('data/notif-test.json', 'utf8'));
-    return m.token || 'marqueur';
+    return m.test || m.token || 'marqueur';
   } catch (e) { return null; }
 }
 
