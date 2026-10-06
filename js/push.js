@@ -117,6 +117,18 @@ export async function souscrire() {
     ]);
     noterEssai({ ok: false, etape: 'abonnement', message: 'lecture abonnement existant…' });
     let sub = await reg.pushManager.getSubscription();
+    /* v103 : TOUJOURS recréer l'abonnement navigateur. Safari réutilise
+     * indéfiniment un abonnement existant — y compris un abonnement créé
+     * avec une ANCIENNE clé VAPID (avant le changement de clé du 03/10) :
+     * même endpoint, mauvaise clé → web.push.apple.com répond 403 à chaque
+     * envoi, quelle que soit la propreté de la table Supabase. Un abonnement
+     * neuf porte la clé courante, garanti. L'ancienne ligne serveur est
+     * purgée par le notifier (403). */
+    if (sub) {
+      noterEssai({ ok: false, etape: 'abonnement', message: 'abonnement existant recyclé, création d un neuf…' });
+      try { await sub.unsubscribe(); } catch (e) { /* ancien déjà mort : tant mieux */ }
+      sub = null;
+    }
     if (!sub) {
       noterEssai({ ok: false, etape: 'abonnement', message: 'création abonnement navigateur…' });
       sub = await reg.pushManager.subscribe({
