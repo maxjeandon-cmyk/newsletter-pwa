@@ -9,6 +9,7 @@ import { chargerChapitres } from '../feeds.js';
 import { renderView } from './common.js';
 import { inscrire, connecter, deconnecter, restaurerSession, synchroniserPrefs, envoyerPrefs, abonne, estConnecte, veutResterConnecte } from '../compte.js';
 import { pushDisponible, prefsNotifications, basculerNotification, desabonner, safariOngletSansPush } from '../push.js';
+import { chercherVilles, choisirVille, villeMeteo } from '../meteo.js';
 
 /* Ordre par défaut : source unique dans js/onglets.js — tout nouvel onglet
  * s'y ajoute et apparaît automatiquement ici et dans la barre (pas de doublon
@@ -70,6 +71,14 @@ export async function vueReglages() {
     '<details class="carte-regl"><summary>🔥 Mes flux suivis</summary>' +
     '<ul id="chapters-editor" class="ordre-liste"></ul>' +
     '<button class="btn-sec" id="btn-reset-chapters">Tout suivre</button></details>' +
+    '<details class="carte-regl"><summary>📍 Localisation météo</summary>' +
+    '<p class="meta-count">La ville choisie s\'affiche en tête de l\'édition du jour (météo Open-Meteo) et suit ton compte sur tous tes appareils.</p>' +
+    '<p class="hint" id="meteo-actuelle"></p>' +
+    '<label class="regl-label">Rechercher une ville' +
+    '<input type="search" id="in-ville" placeholder="Ex. : Besançon, Lyon, Québec…" autocomplete="off"/></label>' +
+    '<button class="btn-sec" id="btn-ville">Chercher</button>' +
+    '<div id="meteo-resultats"></div>' +
+    '</details>' +
     /* --- Maintenance + Installation (guide par navigateur) --- */
     '<details class="carte-regl"><summary>🔔 Notifications</summary>' +
     '<div id="notifs-bloc"></div></details>' +
@@ -112,6 +121,37 @@ export async function vueReglages() {
   rendreGuideInstall();
   rendreNotifications();
   rendreChapitres();
+  rendreMeteo();
+}
+
+/* --- 📍 Localisation météo : recherche Open-Meteo, ville persistée dans nl.meteo --- */
+function rendreMeteo() {
+  const actuelle = $('#meteo-actuelle');
+  const resultats = $('#meteo-resultats');
+  if (!actuelle || !resultats) return;
+  const v = villeMeteo();
+  actuelle.textContent = v ? 'Ville actuelle : ' + v.nom + (v.region ? ' (' + v.region + ')' : '') + (v.pays ? ', ' + v.pays : '') : 'Aucune ville choisie — l\'édition s\'ouvre sans intro météo.';
+  const afficherVilles = (villes) => {
+    resultats.innerHTML = villes.length
+      ? villes.map(x =>
+        '<button class="btn-sec" data-nom="' + esc(x.nom) + '" data-region="' + esc(x.region) + '" data-pays="' + esc(x.pays) + '" data-lat="' + x.lat + '" data-lon="' + x.lon + '">' +
+        esc(x.nom) + (x.region ? ' — ' + esc(x.region) : '') + (x.pays ? ', ' + esc(x.pays) : '') + '</button>').join('')
+      : '<p class="hint">Aucune ville trouvée pour cette recherche.</p>';
+    [...resultats.querySelectorAll('button')].forEach(b =>
+      b.onclick = () => {
+        choisirVille({ nom: b.dataset.nom, region: b.dataset.region, pays: b.dataset.pays, lat: Number(b.dataset.lat), lon: Number(b.dataset.lon) });
+        resultats.innerHTML = '<p class="hint">✅ ' + esc(b.dataset.nom) + ' enregistrée — l\'intro météo de l\'édition est à jour.</p>';
+        rendreMeteo();
+      });
+  };
+  const chercher = () => {
+    const q = $('#in-ville').value;
+    if (q.trim().length < 2) { resultats.innerHTML = '<p class="hint">Tape au moins 2 lettres.</p>'; return; }
+    resultats.innerHTML = '<p class="hint">🔎 Recherche…</p>';
+    chercherVilles(q).then(afficherVilles);
+  };
+  $('#in-ville').onkeydown = e => { if (e.key === 'Enter') { e.preventDefault(); chercher(); } };
+  $('#btn-ville').onclick = chercher;
 }
 
 /* --- Ordre des onglets : ↑ ↓ en place, persisté dans nl.ordreOnglets --- */

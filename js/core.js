@@ -21,6 +21,7 @@ export const state = {
   mediasBase: [],          // médias de la config serveur (data/medias.json)
   fluxCatalogue: [],       // catalogue de flux RSS vérifiés (data/flux-rss.json, v21)
   climat: null,            // dernier bulletin Copernicus (data/climat.json, v22)
+  meteo: null,             // météo du jour de la ville choisie (js/meteo.js, v98)
   newsletters: null,       // lettres des ONG de l'onglet Newsletters (data/newsletters.json, v84)
   medias: [],              // médias effectifs = config serveur + ajouts personnels (nl.mediasPerso)
   mediasMode: null,        // sous-vue de l'onglet Médias : null | 'ajout' | 'gerer'
@@ -48,7 +49,7 @@ export function setStore(k, v) {
  * « Purger le cache » — un média ajouté ne doit jamais disparaître par accident).
  * v19 : mediasAffiches (médias « masqués par défaut » réaffichés ici) et jeton
  * (GitHub, publication pour tous les écrans) sont aussi des préférences. */
-const GARDEES = ['theme', 'masques', 'afpOnly', 'mediasPerso', 'mediasMasques', 'mediasAffiches', 'jeton', 'compte.abonne', 'compte.session', 'compte.souvenir', 'taillePolice'];
+const GARDEES = ['theme', 'masques', 'afpOnly', 'mediasPerso', 'mediasMasques', 'mediasAffiches', 'jeton', 'compte.abonne', 'compte.session', 'compte.souvenir', 'taillePolice', 'meteo'];
 export function purgeStore() {
   Object.keys(localStorage)
     .filter(k => k.startsWith(PREFIX) && !GARDEES.includes(k.slice(PREFIX.length)))

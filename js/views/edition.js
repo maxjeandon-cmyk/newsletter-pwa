@@ -1,13 +1,34 @@
 /* views/edition.js — 📄 Édition du jour (v17, extrait de views.js).
  * v97 : plus de carte « 5 points du jour » au-dessus de l'iframe — l'édition
- * HTML commence déjà par le résumé exécutif, c'était redondant. */
+ * HTML commence déjà par le résumé exécutif, c'était redondant.
+ * v98 : intro météo du jour au-dessus de l'iframe — ville choisie dans
+ * Réglages → 📍 Localisation météo (Open-Meteo, sans clé). */
 import { $, state, esc, nomJourEdition } from '../core.js';
+import { chargerMeteo, villeMeteo } from '../meteo.js';
+
+/* Intro météo : une ligne discrète, vide si aucune ville n'est choisie. */
+function afficherMeteo() {
+  const el = $('#meteo-intro');
+  if (!el) return;
+  const v = villeMeteo();
+  if (!v) { el.hidden = true; return; }
+  el.hidden = false;
+  el.innerHTML = '🔎 Météo en cours…';
+  chargerMeteo().then(d => {
+    if (!d) { el.innerHTML = '📍 ' + esc(v.nom) + ' — météo momentanément indisponible.'; return; }
+    el.innerHTML = d.emoji + ' <strong>' + esc(d.ville) + '</strong> — ' + d.temp + '°, ' + esc(d.desc) +
+      ' · max ' + d.max + '° / min ' + d.min + '° · vent ' + d.vent + ' km/h' +
+      ' <span class="hint">(actualisé à ' + d.heure + ')</span>';
+  }).catch(() => { el.hidden = true; });
+}
 
 export function vueEdition() {
   const view = $('#view');
   if (!state.edition) { view.innerHTML = '<div class="empty">Aucune édition disponible pour l’instant.</div>'; return; }
   view.innerHTML =
+    '<div id="meteo-intro" class="meteo-intro" hidden></div>' +
     '<iframe class="edition-frame" id="edition-frame" src="' + esc(state.edition.html) + '" title="Newsletter du ' + esc(nomJourEdition()) + '"></iframe>';
+  afficherMeteo();
   const frame = $('#edition-frame');
   if (frame) frame.addEventListener('load', () => {
     try {
