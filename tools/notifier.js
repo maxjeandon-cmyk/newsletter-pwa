@@ -109,7 +109,7 @@ async function ecrirePrefs(lots) {
 }
 
 async function main() {
-  webpush.setVapidDetails('mailto:contact@desinfos.h24', process.env.VAPID_PUBLIC_KEY, process.env.VAPID_PRIVATE_KEY);
+  webpush.setVapidDetails('mailto:contact@diyeah24.fr', process.env.VAPID_PUBLIC_KEY, process.env.VAPID_PRIVATE_KEY);
 
   /* v104 : diagnostic 403 Apple — l app souscrit avec la cle publique de
    * data/compte.json, le notifier signe avec les secrets VAPID_* ; si les
