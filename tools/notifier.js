@@ -31,10 +31,10 @@ const STATS = {
   morts: 0,
   resultats: []
 };
-function noterEnvoi(endpoint, ok, status) {
+function noterEnvoi(endpoint, ok, status, corps) {
   let domaine = '?';
   try { domaine = String(endpoint).split('/')[2] || '?'; } catch (e) { /* endpoint illisible */ }
-  STATS.resultats.push({ domaine, ok: !!ok, status: status || null });
+  STATS.resultats.push({ domaine, ok: !!ok, status: status || null, corps: corps ? String(corps).slice(0, 200) : undefined });
 }
 async function publierJournal() {
   const token = process.env.GH_TOKEN || process.env.GITHUB_TOKEN;
@@ -111,6 +111,15 @@ async function ecrirePrefs(lots) {
 async function main() {
   webpush.setVapidDetails('mailto:contact@desinfos.h24', process.env.VAPID_PUBLIC_KEY, process.env.VAPID_PRIVATE_KEY);
 
+  /* v104 : diagnostic 403 Apple — l app souscrit avec la cle publique de
+   * data/compte.json, le notifier signe avec les secrets VAPID_* ; si les
+   * deux ne designent pas la meme paire, Apple repond 403 a jamais. On ne
+   * journalise QUE le boolean (jamais la cle elle-meme). */
+  try {
+    const compte = JSON.parse(fs.readFileSync('data/compte.json', 'utf8'));
+    STATS.cleMatch = !!(process.env.VAPID_PUBLIC_KEY && compte.push && compte.push.cle_publique && process.env.VAPID_PUBLIC_KEY === compte.push.cle_publique);
+  } catch (e) { STATS.cleMatch = null; }
+
   /* 1. Abonnements push + préférences par utilisateur (toggles).
    * AVEC_DELAI emballe TOUTE la chaine (en-têtes + lecture du corps .json()) :
    * une réponse qui envoie ses en-têtes puis stall son corps pendant des
@@ -158,7 +167,7 @@ async function main() {
         noterEnvoi(a.endpoint, true, 201);
         majPrefs.set(a.user_id, { __uid: a.user_id, ...p, notif_envoyees: { ...memo, test } });
       } catch (e) {
-        noterEnvoi(a.endpoint, false, e.statusCode || null);
+        noterEnvoi(a.endpoint, false, e.statusCode || null, e.body || e.message);
         /* v90 : 403 = abonnement cree avec une autre cle VAPID — irrecuperable, on nettoie aussi */
         if (e.statusCode === 410 || e.statusCode === 404 || e.statusCode === 403) {
           morts++;
@@ -239,7 +248,7 @@ async function main() {
         /* PATCH différé : on accumule et on écrit par lot après la boucle (v29). */
         majPrefs.set(t.abonnement.user_id, { __uid: t.abonnement.user_id, ...t.prefs, notif_envoyees: memo });
       } catch (e) {
-        noterEnvoi(t.abonnement.endpoint, false, e.statusCode || null);
+        noterEnvoi(t.abonnement.endpoint, false, e.statusCode || null, e.body || e.message);
         /* v90 : 403 = abonnement cree avec une autre cle VAPID — irrecuperable, on nettoie aussi */
         if (e.statusCode === 410 || e.statusCode === 404 || e.statusCode === 403) {
           morts++;
