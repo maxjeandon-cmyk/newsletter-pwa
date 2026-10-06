@@ -13,13 +13,13 @@ function afficherMeteo() {
   const v = villeMeteo();
   if (!v) { el.hidden = true; return; }
   el.hidden = false;
-  el.innerHTML = '🔎 Météo en cours…';
+  el.innerHTML = '🔎 Météo du jour en cours…';
   chargerMeteo().then(d => {
-    if (!d) { el.innerHTML = '📍 ' + esc(v.nom) + ' — météo momentanément indisponible.'; return; }
-    el.innerHTML = d.emoji + ' <strong>' + esc(d.ville) + '</strong> — ' + d.temp + '°, ' + esc(d.desc) +
+    if (!d) { el.innerHTML = '📍 <strong>Météo du jour</strong> — ' + esc(v.nom) + ' : momentanément indisponible.'; return; }
+    el.innerHTML = d.emoji + ' <strong>' + esc(d.ville) + '</strong> · <strong>météo du jour</strong> : ' + d.temp + '°, ' + esc(d.desc) +
       ' · max ' + d.max + '° / min ' + d.min + '° · vent ' + d.vent + ' km/h' +
       (d.tendance ? ' · journée : ' + esc(d.tendance) : '') +
-      ' <span class="hint">(actualisé à ' + d.heure + ')</span>';
+      ' <span class="hint">météo du jour (l\'édition est celle de la veille) · actualisée à ' + d.heure + '</span>';
   }).catch(() => { el.hidden = true; });
 }
 
