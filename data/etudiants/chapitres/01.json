@@ -1,17 +1,24 @@
 {
-  "id": "c01",
+  "id": "c1",
   "periode": "du 18 au 24 septembre 2026",
   "titre": "L'amorce — Créteil, là où tout commence",
   "paragraphes": [
     {
-      "id": "c01p1",
+      "id": "c1p1",
       "texte": "Pour comprendre la révolte qui embrase la France à l'automne 2026, il faut d'abord entrer dans un lycée de Créteil, en banlieue parisienne, au tout début d'une année scolaire qui s'annonçait pourtant ordinaire. Mi-septembre, une partie des professeurs du lycée Saint-Exupéry se met en grève : les locaux sont délabrés, des postes ne sont pas pourvus, les conditions de travail deviennent intenable. Des lycéens décident alors de rejoindre ce mouvement lancé par leurs enseignants — et le premier blocus s'organise, celui dont partiront toutes les autres. Des tentatives de blocage sont recensées dès le 18 septembre 2026, et c'est autour du 21 septembre que le mouvement prend véritablement forme à Saint-Exupéry, où plusieurs postes d'enseignants ne sont alors pas assurés : des élèves, excédés de ne pas avoir de professeur certaines semaines, franchissent le pas du blocage. La suite, tout le monde la connaîtra : en une semaine, la mobilisation très localisée s'étend à l'Île-de-France puis à tout le pays, devient nationale le 29 septembre, gagne les universités le 1er octobre, franchit même la frontière belge à Liège, et débouche sur une journée de mobilisation nationale majeure le 6 octobre. Mais à ce stade, au soir du 24 septembre, personne ne le sait encore : les perturbations concernent une soixantaine de lycées franciliens, les caméras nationales ne sont pas là, et tout se joue dans des groupes Snapchat, des fils WhatsApp et les premières vidéos TikTok tournées devant les grilles de Saint-Exupéry. C'est là, dans cette préhistoire numérique de la révolte, que commence notre chronique.",
-      "sources": ["BFM TV (bfmtv.com) — colère des lycéens, grève des profs de Saint-Exupéry", "Wikipédia — Mouvement et blocus lycéen et étudiant de 2026 en France", "Basta! — dossier « Mobilisation lycéenne : de la colère francilienne aux blocages dans tout le pays »"]
+      "sources": [
+        "BFM TV (bfmtv.com) — colère des lycéens, grève des profs de Saint-Exupéry",
+        "Wikipédia — Mouvement et blocus lycéen et étudiant de 2026 en France",
+        "Basta! — dossier « Mobilisation lycéenne : de la colère francilienne aux blocages dans tout le pays »"
+      ]
     },
     {
-      "id": "c01p2",
+      "id": "c1p2",
       "texte": "Le contexte, lui, n'est pas n'importe quel contexte : la rentrée 2026 s'est faite sur des braises. Selon une enquête du syndicat SNES-FSU relayée début septembre, au moins un professeur manque dans 53 % des collèges et lycées publics à la rentrée — la pénurie est encore plus forte dans l'académie de Versailles (70 % des établissements touchés), celle de Créteil étant au même niveau qu'Aix-Marseille (60 %). Sur l'année scolaire précédente, 10 % des heures n'ont pas été assurées dans les lycées selon le ministère lui-même. Le bâti fatigue : environ 10 % des établissements restent jugés trop vétustes, les élèves racontent des fuites d'eau, des fenêtres défectueuses, des chauffages en panne, des sanitaires hors d'usage ; en juin 2026 des épreuves du bac se sont déroulées dans des salles non climatisées, et le 7 septembre les cours ont été interrompus dans deux lycées de l'Hérault à cause de la chaleur. Et puis il y a Parcoursup : en juillet, 163 372 candidats n'ont obtenu aucun de leurs vœux sur la plateforme, soit 18 % des inscrits, contre 11,9 % en 2025 et 10 % en 2024 — l'angoisse de l'orientation devenant, année après année, un ressort de plus en plus dur. À Mayotte, le lycée du Nord est en grève depuis déjà plusieurs semaines quand le mouvement démarre en métropole. La marmite était sous pression bien avant les premières vidéos.",
-      "sources": ["Wikipédia — Mouvement et blocus lycéen et étudiant de 2026 en France", "SNES-FSU via Reddit r/enseignants — enquête pénurie de septembre 2026"]
+      "sources": [
+        "Wikipédia — Mouvement et blocus lycéen et étudiant de 2026 en France",
+        "SNES-FSU via Reddit r/enseignants — enquête pénurie de septembre 2026"
+      ]
     }
   ]
 }

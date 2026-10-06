@@ -1,22 +1,32 @@
 {
-  "id": "c08",
+  "id": "c8",
   "periode": "du samedi 3 au dimanche 4 octobre 2026",
   "titre": "Le week-end — Belfort dans l'eau, la Sorbonne et ses CRS, la feuille de route Lecornu",
   "paragraphes": [
     {
-      "id": "c08p1",
+      "id": "c8p1",
       "texte": "Le week-end du 3 et 4 octobre, le rythme des blocus ralentit — les lycées sont fermés — mais la tension, elle, ne prend aucun repos. StreetPress publie le 4 octobre son enquête sur l'interpellation d'un lycéen « dans l'eau » à Belfort : l'image d'un adolescent arrêté par des policiers alors qu'il se trouve dans un cours d'eau, les vêtements trempés, fait le tour des réseaux et devient l'un des visages de la répression. Le 5 octobre, Contre Attaque relatera une provocation d'une autre ampleur : des CRS envahissent la Sorbonne — la première entrée des forces de l'ordre dans l'université emblématique de mai 1968, un symbole que personne ne manque. Pendant que les lycéens préparent leur retour en masse de lundi, le mouvement mûrit son rapport à l'opinion : Contre Attaque note que les personnels éducatifs et les parents d'élèves sont aussi victimes de violences policières, et que les dirigeants qui s'opposent au mouvement « ont tous fait leur scolarité dans le privé » — un argument d'égalité sociale qui parle aux quartiers.",
-      "sources": ["StreetPress via Basta! — « Ce que l'on sait de l'interpellation d'un lycéen dans l'eau à Belfort » (4 octobre)", "Contre Attaque — « Des CRS envahissent la Sorbonne », « Les dirigeants opposés au mouvement ont tous fait leur scolarité dans le privé » (4-5 octobre)"]
+      "sources": [
+        "StreetPress via Basta! — « Ce que l'on sait de l'interpellation d'un lycéen dans l'eau à Belfort » (4 octobre)",
+        "Contre Attaque — « Des CRS envahissent la Sorbonne », « Les dirigeants opposés au mouvement ont tous fait leur scolarité dans le privé » (4-5 octobre)"
+      ]
     },
     {
-      "id": "c08p2",
+      "id": "c8p2",
       "texte": "À Matignon, on prépare la contre-offensive. Le dimanche 4 octobre au soir, le Premier ministre Sébastien Lecornu publie sa feuille de route : cinq chantiers, envoyés à ses ministres. Un, la continuité des cours. Deux, l'amélioration des locaux avec les conseils régionaux. Trois, l'organisation des journées — les emplois du temps accusés d'épuiser les élèves. Quatre, la transparence de Parcoursup. Cinq, les suites à donner à la parole des lycéens. Lecornu demande des décisions avant la fin du mois et la reprise des cours dès lundi partout où la sécurité le permet ; il réclame le lancement immédiat, dans chaque académie, d'un traitement prioritaire du remplacement des absences longues et des postes non pourvus, avec un premier bilan attendu le 16 octobre. L'Humanité qualifiera ces cinq chantiers de « cosmétiques » — une formule qui dit tout du crédit que le mouvement leur accorde —, mais le calendrier, lui, est bien réel : pour la première fois depuis le début de la révolte, l'État met des dates et des engagements noir sur blanc. Reste à savoir si des lycéens qui ont perdu un œil à Tours, une mâchoire à Saint-Ouen-l'Aumône, une main à Lens (on y viendra) se contenteront de « chantiers ».",
-      "sources": ["Wikipédia — feuille de route Lecornu du 5 octobre (publiée la veille au soir)", "L'Humanité via Basta! — « 5 chantiers cosmétiques » (5 octobre)"]
+      "sources": [
+        "Wikipédia — feuille de route Lecornu du 5 octobre (publiée la veille au soir)",
+        "L'Humanité via Basta! — « 5 chantiers cosmétiques » (5 octobre)"
+      ]
     },
     {
-      "id": "c08p3",
+      "id": "c8p3",
       "texte": "Pendant ce temps, la question des parents s'invite dans le débat public. BFM y consacre une analyse : les parents d'élèves « se retrouvent face à un exercice délicat — accompagner leurs enfants dans leur volonté de se mobiliser, ou au contraire leur demander de se tenir à distance des blocus. Soutien appuyé, mises en garde, consignes de sécurité… Les parents de ces adolescents en colère cherchent la bonne posture. » C'est toute l'ambiguïté d'un mouvement de mineurs : l'État parle de « protection de l'enfance » pour justifier la reprise des cours, les parents parlent de protection pour réclamer le retrait de la police, et les adolescents, eux, réclament qu'on les traite en sujets politiques à part entière. Sur les fils Reddit de profs et de parents, la question du lundi 5 tourne déjà : comment empêcher son enfant d'y aller ? Comment l'accompagner sans l'exposer ? Faut-il, comme le demande le ministre Geffray, « de l'aide aux parents » parce que « dans la rue, les enfants sont en danger » ? À l'aube de la semaine qui décidera du sort du mouvement, chacun cherche sa position — pendant que, dans les groupes Snap, une autre idée germe, qui va prendre tout le monde à contre-pied : si les lycées ferment, nous bloquerons les salles de classe en ligne.",
-      "sources": ["BFM TV — analyse « les parents face aux blocus »", "franceinfo — Geffray demande de l'aide aux parents", "Contre Attaque — prémices des e-blocus (5 octobre)"]
+      "sources": [
+        "BFM TV — analyse « les parents face aux blocus »",
+        "franceinfo — Geffray demande de l'aide aux parents",
+        "Contre Attaque — prémices des e-blocus (5 octobre)"
+      ]
     }
   ]
 }

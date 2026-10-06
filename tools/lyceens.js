@@ -23,7 +23,7 @@ const FICHIER = path.join(__dirname, '..', 'data', 'lyceens.json');
 const UA = 'Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0';
 const FENETRE_JOURS = 8;   /* fenêtre de fraîcheur des items retenus */
 const GARDE_JOURS = 30;    /* les items plus vieux que ça quittent le relevé */
-const CAPS = { version_lyceens: 12, version_gouvernement: 12, faits: 10 };
+const CAPS = { version_gouvernement: 12, faits: 10 };
 
 /* Flux RSS vérifiés (catalogue data/flux-rss.json, testés le 04/10/2026).
  * camp: 'presse' — la classification vient des mots du titre/description,
@@ -227,8 +227,8 @@ const vieux = (s, jours) => {
   return Date.now() - new Date(+m[3], +m[2] - 1, +m[1]).getTime() > jours * 86400000;
 };
 
-const INTRO_DEFAUT = "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Trois lectures séparées : ce que disent les lycéens, ce que dit le gouvernement, et les seules informations corroborées par plusieurs médias indépendants.";
-const NOTE_DEFAUT = "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les « versions » sont celles rapportées par la presse ; les déclarations sont attribuées à leurs auteurs, jamais reformulées.";
+const INTRO_DEFAUT = "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Deux relevés ici : ce que dit le gouvernement, et les seules informations corroborées par plusieurs médias indépendants. La parole des élèves vit dans la chronique « Version des étudiants ».";
+const NOTE_DEFAUT = "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.";
 
 async function main() {
   const aujourdhui = dateFr();
@@ -291,25 +291,25 @@ async function main() {
   });
 
   /* État existant : on préserve tout ce qui n'est pas une liste d'items. */
-  let etat = { maj: aujourdhui + ' ' + heureFr(), titre: 'Révolte lycéenne — France 2026', intro: INTRO_DEFAUT, note: NOTE_DEFAUT, contexte: [], version_lyceens: [], version_gouvernement: [], faits: [] };
+  let etat = { maj: aujourdhui + ' ' + heureFr(), titre: 'Révolte lycéenne — France 2026', intro: INTRO_DEFAUT, note: NOTE_DEFAUT, contexte: [], version_gouvernement: [], faits: [] };
   if (fs.existsSync(FICHIER)) {
     try {
       const lu = JSON.parse(fs.readFileSync(FICHIER, 'utf8'));
       for (const k of ['maj', 'titre', 'intro', 'note', 'prochaine_echeance', 'contexte']) {
         if (lu[k] !== undefined) etat[k] = lu[k];
       }
-      for (const k of ['version_lyceens', 'version_gouvernement', 'faits']) {
+      for (const k of ['version_gouvernement', 'faits']) {
         if (Array.isArray(lu[k])) etat[k] = lu[k];
       }
     } catch (e) { /* fichier illisible : on repart des listes vides */ }
   }
 
-  const toutes = [...etat.version_lyceens, ...etat.version_gouvernement, ...etat.faits];
+  const toutes = [...etat.version_gouvernement, ...etat.faits];
   const proches = g => toutes.filter(e =>
     memeEvenement((e.titre || '') + ' ' + (e.texte || ''), g.titre, e.date, g.date));
 
   let nouvelles = 0, fusionnees = 0;
-  const parCamp = { lyceens: 0, gouvernement: 0, faits: 0 };
+  const parCamp = { gouvernement: 0, faits: 0 };
   for (const g of groupes) {
     const existants = proches(g);
     if (existants.length) {
@@ -327,9 +327,12 @@ async function main() {
       fusionnees++;
       continue;
     }
-    /* Nouveau : les neutres non corroborés n'ont pas leur place (le
-     * sous-onglet « Faits vérifiés uniquement » n'accepte que du corroboré). */
-    if (g.camp === 'neutre' && !g.verifie) continue;
+    /* Nouveau : seuls les items CORROBORÉS entrent (le sous-onglet
+     * « Faits vérifiés uniquement » n'accepte que du corroboré ; le
+     * camp « lyceens » n'a plus sa liste propre — la parole des élèves
+     * vit dans la chronique « Version des étudiants », ses items
+     * corroborés rejoignent les faits comme les neutres). */
+    if (!g.verifie) continue;
     const item = {
       id: 'a' + Date.now().toString(36) + '-' + Math.floor(Math.random() * 1e6).toString(36),
       date: g.date,
@@ -340,16 +343,16 @@ async function main() {
       url: g.url || null,
       verifie: g.verifie
     };
-    const cible = g.camp === 'lyceens' ? 'version_lyceens' : g.camp === 'gouvernement' ? 'version_gouvernement' : 'faits';
+    const cible = g.camp === 'gouvernement' ? 'version_gouvernement' : 'faits';
     etat[cible].push(item);
-    parCamp[g.camp] = (parCamp[g.camp] || 0) + 1;
+    parCamp[g.camp === 'gouvernement' ? 'gouvernement' : 'faits']++;
     nouvelles++;
   }
 
   /* Nettoyage : fenêtre de garde, caps, tri du plus récent au plus ancien.
    * Les items curatés à la main (id sans préfixe « a ») sont épinglés :
    * le flux 6 h remplit les slots restants sans jamais les évincer. */
-  for (const k of ['version_lyceens', 'version_gouvernement', 'faits']) {
+  for (const k of ['version_gouvernement', 'faits']) {
     etat[k] = etat[k].filter(i => !vieux(i.date, GARDE_JOURS));
     const curats = etat[k].filter(i => !String(i.id || '').startsWith('a'));
     const autos = etat[k].filter(i => String(i.id || '').startsWith('a'))
@@ -365,11 +368,11 @@ async function main() {
   let idsPrecedents = new Set();
   try {
     const precedent = JSON.parse(precedentBrut);
-    for (const k of ['version_lyceens', 'version_gouvernement', 'faits']) {
+    for (const k of ['version_gouvernement', 'faits']) {
       (precedent[k] || []).forEach(i => idsPrecedents.add(i.id));
     }
   } catch (e) { /* pas de fichier précédent lisible */ }
-  const nouvellesUtile = [...etat.version_lyceens, ...etat.version_gouvernement, ...etat.faits]
+  const nouvellesUtile = [...etat.version_gouvernement, ...etat.faits]
     .filter(i => String(i.id || '').startsWith('a') && !idsPrecedents.has(i.id)).length;
   const corpsSansMaj = JSON.stringify({ ...etat, maj: '' }, null, 2);
   const precedentSansMaj = (() => {
@@ -388,7 +391,7 @@ async function main() {
     fusionnees,
     moissonnes,
     par_camp: parCamp,
-    total: etat.version_lyceens.length + etat.version_gouvernement.length + etat.faits.length,
+    total: etat.version_gouvernement.length + etat.faits.length,
     echecs
   }) + '\n');
 }

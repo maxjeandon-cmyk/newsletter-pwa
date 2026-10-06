@@ -1,22 +1,32 @@
 {
-  "id": "c03",
+  "id": "c3",
   "periode": "lundi 28 septembre 2026",
   "titre": "Sortie d'Île-de-France — 180 établissements, la France découvre ses lycéens",
   "paragraphes": [
     {
-      "id": "c03p1",
+      "id": "c3p1",
       "texte": "Le lundi 28 septembre, le mouvement sort de son berceau francilien. Des actions sont signalées à Marseille, à Lille, dans le Rhône, le Var et les Alpes-Maritimes ; le ministère de l'Intérieur recense à la fin de la journée 180 établissements perturbés, dont 27 blocages totaux, et 164 personnes interpellées dans la seule journée. Le Monde note ce jour-là un point capital pour comprendre la suite : la majorité des mobilisations se déroulent sans affrontement — ce sont des rassemblements, des piquets, des grilles tapées à la main, des banderoles — mais certains rassemblements s'accompagnent de dégradations, d'incendies de poubelles, de jets de projectiles ou d'artifices. Le contraste entre ces deux réalités — l'immense majorité pacifique, la minorité échauffée — deviendra l'enjeu central de la bataille narrative des jours suivants : le gouvernement ne parlera bientôt plus que des seconds, le mouvement ne se reconnaîtra que dans les premiers.",
-      "sources": ["Wikipédia — Mouvement et blocus lycéen et étudiant de 2026 en France", "Le Monde cité par Wikipédia — mobilisations majoritairement sans affrontement"]
+      "sources": [
+        "Wikipédia — Mouvement et blocus lycéen et étudiant de 2026 en France",
+        "Le Monde cité par Wikipédia — mobilisations majoritairement sans affrontement"
+      ]
     },
     {
-      "id": "c03p2",
+      "id": "c3p2",
       "texte": "Dans les lycées, ce lundi est celui des assemblées générales et des votes de blocus. Sur Reddit, dans le fil « A quoi sert un blocus dans un lycée ? » de r/france, les internautes s'étripent déjà sur la légitimité du blocage : « L'objectif d'un mouvement social est de prendre de la place dans l'espace et le temps de la vie sociale, il faut un peu bousculer l'ordre des choses », répond l'un ; « que quelques lycéens empêchent ceux qui ne veulent pas faire grève d'assister aux cours est intolérable », réplique un autre. Pendant ce temps, l'Union syndicale lycéenne prépare la suite : elle appelle à généraliser les blocages à l'ensemble des lycées le 29 septembre, en lien avec la journée nationale de mobilisation de la fonction publique. Le calendrier est habile : demain, les cheminots, les enseignants, les agents publics descendront dans la rue, et les lycéens seront avec eux. Ryad Rani, le président de l'USL, explique le choix sans détour : les problèmes que connaît Saint-Exupéry sont communs aux établissements du territoire national — manque de professeurs, emplois du temps surchargés, bâti délabré, pression de Parcoursup. La consigne est simple : chaque lycée fait son AG, chaque AG vote son blocus, et demain la France entière devra regarder ce que ses lycéens ont à dire.",
-      "sources": ["Wikipédia — Mouvement et blocus lycéen et étudiant de 2026 en France", "Reddit r/france — fil « A quoi sert un blocus dans un lycée ? »", "Café pédagogique — entretien Ryad Rani"]
+      "sources": [
+        "Wikipédia — Mouvement et blocus lycéen et étudiant de 2026 en France",
+        "Reddit r/france — fil « A quoi sert un blocus dans un lycée ? »",
+        "Café pédagogique — entretien Ryad Rani"
+      ]
     },
     {
-      "id": "c03p3",
+      "id": "c3p3",
       "texte": "Sur les réseaux, la machine à vidéos tourne à plein régime. Les groupes Snapchat de classe deviennent des états-majors improvisés ; les fils WhatsApp servent à la fois à la mobilisation, à la diffusion d'informations et de revendications, et à ce que le sociologue Vincent Tiberj appelle la « conscientisation ». Interrogé par France 3 Nouvelle-Aquitaine, Tiberj donne la clé de la vitesse de contagion : « C'est allé extrêmement vite, parce que beaucoup de lycéens se sont sentis solidaires de cette situation, ça leur a parlé de ce qu'ils vivent au quotidien. […] Ils ont des outils pour se mobiliser et pour propager extrêmement rapides. » La comparaison qui revient dans toutes les analyses est celle des Gilets jaunes — une mobilisation sans tête apparente, qui se coordonne en horizontal, via des vidéos plutôt que via des syndicats. Seule nuance de taille : la VIGINUM, chargée de détecter les ingérences numériques étrangères, indique à ce stade n'avoir constaté aucune amplification artificielle des contenus du mouvement par des acteurs étrangers. Ce que vivent les lycéens français, ce sont les lycéens français qui le racontent — une authentique colère de l'intérieur, sans robots.",
-      "sources": ["France 3 Nouvelle-Aquitaine — analyse Vincent Tiberj (5 octobre 2026)", "Wikipédia — section Diffusion sur les réseaux sociaux"]
+      "sources": [
+        "France 3 Nouvelle-Aquitaine — analyse Vincent Tiberj (5 octobre 2026)",
+        "Wikipédia — section Diffusion sur les réseaux sociaux"
+      ]
     }
   ]
 }
