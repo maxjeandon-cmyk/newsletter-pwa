@@ -14,7 +14,7 @@ on:
         type: boolean
         default: false
 permissions:
-  contents: read
+  contents: write
 jobs:
   notifier:
     runs-on: ubuntu-latest
@@ -33,3 +33,4 @@ jobs:
           VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
           VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
           NOTIF_TEST: ${{ inputs.test }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

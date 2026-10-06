@@ -19,6 +19,42 @@
 const webpush = require('web-push');
 const fs = require('fs');
 
+/* v89 : journal d'envoi publié dans data/notif-envois.json (meilleur effort).
+ * Chaque envoi y est trace par DOMAINE de l'endpoint (jamais l'URL complete,
+ * jamais les cles) et son statut HTTP : 201 = accepte par le service push
+ * (Apple/Google/Mozilla), 410/404 = abonnement mort (app desinstallee). */
+const STATS = {
+  date: new Date().toISOString(),
+  mode: 'normal',
+  abonnements: 0,
+  envoyes: 0,
+  morts: 0,
+  resultats: []
+};
+function noterEnvoi(endpoint, ok, status) {
+  let domaine = '?';
+  try { domaine = new URL(endpoint).host; } catch (e) { /* endpoint illisible */ }
+  STATS.resultats.push({ domaine, ok: !!ok, status: status || null });
+}
+async function publierJournal() {
+  const token = process.env.GH_TOKEN || process.env.GITHUB_TOKEN;
+  const repo = process.env.GITHUB_REPOSITORY || 'maxjeandon-cmyk/newsletter-pwa';
+  if (!token) return; /* pas de token : le journal reste dans les logs du run */
+  try {
+    const chemin = 'data/notif-envois.json';
+    const headers = { authorization: 'Bearer ' + token, accept: 'application/vnd.github+json' };
+    let sha = null;
+    const actuel = await fetch('https://api.github.com/repos/' + repo + '/contents/' + chemin, { headers });
+    if (actuel.ok) sha = (await actuel.json()).sha;
+    const put = await fetch('https://api.github.com/repos/' + repo + '/contents/' + chemin, {
+      method: 'PUT',
+      headers: { ...headers, 'content-type': 'application/json' },
+      body: JSON.stringify({ message: 'Journal envois notifs ' + STATS.mode + ' : ' + STATS.envoyes + ' envoyee(s)', content: Buffer.from(JSON.stringify(STATS, null, 2), 'utf8').toString('base64'), sha: sha || undefined })
+    });
+    if (!put.ok) console.error('Journal non publie : GitHub ' + put.status);
+  } catch (e) { console.error('Journal non publie : ' + String(e.message || e).slice(0, 120)); }
+}
+
 /* URL de base Supabase : le secret peut contenir une barre finale ou un suffixe
  * /rest/v1 (cas observe en prod) — on normalise, sinon le chemin double
  * (/rest/v1/rest/v1/...) echoue en PGRST125 et le run croit a zero abonnement. */
@@ -101,6 +137,7 @@ async function main() {
   /* 2. MODE TEST : notification test à chaque abonnement, hors préférences et hors dédup */
   const test = modeTest();
   if (test) {
+    STATS.mode = 'test';
     let envoyes = 0, morts = 0;
     const majPrefs = new Map();
     for (const a of abonnements) {
@@ -113,8 +150,10 @@ async function main() {
           JSON.stringify({ titre: '🔔 Test des notifications', corps: 'Si tu lis ça, le push fonctionne !', url: './#reglages' })
         ));
         envoyes++;
+        noterEnvoi(a.endpoint, true, 201);
         majPrefs.set(a.user_id, { __uid: a.user_id, ...p, notif_envoyees: { ...memo, test } });
       } catch (e) {
+        noterEnvoi(a.endpoint, false, e.statusCode || null);
         if (e.statusCode === 410 || e.statusCode === 404) {
           morts++;
           await api('/rest/v1/abonnements_push?endpoint=eq.' + encodeURIComponent(a.endpoint), { method: 'DELETE' });
@@ -122,7 +161,9 @@ async function main() {
       }
     }
     await ecrirePrefs([...majPrefs.values()]);
+    STATS.abonnements = abonnements.length; STATS.envoyes = envoyes; STATS.morts = morts;
     console.log('Notifications TEST envoyées : ' + envoyes + ' ; abonnements morts nettoyés : ' + morts + ' ; token : ' + test + '.');
+    await publierJournal();
     return;
   }
 
@@ -186,11 +227,13 @@ async function main() {
           JSON.stringify(t.message)
         ));
         envoyes++;
+        noterEnvoi(t.abonnement.endpoint, true, 201);
         /* mémo : cet utilisateur a reçu edition/copernicus/lyceens/etudiants courant */
         const memo = { ...(t.envoyes || {}), ...(t.message.url === './#edition' ? { edition: dateEdition } : t.message.url === './#climat' ? { copernicus: majClimat } : t.message.url === './#lyceens' ? { lyceens: majLyceens } : t.message.url === './#lyceens/etudiants' ? { etudiants: majEtudiants } : {}) };
         /* PATCH différé : on accumule et on écrit par lot après la boucle (v29). */
         majPrefs.set(t.abonnement.user_id, { __uid: t.abonnement.user_id, ...t.prefs, notif_envoyees: memo });
       } catch (e) {
+        noterEnvoi(t.abonnement.endpoint, false, e.statusCode || null);
         if (e.statusCode === 410 || e.statusCode === 404) {
           morts++;
           await api('/rest/v1/abonnements_push?endpoint=eq.' + encodeURIComponent(t.abonnement.endpoint), { method: 'DELETE' });
@@ -200,7 +243,9 @@ async function main() {
   });
   await Promise.all(ouvriers);
   await ecrirePrefs([...majPrefs.values()]);
+  STATS.abonnements = abonnements.length; STATS.envoyes = envoyes; STATS.morts = morts;
   console.log('Notifications envoyées : ' + envoyes + ' ; abonnements morts nettoyés : ' + morts + ' ; prefs mises à jour : ' + majPrefs.size + '.');
+  await publierJournal();
 }
 
 /* v88 : sortie explicite des que le travail est fini — un envoi abandonne
