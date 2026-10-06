@@ -8,7 +8,7 @@ import { ONGLETS_BASE } from '../onglets.js';
 import { chargerChapitres } from '../feeds.js';
 import { renderView } from './common.js';
 import { inscrire, connecter, deconnecter, restaurerSession, synchroniserPrefs, envoyerPrefs, abonne, estConnecte, veutResterConnecte } from '../compte.js';
-import { pushDisponible, prefsNotifications, basculerNotification, desabonner, safariOngletSansPush } from '../push.js';
+import { pushDisponible, prefsNotifications, basculerNotification, desabonner, safariOngletSansPush, ctxNotifications } from '../push.js';
 import { chercherVilles, choisirVille, villeMeteo } from '../meteo.js';
 
 /* Ordre par défaut : source unique dans js/onglets.js — tout nouvel onglet
@@ -325,8 +325,17 @@ function rendreNotifications() {
     bloc.innerHTML = '<p class="hint">📱 Sur iPhone/iPad, les notifications ne fonctionnent que dans l\u2019app installée sur l\u2019écran d\u2019accueil — pas dans l\u2019onglet Safari. Ouvre le menu Partager → « Sur l\u2019écran d\u2019accueil », puis active les toggles depuis l\u2019app.</p>';
     return;
   }
+  /* v101 : guide Firefox mobile — deux limites distinctes, iOS et Android. */
+  const ctx = ctxNotifications();
+  if (ctx.firefox && ctx.plateforme === 'ios') {
+    bloc.innerHTML = '<p class="hint">🦊📱 Sur iPhone, Firefox ne peut pas recevoir de notifications : le push y est réservé aux apps installées <strong>depuis Safari</strong> (Partager → « Sur l\u2019écran d\u2019accueil »). Installe l\u2019app depuis Safari, puis active les toggles depuis l\u2019app installée.</p>';
+    return;
+  }
+  if (ctx.firefox && ctx.plateforme === 'android') {
+    bloc.innerHTML = '<p class="hint">🦊📱 Sur Android, Firefox reçoit les notifications <strong>uniquement quand Firefox est ouvert</strong> (ouvert en tâche de fond récente) : sa connexion au service push s\u2019arrête quand le navigateur est fermé. Pour des notifications fiables à tout moment, installe l\u2019app depuis Chrome/Edge/Samsung Internet (menu → « Installer l\u2019application »). Dans Firefox, les toggles fonctionnent pendant que le navigateur tourne.</p>';
+  }
   if (!pushDisponible()) {
-    bloc.innerHTML = '<p class="hint">Les notifications ne sont pas disponibles sur ce navigateur. Sur iPhone : installe l\u2019app depuis Safari (iOS 16.4+).</p>';
+    bloc.innerHTML = '<p class="hint">Les notifications ne sont pas disponibles sur ce navigateur. Sur iPhone : installe l\u2019app depuis Safari (iOS 16.4+). Sur Firefox Android : Push API à partir de Firefox 120.</p>';
     return;
   }
   if (!estConnecte()) {

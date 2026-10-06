@@ -47,6 +47,24 @@ export function safariOngletSansPush() {
   return iOS && !pushDisponible();
 }
 
+/* v101 : contexte navigateur/plateforme pour guider les cas Firefox mobile.
+ * - Firefox iPhone : WebKit imposé, PushManager réservé aux apps installées
+ *   DEPUIS SAFARI — Firefox ne peut pas installer de PWA push, jamais.
+ * - Firefox Android : Push API présente, mais la connexion au service push
+ *   de Mozilla ne vit que tant que Firefox est ouvert — notifications
+ *   possibles seulement navigateur actif (pas de réveil en arrière-plan). */
+export function ctxNotifications() {
+  const ua = navigator.userAgent || '';
+  const iOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const android = /Android/.test(ua);
+  const firefox = /Firefox|FxiOS|Focus/.test(ua) && !/Seamonkey/.test(ua);
+  return {
+    firefox,
+    plateforme: iOS ? 'ios' : android ? 'android' : (ua.includes('Mobile') ? 'mobile' : 'desktop'),
+    push: pushDisponible()
+  };
+}
+
 async function clePublique() {
   if (!state.compteCfg) {
     try { state.compteCfg = await (await fetch('data/compte.json', { cache: 'no-store' })).json(); }
@@ -57,7 +75,16 @@ async function clePublique() {
 
 /* S'abonner au push (crée ou réutilise l'abonnement navigateur) puis l'enregistrer dans Supabase */
 export async function souscrire() {
-  if (!pushDisponible()) { noterEssai({ ok: false, etape: 'support', message: "push indisponible dans ce contexte (Safari iOS ? installe l'app sur l'écran d'accueil)" }); return { erreur: 'non-supporte' }; }
+  const ctx = ctxNotifications();
+  if (!pushDisponible()) {
+    const detail = ctx.firefox && ctx.plateforme === 'ios'
+      ? 'Firefox sur iPhone ne peut pas recevoir de notifications (WebKit : le push est réservé aux apps installées depuis Safari). Ouvre diyeah24.fr dans Safari → Partager → Sur l\u2019écran d\u2019accueil.'
+      : ctx.firefox
+        ? 'push indisponible dans ce Firefox — vérifie la version (Android : Push API depuis Firefox 120) ou installe l\u2019app depuis un navigateur Chromium/Safari'
+        : "push indisponible dans ce contexte (Safari iOS ? installe l'app sur l'écran d'accueil)";
+    noterEssai({ ok: false, etape: 'support', message: detail });
+    return { erreur: 'non-supporte' };
+  }
   noterEssai({ ok: false, etape: 'permission', message: 'demande de permission en cours…' });
   let perm; try { perm = await Notification.requestPermission(); } catch (e) { noterEssai({ ok: false, etape: 'permission', message: String(e && e.message || e).slice(0, 140) }); return { erreur: 'permission' }; }
   if (perm !== 'granted') { noterEssai({ ok: false, etape: 'permission', message: 'permission refusée ou non donnée' }); return { erreur: 'permission' }; }
