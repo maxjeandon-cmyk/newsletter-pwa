@@ -1,5 +1,5 @@
 {
-  "maj": "05/10/2026 23:31",
+  "maj": "06/10/2026 05:27",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant de septembre-octobre 2026 : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Trois lectures séparées : ce que disent les lycéens, ce que dit le gouvernement, et les seules informations corroborées par plusieurs médias indépendants.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les « versions » sont celles rapportées par la presse ; les déclarations sont attribuées à leurs auteurs, jamais reformulées. Aucun flux RSS officiel du gouvernement n'étant accessible, la version du gouvernement est relevée via les dépêches et articles qui rapportent ses déclarations.",
@@ -11,6 +11,18 @@
     "Amnesty France (04/10) appelle les autorités au dialogue et à la désescalade, dénonçant un usage disproportionné de la force face à des mineurs ; la FCPE a demandé au ministre d'écouter les « demandes légitimes » des lycéens."
   ],
   "version_lyceens": [
+    {
+      "id": "amuw4au7d-hc8q",
+      "date": "06/10/2026",
+      "titre": "Les lycéens solidaires manifestent pour dénoncer leurs conditions d'étude",
+      "texte": "Ce mardi 6 octobre est marqué par une nouvelle journée de mobilisation à l'échelle nationale dans la lignée de la contestation initiée par les lycéens. Les syndicats lycéens appellent aujourd'hui à u…",
+      "source": "RFI",
+      "sources": [
+        "RFI"
+      ],
+      "url": "https://www.rfi.fr/fr/podcasts/reportage-france/20261005-les-lyc%C3%A9ens-solidaires-manifestent-pour-d%C3%A9noncer-leurs-conditions-d-%C3%A9tude",
+      "verifie": false
+    },
     {
       "id": "amuv1wckm-96uy",
       "date": "05/10/2026",
@@ -59,18 +71,6 @@
         "Europe 1"
       ],
       "url": "https://www.europe1.fr/societe/blocus-des-lycees-on-na-jamais-connu-un-tel-niveau-de-violence-alerte-bruno-bobkiewicz-1124309?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
-      "verifie": false
-    },
-    {
-      "id": "amuveprks-8zgv",
-      "date": "05/10/2026",
-      "titre": "«Il faut arrêter» : à Lyon, parents et élèves s'agacent de la poursuite des blocus des lycées",
-      "texte": "Après une semaine de mobilisation émaillée de violences, les blocus de plusieurs lycées se poursuivent cette semaine. A Lyon, de plus en plus d'élèves et de parents appellent à reprendre le chemin de…",
-      "source": "Europe 1",
-      "sources": [
-        "Europe 1"
-      ],
-      "url": "https://www.europe1.fr/societe/il-faut-arreter-a-lyon-parents-et-eleves-sagacent-de-la-poursuite-des-blocus-des-lycees-1123655?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": false
     },
     {
@@ -192,12 +192,13 @@
       "date": "05/10/2026",
       "titre": "Blocus des lycées : «Nous allons poursuivre et rechercher les casseurs», promet le président de la région Auvergne-Rhôn…",
       "texte": "Face aux dégradations qui ont touché de nombreux lycées, le président de la région Auvergne-Rhône-Alpes, Fabrice Pannekoucke, affirme vouloir engager des poursuites contre les auteurs des faits. Invi…",
-      "source": "Europe 1",
+      "source": "Europe 1 / BFMTV",
       "sources": [
-        "Europe 1"
+        "Europe 1",
+        "BFMTV"
       ],
       "url": "https://www.europe1.fr/societe/blocus-des-lycees-nous-allons-poursuivre-et-rechercher-les-casseurs-promet-le-president-de-la-region-auvergne-rhone-alpes-1124189?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
-      "verifie": false
+      "verifie": true
     },
     {
       "id": "amuv1wck7-67cv",
