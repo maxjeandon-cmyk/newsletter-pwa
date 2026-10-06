@@ -1,0 +1,22 @@
+{
+  "id": "c02",
+  "periode": "du 25 au 27 septembre 2026",
+  "titre": "La contagion francilienne — une soixantaine de lycées, une circulaire, six avocats",
+  "paragraphes": [
+    {
+      "id": "c02p1",
+      "texte": "La dernière semaine de septembre transforme un feu local en incendie régional. Les 24 et 25 septembre, les perturbations concernent une soixantaine de lycées franciliens : Saint-Exupéry de Créteil reste l'épicentre symbolique — le député LFI Louis Boyard s'y rend dès le 21 septembre et y retourne pour soutenir les jeunes, appelant ensuite à l'extension du mouvement — mais la contamination dépasse vite le Val-de-Marne. Dans les couloirs de Snapchat et les groupes de classe WhatsApp, les vidéos des blocus de Créteil circulent à une vitesse que les rectorats n'avaient pas anticipée : selon l'Union syndicale lycéenne et une source académique citée par franceinfo, c'est bien cette mobilisation de Saint-Exupéry qui constitue le point de départ du mouvement national, et « avec les réseaux sociaux, la mobilisation a pris une ampleur inattendue », témoigne Cheick Sanogo. Des tracts et des vidéos fleurissent sur TikTok, Snapchat et Instagram — certains, note Le Monde, sont générés avec l'aide d'outils d'intelligence artificielle — et tous ne viennent pas d'organisations militantes : des comptes d'actualité ou de faits divers les relaient, contribuant, selon les rectorats, à l'extension rapide du mouvement. Chaque lycée bloqué devient un reportage en direct ; chaque charge policière filmée devient un argument de mobilisation supplémentaire.",
+      "sources": ["Wikipédia — Mouvement et blocus lycéen et étudiant de 2026 en France", "franceinfo — « Revendications locales, vidéos virales… comment le blocage s'est transformé en mouvement d'ampleur »", "Basta! — dossier mobilisation lycéenne"]
+    },
+    {
+      "id": "c02p2",
+      "texte": "Face à cette jeunesse qui bloque, l'État répond d'abord par le texte et le ton. Le 26 septembre, une première circulaire conjointe du ministre de l'Intérieur et du ministre de l'Éducation nationale autorise l'intervention des forces de l'ordre aux abords des lycées — une nouveauté que Ryad Rani, président de l'Union syndicale lycéenne, qualifiera de fait inédit : « Le ministre de l'Intérieur parle plus que le ministre de l'Éducation lui-même, il donne le mot d'ordre ». Cette circulaire, ce que Le Spiritfr analyse fin septembre comme l'organisation d'une intervention des forces de l'ordre aux abords des blocus, marque un basculement : la réponse à des revendications scolaires devient d'abord une affaire de maintien de l'ordre. L'ESPRIT fr le résume en une formule qui circulera beaucoup dans les rangs lycéens : on envoie la police avant les moyens.",
+      "sources": ["Café pédagogique — « Lycéens mobilisés : ce qu'ils disent, ce qu'on leur répond » (1er octobre 2026)", "Le Spiritfr — « Blocus de lycées : ce que la circulaire du 26 septembre organise »"]
+    },
+    {
+      "id": "c02p3",
+      "texte": "Le 27 septembre, un autre acteur entre en scène : la justice. Six avocats des barreaux de Paris et de Seine-Saint-Denis dénoncent publiquement des violences policières visant des lycéens interpellés lors des blocus en Seine-Saint-Denis et dans le Val-d'Oise. À Saint-Denis, un adolescent de 15 ans serait arrivé au commissariat le visage en sang et y aurait reçu plusieurs gifles ; un autre, âgé de 16 ans, affirme avoir reçu un coup de poing au foie lors de son arrestation, puis une gifle au commissariat. Les avocats annoncent porter plainte et saisir l'IGPN, la police des polices. Et dans le Val-d'Oise, l'affaire qui allait devenir un symbole se produit : à Saint-Ouen-l'Aumône, un lycéen de 14 ans, Eden, est grièvement blessé à la mâchoire par un tir de lance-grenades de type « Cougar » à bout portant, après avoir, selon le parquet de Pontoise, porté des coups à une policière. Le Défenseur des droits se saisira de l'affaire. Ces premières blessures graves, à cinq jours du premier acte national, nourrissent une conviction qui ne quittera plus le mouvement : celle d'une répression inédite pour un mouvement lycéen — le politologue Robi Morder en fera plus tard l'analyse, comparant ce que la France n'avait jamais connu pour des mineurs en colère.",
+      "sources": ["Wikipédia — Mouvement et blocus lycéen et étudiant de 2026 en France", "Basta! — dossier mobilisation lycéenne (Eden, Défenseur des droits)", "Café pédagogique — entretien Ryad Rani"]
+    }
+  ]
+}

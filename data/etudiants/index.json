@@ -1,0 +1,145 @@
+{
+  "titre": "La version des étudiants — chronique de la révolte lycéenne 2026",
+  "intro": "Chronique narrative du mouvement lycéen et étudiant de l'automne 2026, écrite du point de vue des élèves : de l'amorce de Créteil à l'acte III du 6 octobre, puis un ajout automatique toutes les six heures. Sources privilégiées : médias indépendants (Basta !, Contre Attaque, Café pédagogique, StreetPress, L'Humanité, Politis, Acrimed, Le Média, Bondy Blog), fils Reddit (r/etudiants, r/enseignants, r/france), observation des commentaires TikTok, Instagram et Snapchat, et Wikipédia comme colonne vertébrale factuelle.",
+  "note": "Méthode : chaque paragraphe cite ses sources. Les paragraphes marqués « auto » sont des relevés bruts ajoutés par le pipeline toutes les 6 h (faits sourcés, sans réécriture) ; la rédaction narrative approfondie est assurée lors des éditions de la newsletter. Badge ✅ (corroboré par au moins deux médias distincts) et ⚠️ (une seule source) : ces distinctions s'appliquent aux relevés automatiques.",
+  "maj": "06/10/2026",
+  "totalParagraphes": 75,
+  "chapitres": [
+    {
+      "id": "c01",
+      "fichier": "chapitres/01.json",
+      "periode": "du 18 au 24 septembre 2026",
+      "titre": "L'amorce — Créteil, là où tout commence",
+      "paragraphes": 2,
+      "octets": 3779
+    },
+    {
+      "id": "c02",
+      "fichier": "chapitres/02.json",
+      "periode": "du 25 au 27 septembre 2026",
+      "titre": "La contagion francilienne — une soixantaine de lycées, une circulaire, six avocats",
+      "paragraphes": 3,
+      "octets": 4616
+    },
+    {
+      "id": "c03",
+      "fichier": "chapitres/03.json",
+      "periode": "lundi 28 septembre 2026",
+      "titre": "Sortie d'Île-de-France — 180 établissements, la France découvre ses lycéens",
+      "paragraphes": 3,
+      "octets": 4446
+    },
+    {
+      "id": "c04",
+      "fichier": "chapitres/04.json",
+      "periode": "mardi 29 septembre 2026",
+      "titre": "Acte 1 — la journée de la fonction publique, la France bloque avec ses enfants",
+      "paragraphes": 6,
+      "octets": 9840
+    },
+    {
+      "id": "c05",
+      "fichier": "chapitres/05.json",
+      "periode": "mercredi 30 septembre 2026",
+      "titre": "Le durcissement — 625 interpellations, la peur change de camp",
+      "paragraphes": 3,
+      "octets": 4701
+    },
+    {
+      "id": "c06",
+      "fichier": "chapitres/06.json",
+      "periode": "jeudi 1er octobre 2026",
+      "titre": "Acte 2 — 900 actions, 400 lycées fermés, les campus bloqués, Liège s'embrase",
+      "paragraphes": 5,
+      "octets": 9280
+    },
+    {
+      "id": "c07",
+      "fichier": "chapitres/07.json",
+      "periode": "vendredi 2 octobre 2026",
+      "titre": "Concertation en échec, loi « casseurs-payeurs », et « aucune consigne de retenue »",
+      "paragraphes": 4,
+      "octets": 6193
+    },
+    {
+      "id": "c08",
+      "fichier": "chapitres/08.json",
+      "periode": "du samedi 3 au dimanche 4 octobre 2026",
+      "titre": "Le week-end — Belfort dans l'eau, la Sorbonne et ses CRS, la feuille de route Lecornu",
+      "paragraphes": 3,
+      "octets": 4651
+    },
+    {
+      "id": "c09",
+      "fichier": "chapitres/09.json",
+      "periode": "lundi 5 octobre 2026",
+      "titre": "La « décrue » et la main arrachée de Lens — lundi noir et e-blocus",
+      "paragraphes": 5,
+      "octets": 9726
+    },
+    {
+      "id": "c10",
+      "fichier": "chapitres/10.json",
+      "periode": "6 octobre 2026 — l'acte III",
+      "titre": "Acte III : la France entière dans la rue",
+      "paragraphes": 7,
+      "octets": 12495
+    },
+    {
+      "id": "c11",
+      "fichier": "chapitres/11.json",
+      "periode": "Chronique transverse — réseaux, voix et ressentis",
+      "titre": "Chorus — la voix de l'intérieur",
+      "paragraphes": 7,
+      "octets": 11720
+    },
+    {
+      "id": "c12",
+      "fichier": "chapitres/12.json",
+      "periode": "Chronique transverse — les revendications, mot à mot",
+      "titre": "Ce qu'ils veulent — les revendications, mot à mot",
+      "paragraphes": 5,
+      "octets": 8700
+    },
+    {
+      "id": "c13",
+      "fichier": "chapitres/13.json",
+      "periode": "Chronique transverse — la répression et ses visages",
+      "titre": "La répression et ses visages",
+      "paragraphes": 5,
+      "octets": 9455
+    },
+    {
+      "id": "c14",
+      "fichier": "chapitres/14.json",
+      "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
+      "titre": "La machine gouvernementale, vue d'en bas",
+      "paragraphes": 5,
+      "octets": 8947
+    },
+    {
+      "id": "c15",
+      "fichier": "chapitres/15.json",
+      "periode": "Chronique transverse — la génération dans l'Histoire",
+      "titre": "Génération 2026 — le mouvement dans la longue durée",
+      "paragraphes": 5,
+      "octets": 9074
+    },
+    {
+      "id": "c16",
+      "fichier": "chapitres/16.json",
+      "periode": "Chronique transverse — le lexique du mouvement",
+      "titre": "Lexique d'une révolte — les mots de 2026",
+      "paragraphes": 3,
+      "octets": 5520
+    },
+    {
+      "id": "c17",
+      "fichier": "chapitres/17.json",
+      "periode": "Chronique transverse — les figures du mouvement",
+      "titre": "Figures d'un automne — portraits croisés",
+      "paragraphes": 4,
+      "octets": 7233
+    }
+  ]
+}

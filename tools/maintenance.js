@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* tools/maintenance.js — Agent de maintenance (v35).
+/* tools/maintenance.js — Agent de maintenance (v36).
  * Toutes les 6 h (3 h, 9 h, 15 h, 21 h heure de Paris) :
  *   1. Fusionne les NOUVEAUX messages de feedback de Supabase (clé
  *      service_role) dans le résumé global persistant via tools/feedback.js :
@@ -19,6 +19,12 @@
  *      presse, classe chaque info (version lycéens / version gouvernement /
  *      faits corroborés) et publie data/lyceens.json si le contenu a
  *      vraiment changé (pas de commit fantôme toutes les 6 h).
+ *   6. Chronique « Version des étudiants » (etudiants.js) : moissonne les
+ *      flux RSS des dernières ~6 h, construit UN paragraphe « relevé
+ *      automatique » (faits bruts verbatim, champ auto) et l'ajoute au
+ *      dernier chapitre de data/etudiants/ ; publie le chapitre et
+ *      data/etudiants/index.json si de nouvelles informations sont
+ *      arrivées (idempotence par signature : pas de commit fantôme).
  * Aucune dépendance : fetch natif (Node >= 18).
  * Env : SUPABASE_URL, SUPABASE_SERVICE_ROLE, GH_TOKEN (Contents: RW).
  */
@@ -198,6 +204,21 @@ async function main() {
     lyc.erreur = String(e.stdout || e.message || e).slice(0, 150);
   }
 
+  /* 2 quater. Chronique « Version des étudiants » : tools/etudiants.js
+   * moissonne les flux RSS des dernières ~6 h et ajoute UN paragraphe
+   * « relevé automatique » au dernier chapitre de data/etudiants/ (crée un
+   * nouveau fichier chapitre si le dernier dépasse 28 Ko). Idempotent :
+   * si les mêmes items sont déjà dans le dernier relevé, rien n'est écrit. */
+  let etu = { modifie: false, ajoutes: 0, items: 0, fichier: null };
+  try {
+    etu = JSON.parse(execFileSync(process.execPath, ['tools/etudiants.js'], { encoding: 'utf8', env: process.env, timeout: 240000 }));
+    console.log('Étudiants : ' + etu.items + ' info(s) des dernières heures, ' + etu.ajoutes +
+      ' paragraphe(s) ajouté(s) au chapitre ' + etu.chapitre + '.');
+  } catch (e) {
+    console.error('Chronique étudiants impossible : ' + (e.stdout || e.message));
+    etu.erreur = String(e.stdout || e.message || e).slice(0, 150);
+  }
+
   /* 3. Publication du résumé : tools/feedback.js a lui-même réécrit
    * data/feedback.json (fusion des nouveaux messages dans le résumé
    * global persistant) — on publie le fichier tel quel (data/ est
@@ -259,12 +280,36 @@ async function main() {
   });
   if (lyc.erreur) etat.problemes.push('relevé lycéens');
 
+  /* 3 quater. Publication de la chronique « Version des étudiants »
+   * (chapitre modifié puis index, data/ network-first, pas de bump CACHE). */
+  if (etu.modifie && !etu.erreur && etu.fichier) {
+    try {
+      await publierFichier(etu.fichier, fs.readFileSync(etu.fichier, 'utf8'),
+        'Chronique etudiants du ' + dateFr + ' (' + etu.items + ' info(s) des dernieres heures)');
+      await publierFichier('data/etudiants/index.json', fs.readFileSync('data/etudiants/index.json', 'utf8'),
+        'Index chronique etudiants du ' + dateFr);
+      console.log('Chronique étudiants publiée (' + etu.items + ' info(s)).');
+    } catch (e) {
+      console.error('Publication de la chronique étudiants échouée : ' + e.message);
+      etu.erreur = 'publication : ' + String(e.message).slice(0, 120);
+    }
+  }
+  etat.verifs.push({
+    nom: 'etudiants.js',
+    ok: !etu.erreur,
+    detail: etu.erreur
+      ? etu.erreur
+      : etu.items + ' info(s) des dernières heures, ' + etu.ajoutes + ' paragraphe(s) ajouté(s)'
+  });
+  if (etu.erreur) etat.problemes.push('chronique étudiants');
+
   const contenuRapport = JSON.stringify({
     date: dateFr,
     heure: heureFr,
     feedback: { messages: resume.total, nouveaux: resume.nouveaux, recupere: feedbackOk, publie: !erreursFeedback },
     relevesOng: { rafraichis: ong.rafraichis, echecs: ong.echecs, publie: ong.modifie && !ong.erreur },
     lyceens: { nouvelles: lyc.nouvelles, fusionnees: lyc.fusionnees, moissonnes: lyc.moissonnes, total: lyc.total, publie: lyc.modifie && !lyc.erreur },
+    etudiants: { items: etu.items, ajoutes: etu.ajoutes, chapitre: etu.chapitre || null, publie: etu.modifie && !etu.erreur },
     verifs: etat.verifs,
     problemes: etat.problemes,
     intervention: etat.intervention
