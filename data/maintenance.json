@@ -1,6 +1,6 @@
 {
   "date": "06/10/2026",
-  "heure": "15:28",
+  "heure": "21:26",
   "feedback": {
     "messages": 12,
     "nouveaux": 0,
@@ -13,9 +13,9 @@
     "publie": false
   },
   "lyceens": {
-    "nouvelles": 2,
-    "fusionnees": 17,
-    "moissonnes": 128,
+    "nouvelles": 0,
+    "fusionnees": 13,
+    "moissonnes": 135,
     "total": 22,
     "publie": true
   },
@@ -34,7 +34,7 @@
     {
       "nom": "check-site.js",
       "ok": true,
-      "detail": "=== check-site ===\nℹ️  latest.json : 9 édition(s), plus récente 2026-10-05\nℹ️  édition 2026-10-05 : JSON OK, HTML 72325 octets, structure OK\nℹ️  site public joignable (1383 octets)\n\nSite et édition conformes. 🌱"
+      "detail": "=== check-site ===\nℹ️  latest.json : 9 édition(s), plus récente 2026-10-05\nℹ️  édition 2026-10-05 : JSON OK, HTML 72325 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
     },
     {
       "nom": "sonde notifications",
@@ -44,7 +44,7 @@
     {
       "nom": "lyceens.js",
       "ok": true,
-      "detail": "2 nouvelle(s) info, 17 fusionnée(s) sur 128 moissonnée(s) — 22 au total"
+      "detail": "0 nouvelle(s) info, 13 fusionnée(s) sur 135 moissonnée(s) — 22 au total"
     },
     {
       "nom": "etudiants.js",
