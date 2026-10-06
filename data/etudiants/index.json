@@ -3,7 +3,7 @@
   "intro": "Chronique narrative du mouvement lycéen et étudiant de l'automne 2026, écrite du point de vue des élèves : de l'amorce de Créteil au dernier acte en date, puis un ajout automatique toutes les six heures. Le « Complément étudiants » rassemble les chapitres transverses. Sources privilégiées : médias indépendants (Basta !, Contre Attaque, Café pédagogique, StreetPress, L'Humanité, Politis, Acrimed, Le Média, Bondy Blog), fils Reddit (r/etudiants, r/enseignants, r/france), observation des commentaires TikTok, Instagram et Snapchat, et Wikipédia comme colonne vertébrale factuelle.",
   "note": "Méthode : chaque paragraphe cite ses sources. Les paragraphes marqués « auto » sont des relevés bruts ajoutés par le pipeline toutes les 6 h (faits sourcés, sans réécriture) ; la rédaction narrative approfondie est assurée lors des éditions de la newsletter. Badge ✅ (corroboré par au moins deux médias distincts) et ⚠️ (une seule source) : ces distinctions s'appliquent aux relevés automatiques.",
   "maj": "06/10/2026",
-  "totalParagraphes": 76,
+  "totalParagraphes": 77,
   "chapitres": [
     {
       "id": "c1",
@@ -138,23 +138,23 @@
       "fichier": "chapitres/17.json",
       "periode": "6 octobre 2026 — l'acte III",
       "titre": "Acte III : la France entière dans la rue",
-      "paragraphes": 8,
-      "octets": 14284
+      "paragraphes": 9,
+      "octets": 16248
     }
   ],
   "releveSigs": [
-    "annonce|crise|lecornu|lycees#",
-    "aussi|cyberbl|paralys|quand#",
-    "autorit|manifes|mobilis|organis#000,000,256,450",
-    "battle|lycees|macon|policie#",
-    "comptes|droite|extreme|instrum#",
-    "corrige|lecornu|parcour|promet#",
-    "critere|parcour|selecti|viseur#",
-    "donner|faut|lycees|moyens#",
-    "edouard|laurent|ministr|nunez#",
-    "font|lyceenn|mobilis|policie#",
-    "grand|interpe|noisy|tirs#",
-    "incendi|lacrymo|lycees|poubell#"
+    "acte#",
+    "antille|conditi|etudier|impossi#",
+    "appelle|ensembl|lyceenn|mobilis#",
+    "avez|envers|mepris|vous#",
+    "bilan|manifes|manifes|octobre#000,256",
+    "caracte|grande|lyceenn|mobilis#",
+    "centain|lyceenn|mobilis|octobre#",
+    "colere|interpe|lyceenn|personn#488",
+    "creer|lien|lyceenn|mobilis#",
+    "emmanue|lyceenn|macron|mobilis#",
+    "enlise|gouvern|lycees|mobilis#",
+    "liste|lyceenn|mobilis|revendi#"
   ],
   "sections": [
     {
@@ -239,8 +239,8 @@
           "fichier": "chapitres/17.json",
           "periode": "6 octobre 2026 — l'acte III",
           "titre": "Acte III : la France entière dans la rue",
-          "paragraphes": 8,
-          "octets": 14284
+          "paragraphes": 9,
+          "octets": 16248
         }
       ]
     },
