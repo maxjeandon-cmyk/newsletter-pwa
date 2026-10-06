@@ -1,10 +1,45 @@
 {
-  "date": "2026-10-06T23:26:39.970Z",
+  "date": "2026-10-06T23:32:37.449Z",
   "mode": "test",
-  "abonnements": 2,
+  "abonnements": 13,
   "envoyes": 1,
-  "morts": 1,
+  "morts": 8,
   "resultats": [
+    {
+      "domaine": "web.push.apple.com",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "domaine": "web.push.apple.com",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "domaine": "web.push.apple.com",
+      "ok": false,
+      "status": null
+    },
+    {
+      "domaine": "web.push.apple.com",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "domaine": "web.push.apple.com",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "domaine": "web.push.apple.com",
+      "ok": false,
+      "status": null
+    },
+    {
+      "domaine": "web.push.apple.com",
+      "ok": false,
+      "status": 403
+    },
     {
       "domaine": "web.push.apple.com",
       "ok": false,
@@ -14,6 +49,26 @@
       "domaine": "updates.push.services.mozilla.com",
       "ok": true,
       "status": 201
+    },
+    {
+      "domaine": "web.push.apple.com",
+      "ok": false,
+      "status": null
+    },
+    {
+      "domaine": "web.push.apple.com",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "domaine": "web.push.apple.com",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "domaine": "web.push.apple.com",
+      "ok": false,
+      "status": null
     }
   ]
 }
