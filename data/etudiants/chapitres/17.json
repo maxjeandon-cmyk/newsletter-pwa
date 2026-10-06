@@ -81,6 +81,18 @@
         "Libération"
       ],
       "auto": true
+    },
+    {
+      "id": "c17p9",
+      "texte": "Relevé automatique du 6 octobre 2026 à 23:26 : 12 information(s) des dernières heures. — Colère lycéenne: 488 personnes interpellées et 43 membres des forces de l'ordre blessés selon Beauvau durant cet \"acte III\" (BFMTV) — Blocage, mobilisation lycéenne: Emmanuel Macron \"aurait dû recevoir les lycéens\", déclare Olivier Faure, Premier secrétaire du PS et candidat à la primaire soc… (BFMTV) — Blocage, mobilisation lycéenne: la liste des revendications (BFMTV, L'Humanité) — Blocage, mobilisation lycéenne: \"Ce qui les caractérise, c'est la grande angoisse par rapport à leur avenir\", raconte Stéphane Troussel, président du départeme… (BFMTV, Europe 1) — \"Le mépris que vous avez envers les lycéens qui se révoltent est abject\": Sofia Tizaoui, ancienne présidente de l'Union Syndicale Lycéenne, répond à François-X… (BFMTV) — Blocage, mobilisation lycéenne: \"On appelle l'ensemble des lycéens et des étudiants à refuser le piège du temps du dialogue qui a été proposé\" par le gouvernem… (BFMTV) — Mobilisation lycéenne: \"On n'a pas su créer le lien avec cette jeunesse\", observe Richard Ramos, député \"MoDem\" du Loiret (BFMTV) — Mobilisation lycéenne du 6 octobre: des centaines de milliers de manifestants à travers la France (BFMTV) — «C’est impossible d’étudier dans ces conditions» : aux Antilles, les lycéens rejoignent la contestation (Libération) — Mobilisation dans les lycées : le gouvernement enlisé (Libération) — Fin de ce direct sur l’acte III des lycéens et étudiants (L'Humanité) — DIRECT. Manifestation du 6 octobre : 256 000 manifestants en France… Le bilan du mardi 6 octobre (La Croix) Faits bruts repris des titres, non reformulés.",
+      "sources": [
+        "BFMTV",
+        "L'Humanité",
+        "Europe 1",
+        "Libération",
+        "La Croix"
+      ],
+      "auto": true
     }
   ]
 }
