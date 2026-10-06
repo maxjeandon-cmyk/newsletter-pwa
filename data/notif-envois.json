@@ -1,8 +1,39 @@
 {
-  "date": "2026-10-06T23:06:49.747Z",
+  "date": "2026-10-06T23:08:32.852Z",
   "mode": "test",
   "abonnements": 6,
-  "envoyes": 0,
+  "envoyes": 1,
   "morts": 0,
-  "resultats": []
+  "resultats": [
+    {
+      "domaine": "?",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "domaine": "?",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "domaine": "?",
+      "ok": true,
+      "status": 201
+    },
+    {
+      "domaine": "?",
+      "ok": false,
+      "status": null
+    },
+    {
+      "domaine": "?",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "domaine": "?",
+      "ok": false,
+      "status": 403
+    }
+  ]
 }
