@@ -16,12 +16,12 @@ const ESSAI = 'push.dernier_essai';   // v66 : dernier résultat d'enregistremen
 
 /* Préférences de notification (toggles) — préférences locales classiques (nl.*) */
 /* v70 : normalisation — une préférence sauvegardée par une ancienne version
- * peut ne pas avoir la clé medias (ou feedback) : Object.values(undefined)
+ * peut ne pas avoir la clé medias (ou lyceens) : Object.values(undefined)
  * levait une TypeError dans basculerNotification AVANT tout noterEssai,
  * laissant la ligne d'état sur « jamais confirmé » en boucle. */
 export function prefsNotifications() {
   const p = getStore(ABONNEMENTS, {}) || {};
-  return { edition: !!p.edition, copernicus: !!p.copernicus, feedback: !!p.feedback, medias: (p.medias && typeof p.medias === 'object') ? p.medias : {} };
+  return { edition: !!p.edition, copernicus: !!p.copernicus, lyceens: !!p.lyceens, medias: (p.medias && typeof p.medias === 'object') ? p.medias : {} };
 }
 export async function basculerNotification(categorie, mediaId) {
   const p = prefsNotifications();
@@ -29,7 +29,7 @@ export async function basculerNotification(categorie, mediaId) {
   else p[categorie] = !p[categorie];
   setStore(ABONNEMENTS, p);
   /* S'assurer qu'un abonnement push existe si au moins un toggle est actif */
-  if (p.edition || p.copernicus || p.feedback || Object.values(p.medias).some(Boolean)) await souscrire();
+  if (p.edition || p.copernicus || p.lyceens || Object.values(p.medias).some(Boolean)) await souscrire();
   return p;
 }
 

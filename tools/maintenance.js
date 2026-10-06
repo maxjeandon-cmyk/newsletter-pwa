@@ -87,8 +87,8 @@ async function sondeNotifications() {
     const togglesActifs = (prefs || []).filter(p => {
       const pr = (p && p.prefs) || {};
       const n = (typeof pr.notifications === 'object' && pr.notifications) || {};
-      return !!(pr.edition || pr.copernicus || pr.feedback || Object.values(pr.medias || {}).some(Boolean)
-        || n.edition || n.copernicus || n.feedback || Object.values(n.medias || {}).some(Boolean));
+      return !!(pr.edition || pr.copernicus || pr.lyceens || Object.values(pr.medias || {}).some(Boolean)
+        || n.edition || n.copernicus || n.lyceens || Object.values(n.medias || {}).some(Boolean));
     });
     const n = abonnements.length;
     const detail = n + ' abonnement(s) push, ' + togglesActifs.length + ' utilisateur(s) avec toggles actifs';

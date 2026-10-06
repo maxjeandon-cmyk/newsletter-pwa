@@ -94,7 +94,7 @@ async function main() {
     return {
       edition: !!(p.edition || n.edition),
       copernicus: !!(p.copernicus || n.copernicus),
-      feedback: !!(p.feedback || n.feedback)
+      lyceens: !!(p.lyceens || n.lyceens)
     };
   }
 
@@ -126,19 +126,20 @@ async function main() {
     return;
   }
 
-  /* 3. Quoi de neuf ? édition du jour + bulletin climat + résumé feedback côté dépôt (fichiers générés) */
-  const [idx, climat, feedback] = await Promise.all([
+  /* 3. Quoi de neuf ? édition du jour + bulletin climat + relevé lycéens côté dépôt (fichiers générés) */
+  const [idx, climat, lyceens] = await Promise.all([
     AVEC_DELAI(fetch('https://raw.githubusercontent.com/maxjeandon-cmyk/newsletter-pwa/main/editions/latest.json').then(r => r.json())).catch(() => null),
     AVEC_DELAI(fetch('https://raw.githubusercontent.com/maxjeandon-cmyk/newsletter-pwa/main/data/climat.json').then(r => r.json())).catch(() => null),
-    AVEC_DELAI(fetch('https://raw.githubusercontent.com/maxjeandon-cmyk/newsletter-pwa/main/data/feedback.json').then(r => r.json())).catch(() => null)
+    AVEC_DELAI(fetch('https://raw.githubusercontent.com/maxjeandon-cmyk/newsletter-pwa/main/data/lyceens.json').then(r => r.json())).catch(() => null)
   ]);
   const dateEdition = idx?.editions?.[0]?.date || null;
   const majClimat = climat?.maj || climat?.date || null;
-  /* Résumé feedback : identifié par date + nombre de messages (l'agent maintenance
-   * régénère data/feedback.json toutes les 6 h ; on ne notifie qu'une fois par
-   * résumé réellement différent). */
-  const majFeedback = feedback && (feedback.date || feedback.total)
-    ? (feedback.date || '') + '/' + (feedback.total || 0)
+  /* Relevé lycéens : identifié par horodatage de mise à jour + volumes des listes
+   * (la maintenance régénère data/lyceens.json toutes les 6 h ; on ne notifie
+   * qu'une fois par relevé réellement différent — maj change seulement quand
+   * le fichier est republié). */
+  const majLyceens = lyceens && (lyceens.maj || (lyceens.faits || []).length)
+    ? (lyceens.maj || '') + '/' + (lyceens.faits || []).length + '/' + (lyceens.version_gouvernement || []).length
     : null;
 
   /* 4. Déjà envoyé ? (dans prefs.notif_envoyees, mis à jour après succès) */
@@ -152,8 +153,8 @@ async function main() {
       msgs.push({ titre: '📰 Édition du ' + dateEdition, corps: 'La nouvelle édition est prête.', url: './#edition' });
     if (t.copernicus && majClimat && envoyes.copernicus !== majClimat)
       msgs.push({ titre: '🌡️ Bulletin Copernicus', corps: 'Nouveau bulletin climat disponible.', url: './#climat' });
-    if (t.feedback && majFeedback && envoyes.feedback !== majFeedback)
-      msgs.push({ titre: '💬 Résumé de tes retours', corps: (feedback.total || 0) + ' message(s) de feedback pris en compte.', url: './#feedback' });
+    if (t.lyceens && majLyceens && envoyes.lyceens !== majLyceens)
+      msgs.push({ titre: '✊ Lycéens 2026', corps: (lyceens.faits || []).length + ' fait(s) vérifié(s) sur le mouvement lycéen — relevé actualisé.', url: './#lyceens' });
     for (const m of (p.mediasNotifies || [])) msgs.push(m); /* réservé : alertes média futures */
     if (!msgs.length) continue;
     aNotifier.push({ abonnement: a, message: msgs[0], reste: msgs.length - 1, prefs: p, envoyes });
@@ -172,8 +173,8 @@ async function main() {
           JSON.stringify(t.message)
         ));
         envoyes++;
-        /* mémo : cet utilisateur a reçu edition/copernicus/feedback courant */
-        const memo = { ...(t.envoyes || {}), ...(t.message.url === './#edition' ? { edition: dateEdition } : t.message.url === './#climat' ? { copernicus: majClimat } : t.message.url === './#feedback' ? { feedback: majFeedback } : {}) };
+        /* mémo : cet utilisateur a reçu edition/copernicus/lyceens courant */
+        const memo = { ...(t.envoyes || {}), ...(t.message.url === './#edition' ? { edition: dateEdition } : t.message.url === './#climat' ? { copernicus: majClimat } : t.message.url === './#lyceens' ? { lyceens: majLyceens } : {}) };
         /* PATCH différé : on accumule et on écrit par lot après la boucle (v29). */
         majPrefs.set(t.abonnement.user_id, { __uid: t.abonnement.user_id, ...t.prefs, notif_envoyees: memo });
       } catch (e) {

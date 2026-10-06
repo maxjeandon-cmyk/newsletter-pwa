@@ -259,7 +259,7 @@ function afficherEssaiPush(prefs) {
   const info = $('#notif-info');
   if (!info) return;
   const essai = getStore('push.dernier_essai', null);
-  const actifs = prefs && (prefs.edition || prefs.copernicus || prefs.feedback || Object.values(prefs.medias || {}).some(Boolean));
+  const actifs = prefs && (prefs.edition || prefs.copernicus || prefs.lyceens || Object.values(prefs.medias || {}).some(Boolean));
   if (!essai) {
     info.textContent = actifs
       ? '⚠️ Abonnement jamais confirmé — bascule un toggle pour relancer l\'enregistrement.'
@@ -299,7 +299,7 @@ function rendreNotifications() {
     '<p class="hint">Active ce que tu veux recevoir dès que c\u2019est prêt — envoi groupé et limité pour ne jamais spammer.</p>' +
     toggle('edition', p.edition, '📰 L\u2019édition du jour') +
     toggle('copernicus', p.copernicus, '🌡️ Le bulletin Copernicus') +
-    toggle('feedback', p.feedback, '💬 Le résumé des retours feedback') +
+    toggle('lyceens', p.lyceens, '✊ Lycéens 2026 (mouvement et relevés)') +
     (medias.length ? '<p class="meta-count" style="margin:10px 0 2px">Médias suivis</p>' : '') +
     medias.map(m => toggle('media:' + esc(m.id), p.medias?.[m.id], m.nom ? esc(m.nom) : esc(m.id))).join('') +
     '<p class="hint" id="notif-info" style="min-height:16px;margin:8px 0 0"></p>';
@@ -320,6 +320,6 @@ function rendreNotifications() {
        * si un vieux endpoint local traînait (époque où l'échec était silencieux). */
       afficherEssaiPush(prefs);
       /* plus aucun toggle actif → désabonnement silencieux du push */
-      if (!prefs.edition && !prefs.copernicus && !prefs.feedback && !Object.values(prefs.medias || {}).some(Boolean)) await desabonner();
+      if (!prefs.edition && !prefs.copernicus && !prefs.lyceens && !Object.values(prefs.medias || {}).some(Boolean)) await desabonner();
     });
 }
