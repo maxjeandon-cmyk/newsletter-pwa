@@ -1,6 +1,6 @@
 {
-  "date": "05/10/2026",
-  "heure": "21:31",
+  "date": "06/10/2026",
+  "heure": "03:26",
   "feedback": {
     "messages": 12,
     "nouveaux": 0,
@@ -8,14 +8,14 @@
     "publie": true
   },
   "relevesOng": {
-    "rafraichis": 0,
+    "rafraichis": 10,
     "echecs": 0,
-    "publie": false
+    "publie": true
   },
   "lyceens": {
-    "nouvelles": 0,
-    "fusionnees": 26,
-    "moissonnes": 120,
+    "nouvelles": 1,
+    "fusionnees": 24,
+    "moissonnes": 124,
     "total": 34,
     "publie": true
   },
@@ -23,12 +23,12 @@
     {
       "nom": "validate-latest.js",
       "ok": true,
-      "detail": "\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 02/10/2026 »\n\n27/27 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n\nToutes les éditions récentes sont conformes. 🌱"
+      "detail": "\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 03/10/2026 »\n\n27/27 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n\nToutes les éditions récentes sont conformes. 🌱"
     },
     {
       "nom": "check-site.js",
       "ok": true,
-      "detail": "=== check-site ===\nℹ️  latest.json : 8 édition(s), plus récente 2026-10-04\nℹ️  édition 2026-10-04 : JSON OK, HTML 98474 octets, structure OK\nℹ️  site public joignable (1383 octets)\n\nSite et édition conformes. 🌱"
+      "detail": "=== check-site ===\nℹ️  latest.json : 9 édition(s), plus récente 2026-10-05\nℹ️  édition 2026-10-05 : JSON OK, HTML 72325 octets, structure OK\nℹ️  site public joignable (1383 octets)\n\nSite et édition conformes. 🌱"
     },
     {
       "nom": "sonde notifications",
@@ -36,9 +36,14 @@
       "detail": "4 abonnement(s) push, 1 utilisateur(s) avec toggles actifs"
     },
     {
+      "nom": "ong-releve.js",
+      "ok": true,
+      "detail": "10 rafraîchi(s), 0 échec(s) — relevé précédent conservé pour les sites muets"
+    },
+    {
       "nom": "lyceens.js",
       "ok": true,
-      "detail": "0 nouvelle(s) info, 26 fusionnée(s) sur 120 moissonnée(s) — 34 au total"
+      "detail": "1 nouvelle(s) info, 24 fusionnée(s) sur 124 moissonnée(s) — 34 au total"
     }
   ],
   "problemes": [],
