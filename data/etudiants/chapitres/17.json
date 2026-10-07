@@ -103,6 +103,21 @@
         "France 24"
       ],
       "auto": true
+    },
+    {
+      "id": "c17p11",
+      "texte": "5 heures ont passé depuis le relevé précédent ; le fil continue. Au matin du 7 octobre 2026, la journée s'écrit encore. La vague, elle, continue d'avancer : Mobilisation lycéenne : à Paris, les gendarmes mobilisés pour maintenir le calme dans les cortèges (Europe 1) ; Blocus des lycées : les réseaux sociaux dans le collimateur des élus et des forces de l’ordre (Le Figaro) ; Lille, Arras, Valenciennes, Roubaix... De nombreuses mobilisations ont eu lieu dans le NDPC ce mardi (BFMTV) ; Blocus des lycées : à Lyon, une majorité des élèves souhaite la poursuite des blocages (Europe 1) ; Vidéos Snapchat, droit au jogging et solidarité public-privé : Saint-Germain-en-Laye décline à sa façon le blocus des lycées (Le Figaro). Côté forces de l'ordre, les tensions ne faiblissent pas : Blocus des lycées : « La police est plus sévère avec les lycéens qu’avec les pédocriminels », fustige Ségolène Royal (Public Sénat) ; «Vous êtes fous, il y a un bébé d’un an !» : un nourrisson hospitalisé après un tir de mortier lors d’un blocus lycéen dans les Yvelines (Le Figaro) ; Petits casseurs, suiveurs ou militants : à Paris et Bobigny, les premiers prévenus interpellés en marge des blocages lycéens devant la justice (Le Figaro). Côté gouvernement, les réponses s'égrènent : Blocage des lycées : l’usage des grenades assourdissantes suspendu ; Lecornu s’exprimera ce soir (La Croix, Libération, France 24, Public Sénat, Europe 1, 20 minutes) ; Blocus des lycées : la reprise des cours remplacée par un temps de «démocratie interne», Bruno Retailleau fustige une «câlinothérapie» (Europe 1) ; Parcoursup: \"Il faut faire évoluer l'outil\", affirme le ministre de l'Enseignement supérieur (BFMTV) ; Blocus des lycées : «Il y a un usage proportionné de la force», estime Aurore Bergé (Europe 1). Le prochain relevé reprendra le fil. (Relevé automatique du 7 octobre 2026 à 10:32 — faits repris des titres de presse, non reformulés.)",
+      "sources": [
+        "La Croix",
+        "Libération",
+        "France 24",
+        "Public Sénat",
+        "Europe 1",
+        "20 minutes",
+        "Le Figaro",
+        "BFMTV"
+      ],
+      "auto": true
     }
   ]
 }
