@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-06T23:16:42.954Z",
+  "date": "2026-10-07T10:07:53.854Z",
   "etapes": {
     "forme_url": {
       "ok": true,
@@ -18,7 +18,7 @@
       "sans_rest_eventuel": {
         "status": 200,
         "ok": true,
-        "corps": "[{\"user_id\":\"4d632879-419a-4d71-9a36-333cbe2dbdce\"}]"
+        "corps": "[{\"user_id\":\"4d632879-419a-4d71-9a36-333cbe2dbdce\"}, \n {\"user_id\":\"4d632879-419a-4d71-9a36-333cbe2dbdce\"}, \n {\"user_id\":\"4d632879-419a-4d71-9a36-333cbe2dbdce\"}]"
       },
       "racine_rest": {
         "status": 404,
@@ -32,8 +32,8 @@
     },
     "abonnements_variante": {
       "ok": true,
-      "total_officiel": "1",
-      "total_corps": 1,
+      "total_officiel": "3",
+      "total_corps": 3,
       "utilisateurs": 1,
       "plus_recent": null
     }
