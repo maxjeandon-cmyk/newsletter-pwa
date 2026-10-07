@@ -56,7 +56,7 @@ const TMP = fs.mkdtempSync(path.join(os.tmpdir(), 'lot1-'));
 const REPO_TMP = path.join(TMP, 'repo');
 fs.mkdirSync(path.join(REPO_TMP, 'tools'), { recursive: true });
 fs.mkdirSync(path.join(REPO_TMP, 'data'), { recursive: true });
-for (const f of ['etudiants.js', 'lyceens.js', 'titres.js', 'fakeclock.js']) {
+for (const f of fs.readdirSync(path.join(RACINE, 'tools')).filter(f => f.endsWith('.js'))) {
   fs.copyFileSync(path.join(RACINE, 'tools', f), path.join(REPO_TMP, 'tools', f));
 }
 fs.cpSync(path.join(RACINE, 'data', 'etudiants'), path.join(REPO_TMP, 'data', 'etudiants'), { recursive: true });

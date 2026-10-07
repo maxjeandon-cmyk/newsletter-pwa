@@ -25,6 +25,7 @@
 const fs = require('fs');
 const path = require('path');
 const { nettoyerTitre } = require('./titres.js');
+const { corroborer } = require('./corroboration.js');
 
 const DOSSIER = path.join(__dirname, '..', 'data', 'etudiants');
 const FICHIER_INDEX = path.join(DOSSIER, 'index.json');
@@ -143,7 +144,7 @@ async function verserFaitsCorrobores(uniques, journal) {
   let ajoutes = 0;
   const stamp = Date.now().toString(36);
   for (const it of uniques) {
-    if (it.sources.length < 2) continue;      /* corroboré seulement */
+    if (!corroborer(it).verifie) continue;      /* corroboré seulement (moteur v111) */
     if (dejaLa(it)) continue;
     faits.unshift({
       id: 'aetu' + stamp + '-' + (ajoutes + 1),
@@ -155,7 +156,7 @@ async function verserFaitsCorrobores(uniques, journal) {
       source: it.sources.join(' / '),
       sources: it.sources.slice(),
       url: it.lien || '',
-      verifie: true
+      verifie: corroborer(it).verifie
     });
     ajoutes++;
   }
@@ -247,7 +248,11 @@ function construireParagraphe(uniques, relevePrecedent, compteur, dateRef, nouve
     const catalogue = volet === 'mobilisation' ? PHRASES_MOBILISATION : VOLETS.find(v => v.id === volet).phrases;
     /* v110 (lot 2) : UN SEUL apercu par evenement — jamais un par source. */
     let phraseVolet = catalogue[compteur % catalogue.length] + ' : ' +
-      items.map(it => tronc(nettoyerTitre(it.titre), 160) + ' (' + it.sources.join(', ') + ')').join(' ; ');
+      items.map(it => {
+        /* v111 (lot 3) : compte de medias distincts par evenement, calcule par le moteur. */
+        const { nbSources } = corroborer(it);
+        return tronc(nettoyerTitre(it.titre), 160) + ' (' + nbSources + ' media' + (nbSources > 1 ? 's' : '') + ' : ' + it.sources.join(', ') + (nbSources >= 2 ? ' — corrobore' : ' — non corrobore') + ')';
+      }).join(' ; ');
     const avecApercu = items.find(it => it.apercu && it.apercu.length > 20);
     if (avecApercu) phraseVolet = phraseVolet + ' — detail : ' + tronc(avecApercu.apercu, 180).replace(/[.]+$/, '');
     phrases.push(phraseVolet + '.');
