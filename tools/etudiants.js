@@ -1,4 +1,10 @@
 #!/usr/bin/env node
+/* v112 (lot 6) : voix des réseaux — flux RSS Reddit (r/etudiants, r/enseignants, r/france)
+ * dans le relevé de la chronique UNIQUEMENT : volet final « voix des élèves et des
+ * enseignants », cap 4 items réseaux par relevé, échec Reddit SILENCIEUX (le relevé
+ * presse n'est jamais bloqué ni réduit), raccrochage aux événements presse en mention ;
+ * les items Reddit ne partent JAMAIS dans les faits vérifiés (data/lyceens.js) et ne
+ * comptent JAMAIS dans nbSources de corroboration — le badge ✅ reste presse uniquement. */
 /* v110 (lot 2) : moisson enrichie — apercu nettoye (tronc 180) par item ; UN SEUL apercu par evenement dans le paragraphe ; texte des faits peut utiliser l apercu. */
 /* v109 (lot 1) : anti-bruit, titre doit matcher le mouvement ; nettoyerTitre applique a l assemblage et aux faits, jamais sur les signatures. */
 /* tools/etudiants.js — Relevé automatique 6 h de la chronique « Version des étudiants »
@@ -50,6 +56,19 @@ const SOURCES = [
   { id: 'mediapart', nom: 'Mediapart', url: 'https://www.mediapart.fr/articles/feed' },
   { id: 'liberation', nom: 'Libération', url: 'https://www.liberation.fr/arc/outboundfeeds/rss-all/' }
 ];
+
+/* v112 (lot 6) : flux Reddit (format Atom) — la voix des élèves et des enseignants
+ * entre dans le relevé de la chronique (décision de Maxime, 07/10/2026 : les réseaux
+ * sont le moyen de communication des jeunes, les enseignants sont avec eux).
+ * Moisson séquentielle avec délai anti-429 ; l'échec d'un flux Reddit est
+ * SILENCIEUX : le relevé presse n'est jamais bloqué ni réduit. Cap réseaux :
+ * au plus CAP_RESEAUX items Reddit par relevé — la presse garde le fil. */
+const SOURCES_REDDIT = [
+  { id: 'reddit-etudiants', nom: 'Reddit — r/etudiants', url: 'https://www.reddit.com/r/etudiants/.rss' },
+  { id: 'reddit-enseignants', nom: 'Reddit — r/enseignants', url: 'https://www.reddit.com/r/enseignants/.rss' },
+  { id: 'reddit-france', nom: 'Reddit — r/france', url: 'https://www.reddit.com/r/france/.rss' }
+];
+const CAP_RESEAUX = 4;
 
 /* ————— Texte : entités, normalisation ————— */
 const ENTITES = {
@@ -117,6 +136,47 @@ const tronc = (s, n) => (s.length > n ? s.slice(0, n - 1) + '…' : s);async fun
   return { items, erreur: null };
 }
 
+/* v112 (lot 6) : moisson d'un flux Reddit (Atom). Mêmes filtres que la presse
+ * (estMouvement sur le TITRE, estBruit) ; items marqués reseau:true. Un échec
+ * réseau (429 compris, après une relance) est SILENCIEUX : renvoyé dans
+ * silencieux, jamais dans les échecs presse. */
+async function moissonReddit(src, depuis) {
+  const items = [];
+  const tenter = async () => {
+    const rep = await fetch(src.url, { headers: { 'user-agent': UA, 'accept': 'application/atom+xml, application/xml' }, signal: AbortSignal.timeout(15000) });
+    if (!rep.ok) throw new Error('HTTP ' + rep.status);
+    return rep.text();
+  };
+  try {
+    let xml;
+    try { xml = await tenter(); }
+    catch (e1) {
+      /* Reddit renvoie 429 aux requêtes trop rapprochées : une relance après
+       * 4 s, puis on abandonne ce flux en silence. */
+      await new Promise(r => setTimeout(r, 4000));
+      try { xml = await tenter(); }
+      catch (e2) { throw e2; }
+    }
+    const re = /<entry>([\s\S]*?)<\/entry>/g;
+    let m;
+    while ((m = re.exec(xml)) !== null) {
+      const bloc = m[1] || '';
+      const titre = texte((bloc.match(/<title[^>]*>([\s\S]*?)<\/title>/) || [])[1]);
+      const desc = texte((bloc.match(/<content[^>]*>([\s\S]*?)<\/content>/) || [])[1])
+        || texte((bloc.match(/<summary[^>]*>([\s\S]*?)<\/summary>/) || [])[1]);
+      const lien = texte((bloc.match(/<link[^>]*href="([^"]+)"/) || [])[1]);
+      const dpub = (bloc.match(/<(updated|published)[^>]*>([\s\S]*?)<\/\1>/) || [])[2];
+      const date = dpub ? new Date(dpub.trim()) : null;
+      if (!titre || !date || isNaN(date)) continue;
+      if (date < depuis) continue;
+      if (estBruit(titre, desc)) continue;
+      if (!estMouvement(titre, desc)) continue;
+      items.push({ titre, desc, apercu: tronc(desc, 180), lien: lien || '', date: date.toISOString(), source: src.nom, reseau: true });
+    }
+  } catch (e) { return { items: [], silencieux: src.id + ' : ' + e.message }; }
+  return { items, silencieux: null };
+}
+
 
 const dateHeureFr = () => new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris', dateStyle: 'long', timeStyle: 'short' }).format(new Date());
 
@@ -144,6 +204,7 @@ async function verserFaitsCorrobores(uniques, journal) {
   let ajoutes = 0;
   const stamp = Date.now().toString(36);
   for (const it of uniques) {
+    if (it.reseau) continue;                   /* v112 (lot 6) : jamais dans les faits vérifiés */
     if (!corroborer(it).verifie) continue;      /* corroboré seulement (moteur v111) */
     if (dejaLa(it)) continue;
     faits.unshift({
@@ -190,12 +251,15 @@ const VOLETS = [
   { id: 'repression', re: /polic|interpell|gaz lacrymo|mortier|arresta|blesse|garde a vue|violences|ordre public|armee|disper/i, phrases: ["Côté forces de l'ordre, les tensions ne faiblissent pas", "La répression, elle, continue de nourrir la colère", "Côté répression, la journée a laissé des traces"] },
   { id: 'gouvernement', re: /ministre|gouvernement|macron|elysee|assemblee|beauvau|parcoursup|lecornu|senat|depute|porte-parole|premier ministre|calan|nunez|geffray|retailleau|berge|executif/i, phrases: ["Côté gouvernement, les réponses s'égrènent", "Du côté du pouvoir, chacun prend position", "À Beauvau comme à l'Élysée, on ajuste le discours"] },
   { id: 'reactions', re: /raconte|observe|estime|declare|repond|aurait du|aurait dû|syndic|tizaoui|faure|troussel|corbiere|ramos|soutien|analyse|décrypt/i, phrases: ["Autour du mouvement, les voix se croisent", "Dans les réactions, le débat s'invite", "Les commentaires, eux, affluent"] },
-  { id: 'vie', re: /cours en|visio|cyberblocage|etudier|antilles|examens|concours|etablissement|parisup|enfai/i, phrases: ["Dans la vie des établissements, la mobilisation s'invente au quotidien", "Côté cours, la routine a volé en éclats", "Dans les lycées, la semaine se réinvente"] }
+  { id: 'vie', re: /cours en|visio|cyberblocage|etudier|antilles|examens|concours|etablissement|parisup|enfai/i, phrases: ["Dans la vie des établissements, la mobilisation s'invente au quotidien", "Côté cours, la routine a volé en éclats", "Dans les lycées, la semaine se réinvente"] },
+  /* v112 (lot 6) : volet final des réseaux — jamais attribué par voletDe (les
+   * items reseau:true y sont dirigés directement), d'où l'absence de re:. */
+  { id: 'voix', phrases: ["Sur les réseaux, la parole des premiers concernés est directe", "Côté Reddit, élèves et enseignants parlent d'eux-mêmes", "Sur les réseaux, la journée se raconte de l'intérieur", "Dans les fils Reddit, les témoignages s'échangent sans intermédiaire"] }
 ];
 const PHRASES_MOBILISATION = ["Sur le terrain, la mobilisation tient", "Dans la rue, le mouvement garde son souffle", "Côté mobilisation, l'élan ne retombe pas", "La vague, elle, continue d'avancer"];
 const PHRASES_DATELINE = ["le mouvement poursuit sa route", "la chronique avance", "le fil du récit continue", "la journée s'écrit encore"];
 /* Classification sur la forme normalisée (sans accents) pour ne rien rater. */
-function voletDe(titre) { const n = norm(titre); for (const v of VOLETS) if (v.re.test(n) || v.re.test(titre)) return v.id; return 'mobilisation'; }
+function voletDe(titre) { const n = norm(titre); for (const v of VOLETS) if (v.re && (v.re.test(n) || v.re.test(titre))) return v.id; return 'mobilisation'; }
 /* v108 : ouverture d acte — quand le paragraphe ouvre le chapitre du jour
  * nouvellement créé, l accroche standard annonce la nouvelle journée. */
 const ouvertureActe = (h) =>
@@ -238,27 +302,37 @@ function construireParagraphe(uniques, relevePrecedent, compteur, dateRef, nouve
   /* 3. Volets : regroupement + entames tournantes. */
   const parVolet = new Map();
   for (const it of uniques) {
-    const v = voletDe(it.titre);
+    /* v112 (lot 6) : les items des réseaux vont TOUJOURS au volet « voix »,
+     * quels que soient leurs mots-clés — ils sont la parole directe, pas un fil presse. */
+    const v = it.reseau ? 'voix' : voletDe(it.titre);
     if (!parVolet.has(v)) parVolet.set(v, []);
     parVolet.get(v).push(it);
   }
-  for (const volet of ['mobilisation', 'repression', 'gouvernement', 'reactions', 'vie']) {
+  for (const volet of ['mobilisation', 'repression', 'gouvernement', 'reactions', 'vie', 'voix']) {
     const items = parVolet.get(volet);
     if (!items || !items.length) continue;
     const catalogue = volet === 'mobilisation' ? PHRASES_MOBILISATION : VOLETS.find(v => v.id === volet).phrases;
     /* v110 (lot 2) : UN SEUL apercu par evenement — jamais un par source. */
     let phraseVolet = catalogue[compteur % catalogue.length] + ' : ' +
       items.map(it => {
+        /* v112 (lot 6) : un item réseau s'affiche à part — jamais comme un
+         * média de plus dans la corroboration (badge ✅ presse uniquement). */
+        if (it.reseau) {
+          return tronc(nettoyerTitre(it.titre), 160) + ' (' + it.sources.join(', ') + ')';
+        }
         /* v111 (lot 3) : compte de medias distincts par evenement, calcule par le moteur. */
         const { nbSources } = corroborer(it);
-        return tronc(nettoyerTitre(it.titre), 160) + ' (' + nbSources + ' media' + (nbSources > 1 ? 's' : '') + ' : ' + it.sources.join(', ') + (nbSources >= 2 ? ' — corrobore' : ' — non corrobore') + ')';
+        const raccroche = (it.reseaux || []).length
+          ? ' — repris aussi sur ' + it.reseaux.map(s => s.replace('Reddit — ', '')).join(', ')
+          : '';
+        return tronc(nettoyerTitre(it.titre), 160) + ' (' + nbSources + ' media' + (nbSources > 1 ? 's' : '') + ' : ' + it.sources.join(', ') + (nbSources >= 2 ? ' — corrobore' : ' — non corrobore') + raccroche + ')';
       }).join(' ; ');
     const avecApercu = items.find(it => it.apercu && it.apercu.length > 20);
     if (avecApercu) phraseVolet = phraseVolet + ' — detail : ' + tronc(avecApercu.apercu, 180).replace(/[.]+$/, '');
     phrases.push(phraseVolet + '.');
   }
   /* 4. Clôture : la promesse que le fil reprend, + trace horodatée. */
-  phrases.push('Le prochain relevé reprendra le fil. (Relevé automatique du ' + fmt({ dateStyle: 'long', timeStyle: 'short' }) + ' — faits repris des titres de presse, non reformulés.)');
+  phrases.push('Le prochain relevé reprendra le fil. (Relevé automatique du ' + fmt({ dateStyle: 'long', timeStyle: 'short' }) + ' — faits repris des titres de presse et des fils Reddit, non reformulés.)');
   /* v110 (lot 2) : garde-fou — le paragraphe complet reste < 8 Ko. */
   const complet = phrases.join(' ');
   return complet.length < 8000 ? complet : complet.slice(0, 7999) + '…';
@@ -300,6 +374,40 @@ async function main() {
     if (!existant) vus.push({ ...it, sources: [it.source] });
     else if (!existant.sources.includes(it.source)) existant.sources.push(it.source);
   }
+
+  /* v112 (lot 6) : moisson Reddit — séquentielle avec délai anti-429 (Reddit
+   * rate-limite les requêtes rapprochées), échec SILENCIEUX. Cap réseaux :
+   * au plus CAP_RESEAUX items Reddit par relevé, la presse garde le fil.
+   * Raccrochage : un post qui reprend un événement presse du même relevé le
+   * rejoint en mention (« repris aussi sur r/enseignants ») sans compter
+   * comme un média de plus ; les autres deviennent des événements réseaux
+   * du volet « voix » — jamais des faits vérifiés, jamais dans nbSources. */
+  const reseauxEchecs = [];
+  const tousReddit = [];
+  for (const src of SOURCES_REDDIT) {
+    const m = await moissonReddit(src, depuis);
+    if (m.silencieux) reseauxEchecs.push(m.silencieux);
+    tousReddit.push(...m.items);
+    await new Promise(r => setTimeout(r, 600));
+  }
+  const uniquesReddit = [];
+  for (const it of tousReddit.sort((a, b) => (a.date < b.date ? 1 : -1))) {
+    if (!uniquesReddit.some(u => memeEvenement(u, it) || signature(u.titre) === signature(it.titre))) uniquesReddit.push(it);
+  }
+  let raccroches = 0;
+  const retenusReddit = uniquesReddit.slice(0, CAP_RESEAUX);
+  for (const it of retenusReddit) {
+    const existant = vus.find(v => !v.reseau && memeEvenement(v, it));
+    if (existant) {
+      existant.reseaux = [...new Set([...(existant.reseaux || []), it.source])];
+      raccroches++;
+    } else {
+      vus.push({ ...it, sources: [it.source], reseau: true });
+    }
+  }
+  /* Un post réseau peut être plus récent qu'un événement presse : on retrie
+   * avant le cap — la chronologie reste la trame, le cap presse d'abord. */
+  vus.sort((a, b) => (a.date < b.date ? 1 : -1));
   const uniques = vus.slice(0, 12);
 
   /* Idempotence : si le dernier relevé (stocké dans l'index) contenait
@@ -309,11 +417,11 @@ async function main() {
   const indexAvant = fs.existsSync(FICHIER_INDEX)
     ? JSON.parse(fs.readFileSync(FICHIER_INDEX, 'utf8'))
     : { releveSigs: [] };
-  const sigs = uniques.map(it => signature(it.titre)).sort();
+  const sigs = uniques.map(it => signature(it.titre) + ((it.reseaux || []).length ? '+' + it.reseaux.join('&') : '')).sort();
   const sigsPrecedents = (indexAvant.releveSigs || []).slice().sort();
   const identique = sigs.length === sigsPrecedents.length && sigs.every((s, i) => s === sigsPrecedents[i]);
   if (identique) {
-    process.stdout.write(JSON.stringify({ date: aujourdhui, modifie: false, ajoutes: 0, items: uniques.length, echecs }) + '\n');
+    process.stdout.write(JSON.stringify({ date: aujourdhui, modifie: false, ajoutes: 0, items: uniques.length, echecs, reseaux: { items: retenusReddit.length, raccroches, echecs: reseauxEchecs } }) + '\n');
     return;
   }
 
@@ -420,7 +528,8 @@ async function main() {
     fichier: 'data/etudiants/chapitres/' + dernierFichier,
     nouveauChapitre,
     avertissement,
-    echecs
+    echecs,
+    reseaux: { items: retenusReddit.length, raccroches, echecs: reseauxEchecs }
   }) + '\n');
 }
 
