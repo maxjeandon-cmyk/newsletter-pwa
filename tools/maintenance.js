@@ -1,30 +1,8 @@
 #!/usr/bin/env node
-/* tools/maintenance.js — Agent de maintenance (v36).
+/* tools/maintenance.js — Agent de maintenance (v37).
  * Toutes les 6 h (3 h, 9 h, 15 h, 21 h heure de Paris) :
- *   1. Fusionne les NOUVEAUX messages de feedback de Supabase (clé
- *      service_role) dans le résumé global persistant via tools/feedback.js :
- *      seuls les messages postérieurs au watermark sont traités (thèmes,
- *      intentions, demandes) — rien n'est inventé ni reformulé, chaque
- *      demande tronquée est verbatim. Les demandes réalisées par un commit
- *      récent basculent d'elles-mêmes en « mises en place ».
- *   2. Exécute la maintenance du site : validation des éditions récentes
- *      (validate-latest.js) et contrôle du site public (check-site.js).
- *   3. Publie data/feedback.json + un rapport data/maintenance.json sur
- *      main via l'API GitHub (data/ est network-first : effet immédiat).
- *   4. Relevés ONG (ong-releve.js) : une fois par jour, relève les titres
- *      des dernières actualités des 10 ONG de l'onglet Newsletters et
- *      publie data/newsletters.json si un relevé a été rafraîchi (les sites
- *      muets ou injoignables conservent leur relevé précédent).
- *   5. Relevé « Lycéens 2026 » (lyceens.js) : moissonne les flux RSS de la
- *      presse, classe chaque info (version lycéens / version gouvernement /
- *      faits corroborés) et publie data/lyceens.json si le contenu a
- *      vraiment changé (pas de commit fantôme toutes les 6 h).
- *   6. Chronique « Version des étudiants » (etudiants.js) : moissonne les
- *      flux RSS des dernières ~6 h, construit UN paragraphe « relevé
- *      automatique » (faits bruts verbatim, champ auto) et l'ajoute au
- *      dernier chapitre de data/etudiants/ ; publie le chapitre et
- *      data/etudiants/index.json si de nouvelles informations sont
- *      arrivées (idempotence par signature : pas de commit fantôme).
+ * v37 : pipeline feedback supprime (onglet Feedback retire de l'app le
+ * 07/10/2026) ; la table Supabase feedback reste en place, inerte.
  * Aucune dépendance : fetch natif (Node >= 18).
  * Env : SUPABASE_URL, SUPABASE_SERVICE_ROLE, GH_TOKEN (Contents: RW).
  */
@@ -37,7 +15,6 @@ const URL = process.env.SUPABASE_URL;
 const KEY = process.env.SUPABASE_SERVICE_ROLE;
 const GH_TOKEN = process.env.GH_TOKEN;
 const REPO = process.env.GITHUB_REPOSITORY || 'maxjeandon-cmyk/newsletter-pwa';
-const FICHIER = 'data/feedback.json';
 const RAPPORT = 'data/maintenance.json';
 const RELEVES = 'data/newsletters.json';
 const LYCEENS = 'data/lyceens.json';
@@ -100,7 +77,7 @@ async function sondeNotifications() {
   }
 }
 
-async function maintenance(editions, feedbackOk) {
+async function maintenance(editions) {
   const verifs = [];
   const editionsOk = runTool(process.execPath, ['tools/validate-latest.js']);
   verifs.push({ nom: 'validate-latest.js', ok: editionsOk.ok, detail: editionsOk.sortie });
@@ -113,7 +90,6 @@ async function maintenance(editions, feedbackOk) {
   verifs.push(sondePush);
 
   const problemes = verifs.filter(v => !v.ok).map(v => v.nom);
-  if (!feedbackOk) problemes.push('récupération feedback');
   return {
     editions,
     verifs,
@@ -146,36 +122,12 @@ async function main() {
     process.exit(1);
   }
 
-  /* 1. Résumé dynamique des messages (tools/feedback.js) : le script lit le
-   * résumé global persistant, fusionne les NOUVEAUX messages (thèmes,
-   * intentions, demandes) et écrit data/feedback.json lui-même ; les
-   * demandes réalisées par un commit passent d'elles-mêmes en « mises en
-   * place » et quittent le résumé. */
-  let resume = { total: 0, nouveaux: 0, themes: 0, en_attente: 0, mises_en_place: 0, deplacees: [] };
-  let feedbackOk = true;
-  try {
-    const sortie = execFileSync(process.execPath, ['tools/feedback.js'], {
-      encoding: 'utf8', env: process.env, timeout: 120000
-    });
-    resume = JSON.parse(sortie);
-  } catch (e) {
-    console.error('Récupération feedback impossible : ' + (e.message || ''));
-    feedbackOk = false;
-  }
-  const maintenant = new Date();
+    const maintenant = new Date();
   const dateFr = maintenant.toLocaleDateString('fr-FR');
   const heureFr = maintenant.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
-  if (feedbackOk) {
-    console.log('Feedback : ' + resume.nouveaux + ' nouveau(x) message(s) fusionné(s) — ' +
-      resume.total + ' au total, ' + resume.themes + ' thème(s), ' +
-      resume.en_attente + ' demande(s) en attente, ' + resume.mises_en_place + ' mise(s) en place.');
-    for (const d of (resume.deplacees || [])) {
-      console.log('Demande réalisée et déplacée : « ' + d.demande + ' » via ' + d.via);
-    }
-  }
 
-  /* 2. Maintenance : validation des éditions + contrôle du site */
-  const etat = await maintenance(maintenant.toISOString(), feedbackOk);
+    /* 2. Maintenance : validation des éditions + contrôle du site */
+  const etat = await maintenance(maintenant.toISOString());
 
   /* 2 bis. Relevés ONG : rafraîchis une fois par jour par ong-releve.js
    * (les orgs déjà relevées aujourd'hui sont sautées, les échecs
@@ -219,25 +171,7 @@ async function main() {
     etu.erreur = String(e.stdout || e.message || e).slice(0, 150);
   }
 
-  /* 3. Publication du résumé : tools/feedback.js a lui-même réécrit
-   * data/feedback.json (fusion des nouveaux messages dans le résumé
-   * global persistant) — on publie le fichier tel quel (data/ est
-   * network-first : aucun bump CACHE requis). */
-  let erreursFeedback = false;
-  if (feedbackOk) {
-    try {
-      await publierFichier(FICHIER, fs.readFileSync(FICHIER, 'utf8'),
-        'Resume feedback du ' + dateFr + ' (' + resume.nouveaux + ' nouveau(x), ' + resume.total + ' au total)');
-      console.log('Résumé publié — ' + resume.nouveaux + ' nouveau(x), ' + resume.total +
-        ' au total, ' + resume.en_attente + ' demande(s) en attente, ' + resume.mises_en_place + ' mise(s) en place.');
-    } catch (e) {
-      console.error('Publication feedback échouée : ' + e.message);
-      erreursFeedback = true;
-      etat.problemes.push('publication feedback');
-    }
-  }
-
-  /* 3 bis. Publication des relevés ONG (data/ network-first, pas de bump CACHE). */
+    /* 3 bis. Publication des relevés ONG (data/ network-first, pas de bump CACHE). */
   if (ong.modifie) {
     try {
       await publierFichier(RELEVES, fs.readFileSync(RELEVES, 'utf8'),
@@ -315,7 +249,6 @@ async function main() {
   const contenuRapport = JSON.stringify({
     date: dateFr,
     heure: heureFr,
-    feedback: { messages: resume.total, nouveaux: resume.nouveaux, recupere: feedbackOk, publie: !erreursFeedback },
     relevesOng: { rafraichis: ong.rafraichis, echecs: ong.echecs, publie: ong.modifie && !ong.erreur },
     lyceens: { nouvelles: lyc.nouvelles, fusionnees: lyc.fusionnees, moissonnes: lyc.moissonnes, total: lyc.total, publie: lyc.modifie && !lyc.erreur },
     etudiants: { items: etu.items, ajoutes: etu.ajoutes, chapitre: etu.chapitre || null, publie: etu.modifie && !etu.erreur },

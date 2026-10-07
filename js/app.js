@@ -101,19 +101,17 @@ async function init() {
       if (e.data && e.data.type === 'SW_ACTIF') console.info('[sw] actif :', e.data.version);
     });
   }
-  const [chapters, jm, fluxRss, climat, recos] = await Promise.all([
+  const [chapters, jm, fluxRss, climat] = await Promise.all([
     chargerJSON('data/chapters.json', []),
     chargerJSON('data/medias.json', {}),
     chargerJSON('data/flux-rss.json', {}),
-    chargerJSON('data/climat.json', null),
-    chargerJSON('data/lecture-reco.json', {})
+    chargerJSON('data/climat.json', null)
   ]);
   state.chapters = chapters;
   state.mediasBase = jm.medias || [];
   const shards = await Promise.all((fluxRss.suite || []).map(u => chargerJSON(u, {})));
   state.fluxCatalogue = shards.reduce((acc, s) => acc.concat(s.catalogue || []), fluxRss.catalogue || []);
   state.climat = climat;
-  state.lectureRecos = recos.recommandations || [];
   majMedias();
   const idsConnus = new Set(state.medias.map(m => m.id));
   Object.keys(localStorage)

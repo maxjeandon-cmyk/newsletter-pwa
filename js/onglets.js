@@ -3,10 +3,10 @@
  * views.js (barre d'onglets) et views/reglages.js (éditeur d'ordre) la
  * consomment — ajouter un onglet ici le fait apparaître partout, sans
  * liste dupliquée à maintenir.
- * Onglets Lecture WiP et Feedback retirés le 06/10/2026 (nettoyage voulu
- * par Maxime, on les rouvrira quand on prendra le temps de les bosser) —
- * les vues js/views/lecture.js et feedback.js restent en place, et le
- * routeur retombe sur l'édition si un client garde un ancien onglet actif.
+ * Onglets Lecture WiP et Feedback retirés le 06/10/2026 puis supprimés
+ * intégralement le 07/10/2026 (vues, données, pipeline serveur — voulu
+ * par Maxime pour libérer de la place) : le routeur retombe sur l'édition
+ * si un client garde un ancien onglet actif.
  * v100 : ordre par défaut choisi par Maxime — Lycéens en tête, puis
  * Édition, Articles, Vidéos, Médias, Archives, Newsletters, Réglages. */
 export const ONGLETS_BASE = [

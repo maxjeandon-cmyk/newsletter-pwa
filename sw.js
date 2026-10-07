@@ -1,8 +1,11 @@
-/* sw.js v103 — Service worker de la PWA Newsletter.
+/* sw.js v104 — Service worker de la PWA Newsletter.
  * Stratégies : data/ et editions/ network-first (toujours frais en ligne, repli cache hors ligne) ;
  * le reste (coquille, js/, styles) cache-first pour un démarrage instantané.
- * À chaque déploiement de code : incrémenter CACHE (v22 → v23…) pour invalider les caches clients. */
-const CACHE = 'newsletter-v103';
+ * À chaque déploiement de code : incrémenter CACHE (v103 → v104…) pour invalider les caches clients.
+ * v104 : onglets Lecture et Feedback supprimés (6 entrées retirées), doublon
+ * flux-rss-2.json nettoyé, les 17 chapitres de la chronique étudiante
+ * rejoignent le précache (lecture hors ligne complète de l'onglet ✊). */
+const CACHE = 'newsletter-v104';
 const ASSETS = [
   './',
   './index.html',
@@ -25,16 +28,28 @@ const ASSETS = [
   './js/views/archives.js',
   './js/views/articles.js',
   './js/views/medias.js',
-  './js/views/lecture.js',
   './js/views/videos.js',
   './js/views/reglages.js',
-  './js/feedback.js',
-  './js/views/feedback.js',
   './js/views/lyceens.js',
   './data/etudiants/index.json',
-  './data/feedback.json',
+  './data/etudiants/chapitres/01.json',
+  './data/etudiants/chapitres/02.json',
+  './data/etudiants/chapitres/03.json',
+  './data/etudiants/chapitres/04.json',
+  './data/etudiants/chapitres/05.json',
+  './data/etudiants/chapitres/06.json',
+  './data/etudiants/chapitres/07.json',
+  './data/etudiants/chapitres/08.json',
+  './data/etudiants/chapitres/09.json',
+  './data/etudiants/chapitres/10.json',
+  './data/etudiants/chapitres/11.json',
+  './data/etudiants/chapitres/12.json',
+  './data/etudiants/chapitres/13.json',
+  './data/etudiants/chapitres/14.json',
+  './data/etudiants/chapitres/15.json',
+  './data/etudiants/chapitres/16.json',
+  './data/etudiants/chapitres/17.json',
   './data/lyceens.json',
-  './js/lecture.js',
   './js/compte.js',
   './js/push.js',
   './js/meteo.js',
@@ -45,9 +60,7 @@ const ASSETS = [
   './data/flux-rss.json',
   './data/flux-rss-2.json',
   './data/flux-rss-3.json',
-  './data/lecture-reco.json',
   './data/compte.json',
-  './data/flux-rss-2.json',
   './data/climat.json',
   './data/newsletters.json'
 ];

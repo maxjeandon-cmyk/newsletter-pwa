@@ -19,9 +19,6 @@ export function hashFromState() {
   if (h === 'medias') {
     if (state.mediasMode === 'ajout' || state.mediasMode === 'ajoutvideo' || state.mediasMode === 'gerer') h += '/' + state.mediasMode;
     else if (state.activeMedia) h += '/' + encodeURIComponent(state.activeMedia);
-  } else if (h === 'lecture') {
-    if (state.lecture?.cat && state.lecture.cat !== 'tout') h += '/' + state.lecture.cat;
-    if (state.lecture?.q) h += '?q=' + encodeURIComponent(state.lecture.q);
   } else if (h === 'videos') {
     if (state.videoLecture?.videoId) h += '/' + encodeURIComponent(state.videoLecture.videoId);
   } else if (h === 'archives') {
@@ -63,13 +60,6 @@ export function stateFromHash() {
   }
   if (tab === 'videos') {
     state.videoLecture = /^[\w-]{11}$/.test(parties[1]) ? { videoId: parties[1] } : null;
-  }
-  if (tab === 'lecture') {
-    const cat = ['tout', 'livres', 'journaux', 'magazines', 'revues', 'theses', 'bd', 'manga'].includes(parties[1]) ? parties[1]
-      : parties[1] === 'publications' ? 'revues' /* héritage */ : 'tout';
-    const q = new URLSearchParams(query || '').get('q');
-    state.lecture = q ? { q, cat, resultats: [], etat: 'encours' } : { q: '', cat, resultats: [], etat: null };
-    if (q) import('./views/lecture.js').then(m => m.lancerRechercheLecture(q, cat));
   }
 }
 
