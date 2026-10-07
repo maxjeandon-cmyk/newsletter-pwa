@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* v111 (lot 3) : badges verifie calcules par le moteur partage tools/corroboration.js (comportement visible identique). */
 /* v110 (lot 2) : moisson enrichie — le texte des nouveaux faits prefere la description (apercu) au titre quand elle est plus informative. */
 /* v109 (lot 1) : anti-bruit, titre doit matcher le mouvement ; nettoyerTitre applique au representant de groupe, jamais sur les signatures. */
 /* tools/lyceens.js — Relevé automatique du mouvement lycéen (onglet ✊ Lycéens 2026).
@@ -21,6 +22,7 @@
 const fs = require('fs');
 const path = require('path');
 const { nettoyerTitre } = require('./titres.js');
+const { corroborer } = require('./corroboration.js');
 
 const FICHIER = path.join(__dirname, '..', 'data', 'lyceens.json');
 const UA = 'Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0';
@@ -295,7 +297,7 @@ async function main() {
       date: dateGroupe,
       url: mieux.lien || (g.items.find(i => i.lien) || {}).lien || '',
       medias: mediasG,
-      verifie: mediasG.length >= 2,
+      verifie: corroborer({ sources: mediasG }).verifie, /* v111 : moteur */
       camp: camp(mieux.titre + ' ' + mieux.description)
     };
   });
@@ -330,7 +332,7 @@ async function main() {
         const unionSources = [...new Set([...(e.sources || (e.source ? [e.source] : [])), ...g.medias])].slice(0, 6);
         e.sources = unionSources;
         e.source = unionSources.join(' / ');
-        e.verifie = !!e.verifie || g.verifie || unionSources.length >= 2;
+        e.verifie = !!e.verifie || g.verifie || corroborer({ sources: unionSources }).verifie;
         if (!e.url && g.url) e.url = g.url;
         if (!e.texte) e.texte = g.texte;
       }
