@@ -174,14 +174,31 @@
   ],
   "faits": [
     {
+      "id": "aetumuymcto2-1",
+      "date": "07/10/2026",
+      "titre": "Blocage des lycées : Sébastien Lecornu tente de ramener le calme",
+      "texte": "Le premier ministre s’est exprimé dans une allocution, mercredi 7 octobre, pour évoquer la mobilisation des lycéens, les prix des carburants et la situation financière de la France. De « premières mesures » seront prises fin octobre pour répondre à la crise des lycées.",
+      "source": "La Croix / 20 minutes",
+      "sources": [
+        "La Croix",
+        "20 minutes"
+      ],
+      "url": "https://www.la-croix.com/politique/blocage-des-lycees-sebastien-lecornu-tente-de-ramener-le-calme-20261007",
+      "verifie": true
+    },
+    {
       "id": "aetumuy9vs08-1",
       "date": "07/10/2026",
       "titre": "EN DIRECT – Mobilisation lycéenne : malgré un nombre record d’interpellations, «il est excessif de parler de répression policière», juge Laurent Nuñez",
       "texte": "Au lendemain d’une journée de mobilisation massive dans toute la France, les organisations lycéennes poursuivent ce mercredi les blocages, à la veille d’un «acte IV» dans la rue jeudi. Le Premier ministre, Sébastien Lecornu, doit s’exprimer dans la soirée.",
-      "source": "Libération / 20 minutes",
+      "source": "Libération / 20 minutes / Europe 1 / Public Sénat / Le Figaro / BFMTV",
       "sources": [
         "Libération",
-        "20 minutes"
+        "20 minutes",
+        "Europe 1",
+        "Public Sénat",
+        "Le Figaro",
+        "BFMTV"
       ],
       "url": "https://www.liberation.fr/societe/education/en-direct-mobilisation-lyceenne-les-organisations-de-jeunesse-appellent-a-poursuivre-les-blocages-lintersyndicale-doit-sexprimer-20261007_5SKC4PXBSNF6LEOZONVQEZ7YOQ/",
       "verifie": true
@@ -225,11 +242,12 @@
       "date": "07/10/2026",
       "titre": "Blocus des lycées : les réseaux sociaux dans le collimateur des élus et des forces de l’ordre",
       "texte": "Le maire de Salon-de-Provence demande leur blocage temporaire et les forces de l’ordre alertent sur l’usage de l’IA pour démultiplier les appels à la violence.",
-      "source": "Europe 1 / Le Figaro / La Croix",
+      "source": "Europe 1 / Le Figaro / La Croix / France 24",
       "sources": [
         "Europe 1",
         "Le Figaro",
-        "La Croix"
+        "La Croix",
+        "France 24"
       ],
       "url": "https://www.lefigaro.fr/actualite-france/blocus-des-lycees-les-reseaux-sociaux-dans-le-collimateur-des-elus-et-des-forces-de-l-ordre-20261006",
       "verifie": true
@@ -239,26 +257,13 @@
       "date": "07/10/2026",
       "titre": "\"On lui a volé sa vie\": la mère du lycéen amputé à la main après l'explosion d'une grenade policière à Lens va porter p…",
       "texte": "Le lycéen gravement blessé à la main par une grenade policière à Lens a été amputé et est toujours hospitalisé. Sa mère confie sa colère et son incompréhension à BFMTV.",
-      "source": "BFMTV / franceinfo",
+      "source": "BFMTV / franceinfo / France Inter",
       "sources": [
         "BFMTV",
-        "franceinfo"
+        "franceinfo",
+        "France Inter"
       ],
       "url": "https://www.bfmtv.com/police-justice/on-lui-a-vole-sa-vie-la-mere-du-lyceen-ampute-a-la-main-apres-l-explosion-d-une-grenade-policiere-a-lens-va-porter-plainte_AV-202610070359.html",
-      "verifie": true
-    },
-    {
-      "id": "amuy9vr30-f2ve",
-      "date": "07/10/2026",
-      "titre": "Blocus des lycées : Un nombre d’interpellations record ? On a comparé avec les « gilets jaunes » et Mai 68",
-      "texte": "Le nombre d’interpellations semble astronomique depuis le début de la mobilisation lycéenne, et les comparaisons sont nombreuses avec les « gilets jaunes », Mai 68 ou encore les émeutes après la mort…",
-      "source": "20 minutes / Public Sénat / Libération",
-      "sources": [
-        "20 minutes",
-        "Public Sénat",
-        "Libération"
-      ],
-      "url": "https://www.20minutes.fr/societe/4251778-20261007-blocus-lycees-nombre-interpellations-record-compare-gilets-jaunes-mai-68?at_medium=display&at_campaign=149",
       "verifie": true
     },
     {
