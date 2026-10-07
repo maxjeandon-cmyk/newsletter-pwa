@@ -1,5 +1,5 @@
 {
-  "maj": "07/10/2026 05:28",
+  "maj": "07/10/2026",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Deux relevés ici : ce que dit le gouvernement, et les seules informations corroborées par plusieurs médias indépendants. La parole des élèves vit dans la chronique « Version des étudiants ».",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -11,6 +11,19 @@
     "Amnesty France (04/10) appelle les autorités au dialogue et à la désescalade, dénonçant un usage disproportionné de la force face à des mineurs ; la FCPE a demandé au ministre d'écouter les « demandes légitimes » des lycéens."
   ],
   "version_gouvernement": [
+    {
+      "id": "amuxun0gp-hgbk",
+      "date": "07/10/2026",
+      "titre": "Colère lycéenne: \"Si le mouvement continue, il faut qu'il reste dans le calme\", déclare le ministre de l'Enseignement s…",
+      "texte": "Au lendemain d'une mobilisation massive dans les rues, l'attitude des jeunes mobilisés sera scrutée de près mercredi, journée test pour le gouvernement qui tente de ramener le mouvement dans les étab…",
+      "source": "Europe 1 / BFMTV",
+      "sources": [
+        "Europe 1",
+        "BFMTV"
+      ],
+      "url": "https://www.bfmtv.com/politique/video-colere-lyceenne-si-le-mouvement-continue-il-faut-qu-il-reste-dans-le-calme-declare-le-ministre-de-l-enseignement-superieur_VN-202610070319.html",
+      "verifie": true
+    },
     {
       "id": "amuwh8t4r-d55l",
       "date": "06/10/2026",
@@ -35,18 +48,6 @@
       ],
       "url": "https://www.europe1.fr/politique/blocus-des-lycees-le-gouvernement-vise-un-retour-des-eleves-en-classe-des-ce-mercredi-1126301?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
-    },
-    {
-      "id": "amuwh8t4w-8iua",
-      "date": "06/10/2026",
-      "titre": "Blocus des lycées : «Le gouvernement porte une énorme responsabilité», juge Sébastien Chenu",
-      "texte": "Le vice-président du Rassemblement national et député du Nord Sébastien Chenu était l'invité de La Grande interview Europe 1-CNews ce mardi matin. Au micro de Laurence Ferrari, il estime que \"le gouv…",
-      "source": "Europe 1",
-      "sources": [
-        "Europe 1"
-      ],
-      "url": "https://www.europe1.fr/politique/blocus-des-lycees-le-gouvernement-porte-une-enorme-responsabilite-juge-sebastien-chenu-1126166?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
-      "verifie": false
     },
     {
       "id": "g4",
@@ -168,6 +169,63 @@
   ],
   "faits": [
     {
+      "id": "aetumuxun1rd-1",
+      "date": "07/10/2026",
+      "titre": "Blocage des lycées : l’usage des grenades assourdissantes suspendu ; Lecornu s’exprimera ce soir",
+      "texte": "Les cours sont « totalement ou partiellement suspendus » dans 528 établissements, selon le ministère de l’éducation. Le premier ministre Sébastien Lecornu s’exprimera depuis Matignon sur la situation dans la soirée. Suivez les informations sur la mobilisation lycéenne du mercred…",
+      "source": "La Croix / Libération / France 24 / Public Sénat / Europe 1 / 20 minutes",
+      "sources": [
+        "La Croix",
+        "Libération",
+        "France 24",
+        "Public Sénat",
+        "Europe 1",
+        "20 minutes"
+      ],
+      "url": "https://www.la-croix.com/societe/blocage-des-lycees-les-cours-suspendus-dans-528-etablissements-lecornu-s-exprimera-ce-soir-20261007",
+      "verifie": true
+    },
+    {
+      "id": "amuxun0gr-j1u9",
+      "date": "07/10/2026",
+      "titre": "Mobilisation lycéenne : le policier auteur du tir tendu d’une grenade dans le visage d’un élève a été mis en examen",
+      "texte": "Une enquête avait été ouverte par le parquet de Pontoise et confiée à l’IGPN après le tir survenu le 28 septembre à Saint-Ouen-l’Aumône (Val-d’Oise). Le fonctionnaire a été placé sous contrôle judici…",
+      "source": "Europe 1 / Libération",
+      "sources": [
+        "Europe 1",
+        "Libération"
+      ],
+      "url": "https://www.liberation.fr/societe/police-justice/mobilisation-lyceenne-le-policier-auteur-du-tir-dune-grenade-lacrymogene-dans-le-visage-dun-eleve-a-ete-mis-en-examen-20261006_2TBP3PML4ZHEPPWHETPWOQOUUM/",
+      "verifie": true
+    },
+    {
+      "id": "amuxun0gr-2s5o",
+      "date": "07/10/2026",
+      "titre": "Blocus des lycées : les réseaux sociaux dans le collimateur des élus et des forces de l’ordre",
+      "texte": "Le maire de Salon-de-Provence demande leur blocage temporaire et les forces de l’ordre alertent sur l’usage de l’IA pour démultiplier les appels à la violence.",
+      "source": "Europe 1 / Le Figaro / La Croix",
+      "sources": [
+        "Europe 1",
+        "Le Figaro",
+        "La Croix"
+      ],
+      "url": "https://www.lefigaro.fr/actualite-france/blocus-des-lycees-les-reseaux-sociaux-dans-le-collimateur-des-elus-et-des-forces-de-l-ordre-20261006",
+      "verifie": true
+    },
+    {
+      "id": "amuxun0h2-2wzg",
+      "date": "07/10/2026",
+      "titre": "\"On lui a volé sa vie\": la mère du lycéen amputé à la main après l'explosion d'une grenade policière à Lens va porter p…",
+      "texte": "Le lycéen gravement blessé à la main par une grenade policière à Lens a été amputé et est toujours hospitalisé. Sa mère confie sa colère et son incompréhension à BFMTV.",
+      "source": "BFMTV / franceinfo",
+      "sources": [
+        "BFMTV",
+        "franceinfo"
+      ],
+      "url": "https://www.bfmtv.com/police-justice/on-lui-a-vole-sa-vie-la-mere-du-lyceen-ampute-a-la-main-apres-l-explosion-d-une-grenade-policiere-a-lens-va-porter-plainte_AV-202610070359.html",
+      "verifie": true
+    },
+    {
       "id": "aetumux6uk70-2",
       "date": "06/10/2026",
       "titre": "Blocage, mobilisation lycéenne: \"Ce qui les caractérise, c'est la grande angoisse par rapport à leur avenir\", raconte Stéphane Troussel, président du département de la Seine-Saint-Denis",
@@ -189,79 +247,13 @@
       "date": "06/10/2026",
       "titre": "Blocage, mobilisation lycéenne: la liste des revendications",
       "texte": "Grande journée de manifestation partout en France pour l'acte III de la mobilisation lycéenne. Soutenus par les syndicats, notamment de l'Éducation nationale qui appelle à faire grève, les lycéens manifestent ce mardi. Selon l'Union syndicale, ce sont 450.000 manifestants qui on…",
-      "source": "BFMTV / L'Humanité",
+      "source": "BFMTV / L'Humanité / Europe 1",
       "sources": [
         "BFMTV",
-        "L'Humanité"
+        "L'Humanité",
+        "Europe 1"
       ],
       "url": "https://www.bfmtv.com/societe/manifestations/video-blocage-mobilisation-lyceenne-la-liste-des-revendications_VN-202610060957.html",
-      "verifie": true
-    },
-    {
-      "id": "aetumuwu2bov-2",
-      "date": "06/10/2026",
-      "titre": "EN DIRECT - Mobilisation des lycéens : 256 000 manifestants en France selon les autorités, 450 000 d’après les organisateurs",
-      "texte": "La préfecture de police de Paris fait état d’une situation tendue ce mardi dans la capitale, avec 300 individus hostiles présents place de la Nation en marge de l’Acte III de la mobilisation des lycéens.",
-      "source": "Le Figaro / BFMTV / France 24 / Europe 1 / RFI / La Croix",
-      "sources": [
-        "Le Figaro",
-        "BFMTV",
-        "France 24",
-        "Europe 1",
-        "RFI",
-        "La Croix"
-      ],
-      "url": "https://www.lefigaro.fr/actualite-france/en-direct-blocage-des-lycees-des-dizaines-de-milliers-de-lyceens-dans-la-rue-pour-un-acte-iii-sous-haute-surveillance-20261006",
-      "verifie": true
-    },
-    {
-      "id": "aetumuwu2bov-1",
-      "date": "06/10/2026",
-      "titre": "DIRECT. Crise des lycées : Lecornu annonce une suspension des cours, tensions à Paris",
-      "texte": "Paris, Lyon, Nantes… Les organisations lycéennes appellent à un « acte III » de la mobilisation ce mardi 6 octobre 2026. Des tensions apparaissent dans la manifestation parisienne. Lecornu a annoncé aujourd’hui une suspension des cours pour organiser un « temps de démocratie » d…",
-      "source": "La Croix / BFMTV / Le Figaro / Public Sénat / Libération / France Inter",
-      "sources": [
-        "La Croix",
-        "BFMTV",
-        "Le Figaro",
-        "Public Sénat",
-        "Libération",
-        "France Inter"
-      ],
-      "url": "https://www.la-croix.com/societe/irect-manifestation-mardi-6-octobre-blocus-lycees-mobilisation-lyceen-aujourdhui-20261006",
-      "verifie": true
-    },
-    {
-      "id": "amuwh8t4q-7g99",
-      "date": "06/10/2026",
-      "titre": "Colère des lycéens : Pourquoi le maintien de l’ordre face aux mineurs est un casse-tête",
-      "texte": "Entre impératifs de sécurité et règles de procédure renforcées pour les mineurs, la mobilisation lycéenne de cet « acte III » met police et justice sous tension ce mardi jour de manifestation",
-      "source": "20 minutes / BFMTV / Europe 1 / Public Sénat / Le Figaro / France 24",
-      "sources": [
-        "20 minutes",
-        "BFMTV",
-        "Europe 1",
-        "Public Sénat",
-        "Le Figaro",
-        "France 24"
-      ],
-      "url": "https://www.20minutes.fr/societe/4251568-20261006-colere-lyceens-pourquoi-maintien-ordre-face-mineurs-casse-tete?at_medium=display&at_campaign=149",
-      "verifie": true
-    },
-    {
-      "id": "amuwh8t4q-cneu",
-      "date": "06/10/2026",
-      "titre": "\"Acte III\" : nouvelle journée de mobilisation lycéenne sous haute tension en France",
-      "texte": "Des dizaines de milliers de lycéens manifestent sous haute surveillance, mardi, à travers la France pour réclamer des moyens, un \"Acte III\" soutenu par une intersyndicale de l'Éducation nationale. Pl…",
-      "source": "20 minutes / France 24 / Libération / Europe 1 / Le Figaro",
-      "sources": [
-        "20 minutes",
-        "France 24",
-        "Libération",
-        "Europe 1",
-        "Le Figaro"
-      ],
-      "url": "https://www.france24.com/fr/france/20261006-acte-iii-nouvelle-journ%C3%A9e-de-mobilisation-lyc%C3%A9enne-sous-haute-tension-en-france",
       "verifie": true
     },
     {
