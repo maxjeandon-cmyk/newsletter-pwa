@@ -54,6 +54,20 @@
         "Le Figaro"
       ],
       "auto": true
+    },
+    {
+      "id": "c18p5",
+      "texte": "6 heures ont passé depuis le relevé précédent ; le fil continue. Au soir du 7 octobre 2026, le fil du récit continue. Côté mobilisation, l'élan ne retombe pas : Blocage des lycées : perturbation des cours dans 459 lycées… Le bilan du mercredi 7 octobre (La Croix) ; Australie: la justice s'oppose à un vaste projet d'extension d'une mine de charbon (RFI) ; Blocus des lycées : les manifestations en France vues par la presse étrangère (La Croix) ; Colère lycéenne: «On peut comprendre les revendications, mais pas la violence», tranche Thomas Ménagé (RN) (RFI) ; «Gaza, trois ans après le début de cette phase de génocide, ne se relève pas» (RFI) ; Blocus des lycées : la stratégie du maintien de l’ordre est-elle vraiment adaptée au mouvement ? (La Croix) ; Adolescent amputé d'une main à Lens : une vidéo montre la victime se pencher vers la grenade assourdissante (France Inter). Côté forces de l'ordre, les tensions ne faiblissent pas : Blocus de lycées : trois mineurs en garde à vue pour apologie du terrorisme en lien avec une chanson glorifiant Merah et Abdeslam (Europe 1) ; Mobilisation lycéenne : un nourrisson d'un an hospitalisé après un tir de mortier à Saint-Cyr-l'École (Europe 1). Côté gouvernement, les réponses s'égrènent : FORUM BFMTV - \"On ne part pas tous avec la même chance de réussir, donc on n'est pas tous égaux face à Parcoursup\", estime Sabrina Sebaihi, députée Écologiste … (BFMTV) ; Blocage des lycées : Sébastien Lecornu tente de ramener le calme (La Croix, 20 minutes) ; Blocus des lycées : revendications, Parcoursup, répression… Comment les candidats à la présidentielle se positionnent (Ouest-France). Le prochain relevé reprendra le fil. (Relevé automatique du 7 octobre 2026 à 23:28 — faits repris des titres de presse, non reformulés.)",
+      "sources": [
+        "BFMTV",
+        "La Croix",
+        "Europe 1",
+        "20 minutes",
+        "RFI",
+        "Ouest-France",
+        "France Inter"
+      ],
+      "auto": true
     }
   ]
 }
