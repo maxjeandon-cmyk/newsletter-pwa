@@ -138,8 +138,16 @@
       "fichier": "chapitres/17.json",
       "periode": "6 octobre 2026 — l'acte III",
       "titre": "Acte III : la France entière dans la rue",
-      "paragraphes": 12,
-      "octets": 23443
+      "paragraphes": 9,
+      "octets": 16847
+    },
+    {
+      "id": "c18",
+      "fichier": "chapitres/18.json",
+      "periode": "7 octobre 2026 — suivi de la journée",
+      "titre": "Acte IV — 7 octobre 2026",
+      "paragraphes": 3,
+      "octets": 6731
     }
   ],
   "releveSigs": [
@@ -241,6 +249,14 @@
           "titre": "Acte III : la France entière dans la rue",
           "paragraphes": 12,
           "octets": 23443
+        },
+        {
+          "id": "c18",
+          "fichier": "chapitres/18.json",
+          "periode": "7 octobre 2026 — suivi de la journée",
+          "titre": "Acte IV — 7 octobre 2026",
+          "paragraphes": 3,
+          "octets": 6731
         }
       ]
     },
@@ -310,5 +326,10 @@
   ],
   "releveDate": "2026-10-07T09:29:31.981Z",
   "releveCompteur": 5,
-  "prochainActe": 5
+  "prochainActe": 5,
+  "chapitreJour": {
+    "id": "c18",
+    "fichier": "chapitres/18.json",
+    "date": "07/10/2026"
+  }
 }
