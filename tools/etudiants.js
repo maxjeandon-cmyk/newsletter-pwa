@@ -185,12 +185,14 @@ const PHRASES_MOBILISATION = ["Sur le terrain, la mobilisation tient", "Dans la 
 const PHRASES_DATELINE = ["le mouvement poursuit sa route", "la chronique avance", "le fil du récit continue", "la journée s'écrit encore"];
 /* Classification sur la forme normalisée (sans accents) pour ne rien rater. */
 function voletDe(titre) { const n = norm(titre); for (const v of VOLETS) if (v.re.test(n) || v.re.test(titre)) return v.id; return 'mobilisation'; }
-function construireParagraphe(uniques, relevePrecedent, compteur) {
-  const maintenant = new Date();
+function construireParagraphe(uniques, relevePrecedent, compteur, dateRef) {
+  const maintenant = dateRef ? new Date(dateRef) : new Date();
   const fmt = (o, d) => new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris', ...o }).format(d || maintenant);
   const dateLongue = fmt({ dateStyle: 'long' });
   const veilleLongue = fmt({ dateStyle: 'long' }, new Date(maintenant.getTime() - 24 * 3600 * 1000));
-  const heure = +fmt({ hour: 'numeric', hour12: false });
+  /* v107 : en fr-FR, Intl formate l'heure « 05 h » (h collé) → + donne NaN
+   * et toutes les datelines tombaient sur « Au soir ». On parse proprement. */
+  const heure = parseInt(fmt({ hour: 'numeric', hourCycle: 'h23' }), 10) || 0;
   const dateline = heure < 6 ? 'Dans la nuit du ' + veilleLongue + ' au ' + dateLongue
     : heure < 12 ? 'Au matin du ' + dateLongue
     : heure < 18 ? "Dans l'après-midi du " + dateLongue
@@ -221,7 +223,7 @@ function construireParagraphe(uniques, relevePrecedent, compteur) {
       items.map(it => tronc(it.titre, 160) + ' (' + it.sources.join(', ') + ')').join(' ; ') + '.');
   }
   /* 4. Clôture : la promesse que le fil reprend, + trace horodatée. */
-  phrases.push('Le prochain relevé reprendra le fil. (Relevé automatique du ' + dateHeureFr() + ' — faits repris des titres de presse, non reformulés.)');
+  phrases.push('Le prochain relevé reprendra le fil. (Relevé automatique du ' + fmt({ dateStyle: 'long', timeStyle: 'short' }) + ' — faits repris des titres de presse, non reformulés.)');
   return phrases.join(' ');
 }
 

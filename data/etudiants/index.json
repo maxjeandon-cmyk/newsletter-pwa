@@ -139,7 +139,7 @@
       "periode": "6 octobre 2026 — l'acte III",
       "titre": "Acte III : la France entière dans la rue",
       "paragraphes": 10,
-      "octets": 17898
+      "octets": 18815
     }
   ],
   "releveSigs": [
@@ -305,5 +305,7 @@
         }
       ]
     }
-  ]
+  ],
+  "releveDate": "2026-10-07T05:28:00+02:00",
+  "releveCompteur": 3
 }
