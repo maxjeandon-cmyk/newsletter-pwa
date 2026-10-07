@@ -1,28 +1,23 @@
 {
   "date": "07/10/2026",
-  "heure": "09:29",
-  "feedback": {
-    "messages": 12,
-    "nouveaux": 0,
-    "recupere": true,
-    "publie": true
-  },
+  "heure": "15:38",
   "relevesOng": {
     "rafraichis": 0,
     "echecs": 0,
     "publie": false
   },
   "lyceens": {
-    "nouvelles": 1,
-    "fusionnees": 18,
-    "moissonnes": 113,
+    "nouvelles": 3,
+    "fusionnees": 22,
+    "moissonnes": 116,
     "total": 22,
     "publie": true
   },
   "etudiants": {
     "items": 12,
     "ajoutes": 1,
-    "chapitre": "c17",
+    "chapitre": "c18",
+    "nouveauChapitre": false,
     "publie": true
   },
   "verifs": [
@@ -44,7 +39,7 @@
     {
       "nom": "lyceens.js",
       "ok": true,
-      "detail": "1 nouvelle(s) info, 18 fusionnée(s) sur 113 moissonnée(s) — 22 au total"
+      "detail": "3 nouvelle(s) info, 22 fusionnée(s) sur 116 moissonnée(s) — 22 au total"
     },
     {
       "nom": "etudiants.js",
