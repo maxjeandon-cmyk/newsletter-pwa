@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+// v112 (lot 4) : resumes de chapitres plus riches — premier <p> du bloc <details>,
+// puis enchainement sur les <p> suivants jusqu a 180 caracteres minimum (coupe
+// propre, jamais en plein milieu d un mot) ; borne 400 conservee.
 /* build-edition-json.js — Génère le JSON d'édition depuis le HTML de la newsletter.
  * Usage : node tools/build-edition-json.js <edition.html> <date YYYY-MM-DD> [out.json]
  * Schéma du format.md : resume_executif (5 points), chapitres (ordre imposé, résumé extrait du HTML),
@@ -53,9 +56,29 @@ function resumeDeChapitre(html, nom, id, v15) {
     if (m) bloc = m[1];
   }
   if (!bloc) return '';
-  const p = bloc.match(/<p>([\s\S]*?)<\/p>/) || bloc.match(/<li>([\s\S]*?)<\/li>/);
-  if (!p) return '';
-  return p[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim().slice(0, 400);
+  // v112 (lot 4) : on enchaine les <p> du bloc jusqu a 180 caracteres minimum,
+  // puis coupe propre au mot sous la borne 400 — jamais en plein milieu d un mot.
+  const morceaux = [...bloc.matchAll(/<p>([\s\S]*?)<\/p>/g)]
+    .map(m => m[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim())
+    .filter(t => t.length > 0);
+  let candidats = morceaux;
+  if (!candidats.length) {
+    const li = bloc.match(/<li>([\s\S]*?)<\/li>/);
+    candidats = li ? [li[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim()] : [];
+  }
+  if (!candidats.length) return '';
+  let resume = '';
+  for (const t of candidats) {
+    if (resume && resume.length >= 180) break;
+    resume = resume ? resume + ' ' + t : t;
+  }
+  if (resume.length > 400) {
+    const coupe = resume.slice(0, 400);
+    const dernierEspace = coupe.lastIndexOf(' ');
+    // coupe au mot le plus proche de la borne, sans descendre sous 300 caracteres
+    resume = (dernierEspace > 300 ? coupe.slice(0, dernierEspace) : coupe).replace(/[,;:]$/, '') + '…';
+  }
+  return resume;
 }
 
 function horsChapitres(html, v15) {

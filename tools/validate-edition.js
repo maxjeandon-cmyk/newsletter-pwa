@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+// v112 (lot 4) : regle date-aware — resume de chapitre >= 120 caracteres pour les
+// editions datees du 2026-10-08 et apres ; les editions anterieures restent
+// valides avec la regle historique (> 30).
 /* validate-edition.js — Relecture complète et systématique d'une édition de la newsletter.
  * Implémente les règles de relecture du format (format.md, règle du 28/09/2026, étendues le 30/09/2026).
  *
@@ -148,8 +151,11 @@ function validateJson(j) {
   check('JSON', 'ordre des chapitres imposé',
     chaps.length === fmt && ordre.every((id, i) => chaps[i] && chaps[i].id === id),
     chaps.map((c) => c.id).join(', '));
+  // v112 (lot 4) : borne date-aware — >= 120 caracteres a partir du 2026-10-08.
+  const MIN_RESUME = String(j.date || '') >= '2026-10-08' ? 120 : 30;
   check('JSON', 'chaque chapitre a id/emoji/nom/resume',
-    chaps.every((c) => c && c.id && c.emoji && c.nom && typeof c.resume === 'string' && c.resume.length > 30));
+    chaps.every((c) => c && c.id && c.emoji && c.nom && typeof c.resume === 'string' && c.resume.length > MIN_RESUME),
+    `minimum=${MIN_RESUME}`);
 
   if (fmt >= 13) {
     const hors = j.hors_chapitres;
