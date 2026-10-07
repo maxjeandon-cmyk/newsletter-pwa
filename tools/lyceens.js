@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* v109 (lot 1) : anti-bruit, titre doit matcher le mouvement ; nettoyerTitre applique au representant de groupe, jamais sur les signatures. */
 /* tools/lyceens.js — Relevé automatique du mouvement lycéen (onglet ✊ Lycéens 2026).
  * Appelé par tools/maintenance.js à chaque run (toutes les 6 h) : moissonne les
  * flux RSS de la presse française, ne retient que les items du mouvement lycéen
@@ -18,6 +19,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { nettoyerTitre } = require('./titres.js');
 
 const FICHIER = path.join(__dirname, '..', 'data', 'lyceens.json');
 const UA = 'Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0';
@@ -130,8 +132,13 @@ const RE_MOUVEMENT = /lyceen|lycee|blocus|blocage|parcoursup|acte deux/i;
 const RE_GOUV_EDUC = /(geffray|lecornu).{0,60}(education|lyce|enseign|ecole)|((education|lyce|enseign|ecole).{0,60}(geffray|lecornu))/i;
 const estMouvement = (t, d) => {
   const s = norm(t + ' ' + d);
-  if (RE_MOUVEMENT.test(s)) return true;
-  if (RE_GOUV_EDUC.test(s)) return true;
+  /* v109 (lot 1) : anti-bruit -- le TITRE doit matcher, la description ne suffit
+   * plus seule (cas reels : « Guerre au Moyen-Orient », « Australie : mine de
+   * charbon » passaient parce que seule la description mentionnait le mouvement).
+   * La description ne peut que conforter via RE_GOUV_EDUC quand le titre parle
+   * deja d education (geffray/lecornu), jamais declencher seule. */
+  if (RE_MOUVEMENT.test(norm(t))) return true;
+  if (RE_GOUV_EDUC.test(norm(t))) return true;
   return false;
 };
 /* Anti-bruit : résultats sportifs ou sujets scolaires hors mouvement,
@@ -280,7 +287,7 @@ async function main() {
     const dateGroupe = g.items.map(i => i.date).sort((a, b) => numeroDate(b) - numeroDate(a))[0];
     const mediasG = [...new Set(g.items.map(i => i.media))];
     return {
-      titre: tronc(mieux.titre, 120),
+      titre: tronc(nettoyerTitre(mieux.titre), 120),
       texte: tronc(mieux.description, 200),
       date: dateGroupe,
       url: mieux.lien || (g.items.find(i => i.lien) || {}).lien || '',
