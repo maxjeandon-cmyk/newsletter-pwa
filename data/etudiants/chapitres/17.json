@@ -93,6 +93,16 @@
         "La Croix"
       ],
       "auto": true
+    },
+    {
+      "id": "c17p10",
+      "texte": "Relevé automatique du 7 octobre 2026 à 05:28 : 10 information(s) des dernières heures. — Guerre au Moyen-Orient : Intensification des combats au Yémen, négociations Iran-États Unis… Les dernières infos (Ouest-France) — Colère, manifestations: vers l'embrasement ? (BFMTV) — Mobilisation lycéenne: \"Le retour à l'ordre est nécessaire\", estime Maël de Calan, porte-parole d'Édouard Philippe (BFMTV) — Blocage, mobilisation lycéenne: \"Ce qui m'a frappé, c'est que la relation entre la jeunesse et la police s'est très dégradée\", observe Alexis Corbière, député … (BFMTV) — Blocage des lycées en France : l'armée en renfort ? (France 24) — Colère lycéenne: 488 personnes interpellées et 43 membres des forces de l'ordre blessés selon Beauvau durant cet \"acte III\" (BFMTV) — Blocage, mobilisation lycéenne: Emmanuel Macron \"aurait dû recevoir les lycéens\", déclare Olivier Faure, Premier secrétaire du PS et candidat à la primaire soc… (BFMTV) — Blocage, mobilisation lycéenne: la liste des revendications (BFMTV) — Blocage, mobilisation lycéenne: \"Ce qui les caractérise, c'est la grande angoisse par rapport à leur avenir\", raconte Stéphane Troussel, président du départeme… (BFMTV) — \"Le mépris que vous avez envers les lycéens qui se révoltent est abject\": Sofia Tizaoui, ancienne présidente de l'Union Syndicale Lycéenne, répond à François-X… (BFMTV) Faits bruts repris des titres, non reformulés.",
+      "sources": [
+        "Ouest-France",
+        "BFMTV",
+        "France 24"
+      ],
+      "auto": true
     }
   ]
 }
