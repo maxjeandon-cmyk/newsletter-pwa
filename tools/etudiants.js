@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* v110 (lot 2) : moisson enrichie — apercu nettoye (tronc 180) par item ; UN SEUL apercu par evenement dans le paragraphe ; texte des faits peut utiliser l apercu. */
 /* v109 (lot 1) : anti-bruit, titre doit matcher le mouvement ; nettoyerTitre applique a l assemblage et aux faits, jamais sur les signatures. */
 /* tools/etudiants.js — Relevé automatique 6 h de la chronique « Version des étudiants »
  * (onglet ✊ Lycéens 2026, sous-onglet Version des étudiants).
@@ -89,7 +90,7 @@ const RE_EMISSION = /(bonjour chez vous|l.heure des pros|edition speciale|grand 
 const estMouvement = (t, d) => RE_MOUVEMENT.test(t);
 const estBruit = (t, d) => RE_BRUIT.test(t) || RE_EMISSION.test(t);
 
-async function moissonSource(src, depuis) {
+const tronc = (s, n) => (s.length > n ? s.slice(0, n - 1) + '…' : s);async function moissonSource(src, depuis) {
   const items = [];
   try {
     const rep = await fetch(src.url, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(20000) });
@@ -109,13 +110,13 @@ async function moissonSource(src, depuis) {
       if (date < depuis) continue;
       if (estBruit(titre, desc)) continue;
       if (!estMouvement(titre, desc)) continue;
-      items.push({ titre, desc, lien: lien || '', date: date.toISOString(), source: src.nom });
+      items.push({ titre, desc, apercu: tronc(desc, 180), lien: lien || '', date: date.toISOString(), source: src.nom });
     }
   } catch (e) { return { items, erreur: src.id + ' : ' + e.message }; }
   return { items, erreur: null };
 }
 
-const tronc = (s, n) => (s.length > n ? s.slice(0, n - 1) + '…' : s);
+
 const dateHeureFr = () => new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris', dateStyle: 'long', timeStyle: 'short' }).format(new Date());
 
 /* Ajoute au tableau « faits » de data/lyceens.json les items corroborés
@@ -148,7 +149,9 @@ async function verserFaitsCorrobores(uniques, journal) {
       id: 'aetu' + stamp + '-' + (ajoutes + 1),
       date: new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris' }).format(new Date(it.date)),
       titre: tronc(nettoyerTitre(it.titre), 200),
-      texte: tronc(it.desc || nettoyerTitre(it.titre), 280),
+      /* v110 (lot 2) : l apercu (desc tronquee a 180) sert de texte des qu il
+       * est plus informatif que le titre — tronc 280 inchange. */
+      texte: tronc((it.apercu && it.apercu.length > (it.titre || '').length ? it.apercu : (it.desc || nettoyerTitre(it.titre))), 280),
       source: it.sources.join(' / '),
       sources: it.sources.slice(),
       url: it.lien || '',
@@ -242,12 +245,18 @@ function construireParagraphe(uniques, relevePrecedent, compteur, dateRef, nouve
     const items = parVolet.get(volet);
     if (!items || !items.length) continue;
     const catalogue = volet === 'mobilisation' ? PHRASES_MOBILISATION : VOLETS.find(v => v.id === volet).phrases;
-    phrases.push(catalogue[compteur % catalogue.length] + ' : ' +
-      items.map(it => tronc(nettoyerTitre(it.titre), 160) + ' (' + it.sources.join(', ') + ')').join(' ; ') + '.');
+    /* v110 (lot 2) : UN SEUL apercu par evenement — jamais un par source. */
+    let phraseVolet = catalogue[compteur % catalogue.length] + ' : ' +
+      items.map(it => tronc(nettoyerTitre(it.titre), 160) + ' (' + it.sources.join(', ') + ')').join(' ; ');
+    const avecApercu = items.find(it => it.apercu && it.apercu.length > 20);
+    if (avecApercu) phraseVolet = phraseVolet + ' — detail : ' + tronc(avecApercu.apercu, 180).replace(/[.]+$/, '');
+    phrases.push(phraseVolet + '.');
   }
   /* 4. Clôture : la promesse que le fil reprend, + trace horodatée. */
   phrases.push('Le prochain relevé reprendra le fil. (Relevé automatique du ' + fmt({ dateStyle: 'long', timeStyle: 'short' }) + ' — faits repris des titres de presse, non reformulés.)');
-  return phrases.join(' ');
+  /* v110 (lot 2) : garde-fou — le paragraphe complet reste < 8 Ko. */
+  const complet = phrases.join(' ');
+  return complet.length < 8000 ? complet : complet.slice(0, 7999) + '…';
 }
 
 async function main() {

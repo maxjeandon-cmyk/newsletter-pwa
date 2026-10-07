@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* v110 (lot 2) : moisson enrichie — le texte des nouveaux faits prefere la description (apercu) au titre quand elle est plus informative. */
 /* v109 (lot 1) : anti-bruit, titre doit matcher le mouvement ; nettoyerTitre applique au representant de groupe, jamais sur les signatures. */
 /* tools/lyceens.js — Relevé automatique du mouvement lycéen (onglet ✊ Lycéens 2026).
  * Appelé par tools/maintenance.js à chaque run (toutes les 6 h) : moissonne les
@@ -288,7 +289,9 @@ async function main() {
     const mediasG = [...new Set(g.items.map(i => i.media))];
     return {
       titre: tronc(nettoyerTitre(mieux.titre), 120),
-      texte: tronc(mieux.description, 200),
+      /* v110 (lot 2) : le texte prend la description (apercu) des qu elle est
+       * plus longue que le titre — plus informative — sinon le titre. */
+      texte: tronc(mieux.description && mieux.description.length > mieux.titre.length ? mieux.description : mieux.titre, 200),
       date: dateGroupe,
       url: mieux.lien || (g.items.find(i => i.lien) || {}).lien || '',
       medias: mediasG,
