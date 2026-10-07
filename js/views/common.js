@@ -9,7 +9,9 @@ export function articleHtml(a) {
   const origine = a.chapitreNom || a.mediaNom || '';
   return '<a class="article" href="' + esc(urlSure(a.lien)) + '" target="_blank" rel="noopener">' +
     '<h3>' + esc(a.titre) + '</h3><div class="meta">' + esc(origine) + ' · il y a ' +
-    (age < 1 ? 'moins d’1 h' : age + ' h') + '</div>' +
+    (age < 1 ? 'moins d’1 h' : age + ' h') +
+    (a.nbMedias >= 2 ? ' <span class="badge-medias">✓ ' + a.nbMedias + ' médias</span>' : '') +
+    '</div>' +
     (a.extrait ? '<div class="excerpt">' + esc(a.extrait) + '</div>' : '') + '</a>';
 }
 

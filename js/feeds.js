@@ -1,9 +1,12 @@
-/* feeds.js — couche de récupération des flux RSS/Atom (v16).
+/* feeds.js — couche de récupération des flux RSS/Atom (v17).
  * Chaîne par flux : essai direct (si le site autorise CORS) → relais JSON rss2json
  * (rapide et fiable, ~10 derniers items) → relais XML allorigins / codetabs
  * (jusqu'à 40 items, parfois lents). Chaque étape a son propre parseur :
  * le relais JSON renvoie du JSON, pas du XML — c'était la panne historique de la v14.
- * Les textes externes sont échappés au rendu (esc() dans views.js), jamais ici. */
+ * Les textes externes sont échappés au rendu (esc() dans views.js), jamais ici.
+ * v17 (CACHE v105, lot 5) : corroboration client — badge « ✓ N médias » miroir du
+ * rapprochement serveur (tools/etudiants.js : racines + chiffres significatifs) ;
+ * extrait tronqué au mot (jamais en plein milieu). */
 
 import { state, getStore, setStore, norm } from './core.js';
 
@@ -14,6 +17,14 @@ const RELAIS_XML = [
 const RELAIS_JSON = u => 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(u);
 
 /* --- Parseurs --- */
+/* Lot 5 (v105) : coupe propre au mot pour les extraits — jamais en plein milieu. */
+export const troncMot = (s, n) => {
+  const t = String(s || '').trim();
+  if (t.length <= n) return t;
+  const coupe = t.slice(0, n - 1);
+  const espace = coupe.lastIndexOf(' ');
+  return (espace > n * 0.6 ? coupe.slice(0, espace) : coupe).trim() + '…';
+};
 export function parseXml(xmlText) {
   try {
     const doc = new DOMParser().parseFromString(xmlText, 'text/xml');
@@ -25,8 +36,7 @@ export function parseXml(xmlText) {
       titre: it.querySelector('title')?.textContent?.trim() ?? '',
       lien: it.querySelector('link')?.textContent?.trim() || it.querySelector('link')?.getAttribute('href') || '',
       date: new Date(it.querySelector('pubDate, published, updated')?.textContent ?? Date.now()),
-      extrait: (it.querySelector('description, summary, content')?.textContent ?? '')
-        .replace(/<[^>]*>/g, '').trim().slice(0, 220),
+      extrait: troncMot((it.querySelector('description, summary, content')?.textContent ?? '').replace(/<[^>]*>/g, '').trim(), 220),
       auteur: it.querySelector('author')?.textContent?.trim()
         || it.getElementsByTagNameNS('http://purl.org/dc/elements/1.1/', 'creator')[0]?.textContent?.trim()
         || ''
@@ -42,7 +52,7 @@ export function parseRss2Json(text) {
       titre: (x.title || '').trim(),
       lien: (x.link || '').trim(),
       date: new Date(String(x.pubDate || '').replace(' ', 'T') + 'Z'),
-      extrait: (x.description || '').replace(/<[^>]*>/g, '').trim().slice(0, 220),
+      extrait: troncMot((x.description || '').replace(/<[^>]*>/g, '').trim(), 220),
       auteur: (x.author || '').trim()
     })).filter(a => a.titre && !isNaN(a.date));
   } catch (e) { return []; }
@@ -173,6 +183,69 @@ function dedupliquer(articles, limite = 200) {
   return garde.slice(0, limite);
 }
 
+/* --- Lot 5 (CACHE v105) : corroboration client — badge « ✓ N médias ».
+ *     Miroir du rapprochement serveur (tools/etudiants.js, mêmes racines et
+ *     chiffres) : signature = 4 premières racines (hors mots du champ lexical
+ *     du mouvement) + chiffres significatifs (hors années 2000-2100) ;
+ *     deux événements sont rapprochés si signature égale, OU ≥ 3 racines
+ *     communes, OU ≥ 1 racine commune + même chiffre significatif.
+ *     Compte les flux/médias DISTINCTS porteurs de chaque événement
+ *     (union-find sur les signatures) et pose a.nbMedias en place. --- */
+const STOP_SIG = new Set([
+  'lycee', 'lyceen', 'lyceens', 'eleve', 'eleves', 'etudiant', 'etudiants',
+  'blocus', 'blocage', 'blocages', 'etablissem', 'manifesta', 'mobilisa',
+  'mouvement', 'national', 'education', 'enseigna', 'professeu', 'ministre',
+  'gouvernem', 'france', 'paris', 'video', 'videos', 'direct', 'actu', 'actus',
+  'info', 'jeunesse', 'jeunes', 'apres', 'selon', 'contre', 'sous', 'sur',
+  'dans', 'pour', 'avec', 'fait', 'faits', 'jour', 'journee', 'revolte', 'greve'
+]);
+const racinesEvenement = s => norm(s).split(/[^a-z0-9]+/).filter(w => w.length > 3 && !STOP_SIG.has(w)).map(w => w.slice(0, 7));
+const chiffresEvenement = s => (norm(s).match(/\d{3,}/g) || []).filter(n => +n < 2000 || +n > 2100);
+export const signatureEvenement = s => {
+  const r = racinesEvenement(s);
+  /* Titre sans aucune racine discriminante : pas de rapprochement lâche possible,
+   * on signe sur le texte normalisé complet (évite d'agglutiner des titres vides). */
+  if (!r.length) return 't:' + norm(s).replace(/[^a-z0-9]+/g, ' ').slice(0, 80);
+  return r.slice(0, 4).sort().join('|') + '#' + chiffresEvenement(s).sort().join(',');
+};
+
+export function compterMedias(bruts) {
+  const parents = new Map(), racines = new Map(), chiffres = new Map(), sources = new Map();
+  const racineDe = k => { let r = k; while (parents.get(r) !== r) r = parents.get(r); parents.set(k, r); return r; };
+  const unir = (a, b) => {
+    const ra = racineDe(a), rb = racineDe(b);
+    if (ra === rb) return;
+    parents.set(ra, rb);
+    for (const x of racines.get(ra) || []) racines.get(rb).add(x);
+    for (const x of chiffres.get(ra) || []) chiffres.get(rb).add(x);
+    for (const x of sources.get(ra) || []) sources.get(rb).add(x);
+  };
+  for (const { a, source } of bruts) {
+    const sig = signatureEvenement(a.titre);
+    if (!parents.has(sig)) {
+      parents.set(sig, sig);
+      racines.set(sig, new Set(racinesEvenement(a.titre)));
+      chiffres.set(sig, new Set(chiffresEvenement(a.titre)));
+      sources.set(sig, new Set());
+    }
+    let rSig = racineDe(sig);
+    sources.get(rSig).add(source);
+    const R = racines.get(rSig), C = chiffres.get(rSig);
+    for (const autre of parents.keys()) {
+      const rAutre = racineDe(autre);
+      if (rAutre === rSig) continue;
+      const R2 = racines.get(rAutre), C2 = chiffres.get(rAutre);
+      let communs = 0;
+      for (const r of R2) if (R.has(r)) communs++;
+      if (communs >= 3) { unir(sig, autre); continue; }
+      if (communs >= 1) {
+        for (const c of C) if (C2.has(c)) { unir(sig, autre); break; }
+      }
+    }
+  }
+  for (const { a } of bruts) a.nbMedias = sources.get(racineDe(signatureEvenement(a.titre))).size;
+}
+
 /* --- Onglet Articles : flux des chapitres suivis, dédupliqués par URL --- */
 let chapitresEnCours = null;
 export function chargerChapitres() {
@@ -197,6 +270,10 @@ export function chargerChapitres() {
         ok++;
       }));
       const all = [];
+      const temoins = []; /* Lot 5 : paires {article, flux/média distinct} pour la corroboration */
+      const nomsFlux = new Map(); /* un même flux référencé par un média garde son nom d'outlet */
+      for (const m of (state.medias || [])) for (const f of (m.flux || [])) nomsFlux.set(f, m.nom);
+      const nomDeFlux = u => nomsFlux.get(u) || u.replace(/^https?:\/\//, '').replace(/\/.*$/, '');
       urls.forEach(u => {
         const arts = brutes.get(u) || [];
         for (const ch of parUrl.get(u)) {
@@ -204,7 +281,9 @@ export function chargerChapitres() {
             const fenetre = (ch.fenetreHeures ?? 24) * 3600e3;
             if (Date.now() - a.date.getTime() > fenetre) continue;
             if (scoreArticle(a, ch) < 1) continue;
-            all.push({ ...a, chapitreId: ch.id, chapitreNom: ch.nom });
+            const art = { ...a, chapitreId: ch.id, chapitreNom: ch.nom };
+            all.push(art);
+            temoins.push({ a: art, source: nomDeFlux(u) });
           }
         }
       });
@@ -217,8 +296,13 @@ export function chargerChapitres() {
         !(m.flux || []).every(f => /youtube\.com/i.test(f))); /* chaînes YouTube : onglet Vidéos uniquement */
       const artsMedia = [];
       await Promise.allSettled(mediasVis.map(m => chargerMedia(m).then(d => {
-        for (const a of (d?.articles || [])) artsMedia.push({ ...a, date: new Date(a.date), mediaNom: m.nom });
+        for (const a of (d?.articles || [])) {
+          const art = { ...a, date: new Date(a.date), mediaNom: m.nom };
+          artsMedia.push(art);
+          temoins.push({ a: art, source: m.nom });
+        }
       }).catch(() => {})));
+      compterMedias(temoins); /* badge « ✓ N médias » : flux/médias distincts par événement */
       state.feed = { time: Date.now(), articles: dedupliquer(all.concat(artsMedia)) };
       state.feedStats = { ok, total: urls.length, time: Date.now() };
       setStore('feed', state.feed);

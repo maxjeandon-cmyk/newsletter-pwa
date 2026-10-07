@@ -1,11 +1,11 @@
-/* sw.js v104 — Service worker de la PWA Newsletter.
+/* sw.js v105 — Service worker de la PWA Newsletter.
  * Stratégies : data/ et editions/ network-first (toujours frais en ligne, repli cache hors ligne) ;
  * le reste (coquille, js/, styles) cache-first pour un démarrage instantané.
- * À chaque déploiement de code : incrémenter CACHE (v103 → v104…) pour invalider les caches clients.
- * v104 : onglets Lecture et Feedback supprimés (6 entrées retirées), doublon
- * flux-rss-2.json nettoyé, les 17 chapitres de la chronique étudiante
- * rejoignent le précache (lecture hors ligne complète de l'onglet ✊). */
-const CACHE = 'newsletter-v104';
+ * À chaque déploiement de code : incrémenter CACHE (v104 → v105…) pour invalider les caches clients.
+ * v105 : lot 5 — badge « ✓ N médias » (corroboration client miroir du serveur, racines+chiffres)
+ * sur les articles repris par plusieurs flux, extrait coupé au mot (js/feeds.js v17, views/common.js,
+ * styles.css). data/ et tools/ inchangés (les relevés serveur ne comptent que la presse). */
+const CACHE = 'newsletter-v105';
 const ASSETS = [
   './',
   './index.html',

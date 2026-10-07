@@ -203,3 +203,5 @@ main{padding:0 14px;max-width:720px;margin:0 auto}
 /* v98 : intro météo du jour (onglet Édition) + ligne de recherche ville */
 .meteo-intro{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin:0 0 10px;font-size:14px}
 .meteo-intro .hint{color:var(--muted);font-size:12px}
+/* v105 : lot 5 — badge de corroboration sur les articles repris par plusieurs médias */
+.badge-medias{display:inline-block;font-size:10.5px;font-weight:600;color:#4caf7d;border:1px solid #4caf7d;border-radius:8px;padding:1px 7px;margin-left:6px;vertical-align:1px}
