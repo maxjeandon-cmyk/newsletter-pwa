@@ -1,25 +1,9 @@
 {
-  "date": "2026-10-07T03:28:39.841Z",
+  "date": "2026-10-07T03:37:46.588Z",
   "mode": "normal",
   "abonnements": 3,
-  "envoyes": 3,
+  "envoyes": 0,
   "morts": 0,
-  "resultats": [
-    {
-      "domaine": "updates.push.services.mozilla.com",
-      "ok": true,
-      "status": 201
-    },
-    {
-      "domaine": "web.push.apple.com",
-      "ok": true,
-      "status": 201
-    },
-    {
-      "domaine": "web.push.apple.com",
-      "ok": true,
-      "status": 201
-    }
-  ],
+  "resultats": [],
   "cleMatch": true
 }
