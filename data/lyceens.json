@@ -1,5 +1,5 @@
 {
-  "maj": "07/10/2026 11:29",
+  "maj": "07/10/2026",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Deux relevés ici : ce que dit le gouvernement, et les seules informations corroborées par plusieurs médias indépendants. La parole des élèves vit dans la chronique « Version des étudiants ».",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -42,16 +42,16 @@
       "verifie": true
     },
     {
-      "id": "amuwh8t4r-d55l",
-      "date": "06/10/2026",
-      "titre": "Colère des lycéens : Villepin et Ruffin vent debout ensemble contre Parcoursup",
-      "texte": "Dominique de Villepin et François Ruffin se sont une nouvelle fois affichés ensemble pour demander un budget de l’Education nationale sanctuarisé, le droit de vote à 16 ans et la fin de Parcoursup",
-      "source": "20 minutes / Le Figaro",
+      "id": "amuy9vr31-ib5f",
+      "date": "07/10/2026",
+      "titre": "SONDAGE - 82% des Français jugent les parents responsables des violences commises par leurs enfants devant les lycées",
+      "texte": "Plus de trois-quarts des Français considèrent les parents responsables des violences commises par leurs enfants pendant le blocus des lycées, selon un sondage pour Europe 1, CNews et le JDD. Alors qu…",
+      "source": "Europe 1 / BFMTV",
       "sources": [
-        "20 minutes",
-        "Le Figaro"
+        "Europe 1",
+        "BFMTV"
       ],
-      "url": "https://www.20minutes.fr/politique/4251677-20261006-colere-lyceens-villepin-ruffin-vent-debout-ensemble-contre-parcoursup?at_medium=display&at_campaign=149",
+      "url": "https://www.europe1.fr/societe/sondage-82-des-francais-jugent-les-parents-responsables-des-violences-commises-par-leurs-enfants-devant-les-lycees-1129232?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
     },
     {
@@ -174,6 +174,19 @@
   ],
   "faits": [
     {
+      "id": "aetumuy9vs08-1",
+      "date": "07/10/2026",
+      "titre": "EN DIRECT – Mobilisation lycéenne : malgré un nombre record d’interpellations, «il est excessif de parler de répression policière», juge Laurent Nuñez",
+      "texte": "Au lendemain d’une journée de mobilisation massive dans toute la France, les organisations lycéennes poursuivent ce mercredi les blocages, à la veille d’un «acte IV» dans la rue jeudi. Le Premier ministre, Sébastien Lecornu, doit s’exprimer dans la soirée.",
+      "source": "Libération / 20 minutes",
+      "sources": [
+        "Libération",
+        "20 minutes"
+      ],
+      "url": "https://www.liberation.fr/societe/education/en-direct-mobilisation-lyceenne-les-organisations-de-jeunesse-appellent-a-poursuivre-les-blocages-lintersyndicale-doit-sexprimer-20261007_5SKC4PXBSNF6LEOZONVQEZ7YOQ/",
+      "verifie": true
+    },
+    {
       "id": "aetumuxun1rd-1",
       "date": "07/10/2026",
       "titre": "Blocage des lycées : l’usage des grenades assourdissantes suspendu ; Lecornu s’exprimera ce soir",
@@ -195,11 +208,14 @@
       "date": "07/10/2026",
       "titre": "Mobilisation lycéenne : le policier auteur du tir tendu d’une grenade dans le visage d’un élève a été mis en examen",
       "texte": "Une enquête avait été ouverte par le parquet de Pontoise et confiée à l’IGPN après le tir survenu le 28 septembre à Saint-Ouen-l’Aumône (Val-d’Oise). Le fonctionnaire a été placé sous contrôle judici…",
-      "source": "Europe 1 / Libération / France Inter",
+      "source": "Europe 1 / Libération / France Inter / L'Humanité / Le Figaro / BFMTV",
       "sources": [
         "Europe 1",
         "Libération",
-        "France Inter"
+        "France Inter",
+        "L'Humanité",
+        "Le Figaro",
+        "BFMTV"
       ],
       "url": "https://www.liberation.fr/societe/police-justice/mobilisation-lyceenne-le-policier-auteur-du-tir-dune-grenade-lacrymogene-dans-le-visage-dun-eleve-a-ete-mis-en-examen-20261006_2TBP3PML4ZHEPPWHETPWOQOUUM/",
       "verifie": true
@@ -232,34 +248,17 @@
       "verifie": true
     },
     {
-      "id": "aetumux6uk70-2",
-      "date": "06/10/2026",
-      "titre": "Blocage, mobilisation lycéenne: \"Ce qui les caractérise, c'est la grande angoisse par rapport à leur avenir\", raconte Stéphane Troussel, président du département de la Seine-Saint-Denis",
-      "texte": "Grande journée de manifestation partout en France pour l'acte III de la mobilisation lycéenne. Soutenus par les syndicats, notamment de l'Éducation nationale qui appelle à faire grève, les lycéens manifestent ce mardi. Selon l'Union syndicale, ce sont 450.000 manifestants qui on…",
-      "source": "BFMTV / Europe 1 / 20 minutes / Public Sénat / Le Figaro / La Croix",
+      "id": "amuy9vr30-f2ve",
+      "date": "07/10/2026",
+      "titre": "Blocus des lycées : Un nombre d’interpellations record ? On a comparé avec les « gilets jaunes » et Mai 68",
+      "texte": "Le nombre d’interpellations semble astronomique depuis le début de la mobilisation lycéenne, et les comparaisons sont nombreuses avec les « gilets jaunes », Mai 68 ou encore les émeutes après la mort…",
+      "source": "20 minutes / Public Sénat / Libération",
       "sources": [
-        "BFMTV",
-        "Europe 1",
         "20 minutes",
         "Public Sénat",
-        "Le Figaro",
-        "La Croix"
+        "Libération"
       ],
-      "url": "https://www.bfmtv.com/politique/video-blocage-mobilisation-lyceenne-ce-qui-les-caracterise-c-est-la-grande-angoisse-par-rapport-a-leur-avenir-raconte-stephane-troussel-president-du-departement-de-la-seine-saint-denis_VN-202610060954.html",
-      "verifie": true
-    },
-    {
-      "id": "aetumux6uk70-1",
-      "date": "06/10/2026",
-      "titre": "Blocage, mobilisation lycéenne: la liste des revendications",
-      "texte": "Grande journée de manifestation partout en France pour l'acte III de la mobilisation lycéenne. Soutenus par les syndicats, notamment de l'Éducation nationale qui appelle à faire grève, les lycéens manifestent ce mardi. Selon l'Union syndicale, ce sont 450.000 manifestants qui on…",
-      "source": "BFMTV / L'Humanité / Europe 1",
-      "sources": [
-        "BFMTV",
-        "L'Humanité",
-        "Europe 1"
-      ],
-      "url": "https://www.bfmtv.com/societe/manifestations/video-blocage-mobilisation-lyceenne-la-liste-des-revendications_VN-202610060957.html",
+      "url": "https://www.20minutes.fr/societe/4251778-20261007-blocus-lycees-nombre-interpellations-record-compare-gilets-jaunes-mai-68?at_medium=display&at_campaign=149",
       "verifie": true
     },
     {
