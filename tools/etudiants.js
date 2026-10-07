@@ -4,10 +4,12 @@
  * Appelé par tools/maintenance.js à chaque run (3 h, 9 h, 15 h, 21 h Paris) :
  *   1. Moissonne les flux RSS de la presse (même catalogue que lyceens.js)
  *      et ne retient que les items du mouvement lycéen/étudiant.
- *   2. Construit UN paragraphe « relevé automatique » pour les dernières 6 h :
- *      faits bruts sourcés (titres repris verbatim, troncaturés), jamais
- *      reformulés — la rédaction narrative enrichie reste le travail des
- *      éditions de la newsletter. Champ "auto": true dans le paragraphe.
+ *   2. Construit UN paragraphe « relevé automatique » NARRATIF pour les
+ *      dernières 6 h : accroche temporelle + dateline + items regroupés en
+ *      volets avec entames tournantes. Les titres restent la matière
+ *      première (verbatim, tronqués), jamais reformulés — la rédaction
+ *      narrative enrichie reste le travail des éditions de la newsletter.
+ *      Champ "auto": true dans le paragraphe.
  *   3. Ajoute le paragraphe au dernier chapitre de data/etudiants/chapitres/ ;
  *      si ce chapitre dépasse 28 Ko, un nouveau chapitre est créé.
  *   4. Met à jour data/etudiants/index.json (maj, compteurs, octets).
@@ -161,6 +163,68 @@ async function verserFaitsCorrobores(uniques, journal) {
   return ajoutes;
 }
 
+/* v106 : paragraphe « relevé automatique » NARRATIF — le fil continue d'un
+ * relevé à l'autre. Trois ressorts de continuité :
+ *   1. accroche temporelle : l'écart avec le relevé précédent est mémorisé
+ *      dans l'index (releveDate) et relu à chaque run (« Six heures ont
+ *      passé depuis le relevé précédent… ») ;
+ *   2. dateline selon l'heure de Paris (« Dans la nuit du 6 au 7 octobre… ») ;
+ *   3. items enfilés par VOLETS (mobilisation, répression, gouvernement,
+ *      réactions, vie des lycées) avec des entames qui varient à chaque
+ *      relevé (releveCompteur dans l'index) — fini le mur de tirets.
+ * Les titres restent verbatim et tronqués, JAMAIS reformulés : c'est la
+ * garantie d'exactitude du dispositif (un script sans LLM ne « raconte »
+ * pas, il assemble). */
+const VOLETS = [
+  { id: 'repression', re: /polic|interpell|gaz lacrymo|mortier|arresta|blesse|garde a vue|violences|ordre public|armee|disper/i, phrases: ["Côté forces de l'ordre, les tensions ne faiblissent pas", "La répression, elle, continue de nourrir la colère", "Côté répression, la journée a laissé des traces"] },
+  { id: 'gouvernement', re: /ministre|gouvernement|macron|elysee|assemblee|beauvau|parcoursup|lecornu|senat|depute|porte-parole|premier ministre|calan|nunez|geffray|retailleau|berge|executif/i, phrases: ["Côté gouvernement, les réponses s'égrènent", "Du côté du pouvoir, chacun prend position", "À Beauvau comme à l'Élysée, on ajuste le discours"] },
+  { id: 'reactions', re: /raconte|observe|estime|declare|repond|aurait du|aurait dû|syndic|tizaoui|faure|troussel|corbiere|ramos|soutien|analyse|décrypt/i, phrases: ["Autour du mouvement, les voix se croisent", "Dans les réactions, le débat s'invite", "Les commentaires, eux, affluent"] },
+  { id: 'vie', re: /cours en|visio|cyberblocage|etudier|antilles|examens|concours|etablissement|parisup|enfai/i, phrases: ["Dans la vie des établissements, la mobilisation s'invente au quotidien", "Côté cours, la routine a volé en éclats", "Dans les lycées, la semaine se réinvente"] }
+];
+const PHRASES_MOBILISATION = ["Sur le terrain, la mobilisation tient", "Dans la rue, le mouvement garde son souffle", "Côté mobilisation, l'élan ne retombe pas", "La vague, elle, continue d'avancer"];
+const PHRASES_DATELINE = ["le mouvement poursuit sa route", "la chronique avance", "le fil du récit continue", "la journée s'écrit encore"];
+/* Classification sur la forme normalisée (sans accents) pour ne rien rater. */
+function voletDe(titre) { const n = norm(titre); for (const v of VOLETS) if (v.re.test(n) || v.re.test(titre)) return v.id; return 'mobilisation'; }
+function construireParagraphe(uniques, relevePrecedent, compteur) {
+  const maintenant = new Date();
+  const fmt = (o, d) => new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris', ...o }).format(d || maintenant);
+  const dateLongue = fmt({ dateStyle: 'long' });
+  const veilleLongue = fmt({ dateStyle: 'long' }, new Date(maintenant.getTime() - 24 * 3600 * 1000));
+  const heure = +fmt({ hour: 'numeric', hour12: false });
+  const dateline = heure < 6 ? 'Dans la nuit du ' + veilleLongue + ' au ' + dateLongue
+    : heure < 12 ? 'Au matin du ' + dateLongue
+    : heure < 18 ? "Dans l'après-midi du " + dateLongue
+    : 'Au soir du ' + dateLongue;
+  const phrases = [];
+  /* 1. Accroche : écart avec le relevé précédent. */
+  if (relevePrecedent) {
+    const h = Math.round((maintenant - new Date(relevePrecedent)) / 3600000);
+    if (h <= 2) phrases.push("Presque sans interruption, les nouvelles continuent d'arriver.");
+    else if (h <= 12) phrases.push(h + ' heures ont passé depuis le relevé précédent ; le fil continue.');
+    else if (h <= 48) phrases.push('Près de ' + h + ' heures ont passé depuis le relevé précédent ; la chronique reprend son fil.');
+    else phrases.push('Plusieurs jours ont passé depuis le relevé précédent ; la chronique reprend son fil.');
+  }
+  /* 2. Dateline. */
+  phrases.push(dateline + ', ' + PHRASES_DATELINE[compteur % PHRASES_DATELINE.length] + '.');
+  /* 3. Volets : regroupement + entames tournantes. */
+  const parVolet = new Map();
+  for (const it of uniques) {
+    const v = voletDe(it.titre);
+    if (!parVolet.has(v)) parVolet.set(v, []);
+    parVolet.get(v).push(it);
+  }
+  for (const volet of ['mobilisation', 'repression', 'gouvernement', 'reactions', 'vie']) {
+    const items = parVolet.get(volet);
+    if (!items || !items.length) continue;
+    const catalogue = volet === 'mobilisation' ? PHRASES_MOBILISATION : VOLETS.find(v => v.id === volet).phrases;
+    phrases.push(catalogue[compteur % catalogue.length] + ' : ' +
+      items.map(it => tronc(it.titre, 160) + ' (' + it.sources.join(', ') + ')').join(' ; ') + '.');
+  }
+  /* 4. Clôture : la promesse que le fil reprend, + trace horodatée. */
+  phrases.push('Le prochain relevé reprendra le fil. (Relevé automatique du ' + dateHeureFr() + ' — faits repris des titres de presse, non reformulés.)');
+  return phrases.join(' ');
+}
+
 async function main() {
   const aujourdhui = new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris' }).format(new Date());
   const depuis = new Date(Date.now() - FENETRE_HEURES * 3600 * 1000);
@@ -214,12 +278,8 @@ async function main() {
     return;
   }
 
-  /* Construction du paragraphe « relevé automatique » : verbatim, « auto ». */
-  const morceaux = uniques.map(it =>
-    '— ' + tronc(it.titre, 160) + ' (' + it.sources.join(', ') + ')');
-  const texteParagraphe = 'Relevé automatique du ' + dateHeureFr() + ' : ' +
-    uniques.length + ' information(s) des dernières heures. ' + morceaux.join(' ') +
-    ' Faits bruts repris des titres, non reformulés.';
+  /* Construction du paragraphe « relevé automatique » narratif (v106). */
+  const texteParagraphe = construireParagraphe(uniques, indexAvant.releveDate || null, indexAvant.releveCompteur || 0);
   const sourcesParagraphe = [...new Set(uniques.flatMap(it => it.sources.map(s => s)))];
 
   /* Ajout au dernier chapitre (nouveau fichier si trop gros). */
@@ -262,6 +322,10 @@ async function main() {
   }
   index.maj = aujourdhui;
   index.releveSigs = sigs;
+  /* v106 : mémoire du fil — date du dernier relevé publié (pour l'accroche
+   * du suivant) et compteur (pour faire tourner les entames de volets). */
+  index.releveDate = new Date().toISOString();
+  index.releveCompteur = (indexAvant.releveCompteur || 0) + 1;
   index.totalParagraphes = index.chapitres.reduce((a, c) => a + c.paragraphes, 0);
   /* v91 : l index porte des sections (chronique / complement) et la vue lit
    * uniquement sections[].chapitres. On met donc chaque section a jour a partir
