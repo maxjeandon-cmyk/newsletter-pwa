@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* v109 (lot 1) : anti-bruit, titre doit matcher le mouvement ; nettoyerTitre applique a l assemblage et aux faits, jamais sur les signatures. */
 /* tools/etudiants.js — Relevé automatique 6 h de la chronique « Version des étudiants »
  * (onglet ✊ Lycéens 2026, sous-onglet Version des étudiants).
  * Appelé par tools/maintenance.js à chaque run (3 h, 9 h, 15 h, 21 h Paris) :
@@ -22,6 +23,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { nettoyerTitre } = require('./titres.js');
 
 const DOSSIER = path.join(__dirname, '..', 'data', 'etudiants');
 const FICHIER_INDEX = path.join(DOSSIER, 'index.json');
@@ -81,7 +83,10 @@ const signature = s => racines(s).slice(0, 4).sort().join('|') + '#' + (norm(s).
 const RE_MOUVEMENT = /lyceen|lycee|blocus|blocage|parcoursup|etudiant|acte (trois|iii)/i;
 const RE_BRUIT = /(football|rugby|basket|handball|volley|championnat|brevet des colleges|bac de francai)/i;
 const RE_EMISSION = /(bonjour chez vous|l.heure des pros|edition speciale|grand entretien|la revue de presse|le direct|replay|podcast|l.interview)/i;
-const estMouvement = (t, d) => RE_MOUVEMENT.test(t) || RE_MOUVEMENT.test(d);
+/* v109 (lot 1) : anti-bruit -- le TITRE doit matcher le regex mouvement, la description
+ * ne suffit plus seule (cas reels : « Guerre au Moyen-Orient », « Australie : mine de
+ * charbon » passaient parce que seule la description mentionnait le mouvement). */
+const estMouvement = (t, d) => RE_MOUVEMENT.test(t);
 const estBruit = (t, d) => RE_BRUIT.test(t) || RE_EMISSION.test(t);
 
 async function moissonSource(src, depuis) {
@@ -142,8 +147,8 @@ async function verserFaitsCorrobores(uniques, journal) {
     faits.unshift({
       id: 'aetu' + stamp + '-' + (ajoutes + 1),
       date: new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris' }).format(new Date(it.date)),
-      titre: tronc(it.titre, 200),
-      texte: tronc(it.desc || it.titre, 280),
+      titre: tronc(nettoyerTitre(it.titre), 200),
+      texte: tronc(it.desc || nettoyerTitre(it.titre), 280),
       source: it.sources.join(' / '),
       sources: it.sources.slice(),
       url: it.lien || '',
@@ -238,7 +243,7 @@ function construireParagraphe(uniques, relevePrecedent, compteur, dateRef, nouve
     if (!items || !items.length) continue;
     const catalogue = volet === 'mobilisation' ? PHRASES_MOBILISATION : VOLETS.find(v => v.id === volet).phrases;
     phrases.push(catalogue[compteur % catalogue.length] + ' : ' +
-      items.map(it => tronc(it.titre, 160) + ' (' + it.sources.join(', ') + ')').join(' ; ') + '.');
+      items.map(it => tronc(nettoyerTitre(it.titre), 160) + ' (' + it.sources.join(', ') + ')').join(' ; ') + '.');
   }
   /* 4. Clôture : la promesse que le fil reprend, + trace horodatée. */
   phrases.push('Le prochain relevé reprendra le fil. (Relevé automatique du ' + fmt({ dateStyle: 'long', timeStyle: 'short' }) + ' — faits repris des titres de presse, non reformulés.)');
