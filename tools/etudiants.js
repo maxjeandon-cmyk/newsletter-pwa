@@ -10,8 +10,10 @@
  *      première (verbatim, tronqués), jamais reformulés — la rédaction
  *      narrative enrichie reste le travail des éditions de la newsletter.
  *      Champ "auto": true dans le paragraphe.
- *   3. Ajoute le paragraphe au dernier chapitre de data/etudiants/chapitres/ ;
- *      si ce chapitre dépasse 28 Ko, un nouveau chapitre est créé.
+ *   3. Ajoute le paragraphe au chapitre DU JOUR de data/etudiants/chapitres/
+ *      (index.chapitreJour) ; un nouveau chapitre d acte est créé à chaque
+ *      changement de jour (suivi quotidien), jamais par taille — le seuil
+ *      28 Ko devient un simple garde-fou consigné en avertissement.
  *   4. Met à jour data/etudiants/index.json (maj, compteurs, octets).
  * data/ est network-first : pas de bump de CACHE du service worker.
  * Sortie stdout : JSON { date, modifie, ajoutes, items, erreur? } pour
@@ -25,7 +27,7 @@ const DOSSIER = path.join(__dirname, '..', 'data', 'etudiants');
 const FICHIER_INDEX = path.join(DOSSIER, 'index.json');
 const UA = 'Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0';
 const FENETRE_HEURES = 7;   /* fenêtre de fraîcheur : les dernières ~6 h (+1 de marge) */
-const MAX_OCTETS_CHAPITRE = 28000; /* au-delà, nouveau fichier chapitre */
+const MAX_OCTETS_CHAPITRE = 28000; /* garde-fou : avertissement seulement, jamais de scission (v108) */
 
 /* Flux RSS vérifiés (catalogue data/flux-rss.json, testés le 04/10/2026). */
 const SOURCES = [
@@ -185,7 +187,23 @@ const PHRASES_MOBILISATION = ["Sur le terrain, la mobilisation tient", "Dans la 
 const PHRASES_DATELINE = ["le mouvement poursuit sa route", "la chronique avance", "le fil du récit continue", "la journée s'écrit encore"];
 /* Classification sur la forme normalisée (sans accents) pour ne rien rater. */
 function voletDe(titre) { const n = norm(titre); for (const v of VOLETS) if (v.re.test(n) || v.re.test(titre)) return v.id; return 'mobilisation'; }
-function construireParagraphe(uniques, relevePrecedent, compteur, dateRef) {
+/* v108 : ouverture d acte — quand le paragraphe ouvre le chapitre du jour
+ * nouvellement créé, l accroche standard annonce la nouvelle journée. */
+const ouvertureActe = (h) =>
+  h + " heures ont passé depuis le relevé précédent ; une nouvelle journée de suivi s'ouvre, le fil continue.";
+
+/* Numéro d acte en chiffres romains (Acte V, Acte VI…) — lisible au fil de la
+ * chronologie, comme les actes rédigés à la main (c4 : « Acte 1 », c17 :
+ * « Acte III »). */
+const romain = (n) => {
+  const table = [[10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']];
+  let reste = Math.max(1, Math.round(+n || 1));
+  let out = '';
+  for (const [v, s] of table) while (reste >= v) { out += s; reste -= v; }
+  return out;
+};
+
+function construireParagraphe(uniques, relevePrecedent, compteur, dateRef, nouvelActe) {
   const maintenant = dateRef ? new Date(dateRef) : new Date();
   const fmt = (o, d) => new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris', ...o }).format(d || maintenant);
   const dateLongue = fmt({ dateStyle: 'long' });
@@ -202,7 +220,7 @@ function construireParagraphe(uniques, relevePrecedent, compteur, dateRef) {
   if (relevePrecedent) {
     const h = Math.round((maintenant - new Date(relevePrecedent)) / 3600000);
     if (h <= 2) phrases.push("Presque sans interruption, les nouvelles continuent d'arriver.");
-    else if (h <= 12) phrases.push(h + ' heures ont passé depuis le relevé précédent ; le fil continue.');
+    else if (h <= 12) phrases.push(nouvelActe ? ouvertureActe(h) : h + ' heures ont passé depuis le relevé précédent ; le fil continue.');
     else if (h <= 48) phrases.push('Près de ' + h + ' heures ont passé depuis le relevé précédent ; la chronique reprend son fil.');
     else phrases.push('Plusieurs jours ont passé depuis le relevé précédent ; la chronique reprend son fil.');
   }
@@ -280,28 +298,37 @@ async function main() {
     return;
   }
 
-  /* Construction du paragraphe « relevé automatique » narratif (v106). */
-  const texteParagraphe = construireParagraphe(uniques, indexAvant.releveDate || null, indexAvant.releveCompteur || 0);
-  const sourcesParagraphe = [...new Set(uniques.flatMap(it => it.sources.map(s => s)))];
-
-  /* Ajout au dernier chapitre (nouveau fichier si trop gros). */
+  /* v108 : placement par JOUR — index.chapitreJour = { id, fichier, date }.
+   * Si le relevé précédent date du même jour (heure de Paris), le paragraphe
+   * rejoint le chapitre du jour ; sinon (nouveau jour ou champ absent) un
+   * nouveau chapitre d acte est créé : prochain fichier numérique libre,
+   * id c<numero>, titre « Acte <prochainActe> — <date longue> ». */
   const fichiers = fs.readdirSync(path.join(DOSSIER, 'chapitres'))
     .filter(f => /^\d+\.json$/.test(f)).sort();
-  let dernierFichier = fichiers[fichiers.length - 1];
-  let chap = JSON.parse(fs.readFileSync(path.join(DOSSIER, 'chapitres', dernierFichier), 'utf8'));
-  let numero = parseInt(dernierFichier, 10);
+  const chapitreJour = indexAvant.chapitreJour || null;
+  let dernierFichier;
+  let chap;
+  let numero;
   let nouveauChapitre = false;
-  if (fs.statSync(path.join(DOSSIER, 'chapitres', dernierFichier)).size > MAX_OCTETS_CHAPITRE) {
-    numero += 1;
+  if (chapitreJour && chapitreJour.date === aujourdhui && chapitreJour.fichier) {
+    dernierFichier = chapitreJour.fichier.replace(/^chapitres\//, '');
+    chap = JSON.parse(fs.readFileSync(path.join(DOSSIER, 'chapitres', dernierFichier), 'utf8'));
+    numero = parseInt(dernierFichier, 10);
+  } else {
+    numero = (fichiers.length ? parseInt(fichiers[fichiers.length - 1], 10) : 0) + 1;
     dernierFichier = String(numero).padStart(2, '0') + '.json';
+    const dateLongue = new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris', dateStyle: 'long' }).format(new Date());
     chap = {
       id: 'c' + numero,
-      periode: 'Relevés automatiques — à partir du ' + aujourdhui,
-      titre: 'La suite — relevés automatiques',
+      periode: dateLongue + ' — suivi de la journée',
+      titre: 'Acte ' + romain(indexAvant.prochainActe || 1) + ' — ' + dateLongue,
       paragraphes: []
     };
     nouveauChapitre = true;
   }
+  const texteParagraphe = construireParagraphe(uniques, indexAvant.releveDate || null, indexAvant.releveCompteur || 0, null, nouveauChapitre && chap.paragraphes.length === 0);
+  const sourcesParagraphe = [...new Set(uniques.flatMap(it => it.sources.map(s => s)))];
+
   const idPar = chap.id + 'p' + (chap.paragraphes.length + 1);
   chap.paragraphes.push({ id: idPar, texte: texteParagraphe, sources: sourcesParagraphe, auto: true });
   fs.writeFileSync(path.join(DOSSIER, 'chapitres', dernierFichier), JSON.stringify(chap, null, 2) + '\n');
@@ -325,10 +352,18 @@ async function main() {
   index.maj = aujourdhui;
   index.releveSigs = sigs;
   /* v106 : mémoire du fil — date du dernier relevé publié (pour l'accroche
-   * du suivant) et compteur (pour faire tourner les entames de volets). */
+   * du suivant) et compteur (pour faire tourner les entames de volets).
+   * Chaîne narrative GLOBALE : continus d'un chapitre/jour à l'autre. */
   index.releveDate = new Date().toISOString();
   index.releveCompteur = (indexAvant.releveCompteur || 0) + 1;
+  /* v108 : mémoire du chapitre du jour + numéro du prochain acte. */
+  if (nouveauChapitre) index.prochainActe = (index.prochainActe || 1) + 1;
+  index.chapitreJour = { id: chap.id, fichier: 'chapitres/' + dernierFichier, date: aujourdhui };
+  const octetsChapitre = fs.statSync(path.join(DOSSIER, 'chapitres', dernierFichier)).size;
   index.totalParagraphes = index.chapitres.reduce((a, c) => a + c.paragraphes, 0);
+  const avertissement = octetsChapitre > MAX_OCTETS_CHAPITRE
+    ? 'chapitre ' + chap.id + ' > ' + MAX_OCTETS_CHAPITRE + ' octets (' + octetsChapitre + ')'
+    : null;
   /* v91 : l index porte des sections (chronique / complement) et la vue lit
    * uniquement sections[].chapitres. On met donc chaque section a jour a partir
    * de index.chapitres pour que les releves auto restent visibles cote client.
@@ -365,6 +400,7 @@ async function main() {
     chapitre: chap.id,
     fichier: 'data/etudiants/chapitres/' + dernierFichier,
     nouveauChapitre,
+    avertissement,
     echecs
   }) + '\n');
 }

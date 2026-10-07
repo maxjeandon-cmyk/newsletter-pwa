@@ -1,8 +1,11 @@
 #!/usr/bin/env node
-/* tools/maintenance.js — Agent de maintenance (v37).
+/* tools/maintenance.js — Agent de maintenance (v38).
  * Toutes les 6 h (3 h, 9 h, 15 h, 21 h heure de Paris) :
  * v37 : pipeline feedback supprime (onglet Feedback retire de l'app le
  * 07/10/2026) ; la table Supabase feedback reste en place, inerte.
+ * v38 : chronique etudiants — un chapitre par jour de suivi (nouvel acte
+ * a chaque changement de jour, index.chapitreJour), plus aucune scission
+ * par taille (le seuil 28 Ko devient un simple avertissement).
  * Aucune dépendance : fetch natif (Node >= 18).
  * Env : SUPABASE_URL, SUPABASE_SERVICE_ROLE, GH_TOKEN (Contents: RW).
  */
@@ -158,14 +161,16 @@ async function main() {
 
   /* 2 quater. Chronique « Version des étudiants » : tools/etudiants.js
    * moissonne les flux RSS des dernières ~6 h et ajoute UN paragraphe
-   * « relevé automatique » au dernier chapitre de data/etudiants/ (crée un
-   * nouveau fichier chapitre si le dernier dépasse 28 Ko). Idempotent :
-   * si les mêmes items sont déjà dans le dernier relevé, rien n'est écrit. */
+   * « relevé automatique » au chapitre du jour de data/etudiants/ — un
+   * nouveau chapitre (nouvel acte) est créé à chaque changement de jour,
+   * jamais par taille. Idempotent : si les mêmes items sont déjà dans le
+   * dernier relevé, rien n'est écrit. */
   let etu = { modifie: false, ajoutes: 0, items: 0, fichier: null };
   try {
     etu = JSON.parse(execFileSync(process.execPath, ['tools/etudiants.js'], { encoding: 'utf8', env: process.env, timeout: 240000 }));
     console.log('Étudiants : ' + etu.items + ' info(s) des dernières heures, ' + etu.ajoutes +
-      ' paragraphe(s) ajouté(s) au chapitre ' + etu.chapitre + '.');
+      ' paragraphe(s) ajouté(s) au chapitre ' + etu.chapitre +
+      (etu.nouveauChapitre ? ' (nouveau chapitre du jour)' : '') + '.');
   } catch (e) {
     console.error('Chronique étudiants impossible : ' + (e.stdout || e.message));
     etu.erreur = String(e.stdout || e.message || e).slice(0, 150);
@@ -251,7 +256,7 @@ async function main() {
     heure: heureFr,
     relevesOng: { rafraichis: ong.rafraichis, echecs: ong.echecs, publie: ong.modifie && !ong.erreur },
     lyceens: { nouvelles: lyc.nouvelles, fusionnees: lyc.fusionnees, moissonnes: lyc.moissonnes, total: lyc.total, publie: lyc.modifie && !lyc.erreur },
-    etudiants: { items: etu.items, ajoutes: etu.ajoutes, chapitre: etu.chapitre || null, publie: etu.modifie && !etu.erreur },
+    etudiants: { items: etu.items, ajoutes: etu.ajoutes, chapitre: etu.chapitre || null, nouveauChapitre: !!etu.nouveauChapitre, publie: etu.modifie && !etu.erreur },
     verifs: etat.verifs,
     problemes: etat.problemes,
     intervention: etat.intervention
