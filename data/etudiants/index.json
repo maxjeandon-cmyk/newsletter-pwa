@@ -3,7 +3,7 @@
   "intro": "Chronique narrative du mouvement lycéen et étudiant de l'automne 2026, écrite du point de vue des élèves : de l'amorce de Créteil au dernier acte en date, puis un ajout automatique toutes les six heures. Le « Complément étudiants » rassemble les chapitres transverses. Sources privilégiées : médias indépendants (Basta !, Contre Attaque, Café pédagogique, StreetPress, L'Humanité, Politis, Acrimed, Le Média, Bondy Blog), fils Reddit (r/etudiants, r/enseignants, r/france), observation des commentaires TikTok, Instagram et Snapchat, et Wikipédia comme colonne vertébrale factuelle.",
   "note": "Méthode : chaque paragraphe cite ses sources. Les paragraphes marqués « auto » sont des relevés bruts ajoutés par le pipeline toutes les 6 h (faits sourcés, sans réécriture) ; la rédaction narrative approfondie est assurée lors des éditions de la newsletter. Badge ✅ (corroboré par au moins deux médias distincts) et ⚠️ (une seule source) : ces distinctions s'appliquent aux relevés automatiques.",
   "maj": "07/10/2026",
-  "totalParagraphes": 82,
+  "totalParagraphes": 81,
   "chapitres": [
     {
       "id": "c1",
@@ -139,15 +139,15 @@
       "periode": "6 octobre 2026 — l'acte III",
       "titre": "Acte III : la France entière dans la rue",
       "paragraphes": 9,
-      "octets": 16847
+      "octets": 15599
     },
     {
       "id": "c18",
       "fichier": "chapitres/18.json",
       "periode": "7 octobre 2026 — suivi de la journée",
       "titre": "Acte IV — 7 octobre 2026",
-      "paragraphes": 5,
-      "octets": 10978
+      "paragraphes": 4,
+      "octets": 6516
     }
   ],
   "releveSigs": [
@@ -248,15 +248,15 @@
           "periode": "6 octobre 2026 — l'acte III",
           "titre": "Acte III : la France entière dans la rue",
           "paragraphes": 9,
-          "octets": 16847
+          "octets": 15599
         },
         {
           "id": "c18",
           "fichier": "chapitres/18.json",
           "periode": "7 octobre 2026 — suivi de la journée",
           "titre": "Acte IV — 7 octobre 2026",
-          "paragraphes": 5,
-          "octets": 10978
+          "paragraphes": 4,
+          "octets": 6516
         }
       ]
     },
