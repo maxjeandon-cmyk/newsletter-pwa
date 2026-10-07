@@ -40,6 +40,20 @@
         "Europe 1"
       ],
       "auto": true
+    },
+    {
+      "id": "c18p4",
+      "texte": "6 heures ont passé depuis le relevé précédent ; le fil continue. Dans l'après-midi du 7 octobre 2026, la chronique avance. Dans la rue, le mouvement garde son souffle : Mouvement lycéen : entre reprise des cours et blocages (France 24) ; Blocage des lycées : la mobilisation « en net recul » ; 30 000 élèves privés de cours (La Croix) ; Blocus des lycées : pourquoi LFI s’en prend à Nathanaël Combary, figure du mouvement lycéen ? (Europe 1) ; Blocus virtuels : les lycéens poursuivent leur révolte du bitume aux serveurs (L'Humanité) ; Révocation de Bally Bagayoko : «Il y aurait des arguments [...] mais je n'y crois pas une seconde», pense Gabrielle Cluzel (Europe 1) ; Blocus des lycéens : «Les revendications sont apparues, en réalité, après le mouvement», juge Olivier Vial (Europe 1). Côté répression, la journée a laissé des traces : EN DIRECT – Mobilisation lycéenne : malgré un nombre record d’interpellations, «il est excessif de parler de répression policière», juge Laurent Nuñez (Libération, 20 minutes) ; SONDAGE - 82% des Français jugent les parents responsables des violences commises par leurs enfants devant les lycées (Europe 1) ; Blocus des lycées : «Nous sommes à l'heure de la post-vérité», Gabrielle Cluzel dénonce le récit de LFI contre la police (Europe 1) ; Marseille : un élève de 17 ans et des CRS blessés en marge d’un blocus lycéen (Le Figaro). À Beauvau comme à l'Élysée, on ajuste le discours : École, méga-bassines, retraite… Comment le macronisme a muselé l’expression citoyenne (L'Humanité) ; « Le gouvernement veut que les choses se calment, nous nous voulons que les choses changent ! » : la mobilisation lycéenne se poursuit à Paris (L'Humanité). Le prochain relevé reprendra le fil. (Relevé automatique du 7 octobre 2026 à 17:38 — faits repris des titres de presse, non reformulés.)",
+      "sources": [
+        "Libération",
+        "20 minutes",
+        "Europe 1",
+        "France 24",
+        "La Croix",
+        "L'Humanité",
+        "Le Figaro"
+      ],
+      "auto": true
     }
   ]
 }
