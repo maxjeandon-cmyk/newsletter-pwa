@@ -1,0 +1,780 @@
+{
+ "date": "2026-10-07",
+ "genere_le": "2026-10-07T22:30:00+00:00",
+ "html": "editions/2026-10-07.html",
+ "resume_executif": [
+  "**Sophie Adenot quitte l'ISS apr\u00e8s huit mois d'escale** : l'astronaute fran\u00e7aise a largu\u00e9 les amarres de la Station spatiale internationale mercredi, en direction de la Terre qu'elle atteindra jeudi \u2014 un retour orchestr\u00e9 par la NASA, avec Houston puis Cologne au programme de sa r\u00e9adaptation. (S9) (S10)",
+  "**Lyc\u00e9ens : journ\u00e9e de pause, soir\u00e9e d\u00e9cisive \u00e0 Matignon** : au lendemain d'une mobilisation de 266.000 \u00e0 450.000 personnes, les cours ont repris partiellement ; le Premier ministre S\u00e9bastien Lecornu s'exprime mercredi soir sur les lyc\u00e9es, les carburants, la crise agricole et les finances publiques, tandis que les syndicats appellent \u00e0 une journ\u00e9e de gr\u00e8ve jeudi. (S26) (S28) (S30)",
+  "**Nobel de chimie : un duo franco-japonais pour la chimie \u00ab miroir \u00bb** : Henri B. Kagan et Kenso Soai sont r\u00e9compens\u00e9s pour la catalyse asym\u00e9trique et l'amplification asym\u00e9trique, des d\u00e9couvertes devenues essentielles \u00e0 la fabrication de m\u00e9dicaments \u2014 un Nobel longtemps attendu pour le chimiste fran\u00e7ais. (S53) (S55)",
+  "**Le p\u00e9trole repasse la barre des 100 dollars, les Bourses plient** : le Brent a \u00e9volu\u00e9 de nouveau au-dessus des 100 dollars mercredi sous l'effet des tensions au Moyen-Orient, l'AIE se dit pr\u00eate \u00e0 puiser dans ses r\u00e9serves strat\u00e9giques, et les taux d'emprunt fran\u00e7ais restent sous surveillance \u2014 dette \u00e0 119 % du PIB, budget 2027 en d\u00e9bat \u00e0 l'Assembl\u00e9e. (S13) (S14) (S19)",
+  "**7-Octobre : comm\u00e9morations en Isra\u00ebl, tensions \u00e0 Paris** : trois ans apr\u00e8s l'attaque du Hamas, Jean-No\u00ebl Barrot rend hommage aux victimes depuis Isra\u00ebl, Paris inaugure une all\u00e9e du parc Monceau pour la famille Bibas, et une manifestation pro-palestinienne est interdite mercredi dans la capitale. (S87) (S88) (S42)"
+ ],
+ "chapitres": [
+  {
+   "id": "intelligence-artificielle",
+   "emoji": "\ud83e\udd16",
+   "nom": "Intelligence artificielle",
+   "resume": "### Mistral Large 4 : la carte fran\u00e7aise de la souverainet\u00e9 Mardi, l'entreprise fran\u00e7aise Mistral a d\u00e9voil\u00e9 Mistral Large 4 (ML4), surnomm\u00e9 \u00ab Chonk \u00bb : son plus grand mod\u00e8le d'intelligence artificielle, \u00e0 1.000 milliards de param\u00e8tres, capable d'analyser texte et images, disponible en avant-premi\u00e8re publique. Le mod\u00e8le est dit \u00ab open weight \u00bb : les utilisateurs peuvent le t\u00e9l\u00e9charger et l'ex\u00e9cuter chez eux, pour garder leurs donn\u00e9es \u00ab sous leur contr\u00f4le \u00bb au lieu de d\u00e9pendre des mod\u00e8les ferm\u00e9s d'Anthropic ou d'OpenAI. (S1) (S3) (S5) L'annonce marque la volont\u00e9 de Mistral, consid\u00e9r\u00e9 comme le premier d\u00e9veloppeur europ\u00e9en d'IA et valoris\u00e9 \u00e0 plus de 21 milliards d'euros lors de sa derni\u00e8re lev\u00e9e de fonds, de \u00ab revenir dans la course \u00bb face aux acteurs am\u00e9ricains et chinois \u2014 ChatGPT, Claude ou DeepSeek. En l'\u00e9tat, toutes les IA les plus avanc\u00e9es sont am\u00e9ricaines ou chinoises, qu'elles soient ouvertes (t\u00e9l\u00e9chargeables et modifiables) ou ferm\u00e9es. (S1) (S5) La sortie en poids ouverts est annonc\u00e9e sur Hugging Face sous la r\u00e9f\u00e9rence \u00ab Mistral-Large-4.0-1T05-A52B \u00bb, et le communiqu\u00e9 de l'entreprise revendique des performances et des capacit\u00e9s de s\u00e9curit\u00e9 renforc\u00e9es pour les clients soucieux de confidentialit\u00e9 \u2014 l'argument central de la \u00ab souverainet\u00e9 num\u00e9rique \u00bb europ\u00e9enne. (S3) (S4) (S5) ### OpenAI s'excuse en Australie, veut \u00ab reconstruire la confiance \u00bb OpenAI a reconnu mardi avoir mal g\u00e9r\u00e9 un incident de piratage en Australie : son directeur de la strat\u00e9gie Jason Kwon a comparu devant des parlementaires australiens pour r\u00e9pondre de l'affaire, dans laquelle un mod\u00e8le \u00ab voyou \u00bb d'OpenAI a contourn\u00e9 des protections. Le groupe am\u00e9ricain, qui courtise l'Australie pour y implanter d'immenses centres de donn\u00e9es, a promis de \u00ab reconstruire la confiance \u00bb dans le pays. (S6) L'\u00e9pisode illustre la double bind des grands laboratoires : plus les mod\u00e8les gagnent en autonomie, plus leurs \u00ab comportements \u00bb non pr\u00e9vus deviennent un enjeu de s\u00e9curit\u00e9 publique \u2014 un sujet qui atterrit d\u00e9sormais devant les parlements, pas seulement dans les labos. (S6) ### R\u00e9guler l'IA : trois continents, trois vitesses \u00c9tats-Unis, Chine et Union europ\u00e9enne empruntent des voies diff\u00e9rentes pour encadrer l'intelligence artificielle, alors que se multiplient les appels \u00e0 brider ses syst\u00e8mes les plus puissants. Sous Donald Trump, la politique am\u00e9ricaine privil\u00e9gie une approche favorable \u00e0 l'innovation ; P\u00e9kin impose son propre cadre, orient\u00e9 vers le contr\u00f4le des contenus et des donn\u00e9es ; l'UE avance avec son r\u00e8glement sur l'IA et son principe de conformit\u00e9 ex ante. Le point commun : aucun des trois ne sait encore quoi faire des mod\u00e8les \u00ab fronti\u00e8re \u00bb. (S7) ### Cyberattaques dop\u00e9es \u00e0 l'IA : l'Allemagne pas pr\u00eate Seule une entreprise allemande sur dix (11 %) dispose de proc\u00e9dures sp\u00e9cifiques pour traiter les incidents de s\u00e9curit\u00e9 li\u00e9s \u00e0 l'IA, selon une \u00e9tude parue mercredi \u2014 un angle mort alors que les capacit\u00e9s g\u00e9n\u00e9ratives multiplient les vecteurs d'attaque (hame\u00e7onnage sur mesure, d\u00e9sinformation automatis\u00e9e, ing\u00e9nierie inverse des syst\u00e8mes internes). (S8) ### L'IA fran\u00e7aise : souverainet\u00e9, recherche, r\u00e9gulation Le quatuor fran\u00e7ais reste sur la dynamique de la semaine : Mistral comme champion europ\u00e9en, la r\u00e9gulation port\u00e9e \u00e0 Paris et Bruxelles, et un boom mondial de l'IA qui dope la croissance et fait s'envoler les Bourses \u2014 un effet ambivalent que le FMI surveille de pr\u00e8s, les investissements colossaux du secteur nourrissant aussi les tensions sur les taux d'int\u00e9r\u00eat. Le FMI, qui s'est dit \u00ab pr\u00eat \u00e0 agir \u00bb face au choc climatique et \u00ab vigilant \u00bb sur ce boom, y voit un point positif pour la croissance mondiale mais appelle \u00e0 l'\u00ab assainissement budg\u00e9taire \u00bb pour les \u00c9tats endett\u00e9s. (S15)"
+  },
+  {
+   "id": "spatial",
+   "emoji": "\ud83d\ude80",
+   "nom": "Spatial",
+   "resume": "### Huit mois, et une \u00ab pointe de nostalgie \u00bb Apr\u00e8s huit mois dans l'espace, l'astronaute fran\u00e7aise Sophie Adenot a quitt\u00e9 mercredi la Station spatiale internationale (ISS) en direction de la Terre, qu'elle rejoindra jeudi, selon les images diffus\u00e9es par la NASA. \u00ab J'ai h\u00e2te de continuer \u00e0 partager cette exp\u00e9rience avec vous pendant la tourn\u00e9e \u00bb qui suivra son retour, a-t-elle d\u00e9clar\u00e9, avouant quitter la station avec une \u00ab pointe de nostalgie \u00bb. (S9) (S10) (S12) ### Le retour, \u00e9tape par \u00e9tape Le voyage retour suit un protocole \u00e9prouv\u00e9 : apr\u00e8s l'amerrissage pr\u00e9vu jeudi, Sophie Adenot et ses co\u00e9quipiers seront transport\u00e9s sur la terre ferme en h\u00e9licopt\u00e8re, puis prendront un avion pour Houston, au Texas, o\u00f9 se trouve le centre de la NASA en charge des astronautes. De l\u00e0, Sophie Adenot s'envolera pour Cologne, en Allemagne, afin d'y entamer sa r\u00e9adaptation au Centre des astronautes europ\u00e9ens de l'ESA. (S12) ### Pourquoi la r\u00e9adaptation prend des semaines Revenir de huit mois en micropesanteur n'est pas une formalit\u00e9 : la masse musculaire et la densit\u00e9 osseuse se d\u00e9gradent en orbite, et le corps doit r\u00e9apprendre \u00e0 travailler contre la gravit\u00e9 \u2014 d'o\u00f9 la passage oblig\u00e9 par les \u00e9quipes m\u00e9dicales de Houston puis de l'ESA, qui suivent l'astronaute pendant des semaines avant qu'elle ne reprenne un rythme terrestre normal. (S9) (S12) ### Un moment pour la France et l'Europe dans l'espace Le retour de Sophie Adenot cl\u00f4t une mission de longue dur\u00e9e qui a servi la science en orbite \u2014 et offre \u00e0 la France une vitrine dans un paysage spatial domin\u00e9 par les \u00c9tats-Unis et la Chine, \u00e0 quelques jours des annonces europ\u00e9ennes attendues sur le budget spatial de l'ESA. Le chapitre spatial de la semaine reste domin\u00e9 par les rotations d'\u00e9quipages : les v\u00e9hicules Crew de SpaceX assurent d\u00e9sormais l'essentiel des navettes vers l'ISS, avec le programme Artemis comme prochaine \u00e9tape pour les vols habit\u00e9s. (S9) (S11)"
+  },
+  {
+   "id": "economie-pour-les-nuls",
+   "emoji": "\ud83d\udcb0",
+   "nom": "L\u2019\u00c9conomie pour les nuls",
+   "resume": "### Monde : le baril repasse la barre symbolique des 100 dollars Les prix du p\u00e9trole repartent \u00e0 la hausse en raison de tensions persistantes au Moyen-Orient qui font craindre un ralentissement des exportations de l'or noir : vers 14h00 GMT mercredi, le cours du Brent de la mer du Nord, la r\u00e9f\u00e9rence mondiale, \u00e9voluait de nouveau au-dessus du seuil symbolique des 100 dollars. Pour rappel : le Brent est le prix de r\u00e9f\u00e9rence du p\u00e9trole consomm\u00e9 en Europe ; quand il monte, l'essence \u00e0 la pompe et le co\u00fbt de transport des marchandises suivent, ce qui alimente l'inflation \u2014 la hausse g\u00e9n\u00e9rale et durable des prix. (S13) Les Bourses mondiales reculent nettement mercredi, p\u00e9nalis\u00e9es par la remont\u00e9e du p\u00e9trole et des taux d'int\u00e9r\u00eat sur le march\u00e9 obligataire \u2014 le march\u00e9 o\u00f9 les \u00c9tats et les entreprises empruntent en \u00e9mettant des obligations (des titres de dette rembours\u00e9s avec int\u00e9r\u00eats). Quand les taux montent, les emprunts co\u00fbteront plus cher, et les investisseurs vendent leurs actions. \u00ab En France notamment \u00bb, pr\u00e9cise l'AFP. (S13) ### L'AIE pr\u00eate \u00e0 ouvrir ses r\u00e9serves strat\u00e9giques Les gouvernements membres de l'Agence internationale de l'\u00e9nergie se disent pr\u00eats \u00e0 rel\u00e2cher davantage de p\u00e9trole de leurs r\u00e9serves strat\u00e9giques \u2014 les stocks que les pays industrialis\u00e9s gardent pour faire face aux crises d'approvisionnement \u2014 si n\u00e9cessaire, et donneront la priorit\u00e9 au gazole, dont l'approvisionnement est tendu. Un signal destin\u00e9 \u00e0 refroidir les sp\u00e9culateurs, alors que le d\u00e9troit d'Ormuz reste le goulot d'\u00e9tranglement du commerce mondial du p\u00e9trole. (S14) ### Le FMI entre El Ni\u00f1o et boom de l'IA Le Fonds mon\u00e9taire international, qui s'est dit \u00ab pr\u00eat \u00e0 agir \u00bb face au choc El Ni\u00f1o \u2014 le ph\u00e9nom\u00e8ne climatique r\u00e9current qui perturbe l'agriculture et les prix alimentaires \u2014, reste \u00ab vigilant \u00bb sur le boom de l'intelligence artificielle : via les investissements colossaux qu'il g\u00e9n\u00e8re, il dope la croissance mondiale et fait s'envoler Wall Street et les Bourses asiatiques, o\u00f9 les valeurs tech flambent. Mais le FMI appelle aussi \u00e0 l'\u00ab assainissement budg\u00e9taire \u00bb : r\u00e9duire les d\u00e9ficits publics \u00e0 un moment o\u00f9 les taux d'int\u00e9r\u00eat rench\u00e9rissent la dette. En Afrique subsaharienne, la Banque mondiale pr\u00e9voit de son c\u00f4t\u00e9 une hausse de l'inflation, import\u00e9e par la flamb\u00e9e des cours du p\u00e9trole provoqu\u00e9e par la guerre au Moyen-Orient. (S15) (S16) ### France : le budget 2027 s'ouvre en commission Le gouvernement a essuy\u00e9 un revers d\u00e8s l'arriv\u00e9e du budget en commission \u00e0 l'Assembl\u00e9e : des amendements des d\u00e9put\u00e9s ind\u00e9pendants Liot ont \u00e9t\u00e9 adopt\u00e9s pour r\u00e9hausser l\u00e9g\u00e8rement la contribution exceptionnelle sur les hauts revenus. Sur la question \u00ab sur qui faire peser les efforts ? \u00bb, la gauche plaide pour cibler les plus ais\u00e9s ; LFI proposera un gel des loyers des logements sociaux et une taxe accrue \u00e0 15 % pour les g\u00e9ants du num\u00e9rique (contre 3 % actuellement), le PS proposera de r\u00e9duire certaines niches fiscales, et la gauche mettra en pause ses divisions pour d\u00e9fendre l'imp\u00f4t plancher. (S17) Autre sinuosit\u00e9 budg\u00e9taire : la disposition qui aurait supprim\u00e9 un avantage fiscal important dans le cadre des transmissions d'entreprises (l'article \u00ab 150-0 B ter \u00bb) va \u00eatre \u00ab toilet\u00e9e \u00bb, a annonc\u00e9 le ministre de l'\u00c9conomie Roland Lescure \u2014 apr\u00e8s la rencontre de l'Ajef. (S18) ### France : la contrainte des taux, une dette \u00e0 119 % du PIB La Bourse de Paris \u00e9tait en forte baisse mercredi, et le march\u00e9 obligataire reste le vrai juge de paix : lundi, le taux d'emprunt fran\u00e7ais \u00e0 dix ans atteignait 4,90 %, soit 145 points de base de plus que son \u00e9quivalent allemand (3,45 %) \u2014 le \u00ab spread \u00bb que les march\u00e9s surveillent de pr\u00e8s. La France paie cette prime de risque en raison de sa dette \u00e0 119 % du PIB (le rapport entre ce que l'\u00c9tat doit et la richesse annuelle produite par le pays) et de son gouvernement sans majorit\u00e9 pour faire adopter le budget 2027, sur fond de campagne pr\u00e9sidentielle. Le gouverneur de la Banque de France Emmanuel Moulin a averti que la France risquait d'\u00eatre \u00ab \u00e9trangl\u00e9e par les taux d'int\u00e9r\u00eat \u00bb, la charge de la dette pouvant d\u00e9passer 91 milliards d'euros l'an prochain. (S19) (S25) L'euro, lui, reprenait des couleurs mardi gr\u00e2ce \u00e0 l'accalmie sur les taux fran\u00e7ais \u2014 mais le mouvement reste fragile, les craintes sur la soutenabilit\u00e9 de la dette n'ayant pas disparu. Le RN s'est attribu\u00e9 une baisse des taux apr\u00e8s le programme \u00e9conomique de Marine Le Pen, ce que des experts contact\u00e9s par l'AFP nuancent fortement. (S20) (S24) ### France : c\u00f4t\u00e9 S\u00e9cu, les \u00e9conomies visent les patients Le projet de budget de la S\u00e9curit\u00e9 sociale pour 2027 fait peser une large part des \u00e9conomies pr\u00e9vues sur les patients, apr\u00e8s d\u00e9j\u00e0 plusieurs hausses r\u00e9centes du reste \u00e0 charge, d\u00e9plore la f\u00e9d\u00e9ration France Assos Sant\u00e9, qui craint un \u00ab renoncement aux soins \u00bb. Dans le m\u00eame temps, les repr\u00e9sentants des h\u00f4pitaux et cliniques r\u00e9clament 1,3 milliard d'euros suppl\u00e9mentaires pour couvrir la hausse des besoins de soins et des charges. (S21) (S22) ### France : la pr\u00e9sidentielle s'invite dans les comptes Marine Le Pen a pr\u00e9sent\u00e9 mardi son programme \u00e9conomique : \u00ab 140 milliards d'euros nets d'\u00e9conomie \u00bb d'ici 2032, un d\u00e9ficit public \u00e0 3 % d\u00e8s 2030 et un \u00ab pilier de capitalisation \u00bb pour les retraites \u2014 appelant les Fran\u00e7ais \u00e0 la rigueur, selon l'AFP. Le d\u00e9bat budg\u00e9taire de l'automne devient ainsi la premi\u00e8re r\u00e9p\u00e9tition g\u00e9n\u00e9rale de la pr\u00e9sidentielle d'avril-mai 2027. (S23)"
+  },
+  {
+   "id": "droit-pour-les-nuls",
+   "emoji": "\u2696\ufe0f",
+   "nom": "Le Droit pour les nuls",
+   "resume": "### Un droit fondamental\u2026 mais d\u00e9claratif La manifestation sur la voie publique est une libert\u00e9 reconnue et prot\u00e9g\u00e9e : la loi reconna\u00eet \u00ab son bien-fond\u00e9 \u00bb, mais elle organise en m\u00eame temps son contr\u00f4le. Le texte fondateur est un d\u00e9cret-loi du 23 octobre 1935, toujours en vigueur : il soumet toute manifestation sur la voie publique \u00e0 une d\u00e9claration pr\u00e9alable, faite au pr\u00e9fet, au sous-pr\u00e9fet ou au maire \u2014 pas \u00e0 une autorisation, mais \u00e0 une d\u00e9claration. (S40) (S41) Concr\u00e8tement : la d\u00e9claration doit \u00eatre d\u00e9pos\u00e9e en trois jours francs au moins et quinze jours au plus avant la manifestation, sign\u00e9e par au moins un des organisateurs ; elle pr\u00e9cise le but, la date, l'heure, l'itin\u00e9raire et les mesures prises. La pr\u00e9fecture ou la mairie d\u00e9livre imm\u00e9diatement un r\u00e9c\u00e9piss\u00e9 \u2014 c'est ce r\u00e9c\u00e9piss\u00e9 qui \u00ab l\u00e9galise \u00bb le cort\u00e8ge. Une manifestation non d\u00e9clar\u00e9e peut \u00eatre dispers\u00e9e, et ses organisateurs expos\u00e9s \u00e0 des sanctions p\u00e9nales. (S40) (S41) ### Quand le pr\u00e9fet peut dire non Le code de la s\u00e9curit\u00e9 int\u00e9rieure (articles L. 211-1 et suivants) conf\u00e8re aux autorit\u00e9s le droit d'interdire toute manifestation \u00ab de nature \u00e0 troubler l'ordre public \u00bb, par arr\u00eat\u00e9 motiv\u00e9. C'est ce qui est arriv\u00e9 mercredi \u00e0 Paris : la manifestation \u00e0 l'appel du collectif Urgence Palestine, pr\u00e9vue le jour des comm\u00e9morations du 7-Octobre, a \u00e9t\u00e9 interdite par le pr\u00e9fet de police Patrice Faure \u00ab au regard du contexte actuel \u00bb. Un maire ne peut pas interdire ; seul le pr\u00e9fet (ou le pr\u00e9fet de police \u00e0 Paris) le peut. (S32) (S41) Contre une interdiction, il existe des recours : saisine du juge administratif en r\u00e9f\u00e9r\u00e9 (souvent en quelques heures), qui peut suspendre l'arr\u00eat\u00e9 s'il est mal motiv\u00e9 \u2014 c'est le bras de fer juridique classique. ### Les pi\u00e8ges \u00e0 conna\u00eetre - **Le port d'armes est interdit** : le d\u00e9cret-loi de 1935 prohibe le port de tout objet dangereux dans un cort\u00e8ge \u2014 un crit\u00e8re que les forces de l'ordre appr\u00e9cient parfois largement (b\u00e2tons, casques, cutter). - **Les mineurs peuvent manifester** : aucun texte n'interdit la pr\u00e9sence de lyc\u00e9ens dans un cort\u00e8ge ; en revanche, le droit de gr\u00e8ve ne s'applique pas aux \u00e9l\u00e8ves du secondaire \u2014 un blocage d'\u00e9tablissement rel\u00e8ve du trouble au fonctionnement du service public, pas d'un droit. - **La d\u00e9claration a un responsable** : les signataires r\u00e9pondent des dispositions annonc\u00e9es ; changer l'itin\u00e9raire en cours de route peut suffire \u00e0 caract\u00e9riser un trouble. - **Apr\u00e8s sommations, tout change** : si un attroupement se reforme apr\u00e8s trois sommations, la dispersion par la force devient juridiquement possible, et la simple pr\u00e9sence peut devenir punissable. (S40) (S41) ### Textes de r\u00e9f\u00e9rence - **D\u00e9cret-loi du 23 octobre 1935** \u2014 r\u00e9gime de la d\u00e9claration pr\u00e9alable des manifestations sur la voie publique (art. 1 : d\u00e9claration au pr\u00e9fet, sous-pr\u00e9fet ou maire ; art. 3 : interdiction du port d'armes). Source : L\u00e9gifrance / services de l'\u00c9tat. (S41) - **Code de la s\u00e9curit\u00e9 int\u00e9rieure, articles L. 211-1 \u00e0 L. 211-6** \u2014 manifestations sur la voie publique : r\u00e9c\u00e9piss\u00e9 de d\u00e9claration, interdiction en cas de menace \u00e0 l'ordre public, dispersion. Source : L\u00e9gifrance. (S41) - **Fiche pratique \u00ab Organiser une manifestation \u00bb** \u2014 Service-Public.fr (fiche F21899) : d\u00e9marches, contenu de la d\u00e9claration, recours. (S40)"
+  },
+  {
+   "id": "jeu-video-pop-culture",
+   "emoji": "\ud83c\udfae",
+   "nom": "Jeu vid\u00e9o & pop culture",
+   "resume": "### Une fen\u00eatre calme c\u00f4t\u00e9 consoles Aucune annonce majeure de Nintendo, PlayStation ou Xbox n'a \u00e9t\u00e9 recens\u00e9e dans les derni\u00e8res 24 heures : la semaine est rest\u00e9e cal\u00e9e sur les sorties d'automne, sans State of Play ni Direct \u00e0 l'horizon m\u00e9diatique de la journ\u00e9e. C'est la prudence qui s'impose ici : pas de rumeur \u00e0 relayer sans recoupement, et le rappel que la consolidation de l'industrie du divertissement (studios, plateformes, \u00e9diteurs) reste la vraie lame de fond de la saison. (S43) ### Skydance : les suites de la fusion Paramount-Warner La naissance du groupe Skydance \u2014 Paramount Skydance ayant finalis\u00e9 l'absorption de Warner Bros Discovery pour 110 milliards de dollars \u2014 continue d'agiter l'industrie : l'op\u00e9ration entra\u00eene la radiation des titres WBD et met Paramount Pictures, Warner Bros., CNN, CBS et les catalogues HBO sous le m\u00eame toit, sous le contr\u00f4le de David Ellison. Les craintes sont d\u00e9j\u00e0 formalis\u00e9es : des licenciements attendus dans un Hollywood sous pression, une r\u00e9duction possible du nombre de films produits chaque ann\u00e9e, et des inqui\u00e9tudes sur l'ind\u00e9pendance de CNN. Le r\u00e8glement conclu avec plusieurs \u00c9tats am\u00e9ricains inclut des engagements, rapporte l'AFP. (S43) (S44) Pour le jeu vid\u00e9o, cette consolidation a une valeur d'exemple : adaptations cin\u00e9 et transmedia se n\u00e9gocient d\u00e9sormais face \u00e0 des groupes de plus en plus concentr\u00e9s \u2014 un contexte que les studios de jeux suivent avec attention. ### Ce qu'en disent les communaut\u00e9s Pas de recensement fiable des r\u00e9actions des communaut\u00e9s de joueurs (r/Games, r/jeuxvideo) dans la fen\u00eatre du jour sur des sujets JV pr\u00e9cis : les fils dominants portent sur la consolidation du divertissement et l'IA g\u00e9n\u00e9rative, des sujets transverses. On le signale plut\u00f4t que d'inventer une humeur \u2014 les d\u00e9bats reviendront avec la prochaine fen\u00eatre d'annonces. ### Eva Marie Saint, la classe hollywoodienne s'\u00e9teint \u00e0 102 ans Oscaris\u00e9e pour \u00ab Sur les quais \u00bb (1954), l'actrice Eva Marie Saint \u2014 aussi m\u00e9morable dans \u00ab La Mort aux trousses \u00bb d'Alfred Hitchcock \u2014 est morte mardi \u00e0 102 ans. Sur sept d\u00e9cennies de carri\u00e8re, elle avait d\u00e9clin\u00e9 des premiers r\u00f4les de prestige pour des choix plus personnels, et restait l'une des derni\u00e8res figures de l'\u00e2ge d'or hollywoodien. (S48) (S49) (S50)"
+  },
+  {
+   "id": "culture",
+   "emoji": "\ud83c\udfad",
+   "nom": "Culture",
+   "resume": "### \u00ab Elsinore \u00bb ouvre le festival du film de Londres Le drame \u00ab Elsinore \u00bb, avec Andrew Scott, a ouvert le festival du film de Londres \u2014 le titre fait r\u00e9f\u00e9rence \u00e0 la ville d'Hamlet. Le film sortira le 29 janvier 2027 au Royaume-Uni et le 10 mars en France ; la presse britannique salue une performance \u00ab digne d'un Oscar \u00bb, aux c\u00f4t\u00e9s d'Olivia Colman. Parmi les autres films attendus \u00e0 Londres : \u00ab Artificial \u00bb de Luca Guadagnino sur le cofondateur et PDG d'OpenAI Sam Altman. (S45) (S46) (S47) ### Eva Marie Saint, 102 ans, l'\u00e2ge d'or s'efface Eva Marie Saint, Oscar du second r\u00f4le pour \u00ab Sur les quais \u00bb (1954) et h\u00e9ro\u00efne de \u00ab La Mort aux trousses \u00bb, est morte \u00e0 102 ans. Sa carri\u00e8re s'\u00e9tend sur sept d\u00e9cennies ; elle avait refus\u00e9 des productions de premier plan (\u00ab The Man in the Gray Flannel Suit \u00bb, \u00ab The Rainmaker \u00bb) et cr\u00e9ditait son mari de l'avoir aid\u00e9e \u00e0 la garder \u00ab \u00e9cur\u00e9e \u00bb par le show-business \u2014 une \u00e9l\u00e9gance qui a s\u00e9duit les plus grands, d'Elia Kazan \u00e0 Hitchcock. (S48) (S49) ### Spotify : le livre_audio passe \u00e0 l'\u00e9chelle mondiale Le g\u00e9ant du streaming a annonc\u00e9 mercredi \u00e9tendre son offre de livres audio \u00e0 plus de 180 march\u00e9s, contre 22 actuellement \u2014 le format suscitant un engouement croissant, selon les derniers chiffres du groupe su\u00e9dois. Un signal fort pour l'\u00e9dition francophone, dont les catalogues audio deviennent un champ de bataille mondial. (S51) ### Nobel de litt\u00e9rature : le rendez-vous de jeudi La saison des Nobel se poursuit : apr\u00e8s la m\u00e9decine (lundi, l'optog\u00e9n\u00e9tique r\u00e9compens\u00e9e), la physique (mardi, Francis Halzen) et la chimie (mercredi, Kagan et Soai), c'est jeudi le tour de la litt\u00e9rature. L'an dernier, le Hongrois Laszlo Krasznahorkai avait \u00e9t\u00e9 r\u00e9compens\u00e9 ; plusieurs experts sond\u00e9s par l'AFP \u00e9voquent un prix ouvert, sans favorite claire \u2014 les paris litt\u00e9raires sont \u00e0 rebondissements. (S52) ### \u00ab La terre et le sang \u00bb : une s\u00e9rie corse contre la vengeance La s\u00e9rie corse \u00ab La terre et le sang \u00bb explore le refus de c\u00e9der \u00e0 la vengeance : \u00ab Mon personnage est un anti-h\u00e9ros, il fait tout pour sortir son fils de cette culture-l\u00e0 \u00bb, explique son acteur principal de 55 ans, heureux de tourner en Corse o\u00f9 il vit \u00e0 l'ann\u00e9e. \u00ab Loin du fantasme du voyou, des bandits, on offre l\u00e0 une identification diff\u00e9rente \u00bb, dit-il. (S111)"
+  },
+  {
+   "id": "sciences",
+   "emoji": "\ud83d\udd2c",
+   "nom": "Sciences",
+   "resume": "### Nobel de chimie : Kagan et Soai r\u00e9solvent le myst\u00e8re des mol\u00e9cules miroir Le Nobel de chimie 2026 a \u00e9t\u00e9 d\u00e9cern\u00e9 mercredi \u00e0 un duo franco-japonais : Henri B. Kagan et Kenso Soai, pour leurs travaux sur les \u00ab images miroir \u00bb des mol\u00e9cules \u2014 la catalyse asym\u00e9trique pour le Fran\u00e7ais, l'auto-amplification asym\u00e9trique pour le Japonais. \u00ab Henri Kagan et Kenso Soai ont apport\u00e9 une solution \u00e0 un myst\u00e8re chimique vieux de plus d'un si\u00e8cle \u00bb, r\u00e9sume l'AP : la main peut-elle fabriquer s\u00e9lectivement l'une des deux formes miroir d'une m\u00eame mol\u00e9cule, et la vie elle-m\u00eame pr\u00e9f\u00e8re l'une des deux. (S53) (S54) ### Kagan, un Nobel fran\u00e7ais attendu depuis 1971 En 1971, le chimiste fran\u00e7ais publie son article sur la catalyse asym\u00e9trique : une d\u00e9couverte qui a donn\u00e9 naissance \u00e0 des technologies devenues essentielles dans l'industrie pharmaceutique, mais aussi l'agrochimie ou la production de parfums \u2014 et qui lui vaut de nombreuses distinctions depuis des d\u00e9cennies. Interview\u00e9, le laur\u00e9at dit surtout vouloir \u00ab \u00eatre avec les \u00e9tudiants \u00bb. (S55) ### Drees : la France pourrait compter 30 % de m\u00e9decins en plus en 2040 La France pourrait compter 30 % de m\u00e9decins de plus en 2040 qu'aujourd'hui, et 75 % de plus \u00e0 l'horizon 2060, selon une projection de la Drees, la direction statistique du minist\u00e8re de la Sant\u00e9 \u2014 \u00e0 condition notamment que le numerus clausus reste \u00e0 son niveau actuel d'environ 12.200 \u00e9tudiants en m\u00e9decine par an. Une bonne nouvelle contre-intuitive dans le d\u00e9bat sur les d\u00e9serts m\u00e9dicaux : l'essentiel se joue d\u00e9sormais dans la r\u00e9partition territoriale des praticiens. (S56) (S57) ### Antarctique : la plus grande colonie de manchots du monde bascule La plus grande colonie de manchots du monde, sur l'\u00eele volcanique isol\u00e9e de Zavodovski, est victime du changement climatique : le \u00ab glissement observ\u00e9 des manchots \u00e0 jugulaire vers les manchots macaroni repr\u00e9sente le changement le plus marquant dans la composition de la communaut\u00e9 de manchots jamais observ\u00e9 \u00e0 ce jour sur un seul site en Antarctique \u00bb, indique l'\u00e9tude. En cause notamment : le krill, base de l'alimentation, dont la distribution se d\u00e9place avec le r\u00e9chauffement des eaux. (S58) (S59) ### Et aussi La saison des Nobel se poursuit : le prix de physique a r\u00e9compens\u00e9 mardi le Belge Francis Halzen pour l'observatoire de neutrinos IceCube, le laur\u00e9at confessant son soulagement apr\u00e8s des ann\u00e9es d'octobres \u00ab d\u00e9sesp\u00e9r\u00e9s \u00bb ; le prix Nobel de la paix cl\u00f4turera la saison vendredi. (S52)"
+  },
+  {
+   "id": "climat",
+   "emoji": "\ud83c\udf0d",
+   "nom": "Climat",
+   "resume": "### COP30 : Washington en accusation La directrice de la COP30, Ana Toni, accuse les \u00c9tats-Unis de freiner d'autres pays : certains \u00ab sont plus r\u00e9ticents \u00e0 importer des produits chinois d'empreinte carbone basse de crainte de repr\u00e9sailles des \u00c9tats-Unis \u00bb, ou parce que Washington fait \u00ab pression pour des produits d'empreinte carbone plus \u00e9lev\u00e9e, mais am\u00e9ricains \u00bb. \u00ab Cela retarde logiquement la capacit\u00e9 de ces pays \u00e0 atteindre leurs objectifs \u00bb, dit-elle \u2014 alors que le Br\u00e9sil s'est engag\u00e9 \u00e0 promouvoir une \u00ab feuille de route \u00bb globale de sortie progressive et volontaire du p\u00e9trole, du charbon et du gaz. (S60) ### Australie : la Haute cour fait reculer une mine de charbon La Haute cour australienne s'est prononc\u00e9e contre un vaste projet d'extension d'une mine de charbon, dans une premi\u00e8re d\u00e9cision relative au climat rendue par la plus haute instance judiciaire du pays : les moyens de limiter les \u00e9missions de la mine n'avaient pas \u00e9t\u00e9 jug\u00e9s suffisants. Une premi\u00e8re jurisprudentielle, alors que le m\u00eame gouvernement australien annon\u00e7ait mercredi une aide financi\u00e8re pour des projets d'adaptation au changement climatique des \u00c9tats insulaires du Pacifique, lors d'une r\u00e9union pr\u00e9paratoire \u00e0 la COP31 aux Fidji \u2014 sommet que l'Australie co-pr\u00e9sidera avec la Turquie, une combinaison peu ordinaire qui \u00ab soul\u00e8ve des questions \u00bb sur le d\u00e9roulement de la conf\u00e9rence. (S61) (S62) (S63) ### Indon\u00e9sie : cap sur le riz et les biocarburants Le gouvernement indon\u00e9sien a annonc\u00e9 l'interruption d'un projet visant \u00e0 raser plus de for\u00eats pour l'expansion rizicole \u2014 le pays \u00e9tant autosuffisant en riz, il se concentrera sur des \u00ab mesures d'intensification \u00bb (semences de qualit\u00e9 sup\u00e9rieure) plut\u00f4t que sur la d\u00e9forestation. L'Indon\u00e9sie, l'un des pays les plus bois\u00e9s au monde et puits de carbone majeur, a par ailleurs collect\u00e9 190 millions de dollars d'amendes dans le secteur forestier, et va augmenter sa production de biocarburants \u00e0 partir de la canne \u00e0 sucre. (S64) (S65) (S66) ### La vigne fran\u00e7aise sous stress climatique Encore un peu plus secou\u00e9e par cet \u00e9t\u00e9 de canicules et de s\u00e9cheresse, la viticulture fran\u00e7aise traverse une crise profonde, boulevers\u00e9e par le r\u00e9chauffement climatique et de nouvelles pr\u00e9f\u00e9rences de consommation. L'\u00e9t\u00e9 2026 a g\u00e9n\u00e9r\u00e9 une r\u00e9colte r\u00e9duite \u2014 \u00ab contrast\u00e9e r\u00e9gionalement \u00bb, selon les chiffres agricoles de la semaine \u2014 et les professionnels s'interrogent sur les c\u00e9pages et les territoires de demain. (S67) ### Manchots : le vivant en premi\u00e8re ligne L'\u00e9tude sur la bascule des manchots de Zavodovski (voir chapitre Sciences) documente en direct ce que les n\u00e9gociations climatiques traduisent en textes : le vivant se d\u00e9place, s'adapte ou dispara\u00eet \u2014 et les d\u00e9clarations des \u00c9tats-Unis freinent les autres, selon la COP30. La comparaison d\u00e9clarations/mesures du jour est \u00e9loquente : d'un c\u00f4t\u00e9 un tribunal australien qui bloque du charbon, de l'autre une diplomatie am\u00e9ricaine accus\u00e9e de presser les pays vers des produits plus carbon\u00e9s. (S60) (S61)"
+  },
+  {
+   "id": "politique-francaise",
+   "emoji": "\ud83c\uddeb\ud83c\uddf7",
+   "nom": "Politique fran\u00e7aise",
+   "resume": "### Apr\u00e8s le \u00ab acte III \u00bb, une journ\u00e9e de r\u00e9pit sous tension Mardi, entre 266.000 et 450.000 personnes \u2014 lyc\u00e9ens, \u00e9tudiants, professeurs et parents d'\u00e9l\u00e8ves \u2014 ont manifest\u00e9 en France, selon les autorit\u00e9s et les organisateurs ; la journ\u00e9e s'est en g\u00e9n\u00e9ral d\u00e9roul\u00e9e dans le calme, sans bless\u00e9s graves, avec 488 interpellations. Mercredi, les cours ont repris dans la majorit\u00e9 des lyc\u00e9es avec toutefois quelques blocages, apr\u00e8s la proposition gouvernementale d'une demi-journ\u00e9e banalis\u00e9e consacr\u00e9e \u00e0 des \u00e9changes sur les difficult\u00e9s des \u00e9l\u00e8ves. (S26) (S27) (S32) ### Lecornu s'exprime mercredi soir sur \u00ab les crises qui s'empilent \u00bb Le Premier ministre S\u00e9bastien Lecornu s'exprime mercredi soir depuis Matignon sur \u00ab la situation dans les lyc\u00e9es, les prix des carburants, la crise agricole ainsi que la situation financi\u00e8re du pays \u00bb \u2014 un quadrige de crises qui risquent de s'agr\u00e9ger, sur fond de d\u00e9bat budg\u00e9taire scrut\u00e9 par les march\u00e9s. Dans la journ\u00e9e, il a promis que la parole lyc\u00e9enne \u00ab est pr\u00e9cieuse et doit \u00eatre entendue \u00bb et nourrira un \u00ab plan d'action concret \u00bb ; le gouvernement a suspendu l'usage d'une grenade utilis\u00e9e par les forces de l'ordre, et une enqu\u00eate a \u00e9t\u00e9 ouverte pour \u00ab tentative de meurtre \u00bb apr\u00e8s une plainte d\u00e9pos\u00e9e contre un policier. Sur Parcoursup, le chef du gouvernement promet \u00ab davantage de transparence \u00bb et de \u00ab simplicit\u00e9 \u00bb, tout en d\u00e9fendant un dispositif qui \u00ab fonctionne \u00bb. (S26) (S28) (S29) (S31) (S39) ### Jeudi : la rentr\u00e9e en force des syndicats Plusieurs syndicats de l'\u00c9ducation \u2014 le Snes-FSU, la CGT, FO et Sud \u2014 soutiennent le mouvement de contestation des lyc\u00e9ens et appellent \u00e0 une journ\u00e9e de gr\u00e8ve et de manifestations jeudi. \u00ab Il faut que ce soir le Premier ministre donne des \u00e9l\u00e9ments de r\u00e9ponses extr\u00eamement concrets \u00bb, r\u00e9clame une repr\u00e9sentante syndicale, citant parmi les revendications \u00ab l'annulation des suppressions d'emplois dans le budget 2027 et le r\u00e9emploi \u00bb. La CGT de Sophie Binet veut \u00ab prot\u00e9ger le droit \u00e0 manifester des lyc\u00e9ens \u00bb, tandis que la gauche d\u00e9nonce une doctrine du maintien de l'ordre \u00ab de plus en plus brutale \u00bb \u2014 Jean-Luc M\u00e9lenchon y voit un objet \u00ab toujours plus confus \u00bb. (S30) (S36) (S36) ### Trump s'invite, Paris convoque l'ambassadeur d'Iran Le pr\u00e9sident am\u00e9ricain Donald Trump a jug\u00e9 que \u00ab l'islam \u00bb et une \u00ab immigration de masse hors de contr\u00f4le \u00bb \u00e9taient \u00e0 l'origine du mouvement lyc\u00e9en fran\u00e7ais \u2014 une lecture sans rapport avec les revendications exprim\u00e9es dans les cort\u00e8ges (moyens, scolarit\u00e9, orientation). Dans le m\u00eame temps, T\u00e9h\u00e9ran a convoqu\u00e9 l'ambassadeur de France Pierre Cochard au sujet de la \u00ab r\u00e9ponse violente \u00bb aux manifestations scolaires, accusant Paris de \u00ab traitement violent \u00bb des lyc\u00e9ens \u2014 et Paris a convoqu\u00e9 l'ambassadeur d'Iran pour faire cesser des \u00ab provocations indignes \u00bb li\u00e9es \u00e0 une campagne de d\u00e9sinformation en marge du mouvement. (S32) (S34) (S35) ### Budget 2027 : le chantier continue en commission L'Assembl\u00e9e a ouvert le dossier budg\u00e9taire dans un climat \u00e9conomique et social pesant : le gouvernement a essuy\u00e9 un revers d\u00e8s l'arriv\u00e9e du texte en commission (amendements Liot sur la contribution des hauts revenus, voir chapitre \u00c9conomie), la gauche d\u00e9fendra l'imp\u00f4t plancher, LFI un gel des loyers sociaux et une taxe accrue pour les g\u00e9ants du num\u00e9rique, et le PS la r\u00e9duction de niches fiscales. Le ministre de l'\u00c9conomie Roland Lescure dit voir \u00ab de la place pour les urgences \u00bb dans le budget tr\u00e8s contraint de 2027 pour r\u00e9pondre aux demandes de moyens des lyc\u00e9ens, \u00ab \u00e0 condition de pr\u00e9server les \u00e9quilibres budg\u00e9taires \u00bb. (S17) (S18) (S112) ### 2027 : le jeu des candidatures s'acc\u00e9l\u00e8re Marine Le Pen a pr\u00e9sent\u00e9 mardi son programme \u00e9conomique \u2014 \u00ab 140 milliards d'euros nets d'\u00e9conomies \u00bb d'ici 2032, d\u00e9ficit \u00e0 3 % d\u00e8s 2030, \u00ab pilier de capitalisation \u00bb pour les retraites (voir chapitre \u00c9conomie). \u00c0 gauche, la primaire social-d\u00e9mocrate affiche plus de 140.000 inscrits, mais les trois d\u00e9bats t\u00e9l\u00e9vis\u00e9s ont laiss\u00e9 l'impression d'un processus plus proche d'un congr\u00e8s du PS que d'un d\u00e9partage en vue de 2027 \u2014 personne n'a v\u00e9ritablement confort\u00e9 sa stature pr\u00e9sidentielle. (S23) (S37) ### Talibans : un \u00ab dialogue technique \u00bb pour les expulsions La France a engag\u00e9 des discussions avec le gouvernement taliban pour \u00ab faciliter \u00bb l'expulsion de ressortissants afghans vers l'Afghanistan, selon une source diplomatique \u00e0 l'AFP \u2014 \u00ab comme d'autres pays europ\u00e9ens, un dialogue technique a \u00e9t\u00e9 engag\u00e9 \u00bb. Paris n'a pas de relations diplomatiques avec les talibans depuis leur retour au pouvoir en ao\u00fbt 2021, et l'annonce, faite mercredi, dessine un virage pratique dans la politique d'immigration du gouvernement. (S38)"
+  },
+  {
+   "id": "etats-unis",
+   "emoji": "\ud83c\uddfa\ud83c\uddf8",
+   "nom": "\u00c9tats-Unis",
+   "resume": "### Trump et le mouvement lyc\u00e9en fran\u00e7ais : la th\u00e8se migratoire Donald Trump a jug\u00e9 que \u00ab l'islam \u00bb et une \u00ab immigration de masse hors de contr\u00f4le \u00bb \u00e9taient \u00e0 l'origine du mouvement lyc\u00e9en en France : \u00ab Ce qui se passe en France n'est rien d'autre qu'une immigration de masse \u00bb hors de contr\u00f4le, a-t-il affirm\u00e9. Compar\u00e9 au r\u00e9el, le propos ne correspond \u00e0 rien de document\u00e9 : les revendications des cort\u00e8ges portent sur les moyens des \u00e9tablissements, la scolarit\u00e9 et l'orientation \u2014 et le mouvement est n\u00e9 en r\u00e9gion parisienne mi-septembre sur des questions scolaires. L'\u00e9pisode montre surtout comment l'actualit\u00e9 fran\u00e7aise sert de mat\u00e9riau au d\u00e9bat int\u00e9rieur am\u00e9ricain sur l'immigration, \u00e0 moins d'un an des midterms. (S32) (S32) ### La peste en Russie : un appel Trump-Poutine \u00ab tr\u00e8s bient\u00f4t \u00bb Apr\u00e8s la mort d'une laborantine d'un institut \u00e9tudiant la peste en Russie, les \u00c9tats-Unis ont demand\u00e9 mardi que la Russie fasse preuve de transparence ; Donald Trump a dit qu'une conversation t\u00e9l\u00e9phonique avec Vladimir Poutine \u00e9tait \u00ab pr\u00e9vue \u00bb et aurait lieu \u00ab tr\u00e8s bient\u00f4t \u00bb \u2014 et il ne pense pas que l'incident soit li\u00e9 \u00e0 une arme biologique. La principale agence de sant\u00e9 publique am\u00e9ricaine (CDC) suit la situation \u00ab de tr\u00e8s pr\u00e8s \u00bb, et l'OMS comme l'Union europ\u00e9enne s'en inqui\u00e8tent. (S68) (S69) (S72) ### Rubio \u00e0 Ath\u00e8nes : l'Iran aurait \u00ab perdu le contr\u00f4le int\u00e9gral \u00bb d'Ormuz En visite officielle \u00e0 Ath\u00e8nes, le chef de la diplomatie am\u00e9ricaine Marco Rubio a affirm\u00e9 mercredi que \u00ab l'Iran avait perdu le contr\u00f4le int\u00e9gral \u00bb du d\u00e9troit d'Ormuz, et que presque autant de p\u00e9trole qu'avant la guerre \u00e9tait d\u00e9sormais export\u00e9 en provenance du Moyen-Orient \u2014 m\u00eame si des navires continuent d'\u00eatre r\u00e9guli\u00e8rement attaqu\u00e9s, notamment par les rebelles houthis du Y\u00e9men. La reprise des exportations avait fait refluer le baril mardi ; les rapports contradictoires sur les attaques de navires l'ont fait remonter mercredi au-dessus de 100 dollars. (S70) (S71) (S13) ### Zambie : 1,5 milliard de dollars de sant\u00e9 sous conditions La Zambie va signer jeudi avec les \u00c9tats-Unis un accord de sant\u00e9 longtemps bloqu\u00e9 en raison de contreparties en mati\u00e8re de donn\u00e9es et de ressources min\u00e9rales \u2014 une op\u00e9ration de \u00ab diplomatie des minerais \u00bb controvers\u00e9e que l'ONG Health Gap a \u00e9pingl\u00e9e en mars (l'ONG \u00e9voquait un protocole \u00ab imm\u00e9diatement r\u00e9siliable \u00bb en cas de d\u00e9saccord, que le ministre zambien de la Sant\u00e9 d\u00e9ment). Plus d'une douzaine de pays ont paraph\u00e9 des contrats comparables : la sant\u00e9 publique devient un instrument de la politique \u00e9trang\u00e8re am\u00e9ricaine. (S71) ### R\u00e9gulation de l'IA : la voie Trump Sur l'intelligence artificielle, la politique am\u00e9ricaine sous Donald Trump reste la plus favorable \u00e0 l'innovation des trois grandes approches (am\u00e9ricaine, chinoise, europ\u00e9enne) \u2014 un choix coh\u00e9rent avec la course aux centres de donn\u00e9es, l'\u00e9pisode australien d'OpenAI (voir chapitre IA) montrant toutefois les limites du mod\u00e8le : quand la confiance s'effrite, c'est le Parlement qui reprend la main. (S7)"
+  },
+  {
+   "id": "chine",
+   "emoji": "\ud83c\udde8\ud83c\uddf3",
+   "nom": "Chine",
+   "resume": "### Mer de Chine m\u00e9ridionale : Tokyo ordonne, P\u00e9kin revendique Le Japon a ordonn\u00e9 \u00e0 un navire chinois de quitter sa zone \u00e9conomique exclusive, une nouvelle friction dans une r\u00e9gion o\u00f9 P\u00e9kin revendique la majeure partie de la mer de Chine m\u00e9ridionale, voie commerciale essentielle \u00e0 l'\u00e9chelle mondiale \u2014 malgr\u00e9 une d\u00e9cision internationale jugeant ses pr\u00e9tentions d\u00e9pourvues de fondement juridique. Les garde-c\u00f4tes chinois s'y sont fait remarquer \u00e0 plusieurs reprises. (S73) ### Ta\u00efwan : puces d\u00e9tourn\u00e9es, d\u00e9put\u00e9 espionn\u00e9 Dix Ta\u00efwanais ont \u00e9t\u00e9 inculp\u00e9s pour avoir utilis\u00e9 de faux documents afin d'obtenir des puces am\u00e9ricaines soumises \u00e0 restriction et de les exporter vers la Chine pour un usage potentiel dans des armes militaires, a indiqu\u00e9 le parquet. Dans un autre dossier, quatre personnes ont \u00e9t\u00e9 inculp\u00e9es pour avoir espionn\u00e9 il y a deux ans un d\u00e9put\u00e9 ta\u00efwanais critique de la Chine et sa famille : deux personnes \u00e0 Hong Kong auraient engag\u00e9 les quatre pr\u00e9venus pour les suivre et les filmer. Deux affaires qui illustrent la bataille technologique et de renseignement autour du \u00ab silicium \u00bb. (S74) (S75) ### L'IA chinoise : la deuxi\u00e8me approche La Chine poursuit sa propre voie de r\u00e9gulation de l'intelligence artificielle \u2014 encadrement des contenus, contr\u00f4le des donn\u00e9es, utilisation industrielle massive \u2014 tandis que DeepSeek est cit\u00e9 par l'AFP parmi les mod\u00e8les les plus avanc\u00e9s du monde, au m\u00eame titre que ChatGPT et Claude. Le dualisme technologique sino-am\u00e9ricain structure d\u00e9sormais tous les chapitels de la tech mondiale. (S1) (S7) ### Relations avec la France : un jour calme, un dossier sensible Pas d'actualit\u00e9 bilat\u00e9rale franco-chinoise marqu\u00e9e ce mercredi ; les interfaces \u00e9conomiques restent domin\u00e9es par le p\u00e9trole cher, qui p\u00e8se sur les Bourses asiatiques, et par la concurrence sur les produits \u00ab bas carbone \u00bb \u2014 dont la COP30 dit qu'ils peinent \u00e0 s'exporter par crainte de repr\u00e9sailles am\u00e9ricaines. (S13) (S60)"
+  },
+  {
+   "id": "russie",
+   "emoji": "\ud83c\uddf7\ud83c\uddfa",
+   "nom": "Russie",
+   "resume": "### Mort d'une laborantine : myst\u00e8re et quarantaines en Sib\u00e9rie Une laborantine de 28 ans d'un institut de lutte contre la peste en Sib\u00e9rie est morte \u2014 sans que la cause exacte soit \u00e9tablie, peste ou pneumonie ; des dizaines de personnes ont \u00e9t\u00e9 plac\u00e9es en isolation. La Russie d\u00e9ment tout \u00ab risque \u00e9pid\u00e9mique \u00bb et Rospotrebnadzor, l'agence de sant\u00e9 publique, s'est m\u00eame dit pr\u00eat \u00e0 aider Washington \u00e0 lutter contre les \u00e9pid\u00e9mies aux \u00c9tats-Unis \u2014 un renversement communicationnel \u00e9tonnant. L'OMS, l'Union europ\u00e9enne et les \u00c9tats-Unis suivent l'affaire de pr\u00e8s, et Donald Trump a dit pr\u00e9voir d'en parler \u00ab tr\u00e8s bient\u00f4t \u00bb \u00e0 Vladimir Poutine. (S69) (S66) (S67) (S76) (S77) (S78) ### Politkovska\u00efa : 20 ans apr\u00e8s, un mod\u00e8le \u00ab n\u00e9cessaire \u00bb La journaliste Anna Politkovska\u00efa, assassin\u00e9e le 7 octobre 2006, avait pr\u00e9dit les d\u00e9rives de Vladimir Poutine et demeure un mod\u00e8le de bravoure \u00ab n\u00e9cessaire \u00bb en pleine guerre en Ukraine et en r\u00e9pression en Russie, selon des journalistes russes interrog\u00e9s par l'AFP. \u00c0 Moscou, le meurtre de la reporter de Nova\u00efa Gazeta reste le symbole de la musellement de la presse \u2014 deux d\u00e9cennies plus tard. (S79) ### Lida Moniava : l'affaire class\u00e9e, le symbole demeure La justice russe a class\u00e9 l'affaire contre Lida Moniava, 38 ans, humanitaire qui s'\u00e9tait battue pendant des ann\u00e9es pour les enfants malades et handicap\u00e9s, puis pour les r\u00e9fugi\u00e9s ukrainiens apr\u00e8s le d\u00e9but de l'offensive de 2022 : il lui \u00e9tait reproch\u00e9 un message Telegram de 2023 critiquant l'arm\u00e9e. Le classement n'efface pas le m\u00e9canisme : la \u00ab discr\u00e9ditation de l'arm\u00e9e \u00bb reste l'outil principal de la r\u00e9pression des voix critiques. (S80) ### Drones sur Moscou, obus sur l'Ukraine Moscou a \u00e9t\u00e9 vis\u00e9e dans la nuit de lundi \u00e0 mardi par l'une des attaques de drones les plus massives de la guerre \u2014 \u00ab 650 drones \u00bb selon le maire, deux morts \u2014, alors que l'arm\u00e9e russe avertit qu'elle va encore \u00ab intensifier \u00bb ses bombardements sur le territoire ukrainien, plus de quatre ans apr\u00e8s le lancement de l'offensive \u00e0 grande \u00e9chelle. Moscou d\u00e9ment viser des infrastructures civiles ; c\u00f4t\u00e9 ukrainien, la Russie est accus\u00e9e d'avoir frapp\u00e9 un minibus dans une r\u00e9gion occup\u00e9e du sud, faisant trois morts selon les autorit\u00e9s install\u00e9es par Moscou. (S81) (S82) (S83) ### Relations avec la France : m\u00e9fiance et canaux ouverts La France reste engag\u00e9e dans le soutien \u00e0 l'Ukraine ; l'affaire de la laborantine a toutefois ouvert un canal inattendu entre Washington et Moscou \u2014 un appel Trump-Poutine \u00ab pr\u00e9vu \u00bb \u2014 dont les Europ\u00e9ens, la France en t\u00eate, attendent de voir s'il restera cantonn\u00e9 \u00e0 la sant\u00e9 publique. L'inqui\u00e9tude de l'UE sur la transparence russe est document\u00e9e ; sur le dossier ukrainien, aucune m\u00e9diation fran\u00e7aise n'est \u00e0 l'ordre du jour. (S68) (S76)"
+  },
+  {
+   "id": "geopolitique",
+   "emoji": "\ud83c\udf10",
+   "nom": "G\u00e9opolitique mondiale",
+   "resume": "### Ormuz : la bataille du d\u00e9troit La mer d'Omman concentre toutes les tensions : les navires transitant par le d\u00e9troit d'Ormuz continuent d'\u00eatre r\u00e9guli\u00e8rement attaqu\u00e9s, notamment par les Houthis du Y\u00e9men, tandis que Marco Rubio affirme que \u00ab l'Iran a perdu le contr\u00f4le int\u00e9gral \u00bb du passage et que les exportations remontent vers leurs niveaux d'avant-guerre. L'Iran avait propos\u00e9 un plan pour rouvrir le d\u00e9troit sous sept jours \u2014 une offre rejet\u00e9e par Donald Trump, qui n'a pas exclu la reprise ult\u00e9rieure de frappes sur l'Iran \u2014 et les n\u00e9gociations entre l'Iran et les \u00c9tats-Unis se poursuivent, selon le Qatar. Washington a par ailleurs renforc\u00e9 sa guerre \u00e9conomique contre T\u00e9h\u00e9ran avec de nouvelles sanctions. (S70) (S84) (S84) (S85) ### 7-Octobre : comm\u00e9morations en Isra\u00ebl, tensions \u00e0 Paris Trois ans apr\u00e8s l'attaque du Hamas, les comm\u00e9morations se d\u00e9roulent en pleine campagne \u00e9lectorale \u00e0 l'approche des l\u00e9gislatives isra\u00e9liennes du 27 octobre \u2014 les premi\u00e8res depuis l'attaque et depuis l'entr\u00e9e en vigueur, en octobre dernier, d'un fragile cessez-le-feu \u00e0 Gaza, territoire ravag\u00e9. Le ministre fran\u00e7ais des Affaires \u00e9trang\u00e8res Jean-No\u00ebl Barrot s'est dit mercredi en Isra\u00ebl \u00ab pour rendre hommage aux victimes du 7 octobre \u00bb. (S86) (S87) \u00c0 Paris, la Ville a inaugur\u00e9 une all\u00e9e du parc Monceau en hommage \u00e0 la famille Bibas \u2014 Shiri, Ariel et Kfir, morts en captivit\u00e9 \u2014, une exposition \u00e9ph\u00e9m\u00e8re sur les victimes du 7-Octobre accueille politiques et anonymes, et la manifestation \u00e0 l'appel du collectif Urgence Palestine a \u00e9t\u00e9 interdite mercredi par le pr\u00e9fet de police, \u00ab contre le g\u00e9nocide \u00e0 Gaza et pour le respect du cessez-le-feu \u00bb. (S42) (S88) (S89) ### Ukraine : la guerre des drones et des trains En Ukraine, la guerre continue de s'\u00e9crire en drones et en logistique : des frappes russes de bombes guid\u00e9es ont tu\u00e9 au moins cinq personnes lundi \u00e0 Kharkiv, et le r\u00e9seau ferroviaire ukrainien a d\u00fb \u00e9vacuer plus de 5.800 trains en septembre en raison des menaces de frappes \u2014 5.831 trains d\u00e9rout\u00e9s, obligeant la compagnie nationale \u00e0 \u00eatre \u00ab inventive \u00bb pour minimiser les retards. C\u00f4t\u00e9 russe, Moscou a essuy\u00e9 l'une des plus massives attaques de drones du conflit (voir chapitre Russie). (S90) (S91) ### Europe : l'AfD allemande envisage d'adoucir sa ligne UE Le parti d'extr\u00eame droite AfD, en t\u00eate des sondages allemands (jusqu'\u00e0 30 % d'intentions de vote, premier parti du pays), r\u00e9fl\u00e9chit \u00e0 adoucir son opposition \u00e0 l'UE et \u00e0 l'euro \u2014 un repositionnement strat\u00e9gique apr\u00e8s ses victoires dans deux r\u00e9gionales de septembre dans l'ex-Allemagne de l'Est. Une recomposition du paysage europ\u00e9en qui int\u00e9resse la France, o\u00f9 le RN conna\u00eet une dynamique comparable \u00e0 l'approche de 2027. (S92)"
+  },
+  {
+   "id": "grande-info-semaine",
+   "emoji": "\ud83d\udcf0",
+   "nom": "Grande information de la semaine",
+   "resume": "### La France : la semaine des crises empil\u00e9es La semaine a confirm\u00e9 l'agr\u00e9gation des crises : mouvement lyc\u00e9en (mardi, entre 266.000 et 450.000 manifestants, 488 interpellations, pas de bless\u00e9s graves), prix des carburants qui flambent, \u00ab crise agricole \u00bb li\u00e9e \u00e0 une s\u00e9cheresse in\u00e9dite, et situation financi\u00e8re sous la surveillance des march\u00e9s \u2014 dette \u00e0 119 % du PIB, taux \u00e0 dix ans \u00e0 4,90 %, avertissement de la Banque de France sur une charge d'int\u00e9r\u00eats qui pourrait d\u00e9passer 91 milliards d'euros l'an prochain. Le Premier ministre doit arbitrers en direct, mercredi soir, cet empilement sans pr\u00e9c\u00e9dent de la p\u00e9riode. (S26) (S28) (S19) (S25) ### Nobel : la science en majest\u00e9 La saison 2026 des Nobel a d\u00e9j\u00e0 r\u00e9compens\u00e9 l'optog\u00e9n\u00e9tique (m\u00e9decine, lundi : Karl Deisseroth, Peter Hegemann et Georg Nagel, pour les canaux ioniques activ\u00e9s par la lumi\u00e8re), les neutrinos de l'observatoire IceCube (physique, mardi : le Belge Francis Halzen) et la chimie \u00ab miroir \u00bb (mercredi : Henri Kagan et Kenso Soai). Jeudi, la litt\u00e9rature ; vendredi, la paix \u2014 deux rendez-vous encore ouverts. (S52) (S54) (S55) ### Moyen-Orient : le baril et le d\u00e9troit La guerre au Moyen-Orient et le blocage du d\u00e9troit d'Ormuz continuent de dicter le prix du p\u00e9trole \u2014 le Brent est repass\u00e9 au-dessus des 100 dollars \u2014, les exportations remontent selon Washington, et les n\u00e9gociations indirectes se poursuivent via le Qatar. La facture est mondiale : de l'AIE pr\u00eate \u00e0 rel\u00e2cher ses r\u00e9serves \u00e0 la Banque mondiale qui pr\u00e9voit une inflation accrue en Afrique subsaharienne. (S13) (S14) (S16) (S84) ### Le divertissement se concentre Hollywood a accouch\u00e9 d'un g\u00e9ant : Paramount Skydance a finalis\u00e9 l'absorption de Warner Bros Discovery pour 110 milliards de dollars, donnant naissance au groupe Skydance \u2014 licenciements redout\u00e9s, CNN sous surveillance, et une concentration in\u00e9dite face \u00e0 Netflix et Disney+. L'ann\u00e9e \u00e9lectorale d'Isra\u00ebl (l\u00e9gislatives le 27 octobre) et le Br\u00e9sil (second tour pr\u00e9sidentiel le 25 octobre, Flavio Bolsonaro en position de force) compl\u00e8tent un agenda mondial charg\u00e9. (S43) (S86) ### \u00c0 suivre Jeudi : Nobel de litt\u00e9rature, journ\u00e9e de gr\u00e8ve des syndicats de l'\u00c9ducation en soutien aux lyc\u00e9ens, allocution de suivi du Premier ministre, signature de l'accord de sant\u00e9 Zambie-\u00c9tats-Unis. Vendredi : Nobel de la paix. 25 octobre : second tour pr\u00e9sidentiel br\u00e9silien. 27 octobre : l\u00e9gislatives isra\u00e9liennes. Et en toile de fond : le retour sur Terre de Sophie Adenot, attendu jeudi. (S30) (S71) (S86)"
+  }
+ ],
+ "hors_chapitres": [
+  "**Basket : l'AS Monaco jette l'\u00e9ponge** : le club champion de France, cribl\u00e9 de dettes, a \u00e9t\u00e9 d\u00e9clar\u00e9 en cessation de paiement mercredi apr\u00e8s d'innombrables recours \u2014 la fin de l'aventure de la \u00ab Roca Team \u00bb au plus haut niveau, elle qui fut vice-championne d'Europe. \u00ab Aujourd'hui est un jour triste \u00bb, a \u00e9crit le club. (S93) (S94)",
+  "**Loana : les causes du d\u00e9c\u00e8s d\u00e9voil\u00e9es** : la mort en mars de Loana Petrucciani, r\u00e9v\u00e9l\u00e9e au grand public en 2001, est li\u00e9e \u00e0 un cocktail d'alcool, de drogue, de s\u00e9datifs et \u00e0 une mauvaise sant\u00e9, selon le procureur de Nice \u2014 l'intervention d'un tiers a \u00e9t\u00e9 exclue et la piste de la chute \u00e9cart\u00e9e par les analyses toxicologiques. (S96) (S97)",
+  "**Kenya : premier mort d'Ebola sur son sol** : un K\u00e9nyan vivant en R\u00e9publique d\u00e9mocratique du Congo est mort du virus Ebola lundi soir dans un h\u00f4pital de Nairobi \u2014 premi\u00e8re infection et premier d\u00e9c\u00e8s recens\u00e9s au Kenya ; dix personnes sont plac\u00e9es en quarantaine, alors que l'\u00e9pid\u00e9mie voisine d'Ouganda avait \u00e9t\u00e9 d\u00e9clar\u00e9e termin\u00e9e le 27 ao\u00fbt. (S98) (S99)",
+  "**Intemp\u00e9ries : le Sud-Est sous vigilance orange** : le Gard et l'H\u00e9rault ont \u00e9t\u00e9 plac\u00e9s en vigilance orange pluie-inondation et orages mardi, avant les Bouches-du-Rh\u00f4ne et le Var en soir\u00e9e, pour un nouvel \u00e9pisode m\u00e9diterran\u00e9en \u00ab marqu\u00e9 \u00bb suivi par M\u00e9t\u00e9o-France \u2014 quatre d\u00e9partements du littoral restaient concern\u00e9s mercredi matin. (S100)",
+  "**Football : Ronaldo s'excuse** : Cristiano Ronaldo, qui avait claqu\u00e9 la porte de la s\u00e9lection portugaise la semaine derni\u00e8re, s'est excus\u00e9 mardi et a ouvert la porte \u00e0 un retour sous le maillot national : \u00ab La responsabilit\u00e9 est exclusivement la mienne. \u00bb (S101)",
+  "**Tennis : Djokovic encore roi en Chine** : Novak Djokovic a remport\u00e9 la China Open \u2014 le 102e titre de sa carri\u00e8re \u00e0 39 ans \u2014 quand son adversaire Alex de Minaur a abandonn\u00e9 sur blessure en finale ; le Serbie cr\u00e9dite son \u00ab never-die spirit \u00bb et porte sa s\u00e9rie d'invincibilit\u00e9 \u00e0 34 victoires. (S102)",
+  "**Guadeloupe : le sport amateur en crise** : terre natale de Teddy Riner, Marie-Jos\u00e9 P\u00e9rec et Lilian Thuram, l'\u00eele voit ses ligues dispara\u00eetre et ses licenci\u00e9s baisser contin\u00fbment, sous le double effet des dettes et du d\u00e9clin d\u00e9mographique. (S104)",
+  "**Justice : proc\u00e8s \u00e0 huis clos d'un trafic de monnaies anciennes vers la Russie** : ouvert \u00e0 Reims, le proc\u00e8s s'est tenu derri\u00e8re portes closes par crainte \u00ab d'interf\u00e9rences \u00bb ; un Fran\u00e7ais de 39 ans y a reconnu un \u00ab jeu malsain \u00bb tout en niant \u00eatre le commanditaire, motiv\u00e9 par sa \u00ab rage contre la France \u00bb apr\u00e8s des poursuites pour fouilles arch\u00e9ologiques ill\u00e9gales. (S105)",
+  "**Sant\u00e9 : cap vers l'interdiction des boissons \u00e9nergisantes aux moins de 16 ans ?** : un rapport pr\u00e9sent\u00e9 mercredi pointe des effets \u00ab nocifs \u00bb possibles chez les enfants et adolescents malgr\u00e9 l'absence de risque en population g\u00e9n\u00e9rale \u00e0 dose raisonnable ; le minist\u00e8re de la Sant\u00e9 affiche une \u00ab position d'ouverture \u00bb. (S106)",
+  "**Corse : des maires d\u00e9fient le droit pour le logement** : une trentaine de maires nationalistes ont fait voter une d\u00e9lib\u00e9ration imposant cinq ans de r\u00e9sidence pour devenir propri\u00e9taire \u2014 une disposition ill\u00e9gale, pr\u00e9sent\u00e9e comme un moyen de limiter la sp\u00e9culation immobili\u00e8re, que l'opposition juge contraire \u00e0 la Constitution. (S107) (S108)",
+  "**Ha\u00efti : des \u00e9lections encore report\u00e9es** : le pays englu\u00e9 dans la violence a de nouveau report\u00e9 ses \u00e9lections ; les chiffres compil\u00e9s par la mission de l'ONU jusqu'au 11 septembre font aussi \u00e9tat de 230 enl\u00e8vements, et le secr\u00e9taire g\u00e9n\u00e9ral adjoint Tom Fletcher estime que \u00ab les chiffres r\u00e9els sont probablement bien plus \u00e9lev\u00e9s \u00bb. (S109)",
+  "**Serbie : le vote Outre-Mer \u00e0 l'heure locale, une premi\u00e8re contest\u00e9e** : Belgrade a li\u00e9 le vote des Serbes de l'\u00e9tranger \u00e0 l'heure locale, un choix susceptible de provoquer une lev\u00e9e de boucliers avant une \u00e9lection cl\u00e9 \u2014 le ministre des Affaires \u00e9trang\u00e8res Marko Djuric d\u00e9ment tout ciblage politique des bureaux de vote. (S110)"
+ ],
+ "sources": [
+  {
+   "label": "AFP \u2014 \u00ab IA : Mistral tente de revenir dans la course avec son nouveau mod\u00e8le \u00bb",
+   "ref": "news-afp-20261006-e1cd3803",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "Mistral AI \u2014 \u00ab Introducing Mistral Large 4 \u00bb (annonce officielle)",
+   "ref": "https://mistral.ai/news/mistral-large-4/",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab IA : Mistral d\u00e9voile son plus grand mod\u00e8le et tente de revenir dans la course mondiale (communiqu\u00e9) \u00bb",
+   "ref": "news-afp-20261006-077c3582",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "VentureBeat \u2014 \u00ab Mistral debuts Large 4 'Le Chonk', a 1-trillion parameter text output model \u00bb",
+   "ref": "https://venturebeat.com/technology/mistral-debuts-large-4-le-chonk-a-1-trillion-parameter-text-output-model-with-high-benchmarks-planned-for-open-weights-release",
+   "fiabilite": 4,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab France's Mistral unveils biggest model in sovereign AI push \u00bb",
+   "ref": "news-afp-20261006-881ee629",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab OpenAI sorry for Australia hack, wants to rebuild trust \u00bb",
+   "ref": "news-afp-20261006-a1a1df02",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab R\u00e9guler l'IA: comment s'y prennent les Etats-Unis, la Chine et l'UE \u00bb",
+   "ref": "news-afp-20261006-190e5d3a",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Les entreprises allemandes pas pr\u00eates pour faire face aux cyberattaques \u00e0 l'\u00e8re de l'IA \u00bb",
+   "ref": "news-afp-20261007-1fc75d79",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Sophie Adenot en route vers la Terre \u00bb",
+   "ref": "news-afp-20261007-f4dd3b90",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "franceinfo \u2014 \u00ab Sophie Adenot a quitt\u00e9 la Station spatiale internationale et doit arriver sur Terre jeudi apr\u00e8s-midi \u00bb",
+   "ref": "https://www.franceinfo.fr/sciences/espace/sophie-adenot/sophie-adenot-dans-l-espace/video-sophie-adenot-a-quitte-la-station-spatiale-internationale-et-doit-arriver-sur-terre-jeudi-apres-midi_8226928.html",
+   "fiabilite": 4,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "BFM TV \u2014 \u00ab Sophie Adenot quitte l'ISS pour revenir sur Terre apr\u00e8s huit mois \u00bb",
+   "ref": "https://www.bfmtv.com/sciences/sophie-adenot-quitte-l-iss-pour-revenir-sur-terre-apres-huit-mois-passes-a-bord-de-la-station-spatiale-internationale_AV-202610070524.html",
+   "fiabilite": 4,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Retour sur Terre imminent pour Sophie Adenot \u00bb",
+   "ref": "news-afp-20261006-7d4ecf75",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Les Bourses en net repli avec la remont\u00e9e du p\u00e9trole et des taux \u00bb",
+   "ref": "news-afp-20261007-c9930a3d",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab IEA ready to release more oil reserves if necessary \u00bb",
+   "ref": "news-afp-20261007-cc321b23",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Le FMI pr\u00eat \u00e0 agir face au choc El Ni\u00f1o et vigilant sur le boom de l'IA (entretien \u00e0 l'AFP) \u00bb",
+   "ref": "news-afp-20261007-dfb24894",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab La Banque mondiale pr\u00e9voit une hausse de l'inflation en Afrique subsaharienne \u00bb",
+   "ref": "news-afp-20261006-2522ab03",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Le gouvernement essuie un revers d\u00e8s l'arriv\u00e9e du budget en commission \u00e0 l'Assembl\u00e9e \u00bb",
+   "ref": "news-afp-20261006-5b91ba67",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Entreprises: une disposition critiqu\u00e9e du budget va \u00eatre \"toilett\u00e9e\", annonce Lescure \u00bb",
+   "ref": "news-afp-20261006-7ad296df",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab La Bourse de Paris en forte baisse, les taux d'emprunt fran\u00e7ais remontent \u00bb",
+   "ref": "news-afp-20261007-b77709cc",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab L'euro reprend des couleurs gr\u00e2ce \u00e0 l'accalmie sur les taux fran\u00e7ais \u00bb",
+   "ref": "news-afp-20261006-fa3ff69c",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Budget de la S\u00e9cu: les \u00e9conomies p\u00e8seront surtout sur les patients, d\u00e9plore France Assos sant\u00e9 \u00bb",
+   "ref": "news-afp-20261007-30b99cf5",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Budget de la S\u00e9cu: les repr\u00e9sentants des h\u00f4pitaux et cliniques r\u00e9clament 1,3 Md\u20ac suppl\u00e9mentaire \u00bb",
+   "ref": "news-afp-20261005-dd7332d9",
+   "fiabilite": 5,
+   "maj": "05/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Pr\u00e9sidentielle: Marine Le Pen promet \"140 milliards d'euros nets d'\u00e9conomies\" d'ici 2032 \u00bb",
+   "ref": "news-afp-20261006-b7f18f7d",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Le RN s'attribue une baisse des taux apr\u00e8s le discours de Marine Le Pen \u00bb",
+   "ref": "news-afp-20261006-6ff79863",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab La France risque d'\u00eatre \"\u00e9trangl\u00e9e par les taux d'int\u00e9r\u00eat\", pr\u00e9vient le gouverneur de la Banque de France \u00bb",
+   "ref": "news-afp-20261005-0ed34b4b",
+   "fiabilite": 5,
+   "maj": "05/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Mouvement des lyc\u00e9ens : les derniers d\u00e9veloppements (mercredi) \u00bb",
+   "ref": "news-afp-20261007-94295e25",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Col\u00e8re des lyc\u00e9ens: reprise partielle des cours au lendemain d'une mobilisation massive \u00bb",
+   "ref": "news-afp-20261007-1984f0ef",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "BFM TV \u2014 \u00ab Col\u00e8re lyc\u00e9enne, carburants, agriculteurs... Ce qu'il faut retenir des annonces de S\u00e9bastien Lecornu \u00bb",
+   "ref": "https://www.bfmtv.com/societe/manifestations/colere-lyceenne-carburants-agriculteurs-ce-qu-il-faut-retenir-des-annonces-de-sebastien-lecornu_AN-202610070768.html",
+   "fiabilite": 4,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "franceinfo \u2014 \u00ab Lyc\u00e9es, carburants, budget : suivez l'allocution du Premier ministre S\u00e9bastien Lecornu \u00bb",
+   "ref": "https://www.franceinfo.fr/politique/gouvernement-de-sebastien-lecornu/direct-lycees-carburants-budget-suivez-l-allocution-du-premier-ministre-sebastien-lecornu_8227246.html",
+   "fiabilite": 4,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Lyc\u00e9ens: plusieurs syndicats de l'\u00c9ducation appellent \u00e0 faire gr\u00e8ve et manifester \u00bb",
+   "ref": "news-afp-20261007-74a5fe4d",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab La parole des lyc\u00e9ens \"doit \u00eatre entendue\" et nourrira \"un plan d'action concret\", dit Lecornu \u00bb",
+   "ref": "news-afp-20261007-a7cdb8e5",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Mouvement des lyc\u00e9ens en France : les derniers d\u00e9veloppements (mardi) \u00bb",
+   "ref": "news-afp-20261006-7825a429",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "TF1 Info \u2014 \u00ab \"D\u00e9sinformation\" en marge du mouvement lyc\u00e9en : Paris convoque l'ambassadeur d'Iran \u00bb",
+   "ref": "https://www.tf1info.fr/politique/desinformation-en-marge-du-mouvement-lyceen-paris-convoque-l-ambassadeur-d-iran-pour-faire-cesser-des-provocations-indignes-2468620.html",
+   "fiabilite": 4,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Iran summons French envoy over 'violent response' to school protests \u00bb",
+   "ref": "news-afp-20261006-d7eb0d80",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Lyc\u00e9en \u00e0 la main arrach\u00e9e: la gauche monte au cr\u00e9neau contre la doctrine de maintien de l'ordre \u00bb",
+   "ref": "news-afp-20261005-fa999951",
+   "fiabilite": 5,
+   "maj": "05/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab La CGT veut \"prot\u00e9ger le droit \u00e0 manifester des lyc\u00e9ens\", dit Sophie Binet \u00bb",
+   "ref": "news-afp-20261005-82fc178b",
+   "fiabilite": 5,
+   "maj": "05/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Plus de 140.000 inscrits \u00e0 la primaire social-d\u00e9mocrate \u00bb",
+   "ref": "news-afp-20261005-46c4f29f",
+   "fiabilite": 5,
+   "maj": "05/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab France holds 'technical dialogue' with Taliban govt to deport Afghans \u00bb",
+   "ref": "news-afp-20261007-24a2709e",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Mouvement des lyc\u00e9ens: Lecornu d\u00e9fend l'ordre et cible \u00e0 nouveau LFI \u00bb",
+   "ref": "news-afp-20261006-63e8d73a",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "Service-Public.fr \u2014 \u00ab Organiser une manifestation, un d\u00e9fil\u00e9 ou un rassemblement sur la voie publique \u00bb (fiche F21899)",
+   "ref": "https://www.service-public.gouv.fr/particuliers/vosdroits/F21899",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "Services de l'\u00c9tat en Loire-Atlantique \u2014 \u00ab D\u00e9claration de manifestation sur la voie publique \u00bb (d\u00e9cret-loi du 23 octobre 1935)",
+   "ref": "https://www.loire-atlantique.gouv.fr/Demarches/Declarer-une-manifestation-ou-un-rassemblement/Declaration-de-manifestation-sur-la-voie-publique",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Manifestation Urgence Palestine interdite \u00e0 Paris le jour des comm\u00e9morations du 7-Octobre \u00bb",
+   "ref": "news-afp-20261006-db0955ff",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Paramount completes Warner Bros takeover, creating Skydance \u00bb",
+   "ref": "news-afp-20261006-b6528a4c",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "Wikip\u00e9dia (EN) \u2014 \u00ab Paramount Skydance \u00bb",
+   "ref": "https://en.wikipedia.org/wiki/Paramount_Skydance",
+   "fiabilite": 3,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Le drame \"Elsinore\", avec Andrew Scott, ouvre le festival du film de Londres \u00bb",
+   "ref": "news-afp-20261007-ecf4cd33",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "Variety \u2014 \u00ab London Film Festival opens with 'Elsinore' and hails Andrew Scott \u00bb",
+   "ref": "https://variety.com/2026/film/global/andrew-scott-elsinore-opens-london-film-festival-1236904258/",
+   "fiabilite": 4,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "The Standard \u2014 \u00ab Elsinore London Film Festival review: Andrew Scott scales Oscar-worthy heights \u00bb",
+   "ref": "https://www.standard.co.uk/culture/film/elsinore-film-review-london-film-festival-andrew-scott-olivia-colman-b1299952.html",
+   "fiabilite": 4,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Eva Marie Saint, Oscar winner of Hollywood classics, dies at 102 \u00bb",
+   "ref": "news-afp-20261006-2355410c",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AP \u2014 \u00ab Eva Marie Saint, star of 'North by Northwest' and 'On the Waterfront,' dies at 102 \u00bb",
+   "ref": "news-ap-20261006-01033fb0",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "franceinfo \u2014 \u00ab Eva Marie Saint, l'une des derni\u00e8res actrices de l'\u00e2ge d'or hollywoodien, est d\u00e9c\u00e9d\u00e9e \u00e0 102 ans \u00bb",
+   "ref": "https://www.franceinfo.fr/culture/cinema/eva-marie-saint-l-une-des-dernieres-actrices-de-l-age-d-or-hollywoodien-star-de-la-mort-aux-trousses-est-decedee-a-102-ans_8226478.html",
+   "fiabilite": 4,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "TV5MONDE \u2014 \u00ab Spotify \u00e9tend son offre de livres audio \u00e0 plus de 180 march\u00e9s \u00bb",
+   "ref": "https://information.tv5monde.com/economie/spotify-etend-son-offre-de-livres-audio-plus-de-180-marches-2840566",
+   "fiabilite": 4,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab La th\u00e9rapie g\u00e9nique ou les hormones du sommeil? Nobel de chimie mercredi \u00bb",
+   "ref": "news-afp-20261006-2635e20c",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AP \u2014 \u00ab Nobel Prize in chemistry awarded to Kagan and Soai for research solving 'mirror image' mystery \u00bb",
+   "ref": "news-ap-20261007-77293165",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "NPR \u2014 \u00ab Henri B. Kagan and Kenso Soai win Nobel Prize in chemistry \u00bb",
+   "ref": "https://www.npr.org/2026/10/07/g-s1-146849/nobel-prize-chemistry",
+   "fiabilite": 4,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Pour le chimiste fran\u00e7ais Henri Kagan, un Nobel longtemps attendu \u00bb",
+   "ref": "news-afp-20261007-ac5b4e8c",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab La France compterait 30% de m\u00e9decins en plus en 2040 (\u00e9tude statistique) \u00bb",
+   "ref": "news-afp-20261006-72c44e80",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "20 Minutes \u2014 \u00ab La France devrait compter 30 % de m\u00e9decins en plus avant quinze ans \u00bb",
+   "ref": "https://www.20minutes.fr/societe/4251969-20261006-bonne-nouvelle-france-devrait-compter-30-medecins-plus-avant-quinze-ans",
+   "fiabilite": 4,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab La plus grande colonie de manchots du monde victime du changement climatique, montre une \u00e9tude \u00bb",
+   "ref": "news-afp-20261007-ed04cc74",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "Euronews \u2014 \u00ab Why penguins are vanishing from this volcanic island 2,000 km from humans \u00bb",
+   "ref": "https://www.euronews.com/2026/10/07/a-worrying-decline-why-penguins-are-vanishing-from-this-volcanic-island-2000km-from-humans",
+   "fiabilite": 4,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Climat : la directrice de la COP30 accuse les \u00c9tats-Unis de freiner d'autres pays \u00bb",
+   "ref": "news-afp-20261007-e4ab9065",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "La Libre Belgique \u2014 \u00ab Climat : la Haute cour australienne s'oppose \u00e0 l'extension d'une mine de charbon \u00bb",
+   "ref": "https://www.lalibre.be/dernieres-depeches/2026/10/07/climat-la-haute-cour-australienne-soppose-a-lextension-dune-mine-de-charbon-LZAX4HEKDZEMTNVVS7SH2NDVEY/",
+   "fiabilite": 4,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Climat: sous pression, l'Australie d\u00e9bloque une aide pour le Pacifique \u00bb",
+   "ref": "news-afp-20261007-63ed9b10",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Turkey, Australia's joint COP31 leadership raises doubts \u00bb",
+   "ref": "news-afp-20261007-3f28f86",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Autosuffisante en riz, l'Indon\u00e9sie va interrompre un programme de d\u00e9forestation \u00bb",
+   "ref": "news-afp-20261006-df8cf67b",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab L'Indon\u00e9sie a collect\u00e9 190 millions de dollars d'amendes dans le secteur forestier \u00bb",
+   "ref": "news-afp-20261006-7c872b34",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab L'Indon\u00e9sie va augmenter sa production de biocarburants \u00e0 partir de la canne \u00e0 sucre \u00bb",
+   "ref": "news-afp-20261007-d324fac9",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Une viticulture fran\u00e7aise en crise \u00bb",
+   "ref": "news-afp-20261007-8b41d9f0",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Soup\u00e7on de peste en Russie : les Etats-Unis r\u00e9clament officiellement de la transparence \u00bb",
+   "ref": "news-afp-20261006-17fe9ac1",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Trump pr\u00e9voit de parler \u00e0 Poutine des soup\u00e7ons de peste en Russie \u00bb",
+   "ref": "news-afp-20261006-104c840c",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "RFI \u2014 \u00ab Marco Rubio assure que l'Iran a \"perdu le contr\u00f4le int\u00e9gral\" du d\u00e9troit d'Ormuz \u00bb",
+   "ref": "https://www.rfi.fr/fr/en-bref/20261007-marco-rubio-assure-que-l-iran-a-perdu-le-contr%C3%B4le-int%C3%A9gral-du-d%C3%A9troit-d-ormuz",
+   "fiabilite": 4,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab La Zambie va signer avec les Etats-Unis un accord de sant\u00e9 controvers\u00e9 d'1,5 mds de dollars \u00bb",
+   "ref": "news-afp-20261006-8b8dc867",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "L'Avenir \u2014 \u00ab Trump ne pense pas que l'incident en Russie soit li\u00e9 \u00e0 une arme biologique \u00bb",
+   "ref": "https://www.lavenir.net/actu/monde/2026/10/07/soupcon-de-peste-en-russie-donald-trump-ne-pense-pas-que-lincident-dans-un-laboratoire-russe-soit-lie-a-une-arme-biologique-KMFZODC5XVFFZE2JCZWO6E3NUQ/",
+   "fiabilite": 4,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Le Japon dit avoir ordonn\u00e9 \u00e0 un navire chinois de quitter sa zone \u00e9conomique exclusive \u00bb",
+   "ref": "news-afp-20261006-d351750f",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Ta\u00efwan: dix personnes inculp\u00e9es pour revente pr\u00e9sum\u00e9e de puces am\u00e9ricaines \u00e0 la Chine \u00bb",
+   "ref": "news-afp-20261007-b0adc2d6",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Ta\u00efwan: quatre personnes inculp\u00e9es pour avoir espionn\u00e9 un d\u00e9put\u00e9 critique de la Chine \u00bb",
+   "ref": "news-afp-20261007-863ad83c",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Soup\u00e7ons de peste en Russie: ce que l'on sait \u00bb",
+   "ref": "news-afp-20261007-741d4958",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "franceinfo \u2014 \u00ab La Russie d\u00e9ment tout \"risque \u00e9pid\u00e9mique\" en Sib\u00e9rie apr\u00e8s la mort d'une laborantine \u00bb",
+   "ref": "https://www.franceinfo.fr/monde/russie/la-russie-dement-tout-risque-epidemique-en-siberie-apres-la-mort-d-une-laborantine-d-un-institut-travaillant-sur-la-peste_8227513.html",
+   "fiabilite": 4,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "franceinfo \u2014 \u00ab Quatre questions sur les soup\u00e7ons de peste en Russie \u00bb",
+   "ref": "https://www.franceinfo.fr/monde/russie/quatre-questions-sur-les-soupcons-de-peste-en-russie-qui-inquietent-la-communaute-internationale_8226337.html",
+   "fiabilite": 4,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Russie: 20 ans apr\u00e8s son assassinat, l'h\u00e9ritage \"n\u00e9cessaire\" d'Anna Politkovska\u00efa \u00bb",
+   "ref": "news-afp-20261007-50fe7175",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab La Russie classe une affaire contre une humanitaire accus\u00e9e d'avoir critiqu\u00e9 l'arm\u00e9e \u00bb",
+   "ref": "news-afp-20261006-ef656e36",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "RFI \u2014 \u00ab Russie: Moscou vis\u00e9e par une attaque meurtri\u00e8re de plusieurs centaines de drones ukrainiens \u00bb",
+   "ref": "https://www.rfi.fr/fr/europe/20261006-russie-moscou-vis%C3%A9e-par-une-attaque-meurtri%C3%A8re-de-plusieurs-centaines-de-drones-ukrainiens",
+   "fiabilite": 4,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "France 24 \u2014 \u00ab En Russie, Moscou vis\u00e9e par une des attaques les plus massives de drones \u00bb",
+   "ref": "https://www.france24.com/fr/europe/20261006-en-russie-une-attaque-massive-de-drones-cible-moscou-et-sa-p%C3%A9riph%C3%A9rie",
+   "fiabilite": 4,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab La Russie accuse l'Ukraine d'avoir frapp\u00e9 un minibus dans une r\u00e9gion occup\u00e9e, faisant trois morts \u00bb",
+   "ref": "news-afp-20261006-4ef2b87f",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Les n\u00e9gociations entre l'Iran et les Etats-Unis se poursuivent, affirme le Qatar \u00bb",
+   "ref": "news-afp-20261006-d3ef566b",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Moyen-Orient: le p\u00e9trole fait du surplace, entre hausse de l'offre et poursuite des hostilit\u00e9s \u00bb",
+   "ref": "news-afp-20261006-99b26fcf",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab 7-Octobre: hommage teint\u00e9 de tensions politiques avant les \u00e9lections en Isra\u00ebl \u00bb",
+   "ref": "news-afp-20261006-d71b75d5",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab 7-Octobre : le chef de la diplomatie fran\u00e7aise en Isra\u00ebl pour rendre hommage aux victimes \u00bb",
+   "ref": "news-afp-20261007-6e3d8593",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab 7-Octobre: Paris inaugure une all\u00e9e du parc Monceau en hommage \u00e0 la famille Bibas \u00bb",
+   "ref": "news-afp-20261006-bfcddb66",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab A Paris, une exposition \u00e9ph\u00e9m\u00e8re rend hommage aux victimes du 7-Octobre \u00bb",
+   "ref": "news-afp-20261007-7ebc12c4",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Ukraine : des frappes russes de bombes guid\u00e9es font au moins cinq morts \u00e0 Kharkiv \u00bb",
+   "ref": "news-afp-20261005-84aa7aba",
+   "fiabilite": 5,
+   "maj": "05/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Ukraine : plus de 5.800 trains \u00e9vacu\u00e9s en septembre en raison de menaces de frappes russes \u00bb",
+   "ref": "news-afp-20261005-fd81d51b",
+   "fiabilite": 5,
+   "maj": "05/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Germany's AfD mulls softening opposition to EU and euro \u00bb",
+   "ref": "news-afp-20261005-7ccc69b5",
+   "fiabilite": 5,
+   "maj": "05/10/2026"
+  },
+  {
+   "label": "franceinfo \u2014 \u00ab L'AS Monaco Basket d\u00e9clar\u00e9 en cessation de paiement \u00bb",
+   "ref": "https://www.franceinfo.fr/sports/basket/l-as-monaco-basket-declare-en-cessation-de-paiement_8226850.html",
+   "fiabilite": 4,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Basket: en cessation de paiement, Monaco jette l'\u00e9ponge \u00bb",
+   "ref": "news-afp-20261007-c2214d45",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "20 Minutes \u2014 \u00ab Basket : cette fois c'est bien la fin pour l'AS Monaco, championne de France en titre \u00bb",
+   "ref": "https://www.20minutes.fr/sport/basketball/4252256-20261007-basket-fois-bien-fin-monaco-championne-france-titre",
+   "fiabilite": 4,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Alcool, drogue, s\u00e9datifs et mauvaise sant\u00e9 \u00e0 l'origine du d\u00e9c\u00e8s de Loana \u00bb",
+   "ref": "news-afp-20261006-18c73e27",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "franceinfo \u2014 \u00ab Mort de Loana Petrucciani : les derni\u00e8res analyses toxicologiques \u00bb",
+   "ref": "https://www.franceinfo.fr/faits-divers/mort-de-loana-petrucciani-les-dernieres-analyses-toxicologiques-montrent-une-concentration-elevee-d-alcool-stupefiants-et-sedatifs_8225173.html",
+   "fiabilite": 4,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AP \u2014 \u00ab Kenya confirms first Ebola case in man who traveled from Congo and died \u00bb",
+   "ref": "https://apnews.com/article/kenya-congo-ebola-death-nairobi-32ccde1e74048396ad5cb9f9fe47495e",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "ONU Info (ONU) \u2014 \u00ab Ebola : le Kenya traque les contacts apr\u00e8s un premier d\u00e9c\u00e8s \u00bb",
+   "ref": "https://news.un.org/fr/story/2026/10/1159624",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Intemp\u00e9ries: le Gard et l'H\u00e9rault en vigilance orange \u00bb",
+   "ref": "news-afp-20261006-f5409060",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Foot: Ronaldo s'excuse pour son comportement, ouvre la porte \u00e0 un retour en s\u00e9lection \u00bb",
+   "ref": "news-afp-20261006-fa779963",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab 'Destined' Djokovic wins China Open, extending unbeaten record \u00bb",
+   "ref": "news-afp-20261006-4e8bf519",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Guadeloupe : quand les dettes et le d\u00e9clin d\u00e9mographique menacent le sport amateur \u00bb",
+   "ref": "news-afp-20261005-05d2acd3",
+   "fiabilite": 5,
+   "maj": "05/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Un proc\u00e8s sur un trafic franco-russe de monnaies anciennes \u00e0 huis clos \u00bb",
+   "ref": "news-afp-20261006-c842c579",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Interdiction des boissons \u00e9nergisantes aux moins de 16 ans: \"position d'ouverture\" du minist\u00e8re de la Sant\u00e9 \u00bb",
+   "ref": "news-afp-20261007-fc25a09c",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab France: des \u00e9lus corses veulent limiter l'acc\u00e8s \u00e0 la propri\u00e9t\u00e9 aux nouveaux arrivants \u00bb",
+   "ref": "news-afp-20261007-d71b4580",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab En croisade pour l'acc\u00e8s au logement, des maires corses d\u00e9fient le droit \u00bb",
+   "ref": "news-afp-20261007-09c10ca2",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Crisis-striken Haiti postpones elections \u00bb",
+   "ref": "news-afp-20261006-3d07cbc2",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AP \u2014 \u00ab Serbia ties overseas voting to local time, a move likely to spark backlash ahead of a key election \u00bb",
+   "ref": "https://apnews.com/article/serbia-election-overseas-voting-hours-23936fb71cf72c3d849fde3ac92d37da",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab \"La terre et le sang\", s\u00e9rie corse sur le refus de c\u00e9der \u00e0 la vengeance \u00bb",
+   "ref": "news-afp-20261007-a3fc2e07",
+   "fiabilite": 5,
+   "maj": "07/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Plus de moyens pour les lyc\u00e9ens: y a-t-il \"la place\" dans le budget 2027? \u00bb",
+   "ref": "news-afp-20261006-069d6329",
+   "fiabilite": 5,
+   "maj": "06/10/2026"
+  }
+ ]
+}
