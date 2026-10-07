@@ -118,6 +118,19 @@
         "BFMTV"
       ],
       "auto": true
+    },
+    {
+      "id": "c17p12",
+      "texte": "Presque sans interruption, les nouvelles continuent d'arriver. Au matin du 7 octobre 2026, le mouvement poursuit sa route. Sur le terrain, la mobilisation tient : Vidéos Snapchat, droit au jogging et solidarité public-privé : Saint-Germain-en-Laye décline à sa façon le blocus des lycées (Le Figaro) ; «Je représente tous les yeux perdus» : un artiste intègre à son street-art l’œil d’un jeune victime d’un tir de LBD lors des blocus des lycées (Le Figaro) ; Finistère: plus de 6.500 manifestants mobilisés pour l'acte III dans le département selon la préfecture (BFMTV) ; Blocage des lycées : 30 000 élèves privés de cours « plusieurs semaines » à cause des saccages (La Croix) ; Mobilisation lycéenne : à Paris, les gendarmes mobilisés pour maintenir le calme dans les cortèges (Europe 1). La répression, elle, continue de nourrir la colère : Blocage des lycées: \"215 élèves blessés\", selon le ministrère de l'Éducation nationale (BFMTV) ; Blocus des lycées : « La police est plus sévère avec les lycéens qu’avec les pédocriminels », fustige Ségolène Royal (Public Sénat) ; «Vous êtes fous, il y a un bébé d’un an !» : un nourrisson hospitalisé après un tir de mortier lors d’un blocus lycéen dans les Yvelines (Le Figaro). Du côté du pouvoir, chacun prend position : EN DIRECT - Colère des lycéens : demander la suppression de Parcoursup est «une immense démagogie», estime le ministre de l’Enseignement supérieur (Le Figaro) ; \"Dire que Parcoursup trie, c'est un raccourci technique et moral assez évident\" affirme Édouard Geffray (BFMTV) ; Blocus des lycées : la reprise des cours remplacée par un temps de «démocratie interne», Bruno Retailleau fustige une «câlinothérapie» (Europe 1). Dans les réactions, le débat s'invite : EN DIRECT – Mobilisation lycéenne : le premier syndicat d’enseignants du secondaire appelle à rejoindre les manifestations jeudi (Libération). Le prochain relevé reprendra le fil. (Relevé automatique du 7 octobre 2026 à 11:29 — faits repris des titres de presse, non reformulés.)",
+      "sources": [
+        "Le Figaro",
+        "Libération",
+        "BFMTV",
+        "La Croix",
+        "Public Sénat",
+        "Europe 1"
+      ],
+      "auto": true
     }
   ]
 }
