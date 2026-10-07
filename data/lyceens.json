@@ -1,5 +1,5 @@
 {
-  "maj": "06/10/2026",
+  "maj": "07/10/2026 05:28",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Deux relevés ici : ce que dit le gouvernement, et les seules informations corroborées par plusieurs médias indépendants. La parole des élèves vit dans la chronique « Version des étudiants ».",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -28,12 +28,13 @@
       "date": "06/10/2026",
       "titre": "Blocus des lycées : le gouvernement vise un retour des élèves en classe dès ce mercredi",
       "texte": "Après le blocage de plus de 400 établissements ce lundi, le gouvernement aborde cette journée de mardi, où la mobilisation s'annonce massive à travers la France. Malgré les tensions, l'exécutif prépa…",
-      "source": "Europe 1",
+      "source": "Europe 1 / Le Figaro",
       "sources": [
-        "Europe 1"
+        "Europe 1",
+        "Le Figaro"
       ],
       "url": "https://www.europe1.fr/politique/blocus-des-lycees-le-gouvernement-vise-un-retour-des-eleves-en-classe-des-ce-mercredi-1126301?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
-      "verifie": false
+      "verifie": true
     },
     {
       "id": "amuwh8t4w-8iua",
@@ -171,10 +172,14 @@
       "date": "06/10/2026",
       "titre": "Blocage, mobilisation lycéenne: \"Ce qui les caractérise, c'est la grande angoisse par rapport à leur avenir\", raconte Stéphane Troussel, président du département de la Seine-Saint-Denis",
       "texte": "Grande journée de manifestation partout en France pour l'acte III de la mobilisation lycéenne. Soutenus par les syndicats, notamment de l'Éducation nationale qui appelle à faire grève, les lycéens manifestent ce mardi. Selon l'Union syndicale, ce sont 450.000 manifestants qui on…",
-      "source": "BFMTV / Europe 1",
+      "source": "BFMTV / Europe 1 / 20 minutes / Public Sénat / Le Figaro / La Croix",
       "sources": [
         "BFMTV",
-        "Europe 1"
+        "Europe 1",
+        "20 minutes",
+        "Public Sénat",
+        "Le Figaro",
+        "La Croix"
       ],
       "url": "https://www.bfmtv.com/politique/video-blocage-mobilisation-lyceenne-ce-qui-les-caracterise-c-est-la-grande-angoisse-par-rapport-a-leur-avenir-raconte-stephane-troussel-president-du-departement-de-la-seine-saint-denis_VN-202610060954.html",
       "verifie": true
