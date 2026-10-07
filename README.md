@@ -4,7 +4,7 @@ PWA statique hébergée sur GitHub Pages : l'édition quotidienne « Des infos, 
 
 Site : https://diyeah24.fr
 
-## Architecture (v103)
+## Architecture (v104)
 
 ```
 index.html          Coquille unique — tout le rendu se fait côté client en ES modules
@@ -13,8 +13,6 @@ js/onglets.js       Source unique des 8 onglets (ids figés — les renommages n
 js/router.js        Routeur URL : l'onglet ouvert vit dans le hash (#edition?c=…, #medias/blast…),
                     liens profonds partageables, bouton retour fonctionnel
 js/feeds.js         Couche réseau : RSS direct → relais JSON/XML, dédup par URL, caches TTL 20 min
-js/lecture.js       Agent de documentation numérique : Open Library, Internet Archive, Gallica/BnF,
-                    Crossref, DOAJ, arXiv, HAL, Europe PMC — lecteur intégré paginé
 js/github.js        Publication des médias dans data/medias.json via l'API GitHub (jeton fine-grained local)
 js/compte.js        Comptes Supabase : inscription/connexion, jeton rafraîchi (jetonActif),
                     synchronisation des préférences entre appareils (site 100 % utilisable sans compte)
@@ -23,9 +21,9 @@ js/push.js          Notifications Web Push : souscription (recréée à chaque a
                     (Firefox iPhone impossible, Firefox Android = notifs seulement app ouverte)
 js/meteo.js         Météo du jour (Open-Meteo, gratuit, sans clé) + tendance matin/soirée, ville au choix
 js/views/          Vues des onglets (edition, articles, videos, medias, archives, climat→newsletters,
-                    lyceens, reglages, lecture, feedback, sources, common)
+                    lyceens, reglages, sources, common)
 js/app.js           Bootstrap : wiring des boutons, chargement data/*.json, service worker
-sw.js               Service worker : coquille cache-first (CACHE = 'newsletter-v103'),
+sw.js               Service worker : coquille cache-first (CACHE = 'newsletter-v104'),
                     editions/ et data/ network-first — bump de CACHE à chaque livraison de code
 styles.css          Thème sombre/clair, variables CSS
 
@@ -48,7 +46,7 @@ L'ordre d'affichage est réglable par chaque utilisateur (Réglages) ; ids d'ong
 ## Automatisations (GitHub Actions)
 
 - **Génération nocturne** : l'édition HTML+JSON est produite vers minuit (Europe/Paris) et poussée dans `editions/` ; le squelette éditorial vit dans le validateur (`tools/validate-edition.js`, structure v15 : chapitres déroulants `<details>`, boutons de partage, ancres c-…).
-- **Agent de maintenance** (`feedback.yml`, toutes les 6 h — 3 h/9 h/15 h/21 h Paris) : `tools/maintenance.js` orchestre le résumé feedback (Supabase), les relevés ONG (`tools/ong-releve.js`, une fois par jour et par site), le relevé lycéens (`tools/lyceens.js`, 14 flux presse, badges ✅ corroboré ≥ 2 médias / ⚠️ une source), la chronique étudiante (`tools/etudiants.js`) et publie le tout dans `data/` — rapport dans `data/maintenance.json`.
+- **Agent de maintenance** (`feedback.yml`, toutes les 6 h — 3 h/9 h/15 h/21 h Paris) : `tools/maintenance.js` orchestre les relevés ONG (`tools/ong-releve.js`, une fois par jour et par site), le relevé lycéens (`tools/lyceens.js`, 14 flux presse, badges ✅ corroboré ≥ 2 médias / ⚠️ une source), la chronique étudiante (`tools/etudiants.js`) et publie le tout dans `data/` — rapport dans `data/maintenance.json`.
 - **Notifications push** (`notifier.yml`, toutes les heures) : `tools/notifier.js` lit les abonnements et préférences dans Supabase et envoie selon les toggles (édition / Copernicus / Lycéens 2026 / par média) ; journal de chaque envoi (domaine + statut HTTP + corps d'erreur) dans `data/notif-envois.json` ; purge automatique des abonnements morts (403/404/410).
   - Contact VAPID sur un vrai domaine (`mailto:contact@diyeah24.fr`) — Apple rejette les contacts non résolubles par 403 BadJwtToken.
   - Mode test : marqueur `data/notif-test.json` `{ "test": "token-frais" }` → 🔔 à chaque abonnement, puis supprimer le marqueur (mémo `notif_envoyees.test` par token).
@@ -81,7 +79,7 @@ Notifications Web Push : la clé publique VAPID vit dans `data/compte.json` (`pu
 
 ## Règles de déploiement
 
-1. **Chaque livraison de code** (js/, sw.js, index.html, styles.css) doit incrémenter `CACHE` dans `sw.js` (v103 → v104…) — sinon les clients gardent l'ancienne version en cache.
+1. **Chaque livraison de code** (js/, sw.js, index.html, styles.css) doit incrémenter `CACHE` dans `sw.js` (v104 → v105…) — sinon les clients gardent l'ancienne version en cache.
 2. **Le contrat `editions/` est figé** : ne jamais renommer ni supprimer l'historique.
 3. `data/` est servi network-first : une modification y est visible immédiatement, sans bump de cache.
 4. Ne pas pousser de fichier non-ASCII de plus de ~32 Ko via l'outillage d'automatisation (risque de double-encodage) — publier l'HTML d'édition en entités numériques ; messages de commit en ASCII.
@@ -90,7 +88,7 @@ Notifications Web Push : la clé publique VAPID vit dans `data/compte.json` (`pu
 ## Outils repo
 
 - `tools/validate-edition.js` / `tools/build-edition-json.js` / `tools/build-archives.js` / `tools/validate-latest.js` : édition (structure v15 date-aware) et CI ;
-- `tools/maintenance.js` : orchestrateur des relevés 6 h (feedback, ONG, lycéens, étudiants) + publication ;
+- `tools/maintenance.js` : orchestrateur des relevés 6 h (ONG, lycéens, étudiants) + publication ;
 - `tools/etudiants.js` : relevé narratif de la chronique étudiante (accroches et datelines qui enchaînent d'un relevé à l'autre, items verbatim par volets) ;
 - `tools/ong-releve.js` : relevé quotidien des sites ONG (règles d'extraction par site) ;
 - `tools/notifier.js` / `tools/notif-diag.js` : envoi push et diagnostic ;
