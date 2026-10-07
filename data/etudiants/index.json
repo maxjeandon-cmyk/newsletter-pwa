@@ -3,7 +3,7 @@
   "intro": "Chronique narrative du mouvement lycéen et étudiant de l'automne 2026, écrite du point de vue des élèves : de l'amorce de Créteil au dernier acte en date, puis un ajout automatique toutes les six heures. Le « Complément étudiants » rassemble les chapitres transverses. Sources privilégiées : médias indépendants (Basta !, Contre Attaque, Café pédagogique, StreetPress, L'Humanité, Politis, Acrimed, Le Média, Bondy Blog), fils Reddit (r/etudiants, r/enseignants, r/france), observation des commentaires TikTok, Instagram et Snapchat, et Wikipédia comme colonne vertébrale factuelle.",
   "note": "Méthode : chaque paragraphe cite ses sources. Les paragraphes marqués « auto » sont des relevés bruts ajoutés par le pipeline toutes les 6 h (faits sourcés, sans réécriture) ; la rédaction narrative approfondie est assurée lors des éditions de la newsletter. Badge ✅ (corroboré par au moins deux médias distincts) et ⚠️ (une seule source) : ces distinctions s'appliquent aux relevés automatiques.",
   "maj": "07/10/2026",
-  "totalParagraphes": 80,
+  "totalParagraphes": 81,
   "chapitres": [
     {
       "id": "c1",
@@ -146,23 +146,23 @@
       "fichier": "chapitres/18.json",
       "periode": "7 octobre 2026 — suivi de la journée",
       "titre": "Acte IV — 7 octobre 2026",
-      "paragraphes": 3,
-      "octets": 6731
+      "paragraphes": 4,
+      "octets": 8888
     }
   ],
   "releveSigs": [
-    "bebe|etes|fous|vous#",
-    "blesses|lycees|ministr|nationa#215",
-    "colere|demande|parcour|suppres#",
-    "cours|lycees|plusieu|prives#000",
-    "cours|lycees|remplac|reprise#",
-    "dire|parcour|raccour|trie#",
-    "droit|jogging|snapcha|solidar#",
-    "finiste|manifes|mobilis|plus#500",
-    "gendarm|lyceenn|mobilis|mobilis#",
-    "lyceenn|mobilis|premier|syndica#",
-    "lycees|plus|police|severe#",
-    "perdus|represe|tous|yeux#"
+    "apparue|realite|revendi|sont#",
+    "aurait|bagayok|bally|revocat#",
+    "bassine|ecole|mega|retrait#",
+    "bitume|leur|poursui|virtuel#",
+    "blesses|marge|marseil#",
+    "calment|choses|gouvern|veut#",
+    "cours|entre|reprise#",
+    "francai|jugent|parents|sondage#",
+    "heure|lycees|nous|sommes#",
+    "lyceenn|malgre|mobilis|nombre#",
+    "lycees|mobilis|prives|recul#000",
+    "lycees|nathana|pourquo|prend#"
   ],
   "sections": [
     {
@@ -247,16 +247,16 @@
           "fichier": "chapitres/17.json",
           "periode": "6 octobre 2026 — l'acte III",
           "titre": "Acte III : la France entière dans la rue",
-          "paragraphes": 12,
-          "octets": 23443
+          "paragraphes": 9,
+          "octets": 16847
         },
         {
           "id": "c18",
           "fichier": "chapitres/18.json",
           "periode": "7 octobre 2026 — suivi de la journée",
           "titre": "Acte IV — 7 octobre 2026",
-          "paragraphes": 3,
-          "octets": 6731
+          "paragraphes": 4,
+          "octets": 8888
         }
       ]
     },
@@ -324,8 +324,8 @@
       ]
     }
   ],
-  "releveDate": "2026-10-07T09:29:31.981Z",
-  "releveCompteur": 5,
+  "releveDate": "2026-10-07T15:38:49.351Z",
+  "releveCompteur": 6,
   "prochainActe": 5,
   "chapitreJour": {
     "id": "c18",
