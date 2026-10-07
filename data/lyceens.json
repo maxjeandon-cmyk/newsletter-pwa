@@ -1,5 +1,5 @@
 {
-  "maj": "07/10/2026",
+  "maj": "07/10/2026 11:29",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Deux relevés ici : ce que dit le gouvernement, et les seules informations corroborées par plusieurs médias indépendants. La parole des élèves vit dans la chronique « Version des étudiants ».",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -16,12 +16,29 @@
       "date": "07/10/2026",
       "titre": "Colère lycéenne: \"Si le mouvement continue, il faut qu'il reste dans le calme\", déclare le ministre de l'Enseignement s…",
       "texte": "Au lendemain d'une mobilisation massive dans les rues, l'attitude des jeunes mobilisés sera scrutée de près mercredi, journée test pour le gouvernement qui tente de ramener le mouvement dans les étab…",
-      "source": "Europe 1 / BFMTV",
+      "source": "Europe 1 / BFMTV / Public Sénat / Libération / franceinfo / Ouest-France",
       "sources": [
         "Europe 1",
-        "BFMTV"
+        "BFMTV",
+        "Public Sénat",
+        "Libération",
+        "franceinfo",
+        "Ouest-France"
       ],
       "url": "https://www.bfmtv.com/politique/video-colere-lyceenne-si-le-mouvement-continue-il-faut-qu-il-reste-dans-le-calme-declare-le-ministre-de-l-enseignement-superieur_VN-202610070319.html",
+      "verifie": true
+    },
+    {
+      "id": "amuxwou0n-2qqd",
+      "date": "07/10/2026",
+      "titre": "Édouard Geffray: \"24 lycées incendiés ou saccagés\", 30 000 lycéens \"privés de cours pour plusieurs semaines\"",
+      "texte": "Le ministre de l'Éducation nationale Édouard Geffray est auditionné à l'Assemblée nationale mercredi 7 octobre, sur la mobilisation lycéenne.",
+      "source": "BFMTV / La Croix",
+      "sources": [
+        "BFMTV",
+        "La Croix"
+      ],
+      "url": "https://www.bfmtv.com/politique/video-edouard-geffray-24-lycees-incendies-ou-saccages-30-000-lyceens-prives-de-cours-pour-plusieurs-semaines_VN-202610070375.html",
       "verifie": true
     },
     {
@@ -29,24 +46,12 @@
       "date": "06/10/2026",
       "titre": "Colère des lycéens : Villepin et Ruffin vent debout ensemble contre Parcoursup",
       "texte": "Dominique de Villepin et François Ruffin se sont une nouvelle fois affichés ensemble pour demander un budget de l’Education nationale sanctuarisé, le droit de vote à 16 ans et la fin de Parcoursup",
-      "source": "20 minutes",
+      "source": "20 minutes / Le Figaro",
       "sources": [
-        "20 minutes"
-      ],
-      "url": "https://www.20minutes.fr/politique/4251677-20261006-colere-lyceens-villepin-ruffin-vent-debout-ensemble-contre-parcoursup?at_medium=display&at_campaign=149",
-      "verifie": false
-    },
-    {
-      "id": "amuwh8t4v-fktz",
-      "date": "06/10/2026",
-      "titre": "Blocus des lycées : le gouvernement vise un retour des élèves en classe dès ce mercredi",
-      "texte": "Après le blocage de plus de 400 établissements ce lundi, le gouvernement aborde cette journée de mardi, où la mobilisation s'annonce massive à travers la France. Malgré les tensions, l'exécutif prépa…",
-      "source": "Europe 1 / Le Figaro",
-      "sources": [
-        "Europe 1",
+        "20 minutes",
         "Le Figaro"
       ],
-      "url": "https://www.europe1.fr/politique/blocus-des-lycees-le-gouvernement-vise-un-retour-des-eleves-en-classe-des-ce-mercredi-1126301?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
+      "url": "https://www.20minutes.fr/politique/4251677-20261006-colere-lyceens-villepin-ruffin-vent-debout-ensemble-contre-parcoursup?at_medium=display&at_campaign=149",
       "verifie": true
     },
     {
@@ -190,10 +195,11 @@
       "date": "07/10/2026",
       "titre": "Mobilisation lycéenne : le policier auteur du tir tendu d’une grenade dans le visage d’un élève a été mis en examen",
       "texte": "Une enquête avait été ouverte par le parquet de Pontoise et confiée à l’IGPN après le tir survenu le 28 septembre à Saint-Ouen-l’Aumône (Val-d’Oise). Le fonctionnaire a été placé sous contrôle judici…",
-      "source": "Europe 1 / Libération",
+      "source": "Europe 1 / Libération / France Inter",
       "sources": [
         "Europe 1",
-        "Libération"
+        "Libération",
+        "France Inter"
       ],
       "url": "https://www.liberation.fr/societe/police-justice/mobilisation-lyceenne-le-policier-auteur-du-tir-dune-grenade-lacrymogene-dans-le-visage-dun-eleve-a-ete-mis-en-examen-20261006_2TBP3PML4ZHEPPWHETPWOQOUUM/",
       "verifie": true
