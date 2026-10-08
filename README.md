@@ -23,13 +23,13 @@ js/meteo.js         Météo du jour (Open-Meteo, gratuit, sans clé) + tendance 
 js/views/          Vues des onglets (edition, articles, videos, medias, archives, climat→newsletters,
                     lyceens, reglages, sources, common)
 js/app.js           Bootstrap : wiring des boutons, chargement data/*.json, service worker
-sw.js               Service worker : coquille cache-first (CACHE = 'newsletter-v104'),
+sw.js               Service worker : coquille cache-first (CACHE = 'newsletter-v106'),
                     editions/ et data/ network-first — bump de CACHE à chaque livraison de code
 styles.css          Thème sombre/clair, variables CSS
 
 data/               Config et données network-first (flux RSS, médias, chapitres, newsletters/ONG,
                     compte.json avec push.cle_publique VAPID) — modifiable sans bump de cache
-data/etudiants/     Chronique « Version des étudiants » : index.json + 17 chapitres (NN.json),
+data/etudiants/     Chronique « Version des étudiants » : index.json + chapitres (NN.json),
                     paragraphes {id, texte, sources, auto?} — les relevés auto 6 h s'y ajoutent
 editions/           Contrat figé : YYYY-MM-DD.html/.json, latest.json, semaines/, archives/
 supabase/schema.sql Tables preferences / abonnements_push + politiques RLS
@@ -39,7 +39,7 @@ Sans framework, sans build : le site est 100 % statique, servi par le CDN GitHub
 
 ## Les 8 onglets
 
-✊ Lycéens 2026 (chronique étudiante + version du gouvernement + faits vérifiés) · 📄 Édition du jour (chapitres déroulants, partage par chapitre, météo du jour) · 🔥 Articles du jour · 📺 Vidéos du jour · 🎬 Médias suivis · 🗄️ Archives · 🗞️ Newsletters (bulletin Copernicus + relevés auto de 10 ONG) · ⚙️ Réglages.
+✊ Lycéens 2026 (chronique étudiante + complément étudiants + version du gouvernement + faits vérifiés + chronologie des jalons) · 📄 Édition du jour (chapitres déroulants, partage par chapitre, météo du jour) · 🔥 Articles du jour · 📺 Vidéos du jour · 🎬 Médias suivis · 🗄️ Archives · 🗞️ Newsletters (bulletin Copernicus + relevés auto de 10 ONG) · ⚙️ Réglages.
 
 L'ordre d'affichage est réglable par chaque utilisateur (Réglages) ; ids d'onglets jamais renommés (routing + ordres sauvegardés).
 
@@ -79,7 +79,7 @@ Notifications Web Push : la clé publique VAPID vit dans `data/compte.json` (`pu
 
 ## Règles de déploiement
 
-1. **Chaque livraison de code** (js/, sw.js, index.html, styles.css) doit incrémenter `CACHE` dans `sw.js` (v104 → v105…) — sinon les clients gardent l'ancienne version en cache.
+1. **Chaque livraison de code** (js/, sw.js, index.html, styles.css) doit incrémenter `CACHE` dans `sw.js` (v105 → v106…) — sinon les clients gardent l'ancienne version en cache.
 2. **Le contrat `editions/` est figé** : ne jamais renommer ni supprimer l'historique.
 3. `data/` est servi network-first : une modification y est visible immédiatement, sans bump de cache.
 4. Ne pas pousser de fichier non-ASCII de plus de ~32 Ko via l'outillage d'automatisation (risque de double-encodage) — publier l'HTML d'édition en entités numériques ; messages de commit en ASCII.
