@@ -1,11 +1,14 @@
-/* sw.js v105 — Service worker de la PWA Newsletter.
+/* sw.js v106 — Service worker de la PWA Newsletter.
  * Stratégies : data/ et editions/ network-first (toujours frais en ligne, repli cache hors ligne) ;
  * le reste (coquille, js/, styles) cache-first pour un démarrage instantané.
- * À chaque déploiement de code : incrémenter CACHE (v104 → v105…) pour invalider les caches clients.
+ * À chaque déploiement de code : incrémenter CACHE (v105 → v106…) pour invalider les caches clients.
+ * v106 : ✊ Lycéens — la 📍 Chronologie devient un sous-onglet après les ✅ Faits vérifiés
+ * (js/views/lyceens.js v106) et ses jalons sont mis à jour jusqu au 7 octobre
+ * (data/lyceens.json, network-first).
  * v105 : lot 5 — badge « ✓ N médias » (corroboration client miroir du serveur, racines+chiffres)
  * sur les articles repris par plusieurs flux, extrait coupé au mot (js/feeds.js v17, views/common.js,
  * styles.css). data/ et tools/ inchangés (les relevés serveur ne comptent que la presse). */
-const CACHE = 'newsletter-v105';
+const CACHE = 'newsletter-v106';
 const ASSETS = [
   './',
   './index.html',

@@ -1,7 +1,10 @@
-/* views/lyceens.js — ✊ Lycéens 2026 (v91) : suivre le mouvement lycéen et étudiant
- * de 2026 en France, en quatre lectures : la chronique étudiante, le complément
- * étudiant (chapitres transverses), la version du gouvernement, et les seules
- * informations corroborées par plusieurs médias indépendants.
+/* views/lyceens.js — ✊ Lycéens 2026 (v106) : suivre le mouvement lycéen et étudiant
+ * de 2026 en France, en cinq lectures : la chronique étudiante, le complément
+ * étudiant (chapitres transverses), la version du gouvernement, les seules
+ * informations corroborées par plusieurs médias indépendants, et la chronologie
+ * des jalons du mouvement (v106 : la 📍 Chronologie quitte le haut de l'onglet —
+ * où elle n'était plus lisible au fil de l'allongement du suivi — pour devenir
+ * un sous-onglet à part entière, après les ✅ Faits vérifiés).
  * Données :
  *  - data/lyceens.json (network-first, versions gouvernement + faits vérifiées) ;
  *  - data/etudiants/index.json, chargé UNE seule fois, puis les fichiers
@@ -19,7 +22,8 @@ const SOUS_ONGLETS_LYCEENS = () => [
   { id: 'etudiants', nom: '🎓 Version des étudiants' },
   { id: 'complement', nom: '📚 Complément étudiants' },
   { id: 'gouvernement', nom: '🏛️ Version du gouvernement' },
-  { id: 'faits', nom: '✅ Faits vérifiés' }
+  { id: 'faits', nom: '✅ Faits vérifiés' },
+  { id: 'chronologie', nom: '📍 Chronologie' }
 ];
 
 const SECTION_SOUS_ONGLET = { etudiants: 'chronique', complement: 'complement' };
@@ -247,6 +251,20 @@ export function vueLyceens() {
           : 'Chargement de la chronologie étudiante…') + '</div></div>';
   } else if (sous === 'gouvernement') {
     corps = '<p class="meta-count">' + compteListe(gouv) + '</p>' + (gouv.length ? gouv.map(carteInfo).join('') : '<div class="empty">Aucune info côté gouvernement pour l\u2019instant.</div>');
+  } else if (sous === 'chronologie') {
+    /* v106 : la chronologie vit ici — rapidement sur les premières semaines,
+     * puis jour après jour à partir du 27 septembre ; la partie date de
+     * chaque jalon passe en <strong> pour une lecture en diagonale. */
+    const jalons = Array.isArray(d.contexte) ? d.contexte.filter(Boolean) : [];
+    corps = '<p class="meta-count">Du point de départ à Créteil (17 septembre) à hier : les jalons du mouvement, rapidement sur les premières semaines puis jour après jour à partir du 27 septembre.</p>' +
+      (jalons.length
+        ? '<div class="chapter-resume"><h2>📍 Chronologie</h2><ul>' +
+          jalons.map(c => {
+            const s = esc(c);
+            const i = s.indexOf(' : ');
+            return '<li>' + (i > 0 ? '<strong>' + s.slice(0, i) + '</strong>' + s.slice(i) : s) + '</li>';
+          }).join('') + '</ul></div>'
+        : '<div class="empty">Chronologie pas encore publiée.</div>');
   } else {
     corps = '<p class="meta-count">' + compteListe(faits) + '</p>' + (faits.length ? faits.map(carteInfo).join('') : '<div class="empty">Aucune information corroborée à ce stade.</div>');
   }
@@ -257,10 +275,6 @@ export function vueLyceens() {
     (d.prochaine_echeance ? '<p class="meta-count">📅 ' + esc(d.prochaine_echeance) + '</p>' : '') +
     (d.maj ? '<p class="hint">Mis à jour le ' + esc(d.maj) + ' — rafraîchi automatiquement toutes les 6 h par la maintenance.</p>' : '') +
     '</div>' +
-    (Array.isArray(d.contexte) && d.contexte.length
-      ? '<div class="chapter-resume"><h2>📍 Chronologie</h2><ul>' +
-        d.contexte.map(c => '<li>' + esc(c) + '</li>').join('') + '</ul></div>'
-      : '') +
     sousOnglets(sous) +
     (d.erreur
       ? '<div class="empty">Suivi momentanément indisponible — il revient dès que data/lyceens.json répondra.</div>'
