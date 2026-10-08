@@ -1,5 +1,17 @@
 #!/usr/bin/env node
-/* v116 (lot 8) : transverses au fil — les chapitres transverses (c10-c14, c16)
+/* v117 (lot 8 bis) : transverses plus larges, volets plus détaillés, et
+ * Discord au source même (décision de Maxime du 08/10/2026 : « plus large
+ * sur les transverses, détaillé un maximum, ajoute Discord »). Caps des
+ * volets transverses élargies (c10-c14 : 5, c16 : 3) ; chaque item presse
+ * ou réseau d'un volet porte son aperçu (desc tronquée, verbatim) ; les
+ * invitations Discord (discord.gg/xxx) sont récoltées dans les titres,
+ * descriptions et liens presse ET Reddit, mémorisées dans
+ * index.discordInvites, et l'API publique des invitations donne nom et
+ * effectifs du serveur — un serveur ne fait un item que NOUVEAU ou à
+ * variation d'effectif arrondi au millier (jalon, pas pulsation : jamais
+ * de paragraphe fantôme). Item réseau : jamais dans les faits vérifiés,
+ * jamais dans nbSources ; échec Discord SILENCIEUX comme Reddit.
+ * v116 (lot 8) : transverses au fil — les chapitres transverses (c10-c14, c16)
  * reçoivent EUX AUSSI un volet automatique toutes les 6 h (décision de Maxime du
  * 08/10/2026) : relevé machine, items verbatim tronqués, sources, auto:true —
  * la réécriture narrative reste le travail des éditions (07h00), qui repèrent
@@ -92,6 +104,22 @@ const SOURCES_REDDIT = [
   { id: 'reddit-france', nom: 'Reddit — r/france', url: 'https://www.reddit.com/r/france/.rss' }
 ];
 const CAP_RESEAUX = 4;
+
+/* v117 (lot 8 bis) : Discord — la voix de l'intérieur, au source même. Les
+ * serveurs Discord du mouvement sont semi-privés (les liens circulent dans
+ * les commentaires TikTok/Instagram et les posts Reddit, cf. Radio France
+ * 08/10/2026) : pas de flux RSS public, mais une API publique des
+ * invitations. Le relevé récolte donc les codes discord.gg/xxx VERBATIM
+ * (titres, descriptions, liens — presse ET Reddit), mémorise les codes
+ * dans index.discordInvites, et interroge l'API pour nom + effectifs.
+ * Un serveur ne devient item du relevé qu'à sa découverte ou quand son
+ * effectif ARRONDI AU MILLIER change : un effectif stable reste SILENCIEUX
+ * — jamais de paragraphe fantôme toutes les 6 h. Échec SILENCIEUX comme
+ * Reddit (jamais bloquant, jamais réducteur) ; invitation morte (404/410)
+ * retirée de la mémoire. */
+const DISCORD_API_INVITE = 'https://discord.com/api/v9/invites/';
+const RE_INVITE_DISCORD = /discord\.gg\/([a-zA-Z0-9-]{2,16})/g;
+const CAP_DISCORD = 4; /* au plus 4 invitations interrogées par relevé */
 
 /* ————— Texte : entités, normalisation ————— */
 const ENTITES = {
@@ -283,33 +311,35 @@ const PHRASES_MOBILISATION = ["Sur le terrain, la mobilisation tient", "Dans la 
 /* v116 (lot 8) : TRANSVERSES — les chapitres transverses qui reçoivent un volet
  * automatique toutes les 6 h (décision de Maxime du 08/10/2026). Classification
  * sur la forme normalisée sans accents (norm()) du TITRE, même discipline que
- * voletDe() ; cap serré (2-3 items par thème, le chapitre du jour garde TOUT
- * le relevé, un même item peut alimenter plusieurs transverses — assumé).
+ * voletDe() ; cap élargi (v117, décision de Maxime du 08/10/2026 : « plus
+ * large sur les transverses ») — 5 items par thème, 3 pour c16 ; le chapitre
+ * du jour garde TOUT le relevé, un même item peut alimenter plusieurs
+ * transverses — assumé).
  * c15 « Lexique » est volontairement ABSENT : jamais de volet automatique. */
 const TRANSVERSES = [
   { id: 'c10', fichier: '10.json', titreChapitre: "Chorus — la voix de l'intérieur",
     re: /discord|snapchat|tiktok|instagram|whatsapp|reseau|viral|hashtag|sondage|opinion|video|organis|cyberblocage|e-blocus|blocus virtuel/,
-    cap: 3, reseau: true,
+    cap: 5, reseau: true,
     phrases: ["Sur les réseaux et applications, la voix de l'intérieur circule", "Dans les fils et les groupes, les élèves parlent d'eux-mêmes", "Sur les écrans des lycéens, la mobilisation s'organise en direct", "Entre groupes privés et stories, l'intérieur du mouvement se raconte"] },
   { id: 'c11', fichier: '11.json', titreChapitre: "Ce qu'ils veulent — les revendications, mot à mot",
     re: /revendication|parcoursup|moyens|budget|remplacement|postes|doleance|exigence|professeur absent|enseignant manquant|education nationale/,
-    cap: 3,
+    cap: 5,
     phrases: ["Côté revendications, les exigences s'affinent", "La liste de ce qu'ils veulent, elle, continue de s'écrire", "Les demandes des lycéens remontent, mot à mot", "Sur le front des revendications, les mots restent fermes"] },
   { id: 'c12', fichier: '12.json', titreChapitre: "La répression et ses visages",
     re: /polic|interpell|gaz lacrymo|mortier|arresta|blesse|garde a vue|violences|ordre public|armee|disper|grenade|flashball|lbd|igpn|examen|avocat|tribunal|taj|plainte|gav|justice/,
-    cap: 3,
+    cap: 5,
     phrases: ["Côté répression, la liste des visages s'allonge", "La répression, elle, continue de nourrir la colère", "Les visages de la répression s'ajoutent les uns aux autres", "Sur le front policier et judiciaire, le fil des faits continue"] },
   { id: 'c13', fichier: '13.json', titreChapitre: "La machine gouvernementale, vue d'en bas",
     re: /lecornu|geffray|nunez|bregeon|matignon|elysee|ministre|gouvernement|prefet|recteur|circulaire|allocution|annonce|premier ministre|region/,
-    cap: 3,
+    cap: 5,
     phrases: ["La machine gouvernementale, elle, s'ajuste", "Vue d'en bas, la machine gouvernementale tourne", "Du rectorat à Matignon, les rouages continuent de tourner", "Côté institutions, les réponses s'égrènent"] },
   { id: 'c14', fichier: '14.json', titreChapitre: "Génération 2026 — le mouvement dans la longue durée",
     re: /histoire|generation|1968|mai 68|precedent|internationale|etrangere|comparaison|convergence|intersyndicale|toussaint|gilets jeunes|sondage/,
-    cap: 3,
+    cap: 5,
     phrases: ["Dans la longue durée, les précédents reviennent", "Génération 2026, miroir des générations passées", "L'histoire, elle, offre ses échos au mouvement", "La comparaison avec les précédents continue de nourrir le récit"] },
   { id: 'c16', fichier: '16.json', titreChapitre: "Figures d'un automne — portraits croisés",
     re: /figure|portrait|temoignage|mere|pere de|parent|sanogo|rani|boyard|venetitay|binet|beigelman|tondelier|bagayoko|lavalette/,
-    cap: 2,
+    cap: 3,
     phrases: ["Les figures de cet automne continuent d'émerger", "Portraits et témoignages, l'automne en rassemble", "Une à une, les figures du mouvement se dessinent", "Les visages de l'automne s'ajoutent au portrait croisé"] }
 ];
 /* v116 (lot 8) : construction du texte d'un volet transverse — modèle court de
@@ -318,19 +348,26 @@ const TRANSVERSES = [
  * paragraphe du jour, et une clôture DISTINCTE (« Volet automatique du … ») qui
  * sert de marqueur à la plume des éditions. JAMAIS de prose inventée. */
 function construireVoletTransverse(entree, items, compteur) {
+  /* v117 (lot 8 bis) : « détaillé un maximum » — chaque item porte son
+   * aperçu (description tronquée, VERBATIM, jamais reformulée) dès qu'il
+   * est assez informatif ; l'aperçu des serveurs Discord porte les
+   * effectifs de l'API publique. */
+  const detail = it => (it.apercu && it.apercu.length > 20)
+    ? ' — détail : ' + tronc(texte(it.apercu), 140).replace(/[.]+$/, '')
+    : '';
   const morceaux = [entree.phrases[compteur % entree.phrases.length] + ' : ' +
     items.map(it => {
       if (it.reseau) {
-        return tronc(nettoyerTitre(it.titre), 160) + ' (' + it.sources.join(', ') + ')';
+        return tronc(nettoyerTitre(it.titre), 160) + ' (' + it.sources.join(', ') + ')' + detail(it);
       }
       const { nbSources } = corroborer(it);
       const raccroche = (it.reseaux || []).length
         ? ' — repris aussi sur ' + it.reseaux.map(s => s.replace('Reddit — ', '')).join(', ')
         : '';
-      return tronc(nettoyerTitre(it.titre), 160) + ' (' + nbSources + ' media' + (nbSources > 1 ? 's' : '') + ' : ' + it.sources.join(', ') + (nbSources >= 2 ? ' — corrobore' : ' — non corrobore') + raccroche + ')';
+      return tronc(nettoyerTitre(it.titre), 160) + ' (' + nbSources + ' media' + (nbSources > 1 ? 's' : '') + ' : ' + it.sources.join(', ') + (nbSources >= 2 ? ' — corrobore' : ' — non corrobore') + raccroche + ')' + detail(it);
     }).join(' ; ')];
   const stamp = new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris', dateStyle: 'long', timeStyle: 'short' }).format(new Date());
-  morceaux.push(' (Volet automatique du ' + stamp + ', chapitre « ' + entree.titreChapitre + ' » — faits repris des titres de presse et des fils Reddit, non reformulés.)');
+  morceaux.push(' (Volet automatique du ' + stamp + ', chapitre « ' + entree.titreChapitre + ' » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)');
   const complet = morceaux.join('');
   return complet.length < 4000 ? complet : complet.slice(0, 3999) + '…';
 }
@@ -398,7 +435,7 @@ function construireParagraphe(uniques, relevePrecedent, compteur, dateRef, nouve
     phrases.push(phraseVolet + '.');
   }
   /* 4. Clôture : la promesse que le fil reprend, + trace horodatée. */
-  phrases.push('Le prochain relevé reprendra le fil. (Relevé automatique du ' + fmt({ dateStyle: 'long', timeStyle: 'short' }) + ' — faits repris des titres de presse et des fils Reddit, non reformulés.)');
+  phrases.push('Le prochain relevé reprendra le fil. (Relevé automatique du ' + fmt({ dateStyle: 'long', timeStyle: 'short' }) + ' — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)');
   /* v110 (lot 2) : garde-fou — le paragraphe complet reste < 8 Ko. */
   const complet = phrases.join(' ');
   return complet.length < 8000 ? complet : complet.slice(0, 7999) + '…';
@@ -471,6 +508,89 @@ async function main() {
       vus.push({ ...it, sources: [it.source], reseau: true });
     }
   }
+  /* v117 (lot 8 bis) : Discord — la voix de l'intérieur, au source même. Les
+   * invitations (discord.gg/xxx) sont récoltées VERBATIM dans les titres,
+   * descriptions et liens du relevé (presse ET Reddit, déjà filtrés
+   * mouvement), mémorisées dans index.discordInvites ; l'API publique des
+   * invitations Discord donne nom et effectifs du serveur. Un serveur ne
+   * devient item du relevé qu'à sa DÉCOUVERTE ou quand son effectif ARRONDI
+   * AU MILLIER change (jalon, pas pulsation : un effectif stable reste
+   * silencieux — jamais de paragraphe fantôme toutes les 6 h). L'item est
+   * réseau (reseau:true → volet « voix » + transverse c10), JAMAIS dans les
+   * faits vérifiés ni dans nbSources ; échec SILENCIEUX comme Reddit ;
+   * invitation morte (404/410) retirée de la mémoire. */
+  const indexAvant = fs.existsSync(FICHIER_INDEX)
+    ? JSON.parse(fs.readFileSync(FICHIER_INDEX, 'utf8'))
+    : { releveSigs: [] };
+  const discordEchecs = [];
+  const invitesTrouvees = new Map();
+  for (const it of tous.concat(tousReddit)) {
+    for (const champ of [it.titre, it.desc, it.lien]) {
+      if (!champ) continue;
+      let m; RE_INVITE_DISCORD.lastIndex = 0;
+      while ((m = RE_INVITE_DISCORD.exec(String(champ))) !== null) {
+        if (!invitesTrouvees.has(m[1])) invitesTrouvees.set(m[1], it.source);
+      }
+    }
+  }
+  const memoInvites = { ...(indexAvant.discordInvites || {}) };
+  for (const [code, via] of invitesTrouvees) {
+    if (!memoInvites[code]) memoInvites[code] = { via, membres: null };
+  }
+  /* Priorité aux invitations fraîchement découvertes, mémoire conservée
+   * pour les autres ; au plus CAP_DISCORD interrogations par relevé. */
+  const codesOrdonnes = [...invitesTrouvees.keys(), ...Object.keys(memoInvites).filter(c => !invitesTrouvees.has(c))];
+  const memoDiscord = {};
+  const invitesMortes = [];
+  let interrogationsDiscord = 0;
+  let discordItems = 0;
+  for (const code of codesOrdonnes) {
+    const info = memoInvites[code] || {};
+    if (interrogationsDiscord >= CAP_DISCORD) { memoDiscord[code] = info; continue; }
+    interrogationsDiscord++;
+    try {
+      const rep = await fetch(DISCORD_API_INVITE + code + '?with_counts=true', { headers: { 'user-agent': UA, accept: 'application/json' }, signal: AbortSignal.timeout(12000) });
+      if (!rep.ok) {
+        if (rep.status === 404 || rep.status === 410) {
+          invitesMortes.push(code);
+          discordEchecs.push(code + ' : invitation morte (HTTP ' + rep.status + '), retiree de la memoire');
+        }
+        else discordEchecs.push(code + ' : HTTP ' + rep.status);
+        continue;
+      }
+      const d = JSON.parse(await rep.text());
+      if (!d || !d.guild || !d.guild.name) { discordEchecs.push(code + ' : réponse inattendue'); continue; }
+      const membres = Number.isFinite(+d.approximate_member_count) ? +d.approximate_member_count : null;
+      const arrondi = membres != null ? Math.round(membres / 1000) * 1000 : null;
+      const via = info.via || invitesTrouvees.get(code) || 'le relevé';
+      memoDiscord[code] = { via, membres: arrondi };
+      const aChange = arrondi != null && (info.membres == null || arrondi !== info.membres);
+      const doublonServeur = vus.some(v => v.serveurDiscord && v.source === 'Discord — ' + d.guild.name);
+      if (aChange && !doublonServeur) {
+        discordItems++;
+        const enLigne = Number.isFinite(+d.approximate_presence_count) ? +d.approximate_presence_count : null;
+        vus.push({
+          titre: 'Discord : serveur « ' + d.guild.name + ' », repéré via ' + via + ' — environ ' + arrondi.toLocaleString('fr-FR') + ' membres',
+          desc: 'Métadonnées publiques de l invitation discord.gg/' + code + ' (API Discord).',
+          apercu: enLigne != null
+            ? 'API Discord au moment du relevé : ' + enLigne.toLocaleString('fr-FR') + ' membres en ligne, ' + membres.toLocaleString('fr-FR') + ' au total.'
+            : 'API Discord au moment du relevé : ' + membres.toLocaleString('fr-FR') + ' membres au total.',
+          lien: 'https://discord.gg/' + code,
+          date: new Date().toISOString(),
+          source: 'Discord — ' + d.guild.name,
+          sources: ['Discord — ' + d.guild.name],
+          reseau: true,
+          serveurDiscord: true
+        });
+      }
+    } catch (e) { discordEchecs.push(code + ' : ' + e.message); }
+  }
+  for (const code of invitesMortes) {
+    /* Invitation morte : le serveur a disparu ou l'invitation a expiré —
+     * on l'oublie (elle serait une erreur 404 à chaque run sinon). */
+    delete memoDiscord[code];
+  }
+
   /* Un post réseau peut être plus récent qu'un événement presse : on retrie
    * avant le cap — la chronologie reste la trame, le cap presse d'abord. */
   vus.sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -480,9 +600,6 @@ async function main() {
    * exactement les mêmes items, on ne publie rien — pas de commit fantôme
    * toutes les 6 h. Les items du relevé précédent mais disparus des flux
    * (fenêtre 7 h) ne relancent pas un paragraphe. */
-  const indexAvant = fs.existsSync(FICHIER_INDEX)
-    ? JSON.parse(fs.readFileSync(FICHIER_INDEX, 'utf8'))
-    : { releveSigs: [] };
   const sigs = uniques.map(it => signature(it.titre) + ((it.reseaux || []).length ? '+' + it.reseaux.join('&') : '')).sort();
   const sigsPrecedents = (indexAvant.releveSigs || []).slice().sort();
   const identique = sigs.length === sigsPrecedents.length && sigs.every((s, i) => s === sigsPrecedents[i]);
@@ -590,6 +707,10 @@ async function main() {
   }
   index.maj = aujourdhui;
   index.releveSigs = sigs;
+  /* v117 (lot 8 bis) : mémoire des invitations Discord découvertes et de
+   * leur dernier effectif rendu (arrondi au millier) — c'est elle qui
+   * garantit qu'un serveur stable reste silencieux au run suivant. */
+  index.discordInvites = memoDiscord;
   /* v106 : mémoire du fil — date du dernier relevé publié (pour l'accroche
    * du suivant) et compteur (pour faire tourner les entames de volets).
    * Chaîne narrative GLOBALE : continus d'un chapitre/jour à l'autre. */
@@ -661,6 +782,10 @@ async function main() {
     avertissement,
     echecs,
     reseaux: { items: retenusReddit.length, raccroches, echecs: reseauxEchecs },
+    /* v117 (lot 8 bis) : état de la source Discord — items créés ce relevé
+     * (découverte ou jalon d'effectif), invitations interrogées, échecs
+     * silencieux. Champ additionnel inoffensif pour maintenance.js v39. */
+    discord: { items: discordItems, invites: interrogationsDiscord, echecs: discordEchecs },
     /* v116 (lot 8) : champ additionnel inoffensif pour maintenance.js v38. */
     transverses
   }) + '\n');

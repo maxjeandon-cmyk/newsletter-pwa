@@ -1,8 +1,9 @@
-/* tools/test/lot8.js — Harnas du lot 8 (v116) : « Transverses au fil ». Hors-ligne :
- * Date gelée + fetch stubbé (tools/fakeclock.js, flux factices en dur), aucune
- * dépendance au réseau ni au chapitreJour réel (chaque scénario ÉPINGLE son
- * état, recette de lot6.js). Le script sous test tourne dans des copies
- * temporaires du repo (data/ isolé), fixtures chargées via NODE_OPTIONS.
+/* tools/test/lot8.js — Harnas du lot 8 (v116/v117) : « Transverses au fil ».
+ * Hors-ligne : Date gelée + fetch stubbé (tools/fakeclock.js, flux factices
+ * en dur), aucune dépendance au réseau ni au chapitreJour réel (chaque
+ * scénario ÉPINGLE son état, recette de lot6.js). Le script sous test
+ * tourne dans des copies temporaires du repo (data/ isolé), fixtures
+ * chargées via NODE_OPTIONS.
  * Scénarios :
  *   A. Volets : chaque item presse qualifié rejoint SA transverse (auto:true,
  *      id séquentiel cNNp<n+1>, sources = union sans doublun, ordre conservé) ;
@@ -18,6 +19,12 @@
  *      c11-c16 presse uniquement.
  *   I. Sortie JSON transverses cohérente avec les ajouts réels.
  *   J. Régression : la suite lot6 reste verte.
+ *   K. (v117) Discord : invitation discord.gg/xxx découverte dans un post
+ *      Reddit -> API publique -> serveur en c10 avec effectif ARRONDI au
+ *      millier (jalon, pas pulsation : stable = silence), mémoire
+ *      index.discordInvites, jamais dans les faits vérifiés, invitation
+ *      morte (404) retirée de la mémoire. Volets : caps élargies (B) et
+ *      détail par item (K1).
  * Usage : node tools/test/lot8.js
  */
 'use strict';
@@ -162,7 +169,7 @@ t('A : clôture distinctive « Volet automatique du » (marqueur plume)',
   sA.transverses.filter(l => l.ajoutes === 1).every(l => {
     const c = chapitre(A.REPO, l.id.slice(1));
     const p = c.paragraphes[c.paragraphes.length - 1];
-    return / \(Volet automatique du /.test(p.texte) && p.texte.includes('— faits repris des titres de presse et des fils Reddit, non reformulés.)');
+    return / \(Volet automatique du /.test(p.texte) && p.texte.includes('— faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)');
   }));
 t('A : pas d’accroche « heures ont passé » dans les volets',
   [c10, c11, c12, c13, c14, c16].every(c => !c.paragraphes[c.paragraphes.length - 1].texte.includes('heures ont passé')));
@@ -170,7 +177,7 @@ t('A : un même item presse nourrit le chapitre du jour ET sa transverse (assum�
   chapitre(A.REPO, '18').paragraphes.length === 5 && c10.paragraphes[9].texte.includes('organisent sur Snapchat'));
 
 /* ———————— Scénario B : cap (4 items c12 -> 3 retenus) ———————— */
-console.log('— scenario B : cap c12 (4 items matchant -> 3 retenus, ordre du relevé)');
+console.log('— scenario B : cap c12 élargi v117 (6 items matchant -> 5 retenus, ordre du relevé)');
 const B = preparerCopie();
 epinglerJour(B.REPO);
 ecrireFixtures(B.REPO, 'b',
@@ -178,19 +185,22 @@ ecrireFixtures(B.REPO, 'b',
     { titre: 'Blocus : grenade au lycée Buffon, la police dégage', desc: 'd', ageH: 1 },
     { titre: 'Blocus : interpellations au lycée Voltaire, la justice saisie', desc: 'd', ageH: 2 },
     { titre: 'Blocus : gaz lacrymo au lycée Condorcet, des blessés', desc: 'd', ageH: 3 },
-    { titre: 'Blocus : garde à vue d’un élève à Chaptal, son avocat déplore', desc: 'd', ageH: 4 }
+    { titre: 'Blocus : garde à vue d’un élève à Chaptal, son avocat déplore', desc: 'd', ageH: 4 },
+    { titre: 'Blocus : flashball à Vincennes, un élève blessé', desc: 'd', ageH: 5 },
+    { titre: 'Blocus : l’IGPN saisie après le passage de la police au lycée Corneille', desc: 'd', ageH: 6 }
   ]) + '));\n' +
   'f.ajouterFixture(' + JSON.stringify(P_FTV) + ', f.rss([]));\n' + fixturesCreuses());
 const sB = runEtu(B.REPO, 'b');
 t('B : publié (modifie: true)', sB.modifie === true);
 const ligneB = (sB.transverses || []).find(l => l.id === 'c12');
-t('B : c12 items = 4 détectés (le champ compte AVANT le cap)', ligneB && ligneB.items === 4, JSON.stringify(ligneB));
-t('B : cap respecté — 3 items rendus dans le volet', ligneB.ajoutes === 1 && (chapitre(B.REPO, '12').paragraphes[6].texte.match(/ ; /g) || []).length === 2, chapitre(B.REPO, '12').paragraphes[6].texte.slice(0, 400));
+t('B : c12 items = 6 détectés (le champ compte AVANT le cap)', ligneB && ligneB.items === 6, JSON.stringify(ligneB));
+t('B : cap 5 respecté — 5 items rendus dans le volet', ligneB.ajoutes === 1 && (chapitre(B.REPO, '12').paragraphes[6].texte.match(/ ; /g) || []).length === 4, chapitre(B.REPO, '12').paragraphes[6].texte.slice(0, 400));
 t('B : ordre du relevé conservé (le plus récent d’abord)',
   chapitre(B.REPO, '12').paragraphes[6].texte.indexOf('Buffon') < chapitre(B.REPO, '12').paragraphes[6].texte.indexOf('Voltaire') &&
-  chapitre(B.REPO, '12').paragraphes[6].texte.indexOf('Voltaire') < chapitre(B.REPO, '12').paragraphes[6].texte.indexOf('Condorcet'),
+  chapitre(B.REPO, '12').paragraphes[6].texte.indexOf('Voltaire') < chapitre(B.REPO, '12').paragraphes[6].texte.indexOf('Condorcet') &&
+  chapitre(B.REPO, '12').paragraphes[6].texte.indexOf('Condorcet') < chapitre(B.REPO, '12').paragraphes[6].texte.indexOf('Vincennes'),
   chapitre(B.REPO, '12').paragraphes[6].texte.slice(0, 300));
-t('B : le 4e (le plus ancien) est écarté', !chapitre(B.REPO, '12').paragraphes[6].texte.includes('Chaptal'));
+t('B : le 6e (le plus ancien) est écarté', !chapitre(B.REPO, '12').paragraphes[6].texte.includes('Corneille'));
 
 /* ———————— Scénario C : c15 jamais touché ———————— */
 console.log('— scenario C : c15 (Lexique) JAMAIS touché, octet/octet');
@@ -308,6 +318,72 @@ t('I : items = nombre d’items retenus (cap appliqué)',
 t('I : avertissement null partout quand aucun garde-fou', sA.transverses.every(l => l.avertissement === null));
 t('I : champ reseaux inchangé à côté de transverses', sA.reseaux && typeof sA.reseaux.items === 'number' && typeof sA.reseaux.raccroches === 'number');
 
+/* ———————— Scénario K : Discord au source (v117) ———————— */
+console.log('— scenario K : invitations Discord découvertes, jalons d effectif, mémoire, invitations mortes');
+const K = preparerCopie();
+epinglerJour(K.REPO);
+const U_INVITE = 'https://discord.com/api/v9/invites/blocus26?with_counts=true';
+const lignesK = (nbMembres) =>
+  'f.ajouterFixture(' + JSON.stringify(P_20M) + ', f.rss(' + JSON.stringify([
+    { titre: 'Blocus : les lycéens s’organisent sur Discord pour préparer la mobilisation', desc: 'Le serveur Discord du mouvement accueille les échanges entre établissements.', ageH: 2 }
+  ]) + '));\n' +
+  'f.ajouterFixture(' + JSON.stringify(P_FTV) + ', f.rss([]));\n' + fixturesCreuses().replace(
+    'f.ajouterFixture(' + JSON.stringify(U_ETU) + ', f.atom([]));',
+    'f.ajouterFixture(' + JSON.stringify(U_ETU) + ', f.atom([{ titre: "Notre serveur Discord pour organiser les blocus", desc: "Rejoignez : https://discord.gg/blocus26 (le serveur des lycéens mobilisés)", ageH: 1 }]));') + '\n' +
+  'f.ajouterFixture(' + JSON.stringify(U_INVITE) + ', ' + JSON.stringify(JSON.stringify({ guild: { name: 'Blocus Lycéens 2026' }, approximate_member_count: nbMembres, approximate_presence_count: 187 })) + ');';
+const faitsAvantK = JSON.parse(fs.readFileSync(path.join(K.REPO, 'data', 'lyceens.json'), 'utf8')).faits.length;
+const lireIndexK = () => JSON.parse(fs.readFileSync(path.join(K.REPO, 'data', 'etudiants', 'index.json'), 'utf8'));
+
+/* Run 1 : découverte — invitation repérée dans le post Reddit, serveur interrogé,
+ * jalon d'effectif (5 234 -> environ 5 000), item réseau dans c10 et le jour. */
+ecrireFixtures(K.REPO, 'k1', lignesK(5234));
+const sK1 = runEtu(K.REPO, 'k1');
+t('K1 : publié (modifie: true)', sK1.modifie === true, JSON.stringify(sK1).slice(0, 200));
+t('K1 : champ discord présent, 1 item créé, 1 invitation interrogée',
+  sK1.discord && sK1.discord.items === 1 && sK1.discord.invites === 1, JSON.stringify(sK1.discord));
+const c10K = chapitre(K.REPO, '10');
+const voletK1 = c10K.paragraphes[c10K.paragraphes.length - 1].texte;
+t('K1 : volet c10 avec le serveur, l effectif arrondi au millier et la source de découverte',
+  /Discord : serveur « Blocus Lycéens 2026 », repéré via Reddit — r\/etudiants — environ 5 000 membres/.test(voletK1), voletK1.slice(0, 300));
+t('K1 : détail de l item serveur (effectifs API, verbatim)', /détail : API Discord au moment du relevé : 187 membres en ligne, 5 234 au total/.test(voletK1), voletK1.slice(0, 400));
+t('K1 : paragraphe du jour rend le serveur (réseau, sans compte médias)',
+  chapitre(K.REPO, '18').paragraphes.some(p => p.texte.includes('Discord : serveur « Blocus Lycéens 2026 »')), '');
+t('K1 : mémoire index.discordInvites (code, effectif arrondi, via)',
+  (lireIndexK().discordInvites || {}).blocus26 && lireIndexK().discordInvites.blocus26.membres === 5000, JSON.stringify(lireIndexK().discordInvites));
+t('K1 : serveur Discord JAMAIS dans les faits vérifiés (réseau)',
+  JSON.parse(fs.readFileSync(path.join(K.REPO, 'data', 'lyceens.json'), 'utf8')).faits.length === faitsAvantK);
+
+/* Run 2 : mêmes flux, effectif stable — PAS de nouvel item serveur (jalon,
+ * pas pulsation) ; un paragraphe suit (l item serveur quitte le relevé). */
+const sK2 = runEtu(K.REPO, 'k1');
+t('K2 : effectif stable -> 0 item Discord', sK2.modifie === true && sK2.discord.items === 0, JSON.stringify(sK2.discord));
+const c10K2 = chapitre(K.REPO, '10');
+t('K2 : le volet suivant ne re-publie pas le serveur',
+  !c10K2.paragraphes[c10K2.paragraphes.length - 1].texte.includes('environ 5 000 membres'), c10K2.paragraphes[c10K2.paragraphes.length - 1].texte.slice(0, 200));
+t('K2 : mémoire conservée (blocus26 : 5 000)', (lireIndexK().discordInvites || {}).blocus26 && lireIndexK().discordInvites.blocus26.membres === 5000);
+
+/* Run 3 : mêmes flux -> idempotence (plus rien ne bouge). */
+const sK3 = runEtu(K.REPO, 'k1');
+t('K3 : idempotence — modifie: false', sK3.modifie === false);
+
+/* Run 4 : l effectif franchit un nouveau millier -> jalon, nouvel item. */
+ecrireFixtures(K.REPO, 'k4', lignesK(7600));
+const sK4 = runEtu(K.REPO, 'k4');
+t('K4 : jalon d effectif -> 1 item Discord (environ 8 000 membres)',
+  sK4.modifie === true && sK4.discord.items === 1, JSON.stringify(sK4.discord));
+t('K4 : volet c10 avec le nouveau jalon',
+  chapitre(K.REPO, '10').paragraphes.some(p => /environ 8 000 membres/.test(p.texte)));
+t('K4 : mémoire à jour (8 000)', lireIndexK().discordInvites.blocus26.membres === 8000);
+
+/* Run 5 : invitation morte (HTTP 404) — retirée de la mémoire, consignée,
+ * le relevé continue. */
+ecrireFixtures(K.REPO, 'k5',
+  lignesK(7600).replace('f.ajouterFixture(' + JSON.stringify(U_INVITE) + ', ' + JSON.stringify(JSON.stringify({ guild: { name: 'Blocus Lycéens 2026' }, approximate_member_count: 7600, approximate_presence_count: 187 })) + ');',
+    'f.ajouterEchec(' + JSON.stringify(U_INVITE) + ', 404);'));
+const sK5 = runEtu(K.REPO, 'k5');
+t('K5 : invitation morte retirée de la mémoire, échec consigné',
+  !(lireIndexK().discordInvites || {}).blocus26 && (sK5.discord.echecs || []).some(e => e.includes('invitation morte')), JSON.stringify(sK5.discord));
+
 /* ———————— Scénario J : régression lot6 ———————— */
 console.log('— scenario J : régression — la suite lot6 reste verte');
 try {
@@ -318,6 +394,6 @@ try {
 }
 
 /* ———————— Nettoyage ———————— */
-for (const s of [A, B, F, H]) fs.rmSync(s.TMP, { recursive: true, force: true });
+for (const s of [A, B, F, H, K]) fs.rmSync(s.TMP, { recursive: true, force: true });
 console.log('\n' + (ko === 0 ? 'LOT8 : ' + ok + ' tests OK' : 'LOT8 : ' + ko + ' ECHECS / ' + ok + ' OK'));
 process.exit(ko === 0 ? 0 : 1);
