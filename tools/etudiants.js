@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+/* v113 (08/10/2026) : retrait de Le Figaro, La Croix et BFMTV du catalogue presse
+ * de la chronique (demande de Maxime) — 11 flux restants ; tools/lyceens.js garde
+ * son propre catalogue, ce changement ne concerne QUE la chronique étudiants. */
 /* v112 (lot 6) : voix des réseaux — flux RSS Reddit (r/etudiants, r/enseignants, r/france)
  * dans le relevé de la chronique UNIQUEMENT : volet final « voix des élèves et des
  * enseignants », cap 4 items réseaux par relevé, échec Reddit SILENCIEUX (le relevé
@@ -10,7 +13,8 @@
 /* tools/etudiants.js — Relevé automatique 6 h de la chronique « Version des étudiants »
  * (onglet ✊ Lycéens 2026, sous-onglet Version des étudiants).
  * Appelé par tools/maintenance.js à chaque run (3 h, 9 h, 15 h, 21 h Paris) :
- *   1. Moissonne les flux RSS de la presse (même catalogue que lyceens.js)
+ *   1. Moissonne les flux RSS de la presse (catalogue propre à la chronique,
+ *      11 flux — Figaro, La Croix, BFMTV retirés le 08/10/2026, cf. v113)
  *      et ne retient que les items du mouvement lycéen/étudiant.
  *   2. Construit UN paragraphe « relevé automatique » NARRATIF pour les
  *      dernières 6 h : accroche temporelle + dateline + items regroupés en
@@ -39,19 +43,17 @@ const UA = 'Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130
 const FENETRE_HEURES = 7;   /* fenêtre de fraîcheur : les dernières ~6 h (+1 de marge) */
 const MAX_OCTETS_CHAPITRE = 28000; /* garde-fou : avertissement seulement, jamais de scission (v108) */
 
-/* Flux RSS vérifiés (catalogue data/flux-rss.json, testés le 04/10/2026). */
+/* Flux RSS vérifiés (catalogue data/flux-rss.json, testés le 04/10/2026) ;
+ * v113 : chronique = 11 flux (sans Figaro, La Croix, BFMTV). */
 const SOURCES = [
   { id: '20-minutes', nom: '20 minutes', url: 'https://www.20minutes.fr/feeds/rss-une.xml' },
   { id: 'europe-1', nom: 'Europe 1', url: 'https://www.europe1.fr/rss.xml' },
   { id: 'public-senat', nom: 'Public Sénat', url: 'https://www.publicsenat.fr/rss' },
-  { id: 'le-figaro', nom: 'Le Figaro', url: 'https://www.lefigaro.fr/rss/figaro_actualites.xml' },
-  { id: 'bfm-tv', nom: 'BFMTV', url: 'https://www.bfmtv.com/rss/news-24-7/' },
   { id: 'france-tv-info', nom: 'franceinfo', url: 'https://www.francetvinfo.fr/france.rss' },
   { id: 'france-info', nom: 'France Inter', url: 'https://radiofrance.fr/franceinfo/rss' },
   { id: 'france-24', nom: 'France 24', url: 'https://www.france24.com/fr/rss' },
   { id: 'rfi', nom: 'RFI', url: 'https://www.rfi.fr/fr/rss' },
   { id: 'ouest-france', nom: 'Ouest-France', url: 'https://www.ouest-france.fr/rss.xml' },
-  { id: 'la-croix', nom: 'La Croix', url: 'https://www.la-croix.com/rss.xml' },
   { id: 'l-humanite', nom: "L'Humanité", url: 'https://www.humanite.fr/feed' },
   { id: 'mediapart', nom: 'Mediapart', url: 'https://www.mediapart.fr/articles/feed' },
   { id: 'liberation', nom: 'Libération', url: 'https://www.liberation.fr/arc/outboundfeeds/rss-all/' }

@@ -26,7 +26,7 @@ function t(nom, cond, detail) {
   else { ko++; console.log('KO !!  ' + nom + (detail ? ' — ' + detail : '')); }
 }
 
-/* ——— URLs du catalogue presse + flux Reddit (miroir de tools/etudiants.js v112) ——— */
+/* ——— URLs du catalogue presse + flux Reddit (miroir de tools/etudiants.js v113) ——— */
 const U_ETU = 'https://www.reddit.com/r/etudiants/.rss';
 const U_ENS = 'https://www.reddit.com/r/enseignants/.rss';
 const U_FR = 'https://www.reddit.com/r/france/.rss';
@@ -34,11 +34,10 @@ const P_20M = 'https://www.20minutes.fr/feeds/rss-une.xml';
 const P_FTV = 'https://www.francetvinfo.fr/france.rss';
 const AUTRES_PRESSE = [
   'https://www.europe1.fr/rss.xml', 'https://www.publicsenat.fr/rss',
-  'https://www.lefigaro.fr/rss/figaro_actualites.xml', 'https://www.bfmtv.com/rss/news-24-7/',
   'https://radiofrance.fr/franceinfo/rss', 'https://www.france24.com/fr/rss',
   'https://www.rfi.fr/fr/rss', 'https://www.ouest-france.fr/rss.xml',
-  'https://www.la-croix.com/rss.xml', 'https://www.humanite.fr/feed',
-  'https://www.mediapart.fr/articles/feed', 'https://www.liberation.fr/arc/outboundfeeds/rss-all/'
+  'https://www.humanite.fr/feed', 'https://www.mediapart.fr/articles/feed',
+  'https://www.liberation.fr/arc/outboundfeeds/rss-all/'
 ];
 
 /* ——— Aides : copie isolée du repo, fixtures, run, dernier paragraphe ——— */
