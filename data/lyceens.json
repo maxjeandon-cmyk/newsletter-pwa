@@ -1,5 +1,5 @@
 {
-  "maj": "08/10/2026 17:30",
+  "maj": "08/10/2026 23:28",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -24,12 +24,13 @@
       "date": "08/10/2026",
       "titre": "\"Ça me donne encore plus envie d'aller bloquer\" : des lycéens déçus par la prise de parole de Sébastien Lecornu",
       "texte": "Mercredi, Sébastien Lecornu s'est adressé aux Français au sujet de la mobilisation lycéenne et sur la grogne autour de la hausse des prix des carburants. Mais il n'a pas convaincu ces élèves et paren…",
-      "source": "Europe 1 / France Inter / Public Sénat / Le Figaro",
+      "source": "Europe 1 / France Inter / Public Sénat / Le Figaro / France 24",
       "sources": [
         "Europe 1",
         "France Inter",
         "Public Sénat",
-        "Le Figaro"
+        "Le Figaro",
+        "France 24"
       ],
       "url": "https://www.radiofrance.fr/franceinfo/podcasts/les-documents-franceinfo/ca-me-donne-encore-plus-envie-d-aller-bloquer-des-lyceens-decus-par-la-prise-de-parole-de-sebastien-lecornu-4012740",
       "verifie": true
@@ -39,11 +40,14 @@
       "date": "08/10/2026",
       "titre": "Colère des lycéens : premières tensions à Paris place de la Bastille, Édouard Geffray va s’exprimer à 20 heures",
       "texte": "La majorité des établissements scolaires ont rouvert jeudi, mais des blocages de lycées et d’universités ont subsisté en cette nouvelle journée de mobilisation avec des manifestations qui ont démarré…",
-      "source": "20 minutes / Le Figaro / BFMTV",
+      "source": "20 minutes / Le Figaro / BFMTV / Europe 1 / France 24 / RFI",
       "sources": [
         "20 minutes",
         "Le Figaro",
-        "BFMTV"
+        "BFMTV",
+        "Europe 1",
+        "France 24",
+        "RFI"
       ],
       "url": "https://www.lefigaro.fr/actualite-france/en-direct-mobilisation-des-lyceens-de-nouvelles-manifestations-prevues-ce-jeudi-partout-en-france-des-syndicats-de-l-education-appellent-a-la-greve-20261008",
       "verifie": true
@@ -211,63 +215,53 @@
       "date": "08/10/2026",
       "titre": "«L’icône de la révolte» : dans les médias étrangers, Bally Bagayoko érigé en «figure emblématique» des manifestations l…",
       "texte": "Le maire LFI de Saint-Denis a tenté de s’interposer entre policiers et protestataires lors de la manifestation à Paris en soutien au mouvement social des lycées, mardi. Une séquence qui fait le tour …",
-      "source": "BFMTV / Libération",
+      "source": "BFMTV / Libération / 20 minutes / Europe 1",
       "sources": [
         "BFMTV",
-        "Libération"
+        "Libération",
+        "20 minutes",
+        "Europe 1"
       ],
       "url": "https://www.liberation.fr/politique/licone-de-la-revolte-dans-les-medias-etrangers-bally-bagayoko-erige-en-figure-emblematique-des-manifestations-lyceennes-20261008_2NCMS4I72ZBQJOEB3NMC67DESA/",
       "verifie": true
     },
     {
-      "id": "aetumuymcto2-1",
-      "date": "07/10/2026",
-      "titre": "Blocage des lycées : Sébastien Lecornu tente de ramener le calme",
-      "texte": "Le premier ministre s’est exprimé dans une allocution, mercredi 7 octobre, pour évoquer la mobilisation des lycéens, les prix des carburants et la situation financière de la France. De « premières mesures » seront prises fin octobre pour répondre à la crise des lycées.",
-      "source": "La Croix / 20 minutes / Europe 1 / Public Sénat / Le Figaro / BFMTV",
+      "id": "amv01t8o2-ilpz",
+      "date": "08/10/2026",
+      "titre": "Colère des lycéens près de Bordeaux : Des centaines de milliers d’euros de dégâts après le saccage d’un lycée",
+      "texte": "Un lycée de Lormont, près de Bordeaux, a été en partie mis à sac ce jeudi par un groupe d’individus masqués, causant plusieurs centaines de milliers d’euros de dégâts",
+      "source": "20 minutes / Europe 1",
       "sources": [
-        "La Croix",
         "20 minutes",
-        "Europe 1",
-        "Public Sénat",
-        "Le Figaro",
-        "BFMTV"
+        "Europe 1"
       ],
-      "url": "https://www.la-croix.com/politique/blocage-des-lycees-sebastien-lecornu-tente-de-ramener-le-calme-20261007",
+      "url": "https://www.20minutes.fr/bordeaux/4252667-20261008-colere-lyceens-pres-bordeaux-centaines-milliers-euros-degats-apres-saccage-lycee?at_medium=display&at_campaign=149",
       "verifie": true
     },
     {
-      "id": "aetumuy9vs08-1",
-      "date": "07/10/2026",
-      "titre": "EN DIRECT – Mobilisation lycéenne : malgré un nombre record d’interpellations, «il est excessif de parler de répression policière», juge Laurent Nuñez",
-      "texte": "Au lendemain d’une journée de mobilisation massive dans toute la France, les organisations lycéennes poursuivent ce mercredi les blocages, à la veille d’un «acte IV» dans la rue jeudi. Le Premier ministre, Sébastien Lecornu, doit s’exprimer dans la soirée.",
-      "source": "Libération / 20 minutes / Europe 1 / Public Sénat / Le Figaro / BFMTV",
+      "id": "amv01t8o4-6u47",
+      "date": "08/10/2026",
+      "titre": "Manifestations lycéennes : «Ce que nous vivons aujourd'hui, c'est une intifada», s'inquiète un ancien policier",
+      "texte": "Dans l'émission \"Pascal Praud et vous\", Franck, ancien policier, alerte sur les tensions qu'il observe dans les manifestations actuelles et redoute qu'elles s'amplifient à l'approche de l'élection pr…",
+      "source": "Europe 1 / BFMTV",
       "sources": [
-        "Libération",
-        "20 minutes",
         "Europe 1",
-        "Public Sénat",
-        "Le Figaro",
         "BFMTV"
       ],
-      "url": "https://www.liberation.fr/societe/education/en-direct-mobilisation-lyceenne-les-organisations-de-jeunesse-appellent-a-poursuivre-les-blocages-lintersyndicale-doit-sexprimer-20261007_5SKC4PXBSNF6LEOZONVQEZ7YOQ/",
+      "url": "https://www.europe1.fr/societe/manifestations-lyceennes-ce-que-nous-vivons-aujourdhui-cest-une-intifada-sinquiete-un-ancien-policier-1132049?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
     },
     {
-      "id": "aetumuxun1rd-1",
-      "date": "07/10/2026",
-      "titre": "Blocage des lycées : l’usage des grenades assourdissantes suspendu ; Lecornu s’exprimera ce soir",
-      "texte": "Les cours sont « totalement ou partiellement suspendus » dans 528 établissements, selon le ministère de l’éducation. Le premier ministre Sébastien Lecornu s’exprimera depuis Matignon sur la situation dans la soirée. Suivez les informations sur la mobilisation lycéenne du mercred…",
-      "source": "La Croix / Libération / France 24 / Public Sénat / Europe 1 / 20 minutes",
+      "id": "amv01t8o9-78dw",
+      "date": "08/10/2026",
+      "titre": "Maintien de l'ordre dans les manifestations lycéennes: \"On est dans un début de barbarie\", affirme Ségolène Royal, cand…",
+      "texte": "Ségolène Royal, candidate à la primaire sociale-démocrate, ancienne finaliste à la présidentielle, était invitée sur le plateau de BFMTV, ce jeudi 8 octobre.",
+      "source": "Public Sénat / BFMTV",
       "sources": [
-        "La Croix",
-        "Libération",
-        "France 24",
         "Public Sénat",
-        "Europe 1",
-        "20 minutes"
+        "BFMTV"
       ],
-      "url": "https://www.la-croix.com/societe/blocage-des-lycees-les-cours-suspendus-dans-528-etablissements-lecornu-s-exprimera-ce-soir-20261007",
+      "url": "https://www.bfmtv.com/politique/video-maintien-de-l-ordre-dans-les-manifestations-lyceennes-on-est-dans-un-debut-de-barbarie-affirme-segolene-royal-candidate-a-la-primaire-sociale-democrate_VN-202610080992.html",
       "verifie": true
     },
     {
