@@ -1,11 +1,17 @@
 #!/usr/bin/env node
-/* tools/maintenance.js — Agent de maintenance (v38).
+/* tools/maintenance.js — Agent de maintenance (v39).
  * Toutes les 6 h (3 h, 9 h, 15 h, 21 h heure de Paris) :
  * v37 : pipeline feedback supprime (onglet Feedback retire de l'app le
  * 07/10/2026) ; la table Supabase feedback reste en place, inerte.
  * v38 : chronique etudiants — un chapitre par jour de suivi (nouvel acte
  * a chaque changement de jour, index.chapitreJour), plus aucune scission
  * par taille (le seuil 28 Ko devient un simple avertissement).
+ * v39 (lot 8 bis) : publication des chapitres transverses modifies par
+ * les volets automatiques (etu.transverses, lignes ajoutes > 0 ->
+ * data/etudiants/chapitres/NN.json) — le workflow ne commit RIEN du
+ * working tree : sans ceci, les volets de c10-c14/c16 n atteindraient
+ * jamais le depot. UN try/catch PAR FICHIER : un echec n interrompt ni
+ * les autres publications ni le reste du run.
  * Aucune dépendance : fetch natif (Node >= 18).
  * Env : SUPABASE_URL, SUPABASE_SERVICE_ROLE, GH_TOKEN (Contents: RW).
  */
@@ -222,6 +228,9 @@ async function main() {
   /* 3 quater. Publication de la chronique « Version des étudiants »
    * (chapitre modifié puis index, data/ network-first, pas de bump CACHE). */
   if (etu.modifie && !etu.erreur && etu.fichier) {
+    /* v39 (lot 8 bis) : compteur des volets transverses publies, pour le
+     * rapport et les logs. */
+    let voletsPublies = 0;
     try {
       await publierFichier(etu.fichier, fs.readFileSync(etu.fichier, 'utf8'),
         'Chronique etudiants du ' + dateFr + ' (' + etu.items + ' info(s) des dernieres heures)');
@@ -236,6 +245,27 @@ async function main() {
         await publierFichier(LYCEENS, fs.readFileSync(LYCEENS, 'utf8'),
           'Releve lyceens du ' + dateFr + ' (' + etu.faits + ' fait(s) verifie(s) via chronique etudiants)');
         console.log('Faits vérifiés enrichis (' + etu.faits + ' fait(s)).');
+      }
+      /* v39 (lot 8 bis) : publication des chapitres transverses modifies
+       * par les volets automatiques de la v116/v117 (etu.transverses, une
+       * ligne par transverse avec ajoutes > 0). Le chapitre du jour et
+       * l'index sont publies AVANT, ils ne dependent jamais des volets ;
+       * UN try/catch PAR FICHIER : un echec n'interrompt ni les autres
+       * volets ni le reste du run. */
+      if (Array.isArray(etu.transverses)) {
+        for (const ligne of etu.transverses) {
+          if (!ligne || ligne.ajoutes !== 1 || !/^c\d+$/.test(ligne.id || '')) continue;
+          const ficTrans = 'data/etudiants/chapitres/' + ligne.id.replace(/^c/, '') + '.json';
+          try {
+            await publierFichier(ficTrans, fs.readFileSync(ficTrans, 'utf8'),
+              'Chronique etudiants du ' + dateFr + ' (volet automatique ' + ligne.id + ')');
+            voletsPublies++;
+          } catch (e) {
+            console.error('Publication du volet transverse ' + ligne.id + ' echouee : ' + e.message);
+            etu.erreur = 'volet ' + ligne.id + ' : ' + String(e.message).slice(0, 100);
+          }
+        }
+        if (voletsPublies) console.log('Volets transverses publiés (' + voletsPublies + ').');
       }
     } catch (e) {
       console.error('Publication de la chronique étudiants échouée : ' + e.message);
