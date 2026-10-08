@@ -1,4 +1,4 @@
-/* views/lyceens.js — ✊ Lycéens 2026 (v111) : suivre le mouvement lycéen et étudiant
+/* views/lyceens.js — ✊ Lycéens 2026 (v112) : suivre le mouvement lycéen et étudiant
  * de 2026 en France, en quatre lectures : la « Version des Lycéens » (chronique
  * puis chapitres transverses), la version du gouvernement, les seules
  * informations corroborées par plusieurs médias indépendants, et la chronologie
@@ -22,6 +22,9 @@
  * interne est « chronologie d'abord, transverses à la fin » ; l'intro (🔎), le
  * compteur et la note (💡) vivent DANS la carte déroulante d'en-tête, le bouton
  * fin du texte reste dessous.
+ * v112 : chapitres REPLIÉS par défaut (demande de Maxime du 08/10/2026 — le fil
+ * est long, on laisse le lecteur déplier ce qu il veut lire) ; le bouton
+ * ⬇️ « Aller à la fin du texte » ouvre la carte qui porte l ancre avant de défiler.
  * Données :
  *  - data/lyceens.json (network-first, versions gouvernement + faits vérifiées) ;
  *  - data/etudiants/index.json, chargé UNE seule fois, puis les fichiers
@@ -120,9 +123,9 @@ function paragrapheHtml(p, dernier) {
 
 /* Un chapitre : carte repliable <details class="carte-regl"> (même style que
  * les lettres d ONG de l onglet Newsletters), titre + période en <summary>,
- * paragraphes dedans une fois déplié. ouvert=true ajoute l attribut open
- * (tous les chapitres côté Version des Lycéens, seul le premier côté
- * Complément avant la fusion v111). dernier=true garde l ancre fin-texte sur le dernier paragraphe. */
+ * paragraphes dedans une fois déplié. v112 : TOUS les chapitres sont repliés
+ * par défaut (avant : ouverts côté Version des Lycéens). dernier=true garde
+ * l ancre fin-texte sur le dernier paragraphe. */
 function chapitreHtml(ch, dernier, ouvert) {
   const ps = Array.isArray(ch.paragraphes) ? ch.paragraphes : [];
   return '<details class="carte-regl chapitre-etudiant"' + (ouvert ? ' open' : '') + ' id="chapitre-' + esc(String(ch.id || '')) + '">' +
@@ -173,7 +176,7 @@ async function initSection(conteneur, idSection, avecFinTexte) {
     return;
   }
   conteneur.innerHTML = chapitres.map((c, i) =>
-    chapitreHtml(c, avecFinTexte && i === chapitres.length - 1, avecFinTexte || i === 0)).join('');
+    chapitreHtml(c, avecFinTexte && i === chapitres.length - 1, false)).join('');
 }
 
 /* « ⬇️ Aller à la fin du texte » : attend que les chapitres soient chargés
@@ -186,6 +189,10 @@ async function allerFinTexte() {
   if (section) await chargerSection(section);
   const fin = document.getElementById('fin-texte') || document.getElementById('bloc-etudiants');
   if (!fin) return;
+  /* v112 : chapitres repliés par défaut — ouvrir la carte qui porte l'ancre
+   * avant de défiler, sinon le paragraphe visé est invisible. */
+  const carte = typeof fin.closest === 'function' ? fin.closest('details') : null;
+  if (carte) carte.open = true;
   if (typeof fin.scrollIntoView === 'function') fin.scrollIntoView({ behavior: 'smooth', block: 'end' });
   fin.style.transition = 'background-color 0.3s';
   fin.style.backgroundColor = 'rgba(255, 213, 79, 0.45)';

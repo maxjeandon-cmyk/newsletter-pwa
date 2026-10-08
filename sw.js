@@ -1,7 +1,10 @@
-/* sw.js v111 — Service worker de la PWA Newsletter.
+/* sw.js v112 — Service worker de la PWA Newsletter.
  * Stratégies : data/ et editions/ network-first (toujours frais en ligne, repli cache hors ligne) ;
  * le reste (coquille, js/, styles) cache-first pour un démarrage instantané.
  * À chaque déploiement de code : incrémenter CACHE (v109 → v110…) pour invalider les caches clients.
+ * v112 : ✊ Lycéens — chapitres de la « Version des Lycéens » REPLIÉS par défaut
+ * (demande de Maxime) ; le bouton « Aller à la fin du texte » ouvre la carte
+ * qui porte l'ancre avant de défiler (js/views/lyceens.js v112).
  * v111 : ✊ Lycéens — fusion « Version des Lycéens » (le sous-onglet de
  * chapitres transverses disparaît, le texte d'intro/compteur/note vit dans la
  * carte déroulante d'en-tête) + pipeline : nouveaux chapitres insérés avant
@@ -25,7 +28,7 @@
  * v105 : lot 5 — badge « ✓ N médias » (corroboration client miroir du serveur, racines+chiffres)
  * sur les articles repris par plusieurs flux, extrait coupé au mot (js/feeds.js v17, views/common.js,
  * styles.css). data/ et tools/ inchangés (les relevés serveur ne comptent que la presse). */
-const CACHE = 'newsletter-v111';
+const CACHE = 'newsletter-v112';
 const ASSETS = [
   './',
   './index.html',
