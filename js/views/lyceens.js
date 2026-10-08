@@ -1,10 +1,12 @@
-/* views/lyceens.js — ✊ Lycéens 2026 (v106) : suivre le mouvement lycéen et étudiant
+/* views/lyceens.js — ✊ Lycéens 2026 (v107) : suivre le mouvement lycéen et étudiant
  * de 2026 en France, en cinq lectures : la chronique étudiante, le complément
  * étudiant (chapitres transverses), la version du gouvernement, les seules
  * informations corroborées par plusieurs médias indépendants, et la chronologie
  * des jalons du mouvement (v106 : la 📍 Chronologie quitte le haut de l'onglet —
  * où elle n'était plus lisible au fil de l'allongement du suivi — pour devenir
- * un sous-onglet à part entière, après les ✅ Faits vérifiés).
+ * un sous-onglet à part entière, après les faits multisources ; v107 : le
+ * sous-onglet « ✅ Faits vérifiés » est renommé « ✅ Faits multisources », plus
+ * fidèle à ce qu il montre — des faits corroborés par plusieurs médias).
  * Données :
  *  - data/lyceens.json (network-first, versions gouvernement + faits vérifiées) ;
  *  - data/etudiants/index.json, chargé UNE seule fois, puis les fichiers
@@ -22,7 +24,7 @@ const SOUS_ONGLETS_LYCEENS = () => [
   { id: 'etudiants', nom: '🎓 Version des étudiants' },
   { id: 'complement', nom: '📚 Complément étudiants' },
   { id: 'gouvernement', nom: '🏛️ Version du gouvernement' },
-  { id: 'faits', nom: '✅ Faits vérifiés' },
+  { id: 'faits', nom: '✅ Faits multisources' },
   { id: 'chronologie', nom: '📍 Chronologie' }
 ];
 
