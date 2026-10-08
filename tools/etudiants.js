@@ -1,5 +1,13 @@
 #!/usr/bin/env node
-/* v114 (08/10/2026) : fin des actes numérotés — « Acte N » est RÉSERVÉ aux
+/* v115 (08/10/2026) : ordre « chronologie d'abord, transverses à la fin » dans
+ * la resynchronisation de la section chronique (décision de Maxime du
+ * 08/10/2026) — un NOUVEAU chapitre est inséré à la fin de la partie
+ * chronologique, c'est-à-dire AVANT le premier chapitre transverse (c10–c16),
+ * jamais après les transverses. Si la section ne contient aucun id transverse,
+ * comportement identique à avant (concaténation simple). La section
+ * « complement », si elle existe encore dans les données, continue d'être
+ * resynchronisée comme avant (tolérance aux deux états de l'index).
+ * v114 (08/10/2026) : fin des actes numérotés — « Acte N » est RÉSERVÉ aux
  * journées de mobilisation nationales (acte 1 : 29/09, acte 2 : 01/10,
  * acte III : 06/10) ; un jour de suivi ordinaire n'est plus « Acte IV/V… ».
  * Le nouveau chapitre du jour reçoit un titre placeholder « Le fil continue —
@@ -503,10 +511,30 @@ async function main() {
       const aJour = id => index.chapitres.find(c => c.id === id);
       let chapitres = ids.map(id => aJour(id) || deja.find(c => c.id === id)).filter(Boolean);
       if (section.id === 'chronique') {
-        /* Les releves auto vont a la fin de la chronique (apres c17), jamais
-         * dans le Complement (c10-c16). */
-        const nouveaux = index.chapitres.filter(c => !ids.includes(c.id) && !/^c1[0-6]$/.test(c.id));
-        chapitres = chapitres.concat(nouveaux);
+        /* v115 : ordre « chronologie d abord, transverses a la fin » (decision
+         * de Maxime du 08/10/2026). On separe les entrees existantes en partie
+         * chronologique (id non c10-c16) et partie transverse (id c10-c16),
+         * chacune mise a jour depuis index.chapitres (ordre preserve, entrees
+         * retirees si absentes) ; les nouveaux chapitres sont concatenes a la
+         * FIN de la partie chronologique — donc AVANT le premier c10-c16,
+         * jamais apres les transverses. */
+        const estTransverse = c => /^c1[0-6]$/.test(c.id);
+        const dejaChrono = deja.filter(c => !estTransverse(c));
+        const dejaTrans = deja.filter(c => estTransverse(c));
+        if (dejaTrans.length) {
+          const idsChrono = dejaChrono.map(c => c.id);
+          const idsTrans = dejaTrans.map(c => c.id);
+          let aJourChrono = idsChrono.map(id => aJour(id) || dejaChrono.find(c => c.id === id)).filter(Boolean);
+          const aJourTrans = idsTrans.map(id => aJour(id) || dejaTrans.find(c => c.id === id)).filter(Boolean);
+          const nouveaux = index.chapitres.filter(c =>
+            !idsChrono.includes(c.id) && !idsTrans.includes(c.id) && !estTransverse(c));
+          aJourChrono = aJourChrono.concat(nouveaux);
+          chapitres = aJourChrono.concat(aJourTrans);
+        } else {
+          /* Aucun id transverse : comportement inchangé (concaténation simple). */
+          const nouveaux = index.chapitres.filter(c => !ids.includes(c.id) && !estTransverse(c));
+          chapitres = chapitres.concat(nouveaux);
+        }
       }
       section.chapitres = chapitres;
     }

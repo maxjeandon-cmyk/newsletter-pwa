@@ -1,6 +1,6 @@
-/* views/lyceens.js — ✊ Lycéens 2026 (v110) : suivre le mouvement lycéen et étudiant
- * de 2026 en France, en cinq lectures : la chronique étudiante, le complément
- * étudiant (chapitres transverses), la version du gouvernement, les seules
+/* views/lyceens.js — ✊ Lycéens 2026 (v111) : suivre le mouvement lycéen et étudiant
+ * de 2026 en France, en quatre lectures : la « Version des Lycéens » (chronique
+ * puis chapitres transverses), la version du gouvernement, les seules
  * informations corroborées par plusieurs médias indépendants, et la chronologie
  * des jalons du mouvement (v106 : la 📍 Chronologie quitte le haut de l'onglet —
  * où elle n'était plus lisible au fil de l'allongement du suivi — pour devenir
@@ -13,16 +13,22 @@
  * chapitres), repliée par défaut — la date de mise à jour reste visible dans le
  * <summary>. La prose de l'encart (intro, échéance) est éditoriale : la
  * maintenance ne l'écrit jamais, elle vit aux éditions ; v110 : l'en-tête de
- * section « Version des étudiants — la chronique » (et son jumeau « Complément
- * étudiants ») devient lui aussi une carte repliable, repliée par défaut —
+ * section « Version des étudiants — la chronique » (et son jumeau d avant la
+ * fusion v111) devient lui aussi une carte repliable, repliée par défaut —
  * titre au <summary>, description dedans, les chapitres respirent en dessous).
+ * v111 : fusion « Version des Lycéens » (décision de Maxime du 08/10/2026) — le
+ * sous-onglet de chapitres transverses disparaît, la « Version des étudiants »
+ * devient « Version des Lycéens » et les absorbe ; l'ordre
+ * interne est « chronologie d'abord, transverses à la fin » ; l'intro (🔎), le
+ * compteur et la note (💡) vivent DANS la carte déroulante d'en-tête, le bouton
+ * fin du texte reste dessous.
  * Données :
  *  - data/lyceens.json (network-first, versions gouvernement + faits vérifiées) ;
  *  - data/etudiants/index.json, chargé UNE seule fois, puis les fichiers
  *    data/etudiants/chapitres/NN.json au fil du besoin. L'index porte
- *    sections: [{id, titre, description, chapitres: [...]}] :
- *      · sous-onglet « Version des étudiants » = section chronique (c1–c9 puis c17) ;
- *      · sous-onglet « Complément étudiants »  = section complement (c10–c16).
+ *    sections: [{id, titre, description, chapitres: [...]}] ; la vue ne lit
+ *    QUE la section id « chronique » (tolérance aux deux états de l'index :
+ *    [chronique, complement] ou [chronique] seul).
  * data/lyceens.json n'a plus de champ version_lyceens.
  * Règle d'hygiène : tout texte des données passe par esc().
  */
@@ -30,14 +36,13 @@ import { $, state, esc } from '../core.js';
 import { renderView } from './common.js';
 
 const SOUS_ONGLETS_LYCEENS = () => [
-  { id: 'etudiants', nom: '🎓 Version des étudiants' },
-  { id: 'complement', nom: '📚 Complément étudiants' },
+  { id: 'etudiants', nom: '🎓 Version des Lycéens' },
   { id: 'gouvernement', nom: '🏛️ Version du gouvernement' },
   { id: 'faits', nom: '✅ Faits multisources' },
   { id: 'chronologie', nom: '📍 Chronologie résumée' }
 ];
 
-const SECTION_SOUS_ONGLET = { etudiants: 'chronique', complement: 'complement' };
+const SECTION_SOUS_ONGLET = { etudiants: 'chronique' };
 
 /* Chargement paresseux, en cache dans state après le premier passage.
  * data/lyceens.json n'a plus de champ version_lyceens : seules les versions
@@ -99,7 +104,7 @@ async function chargerSection(section) {
 
 /* Un paragraphe : <p> échappé, sources en petites lignes dessous. Les
  * paragraphes auto: true portent la classe releve-auto et le badge « relevé auto ».
- * dernier=true pose l'ancre id="fin-texte" (Version des étudiants uniquement).
+ * dernier=true pose l'ancre id="fin-texte" (Version des Lycéens uniquement).
  */
 function paragrapheHtml(p, dernier) {
   const auto = p && p.auto === true;
@@ -116,8 +121,8 @@ function paragrapheHtml(p, dernier) {
 /* Un chapitre : carte repliable <details class="carte-regl"> (même style que
  * les lettres d ONG de l onglet Newsletters), titre + période en <summary>,
  * paragraphes dedans une fois déplié. ouvert=true ajoute l attribut open
- * (tous les chapitres côté Version des étudiants, seul le premier côté
- * Complément). dernier=true garde l ancre fin-texte sur le dernier paragraphe. */
+ * (tous les chapitres côté Version des Lycéens, seul le premier côté
+ * Complément avant la fusion v111). dernier=true garde l ancre fin-texte sur le dernier paragraphe. */
 function chapitreHtml(ch, dernier, ouvert) {
   const ps = Array.isArray(ch.paragraphes) ? ch.paragraphes : [];
   return '<details class="carte-regl chapitre-etudiant"' + (ouvert ? ' open' : '') + ' id="chapitre-' + esc(String(ch.id || '')) + '">' +
@@ -129,10 +134,11 @@ function chapitreHtml(ch, dernier, ouvert) {
 /* Tête d'une section : titre + description de l'index. v110 : carte repliable
  * (même style que l'encart v109), repliée par défaut — la description est
  * méthodologique, les chapitres sont la matière ; on les laisse respirer. */
-function enteteSection(section) {
+function enteteSection(section, supplementHtml) {
   return '<details class="carte-regl entete-section">' +
     '<summary>🎓 ' + esc(section.titre || '') + '</summary>' +
     (section.description ? '<p class="meta-count">' + esc(section.description) + '</p>' : '') +
+    (supplementHtml || '') +
     '</details>';
 }
 
@@ -172,7 +178,7 @@ async function initSection(conteneur, idSection, avecFinTexte) {
 
 /* « ⬇️ Aller à la fin du texte » : attend que les chapitres soient chargés
  * si c'est encore en cours, puis défile jusqu'à #fin-texte et le surligne
- * brièvement. Ne concerne que la Version des étudiants. */
+ * brièvement. Ne concerne que la Version des Lycéens. */
 async function allerFinTexte() {
   const etu = state.etudiants;
   if (etu && etu.promesseIndex) await etu.promesseIndex;
@@ -186,17 +192,19 @@ async function allerFinTexte() {
   setTimeout(() => { fin.style.backgroundColor = ''; }, 1600);
 }
 
-/* Bloc d'un sous-onglet étudiant : entête de section (+ compteur d'index sur
- * la Version des étudiants), bouton de fin de texte pour la chronique seule,
- * puis le conteneur des chapitres. */
+/* Bloc du sous-onglet « Version des Lycéens » : entête de section — la carte
+ * repliable porte la description, l'intro (🔎), le compteur et la note (💡)
+ * (v111 : ils déménagent dedans) — puis le bouton de fin de texte et le
+ * conteneur des chapitres. Le rendu ne lit QUE la section « chronique »,
+ * jamais « complement », même si elle existe encore dans l'index. */
 function blocEtudiants(section, avecFinTexte) {
   const idx = state.etudiants && state.etudiants.index ? state.etudiants.index : {};
-  return enteteSection(section) +
-    (avecFinTexte
-      ? (idx.intro ? '<p class="hint">🔎 ' + esc(idx.intro) + '</p>' : '') +
-        compteurEtudiants(idx) +
-        (idx.note ? '<p class="hint">💡 ' + esc(idx.note) + '</p>' : '')
-      : '') +
+  const supplement = avecFinTexte
+    ? (idx.intro ? '<p class="hint">🔎 ' + esc(idx.intro) + '</p>' : '') +
+      compteurEtudiants(idx) +
+      (idx.note ? '<p class="hint">💡 ' + esc(idx.note) + '</p>' : '')
+    : '';
+  return enteteSection(section, supplement) +
     (avecFinTexte
       ? '<div class="form-actions"><button class="filter-btn active" id="btn-fin-texte" type="button">⬇️ Aller à la fin du texte</button></div>'
       : '') +
@@ -244,7 +252,7 @@ function trier(liste) {
 export function vueLyceens() {
   const view = $('#view');
   const sous = SOUS_ONGLETS_LYCEENS().some(x => x.id === state.lyceensSub) ? state.lyceensSub : 'etudiants';
-  if ((sous === 'etudiants' || sous === 'complement') && !state.etudiants) etatEtudiants();
+  if (sous === 'etudiants' && !state.etudiants) etatEtudiants();
   const d = state.lyceens;
   if (!d) {
     view.innerHTML = '<div class="empty">Chargement du suivi du mouvement lycéen…</div>';
@@ -254,10 +262,10 @@ export function vueLyceens() {
   const gouv = trier(Array.isArray(d.version_gouvernement) ? d.version_gouvernement : []);
   const faits = trier(Array.isArray(d.faits) ? d.faits : []);
   let corps = '';
-  if (sous === 'etudiants' || sous === 'complement') {
+  if (sous === 'etudiants') {
     const section = sectionDe(SECTION_SOUS_ONGLET[sous]);
     corps = section
-      ? blocEtudiants(section, sous === 'etudiants')
+      ? blocEtudiants(section, true)
       : '<div id="bloc-etudiants"><div class="empty">' +
         (state.etudiants && state.etudiants.erreur
           ? 'Chronologie étudiante momentanément indisponible — data/etudiants/index.json ne répond pas.'
@@ -298,9 +306,9 @@ export function vueLyceens() {
       ? '<div class="empty">Suivi momentanément indisponible — il revient dès que data/lyceens.json répondra.</div>'
       : '') +
     corps;
-  if (sous === 'etudiants' || sous === 'complement') {
+  if (sous === 'etudiants') {
     const conteneur = document.getElementById('bloc-etudiants');
-    if (conteneur) initSection(conteneur, SECTION_SOUS_ONGLET[sous], sous === 'etudiants').catch(() => {});
+    if (conteneur) initSection(conteneur, SECTION_SOUS_ONGLET[sous], true).catch(() => {});
   }
   wireBlocEtudiants();
   wireSousOnglets();
