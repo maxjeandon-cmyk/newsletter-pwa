@@ -23,6 +23,16 @@
         "Public Sénat"
       ],
       "auto": true
+    },
+    {
+      "id": "c19p3",
+      "texte": "6 heures ont passé depuis le relevé précédent ; le fil continue. Au soir du 8 octobre 2026, la chronique avance. Dans la rue, le mouvement garde son souffle : Blocage des lycées : des revendications scolaires aux slogans politiques, place de la Bastille, le mouvement se politise (1 media : Europe 1 — non corrobore) ; Cuba: malgré le blocus, des importations record en provenance des États-Unis (1 media : RFI — non corrobore) ; Blocus des lycées : «De belles paroles ne suffiront pas à apaiser la colère», prévient Maxime Reppert (1 media : Europe 1 — non corrobore) — detail : Plusieurs milliers de jeunes se sont rassemblés ce jeudi après-midi place de la Bastille, à Paris, pour dénoncer l’état de leurs établissements et réclamer des mesures concrètes. …. Côté forces de l'ordre, les tensions ne faiblissent pas : Blocus lycéens : À quoi servent les boucliers lumineux de la police ? (1 media : 20 minutes — non corrobore) ; Blocus des lycées : «On traite les policiers comme des criminels ! Ça me fend le cœur», pointe cette auditrice (1 media : Europe 1 — non corrobore) — detail : A Paris, des unités d’intervention de la Préfecture de police ont fait mardi un usage remarqué de boucliers équipés de flashs stroboscopiques face aux cortèges lycéens. Côté gouvernement, les réponses s'égrènent : Blocus des lycées : Édouard Geffray annonce l'arrivée prochaine de 3.000 professeurs remplaçants dans les établissements dans le besoin (1 media : Europe 1 — non corrobore) ; Parcoursup met en place un «tri raciste et social» ? «C'est totalement faux», répond le délégué national de l'UNI (1 media : Europe 1 — non corrobore) — detail : Après l'acte IV de la mobilisation des lycéens, le gouvernement a annoncé des premières mesures concrètes. Ce jeudi, sur le plateau du JT de TF1, Édouard Geffray a annoncé que 3.0…. Le prochain relevé reprendra le fil. (Relevé automatique du 8 octobre 2026 à 23:28 — faits repris des titres de presse et des fils Reddit, non reformulés.)",
+      "sources": [
+        "Europe 1",
+        "RFI",
+        "20 minutes"
+      ],
+      "auto": true
     }
   ]
 }
