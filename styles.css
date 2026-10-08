@@ -214,3 +214,15 @@ main{padding:0 14px;max-width:720px;margin:0 auto}
 .meteo-intro .hint{color:var(--muted);font-size:12px}
 /* v105 : lot 5 — badge de corroboration sur les articles repris par plusieurs médias */
 .badge-medias{display:inline-block;font-size:10.5px;font-weight:600;color:#4caf7d;border:1px solid #4caf7d;border-radius:8px;padding:1px 7px;margin-left:6px;vertical-align:1px}
+/* v114 : pastille « ✓ N médias » CLIQUABLE — la carte devient un conteneur avec
+ * lien-voile étiré (toute la surface reste cliquable, comme avant) ; la pastille
+ * et la liste des médias corroborés passent AU-DESSUS du voile (z-index:2) pour
+ * capter leurs propres clics. Chaque nom de la liste ouvre l'article de CE média. */
+.article{position:relative}
+.article-voile{position:absolute;inset:0;z-index:1;border-radius:12px}
+.article .badge-medias{position:relative;z-index:2;cursor:pointer;background:transparent;font-family:inherit;-webkit-tap-highlight-color:transparent}
+.article .badge-medias.ouvert{background:#4caf7d;color:#0e0e12}
+.medias-liste{position:relative;z-index:2;display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.medias-liste[hidden]{display:none}
+.medias-liste a{font-size:12.5px;font-weight:600;color:#4caf7d;border:1px solid #4caf7d;border-radius:8px;padding:2px 9px;text-decoration:none}
+.medias-liste a:active{background:#4caf7d;color:#0e0e12}

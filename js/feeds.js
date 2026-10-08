@@ -1,9 +1,12 @@
-/* feeds.js — couche de récupération des flux RSS/Atom (v17).
+/* feeds.js — couche de récupération des flux RSS/Atom (v18).
  * Chaîne par flux : essai direct (si le site autorise CORS) → relais JSON rss2json
  * (rapide et fiable, ~10 derniers items) → relais XML allorigins / codetabs
  * (jusqu'à 40 items, parfois lents). Chaque étape a son propre parseur :
  * le relais JSON renvoie du JSON, pas du XML — c'était la panne historique de la v14.
  * Les textes externes sont échappés au rendu (esc() dans views.js), jamais ici.
+ * v18 (CACHE v114) : compterMedias garde AUSSI le lien de chaque média corroboré
+ * par événement (a.sourcesMedias = [{nom, lien}]) — matière première de la pastille
+ * « ✓ N médias » devenue cliquable (js/views/common.js v18, styles.css v114).
  * v17 (CACHE v105, lot 5) : corroboration client — badge « ✓ N médias » miroir du
  * rapprochement serveur (tools/etudiants.js : racines + chiffres significatifs) ;
  * extrait tronqué au mot (jamais en plein milieu). */
@@ -218,7 +221,7 @@ export function compterMedias(bruts) {
     parents.set(ra, rb);
     for (const x of racines.get(ra) || []) racines.get(rb).add(x);
     for (const x of chiffres.get(ra) || []) chiffres.get(rb).add(x);
-    for (const x of sources.get(ra) || []) sources.get(rb).add(x);
+    for (const [nom, lien] of sources.get(ra) || []) if (!sources.get(rb).has(nom)) sources.get(rb).set(nom, lien);
   };
   for (const { a, source } of bruts) {
     const sig = signatureEvenement(a.titre);
@@ -226,10 +229,10 @@ export function compterMedias(bruts) {
       parents.set(sig, sig);
       racines.set(sig, new Set(racinesEvenement(a.titre)));
       chiffres.set(sig, new Set(chiffresEvenement(a.titre)));
-      sources.set(sig, new Set());
+      sources.set(sig, new Map());
     }
     let rSig = racineDe(sig);
-    sources.get(rSig).add(source);
+    sources.get(rSig).set(source, a.lien); /* v114 : le lien le plus récent de ce média pour l'événement */
     const R = racines.get(rSig), C = chiffres.get(rSig);
     for (const autre of parents.keys()) {
       const rAutre = racineDe(autre);
@@ -243,7 +246,14 @@ export function compterMedias(bruts) {
       }
     }
   }
-  for (const { a } of bruts) a.nbMedias = sources.get(racineDe(signatureEvenement(a.titre))).size;
+  for (const { a } of bruts) {
+    const s = sources.get(racineDe(signatureEvenement(a.titre)));
+    a.nbMedias = s.size;
+    /* v114 : la pastille devient cliquable — l'événement corroboré porte la liste
+     * {média, lien} pour choisir la version à ouvrir (tri alphabétique fr). */
+    if (s.size >= 2) a.sourcesMedias = [...s.entries()].map(([nom, lien]) => ({ nom, lien }))
+      .sort((x, y) => x.nom.localeCompare(y.nom, 'fr'));
+  }
 }
 
 /* --- Onglet Articles : flux des chapitres suivis, dédupliqués par URL --- */

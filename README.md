@@ -92,4 +92,5 @@ Notifications Web Push : la clé publique VAPID vit dans `data/compte.json` (`pu
 - `tools/etudiants.js` : relevé narratif de la chronique étudiante (accroches et datelines qui enchaînent d'un relevé à l'autre, items verbatim par volets) ;
 - `tools/ong-releve.js` : relevé quotidien des sites ONG (règles d'extraction par site) ;
 - `tools/notifier.js` / `tools/notif-diag.js` : envoi push et diagnostic ;
-- `tools/check-site.js` : état des flux et fichiers.
+- `tools/check-site.js` : état des flux et fichiers ;
+- `tools/test/` : harnas hors-ligne (lots 5-8, `pastille-medias.js` v114) — DOM factice et délégation vérifiées, aucune dépendance, aucun réseau.
