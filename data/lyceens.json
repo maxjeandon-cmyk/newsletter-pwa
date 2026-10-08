@@ -1,5 +1,5 @@
 {
-  "maj": "08/10/2026 05:28",
+  "maj": "08/10/2026 11:29",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Cinq lectures ici : la chronique « Version des étudiants » (le fil jour après jour, écrit du point de vue des élèves), le « Complément étudiants » (les chapitres transverses), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -19,6 +19,19 @@
     "Mercredi 7 octobre (lendemain de l'acte III) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
   ],
   "version_gouvernement": [
+    {
+      "id": "amuzc4vu7-f3x9",
+      "date": "08/10/2026",
+      "titre": "\"Ça me donne encore plus envie d'aller bloquer\" : des lycéens déçus par la prise de parole de Sébastien Lecornu",
+      "texte": "Mercredi, Sébastien Lecornu s'est adressé aux Français au sujet de la mobilisation lycéenne et sur la grogne autour de la hausse des prix des carburants. Mais il n'a pas convaincu ces élèves et paren…",
+      "source": "Europe 1 / France Inter",
+      "sources": [
+        "Europe 1",
+        "France Inter"
+      ],
+      "url": "https://www.radiofrance.fr/franceinfo/podcasts/les-documents-franceinfo/ca-me-donne-encore-plus-envie-d-aller-bloquer-des-lyceens-decus-par-la-prise-de-parole-de-sebastien-lecornu-4012740",
+      "verifie": true
+    },
     {
       "id": "amuxun0gp-hgbk",
       "date": "07/10/2026",
@@ -48,19 +61,6 @@
         "France Inter"
       ],
       "url": "https://www.bfmtv.com/politique/video-edouard-geffray-24-lycees-incendies-ou-saccages-30-000-lyceens-prives-de-cours-pour-plusieurs-semaines_VN-202610070375.html",
-      "verifie": true
-    },
-    {
-      "id": "amuy9vr31-ib5f",
-      "date": "07/10/2026",
-      "titre": "SONDAGE - 82% des Français jugent les parents responsables des violences commises par leurs enfants devant les lycées",
-      "texte": "Plus de trois-quarts des Français considèrent les parents responsables des violences commises par leurs enfants pendant le blocus des lycées, selon un sondage pour Europe 1, CNews et le JDD. Alors qu…",
-      "source": "Europe 1 / BFMTV",
-      "sources": [
-        "Europe 1",
-        "BFMTV"
-      ],
-      "url": "https://www.europe1.fr/societe/sondage-82-des-francais-jugent-les-parents-responsables-des-violences-commises-par-leurs-enfants-devant-les-lycees-1129232?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
     },
     {
@@ -183,6 +183,19 @@
   ],
   "faits": [
     {
+      "id": "amuzc4vu3-keyf",
+      "date": "08/10/2026",
+      "titre": "Blocus des lycées : « Faire peur aux jeunes et aux parents »… La garde à vue est-elle devenue une peine immédiate ?",
+      "texte": "Alors que 87 % des 5.000 gardés à vue du mouvement lycéen sont mineurs, des avocats dénoncent des interpellations de masse destinées à sanctionner les manifestants",
+      "source": "20 minutes / Europe 1",
+      "sources": [
+        "20 minutes",
+        "Europe 1"
+      ],
+      "url": "https://www.20minutes.fr/societe/4252311-20261008-blocus-lycees-faire-peur-jeunes-parents-garde-vue-devenue-peine-immediate?at_medium=display&at_campaign=149",
+      "verifie": true
+    },
+    {
       "id": "aetumuymcto2-1",
       "date": "07/10/2026",
       "titre": "Blocage des lycées : Sébastien Lecornu tente de ramener le calme",
@@ -263,20 +276,6 @@
         "France 24"
       ],
       "url": "https://www.lefigaro.fr/actualite-france/blocus-des-lycees-les-reseaux-sociaux-dans-le-collimateur-des-elus-et-des-forces-de-l-ordre-20261006",
-      "verifie": true
-    },
-    {
-      "id": "amuxun0h2-2wzg",
-      "date": "07/10/2026",
-      "titre": "\"On lui a volé sa vie\": la mère du lycéen amputé à la main après l'explosion d'une grenade policière à Lens va porter p…",
-      "texte": "Le lycéen gravement blessé à la main par une grenade policière à Lens a été amputé et est toujours hospitalisé. Sa mère confie sa colère et son incompréhension à BFMTV.",
-      "source": "BFMTV / franceinfo / France Inter",
-      "sources": [
-        "BFMTV",
-        "franceinfo",
-        "France Inter"
-      ],
-      "url": "https://www.bfmtv.com/police-justice/on-lui-a-vole-sa-vie-la-mere-du-lyceen-ampute-a-la-main-apres-l-explosion-d-une-grenade-policiere-a-lens-va-porter-plainte_AV-202610070359.html",
       "verifie": true
     },
     {
