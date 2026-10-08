@@ -1,4 +1,4 @@
-/* views/lyceens.js — ✊ Lycéens 2026 (v112) : suivre le mouvement lycéen et étudiant
+/* views/lyceens.js — ✊ Lycéens 2026 (v113) : suivre le mouvement lycéen et étudiant
  * de 2026 en France, en quatre lectures : la « Version des Lycéens » (chronique
  * puis chapitres transverses), la version du gouvernement, les seules
  * informations corroborées par plusieurs médias indépendants, et la chronologie
@@ -25,6 +25,9 @@
  * v112 : chapitres REPLIÉS par défaut (demande de Maxime du 08/10/2026 — le fil
  * est long, on laisse le lecteur déplier ce qu il veut lire) ; le bouton
  * ⬇️ « Aller à la fin du texte » ouvre la carte qui porte l ancre avant de défiler.
+ * v113 : EXCEPTION — le chapitre du jour (index.chapitreJour) reste ouvert par
+ * défaut : le visiteur qui revient voir « quoi de neuf » tombe directement sur
+ * le fil en cours, tous les autres restent repliés.
  * Données :
  *  - data/lyceens.json (network-first, versions gouvernement + faits vérifiées) ;
  *  - data/etudiants/index.json, chargé UNE seule fois, puis les fichiers
@@ -124,8 +127,9 @@ function paragrapheHtml(p, dernier) {
 /* Un chapitre : carte repliable <details class="carte-regl"> (même style que
  * les lettres d ONG de l onglet Newsletters), titre + période en <summary>,
  * paragraphes dedans une fois déplié. v112 : TOUS les chapitres sont repliés
- * par défaut (avant : ouverts côté Version des Lycéens). dernier=true garde
- * l ancre fin-texte sur le dernier paragraphe. */
+ * par défaut ; v113 : exception pour le chapitre du jour (index.chapitreJour),
+ * ouvert par défaut. dernier=true garde l ancre fin-texte sur le dernier
+ * paragraphe. */
 function chapitreHtml(ch, dernier, ouvert) {
   const ps = Array.isArray(ch.paragraphes) ? ch.paragraphes : [];
   return '<details class="carte-regl chapitre-etudiant"' + (ouvert ? ' open' : '') + ' id="chapitre-' + esc(String(ch.id || '')) + '">' +
@@ -175,8 +179,11 @@ async function initSection(conteneur, idSection, avecFinTexte) {
     conteneur.innerHTML = '<div class="empty">Section pas encore publiée — elle apparaîtra ici dès que data/etudiants/ sera rempli.</div>';
     return;
   }
+  /* v113 : le chapitre du jour (index.chapitreJour) reste OUVERT par défaut ;
+   * tous les autres restent repliés (v112). */
+  const jour = etu.index && etu.index.chapitreJour && etu.index.chapitreJour.id;
   conteneur.innerHTML = chapitres.map((c, i) =>
-    chapitreHtml(c, avecFinTexte && i === chapitres.length - 1, false)).join('');
+    chapitreHtml(c, avecFinTexte && i === chapitres.length - 1, c.id === jour)).join('');
 }
 
 /* « ⬇️ Aller à la fin du texte » : attend que les chapitres soient chargés
