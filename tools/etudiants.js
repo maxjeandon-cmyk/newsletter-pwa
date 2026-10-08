@@ -1,4 +1,10 @@
 #!/usr/bin/env node
+/* v114 (08/10/2026) : fin des actes numérotés — « Acte N » est RÉSERVÉ aux
+ * journées de mobilisation nationales (acte 1 : 29/09, acte 2 : 01/10,
+ * acte III : 06/10) ; un jour de suivi ordinaire n'est plus « Acte IV/V… ».
+ * Le nouveau chapitre du jour reçoit un titre placeholder « Le fil continue —
+ * <date> » que l édition du matin (07h00) RETITRE selon son contenu.
+ * romain() et index.prochainActe supprimés. */
 /* v113 (08/10/2026) : retrait de Le Figaro, La Croix et BFMTV du catalogue presse
  * de la chronique (demande de Maxime) — 11 flux restants ; tools/lyceens.js garde
  * son propre catalogue, ce changement ne concerne QUE la chronique étudiants. */
@@ -267,17 +273,6 @@ function voletDe(titre) { const n = norm(titre); for (const v of VOLETS) if (v.r
 const ouvertureActe = (h) =>
   h + " heures ont passé depuis le relevé précédent ; une nouvelle journée de suivi s'ouvre, le fil continue.";
 
-/* Numéro d acte en chiffres romains (Acte V, Acte VI…) — lisible au fil de la
- * chronologie, comme les actes rédigés à la main (c4 : « Acte 1 », c17 :
- * « Acte III »). */
-const romain = (n) => {
-  const table = [[10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']];
-  let reste = Math.max(1, Math.round(+n || 1));
-  let out = '';
-  for (const [v, s] of table) while (reste >= v) { out += s; reste -= v; }
-  return out;
-};
-
 function construireParagraphe(uniques, relevePrecedent, compteur, dateRef, nouvelActe) {
   const maintenant = dateRef ? new Date(dateRef) : new Date();
   const fmt = (o, d) => new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris', ...o }).format(d || maintenant);
@@ -430,8 +425,11 @@ async function main() {
   /* v108 : placement par JOUR — index.chapitreJour = { id, fichier, date }.
    * Si le relevé précédent date du même jour (heure de Paris), le paragraphe
    * rejoint le chapitre du jour ; sinon (nouveau jour ou champ absent) un
-   * nouveau chapitre d acte est créé : prochain fichier numérique libre,
-   * id c<numero>, titre « Acte <prochainActe> — <date longue> ». */
+   * nouveau chapitre est créé : prochain fichier numérique libre,
+   * id c<numero>, titre placeholder « Le fil continue — <date> » (v114) que
+   * l édition du matin retitre selon le contenu de la journée. Les actes
+   * numérotés (acte III…) restent réservés aux journées de mobilisation
+   * nationales. */
   const fichiers = fs.readdirSync(path.join(DOSSIER, 'chapitres'))
     .filter(f => /^\d+\.json$/.test(f)).sort();
   const chapitreJour = indexAvant.chapitreJour || null;
@@ -450,7 +448,7 @@ async function main() {
     chap = {
       id: 'c' + numero,
       periode: dateLongue + ' — suivi de la journée',
-      titre: 'Acte ' + romain(indexAvant.prochainActe || 1) + ' — ' + dateLongue,
+      titre: 'Le fil continue — ' + dateLongue,
       paragraphes: []
     };
     nouveauChapitre = true;
@@ -485,8 +483,7 @@ async function main() {
    * Chaîne narrative GLOBALE : continus d'un chapitre/jour à l'autre. */
   index.releveDate = new Date().toISOString();
   index.releveCompteur = (indexAvant.releveCompteur || 0) + 1;
-  /* v108 : mémoire du chapitre du jour + numéro du prochain acte. */
-  if (nouveauChapitre) index.prochainActe = (index.prochainActe || 1) + 1;
+  /* v108 : mémoire du chapitre du jour (v114 : plus de prochainActe). */
   index.chapitreJour = { id: chap.id, fichier: 'chapitres/' + dernierFichier, date: aujourdhui };
   const octetsChapitre = fs.statSync(path.join(DOSSIER, 'chapitres', dernierFichier)).size;
   index.totalParagraphes = index.chapitres.reduce((a, c) => a + c.paragraphes, 0);

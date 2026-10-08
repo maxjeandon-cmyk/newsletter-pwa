@@ -1,4 +1,5 @@
-/* tools/test/lot6.js — Harnas du lot 6 (v112) : voix des réseaux (flux Reddit).
+/* tools/test/lot6.js — Harnas du lot 6 (v112) + retitrage v114 : voix des réseaux
+ * (flux Reddit) et fin des actes numérotés.
  * Hors-ligne : Date gelée + fetch stubbé (tools/fakeclock.js), flux factices en
  * dur — aucun réseau. Le script sous test tourne dans des copies temporaires du
  * repo (data/ isolé), avec ses propres fixtures chargées via NODE_OPTIONS.
@@ -11,6 +12,8 @@
  *   B. Idempotence : un 2e run identique ne publie rien.
  *   C. Échec Reddit 429 SILENCIEUX : le relevé presse est publié quand même.
  *   D. Cap réseaux : 6 posts Reddit valides -> 4 retenus (CAP_RESEAUX).
+ *   E. Nouveau jour (v114) : chapitre créé avec le titre placeholder
+ *      « Le fil continue — <date> », SANS « Acte N » ni index.prochainActe.
  * Usage : node tools/test/lot6.js
  */
 'use strict';
@@ -26,7 +29,7 @@ function t(nom, cond, detail) {
   else { ko++; console.log('KO !!  ' + nom + (detail ? ' — ' + detail : '')); }
 }
 
-/* ——— URLs du catalogue presse + flux Reddit (miroir de tools/etudiants.js v113) ——— */
+/* ——— URLs du catalogue presse + flux Reddit (miroir de tools/etudiants.js v114) ——— */
 const U_ETU = 'https://www.reddit.com/r/etudiants/.rss';
 const U_ENS = 'https://www.reddit.com/r/enseignants/.rss';
 const U_FR = 'https://www.reddit.com/r/france/.rss';
@@ -186,7 +189,37 @@ t('cap : exactement 4 items Reddit rendus dans le paragraphe', (par4.texte.match
 t('cap : les 2 items au-delà du cap sont écartés (les plus anciens)',
   !par4.texte.includes('cinquieme') && !par4.texte.includes('sixieme'));
 
+/* ————— Scénario E : nouveau jour, titre placeholder sans acte (v114) ————— */
+console.log('— scenario E : nouveau jour -> chapitre titré « Le fil continue », sans acte');
+const E = preparerCopie();
+/* Le relevé précédent date de la veille (06/10) : le run (jour gelé 07/10)
+ * doit créer le chapitre 19 avec le titre placeholder, PAS un « Acte V ». */
+const idxEavant = JSON.parse(fs.readFileSync(path.join(E.REPO, 'data', 'etudiants', 'index.json'), 'utf8'));
+idxEavant.chapitreJour = { ...idxEavant.chapitreJour, date: '06/10/2026' };
+fs.writeFileSync(path.join(E.REPO, 'data', 'etudiants', 'index.json'), JSON.stringify(idxEavant, null, 2) + '\n');
+ecrireFixtures(E.REPO, 'e',
+  'f.ajouterFixture(' + JSON.stringify(P_20M) + ', f.rss(' + JSON.stringify([
+    { titre: 'Lyceens : le blocus du lycée Condorcet se poursuit ce soir', desc: 'Une seule source presse pour ce signalement du soir.', ageH: 1 }
+  ]) + '));\n' +
+  'f.ajouterFixture(' + JSON.stringify(P_FTV) + ', f.rss([]));\n' +
+  AUTRES_PRESSE.map(u => 'f.ajouterFixture(' + JSON.stringify(u) + ', f.rss([]));').join('\n') + '\n' +
+  'f.ajouterFixture(' + JSON.stringify(U_ETU) + ', f.atom([]));\n' +
+  'f.ajouterFixture(' + JSON.stringify(U_ENS) + ', f.atom([]));\n' +
+  'f.ajouterFixture(' + JSON.stringify(U_FR) + ', f.atom([]));');
+const s5 = runEtu(E.REPO, 'e');
+t('jour nouveau : chapitre 19 créé (nouveauChapitre: true)', s5.nouveauChapitre === true && s5.fichier === 'data/etudiants/chapitres/19.json');
+t('jour nouveau : relevé publié', s5.modifie === true && s5.ajoutes === 1);
+const chapE = JSON.parse(fs.readFileSync(path.join(E.REPO, 'data', 'etudiants', 'chapitres', '19.json'), 'utf8'));
+t('chapitre 19 : titre placeholder « Le fil continue — 7 octobre 2026 »',
+  chapE.titre === 'Le fil continue — 7 octobre 2026', chapE.titre);
+t('chapitre 19 : AUCUN « Acte » dans le titre', !/Acte/.test(chapE.titre));
+const idxE = JSON.parse(fs.readFileSync(path.join(E.REPO, 'data', 'etudiants', 'index.json'), 'utf8'));
+t('index : plus de champ prochainActe (v114)', !('prochainActe' in idxE));
+t('index : entrée c19 titrée placeholder, chapitreJour du 07/10',
+  idxE.chapitres.some(c => c.id === 'c19' && c.titre === 'Le fil continue — 7 octobre 2026') &&
+  idxE.chapitreJour.date === '07/10/2026' && idxE.chapitreJour.id === 'c19');
+
 /* ————— Nettoyage ————— */
-for (const s of [A, C, D]) fs.rmSync(s.TMP, { recursive: true, force: true });
+for (const s of [A, C, D, E]) fs.rmSync(s.TMP, { recursive: true, force: true });
 console.log('\n' + (ko === 0 ? 'LOT6 : ' + ok + ' tests OK' : 'LOT6 : ' + ko + ' ECHECS / ' + ok + ' OK'));
 process.exit(ko === 0 ? 0 : 1);

@@ -145,7 +145,7 @@
       "id": "c18",
       "fichier": "chapitres/18.json",
       "periode": "7 octobre 2026 — suivi de la journée",
-      "titre": "Acte IV — 7 octobre 2026",
+      "titre": "Le lendemain de l'acte III — blocages tenus, grenades suspendues",
       "paragraphes": 4,
       "octets": 6516
     }
@@ -254,7 +254,7 @@
           "id": "c18",
           "fichier": "chapitres/18.json",
           "periode": "7 octobre 2026 — suivi de la journée",
-          "titre": "Acte IV — 7 octobre 2026",
+          "titre": "Le lendemain de l'acte III — blocages tenus, grenades suspendues",
           "paragraphes": 4,
           "octets": 6516
         }
@@ -326,7 +326,6 @@
   ],
   "releveDate": "2026-10-07T21:28:00.049Z",
   "releveCompteur": 7,
-  "prochainActe": 5,
   "chapitreJour": {
     "id": "c18",
     "fichier": "chapitres/18.json",
