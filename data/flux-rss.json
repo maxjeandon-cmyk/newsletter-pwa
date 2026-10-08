@@ -265,6 +265,16 @@
       "ligne": "réseau local de Radio France, proximité"
     },
     {
+      "id": "streetpress",
+      "nom": "StreetPress",
+      "emoji": "🗞️",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://streetpress.com/rss.xml"
+      ],
+      "ligne": "média indépendant, investigations et grands reportages"
+    },
+    {
       "id": "sud-ouest",
       "nom": "Sud Ouest",
       "emoji": "🍷",

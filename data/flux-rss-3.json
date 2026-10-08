@@ -71,16 +71,6 @@
       ]
     },
     {
-      "id": "chronicart",
-      "nom": "Chronic’art",
-      "emoji": "🎥",
-      "categorie": "Culture & idées 🎭",
-      "ligne": "critique cinéma et pop culture",
-      "flux": [
-        "http://www.chronicart.com/feed/"
-      ]
-    },
-    {
       "id": "resmusica",
       "nom": "ResMusica",
       "emoji": "🎼",

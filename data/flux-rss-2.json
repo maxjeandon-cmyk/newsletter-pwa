@@ -949,6 +949,16 @@
         "https://www.polkamagazine.com/feed/"
       ],
       "ligne": "photographie et photojournalisme"
+    },
+    {
+      "id": "acrimed",
+      "nom": "Acrimed",
+      "emoji": "🔍",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.acrimed.org/spip.php?page=backend"
+      ],
+      "ligne": "observatoire critique des médias"
     }
   ]
 }
