@@ -1,5 +1,5 @@
 {
-  "maj": "07/10/2026",
+  "maj": "08/10/2026 05:28",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Deux relevés ici : ce que dit le gouvernement, et les seules informations corroborées par plusieurs médias indépendants. La parole des élèves vit dans la chronique « Version des étudiants ».",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -41,10 +41,11 @@
       "date": "07/10/2026",
       "titre": "Édouard Geffray: \"24 lycées incendiés ou saccagés\", 30 000 lycéens \"privés de cours pour plusieurs semaines\"",
       "texte": "Le ministre de l'Éducation nationale Édouard Geffray est auditionné à l'Assemblée nationale mercredi 7 octobre, sur la mobilisation lycéenne.",
-      "source": "BFMTV / La Croix",
+      "source": "BFMTV / La Croix / France Inter",
       "sources": [
         "BFMTV",
-        "La Croix"
+        "La Croix",
+        "France Inter"
       ],
       "url": "https://www.bfmtv.com/politique/video-edouard-geffray-24-lycees-incendies-ou-saccages-30-000-lyceens-prives-de-cours-pour-plusieurs-semaines_VN-202610070375.html",
       "verifie": true
@@ -186,10 +187,14 @@
       "date": "07/10/2026",
       "titre": "Blocage des lycées : Sébastien Lecornu tente de ramener le calme",
       "texte": "Le premier ministre s’est exprimé dans une allocution, mercredi 7 octobre, pour évoquer la mobilisation des lycéens, les prix des carburants et la situation financière de la France. De « premières mesures » seront prises fin octobre pour répondre à la crise des lycées.",
-      "source": "La Croix / 20 minutes",
+      "source": "La Croix / 20 minutes / Europe 1 / Public Sénat / Le Figaro / BFMTV",
       "sources": [
         "La Croix",
-        "20 minutes"
+        "20 minutes",
+        "Europe 1",
+        "Public Sénat",
+        "Le Figaro",
+        "BFMTV"
       ],
       "url": "https://www.la-croix.com/politique/blocage-des-lycees-sebastien-lecornu-tente-de-ramener-le-calme-20261007",
       "verifie": true
