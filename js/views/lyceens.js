@@ -1,4 +1,4 @@
-/* views/lyceens.js — ✊ Lycéens 2026 (v108) : suivre le mouvement lycéen et étudiant
+/* views/lyceens.js — ✊ Lycéens 2026 (v109) : suivre le mouvement lycéen et étudiant
  * de 2026 en France, en cinq lectures : la chronique étudiante, le complément
  * étudiant (chapitres transverses), la version du gouvernement, les seules
  * informations corroborées par plusieurs médias indépendants, et la chronologie
@@ -8,7 +8,11 @@
  * sous-onglet « ✅ Faits vérifiés » est renommé « ✅ Faits multisources », plus
  * fidèle à ce qu il montre — des faits corroborés par plusieurs médias ; v108 :
  * le sous-onglet « 📍 Chronologie » devient « 📍 Chronologie résumée », pour
- * le distinguer du fil détaillé de la « Version des étudiants »).
+ * le distinguer du fil détaillé de la « Version des étudiants » ; v109 : l'encart
+ * « Révolte lycéenne » devient une carte repliable <details> (même style que les
+ * chapitres), repliée par défaut — la date de mise à jour reste visible dans le
+ * <summary>. La prose de l'encart (intro, échéance) est éditoriale : la
+ * maintenance ne l'écrit jamais, elle vit aux éditions).
  * Données :
  *  - data/lyceens.json (network-first, versions gouvernement + faits vérifiées) ;
  *  - data/etudiants/index.json, chargé UNE seule fois, puis les fichiers
@@ -272,13 +276,18 @@ export function vueLyceens() {
   } else {
     corps = '<p class="meta-count">' + compteListe(faits) + '</p>' + (faits.length ? faits.map(carteInfo).join('') : '<div class="empty">Aucune information corroborée à ce stade.</div>');
   }
+  /* v109 : encart replié par défaut ; la date de maj vit dans le <summary>,
+   * visible même replié — la fraîcheur se lit d'un coup d'œil. */
   view.innerHTML =
-    '<div class="summary-card"><h2>✊ ' + esc(d.titre || 'Mouvement lycéen') + '</h2>' +
+    '<details class="carte-regl encart-lyceens">' +
+    '<summary>✊ ' + esc(d.titre || 'Mouvement lycéen') +
+    (d.maj ? ' <span class="meta-count">— mis à jour le ' + esc(d.maj) + '</span>' : '') +
+    '</summary>' +
     (d.intro ? '<p class="meta-count">' + esc(d.intro) + '</p>' : '') +
     (d.note ? '<p class="hint">🔎 ' + esc(d.note) + '</p>' : '') +
     (d.prochaine_echeance ? '<p class="meta-count">📅 ' + esc(d.prochaine_echeance) + '</p>' : '') +
-    (d.maj ? '<p class="hint">Mis à jour le ' + esc(d.maj) + ' — rafraîchi automatiquement toutes les 6 h par la maintenance.</p>' : '') +
-    '</div>' +
+    (d.maj ? '<p class="hint">Rafraîchi automatiquement toutes les 6 h par la maintenance — la prose, elle, vit aux éditions.</p>' : '') +
+    '</details>' +
     sousOnglets(sous) +
     (d.erreur
       ? '<div class="empty">Suivi momentanément indisponible — il revient dès que data/lyceens.json répondra.</div>'

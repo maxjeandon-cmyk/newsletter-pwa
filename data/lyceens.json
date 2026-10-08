@@ -1,7 +1,7 @@
 {
   "maj": "08/10/2026 05:28",
   "titre": "Révolte lycéenne — France 2026",
-  "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Deux relevés ici : ce que dit le gouvernement, et les seules informations corroborées par plusieurs médias indépendants. La parole des élèves vit dans la chronique « Version des étudiants ».",
+  "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Cinq lectures ici : la chronique « Version des étudiants » (le fil jour après jour, écrit du point de vue des élèves), le « Complément étudiants » (les chapitres transverses), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
   "contexte": [
     "17-18 septembre : point de départ au lycée Saint-Exupéry de Créteil — les élèves soutiennent leurs professeurs en grève contre le manque de moyens (53 % des établissements publics manquent d au moins un enseignant à la rentrée) ; le député Louis Boyard vient les soutenir dès le 21.",
@@ -16,7 +16,7 @@
     "Dimanche 4 octobre : StreetPress révèle l interpellation « dans l eau » d un lycéen à Belfort ; Amnesty France appelle à la désescalade ; au soir, le Premier ministre publie sa feuille de route — cinq chantiers, reprise des cours demandée dès lundi.",
     "Lundi 5 octobre (« lundi noir ») : « décrue » revendiquée (413 établissements touchés à mi-journée) ; à Lens, un lycéen de 15 ans perd la main gauche dans l explosion d une grenade — l IGPN est saisie ; 5.060 gardes à vue depuis le début du mouvement, dont 87 % de mineurs ; les « e-blocus » s organisent en ligne.",
     "Mardi 6 octobre (« acte III ») : la France entière dans la rue — l intersyndicale de l Éducation (FSU, CGT, FO, CFDT, UNSA, SUD, Solidaires) rejoint les lycéens, une première depuis quarante ans ; chaîne humaine au lycée Hélène-Boucher à Paris avec la CGT.",
-    "Mercredi 7 octobre (« acte IV », hier) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
+    "Mercredi 7 octobre (lendemain de l'acte III) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
   ],
   "version_gouvernement": [
     {
@@ -335,5 +335,5 @@
       "verifie": true
     }
   ],
-  "prochaine_echeance": "Mardi 6 octobre : journée de mobilisation lycéenne et étudiante, soutenue par la CGT, Solidaires et une intersyndicale de l'Éducation nationale ; le Premier ministre demande pour lundi la reprise des cours « partout » où la sécurité le permet."
+  "prochaine_echeance": "Jeudi 8 octobre : nouvelle journée de mobilisation lycéenne et étudiante, après celle du 6 — les annonces du gouvernement ne répondent pas aux revendications ; à Rennes, l'intersyndicale d'Ille-et-Vilaine et la FCPE appellent à manifester."
 }
