@@ -193,6 +193,10 @@ main{padding:0 14px;max-width:720px;margin:0 auto}
 .encart-lyceens{margin:0 0 12px}
 .encart-lyceens p{margin:10px 15px}
 .encart-lyceens summary .meta-count{font-weight:400}
+/* v110 : en-tête de section (Version des étudiants / Complément étudiants)
+ * repliable, replié par défaut. */
+.entete-section{margin:0 0 12px}
+.entete-section p{margin:10px 15px}
 .notif-ligne{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text)}
 .notif-ligne:last-child{border-bottom:none}
 .reglages{gap:10px}

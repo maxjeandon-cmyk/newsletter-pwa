@@ -1,4 +1,4 @@
-/* views/lyceens.js — ✊ Lycéens 2026 (v109) : suivre le mouvement lycéen et étudiant
+/* views/lyceens.js — ✊ Lycéens 2026 (v110) : suivre le mouvement lycéen et étudiant
  * de 2026 en France, en cinq lectures : la chronique étudiante, le complément
  * étudiant (chapitres transverses), la version du gouvernement, les seules
  * informations corroborées par plusieurs médias indépendants, et la chronologie
@@ -12,7 +12,10 @@
  * « Révolte lycéenne » devient une carte repliable <details> (même style que les
  * chapitres), repliée par défaut — la date de mise à jour reste visible dans le
  * <summary>. La prose de l'encart (intro, échéance) est éditoriale : la
- * maintenance ne l'écrit jamais, elle vit aux éditions).
+ * maintenance ne l'écrit jamais, elle vit aux éditions ; v110 : l'en-tête de
+ * section « Version des étudiants — la chronique » (et son jumeau « Complément
+ * étudiants ») devient lui aussi une carte repliable, repliée par défaut —
+ * titre au <summary>, description dedans, les chapitres respirent en dessous).
  * Données :
  *  - data/lyceens.json (network-first, versions gouvernement + faits vérifiées) ;
  *  - data/etudiants/index.json, chargé UNE seule fois, puis les fichiers
@@ -123,12 +126,14 @@ function chapitreHtml(ch, dernier, ouvert) {
     '</details>';
 }
 
-/* Tête d'une section : titre + description de l'index. */
+/* Tête d'une section : titre + description de l'index. v110 : carte repliable
+ * (même style que l'encart v109), repliée par défaut — la description est
+ * méthodologique, les chapitres sont la matière ; on les laisse respirer. */
 function enteteSection(section) {
-  return '<div class="summary-card">' +
-    '<h2>🎓 ' + esc(section.titre || '') + '</h2>' +
+  return '<details class="carte-regl entete-section">' +
+    '<summary>🎓 ' + esc(section.titre || '') + '</summary>' +
     (section.description ? '<p class="meta-count">' + esc(section.description) + '</p>' : '') +
-    '</div>';
+    '</details>';
 }
 
 /* Compteur discret : total de caractères (octets déclarés), date de mise à

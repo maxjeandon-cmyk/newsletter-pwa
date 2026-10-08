@@ -23,7 +23,7 @@ js/meteo.js         Météo du jour (Open-Meteo, gratuit, sans clé) + tendance 
 js/views/          Vues des onglets (edition, articles, videos, medias, archives, climat→newsletters,
                     lyceens, reglages, sources, common)
 js/app.js           Bootstrap : wiring des boutons, chargement data/*.json, service worker
-sw.js               Service worker : coquille cache-first (CACHE = 'newsletter-v109'),
+sw.js               Service worker : coquille cache-first (CACHE = 'newsletter-v110'),
                     editions/ et data/ network-first — bump de CACHE à chaque livraison de code
 styles.css          Thème sombre/clair, variables CSS
 
@@ -79,7 +79,7 @@ Notifications Web Push : la clé publique VAPID vit dans `data/compte.json` (`pu
 
 ## Règles de déploiement
 
-1. **Chaque livraison de code** (js/, sw.js, index.html, styles.css) doit incrémenter `CACHE` dans `sw.js` (v108 → v109…) — sinon les clients gardent l'ancienne version en cache.
+1. **Chaque livraison de code** (js/, sw.js, index.html, styles.css) doit incrémenter `CACHE` dans `sw.js` (v109 → v110…) — sinon les clients gardent l'ancienne version en cache.
 2. **Le contrat `editions/` est figé** : ne jamais renommer ni supprimer l'historique.
 3. `data/` est servi network-first : une modification y est visible immédiatement, sans bump de cache.
 4. Ne pas pousser de fichier non-ASCII de plus de ~32 Ko via l'outillage d'automatisation (risque de double-encodage) — publier l'HTML d'édition en entités numériques ; messages de commit en ASCII.
