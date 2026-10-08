@@ -1,5 +1,12 @@
 #!/usr/bin/env node
-/* v115 (08/10/2026) : ordre « chronologie d'abord, transverses à la fin » dans
+/* v116 (lot 8) : transverses au fil — les chapitres transverses (c10-c14, c16)
+ * reçoivent EUX AUSSI un volet automatique toutes les 6 h (décision de Maxime du
+ * 08/10/2026) : relevé machine, items verbatim tronqués, sources, auto:true —
+ * la réécriture narrative reste le travail des éditions (07h00), qui repèrent
+ * la clôture distinctive « Volet automatique du … ». c15 (Lexique) est EXCLU :
+ * les mots naissent du récit, pas d'un regex. c10 est la SEULE transverse qui
+ * reçoit aussi les items réseau (reseau:true) — c'est la voix de l'intérieur.
+ * v115 (08/10/2026) : ordre « chronologie d'abord, transverses à la fin » dans
  * la resynchronisation de la section chronique (décision de Maxime du
  * 08/10/2026) — un NOUVEAU chapitre est inséré à la fin de la partie
  * chronologique, c'est-à-dire AVANT le premier chapitre transverse (c10–c16),
@@ -273,6 +280,60 @@ const VOLETS = [
   { id: 'voix', phrases: ["Sur les réseaux, la parole des premiers concernés est directe", "Côté Reddit, élèves et enseignants parlent d'eux-mêmes", "Sur les réseaux, la journée se raconte de l'intérieur", "Dans les fils Reddit, les témoignages s'échangent sans intermédiaire"] }
 ];
 const PHRASES_MOBILISATION = ["Sur le terrain, la mobilisation tient", "Dans la rue, le mouvement garde son souffle", "Côté mobilisation, l'élan ne retombe pas", "La vague, elle, continue d'avancer"];
+/* v116 (lot 8) : TRANSVERSES — les chapitres transverses qui reçoivent un volet
+ * automatique toutes les 6 h (décision de Maxime du 08/10/2026). Classification
+ * sur la forme normalisée sans accents (norm()) du TITRE, même discipline que
+ * voletDe() ; cap serré (2-3 items par thème, le chapitre du jour garde TOUT
+ * le relevé, un même item peut alimenter plusieurs transverses — assumé).
+ * c15 « Lexique » est volontairement ABSENT : jamais de volet automatique. */
+const TRANSVERSES = [
+  { id: 'c10', fichier: '10.json', titreChapitre: "Chorus — la voix de l'intérieur",
+    re: /discord|snapchat|tiktok|instagram|whatsapp|reseau|viral|hashtag|sondage|opinion|video|organis|cyberblocage|e-blocus|blocus virtuel/,
+    cap: 3, reseau: true,
+    phrases: ["Sur les réseaux et applications, la voix de l'intérieur circule", "Dans les fils et les groupes, les élèves parlent d'eux-mêmes", "Sur les écrans des lycéens, la mobilisation s'organise en direct", "Entre groupes privés et stories, l'intérieur du mouvement se raconte"] },
+  { id: 'c11', fichier: '11.json', titreChapitre: "Ce qu'ils veulent — les revendications, mot à mot",
+    re: /revendication|parcoursup|moyens|budget|remplacement|postes|doleance|exigence|professeur absent|enseignant manquant|education nationale/,
+    cap: 3,
+    phrases: ["Côté revendications, les exigences s'affinent", "La liste de ce qu'ils veulent, elle, continue de s'écrire", "Les demandes des lycéens remontent, mot à mot", "Sur le front des revendications, les mots restent fermes"] },
+  { id: 'c12', fichier: '12.json', titreChapitre: "La répression et ses visages",
+    re: /polic|interpell|gaz lacrymo|mortier|arresta|blesse|garde a vue|violences|ordre public|armee|disper|grenade|flashball|lbd|igpn|examen|avocat|tribunal|taj|plainte|gav|justice/,
+    cap: 3,
+    phrases: ["Côté répression, la liste des visages s'allonge", "La répression, elle, continue de nourrir la colère", "Les visages de la répression s'ajoutent les uns aux autres", "Sur le front policier et judiciaire, le fil des faits continue"] },
+  { id: 'c13', fichier: '13.json', titreChapitre: "La machine gouvernementale, vue d'en bas",
+    re: /lecornu|geffray|nunez|bregeon|matignon|elysee|ministre|gouvernement|prefet|recteur|circulaire|allocution|annonce|premier ministre|region/,
+    cap: 3,
+    phrases: ["La machine gouvernementale, elle, s'ajuste", "Vue d'en bas, la machine gouvernementale tourne", "Du rectorat à Matignon, les rouages continuent de tourner", "Côté institutions, les réponses s'égrènent"] },
+  { id: 'c14', fichier: '14.json', titreChapitre: "Génération 2026 — le mouvement dans la longue durée",
+    re: /histoire|generation|1968|mai 68|precedent|internationale|etrangere|comparaison|convergence|intersyndicale|toussaint|gilets jeunes|sondage/,
+    cap: 3,
+    phrases: ["Dans la longue durée, les précédents reviennent", "Génération 2026, miroir des générations passées", "L'histoire, elle, offre ses échos au mouvement", "La comparaison avec les précédents continue de nourrir le récit"] },
+  { id: 'c16', fichier: '16.json', titreChapitre: "Figures d'un automne — portraits croisés",
+    re: /figure|portrait|temoignage|mere|pere de|parent|sanogo|rani|boyard|venetitay|binet|beigelman|tondelier|bagayoko|lavalette/,
+    cap: 2,
+    phrases: ["Les figures de cet automne continuent d'émerger", "Portraits et témoignages, l'automne en rassemble", "Une à une, les figures du mouvement se dessinent", "Les visages de l'automne s'ajoutent au portrait croisé"] }
+];
+/* v116 (lot 8) : construction du texte d'un volet transverse — modèle court de
+ * construireParagraphe, SANS l'accroche « N heures ont passé » : entame
+ * tournante propre au thème, « : », puis les items rendus À L'IDENTIQUE du
+ * paragraphe du jour, et une clôture DISTINCTE (« Volet automatique du … ») qui
+ * sert de marqueur à la plume des éditions. JAMAIS de prose inventée. */
+function construireVoletTransverse(entree, items, compteur) {
+  const morceaux = [entree.phrases[compteur % entree.phrases.length] + ' : ' +
+    items.map(it => {
+      if (it.reseau) {
+        return tronc(nettoyerTitre(it.titre), 160) + ' (' + it.sources.join(', ') + ')';
+      }
+      const { nbSources } = corroborer(it);
+      const raccroche = (it.reseaux || []).length
+        ? ' — repris aussi sur ' + it.reseaux.map(s => s.replace('Reddit — ', '')).join(', ')
+        : '';
+      return tronc(nettoyerTitre(it.titre), 160) + ' (' + nbSources + ' media' + (nbSources > 1 ? 's' : '') + ' : ' + it.sources.join(', ') + (nbSources >= 2 ? ' — corrobore' : ' — non corrobore') + raccroche + ')';
+    }).join(' ; ')];
+  const stamp = new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris', dateStyle: 'long', timeStyle: 'short' }).format(new Date());
+  morceaux.push(' (Volet automatique du ' + stamp + ', chapitre « ' + entree.titreChapitre + ' » — faits repris des titres de presse et des fils Reddit, non reformulés.)');
+  const complet = morceaux.join('');
+  return complet.length < 4000 ? complet : complet.slice(0, 3999) + '…';
+}
 const PHRASES_DATELINE = ["le mouvement poursuit sa route", "la chronique avance", "le fil du récit continue", "la journée s'écrit encore"];
 /* Classification sur la forme normalisée (sans accents) pour ne rien rater. */
 function voletDe(titre) { const n = norm(titre); for (const v of VOLETS) if (v.re && (v.re.test(n) || v.re.test(titre))) return v.id; return 'mobilisation'; }
@@ -468,8 +529,51 @@ async function main() {
   chap.paragraphes.push({ id: idPar, texte: texteParagraphe, sources: sourcesParagraphe, auto: true });
   fs.writeFileSync(path.join(DOSSIER, 'chapitres', dernierFichier), JSON.stringify(chap, null, 2) + '\n');
 
+  /* v116 (lot 8) : volets automatiques des TRANSVERSES — même exécution que le
+ * paragraphe du jour (l'idempotence releveSigs court-circuite tout au run
+ * suivant). Pour chaque transverse : items presse dont le titre normalisé
+ * matche re (c10 reçoit AUSSI les items réseau), ordre du relevé, cap serré ;
+ * liste vide → rien (aucun paragraphe vide, aucun commit fantôme) ; garde-fou
+ * 28 Ko → pas d'ajout, avertissement seulement (jamais de scission). Le
+ * chapitre du jour garde TOUT le relevé ; un même item peut nourrir plusieurs
+ * transverses — assumé. */
+  const compteurVolets = indexAvant.releveCompteur || 0;
+  const transverses = [];
+  const majTransverses = [];
+  for (const entree of TRANSVERSES) {
+    const detectes = uniques
+      .filter(it => (entree.reseau && it.reseau) || (!it.reseau && entree.re.test(norm(it.titre))));
+    const retenus = detectes.slice(0, entree.cap);
+    const ligne = { id: entree.id, ajoutes: 0, items: detectes.length, avertissement: null };
+    if (retenus.length) {
+      const ficTrans = path.join(DOSSIER, 'chapitres', entree.fichier);
+      const existantOctets = fs.statSync(ficTrans).size;
+      if (existantOctets > MAX_OCTETS_CHAPITRE) {
+        ligne.avertissement = 'chapitre ' + entree.id + ' > ' + MAX_OCTETS_CHAPITRE + ' octets (' + existantOctets + ') — volet non ajouté';
+      } else {
+        const chapTrans = JSON.parse(fs.readFileSync(ficTrans, 'utf8'));
+        const idTrans = chapTrans.id + 'p' + (chapTrans.paragraphes.length + 1);
+        const texteTrans = construireVoletTransverse(entree, retenus, compteurVolets);
+        const sourcesTrans = [];
+        for (const it of retenus) for (const s of it.sources) if (!sourcesTrans.includes(s)) sourcesTrans.push(s);
+        chapTrans.paragraphes.push({ id: idTrans, texte: texteTrans, sources: sourcesTrans, auto: true });
+        fs.writeFileSync(ficTrans, JSON.stringify(chapTrans, null, 2) + '\n');
+        ligne.ajoutes = 1;
+        majTransverses.push({ id: entree.id, fichier: 'chapitres/' + entree.fichier, paragraphes: chapTrans.paragraphes.length, octets: fs.statSync(ficTrans).size });
+      }
+    }
+    transverses.push(ligne);
+  }
+
   /* Mise à jour de l'index. */
   const index = JSON.parse(fs.readFileSync(FICHIER_INDEX, 'utf8'));
+  for (const maj of majTransverses) {
+    const entree = index.chapitres.find(c => c.id === maj.id);
+    if (entree) {
+      entree.paragraphes = maj.paragraphes;
+      entree.octets = maj.octets;
+    }
+  }
   if (nouveauChapitre) {
     index.chapitres.push({
       id: chap.id, fichier: 'chapitres/' + dernierFichier,
@@ -556,7 +660,9 @@ async function main() {
     nouveauChapitre,
     avertissement,
     echecs,
-    reseaux: { items: retenusReddit.length, raccroches, echecs: reseauxEchecs }
+    reseaux: { items: retenusReddit.length, raccroches, echecs: reseauxEchecs },
+    /* v116 (lot 8) : champ additionnel inoffensif pour maintenance.js v38. */
+    transverses
   }) + '\n');
 }
 

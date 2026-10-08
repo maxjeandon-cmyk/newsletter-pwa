@@ -39,14 +39,14 @@ Sans framework, sans build : le site est 100 % statique, servi par le CDN GitHub
 
 ## Les 8 onglets
 
-✊ Lycéens 2026 (version des Lycéens : chronique puis chapitres transverses ; version du gouvernement + faits multisources + chronologie résumée des jalons) · 📄 Édition du jour (chapitres déroulants, partage par chapitre, météo du jour) · 🔥 Articles du jour · 📺 Vidéos du jour · 🎬 Médias suivis · 🗄️ Archives · 🗞️ Newsletters (bulletin Copernicus + relevés auto de 10 ONG) · ⚙️ Réglages.
+✊ Lycéens 2026 (version des Lycéens : chronique puis chapitres transverses — c10-c14 et c16 reçoivent toutes les 6 h un volet automatique « relevé auto », poli lors des éditions, c15 manuel ; version du gouvernement + faits multisources + chronologie résumée des jalons) · 📄 Édition du jour (chapitres déroulants, partage par chapitre, météo du jour) · 🔥 Articles du jour · 📺 Vidéos du jour · 🎬 Médias suivis · 🗄️ Archives · 🗞️ Newsletters (bulletin Copernicus + relevés auto de 10 ONG) · ⚙️ Réglages.
 
 L'ordre d'affichage est réglable par chaque utilisateur (Réglages) ; ids d'onglets jamais renommés (routing + ordres sauvegardés).
 
 ## Automatisations (GitHub Actions)
 
 - **Génération nocturne** : l'édition HTML+JSON est produite vers minuit (Europe/Paris) et poussée dans `editions/` ; le squelette éditorial vit dans le validateur (`tools/validate-edition.js`, structure v15 : chapitres déroulants `<details>`, boutons de partage, ancres c-…).
-- **Agent de maintenance** (`feedback.yml`, toutes les 6 h — 3 h/9 h/15 h/21 h Paris) : `tools/maintenance.js` orchestre les relevés ONG (`tools/ong-releve.js`, une fois par jour et par site), le relevé lycéens (`tools/lyceens.js`, 14 flux presse, badges ✅ corroboré ≥ 2 médias / ⚠️ une source), la chronique étudiante (`tools/etudiants.js`) et publie le tout dans `data/` — rapport dans `data/maintenance.json`.
+- **Agent de maintenance** (`feedback.yml`, toutes les 6 h — 3 h/9 h/15 h/21 h Paris) : `tools/maintenance.js` orchestre les relevés ONG (`tools/ong-releve.js`, une fois par jour et par site), le relevé lycéens (`tools/lyceens.js`, 14 flux presse, badges ✅ corroboré ≥ 2 médias / ⚠️ une source), la chronique étudiante (`tools/etudiants.js`, qui verse toutes les 6 h un volet automatique « relevé auto » aussi dans les chapitres transverses c10-c14 et c16 — badge « relevé auto », poli lors des éditions du matin ; le lexique c15 reste manuel) et publie le tout dans `data/` — rapport dans `data/maintenance.json`.
 - **Notifications push** (`notifier.yml`, toutes les heures) : `tools/notifier.js` lit les abonnements et préférences dans Supabase et envoie selon les toggles (édition / Copernicus / Lycéens 2026 / par média) ; journal de chaque envoi (domaine + statut HTTP + corps d'erreur) dans `data/notif-envois.json` ; purge automatique des abonnements morts (403/404/410).
   - Contact VAPID sur un vrai domaine (`mailto:contact@diyeah24.fr`) — Apple rejette les contacts non résolubles par 403 BadJwtToken.
   - Mode test : marqueur `data/notif-test.json` `{ "test": "token-frais" }` → 🔔 à chaque abonnement, puis supprimer le marqueur (mémo `notif_envoyees.test` par token).
