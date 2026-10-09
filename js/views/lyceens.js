@@ -31,6 +31,10 @@
  * v116 : jumeau du bouton de fin — « ⬆️ Revenir au début du texte » au bout du
  * fil (initSection), qui remonte à la carte d'en-tête (#entete-section),
  * l'ouvre et la surligne (demande de Maxime du 09/10/2026).
+ * v117 : « 🧵 Reprendre le fil » à côté du ⬇️ — saute au chapitre du jour
+ * (index.chapitreJour, le fil narratif en cours, ouverts par défaut v113),
+ * transverses ignorées ; repli sur le PREMIER chapitre de la section si
+ * l'index n'a pas de chapitre du jour.
  * Données :
  *  - data/lyceens.json (network-first, versions gouvernement + faits vérifiées) ;
  *  - data/etudiants/index.json, chargé UNE seule fois, puis les fichiers
@@ -239,9 +243,39 @@ function revenirDebutTexte() {
   setTimeout(() => { debut.style.backgroundColor = ''; }, 1600);
 }
 
+/* « 🧵 Reprendre le fil » (v117, demande de Maxime) : sauter au fil narratif
+ * EN COURS — le chapitre du jour (index.chapitreJour) — sans s'enfoncer dans
+ * les transverses qui ferment le fil : c'est LE geste du lecteur qui revient
+ * voir où en est l'histoire. Même cérémonie que les autres sauts : ouvrir la
+ * carte (elle l'est déjà par défaut v113, mais on ne sait jamais après un
+ * repli manuel), défiler, surligner. Repli : sans chapitre du jour dans
+ * l'index, reprendre au PREMIER chapitre de la section (le début du fil
+ * chronologique — jamais une transverse : elles vivent en fin de liste). */
+function reprendreFil() {
+  const etu = state.etudiants;
+  const promesse = (async () => {
+    if (etu && etu.promesseIndex) await etu.promesseIndex;
+    const section = sectionDe(SECTION_SOUS_ONGLET.etudiants);
+    if (section) await chargerSection(section);
+    const jour = etu && etu.index && etu.index.chapitreJour && etu.index.chapitreJour.id;
+    const liste = section && Array.isArray(section.chapitres) ? section.chapitres : [];
+    const idCible = jour || (liste[0] && liste[0].id);
+    const cible = (idCible && document.getElementById('chapitre-' + idCible)) || document.getElementById('bloc-etudiants');
+    if (!cible) return;
+    const carte = typeof cible.closest === 'function' ? cible.closest('details') : null;
+    if (carte) carte.open = true;
+    if (typeof cible.scrollIntoView === 'function') cible.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    cible.style.transition = 'background-color 0.3s';
+    cible.style.backgroundColor = 'rgba(255, 213, 79, 0.45)';
+    setTimeout(() => { cible.style.backgroundColor = ''; }, 1600);
+  })();
+  return promesse;
+}
+
 /* Bloc du sous-onglet « Version des Lycéens » : entête de section — la carte
  * repliable porte la description, l'intro (🔎), le compteur et la note (💡)
- * (v111 : ils déménagent dedans) — puis le bouton de fin de texte et le
+ * (v111 : ils déménagent dedans) — puis les boutons de navigation du fil (v117 :
+ * 🧵 reprendre le fil + ⬇️ fin du texte) et le
  * conteneur des chapitres. Le rendu ne lit QUE la section « chronique »,
  * jamais « complement », même si elle existe encore dans l'index. */
 function blocEtudiants(section, avecFinTexte) {
@@ -253,7 +287,7 @@ function blocEtudiants(section, avecFinTexte) {
     : '';
   return enteteSection(section, supplement) +
     (avecFinTexte
-      ? '<div class="form-actions"><button class="filter-btn active" id="btn-fin-texte" type="button">⬇️ Aller à la fin du texte</button></div>'
+      ? '<div class="form-actions"><button class="filter-btn active" id="btn-reprendre-fil" type="button">🧵 Reprendre le fil</button><button class="filter-btn active" id="btn-fin-texte" type="button">⬇️ Aller à la fin du texte</button></div>'
       : '') +
     '<div id="bloc-etudiants"><div class="empty">Chargement de la chronologie étudiante…</div></div>';
 }
@@ -261,6 +295,8 @@ function blocEtudiants(section, avecFinTexte) {
 function wireBlocEtudiants() {
   const b = document.getElementById('btn-fin-texte');
   if (b) b.onclick = () => { allerFinTexte().catch(() => {}); };
+  const rf = document.getElementById('btn-reprendre-fil');
+  if (rf) rf.onclick = () => { reprendreFil().catch(() => {}); };
 }
 
 function wireSousOnglets() {

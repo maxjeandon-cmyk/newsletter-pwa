@@ -1,7 +1,10 @@
-/* sw.js v116 — Service worker de la PWA Newsletter.
+/* sw.js v117 — Service worker de la PWA Newsletter.
  * Stratégies : data/ et editions/ network-first (toujours frais en ligne, repli cache hors ligne) ;
  * le reste (coquille, js/, styles) cache-first pour un démarrage instantané.
  * À chaque déploiement de code : incrémenter CACHE (v109 → v110…) pour invalider les caches clients.
+ * v117 : bouton « 🧵 Reprendre le fil » à côté du ⬇️ « Aller à la fin du
+ * texte » — saute au chapitre du jour (index.chapitreJour), transverses
+ * ignorées ; repli sur le premier chapitre de la section (js/views/lyceens.js).
  * v116 : bouton « ⬆️ Revenir au début du texte » au bout du fil de la Version
  * des Lycéens — jumeau du ⬇️ « Aller à la fin du texte », remonte à la carte
  * d'en-tête (#entete-section), l'ouvre et la surligne (js/views/lyceens.js).
@@ -44,7 +47,7 @@
  * v105 : lot 5 — badge « ✓ N médias » (corroboration client miroir du serveur, racines+chiffres)
  * sur les articles repris par plusieurs flux, extrait coupé au mot (js/feeds.js v17, views/common.js,
  * styles.css). data/ et tools/ inchangés (les relevés serveur ne comptent que la presse). */
-const CACHE = 'newsletter-v116';
+const CACHE = 'newsletter-v117';
 const ASSETS = [
   './',
   './index.html',
