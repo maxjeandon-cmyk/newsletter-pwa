@@ -1,24 +1,24 @@
 {
   "date": "09/10/2026",
-  "heure": "03:28",
+  "heure": "09:30",
   "relevesOng": {
-    "rafraichis": 10,
+    "rafraichis": 0,
     "echecs": 0,
-    "publie": true
+    "publie": false
   },
   "lyceens": {
-    "nouvelles": 0,
-    "fusionnees": 13,
+    "nouvelles": 3,
+    "fusionnees": 9,
     "moissonnes": 90,
     "total": 22,
     "publie": true
   },
   "etudiants": {
-    "items": 0,
-    "ajoutes": 0,
-    "chapitre": null,
-    "nouveauChapitre": false,
-    "publie": false
+    "items": 3,
+    "ajoutes": 1,
+    "chapitre": "c20",
+    "nouveauChapitre": true,
+    "publie": true
   },
   "verifs": [
     {
@@ -29,27 +29,22 @@
     {
       "nom": "check-site.js",
       "ok": true,
-      "detail": "=== check-site ===\nℹ️  latest.json : 12 édition(s), plus récente 2026-10-08\nℹ️  édition 2026-10-08 : JSON OK, HTML 141890 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
+      "detail": "=== check-site ===\nℹ️  latest.json : 12 édition(s), plus récente 2026-10-08\nℹ️  édition 2026-10-08 : JSON OK, HTML 143947 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
     },
     {
       "nom": "sonde notifications",
       "ok": true,
-      "detail": "5 abonnement(s) push, 1 utilisateur(s) avec toggles actifs"
-    },
-    {
-      "nom": "ong-releve.js",
-      "ok": true,
-      "detail": "10 rafraîchi(s), 0 échec(s) — relevé précédent conservé pour les sites muets"
+      "detail": "7 abonnement(s) push, 1 utilisateur(s) avec toggles actifs"
     },
     {
       "nom": "lyceens.js",
       "ok": true,
-      "detail": "0 nouvelle(s) info, 13 fusionnée(s) sur 90 moissonnée(s) — 22 au total"
+      "detail": "3 nouvelle(s) info, 9 fusionnée(s) sur 90 moissonnée(s) — 22 au total"
     },
     {
       "nom": "etudiants.js",
       "ok": true,
-      "detail": "0 info(s) des dernières heures, 0 paragraphe(s) ajouté(s)"
+      "detail": "3 info(s) des dernières heures, 1 paragraphe(s) ajouté(s)"
     }
   ],
   "problemes": [],
