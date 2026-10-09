@@ -18,6 +18,16 @@
       "sources": [
         "France 24"
       ]
+    },
+    {
+      "id": "c20p3",
+      "texte": "6 heures ont passé depuis le relevé précédent ; le fil continue. Au soir du 9 octobre 2026, le mouvement poursuit sa route. Côté forces de l'ordre, les tensions ne faiblissent pas : Blocus lycéens : en marge des images de violence policière, des contenus trompeurs générés par IA (1 media : France 24 — non corrobore) — detail : Si de nombreuses images vérifiées attestent de violences policières lors des manifestations lycéennes en France, une vidéo d'un jeune homme frappé au visage devenue virale ces der…. Côté gouvernement, les réponses s'égrènent : Mélenchon juge Attal «personnellement responsable» d’une partie de la révolte lycéenne, à cause de Parcoursup (1 media : Libération — non corrobore) ; Parcoursup, profs absents, nos voisins font-ils mieux que nous ? Les informés du vendredi 9 octobre 2026 (1 media : France Inter — non corrobore) ; \"Avant, il y avait l'inquiétude du bac et on est passé à l'inquiétude de Parcoursup\", explique le patron d'Acadomia à propos de la mobilisation des lycéens (1 media : France Inter — non corrobore) — detail : Le leader insoumis a ciblé le candidat Renaissance et ancien ministre à propos de la plateforme d’orientation post-bac qui cristallise le mécontentement des lycéens. D’après le mi…. Le prochain relevé reprendra le fil. (Relevé automatique du 9 octobre 2026 à 23:27 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "Libération",
+        "France Inter",
+        "France 24"
+      ],
+      "auto": true
     }
   ]
 }
