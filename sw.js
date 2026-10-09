@@ -1,7 +1,14 @@
-/* sw.js v117 — Service worker de la PWA Newsletter.
+/* sw.js v118 — Service worker de la PWA Newsletter.
  * Stratégies : data/ et editions/ network-first (toujours frais en ligne, repli cache hors ligne) ;
  * le reste (coquille, js/, styles) cache-first pour un démarrage instantané.
  * À chaque déploiement de code : incrémenter CACHE (v109 → v110…) pour invalider les caches clients.
+ * v118 : onglet Édition — rendu NATIF de l'édition du jour, fini l'iframe
+ * « Canvas dans Canvas » (demande de Maxime) : les chapitres de la Newsletter
+ * sortent de l'encart News et vivent en dessous en cartes déroulantes natives
+ * (js/views/edition.js v118, styles.css scoped .edition-native, harnas
+ * tools/test/edition-native.js) ; btn-replier des éditions capté par la
+ * délégation globale v115, btn-partage câblé nativement, table des sources
+ * repliée derrière son bouton.
  * v117 : bouton « 🧵 Reprendre le fil » à côté du ⬇️ « Aller à la fin du
  * texte » — saute au chapitre du jour (index.chapitreJour), transverses
  * ignorées ; repli sur le premier chapitre de la section (js/views/lyceens.js).
@@ -47,7 +54,7 @@
  * v105 : lot 5 — badge « ✓ N médias » (corroboration client miroir du serveur, racines+chiffres)
  * sur les articles repris par plusieurs flux, extrait coupé au mot (js/feeds.js v17, views/common.js,
  * styles.css). data/ et tools/ inchangés (les relevés serveur ne comptent que la presse). */
-const CACHE = 'newsletter-v117';
+const CACHE = 'newsletter-v118';
 const ASSETS = [
   './',
   './index.html',

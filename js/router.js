@@ -54,7 +54,8 @@ export function stateFromHash() {
   }
   if (tab === 'edition') {
     /* v96 : #edition?c=<id-chapitre> — le partage d'un chapitre déroulant
-     * ouvre l'édition directement sur le bon bloc (scroll dans l'iframe). */
+     * ouvre l'édition directement sur le bon chapitre déroulant (v118 : rendu
+     * natif — plus d'iframe dans l'onglet Édition). */
     const c = new URLSearchParams(query || '').get('c');
     state.editionChapitre = /^[a-z0-9-]+$/i.test(c || '') ? c : null;
   }

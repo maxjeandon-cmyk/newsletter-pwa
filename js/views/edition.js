@@ -1,9 +1,24 @@
 /* views/edition.js — 📄 Édition du jour (v17, extrait de views.js).
- * v97 : plus de carte « 5 points du jour » au-dessus de l'iframe — l'édition
- * HTML commence déjà par le résumé exécutif, c'était redondant.
- * v98 : intro météo du jour au-dessus de l'iframe — ville choisie dans
- * Réglages → 📍 Localisation météo (Open-Meteo, sans clé). */
-import { $, state, esc, nomJourEdition } from '../core.js';
+ * v97 : plus de carte « 5 points du jour » au-dessus de l’édition — l’édition
+ * HTML commence déjà par le résumé exécutif, c’était redondant.
+ * v98 : intro météo du jour au-dessus de l’édition — ville choisie dans
+ * Réglages → 📍 Localisation météo (Open-Meteo, sans clé).
+ * v118 (demande de Maxime du 09/10/2026 — « sortir les chapitres de la
+ * Newsletter de l’encart News, fini le Canvas dans Canvas ») : fini l’iframe,
+ * l’édition du jour est rendue NATIVEMENT dans la page. L’encart News garde
+ * le titre, l’intro et le résumé exécutif ; les chapitres déroulants vivent
+ * en dessous, en cartes natives comme tout le site ; la table des sources
+ * reste repliée derrière son bouton. Le <script> de l’édition n’est JAMAIS
+ * injecté : les boutons btn-partage sont câblés ici (même texte de partage
+ * que le script des éditions), les btn-replier relèvent de la délégation
+ * globale v115 de common.js (même classe, même geste) ; les styles du
+ * squelette des éditions (stables, format.md) sont portés dans styles.css
+ * scopés sous .edition-native — la CSP (style-src 'self') interdit d’injecter
+ * la feuille <style> de l’édition en inline. Le lien profond #edition?c=<id>
+ * (partage v96) ouvre le chapitre natif et y défile. Anciennes éditions sans
+ * chapitres déroulants (avant le 06/10/2026, jamais « l’édition du jour »
+ * depuis) : tout le corps vit dans l’encart, rien en dessous — jamais de crash. */
+import { $, state, esc } from '../core.js';
 import { chargerMeteo, villeMeteo } from '../meteo.js';
 
 /* Intro météo : une ligne discrète, vide si aucune ville n'est choisie. */
@@ -23,45 +38,79 @@ function afficherMeteo() {
   }).catch(() => { el.hidden = true; });
 }
 
-export function vueEdition() {
+/* Découpe du corps de l’édition (pure, testée par tools/test/edition-native.js) :
+ * le <script> est retiré (jamais injecté), l’encart = tout ce qui précède le
+ * premier chapitre déroulant (titre, intro, résumé exécutif), le reste =
+ * chapitres + notes de sources. Édition sans chapitres déroulants (avant le
+ * 06/10/2026) : tout dans l’encart, rien en dessous. */
+export function decouperEdition(html) {
+  const corps = (html.split(/<body[^>]*>/)[1] || '').split('</body>')[0]
+    .replace(/<script[\s\S]*?<\/script>/g, '');
+  const coupe = corps.search(/<details[^>]*class="chapitre"/);
+  return {
+    entete: coupe === -1 ? corps : corps.slice(0, coupe),
+    reste: coupe === -1 ? '' : corps.slice(coupe),
+  };
+}
+
+export async function vueEdition() {
   const view = $('#view');
   if (!state.edition) { view.innerHTML = '<div class="empty">Aucune édition disponible pour l’instant.</div>'; return; }
   view.innerHTML =
     '<div id="meteo-intro" class="meteo-intro" hidden></div>' +
-    '<iframe class="edition-frame" id="edition-frame" src="' + esc(state.edition.html) + '" title="Newsletter du ' + esc(nomJourEdition()) + '"></iframe>';
+    '<div id="edition-native" class="edition-native"><div class="empty">Chargement de l’édition…</div></div>';
   afficherMeteo();
-  const frame = $('#edition-frame');
-  if (frame) frame.addEventListener('load', () => {
-    try {
-      const st = frame.contentDocument.createElement('style');
-      st.textContent = 'table{table-layout:fixed;max-height:520px;overflow-y:auto;display:block}td,th{overflow-wrap:anywhere;word-break:break-word}td:first-child{width:70%}td:not(:first-child){width:15%}';
-      frame.contentDocument.head.appendChild(st);
-      const tbl = frame.contentDocument.querySelector('table');
-      const head = frame.contentDocument.createElement('thead');
-      const tr = tbl && tbl.rows[0];
-      if (tbl && tr) {
-        head.appendChild(tr);
-        tbl.insertBefore(head, tbl.firstChild);
-      }
-      const btn = frame.contentDocument.createElement('button');
-      btn.type = 'button';
-      btn.textContent = '\u25bc Afficher toutes les sources';
-      btn.setAttribute('style', 'display:block;width:100%;box-sizing:border-box;margin:12px 0;padding:10px;background:#1a1a22;color:#e8e8ec;border:1px solid #333;border-radius:8px;font:inherit;cursor:pointer');
-      btn.addEventListener('click', () => {
-        tbl.style.maxHeight = '';
-        tbl.style.overflowY = '';
-        btn.remove();
-      });
-      if (tbl) tbl.after(btn);
-      /* v96 : lien profond #edition?c=<id> — l'édition s'ouvre sur le chapitre
-       * partagé (les blocs déroulants portent id="c-<id>" dans le HTML généré). */
-      if (state.editionChapitre) {
-        const cible = frame.contentDocument.getElementById('c-' + state.editionChapitre);
-        if (cible) {
-          if (cible.open === false) cible.open = true;
-          cible.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }
-    } catch (e) { /* cross-origin */ }
+  const conteneur = $('#edition-native');
+  let html = '';
+  try {
+    html = await (await fetch(state.edition.html, { cache: 'no-store' })).text();
+  } catch (e) { /* réseau muet — message ci-dessous */ }
+  if (!conteneur || !conteneur.isConnected) return; /* la vue a été re-rendue entre-temps */
+  if (!html) {
+    conteneur.innerHTML = '<div class="empty">Édition momentanément indisponible — ⟳ pour retenter dans un instant. 🌱</div>';
+    return;
+  }
+  const dec = decouperEdition(html);
+  conteneur.innerHTML =
+    '<div class="summary-card edition-encart">' + dec.entete + '</div>' +
+    dec.reste;
+  /* Table des sources : première ligne en <thead> (visible au défilement du
+   * bloc) et repli derrière le bouton — même UX que l’ancienne iframe. */
+  const tbl = conteneur.querySelector('table');
+  if (tbl) {
+    tbl.classList.add('table-sources');
+    const tr = tbl.querySelector('tr');
+    if (tr) {
+      const tete = document.createElement('thead');
+      tbl.insertBefore(tete, tbl.firstChild);
+      tete.appendChild(tr);
+    }
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'btn-sources';
+    btn.textContent = '▼ Afficher toutes les sources';
+    btn.addEventListener('click', () => { tbl.classList.remove('table-sources'); btn.remove(); });
+    tbl.after(btn);
+  }
+  /* Partage par chapitre (v96) : même texte que le script de l’édition, câblé
+   * nativement — l’URL profonde reste le lien canonique du site. */
+  [...conteneur.querySelectorAll('.btn-partage')].forEach(b => {
+    b.addEventListener('click', () => {
+      const url = 'https://diyeah24.fr/#edition?c=' + b.dataset.id;
+      const texte = b.dataset.titre + ' — ' + b.dataset.resume;
+      if (navigator.share) { navigator.share({ title: 'DiY/H24', text: texte, url: url }).catch(() => {}); return; }
+      const ok = () => { b.textContent = '✅'; setTimeout(() => { b.textContent = '🔗 Partager'; }, 1600); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(texte + ' ' + url).then(ok, ok);
+      else if (window.prompt) window.prompt('Lien :', url);
+    });
   });
+  /* Lien profond #edition?c=<id> (partage v96) : ouvrir le chapitre visé et
+   * y défiler — le bloc porte id="c-<id>" dans le HTML généré. */
+  if (state.editionChapitre) {
+    const cible = document.getElementById('c-' + state.editionChapitre);
+    if (cible) {
+      cible.open = true;
+      cible.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }

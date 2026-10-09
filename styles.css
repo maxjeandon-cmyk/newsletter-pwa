@@ -232,3 +232,32 @@ main{padding:0 14px;max-width:720px;margin:0 auto}
 .medias-liste[hidden]{display:none}
 .medias-liste a{font-size:12.5px;font-weight:600;color:#4caf7d;border:1px solid #4caf7d;border-radius:8px;padding:2px 9px;text-decoration:none}
 .medias-liste a:active{background:#4caf7d;color:#0e0e12}
+/* v118 : onglet Édition — rendu NATIF de l'édition du jour (fini l'iframe
+ * « Canvas dans Canvas », demande de Maxime du 09/10/2026). Les règles du
+ * squelette des éditions (format.md, stables) sont portées ici scopées sous
+ * .edition-native : la CSP (style-src 'self') interdit d'injecter la feuille
+ * <style> de l'édition en inline. L'encart News garde titre, intro et résumé
+ * exécutif ; les chapitres déroulants vivent en dessous. */
+.edition-native{max-width:820px;margin:0 auto;line-height:1.7;font-family:Georgia,serif}
+.edition-encart{padding:14px 16px;margin-bottom:4px}
+.edition-native h1,.edition-native h2{border-bottom:1px solid #333;padding-bottom:4px}
+.edition-native h1{font-size:1.5em;margin:10px 0}
+.edition-native h3{color:#aab4c8}
+.edition-native a{color:#6ea8fe}
+.edition-native table{border-collapse:collapse;width:100%;font-size:.85em;margin:12px 0}
+.edition-native th,.edition-native td{border:1px solid #333;padding:6px 8px;text-align:left;vertical-align:top}
+.edition-native th{background:#1a1a22}
+.edition-native hr{border:none;border-top:1px solid #333}
+.edition-native li{margin:4px 0}
+.edition-native em{color:#9aa3b5}
+.edition-native blockquote{border-left:3px solid #444;margin:12px 0;padding-left:14px;color:#c8cede}
+.edition-native details.chapitre{border:1px solid #26262e;border-radius:12px;margin:12px 0;padding:0 14px;background:#17171d}
+.edition-native details.chapitre>summary{cursor:pointer;font-size:17px;font-weight:600;padding:12px 0;list-style:revert}
+.edition-native .btn-partage,.edition-native .btn-replier{display:block;margin:6px 0 12px;padding:8px 14px;background:#1a1a22;color:#e8e8ec;border:1px solid #333;border-radius:8px;font:inherit;cursor:pointer}
+.edition-native .btn-replier{width:auto}
+/* Table des sources : repliée derrière son bouton, première ligne en <thead> */
+.edition-native table.table-sources{table-layout:fixed;max-height:520px;overflow-y:auto;display:block}
+.edition-native .table-sources td,.edition-native .table-sources th{overflow-wrap:anywhere;word-break:break-word}
+.edition-native .table-sources td:first-child{width:70%}
+.edition-native .table-sources td:not(:first-child){width:15%}
+.edition-native .btn-sources{display:block;width:100%;box-sizing:border-box;margin:12px 0;padding:10px;background:#1a1a22;color:#e8e8ec;border:1px solid #333;border-radius:8px;font:inherit;cursor:pointer}
