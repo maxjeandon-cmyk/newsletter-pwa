@@ -601,6 +601,26 @@
       ]
     },
     {
+      "id": "le-monde-environnement",
+      "nom": "Le Monde — Environnement",
+      "emoji": "🌿",
+      "categorie": "Écologie & climat 🌿",
+      "flux": [
+        "https://www.lemonde.fr/environment/rss_full.xml"
+      ],
+      "ligne": "environnement, climat et biodiversité par le Monde"
+    },
+    {
+      "id": "france-24-planete",
+      "nom": "France 24 — Planète",
+      "emoji": "🌿",
+      "categorie": "Écologie & climat 🌿",
+      "flux": [
+        "https://www.france24.com/fr/planete/rss"
+      ],
+      "ligne": "environnement et planète en continu"
+    },
+    {
       "id": "france-24-sport",
       "nom": "France 24 — Sport",
       "emoji": "🏅",
