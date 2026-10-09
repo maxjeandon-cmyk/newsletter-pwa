@@ -1,5 +1,5 @@
 {
-  "maj": "09/10/2026 11:30",
+  "maj": "09/10/2026 17:28",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -24,18 +24,29 @@
       "date": "09/10/2026",
       "titre": "Crise lycéenne : Édouard Geffray annonce « plusieurs milliers de postes » dans « les prochaines heures » pour remplacer…",
       "texte": "Après l’acte IV de la mobilisation lycéenne, le ministre de l’Éducation nationale a annoncé des mesures concrètes et immédiates : 3000 remplaçants «mal affectés» rejoindront les 514 établissements qu…",
-      "source": "Europe 1 / Public Sénat / Le Figaro / BFMTV / France 24 / La Croix / L'Humanité / Libération",
+      "source": "Europe 1 / Public Sénat / Le Figaro / BFMTV / France 24 / La Croix",
       "sources": [
         "Europe 1",
         "Public Sénat",
         "Le Figaro",
         "BFMTV",
         "France 24",
-        "La Croix",
-        "L'Humanité",
-        "Libération"
+        "La Croix"
       ],
       "url": "https://www.lefigaro.fr/actualite-france/crise-lyceenne-edouard-geffray-annonce-plusieurs-milliers-de-postes-dans-les-prochaines-heures-pour-remplacer-les-profs-absents-20261008",
+      "verifie": true
+    },
+    {
+      "id": "amv14edmp-k81a",
+      "date": "09/10/2026",
+      "titre": "Mobilisation lycéenne : enquête de l’IGPN après la vidéo d’un policier donnant un coup de genou à un manifestant à Paris",
+      "texte": "Une vidéo circule sur les réseaux sociaux montrant un policier donner un coup de genou au visage d’un manifestant lors de la mobilisation lycéenne qui s’est déroulée jeudi 8 octobre à Paris. L’Inspec…",
+      "source": "Europe 1 / Ouest-France",
+      "sources": [
+        "Europe 1",
+        "Ouest-France"
+      ],
+      "url": "https://www.ouest-france.fr/societe/police/mobilisation-lyceenne-enquete-igpn-ouverte-apres-la-video-du-policier-donnant-un-coup-de-genou-a-un-manifestant-a-paris-03b55592-c3bc-11f1-bba2-d026901fbfe4?utm_source=fluxpublicfrance&utm_medium=fluxrss&utm_campaign=banquedecontenu",
       "verifie": true
     },
     {
@@ -52,23 +63,6 @@
         "France 24"
       ],
       "url": "https://www.radiofrance.fr/franceinfo/podcasts/les-documents-franceinfo/ca-me-donne-encore-plus-envie-d-aller-bloquer-des-lyceens-decus-par-la-prise-de-parole-de-sebastien-lecornu-4012740",
-      "verifie": true
-    },
-    {
-      "id": "amuzp15r6-1re0",
-      "date": "08/10/2026",
-      "titre": "Colère des lycéens : premières tensions à Paris place de la Bastille, Édouard Geffray va s’exprimer à 20 heures",
-      "texte": "La majorité des établissements scolaires ont rouvert jeudi, mais des blocages de lycées et d’universités ont subsisté en cette nouvelle journée de mobilisation avec des manifestations qui ont démarré…",
-      "source": "20 minutes / Le Figaro / BFMTV / Europe 1 / France 24 / RFI",
-      "sources": [
-        "20 minutes",
-        "Le Figaro",
-        "BFMTV",
-        "Europe 1",
-        "France 24",
-        "RFI"
-      ],
-      "url": "https://www.lefigaro.fr/actualite-france/en-direct-mobilisation-des-lyceens-de-nouvelles-manifestations-prevues-ce-jeudi-partout-en-france-des-syndicats-de-l-education-appellent-a-la-greve-20261008",
       "verifie": true
     },
     {
@@ -195,12 +189,13 @@
       "date": "09/10/2026",
       "titre": "EN DIRECT Blocus des lycées : Quelque 141 établissements encore fermés ce vendredi…",
       "texte": "Suivez avec nous les dernières informations concernant la colère des lycéens en ce vendredi 9 septembre",
-      "source": "20 minutes / Europe 1 / France 24 / La Croix",
+      "source": "20 minutes / Europe 1 / France 24 / La Croix / Public Sénat",
       "sources": [
         "20 minutes",
         "Europe 1",
         "France 24",
-        "La Croix"
+        "La Croix",
+        "Public Sénat"
       ],
       "url": "https://www.20minutes.fr/societe/4252682-20261009-direct-blocus-lycees-3-000-professeurs-remplacants-deployes-acte-v-deja-tuyaux-mardi?at_medium=display&at_campaign=149",
       "verifie": true
@@ -216,6 +211,32 @@
         "Libération"
       ],
       "url": "https://www.liberation.fr/societe/education/victor-wembanyama-soutient-les-lyceens-il-y-a-des-inegalites-systemiques-et-des-problemes-tellement-profonds-20261009_5JZ3S6JKDRBONE2XVTYXP6V3TA/",
+      "verifie": true
+    },
+    {
+      "id": "amv14edmw-28bf",
+      "date": "09/10/2026",
+      "titre": "Le basketteur Victor Wembanyama apporte son soutien aux manifestations lycéennes",
+      "texte": "Victor Wembanyama a témoigné son soutien jeudi au mouvement lycéen français depuis San Antonio, au Texas, où il prépare la prochaine saison NBA qui débute le 20 octobre. \"Je les entends et je les sou…",
+      "source": "France 24 / L'Humanité",
+      "sources": [
+        "France 24",
+        "L'Humanité"
+      ],
+      "url": "https://www.france24.com/fr/france/20261009-basketteur-victor-wembanyama-soutien-manifestations-lyceennes-en-france",
+      "verifie": true
+    },
+    {
+      "id": "amv14edmx-7z60",
+      "date": "09/10/2026",
+      "titre": "Mobilisation des lycéens en France: l'ONU «inquiète» face aux violences, le mouvement appelé à se poursuivre",
+      "texte": "Le Haut-Commissariat de l'ONU aux droits de l'homme a dit, vendredi 9 octobre, suivre avec « inquiétude » les « incidents » liés aux manifestations des lycéens en France et a appelé au maintien de ra…",
+      "source": "RFI / La Croix",
+      "sources": [
+        "RFI",
+        "La Croix"
+      ],
+      "url": "https://www.rfi.fr/fr/france/20261009-mobilisation-des-lyc%C3%A9ens-en-france-l-onu-inqui%C3%A8te-face-aux-violences-le-mouvement-appel%C3%A9-%C3%A0-se-poursuivre",
       "verifie": true
     },
     {
@@ -243,35 +264,6 @@
         "Le Figaro"
       ],
       "url": "https://www.lefigaro.fr/faits-divers/bataclan-je-l-ai-shoote-a-l-oeil-le-rappeur-boro700-dont-l-une-des-chansons-a-ete-scandee-lors-d-un-blocus-lyceen-sera-juge-pour-apologie-du-terrorisme-20261008",
-      "verifie": true
-    },
-    {
-      "id": "amuzp15rd-16qs",
-      "date": "08/10/2026",
-      "titre": "«L’icône de la révolte» : dans les médias étrangers, Bally Bagayoko érigé en «figure emblématique» des manifestations l…",
-      "texte": "Le maire LFI de Saint-Denis a tenté de s’interposer entre policiers et protestataires lors de la manifestation à Paris en soutien au mouvement social des lycées, mardi. Une séquence qui fait le tour …",
-      "source": "BFMTV / Libération / 20 minutes / Europe 1 / Public Sénat",
-      "sources": [
-        "BFMTV",
-        "Libération",
-        "20 minutes",
-        "Europe 1",
-        "Public Sénat"
-      ],
-      "url": "https://www.liberation.fr/politique/licone-de-la-revolte-dans-les-medias-etrangers-bally-bagayoko-erige-en-figure-emblematique-des-manifestations-lyceennes-20261008_2NCMS4I72ZBQJOEB3NMC67DESA/",
-      "verifie": true
-    },
-    {
-      "id": "amv01t8o2-ilpz",
-      "date": "08/10/2026",
-      "titre": "Colère des lycéens près de Bordeaux : Des centaines de milliers d’euros de dégâts après le saccage d’un lycée",
-      "texte": "Un lycée de Lormont, près de Bordeaux, a été en partie mis à sac ce jeudi par un groupe d’individus masqués, causant plusieurs centaines de milliers d’euros de dégâts",
-      "source": "20 minutes / Europe 1",
-      "sources": [
-        "20 minutes",
-        "Europe 1"
-      ],
-      "url": "https://www.20minutes.fr/bordeaux/4252667-20261008-colere-lyceens-pres-bordeaux-centaines-milliers-euros-degats-apres-saccage-lycee?at_medium=display&at_campaign=149",
       "verifie": true
     },
     {
