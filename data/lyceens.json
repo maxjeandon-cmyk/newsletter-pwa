@@ -1,5 +1,5 @@
 {
-  "maj": "09/10/2026 17:28",
+  "maj": "09/10/2026 23:27",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -231,12 +231,27 @@
       "date": "09/10/2026",
       "titre": "Mobilisation des lycéens en France: l'ONU «inquiète» face aux violences, le mouvement appelé à se poursuivre",
       "texte": "Le Haut-Commissariat de l'ONU aux droits de l'homme a dit, vendredi 9 octobre, suivre avec « inquiétude » les « incidents » liés aux manifestations des lycéens en France et a appelé au maintien de ra…",
-      "source": "RFI / La Croix",
+      "source": "RFI / La Croix / BFMTV",
       "sources": [
         "RFI",
-        "La Croix"
+        "La Croix",
+        "BFMTV"
       ],
       "url": "https://www.rfi.fr/fr/france/20261009-mobilisation-des-lyc%C3%A9ens-en-france-l-onu-inqui%C3%A8te-face-aux-violences-le-mouvement-appel%C3%A9-%C3%A0-se-poursuivre",
+      "verifie": true
+    },
+    {
+      "id": "amv1h7lm4-k3g8",
+      "date": "09/10/2026",
+      "titre": "Blocage des lycées : un adolescent de 15 ans sera jugé en février prochain pour avoir roué de coups une policière à Par…",
+      "texte": "Deux circonstances aggravantes sont retenues : les faits ayant été commis en réunion et lors d’une manifestation sur la voie publique.",
+      "source": "Le Figaro / BFMTV / franceinfo",
+      "sources": [
+        "Le Figaro",
+        "BFMTV",
+        "franceinfo"
+      ],
+      "url": "https://www.lefigaro.fr/faits-divers/blocage-des-lycees-un-adolescent-de-15-ans-sera-juge-en-fevrier-prochain-pour-avoir-roue-de-coups-une-policiere-a-paris-20261009",
       "verifie": true
     },
     {
@@ -251,19 +266,6 @@
         "Libération"
       ],
       "url": "https://www.20minutes.fr/societe/4252311-20261008-blocus-lycees-faire-peur-jeunes-parents-garde-vue-devenue-peine-immediate?at_medium=display&at_campaign=149",
-      "verifie": true
-    },
-    {
-      "id": "amuzp15ra-6zqq",
-      "date": "08/10/2026",
-      "titre": "«Bataclan, je l’ai shooté à l’œil» : le rappeur BORO700, dont l’une des chansons a été scandée lors d’un blocus lycéen,…",
-      "texte": "Dans son titre «M*R*H», l’artiste glorifie les terroristes islamistes Mohamed Merah et Salah Abdeslam. Dès le 3 août, le député-maire (UDR) de Nice Éric Ciotti avait signalé le morceau à la justice. …",
-      "source": "Europe 1 / Le Figaro",
-      "sources": [
-        "Europe 1",
-        "Le Figaro"
-      ],
-      "url": "https://www.lefigaro.fr/faits-divers/bataclan-je-l-ai-shoote-a-l-oeil-le-rappeur-boro700-dont-l-une-des-chansons-a-ete-scandee-lors-d-un-blocus-lyceen-sera-juge-pour-apologie-du-terrorisme-20261008",
       "verifie": true
     },
     {
