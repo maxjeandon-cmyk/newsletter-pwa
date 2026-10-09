@@ -1,5 +1,5 @@
 {
-  "maj": "09/10/2026 05:28",
+  "maj": "09/10/2026 11:30",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -19,6 +19,25 @@
     "Mercredi 7 octobre (lendemain de l'acte III) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
   ],
   "version_gouvernement": [
+    {
+      "id": "amv0rlhqm-e0y5",
+      "date": "09/10/2026",
+      "titre": "Crise lycéenne : Édouard Geffray annonce « plusieurs milliers de postes » dans « les prochaines heures » pour remplacer…",
+      "texte": "Après l’acte IV de la mobilisation lycéenne, le ministre de l’Éducation nationale a annoncé des mesures concrètes et immédiates : 3000 remplaçants «mal affectés» rejoindront les 514 établissements qu…",
+      "source": "Europe 1 / Public Sénat / Le Figaro / BFMTV / France 24 / La Croix / L'Humanité / Libération",
+      "sources": [
+        "Europe 1",
+        "Public Sénat",
+        "Le Figaro",
+        "BFMTV",
+        "France 24",
+        "La Croix",
+        "L'Humanité",
+        "Libération"
+      ],
+      "url": "https://www.lefigaro.fr/actualite-france/crise-lyceenne-edouard-geffray-annonce-plusieurs-milliers-de-postes-dans-les-prochaines-heures-pour-remplacer-les-profs-absents-20261008",
+      "verifie": true
+    },
     {
       "id": "amuzc4vu7-f3x9",
       "date": "08/10/2026",
@@ -50,19 +69,6 @@
         "RFI"
       ],
       "url": "https://www.lefigaro.fr/actualite-france/en-direct-mobilisation-des-lyceens-de-nouvelles-manifestations-prevues-ce-jeudi-partout-en-france-des-syndicats-de-l-education-appellent-a-la-greve-20261008",
-      "verifie": true
-    },
-    {
-      "id": "amuzp15rg-4odh",
-      "date": "08/10/2026",
-      "titre": "«On va leur mettre dans la gueule» : ouverture d’une enquête après qu’un 4×4 de police a foncé sur des lycéens à Dunker…",
-      "texte": "La préfecture du Nord confirme avoir ouvert une enquête administrative après la diffusion de plusieurs vidéos montrant une charge de police en voiture sur des jeunes dans la ville, lundi 5 octobre.",
-      "source": "L'Humanité / Libération",
-      "sources": [
-        "L'Humanité",
-        "Libération"
-      ],
-      "url": "https://www.liberation.fr/checknews/on-va-leur-mettre-dans-la-gueule-ouverture-dune-enquete-apres-quun-44-de-police-a-fonce-sur-des-lyceens-a-dunkerque-20261008_B65JXQK5PFCAHLYI2IK6T3QRAU/",
       "verifie": true
     },
     {
@@ -185,14 +191,43 @@
   ],
   "faits": [
     {
+      "id": "amv0rlhqk-6jxo",
+      "date": "09/10/2026",
+      "titre": "EN DIRECT Blocus des lycées : Quelque 141 établissements encore fermés ce vendredi…",
+      "texte": "Suivez avec nous les dernières informations concernant la colère des lycéens en ce vendredi 9 septembre",
+      "source": "20 minutes / Europe 1 / France 24 / La Croix",
+      "sources": [
+        "20 minutes",
+        "Europe 1",
+        "France 24",
+        "La Croix"
+      ],
+      "url": "https://www.20minutes.fr/societe/4252682-20261009-direct-blocus-lycees-3-000-professeurs-remplacants-deployes-acte-v-deja-tuyaux-mardi?at_medium=display&at_campaign=149",
+      "verifie": true
+    },
+    {
+      "id": "amv0rlhql-5kqm",
+      "date": "09/10/2026",
+      "titre": "Victor Wembanyama soutient les lycéens : il y a «des inégalités systémiques et des problèmes tellement profonds»",
+      "texte": "Le Français de 22 ans, scolarisé à Nanterre quand il était adolescent, a dit lors d’une conférence de presse «entendre» les revendications des étudiants et «espérer que les gens qui sont tout là-haut…",
+      "source": "20 minutes / Libération",
+      "sources": [
+        "20 minutes",
+        "Libération"
+      ],
+      "url": "https://www.liberation.fr/societe/education/victor-wembanyama-soutient-les-lyceens-il-y-a-des-inegalites-systemiques-et-des-problemes-tellement-profonds-20261009_5JZ3S6JKDRBONE2XVTYXP6V3TA/",
+      "verifie": true
+    },
+    {
       "id": "amuzc4vu3-keyf",
       "date": "08/10/2026",
       "titre": "Blocus des lycées : « Faire peur aux jeunes et aux parents »… La garde à vue est-elle devenue une peine immédiate ?",
       "texte": "Alors que 87 % des 5.000 gardés à vue du mouvement lycéen sont mineurs, des avocats dénoncent des interpellations de masse destinées à sanctionner les manifestants",
-      "source": "20 minutes / Europe 1",
+      "source": "20 minutes / Europe 1 / Libération",
       "sources": [
         "20 minutes",
-        "Europe 1"
+        "Europe 1",
+        "Libération"
       ],
       "url": "https://www.20minutes.fr/societe/4252311-20261008-blocus-lycees-faire-peur-jeunes-parents-garde-vue-devenue-peine-immediate?at_medium=display&at_campaign=149",
       "verifie": true
@@ -237,33 +272,6 @@
         "Europe 1"
       ],
       "url": "https://www.20minutes.fr/bordeaux/4252667-20261008-colere-lyceens-pres-bordeaux-centaines-milliers-euros-degats-apres-saccage-lycee?at_medium=display&at_campaign=149",
-      "verifie": true
-    },
-    {
-      "id": "amv01t8o4-6u47",
-      "date": "08/10/2026",
-      "titre": "Manifestations lycéennes : «Ce que nous vivons aujourd'hui, c'est une intifada», s'inquiète un ancien policier",
-      "texte": "Dans l'émission \"Pascal Praud et vous\", Franck, ancien policier, alerte sur les tensions qu'il observe dans les manifestations actuelles et redoute qu'elles s'amplifient à l'approche de l'élection pr…",
-      "source": "Europe 1 / BFMTV / Public Sénat",
-      "sources": [
-        "Europe 1",
-        "BFMTV",
-        "Public Sénat"
-      ],
-      "url": "https://www.europe1.fr/societe/manifestations-lyceennes-ce-que-nous-vivons-aujourdhui-cest-une-intifada-sinquiete-un-ancien-policier-1132049?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
-      "verifie": true
-    },
-    {
-      "id": "amv01t8o9-78dw",
-      "date": "08/10/2026",
-      "titre": "Maintien de l'ordre dans les manifestations lycéennes: \"On est dans un début de barbarie\", affirme Ségolène Royal, cand…",
-      "texte": "Ségolène Royal, candidate à la primaire sociale-démocrate, ancienne finaliste à la présidentielle, était invitée sur le plateau de BFMTV, ce jeudi 8 octobre.",
-      "source": "Public Sénat / BFMTV",
-      "sources": [
-        "Public Sénat",
-        "BFMTV"
-      ],
-      "url": "https://www.bfmtv.com/politique/video-maintien-de-l-ordre-dans-les-manifestations-lyceennes-on-est-dans-un-debut-de-barbarie-affirme-segolene-royal-candidate-a-la-primaire-sociale-democrate_VN-202610080992.html",
       "verifie": true
     },
     {
