@@ -5,13 +5,12 @@
   "paragraphes": [
     {
       "id": "c20p1",
-      "texte": "12 heures ont passé depuis le relevé précédent ; une nouvelle journée de suivi s'ouvre, le fil continue. Au matin du 9 octobre 2026, le fil du récit continue. Côté mobilisation, l'élan ne retombe pas : Blocus des lycées : à Marseille, les temps de démocratie interne peinent à séduire les élèves (1 media : Europe 1 — non corrobore) — detail : Pour répondre au mécontentement des lycéens, le gouvernement a souhaité des temps d'échanges jusqu'à la fin de la semaine, à la place de la reprise des cours. L'objectif est de pe…. Du côté du pouvoir, chacun prend position : \"C'est de la démagogie pure\" : le ministre de l'Enseignement supérieur est contre la suppression de Parcoursup (1 media : France Inter — non corrobore) — detail : Invité de franceinfo vendredi, Phillipe Baptiste refuse catégoriquement de supprimer Parcoursup. Mais le ministre reste ouvert à une évolution de la plateforme, notamment pour qu'…. Côté cours, la routine a volé en éclats : EN DIRECT Blocus des lycées : Quelque 141 établissements encore fermés ce vendredi… (1 media : 20 minutes — non corrobore) — detail : Suivez avec nous les dernières informations concernant la colère des lycéens en ce vendredi 9 septembre. Le prochain relevé reprendra le fil. (Relevé automatique du 9 octobre 2026 à 11:30 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "Au matin du 9 octobre, une nouvelle journée de suivi s'ouvre — douze heures après le relevé précédent, le fil continue. La mobilisation tient ses grilles : « Quelque 141 établissements encore fermés » ce vendredi, compte 20 minutes dans son direct consacré au blocus des lycées. À Marseille, Europe 1 observe que les « temps de démocratie interne » — ces temps d'échanges que le gouvernement a souhaités « jusqu'à la fin de la semaine, à la place de la reprise des cours » — « peinent à séduire les élèves ». Et du côté du pouvoir, la ligne se durcit sur Parcoursup : invité de franceinfo ce vendredi, le ministre de l'Enseignement supérieur refuse catégoriquement de supprimer la plateforme — « C'est de la démagogie pure » —, tout en restant ouvert à une évolution de l'outil. La journée garde le mouvement en attente ; le prochain relevé reprendra le fil.",
       "sources": [
         "Europe 1",
         "France Inter",
         "20 minutes"
-      ],
-      "auto": true
+      ]
     }
   ]
 }
