@@ -14,12 +14,10 @@
     },
     {
       "id": "c20p2",
-      "texte": "6 heures ont passé depuis le relevé précédent ; le fil continue. Dans l'après-midi du 9 octobre 2026, la journée s'écrit encore. La vague, elle, continue d'avancer : Mouvement lycéen : des profs remplaçants attendus, encore des blocages (1 media : France 24 — non corrobore) ; Prix des carburants : le déblocage de 10 millions de barils de gazole est «un pari risqué», juge Pierre Chasseray (1 media : Europe 1 — non corrobore) — detail : \"Un premier pas\", mais toujours des blocages: la promesse du déploiement en urgence de 3000 professeurs remplaçants semblait rester insuffisante pour les jeunes toujours mobilisés…. Le prochain relevé reprendra le fil. (Relevé automatique du 9 octobre 2026 à 17:28 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "Dans l'après-midi du 9 octobre, le fil se joue du côté des remplaçants. La promesse du déploiement en urgence de 3000 professeurs remplaçants, c'est bien « Un premier pas » — mais « toujours des blocages », observe France 24 : elle « semblait rester insuffisante pour les jeunes toujours mobilisés », des profs remplaçants attendus, des grilles encore tenues pendant que les « temps de démocratie interne » du matin cherchent leur suite. La journée s'écrit encore ; le prochain relevé dira si elle se referme sur le dialogue ou sur les grilles.",
       "sources": [
-        "France 24",
-        "Europe 1"
-      ],
-      "auto": true
+        "France 24"
+      ]
     }
   ]
 }
