@@ -60,6 +60,14 @@
         "20 minutes / Europe 1 — la garde à vue est-elle devenue une peine immédiate ? (08/10/2026)",
         "Libération / Public Sénat / Europe 1 — Laurent Nuñez, excessif de parler de répression policière (07/10/2026)"
       ]
+    },
+    {
+      "id": "c12p7",
+      "texte": "Côté répression, la liste des visages s'allonge : Blocus lycéens : en marge des images de violence policière, des contenus trompeurs générés par IA (1 media : France 24 — non corrobore) — détail : Si de nombreuses images vérifiées attestent de violences policières lors des manifestations lycéennes en France, une vidéo d'un jeune homme… (Volet automatique du 9 octobre 2026 à 23:27, chapitre « La répression et ses visages » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "France 24"
+      ],
+      "auto": true
     }
   ]
 }
