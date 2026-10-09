@@ -61,6 +61,15 @@
       "sources": [
         "France Inter"
       ]
+    },
+    {
+      "id": "c11p8",
+      "texte": "Côté revendications, les exigences s'affinent : Mélenchon juge Attal «personnellement responsable» d’une partie de la révolte lycéenne, à cause de Parcoursup (1 media : Libération — non corrobore) — détail : Le leader insoumis a ciblé le candidat Renaissance et ancien ministre à propos de la plateforme d’orientation post-bac qui cristallise le m… ; Parcoursup, profs absents, nos voisins font-ils mieux que nous ? Les informés du vendredi 9 octobre 2026 (1 media : France Inter — non corrobore) — détail : Tous les soirs, les informés débattent de l'actualité autour d'Hadrien Bect ; \"Avant, il y avait l'inquiétude du bac et on est passé à l'inquiétude de Parcoursup\", explique le patron d'Acadomia à propos de la mobilisation des lycéens (1 media : France Inter — non corrobore) — détail : Philippe Coleon, le PDG d'Acadomia, spécialiste des cours particuliers, était l'invité de franceinfo vendredi (Volet automatique du 9 octobre 2026 à 23:27, chapitre « Ce qu'ils veulent — les revendications, mot à mot » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "Libération",
+        "France Inter"
+      ],
+      "auto": true
     }
   ]
 }
