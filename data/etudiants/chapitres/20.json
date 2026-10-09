@@ -21,13 +21,13 @@
     },
     {
       "id": "c20p3",
-      "texte": "6 heures ont passé depuis le relevé précédent ; le fil continue. Au soir du 9 octobre 2026, le mouvement poursuit sa route. Côté forces de l'ordre, les tensions ne faiblissent pas : Blocus lycéens : en marge des images de violence policière, des contenus trompeurs générés par IA (1 media : France 24 — non corrobore) — detail : Si de nombreuses images vérifiées attestent de violences policières lors des manifestations lycéennes en France, une vidéo d'un jeune homme frappé au visage devenue virale ces der…. Côté gouvernement, les réponses s'égrènent : Mélenchon juge Attal «personnellement responsable» d’une partie de la révolte lycéenne, à cause de Parcoursup (1 media : Libération — non corrobore) ; Parcoursup, profs absents, nos voisins font-ils mieux que nous ? Les informés du vendredi 9 octobre 2026 (1 media : France Inter — non corrobore) ; \"Avant, il y avait l'inquiétude du bac et on est passé à l'inquiétude de Parcoursup\", explique le patron d'Acadomia à propos de la mobilisation des lycéens (1 media : France Inter — non corrobore) — detail : Le leader insoumis a ciblé le candidat Renaissance et ancien ministre à propos de la plateforme d’orientation post-bac qui cristallise le mécontentement des lycéens. D’après le mi…. Le prochain relevé reprendra le fil. (Relevé automatique du 9 octobre 2026 à 23:27 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "Au soir du 9 octobre, la journée se referme sans que le fond ne bouge, et c'est encore Parcoursup qui tient la une. « Avant, il y avait l'inquiétude du bac et on est passé à l'inquiétude de Parcoursup », résume sur franceinfo le patron d'Acadomia, Philippe Coleon, invité vendredi pour parler de la mobilisation des lycéens. France Inter y consacre sa table des informés du soir — « Parcoursup, profs absents, nos voisins font-ils mieux que nous ? » — pendant que la politique choisit son camp : Jean-Luc Mélenchon juge Attal « personnellement responsable » d'une partie de la révolte lycéenne à cause de Parcoursup, rapporte Libération, le leader insoumis visant le candidat Renaissance et ancien ministre sur la plateforme qui cristallise le mécontentement. Et le soir apprend aussi à se méfier des images : en marge des images de violence policière, relève France 24, circulent des contenus trompeurs générés par IA — dont une vidéo d'un jeune homme frappé au visage devenue virale. Des images vérifiées attestent, elles, des violences policières ; la prudence n'efface rien, elle trie. Neuvième journée de fil : le mouvement s'endort sur ses gardes, et la chronique reprendra au matin.",
       "sources": [
         "Libération",
         "France Inter",
         "France 24"
-      ],
-      "auto": true
+      ]
+      
     }
   ]
 }

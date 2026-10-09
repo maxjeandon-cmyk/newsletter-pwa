@@ -91,7 +91,7 @@
       "periode": "Chronique transverse — les revendications, mot à mot",
       "titre": "Ce qu'ils veulent — les revendications, mot à mot",
       "paragraphes": 8,
-      "octets": 12176
+      "octets": 11883
     },
     {
       "id": "c12",
@@ -99,7 +99,7 @@
       "periode": "Chronique transverse — la répression et ses visages",
       "titre": "La répression et ses visages",
       "paragraphes": 7,
-      "octets": 12396
+      "octets": 12454
     },
     {
       "id": "c13",
@@ -163,7 +163,7 @@
       "periode": "9 octobre 2026 — suivi de la journée",
       "titre": "Le fil continue — 9 octobre 2026",
       "paragraphes": 3,
-      "octets": 3516
+      "octets": 3248
     }
   ],
   "releveSigs": [
@@ -280,7 +280,7 @@
           "periode": "9 octobre 2026 — suivi de la journée",
           "titre": "Le fil continue — 9 octobre 2026",
           "paragraphes": 3,
-          "octets": 3516
+          "octets": 3248
         },
         {
           "id": "c10",
@@ -296,7 +296,7 @@
           "periode": "Chronique transverse — les revendications, mot à mot",
           "titre": "Ce qu'ils veulent — les revendications, mot à mot",
           "paragraphes": 8,
-          "octets": 12176
+          "octets": 11883
         },
         {
           "id": "c12",
@@ -304,7 +304,7 @@
           "periode": "Chronique transverse — la répression et ses visages",
           "titre": "La répression et ses visages",
           "paragraphes": 7,
-          "octets": 12396
+          "octets": 12454
         },
         {
           "id": "c13",

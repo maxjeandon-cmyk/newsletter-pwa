@@ -63,11 +63,11 @@
     },
     {
       "id": "c12p7",
-      "texte": "Côté répression, la liste des visages s'allonge : Blocus lycéens : en marge des images de violence policière, des contenus trompeurs générés par IA (1 media : France 24 — non corrobore) — détail : Si de nombreuses images vérifiées attestent de violences policières lors des manifestations lycéennes en France, une vidéo d'un jeune homme… (Volet automatique du 9 octobre 2026 à 23:27, chapitre « La répression et ses visages » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "Mais la bataille des images a aussi ses faux, et le mouvement doit l'apprendre : en marge des images de violence policière, circulent des contenus trompeurs générés par IA, alerte France 24 — dont une vidéo d'un jeune homme frappé au visage, devenue virale. Aucun faux n'efface le vrai : de nombreuses images vérifiées attestent, elles, des violences policières lors des manifestations lycéennes. Mais à l'heure où chaque semaine compte ses blessés, la vigilance devient une discipline — vérifier avant de partager, parce que la force du dossier des blocus tient à la vérité de ses images.",
       "sources": [
         "France 24"
-      ],
-      "auto": true
+      ]
+      
     }
   ]
 }
