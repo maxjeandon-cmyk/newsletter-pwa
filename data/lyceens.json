@@ -1,5 +1,5 @@
 {
-  "maj": "08/10/2026 23:28",
+  "maj": "09/10/2026 05:28",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -215,12 +215,13 @@
       "date": "08/10/2026",
       "titre": "«L’icône de la révolte» : dans les médias étrangers, Bally Bagayoko érigé en «figure emblématique» des manifestations l…",
       "texte": "Le maire LFI de Saint-Denis a tenté de s’interposer entre policiers et protestataires lors de la manifestation à Paris en soutien au mouvement social des lycées, mardi. Une séquence qui fait le tour …",
-      "source": "BFMTV / Libération / 20 minutes / Europe 1",
+      "source": "BFMTV / Libération / 20 minutes / Europe 1 / Public Sénat",
       "sources": [
         "BFMTV",
         "Libération",
         "20 minutes",
-        "Europe 1"
+        "Europe 1",
+        "Public Sénat"
       ],
       "url": "https://www.liberation.fr/politique/licone-de-la-revolte-dans-les-medias-etrangers-bally-bagayoko-erige-en-figure-emblematique-des-manifestations-lyceennes-20261008_2NCMS4I72ZBQJOEB3NMC67DESA/",
       "verifie": true
@@ -243,10 +244,11 @@
       "date": "08/10/2026",
       "titre": "Manifestations lycéennes : «Ce que nous vivons aujourd'hui, c'est une intifada», s'inquiète un ancien policier",
       "texte": "Dans l'émission \"Pascal Praud et vous\", Franck, ancien policier, alerte sur les tensions qu'il observe dans les manifestations actuelles et redoute qu'elles s'amplifient à l'approche de l'élection pr…",
-      "source": "Europe 1 / BFMTV",
+      "source": "Europe 1 / BFMTV / Public Sénat",
       "sources": [
         "Europe 1",
-        "BFMTV"
+        "BFMTV",
+        "Public Sénat"
       ],
       "url": "https://www.europe1.fr/societe/manifestations-lyceennes-ce-que-nous-vivons-aujourdhui-cest-une-intifada-sinquiete-un-ancien-policier-1132049?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
