@@ -125,8 +125,9 @@ async function main() {
     hVieux.includes('✓ 3 médias</button>') && !hVieux.includes('medias-liste'));
 
   /* --- 3. Délégation globale de dépliage --- */
+  /* v115 : common.js pose DEUX délégations click (badge-medias v114 + btn-replier v115). */
   const pose = ecouteursDocument.filter(e => e.type === 'click');
-  check('écouteur click global posé au chargement (délégation, survit aux re-rendus)', pose.length === 1);
+  check('écouteurs click globaux posés au chargement (délégations pastille v114 + replier v115)', pose.length === 2);
   let cache = true, aria = 'false', classeOuvert = false;
   const fauxBtn = {
     classList: { toggle: (c, v) => { classeOuvert = v; } },

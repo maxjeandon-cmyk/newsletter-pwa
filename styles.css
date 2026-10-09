@@ -188,6 +188,12 @@ main{padding:0 14px;max-width:720px;margin:0 auto}
 .carte-regl > *:not(summary){margin:0 15px}
 .carte-regl p,.carte-regl ul,.carte-regl label,.carte-regl button{margin-left:15px;margin-right:15px}
 .carte-regl ul{padding-left:15px}
+/* v115 : bouton « ▲ Replier » au bas de chaque carte déroulante — referme le
+ * bloc et remonte au titre (même geste que les éditions, règle du 09/10/2026).
+ * Même famille que .btn-sec ; les marges latérales viennent de la règle
+ * .carte-regl button ci-dessus. */
+.btn-replier{display:block;width:100%;margin:10px 0 12px;padding:9px 0;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:10px;font-size:14px;cursor:pointer}
+.install-guide .btn-replier{width:auto;display:block;margin:6px 15px 12px}
 /* v109 : encart « Révolte lycéenne » replié par défaut — titre + date de maj
  * visibles dans le summary, prose dedans une fois déplié. */
 .encart-lyceens{margin:0 0 12px}

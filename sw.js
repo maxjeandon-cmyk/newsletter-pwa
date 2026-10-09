@@ -1,7 +1,12 @@
-/* sw.js v114 — Service worker de la PWA Newsletter.
+/* sw.js v115 — Service worker de la PWA Newsletter.
  * Stratégies : data/ et editions/ network-first (toujours frais en ligne, repli cache hors ligne) ;
  * le reste (coquille, js/, styles) cache-first pour un démarrage instantané.
  * À chaque déploiement de code : incrémenter CACHE (v109 → v110…) pour invalider les caches clients.
+ * v115 : bouton « ▲ Replier » en bas de TOUS les volets déroulants du site
+ * (cartes Réglages + guides d'installation, lettres ONG + Copernicus,
+ * onglet ✊ : encart, en-têtes de section, chapitres, infos gouv/faits) —
+ * boutonReplier() dans js/views/common.js v19, délégation globale idem
+ * pastille, styles.css v115.
  * v114 : pastille « ✓ N médias » CLIQUABLE — elle déplie la liste des médias
  * corroborés de l'événement, chaque nom ouvre l'article de CE média dans un
  * nouvel onglet. compterMedias garde {média → lien} (js/feeds.js v18) ; carte
@@ -36,7 +41,7 @@
  * v105 : lot 5 — badge « ✓ N médias » (corroboration client miroir du serveur, racines+chiffres)
  * sur les articles repris par plusieurs flux, extrait coupé au mot (js/feeds.js v17, views/common.js,
  * styles.css). data/ et tools/ inchangés (les relevés serveur ne comptent que la presse). */
-const CACHE = 'newsletter-v114';
+const CACHE = 'newsletter-v115';
 const ASSETS = [
   './',
   './index.html',

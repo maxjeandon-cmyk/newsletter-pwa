@@ -6,7 +6,7 @@
 import { $, state, esc, getStore, setStore, applyTheme, applyTaille, THEMES } from '../core.js';
 import { ONGLETS_BASE } from '../onglets.js';
 import { chargerChapitres } from '../feeds.js';
-import { renderView } from './common.js';
+import { renderView, boutonReplier } from './common.js';
 import { inscrire, connecter, deconnecter, restaurerSession, synchroniserPrefs, envoyerPrefs, abonne, estConnecte, veutResterConnecte } from '../compte.js';
 import { pushDisponible, prefsNotifications, basculerNotification, desabonner, safariOngletSansPush, ctxNotifications } from '../push.js';
 import { chercherVilles, choisirVille, villeMeteo } from '../meteo.js';
@@ -44,7 +44,7 @@ export async function vueReglages() {
   $('#view').innerHTML =
     '<section class="reglages">' +
     /* --- Profil / compte --- */
-    '<details class="carte-regl" open><summary>👤 Profil</summary><div id="compte-bloc"></div></details>' +
+    '<details class="carte-regl" open><summary>👤 Profil</summary><div id="compte-bloc"></div>' + boutonReplier() + '</details>' +
     /* --- Apparence --- */
     '<details class="carte-regl"><summary>🎨 Apparence</summary>' +
     '<label class="regl-label">Thème' +
@@ -61,34 +61,36 @@ export async function vueReglages() {
     '</select></label>' +
     '<label class="regl-label">Taille du texte <span id="taille-val" class="hint"></span>' +
     '<input type="range" id="in-taille" min="0.85" max="1.3" step="0.05" value="' + (getStore('taillePolice', 1)) + '"/>' +
-    '</label></details>' +
+    '</label>' + boutonReplier() + '</details>' +
     /* --- Ordre des onglets --- */
     '<details class="carte-regl"><summary>🧭 Ordre des onglets</summary>' +
     '<p class="meta-count">Réorganise la barre des chapitres — tes onglets préférés en premier.</p>' +
     '<ul id="ordre-liste" class="ordre-liste"></ul>' +
-    '<button class="btn-sec" id="btn-reset-ordre">Rétablir l\u2019ordre par défaut</button></details>' +
+    '<button class="btn-sec" id="btn-reset-ordre">Rétablir l\u2019ordre par défaut</button>' + boutonReplier() + '</details>' +
     /* --- Chapitres suivis --- */
     '<details class="carte-regl"><summary>🔥 Mes flux suivis</summary>' +
     '<ul id="chapters-editor" class="ordre-liste"></ul>' +
-    '<button class="btn-sec" id="btn-reset-chapters">Tout suivre</button></details>' +
+    '<button class="btn-sec" id="btn-reset-chapters">Tout suivre</button>' + boutonReplier() + '</details>' +
     '<details class="carte-regl"><summary>📍 Localisation météo</summary>' +
     '<p class="meta-count">La ville choisie s\'affiche en tête de l\'édition du jour (météo Open-Meteo) et suit ton compte sur tous tes appareils.</p>' +
     '<p class="hint" id="meteo-actuelle"></p>' +
     '<label class="regl-label">Rechercher une ville' +
     '<input type="search" id="in-ville" placeholder="Ex. : Besançon, Lyon, Québec…" autocomplete="off"/></label>' +
     '<button class="btn-sec" id="btn-ville">Chercher</button>' +
-    '<div id="meteo-resultats"></div>' +
+    '<div id="meteo-resultats"></div>' + boutonReplier() +
     '</details>' +
     /* --- Maintenance + Installation (guide par navigateur) --- */
     '<details class="carte-regl"><summary>🔔 Notifications</summary>' +
-    '<div id="notifs-bloc"></div></details>' +
+    '<div id="notifs-bloc"></div>' + boutonReplier() + '</details>' +
     '<details class="carte-regl"><summary>🧰 Maintenance</summary>' +
     '<button id="btn-purge">Purger le cache</button>' +
     '<p class="hint" id="ver-info" style="min-height:16px;margin:8px 0 0"></p>' +
+    boutonReplier() +
     '</details>' +
     '<details class="carte-regl"><summary>📲 Installer sur l\u2019écran d\u2019accueil</summary>' +
     '<p class="meta-count">L\u2019app s\u2019installe comme une vraie application : icône dédiée, plein écran, fonctionne hors ligne.</p>' +
     '<div id="guide-install"></div>' + BIENTOT +
+    boutonReplier() +
     '</details></section>';
 
   $('#sel-theme').onchange = e => { setStore('theme', e.target.value); applyTheme(e.target.value); };
@@ -283,6 +285,7 @@ function rendreGuideInstall() {
     return '<details class="install-guide"' + (i === 0 ? ' open' : '') + '>' +
       '<summary>' + esc(g.titre) + (i === 0 ? ' — recommandé pour ton appareil' : '') + '</summary>' +
       '<ol>' + g.etapes.map(e => '<li>' + esc(e) + '</li>').join('') + '</ol>' +
+      boutonReplier() +
       '</details>';
   }).join('');
 }

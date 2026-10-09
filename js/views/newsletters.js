@@ -6,6 +6,7 @@
  * data/newsletters.json (network-first — modifier les données suffit, sans
  * livraison de code). Règle d’hygiène : tout texte des données passe par esc(). */
 import { $, state, esc } from '../core.js';
+import { boutonReplier } from './common.js';
 
 /* Chargement paresseux, en cache dans state après le premier passage. */
 async function chargerNewsletters() {
@@ -31,6 +32,7 @@ function carteCopernicus() {
     (c.lien_rapport ? '<a class="filter-btn" href="' + esc(c.lien_rapport) + '" target="_blank" rel="noopener">Tous les bulletins</a>' : '') +
     '</div>' +
     '<p class="hint">Mis à jour le ' + esc(c.maj || '?') + ' — le bulletin mensuel Copernicus paraît vers le 10 de chaque mois ; rafraîchi par la maintenance quotidienne.</p>' +
+    boutonReplier() +
     '</details>';
 }
 
@@ -52,6 +54,7 @@ function carteOng(o) {
     (o.lien_autre ? '<a class="filter-btn" href="' + esc(o.lien_autre) + '" target="_blank" rel="noopener">' + esc(o.libelle_autre || 'En savoir plus') + '</a>' : '') +
     (o.lien_actu ? '<a class="filter-btn" href="' + esc(o.lien_actu) + '" target="_blank" rel="noopener">📰 Lire l’actualité du site</a>' : '') +
     '</div>' +
+    boutonReplier() +
     '</details>';
 }
 

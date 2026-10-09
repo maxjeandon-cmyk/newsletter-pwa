@@ -39,7 +39,7 @@
  * Règle d'hygiène : tout texte des données passe par esc().
  */
 import { $, state, esc } from '../core.js';
-import { renderView } from './common.js';
+import { renderView, boutonReplier } from './common.js';
 
 const SOUS_ONGLETS_LYCEENS = () => [
   { id: 'etudiants', nom: '🎓 Version des Lycéens' },
@@ -135,6 +135,7 @@ function chapitreHtml(ch, dernier, ouvert) {
   return '<details class="carte-regl chapitre-etudiant"' + (ouvert ? ' open' : '') + ' id="chapitre-' + esc(String(ch.id || '')) + '">' +
     '<summary>' + esc(ch.titre || '') + (ch.periode ? ' <span class="meta-count">' + esc(ch.periode) + '</span>' : '') + '</summary>' +
     ps.map((p, i) => paragrapheHtml(p, dernier && i === ps.length - 1)).join('') +
+    boutonReplier('Replier le chapitre') +
     '</details>';
 }
 
@@ -146,6 +147,7 @@ function enteteSection(section, supplementHtml) {
     '<summary>🎓 ' + esc(section.titre || '') + '</summary>' +
     (section.description ? '<p class="meta-count">' + esc(section.description) + '</p>' : '') +
     (supplementHtml || '') +
+    boutonReplier() +
     '</details>';
 }
 
@@ -247,6 +249,7 @@ function carteInfo(i) {
     (i.url
       ? '<div class="form-actions"><a class="filter-btn active" href="' + esc(i.url) + '" target="_blank" rel="noopener">📰 Lire l\u2019article source</a></div>'
       : '<p class="hint">Pas de lien public — dépêche ou communiqué relevé par la maintenance.</p>') +
+    boutonReplier() +
     '</details>';
 }
 
@@ -314,6 +317,7 @@ export function vueLyceens() {
     (d.note ? '<p class="hint">🔎 ' + esc(d.note) + '</p>' : '') +
     (d.prochaine_echeance ? '<p class="meta-count">📅 ' + esc(d.prochaine_echeance) + '</p>' : '') +
     (d.maj ? '<p class="hint">Rafraîchi automatiquement toutes les 6 h par la maintenance — la prose, elle, vit aux éditions.</p>' : '') +
+    boutonReplier() +
     '</details>' +
     sousOnglets(sous) +
     (d.erreur

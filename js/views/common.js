@@ -5,7 +5,9 @@
  * comme avant) ; la pastille et la liste des médias corroborés vivent AU-DESSUS du
  * voile (z-index:2 dans styles.css) et captent leurs propres clics. Le dépliage
  * passe par une délégation globale posée une fois au chargement : elle survit à
- * tous les re-rendus des vues. */
+ * tous les re-rendus des vues.
+ * v115 (CACHE v115) : boutonReplier() — « ▲ Replier » au bas de chaque carte
+ * déroulante du site (Réglages, Newsletters, onglet ✊), délégation idem. */
 import { state, esc, urlSure } from '../core.js';
 import { syncHash } from '../router.js';
 
@@ -50,6 +52,24 @@ if (typeof document !== 'undefined' && typeof document.addEventListener === 'fun
     liste.hidden = !liste.hidden;
     b.setAttribute('aria-expanded', liste.hidden ? 'false' : 'true');
     b.classList.toggle('ouvert', !liste.hidden);
+  });
+}
+
+/* v115 : bouton « ▲ Replier » en bas de chaque carte déroulante — referme le
+ * bloc et remonte à son titre, d'un seul geste (même mécanique que les
+ * éditions, règle du 09/10/2026). Construction partagée : chaque vue qui bâtit
+ * un <details> l'appelle juste avant </details> ; la gestion du clic passe par
+ * une délégation globale posée une fois au chargement du module — elle survit
+ * à tous les re-renders, comme celle de la pastille. */
+export function boutonReplier(libelle) {
+  return '<button type="button" class="btn-replier">▲ ' + (libelle || 'Replier') + '</button>';
+}
+if (typeof document !== 'undefined' && typeof document.addEventListener === 'function') {
+  document.addEventListener('click', e => {
+    const b = e.target && e.target.closest ? e.target.closest('.btn-replier') : null;
+    if (!b) return;
+    const d = b.closest('details');
+    if (d) { d.removeAttribute('open'); d.scrollIntoView({ block: 'start' }); }
   });
 }
 
