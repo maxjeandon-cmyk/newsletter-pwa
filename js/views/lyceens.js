@@ -28,6 +28,9 @@
  * v113 : EXCEPTION — le chapitre du jour (index.chapitreJour) reste ouvert par
  * défaut : le visiteur qui revient voir « quoi de neuf » tombe directement sur
  * le fil en cours, tous les autres restent repliés.
+ * v116 : jumeau du bouton de fin — « ⬆️ Revenir au début du texte » au bout du
+ * fil (initSection), qui remonte à la carte d'en-tête (#entete-section),
+ * l'ouvre et la surligne (demande de Maxime du 09/10/2026).
  * Données :
  *  - data/lyceens.json (network-first, versions gouvernement + faits vérifiées) ;
  *  - data/etudiants/index.json, chargé UNE seule fois, puis les fichiers
@@ -143,7 +146,10 @@ function chapitreHtml(ch, dernier, ouvert) {
  * (même style que l'encart v109), repliée par défaut — la description est
  * méthodologique, les chapitres sont la matière ; on les laisse respirer. */
 function enteteSection(section, supplementHtml) {
-  return '<details class="carte-regl entete-section">' +
+  /* v116 : id stable — c'est la cible du bouton « ⬆️ Revenir au début du
+   * texte » : le début du texte EST cette carte (description, intro, compteur,
+   * note y vivent depuis la v111). */
+  return '<details class="carte-regl entete-section" id="entete-section">' +
     '<summary>🎓 ' + esc(section.titre || '') + '</summary>' +
     (section.description ? '<p class="meta-count">' + esc(section.description) + '</p>' : '') +
     (supplementHtml || '') +
@@ -185,7 +191,16 @@ async function initSection(conteneur, idSection, avecFinTexte) {
    * tous les autres restent repliés (v112). */
   const jour = etu.index && etu.index.chapitreJour && etu.index.chapitreJour.id;
   conteneur.innerHTML = chapitres.map((c, i) =>
-    chapitreHtml(c, avecFinTexte && i === chapitres.length - 1, c.id === jour)).join('');
+    chapitreHtml(c, avecFinTexte && i === chapitres.length - 1, c.id === jour)).join('') +
+    /* v116 : jumeau du bouton de fin — « ⬆️ Revenir au début du texte » vit au
+     * bout du fil, après le dernier chapitre (le ⬇️ est en tête, celui-ci
+     * referme la boucle). Câblé ici : le bouton n'existe qu'après le rendu des
+     * chapitres, wireBlocEtudiants est passé avant. */
+    (avecFinTexte
+      ? '<div class="form-actions"><button class="filter-btn active" id="btn-debut-texte" type="button">⬆️ Revenir au début du texte</button></div>'
+      : '');
+  const haut = document.getElementById('btn-debut-texte');
+  if (haut) haut.onclick = () => { revenirDebutTexte(); };
 }
 
 /* « ⬇️ Aller à la fin du texte » : attend que les chapitres soient chargés
@@ -206,6 +221,22 @@ async function allerFinTexte() {
   fin.style.transition = 'background-color 0.3s';
   fin.style.backgroundColor = 'rgba(255, 213, 79, 0.45)';
   setTimeout(() => { fin.style.backgroundColor = ''; }, 1600);
+}
+
+/* « ⬆️ Revenir au début du texte » (v116) : jumeau du bouton de fin — le début
+ * du texte est l'en-tête de section (la description, l'intro, le compteur et
+ * la note y vivent depuis la v111) : l'ouvrir avant de défiler, comme
+ * allerFinTexte ouvre la carte qui porte l'ancre fin-texte, puis surligner
+ * brièvement la carte d'arrivée. */
+function revenirDebutTexte() {
+  const debut = document.getElementById('entete-section') || document.getElementById('bloc-etudiants');
+  if (!debut) return;
+  const carte = typeof debut.closest === 'function' ? debut.closest('details') : null;
+  if (carte) carte.open = true;
+  if (typeof debut.scrollIntoView === 'function') debut.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  debut.style.transition = 'background-color 0.3s';
+  debut.style.backgroundColor = 'rgba(255, 213, 79, 0.45)';
+  setTimeout(() => { debut.style.backgroundColor = ''; }, 1600);
 }
 
 /* Bloc du sous-onglet « Version des Lycéens » : entête de section — la carte

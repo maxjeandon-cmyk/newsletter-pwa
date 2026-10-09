@@ -186,7 +186,8 @@ async function main() {
   const css = fs.readFileSync(path.join(RACINE, 'styles.css'), 'utf8');
   check('styles.css : regle .btn-replier presente', /\.btn-replier\{/.test(css));
   const sw = fs.readFileSync(path.join(RACINE, 'sw.js'), 'utf8');
-  check('sw.js : CACHE v115', /CACHE = 'newsletter-v115'/.test(sw));
+  const mV = /CACHE = 'newsletter-v(\d+)'/.exec(sw);
+  check('sw.js : CACHE >= v115 (bump a chaque livraison de code)', !!mV && +mV[1] >= 115);
 
   console.log('replier-site : ' + passes + ' test(s) vert(s)' + (echecs ? ', ' + echecs + ' ECHEC(S)' : ''));
   process.exit(echecs ? 1 : 0);
