@@ -14,6 +14,9 @@ export const state = {
   archiveMonth: null,      // mois affiché dans les Archives (YYYY-MM)
   archiveSub: 'editions',  // sous-onglet Archives : 'editions' | 'droit' | 'economie' (v20)
   edition: null,           // édition du jour (editions/YYYY-MM-DD.json)
+  recettesSub: 'idees',     // sous-onglet Recettes : 'idees' | 'chaines' | 'favorites'
+  recettesCatalogue: [],   // catalogue de recettes (data/recettes*.json)
+  chainesBase: [],          // chaînes de cuisine de base (data/chaines.json)
   archiveIdx: [],          // liste des éditions (editions/latest.json)
   weeksIdx: null,          // index des récaps hebdo (editions/semaines/index.json)
   archivesThema: {},        // index des archives thématiques (editions/archives/{droit,economie}.json, v20)
@@ -45,7 +48,7 @@ export function setStore(k, v) {
  * « Purger le cache » — un média ajouté ne doit jamais disparaître par accident).
  * v19 : mediasAffiches (médias « masqués par défaut » réaffichés ici) et jeton
  * (GitHub, publication pour tous les écrans) sont aussi des préférences. */
-const GARDEES = ['theme', 'masques', 'afpOnly', 'mediasPerso', 'mediasMasques', 'mediasAffiches', 'jeton', 'compte.abonne', 'compte.session', 'compte.souvenir', 'taillePolice', 'meteo'];
+const GARDEES = ['theme', 'masques', 'afpOnly', 'mediasPerso', 'mediasMasques', 'mediasAffiches', 'jeton', 'compte.abonne', 'compte.session', 'compte.souvenir', 'taillePolice', 'meteo', 'recettesSemaine', 'recettesEviter', 'recettesFav', 'chainesPerso'];
 export function purgeStore() {
   Object.keys(localStorage)
     .filter(k => k.startsWith(PREFIX) && !GARDEES.includes(k.slice(PREFIX.length)))

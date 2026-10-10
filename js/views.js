@@ -14,6 +14,7 @@ import { vueMedias, majMedias as maj, mediaVisible } from './views/medias.js';
 import { vueReglages } from './views/reglages.js';
 import { vueVideos } from './views/videos.js';
 import { vueLyceens } from './views/lyceens.js';
+import { vueRecettes } from './views/recettes.js';
 
 export const renderView = rendu;
 export const majMedias = maj;
@@ -21,7 +22,7 @@ export { mediaVisible };
 
 /* v108 : onglets Lecture et Feedback supprimes (voulu par Maxime) ; un hash
  * #lecture/#feedback restant retombe sur l'edition. */
-Object.entries({ edition: vueEdition, archives: vueArchives, climat: vueNewsletters, articles: vueArticles, medias: vueMedias, videos: vueVideos, reglages: vueReglages, lyceens: vueLyceens })
+Object.entries({ edition: vueEdition, archives: vueArchives, climat: vueNewsletters, articles: vueArticles, medias: vueMedias, videos: vueVideos, reglages: vueReglages, lyceens: vueLyceens, recettes: vueRecettes })
   .forEach(([id, vue]) => enregistrerVue(id, vue));
 
 /* Barre d'onglets : definitions centrales dans onglets.js — tout nouvel

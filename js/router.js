@@ -27,6 +27,8 @@ export function hashFromState() {
   } else if (h === 'edition') {
     /* v96 : lien profond vers un chapitre déroulant de l'édition (partage) */
     if (state.editionChapitre) h += '?c=' + encodeURIComponent(state.editionChapitre);
+  } else if (h === 'recettes') {
+    if (state.recettesSub !== 'idees') h += '/' + state.recettesSub;
   }
   return h;
 }
@@ -58,6 +60,9 @@ export function stateFromHash() {
      * natif — plus d'iframe dans l'onglet Édition). */
     const c = new URLSearchParams(query || '').get('c');
     state.editionChapitre = /^[a-z0-9-]+$/i.test(c || '') ? c : null;
+  }
+  if (tab === 'recettes') {
+    state.recettesSub = ['idees', 'chaines', 'favorites'].includes(parties[1]) ? parties[1] : 'idees';
   }
   if (tab === 'videos') {
     state.videoLecture = /^[\w-]{11}$/.test(parties[1]) ? { videoId: parties[1] } : null;
