@@ -1,0 +1,305 @@
+{
+  "recettes": [
+    {
+      "id": "porridge-avoine-banane",
+      "nom": "Porridge avoine-banane",
+      "emoji": "🥣",
+      "type": "petit-dej",
+      "ingredients": ["flocons d'avoine", "lait", "banane", "miel"],
+      "eviter": ["gluten", "produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=porridge+avoine+banane",
+      "source": "Marmiton"
+    },
+    {
+      "id": "pancakes-americains",
+      "nom": "Pancakes américains",
+      "emoji": "🥞",
+      "type": "petit-dej",
+      "ingredients": ["farine", "lait", "oeufs", "levure"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=pancakes",
+      "source": "Marmiton"
+    },
+    {
+      "id": "smoothie-bowl-fraise",
+      "nom": "Smoothie bowl fraise-kaki",
+      "emoji": "🍓",
+      "type": "petit-dej",
+      "ingredients": ["fraises", "banane", "kaki", "graines de chia"],
+      "eviter": [],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=smoothie+bowl+fraise",
+      "source": "Marmiton"
+    },
+    {
+      "id": "oeufs-brouilles-fromage",
+      "nom": "Œufs brouillés au fromage",
+      "emoji": "🍳",
+      "type": "petit-dej",
+      "ingredients": ["oeufs", "gruyère", "beurre"],
+      "eviter": ["oeufs", "produits-laitiers"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=oeufs+brouilles",
+      "source": "Marmiton"
+    },
+    {
+      "id": "tartine-avocat-oeuf",
+      "nom": "Tartine avocat-œuf poché",
+      "emoji": "🥑",
+      "type": "petit-dej",
+      "ingredients": ["pain complet", "avocat", "œuf", "citron"],
+      "eviter": ["gluten", "oeufs"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=tartine+avocat+oeuf",
+      "source": "Marmiton"
+    },
+    {
+      "id": "yaourt-granola-fruits",
+      "nom": "Yaourt, granola et fruits rouges",
+      "emoji": "🫐",
+      "type": "petit-dej",
+      "ingredients": ["yaourt", "granola", "fruits rouges", "miel"],
+      "eviter": ["produits-laitiers", "gluten", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=granola+yaourt",
+      "source": "Marmiton"
+    },
+    {
+      "id": "pain-perdu",
+      "nom": "Pain perdu",
+      "emoji": "🍞",
+      "type": "petit-dej",
+      "ingredients": ["pain de mie", "oeufs", "lait", "sucre"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=pain+perdu",
+      "source": "Marmiton"
+    },
+    {
+      "id": "chia-pudding-amande",
+      "nom": "Pudding de chia au lait d'amande",
+      "emoji": "🥥",
+      "type": "petit-dej",
+      "ingredients": ["graines de chia", "lait d'amande", "sirop d'érable"],
+      "eviter": ["fruits-a-coque", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=pudding+chia",
+      "source": "Marmiton"
+    },
+    {
+      "id": "crepes-classiques",
+      "nom": "Crêpes classiques",
+      "emoji": "🥞",
+      "type": "petit-dej",
+      "ingredients": ["farine", "oeufs", "lait", "beurre"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=crepes",
+      "source": "Marmiton"
+    },
+    {
+      "id": "madeleines-maison",
+      "nom": "Madeleines maison",
+      "emoji": "🐚",
+      "type": "petit-dej",
+      "ingredients": ["farine", "oeufs", "beurre", "sucre"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=madeleines",
+      "source": "Marmiton"
+    },
+    {
+      "id": "fruits-miel-noisettes",
+      "nom": "Salade de fruits, miel et noisettes",
+      "emoji": "🍯",
+      "type": "petit-dej",
+      "ingredients": ["fruits de saison", "noisettes", "miel"],
+      "eviter": ["fruits-a-coque", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=salade+de+fruits",
+      "source": "Marmiton"
+    },
+    {
+      "id": "omelette-herbes",
+      "nom": "Omelette aux fines herbes",
+      "emoji": "🌿",
+      "type": "petit-dej",
+      "ingredients": ["oeufs", "ciboulette", "persil"],
+      "eviter": ["oeufs"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=omelette+fines+herbes",
+      "source": "Marmiton"
+    },
+    {
+      "id": "tartine-puree-amande-banane",
+      "nom": "Tartine purée d'amande-banane",
+      "emoji": "🍌",
+      "type": "petit-dej",
+      "ingredients": ["pain", "purée d'amande", "banane"],
+      "eviter": ["gluten", "fruits-a-coque"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=tartine+amande",
+      "source": "Marmiton"
+    },
+    {
+      "id": "fromage-blanc-miel",
+      "nom": "Fromage blanc, graines et miel",
+      "emoji": "🥄",
+      "type": "petit-dej",
+      "ingredients": ["fromage blanc", "graines de tournesol", "miel"],
+      "eviter": ["produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=fromage+blanc+miel",
+      "source": "Marmiton"
+    },
+    {
+      "id": "muffins-banane-noix",
+      "nom": "Muffins banane-noix",
+      "emoji": "🧁",
+      "type": "petit-dej",
+      "ingredients": ["farine", "banane", "noix", "oeufs"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers", "fruits-a-coque", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=muffins+banane",
+      "source": "Marmiton"
+    },
+    {
+      "id": "smoothie-mangue-ananas",
+      "nom": "Smoothie mangue-ananas",
+      "emoji": "🥭",
+      "type": "petit-dej",
+      "ingredients": ["mangue", "ananas", "jus d'orange"],
+      "eviter": [],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=smoothie+mangue",
+      "source": "Marmiton"
+    },
+    {
+      "id": "gaufres-classiques",
+      "nom": "Gaufres classiques",
+      "emoji": "🧇",
+      "type": "petit-dej",
+      "ingredients": ["farine", "oeufs", "lait", "sucre"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=gaufres",
+      "source": "Marmiton"
+    },
+    {
+      "id": "brouillade-epinards-feta",
+      "nom": "Brouillade œufs-épinards-fêta",
+      "emoji": "🥬",
+      "type": "petit-dej",
+      "ingredients": ["oeufs", "épinards", "fêta"],
+      "eviter": ["oeufs", "produits-laitiers"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=oeufs+brouilles+epinards",
+      "source": "Marmiton"
+    },
+    {
+      "id": "compote-pomme-cannelle",
+      "nom": "Compote pomme-cannelle maison",
+      "emoji": "🍎",
+      "type": "petit-dej",
+      "ingredients": ["pommes", "cannelle"],
+      "eviter": [],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=compote+pomme+cannelle",
+      "source": "Marmiton"
+    },
+    {
+      "id": "bagel-saumon",
+      "nom": "Bagel saumon-fromage frais",
+      "emoji": "🥯",
+      "type": "petit-dej",
+      "ingredients": ["bagel", "saumon fumé", "fromage frais", "aneth"],
+      "eviter": ["gluten", "poisson", "produits-laitiers"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=bagel+saumon",
+      "source": "Marmiton"
+    },
+    {
+      "id": "granola-chocolat-coco",
+      "nom": "Granola maison chocolat-coco",
+      "emoji": "🍫",
+      "type": "petit-dej",
+      "ingredients": ["flocons d'avoine", "noix de coco", "chocolat noir", "sirop d'érable"],
+      "eviter": ["gluten", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=granola+maison",
+      "source": "Marmiton"
+    },
+    {
+      "id": "overnight-oats-pomme",
+      "nom": "Overnight oats pomme-cannelle",
+      "emoji": "🍏",
+      "type": "petit-dej",
+      "ingredients": ["flocons d'avoine", "yaourt", "pomme", "cannelle"],
+      "eviter": ["gluten", "produits-laitiers"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=overnight+oats",
+      "source": "Marmiton"
+    },
+    {
+      "id": "croissant-confiture",
+      "nom": "Croissants et confiture",
+      "emoji": "🥐",
+      "type": "petit-dej",
+      "ingredients": ["croissants", "confiture", "beurre"],
+      "eviter": ["gluten", "produits-laitiers", "oeufs", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=confiture+maison",
+      "source": "Marmiton"
+    },
+    {
+      "id": "oeuf-cocotte-champignons",
+      "nom": "Œufs cocotte aux champignons",
+      "emoji": "🍄",
+      "type": "petit-dej",
+      "ingredients": ["oeufs", "champignons", "crème"],
+      "eviter": ["oeufs", "produits-laitiers"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=oeufs+cocotte",
+      "source": "Marmiton"
+    },
+    {
+      "id": "tartine-beurre-confiture",
+      "nom": "Tartines beurre-confiture",
+      "emoji": "🍞",
+      "type": "petit-dej",
+      "ingredients": ["pain", "beurre", "confiture"],
+      "eviter": ["gluten", "produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=tartine+confiture",
+      "source": "Marmiton"
+    },
+    {
+      "id": "tartine-chevre-miel",
+      "nom": "Tartine chèvre-miel-noix",
+      "emoji": "🐐",
+      "type": "petit-dej",
+      "ingredients": ["pain", "chèvre", "miel", "noix"],
+      "eviter": ["gluten", "produits-laitiers", "sucre", "fruits-a-coque"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=tartine+chevre+miel",
+      "source": "Marmiton"
+    },
+    {
+      "id": "salade-fruits-frais",
+      "nom": "Salade de fruits frais",
+      "emoji": "🍑",
+      "type": "petit-dej",
+      "ingredients": ["fruits de saison", "jus de citron"],
+      "eviter": [],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=salade+de+fruits",
+      "source": "Marmiton"
+    },
+    {
+      "id": "lait-chocolat-biscottes",
+      "nom": "Chocolat chaud et biscottes",
+      "emoji": "🥛",
+      "type": "petit-dej",
+      "ingredients": ["lait", "cacao", "biscottes"],
+      "eviter": ["produits-laitiers", "gluten", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=chocolat+chaud",
+      "source": "Marmiton"
+    },
+    {
+      "id": "oeufs-mollets-epinards",
+      "nom": "Œufs mollets, épinards et mouillettes",
+      "emoji": "🥚",
+      "type": "petit-dej",
+      "ingredients": ["oeufs", "épinards", "pain grillé"],
+      "eviter": ["oeufs", "gluten"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=oeufs+mollets",
+      "source": "Marmiton"
+    },
+    {
+      "id": "bowl-quinoa-fruits-secs",
+      "nom": "Bowl quinoa, amandes et raisins",
+      "emoji": "🥣",
+      "type": "petit-dej",
+      "ingredients": ["quinoa", "amandes", "raisins secs", "sirop d'érable"],
+      "eviter": ["fruits-a-coque", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=quinoa+petit+dejeuner",
+      "source": "Marmiton"
+    }
+  ],
+  "suite": ["data/recettes-2.json", "data/recettes-3.json", "data/recettes-4.json"]
+}

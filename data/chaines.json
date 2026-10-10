@@ -1,0 +1,116 @@
+{
+  "chaines": [
+    {
+      "id": "herve-cuisine",
+      "nom": "Hervé Cuisine",
+      "emoji": "👨‍🍳",
+      "plateforme": "youtube",
+      "url": "https://www.youtube.com/channel/UCgCEqjKOabA2_IvZ-agkQCQ",
+      "ligne": "La première chaîne cuisine de France, plus de 400 recettes"
+    },
+    {
+      "id": "fastgood-cuisine",
+      "nom": "FastGoodCuisine",
+      "emoji": "⚡",
+      "plateforme": "youtube",
+      "url": "https://www.youtube.com/channel/UCKq9JxyISqBHDd-fXfV3QtQ",
+      "ligne": "Cuisine gourmande, simple et sans prise de tête"
+    },
+    {
+      "id": "atelier-roxane",
+      "nom": "L'atelier de Roxane",
+      "emoji": "🧁",
+      "plateforme": "youtube",
+      "url": "https://www.youtube.com/channel/UC3rxwrZSiTp6Kk2RXcyHtCA",
+      "ligne": "Pâtisserie et gourmandises à la portée de tous"
+    },
+    {
+      "id": "chaine-750g",
+      "nom": "750g",
+      "emoji": "🥘",
+      "plateforme": "youtube",
+      "url": "https://www.youtube.com/channel/UC8qxftC5pwxJZsfuLrlClJA",
+      "ligne": "Recettes, techniques et astuces avec les chefs"
+    },
+    {
+      "id": "marmiton-youtube",
+      "nom": "Marmiton",
+      "emoji": "🍲",
+      "plateforme": "youtube",
+      "url": "https://www.youtube.com/c/marmiton",
+      "ligne": "La chaîne du site de recettes n°1 en France"
+    },
+    {
+      "id": "justincooking",
+      "nom": "JustInCooking",
+      "emoji": "🍰",
+      "plateforme": "youtube",
+      "url": "https://www.youtube.com/c/JustInCooking",
+      "ligne": "Pâtisserie et cuisine maison avec Justine"
+    },
+    {
+      "id": "insta-atelier-roxane",
+      "nom": "L'atelier de Roxane",
+      "emoji": "🧁",
+      "plateforme": "instagram",
+      "url": "https://www.instagram.com/latelierderoxane/",
+      "ligne": "Les pâtisseries de Roxane en photos"
+    },
+    {
+      "id": "insta-mercotte",
+      "nom": "Mercotte",
+      "emoji": "🥮",
+      "plateforme": "instagram",
+      "url": "https://www.instagram.com/lacuisinedemercotte/",
+      "ligne": "La cuisine de Mercotte, pâtisserie fine et gourmande"
+    },
+    {
+      "id": "insta-piege",
+      "nom": "Jean-François Piège",
+      "emoji": "⭐",
+      "plateforme": "instagram",
+      "url": "https://www.instagram.com/jeanfrancoispiege/",
+      "ligne": "Le chef étoilé en cuisine maison"
+    },
+    {
+      "id": "insta-fastgood",
+      "nom": "FastGoodCuisine",
+      "emoji": "⚡",
+      "plateforme": "instagram",
+      "url": "https://www.instagram.com/fastgoodcuisine/",
+      "ligne": "Les vidéos gourmandes de la chaîne"
+    },
+    {
+      "id": "site-marmiton",
+      "nom": "Marmiton",
+      "emoji": "🍲",
+      "plateforme": "site",
+      "url": "https://www.marmiton.org/",
+      "ligne": "Des dizaines de milliers de recettes notées par la communauté"
+    },
+    {
+      "id": "site-jdf-cuisine",
+      "nom": "Journal des Femmes Cuisine",
+      "emoji": "📖",
+      "plateforme": "site",
+      "url": "https://cuisine.journaldesfemmes.fr/",
+      "ligne": "Plus de 60 000 recettes et des menus de saison"
+    },
+    {
+      "id": "site-cuisineaz",
+      "nom": "CuisineAZ",
+      "emoji": "🌐",
+      "plateforme": "site",
+      "url": "https://www.cuisineaz.com/",
+      "ligne": "Recettes faciles et rapides, astuces du quotidien"
+    },
+    {
+      "id": "site-750g",
+      "nom": "750g",
+      "emoji": "🥘",
+      "plateforme": "site",
+      "url": "https://www.750g.com/",
+      "ligne": "80 000 recettes, menus et conseils de chefs"
+    }
+  ]
+}

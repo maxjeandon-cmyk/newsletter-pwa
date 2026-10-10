@@ -1,0 +1,304 @@
+{
+  "recettes": [
+    {
+      "id": "soupe-oignon-gratinee",
+      "nom": "Soupe à l'oignon gratinée",
+      "emoji": "🧅",
+      "type": "diner",
+      "ingredients": ["oignons", "pain", "gruyère", "bouillon"],
+      "eviter": ["gluten", "produits-laitiers"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=soupe+a+l+oignon",
+      "source": "Marmiton"
+    },
+    {
+      "id": "veloute-carottes-gingembre",
+      "nom": "Velouté carottes-gingembre",
+      "emoji": "🥕",
+      "type": "diner",
+      "ingredients": ["carottes", "gingembre", "oignon", "lait de coco"],
+      "eviter": [],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=veloute+carottes",
+      "source": "Marmiton"
+    },
+    {
+      "id": "gratin-pates-fromage",
+      "nom": "Gratin de pâtes au fromage",
+      "emoji": "🧀",
+      "type": "diner",
+      "ingredients": ["pâtes", "crème", "fromage à gratiner"],
+      "eviter": ["gluten", "produits-laitiers"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=gratin+de+pates",
+      "source": "Marmiton"
+    },
+    {
+      "id": "tajine-poulet-olives",
+      "nom": "Tajine de poulet aux olives",
+      "emoji": "🫒",
+      "type": "diner",
+      "ingredients": ["poulet", "olives", "citron confit", "épices à tajine"],
+      "eviter": ["viande"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=tajine+poulet+olives",
+      "source": "Marmiton"
+    },
+    {
+      "id": "chili-con-carne",
+      "nom": "Chili con carne",
+      "emoji": "🌶️",
+      "type": "diner",
+      "ingredients": ["boeuf haché", "haricots rouges", "tomates"],
+      "eviter": ["viande"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=chili+con+carne",
+      "source": "Marmiton"
+    },
+    {
+      "id": "salade-lentilles-feta",
+      "nom": "Salade de lentilles à la fêta",
+      "emoji": "🥗",
+      "type": "diner",
+      "ingredients": ["lentilles", "fêta", "tomates", "oignon rouge"],
+      "eviter": ["produits-laitiers"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=salade+lentilles",
+      "source": "Marmiton"
+    },
+    {
+      "id": "saumon-riz-basmati",
+      "nom": "Pavé de saumon, riz basmati",
+      "emoji": "🐟",
+      "type": "diner",
+      "ingredients": ["saumon", "riz basmati", "courgette", "citron"],
+      "eviter": ["poisson"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=saumon+riz",
+      "source": "Marmiton"
+    },
+    {
+      "id": "ratatouille-riz",
+      "nom": "Ratatouille et riz",
+      "emoji": "🍆",
+      "type": "diner",
+      "ingredients": ["aubergine", "courgettes", "tomates", "poivrons"],
+      "eviter": [],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=ratatouille",
+      "source": "Marmiton"
+    },
+    {
+      "id": "flammekueche",
+      "nom": "Flammekueche",
+      "emoji": "🔥",
+      "type": "diner",
+      "ingredients": ["pâte à pain", "crème", "lardons", "oignons"],
+      "eviter": ["gluten", "produits-laitiers", "porc"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=flammekueche",
+      "source": "Marmiton"
+    },
+    {
+      "id": "veloute-potimarron-noisette",
+      "nom": "Velouté potimarron-noisettes",
+      "emoji": "🎃",
+      "type": "diner",
+      "ingredients": ["potimarron", "noisettes", "oignon"],
+      "eviter": ["fruits-a-coque"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=veloute+potimarron",
+      "source": "Marmiton"
+    },
+    {
+      "id": "gratin-tomates-mozzarella",
+      "nom": "Gratin pommes de terre-tomates-mozzarella",
+      "emoji": "🍅",
+      "type": "diner",
+      "ingredients": ["pommes de terre", "tomates", "mozzarella", "basilic"],
+      "eviter": ["produits-laitiers"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=gratin+tomates+mozzarella",
+      "source": "Marmiton"
+    },
+    {
+      "id": "quiche-sans-pate-epinards",
+      "nom": "Quiche sans pâte épinards-fêta",
+      "emoji": "🥬",
+      "type": "diner",
+      "ingredients": ["épinards", "oeufs", "fêta", "fromage frais"],
+      "eviter": ["oeufs", "produits-laitiers"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=quiche+sans+pate",
+      "source": "Marmiton"
+    },
+    {
+      "id": "wok-nouilles-poulet-gingembre",
+      "nom": "Wok de nouilles poulet-gingembre",
+      "emoji": "🍜",
+      "type": "diner",
+      "ingredients": ["nouilles chinoises", "poulet", "gingembre", "sauce soja"],
+      "eviter": ["viande", "gluten", "oeufs", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=wok+nouilles+poulet",
+      "source": "Marmiton"
+    },
+    {
+      "id": "soupe-nouilles-poulet",
+      "nom": "Soupe de nouilles au poulet",
+      "emoji": "🍲",
+      "type": "diner",
+      "ingredients": ["nouilles", "poulet", "bouillon", "carottes"],
+      "eviter": ["viande", "gluten"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=soupe+nouilles+poulet",
+      "source": "Marmiton"
+    },
+    {
+      "id": "boeuf-bourguignon",
+      "nom": "Bœuf bourguignon",
+      "emoji": "🍷",
+      "type": "diner",
+      "ingredients": ["bœuf", "lardons", "carottes", "vin rouge"],
+      "eviter": ["viande", "porc", "gluten"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=boeuf+bourguignon",
+      "source": "Marmiton"
+    },
+    {
+      "id": "endives-jambon",
+      "nom": "Endives au jambon",
+      "emoji": "🧀",
+      "type": "diner",
+      "ingredients": ["endives", "jambon", "béchamel", "gruyère"],
+      "eviter": ["porc", "produits-laitiers", "gluten"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=endives+au+jambon",
+      "source": "Marmiton"
+    },
+    {
+      "id": "salade-mediterraneenne",
+      "nom": "Salade méditerranéenne pois chiches",
+      "emoji": "🥗",
+      "type": "diner",
+      "ingredients": ["pois chiches", "tomates", "concombre", "huile d'olive"],
+      "eviter": [],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=salade+pois+chiches",
+      "source": "Marmiton"
+    },
+    {
+      "id": "cake-sale-courgettes",
+      "nom": "Cake salé courgettes-fêta",
+      "emoji": "🫑",
+      "type": "diner",
+      "ingredients": ["farine", "courgettes", "fêta", "oeufs"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=cake+sale+courgettes",
+      "source": "Marmiton"
+    },
+    {
+      "id": "riz-cantonais",
+      "nom": "Riz cantonais",
+      "emoji": "🍚",
+      "type": "diner",
+      "ingredients": ["riz", "jambon", "petits pois", "oeufs"],
+      "eviter": ["viande", "porc", "oeufs", "gluten"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=riz+cantonais",
+      "source": "Marmiton"
+    },
+    {
+      "id": "soupe-lentilles-corail-coco",
+      "nom": "Soupe de lentilles corail au lait de coco",
+      "emoji": "🍲",
+      "type": "diner",
+      "ingredients": ["lentilles corail", "lait de coco", "épinards"],
+      "eviter": [],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=soupe+lentilles+corail",
+      "source": "Marmiton"
+    },
+    {
+      "id": "steak-haricots-pommes",
+      "nom": "Steak, haricots verts et pommes vapeur",
+      "emoji": "🥩",
+      "type": "diner",
+      "ingredients": ["steak de bœuf", "haricots verts", "pommes de terre"],
+      "eviter": ["viande"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=steak+frites",
+      "source": "Marmiton"
+    },
+    {
+      "id": "tortilla-espagnole",
+      "nom": "Tortilla espagnole",
+      "emoji": "🥘",
+      "type": "diner",
+      "ingredients": ["oeufs", "pommes de terre", "oignon", "huile d'olive"],
+      "eviter": ["oeufs"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=tortilla+espagnole",
+      "source": "Marmiton"
+    },
+    {
+      "id": "pates-brocolis-amandes",
+      "nom": "Pâtes brocolis-amandes",
+      "emoji": "🥦",
+      "type": "diner",
+      "ingredients": ["pâtes", "brocolis", "amandes", "ail"],
+      "eviter": ["gluten", "fruits-a-coque"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=pates+brocolis",
+      "source": "Marmiton"
+    },
+    {
+      "id": "mijote-legumes-pois-chiches",
+      "nom": "Mijoté de légumes aux pois chiches",
+      "emoji": "🍲",
+      "type": "diner",
+      "ingredients": ["pois chiches", "navets", "carottes", "cumin"],
+      "eviter": [],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=mijote+legumes",
+      "source": "Marmiton"
+    },
+    {
+      "id": "pot-au-feu",
+      "nom": "Pot-au-feu traditionnel",
+      "emoji": "🍲",
+      "type": "diner",
+      "ingredients": ["bœuf", "carottes", "poireaux", "lard salé"],
+      "eviter": ["viande", "porc"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=pot+au+feu",
+      "source": "Marmiton"
+    },
+    {
+      "id": "tofu-grille-riz-legumes",
+      "nom": "Tofu grillé, riz complet et légumes vapeur",
+      "emoji": "🌱",
+      "type": "diner",
+      "ingredients": ["tofu", "riz complet", "brocolis", "sésame"],
+      "eviter": [],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=tofu+grille",
+      "source": "Marmiton"
+    },
+    {
+      "id": "moules-frites",
+      "nom": "Moules-frites",
+      "emoji": "🦪",
+      "type": "diner",
+      "ingredients": ["moules", "crème", "échalotes", "persil"],
+      "eviter": ["fruits-de-mer", "produits-laitiers"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=moules+frites",
+      "source": "Marmiton"
+    },
+    {
+      "id": "vichyssoise",
+      "nom": "Vichyssoise poireaux-pommes de terre",
+      "emoji": "🥔",
+      "type": "diner",
+      "ingredients": ["poireaux", "pommes de terre", "crème"],
+      "eviter": ["produits-laitiers"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=vichyssoise",
+      "source": "Marmiton"
+    },
+    {
+      "id": "galette-sarrasin-oeuf",
+      "nom": "Galette de sarrasin œuf-fromage",
+      "emoji": "🥞",
+      "type": "diner",
+      "ingredients": ["farine de sarrasin", "œuf", "gruyère", "beurre"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=galette+sarrasin+oeuf",
+      "source": "Marmiton"
+    },
+    {
+      "id": "curry-legumes-coco",
+      "nom": "Curry de légumes au lait de coco",
+      "emoji": "🍛",
+      "type": "diner",
+      "ingredients": ["légumes de saison", "lait de coco", "riz", "pâte de curry"],
+      "eviter": [],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=curry+legumes",
+      "source": "Marmiton"
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "recettes": [
+    {
+      "id": "cookies-pepites-chocolat",
+      "nom": "Cookies pépites de chocolat",
+      "emoji": "🍪",
+      "type": "gouter",
+      "ingredients": ["farine", "beurre", "chocolat noir", "sucre roux"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=cookies+chocolat",
+      "source": "Marmiton"
+    },
+    {
+      "id": "banana-bread",
+      "nom": "Banana bread",
+      "emoji": "🍌",
+      "type": "gouter",
+      "ingredients": ["farine", "bananes", "beurre", "oeufs"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=banana+bread",
+      "source": "Marmiton"
+    },
+    {
+      "id": "compote-pomme-poire",
+      "nom": "Compote pomme-poire maison",
+      "emoji": "🍐",
+      "type": "gouter",
+      "ingredients": ["pommes", "poires"],
+      "eviter": [],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=compote+pomme+poire",
+      "source": "Marmiton"
+    },
+    {
+      "id": "pain-epices",
+      "nom": "Pain d'épices",
+      "emoji": "🍯",
+      "type": "gouter",
+      "ingredients": ["farine de seigle", "miel", "épices à pain d'épices"],
+      "eviter": ["gluten", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=pain+depices",
+      "source": "Marmiton"
+    },
+    {
+      "id": "smoothie-fraise-banane",
+      "nom": "Smoothie fraise-banane",
+      "emoji": "🥤",
+      "type": "gouter",
+      "ingredients": ["fraises", "banane", "lait de coco"],
+      "eviter": [],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=smoothie+fraise+banane",
+      "source": "Marmiton"
+    },
+    {
+      "id": "brownies-noix",
+      "nom": "Brownies aux noix",
+      "emoji": "🍫",
+      "type": "gouter",
+      "ingredients": ["chocolat noir", "noix", "beurre", "oeufs"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers", "fruits-a-coque", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=brownies",
+      "source": "Marmiton"
+    },
+    {
+      "id": "muffins-myrtilles",
+      "nom": "Muffins aux myrtilles",
+      "emoji": "🫐",
+      "type": "gouter",
+      "ingredients": ["farine", "myrtilles", "yaourt", "oeufs"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=muffins+myrtilles",
+      "source": "Marmiton"
+    },
+    {
+      "id": "gateau-yaourt",
+      "nom": "Gâteau au yaourt",
+      "emoji": "🎂",
+      "type": "gouter",
+      "ingredients": ["farine", "yaourt", "oeufs", "sucre"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=gateau+au+yaourt",
+      "source": "Marmiton"
+    },
+    {
+      "id": "energy-balls-dattes",
+      "nom": "Energy balls dattes-cacao",
+      "emoji": "⚡",
+      "type": "gouter",
+      "ingredients": ["dattes", "cacao", "sésame", "noix de coco râpée"],
+      "eviter": [],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=energy+balls",
+      "source": "Marmiton"
+    },
+    {
+      "id": "chouquettes",
+      "nom": "Chouquettes",
+      "emoji": "☁️",
+      "type": "gouter",
+      "ingredients": ["pâte à choux", "sucre perlé", "oeufs"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=chouquettes",
+      "source": "Marmiton"
+    },
+    {
+      "id": "sables-maison",
+      "nom": "Sablés maison",
+      "emoji": "🧈",
+      "type": "gouter",
+      "ingredients": ["farine", "beurre", "sucre", "oeuf"],
+      "eviter": ["gluten", "produits-laitiers", "oeufs", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=sables",
+      "source": "Marmiton"
+    },
+    {
+      "id": "yaourt-framboise",
+      "nom": "Yaourt aux framboises",
+      "emoji": "🍇",
+      "type": "gouter",
+      "ingredients": ["yaourt", "framboises", "miel"],
+      "eviter": ["produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=yaourt+fruits+rouges",
+      "source": "Marmiton"
+    },
+    {
+      "id": "cake-marbre",
+      "nom": "Cake marbré chocolat-vanille",
+      "emoji": "🍰",
+      "type": "gouter",
+      "ingredients": ["farine", "chocolat", "vanille", "beurre"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=cake+marbre",
+      "source": "Marmiton"
+    },
+    {
+      "id": "tarte-aux-pommes",
+      "nom": "Tarte aux pommes",
+      "emoji": "🥧",
+      "type": "gouter",
+      "ingredients": ["pâte brisée", "pommes", "sucre", "beurre"],
+      "eviter": ["gluten", "produits-laitiers", "oeufs", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=tarte+aux+pommes",
+      "source": "Marmiton"
+    },
+    {
+      "id": "poire-chocolat-fondant",
+      "nom": "Poire au chocolat fondant",
+      "emoji": "🍐",
+      "type": "gouter",
+      "ingredients": ["poires", "chocolat noir", "sucre", "beurre"],
+      "eviter": ["produits-laitiers", "oeufs", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=poire+chocolat",
+      "source": "Marmiton"
+    },
+    {
+      "id": "financiers-amande",
+      "nom": "Financiers aux amandes",
+      "emoji": "💰",
+      "type": "gouter",
+      "ingredients": ["poudre d'amande", "beurre", "blancs d'oeufs", "sucre glace"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers", "fruits-a-coque", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=financiers",
+      "source": "Marmiton"
+    },
+    {
+      "id": "mug-cake-chocolat",
+      "nom": "Mug cake au chocolat",
+      "emoji": "☕",
+      "type": "gouter",
+      "ingredients": ["farine", "cacao", "oeuf", "lait"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=mug+cake",
+      "source": "Marmiton"
+    },
+    {
+      "id": "riz-au-lait",
+      "nom": "Riz au lait",
+      "emoji": "🍚",
+      "type": "gouter",
+      "ingredients": ["riz", "lait", "sucre", "vanille"],
+      "eviter": ["produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=riz+au+lait",
+      "source": "Marmiton"
+    },
+    {
+      "id": "batonnets-legumes-houmous",
+      "nom": "Bâtonnets de légumes et houmous",
+      "emoji": "🥕",
+      "type": "gouter",
+      "ingredients": ["carottes", "concombre", "houmous"],
+      "eviter": [],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=batonnets+legumes",
+      "source": "Marmiton"
+    },
+    {
+      "id": "trail-mix",
+      "nom": "Trail mix fruits secs et graines",
+      "emoji": "🥜",
+      "type": "gouter",
+      "ingredients": ["amandes", "noix de cajou", "raisins secs"],
+      "eviter": ["fruits-a-coque"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=mix+fruits+secs",
+      "source": "Marmiton"
+    },
+    {
+      "id": "beignets-banane",
+      "nom": "Beignets de banane",
+      "emoji": "🍩",
+      "type": "gouter",
+      "ingredients": ["bananes", "farine", "oeufs", "sucre"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=beignets+de+banane",
+      "source": "Marmiton"
+    },
+    {
+      "id": "panna-cotta-fruits",
+      "nom": "Panna cotta et coulis de fruits",
+      "emoji": "🍮",
+      "type": "gouter",
+      "ingredients": ["crème", "sucre", "gélatine", "fruits"],
+      "eviter": ["produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=panna+cotta",
+      "source": "Marmiton"
+    },
+    {
+      "id": "moelleux-chocolat",
+      "nom": "Moelleux au chocolat",
+      "emoji": "🍫",
+      "type": "gouter",
+      "ingredients": ["chocolat noir", "beurre", "oeufs", "farine"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=moelleux+chocolat",
+      "source": "Marmiton"
+    },
+    {
+      "id": "tarte-citron-meringuee",
+      "nom": "Tarte au citron meringuée",
+      "emoji": "🍋",
+      "type": "gouter",
+      "ingredients": ["pâte brisée", "citrons", "oeufs", "sucre"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=tarte+citron+meringuee",
+      "source": "Marmiton"
+    },
+    {
+      "id": "barres-avoine-amandes",
+      "nom": "Barres avoine-amandes",
+      "emoji": "🍬",
+      "type": "gouter",
+      "ingredients": ["flocons d'avoine", "amandes", "sirop d'érable"],
+      "eviter": ["gluten", "fruits-a-coque", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=barres+de+cereales",
+      "source": "Marmiton"
+    },
+    {
+      "id": "milkshake-chocolat",
+      "nom": "Milkshake chocolat maison",
+      "emoji": "🥤",
+      "type": "gouter",
+      "ingredients": ["lait", "glace vanille", "cacao"],
+      "eviter": ["produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=milkshake",
+      "source": "Marmiton"
+    },
+    {
+      "id": "mousse-chocolat",
+      "nom": "Mousse au chocolat",
+      "emoji": "🍫",
+      "type": "gouter",
+      "ingredients": ["chocolat noir", "oeufs", "sucre"],
+      "eviter": ["oeufs", "produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=mousse+au+chocolat",
+      "source": "Marmiton"
+    },
+    {
+      "id": "tartine-pate-tartiner-noisette",
+      "nom": "Tartine pâte à tartiner noisette-cacao",
+      "emoji": "🍞",
+      "type": "gouter",
+      "ingredients": ["pain", "pâte à tartiner noisette-cacao"],
+      "eviter": ["gluten", "produits-laitiers", "fruits-a-coque", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=pate+a+tartiner+maison",
+      "source": "Marmiton"
+    },
+    {
+      "id": "poire-sirop-erable",
+      "nom": "Poire pochée au sirop d'érable",
+      "emoji": "🍐",
+      "type": "gouter",
+      "ingredients": ["poires", "sirop d'érable", "épices"],
+      "eviter": ["sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=poire+pochee",
+      "source": "Marmiton"
+    },
+    {
+      "id": "creme-vanille-maison",
+      "nom": "Crème dessert vanille maison",
+      "emoji": "🍮",
+      "type": "gouter",
+      "ingredients": ["lait", "jaunes d'oeufs", "sucre", "vanille"],
+      "eviter": ["produits-laitiers", "oeufs", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=creme+vanille",
+      "source": "Marmiton"
+    }
+  ]
+}

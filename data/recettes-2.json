@@ -1,0 +1,304 @@
+{
+  "recettes": [
+    {
+      "id": "quiche-lorraine",
+      "nom": "Quiche lorraine",
+      "emoji": "🥧",
+      "type": "dejeuner",
+      "ingredients": ["pâte brisée", "lardons", "oeufs", "crème"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers", "porc"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=quiche+lorraine",
+      "source": "Marmiton"
+    },
+    {
+      "id": "salade-cesar-poulet",
+      "nom": "Salade César au poulet",
+      "emoji": "🥗",
+      "type": "dejeuner",
+      "ingredients": ["poulet", "croûtons", "parmesan", "sauce César"],
+      "eviter": ["viande", "gluten", "produits-laitiers", "oeufs", "poisson"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=salade+cesar",
+      "source": "Marmiton"
+    },
+    {
+      "id": "buddha-bowl-pois-chiches",
+      "nom": "Buddha bowl pois chiches-patate douce",
+      "emoji": "🌈",
+      "type": "dejeuner",
+      "ingredients": ["pois chiches", "patate douce", "riz", "tahini"],
+      "eviter": [],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=buddha+bowl",
+      "source": "Marmiton"
+    },
+    {
+      "id": "pates-carbonara",
+      "nom": "Pâtes carbonara",
+      "emoji": "🍝",
+      "type": "dejeuner",
+      "ingredients": ["spaghetti", "lardons", "oeufs", "parmesan"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers", "porc"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=carbonara",
+      "source": "Marmiton"
+    },
+    {
+      "id": "risotto-champignons",
+      "nom": "Risotto aux champignons",
+      "emoji": "🍄",
+      "type": "dejeuner",
+      "ingredients": ["riz arborio", "champignons", "parmesan", "bouillon"],
+      "eviter": ["produits-laitiers"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=risotto+champignons",
+      "source": "Marmiton"
+    },
+    {
+      "id": "wrap-poulet-avocat",
+      "nom": "Wrap poulet-avocat",
+      "emoji": "🌯",
+      "type": "dejeuner",
+      "ingredients": ["tortilla", "poulet", "avocat", "tomate"],
+      "eviter": ["gluten", "viande"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=wrap+poulet+avocat",
+      "source": "Marmiton"
+    },
+    {
+      "id": "chili-sin-carne",
+      "nom": "Chili sin carne",
+      "emoji": "🌶️",
+      "type": "dejeuner",
+      "ingredients": ["haricots rouges", "maïs", "tomates", "poivron"],
+      "eviter": [],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=chili+sin+carne",
+      "source": "Marmiton"
+    },
+    {
+      "id": "curry-pois-chiches-coco",
+      "nom": "Curry de pois chiches au lait de coco",
+      "emoji": "🍛",
+      "type": "dejeuner",
+      "ingredients": ["pois chiches", "lait de coco", "tomates", "épinards"],
+      "eviter": [],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=curry+pois+chiches",
+      "source": "Marmiton"
+    },
+    {
+      "id": "gratin-dauphinois",
+      "nom": "Gratin dauphinois",
+      "emoji": "🥔",
+      "type": "dejeuner",
+      "ingredients": ["pommes de terre", "crème", "ail"],
+      "eviter": ["produits-laitiers"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=gratin+dauphinois",
+      "source": "Marmiton"
+    },
+    {
+      "id": "croque-monsieur",
+      "nom": "Croque-monsieur",
+      "emoji": "🥪",
+      "type": "dejeuner",
+      "ingredients": ["pain de mie", "jambon", "fromage", "béchamel"],
+      "eviter": ["gluten", "produits-laitiers", "porc"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=croque+monsieur",
+      "source": "Marmiton"
+    },
+    {
+      "id": "poke-bowl-saumon",
+      "nom": "Poke bowl saumon-avocat",
+      "emoji": "🐟",
+      "type": "dejeuner",
+      "ingredients": ["riz", "saumon", "avocat", "edamame", "sauce soja"],
+      "eviter": ["poisson", "gluten", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=poke+bowl",
+      "source": "Marmiton"
+    },
+    {
+      "id": "salade-riz-thon",
+      "nom": "Salade de riz au thon",
+      "emoji": "🍚",
+      "type": "dejeuner",
+      "ingredients": ["riz", "thon", "tomates", "maïs"],
+      "eviter": ["poisson"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=salade+riz+thon",
+      "source": "Marmiton"
+    },
+    {
+      "id": "spaghetti-bolo-lentilles",
+      "nom": "Spaghetti bolognaise aux lentilles",
+      "emoji": "🍝",
+      "type": "dejeuner",
+      "ingredients": ["spaghetti", "lentilles", "tomates", "carotte"],
+      "eviter": ["gluten"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=bolognaise+lentilles",
+      "source": "Marmiton"
+    },
+    {
+      "id": "tarte-salee-tomates-chevre",
+      "nom": "Tarte salée tomates-moutarde-chèvre",
+      "emoji": "🧀",
+      "type": "dejeuner",
+      "ingredients": ["pâte brisée", "tomates", "moutarde", "chèvre"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=tarte+chevre+tomate",
+      "source": "Marmiton"
+    },
+    {
+      "id": "falafels-pitas",
+      "nom": "Falafels, pita et houmous",
+      "emoji": "🧆",
+      "type": "dejeuner",
+      "ingredients": ["falafels", "pain pita", "houmous", "crudités"],
+      "eviter": ["gluten"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=falafels",
+      "source": "Marmiton"
+    },
+    {
+      "id": "omelette-pommes-de-terre",
+      "nom": "Omelette pommes de terre-oignon",
+      "emoji": "🍳",
+      "type": "dejeuner",
+      "ingredients": ["oeufs", "pommes de terre", "oignon"],
+      "eviter": ["oeufs"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=omelette+pommes+de+terre",
+      "source": "Marmiton"
+    },
+    {
+      "id": "soupe-lentilles-carottes",
+      "nom": "Soupe lentilles-carottes et pain complet",
+      "emoji": "🍲",
+      "type": "dejeuner",
+      "ingredients": ["lentilles", "carottes", "oignon", "pain complet"],
+      "eviter": ["gluten"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=soupe+lentilles",
+      "source": "Marmiton"
+    },
+    {
+      "id": "burger-vegetarien-betterave",
+      "nom": "Burger végétarien betterave-chèvre",
+      "emoji": "🍔",
+      "type": "dejeuner",
+      "ingredients": ["pain à burger", "betterave", "chèvre", "roquette"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=burger+vegetarien",
+      "source": "Marmiton"
+    },
+    {
+      "id": "risotto-citron-petits-pois",
+      "nom": "Risotto citron-petits pois",
+      "emoji": "🍋",
+      "type": "dejeuner",
+      "ingredients": ["riz arborio", "petits pois", "citron", "parmesan"],
+      "eviter": ["produits-laitiers"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=risotto+citron",
+      "source": "Marmiton"
+    },
+    {
+      "id": "veloute-courge",
+      "nom": "Velouté de courge et graines",
+      "emoji": "🎃",
+      "type": "dejeuner",
+      "ingredients": ["courge", "oignon", "graines de courge"],
+      "eviter": [],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=veloute+courge",
+      "source": "Marmiton"
+    },
+    {
+      "id": "sandwich-thon-mayo",
+      "nom": "Sandwich thon-mayonnaise",
+      "emoji": "🥪",
+      "type": "dejeuner",
+      "ingredients": ["pain", "thon", "mayonnaise", "salade"],
+      "eviter": ["gluten", "oeufs", "poisson"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=sandwich+thon",
+      "source": "Marmiton"
+    },
+    {
+      "id": "poulet-roti-legumes",
+      "nom": "Poulet rôti et légumes au four",
+      "emoji": "🍗",
+      "type": "dejeuner",
+      "ingredients": ["poulet", "pommes de terre", "carottes", "herbes"],
+      "eviter": ["viande"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=poulet+roti",
+      "source": "Marmiton"
+    },
+    {
+      "id": "lasagnes-legumes",
+      "nom": "Lasagnes aux légumes",
+      "emoji": "🍆",
+      "type": "dejeuner",
+      "ingredients": ["pâtes à lasagne", "courgettes", "ricotta", "tomates"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=lasagnes+legumes",
+      "source": "Marmiton"
+    },
+    {
+      "id": "pad-thai-tofu",
+      "nom": "Pad thaï au tofu",
+      "emoji": "🍜",
+      "type": "dejeuner",
+      "ingredients": ["nouilles de riz", "tofu", "oeufs", "cacahuètes", "sauce soja"],
+      "eviter": ["oeufs", "arachide", "gluten", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=pad+thai",
+      "source": "Marmiton"
+    },
+    {
+      "id": "salade-quinoa-feta",
+      "nom": "Salade quinoa-fêta-concombre",
+      "emoji": "🥗",
+      "type": "dejeuner",
+      "ingredients": ["quinoa", "fêta", "concombre", "tomates"],
+      "eviter": ["produits-laitiers"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=salade+quinoa",
+      "source": "Marmiton"
+    },
+    {
+      "id": "curry-poulet-coco",
+      "nom": "Curry de poulet au lait de coco",
+      "emoji": "🍛",
+      "type": "dejeuner",
+      "ingredients": ["poulet", "lait de coco", "riz", "épices à curry"],
+      "eviter": ["viande"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=curry+poulet+coco",
+      "source": "Marmiton"
+    },
+    {
+      "id": "gnocchis-tomate-basilic",
+      "nom": "Gnocchis sauce tomate-basilic",
+      "emoji": "🍅",
+      "type": "dejeuner",
+      "ingredients": ["gnocchis", "sauce tomate", "basilic", "parmesan"],
+      "eviter": ["gluten", "oeufs", "produits-laitiers"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=gnocchis+tomate",
+      "source": "Marmiton"
+    },
+    {
+      "id": "poelee-patate-douce-haricots",
+      "nom": "Poêlée patate douce-haricots noirs",
+      "emoji": "🍠",
+      "type": "dejeuner",
+      "ingredients": ["patate douce", "haricots noirs", "poivron", "épices fumées"],
+      "eviter": [],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=poelee+patate+douce",
+      "source": "Marmiton"
+    },
+    {
+      "id": "salade-nicoise",
+      "nom": "Salade niçoise",
+      "emoji": "🫒",
+      "type": "dejeuner",
+      "ingredients": ["thon", "oeufs", "pommes de terre", "haricots verts", "olives"],
+      "eviter": ["poisson", "oeufs"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=salade+nicoise",
+      "source": "Marmiton"
+    },
+    {
+      "id": "riz-saute-legumes-oeuf",
+      "nom": "Riz sauté aux légumes et œuf",
+      "emoji": "🍚",
+      "type": "dejeuner",
+      "ingredients": ["riz", "oeufs", "petits pois", "sauce soja"],
+      "eviter": ["oeufs", "gluten", "sucre"],
+      "lien": "https://www.marmiton.org/recettes/recherche.aspx?aqt=riz+saute",
+      "source": "Marmiton"
+    }
+  ]
+}
