@@ -2,8 +2,8 @@
   "titre": "La version des lycéens — chronique de la révolte lycéenne 2026",
   "intro": "Chronique narrative du mouvement lycéen et étudiant de l'automne 2026, écrite du point de vue des élèves : de l'amorce de Créteil au dernier acte en date, le fil s'allonge d'un relevé automatique toutes les six heures, et les chapitres transverses — la voix de l'intérieur, les revendications mot à mot, la répression, la machine gouvernementale, la longue durée, le lexique, les figures — viennent fermer le fil. Sources en vitrine : les médias qui soutiennent le mouvement (Basta !, Contre Attaque, Le Café pédagogique, StreetPress, L'Humanité, Politis, Acrimed, Le Média, Bondy Blog) et l'écoute directe des fils TikTok, Snapchat et Instagram ; en compléments du relevé machine, les fils Reddit (r/etudiants, r/enseignants, r/france) et Wikipédia en colonne vertébrale factuelle.",
   "note": "Méthode : chaque paragraphe cite ses sources. Les paragraphes marqués « auto » sont des relevés bruts ajoutés par le pipeline toutes les 6 h (faits sourcés, sans réécriture) ; la rédaction narrative approfondie est assurée lors des éditions de la newsletter. Badge ✅ (corroboré par au moins deux médias distincts) et ⚠️ (une seule source) : ces distinctions s'appliquent aux relevés automatiques.",
-  "maj": "09/10/2026",
-  "totalParagraphes": 98,
+  "maj": "10/10/2026",
+  "totalParagraphes": 99,
   "chapitres": [
     {
       "id": "c1",
@@ -164,13 +164,18 @@
       "titre": "Le fil continue — 9 octobre 2026",
       "paragraphes": 3,
       "octets": 3248
+    },
+    {
+      "id": "c21",
+      "fichier": "chapitres/21.json",
+      "periode": "10 octobre 2026 — suivi de la journée",
+      "titre": "Le fil continue — 10 octobre 2026",
+      "paragraphes": 1,
+      "octets": 970
     }
   ],
   "releveSigs": [
-    "absents|parcour|profs|voisins#",
-    "attal|juge|melench|personn#",
-    "avait|avant|inquiet|passe#",
-    "images|marge|policie|violenc#"
+    "certain|elevent|lycees|pointen#"
   ],
   "sections": [
     {
@@ -283,6 +288,14 @@
           "octets": 3248
         },
         {
+          "id": "c21",
+          "fichier": "chapitres/21.json",
+          "periode": "10 octobre 2026 — suivi de la journée",
+          "titre": "Le fil continue — 10 octobre 2026",
+          "paragraphes": 1,
+          "octets": 970
+        },
+        {
           "id": "c10",
           "fichier": "chapitres/10.json",
           "periode": "Chronique transverse — réseaux, voix et ressentis",
@@ -341,12 +354,12 @@
       ]
     }
   ],
-  "releveDate": "2026-10-09T21:27:29.400Z",
-  "releveCompteur": 13,
+  "releveDate": "2026-10-10T09:26:29.758Z",
+  "releveCompteur": 14,
   "chapitreJour": {
-    "id": "c20",
-    "fichier": "chapitres/20.json",
-    "date": "09/10/2026"
+    "id": "c21",
+    "fichier": "chapitres/21.json",
+    "date": "10/10/2026"
   },
   "discordInvites": {}
 }
