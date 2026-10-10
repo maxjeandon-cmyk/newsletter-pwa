@@ -3,7 +3,7 @@
   "intro": "Chronique narrative du mouvement lycéen et étudiant de l'automne 2026, écrite du point de vue des élèves : de l'amorce de Créteil au dernier acte en date, le fil s'allonge d'un relevé automatique toutes les six heures, et les chapitres transverses — la voix de l'intérieur, les revendications mot à mot, la répression, la machine gouvernementale, la longue durée, le lexique, les figures — viennent fermer le fil. Sources en vitrine : les médias qui soutiennent le mouvement (Basta !, Contre Attaque, Le Café pédagogique, StreetPress, L'Humanité, Politis, Acrimed, Le Média, Bondy Blog) et l'écoute directe des fils TikTok, Snapchat et Instagram ; en compléments du relevé machine, les fils Reddit (r/etudiants, r/enseignants, r/france) et Wikipédia en colonne vertébrale factuelle.",
   "note": "Méthode : chaque paragraphe cite ses sources. Les paragraphes marqués « auto » sont des relevés bruts ajoutés par le pipeline toutes les 6 h (faits sourcés, sans réécriture) ; la rédaction narrative approfondie est assurée lors des éditions de la newsletter. Badge ✅ (corroboré par au moins deux médias distincts) et ⚠️ (une seule source) : ces distinctions s'appliquent aux relevés automatiques.",
   "maj": "10/10/2026",
-  "totalParagraphes": 103,
+  "totalParagraphes": 108,
   "chapitres": [
     {
       "id": "c1",
@@ -82,32 +82,32 @@
       "fichier": "chapitres/10.json",
       "periode": "Chronique transverse — réseaux, voix et ressentis",
       "titre": "Chorus — la voix de l'intérieur",
-      "paragraphes": 9,
-      "octets": 15711
+      "paragraphes": 10,
+      "octets": 16668
     },
     {
       "id": "c11",
       "fichier": "chapitres/11.json",
       "periode": "Chronique transverse — les revendications, mot à mot",
       "titre": "Ce qu'ils veulent — les revendications, mot à mot",
-      "paragraphes": 9,
-      "octets": 12497
+      "paragraphes": 10,
+      "octets": 13208
     },
     {
       "id": "c12",
       "fichier": "chapitres/12.json",
       "periode": "Chronique transverse — la répression et ses visages",
       "titre": "La répression et ses visages",
-      "paragraphes": 7,
-      "octets": 12454
+      "paragraphes": 8,
+      "octets": 13130
     },
     {
       "id": "c13",
       "fichier": "chapitres/13.json",
       "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
       "titre": "La machine gouvernementale, vue d'en bas",
-      "paragraphes": 8,
-      "octets": 12114
+      "paragraphes": 9,
+      "octets": 12803
     },
     {
       "id": "c14",
@@ -170,13 +170,14 @@
       "fichier": "chapitres/21.json",
       "periode": "10 octobre 2026 — suivi de la journée",
       "titre": "Le fil continue — 10 octobre 2026",
-      "paragraphes": 2,
-      "octets": 1700
+      "paragraphes": 3,
+      "octets": 3334
     }
   ],
   "releveSigs": [
-    "collegi|generat|gentil|parfois#",
-    "emploi|lyceenn|mobilis|temps#"
+    "concern|manque#",
+    "enseign|lumiere|lycees|nationa#",
+    "faux|junior|mobilis|vrai#"
   ],
   "sections": [
     {
@@ -293,40 +294,40 @@
           "fichier": "chapitres/21.json",
           "periode": "10 octobre 2026 — suivi de la journée",
           "titre": "Le fil continue — 10 octobre 2026",
-          "paragraphes": 2,
-          "octets": 1700
+          "paragraphes": 3,
+          "octets": 3334
         },
         {
           "id": "c10",
           "fichier": "chapitres/10.json",
           "periode": "Chronique transverse — réseaux, voix et ressentis",
           "titre": "Chorus — la voix de l'intérieur",
-          "paragraphes": 9,
-          "octets": 15711
+          "paragraphes": 10,
+          "octets": 16668
         },
         {
           "id": "c11",
           "fichier": "chapitres/11.json",
           "periode": "Chronique transverse — les revendications, mot à mot",
           "titre": "Ce qu'ils veulent — les revendications, mot à mot",
-          "paragraphes": 9,
-          "octets": 12497
+          "paragraphes": 10,
+          "octets": 13208
         },
         {
           "id": "c12",
           "fichier": "chapitres/12.json",
           "periode": "Chronique transverse — la répression et ses visages",
           "titre": "La répression et ses visages",
-          "paragraphes": 7,
-          "octets": 12454
+          "paragraphes": 8,
+          "octets": 13130
         },
         {
           "id": "c13",
           "fichier": "chapitres/13.json",
           "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
           "titre": "La machine gouvernementale, vue d'en bas",
-          "paragraphes": 8,
-          "octets": 12114
+          "paragraphes": 9,
+          "octets": 12803
         },
         {
           "id": "c14",
@@ -355,8 +356,8 @@
       ]
     }
   ],
-  "releveDate": "2026-10-10T15:25:53.972Z",
-  "releveCompteur": 15,
+  "releveDate": "2026-10-10T21:25:26.999Z",
+  "releveCompteur": 16,
   "chapitreJour": {
     "id": "c21",
     "fichier": "chapitres/21.json",
