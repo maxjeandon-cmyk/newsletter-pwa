@@ -89,12 +89,11 @@
     },
     {
       "id": "c10p10",
-      "texte": "Entre groupes privés et stories, l'intérieur du mouvement se raconte : Manque d’info concernant les blocus (Reddit — r/etudiants) — détail : Cc , je suis à la fac de nanterre en droit. Et je soutiens totalement le blocus et les revendications et j’y participe même parfois. Mais l… ; Mobilisation des lycéens : le vrai ou faux junior vérifie deux vidéos de violences en marge des blocages (1 media : France Inter — non corrobore) — détail : L'une concerne un lycéen qui a eu la main arrachée à Lens, l'autre des accusations de noyade à Belfort. Les collégiens s'interrogent sur la… (Volet automatique du 10 octobre 2026 à 23:25, chapitre « Chorus — la voix de l'intérieur » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "Entre groupes privés et stories, l’intérieur du mouvement continue de se raconter. Sur Reddit, dans r/etudiants, une voix de la fac de Nanterre, en droit, soutient « totalement le blocus et les revendications » et y participe « même parfois » — mais regrette un manque d’info concernant les blocus. Car l’information, justement, se joue aussi sur les images : le « vrai ou faux junior » de France Inter vérifie deux vidéos de violences en marge des blocages — l’une concerne un lycéen qui a eu la main arrachée à Lens, l’autre des accusations de noyade à Belfort — et les collégiens s’interrogent sur la véracité de ces images. Au dixième jour, la voix de l’intérieur apprend aussi à trier ce qu’elle voit.",
       "sources": [
         "Reddit — r/etudiants",
         "France Inter"
-      ],
-      "auto": true
+      ]
     }
   ]
 }

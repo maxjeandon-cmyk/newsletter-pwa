@@ -83,7 +83,7 @@
       "periode": "Chronique transverse — réseaux, voix et ressentis",
       "titre": "Chorus — la voix de l'intérieur",
       "paragraphes": 10,
-      "octets": 16668
+      "octets": 16598
     },
     {
       "id": "c11",
@@ -91,7 +91,7 @@
       "periode": "Chronique transverse — les revendications, mot à mot",
       "titre": "Ce qu'ils veulent — les revendications, mot à mot",
       "paragraphes": 10,
-      "octets": 13208
+      "octets": 13169
     },
     {
       "id": "c12",
@@ -99,7 +99,7 @@
       "periode": "Chronique transverse — la répression et ses visages",
       "titre": "La répression et ses visages",
       "paragraphes": 8,
-      "octets": 13130
+      "octets": 13085
     },
     {
       "id": "c13",
@@ -107,7 +107,7 @@
       "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
       "titre": "La machine gouvernementale, vue d'en bas",
       "paragraphes": 9,
-      "octets": 12803
+      "octets": 12791
     },
     {
       "id": "c14",
@@ -171,7 +171,7 @@
       "periode": "10 octobre 2026 — suivi de la journée",
       "titre": "Le fil continue — 10 octobre 2026",
       "paragraphes": 3,
-      "octets": 3334
+      "octets": 2988
     }
   ],
   "releveSigs": [
@@ -295,7 +295,7 @@
           "periode": "10 octobre 2026 — suivi de la journée",
           "titre": "Le fil continue — 10 octobre 2026",
           "paragraphes": 3,
-          "octets": 3334
+          "octets": 2988
         },
         {
           "id": "c10",
@@ -303,7 +303,7 @@
           "periode": "Chronique transverse — réseaux, voix et ressentis",
           "titre": "Chorus — la voix de l'intérieur",
           "paragraphes": 10,
-          "octets": 16668
+          "octets": 16598
         },
         {
           "id": "c11",
@@ -311,7 +311,7 @@
           "periode": "Chronique transverse — les revendications, mot à mot",
           "titre": "Ce qu'ils veulent — les revendications, mot à mot",
           "paragraphes": 10,
-          "octets": 13208
+          "octets": 13169
         },
         {
           "id": "c12",
@@ -319,7 +319,7 @@
           "periode": "Chronique transverse — la répression et ses visages",
           "titre": "La répression et ses visages",
           "paragraphes": 8,
-          "octets": 13130
+          "octets": 13085
         },
         {
           "id": "c13",
@@ -327,7 +327,7 @@
           "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
           "titre": "La machine gouvernementale, vue d'en bas",
           "paragraphes": 9,
-          "octets": 12803
+          "octets": 12791
         },
         {
           "id": "c14",
