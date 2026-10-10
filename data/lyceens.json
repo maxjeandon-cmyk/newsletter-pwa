@@ -1,5 +1,5 @@
 {
-  "maj": "10/10/2026 05:27",
+  "maj": "10/10/2026 11:26",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -19,6 +19,19 @@
     "Mercredi 7 octobre (lendemain de l'acte III) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
   ],
   "version_gouvernement": [
+    {
+      "id": "amv26w95e-5qym",
+      "date": "10/10/2026",
+      "titre": "Mobilisation lycéenne: \"Il faut un débouché politique et si possible dans le cadre du débat budgétaire en cours\", estim…",
+      "texte": "Mobilisation lycéenne: \"Il faut un débouché politique et si possible dans le cadre du débat budgétaire en cours\", estime Laurent Baumel, député \"Socialistes et apparentés\" de l'Indre-et-Loire",
+      "source": "Europe 1 / BFMTV",
+      "sources": [
+        "Europe 1",
+        "BFMTV"
+      ],
+      "url": "https://www.bfmtv.com/politique/video-mobilisation-lyceenne-il-faut-un-debouche-politique-et-si-possible-dans-le-cadre-du-debat-budgetaire-en-cours-estime-laurent-baumel-depute-socialistes-et-apparentes-de-l-indre-et-loire_VN-202610090925.html",
+      "verifie": true
+    },
     {
       "id": "amv0rlhqm-e0y5",
       "date": "09/10/2026",
@@ -47,19 +60,6 @@
         "Ouest-France"
       ],
       "url": "https://www.ouest-france.fr/societe/police/mobilisation-lyceenne-enquete-igpn-ouverte-apres-la-video-du-policier-donnant-un-coup-de-genou-a-un-manifestant-a-paris-03b55592-c3bc-11f1-bba2-d026901fbfe4?utm_source=fluxpublicfrance&utm_medium=fluxrss&utm_campaign=banquedecontenu",
-      "verifie": true
-    },
-    {
-      "id": "amv1u3a6l-j9zk",
-      "date": "09/10/2026",
-      "titre": "Mobilisations lycéennes : «Je suis admiratif de la capacité des forces de l’ordre à défendre la loi de la République», …",
-      "texte": "Dans \"Eliot Deval et vous\", Matthieu Valet, eurodéputé RN et ex-policier, est revenu sur les violences lors de la manifestation parisienne des lycéens. Il a notamment loué le courage des forces de l'…",
-      "source": "Europe 1 / BFMTV",
-      "sources": [
-        "Europe 1",
-        "BFMTV"
-      ],
-      "url": "https://www.europe1.fr/societe/mobilisations-lyceennes-je-suis-admiratif-de-la-capacite-des-forces-de-lordre-a-defendre-la-loi-de-la-republique-assure-matthieu-valet-1133735?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
     },
     {
@@ -186,10 +186,11 @@
       "date": "10/10/2026",
       "titre": "Main d’un lycéen arrachée à Lens : Le tir de grenade était « conforme », estime le parquet",
       "texte": "Le parquet de Béthune a estimé vendredi que le tir de grenade ayant grièvement blessé un lycéen à Lens était conforme aux procédures. La mère de l’adolescent, amputé de la main gauche, a porté plainte",
-      "source": "20 minutes / Le Figaro",
+      "source": "20 minutes / Le Figaro / La Croix",
       "sources": [
         "20 minutes",
-        "Le Figaro"
+        "Le Figaro",
+        "La Croix"
       ],
       "url": "https://www.20minutes.fr/societe/4253013-20261010-main-lyceen-arrachee-lens-tir-grenade-conforme-estime-parquet?at_medium=display&at_campaign=149",
       "verifie": true
