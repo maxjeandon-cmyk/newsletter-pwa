@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-10T09:26:42.314Z",
+  "date": "2026-10-10T09:35:54.461Z",
   "mode": "normal",
   "abonnements": 7,
   "envoyes": 7,
@@ -31,12 +31,12 @@
       "status": 201
     },
     {
-      "domaine": "web.push.apple.com",
+      "domaine": "updates.push.services.mozilla.com",
       "ok": true,
       "status": 201
     },
     {
-      "domaine": "updates.push.services.mozilla.com",
+      "domaine": "web.push.apple.com",
       "ok": true,
       "status": 201
     }
