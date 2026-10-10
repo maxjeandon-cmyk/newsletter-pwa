@@ -1,5 +1,5 @@
 {
-  "maj": "10/10/2026 11:26",
+  "maj": "10/10/2026 17:25",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -216,10 +216,11 @@
       "date": "09/10/2026",
       "titre": "Victor Wembanyama soutient les lycéens : il y a «des inégalités systémiques et des problèmes tellement profonds»",
       "texte": "Le Français de 22 ans, scolarisé à Nanterre quand il était adolescent, a dit lors d’une conférence de presse «entendre» les revendications des étudiants et «espérer que les gens qui sont tout là-haut…",
-      "source": "20 minutes / Libération",
+      "source": "20 minutes / Libération / Ouest-France",
       "sources": [
         "20 minutes",
-        "Libération"
+        "Libération",
+        "Ouest-France"
       ],
       "url": "https://www.liberation.fr/societe/education/victor-wembanyama-soutient-les-lyceens-il-y-a-des-inegalites-systemiques-et-des-problemes-tellement-profonds-20261009_5JZ3S6JKDRBONE2XVTYXP6V3TA/",
       "verifie": true
@@ -229,10 +230,11 @@
       "date": "09/10/2026",
       "titre": "Le basketteur Victor Wembanyama apporte son soutien aux manifestations lycéennes",
       "texte": "Victor Wembanyama a témoigné son soutien jeudi au mouvement lycéen français depuis San Antonio, au Texas, où il prépare la prochaine saison NBA qui débute le 20 octobre. \"Je les entends et je les sou…",
-      "source": "France 24 / L'Humanité",
+      "source": "France 24 / L'Humanité / Europe 1",
       "sources": [
         "France 24",
-        "L'Humanité"
+        "L'Humanité",
+        "Europe 1"
       ],
       "url": "https://www.france24.com/fr/france/20261009-basketteur-victor-wembanyama-soutien-manifestations-lyceennes-en-france",
       "verifie": true
