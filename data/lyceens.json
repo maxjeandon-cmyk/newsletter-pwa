@@ -1,5 +1,5 @@
 {
-  "maj": "09/10/2026 23:27",
+  "maj": "10/10/2026 05:27",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -50,19 +50,16 @@
       "verifie": true
     },
     {
-      "id": "amuzc4vu7-f3x9",
-      "date": "08/10/2026",
-      "titre": "\"Ça me donne encore plus envie d'aller bloquer\" : des lycéens déçus par la prise de parole de Sébastien Lecornu",
-      "texte": "Mercredi, Sébastien Lecornu s'est adressé aux Français au sujet de la mobilisation lycéenne et sur la grogne autour de la hausse des prix des carburants. Mais il n'a pas convaincu ces élèves et paren…",
-      "source": "Europe 1 / France Inter / Public Sénat / Le Figaro / France 24",
+      "id": "amv1u3a6l-j9zk",
+      "date": "09/10/2026",
+      "titre": "Mobilisations lycéennes : «Je suis admiratif de la capacité des forces de l’ordre à défendre la loi de la République», …",
+      "texte": "Dans \"Eliot Deval et vous\", Matthieu Valet, eurodéputé RN et ex-policier, est revenu sur les violences lors de la manifestation parisienne des lycéens. Il a notamment loué le courage des forces de l'…",
+      "source": "Europe 1 / BFMTV",
       "sources": [
         "Europe 1",
-        "France Inter",
-        "Public Sénat",
-        "Le Figaro",
-        "France 24"
+        "BFMTV"
       ],
-      "url": "https://www.radiofrance.fr/franceinfo/podcasts/les-documents-franceinfo/ca-me-donne-encore-plus-envie-d-aller-bloquer-des-lyceens-decus-par-la-prise-de-parole-de-sebastien-lecornu-4012740",
+      "url": "https://www.europe1.fr/societe/mobilisations-lyceennes-je-suis-admiratif-de-la-capacite-des-forces-de-lordre-a-defendre-la-loi-de-la-republique-assure-matthieu-valet-1133735?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
     },
     {
@@ -185,6 +182,19 @@
   ],
   "faits": [
     {
+      "id": "amv1u3a6j-jih6",
+      "date": "10/10/2026",
+      "titre": "Main d’un lycéen arrachée à Lens : Le tir de grenade était « conforme », estime le parquet",
+      "texte": "Le parquet de Béthune a estimé vendredi que le tir de grenade ayant grièvement blessé un lycéen à Lens était conforme aux procédures. La mère de l’adolescent, amputé de la main gauche, a porté plainte",
+      "source": "20 minutes / Le Figaro",
+      "sources": [
+        "20 minutes",
+        "Le Figaro"
+      ],
+      "url": "https://www.20minutes.fr/societe/4253013-20261010-main-lyceen-arrachee-lens-tir-grenade-conforme-estime-parquet?at_medium=display&at_campaign=149",
+      "verifie": true
+    },
+    {
       "id": "amv0rlhqk-6jxo",
       "date": "09/10/2026",
       "titre": "EN DIRECT Blocus des lycées : Quelque 141 établissements encore fermés ce vendredi…",
@@ -252,20 +262,6 @@
         "franceinfo"
       ],
       "url": "https://www.lefigaro.fr/faits-divers/blocage-des-lycees-un-adolescent-de-15-ans-sera-juge-en-fevrier-prochain-pour-avoir-roue-de-coups-une-policiere-a-paris-20261009",
-      "verifie": true
-    },
-    {
-      "id": "amuzc4vu3-keyf",
-      "date": "08/10/2026",
-      "titre": "Blocus des lycées : « Faire peur aux jeunes et aux parents »… La garde à vue est-elle devenue une peine immédiate ?",
-      "texte": "Alors que 87 % des 5.000 gardés à vue du mouvement lycéen sont mineurs, des avocats dénoncent des interpellations de masse destinées à sanctionner les manifestants",
-      "source": "20 minutes / Europe 1 / Libération",
-      "sources": [
-        "20 minutes",
-        "Europe 1",
-        "Libération"
-      ],
-      "url": "https://www.20minutes.fr/societe/4252311-20261008-blocus-lycees-faire-peur-jeunes-parents-garde-vue-devenue-peine-immediate?at_medium=display&at_campaign=149",
       "verifie": true
     },
     {
