@@ -17,6 +17,16 @@
         "Ouest-France",
         "franceinfo"
       ]
+    },
+    {
+      "id": "c21p3",
+      "texte": "6 heures ont passé depuis le relevé précédent ; le fil continue. Au soir du 10 octobre 2026, la journée s'écrit encore. Côté forces de l'ordre, les tensions ne faiblissent pas : Mobilisation des lycéens : le vrai ou faux junior vérifie deux vidéos de violences en marge des blocages (1 media : France Inter — non corrobore) — detail : L'une concerne un lycéen qui a eu la main arrachée à Lens, l'autre des accusations de noyade à Belfort. Les collégiens s'interrogent sur la véracité de ces images. Côté gouvernement, les réponses s'égrènent : Blocus des lycées : les enseignants TZR de l’éducation nationale dans la lumière après les annonces du ministre (1 media : Ouest-France — non corrobore) — detail : Y a-t-il vraiment 3 000 enseignants TZR (titulaires sur zone de remplacement) qui n’exercent pas et qui sont payés ? C’est la question que posent les annonces d’Édouard Geffray, j…. Dans les fils Reddit, les témoignages s'échangent sans intermédiaire : Manque d’info concernant les blocus (Reddit — r/etudiants) — detail : <!-- SC_OFF --><div class=\"md\"><p>Cc , je suis à la fac de nanterre en droit. Et je soutiens totalement le blocus et les revendications et j’y participe même parfois. Mais le manq…. Le prochain relevé reprendra le fil. (Relevé automatique du 10 octobre 2026 à 23:25 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "Reddit — r/etudiants",
+        "France Inter",
+        "Ouest-France"
+      ],
+      "auto": true
     }
   ]
 }
