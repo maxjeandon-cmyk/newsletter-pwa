@@ -47,6 +47,14 @@
         "France Inter — l organisation sur Discord (08/10/2026)",
         "Public Sénat / 20 minutes — l intersyndicale au côté des lycéens, première depuis quarante ans (06/10/2026)"
       ]
+    },
+    {
+      "id": "c14p6",
+      "texte": "L'histoire, elle, offre ses échos au mouvement : \"C'est gentil, pour les générations d'après\" : des collégiens parfois touchés par les blocages d'établissements, mais qui se sentent concernés par le mouvement… (1 media : franceinfo — non corrobore) — détail : Les blocus lycéens ne sont pas sans conséquences pour les collégiens, notamment dans les établissements où les deux niveaux cohabitent. À P… (Volet automatique du 10 octobre 2026 à 17:25, chapitre « Génération 2026 — le mouvement dans la longue durée » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "franceinfo"
+      ],
+      "auto": true
     }
   ]
 }
