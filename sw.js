@@ -1,4 +1,8 @@
-/* sw.js v118 — Service worker de la PWA Newsletter.
+/* sw.js v119 — Service worker de la PWA Newsletter.
+ * v119 : onglet 🍲 Recettes WiP — nouvelle vue js/views/recettes.js avec trois sous-onglets
+ * (💡 Idées recettes, 📺 Chaînes suivies, ❤️ Favorites), catalogue de 120 recettes en 4 shards
+ * (data/recettes*.json), 14 chaînes de cuisine (data/chaines.json), filtre d'allergènes,
+ * génération aléatoire de menu hebdomadaire, gestion locale des favorites et chaînes perso.
  * Stratégies : data/ et editions/ network-first (toujours frais en ligne, repli cache hors ligne) ;
  * le reste (coquille, js/, styles) cache-first pour un démarrage instantané.
  * À chaque déploiement de code : incrémenter CACHE (v109 → v110…) pour invalider les caches clients.
@@ -54,7 +58,7 @@
  * v105 : lot 5 — badge « ✓ N médias » (corroboration client miroir du serveur, racines+chiffres)
  * sur les articles repris par plusieurs flux, extrait coupé au mot (js/feeds.js v17, views/common.js,
  * styles.css). data/ et tools/ inchangés (les relevés serveur ne comptent que la presse). */
-const CACHE = 'newsletter-v118';
+const CACHE = 'newsletter-v119';
 const ASSETS = [
   './',
   './index.html',
@@ -80,6 +84,7 @@ const ASSETS = [
   './js/views/videos.js',
   './js/views/reglages.js',
   './js/views/lyceens.js',
+  './js/views/recettes.js',
   './data/etudiants/index.json',
   './data/etudiants/chapitres/01.json',
   './data/etudiants/chapitres/02.json',
@@ -111,7 +116,12 @@ const ASSETS = [
   './data/flux-rss-3.json',
   './data/compte.json',
   './data/climat.json',
-  './data/newsletters.json'
+  './data/newsletters.json',
+  './data/recettes.json',
+  './data/recettes-2.json',
+  './data/recettes-3.json',
+  './data/recettes-4.json',
+  './data/chaines.json'
 ];
 /* v79 : mise en cache RESILIENTE — addAll() est tout-ou-rien : une seule
  * ressource lente ou en échec laissait le SW bloqué en « installing »

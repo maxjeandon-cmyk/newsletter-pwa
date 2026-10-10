@@ -101,17 +101,22 @@ async function init() {
       if (e.data && e.data.type === 'SW_ACTIF') console.info('[sw] actif :', e.data.version);
     });
   }
-  const [chapters, jm, fluxRss, climat] = await Promise.all([
+  const [chapters, jm, fluxRss, climat, recettes, chaines] = await Promise.all([
     chargerJSON('data/chapters.json', []),
     chargerJSON('data/medias.json', {}),
     chargerJSON('data/flux-rss.json', {}),
-    chargerJSON('data/climat.json', null)
+    chargerJSON('data/climat.json', null),
+    chargerJSON('data/recettes.json', {}),
+    chargerJSON('data/chaines.json', {})
   ]);
   state.chapters = chapters;
   state.mediasBase = jm.medias || [];
   const shards = await Promise.all((fluxRss.suite || []).map(u => chargerJSON(u, {})));
   state.fluxCatalogue = shards.reduce((acc, s) => acc.concat(s.catalogue || []), fluxRss.catalogue || []);
   state.climat = climat;
+  const shardsRecettes = await Promise.all((recettes.suite || []).map(u => chargerJSON(u, {})));
+  state.recettesCatalogue = shardsRecettes.reduce((acc, s) => acc.concat(s.recettes || []), recettes.recettes || []);
+  state.chainesBase = chaines.chaines || [];
   majMedias();
   const idsConnus = new Set(state.medias.map(m => m.id));
   Object.keys(localStorage)

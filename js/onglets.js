@@ -14,6 +14,7 @@ export const ONGLETS_BASE = [
   { id: 'edition', nom: 'Édition du jour', emoji: '📄' },
   { id: 'articles', nom: 'Articles du jour', emoji: '🔥' },
   { id: 'videos', nom: 'Vidéos du jour', emoji: '📺' },
+  { id: 'recettes', nom: 'Recettes WiP', emoji: '🍲' },
   { id: 'medias', nom: 'Médias suivis', emoji: '🎬' },
   { id: 'archives', nom: 'Archives', emoji: '🗄️' },
   { id: 'climat', nom: 'Newsletters', emoji: '🗞️' },
