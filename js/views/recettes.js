@@ -1,6 +1,12 @@
-/* views/recettes.js — onglet 🍲 Recettes WiP (v1)
+/* views/recettes.js — onglet 🍲 Recettes WiP (v1, corrective v120)
  * Trois sous-onglets : 💡 Idées recettes, 📺 Chaînes suivies, ❤️ Favorites.
- * Pattern : tout texte externe passe par esc(), tout lien par urlSure(). */
+ * Pattern : tout texte externe passe par esc(), tout lien par urlSure().
+ * v120 (correctif intégration) : rendu dans #view (le conteneur réel de
+ * index.html, pas #main), wrapper en <div> (plus de <main> imbriqué),
+ * barre de sous-onglets unique (le bloc dupliqué de renduChainesSuivies
+ * disparaît), champ libre du filtre commité au blur (plus de re-rendu à
+ * chaque frappe qui volait le focus), génération de semaine sans récursion
+ * (navigation privée : écriture store muette = plus de stack overflow). */
 import { $, state, esc, getStore, setStore, norm, urlSure, JOURS } from '../core.js';
 import { renderView } from './common.js';
 
@@ -238,14 +244,14 @@ function renduFiltre() {
 
 /* Rendre la grille des idées recettes */
 function renduIdeesRecettes() {
-  const semaine = semaineRecettes();
+  let semaine = semaineRecettes();
   const filtre = filtreRecettes();
   
-  // Générer si nécessaire
+  // Générer si nécessaire — sans récursion : si l'écriture du store échoue
+  // (navigation privée), on rend quand même avec la semaine en mémoire.
   if (!semaine) {
-    const nouvelleSemaine = genererSemaine(filtre);
-    sauvegarderSemaine(nouvelleSemaine);
-    return renduIdeesRecettes();
+    semaine = genererSemaine(filtre);
+    sauvegarderSemaine(semaine);
   }
   
   // Calculer le lundi de la semaine courante
@@ -332,12 +338,7 @@ function renduChainesSuivies() {
     }
   }
   
-  let html = '<div class="subtabs">' +
-    '<button class="subtab' + (state.recettesSub === 'idees' ? ' active' : '') + '" data-sub="idees">💡 Idées recettes</button>' +
-    '<button class="subtab' + (state.recettesSub === 'chaines' ? ' active' : '') + '" data-sub="chaines">📺 Chaînes suivies</button>' +
-    '<button class="subtab' + (state.recettesSub === 'favorites' ? ' active' : '') + '" data-sub="favorites">❤️ Favorites</button>' +
-    '</div>' +
-    '<div class="recettes-chaines">';
+  let html = '<div class="recettes-chaines">';
   
   for (const [plateforme, chaines] of Object.entries(chainesParPlateforme)) {
     if (chaines.length === 0) continue;
@@ -422,7 +423,7 @@ function renduFavorites() {
 export function vueRecettes() {
   if (state.activeTab !== 'recettes') return;
   
-  let html = '<main class="recettes">';
+  let html = '<div class="recettes">';
   
   // Barre de sous-onglets (toujours visible)
   html += '<div class="subtabs recettes-subtabs">' +
@@ -443,9 +444,9 @@ export function vueRecettes() {
       html += renduIdeesRecettes();
   }
   
-  html += '</main>';
+  html += '</div>';
   
-  $('#main').innerHTML = html;
+  $('#view').innerHTML = html;
   
   // Wiring des événements
   wiringRecettes();
@@ -486,7 +487,7 @@ function wiringRecettes() {
       sauvegarderFiltre(filtre);
       renderView();
     };
-    inputLibre.oninput = inputLibre.onchange;
+    /* commit au blur uniquement : un re-rendu à chaque frappe volait le focus */
   }
   
   // Bouton Régénérer la semaine

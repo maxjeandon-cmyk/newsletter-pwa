@@ -4,12 +4,12 @@ PWA statique hébergée sur GitHub Pages : l'édition quotidienne « Des infos, 
 
 Site : https://diyeah24.fr
 
-## Architecture (v104)
+## Architecture (v120)
 
 ```
 index.html          Coquille unique — tout le rendu se fait côté client en ES modules
 js/core.js          État global (state), store localStorage (clés préfixées "nl."), échappement HTML (esc), dates
-js/onglets.js       Source unique des 8 onglets (ids figés — les renommages ne touchent que nom/emoji)
+js/onglets.js       Source unique des 9 onglets (ids figés — les renommages ne touchent que nom/emoji)
 js/router.js        Routeur URL : l'onglet ouvert vit dans le hash (#edition?c=…, #medias/blast…),
                     liens profonds partageables, bouton retour fonctionnel
 js/feeds.js         Couche réseau : RSS direct → relais JSON/XML, dédup par URL, caches TTL 20 min
@@ -20,15 +20,16 @@ js/push.js          Notifications Web Push : souscription (recréée à chaque a
                     enregistrement vérifié EN TABLE côté serveur, guides par navigateur
                     (Firefox iPhone impossible, Firefox Android = notifs seulement app ouverte)
 js/meteo.js         Météo du jour (Open-Meteo, gratuit, sans clé) + tendance matin/soirée, ville au choix
-js/views/          Vues des onglets (edition, articles, videos, medias, archives, climat→newsletters,
+js/views/          Vues des onglets (edition, articles, videos, recettes, medias, archives, climat→newsletters,
                     lyceens, reglages, sources, common)
 js/app.js           Bootstrap : wiring des boutons, chargement data/*.json, service worker
-sw.js               Service worker : coquille cache-first (CACHE = 'newsletter-v118'),
+sw.js               Service worker : coquille cache-first (CACHE = 'newsletter-v120'),
                     editions/ et data/ network-first — bump de CACHE à chaque livraison de code
 styles.css          Thème sombre/clair, variables CSS
 
 data/               Config et données network-first (flux RSS, médias, chapitres, newsletters/ONG,
-                    compte.json avec push.cle_publique VAPID) — modifiable sans bump de cache
+                    recettes 120 en 4 shards + chaînes cuisine, compte.json avec push.cle_publique VAPID)
+                    — modifiable sans bump de cache
 data/etudiants/     Chronique « Version des étudiants » : index.json + chapitres (NN.json),
                     paragraphes {id, texte, sources, auto?} — les relevés auto 6 h s'y ajoutent
 editions/           Contrat figé : YYYY-MM-DD.html/.json, latest.json, semaines/, archives/
@@ -37,9 +38,9 @@ supabase/schema.sql Tables preferences / abonnements_push + politiques RLS
 
 Sans framework, sans build : le site est 100 % statique, servi par le CDN GitHub Pages ; le service worker rend la coquille disponible hors ligne.
 
-## Les 8 onglets
+## Les 9 onglets
 
-✊ Lycéens 2026 (version des Lycéens : chronique puis chapitres transverses — c10-c14 et c16 reçoivent toutes les 6 h un volet automatique « relevé auto », poli lors des éditions, c15 manuel ; version du gouvernement + faits multisources + chronologie résumée des jalons) · 📄 Édition du jour (chapitres déroulants, partage par chapitre, météo du jour) · 🔥 Articles du jour · 📺 Vidéos du jour · 🎬 Médias suivis · 🗄️ Archives · 🗞️ Newsletters (bulletin Copernicus + relevés auto de 10 ONG) · ⚙️ Réglages.
+✊ Lycéens 2026 (version des Lycéens : chronique puis chapitres transverses — c10-c14 et c16 reçoivent toutes les 6 h un volet automatique « relevé auto », poli lors des éditions, c15 manuel ; version du gouvernement + faits multisources + chronologie résumée des jalons) · 📄 Édition du jour (chapitres déroulants, partage par chapitre, météo du jour) · 🔥 Articles du jour · 📺 Vidéos du jour · 🍲 Recettes WiP (💡 menu de la semaine lundi→dimanche, 4 repas/jour, 28 recettes distinctes tirées du catalogue de 120, filtre « aliments à éviter » 10 familles + champ libre, bouton régénérer ; 📺 chaînes YouTube/Instagram/sites de cuisine, ajout manuel local ; ❤️ favorites via le cœur de chaque carte) · 🎬 Médias suivis · 🗄️ Archives · 🗞️ Newsletters (bulletin Copernicus + relevés auto de 10 ONG) · ⚙️ Réglages.
 
 L'ordre d'affichage est réglable par chaque utilisateur (Réglages) ; ids d'onglets jamais renommés (routing + ordres sauvegardés).
 
@@ -93,4 +94,4 @@ Notifications Web Push : la clé publique VAPID vit dans `data/compte.json` (`pu
 - `tools/ong-releve.js` : relevé quotidien des sites ONG (règles d'extraction par site) ;
 - `tools/notifier.js` / `tools/notif-diag.js` : envoi push et diagnostic ;
 - `tools/check-site.js` : état des flux et fichiers ;
-- `tools/test/` : harnas hors-ligne (lots 5-8, `pastille-medias.js` v114, `replier-site.js` v115, `debut-texte.js` v116-117 : navigation du fil — début, reprendre, fin, `edition-native.js` v118 : rendu natif de l'édition — encart News + chapitres en dessous, plus d'iframe) — DOM factice et délégation vérifiées, aucune dépendance, aucun réseau.
+- `tools/test/` : harnas hors-ligne (lots 5-8, `pastille-medias.js` v114, `replier-site.js` v115, `debut-texte.js` v116-117 : navigation du fil — début, reprendre, fin, `edition-native.js` v118 : rendu natif de l'édition — encart News + chapitres en dessous, plus d'iframe, `recettes.js` v119 : génération semaine/filtres/données, `recettes-view.js` v120 : rendu RÉEL des 3 sous-onglets Recettes WiP — #view, 28 distinctes, une seule barre) — DOM factice et délégation vérifiées, aucune dépendance, aucun réseau.
