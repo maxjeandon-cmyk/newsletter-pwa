@@ -1,6 +1,11 @@
 {
   "editions": [
     {
+      "date": "2026-10-10",
+      "fichier": "editions/2026-10-10.json",
+      "html": "editions/2026-10-10.html"
+    },
+    {
       "date": "2026-10-09",
       "fichier": "editions/2026-10-09.json",
       "html": "editions/2026-10-09.html"
