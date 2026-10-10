@@ -869,6 +869,26 @@
         "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
       ],
       "ligne": "l'international par le Wall Street Journal"
+    },
+    {
+      "id": "phys-org",
+      "nom": "Phys.org",
+      "emoji": "🔭",
+      "categorie": "Sciences 🔬",
+      "ligne": "communiqués de recherche mondiaux, agrégateur",
+      "flux": [
+        "https://phys.org/rss-feed/"
+      ]
+    },
+    {
+      "id": "its-foss",
+      "nom": "It's FOSS",
+      "emoji": "🐧",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "Linux et logiciels libres, tutoriels",
+      "flux": [
+        "https://itsfoss.com/feed/"
+      ]
     }
   ]
 }
