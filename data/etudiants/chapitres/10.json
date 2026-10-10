@@ -86,6 +86,15 @@
         "Europe 1 / France Inter — des lycéens déçus par la prise de parole de Lecornu (08/10/2026)",
         "L Humanité — la mobilisation parisienne du 7 octobre (07/10/2026)"
       ]
+    },
+    {
+      "id": "c10p10",
+      "texte": "Entre groupes privés et stories, l'intérieur du mouvement se raconte : Manque d’info concernant les blocus (Reddit — r/etudiants) — détail : Cc , je suis à la fac de nanterre en droit. Et je soutiens totalement le blocus et les revendications et j’y participe même parfois. Mais l… ; Mobilisation des lycéens : le vrai ou faux junior vérifie deux vidéos de violences en marge des blocages (1 media : France Inter — non corrobore) — détail : L'une concerne un lycéen qui a eu la main arrachée à Lens, l'autre des accusations de noyade à Belfort. Les collégiens s'interrogent sur la… (Volet automatique du 10 octobre 2026 à 23:25, chapitre « Chorus — la voix de l'intérieur » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "Reddit — r/etudiants",
+        "France Inter"
+      ],
+      "auto": true
     }
   ]
 }
