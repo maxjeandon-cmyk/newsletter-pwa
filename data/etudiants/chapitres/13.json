@@ -71,6 +71,14 @@
       "sources": [
         "Ouest-France"
       ]
+    },
+    {
+      "id": "c13p9",
+      "texte": "Côté institutions, les réponses s'égrènent : Blocus des lycées : les enseignants TZR de l’éducation nationale dans la lumière après les annonces du ministre (1 media : Ouest-France — non corrobore) — détail : Y a-t-il vraiment 3 000 enseignants TZR (titulaires sur zone de remplacement) qui n’exercent pas et qui sont payés ? C’est la question que … (Volet automatique du 10 octobre 2026 à 23:25, chapitre « La machine gouvernementale, vue d'en bas » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "Ouest-France"
+      ],
+      "auto": true
     }
   ]
 }
