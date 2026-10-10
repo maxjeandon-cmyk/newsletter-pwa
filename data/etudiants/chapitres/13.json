@@ -67,11 +67,10 @@
     },
     {
       "id": "c13p8",
-      "texte": "Du rectorat à Matignon, les rouages continuent de tourner : Mobilisation lycéenne : emploi du temps, Parcoursup... Ce que disent les doléances sur la plateforme du gouvernement (1 media : Ouest-France — non corrobore) — détail : La plateforme Agora, chargée de recueillir les revendications des lycéens, a rendu ses premières bribes d’enseignements. La lourdeur des se… (Volet automatique du 10 octobre 2026 à 17:25, chapitre « La machine gouvernementale, vue d'en bas » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "La machine, elle, poursuit sa consultation : la plateforme Agora, chargée de recueillir les revendications des lycéens, a rendu ses premières bribes d'enseignements, note Ouest-France — les doléances sur l'emploi du temps et Parcoursup atteignent ainsi la sphère du gouvernement, où une note relève déjà la lourdeur des semaines. Le rouage tourne, les grilles restent bloquées : vue d'en bas, la machine écoute beaucoup et cède encore peu.",
       "sources": [
         "Ouest-France"
-      ],
-      "auto": true
+      ]
     }
   ]
 }

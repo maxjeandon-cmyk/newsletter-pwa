@@ -91,7 +91,7 @@
       "periode": "Chronique transverse — les revendications, mot à mot",
       "titre": "Ce qu'ils veulent — les revendications, mot à mot",
       "paragraphes": 9,
-      "octets": 12578
+      "octets": 12497
     },
     {
       "id": "c12",
@@ -107,7 +107,7 @@
       "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
       "titre": "La machine gouvernementale, vue d'en bas",
       "paragraphes": 8,
-      "octets": 12259
+      "octets": 12114
     },
     {
       "id": "c14",
@@ -115,7 +115,7 @@
       "periode": "Chronique transverse — la génération dans l'Histoire",
       "titre": "Génération 2026 — le mouvement dans la longue durée",
       "paragraphes": 6,
-      "octets": 9633
+      "octets": 9585
     },
     {
       "id": "c15",
@@ -171,7 +171,7 @@
       "periode": "10 octobre 2026 — suivi de la journée",
       "titre": "Le fil continue — 10 octobre 2026",
       "paragraphes": 2,
-      "octets": 2039
+      "octets": 1700
     }
   ],
   "releveSigs": [
@@ -294,7 +294,7 @@
           "periode": "10 octobre 2026 — suivi de la journée",
           "titre": "Le fil continue — 10 octobre 2026",
           "paragraphes": 2,
-          "octets": 2039
+          "octets": 1700
         },
         {
           "id": "c10",
@@ -310,7 +310,7 @@
           "periode": "Chronique transverse — les revendications, mot à mot",
           "titre": "Ce qu'ils veulent — les revendications, mot à mot",
           "paragraphes": 9,
-          "octets": 12578
+          "octets": 12497
         },
         {
           "id": "c12",
@@ -326,7 +326,7 @@
           "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
           "titre": "La machine gouvernementale, vue d'en bas",
           "paragraphes": 8,
-          "octets": 12259
+          "octets": 12114
         },
         {
           "id": "c14",
@@ -334,7 +334,7 @@
           "periode": "Chronique transverse — la génération dans l'Histoire",
           "titre": "Génération 2026 — le mouvement dans la longue durée",
           "paragraphes": 6,
-          "octets": 9633
+          "octets": 9585
         },
         {
           "id": "c15",

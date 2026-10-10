@@ -72,11 +72,10 @@
     },
     {
       "id": "c11p9",
-      "texte": "Les demandes des lycéens remontent, mot à mot : Mobilisation lycéenne : emploi du temps, Parcoursup... Ce que disent les doléances sur la plateforme du gouvernement (1 media : Ouest-France — non corrobore) — détail : La plateforme Agora, chargée de recueillir les revendications des lycéens, a rendu ses premières bribes d’enseignements. La lourdeur des se… (Volet automatique du 10 octobre 2026 à 17:25, chapitre « Ce qu'ils veulent — les revendications, mot à mot » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "Et les revendications remontent désormais aussi par la voie officielle : la plateforme Agora, chargée de recueillir les revendications des lycéens, a rendu ses premières bribes d'enseignements, documente Ouest-France — l'emploi du temps et Parcoursup se lisent dans les doléances déposées sur la plateforme du gouvernement, et la lourdeur des semaines, selon une note du gouvernement, y pèse entre les lignes. Ce que les tracts disent depuis trois semaines, l'État commence à se le faire écrire lui-même.",
       "sources": [
         "Ouest-France"
-      ],
-      "auto": true
+      ]
     }
   ]
 }
