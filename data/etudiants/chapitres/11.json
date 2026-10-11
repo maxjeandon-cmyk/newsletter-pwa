@@ -91,6 +91,15 @@
         "Europe 1",
         "France 24"
       ]
+    },
+    {
+      "id": "c11p12",
+      "texte": "La liste de ce qu'ils veulent, elle, continue de s'écrire : Quand le Figaro magazine défend Parcoursup et l’éternelle reproduction des élites (1 media : L'Humanité — non corrobore) — détail : Et Parcoursup ? Pour comprendre ce qui est en jeu, on peut décoder ce qu’en dit le directeur de la rédaction du Figaro magazine, Guillaume … ; Face à «l’effondrement du système éducatif», Nicolas Dupont-Aignan veut «supprimer Parcoursup» et rétablir un bac «impartial» (1 media : Europe 1 — non corrobore) — détail : Nicolas Dupont-Aignan estime que le malaise lycéen provient de la destruction du baccalauréat et de l'opacité de Parcoursup. Invité du Gran… (Volet automatique du 11 octobre 2026 à 17:26, chapitre « Ce qu'ils veulent — les revendications, mot à mot » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "L'Humanité",
+        "Europe 1"
+      ],
+      "auto": true
     }
   ]
 }
