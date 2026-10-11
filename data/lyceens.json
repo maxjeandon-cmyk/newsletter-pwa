@@ -1,5 +1,5 @@
 {
-  "maj": "10/10/2026 23:25",
+  "maj": "11/10/2026 11:27",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -186,11 +186,12 @@
       "date": "10/10/2026",
       "titre": "Main d’un lycéen arrachée à Lens : Le tir de grenade était « conforme », estime le parquet",
       "texte": "Le parquet de Béthune a estimé vendredi que le tir de grenade ayant grièvement blessé un lycéen à Lens était conforme aux procédures. La mère de l’adolescent, amputé de la main gauche, a porté plainte",
-      "source": "20 minutes / Le Figaro / La Croix",
+      "source": "20 minutes / Le Figaro / La Croix / Libération",
       "sources": [
         "20 minutes",
         "Le Figaro",
-        "La Croix"
+        "La Croix",
+        "Libération"
       ],
       "url": "https://www.20minutes.fr/societe/4253013-20261010-main-lyceen-arrachee-lens-tir-grenade-conforme-estime-parquet?at_medium=display&at_campaign=149",
       "verifie": true
