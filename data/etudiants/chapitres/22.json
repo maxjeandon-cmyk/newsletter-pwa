@@ -21,6 +21,16 @@
         "Europe 1",
         "L'Humanité"
       ]
+    },
+    {
+      "id": "c22p3",
+      "texte": "6 heures ont passé depuis le relevé précédent ; le fil continue. Au soir du 11 octobre 2026, le fil du récit continue. Côté mobilisation, l'élan ne retombe pas : Une brèche dans le blocus illégal des États-Unis : le matériel médical envoyé par le PCF est arrivé à destination à Cuba (1 media : L'Humanité — non corrobore) — detail : Chargées de matériel médical, les cargaisons sont une brèche dans le blocus illégal des États-Unis. Face à un exécutif inerte, la formation fait la démonstration que la volonté po…. Côté forces de l'ordre, les tensions ne faiblissent pas : En marge d’un blocus, une lycéenne en garde à vue pour un «Acab» sur son ventre : «C’était vraiment un moment d’humiliation» (1 media : Libération — non corrobore) — detail : Une ado de 16 ans est restée sous contrôle policier pendant vingt-quatre heures pour une inscription au feutre, le 5 octobre. Près d’une semaine plus tard, elle revient sur cet év…. Côté gouvernement, les réponses s'égrènent : Présidentielle 2027 : Raphaël Glucksmann « candidat de la gauche démocratique », Jean-Luc Mélenchon attaque Parcoursup (1 media : 20 minutes — non corrobore — repris aussi sur r/france) — detail : D’ici à l’élection présidentielle, « 20 Minutes » vous livre le dimanche soir les dernières informations de la campagne. Aujourd’hui, Raphaël Glucksmann s’est présenté tel le « ca…. Le prochain relevé reprendra le fil. (Relevé automatique du 11 octobre 2026 à 23:27 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "20 minutes",
+        "Libération",
+        "L'Humanité"
+      ],
+      "auto": true
     }
   ]
 }
