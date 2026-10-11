@@ -83,6 +83,15 @@
       "sources": [
         "Ouest-France"
       ]
+    },
+    {
+      "id": "c11p11",
+      "texte": "Côté revendications, les exigences s'affinent : Face à «l’effondrement du système éducatif», Nicolas Dupont-Aignan veut «supprimer Parcoursup» et rétablir un bac «impartial» (1 media : Europe 1 — non corrobore) — détail : Nicolas Dupont-Aignan estime que le malaise lycéen provient de la destruction du baccalauréat et de l'opacité de Parcoursup. Invité du Gran… ; Les lycéens contre le système ParcourSup au Salon de l'Etudiant (1 media : France 24 — non corrobore) — détail : Supprimer ou modifier ParcourSup ? Au Salon de l'Etudiant, les questions sont nombreuses sur l'évolution de la plateforme (Volet automatique du 11 octobre 2026 à 11:27, chapitre « Ce qu'ils veulent — les revendications, mot à mot » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "Europe 1",
+        "France 24"
+      ],
+      "auto": true
     }
   ]
 }
