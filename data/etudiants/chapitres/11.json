@@ -94,12 +94,11 @@
     },
     {
       "id": "c11p12",
-      "texte": "La liste de ce qu'ils veulent, elle, continue de s'écrire : Quand le Figaro magazine défend Parcoursup et l’éternelle reproduction des élites (1 media : L'Humanité — non corrobore) — détail : Et Parcoursup ? Pour comprendre ce qui est en jeu, on peut décoder ce qu’en dit le directeur de la rédaction du Figaro magazine, Guillaume … ; Face à «l’effondrement du système éducatif», Nicolas Dupont-Aignan veut «supprimer Parcoursup» et rétablir un bac «impartial» (1 media : Europe 1 — non corrobore) — détail : Nicolas Dupont-Aignan estime que le malaise lycéen provient de la destruction du baccalauréat et de l'opacité de Parcoursup. Invité du Gran… (Volet automatique du 11 octobre 2026 à 17:26, chapitre « Ce qu'ils veulent — les revendications, mot à mot » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "La plateforme, un soir de plus, au centre de la liste. L'Humanité décrypte le Figaro magazine, qui « défend Parcoursup et l'éternelle reproduction des élites », jusque dans les propos de son directeur de la rédaction, Guillaume Roquette : le débat sur l'orientation se joue aussi entre les lignes des kiosques. Et le politique tient sa ligne : face à « l'effondrement du système éducatif », Nicolas Dupont-Aignan veut « supprimer Parcoursup » et rétablir un bac « impartial ». Ce qu'ils veulent s'écrit aussi contre ce que d'autres défendent — et la liste, ce 11 octobre au soir, ne raccourcit pas.",
       "sources": [
         "L'Humanité",
         "Europe 1"
-      ],
-      "auto": true
+      ]
     }
   ]
 }
