@@ -99,6 +99,14 @@
         "L'Humanité",
         "Europe 1"
       ]
+    },
+    {
+      "id": "c11p13",
+      "texte": "Les demandes des lycéens remontent, mot à mot : Présidentielle 2027 : Raphaël Glucksmann « candidat de la gauche démocratique », Jean-Luc Mélenchon attaque Parcoursup (1 media : 20 minutes — non corrobore — repris aussi sur r/france) — détail : D’ici à l’élection présidentielle, « 20 Minutes » vous livre le dimanche soir les dernières informations de la campagne. Aujourd’hui, Rapha… (Volet automatique du 11 octobre 2026 à 23:27, chapitre « Ce qu'ils veulent — les revendications, mot à mot » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "20 minutes"
+      ],
+      "auto": true
     }
   ]
 }
