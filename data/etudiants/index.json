@@ -131,7 +131,7 @@
       "periode": "Chronique transverse — les figures du mouvement",
       "titre": "Figures d'un automne — portraits croisés",
       "paragraphes": 5,
-      "octets": 9340
+      "octets": 9341
     },
     {
       "id": "c17",
@@ -147,39 +147,39 @@
       "periode": "7 octobre 2026 — suivi de la journée",
       "titre": "Le lendemain de l'acte III — blocages tenus, grenades suspendues",
       "paragraphes": 4,
-      "octets": 6516
+      "octets": 6556
     },
     {
       "id": "c19",
       "fichier": "chapitres/19.json",
       "periode": "8 octobre 2026 — suivi de la journée",
-      "titre": "Le fil continue — 8 octobre 2026",
+      "titre": "Le mépris des plateaux — la Bastille en réponse, 3.000 remplaçants promis",
       "paragraphes": 3,
-      "octets": 4072
+      "octets": 4116
     },
     {
       "id": "c20",
       "fichier": "chapitres/20.json",
       "periode": "9 octobre 2026 — suivi de la journée",
-      "titre": "Le fil continue — 9 octobre 2026",
+      "titre": "Parcoursup en toutes les unes — un premier pas qui ne rouvre pas les grilles",
       "paragraphes": 3,
-      "octets": 3248
+      "octets": 3285
     },
     {
       "id": "c21",
       "fichier": "chapitres/21.json",
       "periode": "10 octobre 2026 — suivi de la journée",
-      "titre": "Le fil continue — 10 octobre 2026",
+      "titre": "Agora prête l'oreille — les collégiens dans la cour, le vrai ou faux des images",
       "paragraphes": 3,
-      "octets": 2988
+      "octets": 3036
     },
     {
       "id": "c22",
       "fichier": "chapitres/22.json",
       "periode": "11 octobre 2026 — suivi de la journée",
-      "titre": "Le fil continue — 11 octobre 2026",
+      "titre": "« Un moment pour le blocus, un autre pour les cours » — Nantes évacuée, Parcoursup au Salon",
       "paragraphes": 1,
-      "octets": 1782
+      "octets": 1844
     }
   ],
   "releveSigs": [
@@ -280,39 +280,39 @@
           "periode": "7 octobre 2026 — suivi de la journée",
           "titre": "Le lendemain de l'acte III — blocages tenus, grenades suspendues",
           "paragraphes": 4,
-          "octets": 6516
+          "octets": 6556
         },
         {
           "id": "c19",
           "fichier": "chapitres/19.json",
           "periode": "8 octobre 2026 — suivi de la journée",
-          "titre": "Le fil continue — 8 octobre 2026",
+          "titre": "Le mépris des plateaux — la Bastille en réponse, 3.000 remplaçants promis",
           "paragraphes": 3,
-          "octets": 4072
+          "octets": 4116
         },
         {
           "id": "c20",
           "fichier": "chapitres/20.json",
           "periode": "9 octobre 2026 — suivi de la journée",
-          "titre": "Le fil continue — 9 octobre 2026",
+          "titre": "Parcoursup en toutes les unes — un premier pas qui ne rouvre pas les grilles",
           "paragraphes": 3,
-          "octets": 3248
+          "octets": 3285
         },
         {
           "id": "c21",
           "fichier": "chapitres/21.json",
           "periode": "10 octobre 2026 — suivi de la journée",
-          "titre": "Le fil continue — 10 octobre 2026",
+          "titre": "Agora prête l'oreille — les collégiens dans la cour, le vrai ou faux des images",
           "paragraphes": 3,
-          "octets": 2988
+          "octets": 3036
         },
         {
           "id": "c22",
           "fichier": "chapitres/22.json",
           "periode": "11 octobre 2026 — suivi de la journée",
-          "titre": "Le fil continue — 11 octobre 2026",
+          "titre": "« Un moment pour le blocus, un autre pour les cours » — Nantes évacuée, Parcoursup au Salon",
           "paragraphes": 1,
-          "octets": 1782
+          "octets": 1844
         },
         {
           "id": "c10",
@@ -368,7 +368,7 @@
           "periode": "Chronique transverse — les figures du mouvement",
           "titre": "Figures d'un automne — portraits croisés",
           "paragraphes": 5,
-          "octets": 9340
+          "octets": 9341
         }
       ]
     }
