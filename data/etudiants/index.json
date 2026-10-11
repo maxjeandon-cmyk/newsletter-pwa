@@ -91,7 +91,7 @@
       "periode": "Chronique transverse — les revendications, mot à mot",
       "titre": "Ce qu'ils veulent — les revendications, mot à mot",
       "paragraphes": 13,
-      "octets": 15515
+      "octets": 15357
     },
     {
       "id": "c12",
@@ -99,7 +99,7 @@
       "periode": "Chronique transverse — la répression et ses visages",
       "titre": "La répression et ses visages",
       "paragraphes": 9,
-      "octets": 13793
+      "octets": 13777
     },
     {
       "id": "c13",
@@ -179,7 +179,7 @@
       "periode": "11 octobre 2026 — suivi de la journée",
       "titre": "« Un moment pour le blocus, un autre pour les cours » — Nantes évacuée, Parcoursup au Salon",
       "paragraphes": 3,
-      "octets": 4427
+      "octets": 3674
     }
   ],
   "releveSigs": [
@@ -311,7 +311,7 @@
           "periode": "11 octobre 2026 — suivi de la journée",
           "titre": "« Un moment pour le blocus, un autre pour les cours » — Nantes évacuée, Parcoursup au Salon",
           "paragraphes": 3,
-          "octets": 4427
+          "octets": 3674
         },
         {
           "id": "c10",
@@ -327,7 +327,7 @@
           "periode": "Chronique transverse — les revendications, mot à mot",
           "titre": "Ce qu'ils veulent — les revendications, mot à mot",
           "paragraphes": 13,
-          "octets": 15515
+          "octets": 15357
         },
         {
           "id": "c12",
@@ -335,7 +335,7 @@
           "periode": "Chronique transverse — la répression et ses visages",
           "titre": "La répression et ses visages",
           "paragraphes": 9,
-          "octets": 13793
+          "octets": 13777
         },
         {
           "id": "c13",
