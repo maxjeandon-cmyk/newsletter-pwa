@@ -12,6 +12,16 @@
         "Europe 1",
         "France 24"
       ]
+    },
+    {
+      "id": "c22p2",
+      "texte": "6 heures ont passé depuis le relevé précédent ; le fil continue. Dans l'après-midi du 11 octobre 2026, la chronique avance. Dans la rue, le mouvement garde son souffle : Blocus d'un bâtiment de Nantes Université : «On se demande s'il ne faudrait pas mettre cette faculté sous tutelle», dénonce un responsable de l'UNI (1 media : Europe 1 — non corrobore) ; Nantes : « Je n’avais jamais vu ça »… L’université saccagée en marge du blocus des lycées (1 media : 20 minutes — non corrobore) — detail : Après d’importants dégâts constatés à l'université de Nantes, saccagée par des manifestants, Max Rivet, responsable local de l'UNI à Nantes Université, dénonce une situation récur…. À Beauvau comme à l'Élysée, on ajuste le discours : Quand le Figaro magazine défend Parcoursup et l’éternelle reproduction des élites (1 media : L'Humanité — non corrobore) ; Face à «l’effondrement du système éducatif», Nicolas Dupont-Aignan veut «supprimer Parcoursup» et rétablir un bac «impartial» (1 media : Europe 1 — non corrobore) — detail : Et Parcoursup ? Pour comprendre ce qui est en jeu, on peut décoder ce qu’en dit le directeur de la rédaction du Figaro magazine, Guillaume Roquette : « Parmi les revendications co…. Le prochain relevé reprendra le fil. (Relevé automatique du 11 octobre 2026 à 17:26 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "L'Humanité",
+        "Europe 1",
+        "20 minutes"
+      ],
+      "auto": true
     }
   ]
 }
