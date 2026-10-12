@@ -106,6 +106,14 @@
       "sources": [
         "20 minutes"
       ]
+    },
+    {
+      "id": "c11p14",
+      "texte": "Sur le front des revendications, les mots restent fermes : Mobilisation des lycéens en France: la suppression de Parcoursup, au cœur des revendications (1 media : RFI — non corrobore) — détail : Une nouvelle manifestation est prévue mardi 13 octobre, marquant « l’acte V » de la mobilisation lycéenne en France entamée mi-septembre. E… (Volet automatique du 12 octobre 2026 à 11:33, chapitre « Ce qu'ils veulent — les revendications, mot à mot » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "RFI"
+      ],
+      "auto": true
     }
   ]
 }
