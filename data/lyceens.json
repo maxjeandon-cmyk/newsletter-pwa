@@ -1,5 +1,5 @@
 {
-  "maj": "12/10/2026 11:32",
+  "maj": "12/10/2026 17:30",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -24,41 +24,43 @@
       "date": "12/10/2026",
       "titre": "Colère des lycéens: Emmanuel Macron affirme que la mobilisation doit se faire \"dans le calme, dans l'ordre\"",
       "texte": "Nouvelle journée de mobilisation pour les lycéens, ce lundi 12 octobre, pour demander des meilleures conditions d'apprentissage. Des blocages d'établissements sont attendus, dans les mêmes proportion…",
-      "source": "20 minutes / Le Figaro / BFMTV",
+      "source": "20 minutes / Le Figaro / BFMTV / Public Sénat",
       "sources": [
         "20 minutes",
         "Le Figaro",
-        "BFMTV"
+        "BFMTV",
+        "Public Sénat"
       ],
       "url": "https://www.bfmtv.com/societe/manifestations/direct-colere-des-lyceens-de-nouveaux-blocages-prevus-ce-lundi-le-ministre-de-l-education-nationale-attendu-dans-l-academie-de-lille_LN-202610120078.html",
       "verifie": true
     },
     {
-      "id": "amv26w95e-5qym",
-      "date": "10/10/2026",
-      "titre": "Mobilisation lycéenne: \"Il faut un débouché politique et si possible dans le cadre du débat budgétaire en cours\", estim…",
-      "texte": "Mobilisation lycéenne: \"Il faut un débouché politique et si possible dans le cadre du débat budgétaire en cours\", estime Laurent Baumel, député \"Socialistes et apparentés\" de l'Indre-et-Loire",
-      "source": "Europe 1 / BFMTV",
+      "id": "amv5esazr-45w4",
+      "date": "12/10/2026",
+      "titre": "Mouvement lycéen : «au moins huit personnels» de l'Éducation nationale blessés lundi matin, selon le ministère",
+      "texte": "La mobilisation lycéenne entame sa troisième semaine, avec des établissements à nouveau bloqués ce lundi 12 octobre. Ces manifestations ont parfois dégénérés, blessant \"au moins huit personnels\" de l…",
+      "source": "20 minutes / Europe 1 / Le Figaro / BFMTV / Libération",
       "sources": [
+        "20 minutes",
         "Europe 1",
-        "BFMTV"
+        "Le Figaro",
+        "BFMTV",
+        "Libération"
       ],
-      "url": "https://www.bfmtv.com/politique/video-mobilisation-lyceenne-il-faut-un-debouche-politique-et-si-possible-dans-le-cadre-du-debat-budgetaire-en-cours-estime-laurent-baumel-depute-socialistes-et-apparentes-de-l-indre-et-loire_VN-202610090925.html",
+      "url": "https://www.europe1.fr/faits-divers/mouvement-lyceen-au-moins-huit-personnels-de-leducation-nationale-blesses-lundi-matin-selon-le-ministere-1141622?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
     },
     {
-      "id": "amv2wku4d-6qys",
-      "date": "10/10/2026",
-      "titre": "Mobilisation lycéenne : emploi du temps, Parcoursup... Ce que disent les doléances sur la plateforme du gouvernement",
-      "texte": "La plateforme Agora, chargée de recueillir les revendications des lycéens, a rendu ses premières bribes d’enseignements. La lourdeur des semaines serait, selon une note du gouvernement consultée par …",
-      "source": "BFMTV / Ouest-France / 20 minutes / Europe 1",
+      "id": "amv5esazs-fcs2",
+      "date": "12/10/2026",
+      "titre": "Mouvement lycéen : les emplois du temps et les problèmes de bâtiments en tête des motifs de plaintes sur la plateforme …",
+      "texte": "Sur les 82 000 contributions recueillies jusqu’à dimanche, près des trois quarts concernent les journées trop longues ou la charge de travail et la moitié évoquent les conditions matérielles dans les…",
+      "source": "Europe 1 / Libération",
       "sources": [
-        "BFMTV",
-        "Ouest-France",
-        "20 minutes",
-        "Europe 1"
+        "Europe 1",
+        "Libération"
       ],
-      "url": "https://www.ouest-france.fr/education/mobilisation-lyceenne-lemploi-du-temps-et-letat-des-lycees-preoccuperaient-plus-que-parcoursup-ou-les-telephones-d47945b4-c48c-11f1-92e9-819eb738846b?utm_source=fluxpublicfrance&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+      "url": "https://www.liberation.fr/societe/education/mouvement-lyceen-les-emplois-du-temps-et-les-problemes-de-batiments-en-tete-des-motifs-de-plaintes-sur-la-plateforme-du-gouvernement-20261012_2QMJMBU6ZZEITIBIV4DRNTSBLE/",
       "verifie": true
     },
     {
@@ -181,6 +183,19 @@
   ],
   "faits": [
     {
+      "id": "amv5esazr-2wa4",
+      "date": "12/10/2026",
+      "titre": "Colère des lycées: « Bismillah c’est les ténèbres »… Comment cette infiltration raciste est devenue un mème et un slogan",
+      "texte": "Des policiers auraient tenté de s’infiltrer dans des groupes de blocus sur les réseaux avant de se faire démasquer et de devenir la risée des lycéens en colère",
+      "source": "20 minutes / France Inter",
+      "sources": [
+        "20 minutes",
+        "France Inter"
+      ],
+      "url": "https://www.20minutes.fr/societe/4253632-20261012-bismillah-tenebres-comment-infiltration-raciste-devenue-slogan?at_medium=display&at_campaign=149",
+      "verifie": true
+    },
+    {
       "id": "amv1u3a6j-jih6",
       "date": "10/10/2026",
       "titre": "Main d’un lycéen arrachée à Lens : Le tir de grenade était « conforme », estime le parquet",
@@ -254,20 +269,6 @@
         "L'Humanité"
       ],
       "url": "https://www.rfi.fr/fr/france/20261009-mobilisation-des-lyc%C3%A9ens-en-france-l-onu-inqui%C3%A8te-face-aux-violences-le-mouvement-appel%C3%A9-%C3%A0-se-poursuivre",
-      "verifie": true
-    },
-    {
-      "id": "amv1h7lm4-k3g8",
-      "date": "09/10/2026",
-      "titre": "Blocage des lycées : un adolescent de 15 ans sera jugé en février prochain pour avoir roué de coups une policière à Par…",
-      "texte": "Deux circonstances aggravantes sont retenues : les faits ayant été commis en réunion et lors d’une manifestation sur la voie publique.",
-      "source": "Le Figaro / BFMTV / franceinfo",
-      "sources": [
-        "Le Figaro",
-        "BFMTV",
-        "franceinfo"
-      ],
-      "url": "https://www.lefigaro.fr/faits-divers/blocage-des-lycees-un-adolescent-de-15-ans-sera-juge-en-fevrier-prochain-pour-avoir-roue-de-coups-une-policiere-a-paris-20261009",
       "verifie": true
     },
     {
