@@ -13,6 +13,15 @@
         "20 minutes",
         "RFI"
       ]
+    },
+    {
+      "id": "c23p2",
+      "texte": "6 heures ont passé depuis le relevé précédent ; le fil continue. Dans l'après-midi du 12 octobre 2026, le mouvement poursuit sa route. Sur le terrain, la mobilisation tient : Blocus des lycées : Comment « Hunger Games » est devenue un emblème de la révolte pour les manifestants (1 media : 20 minutes — non corrobore) — detail : Au moment où les manifestations lycéennes bouleversent la France, le sixième film de la saga « Hunger Games » sort en salles le 18 novembre prochain. Un univers dystopique dans le…. À Beauvau comme à l'Élysée, on ajuste le discours : Blocage des lycées : à Lille, les lycéens restent sceptiques face aux annonces du gouvernement (1 media : Europe 1 — non corrobore) — detail : À la veille d'une nouvelle journée d'action, les syndicats lycéens seront reçus ce lundi par le gouvernement. Au menu : Parcoursup ou encore les capacités d'accueil dans l'enseign…. Le prochain relevé reprendra le fil. (Relevé automatique du 12 octobre 2026 à 17:30 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "20 minutes",
+        "Europe 1"
+      ],
+      "auto": true
     }
   ]
 }
