@@ -1,17 +1,18 @@
 {
-  "maj": "2026-09-30",
+  "maj": "2026-10-12",
   "source": "Copernicus Climate Change Service (C3S · ECMWF)",
-  "titre": "Août 2026, mois le plus chaud jamais enregistré",
-  "periode": "Bulletin du mois d'août 2026 (publié le 10/09/2026)",
-  "resume": "Août 2026 a été le mois le plus chaud jamais enregistré à l'échelle mondiale, à égalité avec juillet 2023. À +1,65 °C au-dessus de la moyenne pré-industrielle (1850-1900), c'est le premier mois à repasser la barre des 1,5 °C depuis novembre 2025.",
+  "titre": "Septembre 2026, deuxième mois de septembre le plus chaud jamais enregistré",
+  "periode": "Bulletin du mois de septembre 2026 (newsflash du 09/10/2026, communiqué du 12/10/2026)",
+  "resume": "Septembre 2026 a été le deuxième mois de septembre le plus chaud jamais enregistré à l'échelle mondiale, à +1,63 °C au-dessus de la moyenne pré-industrielle (1850-1900) — le deuxième mois consécutif au-dessus de 1,5 °C, une première depuis novembre 2025. La température moyenne des océans extra-polaires a atteint un record pour un mois de septembre, sous un épisode El Niño qui continue de s'intensifier.",
   "points": [
-    "Température moyenne de l'air à la surface du globe : 16,96 °C, soit +0,85 °C au-dessus de la moyenne 1991-2020 — le mois d'août le plus chaud du jeu de données ERA5, devant les records 2023 et 2024.",
-    "+1,65 °C au-dessus de l'ère pré-industrielle : premier mois au-dessus de 1,5 °C depuis novembre 2025.",
-    "Température des océans extra-polaires (60°S–60°N) : 21,07 °C en moyenne, record pour un mois d'août (précédent : 20,98 °C en 2023), avec un record quotidien absolu à 21,11 °C.",
-    "El Niño : un épisode potentiellement extrême continue de s'intensifier dans le Pacifique tropical, avec des températures de surface records — favorisant les incendies saisonniers en Indonésie (CAMS).",
-    "Europe : 4e mois d'août le plus chaud (20,26 °C, +1,10 °C) ; l'été 2026 est le 3e plus chaud pour l'Europe — et le plus chaud jamais enregistré en Europe de l'Ouest, dépassant le record de 2003.",
-    "Sécheresses persistantes en France, au Royaume-Uni, en Hongrie, en Roumanie et en Serbie ; débits exceptionnellement bas du Rhin, du Danube, du Boug méridional et du Dniepr."
+    "Température moyenne de l'air à la surface du globe : 16,27 °C, soit +0,82 °C au-dessus de la moyenne 1991-2020 — deuxième mois de septembre le plus chaud du jeu de données ERA5, 0,11 °C derrière septembre 2023.",
+    "+1,63 °C au-dessus de l'ère pré-industrielle (1850-1900) : deuxième mois consécutif au-dessus de 1,5 °C, une première depuis novembre 2025 ; la série devrait se poursuivre en 2027 selon C3S.",
+    "Température des océans extra-polaires (60°S–60°N) : 21,05 °C en moyenne, record pour un mois de septembre (précédent : 20,92 °C en 2023).",
+    "El Niño : la température mensuelle de la région Niño 3.4 atteint un record absolu de 29,70 °C, au-dessus des pics des épisodes très forts de 1982/1983, 1997/1998 et 2015/2016 — l'épisode en cours pourrait devenir l'un des plus forts jamais observés.",
+    "Europe : 16,26 °C sur les terres européennes (+1,54 °C), troisième mois de septembre le plus chaud ; en Europe de l'Ouest, septembre le plus chaud à égalité avec 2023 (+2,51 °C), après l'été le plus chaud jamais enregistré dans la région.",
+    "Antarctique : troisième maximum hivernal de glace de mer le plus bas jamais observé ; autour de l'Europe, températures de surface de la mer records pour un mois de septembre le long de la côte atlantique et en Méditerranée occidentale.",
+    "Sécheresses persistantes dans une grande partie de l'Europe de l'Ouest, centrale et de l'Est ; débits record-bas pour un mois de septembre sur le Rhin, le Danube, la Vistule et la Garonne-Dordogne, perturbant navigation, alimentation en eau et agriculture."
   ],
-  "lien": "https://climate.copernicus.eu/copernicus-august-was-worlds-joint-hottest-month-record-pushing-global-temperatures-back-above",
+  "lien": "https://climate.copernicus.eu/copernicus-second-warmest-september-global-temperatures-stay-above-15degc",
   "lien_rapport": "https://climate.copernicus.eu/climate-bulletins"
 }
