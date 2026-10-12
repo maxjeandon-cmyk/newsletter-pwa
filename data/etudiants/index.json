@@ -83,7 +83,7 @@
       "periode": "Chronique transverse — réseaux, voix et ressentis",
       "titre": "Chorus — la voix de l'intérieur",
       "paragraphes": 11,
-      "octets": 17561
+      "octets": 17395
     },
     {
       "id": "c11",
@@ -91,7 +91,7 @@
       "periode": "Chronique transverse — les revendications, mot à mot",
       "titre": "Ce qu'ils veulent — les revendications, mot à mot",
       "paragraphes": 14,
-      "octets": 16030
+      "octets": 15762
     },
     {
       "id": "c12",
@@ -131,7 +131,7 @@
       "periode": "Chronique transverse — les figures du mouvement",
       "titre": "Figures d'un automne — portraits croisés",
       "paragraphes": 6,
-      "octets": 10010
+      "octets": 9765
     },
     {
       "id": "c17",
@@ -187,7 +187,7 @@
       "periode": "12 octobre 2026 — suivi de la journée",
       "titre": "Le fil continue — 12 octobre 2026",
       "paragraphes": 1,
-      "octets": 2102
+      "octets": 1360
     }
   ],
   "releveSigs": [
@@ -329,7 +329,7 @@
           "periode": "12 octobre 2026 — suivi de la journée",
           "titre": "Le fil continue — 12 octobre 2026",
           "paragraphes": 1,
-          "octets": 2102
+          "octets": 1360
         },
         {
           "id": "c10",
@@ -337,7 +337,7 @@
           "periode": "Chronique transverse — réseaux, voix et ressentis",
           "titre": "Chorus — la voix de l'intérieur",
           "paragraphes": 11,
-          "octets": 17561
+          "octets": 17395
         },
         {
           "id": "c11",
@@ -345,7 +345,7 @@
           "periode": "Chronique transverse — les revendications, mot à mot",
           "titre": "Ce qu'ils veulent — les revendications, mot à mot",
           "paragraphes": 14,
-          "octets": 16030
+          "octets": 15762
         },
         {
           "id": "c12",
@@ -385,7 +385,7 @@
           "periode": "Chronique transverse — les figures du mouvement",
           "titre": "Figures d'un automne — portraits croisés",
           "paragraphes": 6,
-          "octets": 10010
+          "octets": 9765
         }
       ]
     }

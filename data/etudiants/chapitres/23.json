@@ -5,15 +5,14 @@
   "paragraphes": [
     {
       "id": "c23p1",
-      "texte": "12 heures ont passé depuis le relevé précédent ; une nouvelle journée de suivi s'ouvre, le fil continue. Au matin du 12 octobre 2026, la journée s'écrit encore. La vague, elle, continue d'avancer : Blocus des lycées : à Toulouse, des parents s'inquiètent du retard pris dans les programmes (1 media : Europe 1 — non corrobore) — detail : Face au blocus des lycées, à Toulouse, de nombreux parents expriment leurs inquiétudes au vu du retard accumulé sur le programme. À la veille de \"l'acte V\" de la mobilisation prév…. Du côté du pouvoir, chacun prend position : EN DIRECT Blocus des lycées : Pour Emmanuel Macron, la mobilisation des jeunes doit se faire « dans le calme, dans l'ordre » (1 media : 20 minutes — non corrobore) ; Mobilisation des lycéens en France: la suppression de Parcoursup, au cœur des revendications (1 media : RFI — non corrobore) — detail : Suivez avec nous les dernières informations concernant le mouvement de colère des lycéens en ce lundi 12 octobre 2026. Dans les fils Reddit, les témoignages s'échangent sans intermédiaire : En marge d’un blocus, une lycéenne en garde à vue pour un «Acab» sur son ventre : «C’était vraiment un moment d’humiliation» (Reddit — r/france) ; Comment soutenir le mouvement étudiant sans aller aux blocus/manifs ? (Reddit — r/etudiants) — detail : &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Delicious-Owl\"> /u/Delicious-Owl </a> <br/> <span><a href=\"https://www.liberation.fr/societe/police-justice/en-marge-…. Le prochain relevé reprendra le fil. (Relevé automatique du 12 octobre 2026 à 11:33 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "Une nouvelle journée de suivi s’ouvre, le fil continue. Au matin du 12 octobre, le blocus inquiète au-delà des grilles : à Toulouse, de nombreux parents s’inquiètent du retard accumulé sur le programme, à la veille de « l’acte V » de la mobilisation, observe Europe 1. Du côté du pouvoir, chacun prend position : pour Emmanuel Macron, la mobilisation des jeunes doit se faire « dans le calme, dans l’ordre », rapporte 20 minutes. Et sur RFI, la suppression de Parcoursup reste « au cœur des revendications » du mouvement de colère de ce lundi 12 octobre. Dans les fils Reddit, les témoignages s’échangent toujours sans intermédiaire : en marge d’un blocus, une lycéenne raconte sa garde à vue pour un « Acab » sur son ventre — « C’était vraiment un moment d’humiliation ». Et sur r/etudiants, une question s’ouvre : « Comment soutenir le mouvement étudiant sans aller aux blocus/manifs ? » Le midi passe, le fil garde le mouvement en attente de son après-midi.",
       "sources": [
         "Reddit — r/france",
         "Reddit — r/etudiants",
         "Europe 1",
         "20 minutes",
         "RFI"
-      ],
-      "auto": true
+      ]
     }
   ]
 }
