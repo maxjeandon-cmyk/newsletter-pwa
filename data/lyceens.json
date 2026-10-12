@@ -1,5 +1,5 @@
 {
-  "maj": "12/10/2026 17:30",
+  "maj": "12/10/2026 23:27",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -231,11 +231,12 @@
       "date": "09/10/2026",
       "titre": "Victor Wembanyama soutient les lycéens : il y a «des inégalités systémiques et des problèmes tellement profonds»",
       "texte": "Le Français de 22 ans, scolarisé à Nanterre quand il était adolescent, a dit lors d’une conférence de presse «entendre» les revendications des étudiants et «espérer que les gens qui sont tout là-haut…",
-      "source": "20 minutes / Libération / Ouest-France",
+      "source": "20 minutes / Libération / Ouest-France / L'Humanité",
       "sources": [
         "20 minutes",
         "Libération",
-        "Ouest-France"
+        "Ouest-France",
+        "L'Humanité"
       ],
       "url": "https://www.liberation.fr/societe/education/victor-wembanyama-soutient-les-lyceens-il-y-a-des-inegalites-systemiques-et-des-problemes-tellement-profonds-20261009_5JZ3S6JKDRBONE2XVTYXP6V3TA/",
       "verifie": true
