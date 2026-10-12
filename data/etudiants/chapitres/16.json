@@ -48,6 +48,14 @@
         "Europe 1 — Laure Lavalette, la détresse morale des policiers (08/10/2026)",
         "20 minutes — les trois organisations lycéennes au ministère (08/10/2026)"
       ]
+    },
+    {
+      "id": "c16p6",
+      "texte": "Les visages de l'automne s'ajoutent au portrait croisé : Blocus des lycées : à Toulouse, des parents s'inquiètent du retard pris dans les programmes (1 media : Europe 1 — non corrobore) — détail : Face au blocus des lycées, à Toulouse, de nombreux parents expriment leurs inquiétudes au vu du retard accumulé sur le programme. À la veil… (Volet automatique du 12 octobre 2026 à 11:33, chapitre « Figures d'un automne — portraits croisés » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "Europe 1"
+      ],
+      "auto": true
     }
   ]
 }
