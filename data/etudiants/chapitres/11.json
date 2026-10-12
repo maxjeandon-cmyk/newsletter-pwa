@@ -116,11 +116,10 @@
     },
     {
       "id": "c11p15",
-      "texte": "La liste de ce qu'ils veulent, elle, continue de s'écrire : Parcoursup au cœur de la contestation lycéenne: une plateforme toujours plus impopulaire (1 media : Mediapart — non corrobore) — détail : Puissant ciment de la mobilisation, la contestation de Parcoursup s’est très vite imposée comme un pont entre les revendications lycéennes … (Volet automatique du 12 octobre 2026 à 23:27, chapitre « Ce qu'ils veulent — les revendications, mot à mot » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "Et la plateforme garde la première ligne de la liste : Parcoursup est « au cœur de la contestation lycéenne », une plateforme « toujours plus impopulaire », décrit Mediapart. Puissant ciment de la mobilisation, sa contestation « s'est très vite imposée comme un pont entre les revendications » lycéennes et étudiantes — la suppression réclamée relie les deux rives du mouvement. La liste continue de s'écrire, et le pont ne se referme pas.",
       "sources": [
         "Mediapart"
-      ],
-      "auto": true
+      ]
     }
   ]
 }

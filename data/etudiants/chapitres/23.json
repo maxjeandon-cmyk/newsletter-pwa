@@ -1,7 +1,7 @@
 {
   "id": "c23",
   "periode": "12 octobre 2026 — suivi de la journée",
-  "titre": "Le fil continue — 12 octobre 2026",
+  "titre": "« Hunger Games » en emblème de la révolte — le soir de Gennevilliers",
   "paragraphes": [
     {
       "id": "c23p1",
@@ -24,13 +24,12 @@
     },
     {
       "id": "c23p3",
-      "texte": "6 heures ont passé depuis le relevé précédent ; le fil continue. Au soir du 12 octobre 2026, la chronique avance. Dans la rue, le mouvement garde son souffle : Blocus des lycées : «LFI est en train de mettre le feu en France», dénonce un auditeur (1 media : Europe 1 — non corrobore) — detail : Au micro de Pascal Praud ce lundi, un auditeur s'est exprimé sur le blocus des lycées, alors que l'élection présidentielle de 2027 approche à grand pas. \"LFI est en train de mettr…. Côté forces de l'ordre, les tensions ne faiblissent pas : «Les CPE ne sont pas des auxiliaires de police» : à Gennevilliers, en marge d’un blocus, un élève interpellé dans l’enceinte du lycée (1 media : Libération — non corrobore) — detail : Le lycéen arrêté pour des tirs de mortier d’artifice comparaîtra devant le juge des enfants en décembre. Par ailleurs, un autre élève interpellé a déclaré avoir subi des violences…. Côté gouvernement, les réponses s'égrènent : Parcoursup au cœur de la contestation lycéenne: une plateforme toujours plus impopulaire (1 media : Mediapart — non corrobore) ; Blocus des lycées : quand Emmanuel Macron applique sa stratégie du «en même temps» (1 media : Europe 1 — non corrobore) — detail : Puissant ciment de la mobilisation, la contestation de Parcoursup s’est très vite imposée comme un pont entre les revendications lycéennes et étudiantes. La suppression de la plat…. Le prochain relevé reprendra le fil. (Relevé automatique du 12 octobre 2026 à 23:27 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "Au soir du 12 octobre, le fil ne s'interrompt pas. À l'antenne d'Europe 1, au micro de Pascal Praud, un auditeur se lève contre les blocus — l'élection présidentielle de 2027 approche à grand pas : « LFI est en train de mettre le feu en France », dénonce-t-il. À Gennevilliers, en marge d'un blocus, un élève a été interpellé dans l'enceinte du lycée ; pour Libération, « Les CPE ne sont pas des auxiliaires de police », et le lycéen arrêté pour des tirs de mortier d'artifice comparaîtra devant le juge des enfants en décembre — un autre élève interpellé a déclaré avoir subi des violences. Côté gouvernement, les réponses s'égrènent sans désarmer la contestation : Parcoursup reste « au cœur de la contestation lycéenne », « une plateforme toujours plus impopulaire » que Mediapart voit souder lycéens et étudiants, pendant qu'Europe 1 décrit Emmanuel Macron appliquant sa stratégie du « en même temps ». La nuit tombe sur le douzième jour d'octobre ; le mouvement veille, et le fil veille avec lui.",
       "sources": [
         "Mediapart",
         "Europe 1",
         "Libération"
-      ],
-      "auto": true
+      ]
     }
   ]
 }

@@ -91,7 +91,7 @@
       "periode": "Chronique transverse — les revendications, mot à mot",
       "titre": "Ce qu'ils veulent — les revendications, mot à mot",
       "paragraphes": 15,
-      "octets": 16442
+      "octets": 16321
     },
     {
       "id": "c12",
@@ -99,7 +99,7 @@
       "periode": "Chronique transverse — la répression et ses visages",
       "titre": "La répression et ses visages",
       "paragraphes": 10,
-      "octets": 14491
+      "octets": 14434
     },
     {
       "id": "c13",
@@ -185,9 +185,9 @@
       "id": "c23",
       "fichier": "chapitres/23.json",
       "periode": "12 octobre 2026 — suivi de la journée",
-      "titre": "Le fil continue — 12 octobre 2026",
+      "titre": "« Hunger Games » en emblème de la révolte — le soir de Gennevilliers",
       "paragraphes": 3,
-      "octets": 4124
+      "octets": 3554
     }
   ],
   "releveSigs": [
@@ -326,9 +326,9 @@
           "id": "c23",
           "fichier": "chapitres/23.json",
           "periode": "12 octobre 2026 — suivi de la journée",
-          "titre": "Le fil continue — 12 octobre 2026",
+          "titre": "« Hunger Games » en emblème de la révolte — le soir de Gennevilliers",
           "paragraphes": 3,
-          "octets": 4124
+          "octets": 3554
         },
         {
           "id": "c10",
@@ -344,7 +344,7 @@
           "periode": "Chronique transverse — les revendications, mot à mot",
           "titre": "Ce qu'ils veulent — les revendications, mot à mot",
           "paragraphes": 15,
-          "octets": 16442
+          "octets": 16321
         },
         {
           "id": "c12",
@@ -352,7 +352,7 @@
           "periode": "Chronique transverse — la répression et ses visages",
           "titre": "La répression et ses visages",
           "paragraphes": 10,
-          "octets": 14491
+          "octets": 14434
         },
         {
           "id": "c13",
