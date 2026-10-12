@@ -113,6 +113,14 @@
       "sources": [
         "RFI"
       ]
+    },
+    {
+      "id": "c11p15",
+      "texte": "La liste de ce qu'ils veulent, elle, continue de s'écrire : Parcoursup au cœur de la contestation lycéenne: une plateforme toujours plus impopulaire (1 media : Mediapart — non corrobore) — détail : Puissant ciment de la mobilisation, la contestation de Parcoursup s’est très vite imposée comme un pont entre les revendications lycéennes … (Volet automatique du 12 octobre 2026 à 23:27, chapitre « Ce qu'ils veulent — les revendications, mot à mot » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "Mediapart"
+      ],
+      "auto": true
     }
   ]
 }
