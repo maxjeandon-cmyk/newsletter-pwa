@@ -1,169 +1,120 @@
 {
   "maj": "13/10/2026",
   "roni": {
-    "periode": "JAS 2026",
-    "valeur": 1.69,
+    "periode": "ASO 2025",
+    "valeur": -0.78,
     "unite": "degC",
     "seuilElNino": 0.5,
-    "seuilTresFort": 2.0,
+    "seuilTresFort": 2,
     "serie": [
       {
-        "periode": "ASO 2025",
-        "valeur": -0.78
-      },
-      {
-        "periode": "SON 2025",
-        "valeur": -0.93
-      },
-      {
-        "periode": "OND 2025",
-        "valeur": -0.98
-      },
-      {
-        "periode": "NDJ 2025",
-        "valeur": -1.04
-      },
-      {
-        "periode": "DJF 2026",
-        "valeur": -0.91
-      },
-      {
-        "periode": "JFM 2026",
-        "valeur": -0.76
-      },
-      {
-        "periode": "FMA 2026",
-        "valeur": -0.44
-      },
-      {
-        "periode": "MAM 2026",
-        "valeur": -0.04
-      },
-      {
-        "periode": "AMJ 2026",
-        "valeur": 0.49
-      },
-      {
-        "periode": "MJJ 2026",
-        "valeur": 0.97
+        "periode": "JAS 2026",
+        "valeur": 1.69
       },
       {
         "periode": "JJA 2026",
         "valeur": 1.36
       },
       {
-        "periode": "JAS 2026",
-        "valeur": 1.69
+        "periode": "MJJ 2026",
+        "valeur": 0.97
+      },
+      {
+        "periode": "AMJ 2026",
+        "valeur": 0.49
+      },
+      {
+        "periode": "MAM 2026",
+        "valeur": -0.04
+      },
+      {
+        "periode": "FMA 2026",
+        "valeur": -0.44
+      },
+      {
+        "periode": "JFM 2026",
+        "valeur": -0.76
+      },
+      {
+        "periode": "DJF 2026",
+        "valeur": -0.91
+      },
+      {
+        "periode": "NDJ 2025",
+        "valeur": -1.04
+      },
+      {
+        "periode": "OND 2025",
+        "valeur": -0.98
+      },
+      {
+        "periode": "SON 2025",
+        "valeur": -0.93
+      },
+      {
+        "periode": "ASO 2025",
+        "valeur": -0.78
       }
     ],
     "source": "NOAA CPC - RONI.ascii.txt"
   },
   "nino34Relatif": {
-    "periode": "9/2026",
-    "valeur": 2.08,
-    "serie": [
-      {
-        "periode": "10/2025",
-        "valeur": -0.9
-      },
-      {
-        "periode": "11/2025",
-        "valeur": -1.08
-      },
-      {
-        "periode": "12/2025",
-        "valeur": -0.95
-      },
-      {
-        "periode": "1/2026",
-        "valeur": -1.09
-      },
-      {
-        "periode": "2/2026",
-        "valeur": -0.69
-      },
-      {
-        "periode": "3/2026",
-        "valeur": -0.5
-      },
-      {
-        "periode": "4/2026",
-        "valeur": -0.13
-      },
-      {
-        "periode": "5/2026",
-        "valeur": 0.52
-      },
-      {
-        "periode": "6/2026",
-        "valeur": 1.07
-      },
-      {
-        "periode": "7/2026",
-        "valeur": 1.33
-      },
-      {
-        "periode": "8/2026",
-        "valeur": 1.67
-      },
-      {
-        "periode": "9/2026",
-        "valeur": 2.08
-      }
-    ],
+    "periode": "",
+    "valeur": 0,
+    "serie": [],
     "source": "NOAA CPC - Rnino34.ascii.txt"
   },
   "oni": {
-    "periode": "JAS 2026",
-    "valeur": 2.16,
+    "periode": "ASO 2025",
+    "valeur": -0.43,
     "serie": [
       {
-        "periode": "ASO 2025",
-        "valeur": -0.43
-      },
-      {
-        "periode": "SON 2025",
-        "valeur": -0.57
-      },
-      {
-        "periode": "OND 2025",
-        "valeur": -0.61
-      },
-      {
-        "periode": "NDJ 2025",
-        "valeur": -0.6
-      },
-      {
-        "periode": "DJF 2026",
-        "valeur": -0.39
-      },
-      {
-        "periode": "JFM 2026",
-        "valeur": -0.21
-      },
-      {
-        "periode": "FMA 2026",
-        "valeur": 0.11
-      },
-      {
-        "periode": "MAM 2026",
-        "valeur": 0.46
-      },
-      {
-        "periode": "AMJ 2026",
-        "valeur": 0.95
-      },
-      {
-        "periode": "MJJ 2026",
-        "valeur": 1.39
+        "periode": "JAS 2026",
+        "valeur": 2.16
       },
       {
         "periode": "JJA 2026",
         "valeur": 1.8
       },
       {
-        "periode": "JAS 2026",
-        "valeur": 2.16
+        "periode": "MJJ 2026",
+        "valeur": 1.39
+      },
+      {
+        "periode": "AMJ 2026",
+        "valeur": 0.95
+      },
+      {
+        "periode": "MAM 2026",
+        "valeur": 0.46
+      },
+      {
+        "periode": "FMA 2026",
+        "valeur": 0.11
+      },
+      {
+        "periode": "JFM 2026",
+        "valeur": -0.21
+      },
+      {
+        "periode": "DJF 2026",
+        "valeur": -0.39
+      },
+      {
+        "periode": "NDJ 2025",
+        "valeur": -0.6
+      },
+      {
+        "periode": "OND 2025",
+        "valeur": -0.61
+      },
+      {
+        "periode": "SON 2025",
+        "valeur": -0.57
+      },
+      {
+        "periode": "ASO 2025",
+        "valeur": -0.43
       }
     ],
     "source": "NOAA CPC - oni.ascii.txt"
@@ -237,50 +188,9 @@
     "source": "NOAA CPC - RONI Outlook"
   },
   "classementHistorique": {
-    "top8Precedents": [
-      {
-        "episode": "1982-83",
-        "pic": 2.4,
-        "saison": "DJF 1983"
-      },
-      {
-        "episode": "1997-98",
-        "pic": 2.28,
-        "saison": "NDJ 1997"
-      },
-      {
-        "episode": "2015-16",
-        "pic": 2.25,
-        "saison": "NDJ 2015"
-      },
-      {
-        "episode": "1991-92",
-        "pic": 2.12,
-        "saison": "DJF 1992"
-      },
-      {
-        "episode": "1965-66",
-        "pic": 1.99,
-        "saison": "OND 1965"
-      },
-      {
-        "episode": "1972-73",
-        "pic": 1.97,
-        "saison": "OND 1972"
-      },
-      {
-        "episode": "1957-58",
-        "pic": 1.89,
-        "saison": "DJF 1958"
-      },
-      {
-        "episode": "2009-10",
-        "pic": 1.5,
-        "saison": "NDJ 2009"
-      }
-    ],
+    "top8Precedents": [],
     "episodeEnCours": {
-      "episode": "2026-27",
+      "episode": "2026-26",
       "pic": 1.69,
       "saison": "JAS 2026"
     }
