@@ -83,7 +83,7 @@
       "periode": "Chronique transverse — réseaux, voix et ressentis",
       "titre": "Chorus — la voix de l'intérieur",
       "paragraphes": 12,
-      "octets": 17994
+      "octets": 17902
     },
     {
       "id": "c11",
@@ -91,7 +91,7 @@
       "periode": "Chronique transverse — les revendications, mot à mot",
       "titre": "Ce qu'ils veulent — les revendications, mot à mot",
       "paragraphes": 16,
-      "octets": 16957
+      "octets": 16865
     },
     {
       "id": "c12",
@@ -99,7 +99,7 @@
       "periode": "Chronique transverse — la répression et ses visages",
       "titre": "La répression et ses visages",
       "paragraphes": 11,
-      "octets": 15076
+      "octets": 14891
     },
     {
       "id": "c13",
@@ -195,7 +195,7 @@
       "periode": "13 octobre 2026 — suivi de la journée",
       "titre": "Le fil continue — 13 octobre 2026",
       "paragraphes": 1,
-      "octets": 2723
+      "octets": 2161
     }
   ],
   "releveSigs": [
@@ -348,7 +348,7 @@
           "periode": "13 octobre 2026 — suivi de la journée",
           "titre": "Le fil continue — 13 octobre 2026",
           "paragraphes": 1,
-          "octets": 2723
+          "octets": 2161
         },
         {
           "id": "c10",
@@ -356,7 +356,7 @@
           "periode": "Chronique transverse — réseaux, voix et ressentis",
           "titre": "Chorus — la voix de l'intérieur",
           "paragraphes": 12,
-          "octets": 17994
+          "octets": 17902
         },
         {
           "id": "c11",
@@ -364,7 +364,7 @@
           "periode": "Chronique transverse — les revendications, mot à mot",
           "titre": "Ce qu'ils veulent — les revendications, mot à mot",
           "paragraphes": 16,
-          "octets": 16957
+          "octets": 16865
         },
         {
           "id": "c12",
@@ -372,7 +372,7 @@
           "periode": "Chronique transverse — la répression et ses visages",
           "titre": "La répression et ses visages",
           "paragraphes": 11,
-          "octets": 15076
+          "octets": 14891
         },
         {
           "id": "c13",
