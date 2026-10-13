@@ -10,6 +10,7 @@
  * v100 : ordre par défaut choisi par Maxime — Lycéens en tête, puis
  * Édition, Articles, Vidéos, Médias, Archives, Newsletters, Réglages. */
 export const ONGLETS_BASE = [
+  { id: 'elnino', nom: 'El Nio 2026', emoji: '🌊' },
   { id: 'lyceens', nom: 'Lycéens 2026', emoji: '✊' },
   { id: 'edition', nom: 'Édition du jour', emoji: '📄' },
   { id: 'articles', nom: 'Articles du jour', emoji: '🔥' },
