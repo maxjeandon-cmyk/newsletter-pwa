@@ -21,6 +21,18 @@
         "20 minutes",
         "Europe 1"
       ]
+    },
+    {
+      "id": "c24p3",
+      "texte": "6 heures ont passé depuis le relevé précédent ; le fil continue. Au soir du 13 octobre 2026, le mouvement poursuit sa route. Sur le terrain, la mobilisation tient : Blocus des lycées : Le droit de vote dès 16 ans proposé par Jean-Luc Mélenchon, « très bonne idée » ou « trop tôt » ? (1 media : 20 minutes — non corrobore) ; Cuba libéralise son secteur des hydrocarbures sous la pression du blocus américain (1 media : RFI — non corrobore) — detail : Ce mardi, une manifestation était organisée à Bordeaux mobilisant lycéens, étudiants mais aussi sympathisants de tous âges. Alors que Mélenchon a rappelé à Clermont-Ferrand qu’il …. Côté gouvernement, les réponses s'égrènent : Fin de Parcoursup, rénovations, revalorisation des enseignants… Les partis de gauche portent les revendications des lycéens et des étudiants (1 media : L'Humanité — non corrobore) ; Abroger Parcoursup, c’est possible ! (1 media : L'Humanité — non corrobore) ; Accès à l'université : Parcoursup est-il assez sélectif ? (1 media : France Inter — non corrobore) — detail : La mobilisation lycéenne remet sur le devant de la scène les besoins de l’école et de l’université. Quand l’exécutif invoque les contraintes budgétaires, les partis de gauche défe…. Autour du mouvement, les voix se croisent : Blocus des lycées : 161.500 manifestants partout en France selon le ministère de l'Intérieur, 480.000 d'après l'intersyndicale (1 media : Europe 1 — non corrobore) — detail : Durant la nouvelle journée de mobilisation des lycéens ce mardi 13 octobre, 161.500 personnes se sont réunies partout en France selon le ministère de l'Intérieur. De son côté, l'i…. Le prochain relevé reprendra le fil. (Relevé automatique du 13 octobre 2026 à 23:37 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "L'Humanité",
+        "20 minutes",
+        "France Inter",
+        "Europe 1",
+        "RFI"
+      ],
+      "auto": true
     }
   ]
 }
