@@ -1,5 +1,5 @@
 {
-  "maj": "13/10/2026",
+  "maj": "13/10/2026 17:32",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -50,18 +50,16 @@
       "verifie": true
     },
     {
-      "id": "amv520ely-ge93",
-      "date": "12/10/2026",
-      "titre": "Colère des lycéens: Emmanuel Macron affirme que la mobilisation doit se faire \"dans le calme, dans l'ordre\"",
-      "texte": "Nouvelle journée de mobilisation pour les lycéens, ce lundi 12 octobre, pour demander des meilleures conditions d'apprentissage. Des blocages d'établissements sont attendus, dans les mêmes proportion…",
-      "source": "20 minutes / Le Figaro / BFMTV / Public Sénat",
+      "id": "amv6ua681-2puq",
+      "date": "13/10/2026",
+      "titre": "Lycées : «C'est de la communication ministérielle», Nicolas Bonnet juge insuffisante l'annonce des 3.000 professeurs re…",
+      "texte": "Alors que le gouvernement a annoncé plusieurs mesures pour répondre à la mobilisation lycéenne, Nicolas Bonnet, proviseur à Libourne et secrétaire national du SNPDEN-UNSA, estime que le dispositif co…",
+      "source": "20 minutes / Europe 1",
       "sources": [
         "20 minutes",
-        "Le Figaro",
-        "BFMTV",
-        "Public Sénat"
+        "Europe 1"
       ],
-      "url": "https://www.bfmtv.com/societe/manifestations/direct-colere-des-lyceens-de-nouveaux-blocages-prevus-ce-lundi-le-ministre-de-l-education-nationale-attendu-dans-l-academie-de-lille_LN-202610120078.html",
+      "url": "https://www.europe1.fr/societe/lycees-cest-de-la-communication-ministerielle-nicolas-bonnet-juge-insuffisante-lannonce-des-3000-professeurs-remplacants-1145006?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
     },
     {
@@ -210,6 +208,35 @@
       "verifie": true
     },
     {
+      "id": "amv6ua680-48tt",
+      "date": "13/10/2026",
+      "titre": "Blocus des lycées : 36 enquêtes ouvertes à ce stade par l'IGPN depuis le début du mouvement",
+      "texte": "En direct - Blocus des lycées : 36 enquêtes ouvertes à ce stade par l'IGPN depuis le début du mouvement",
+      "source": "20 minutes / Europe 1 / BFMTV / France Inter / Ouest-France",
+      "sources": [
+        "20 minutes",
+        "Europe 1",
+        "BFMTV",
+        "France Inter",
+        "Ouest-France"
+      ],
+      "url": "https://www.europe1.fr/societe/en-direct-blocus-des-lycees-36-enquetes-ouvertes-a-ce-stade-par-ligpn-depuis-le-debut-du-mouvement-1144064?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
+      "verifie": true
+    },
+    {
+      "id": "amv6ua684-e88c",
+      "date": "13/10/2026",
+      "titre": "Mobilisations lycéennes : « La grande majorité des mineurs placés en garde à vue étaient âgés de 15 ou 16 ans », déclar…",
+      "texte": "Les lycéens entament une nouvelle semaine de mobilisation avec plusieurs blocages de lycées ce lundi matin. La procureur de la République, Laure Beccuau, revient sur les interpellations et mises en g…",
+      "source": "Public Sénat / Le Figaro",
+      "sources": [
+        "Public Sénat",
+        "Le Figaro"
+      ],
+      "url": "https://www.publicsenat.fr/actualites/politique/mobilisations-lyceennes-la-grande-majorite-des-mineurs-places-en-garde-a-vue-etaient-ages-de-15-ou-16-ans-declare-laure-beccuau",
+      "verifie": true
+    },
+    {
       "id": "amv5esazr-2wa4",
       "date": "12/10/2026",
       "titre": "Colère des lycées: « Bismillah c’est les ténèbres »… Comment cette infiltration raciste est devenue un mème et un slogan",
@@ -235,37 +262,6 @@
         "Libération"
       ],
       "url": "https://www.20minutes.fr/societe/4253013-20261010-main-lyceen-arrachee-lens-tir-grenade-conforme-estime-parquet?at_medium=display&at_campaign=149",
-      "verifie": true
-    },
-    {
-      "id": "amv0rlhqk-6jxo",
-      "date": "09/10/2026",
-      "titre": "EN DIRECT Blocus des lycées : Quelque 141 établissements encore fermés ce vendredi…",
-      "texte": "Suivez avec nous les dernières informations concernant la colère des lycéens en ce vendredi 9 septembre",
-      "source": "20 minutes / Europe 1 / France 24 / La Croix / Public Sénat",
-      "sources": [
-        "20 minutes",
-        "Europe 1",
-        "France 24",
-        "La Croix",
-        "Public Sénat"
-      ],
-      "url": "https://www.20minutes.fr/societe/4252682-20261009-direct-blocus-lycees-3-000-professeurs-remplacants-deployes-acte-v-deja-tuyaux-mardi?at_medium=display&at_campaign=149",
-      "verifie": true
-    },
-    {
-      "id": "amv0rlhql-5kqm",
-      "date": "09/10/2026",
-      "titre": "Victor Wembanyama soutient les lycéens : il y a «des inégalités systémiques et des problèmes tellement profonds»",
-      "texte": "Le Français de 22 ans, scolarisé à Nanterre quand il était adolescent, a dit lors d’une conférence de presse «entendre» les revendications des étudiants et «espérer que les gens qui sont tout là-haut…",
-      "source": "20 minutes / Libération / Ouest-France / L'Humanité",
-      "sources": [
-        "20 minutes",
-        "Libération",
-        "Ouest-France",
-        "L'Humanité"
-      ],
-      "url": "https://www.liberation.fr/societe/education/victor-wembanyama-soutient-les-lyceens-il-y-a-des-inegalites-systemiques-et-des-problemes-tellement-profonds-20261009_5JZ3S6JKDRBONE2XVTYXP6V3TA/",
       "verifie": true
     },
     {
