@@ -835,6 +835,16 @@
       "ligne": "la tech décryptée par le Monde"
     },
     {
+      "id": "le-monde-pixels",
+      "nom": "Le Monde — Pixels",
+      "emoji": "🕹️",
+      "categorie": "Tech & numérique 💻",
+      "flux": [
+        "https://www.lemonde.fr/pixels/rss_full.xml"
+      ],
+      "ligne": "tech, jeux video et pop culture numerique par le Monde"
+    },
+    {
       "id": "la-quadrature-du-net",
       "nom": "La Quadrature du Net",
       "emoji": "🕶️",
