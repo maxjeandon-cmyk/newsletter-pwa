@@ -102,6 +102,14 @@
         "Reddit — r/france",
         "Reddit — r/etudiants"
       ]
+    },
+    {
+      "id": "c10p12",
+      "texte": "Sur les écrans des lycéens, la mobilisation s'organise en direct : Les blocus à la fac (Reddit — r/etudiants) — détail : Je me lève à 6h, marche de 45 minutes pour arriver à la fac à 8h (les bus sont bloqués à cause des manifs, on se demande pourquoi j'ai eu l… (Volet automatique du 13 octobre 2026 à 11:32, chapitre « Chorus — la voix de l'intérieur » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "Reddit — r/etudiants"
+      ],
+      "auto": true
     }
   ]
 }
