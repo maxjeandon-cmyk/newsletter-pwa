@@ -1,5 +1,5 @@
 {
-  "maj": "13/10/2026 17:32",
+  "maj": "13/10/2026 23:37",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -212,13 +212,14 @@
       "date": "13/10/2026",
       "titre": "Blocus des lycées : 36 enquêtes ouvertes à ce stade par l'IGPN depuis le début du mouvement",
       "texte": "En direct - Blocus des lycées : 36 enquêtes ouvertes à ce stade par l'IGPN depuis le début du mouvement",
-      "source": "20 minutes / Europe 1 / BFMTV / France Inter / Ouest-France",
+      "source": "20 minutes / Europe 1 / BFMTV / France Inter / Ouest-France / Public Sénat",
       "sources": [
         "20 minutes",
         "Europe 1",
         "BFMTV",
         "France Inter",
-        "Ouest-France"
+        "Ouest-France",
+        "Public Sénat"
       ],
       "url": "https://www.europe1.fr/societe/en-direct-blocus-des-lycees-36-enquetes-ouvertes-a-ce-stade-par-ligpn-depuis-le-debut-du-mouvement-1144064?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
@@ -228,40 +229,43 @@
       "date": "13/10/2026",
       "titre": "Mobilisations lycéennes : « La grande majorité des mineurs placés en garde à vue étaient âgés de 15 ou 16 ans », déclar…",
       "texte": "Les lycéens entament une nouvelle semaine de mobilisation avec plusieurs blocages de lycées ce lundi matin. La procureur de la République, Laure Beccuau, revient sur les interpellations et mises en g…",
-      "source": "Public Sénat / Le Figaro",
+      "source": "Public Sénat / Le Figaro / 20 minutes / La Croix",
       "sources": [
         "Public Sénat",
-        "Le Figaro"
+        "Le Figaro",
+        "20 minutes",
+        "La Croix"
       ],
       "url": "https://www.publicsenat.fr/actualites/politique/mobilisations-lyceennes-la-grande-majorite-des-mineurs-places-en-garde-a-vue-etaient-ages-de-15-ou-16-ans-declare-laure-beccuau",
       "verifie": true
     },
     {
-      "id": "amv5esazr-2wa4",
-      "date": "12/10/2026",
-      "titre": "Colère des lycées: « Bismillah c’est les ténèbres »… Comment cette infiltration raciste est devenue un mème et un slogan",
-      "texte": "Des policiers auraient tenté de s’infiltrer dans des groupes de blocus sur les réseaux avant de se faire démasquer et de devenir la risée des lycéens en colère",
-      "source": "20 minutes / France Inter",
-      "sources": [
-        "20 minutes",
-        "France Inter"
-      ],
-      "url": "https://www.20minutes.fr/societe/4253632-20261012-bismillah-tenebres-comment-infiltration-raciste-devenue-slogan?at_medium=display&at_campaign=149",
-      "verifie": true
-    },
-    {
-      "id": "amv1u3a6j-jih6",
-      "date": "10/10/2026",
-      "titre": "Main d’un lycéen arrachée à Lens : Le tir de grenade était « conforme », estime le parquet",
-      "texte": "Le parquet de Béthune a estimé vendredi que le tir de grenade ayant grièvement blessé un lycéen à Lens était conforme aux procédures. La mère de l’adolescent, amputé de la main gauche, a porté plainte",
-      "source": "20 minutes / Le Figaro / La Croix / Libération",
+      "id": "amv77bspb-1a54",
+      "date": "13/10/2026",
+      "titre": "Lycéen éborgné à Tours: un policier à l'origine d'un tir de LBD mis en examen pour violences aggravées",
+      "texte": "Ce mardi 13 octobre, la procureure de la République de Tours annonce la mise en examen d'un policier après qu'un lycéen a été éborgné en marge d'une manifestation lycéenne en septembre.",
+      "source": "20 minutes / Le Figaro / BFMTV",
       "sources": [
         "20 minutes",
         "Le Figaro",
-        "La Croix",
+        "BFMTV"
+      ],
+      "url": "https://www.bfmtv.com/police-justice/lyceen-eborgne-a-tours-un-policier-a-l-origine-d-un-tir-de-lbd-mis-en-examen-pour-violences-aggravees_AD-202610130941.html",
+      "verifie": true
+    },
+    {
+      "id": "amv77bspe-knkp",
+      "date": "13/10/2026",
+      "titre": "\"Qu'on vienne d'Ille-et-Vilaine, qu'on vienne de l'Yonne, qu'on vienne de Seine-Saint-Denis, qu'on vienne du Val-de-Mar…",
+      "texte": "BFMTV propose un nouveau numéro exceptionnel du FORUM BFMTV: “Angoisses, colères: le Forum de la jeunesse” présenté par Maxime Switek. La chaîne consacre une soirée spéciale pour permettre à des cito…",
+      "source": "Public Sénat / BFMTV / franceinfo / Libération",
+      "sources": [
+        "Public Sénat",
+        "BFMTV",
+        "franceinfo",
         "Libération"
       ],
-      "url": "https://www.20minutes.fr/societe/4253013-20261010-main-lyceen-arrachee-lens-tir-grenade-conforme-estime-parquet?at_medium=display&at_campaign=149",
+      "url": "https://www.bfmtv.com/societe/manifestations/video-forum-bfmtv-qu-on-vienne-d-ille-et-vilaine-qu-on-vienne-de-l-yonne-qu-on-vienne-de-seine-saint-denis-qu-on-vienne-du-val-de-marne-on-devrait-tous-avoir-les-memes-chances-declare-kamil-eleve-au-lycee_VN-202610130945.html",
       "verifie": true
     },
     {
