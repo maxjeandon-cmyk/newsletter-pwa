@@ -1,5 +1,5 @@
 {
-  "maj": "12/10/2026 23:27",
+  "maj": "13/10/2026",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -20,6 +20,36 @@
   ],
   "version_gouvernement": [
     {
+      "id": "amv6hf8xt-aad5",
+      "date": "13/10/2026",
+      "titre": "Mouvement des lycéens : «Nous allons nous battre pour cet avenir qu’on nous vole», dénonce Greta Thunberg, keffieh sur …",
+      "texte": "Estimant n’avoir reçu «que des miettes», des lycéens et étudiants ont repris des blocages mardi matin, avant une nouvelle journée nationale de manifestations, alors que le gouvernement espère, lui, u…",
+      "source": "20 minutes / Europe 1 / Le Figaro / BFMTV / L'Humanité / Libération",
+      "sources": [
+        "20 minutes",
+        "Europe 1",
+        "Le Figaro",
+        "BFMTV",
+        "L'Humanité",
+        "Libération"
+      ],
+      "url": "https://www.lefigaro.fr/actualite-france/en-direct-mobilisation-des-lyceens-ils-ne-nous-ecoutent-pas-nouvelle-journee-de-manifestations-ce-mardi-lors-d-un-acte-v-sous-haute-tension-20261013",
+      "verifie": true
+    },
+    {
+      "id": "amv6hf8xz-ahw2",
+      "date": "13/10/2026",
+      "titre": "«Acte V» de la mobilisation lycéenne, budget à l’Assemblée, émissions polluantes de la France… L’actu de ce mardi 13 oc…",
+      "texte": "«Acte V» de la mobilisation lycéenne, budget à l’Assemblée, émissions polluantes de la France… L’actu de ce mardi 13 octobre au matin",
+      "source": "France Inter / Libération",
+      "sources": [
+        "France Inter",
+        "Libération"
+      ],
+      "url": "https://www.liberation.fr/international/europe/acte-v-de-la-mobilisation-lyceenne-budget-a-lassemblee-emissions-polluantes-de-la-france-lactu-de-ce-mardi-13-octobre-au-matin-20261013_4EAOW645LVAMRBVRPVCA7YVMHE/",
+      "verifie": true
+    },
+    {
       "id": "amv520ely-ge93",
       "date": "12/10/2026",
       "titre": "Colère des lycéens: Emmanuel Macron affirme que la mobilisation doit se faire \"dans le calme, dans l'ordre\"",
@@ -32,35 +62,6 @@
         "Public Sénat"
       ],
       "url": "https://www.bfmtv.com/societe/manifestations/direct-colere-des-lyceens-de-nouveaux-blocages-prevus-ce-lundi-le-ministre-de-l-education-nationale-attendu-dans-l-academie-de-lille_LN-202610120078.html",
-      "verifie": true
-    },
-    {
-      "id": "amv5esazr-45w4",
-      "date": "12/10/2026",
-      "titre": "Mouvement lycéen : «au moins huit personnels» de l'Éducation nationale blessés lundi matin, selon le ministère",
-      "texte": "La mobilisation lycéenne entame sa troisième semaine, avec des établissements à nouveau bloqués ce lundi 12 octobre. Ces manifestations ont parfois dégénérés, blessant \"au moins huit personnels\" de l…",
-      "source": "20 minutes / Europe 1 / Le Figaro / BFMTV / Libération",
-      "sources": [
-        "20 minutes",
-        "Europe 1",
-        "Le Figaro",
-        "BFMTV",
-        "Libération"
-      ],
-      "url": "https://www.europe1.fr/faits-divers/mouvement-lyceen-au-moins-huit-personnels-de-leducation-nationale-blesses-lundi-matin-selon-le-ministere-1141622?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
-      "verifie": true
-    },
-    {
-      "id": "amv5esazs-fcs2",
-      "date": "12/10/2026",
-      "titre": "Mouvement lycéen : les emplois du temps et les problèmes de bâtiments en tête des motifs de plaintes sur la plateforme …",
-      "texte": "Sur les 82 000 contributions recueillies jusqu’à dimanche, près des trois quarts concernent les journées trop longues ou la charge de travail et la moitié évoquent les conditions matérielles dans les…",
-      "source": "Europe 1 / Libération",
-      "sources": [
-        "Europe 1",
-        "Libération"
-      ],
-      "url": "https://www.liberation.fr/societe/education/mouvement-lyceen-les-emplois-du-temps-et-les-problemes-de-batiments-en-tete-des-motifs-de-plaintes-sur-la-plateforme-du-gouvernement-20261012_2QMJMBU6ZZEITIBIV4DRNTSBLE/",
       "verifie": true
     },
     {
@@ -183,6 +184,32 @@
   ],
   "faits": [
     {
+      "id": "aetumv6hfjwq-1",
+      "date": "13/10/2026",
+      "titre": "Blocus des lycées : Greta Thunberg au milieu de manifestants devant le lycée Paul-Eluard de Saint-Denis",
+      "texte": "Blocus des lycées : Greta Thunberg au milieu de manifestants devant le lycée Paul-Eluard de Saint-Denis",
+      "source": "Europe 1 / 20 minutes",
+      "sources": [
+        "Europe 1",
+        "20 minutes"
+      ],
+      "url": "https://www.europe1.fr/societe/en-direct-blocus-des-lycees-greta-thunberg-au-milieu-de-manifestants-devant-le-lycee-paul-eluard-de-saint-denis-1144064?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
+      "verifie": true
+    },
+    {
+      "id": "amv6hf8xx-kb65",
+      "date": "13/10/2026",
+      "titre": "« Certains élèves sont mitigés sur le fait de brandir le drapeau palestinien, mais Gaza est une cause noble qui n’est p…",
+      "texte": "« Certains élèves sont mitigés sur le fait de brandir le drapeau palestinien, mais Gaza est une cause noble qui n’est pas assez écoutée », dénonce Mélissa, lycéenne de 17 ans",
+      "source": "BFMTV / L'Humanité",
+      "sources": [
+        "BFMTV",
+        "L'Humanité"
+      ],
+      "url": "https://www.humanite.fr/social-et-economie/lyceens/certains-eleves-sont-mitiges-sur-le-fait-de-brandir-le-drapeau-palestinien-mais-gaza-est-une-cause-noble-qui-nest-pas-assez-ecoutee-denonce-melissa-lyceenne-de-17-a",
+      "verifie": true
+    },
+    {
       "id": "amv5esazr-2wa4",
       "date": "12/10/2026",
       "titre": "Colère des lycées: « Bismillah c’est les ténèbres »… Comment cette infiltration raciste est devenue un mème et un slogan",
@@ -239,37 +266,6 @@
         "L'Humanité"
       ],
       "url": "https://www.liberation.fr/societe/education/victor-wembanyama-soutient-les-lyceens-il-y-a-des-inegalites-systemiques-et-des-problemes-tellement-profonds-20261009_5JZ3S6JKDRBONE2XVTYXP6V3TA/",
-      "verifie": true
-    },
-    {
-      "id": "amv14edmw-28bf",
-      "date": "09/10/2026",
-      "titre": "Le basketteur Victor Wembanyama apporte son soutien aux manifestations lycéennes",
-      "texte": "Victor Wembanyama a témoigné son soutien jeudi au mouvement lycéen français depuis San Antonio, au Texas, où il prépare la prochaine saison NBA qui débute le 20 octobre. \"Je les entends et je les sou…",
-      "source": "France 24 / L'Humanité / Europe 1 / Ouest-France",
-      "sources": [
-        "France 24",
-        "L'Humanité",
-        "Europe 1",
-        "Ouest-France"
-      ],
-      "url": "https://www.france24.com/fr/france/20261009-basketteur-victor-wembanyama-soutien-manifestations-lyceennes-en-france",
-      "verifie": true
-    },
-    {
-      "id": "amv14edmx-7z60",
-      "date": "09/10/2026",
-      "titre": "Mobilisation des lycéens en France: l'ONU «inquiète» face aux violences, le mouvement appelé à se poursuivre",
-      "texte": "Le Haut-Commissariat de l'ONU aux droits de l'homme a dit, vendredi 9 octobre, suivre avec « inquiétude » les « incidents » liés aux manifestations des lycéens en France et a appelé au maintien de ra…",
-      "source": "RFI / La Croix / BFMTV / France 24 / L'Humanité",
-      "sources": [
-        "RFI",
-        "La Croix",
-        "BFMTV",
-        "France 24",
-        "L'Humanité"
-      ],
-      "url": "https://www.rfi.fr/fr/france/20261009-mobilisation-des-lyc%C3%A9ens-en-france-l-onu-inqui%C3%A8te-face-aux-violences-le-mouvement-appel%C3%A9-%C3%A0-se-poursuivre",
       "verifie": true
     },
     {
