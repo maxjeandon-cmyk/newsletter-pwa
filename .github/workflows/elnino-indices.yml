@@ -1,0 +1,29 @@
+name: Indices El Nino quotidiens
+on:
+  schedule:
+    - cron: '17 5 * * *'   # 07h17 Paris (UTC+2 en hiver, UTC+1 en ete)
+  workflow_dispatch:
+    inputs:
+      test:
+        description: 'Test du script elnino-indices.js sans push'
+        type: boolean
+        default: false
+permissions:
+  contents: write
+jobs:
+  maj-indices:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Maj des indices El Nino
+        run: node tools/elnino-indices.js
+      - name: Commit si changement
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add data/elnino-indices.json
+          git diff --cached --quiet || git commit -m "Indices El Nino : maj quotidienne RONI/ONI"
+          git push

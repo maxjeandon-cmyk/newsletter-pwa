@@ -1,4 +1,4 @@
-/* sw.js v120 — Service worker de la PWA Newsletter.
+/* sw.js v121 — Service worker de la PWA Newsletter.
  * v120 : correctif intégration Recettes WiP — la vue rend dans #view (le
  * conteneur réel d'index.html) au lieu de #main inexistant : l'onglet 🍲
  * plantait en TypeError depuis le merge v119. Wrapper <main> invalide
@@ -63,10 +63,11 @@
  * v106 : ✊ Lycéens — la 📍 Chronologie devient un sous-onglet après les ✅ Faits vérifiés
  * (js/views/lyceens.js v106) et ses jalons sont mis à jour jusqu au 7 octobre
  * (data/lyceens.json, network-first).
+ * v121 : onglet 🌊 El Nino 2026 — vue native avec 4 sous-onglets (🌡️ Indices officiels, 🇫🇷 Territoires français, 🌍 Impacts mondiaux, 🔬 Science et surveillance), automate quotidien tools/elnino-indices.js, workflow .github/workflows/elnino-indices.yml
  * v105 : lot 5 — badge « ✓ N médias » (corroboration client miroir du serveur, racines+chiffres)
  * sur les articles repris par plusieurs flux, extrait coupé au mot (js/feeds.js v17, views/common.js,
  * styles.css). data/ et tools/ inchangés (les relevés serveur ne comptent que la presse). */
-const CACHE = 'newsletter-v120';
+const CACHE = 'newsletter-v121' /* v121 : onglet El Nino 2026 */;
 const ASSETS = [
   './',
   './index.html',
@@ -93,6 +94,13 @@ const ASSETS = [
   './js/views/reglages.js',
   './js/views/lyceens.js',
   './js/views/recettes.js',
+  './js/views/elnino.js',
+  './data/elnino-indices.json',
+  './data/elnino/index.json',
+  './data/elnino/sections/indices.json',
+  './data/elnino/sections/territoires.json',
+  './data/elnino/sections/impacts.json',
+  './data/elnino/sections/science.json',
   './data/etudiants/index.json',
   './data/etudiants/chapitres/01.json',
   './data/etudiants/chapitres/02.json',
