@@ -1,0 +1,123 @@
+{
+  "id": "territoires",
+  "emoji": "🇫🇷",
+  "titre": "Territoires français",
+  "description": "Le précédent de 1982-83, les impacts attendus territoire par territoire, et les sécheresses déjà à l'œuvre en 2026.",
+  "groupes": [
+    {
+      "titre": "Le précédent : 6 cyclones en Polynésie (1982-83)",
+      "entrees": [
+        {
+          "donnee": "Entre décembre 1982 et avril 1983, une série de six cyclones dévastateurs frappe successivement la Polynésie française en l'espace de cinq mois : Lisa, Nano, Orama, Reva, Veena et William.",
+          "source": "La 1ère (France Info) — Archives d'Outre-mer, 16/04/2023",
+          "annee": 2023
+        },
+        {
+          "donnee": "Bilan de la saison cyclonique 1982-83 en Polynésie : 16 morts, 200 blessés, 25 000 sinistrés, dégâts estimés à 84 millions d'euros. Des déferlantes de 7 mètres ont été observées, des vagues supérieures à 15 mètres à Hao ; les atolls du sud-est des Tuamotu ont été touchés jusqu'à quatre reprises et des populations évacuées.",
+          "source": "La 1ère (France Info), 2023",
+          "annee": 2023
+        }
+      ]
+    },
+    {
+      "titre": "Impacts attendus par territoire (Météo-France)",
+      "entrees": [
+        {
+          "donnee": "Guyane : températures supérieures à la normale et précipitations déficitaires ; les impacts se font sentir très vite — l'épisode 2026 a pris de l'ampleur depuis juin, et juillet-août sont déjà les plus secs depuis 1967 ; août 2026 est le plus chaud jamais enregistré. Conséquences : étiage des fleuves (transport fluvial), forages asséchés, remontée du biseau salin, agriculture fragilisée (calamité agricole reconnue pour 2023 et 2024) ; les effets peuvent se prolonger une bonne partie de l'année prochaine.",
+          "source": "Météo-France, 28/09/2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "Guadeloupe et Îles du Nord : conditions généralement plus chaudes (notamment les températures nocturnes) et tendance plus sèche, non systématique selon les saisons.",
+          "source": "Météo-France, 28/09/2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "Martinique : hausse statistiquement significative des températures (surtout nocturnes) pendant El Niño ; effet sur les pluies plus variable.",
+          "source": "Météo-France, 28/09/2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "La Réunion et Mayotte : températures au-dessus des normales ; cumuls de précipitations en moyenne excédentaires, modulés par le dipôle de l'océan Indien ; El Niño module l'activité cyclonique du bassin sans changer l'exposition de La Réunion (en moyenne un impact cyclonique par an).",
+          "source": "Météo-France, 28/09/2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "Nouvelle-Calédonie : l'ENSO est la principale source de variabilité interannuelle des précipitations et températures ; les périodes El Niño sont caractérisées par un risque accru de sécheresse (surtout saison chaude, nord de la Grande Terre et îles Loyauté) ; températures minimales anormalement basses en période El Niño.",
+          "source": "Météo-France, 28/09/2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "Polynésie française : lors des épisodes El Niño, les cumuls de pluie augmentent en moyenne aux Marquises et diminuent aux Australes ; les pluies fortes et extrêmes y sont plus fréquentes et intenses (records observés pendant l'épisode 1982-83) ; les pannes d'alizé augmentent les températures ressenties aux Marquises et aux îles de la Société ; les phases El Niño favorisent en moyenne la formation des cyclones sur le bassin.",
+          "source": "Météo-France, 28/09/2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "Wallis-et-Futuna : El Niño n'a pas ou peu d'impact significatif sur la pluviométrie et la température. Saint-Pierre-et-Miquelon : influence éventuelle non systématique, la prévisibilité saisonnière y est plus restreinte.",
+          "source": "Météo-France, 28/09/2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "Mise en garde de Météo-France : l'intensité d'un épisode ne permet pas à elle seule de prévoir l'ampleur des impacts locaux — l'épisode 2023, pourtant classé « fort », n'a pas eu les impacts typiquement attendus sur la Polynésie.",
+          "source": "Météo-France, 28/09/2026",
+          "annee": 2026
+        }
+      ]
+    },
+    {
+      "titre": "Sécheresses 2026 : déjà là",
+      "entrees": [
+        {
+          "donnee": "Guyane : juillet 2026 est le mois de juillet le plus sec enregistré depuis 1967, avec un déficit de pluie de 49 % par rapport à la normale ; la première décade d'août affiche un déficit de précipitations de 70 % ; le niveau du fleuve Maroni est sous surveillance des transporteurs fluviaux.",
+          "source": "La 1ère Guyane / Météo-France Guyane (L. Magnoulou), 25/08/2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "Nouvelle-Calédonie : déficit de pluie depuis le mois de mai, sur fond de phénomène El Niño record cette année ; à Poya, un éleveur témoigne : « en quinze jours, on n'a pas eu une goutte d'eau » ; il s'est constitué un stock de 100 balles de foin pour un investissement de plus de 800 000 francs ; par fortes chaleurs, un bovin consomme environ 60 litres d'eau par jour (trois fois plus) et 12 kg de matière sèche ; l'agence rurale augmente les dotations d'accompagnement des producteurs en difficulté.",
+          "source": "La 1ère Nouvelle-Calédonie, 09/10/2026",
+          "annee": 2026
+        }
+      ]
+    },
+    {
+      "titre": "Cyclones et Atlantique",
+      "entrees": [
+        {
+          "donnee": "El Niño est défavorable à l'activité cyclonique dans l'Atlantique nord : en années d'El Niño modéré à fort, le bassin connaît une réduction substantielle du nombre de cyclones, une réduction de 60 % du nombre de jours d'ouragans et une intensité globale réduite (cisaillement d'alizés renforcé).",
+          "source": "NOAA JetStream (données Bureau of Meteorology australien)",
+          "annee": 2023
+        },
+        {
+          "donnee": "Pendant les phases El Niño, l'activité cyclonique du Pacifique sud s'étend du nord de l'Australie jusqu'à la Polynésie française et peut donner lieu à des phénomènes plus intenses ; la saison peut durer plus longtemps (démarrage plus précoce, fin plus tardive).",
+          "source": "Météo-France, 28/09/2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "Étude : cyclones tropicaux « plus fréquents » en Polynésie française pendant les phases El Niño (d'après le descriptif du doc ; la page HAL est protégée contre les moissonneurs).",
+          "source": "Pagli et al. — HAL",
+          "annee": 2025
+        }
+      ]
+    },
+    {
+      "titre": "France hexagonale et Europe",
+      "entrees": [
+        {
+          "donnee": "Signal moyen sur l'Europe, d'après les 50 dernières années d'hivers El Niño : en début d'hiver (novembre-décembre), faible pression de surface sur l'Atlantique Nord, un peu plus de pluie et des températures plus tempérées sur l'Europe de l'Ouest ; en fin d'hiver (janvier-février), températures plus faibles sur la Scandinavie et plus élevées sur la Méditerranée, un peu plus de pluie sur le Sud-Ouest de l'Europe.",
+          "source": "Météo-France, 02/10/2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "Météo-France : ces effets ne sont pas systématiques et ne sont pas directement liés à l'intensité des épisodes ; l'impact d'El Niño est nettement plus faible que l'impact du changement climatique en Europe — les effets du phénomène concernent surtout les territoires ultramarins.",
+          "source": "Météo-France, 02/10/2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "L'influence d'El Niño sur la France hexagonale et l'Europe est aussi documentée par le climatologue Zeke Hausfather (The Climate Brink), qui cartographie les impacts régionaux attendus de l'épisode 2026-27.",
+          "source": "The Climate Brink (Z. Hausfather)",
+          "annee": 2026
+        }
+      ]
+    }
+  ]
+}

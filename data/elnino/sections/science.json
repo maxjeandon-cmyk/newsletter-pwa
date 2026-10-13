@@ -1,0 +1,118 @@
+{
+  "id": "science",
+  "emoji": "🔬",
+  "titre": "Science et surveillance",
+  "description": "Le changement d'indice officiel (ONI vers RONI), les liens avec le changement climatique, et la fragilité des systèmes d'observation.",
+  "groupes": [
+    {
+      "titre": "Pourquoi le RONI remplace l'ONI",
+      "entrees": [
+        {
+          "donnee": "Note de l'OMM : le réchauffement d'origine humaine introduit une hausse persistante des températures tropicales indépendante de l'ENSO ; l'ONI finit par confondre variabilité naturelle et changement climatique. L'El Niño 2015-16 apparaissait comme le plus fort jamais mesuré à l'ONI, mais une fois pris en compte le réchauffement de fond (~0,3-0,5 °C depuis 1982), il était comparable aux épisodes 1997-98 et 1982-83 ; l'épisode 2023-24, classé dans les cinq plus forts en données traditionnelles, n'est que dixième en données relatives.",
+          "source": "OMM — Understanding ENSO Indices, note d'avril 2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "Formule du RONI : anomalie de la zone Niño 3.4 moins l'anomalie moyenne des tropiques (20°S-20°N), puis rééchelonnée pour conserver la même variance que l'ONI — les seuils existants (±0,5 °C, ±0,8 °C) s'appliquent sans modification.",
+          "source": "NOAA PNS 26-05 / OMM",
+          "annee": 2026
+        },
+        {
+          "donnee": "En clair : l'ONI demande « combien le Pacifique central est-il chaud par rapport à sa moyenne historique ? » ; le RONI demande « combien est-il chaud par rapport au reste des tropiques en ce moment ? ». Dans un monde qui se réchauffe, seule la deuxième question distingue un événement ENSO du réchauffement de fond.",
+          "source": "OMM, 2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "Le RONI mesure la Niño 3.4 par rapport au reste des tropics en temps réel ; il suit mieux la circulation de Walker et les téléconnexions de pluies ; L'Heureux et al. (2024) confirment une classification plus cohérente des événements historiques sur trois jeux de données indépendants (ERSSTv5, HadISST, COBE-SST).",
+          "source": "OMM / L'Heureux et al. 2024",
+          "annee": 2026
+        },
+        {
+          "donnee": "Cas d'école 2016-17 : la Niña d'après-El Niño a tout juste franchi le seuil de −0,5 °C pour la NOAA mais pas celui, plus strict, de ±0,8 °C du Bureau australien ; ce signal ambigu a alimenté les systèmes d'alerte précoce de la Corne de l'Afrique — en juin 2017, 26,5 millions de personnes y étaient touchées (pertes de récoltes, mortalité du bétail, insécurité alimentaire).",
+          "source": "OMM, 2026",
+          "annee": 2026
+        }
+      ]
+    },
+    {
+      "titre": "El Niño et changement climatique",
+      "entrees": [
+        {
+          "donnee": "Le rapport du GIEC indique un niveau « faible » de preuves quant à un renforcement d'El Niño par le réchauffement climatique (pages 132 et 512 du PDF du rapport AR6, 2021).",
+          "source": "GIEC (d'après le descriptif du doc)",
+          "annee": 2021
+        },
+        {
+          "donnee": "Étude cosignée par Jérôme Vialard : la hausse observée d'El Niño depuis 40 ans n'aurait que 10 % de chances d'être d'origine naturelle, sans prendre en compte l'épisode en cours (d'après le descriptif du doc ; texte en accès payant).",
+          "source": "Geophysical Research Letters (doi 10.1029/2026GL123789)",
+          "annee": 2026
+        },
+        {
+          "donnee": "Autre étude suggérant qu'El Niño s'est déjà renforcé en réponse au changement climatique (d'après le descriptif du doc ; texte en accès payant).",
+          "source": "Nature Climate Change (doi 10.1038/s43017-023-00427-8)",
+          "annee": 2023
+        },
+        {
+          "donnee": "Observations satellitaires (ESA) : le réchauffement des températures de surface de la mer est passé de +0,06 °C par décennie (1985-89) à +0,27 °C par décennie (2019-23) — soit 4,5 fois plus vite qu'à la fin des années 1980. Les phénomènes comme El Niño ou les éruptions volcaniques provoquent des fluctuations de court terme mais n'interrompent pas la tendance au réchauffement à long terme. Étude publiée dans Environmental Research Letters (auteur principal Chris Merchant, Université de Reading), fondée sur les relevés de 20 radiomètres infrarouges et 2 micro-ondes couvrant 1980-2023.",
+          "source": "ESA / Environmental Research Letters",
+          "annee": 2025
+        },
+        {
+          "donnee": "Prépublication : « Quantifying the impact of a projected Record-Breaking 2026-2027 El Niño on Global Temperatures using a Statistical Model » — les résultats montrent près d'une chance sur quatre de dépasser temporairement +2,0 °C au-dessus des niveurs préindustriels début 2027, probabilité qui monte à 49-60 % en corrigeant les biais du modèle.",
+          "source": "B. Boussemart — EGUsphere (prépublication)",
+          "annee": 2026
+        }
+      ]
+    },
+    {
+      "titre": "Surveillance des océans",
+      "entrees": [
+        {
+          "donnee": "Le système mondial d'observation des océans fragilisé par l'arrêt d'un réseau de surveillance américain (d'après le descriptif du doc ; article en accès payant).",
+          "source": "Le Monde, 08/06/2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "L'administration américaine renonce au démantèlement contesté d'un réseau d'observation océanique sans équivalent dans le monde (d'après le descriptif du doc ; article en accès payant).",
+          "source": "Le Monde, 19/06/2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "Inquiétudes sur la fusion IRD-CNRS, l'Institut de recherche pour le développement étant menacé d'être dissous au sein du CNRS (d'après le descriptif du doc ; article en accès payant).",
+          "source": "Ouest-France — point de vue",
+          "annee": 2026
+        },
+        {
+          "donnee": "Café ODATIS (Data Terra) : Jérôme Vialard (IRD, IPSL) présente les caractéristiques du phénomène ENSO, sa dynamique couplée océan-atmosphère et la situation actuelle dans le Pacifique ; Sophie Cravatte (IRD) présente le système d'observations du Pacifique tropical (TPOS), système international pérenne, ses besoins en observations et les menaces qui pèsent sur lui.",
+          "source": "Data Terra — Café ODATIS du 17/09/2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "Programme MaHeWa (2024-2028, ANR, « Un Océan de Solutions ») : comprendre les menaces que représentent les canicules marines pour les territoires d'outre-mer du Pacifique et co-construire des outils d'aide à la décision et des solutions d'adaptation (coordination : Sophie Cravatte et Catherine Sabinot (IRD), Guillaume Mitta (IFREMER)). Les canicules marines — épisodes prolongés de températures océaniques extrêmes — provoquent blanchissement massif des coraux, mortalité d'espèces côtières, prolifération d'algues toxiques.",
+          "source": "MaHeWa (mahewa.fr)",
+          "annee": 2026
+        }
+      ]
+    },
+    {
+      "titre": "Se préparer",
+      "entrees": [
+        {
+          "donnee": "« Le pire El Niño de l'histoire enregistrée se prépare — voici comment les gouvernements doivent s'y préparer » : des risques qui s'accumulent de l'Afrique à l'Amazonie et une fenêtre d'action qui se referme rapidement (tribune ; article en accès payant).",
+          "source": "Nature — World View, 22/09/2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "Risque de désinvestissement dans les pays vulnérables (d'après le descriptif du doc ; article en accès payant).",
+          "source": "Science (doi 10.1126/science.aem2972)",
+          "annee": 2026
+        },
+        {
+          "donnee": "Avertissement de la NOAA : « Avec un événement de cette ampleur, les chances de subir des impacts conformes à El Niño sont plus grandes, mais rien n'est garanti. »",
+          "source": "NOAA CPC — ENSO discussion, citée par The Climate Brink",
+          "annee": 2026
+        }
+      ]
+    }
+  ]
+}

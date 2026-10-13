@@ -1,0 +1,128 @@
+{
+  "id": "indices",
+  "emoji": "🌡️",
+  "titre": "Indices officiels",
+  "description": "Comment El Niño se mesure, où en est l'épisode 2026, et ce que prévoient les centres officiels.",
+  "groupes": [
+    {
+      "titre": "Définitions",
+      "entrees": [
+        {
+          "donnee": "Zone Niño 3.4 : bande du Pacifique équatorial centre-est entre 5°S–5°N et 170°O–120°O. C'est la zone de référence pour mesurer El Niño.",
+          "source": "NOAA CPC / OMM",
+          "annee": 2026
+        },
+        {
+          "donnee": "ONI (Oceanic Niño Index) : moyenne mobile sur 3 mois de l'anomalie de température de surface de la mer en zone Niño 3.4, par rapport à une climatologie de 30 ans. Un El Niño est déclaré quand l'indice dépasse +0,5 °C pendant 5 saisons de 3 mois consécutives qui se chevauchent.",
+          "source": "NOAA CPC — bulletin PNS 26-05",
+          "annee": 2026
+        },
+        {
+          "donnee": "Depuis le 1er février 2026, la NOAA surveille officiellement l'ENSO avec le RONI (Relative Oceanic Niño Index), qui remplace l'ONI. Les fichiers de l'ONI historique restent publiés.",
+          "source": "NOAA — bulletin PNS 26-05 du 13/01/2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "El Niño se produit avec une périodicité de 2 à 7 ans environ, avec un pic typique en hiver boréal (novembre-février).",
+          "source": "Météo-France / OMM",
+          "annee": 2026
+        }
+      ]
+    },
+    {
+      "titre": "Relevés du 13/10/2026",
+      "entrees": [
+        {
+          "donnee": "RONI de la saison JAS 2026 (juillet-août-septembre) : +1,69 °C.",
+          "source": "NOAA CPC — fichier officiel RONI.ascii.txt",
+          "annee": 2026
+        },
+        {
+          "donnee": "Anomalie mensuelle relative du Niño 3.4 de septembre 2026 : +2,08 °C (août : +1,67 °C, juillet : +1,33 °C).",
+          "source": "NOAA CPC — fichier officiel Rnino34.ascii.txt",
+          "annee": 2026
+        },
+        {
+          "donnee": "ONI de la saison JAS 2026 : +2,16 °C (indice historique, toujours calculé).",
+          "source": "NOAA CPC — fichier officiel oni.ascii.txt",
+          "annee": 2026
+        },
+        {
+          "donnee": "Température brute moyenne en zone Niño 3.4 en août 2026 : 29,04 °C, contre une climatologie de référence de 26,87 °C, soit une anomalie de +2,17 °C. Anomalie provisoire de septembre : +2,56 °C.",
+          "source": "Données ERSSTv6 (NOAA) relayées par B. McNoldy, Université de Miami",
+          "annee": 2026
+        },
+        {
+          "donnee": "Trajectoire de l'épisode : le RONI est passé de −1,04 °C (saison NDJ 2025-26, phase La Niña) à +1,69 °C (JAS 2026) — un basculement de +2,73 °C en 7 saisons.",
+          "source": "Calcul sur le fichier RONI.ascii.txt de la NOAA CPC",
+          "annee": 2026
+        }
+      ]
+    },
+    {
+      "titre": "Probabilités et prévisions NOAA (octobre 2026)",
+      "entrees": [
+        {
+          "donnee": "Probabilités officielles de force (seuil RONI ≥ 2,0 °C, épisode « très fort ») : SON 2026 : 100 % ; OND 2026 : 100 % ; NDJ 2026-27 : 96 % ; DJF 2026-27 : 81 % ; JFM 2027 : 46 %.",
+          "source": "NOAA CPC — ENSO Strength Probabilities, mis à jour le 2e jeudi d'octobre 2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "Prévision de RONI (médiane des percentiles) : SON 2026 : 2,47 °C ; OND : 2,74 °C ; NDJ : 2,65 °C ; DJF : 2,36 °C ; JFM 2027 : 1,90 °C ; MAM : 0,83 °C.",
+          "source": "NOAA CPC — RONI Outlook, octobre 2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "Bulletin ENSO du 5 octobre 2026 : El Niño se renforce, avec plus de 90 % de chances d'un événement très fort pendant l'automne-hiver 2026-27 de l'hémisphère Nord ; pour la saison octobre-décembre 2026, 75 % de chances d'un événement historique qui dépasserait la force de tous les El Niño enregistrés depuis 1950.",
+          "source": "NOAA CPC/NCEP — ENSO: Recent Evolution, Current Status and Predictions",
+          "annee": 2026
+        }
+      ]
+    },
+    {
+      "titre": "Ce qu'en disent les autres centres",
+      "entrees": [
+        {
+          "donnee": "Selon le dernier bulletin Info Niño/Niña, El Niño s'est solidement installé et va s'intensifier jusqu'à une très forte intensité ; il existe une probabilité « proche de 100 % » qu'il persiste jusqu'en février 2027. C'est la première fois que les prévisions d'un bulletin Info Niño/Niña sont aussi catégoriques.",
+          "source": "OMM — communiqué du 3 septembre 2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "Les 14 modèles de prévision saisonnière suivis par Zeke Hausfather visent un pic d'environ +4,1 °C en zone Niño 3.4 (les 80 % du milieu de l'ensemble entre +3,4 et +4,6 °C), à comparer au record précédent de +2,75 °C atteint pendant l'El Niño 2015-16.",
+          "source": "Zeke Hausfather — The Climate Brink, 28/09/2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "Sur la base des prévisions saisonnières à 6 mois de Météo-France et d'autres centres, l'indice poursuivra sa hausse pour atteindre son maximum en novembre ou décembre 2026, qui pourrait être inédit depuis 1950.",
+          "source": "Météo-France, 02/10/2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "L'anomalie Niño 3.4 est passée d'une moyenne de +1,6 °C au-dessus de la normale en juin 2026 à +2,5 °C en août ; les températures mondiales suivent l'ENSO avec environ 3 mois de retard, ce qui place 2027 en position de battre les records annuels.",
+          "source": "Carbon Brief, 2026",
+          "annee": 2026
+        }
+      ]
+    },
+    {
+      "titre": "Classement historique (selon le RONI, données NOAA)",
+      "entrees": [
+        {
+          "donnee": "Pics RONI les plus élevés depuis 1950 : +2,40 °C (DJF 1983, épisode 1982-83) ; +2,28 °C (NDJ 1997, épisode 1997-98) ; +2,25 °C (NDJ 2015, épisode 2015-16) ; +2,12 °C (DJF 1992, épisode 1991-92) ; +1,99 °C (OND 1965) ; +1,97 °C (OND 1972) ; +1,89 °C (DJF 1958).",
+          "source": "Calcul sur le fichier RONI.ascii.txt de la NOAA CPC",
+          "annee": 2026
+        },
+        {
+          "donnee": "À +1,69 °C dès la saison JAS 2026, l'épisode en cours pointe déjà au niveau du 8e pic de l'ère instrumentale ; la prévision médiane OND 2026 (+2,74 °C) dépasserait le record de 1983.",
+          "source": "Calcul sur les fichiers RONI.ascii.txt et RONI Outlook de la NOAA CPC",
+          "annee": 2026
+        },
+        {
+          "donnee": "La NOAA publie aussi la comparaison de la saison 2026 avec les 8 El Niño les plus forts enregistrés selon le RONI (6e graphique du tableau de bord ENSO du PSL).",
+          "source": "NOAA PSL — dashboard ENSO",
+          "annee": 2026
+        }
+      ]
+    }
+  ]
+}

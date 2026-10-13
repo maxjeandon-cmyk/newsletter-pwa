@@ -1,0 +1,39 @@
+{
+  "titre": "El Niño 2026 — données brutes",
+  "description": "Données extraites, sans interprétation, des sources du dossier de recherche du documentaire Lucas Explique « Le pire El Niño de l'histoire va-t-il frapper la France ? ». Chaque entrée porte sa source et son année. Les entrées notées « d'après le descriptif du doc » reprennent la description du dossier lui-même, le texte complet n'étant pas librement accessible.",
+  "misAJour": "13/10/2026",
+  "sections": [
+    {
+      "id": "indices",
+      "emoji": "🌡️",
+      "titre": "Indices officiels",
+      "description": "Comment El Niño se mesure, où en est l'épisode 2026, et ce que prévoient les centres officiels.",
+      "fichier": "sections/indices.json",
+      "octets": 6991
+    },
+    {
+      "id": "territoires",
+      "emoji": "🇫🇷",
+      "titre": "Territoires français",
+      "description": "Le précédent de 1982-83, les impacts attendus territoire par territoire, et les sécheresses déjà à l'œuvre en 2026.",
+      "fichier": "sections/territoires.json",
+      "octets": 8415
+    },
+    {
+      "id": "impacts",
+      "emoji": "🌍",
+      "titre": "Impacts mondiaux",
+      "description": "Santé, sécurité alimentaire, pêche, récoltes, prix : les données chiffrées de l'épisode et de ses précédents.",
+      "fichier": "sections/impacts.json",
+      "octets": 7570
+    },
+    {
+      "id": "science",
+      "emoji": "🔬",
+      "titre": "Science et surveillance",
+      "description": "Le changement d'indice officiel (ONI vers RONI), les liens avec le changement climatique, et la fragilité des systèmes d'observation.",
+      "fichier": "sections/science.json",
+      "octets": 8276
+    }
+  ]
+}

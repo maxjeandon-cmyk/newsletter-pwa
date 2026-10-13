@@ -1,0 +1,113 @@
+{
+  "id": "impacts",
+  "emoji": "🌍",
+  "titre": "Impacts mondiaux",
+  "description": "Santé, sécurité alimentaire, pêche, récoltes, prix : les données chiffrées de l'épisode et de ses précédents.",
+  "groupes": [
+    {
+      "titre": "Santé et chaleur",
+      "entrees": [
+        {
+          "donnee": "Projection : 451 000 vies perdues à cause de la chaleur pendant les neuf premiers mois de l'épisode (juin 2026-février 2027) par rapport à une année normale ; dont 239 000 ± 11 000 dans les six prochains mois. Les températures continentales mondiales devraient être supérieures de 1,2 °C à la normale, avec 44 % de jours extrêmement chauds en plus — des températures analogues à celles que le changement climatique ne livrera que dans 20 ans.",
+          "source": "Climate Impact Lab (M. Greenstone, T. Carleton et al., Université de Chicago)",
+          "annee": 2026
+        }
+      ]
+    },
+    {
+      "titre": "Sécurité alimentaire",
+      "entrees": [
+        {
+          "donnee": "Le Programme alimentaire mondial (ONU) projette qu'au moins 49 millions de personnes de plus basculeront en insécurité alimentaire aiguë d'ici la fin 2027 ; sur les 45 pays analysés, le total de personnes en insécurité alimentaire aiguë passerait d'environ 225 à 274 millions (+22 %).",
+          "source": "PAM (ONU) / ONU Info",
+          "annee": 2026
+        },
+        {
+          "donnee": "Répartition projetée : Amérique latine et Caraïbes +16 millions de personnes touchées (l'Amérique centrale affiche la plus forte hausse proportionnelle : +83,1 %) ; Afrique de l'Est et australe +18 millions (+26 %) ; Asie-Pacifique +8,2 millions ; Afrique de l'Ouest et centrale +12 % (près de 6 millions).",
+          "source": "PAM (ONU)",
+          "annee": 2026
+        },
+        {
+          "donnee": "Référence : l'El Niño 2015-2016 avait impacté la sécurité alimentaire de 60 à 100 millions de personnes.",
+          "source": "PAM (ONU)",
+          "annee": 2026
+        },
+        {
+          "donnee": "Actions anticipatoires : depuis mai 2026, le PAM a déclenché ses plans au Soudan du Sud, au Tchad, en Mauritanie, en Ouganda, au Guatemala et au Salvador — plus de 14 millions de dollars versés pour 500 000 personnes. Le PAM rappelle qu'un dollar investi dans les programmes anticipatoires évite 3 à 7 dollars de pertes et de coûts de réponse.",
+          "source": "PAM (ONU)",
+          "annee": 2026
+        },
+        {
+          "donnee": "Le pic de l'épisode est attendu entre septembre et décembre 2026 ; dans de nombreux endroits, les effets se feront sentir pendant toute l'année 2027 en raison de l'impact sur les cycles de récoltes.",
+          "source": "PAM (ONU)",
+          "annee": 2026
+        }
+      ]
+    },
+    {
+      "titre": "Pêche",
+      "entrees": [
+        {
+          "donnee": "Fin août 2026, le gouvernement péruvien a annulé par anticipation la saison de l'anchois : l'El Niño en cours a réchauffé les eaux et poussé les anchois adultes vers des eaux plus profondes et froides à la recherche de nourriture, ruinant la capture. Les eaux au large du Pérou comptent normalement parmi les pêcheries les plus productives du monde, avec plusieurs millions de tonnes d'anchois par an destinées aux engrais et à l'alimentation animale.",
+          "source": "Nature 657, p. 864-865 (J. Dinneen), 13/09/2026",
+          "annee": 2026
+        }
+      ]
+    },
+    {
+      "titre": "Récoltes en Europe",
+      "entrees": [
+        {
+          "donnee": "Entre les prévisions de juin et celles de septembre 2026, la production de céréales attendue dans l'UE et le Royaume-Uni a été dégradée de 16,7 millions de tonnes — l'équivalent de toute la récolte de céréales actuellement prévue pour l'Italie, la Belgique et les Pays-Bas réunis.",
+          "source": "ECIU (Energy & Climate Intelligence Unit) sur données COCERAL, 02/10/2026",
+          "annee": 2026
+        },
+        {
+          "donnee": "Par pays : France −5,8 Mt (≈ 1,47 Md€, dont neuf dixièmes de maïs, en baisse de 45 % par rapport à 2025, plus faible depuis au moins 1980) ; Hongrie −3,2 Mt (≈ 723 M€, maïs divisé par deux, rendements jamais vus depuis plus de 50 ans) ; Royaume-Uni −3,0 Mt (≈ 527 M€, rendement de blé ramené de 7,95 à 6,82 t/ha) ; Allemagne −2,5 Mt (≈ 398 M€) ; Espagne −1,2 Mt ; Autriche −0,9 Mt (rendement maïs de 11,4 à 7,2 t/ha). En compensation : ≈ +0,7 Md€ (Roumanie, Bulgarie, Suède, Pologne, pays baltes).",
+          "source": "ECIU sur données COCERAL, 02/10/2026",
+          "annee": 2026
+        }
+      ]
+    },
+    {
+      "titre": "Prix et économie",
+      "entrees": [
+        {
+          "donnee": "Selon la BCE, l'oscillation El Niño explique près de 20 % des mouvements de l'inflation des prix des matières premières mondiales depuis 1963 (Brunner, 2002) ; un El Niño normal tend à élever l'inflation réelle des matières premières d'environ 3 % pendant 6 à 12 mois ; l'impact sur les prix des matières premières hors énergie est d'environ +5 % pendant 6 à 16 mois (Cashin et al., 2017). Les prix mondiaux des denrées alimentaires pourraient monter jusqu'à +9 % si l'épisode devient fort. L'inflation réagit plus fortement dans les pays où l'alimentation pèse davantage dans l'indice des prix.",
+          "source": "BCE — Bulletin économique, juin 2023, p. 49-50",
+          "annee": 2023
+        },
+        {
+          "donnee": "Effets contrastés sur les rendements : El Niño est historiquement suivi de récoltes de soja américaines plus élevées, mais de rendements de blé et de maïs américains plus faibles ; il tend à réduire les rendements de soja en Asie.",
+          "source": "BCE, 2023",
+          "annee": 2023
+        },
+        {
+          "donnee": "Études cosignées par Gilles Dufrénot sur les effets économiques d'El Niño (d'après le descriptif du doc ; textes en accès payant : World Development 2025, Economic Modelling 2024).",
+          "source": "World Development / Economic Modelling",
+          "annee": 2025
+        },
+        {
+          "donnee": "Étude sur les pertes économiques liées aux El Niño 1982-83 et 1997-98 (d'après le descriptif du doc ; article en accès payant).",
+          "source": "Science (doi 10.1126/science.adf2983)",
+          "annee": 2023
+        }
+      ]
+    },
+    {
+      "titre": "Cyclones par bassin océanique",
+      "entrees": [
+        {
+          "donnee": "Tendance du nombre de cyclones pendant les années El Niño : Atlantique nord — forte baisse ; Pacifique nord-est — léger accroissement ; moitié est du Pacifique nord-ouest — accroissement ; moitié ouest — diminution ; région australienne — baisse ; Pacifique sud et central (à l'est de 160°E) — accroissement du nombre et de l'intensité.",
+          "source": "NOAA JetStream (données Bureau of Meteorology australien)",
+          "annee": 2023
+        },
+        {
+          "donnee": "Cartographie des impacts régionaux attendus de l'El Niño 2026-27 avec niveaux de confiance ; les zones indiquées correspondent aux endroits où au moins 80 % des 13 systèmes de modélisation saisonnière (NMME et Copernicus C3S) sont d'accord sur le signe de l'anomalie de pluie ou de température ; chaque libellé indique combien des huit El Niño forts depuis 1957 ont évolué comme prévu.",
+          "source": "The Climate Brink (Z. Hausfather), 28/09/2026",
+          "annee": 2026
+        }
+      ]
+    }
+  ]
+}
