@@ -91,7 +91,7 @@
       "periode": "Chronique transverse — les revendications, mot à mot",
       "titre": "Ce qu'ils veulent — les revendications, mot à mot",
       "paragraphes": 17,
-      "octets": 18144
+      "octets": 18039
     },
     {
       "id": "c12",
@@ -115,7 +115,7 @@
       "periode": "Chronique transverse — la génération dans l'Histoire",
       "titre": "Génération 2026 — le mouvement dans la longue durée",
       "paragraphes": 7,
-      "octets": 10296
+      "octets": 10227
     },
     {
       "id": "c15",
@@ -193,9 +193,9 @@
       "id": "c24",
       "fichier": "chapitres/24.json",
       "periode": "13 octobre 2026 — suivi de la journée",
-      "titre": "Le fil continue — 13 octobre 2026",
+      "titre": "L'acte V compte ses manifestants — Thunberg à Saint-Denis, la gauche reprend la liste",
       "paragraphes": 3,
-      "octets": 5543
+      "octets": 4736
     }
   ],
   "releveSigs": [
@@ -344,9 +344,9 @@
           "id": "c24",
           "fichier": "chapitres/24.json",
           "periode": "13 octobre 2026 — suivi de la journée",
-          "titre": "Le fil continue — 13 octobre 2026",
+          "titre": "L'acte V compte ses manifestants — Thunberg à Saint-Denis, la gauche reprend la liste",
           "paragraphes": 3,
-          "octets": 5543
+          "octets": 4736
         },
         {
           "id": "c10",
@@ -362,7 +362,7 @@
           "periode": "Chronique transverse — les revendications, mot à mot",
           "titre": "Ce qu'ils veulent — les revendications, mot à mot",
           "paragraphes": 17,
-          "octets": 18144
+          "octets": 18039
         },
         {
           "id": "c12",
@@ -386,7 +386,7 @@
           "periode": "Chronique transverse — la génération dans l'Histoire",
           "titre": "Génération 2026 — le mouvement dans la longue durée",
           "paragraphes": 7,
-          "octets": 10296
+          "octets": 10227
         },
         {
           "id": "c15",
