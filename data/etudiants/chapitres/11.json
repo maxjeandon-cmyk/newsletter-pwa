@@ -127,6 +127,15 @@
       "sources": [
         "Libération"
       ]
+    },
+    {
+      "id": "c11p17",
+      "texte": "Côté revendications, les exigences s'affinent : Fin de Parcoursup, rénovations, revalorisation des enseignants… Les partis de gauche portent les revendications des lycéens et des étudiants (1 media : L'Humanité — non corrobore) — détail : La mobilisation lycéenne remet sur le devant de la scène les besoins de l’école et de l’université. Quand l’exécutif invoque les contrainte… ; Abroger Parcoursup, c’est possible ! (1 media : L'Humanité — non corrobore) — détail : Coupable de renforcer la sélection à l’entrée de l’enseignement supérieur et de favoriser l’essor du privé lucratif, Parcoursup doit être a… ; Accès à l'université : Parcoursup est-il assez sélectif ? (1 media : France Inter — non corrobore) — détail : Laurence Garnier, sénatrice (LR) de la Loire-Atlantique. Rapporteuse de la commission d'enquête sénatoriale sur l'état des universités en F… (Volet automatique du 13 octobre 2026 à 23:37, chapitre « Ce qu'ils veulent — les revendications, mot à mot » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "L'Humanité",
+        "France Inter"
+      ],
+      "auto": true
     }
   ]
 }
