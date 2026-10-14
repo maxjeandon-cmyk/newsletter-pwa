@@ -91,7 +91,7 @@
       "periode": "Chronique transverse — les revendications, mot à mot",
       "titre": "Ce qu'ils veulent — les revendications, mot à mot",
       "paragraphes": 18,
-      "octets": 18770
+      "octets": 18686
     },
     {
       "id": "c12",
@@ -99,7 +99,7 @@
       "periode": "Chronique transverse — la répression et ses visages",
       "titre": "La répression et ses visages",
       "paragraphes": 13,
-      "octets": 16493
+      "octets": 16381
     },
     {
       "id": "c13",
@@ -131,7 +131,7 @@
       "periode": "Chronique transverse — les figures du mouvement",
       "titre": "Figures d'un automne — portraits croisés",
       "paragraphes": 7,
-      "octets": 10468
+      "octets": 10337
     },
     {
       "id": "c17",
@@ -203,7 +203,7 @@
       "periode": "14 octobre 2026 — suivi de la journée",
       "titre": "Le fil continue — 14 octobre 2026",
       "paragraphes": 1,
-      "octets": 2182
+      "octets": 1569
     }
   ],
   "releveSigs": [
@@ -360,7 +360,7 @@
           "periode": "14 octobre 2026 — suivi de la journée",
           "titre": "Le fil continue — 14 octobre 2026",
           "paragraphes": 1,
-          "octets": 2182
+          "octets": 1569
         },
         {
           "id": "c10",
@@ -376,7 +376,7 @@
           "periode": "Chronique transverse — les revendications, mot à mot",
           "titre": "Ce qu'ils veulent — les revendications, mot à mot",
           "paragraphes": 18,
-          "octets": 18770
+          "octets": 18686
         },
         {
           "id": "c12",
@@ -384,7 +384,7 @@
           "periode": "Chronique transverse — la répression et ses visages",
           "titre": "La répression et ses visages",
           "paragraphes": 13,
-          "octets": 16493
+          "octets": 16381
         },
         {
           "id": "c13",
@@ -416,7 +416,7 @@
           "periode": "Chronique transverse — les figures du mouvement",
           "titre": "Figures d'un automne — portraits croisés",
           "paragraphes": 7,
-          "octets": 10468
+          "octets": 10337
         }
       ]
     }
