@@ -1,14 +1,25 @@
 #!/usr/bin/env node
-/* tools/elnino-indices.js — Automate quotidien des indices El Niño (v121).
+/* tools/elnino-indices.js — Automate quotidien des indices El Niño.
  * Fetch les trois fichiers texte officiels NOAA CPC :
- *   - https://www.cpc.ncep.noaa.gov/data/indices/RONI.ascii.txt (saisonnier)
- *   - https://www.cpc.ncep.noaa.gov/data/indices/Rnino34.ascii.txt (mensuel)
- *   - https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt
- * Parse les formats, garde les 12 dernières lignes utiles de chaque série.
- * Recalcule le classement : épisodes = saisons consécutives ≥ 0,5,
- * pic par épisode, top8Precedents hors épisode en cours.
- * Re-génère data/elnino-indices.json AU MÊME SCHÉMA.
+ *   - https://www.cpc.ncep.noaa.gov/data/indices/RONI.ascii.txt  (SEAS YR ANOM, depuis 1950)
+ *   - https://www.cpc.ncep.noaa.gov/data/indices/Rnino34.ascii.txt (YR MTH ANOM, mois NUMERIQUES)
+ *   - https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt    (SEAS YR TOTAL ANOM, anomalie = 4e colonne)
+ * Garde les 12 dernières entrées de chaque série, CHRONOLOGIQUES (la plus
+ * ancienne en premier) ; la valeur de tête de chaque indice est la DERNIÈRE
+ * entrée (la plus récente).
+ * Recalcule le classement sur la série RONI COMPLÈTE : épisodes = saisons
+ * consécutives >= 0,5 ; top8Precedents = épisodes clos triés par pic
+ * décroissant ; episodeEnCours = dernier épisode s'il contient la dernière
+ * saison. Re-génère data/elnino-indices.json AU MÊME SCHÉMA, en conservant
+ * les blocs non rafraîchis (sstNino34, probabilitesForce, outlookRoni) et,
+ * en cas d'échec d'une source, le bloc existant de cette source.
+ * Sortie : log "DONNEES MODIFIEES" si le contenu (hors date maj) change,
+ * "DONNEES INCHEMANGEES" sinon — l'appelant ne commit QUE sur modification.
  * Mode test : node tools/elnino-indices.js --check valide le JSON existant.
+ * Correctif du 14/10/2026 (la v121 du 13/10 inversait les séries et lisait
+ * la plus ANCIENNE valeur comme courante, laissait nino34Relatif vide — regex
+ * \w{3} sur des mois numériques — et vidait top8Precedents en ne voyant que
+ * 12 saisons d'historique).
  * Node >= 18, zéro dépendance.
  */
 'use strict';
@@ -17,7 +28,6 @@ const fs = require('fs');
 const path = require('path');
 
 const FICHIER_SORTIE = path.join(__dirname, '..', 'data', 'elnino-indices.json');
-const FICHIER_EXISTANT = FICHIER_SORTIE;
 
 /* URLs officielles NOAA CPC */
 const URL_RONI = 'https://www.cpc.ncep.noaa.gov/data/indices/RONI.ascii.txt';
@@ -27,7 +37,7 @@ const URL_ONI = 'https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt';
 /* User Agent pour éviter les blocages */
 const UA = 'Mozilla/5.0 (compatible; NewsletterPWA/1.0; +https://diyeah24.fr)';
 
-/* Format de date dd/mm/yyyy */
+/* Format de date jj/mm/aaaa */
 function fmtDate(d) {
   const dd = String(d.getDate()).padStart(2, '0');
   const mm = String(d.getMonth() + 1).padStart(2, '0');
@@ -35,353 +45,254 @@ function fmtDate(d) {
   return dd + '/' + mm + '/' + yyyy;
 }
 
-/* Parse une ligne RONI : "SEAS YR ANOM" -> { saison, annee, valeur } */
-function parseRoniLine(line) {
-  const m = line.trim().match(/^(\w{3})\s+(\d{4})\s+([-+]?\d+\.?\d*)/);
+/* Ordre des saisons dans l'année (DJF ouvre l'année dans ces fichiers) */
+const ORDRE_SAISONS = { DJF: 0, JFM: 1, FMA: 2, MAM: 3, AMJ: 4, MJJ: 5, JJA: 6, JAS: 7, ASO: 8, SON: 9, OND: 10, NDJ: 11 };
+
+/* Parse une ligne RONI "SEAS YR ANOM" -> { saison, annee, valeur } */
+function parseLigneRoni(ligne) {
+  const m = ligne.trim().match(/^([A-Z]{3})\s+(\d{4})\s+([-+]?\d+\.?\d*)$/);
   if (!m) return null;
   return { saison: m[1], annee: parseInt(m[2], 10), valeur: parseFloat(m[3]) };
 }
 
-/* Parse une ligne Rnino34 : "YR MTH ANOM" -> { annee, mois, valeur } */
-function parseRnino34Line(line) {
-  const m = line.trim().match(/^(\d{4})\s+(\w{3})\s+([-+]?\d+\.?\d*)/);
+/* Parse une ligne Rnino34 "YR MTH ANOM" (mois NUMERIQUE 1-12) -> { annee, mois, valeur } */
+function parseLigneRnino34(ligne) {
+  const m = ligne.trim().match(/^(\d{4})\s+(\d{1,2})\s+([-+]?\d+\.?\d*)$/);
   if (!m) return null;
-  return { annee: parseInt(m[1], 10), mois: m[2], valeur: parseFloat(m[3]) };
+  return { annee: parseInt(m[1], 10), mois: parseInt(m[2], 10), valeur: parseFloat(m[3]) };
 }
 
-/* Parse une ligne ONI : "SEAS YR TOTAL ANOM" -> { saison, annee, total, valeur } */
-function parseOniLine(line) {
-  const m = line.trim().match(/^(\w{3})\s+(\d{4})\s+([-+]?\d+\.?\d*)\s+([-+]?\d+\.?\d*)/);
+/* Parse une ligne ONI "SEAS YR TOTAL ANOM" -> { saison, annee, total, valeur } */
+function parseLigneOni(ligne) {
+  const m = ligne.trim().match(/^([A-Z]{3})\s+(\d{4})\s+([-+]?\d+\.?\d*)\s+([-+]?\d+\.?\d*)$/);
   if (!m) return null;
   return { saison: m[1], annee: parseInt(m[2], 10), total: parseFloat(m[3]), valeur: parseFloat(m[4]) };
 }
 
-/* Convertir saison + annee en label "SAISON YYYY" */
+/* Label "SAISON YYYY" */
 function labelSaison(saison, annee) {
   return saison + ' ' + annee;
 }
 
-/* Convertir mois en numéro */
-function moisNum(m) {
-  const mois = { JAN: 1, FEB: 2, MAR: 3, APR: 4, MAY: 5, JUN: 6, JUL: 7, AUG: 8, SEP: 9, OCT: 10, NOV: 11, DEC: 12 };
-  return mois[m] || 0;
-}
-
-/* Convertir saison en période de mois */
-function saisonMois(saison) {
-  const saisons = {
-    ASO: [8, 9, 10], SON: [9, 10, 11], OND: [10, 11, 12],
-    NDJ: [11, 12, 1], DJF: [12, 1, 2], JFM: [1, 2, 3],
-    FMA: [2, 3, 4], MAM: [3, 4, 5], AMJ: [4, 5, 6],
-    MJJ: [5, 6, 7], JJA: [6, 7, 8], JAS: [7, 8, 9]
-  };
-  return saisons[saison] || [];
-}
-
-/* Trouver les épisodes El Niño (saisons consécutives ≥ 0.5) */
-function trouverEpisodes(serie) {
-  const episodes = [];
-  let episodeActuel = null;
-
-  for (const item of serie) {
-    const v = item.valeur;
-    if (v >= 0.5) {
-      if (!episodeActuel) {
-        episodeActuel = { saisons: [], pic: v };
-      }
-      episodeActuel.saisons.push({ saison: item.saison, annee: item.annee, valeur: v });
-      episodeActuel.pic = Math.max(episodeActuel.pic, v);
-    } else {
-      if (episodeActuel) {
-        episodes.push(episodeActuel);
-        episodeActuel = null;
-      }
-    }
-  }
-  if (episodeActuel) {
-    episodes.push(episodeActuel);
-  }
-  return episodes;
-}
-
-/* Générer le label d'épisode (YYYY-YY) */
-function labelEpisode(episode) {
-  if (!episode.saisons || episode.saisons.length === 0) return '?';
-  const premiere = episode.saisons[0];
-  const derniere = episode.saisons[episode.saisons.length - 1];
-  const startYear = premiere.annee;
-  const endYear = derniere.annee + (derniere.saison === 'DJF' ? 1 : 0);
-  const shortEnd = String(endYear).slice(-2);
-  return startYear + '-' + shortEnd;
-}
-
-/* Générer le classement historique */
-function genererClassement(episodes, serieRoni) {
-  if (!episodes || episodes.length === 0) return { top8Precedents: [], episodeEnCours: null };
-
-  /* Trouver l'épisode en cours (le dernier) */
-  const episodeEnCours = episodes[episodes.length - 1];
-
-  /* Trouver le pic de l'épisode en cours */
-  const picEnCours = episodeEnCours.pic;
-  const saisonPicEnCours = episodeEnCours.saisons.find(s => s.valeur === picEnCours) || episodeEnCours.saisons[0];
-
-  /* Tous les épisodes sauf le dernier = précédents */
-  const precedents = episodes.slice(0, -1);
-
-  /* Trier par pic décroissant */
-  precedents.sort((a, b) => b.pic - a.pic);
-
-  /* Top 8 précédents */
-  const top8 = precedents.slice(0, 8).map(ep => {
-    const picSaison = ep.saisons.find(s => s.valeur === ep.pic) || ep.saisons[0];
-    return {
-      episode: labelEpisode(ep),
-      pic: ep.pic,
-      saison: labelSaison(picSaison.saison, picSaison.annee)
-    };
-  });
-
-  return {
-    top8Precedents: top8,
-    episodeEnCours: {
-      episode: labelEpisode(episodeEnCours),
-      pic: picEnCours,
-      saison: labelSaison(saisonPicEnCours.saison, saisonPicEnCours.annee)
-    }
-  };
-}
-
 /* Fetch avec timeout */
-async function fetchWithTimeout(url, timeout = 30000) {
+async function fetchAvecDelai(url, delaiMs) {
+  const delai = delaiMs || 30000;
   const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), timeout);
+  const timer = setTimeout(() => controller.abort(), delai);
   try {
-    const response = await fetch(url, {
+    const reponse = await fetch(url, {
       headers: { 'User-Agent': UA },
       signal: controller.signal
     });
-    clearTimeout(timeoutId);
-    if (!response.ok) throw new Error('HTTP ' + response.status);
-    return await response.text();
-  } catch (e) {
-    clearTimeout(timeoutId);
-    throw e;
+    if (!reponse.ok) throw new Error('HTTP ' + reponse.status);
+    return await reponse.text();
+  } finally {
+    clearTimeout(timer);
   }
 }
 
-/* Parser le fichier RONI */
-async function parserRoni() {
-  const text = await fetchWithTimeout(URL_RONI);
-  const lines = text.split('\n');
+/* Parse un fichier texte en série chronologique complète.
+ * parseLigne : fonction de parse d'une ligne ; triDefensif : tri chronologique. */
+async function parserSerie(url, parseLigne) {
+  const texte = await fetchAvecDelai(url);
   const serie = [];
-  for (const line of lines) {
-    const parsed = parseRoniLine(line);
-    if (parsed) serie.push(parsed);
+  for (const ligne of texte.split('\n')) {
+    const p = parseLigne(ligne);
+    if (p) serie.push(p);
   }
-  /* Garder les 12 dernières */
-  return serie.slice(-12).reverse();
+  if (serie.length === 0) throw new Error('aucune ligne exploitable pour ' + url);
+  return serie;
 }
 
-/* Parser le fichier Rnino34 */
-async function parserRnino34() {
-  const text = await fetchWithTimeout(URL_RNINO34);
-  const lines = text.split('\n');
-  const serie = [];
-  for (const line of lines) {
-    const parsed = parseRnino34Line(line);
-    if (parsed) serie.push(parsed);
+/* Épisodes El Niño d'une série saisonnière CHRONOLOGIQUE :
+ * saisons consécutives de valeur >= 0,5. */
+function trouverEpisodes(serie) {
+  const episodes = [];
+  let courant = null;
+  for (const item of serie) {
+    if (item.valeur >= 0.5) {
+      if (!courant) courant = { saisons: [] };
+      courant.saisons.push(item);
+    } else if (courant) {
+      episodes.push(courant);
+      courant = null;
+    }
   }
-  /* Garder les 12 dernières */
-  return serie.slice(-12).reverse();
+  if (courant) episodes.push(courant);
+  return episodes;
 }
 
-/* Parser le fichier ONI */
-async function parserOni() {
-  const text = await fetchWithTimeout(URL_ONI);
-  const lines = text.split('\n');
-  const serie = [];
-  for (const line of lines) {
-    const parsed = parseOniLine(line);
-    if (parsed) serie.push(parsed);
+/* Label d'épisode "AAAA-AA". Convention ENSO : les deux années de référence.
+ * Épisode contenu dans une seule année : AAAA-(AAAA+1) (un épisode en cours
+ * ou clos en cours d'année est rattaché à l'année ENSO suivante). */
+function labelEpisode(ep) {
+  const premiere = ep.saisons[0];
+  const derniere = ep.saisons[ep.saisons.length - 1];
+  const debut = premiere.annee;
+  const fin = derniere.annee === debut ? debut + 1 : derniere.annee;
+  return debut + '-' + String(fin).slice(-2);
+}
+
+/* Saison du pic d'un épisode (première saison atteignant le pic). */
+function saisonDuPic(ep) {
+  let pic = null;
+  let saison = null;
+  for (const s of ep.saisons) {
+    if (pic === null || s.valeur > pic) {
+      pic = s.valeur;
+      saison = s;
+    }
   }
-  /* Garder les 12 dernières */
-  return serie.slice(-12).reverse();
+  return { pic: pic, saison: saison };
 }
 
-/* Convertir la série Rnino34 en série mensuelle avec période "MM/YYYY" */
-function convertirRnino34(serie) {
-  return serie.map(item => ({
-    periode: item.mois + '/' + item.annee,
-    valeur: item.valeur
-  }));
-}
+/* Classement historique depuis la série RONI COMPLÈTE :
+ * episodeEnCours = dernier épisode S'IL contient la dernière saison de la
+ * série ; tous les autres épisodes sont clos et classés par pic décroissant. */
+function genererClassement(serieRoni) {
+  const episodes = trouverEpisodes(serieRoni);
+  if (episodes.length === 0) return { top8Precedents: [], episodeEnCours: null };
+  const derniereSaison = serieRoni[serieRoni.length - 1];
+  const dernierEp = episodes[episodes.length - 1];
+  const enCours = dernierEp.saisons.some(s => s.saison === derniereSaison.saison && s.annee === derniereSaison.annee);
 
-/* Convertir la série ONI en série saisonnière */
-function convertirOni(serie) {
-  return serie.map(item => ({
-    periode: labelSaison(item.saison, item.annee),
-    valeur: item.valeur
-  }));
+  const clos = enCours ? episodes.slice(0, -1) : episodes.slice();
+  clos.sort((a, b) => saisonDuPic(b).pic - saisonDuPic(a).pic);
+
+  const top8 = clos.slice(0, 8).map(ep => {
+    const p = saisonDuPic(ep);
+    return { episode: labelEpisode(ep), pic: p.pic, saison: labelSaison(p.saison.saison, p.saison.annee) };
+  });
+
+  let episodeEnCours = null;
+  if (enCours) {
+    const p = saisonDuPic(dernierEp);
+    episodeEnCours = {
+      episode: labelEpisode(dernierEp),
+      pic: p.pic,
+      saison: labelSaison(p.saison.saison, p.saison.annee)
+    };
+  }
+  return { top8Precedents: top8, episodeEnCours: episodeEnCours };
 }
 
 /* Main — génération complète */
 async function generer() {
-  const aujourdhui = new Date();
-  const maj = fmtDate(aujourdhui);
+  const maj = fmtDate(new Date());
 
-  /* Fetch et parse */
-  const [roniSerie, rnino34Serie, oniSerie] = await Promise.all([
-    parserRoni().catch(e => { console.error('RONI:', e.message); return []; }),
-    parserRnino34().catch(e => { console.error('Rnino34:', e.message); return []; }),
-    parserOni().catch(e => { console.error('ONI:', e.message); return []; })
-  ]);
-
-  /* Trouver l'épisode en cours à partir de RONI */
-  const episodes = trouverEpisodes(roniSerie.map(r => ({ saison: r.saison, annee: r.annee, valeur: r.valeur })));
-
-  /* Dernière valeur RONI */
-  const dernierRoni = roniSerie[roniSerie.length - 1] || {};
-
-  /* Dernière valeur Rnino34 */
-  const dernierRnino34 = rnino34Serie[rnino34Serie.length - 1] || {};
-
-  /* Dernière valeur ONI */
-  const dernierOni = oniSerie[oniSerie.length - 1] || {};
-
-  /* Classement */
-  const classement = genererClassement(episodes, roniSerie);
-
-  /* Construire la sortie */
-  const sortie = {
-    maj: maj,
-    roni: {
-      periode: dernierRoni.saison ? labelSaison(dernierRoni.saison, dernierRoni.annee) : '',
-      valeur: dernierRoni.valeur || 0,
-      unite: 'degC',
-      seuilElNino: 0.5,
-      seuilTresFort: 2.0,
-      serie: roniSerie.map(r => ({ periode: labelSaison(r.saison, r.annee), valeur: r.valeur })),
-      source: 'NOAA CPC - RONI.ascii.txt'
-    },
-    nino34Relatif: {
-      periode: dernierRnino34.mois ? dernierRnino34.mois + '/' + dernierRnino34.annee : '',
-      valeur: dernierRnino34.valeur || 0,
-      serie: convertirRnino34(rnino34Serie),
-      source: 'NOAA CPC - Rnino34.ascii.txt'
-    },
-    oni: {
-      periode: dernierOni.saison ? labelSaison(dernierOni.saison, dernierOni.annee) : '',
-      valeur: dernierOni.valeur || 0,
-      serie: convertirOni(oniSerie),
-      source: 'NOAA CPC - oni.ascii.txt'
-    },
-    /* Conserver sstNino34, probabilitesForce, outlookRoni depuis l'existant si disponible */
-    sstNino34: null,
-    probabilitesForce: null,
-    outlookRoni: null,
-    classementHistorique: classement
-  };
-
-  /* Lire l'existant pour conserver les blocs non-rafraîchis */
+  /* Fichier existant : blocs conservés + repli en cas d'échec d'une source */
   let existant = {};
   try {
-    existant = JSON.parse(fs.readFileSync(FICHIER_EXISTANT, 'utf8'));
+    existant = JSON.parse(fs.readFileSync(FICHIER_SORTIE, 'utf8'));
   } catch (e) {
-    console.log('Fichier existant introuvable, creation complete.');
+    console.log('Fichier existant absent ou illisible, creation complete.');
   }
 
-  /* Conserver les blocs non mis à jour */
-  if (existant.sstNino34) sortie.sstNino34 = existant.sstNino34;
-  if (existant.probabilitesForce) sortie.probabilitesForce = existant.probabilitesForce;
-  if (existant.outlookRoni) sortie.outlookRoni = existant.outlookRoni;
+  /* Fetch et parse — un échec de source conserve le bloc existant */
+  const [roniComplet, rnino34Complet, oniComplet] = await Promise.all([
+    parserSerie(URL_RONI, parseLigneRoni).catch(e => { console.error('RONI: ' + e.message); return null; }),
+    parserSerie(URL_RNINO34, parseLigneRnino34).catch(e => { console.error('Rnino34: ' + e.message); return null; }),
+    parserSerie(URL_ONI, parseLigneOni).catch(e => { console.error('ONI: ' + e.message); return null; })
+  ]);
 
-  /* Valider la sortie */
+  /* RONI est l'indice de référence : sans lui, pas de classement, pas de mise à jour */
+  if (!roniComplet) {
+    console.error('ERREUR: source RONI indisponible, abandon sans ecriture.');
+    process.exit(1);
+  }
+
+  /* Blocs rafraîchis (12 dernières entrées, chronologiques) ou conservés */
+  const bloc = (nom, serie, map) => {
+    if (!serie) {
+      if (!existant[nom]) return null;
+      console.error('AVERTISSEMENT: source de ' + nom + ' indisponible, bloc existant conserve.');
+      return existant[nom];
+    }
+    const derniers = serie.slice(-12).map(map);
+    const dernier = derniers[derniers.length - 1];
+    return { periode: dernier.periode, valeur: dernier.valeur, serie: derniers };
+  };
+
+  const roniNouveau = bloc('roni', roniComplet, r => ({ periode: labelSaison(r.saison, r.annee), valeur: r.valeur }));
+  if (roniNouveau) {
+    roniNouveau.unite = 'degC';
+    roniNouveau.seuilElNino = 0.5;
+    roniNouveau.seuilTresFort = 2.0;
+    roniNouveau.source = 'NOAA CPC - RONI.ascii.txt';
+  }
+  const nino34Nouveau = bloc('nino34Relatif', rnino34Complet, r => ({ periode: r.mois + '/' + r.annee, valeur: r.valeur }));
+  if (nino34Nouveau) nino34Nouveau.source = 'NOAA CPC - Rnino34.ascii.txt';
+  const oniNouveau = bloc('oni', oniComplet, r => ({ periode: labelSaison(r.saison, r.annee), valeur: r.valeur }));
+  if (oniNouveau) oniNouveau.source = 'NOAA CPC - oni.ascii.txt';
+
+  const sortie = {
+    maj: maj,
+    roni: roniNouveau,
+    nino34Relatif: nino34Nouveau,
+    oni: oniNouveau,
+    sstNino34: existant.sstNino34 || null,
+    probabilitesForce: existant.probabilitesForce || null,
+    outlookRoni: existant.outlookRoni || null,
+    classementHistorique: genererClassement(roniComplet)
+  };
+
+  /* Validation minimale avant écriture */
   JSON.stringify(sortie);
+  if (sortie.roni && (!Array.isArray(sortie.roni.serie) || sortie.roni.serie.length === 0)) {
+    console.error('ERREUR: serie RONI vide, abandon sans ecriture.');
+    process.exit(1);
+  }
 
-  /* Écrire */
+  /* Les données (hors date de maj) ont-elles changé ? */
+  const sansMaj = o => { const c = Object.assign({}, o); delete c.maj; return JSON.stringify(c); };
+  const inchange = existant && existant.maj && sansMaj(sortie) === sansMaj(existant);
+
+  /* Écriture */
   fs.writeFileSync(FICHIER_SORTIE, JSON.stringify(sortie, null, 2) + '\n');
-  console.log('Indices El Niño : maj quotidienne RONI/ONI — ' + maj);
-  return sortie;
+  console.log('Indices El Nino : maj quotidienne RONI/ONI — ' + maj);
+  console.log(inchange ? 'DONNEES INCHANGEES (hors date de maj) — pas de commit necessaire'
+                       : 'DONNEES MODIFIEES — commit requis');
+  if (inchange) process.exit(0);
+  process.exit(0);
 }
 
-/* Mode check — validation sans réseau */
-async function check() {
+/* Mode check — validation du fichier existant, sans réseau ni écriture */
+function check() {
   let existant;
   try {
-    existant = JSON.parse(fs.readFileSync(FICHIER_EXISTANT, 'utf8'));
+    existant = JSON.parse(fs.readFileSync(FICHIER_SORTIE, 'utf8'));
   } catch (e) {
     console.error('ERREUR: data/elnino-indices.json introuvable ou invalide');
     process.exit(1);
   }
 
-  /* Vérifications de schéma */
   const erreurs = [];
 
-  /* Champs requis */
-  const champsRequis = ['maj', 'roni', 'nino34Relatif', 'oni', 'classementHistorique'];
-  for (const champ of champsRequis) {
-    if (!(champ in existant)) {
-      erreurs.push('Champ manquant: ' + champ);
+  for (const champ of ['maj', 'roni', 'nino34Relatif', 'oni', 'classementHistorique']) {
+    if (!(champ in existant)) erreurs.push('Champ manquant: ' + champ);
+  }
+
+  for (const [nom, requis] of [['roni', ['periode', 'valeur', 'unite', 'seuilElNino', 'seuilTresFort', 'serie', 'source']],
+                                ['nino34Relatif', ['periode', 'valeur', 'serie', 'source']],
+                                ['oni', ['periode', 'valeur', 'serie', 'source']]]) {
+    if (existant[nom]) {
+      for (const champ of requis) {
+        if (!(champ in existant[nom])) erreurs.push(nom + '.' + champ + ' manquant');
+      }
+      if (!Array.isArray(existant[nom].serie) || existant[nom].serie.length === 0) {
+        erreurs.push(nom + '.serie doit etre un tableau non vide');
+      }
+    } else {
+      erreurs.push(nom + ' absent');
     }
   }
 
-  /* Structure roni */
-  if (existant.roni) {
-    const roniRequis = ['periode', 'valeur', 'unite', 'seuilElNino', 'seuilTresFort', 'serie', 'source'];
-    for (const champ of roniRequis) {
-      if (!(champ in existant.roni)) {
-        erreurs.push('roni.' + champ + ' manquant');
-      }
-    }
-    if (Array.isArray(existant.roni.serie)) {
-      for (const s of existant.roni.serie) {
-        if (!('periode' in s) || !('valeur' in s)) {
-          erreurs.push('roni.serie: entrée incomplète');
-          break;
-        }
-      }
-    }
-  }
-
-  /* Structure nino34Relatif */
-  if (existant.nino34Relatif) {
-    const n34Requis = ['periode', 'valeur', 'serie', 'source'];
-    for (const champ of n34Requis) {
-      if (!(champ in existant.nino34Relatif)) {
-        erreurs.push('nino34Relatif.' + champ + ' manquant');
-      }
-    }
-  }
-
-  /* Structure oni */
-  if (existant.oni) {
-    const oniRequis = ['periode', 'valeur', 'serie', 'source'];
-    for (const champ of oniRequis) {
-      if (!(champ in existant.oni)) {
-        erreurs.push('oni.' + champ + ' manquant');
-      }
-    }
-  }
-
-  /* Structure classementHistorique */
-  if (existant.classementHistorique) {
-    if (!Array.isArray(existant.classementHistorique.top8Precedents)) {
-      erreurs.push('classementHistorique.top8Precedents doit être un tableau');
-    }
-    if (!existant.classementHistorique.episodeEnCours) {
-      erreurs.push('classementHistorique.episodeEnCours manquant');
-    }
-  }
-
-  /* Cohérence classement */
-  if (existant.classementHistorique && existant.roni && existant.roni.serie) {
-    const episodes = trouverEpisodes(existant.roni.serie.map(r => ({ saison: r.periode.split(' ')[0], annee: parseInt(r.periode.split(' ')[1]), valeur: r.valeur })));
-    const classement = genererClassement(episodes, existant.roni.serie);
-    if (classement.episodeEnCours && existant.classementHistorique.episodeEnCours) {
-      if (classement.episodeEnCours.episode !== existant.classementHistorique.episodeEnCours.episode) {
-        erreurs.push('Classement: épisode en cours incohérent');
-      }
+  const ch = existant.classementHistorique;
+  if (ch) {
+    if (!Array.isArray(ch.top8Precedents)) erreurs.push('classementHistorique.top8Precedents doit etre un tableau');
+    else if (ch.top8Precedents.length !== 8) erreurs.push('AVERTISSEMENT: top8Precedents = ' + ch.top8Precedents.length + ' entree(s) au lieu de 8');
+    if (!ch.episodeEnCours || !ch.episodeEnCours.episode || typeof ch.episodeEnCours.pic !== 'number') {
+      erreurs.push('classementHistorique.episodeEnCours incomplet');
     }
   }
 
@@ -397,10 +308,8 @@ async function check() {
 
 /* Point d'entrée */
 const args = process.argv.slice(2);
-const modeCheck = args.includes('--check');
-
-if (modeCheck) {
-  check().catch(e => { console.error('ERREUR:', e.message); process.exit(1); });
+if (args.includes('--check')) {
+  check();
 } else {
-  generer().catch(e => { console.error('ERREUR:', e.message); process.exit(1); });
+  generer().catch(e => { console.error('ERREUR: ' + e.message); process.exit(1); });
 }

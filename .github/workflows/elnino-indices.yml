@@ -1,7 +1,8 @@
 name: Indices El Nino quotidiens
 on:
-  schedule:
-    - cron: '17 5 * * *'   # 07h17 Paris (UTC+2 en hiver, UTC+1 en ete)
+  # Cron quotidien remplace par une tache planifiee Vibe Work depuis le
+  # 14/10/2026 : ce workflow reste disponible en secours, en declenchement
+  # manuel uniquement (bouton "Run workflow" sur main).
   workflow_dispatch:
     inputs:
       test:
@@ -19,9 +20,10 @@ jobs:
         with:
           node-version: 22
       - name: Maj des indices El Nino
-        run: node tools/elnino-indices.js
-      - name: Commit si changement
+        run: node tools/elnino-indices.js | tee /tmp/elnino.log
+      - name: Commit si donnees modifiees
         run: |
+          grep -q "DONNEES MODIFIEES" /tmp/elnino.log || { echo "Donnees inchangees, pas de commit."; exit 0; }
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add data/elnino-indices.json
