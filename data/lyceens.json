@@ -1,5 +1,5 @@
 {
-  "maj": "13/10/2026 23:37",
+  "maj": "14/10/2026 05:39",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -244,11 +244,13 @@
       "date": "13/10/2026",
       "titre": "Lycéen éborgné à Tours: un policier à l'origine d'un tir de LBD mis en examen pour violences aggravées",
       "texte": "Ce mardi 13 octobre, la procureure de la République de Tours annonce la mise en examen d'un policier après qu'un lycéen a été éborgné en marge d'une manifestation lycéenne en septembre.",
-      "source": "20 minutes / Le Figaro / BFMTV",
+      "source": "20 minutes / Le Figaro / BFMTV / France 24 / Mediapart",
       "sources": [
         "20 minutes",
         "Le Figaro",
-        "BFMTV"
+        "BFMTV",
+        "France 24",
+        "Mediapart"
       ],
       "url": "https://www.bfmtv.com/police-justice/lyceen-eborgne-a-tours-un-policier-a-l-origine-d-un-tir-de-lbd-mis-en-examen-pour-violences-aggravees_AD-202610130941.html",
       "verifie": true
