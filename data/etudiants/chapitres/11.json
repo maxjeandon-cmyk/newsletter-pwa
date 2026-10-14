@@ -142,6 +142,14 @@
       "sources": [
         "France Inter"
       ]
+    },
+    {
+      "id": "c11p19",
+      "texte": "Les demandes des lycéens remontent, mot à mot : Mobilisation lycéenne : Édouard Geffray entend le « vertige » d’une jeunesse inquiète, mais défend Parcoursup (1 media : Public Sénat — non corrobore) — détail : Au lendemain de l’acte V de la mobilisation lycéenne, le sénateur communiste a interpellé le ministre de l’Éducation nationale lors de la r… (Volet automatique du 14 octobre 2026 à 17:45, chapitre « Ce qu'ils veulent — les revendications, mot à mot » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "Public Sénat"
+      ],
+      "auto": true
     }
   ]
 }
