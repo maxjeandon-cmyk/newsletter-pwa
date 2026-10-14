@@ -1,5 +1,5 @@
 {
-  "maj": "14/10/2026 17:45",
+  "maj": "14/10/2026 23:38",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -24,11 +24,12 @@
       "date": "14/10/2026",
       "titre": "Colère des lycéens : «Un peu moins de 200 lycées» devraient être fermés ce mercredi, annonce le ministre de l’Éducation…",
       "texte": "Édouard Geffray a de nouveau promis mardi d’apporter «des réponses» aux lycéens, après avoir reçu déjà plus de 90.000 contributions sur la plateforme de concertation en ligne dédiée, où tout un chacu…",
-      "source": "Le Figaro / BFMTV / Libération",
+      "source": "Le Figaro / BFMTV / Libération / Public Sénat",
       "sources": [
         "Le Figaro",
         "BFMTV",
-        "Libération"
+        "Libération",
+        "Public Sénat"
       ],
       "url": "https://www.lefigaro.fr/actualite-france/en-direct-colere-des-lyceens-les-eleves-mobilises-souhaitent-que-les-etudiants-et-les-gilets-jaunes-poursuivent-le-mouvement-20261014",
       "verifie": true
@@ -213,12 +214,26 @@
       "date": "14/10/2026",
       "titre": "Omar Sy juge «lamentable» la réponse des autorités à la mobilisation des lycéens",
       "texte": "Invité de France Inter mercredi, le comédien a appelé à écouter les revendications des jeunes, mobilisés depuis la mi-septembre pour réclamer davantage de moyens pour l’éducation.",
-      "source": "Le Figaro / L'Humanité",
+      "source": "Le Figaro / L'Humanité / 20 minutes",
       "sources": [
         "Le Figaro",
-        "L'Humanité"
+        "L'Humanité",
+        "20 minutes"
       ],
       "url": "https://www.lefigaro.fr/culture/omar-sy-juge-lamentable-la-reponse-des-autorites-a-la-mobilisation-des-lyceens-20261014",
+      "verifie": true
+    },
+    {
+      "id": "amv8mto4w-eocz",
+      "date": "14/10/2026",
+      "titre": "Mobilisation des lycéens : le syndicat de police Alliance porte plainte contre l’État pour mise en danger de la vie d’a…",
+      "texte": "Avec 937 agents des forces de l’ordre blessés, le syndicat dénonce les «injonctions contradictoires» faites aux policiers, «exposés à la violence et livrés à la vindicte», dans le cadre du mouvement …",
+      "source": "Europe 1 / Le Figaro",
+      "sources": [
+        "Europe 1",
+        "Le Figaro"
+      ],
+      "url": "https://www.lefigaro.fr/actualite-france/en-direct-colere-des-lyceens-les-eleves-mobilises-souhaitent-que-les-etudiants-et-les-gilets-jaunes-poursuivent-le-mouvement-20261014",
       "verifie": true
     },
     {
@@ -247,23 +262,6 @@
         "L'Humanité"
       ],
       "url": "https://www.humanite.fr/social-et-economie/lyceens/certains-eleves-sont-mitiges-sur-le-fait-de-brandir-le-drapeau-palestinien-mais-gaza-est-une-cause-noble-qui-nest-pas-assez-ecoutee-denonce-melissa-lyceenne-de-17-a",
-      "verifie": true
-    },
-    {
-      "id": "amv6ua680-48tt",
-      "date": "13/10/2026",
-      "titre": "Blocus des lycées : 36 enquêtes ouvertes à ce stade par l'IGPN depuis le début du mouvement",
-      "texte": "En direct - Blocus des lycées : 36 enquêtes ouvertes à ce stade par l'IGPN depuis le début du mouvement",
-      "source": "20 minutes / Europe 1 / BFMTV / France Inter / Ouest-France / Public Sénat",
-      "sources": [
-        "20 minutes",
-        "Europe 1",
-        "BFMTV",
-        "France Inter",
-        "Ouest-France",
-        "Public Sénat"
-      ],
-      "url": "https://www.europe1.fr/societe/en-direct-blocus-des-lycees-36-enquetes-ouvertes-a-ce-stade-par-ligpn-depuis-le-debut-du-mouvement-1144064?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
     },
     {
