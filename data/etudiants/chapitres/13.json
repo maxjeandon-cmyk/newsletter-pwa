@@ -88,11 +88,10 @@
     },
     {
       "id": "c13p11",
-      "texte": "Du rectorat à Matignon, les rouages continuent de tourner : Mobilisation lycéenne : Édouard Geffray entend le « vertige » d’une jeunesse inquiète, mais défend Parcoursup (1 media : Public Sénat — non corrobore) — détail : Au lendemain de l’acte V de la mobilisation lycéenne, le sénateur communiste a interpellé le ministre de l’Éducation nationale lors de la r… (Volet automatique du 14 octobre 2026 à 17:45, chapitre « La machine gouvernementale, vue d'en bas » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "La machine ajuste sa voix au lendemain de l'acte V : le sénateur communiste a interpellé le ministre de l'Éducation nationale lors de la reprise des questions au gouvernement, rapporte Public Sénat, et Édouard Geffray entend le « vertige » d'une jeunesse inquiète, mais défend Parcoursup. Vue d'en bas, ce 14 octobre au soir, la réponse de l'État tient dans ce décalage : le vertige reconnu, la plateforme maintenue.",
       "sources": [
         "Public Sénat"
-      ],
-      "auto": true
+      ]
     }
   ]
 }

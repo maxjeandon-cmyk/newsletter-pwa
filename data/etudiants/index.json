@@ -91,7 +91,7 @@
       "periode": "Chronique transverse — les revendications, mot à mot",
       "titre": "Ce qu'ils veulent — les revendications, mot à mot",
       "paragraphes": 19,
-      "octets": 19393
+      "octets": 19317
     },
     {
       "id": "c12",
@@ -107,7 +107,7 @@
       "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
       "titre": "La machine gouvernementale, vue d'en bas",
       "paragraphes": 11,
-      "octets": 14027
+      "octets": 13854
     },
     {
       "id": "c14",
@@ -203,7 +203,7 @@
       "periode": "14 octobre 2026 — suivi de la journée",
       "titre": "Le fil continue — 14 octobre 2026",
       "paragraphes": 2,
-      "octets": 2600
+      "octets": 2392
     }
   ],
   "releveSigs": [
@@ -358,7 +358,7 @@
           "periode": "14 octobre 2026 — suivi de la journée",
           "titre": "Le fil continue — 14 octobre 2026",
           "paragraphes": 2,
-          "octets": 2600
+          "octets": 2392
         },
         {
           "id": "c10",
@@ -374,7 +374,7 @@
           "periode": "Chronique transverse — les revendications, mot à mot",
           "titre": "Ce qu'ils veulent — les revendications, mot à mot",
           "paragraphes": 19,
-          "octets": 19393
+          "octets": 19317
         },
         {
           "id": "c12",
@@ -390,7 +390,7 @@
           "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
           "titre": "La machine gouvernementale, vue d'en bas",
           "paragraphes": 11,
-          "octets": 14027
+          "octets": 13854
         },
         {
           "id": "c14",
