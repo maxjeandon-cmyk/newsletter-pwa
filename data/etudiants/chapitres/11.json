@@ -135,6 +135,14 @@
         "L'Humanité",
         "France Inter"
       ]
+    },
+    {
+      "id": "c11p18",
+      "texte": "La liste de ce qu'ils veulent, elle, continue de s'écrire : REPORTAGE. \"Pour eux, l'enjeu est plus grand que leur propre personne\" : pourquoi les élèves se mobilisent-ils contre Parcoursup ? (1 media : France Inter — non corrobore) — détail : La plateforme d'admission pour les études supérieures est décriée par les lycéens et les étudiants, notamment pour le manque de transparenc… (Volet automatique du 14 octobre 2026 à 11:40, chapitre « Ce qu'ils veulent — les revendications, mot à mot » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "France Inter"
+      ],
+      "auto": true
     }
   ]
 }
