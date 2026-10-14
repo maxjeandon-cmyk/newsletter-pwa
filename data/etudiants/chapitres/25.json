@@ -11,6 +11,14 @@
         "20 minutes",
         "France Inter"
       ]
+    },
+    {
+      "id": "c25p2",
+      "texte": "6 heures ont passé depuis le relevé précédent ; le fil continue. Dans l'après-midi du 14 octobre 2026, le fil du récit continue. À Beauvau comme à l'Élysée, on ajuste le discours : Mobilisation lycéenne : Édouard Geffray entend le « vertige » d’une jeunesse inquiète, mais défend Parcoursup (1 media : Public Sénat — non corrobore) ; Blocus lycéen : Emmanuel Macron déplore que les « angoisses légitimes » des jeunes soient « exploitées politiquement » (1 media : Public Sénat — non corrobore) — detail : Au lendemain de l’acte V de la mobilisation lycéenne, le sénateur communiste a interpellé le ministre de l’Éducation nationale lors de la reprise des questions au gouvernement, ce…. Le prochain relevé reprendra le fil. (Relevé automatique du 14 octobre 2026 à 17:45 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "Public Sénat"
+      ],
+      "auto": true
     }
   ]
 }
