@@ -3,7 +3,7 @@
   "intro": "Chronique narrative du mouvement lycéen et étudiant de l'automne 2026, écrite du point de vue des élèves : de l'amorce de Créteil au dernier acte en date, le fil s'allonge d'un relevé automatique toutes les six heures, et les chapitres transverses — la voix de l'intérieur, les revendications mot à mot, la répression, la machine gouvernementale, la longue durée, le lexique, les figures — viennent fermer le fil. Sources en vitrine : les médias qui soutiennent le mouvement (Basta !, Contre Attaque, Le Café pédagogique, StreetPress, L'Humanité, Politis, Acrimed, Le Média, Bondy Blog) et l'écoute directe des fils TikTok, Snapchat et Instagram ; en compléments du relevé machine, les fils Reddit (r/etudiants, r/enseignants, r/france) et Wikipédia en colonne vertébrale factuelle.",
   "note": "Méthode : chaque paragraphe cite ses sources. Les paragraphes marqués « auto » sont des relevés bruts ajoutés par le pipeline toutes les 6 h (faits sourcés, sans réécriture) ; la rédaction narrative approfondie est assurée lors des éditions de la newsletter. Badge ✅ (corroboré par au moins deux médias distincts) et ⚠️ (une seule source) : ces distinctions s'appliquent aux relevés automatiques.",
   "maj": "14/10/2026",
-  "totalParagraphes": 137,
+  "totalParagraphes": 140,
   "chapitres": [
     {
       "id": "c1",
@@ -90,8 +90,8 @@
       "fichier": "chapitres/11.json",
       "periode": "Chronique transverse — les revendications, mot à mot",
       "titre": "Ce qu'ils veulent — les revendications, mot à mot",
-      "paragraphes": 18,
-      "octets": 18686
+      "paragraphes": 19,
+      "octets": 19393
     },
     {
       "id": "c12",
@@ -106,8 +106,8 @@
       "fichier": "chapitres/13.json",
       "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
       "titre": "La machine gouvernementale, vue d'en bas",
-      "paragraphes": 10,
-      "octets": 13321
+      "paragraphes": 11,
+      "octets": 14027
     },
     {
       "id": "c14",
@@ -202,15 +202,13 @@
       "fichier": "chapitres/25.json",
       "periode": "14 octobre 2026 — suivi de la journée",
       "titre": "Le fil continue — 14 octobre 2026",
-      "paragraphes": 1,
-      "octets": 1569
+      "paragraphes": 2,
+      "octets": 2600
     }
   ],
   "releveSigs": [
-    "actions|lycees|mercred|reprenn#",
-    "armee|fric|lycees|univers#",
-    "enjeu|grand|plus|reporta#",
-    "lyceenn|sont|sont|vies#"
+    "angoiss|deplore|emmanue|macron#",
+    "edouard|geffray|lyceenn|mobilis#"
   ],
   "sections": [
     {
@@ -359,8 +357,8 @@
           "fichier": "chapitres/25.json",
           "periode": "14 octobre 2026 — suivi de la journée",
           "titre": "Le fil continue — 14 octobre 2026",
-          "paragraphes": 1,
-          "octets": 1569
+          "paragraphes": 2,
+          "octets": 2600
         },
         {
           "id": "c10",
@@ -375,8 +373,8 @@
           "fichier": "chapitres/11.json",
           "periode": "Chronique transverse — les revendications, mot à mot",
           "titre": "Ce qu'ils veulent — les revendications, mot à mot",
-          "paragraphes": 18,
-          "octets": 18686
+          "paragraphes": 19,
+          "octets": 19393
         },
         {
           "id": "c12",
@@ -391,8 +389,8 @@
           "fichier": "chapitres/13.json",
           "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
           "titre": "La machine gouvernementale, vue d'en bas",
-          "paragraphes": 10,
-          "octets": 13321
+          "paragraphes": 11,
+          "octets": 14027
         },
         {
           "id": "c14",
@@ -421,8 +419,8 @@
       ]
     }
   ],
-  "releveDate": "2026-10-14T09:40:44.597Z",
-  "releveCompteur": 26,
+  "releveDate": "2026-10-14T15:45:48.609Z",
+  "releveCompteur": 27,
   "chapitreJour": {
     "id": "c25",
     "fichier": "chapitres/25.json",
