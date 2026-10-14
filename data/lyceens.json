@@ -1,5 +1,5 @@
 {
-  "maj": "14/10/2026 05:39",
+  "maj": "14/10/2026 11:40",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -20,46 +20,44 @@
   ],
   "version_gouvernement": [
     {
-      "id": "amv6hf8xt-aad5",
-      "date": "13/10/2026",
-      "titre": "Mouvement des lycéens : «Nous allons nous battre pour cet avenir qu’on nous vole», dénonce Greta Thunberg, keffieh sur …",
-      "texte": "Estimant n’avoir reçu «que des miettes», des lycéens et étudiants ont repris des blocages mardi matin, avant une nouvelle journée nationale de manifestations, alors que le gouvernement espère, lui, u…",
-      "source": "20 minutes / Europe 1 / Le Figaro / BFMTV / L'Humanité / Libération",
+      "id": "amv7x5zau-hiq5",
+      "date": "14/10/2026",
+      "titre": "Colère des lycéens : «Un peu moins de 200 lycées» devraient être fermés ce mercredi, annonce le ministre de l’Éducation…",
+      "texte": "Édouard Geffray a de nouveau promis mardi d’apporter «des réponses» aux lycéens, après avoir reçu déjà plus de 90.000 contributions sur la plateforme de concertation en ligne dédiée, où tout un chacu…",
+      "source": "Le Figaro / BFMTV / Libération",
       "sources": [
-        "20 minutes",
-        "Europe 1",
         "Le Figaro",
         "BFMTV",
-        "L'Humanité",
         "Libération"
       ],
-      "url": "https://www.lefigaro.fr/actualite-france/en-direct-mobilisation-des-lyceens-ils-ne-nous-ecoutent-pas-nouvelle-journee-de-manifestations-ce-mardi-lors-d-un-acte-v-sous-haute-tension-20261013",
+      "url": "https://www.lefigaro.fr/actualite-france/en-direct-colere-des-lyceens-les-eleves-mobilises-souhaitent-que-les-etudiants-et-les-gilets-jaunes-poursuivent-le-mouvement-20261014",
       "verifie": true
     },
     {
-      "id": "amv6hf8xz-ahw2",
-      "date": "13/10/2026",
-      "titre": "«Acte V» de la mobilisation lycéenne, budget à l’Assemblée, émissions polluantes de la France… L’actu de ce mardi 13 oc…",
-      "texte": "«Acte V» de la mobilisation lycéenne, budget à l’Assemblée, émissions polluantes de la France… L’actu de ce mardi 13 octobre au matin",
-      "source": "France Inter / Libération",
+      "id": "amv7x5zav-hk6d",
+      "date": "14/10/2026",
+      "titre": "\"Pour l'instant, tout a toujours été calme et sans violence\": un blocus est en cours devant un lycée à Marseille dans l…",
+      "texte": "Ce mardi 13 octobre, entre 480.000 et 161.500 manifestants (chiffres respectifs de l'intersyndicale et du ministère de l'Intérieur) ont pris part à l'\"Acte V\" de la mobilisation des lycéens. Depuis m…",
+      "source": "Le Figaro / BFMTV / L'Humanité",
       "sources": [
-        "France Inter",
-        "Libération"
+        "Le Figaro",
+        "BFMTV",
+        "L'Humanité"
       ],
-      "url": "https://www.liberation.fr/international/europe/acte-v-de-la-mobilisation-lyceenne-budget-a-lassemblee-emissions-polluantes-de-la-france-lactu-de-ce-mardi-13-octobre-au-matin-20261013_4EAOW645LVAMRBVRPVCA7YVMHE/",
+      "url": "https://www.bfmtv.com/societe/video-pour-l-instant-tout-a-toujours-ete-calme-et-sans-violence-un-blocus-est-en-cours-devant-un-lycee-a-marseille-dans-le-cadre-du-mouvement-lyceen_VN-202610140186.html",
       "verifie": true
     },
     {
-      "id": "amv6ua681-2puq",
-      "date": "13/10/2026",
-      "titre": "Lycées : «C'est de la communication ministérielle», Nicolas Bonnet juge insuffisante l'annonce des 3.000 professeurs re…",
-      "texte": "Alors que le gouvernement a annoncé plusieurs mesures pour répondre à la mobilisation lycéenne, Nicolas Bonnet, proviseur à Libourne et secrétaire national du SNPDEN-UNSA, estime que le dispositif co…",
-      "source": "20 minutes / Europe 1",
+      "id": "amv7x5zav-e5rb",
+      "date": "14/10/2026",
+      "titre": "Mouvement lycéen: \"148 personnels de l'Éducation nationale ont été généralement blessés de manière volontaire\", annonce…",
+      "texte": "Édouard Geffray, ministre de l’Éducation nationale, était l’invité du Face-à-Face de ce mercredi 14 octobre sur BFMTV et RMC. Il a été interrogé notamment sur les violences en marge du mouvement lycé…",
+      "source": "BFMTV / Ouest-France",
       "sources": [
-        "20 minutes",
-        "Europe 1"
+        "BFMTV",
+        "Ouest-France"
       ],
-      "url": "https://www.europe1.fr/societe/lycees-cest-de-la-communication-ministerielle-nicolas-bonnet-juge-insuffisante-lannonce-des-3000-professeurs-remplacants-1145006?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
+      "url": "https://www.bfmtv.com/politique/video-mouvement-lyceen-148-personnels-de-l-education-nationale-ont-ete-generalement-blesses-de-maniere-volontaire-annonce-edouard-geffray-ministre-de-l-education-nationale_VN-202610140247.html",
       "verifie": true
     },
     {
@@ -182,14 +180,30 @@
   ],
   "faits": [
     {
+      "id": "amv7x5zat-hqfo",
+      "date": "14/10/2026",
+      "titre": "Lycéens, étudiants, syndicats : peut-on s’attendre à une convergence des luttes le 17 octobre ?",
+      "texte": "La CGT vient d'appeler à soutenir les appels à manifester ce 17 octobre. Va-t-on vers une grande convergence des luttes ? On en parle avec les journalistes Cyprien Boganda et Théo Bourrieau.",
+      "source": "Public Sénat / BFMTV / L'Humanité",
+      "sources": [
+        "Public Sénat",
+        "BFMTV",
+        "L'Humanité"
+      ],
+      "url": "https://www.humanite.fr/social-et-economie/cgt/lyceens-etudiants-syndicats-peut-on-sattendre-a-une-convergence-des-luttes-le-17-octobre",
+      "verifie": true
+    },
+    {
       "id": "aetumv6hfjwq-1",
       "date": "13/10/2026",
       "titre": "Blocus des lycées : Greta Thunberg au milieu de manifestants devant le lycée Paul-Eluard de Saint-Denis",
       "texte": "Blocus des lycées : Greta Thunberg au milieu de manifestants devant le lycée Paul-Eluard de Saint-Denis",
-      "source": "Europe 1 / 20 minutes",
+      "source": "Europe 1 / 20 minutes / Public Sénat / franceinfo",
       "sources": [
         "Europe 1",
-        "20 minutes"
+        "20 minutes",
+        "Public Sénat",
+        "franceinfo"
       ],
       "url": "https://www.europe1.fr/societe/en-direct-blocus-des-lycees-greta-thunberg-au-milieu-de-manifestants-devant-le-lycee-paul-eluard-de-saint-denis-1144064?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
@@ -244,30 +258,16 @@
       "date": "13/10/2026",
       "titre": "Lycéen éborgné à Tours: un policier à l'origine d'un tir de LBD mis en examen pour violences aggravées",
       "texte": "Ce mardi 13 octobre, la procureure de la République de Tours annonce la mise en examen d'un policier après qu'un lycéen a été éborgné en marge d'une manifestation lycéenne en septembre.",
-      "source": "20 minutes / Le Figaro / BFMTV / France 24 / Mediapart",
+      "source": "20 minutes / Le Figaro / BFMTV / France 24 / Mediapart / Libération",
       "sources": [
         "20 minutes",
         "Le Figaro",
         "BFMTV",
         "France 24",
-        "Mediapart"
-      ],
-      "url": "https://www.bfmtv.com/police-justice/lyceen-eborgne-a-tours-un-policier-a-l-origine-d-un-tir-de-lbd-mis-en-examen-pour-violences-aggravees_AD-202610130941.html",
-      "verifie": true
-    },
-    {
-      "id": "amv77bspe-knkp",
-      "date": "13/10/2026",
-      "titre": "\"Qu'on vienne d'Ille-et-Vilaine, qu'on vienne de l'Yonne, qu'on vienne de Seine-Saint-Denis, qu'on vienne du Val-de-Mar…",
-      "texte": "BFMTV propose un nouveau numéro exceptionnel du FORUM BFMTV: “Angoisses, colères: le Forum de la jeunesse” présenté par Maxime Switek. La chaîne consacre une soirée spéciale pour permettre à des cito…",
-      "source": "Public Sénat / BFMTV / franceinfo / Libération",
-      "sources": [
-        "Public Sénat",
-        "BFMTV",
-        "franceinfo",
+        "Mediapart",
         "Libération"
       ],
-      "url": "https://www.bfmtv.com/societe/manifestations/video-forum-bfmtv-qu-on-vienne-d-ille-et-vilaine-qu-on-vienne-de-l-yonne-qu-on-vienne-de-seine-saint-denis-qu-on-vienne-du-val-de-marne-on-devrait-tous-avoir-les-memes-chances-declare-kamil-eleve-au-lycee_VN-202610130945.html",
+      "url": "https://www.bfmtv.com/police-justice/lyceen-eborgne-a-tours-un-policier-a-l-origine-d-un-tir-de-lbd-mis-en-examen-pour-violences-aggravees_AD-202610130941.html",
       "verifie": true
     },
     {
