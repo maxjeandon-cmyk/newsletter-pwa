@@ -1,5 +1,5 @@
 {
-  "maj": "14/10/2026 11:40",
+  "maj": "14/10/2026 17:45",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -38,11 +38,12 @@
       "date": "14/10/2026",
       "titre": "\"Pour l'instant, tout a toujours été calme et sans violence\": un blocus est en cours devant un lycée à Marseille dans l…",
       "texte": "Ce mardi 13 octobre, entre 480.000 et 161.500 manifestants (chiffres respectifs de l'intersyndicale et du ministère de l'Intérieur) ont pris part à l'\"Acte V\" de la mobilisation des lycéens. Depuis m…",
-      "source": "Le Figaro / BFMTV / L'Humanité",
+      "source": "Le Figaro / BFMTV / L'Humanité / La Croix",
       "sources": [
         "Le Figaro",
         "BFMTV",
-        "L'Humanité"
+        "L'Humanité",
+        "La Croix"
       ],
       "url": "https://www.bfmtv.com/societe/video-pour-l-instant-tout-a-toujours-ete-calme-et-sans-violence-un-blocus-est-en-cours-devant-un-lycee-a-marseille-dans-le-cadre-du-mouvement-lyceen_VN-202610140186.html",
       "verifie": true
@@ -184,13 +185,40 @@
       "date": "14/10/2026",
       "titre": "Lycéens, étudiants, syndicats : peut-on s’attendre à une convergence des luttes le 17 octobre ?",
       "texte": "La CGT vient d'appeler à soutenir les appels à manifester ce 17 octobre. Va-t-on vers une grande convergence des luttes ? On en parle avec les journalistes Cyprien Boganda et Théo Bourrieau.",
-      "source": "Public Sénat / BFMTV / L'Humanité",
+      "source": "Public Sénat / BFMTV / L'Humanité / Ouest-France",
       "sources": [
         "Public Sénat",
         "BFMTV",
-        "L'Humanité"
+        "L'Humanité",
+        "Ouest-France"
       ],
       "url": "https://www.humanite.fr/social-et-economie/cgt/lyceens-etudiants-syndicats-peut-on-sattendre-a-une-convergence-des-luttes-le-17-octobre",
+      "verifie": true
+    },
+    {
+      "id": "amv8a7gt5-88sz",
+      "date": "14/10/2026",
+      "titre": "Violences policières : à Lens, l’avocat du lycéen ayant perdu sa main dénonce une enquête menée « à charge » contre son…",
+      "texte": "L’avocat d’Evan, lycéen de 15 ans amputé d’une main après l’explosion d’une grenade policière le 5 octobre à Lens, a annoncé mercredi 14 octobre le dépôt d’une nouvelle plainte pour des faits « de na…",
+      "source": "Le Figaro / L'Humanité",
+      "sources": [
+        "Le Figaro",
+        "L'Humanité"
+      ],
+      "url": "https://www.humanite.fr/societe/bavures-policieres/violences-policieres-a-lens-lavocat-du-lyceen-ayant-perdu-sa-main-denonce-une-enquete-menee-a-charge-contre-son-client",
+      "verifie": true
+    },
+    {
+      "id": "amv8a7gt5-eckp",
+      "date": "14/10/2026",
+      "titre": "Omar Sy juge «lamentable» la réponse des autorités à la mobilisation des lycéens",
+      "texte": "Invité de France Inter mercredi, le comédien a appelé à écouter les revendications des jeunes, mobilisés depuis la mi-septembre pour réclamer davantage de moyens pour l’éducation.",
+      "source": "Le Figaro / L'Humanité",
+      "sources": [
+        "Le Figaro",
+        "L'Humanité"
+      ],
+      "url": "https://www.lefigaro.fr/culture/omar-sy-juge-lamentable-la-reponse-des-autorites-a-la-mobilisation-des-lyceens-20261014",
       "verifie": true
     },
     {
@@ -236,38 +264,6 @@
         "Public Sénat"
       ],
       "url": "https://www.europe1.fr/societe/en-direct-blocus-des-lycees-36-enquetes-ouvertes-a-ce-stade-par-ligpn-depuis-le-debut-du-mouvement-1144064?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
-      "verifie": true
-    },
-    {
-      "id": "amv6ua684-e88c",
-      "date": "13/10/2026",
-      "titre": "Mobilisations lycéennes : « La grande majorité des mineurs placés en garde à vue étaient âgés de 15 ou 16 ans », déclar…",
-      "texte": "Les lycéens entament une nouvelle semaine de mobilisation avec plusieurs blocages de lycées ce lundi matin. La procureur de la République, Laure Beccuau, revient sur les interpellations et mises en g…",
-      "source": "Public Sénat / Le Figaro / 20 minutes / La Croix",
-      "sources": [
-        "Public Sénat",
-        "Le Figaro",
-        "20 minutes",
-        "La Croix"
-      ],
-      "url": "https://www.publicsenat.fr/actualites/politique/mobilisations-lyceennes-la-grande-majorite-des-mineurs-places-en-garde-a-vue-etaient-ages-de-15-ou-16-ans-declare-laure-beccuau",
-      "verifie": true
-    },
-    {
-      "id": "amv77bspb-1a54",
-      "date": "13/10/2026",
-      "titre": "Lycéen éborgné à Tours: un policier à l'origine d'un tir de LBD mis en examen pour violences aggravées",
-      "texte": "Ce mardi 13 octobre, la procureure de la République de Tours annonce la mise en examen d'un policier après qu'un lycéen a été éborgné en marge d'une manifestation lycéenne en septembre.",
-      "source": "20 minutes / Le Figaro / BFMTV / France 24 / Mediapart / Libération",
-      "sources": [
-        "20 minutes",
-        "Le Figaro",
-        "BFMTV",
-        "France 24",
-        "Mediapart",
-        "Libération"
-      ],
-      "url": "https://www.bfmtv.com/police-justice/lyceen-eborgne-a-tours-un-policier-a-l-origine-d-un-tir-de-lbd-mis-en-examen-pour-violences-aggravees_AD-202610130941.html",
       "verifie": true
     },
     {
