@@ -1,5 +1,5 @@
 {
-  "maj": "15/10/2026 05:39",
+  "maj": "15/10/2026 11:41",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -20,46 +20,44 @@
   ],
   "version_gouvernement": [
     {
-      "id": "amv7x5zau-hiq5",
-      "date": "14/10/2026",
-      "titre": "Colère des lycéens : «Un peu moins de 200 lycées» devraient être fermés ce mercredi, annonce le ministre de l’Éducation…",
-      "texte": "Édouard Geffray a de nouveau promis mardi d’apporter «des réponses» aux lycéens, après avoir reçu déjà plus de 90.000 contributions sur la plateforme de concertation en ligne dédiée, où tout un chacu…",
-      "source": "Le Figaro / BFMTV / Libération / Public Sénat",
+      "id": "amv9cmk07-ccs9",
+      "date": "15/10/2026",
+      "titre": "Colère des lycéens : Édouard Geffray à Bordeaux avant une nouvelle réunion avec les organisations lycéennes",
+      "texte": "Après plusieurs semaines de mobilisation, des établissements sont encore bloqués jeudi avant la troisième réunion, dans l’après-midi, entre les organisations lycéennes et le ministre de l’Éducation n…",
+      "source": "Europe 1 / Le Figaro / BFMTV / Libération",
       "sources": [
+        "Europe 1",
         "Le Figaro",
         "BFMTV",
-        "Libération",
+        "Libération"
+      ],
+      "url": "https://www.lefigaro.fr/actualite-france/en-direct-colere-des-lyceens-nouvelle-reunion-ce-jeudi-entre-les-organisations-lyceennes-et-les-ministres-de-l-education-nationale-et-de-l-enseignement-superieur-20261015",
+      "verifie": true
+    },
+    {
+      "id": "amv9cmk07-g2kb",
+      "date": "15/10/2026",
+      "titre": "Blocus des lycées : cocktails Molotov, mortiers... Ces armes plus variées et dangereuses utilisées par les émeutiers",
+      "texte": "Selon les chiffres du ministère de l'Intérieur communiqués ce mercredi, 7.950 personnes ont été placées en garde à vue lors du blocus des lycées, dont 85% de mineurs. Parmi les émeutiers, beaucoup ut…",
+      "source": "Europe 1 / Public Sénat",
+      "sources": [
+        "Europe 1",
         "Public Sénat"
       ],
-      "url": "https://www.lefigaro.fr/actualite-france/en-direct-colere-des-lyceens-les-eleves-mobilises-souhaitent-que-les-etudiants-et-les-gilets-jaunes-poursuivent-le-mouvement-20261014",
+      "url": "https://www.europe1.fr/police-justice/blocus-des-lycees-cocktails-molotov-mortiers-ces-armes-plus-variees-et-dangereuses-utilisees-par-les-emeutiers-1149011?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
     },
     {
-      "id": "amv7x5zav-hk6d",
-      "date": "14/10/2026",
-      "titre": "\"Pour l'instant, tout a toujours été calme et sans violence\": un blocus est en cours devant un lycée à Marseille dans l…",
-      "texte": "Ce mardi 13 octobre, entre 480.000 et 161.500 manifestants (chiffres respectifs de l'intersyndicale et du ministère de l'Intérieur) ont pris part à l'\"Acte V\" de la mobilisation des lycéens. Depuis m…",
-      "source": "Le Figaro / BFMTV / L'Humanité / La Croix",
+      "id": "amv9cmk0b-60ic",
+      "date": "15/10/2026",
+      "titre": "Colère lycéenne à Lyon: une deuxième manifestation, prévue à 15h, interdite par la préfecture",
+      "texte": "Ce jeudi, la mobilisation lycéenne se poursuit à Lyon. Les adolescents ne sont pas seuls à revendiquer, les chauffeurs de bus TCL sont en grève.",
+      "source": "Le Figaro / BFMTV",
       "sources": [
         "Le Figaro",
-        "BFMTV",
-        "L'Humanité",
-        "La Croix"
+        "BFMTV"
       ],
-      "url": "https://www.bfmtv.com/societe/video-pour-l-instant-tout-a-toujours-ete-calme-et-sans-violence-un-blocus-est-en-cours-devant-un-lycee-a-marseille-dans-le-cadre-du-mouvement-lyceen_VN-202610140186.html",
-      "verifie": true
-    },
-    {
-      "id": "amv7x5zav-e5rb",
-      "date": "14/10/2026",
-      "titre": "Mouvement lycéen: \"148 personnels de l'Éducation nationale ont été généralement blessés de manière volontaire\", annonce…",
-      "texte": "Édouard Geffray, ministre de l’Éducation nationale, était l’invité du Face-à-Face de ce mercredi 14 octobre sur BFMTV et RMC. Il a été interrogé notamment sur les violences en marge du mouvement lycé…",
-      "source": "BFMTV / Ouest-France",
-      "sources": [
-        "BFMTV",
-        "Ouest-France"
-      ],
-      "url": "https://www.bfmtv.com/politique/video-mouvement-lyceen-148-personnels-de-l-education-nationale-ont-ete-generalement-blesses-de-maniere-volontaire-annonce-edouard-geffray-ministre-de-l-education-nationale_VN-202610140247.html",
+      "url": "https://www.bfmtv.com/lyon/direct-colere-lyceenne-nouvelle-journee-de-mobilisation-a-lyon-les-chauffeurs-de-bus-egalement-en-greve_LN-202610150203.html",
       "verifie": true
     },
     {
@@ -201,10 +199,11 @@
       "date": "14/10/2026",
       "titre": "Violences policières : à Lens, l’avocat du lycéen ayant perdu sa main dénonce une enquête menée « à charge » contre son…",
       "texte": "L’avocat d’Evan, lycéen de 15 ans amputé d’une main après l’explosion d’une grenade policière le 5 octobre à Lens, a annoncé mercredi 14 octobre le dépôt d’une nouvelle plainte pour des faits « de na…",
-      "source": "Le Figaro / L'Humanité",
+      "source": "Le Figaro / L'Humanité / Libération",
       "sources": [
         "Le Figaro",
-        "L'Humanité"
+        "L'Humanité",
+        "Libération"
       ],
       "url": "https://www.humanite.fr/societe/bavures-policieres/violences-policieres-a-lens-lavocat-du-lyceen-ayant-perdu-sa-main-denonce-une-enquete-menee-a-charge-contre-son-client",
       "verifie": true
