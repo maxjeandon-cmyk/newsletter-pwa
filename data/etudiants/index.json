@@ -83,7 +83,7 @@
       "periode": "Chronique transverse — réseaux, voix et ressentis",
       "titre": "Chorus — la voix de l'intérieur",
       "paragraphes": 13,
-      "octets": 18619
+      "octets": 18544
     },
     {
       "id": "c11",
@@ -91,7 +91,7 @@
       "periode": "Chronique transverse — les revendications, mot à mot",
       "titre": "Ce qu'ils veulent — les revendications, mot à mot",
       "paragraphes": 20,
-      "octets": 20024
+      "octets": 19863
     },
     {
       "id": "c12",
@@ -99,7 +99,7 @@
       "periode": "Chronique transverse — la répression et ses visages",
       "titre": "La répression et ses visages",
       "paragraphes": 15,
-      "octets": 18043
+      "octets": 17814
     },
     {
       "id": "c13",
@@ -107,7 +107,7 @@
       "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
       "titre": "La machine gouvernementale, vue d'en bas",
       "paragraphes": 12,
-      "octets": 14500
+      "octets": 14293
     },
     {
       "id": "c14",
@@ -115,7 +115,7 @@
       "periode": "Chronique transverse — la génération dans l'Histoire",
       "titre": "Génération 2026 — le mouvement dans la longue durée",
       "paragraphes": 8,
-      "octets": 10950
+      "octets": 10839
     },
     {
       "id": "c15",
@@ -211,7 +211,7 @@
       "periode": "15 octobre 2026 — suivi de la journée",
       "titre": "Le fil continue — 15 octobre 2026",
       "paragraphes": 1,
-      "octets": 2122
+      "octets": 1774
     }
   ],
   "releveSigs": [
@@ -377,7 +377,7 @@
           "periode": "15 octobre 2026 — suivi de la journée",
           "titre": "Le fil continue — 15 octobre 2026",
           "paragraphes": 1,
-          "octets": 2122
+          "octets": 1774
         },
         {
           "id": "c10",
@@ -385,7 +385,7 @@
           "periode": "Chronique transverse — réseaux, voix et ressentis",
           "titre": "Chorus — la voix de l'intérieur",
           "paragraphes": 13,
-          "octets": 18619
+          "octets": 18544
         },
         {
           "id": "c11",
@@ -393,7 +393,7 @@
           "periode": "Chronique transverse — les revendications, mot à mot",
           "titre": "Ce qu'ils veulent — les revendications, mot à mot",
           "paragraphes": 20,
-          "octets": 20024
+          "octets": 19863
         },
         {
           "id": "c12",
@@ -401,7 +401,7 @@
           "periode": "Chronique transverse — la répression et ses visages",
           "titre": "La répression et ses visages",
           "paragraphes": 15,
-          "octets": 18043
+          "octets": 17814
         },
         {
           "id": "c13",
@@ -409,7 +409,7 @@
           "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
           "titre": "La machine gouvernementale, vue d'en bas",
           "paragraphes": 12,
-          "octets": 14500
+          "octets": 14293
         },
         {
           "id": "c14",
@@ -417,7 +417,7 @@
           "periode": "Chronique transverse — la génération dans l'Histoire",
           "titre": "Génération 2026 — le mouvement dans la longue durée",
           "paragraphes": 8,
-          "octets": 10950
+          "octets": 10839
         },
         {
           "id": "c15",

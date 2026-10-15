@@ -152,11 +152,10 @@
     },
     {
       "id": "c11p20",
-      "texte": "Côté revendications, les exigences s'affinent : «Un système qui alimente le soupçon» : au cœur des revendications lycéennes, l’avenir de Parcoursup en question (1 media : Libération — non corrobore) — détail : Alors que la plateforme est régulièrement épinglée pour son manque de transparence et d’équité, le ministre de l’Education nationale a anno… (Volet automatique du 15 octobre 2026 à 11:41, chapitre « Ce qu'ils veulent — les revendications, mot à mot » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "Côté revendications, Parcoursup revient au cœur du jeu : « Un système qui alimente le soupçon », titre Libération, qui place l'avenir de la plateforme au cœur des revendications lycéennes — elle est régulièrement épinglée pour son manque de transparence et d'équité. Le soupçon est dans le titre du jour ; il est aussi, mot pour mot, dans les tracts depuis le début. Ce 15 octobre, la presse rejoint la liste des exigences.",
       "sources": [
         "Libération"
-      ],
-      "auto": true
+      ]
     }
   ]
 }
