@@ -1,7 +1,7 @@
 {
   "id": "c26",
   "periode": "15 octobre 2026 — suivi de la journée",
-  "titre": "Le fil continue — 15 octobre 2026",
+  "titre": "Le blocus gagne HEC — le ministre visite sans les élèves",
   "paragraphes": [
     {
       "id": "c26p1",
@@ -21,11 +21,10 @@
     },
     {
       "id": "c26p3",
-      "texte": "6 heures ont passé depuis le relevé précédent ; le fil continue. Au soir du 15 octobre 2026, le fil du récit continue. Côté mobilisation, l'élan ne retombe pas : Blocus des lycéens : « On participe pour le symbole »… HEC et d’autres grandes écoles s’y mettent aussi (1 media : 20 minutes — non corrobore) — detail : Une trentaine d’étudiants d’HEC ont bloqué l’entrée de leur école mercredi pour soutenir les lycéens, comme ceux de Centrale, des Mines ou de l’ENS avant eux. Une première pour la…. Le prochain relevé reprendra le fil. (Relevé automatique du 15 octobre 2026 à 23:40 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "Au soir du 15 octobre, le dernier relevé de la journée n'ajoute rien au fil : il le confirme. Pas d'autre histoire en une, pour 20 minutes, que la trentaine d'étudiants d'HEC bloquant l'entrée de leur école « pour le symbole », avec les grandes écoles qui s'y mettent à leur tour — l'image du jour tient l'affiche du soir comme elle tenait celle de l'après-midi. La journée se referme donc là où l'après-midi l'avait laissée : d'un côté un blocus qui monte jusqu'aux marches des grandes écoles, de l'autre un ministre venu aux grilles d'un lycée sans en rencontrer les élèves. Et reste en suspens, la question posée au matin : deux semaines de vacances de la Toussaint s'ouvrent, qui éteindront ou non les blocages. Le chapitre du jeudi 15 octobre est clos — le fil reprendra au petit matin, sur une nouvelle journée de suivi.",
       "sources": [
         "20 minutes"
-      ],
-      "auto": true
+      ]
     }
   ]
 }
