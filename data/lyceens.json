@@ -1,5 +1,5 @@
 {
-  "maj": "15/10/2026 17:43",
+  "maj": "15/10/2026 23:40",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -24,13 +24,14 @@
       "date": "15/10/2026",
       "titre": "Colère des lycéens : Édouard Geffray à Bordeaux avant une nouvelle réunion avec les organisations lycéennes",
       "texte": "Après plusieurs semaines de mobilisation, des établissements sont encore bloqués jeudi avant la troisième réunion, dans l’après-midi, entre les organisations lycéennes et le ministre de l’Éducation n…",
-      "source": "Europe 1 / Le Figaro / BFMTV / Libération / 20 minutes",
+      "source": "Europe 1 / Le Figaro / BFMTV / Libération / 20 minutes / France Inter",
       "sources": [
         "Europe 1",
         "Le Figaro",
         "BFMTV",
         "Libération",
-        "20 minutes"
+        "20 minutes",
+        "France Inter"
       ],
       "url": "https://www.lefigaro.fr/actualite-france/en-direct-colere-des-lyceens-nouvelle-reunion-ce-jeudi-entre-les-organisations-lyceennes-et-les-ministres-de-l-education-nationale-et-de-l-enseignement-superieur-20261015",
       "verifie": true
@@ -185,12 +186,14 @@
       "date": "14/10/2026",
       "titre": "Lycéens, étudiants, syndicats : peut-on s’attendre à une convergence des luttes le 17 octobre ?",
       "texte": "La CGT vient d'appeler à soutenir les appels à manifester ce 17 octobre. Va-t-on vers une grande convergence des luttes ? On en parle avec les journalistes Cyprien Boganda et Théo Bourrieau.",
-      "source": "Public Sénat / BFMTV / L'Humanité / Ouest-France",
+      "source": "Public Sénat / BFMTV / L'Humanité / Ouest-France / Mediapart / Libération",
       "sources": [
         "Public Sénat",
         "BFMTV",
         "L'Humanité",
-        "Ouest-France"
+        "Ouest-France",
+        "Mediapart",
+        "Libération"
       ],
       "url": "https://www.humanite.fr/social-et-economie/cgt/lyceens-etudiants-syndicats-peut-on-sattendre-a-une-convergence-des-luttes-le-17-octobre",
       "verifie": true
@@ -228,12 +231,13 @@
       "date": "14/10/2026",
       "titre": "Mobilisation des lycéens : le syndicat de police Alliance porte plainte contre l’État pour mise en danger de la vie d’a…",
       "texte": "Avec 937 agents des forces de l’ordre blessés, le syndicat dénonce les «injonctions contradictoires» faites aux policiers, «exposés à la violence et livrés à la vindicte», dans le cadre du mouvement …",
-      "source": "Europe 1 / Le Figaro / franceinfo / La Croix",
+      "source": "Europe 1 / Le Figaro / franceinfo / La Croix / Libération",
       "sources": [
         "Europe 1",
         "Le Figaro",
         "franceinfo",
-        "La Croix"
+        "La Croix",
+        "Libération"
       ],
       "url": "https://www.lefigaro.fr/actualite-france/en-direct-colere-des-lyceens-les-eleves-mobilises-souhaitent-que-les-etudiants-et-les-gilets-jaunes-poursuivent-le-mouvement-20261014",
       "verifie": true
