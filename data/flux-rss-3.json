@@ -949,6 +949,36 @@
         "https://usbeketrica.com/feed"
       ],
       "ligne": "magazine des futurs, sciences et société"
+    },
+    {
+      "id": "bbc-afrique",
+      "nom": "BBC Afrique",
+      "emoji": "🌍",
+      "categorie": "Afrique francophone 🌍",
+      "ligne": "l'Afrique en français par la BBC",
+      "flux": [
+        "https://feeds.bbci.co.uk/afrique/rss.xml"
+      ]
+    },
+    {
+      "id": "france-24-france",
+      "nom": "France 24 — France",
+      "emoji": "📺",
+      "categorie": "Presse généraliste 🇫🇷",
+      "ligne": "la France vue par la chaîne internationale",
+      "flux": [
+        "https://www.france24.com/fr/france/rss"
+      ]
+    },
+    {
+      "id": "la-nouvelle-republique",
+      "nom": "La Nouvelle République",
+      "emoji": "🏰",
+      "categorie": "Presse régionale 🗺️",
+      "ligne": "Centre-Val de Loire, Tours et Orléans",
+      "flux": [
+        "https://www.lanouvellerepublique.fr/rss.xml"
+      ]
     }
   ]
 }
