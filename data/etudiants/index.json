@@ -3,7 +3,7 @@
   "intro": "Chronique narrative du mouvement lycéen et étudiant de l'automne 2026, écrite du point de vue des élèves : de l'amorce de Créteil au dernier acte en date, le fil s'allonge d'un relevé automatique toutes les six heures, et les chapitres transverses — la voix de l'intérieur, les revendications mot à mot, la répression, la machine gouvernementale, la longue durée, le lexique, les figures — viennent fermer le fil. Sources en vitrine : les médias qui soutiennent le mouvement (Basta !, Contre Attaque, Le Café pédagogique, StreetPress, L'Humanité, Politis, Acrimed, Le Média, Bondy Blog) et l'écoute directe des fils TikTok, Snapchat et Instagram ; en compléments du relevé machine, les fils Reddit (r/etudiants, r/enseignants, r/france) et Wikipédia en colonne vertébrale factuelle.",
   "note": "Méthode : chaque paragraphe cite ses sources. Les paragraphes marqués « auto » sont des relevés bruts ajoutés par le pipeline toutes les 6 h (faits sourcés, sans réécriture) ; la rédaction narrative approfondie est assurée lors des éditions de la newsletter. Badge ✅ (corroboré par au moins deux médias distincts) et ⚠️ (une seule source) : ces distinctions s'appliquent aux relevés automatiques.",
   "maj": "16/10/2026",
-  "totalParagraphes": 152,
+  "totalParagraphes": 153,
   "chapitres": [
     {
       "id": "c1",
@@ -218,12 +218,12 @@
       "fichier": "chapitres/27.json",
       "periode": "16 octobre 2026 — suivi de la journée",
       "titre": "Le fil continue — 16 octobre 2026",
-      "paragraphes": 1,
-      "octets": 837
+      "paragraphes": 2,
+      "octets": 1609
     }
   ],
   "releveSigs": [
-    "converg|luttes|octobre|semaine#"
+    "dollars|irak|milliar|perdu#"
   ],
   "sections": [
     {
@@ -388,8 +388,8 @@
           "fichier": "chapitres/27.json",
           "periode": "16 octobre 2026 — suivi de la journée",
           "titre": "Le fil continue — 16 octobre 2026",
-          "paragraphes": 1,
-          "octets": 837
+          "paragraphes": 2,
+          "octets": 1609
         },
         {
           "id": "c10",
@@ -450,8 +450,8 @@
       ]
     }
   ],
-  "releveDate": "2026-10-16T15:39:58.317Z",
-  "releveCompteur": 32,
+  "releveDate": "2026-10-16T21:37:33.393Z",
+  "releveCompteur": 33,
   "chapitreJour": {
     "id": "c27",
     "fichier": "chapitres/27.json",
