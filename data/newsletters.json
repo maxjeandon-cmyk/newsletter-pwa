@@ -12,7 +12,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.actioncontrelafaim.org/actualites/",
       "derniere": {
-        "releve": "15/10/2026",
+        "releve": "16/10/2026",
         "points": [
           "Améliorer l’accès aux soins de santé au Baloutchistan",
           "Pêche artisanale : un levier pour la sécurité alimentaire et la résilience des ménages du sud-ouest de Madagascar",
@@ -32,7 +32,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.greenpeace.fr/actualites/",
       "derniere": {
-        "releve": "15/10/2026",
+        "releve": "16/10/2026",
         "points": [
           "Quand alerter peut coûter cher",
           "Pesticides à vie ? Non merci. Mobilisons-nous contre l’Omnibus pesticides",
@@ -52,12 +52,12 @@
       "lien_autre": "https://www.croix-rouge.fr/actualite",
       "libelle_autre": "Actualité nationale",
       "derniere": {
-        "releve": "15/10/2026",
+        "releve": "16/10/2026",
         "points": [
           "Le 13 octobre, faisons de la résilience un réflexe citoyen",
-          "Au centre Richelieu de La Rochelle, l’art et le soin ne font qu’un",
-          "Journée mondiale des premiers secours : “C’est super de nous enseigner ces gestes simples qui peuvent sauver des vies”",
-          "Burundi : face à l'urgence et au manque d'eau, nous apportons des solutions durables"
+          "La relève des savoirs : former les infirmières de Saint-Etienne à Naplouse",
+          "Visite du pape à Lourdes : un dispositif exceptionnel, entre effervescence et ferveur",
+          "Aide publique au développement : une nouvelle baisse historique qui fragilise la solidarité internationale"
         ]
       }
     },
@@ -71,12 +71,12 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.msf.fr/actualites",
       "derniere": {
-        "releve": "15/10/2026",
+        "releve": "16/10/2026",
         "points": [
+          "RDC : les enfants paient un lourd tribut face à l’épidémie d’Ebola",
           "Syrie : après 14 ans de guerre, des milliers de personnes sont encore privées d…",
           "Nord-Kivu : un nouveau foyer d'Ebola à Kayna, MSF déploie une équipe mobile",
-          "Mauritanie : dans le sud du pays, les réfugiés maliens tentent de survivre",
-          "Tchad : la lutte contre la malnutrition infantile commence au cœur des villages"
+          "Mauritanie : dans le sud du pays, les réfugiés maliens tentent de survivre"
         ]
       }
     },
@@ -90,7 +90,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://seashepherd.fr/actualites",
       "derniere": {
-        "releve": "15/10/2026",
+        "releve": "16/10/2026",
         "points": [
           "Krill en Antarctique",
           "Dauphins dans le golfe de Gascogne : malgré sa condamnation, l’état persiste avec une fermeture de la pêche insuffisante",
@@ -109,7 +109,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.wwf.fr/s-informer/nos-actualites",
       "derniere": {
-        "releve": "15/10/2026",
+        "releve": "16/10/2026",
         "points": [
           "Le WWF France lance son premier talk-show",
           "Journées Européennes du patrimoine : Protégeons aussi le vivant",
@@ -129,7 +129,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.amnesty.fr/actualites/",
       "derniere": {
-        "releve": "15/10/2026",
+        "releve": "16/10/2026",
         "points": [
           "Des journalistes agressés par des soldats israéliens en Cisjordanie occupée reçoivent le Prix Amnesty International à Bayeux",
           "Être militant contre la peine de mort sous Trump : “C’est une bataille qui va se jouer État par État”",
@@ -148,7 +148,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.oxfamfrance.org/communiques-de-presse/",
       "derniere": {
-        "releve": "15/10/2026",
+        "releve": "16/10/2026",
         "points": [
           "L’urgence d’une loi intégrale contre les violences sexuelles, soutenue par Oxfam",
           "Budget 2027 : un Projet de Loi Finance catastrophique",
@@ -167,7 +167,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.handicap-international.fr/fr/actualites/index",
       "derniere": {
-        "releve": "15/10/2026",
+        "releve": "16/10/2026",
         "points": [
           "Bénin : Souleyman",
           "Madagascar : Odile",
@@ -186,12 +186,12 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.unicef.fr/actualites/",
       "derniere": {
-        "releve": "15/10/2026",
+        "releve": "16/10/2026",
         "points": [
-          "Panama : plus de 8000 enfants ont besoin d’une aide humanitaire après le séisme 13 octobre 2026",
-          "Djibouti : au moins 139 morts, dont 15 enfants, après le naufrage d’un bateau de migrants",
-          "Déclaration de l’UNICEF sur le séisme au Panama",
-          "Népal : un long chemin vers la reconstruction"
+          "Actualités Présidentielles 2027 : placer l’enfance au cœur des débats 15 octobre 2026",
+          "Pakistan : au moins 28 enfants tués dans l’effondrement du toit d’une école à Peshawar",
+          "Au Népal, les blessures invisibles laissées par les inondations",
+          "Afghanistan : plus de 4 millions d’enfants devraient souffrir de malnutrition aiguë en 2027"
         ]
       }
     }
