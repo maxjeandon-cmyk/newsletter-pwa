@@ -5,11 +5,10 @@
   "paragraphes": [
     {
       "id": "c27p1",
-      "texte": "Près de 18 heures ont passé depuis le relevé précédent ; la chronique reprend son fil. Dans l'après-midi du 16 octobre 2026, la journée s'écrit encore. La vague, elle, continue d'avancer : Des blocages lycéens au 17 octobre, ces semaines où les luttes ont convergé (1 media : Mediapart — non corrobore) — detail : Le mouvement lycéen, que personne ou presque n’avait vu venir, a embrasé le pays en l’espace de quelques semaines. À la veille du samedi 17 octobre, la perspective d’une convergen…. Le prochain relevé reprendra le fil. (Relevé automatique du 16 octobre 2026 à 17:39 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "Au soir du 16 octobre, la journée se referme doucement sur les grilles, et Mediapart ouvre la dernière ligne droite : « Des blocages lycéens au 17 octobre, ces semaines où les luttes ont convergé » — titre d'un mouvement « que personne ou presque n'avait vu venir », qui « a embrasé le pays en l'espace de quelques semaines », et à la veille du samedi 17 octobre, la perspective d'une convergence. Une seule voix pour ce fait, que la chronique enregistre telle quelle. Le fil tendu vers la Toussaint, le prochain relevé dira si les blocages tiennent leur rendez-vous du 17.",
       "sources": [
         "Mediapart"
-      ],
-      "auto": true
+      ]
     }
   ]
 }
