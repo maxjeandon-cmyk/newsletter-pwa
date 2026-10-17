@@ -12,12 +12,11 @@
     },
     {
       "id": "c28p2",
-      "texte": "6 heures ont passé depuis le relevé précédent ; le fil continue. Au matin du 17 octobre 2026, le fil du récit continue. Côté mobilisation, l'élan ne retombe pas : Blocus des lycées : retour à Haubourdin où les dégâts restent visibles (1 media : Europe 1 — non corrobore) ; Journée du 17 octobre : parcours parisien imposé, «déblocages systématiques», retour des grenades assourdissantes… les autorités sur un mode méfiant (1 media : Libération — non corrobore) — detail : Alors qu'une mobilisation de grande ampleur est prévue ce samedi, le blocus des lycées pourrait bien s'essouffler avec le début des vacances de la Toussaint. Un ralentissement trè…. Le prochain relevé reprendra le fil. (Relevé automatique du 17 octobre 2026 à 11:37 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "Au matin du 17 octobre, le fil avance sur deux registres. Côté mobilisation, l'élan ne retombe pas — et il revient là où il avait laissé des traces : « Blocus des lycées : retour à Haubourdin où les dégâts restent visibles », titre Europe 1, seule voix ce matin sur ce retour. Côté autorités, Libération décrit un samedi sous haute surveillance : « parcours parisien imposé », « déblocages systématiques », « retour des grenades assourdissantes » — des autorités « sur un mode méfiant », face au mouvement qui ambitionne de faire converger la colère face à la hausse des prix et celle des lycéens. Mais le même journal glisse l'ombre d'un doute sur la durée : alors qu'une mobilisation de grande ampleur est prévue ce samedi, le blocus des lycées pourrait bien s'essouffler avec le début des vacances de la Toussaint. La journée dira si le fil tient jusqu'au soir — et le relevé suivant le suivra.",
       "sources": [
         "Europe 1",
         "Libération"
-      ],
-      "auto": true
+      ]
     }
   ]
 }
