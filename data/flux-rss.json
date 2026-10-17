@@ -275,6 +275,16 @@
       "ligne": "média indépendant, investigations et grands reportages"
     },
     {
+      "id": "blast",
+      "nom": "Blast",
+      "emoji": "💥",
+      "categorie": "Presse généraliste 🇫🇷",
+      "ligne": "journalisme d’investigation indépendant, web TV de Denis Robert",
+      "flux": [
+        "https://api.blast-info.fr/rss_articles.xml"
+      ]
+    },
+    {
       "id": "sud-ouest",
       "nom": "Sud Ouest",
       "emoji": "🍷",

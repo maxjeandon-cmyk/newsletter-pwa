@@ -531,6 +531,16 @@
       ]
     },
     {
+      "id": "novethic",
+      "nom": "Novethic",
+      "emoji": "🌿",
+      "categorie": "Écologie & climat 🌿",
+      "ligne": "média durable : climat, ESG et finance verte",
+      "flux": [
+        "https://www.novethic.fr/rss"
+      ]
+    },
+    {
       "id": "carbon-brief",
       "nom": "Carbon Brief",
       "emoji": "🌡️",
