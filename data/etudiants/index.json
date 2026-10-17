@@ -3,7 +3,7 @@
   "intro": "Chronique narrative du mouvement lycéen et étudiant de l'automne 2026, écrite du point de vue des élèves : de l'amorce de Créteil au dernier acte en date, le fil s'allonge d'un relevé automatique toutes les six heures, et les chapitres transverses — la voix de l'intérieur, les revendications mot à mot, la répression, la machine gouvernementale, la longue durée, le lexique, les figures — viennent fermer le fil. Sources en vitrine : les médias qui soutiennent le mouvement (Basta !, Contre Attaque, Le Café pédagogique, StreetPress, L'Humanité, Politis, Acrimed, Le Média, Bondy Blog) et l'écoute directe des fils TikTok, Snapchat et Instagram ; en compléments du relevé machine, les fils Reddit (r/etudiants, r/enseignants, r/france) et Wikipédia en colonne vertébrale factuelle.",
   "note": "Méthode : chaque paragraphe cite ses sources. Les paragraphes marqués « auto » sont des relevés bruts ajoutés par le pipeline toutes les 6 h (faits sourcés, sans réécriture) ; la rédaction narrative approfondie est assurée lors des éditions de la newsletter. Badge ✅ (corroboré par au moins deux médias distincts) et ⚠️ (une seule source) : ces distinctions s'appliquent aux relevés automatiques.",
   "maj": "17/10/2026",
-  "totalParagraphes": 155,
+  "totalParagraphes": 157,
   "chapitres": [
     {
       "id": "c1",
@@ -98,8 +98,8 @@
       "fichier": "chapitres/12.json",
       "periode": "Chronique transverse — la répression et ses visages",
       "titre": "La répression et ses visages",
-      "paragraphes": 15,
-      "octets": 17814
+      "paragraphes": 16,
+      "octets": 18546
     },
     {
       "id": "c13",
@@ -226,12 +226,13 @@
       "fichier": "chapitres/28.json",
       "periode": "17 octobre 2026 — suivi de la journée",
       "titre": "Faut-il supprimer Parcoursup ? — la question qui ouvre le samedi 17 octobre",
-      "paragraphes": 1,
-      "octets": 929
+      "paragraphes": 2,
+      "octets": 1937
     }
   ],
   "releveSigs": [
-    "faut|lyceenn|manifes|supprim#"
+    "degats|haubour|lycees|retour#",
+    "impose|octobre|parcour|parisie#"
   ],
   "sections": [
     {
@@ -404,8 +405,8 @@
           "fichier": "chapitres/28.json",
           "periode": "17 octobre 2026 — suivi de la journée",
           "titre": "Faut-il supprimer Parcoursup ? — la question qui ouvre le samedi 17 octobre",
-          "paragraphes": 1,
-          "octets": 929
+          "paragraphes": 2,
+          "octets": 1937
         },
         {
           "id": "c10",
@@ -428,8 +429,8 @@
           "fichier": "chapitres/12.json",
           "periode": "Chronique transverse — la répression et ses visages",
           "titre": "La répression et ses visages",
-          "paragraphes": 15,
-          "octets": 17814
+          "paragraphes": 16,
+          "octets": 18546
         },
         {
           "id": "c13",
@@ -466,8 +467,8 @@
       ]
     }
   ],
-  "releveDate": "2026-10-17T03:37:40.285Z",
-  "releveCompteur": 34,
+  "releveDate": "2026-10-17T09:37:19.222Z",
+  "releveCompteur": 35,
   "chapitreJour": {
     "id": "c28",
     "fichier": "chapitres/28.json",
