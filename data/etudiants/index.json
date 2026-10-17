@@ -3,7 +3,7 @@
   "intro": "Chronique narrative du mouvement lycéen et étudiant de l'automne 2026, écrite du point de vue des élèves : de l'amorce de Créteil au dernier acte en date, le fil s'allonge d'un relevé automatique toutes les six heures, et les chapitres transverses — la voix de l'intérieur, les revendications mot à mot, la répression, la machine gouvernementale, la longue durée, le lexique, les figures — viennent fermer le fil. Sources en vitrine : les médias qui soutiennent le mouvement (Basta !, Contre Attaque, Le Café pédagogique, StreetPress, L'Humanité, Politis, Acrimed, Le Média, Bondy Blog) et l'écoute directe des fils TikTok, Snapchat et Instagram ; en compléments du relevé machine, les fils Reddit (r/etudiants, r/enseignants, r/france) et Wikipédia en colonne vertébrale factuelle.",
   "note": "Méthode : chaque paragraphe cite ses sources. Les paragraphes marqués « auto » sont des relevés bruts ajoutés par le pipeline toutes les 6 h (faits sourcés, sans réécriture) ; la rédaction narrative approfondie est assurée lors des éditions de la newsletter. Badge ✅ (corroboré par au moins deux médias distincts) et ⚠️ (une seule source) : ces distinctions s'appliquent aux relevés automatiques.",
   "maj": "17/10/2026",
-  "totalParagraphes": 157,
+  "totalParagraphes": 160,
   "chapitres": [
     {
       "id": "c1",
@@ -90,8 +90,8 @@
       "fichier": "chapitres/11.json",
       "periode": "Chronique transverse — les revendications, mot à mot",
       "titre": "Ce qu'ils veulent — les revendications, mot à mot",
-      "paragraphes": 21,
-      "octets": 20388
+      "paragraphes": 22,
+      "octets": 21058
     },
     {
       "id": "c12",
@@ -114,8 +114,8 @@
       "fichier": "chapitres/14.json",
       "periode": "Chronique transverse — la génération dans l'Histoire",
       "titre": "Génération 2026 — le mouvement dans la longue durée",
-      "paragraphes": 8,
-      "octets": 10839
+      "paragraphes": 9,
+      "octets": 11522
     },
     {
       "id": "c15",
@@ -226,13 +226,12 @@
       "fichier": "chapitres/28.json",
       "periode": "17 octobre 2026 — suivi de la journée",
       "titre": "Faut-il supprimer Parcoursup ? — la question qui ouvre le samedi 17 octobre",
-      "paragraphes": 2,
-      "octets": 1995
+      "paragraphes": 3,
+      "octets": 2810
     }
   ],
   "releveSigs": [
-    "degats|haubour|lycees|retour#",
-    "impose|octobre|parcour|parisie#"
+    "generat|notre|paroles|traumat#"
   ],
   "sections": [
     {
@@ -405,8 +404,8 @@
           "fichier": "chapitres/28.json",
           "periode": "17 octobre 2026 — suivi de la journée",
           "titre": "Faut-il supprimer Parcoursup ? — la question qui ouvre le samedi 17 octobre",
-          "paragraphes": 2,
-          "octets": 1995
+          "paragraphes": 3,
+          "octets": 2810
         },
         {
           "id": "c10",
@@ -421,8 +420,8 @@
           "fichier": "chapitres/11.json",
           "periode": "Chronique transverse — les revendications, mot à mot",
           "titre": "Ce qu'ils veulent — les revendications, mot à mot",
-          "paragraphes": 21,
-          "octets": 20388
+          "paragraphes": 22,
+          "octets": 21058
         },
         {
           "id": "c12",
@@ -445,8 +444,8 @@
           "fichier": "chapitres/14.json",
           "periode": "Chronique transverse — la génération dans l'Histoire",
           "titre": "Génération 2026 — le mouvement dans la longue durée",
-          "paragraphes": 8,
-          "octets": 10839
+          "paragraphes": 9,
+          "octets": 11522
         },
         {
           "id": "c15",
@@ -467,8 +466,8 @@
       ]
     }
   ],
-  "releveDate": "2026-10-17T09:37:19.222Z",
-  "releveCompteur": 35,
+  "releveDate": "2026-10-17T15:35:27.448Z",
+  "releveCompteur": 36,
   "chapitreJour": {
     "id": "c28",
     "fichier": "chapitres/28.json",
