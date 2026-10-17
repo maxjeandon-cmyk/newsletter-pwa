@@ -1,35 +1,35 @@
 {
-  "date": "16/10/2026",
-  "heure": "21:37",
+  "date": "17/10/2026",
+  "heure": "03:37",
   "relevesOng": {
-    "rafraichis": 0,
+    "rafraichis": 10,
     "echecs": 0,
-    "publie": false
+    "publie": true
   },
   "lyceens": {
     "nouvelles": 0,
     "fusionnees": 6,
-    "moissonnes": 38,
-    "total": 22,
-    "publie": false
+    "moissonnes": 39,
+    "total": 21,
+    "publie": true
   },
   "etudiants": {
     "items": 1,
     "ajoutes": 1,
-    "chapitre": "c27",
-    "nouveauChapitre": false,
+    "chapitre": "c28",
+    "nouveauChapitre": true,
     "publie": true
   },
   "verifs": [
     {
       "nom": "validate-latest.js",
       "ok": true,
-      "detail": "\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 13/10/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n\nToutes les éditions récentes sont conformes. 🌱"
+      "detail": "\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 14/10/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n\nToutes les éditions récentes sont conformes. 🌱"
     },
     {
       "nom": "check-site.js",
       "ok": true,
-      "detail": "=== check-site ===\nℹ️  latest.json : 19 édition(s), plus récente 2026-10-15\nℹ️  édition 2026-10-15 : JSON OK, HTML 91769 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
+      "detail": "=== check-site ===\nℹ️  latest.json : 20 édition(s), plus récente 2026-10-16\nℹ️  édition 2026-10-16 : JSON OK, HTML 102815 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
     },
     {
       "nom": "sonde notifications",
@@ -37,9 +37,14 @@
       "detail": "7 abonnement(s) push, 1 utilisateur(s) avec toggles actifs"
     },
     {
+      "nom": "ong-releve.js",
+      "ok": true,
+      "detail": "10 rafraîchi(s), 0 échec(s) — relevé précédent conservé pour les sites muets"
+    },
+    {
       "nom": "lyceens.js",
       "ok": true,
-      "detail": "0 nouvelle(s) info, 6 fusionnée(s) sur 38 moissonnée(s) — 22 au total"
+      "detail": "0 nouvelle(s) info, 6 fusionnée(s) sur 39 moissonnée(s) — 21 au total"
     },
     {
       "nom": "etudiants.js",
