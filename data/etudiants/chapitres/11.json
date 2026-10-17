@@ -156,6 +156,14 @@
       "sources": [
         "Libération"
       ]
+    },
+    {
+      "id": "c11p21",
+      "texte": "La liste de ce qu'ils veulent, elle, continue de s'écrire : Manifestations lycéennes : faut-il supprimer Parcoursup? (1 media : France 24 — non corrobore) — détail : C'est l'une des revendications des lycéens en France : réformer voire abolir Parcoursup. Cette plateforme où ils doivent choisir leur orien… (Volet automatique du 17 octobre 2026 à 05:37, chapitre « Ce qu'ils veulent — les revendications, mot à mot » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "France 24"
+      ],
+      "auto": true
     }
   ]
 }
