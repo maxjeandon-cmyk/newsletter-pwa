@@ -20,11 +20,10 @@
     },
     {
       "id": "c28p3",
-      "texte": "6 heures ont passé depuis le relevé précédent ; le fil continue. Dans l'après-midi du 17 octobre 2026, la journée s'écrit encore. À Beauvau comme à l'Élysée, on ajuste le discours : Paroles de lycéens : «Notre génération est traumatisée par Parcoursup» (1 media : Libération — non corrobore) — detail : Au-delà de la mobilisation, comment vont et vivent les adolescents ? «Libé» donne la parole à des élèves de toute la France. Seydou, 17 ans, en terminale dans un lycée de Seine-Sa…. Le prochain relevé reprendra le fil. (Relevé automatique du 17 octobre 2026 à 17:35 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "Dans l'après-midi du 17 octobre, la question qui a ouvert la journée revient en paroles directes : « Notre génération est traumatisée par Parcoursup », disent les lycéens interrogés par Libération, qui, au-delà de la mobilisation, demande comment vont et vivent les adolescents et donne la parole à des élèves de toute la France — dont Seydou, 17 ans, en terminale. Une seule voix pour ce fait, que la chronique enregistre telle quelle ; mais elle vient du dedans, et c'est peut-être elle qui dit le mieux ce que la plateforme pèse dans une vie de lycéen. Le prochain relevé reprendra la journée là où le soir la laisse.",
       "sources": [
         "Libération"
-      ],
-      "auto": true
+      ]
     }
   ]
 }

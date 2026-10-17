@@ -91,7 +91,7 @@
       "periode": "Chronique transverse — les revendications, mot à mot",
       "titre": "Ce qu'ils veulent — les revendications, mot à mot",
       "paragraphes": 22,
-      "octets": 21058
+      "octets": 20344
     },
     {
       "id": "c12",
@@ -115,7 +115,7 @@
       "periode": "Chronique transverse — la génération dans l'Histoire",
       "titre": "Génération 2026 — le mouvement dans la longue durée",
       "paragraphes": 9,
-      "octets": 11522
+      "octets": 11155
     },
     {
       "id": "c15",
@@ -227,7 +227,7 @@
       "periode": "17 octobre 2026 — suivi de la journée",
       "titre": "Faut-il supprimer Parcoursup ? — la question qui ouvre le samedi 17 octobre",
       "paragraphes": 3,
-      "octets": 2810
+      "octets": 2640
     }
   ],
   "releveSigs": [
@@ -405,7 +405,7 @@
           "periode": "17 octobre 2026 — suivi de la journée",
           "titre": "Faut-il supprimer Parcoursup ? — la question qui ouvre le samedi 17 octobre",
           "paragraphes": 3,
-          "octets": 2810
+          "octets": 2640
         },
         {
           "id": "c10",
@@ -421,7 +421,7 @@
           "periode": "Chronique transverse — les revendications, mot à mot",
           "titre": "Ce qu'ils veulent — les revendications, mot à mot",
           "paragraphes": 22,
-          "octets": 21058
+          "octets": 20344
         },
         {
           "id": "c12",
@@ -445,7 +445,7 @@
           "periode": "Chronique transverse — la génération dans l'Histoire",
           "titre": "Génération 2026 — le mouvement dans la longue durée",
           "paragraphes": 9,
-          "octets": 11522
+          "octets": 11155
         },
         {
           "id": "c15",
