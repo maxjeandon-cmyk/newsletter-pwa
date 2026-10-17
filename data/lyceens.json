@@ -1,5 +1,5 @@
 {
-  "maj": "17/10/2026 11:37",
+  "maj": "17/10/2026 17:35",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -33,6 +33,19 @@
       "verifie": true
     },
     {
+      "id": "amvck5pcm-fvxw",
+      "date": "17/10/2026",
+      "titre": "\"Macron, pas du tout bebew\" : quand la culture Internet s'invite dans les manifestations lycéennes",
+      "texte": "Depuis le début du mouvement lycéen, les photos de pancartes sont partout sur les réseaux sociaux. Les slogans de la \"Gen Z\" sont humoristiques, sarcastiques, percutants et remplis de références comm…",
+      "source": "franceinfo / France Inter",
+      "sources": [
+        "franceinfo",
+        "France Inter"
+      ],
+      "url": "https://www.radiofrance.fr/franceinfo/podcasts/l-oeil-de-julie/l-oeil-de-julie-du-samedi-17-octobre-2026-2675702",
+      "verifie": true
+    },
+    {
       "id": "amv9cmk07-ccs9",
       "date": "15/10/2026",
       "titre": "Colère des lycéens : Édouard Geffray à Bordeaux avant une nouvelle réunion avec les organisations lycéennes",
@@ -47,19 +60,6 @@
         "France Inter"
       ],
       "url": "https://www.lefigaro.fr/actualite-france/en-direct-colere-des-lyceens-nouvelle-reunion-ce-jeudi-entre-les-organisations-lyceennes-et-les-ministres-de-l-education-nationale-et-de-l-enseignement-superieur-20261015",
-      "verifie": true
-    },
-    {
-      "id": "amv9cmk07-g2kb",
-      "date": "15/10/2026",
-      "titre": "Blocus des lycées : cocktails Molotov, mortiers... Ces armes plus variées et dangereuses utilisées par les émeutiers",
-      "texte": "Selon les chiffres du ministère de l'Intérieur communiqués ce mercredi, 7.950 personnes ont été placées en garde à vue lors du blocus des lycées, dont 85% de mineurs. Parmi les émeutiers, beaucoup ut…",
-      "source": "Europe 1 / Public Sénat",
-      "sources": [
-        "Europe 1",
-        "Public Sénat"
-      ],
-      "url": "https://www.europe1.fr/police-justice/blocus-des-lycees-cocktails-molotov-mortiers-ces-armes-plus-variees-et-dangereuses-utilisees-par-les-emeutiers-1149011?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
     },
     {
