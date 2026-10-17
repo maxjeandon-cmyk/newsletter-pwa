@@ -1,5 +1,5 @@
 {
-  "maj": "17/10/2026 05:37",
+  "maj": "17/10/2026 11:37",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -19,6 +19,19 @@
     "Mercredi 7 octobre (lendemain de l'acte III) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
   ],
   "version_gouvernement": [
+    {
+      "id": "amvc7d4ug-chqi",
+      "date": "17/10/2026",
+      "titre": "Mouvement lycéen : « Combien de mains arrachées avant que le pouvoir en place agisse pour notre futur à tous ? », décla…",
+      "texte": "Une nouvelle rencontre entre les syndicats étudiants et le ministre de l’Education est prévue ce jeudi, tandis que certains établissements sont encore bloqués telle que HEC, bloquée pour la première …",
+      "source": "20 minutes / Public Sénat",
+      "sources": [
+        "20 minutes",
+        "Public Sénat"
+      ],
+      "url": "https://www.publicsenat.fr/actualites/education/mouvement-lyceen-combien-de-mains-arrachees-avant-que-le-pouvoir-en-place-agisse-pour-notre-futur-a-tous-declarent-des-etudiants-devant-hec-bloquee-pour-la-premiere",
+      "verifie": true
+    },
     {
       "id": "amv9cmk07-ccs9",
       "date": "15/10/2026",
@@ -47,19 +60,6 @@
         "Public Sénat"
       ],
       "url": "https://www.europe1.fr/police-justice/blocus-des-lycees-cocktails-molotov-mortiers-ces-armes-plus-variees-et-dangereuses-utilisees-par-les-emeutiers-1149011?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
-      "verifie": true
-    },
-    {
-      "id": "amv9cmk0b-60ic",
-      "date": "15/10/2026",
-      "titre": "Colère lycéenne à Lyon: une deuxième manifestation, prévue à 15h, interdite par la préfecture",
-      "texte": "Ce jeudi, la mobilisation lycéenne se poursuit à Lyon. Les adolescents ne sont pas seuls à revendiquer, les chauffeurs de bus TCL sont en grève.",
-      "source": "Le Figaro / BFMTV",
-      "sources": [
-        "Le Figaro",
-        "BFMTV"
-      ],
-      "url": "https://www.bfmtv.com/lyon/direct-colere-lyceenne-nouvelle-journee-de-mobilisation-a-lyon-les-chauffeurs-de-bus-egalement-en-greve_LN-202610150203.html",
       "verifie": true
     },
     {
