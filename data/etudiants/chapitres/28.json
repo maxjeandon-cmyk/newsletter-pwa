@@ -17,6 +17,14 @@
         "Europe 1",
         "Libération"
       ]
+    },
+    {
+      "id": "c28p3",
+      "texte": "6 heures ont passé depuis le relevé précédent ; le fil continue. Dans l'après-midi du 17 octobre 2026, la journée s'écrit encore. À Beauvau comme à l'Élysée, on ajuste le discours : Paroles de lycéens : «Notre génération est traumatisée par Parcoursup» (1 media : Libération — non corrobore) — detail : Au-delà de la mobilisation, comment vont et vivent les adolescents ? «Libé» donne la parole à des élèves de toute la France. Seydou, 17 ans, en terminale dans un lycée de Seine-Sa…. Le prochain relevé reprendra le fil. (Relevé automatique du 17 octobre 2026 à 17:35 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "Libération"
+      ],
+      "auto": true
     }
   ]
 }
