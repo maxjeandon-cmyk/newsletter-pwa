@@ -91,7 +91,7 @@
       "periode": "Chronique transverse — les revendications, mot à mot",
       "titre": "Ce qu'ils veulent — les revendications, mot à mot",
       "paragraphes": 21,
-      "octets": 20508
+      "octets": 20388
     },
     {
       "id": "c12",
@@ -225,9 +225,9 @@
       "id": "c28",
       "fichier": "chapitres/28.json",
       "periode": "17 octobre 2026 — suivi de la journée",
-      "titre": "Le fil continue — 17 octobre 2026",
+      "titre": "Faut-il supprimer Parcoursup ? — la question qui ouvre le samedi 17 octobre",
       "paragraphes": 1,
-      "octets": 974
+      "octets": 929
     }
   ],
   "releveSigs": [
@@ -403,9 +403,9 @@
           "id": "c28",
           "fichier": "chapitres/28.json",
           "periode": "17 octobre 2026 — suivi de la journée",
-          "titre": "Le fil continue — 17 octobre 2026",
+          "titre": "Faut-il supprimer Parcoursup ? — la question qui ouvre le samedi 17 octobre",
           "paragraphes": 1,
-          "octets": 974
+          "octets": 929
         },
         {
           "id": "c10",
@@ -421,7 +421,7 @@
           "periode": "Chronique transverse — les revendications, mot à mot",
           "titre": "Ce qu'ils veulent — les revendications, mot à mot",
           "paragraphes": 21,
-          "octets": 20508
+          "octets": 20388
         },
         {
           "id": "c12",
