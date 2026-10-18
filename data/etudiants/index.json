@@ -11,7 +11,7 @@
       "periode": "du 18 au 24 septembre 2026",
       "titre": "L'amorce — Créteil, là où tout commence",
       "paragraphes": 2,
-      "octets": 3832
+      "octets": 3764
     },
     {
       "id": "c2",
@@ -19,7 +19,7 @@
       "periode": "du 25 au 27 septembre 2026",
       "titre": "La contagion francilienne — une soixantaine de lycées, une circulaire, six avocats",
       "paragraphes": 3,
-      "octets": 4700
+      "octets": 5378
     },
     {
       "id": "c3",
@@ -27,7 +27,7 @@
       "periode": "lundi 28 septembre 2026",
       "titre": "Sortie d'Île-de-France — 180 établissements, la France découvre ses lycéens",
       "paragraphes": 3,
-      "octets": 4522
+      "octets": 4449
     },
     {
       "id": "c4",
@@ -35,7 +35,7 @@
       "periode": "mardi 29 septembre 2026",
       "titre": "Acte 1 — la journée de la fonction publique, la France bloque avec ses enfants",
       "paragraphes": 6,
-      "octets": 9832
+      "octets": 9692
     },
     {
       "id": "c5",
@@ -43,7 +43,7 @@
       "periode": "mercredi 30 septembre 2026",
       "titre": "Le durcissement — 625 interpellations, la peur change de camp",
       "paragraphes": 3,
-      "octets": 4761
+      "octets": 4946
     },
     {
       "id": "c6",
@@ -51,7 +51,7 @@
       "periode": "jeudi 1er octobre 2026",
       "titre": "Acte 2 — 900 actions, 400 lycées fermés, les campus bloqués, Liège s'embrase",
       "paragraphes": 5,
-      "octets": 9274
+      "octets": 9536
     },
     {
       "id": "c7",
@@ -59,7 +59,7 @@
       "periode": "vendredi 2 octobre 2026",
       "titre": "Concertation en échec, loi « casseurs-payeurs », et « aucune consigne de retenue »",
       "paragraphes": 4,
-      "octets": 6284
+      "octets": 6946
     },
     {
       "id": "c8",
@@ -67,7 +67,7 @@
       "periode": "du samedi 3 au dimanche 4 octobre 2026",
       "titre": "Le week-end — Belfort dans l'eau, la Sorbonne et ses CRS, la feuille de route Lecornu",
       "paragraphes": 3,
-      "octets": 4727
+      "octets": 5129
     },
     {
       "id": "c9",
@@ -75,7 +75,7 @@
       "periode": "lundi 5 octobre 2026",
       "titre": "La « décrue » et la main arrachée de Lens — lundi noir et e-blocus",
       "paragraphes": 5,
-      "octets": 9720
+      "octets": 9953
     },
     {
       "id": "c10",
@@ -245,7 +245,7 @@
           "periode": "du 18 au 24 septembre 2026",
           "titre": "L'amorce — Créteil, là où tout commence",
           "paragraphes": 2,
-          "octets": 3832
+          "octets": 3764
         },
         {
           "id": "c2",
@@ -253,7 +253,7 @@
           "periode": "du 25 au 27 septembre 2026",
           "titre": "La contagion francilienne — une soixantaine de lycées, une circulaire, six avocats",
           "paragraphes": 3,
-          "octets": 4700
+          "octets": 5378
         },
         {
           "id": "c3",
@@ -261,7 +261,7 @@
           "periode": "lundi 28 septembre 2026",
           "titre": "Sortie d'Île-de-France — 180 établissements, la France découvre ses lycéens",
           "paragraphes": 3,
-          "octets": 4522
+          "octets": 4449
         },
         {
           "id": "c4",
@@ -269,7 +269,7 @@
           "periode": "mardi 29 septembre 2026",
           "titre": "Acte 1 — la journée de la fonction publique, la France bloque avec ses enfants",
           "paragraphes": 6,
-          "octets": 9832
+          "octets": 9692
         },
         {
           "id": "c5",
@@ -277,7 +277,7 @@
           "periode": "mercredi 30 septembre 2026",
           "titre": "Le durcissement — 625 interpellations, la peur change de camp",
           "paragraphes": 3,
-          "octets": 4761
+          "octets": 4946
         },
         {
           "id": "c6",
@@ -285,7 +285,7 @@
           "periode": "jeudi 1er octobre 2026",
           "titre": "Acte 2 — 900 actions, 400 lycées fermés, les campus bloqués, Liège s'embrase",
           "paragraphes": 5,
-          "octets": 9274
+          "octets": 9536
         },
         {
           "id": "c7",
@@ -293,7 +293,7 @@
           "periode": "vendredi 2 octobre 2026",
           "titre": "Concertation en échec, loi « casseurs-payeurs », et « aucune consigne de retenue »",
           "paragraphes": 4,
-          "octets": 6284
+          "octets": 6946
         },
         {
           "id": "c8",
@@ -301,7 +301,7 @@
           "periode": "du samedi 3 au dimanche 4 octobre 2026",
           "titre": "Le week-end — Belfort dans l'eau, la Sorbonne et ses CRS, la feuille de route Lecornu",
           "paragraphes": 3,
-          "octets": 4727
+          "octets": 5129
         },
         {
           "id": "c9",
@@ -309,7 +309,7 @@
           "periode": "lundi 5 octobre 2026",
           "titre": "La « décrue » et la main arrachée de Lens — lundi noir et e-blocus",
           "paragraphes": 5,
-          "octets": 9720
+          "octets": 9953
         },
         {
           "id": "c17",
