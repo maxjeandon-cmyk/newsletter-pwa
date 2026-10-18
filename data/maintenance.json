@@ -1,15 +1,15 @@
 {
   "date": "18/10/2026",
-  "heure": "03:37",
+  "heure": "09:36",
   "relevesOng": {
-    "rafraichis": 10,
+    "rafraichis": 0,
     "echecs": 0,
-    "publie": true
+    "publie": false
   },
   "lyceens": {
     "nouvelles": 0,
     "fusionnees": 4,
-    "moissonnes": 22,
+    "moissonnes": 17,
     "total": 21,
     "publie": false
   },
@@ -37,14 +37,9 @@
       "detail": "7 abonnement(s) push, 1 utilisateur(s) avec toggles actifs"
     },
     {
-      "nom": "ong-releve.js",
-      "ok": true,
-      "detail": "10 rafraîchi(s), 0 échec(s) — relevé précédent conservé pour les sites muets"
-    },
-    {
       "nom": "lyceens.js",
       "ok": true,
-      "detail": "0 nouvelle(s) info, 4 fusionnée(s) sur 22 moissonnée(s) — 21 au total"
+      "detail": "0 nouvelle(s) info, 4 fusionnée(s) sur 17 moissonnée(s) — 21 au total"
     },
     {
       "nom": "etudiants.js",
