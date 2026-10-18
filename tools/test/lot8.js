@@ -40,20 +40,16 @@ function t(nom, cond, detail) {
   else { ko++; console.log('KO !!  ' + nom + (detail ? ' — ' + detail : '')); }
 }
 
-/* ———— URLs du catalogue presse + flux Reddit (miroir de tools/etudiants.js) ———— */
+/* ———— URLs du catalogue presse + flux Reddit (miroir de tools/etudiants.js v118 :
+ * 3 flux presse — Le Média, Blast, L'Humanité ; les noms P_20M/P_E1/P_FTV sont
+ * conservés pour ne pas toucher tous les scénarios, seules les VALEURS changent) ———— */
 const U_ETU = 'https://www.reddit.com/r/etudiants/.rss';
 const U_ENS = 'https://www.reddit.com/r/enseignants/.rss';
 const U_FR = 'https://www.reddit.com/r/france/.rss';
-const P_20M = 'https://www.20minutes.fr/feeds/rss-une.xml';
-const P_E1 = 'https://www.europe1.fr/rss.xml';
-const P_FTV = 'https://www.francetvinfo.fr/france.rss';
-const AUTRES_PRESSE = [
-  'https://www.publicsenat.fr/rss',
-  'https://radiofrance.fr/franceinfo/rss', 'https://www.france24.com/fr/rss',
-  'https://www.rfi.fr/fr/rss', 'https://www.ouest-france.fr/rss.xml',
-  'https://www.humanite.fr/feed', 'https://www.mediapart.fr/articles/feed',
-  'https://www.liberation.fr/arc/outboundfeeds/rss-all/'
-];
+const P_20M = 'https://api.lemediatv.fr/rss.xml'; /* Le Média */
+const P_E1 = 'https://api.blast-info.fr/rss_articles.xml'; /* Blast */
+const P_FTV = 'https://www.humanite.fr/mot-cle/lyceens/feed'; /* L'Humanité (flux mot-clé lycéens) */
+const AUTRES_PRESSE = [];
 
 /* ———— Aides : copie isolée, épinglage, fixtures, run, lecture chapitre ———— */
 const JOUR_GELE = '07/10/2026';
@@ -151,16 +147,16 @@ t('A : c16p6 auto (cap 2)', c16.paragraphes.length === 6 && c16.paragraphes[5].a
  * l'ordre de première apparition (le réseau d'abord, plus récent). */
 t('A : c10 — items presse ET réseau, rendu v112 du réseau (sans compte médias)',
   c10.paragraphes[9].texte.includes('organisent sur Snapchat') &&
-  c10.paragraphes[9].texte.includes('1 media : 20 minutes — non corrobore') &&
+  c10.paragraphes[9].texte.includes('1 media : Le Média — non corrobore') &&
   c10.paragraphes[9].texte.includes('blocus raconté sur Snapchat en direct') &&
   c10.paragraphes[9].texte.includes('(Reddit — r/etudiants)') &&
   !/medias : [^)]*Reddit/.test(c10.paragraphes[9].texte),
   c10.paragraphes[9].texte.slice(0, 400));
 t('A : c10 — sources = union sans doublon, ordre de première apparition',
-  JSON.stringify(c10.paragraphes[9].sources) === JSON.stringify(['Reddit — r/etudiants', '20 minutes']), JSON.stringify(c10.paragraphes[9].sources));
-t('A : c11 — sources de l’unique item presse', JSON.stringify(c11.paragraphes[6].sources) === JSON.stringify(['20 minutes']), JSON.stringify(c11.paragraphes[6].sources));
+  JSON.stringify(c10.paragraphes[9].sources) === JSON.stringify(['Reddit — r/etudiants', 'Le Média']), JSON.stringify(c10.paragraphes[9].sources));
+t('A : c11 — sources de l’unique item presse', JSON.stringify(c11.paragraphes[6].sources) === JSON.stringify(['Le Média']), JSON.stringify(c11.paragraphes[6].sources));
 t('A : c12 — volet texte contient l’item tronqué + mention non corrobore',
-  c12.paragraphes[6].texte.includes('1 media : 20 minutes — non corrobore'), c12.paragraphes[6].texte.slice(0, 300));
+  c12.paragraphes[6].texte.includes('1 media : Le Média — non corrobore'), c12.paragraphes[6].texte.slice(0, 300));
 t('A : c13 — volet alimenté par l’annonce du ministre',
   /Lecornu|annonce/.test(c13.paragraphes[6].texte), c13.paragraphes[6].texte.slice(0, 200));
 t('A : c14 — volet alimenté par la comparaison Mai 68', /Mai 68|comparaison/.test(c14.paragraphes[5].texte));
@@ -238,7 +234,7 @@ epinglerJour(F.REPO);
 const fic12 = path.join(F.REPO, 'data', 'etudiants', 'chapitres', '12.json');
 const ch12 = JSON.parse(fs.readFileSync(fic12, 'utf8'));
 while (fs.statSync(fic12).size <= 28000) {
-  ch12.paragraphes.push({ id: 'c12p' + (ch12.paragraphes.length + 1), texte: 'x'.repeat(2000), sources: ['20 minutes'] });
+  ch12.paragraphes.push({ id: 'c12p' + (ch12.paragraphes.length + 1), texte: 'x'.repeat(2000), sources: ['Le Média'] });
   fs.writeFileSync(fic12, JSON.stringify(ch12, null, 2) + '\n');
 }
 const nombreAvantF = ch12.paragraphes.length;

@@ -47,7 +47,9 @@
  * (onglet ✊ Lycéens 2026, sous-onglet Version des étudiants).
  * Appelé par tools/maintenance.js à chaque run (3 h, 9 h, 15 h, 21 h Paris) :
  *   1. Moissonne les flux RSS de la presse (catalogue propre à la chronique,
- *      11 flux — Figaro, La Croix, BFMTV retirés le 08/10/2026, cf. v113)
+ *      3 flux depuis la v118 du 18/10/2026 — Le Média, Blast, L'Humanité ;
+ *      Figaro, La Croix, BFMTV sortis le 08/10/2026, v113, le reste de la
+ *      presse généraliste le 18/10/2026, cf. v118)
  *      et ne retient que les items du mouvement lycéen/étudiant.
  *   2. Construit UN paragraphe « relevé automatique » NARRATIF pour les
  *      dernières 6 h : accroche temporelle + dateline + items regroupés en
@@ -77,19 +79,27 @@ const FENETRE_HEURES = 7;   /* fenêtre de fraîcheur : les dernières ~6 h (+1 
 const MAX_OCTETS_CHAPITRE = 28000; /* garde-fou : avertissement seulement, jamais de scission (v108) */
 
 /* Flux RSS vérifiés (catalogue data/flux-rss.json, testés le 04/10/2026) ;
- * v113 : chronique = 11 flux (sans Figaro, La Croix, BFMTV). */
+ * v113 : chronique = 11 flux (sans Figaro, La Croix, BFMTV).
+ * v118 (18/10/2026) : catalogue presse réduit à TROIS flux — Le Média, Blast,
+ * L'Humanité — demande de Maxime : la « Version des Lycéens » s'appuie sur les
+ * médias au plus près du mouvement et sur la voix des réseaux (Reddit,
+ * Discord), pas sur la presse généraliste. Sortent du catalogue : 20 minutes,
+ * Europe 1, Public Sénat, franceinfo, France Inter, France 24, RFI,
+ * Ouest-France, Mediapart, Libération (Figaro, La Croix et BFMTV déjà
+ * sortis en v113). Le Média : api.lemediatv.fr/rss.xml — flux officiel
+ * référencé par le site lui-même (lemediatv.fr est une SPA, /feed renvoie du
+ * HTML) ; Blast : api.blast-info.fr/rss_articles.xml (déjà au catalogue
+ * data/flux-rss.json, id « blast ») ; L'Humanité : flux mot-clé « lycéens »
+ * (humanite.fr/mot-cle/lyceens/feed) — le flux principal /feed est un
+ * live-blog minute par minute rarement titré sur le mouvement (vérifié le
+ * 18/10/2026 : 20 items de direct national, zéro mot-clé), le nom de source
+ * affiché reste « L'Humanité ». NB : les pubDates de Le Média portent un
+ * fuseau malformé « +0009 » que Node lit comme +00 h 09 — écart de 9 minutes,
+ * négligeable pour la fenêtre de fraîcheur. */
 const SOURCES = [
-  { id: '20-minutes', nom: '20 minutes', url: 'https://www.20minutes.fr/feeds/rss-une.xml' },
-  { id: 'europe-1', nom: 'Europe 1', url: 'https://www.europe1.fr/rss.xml' },
-  { id: 'public-senat', nom: 'Public Sénat', url: 'https://www.publicsenat.fr/rss' },
-  { id: 'france-tv-info', nom: 'franceinfo', url: 'https://www.francetvinfo.fr/france.rss' },
-  { id: 'france-info', nom: 'France Inter', url: 'https://radiofrance.fr/franceinfo/rss' },
-  { id: 'france-24', nom: 'France 24', url: 'https://www.france24.com/fr/rss' },
-  { id: 'rfi', nom: 'RFI', url: 'https://www.rfi.fr/fr/rss' },
-  { id: 'ouest-france', nom: 'Ouest-France', url: 'https://www.ouest-france.fr/rss.xml' },
-  { id: 'l-humanite', nom: "L'Humanité", url: 'https://www.humanite.fr/feed' },
-  { id: 'mediapart', nom: 'Mediapart', url: 'https://www.mediapart.fr/articles/feed' },
-  { id: 'liberation', nom: 'Libération', url: 'https://www.liberation.fr/arc/outboundfeeds/rss-all/' }
+  { id: 'le-media', nom: 'Le Média', url: 'https://api.lemediatv.fr/rss.xml' },
+  { id: 'blast', nom: 'Blast', url: 'https://api.blast-info.fr/rss_articles.xml' },
+  { id: 'l-humanite', nom: "L'Humanité", url: 'https://www.humanite.fr/mot-cle/lyceens/feed' }
 ];
 
 /* v112 (lot 6) : flux Reddit (format Atom) — la voix des élèves et des enseignants
@@ -157,9 +167,16 @@ const RE_BRUIT = /(football|rugby|basket|handball|volley|championnat|brevet des 
 const RE_EMISSION = /(bonjour chez vous|l.heure des pros|edition speciale|grand entretien|la revue de presse|le direct|replay|podcast|l.interview)/i;
 /* v109 (lot 1) : anti-bruit -- le TITRE doit matcher le regex mouvement, la description
  * ne suffit plus seule (cas reels : « Guerre au Moyen-Orient », « Australie : mine de
- * charbon » passaient parce que seule la description mentionnait le mouvement). */
-const estMouvement = (t, d) => RE_MOUVEMENT.test(t);
-const estBruit = (t, d) => RE_BRUIT.test(t) || RE_EMISSION.test(t);
+ * charbon » passaient parce que seule la description mentionnait le mouvement).
+ * v118 (18/10/2026) : le filtre s'applique au titre NORMALISÉ (minuscules sans
+ * diacritiques via norm()) — « Lycéens » ou « étudiants » accentués ne matchaient
+ * JAMAIS les motifs sans accents (trou historique depuis la v109, invisible avec
+ * les flux qui titrent « blocus/Parcoursup », rédhibitoire avec Le Média et Blast
+ * qui titrent en français accentué : 0 item sur 13 frais au compteur du 18/10).
+ * Même normalisation pour le filtre anti-bruit (mots « édition spéciale »,
+ * « collèges » accentués). */
+const estMouvement = (t, d) => RE_MOUVEMENT.test(norm(t));
+const estBruit = (t, d) => RE_BRUIT.test(norm(t)) || RE_EMISSION.test(norm(t));
 
 const tronc = (s, n) => (s.length > n ? s.slice(0, n - 1) + '…' : s);async function moissonSource(src, depuis) {
   const items = [];

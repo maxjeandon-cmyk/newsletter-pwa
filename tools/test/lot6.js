@@ -41,19 +41,15 @@ function t(nom, cond, detail) {
   else { ko++; console.log('KO !!  ' + nom + (detail ? ' — ' + detail : '')); }
 }
 
-/* ———— URLs du catalogue presse + flux Reddit (miroir de tools/etudiants.js v115) ———— */
+/* ———— URLs du catalogue presse + flux Reddit (miroir de tools/etudiants.js v118 :
+ * 3 flux presse — Le Média, Blast, L'Humanité ; les noms P_20M/P_FTV sont
+ * conservés pour ne pas toucher tous les scénarios, seules les VALEURS changent) ———— */
 const U_ETU = 'https://www.reddit.com/r/etudiants/.rss';
 const U_ENS = 'https://www.reddit.com/r/enseignants/.rss';
 const U_FR = 'https://www.reddit.com/r/france/.rss';
-const P_20M = 'https://www.20minutes.fr/feeds/rss-une.xml';
-const P_FTV = 'https://www.francetvinfo.fr/france.rss';
-const AUTRES_PRESSE = [
-  'https://www.europe1.fr/rss.xml', 'https://www.publicsenat.fr/rss',
-  'https://radiofrance.fr/franceinfo/rss', 'https://www.france24.com/fr/rss',
-  'https://www.rfi.fr/fr/rss', 'https://www.ouest-france.fr/rss.xml',
-  'https://www.humanite.fr/feed', 'https://www.mediapart.fr/articles/feed',
-  'https://www.liberation.fr/arc/outboundfeeds/rss-all/'
-];
+const P_20M = 'https://api.lemediatv.fr/rss.xml'; /* Le Média */
+const P_FTV = 'https://www.humanite.fr/mot-cle/lyceens/feed'; /* L'Humanité (flux mot-clé lycéens) */
+const AUTRES_PRESSE = ['https://api.blast-info.fr/rss_articles.xml']; /* Blast */
 
 /* ———— Aides : copie isolée du repo, épinglage, fixtures, run, dernier paragraphe ———— */
 const JOUR_GELE = '07/10/2026'; /* jour gelé de tools/fakeclock.js (INSTANT = 07/10/2026 15:00 UTC) */
@@ -151,7 +147,7 @@ t('run 1 : le paragraphe rejoint le chapitre épinglé (18.json)', s1.fichier ==
 const par1 = dernierParagraphe(A.REPO, s1);
 t('paragraphe : badge auto (c18p5)', par1.id === 'c18p5' && par1.auto === true);
 t('paragraphe : événement presse corrobore a 2 medias (le post Reddit ne compte pas)',
-  par1.texte.includes('2 medias : 20 minutes, franceinfo') && !par1.texte.includes('3 medias'));
+  par1.texte.includes("2 medias : Le Média, L'Humanité") && !par1.texte.includes('3 medias'));
 t('paragraphe : mention « repris aussi sur r/enseignants »', par1.texte.includes('repris aussi sur r/enseignants'));
 t('paragraphe : volet voix avec les items Reddit',
   par1.texte.includes('(Reddit — r/etudiants)') && par1.texte.includes('(Reddit — r/enseignants)'));
