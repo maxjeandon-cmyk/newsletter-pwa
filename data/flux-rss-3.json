@@ -431,6 +431,16 @@
       ]
     },
     {
+      "id": "journal-de-montreal",
+      "nom": "Le Journal de Montréal",
+      "emoji": "🍁",
+      "categorie": "Belgique / Suisse / Québec 🍁",
+      "flux": [
+        "https://www.journaldemontreal.com/accueil/rss.xml"
+      ],
+      "ligne": "toute l’actualité québécoise au quotidien"
+    },
+    {
       "id": "jeune-afrique",
       "nom": "Jeune Afrique",
       "emoji": "🌍",
