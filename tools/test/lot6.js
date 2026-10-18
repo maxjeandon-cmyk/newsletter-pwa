@@ -42,14 +42,14 @@ function t(nom, cond, detail) {
 }
 
 /* ———— URLs du catalogue presse + flux Reddit (miroir de tools/etudiants.js v118 :
- * 3 flux presse — Le Média, Blast, L'Humanité ; les noms P_20M/P_FTV sont
+ * 4 flux presse — Le Média, Blast, L'Humanité, Mediapart ; les noms P_20M/P_FTV sont
  * conservés pour ne pas toucher tous les scénarios, seules les VALEURS changent) ———— */
 const U_ETU = 'https://www.reddit.com/r/etudiants/.rss';
 const U_ENS = 'https://www.reddit.com/r/enseignants/.rss';
 const U_FR = 'https://www.reddit.com/r/france/.rss';
 const P_20M = 'https://api.lemediatv.fr/rss.xml'; /* Le Média */
 const P_FTV = 'https://www.humanite.fr/mot-cle/lyceens/feed'; /* L'Humanité (flux mot-clé lycéens) */
-const AUTRES_PRESSE = ['https://api.blast-info.fr/rss_articles.xml']; /* Blast */
+const AUTRES_PRESSE = ['https://api.blast-info.fr/rss_articles.xml', 'https://www.mediapart.fr/articles/feed']; /* Blast, Mediapart */
 
 /* ———— Aides : copie isolée du repo, épinglage, fixtures, run, dernier paragraphe ———— */
 const JOUR_GELE = '07/10/2026'; /* jour gelé de tools/fakeclock.js (INSTANT = 07/10/2026 15:00 UTC) */

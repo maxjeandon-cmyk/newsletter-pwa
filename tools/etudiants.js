@@ -47,7 +47,8 @@
  * (onglet ✊ Lycéens 2026, sous-onglet Version des étudiants).
  * Appelé par tools/maintenance.js à chaque run (3 h, 9 h, 15 h, 21 h Paris) :
  *   1. Moissonne les flux RSS de la presse (catalogue propre à la chronique,
- *      3 flux depuis la v118 du 18/10/2026 — Le Média, Blast, L'Humanité ;
+ *      4 flux depuis la v118 du 18/10/2026 — Le Média, Blast, L'Humanité,
+ *      Mediapart (réintégré le jour même, demande de Maxime) ;
  *      Figaro, La Croix, BFMTV sortis le 08/10/2026, v113, le reste de la
  *      presse généraliste le 18/10/2026, cf. v118)
  *      et ne retient que les items du mouvement lycéen/étudiant.
@@ -80,13 +81,16 @@ const MAX_OCTETS_CHAPITRE = 28000; /* garde-fou : avertissement seulement, jamai
 
 /* Flux RSS vérifiés (catalogue data/flux-rss.json, testés le 04/10/2026) ;
  * v113 : chronique = 11 flux (sans Figaro, La Croix, BFMTV).
- * v118 (18/10/2026) : catalogue presse réduit à TROIS flux — Le Média, Blast,
- * L'Humanité — demande de Maxime : la « Version des Lycéens » s'appuie sur les
- * médias au plus près du mouvement et sur la voix des réseaux (Reddit,
- * Discord), pas sur la presse généraliste. Sortent du catalogue : 20 minutes,
- * Europe 1, Public Sénat, franceinfo, France Inter, France 24, RFI,
- * Ouest-France, Mediapart, Libération (Figaro, La Croix et BFMTV déjà
- * sortis en v113). Le Média : api.lemediatv.fr/rss.xml — flux officiel
+ * v118 (18/10/2026) : catalogue presse réduit — Le Média, Blast, L'Humanité —
+ * demande de Maxime : la « Version des Lycéens » s'appuie sur les médias au
+ * plus près du mouvement et sur la voix des réseaux (Reddit, Discord), pas
+ * sur la presse généraliste. Sortent du catalogue : 20 minutes, Europe 1,
+ * Public Sénat, franceinfo, France Inter, France 24, RFI, Ouest-France,
+ * Mediapart, Libération (Figaro, La Croix et BFMTV déjà sortis en v113).
+ * v118b (18/10/2026, même jour) : RETOUR de Mediapart — demande de Maxime —
+ * le catalogue presse est donc de QUATRE flux : Le Média, Blast, L'Humanité,
+ * Mediapart (mediapart.fr/articles/feed, flux déjà éprouvé au catalogue
+ * v113-v118, revérifié en direct le 18/10/2026 : 10 items, encodage OK). Le Média : api.lemediatv.fr/rss.xml — flux officiel
  * référencé par le site lui-même (lemediatv.fr est une SPA, /feed renvoie du
  * HTML) ; Blast : api.blast-info.fr/rss_articles.xml (déjà au catalogue
  * data/flux-rss.json, id « blast ») ; L'Humanité : flux mot-clé « lycéens »
@@ -99,7 +103,8 @@ const MAX_OCTETS_CHAPITRE = 28000; /* garde-fou : avertissement seulement, jamai
 const SOURCES = [
   { id: 'le-media', nom: 'Le Média', url: 'https://api.lemediatv.fr/rss.xml' },
   { id: 'blast', nom: 'Blast', url: 'https://api.blast-info.fr/rss_articles.xml' },
-  { id: 'l-humanite', nom: "L'Humanité", url: 'https://www.humanite.fr/mot-cle/lyceens/feed' }
+  { id: 'l-humanite', nom: "L'Humanité", url: 'https://www.humanite.fr/mot-cle/lyceens/feed' },
+  { id: 'mediapart', nom: 'Mediapart', url: 'https://www.mediapart.fr/articles/feed' }
 ];
 
 /* v112 (lot 6) : flux Reddit (format Atom) — la voix des élèves et des enseignants
