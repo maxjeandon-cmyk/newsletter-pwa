@@ -1,0 +1,636 @@
+{
+ "date": "2026-10-19",
+ "genere_le": "2026-10-19T00:30:00.000+02:00",
+ "html": "editions/2026-10-19.html",
+ "resume_executif": [
+  "France \u2014 au lendemain des violences et pillages massifs du 17 octobre, le gouvernement passe en mode crise : Lecornu pr\u00e9side une cellule interminist\u00e9rielle \u00e0 19h00, Macron s\u2019adresse solennellement aux Fran\u00e7ais \u00e0 20h00, plus de 550 gardes \u00e0 vue \u00e0 Paris et une commission d\u2019enqu\u00eate parlementaire en pr\u00e9paration sur la strat\u00e9gie de maintien de l\u2019ordre.",
+  "\u00c9conomie \u2014 le FMI referme ses assembl\u00e9es de Bangkok entre \u00ab optimisme \u00bb et \u00ab inqui\u00e9tude \u00bb ; en France, la pr\u00e9sidente de la Cour des comptes Am\u00e9lie de Montchalin pr\u00e9vient que la dette risque d\u2019\u00ab \u00e9touffer \u00bb le pays, \u00e0 la veille d\u2019une r\u00e9union de crise \u00e9conomique \u00e0 Bercy.",
+  "Monde \u2014 Donald Trump a exempt\u00e9 la Russie des sanctions du Graham Act (pause de 60 jours selon Rubio, \u00ab moment historique \u00bb \u00e0 Moscou) ; frappes crois\u00e9es sur les syst\u00e8mes \u00e9nerg\u00e9tiques russes et ukrainiens, dont un incendie sur un site p\u00e9trolier \u00e0 Saint-P\u00e9tersbourg.",
+  "IA \u2014 les math\u00e9maticiens face au \u00ab choc \u00bb de l\u2019IA (719 documents publi\u00e9s par OpenAI), Anthropic propose sa propre loi f\u00e9d\u00e9rale am\u00e9ricaine avec un juge pour dernier mot sur tout blocage, et un auteur zimbabw\u00e9en prim\u00e9 au prix Caine est accus\u00e9 d\u2019avoir \u00e9crit \u00e0 la machine.",
+  "Spatial et bruits du monde \u2014 le Japon lance mardi MMX, premi\u00e8re mission de retour d\u2019\u00e9chantillons d\u2019une lune de Mars, avec deux instruments fran\u00e7ais \u00e0 bord ; le pape L\u00e9on XIV est r\u00e9apparu place Saint-Pierre, et le sport du week-end a tenu toutes ses promesses."
+ ],
+ "chapitres": [
+  {
+   "id": "intelligence-artificielle",
+   "emoji": "\ud83e\udd16",
+   "nom": "Intelligence artificielle",
+   "resume": "Le \u00ab choc \u00bb des math\u00e9matiques, une loi f\u00e9d\u00e9rale am\u00e9ricaine \u00e9crite par un laboratoire priv\u00e9, et la traque des textes \u00e9crits \u00e0 la machine : l\u2019IA de cette \u00e9dition raconte surtout la confrontation entre la machine et ceux qui voudraient l\u2019encadrer."
+  },
+  {
+   "id": "spatial",
+   "emoji": "\ud83d\ude80",
+   "nom": "Spatial",
+   "resume": "Mardi, une fus\u00e9e japonaise doit d\u00e9coller vers Phobos : c\u2019est la premi\u00e8re fois de l\u2019histoire qu\u2019on tente de rapporter sur Terre des \u00e9chantillons d\u2019une lune de Mars \u2014 et la France est du voyage."
+  },
+  {
+   "id": "economie-pour-les-nuls",
+   "emoji": "\ud83d\udcb0",
+   "nom": "L\u2019\u00c9conomie pour les nuls",
+   "resume": "Une grande info \u00e9conomique mondiale, une info fran\u00e7aise, et toutes les notions expliqu\u00e9es au fil de l\u2019eau \u2014 comme si vous n\u2019aviez jamais ouvert un journal \u00e9co."
+  },
+  {
+   "id": "droit-pour-les-nuls",
+   "emoji": "\u2696\ufe0f",
+   "nom": "Le Droit pour les nuls",
+   "resume": "Apr\u00e8s les pillages de samedi, des milliers de t\u00e9l\u00e9phones vont circuler avec des \u00ab bonnes affaires \u00bb. Le concept juridique du jour, utile dans la vie de tous les jours : le recel \u2014 acheter ou garder un bien vol\u00e9, c\u2019est un d\u00e9lit. Explication, texte \u00e0 l\u2019appui."
+  },
+  {
+   "id": "jeu-video-pop-culture",
+   "emoji": "\ud83c\udfae",
+   "nom": "Jeu vid\u00e9o & pop culture",
+   "resume": "Week-end calme c\u00f4t\u00e9 sorties, fr\u00e9n\u00e9sie c\u00f4t\u00e9 pop : l\u2019actualit\u00e9 pop culture de la fen\u00eatre vit au rythme d\u2019Hollywood et de la tech, pas des consoles \u2014 nous le disons honn\u00eatement, plut\u00f4t que d\u2019inventer des annonces."
+  },
+  {
+   "id": "culture",
+   "emoji": "\ud83c\udfad",
+   "nom": "Culture",
+   "resume": "Cin\u00e9ma fran\u00e7ais surprenant, adieux parisiens en apoth\u00e9ose, une girafe bicentenaire et la nouvelle africaine secou\u00e9e par l\u2019IA : la culture de la fen\u00eatre voyage bien."
+  },
+  {
+   "id": "sciences",
+   "emoji": "\ud83d\udd2c",
+   "nom": "Sciences",
+   "resume": "Une tumeur d\u00e9couverte par hasard, des cuves \u00e0 saumons sous la loupe de l\u2019Ifremer, et la m\u00e9decine d\u2019un pape sous les projecteurs : les sciences de la fen\u00eatre sont celles du corps \u2014 humain comme aquatique."
+  },
+  {
+   "id": "climat",
+   "emoji": "\ud83c\udf0d",
+   "nom": "Climat",
+   "resume": "Un tribunal italien, des inondations au N\u00e9pal, des orang-outans \u00e9vacu\u00e9s de Born\u00e9o et une m\u00e9gaferme contest\u00e9e dans le Verdon : le climat de la fen\u00eatre est celui des faits \u2014 compar\u00e9s, comme toujours, aux d\u00e9clarations."
+  },
+  {
+   "id": "politique-francaise",
+   "emoji": "\ud83c\uddeb\ud83c\uddf7",
+   "nom": "Politique fran\u00e7aise",
+   "resume": "Au lendemain du 17 octobre, la France se r\u00e9veille sous tr\u00e8s forte pression : l\u2019ex\u00e9cutif en cellule de crise, le Parlement en commission d\u2019enqu\u00eate, la justice en \u00e9tat d\u2019urgence proc\u00e9durale \u2014 et une pr\u00e9sidentielle \u00e0 six mois qui reformate chaque d\u00e9claration."
+  },
+  {
+   "id": "etats-unis",
+   "emoji": "\ud83c\uddfa\ud83c\uddf8",
+   "nom": "\u00c9tats-Unis",
+   "resume": "Transformer la col\u00e8re en votes, dig\u00e9rer une tuerie scolaire, et naviguer entre Moscou, New Delhi et J\u00e9rusalem : l\u2019Am\u00e9rique de la fen\u00eatre cherche ses boussoles \u00e0 un mois des midterms."
+  },
+  {
+   "id": "chine",
+   "emoji": "\ud83c\udde8\ud83c\uddf3",
+   "nom": "Chine",
+   "resume": "Seize navires repouss\u00e9s au large de Ta\u00efwan, le boom du luxe d\u2019occasion, et un p\u00e9trolier chinois au c\u0153ur d\u2019une \u00ab flotte fant\u00f4me \u00bb russe arraisonn\u00e9 pr\u00e8s de La R\u00e9union : la Chine de la fen\u00eatre est maritime et commerciale."
+  },
+  {
+   "id": "russie",
+   "emoji": "\ud83c\uddf7\ud83c\uddfa",
+   "nom": "Russie",
+   "resume": "\u00ab Moment historique \u00bb pour le Kremlin, frappes crois\u00e9es sur l\u2019\u00e9nergie, et un pape au t\u00e9l\u00e9phone : la Russie de la fen\u00eatre vit sa semaine am\u00e9ricaine \u2014 le tout scrut\u00e9 de Paris."
+  },
+  {
+   "id": "geopolitique",
+   "emoji": "\ud83c\udf10",
+   "nom": "G\u00e9opolitique",
+   "resume": "Le Golfe sous les drones, Isra\u00ebl aux urnes le 27 octobre, l\u2019Ukraine en d\u00e9tail, et un Br\u00e9sil en fin de campagne : le monde de la fen\u00eatre tient en quatre th\u00e9\u00e2tres."
+  },
+  {
+   "id": "grande-info-semaine",
+   "emoji": "\ud83d\udcf0",
+   "nom": "Grande information de la semaine",
+   "resume": "Au-del\u00e0 des 24 heures, voici les grandes informations qui ont fait la semaine \u2014 et qui continuent de la faire, demain."
+  }
+ ],
+ "hors_chapitres": [
+  "Sant\u00e9. Le Kenya a annonc\u00e9 vendredi un troisi\u00e8me cas d\u2019Ebola sur son sol, une parente du patient venu de R\u00e9publique d\u00e9mocratique du Congo \u2014 elle \u00e9tait en quarantaine depuis le 6 octobre.",
+  "Canada. Un incendie sur la base militaire de Wainwright (Alberta) a fait \u00ab des morts et des bless\u00e9s \u00bb selon le gouvernement canadien, qui parle d\u2019un \u00ab incident grave \u00bb sans en pr\u00e9ciser la nature.",
+  "Albanie. Sixi\u00e8me journ\u00e9e cons\u00e9cutive de manifestations \u00e0 Tirana : gaz lacrymog\u00e8nes et canons \u00e0 eau face aux centaines de manifestants r\u00e9clamant le d\u00e9part du Premier ministre Edi Rama, qui exclut de d\u00e9missionner.",
+  "Venezuela. La prix Nobel de la paix Mar\u00eda Corina Machado a \u00e9t\u00e9 confirm\u00e9e comme cheffe de l\u2019opposition, autour d\u2019un accord exigeant la lib\u00e9ration des prisonniers politiques et la fin de la r\u00e9pression.",
+  "Niger. La p\u00e9nurie d\u2019essence s\u2019\u00e9tend \u00e0 la capitale Niamey : \u00ab on nous a annonc\u00e9 la fin de la p\u00e9nurie mais nous ne voyons pas le bout du tunnel \u00bb, r\u00e9sume un motocycliste \u00e0 moto tomb\u00e9e en panne s\u00e8che.",
+  "Belgique. La mobilisation fran\u00e7aise fait tache d\u2019huile : des centaines de personnes ont manifest\u00e9 samedi \u00e0 Bruxelles et Li\u00e8ge dans le sillage de la journ\u00e9e \u00ab vie ch\u00e8re \u00bb, avec quelques d\u00e9bordements imput\u00e9s aux \u00ab casseurs \u00bb.",
+  "Football. 7e journ\u00e9e de Ligue 1 : Marseille s\u2019est impos\u00e9 5-2 \u00e0 Angers apr\u00e8s avoir \u00e9t\u00e9 men\u00e9 au score (\u00ab on a su se remettre dans le sens du jeu \u00bb, savoure Genesio), tandis que Lille a conc\u00e9d\u00e9 un nul frustrant 1-1 contre Brest \u2014 p\u00e9nalty de Giroud malgr\u00e9 tout.",
+  "Rugby. En Champions Cup, le Stade toulousain a \u00e9t\u00e9 \u00ab miracul\u00e9 \u00bb contre Exeter et le Racing 92 s\u2019est inclin\u00e9 sans bonus au Munster \u2014 cinquante ans de r\u00e8gle : le Racing ne s\u2019y est jamais impos\u00e9.",
+  "Cyclisme sur piste. Aux Mondiaux de Shanghai, l\u2019Allemande Pauline Grabosch a pris l\u2019or du kilom\u00e8tre, la Russe sous banni\u00e8re neutre Alina Lysenko celui du keirin, et la France repart avec trois m\u00e9dailles \u2014 mais Mathilde Gros a d\u00e9\u00e7u, sortie d\u00e8s le premier tour du keirin.",
+  "Tennis. Au WTA 1000 de Wuhan, Iga Swiatek a \u00e9t\u00e9 battue en demi-finale (7-5, 6-1) par la Polonaise Maja Chwalinska, 16e mondiale \u2014 un r\u00e9sultat qui secoue le tableau.",
+  "Baseball. Le match 4 de la finale de la Ligue am\u00e9ricaine entre Cleveland et Tampa Bay a \u00e9t\u00e9 report\u00e9 pour cause de pluie \u2014 les Brewers de Milwaukee, qualifi\u00e9s d\u2019office, attendent leur adversaire pour la World Series du 23 octobre.",
+  "Boxe. L\u2019Am\u00e9ricain Brandon Figueroa a perdu son titre WBA des plumes\u2026 \u00e0 la pes\u00e9e, trop lourd la veille de son combat contre Tomoki Kameda \u00e0 Las Vegas."
+ ],
+ "sources": [
+  {
+   "label": "S1 \u2014 AFP \u2014 Actualit\u00e9s du dimanche 18 octobre 2026 (cellule de crise Lecornu, drones sur l\u2019Arabie saoudite, \u00c9gypte)",
+   "ref": "news-afp-20261018-3d6f4fdb",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S2 \u2014 AFP \u2014 Violences \u00e0 Paris : plus de 500 personnes en garde \u00e0 vue, annonce le parquet",
+   "ref": "news-afp-20261018-576826ca",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S3 \u2014 AFP \u2014 Violences \u00e0 Paris : plus de 550 gardes \u00e0 vue, des commissariats d\u00e9bord\u00e9s",
+   "ref": "news-afp-20261018-f6a857d1",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S4 \u2014 AFP \u2014 17 octobre : au lendemain des violences, le gouvernement sous tr\u00e8s forte pression",
+   "ref": "news-afp-20261018-49a6be1d",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S5 \u2014 AFP \u2014 Violences du 17 octobre : Emmanuel Macron s\u2019adressera aux Fran\u00e7ais \u00e0 20H00 (\u00c9lys\u00e9e)",
+   "ref": "news-afp-20261018-ca4adcdf",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S6 \u2014 AFP \u2014 Violences du 17 octobre : cellule interminist\u00e9rielle de crise autour de Lecornu \u00e0 19H00 (Matignon)",
+   "ref": "news-afp-20261018-7eed6db8",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S7 \u2014 AFP \u2014 17 octobre : Braun-Pivet va proposer une commission d\u2019enqu\u00eate parlementaire sur les violences et la strat\u00e9gie de maintien de l\u2019ordre",
+   "ref": "news-afp-20261018-b75a3a14",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S8 \u2014 AFP \u2014 Saint-\u00c9tienne : un manifestant a eu la main arrach\u00e9e par une grenade des forces de l\u2019ordre (IGPN)",
+   "ref": "news-afp-20261017-23f4b613",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S9 \u2014 AFP \u2014 Manifestations : 550.000 manifestants en France dont 110.000 \u00e0 Paris, annonce Nu\u00f1ez",
+   "ref": "news-afp-20261017-acbf614f",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S10 \u2014 AFP \u2014 Mobilisation contre la \u00ab vie ch\u00e8re \u00bb : 800.000 participants selon les organisateurs",
+   "ref": "news-afp-20261017-c232a064",
+   "fiabilite": 4,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S11 \u2014 AFP \u2014 Saccages et pillages \u00e0 grande \u00e9chelle dans les villes de France",
+   "ref": "news-afp-20261017-0049170e",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S12 \u2014 AFP \u2014 France : plus de 30.000 pilleurs d\u00e9nombr\u00e9s samedi \u00e0 Marseille, selon les autorit\u00e9s",
+   "ref": "news-afp-20261018-a618d7fc",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S13 \u2014 AFP \u2014 Violences : situation \u00ab dramatique \u00bb sur le front du maintien de l\u2019ordre et au-del\u00e0",
+   "ref": "news-afp-20261018-ca238a66",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S14 \u2014 AFP \u2014 Manifestations : la gendarmerie met en garde contre une vid\u00e9o attribuant une insulte \u00e0 un gendarme",
+   "ref": "news-afp-20261018-81c0299b",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S15 \u2014 AFP \u2014 Les manifestations en France font tache d\u2019huile en Belgique",
+   "ref": "news-afp-20261017-3b224380",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S16 \u2014 AFP \u2014 FMI et Banque mondiale referment leurs assembl\u00e9es entre \u00ab optimisme \u00bb et \u00ab inqui\u00e9tude \u00bb",
+   "ref": "news-afp-20261017-c52cdfe7",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S17 \u2014 AFP \u2014 L\u2019IA, \u00e0 la fois un puissant moteur et un danger pour l\u2019\u00e9conomie mondiale",
+   "ref": "news-afp-20261017-53387379",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S18 \u2014 AFP \u2014 \u00ab Encore plus pauvres \u00bb : manifestants et ONG rejettent les appels du FMI \u00e0 l\u2019aust\u00e9rit\u00e9",
+   "ref": "news-afp-20261017-a6e5a963",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S19 \u2014 AFP \u2014 La dette risque d\u2019\u00e9touffer la France, pr\u00e9vient la pr\u00e9sidente de la Cour des comptes (La Tribune Dimanche)",
+   "ref": "news-afp-20261018-850546b7",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S20 \u2014 AFP \u2014 Budget de la S\u00e9cu : les villes thermales craignent une cure d\u2019aust\u00e9rit\u00e9",
+   "ref": "news-afp-20261018-9f6aa713",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S21 \u2014 AFP \u2014 Commer\u00e7ants, banques et assureurs r\u00e9unis lundi \u00e0 Bercy",
+   "ref": "news-afp-20261018-b0cece81",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S22 \u2014 AFP \u2014 Le Japon \u00e0 l\u2019assaut des lunes de Mars, avec une pr\u00e9sence fran\u00e7aise \u00e0 bord",
+   "ref": "news-afp-20261018-c44daccf",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S23 \u2014 AFP \u2014 Mirs et Idefix, deux contributions made in France pour explorer les lunes de Mars",
+   "ref": "news-afp-20261018-3eae775b",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S24 \u2014 AP \u2014 Japan to launch spacecraft on a mission to get samples from a Martian moon",
+   "ref": "news-ap-20261018-262e91b5",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S25 \u2014 AFP \u2014 Japan to launch historic round-trip mission to Mars moon",
+   "ref": "news-afp-20261018-51f99452",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S26 \u2014 AFP \u2014 Un \u00ab choc \u00bb : face \u00e0 l\u2019IA, la complexe \u00e9quation des math\u00e9maticiens",
+   "ref": "news-afp-20261018-0efd58c7",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S27 \u2014 AFP \u2014 Anthropic propose une loi sur l\u2019IA qui confierait \u00e0 un juge le dernier mot sur tout blocage",
+   "ref": "news-afp-20261017-af0488bb",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S28 \u2014 AFP \u2014 IA de pointe : le cofondateur d\u2019Anthropic appelle \u00e0 nouveau \u00e0 une r\u00e9gulation renforc\u00e9e",
+   "ref": "news-afp-20261016-1842e946",
+   "fiabilite": 5,
+   "maj": "16/10/2026"
+  },
+  {
+   "label": "S29 \u2014 AFP \u2014 La Cor\u00e9e du Nord dit avoir test\u00e9 une torpille assist\u00e9e par l\u2019IA",
+   "ref": "news-afp-20261016-bbaed039",
+   "fiabilite": 4,
+   "maj": "16/10/2026"
+  },
+  {
+   "label": "S30 \u2014 AFP \u2014 Exosens aff\u00fbte sa vue face aux drones et vise les micror\u00e9acteurs nucl\u00e9aires am\u00e9ricains",
+   "ref": "news-afp-20261018-a803b2ad",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S31 \u2014 RFI \u2014 Prix Caine : un auteur zimbabw\u00e9en prim\u00e9 et \u00e0 son tour accus\u00e9 d\u2019avoir utilis\u00e9 l\u2019intelligence artificielle",
+   "ref": "https://www.rfi.fr/fr/afrique/20261018-prix-caine-un-auteur-zimbabw%C3%A9en-prim%C3%A9-et-%C3%A0-son-tour-accus%C3%A9-d-avoir-utilis%C3%A9-l-intelligence-artificielle",
+   "fiabilite": 4,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S32 \u2014 AFP \u2014 Musk virevolte \u00e0 nouveau, sans effacer les traces de son virage politique",
+   "ref": "news-afp-20261017-c2c7231a",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S33 \u2014 AFP \u2014 Trump exempte la Russie de nouvelles sanctions adopt\u00e9es par le Congr\u00e8s",
+   "ref": "news-afp-20261017-5261d693",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S34 \u2014 AFP \u2014 Trump exempte la Russie de nouvelles sanctions, en pleine crise avec Kiev",
+   "ref": "news-afp-20261017-30ce8df4",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S35 \u2014 AFP \u2014 L\u2019exemption de sanctions contre la Russie vise \u00e0 \u00ab analyser \u00bb leurs r\u00e9percussions \u00e9conomiques, affirme Rubio",
+   "ref": "news-afp-20261017-490f2621",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S36 \u2014 AFP \u2014 Russie-Ukraine : nouvelles frappes crois\u00e9es sur le syst\u00e8me \u00e9nerg\u00e9tique",
+   "ref": "news-afp-20261018-0e15dba8",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S37 \u2014 AFP \u2014 L\u2019exemption de sanctions contre la Russie par Trump est un moment \u00ab historique \u00bb (conseiller de Poutine)",
+   "ref": "news-afp-20261017-60c2a010",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S38 \u2014 AFP \u2014 Ta\u00efwan dit avoir repouss\u00e9 16 navires chinois impliqu\u00e9s dans des op\u00e9rations de \u00ab harc\u00e8lement maritime \u00bb",
+   "ref": "news-afp-20261018-d7d88de7",
+   "fiabilite": 4,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S39 \u2014 AFP \u2014 En Chine, l\u2019essor du luxe d\u2019occasion bouscule les marques occidentales",
+   "ref": "news-afp-20261018-0107c5c9",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S40 \u2014 AFP \u2014 Washington passe \u00e0 l\u2019offensive en Asie centrale",
+   "ref": "news-afp-20261017-41de76d1",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S41 \u2014 AFP \u2014 \u00ab Flotte fant\u00f4me \u00bb \u00e0 La R\u00e9union : la garde \u00e0 vue du capitaine chinois lev\u00e9e",
+   "ref": "news-afp-20261016-1c508e43",
+   "fiabilite": 5,
+   "maj": "16/10/2026"
+  },
+  {
+   "label": "S42 \u2014 AFP \u2014 Les d\u00e9licates tractations commerciales Inde-\u00c9tats-Unis, toile de fond de la visite de Rubio",
+   "ref": "news-afp-20261018-046a35f0",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S43 \u2014 AFP \u2014 Mobilisation aux \u00c9tats-Unis pour transformer la contestation anti-Trump en vote",
+   "ref": "news-afp-20261016-3b97b776",
+   "fiabilite": 5,
+   "maj": "16/10/2026"
+  },
+  {
+   "label": "S44 \u2014 AFP \u2014 Tuerie dans une \u00e9cole aux \u00c9tats-Unis : l\u2019auteur \u00e9tait un ancien \u00e9l\u00e8ve",
+   "ref": "news-afp-20261016-e46b6571",
+   "fiabilite": 5,
+   "maj": "16/10/2026"
+  },
+  {
+   "label": "S45 \u2014 AFP \u2014 Photographe am\u00e9ricaine agress\u00e9e : l\u2019ambassadeur des \u00c9tats-Unis appelle Isra\u00ebl \u00e0 poursuivre les colons impliqu\u00e9s",
+   "ref": "news-afp-20261017-0c12bee8",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S46 \u2014 AFP \u2014 Cisjordanie : des colons attaquent un convoi diplomatique europ\u00e9en et frappent un maire fran\u00e7ais",
+   "ref": "news-afp-20261017-3f9f38de",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S47 \u2014 AFP \u2014 Cisjordanie : Isra\u00ebl doit \u00ab de toute urgence faire cesser les violences criminelles \u00bb des colons (chef de la diplomatie fran\u00e7aise)",
+   "ref": "news-afp-20261017-60773849",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S48 \u2014 AFP \u2014 Trump apporte son \u00ab soutien plein et entier \u00bb \u00e0 Netanyahu avant les \u00e9lections en Isra\u00ebl",
+   "ref": "news-afp-20261018-06a03f6b",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S49 \u2014 AFP \u2014 Isra\u00ebl : pour la minorit\u00e9 arabe, des \u00e9lections jug\u00e9es existentielles",
+   "ref": "news-afp-20261017-665e5063",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S50 \u2014 AFP \u2014 Netanyahu remercie Trump pour son \u00ab immense soutien \u00bb en vue des l\u00e9gislatives",
+   "ref": "news-afp-20261018-7625dd7e",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S51 \u2014 AFP \u2014 Un tanker touch\u00e9 vendredi au large de l\u2019Arabie saoudite dans le Golfe (agence maritime)",
+   "ref": "news-afp-20261017-ebe5396a",
+   "fiabilite": 4,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S52 \u2014 AFP \u2014 Br\u00e9sil : premier d\u00e9bat entre Lula et Bolsonaro, une semaine avant le second tour",
+   "ref": "news-afp-20261018-0360ccd0",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S53 \u2014 AFP \u2014 Albanie : sixi\u00e8me jour de manifestations \u00e0 Tirana, Rama refuse de d\u00e9missionner",
+   "ref": "news-afp-20261018-0d8c5ac2",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S54 \u2014 AFP \u2014 Venezuela : la prix Nobel Machado confirm\u00e9e comme cheffe de l\u2019opposition",
+   "ref": "news-afp-20261018-3b09b55f",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S55 \u2014 AFP \u2014 Le pape s\u2019adresse \u00e0 la foule au Vatican pour la premi\u00e8re fois depuis son op\u00e9ration",
+   "ref": "news-afp-20261018-0587c263",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S56 \u2014 AFP \u2014 Le pape remercie les fid\u00e8les pour leur soutien, annonce qu\u2019il reprendra \u00ab progressivement \u00bb ses activit\u00e9s",
+   "ref": "news-afp-20261018-b72e4208",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S57 \u2014 AFP \u2014 Premier recours climatique contre l\u2019\u00c9tat italien : un tribunal doit se prononcer",
+   "ref": "news-afp-20261017-d9020804",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S58 \u2014 AFP \u2014 Inondations au N\u00e9pal : un \u00ab moment d\u00e9cisif \u00bb pour la lutte contre le changement climatique, selon l\u2019ONU",
+   "ref": "news-afp-20261017-c55116ee",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S59 \u2014 AFP \u2014 Indon\u00e9sie : des dizaines d\u2019orang-outans sauv\u00e9s des incendies",
+   "ref": "news-afp-20261018-f497d572",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S60 \u2014 AFP \u2014 Au Verdon, la m\u00e9gaferme terrestre \u00e0 saumons c\u2019est \u00ab NON \u00bb pour une foule d\u2019opposants",
+   "ref": "news-afp-20261018-c683bced",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S61 \u2014 AFP \u2014 Guerre en Ukraine : le pape a demand\u00e9 \u00e0 Poutine un cessez-le-feu \u00e0 Olechky (Vatican)",
+   "ref": "news-afp-20261016-bdf8651d",
+   "fiabilite": 5,
+   "maj": "16/10/2026"
+  },
+  {
+   "label": "S62 \u2014 AFP \u2014 \u00c9gypte : le Parlement reporte le vote sur le soutien militaire \u00e0 l\u2019Arabie saoudite",
+   "ref": "news-afp-20261018-524bdffd",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S63 \u2014 AFP \u2014 L\u2019eurod\u00e9put\u00e9e Rima Hassan jug\u00e9e \u00e0 Paris pour apologie du terrorisme",
+   "ref": "news-afp-20261017-d28b7d15",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S64 \u2014 AFP \u2014 \u00ab Si on ne se mobilise pas, le gouvernement ne bougera pas \u00bb, dit Roussel",
+   "ref": "news-afp-20261017-3dd453e5",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S65 \u2014 AFP \u2014 L1 : Marseille \u00ab a su se remettre dans le sens du jeu \u00bb, se r\u00e9jouit Genesio",
+   "ref": "news-afp-20261018-91dc52e3",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S66 \u2014 AFP \u2014 Ligue 1 : Mbapp\u00e9 et Giroud sauvent Lille du pi\u00e8ge brestois",
+   "ref": "news-afp-20261017-82bd0f58",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S67 \u2014 AFP \u2014 Champions Cup : le Stade toulousain miracul\u00e9 contre Exeter",
+   "ref": "news-afp-20261018-79c2f3e2",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S68 \u2014 AFP \u2014 Champions Cup : le Racing 92 battu sans bonus au Munster",
+   "ref": "news-afp-20261017-7a1b4f7a",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S69 \u2014 AFP \u2014 Mondiaux de cyclisme sur piste : Pauline Grabosch remporte le kilom\u00e8tre",
+   "ref": "news-afp-20261017-82e17b0f",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S70 \u2014 AFP \u2014 Mondiaux de cyclisme sur piste : la France quitte Shanghai avec trois m\u00e9dailles",
+   "ref": "news-afp-20261018-329cb986",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S71 \u2014 AFP \u2014 Mondiaux de cyclisme sur piste : Alina Lysenko en or au keirin",
+   "ref": "news-afp-20261018-72be3f21",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S72 \u2014 AP \u2014 ALCS Game 4 postponed by rain; Rays and Guardians to resume series Saturday",
+   "ref": "news-ap-20261017-8004bead",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S73 \u2014 AFP \u2014 Canada : \u00ab des morts \u00bb apr\u00e8s un incendie sur une base militaire, un m\u00e9decin \u00e9voque \u00ab un d\u00e9sastre \u00bb",
+   "ref": "news-afp-20261018-830a217d",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S74 \u2014 AFP \u2014 C\u00e9line Dion cl\u00f4t en apoth\u00e9ose cinq semaines de concerts pr\u00e8s de Paris",
+   "ref": "news-afp-20261016-f056d0d6",
+   "fiabilite": 5,
+   "maj": "16/10/2026"
+  },
+  {
+   "label": "S75 \u2014 AFP \u2014 Il y a 200 ans, l\u2019\u00e9pop\u00e9e de la premi\u00e8re girafe en France",
+   "ref": "news-afp-20261018-53931d62",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S76 \u2014 AFP \u2014 \u00ab La Gradiva \u00bb, un teen-movie singulier \u00e0 r\u00e9sonance politique",
+   "ref": "news-afp-20261017-3b76e2f5",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S77 \u2014 AFP \u2014 Avec \u00ab L\u2019\u00cele des Souvenirs \u00bb, le studio DreamWorks met \u00e0 l\u2019honneur la culture philippine",
+   "ref": "news-afp-20261018-390eae81",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S78 \u2014 AFP \u2014 Musk d\u00e9voile sa Tesla \u00ab volante \u00bb, sans succ\u00e8s garanti",
+   "ref": "news-afp-20261016-1f7f7061",
+   "fiabilite": 5,
+   "maj": "16/10/2026"
+  },
+  {
+   "label": "S79 \u2014 AFP \u2014 Actualit\u00e9s du vendredi 16 octobre 2026 (troisi\u00e8me cas d\u2019Ebola au Kenya)",
+   "ref": "news-afp-20261016-f3d921a6",
+   "fiabilite": 5,
+   "maj": "16/10/2026"
+  },
+  {
+   "label": "S80 \u2014 AFP \u2014 Niger : la p\u00e9nurie d\u2019essence s\u2019\u00e9tend \u00e0 la capitale Niamey",
+   "ref": "news-afp-20261018-5f8b2555",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S81 \u2014 AFP \u2014 Boxe : Brandon Figueroa perd son titre des plume \u00e0 la pes\u00e9e",
+   "ref": "news-afp-20261017-57dc8b07",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S82 \u2014 AFP \u2014 WTA 1000 de Wuhan : les r\u00e9sultats de samedi",
+   "ref": "news-afp-20261017-df5d5954",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S83 \u2014 AFP \u2014 Le pape L\u00e9on XIV sort de l\u2019h\u00f4pital samedi",
+   "ref": "news-afp-20261017-0e3cbd07",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S84 \u2014 L\u00e9gifrance \u2014 Code p\u00e9nal (texte consolid\u00e9 : articles 321-1 \u00e0 321-3, confiscation)",
+   "ref": "https://www.legifrance.gouv.fr/codes/id/LEGITEXT000006070719",
+   "fiabilite": 5,
+   "maj": "18/10/2026"
+  },
+  {
+   "label": "S85 \u2014 Radio-Canada \u2014 L\u2019IA, \u00e0 la fois un puissant moteur et un danger pour l\u2019\u00e9conomie mondiale",
+   "ref": "https://ici.radio-canada.ca/nouvelle/2293428/ia-puissant-moteur-danger-pour-economie-mondiale",
+   "fiabilite": 4,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S86 \u2014 DiY/H24 \u2014 \u00c9dition du samedi 17 octobre 2026 (contexte : GTA VI/Justice, Zelda, Cern-Flare, convergence des col\u00e8res)",
+   "ref": "https://diyeah24.fr/editions/2026-10-17.html",
+   "fiabilite": 4,
+   "maj": "17/10/2026"
+  },
+  {
+   "label": "S88 \u2014 AFP \u2014 Actualit\u00e9s du samedi 17 octobre 2026 (Moscou \u00ab moment historique \u00bb, Ariane 6, GTA VI/Justice via \u00e9dition du 17)",
+   "ref": "news-afp-20261017-33aa7335",
+   "fiabilite": 5,
+   "maj": "17/10/2026"
+  }
+ ]
+}
