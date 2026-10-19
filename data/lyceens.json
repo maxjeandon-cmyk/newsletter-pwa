@@ -1,5 +1,5 @@
 {
-  "maj": "17/10/2026 23:34",
+  "maj": "19/10/2026 17:49",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -20,6 +20,19 @@
   ],
   "version_gouvernement": [
     {
+      "id": "amvffjtit-1ium",
+      "date": "19/10/2026",
+      "titre": "Parcoursup 2026 : plus de neuf lycéens sur dix ont reçu au moins une proposition d’admission",
+      "texte": "Alors que des lycéens manifestent depuis des semaines leur mécontentement contre Parcoursup, le gouvernement partage ce lundi 19 octobre des chiffres liés à la plateforme. 91,5 % des lycéens ayant fo…",
+      "source": "Europe 1 / La Croix",
+      "sources": [
+        "Europe 1",
+        "La Croix"
+      ],
+      "url": "https://www.la-croix.com/societe/parcoursup-2026-plus-de-neuf-lyceens-sur-dix-ont-recu-au-moins-une-proposition-d-admission-20261019",
+      "verifie": true
+    },
+    {
       "id": "amvc7d4ug-chqi",
       "date": "17/10/2026",
       "titre": "Mouvement lycéen : « Combien de mains arrachées avant que le pouvoir en place agisse pour notre futur à tous ? », décla…",
@@ -37,30 +50,14 @@
       "date": "17/10/2026",
       "titre": "\"Macron, pas du tout bebew\" : quand la culture Internet s'invite dans les manifestations lycéennes",
       "texte": "Depuis le début du mouvement lycéen, les photos de pancartes sont partout sur les réseaux sociaux. Les slogans de la \"Gen Z\" sont humoristiques, sarcastiques, percutants et remplis de références comm…",
-      "source": "franceinfo / France Inter / Ouest-France",
+      "source": "franceinfo / France Inter / Ouest-France / Libération",
       "sources": [
         "franceinfo",
         "France Inter",
-        "Ouest-France"
+        "Ouest-France",
+        "Libération"
       ],
       "url": "https://www.radiofrance.fr/franceinfo/podcasts/l-oeil-de-julie/l-oeil-de-julie-du-samedi-17-octobre-2026-2675702",
-      "verifie": true
-    },
-    {
-      "id": "amv9cmk07-ccs9",
-      "date": "15/10/2026",
-      "titre": "Colère des lycéens : Édouard Geffray à Bordeaux avant une nouvelle réunion avec les organisations lycéennes",
-      "texte": "Après plusieurs semaines de mobilisation, des établissements sont encore bloqués jeudi avant la troisième réunion, dans l’après-midi, entre les organisations lycéennes et le ministre de l’Éducation n…",
-      "source": "Europe 1 / Le Figaro / BFMTV / Libération / 20 minutes / France Inter",
-      "sources": [
-        "Europe 1",
-        "Le Figaro",
-        "BFMTV",
-        "Libération",
-        "20 minutes",
-        "France Inter"
-      ],
-      "url": "https://www.lefigaro.fr/actualite-france/en-direct-colere-des-lyceens-nouvelle-reunion-ce-jeudi-entre-les-organisations-lyceennes-et-les-ministres-de-l-education-nationale-et-de-l-enseignement-superieur-20261015",
       "verifie": true
     },
     {
