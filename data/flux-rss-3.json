@@ -989,6 +989,16 @@
       "flux": [
         "https://www.lanouvellerepublique.fr/rss.xml"
       ]
+    },
+    {
+      "id": "konbini",
+      "nom": "Konbini",
+      "emoji": "🍿",
+      "categorie": "Culture & idées 🎭",
+      "ligne": "pop culture et divertissement, tendances",
+      "flux": [
+        "https://www.konbini.com/feed/"
+      ]
     }
   ]
 }
