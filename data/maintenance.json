@@ -1,10 +1,10 @@
 {
-  "date": "18/10/2026",
-  "heure": "21:35",
+  "date": "19/10/2026",
+  "heure": "03:40",
   "relevesOng": {
-    "rafraichis": 0,
+    "rafraichis": 10,
     "echecs": 0,
-    "publie": false
+    "publie": true
   },
   "lyceens": {
     "nouvelles": 0,
@@ -23,18 +23,23 @@
   "verifs": [
     {
       "nom": "validate-latest.js",
-      "ok": true,
-      "detail": "\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 15/10/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n\nToutes les éditions récentes sont conformes. 🌱"
+      "ok": false,
+      "detail": "  ✅ boutons avec data-resume — trouvé(s)=15\n  ✅ <script> de partage équilibré\n\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 17/10/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n2 édition(s) non conforme(s).\n"
     },
     {
       "nom": "check-site.js",
       "ok": true,
-      "detail": "=== check-site ===\nℹ️  latest.json : 21 édition(s), plus récente 2026-10-17\nℹ️  édition 2026-10-17 : JSON OK, HTML 81927 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
+      "detail": "=== check-site ===\nℹ️  latest.json : 23 édition(s), plus récente 2026-10-19\nℹ️  édition 2026-10-19 : JSON OK, HTML 86190 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
     },
     {
       "nom": "sonde notifications",
       "ok": true,
       "detail": "7 abonnement(s) push, 1 utilisateur(s) avec toggles actifs"
+    },
+    {
+      "nom": "ong-releve.js",
+      "ok": true,
+      "detail": "10 rafraîchi(s), 0 échec(s) — relevé précédent conservé pour les sites muets"
     },
     {
       "nom": "lyceens.js",
@@ -47,6 +52,8 @@
       "detail": "0 info(s) des dernières heures, 0 paragraphe(s) ajouté(s)"
     }
   ],
-  "problemes": [],
-  "intervention": "Aucune intervention nécessaire : éditions et site publics conformes."
+  "problemes": [
+    "validate-latest.js"
+  ],
+  "intervention": "Anomalies détectées — aucune correction automatique appliquée (éditions/ figé) : correction manuelle requise."
 }
