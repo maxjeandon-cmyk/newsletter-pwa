@@ -1,17 +1,17 @@
 {
   "date": "19/10/2026",
-  "heure": "15:49",
+  "heure": "21:38",
   "relevesOng": {
     "rafraichis": 0,
     "echecs": 0,
     "publie": false
   },
   "lyceens": {
-    "nouvelles": 1,
+    "nouvelles": 0,
     "fusionnees": 2,
-    "moissonnes": 11,
+    "moissonnes": 14,
     "total": 21,
-    "publie": true
+    "publie": false
   },
   "etudiants": {
     "items": 0,
@@ -34,12 +34,12 @@
     {
       "nom": "sonde notifications",
       "ok": true,
-      "detail": "7 abonnement(s) push, 1 utilisateur(s) avec toggles actifs"
+      "detail": "6 abonnement(s) push, 1 utilisateur(s) avec toggles actifs"
     },
     {
       "nom": "lyceens.js",
       "ok": true,
-      "detail": "1 nouvelle(s) info, 2 fusionnée(s) sur 11 moissonnée(s) — 21 au total"
+      "detail": "0 nouvelle(s) info, 2 fusionnée(s) sur 14 moissonnée(s) — 21 au total"
     },
     {
       "nom": "etudiants.js",
