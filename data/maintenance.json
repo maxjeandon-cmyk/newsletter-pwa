@@ -1,20 +1,20 @@
 {
   "date": "20/10/2026",
-  "heure": "15:40",
+  "heure": "21:39",
   "relevesOng": {
     "rafraichis": 0,
     "echecs": 0,
     "publie": false
   },
   "lyceens": {
-    "nouvelles": 1,
-    "fusionnees": 1,
-    "moissonnes": 10,
+    "nouvelles": 0,
+    "fusionnees": 2,
+    "moissonnes": 6,
     "total": 21,
     "publie": true
   },
   "etudiants": {
-    "items": 2,
+    "items": 4,
     "ajoutes": 1,
     "chapitre": "c29",
     "nouveauChapitre": false,
@@ -39,12 +39,12 @@
     {
       "nom": "lyceens.js",
       "ok": true,
-      "detail": "1 nouvelle(s) info, 1 fusionnée(s) sur 10 moissonnée(s) — 21 au total"
+      "detail": "0 nouvelle(s) info, 2 fusionnée(s) sur 6 moissonnée(s) — 21 au total"
     },
     {
       "nom": "etudiants.js",
       "ok": true,
-      "detail": "2 info(s) des dernières heures, 1 paragraphe(s) ajouté(s)"
+      "detail": "4 info(s) des dernières heures, 1 paragraphe(s) ajouté(s)"
     }
   ],
   "problemes": [],
