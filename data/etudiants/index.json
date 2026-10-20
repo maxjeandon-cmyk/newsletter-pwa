@@ -2,8 +2,8 @@
   "titre": "La version des lycéens — chronique de la révolte lycéenne 2026",
   "intro": "Chronique narrative du mouvement lycéen et étudiant de l'automne 2026, écrite du point de vue des élèves : de l'amorce de Créteil au dernier acte en date, le fil s'allonge d'un relevé automatique toutes les six heures, et les chapitres transverses — la voix de l'intérieur, les revendications mot à mot, la répression, la machine gouvernementale, la longue durée, le lexique, les figures — viennent fermer le fil. Sources : la presse au plus près du mouvement — Le Média, Blast, L'Humanité, Mediapart — et la voix des réseaux en direct : les fils Reddit (r/etudiants, r/enseignants, r/france), les serveurs Discord du mouvement ; les fils TikTok, Snapchat et Instagram restent en vitrine, repris dès qu'un post ou un commentaire y est cité ; Wikipédia en colonne vertébrale factuelle.",
   "note": "Méthode : chaque paragraphe cite ses sources. Les paragraphes marqués « auto » sont des relevés bruts ajoutés par le pipeline toutes les 6 h (faits sourcés, sans réécriture) ; la rédaction narrative approfondie est assurée lors des éditions de la newsletter. Badge ✅ (corroboré par au moins deux médias distincts) et ⚠️ (une seule source) : ces distinctions s'appliquent aux relevés automatiques.",
-  "maj": "17/10/2026",
-  "totalParagraphes": 160,
+  "maj": "20/10/2026",
+  "totalParagraphes": 162,
   "chapitres": [
     {
       "id": "c1",
@@ -82,8 +82,8 @@
       "fichier": "chapitres/10.json",
       "periode": "Chronique transverse — réseaux, voix et ressentis",
       "titre": "Chorus — la voix de l'intérieur",
-      "paragraphes": 13,
-      "octets": 18544
+      "paragraphes": 14,
+      "octets": 19189
     },
     {
       "id": "c11",
@@ -228,10 +228,18 @@
       "titre": "Faut-il supprimer Parcoursup ? — la question qui ouvre le samedi 17 octobre",
       "paragraphes": 3,
       "octets": 2640
+    },
+    {
+      "id": "c29",
+      "fichier": "chapitres/29.json",
+      "periode": "20 octobre 2026 — suivi de la journée",
+      "titre": "Le fil continue — 20 octobre 2026",
+      "paragraphes": 1,
+      "octets": 947
     }
   ],
   "releveSigs": [
-    "generat|notre|paroles|traumat#"
+    "mobilis|notre|pouvoir|reseaux#"
   ],
   "sections": [
     {
@@ -408,12 +416,20 @@
           "octets": 2640
         },
         {
+          "id": "c29",
+          "fichier": "chapitres/29.json",
+          "periode": "20 octobre 2026 — suivi de la journée",
+          "titre": "Le fil continue — 20 octobre 2026",
+          "paragraphes": 1,
+          "octets": 947
+        },
+        {
           "id": "c10",
           "fichier": "chapitres/10.json",
           "periode": "Chronique transverse — réseaux, voix et ressentis",
           "titre": "Chorus — la voix de l'intérieur",
-          "paragraphes": 13,
-          "octets": 18544
+          "paragraphes": 14,
+          "octets": 19189
         },
         {
           "id": "c11",
@@ -466,12 +482,12 @@
       ]
     }
   ],
-  "releveDate": "2026-10-17T15:35:27.448Z",
-  "releveCompteur": 36,
+  "releveDate": "2026-10-20T09:39:32.175Z",
+  "releveCompteur": 37,
   "chapitreJour": {
-    "id": "c28",
-    "fichier": "chapitres/28.json",
-    "date": "17/10/2026"
+    "id": "c29",
+    "fichier": "chapitres/29.json",
+    "date": "20/10/2026"
   },
   "discordInvites": {}
 }
