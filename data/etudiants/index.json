@@ -3,7 +3,7 @@
   "intro": "Chronique narrative du mouvement lycéen et étudiant de l'automne 2026, écrite du point de vue des élèves : de l'amorce de Créteil au dernier acte en date, le fil s'allonge d'un relevé automatique toutes les six heures, et les chapitres transverses — la voix de l'intérieur, les revendications mot à mot, la répression, la machine gouvernementale, la longue durée, le lexique, les figures — viennent fermer le fil. Sources : la presse au plus près du mouvement — Le Média, Blast, L'Humanité, Mediapart — et la voix des réseaux en direct : les fils Reddit (r/etudiants, r/enseignants, r/france), les serveurs Discord du mouvement ; les fils TikTok, Snapchat et Instagram restent en vitrine, repris dès qu'un post ou un commentaire y est cité ; Wikipédia en colonne vertébrale factuelle.",
   "note": "Méthode : chaque paragraphe cite ses sources. Les paragraphes marqués « auto » sont des relevés bruts ajoutés par le pipeline toutes les 6 h (faits sourcés, sans réécriture) ; la rédaction narrative approfondie est assurée lors des éditions de la newsletter. Badge ✅ (corroboré par au moins deux médias distincts) et ⚠️ (une seule source) : ces distinctions s'appliquent aux relevés automatiques.",
   "maj": "20/10/2026",
-  "totalParagraphes": 164,
+  "totalParagraphes": 167,
   "chapitres": [
     {
       "id": "c1",
@@ -82,8 +82,8 @@
       "fichier": "chapitres/10.json",
       "periode": "Chronique transverse — réseaux, voix et ressentis",
       "titre": "Chorus — la voix de l'intérieur",
-      "paragraphes": 15,
-      "octets": 19934
+      "paragraphes": 16,
+      "octets": 20776
     },
     {
       "id": "c11",
@@ -106,8 +106,8 @@
       "fichier": "chapitres/13.json",
       "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
       "titre": "La machine gouvernementale, vue d'en bas",
-      "paragraphes": 13,
-      "octets": 14932
+      "paragraphes": 14,
+      "octets": 15598
     },
     {
       "id": "c14",
@@ -234,13 +234,15 @@
       "fichier": "chapitres/29.json",
       "periode": "20 octobre 2026 — suivi de la journée",
       "titre": "Le fil continue — 20 octobre 2026",
-      "paragraphes": 2,
-      "octets": 2042
+      "paragraphes": 3,
+      "octets": 3695
     }
   ],
   "releveSigs": [
     "accueil|atlan|cineast|marine#",
-    "avez|droit|trouvez|vous#"
+    "besoin|enquete|partici|questio#",
+    "combien|durer|temps|vont#",
+    "gouvern|maintie|octobre|pressio#"
   ],
   "sections": [
     {
@@ -421,16 +423,16 @@
           "fichier": "chapitres/29.json",
           "periode": "20 octobre 2026 — suivi de la journée",
           "titre": "Le fil continue — 20 octobre 2026",
-          "paragraphes": 2,
-          "octets": 2042
+          "paragraphes": 3,
+          "octets": 3695
         },
         {
           "id": "c10",
           "fichier": "chapitres/10.json",
           "periode": "Chronique transverse — réseaux, voix et ressentis",
           "titre": "Chorus — la voix de l'intérieur",
-          "paragraphes": 15,
-          "octets": 19934
+          "paragraphes": 16,
+          "octets": 20776
         },
         {
           "id": "c11",
@@ -453,8 +455,8 @@
           "fichier": "chapitres/13.json",
           "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
           "titre": "La machine gouvernementale, vue d'en bas",
-          "paragraphes": 13,
-          "octets": 14932
+          "paragraphes": 14,
+          "octets": 15598
         },
         {
           "id": "c14",
@@ -483,8 +485,8 @@
       ]
     }
   ],
-  "releveDate": "2026-10-20T15:40:44.980Z",
-  "releveCompteur": 38,
+  "releveDate": "2026-10-20T21:40:01.370Z",
+  "releveCompteur": 39,
   "chapitreJour": {
     "id": "c29",
     "fichier": "chapitres/29.json",
