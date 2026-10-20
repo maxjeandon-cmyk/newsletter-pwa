@@ -1,5 +1,5 @@
 {
-  "maj": "19/10/2026 17:49",
+  "maj": "20/10/2026 17:40",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -19,6 +19,19 @@
     "Mercredi 7 octobre (lendemain de l'acte III) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
   ],
   "version_gouvernement": [
+    {
+      "id": "amvguo2xb-d9ns",
+      "date": "20/10/2026",
+      "titre": "Violences du 17 octobre : Sébastien Lecornu reconnaît les failles du renseignement et promet « un dispositif massif » s…",
+      "texte": "Devant les députés ce mercredi, le Premier ministre a reconnu un manque d'anticipation de la part des services de renseignement sur l’ampleur des manifestations du 17 octobre. Il a, en revanche, réfu…",
+      "source": "Public Sénat / L'Humanité",
+      "sources": [
+        "Public Sénat",
+        "L'Humanité"
+      ],
+      "url": "https://www.publicsenat.fr/actualites/politique/violences-du-17-octobre-sebastien-lecornu-reconnait-les-failles-du-renseignement-et-promet-un-dispositif-massif-samedi-prochain",
+      "verifie": true
+    },
     {
       "id": "amvffjtit-1ium",
       "date": "19/10/2026",
@@ -43,21 +56,6 @@
         "Public Sénat"
       ],
       "url": "https://www.publicsenat.fr/actualites/education/mouvement-lyceen-combien-de-mains-arrachees-avant-que-le-pouvoir-en-place-agisse-pour-notre-futur-a-tous-declarent-des-etudiants-devant-hec-bloquee-pour-la-premiere",
-      "verifie": true
-    },
-    {
-      "id": "amvck5pcm-fvxw",
-      "date": "17/10/2026",
-      "titre": "\"Macron, pas du tout bebew\" : quand la culture Internet s'invite dans les manifestations lycéennes",
-      "texte": "Depuis le début du mouvement lycéen, les photos de pancartes sont partout sur les réseaux sociaux. Les slogans de la \"Gen Z\" sont humoristiques, sarcastiques, percutants et remplis de références comm…",
-      "source": "franceinfo / France Inter / Ouest-France / Libération",
-      "sources": [
-        "franceinfo",
-        "France Inter",
-        "Ouest-France",
-        "Libération"
-      ],
-      "url": "https://www.radiofrance.fr/franceinfo/podcasts/l-oeil-de-julie/l-oeil-de-julie-du-samedi-17-octobre-2026-2675702",
       "verifie": true
     },
     {
