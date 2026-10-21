@@ -12,12 +12,12 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.actioncontrelafaim.org/actualites/",
       "derniere": {
-        "releve": "20/10/2026",
+        "releve": "21/10/2026",
         "points": [
+          "Cameroun et Tchad : quand le dérèglement climatique fragilise des millions de vies",
           "Améliorer l’accès aux soins de santé au Baloutchistan",
           "Pêche artisanale : un levier pour la sécurité alimentaire et la résilience des ménages du sud-ouest de Madagascar",
-          "Action contre la Faim contribue à transformer la planification sanitaire à Madagascar",
-          "Des déchets aux zones humides : des communautés restaurent leur environnement à l’aide de solutions innovantes"
+          "Action contre la Faim contribue à transformer la planification sanitaire à Madagascar"
         ]
       }
     },
@@ -32,7 +32,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.greenpeace.fr/actualites/",
       "derniere": {
-        "releve": "20/10/2026",
+        "releve": "21/10/2026",
         "points": [
           "Quand alerter peut coûter cher",
           "Pesticides à vie ? Non merci. Mobilisons-nous contre l’Omnibus pesticides",
@@ -52,12 +52,12 @@
       "lien_autre": "https://www.croix-rouge.fr/actualite",
       "libelle_autre": "Actualité nationale",
       "derniere": {
-        "releve": "20/10/2026",
+        "releve": "21/10/2026",
         "points": [
-          "Le 13 octobre, faisons de la résilience un réflexe citoyen",
-          "Au sud du Liban, “la Croix-Rouge est la seule organisation à pouvoir intervenir”",
-          "Comment se préparer à une crue majeure en Ile-de-France ?",
-          "La relève des savoirs : former les infirmières de Saint-Etienne à Naplouse"
+          "Devenir sauveteur secouriste du travail Savoir intervenir face à une situation d'accident du travail et porter les premiers secours.",
+          "Initiation à la santé mentale Comprendre les bases de la santé mentale, déconstruire les idées reçues et savoir en prendre soin.",
+          "Etablissements de santé Expertise, qualité des soins et innovation.",
+          "Soins infirmiers à domicile Nos équipes peuvent intervenir chez vous, sur prescription du médecin ou d’un hôpital."
         ]
       }
     },
@@ -71,12 +71,12 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.msf.fr/actualites",
       "derniere": {
-        "releve": "20/10/2026",
+        "releve": "21/10/2026",
         "points": [
+          "Violences dans le centre du Mali : « nous avons fui en pirogue au milieu de la…",
           "Cisjordanie : un membre de MSF gravement blessé par des colons israéliens",
-          "RDC : les enfants paient un lourd tribut face à l’épidémie d’Ebola",
-          "Syrie : après 14 ans de guerre, des milliers de personnes sont encore privées d…",
-          "Nord-Kivu : un nouveau foyer d'Ebola à Kayna, MSF déploie une équipe mobile"
+          "Honduras : Comment MSF facilite l’accès aux soins des personnes LGBTQIA+ et les…",
+          "RDC : les enfants paient un lourd tribut face à l’épidémie d’Ebola"
         ]
       }
     },
@@ -90,7 +90,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://seashepherd.fr/actualites",
       "derniere": {
-        "releve": "20/10/2026",
+        "releve": "21/10/2026",
         "points": [
           "Krill en Antarctique",
           "Dauphins dans le golfe de Gascogne : malgré sa condamnation, l’état persiste avec une fermeture de la pêche insuffisante",
@@ -109,7 +109,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.wwf.fr/s-informer/nos-actualites",
       "derniere": {
-        "releve": "20/10/2026",
+        "releve": "21/10/2026",
         "points": [
           "Le WWF France appelle à protéger et restaurer d'urgence les tourbières",
           "Le WWF France lance son premier talk-show",
@@ -129,7 +129,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.amnesty.fr/actualites/",
       "derniere": {
-        "releve": "20/10/2026",
+        "releve": "21/10/2026",
         "points": [
           "Des journalistes agressés par des soldats israéliens en Cisjordanie occupée reçoivent le Prix Amnesty International à Bayeux",
           "Être militant contre la peine de mort sous Trump : “C’est une bataille qui va se jouer État par État”",
@@ -148,7 +148,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.oxfamfrance.org/communiques-de-presse/",
       "derniere": {
-        "releve": "20/10/2026",
+        "releve": "21/10/2026",
         "points": [
           "L’urgence d’une loi intégrale contre les violences sexuelles, soutenue par Oxfam",
           "Budget 2027 : un Projet de Loi Finance catastrophique",
@@ -167,7 +167,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.handicap-international.fr/fr/actualites/index",
       "derniere": {
-        "releve": "20/10/2026",
+        "releve": "21/10/2026",
         "points": [
           "Bénin : Souleyman",
           "Madagascar : Odile",
@@ -186,12 +186,12 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.unicef.fr/actualites/",
       "derniere": {
-        "releve": "20/10/2026",
+        "releve": "21/10/2026",
         "points": [
+          "Soudan : au moins 12 enfants tués au Kordofan-Occidental et à Khartoum",
+          "Yémen : l’intensification des combats menace l’accès à l’eau pour plus de 1,6 million d’enfants",
           "Séisme meurtrier au Venezuela 19 octobre 2026",
-          "En France, plus d’un enfant sur cinq vit dans la pauvreté : l’UNICEF France appelle à un sursaut politique",
-          "À Gaza, les enfants luttent chaque jour pour survivre",
-          "Actualités Présidentielles 2027 : placer l’enfance au cœur des débats 15 octobre 2026"
+          "En France, plus d’un enfant sur cinq vit dans la pauvreté : l’UNICEF France appelle à un sursaut politique"
         ]
       }
     }
