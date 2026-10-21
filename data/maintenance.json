@@ -1,6 +1,6 @@
 {
   "date": "21/10/2026",
-  "heure": "09:40",
+  "heure": "15:42",
   "relevesOng": {
     "rafraichis": 0,
     "echecs": 0,
@@ -9,9 +9,9 @@
   "lyceens": {
     "nouvelles": 0,
     "fusionnees": 2,
-    "moissonnes": 8,
+    "moissonnes": 9,
     "total": 21,
-    "publie": true
+    "publie": false
   },
   "etudiants": {
     "items": 0,
@@ -39,7 +39,7 @@
     {
       "nom": "lyceens.js",
       "ok": true,
-      "detail": "0 nouvelle(s) info, 2 fusionnée(s) sur 8 moissonnée(s) — 21 au total"
+      "detail": "0 nouvelle(s) info, 2 fusionnée(s) sur 9 moissonnée(s) — 21 au total"
     },
     {
       "nom": "etudiants.js",
