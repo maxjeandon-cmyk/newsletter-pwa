@@ -1,5 +1,5 @@
 {
-  "maj": "21/10/2026 05:39",
+  "maj": "21/10/2026 11:40",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -24,11 +24,12 @@
       "date": "20/10/2026",
       "titre": "Violences du 17 octobre : Sébastien Lecornu reconnaît les failles du renseignement et promet « un dispositif massif » s…",
       "texte": "Devant les députés ce mercredi, le Premier ministre a reconnu un manque d'anticipation de la part des services de renseignement sur l’ampleur des manifestations du 17 octobre. Il a, en revanche, réfu…",
-      "source": "Public Sénat / L'Humanité / 20 minutes",
+      "source": "Public Sénat / L'Humanité / 20 minutes / Libération",
       "sources": [
         "Public Sénat",
         "L'Humanité",
-        "20 minutes"
+        "20 minutes",
+        "Libération"
       ],
       "url": "https://www.publicsenat.fr/actualites/politique/violences-du-17-octobre-sebastien-lecornu-reconnait-les-failles-du-renseignement-et-promet-un-dispositif-massif-samedi-prochain",
       "verifie": true
