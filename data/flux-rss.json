@@ -25,6 +25,16 @@
       "ligne": "l'international décrypté par le Monde"
     },
     {
+      "id": "le-monde-societe",
+      "nom": "Le Monde — Société",
+      "emoji": "👥",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.lemonde.fr/societe/rss_full.xml"
+      ],
+      "ligne": "fait de société, justice et social par le Monde"
+    },
+    {
       "id": "liberation-tout",
       "nom": "Libération — Tout",
       "emoji": "📰",

@@ -141,6 +141,16 @@
       "ligne": "les sciences par le Monde"
     },
     {
+      "id": "franceinfo-sciences",
+      "nom": "franceinfo — Sciences",
+      "emoji": "🔬",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.francetvinfo.fr/sciences.rss"
+      ],
+      "ligne": "les sciences au quotidien, service public"
+    },
+    {
       "id": "bbc-science-environment",
       "nom": "BBC — Science & Environment",
       "emoji": "🌡️",
