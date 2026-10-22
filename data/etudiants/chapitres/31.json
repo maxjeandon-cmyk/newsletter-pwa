@@ -10,6 +10,16 @@
         "Le Média",
         "Reddit — r/etudiants"
       ]
+    },
+    {
+      "id": "c31p2",
+      "texte": "6 heures ont passé depuis le relevé précédent ; le fil continue. Au soir du 22 octobre 2026, la chronique avance. Dans la rue, le mouvement garde son souffle : À Bordeaux, la mobilisation étudiante dans la nasse administrative (1 media : Mediapart — non corrobore) ; Interdite, puis autorisée, puis empêchée de déambuler: à Paris, la manifestation étudiante entravée (1 media : Mediapart — non corrobore) — detail : Les étudiants et les personnels de l’université de Bordeaux tentent de contrecarrer les effets de la fermeture administrative, appuyés par la mobilisation historique de certaines …. Côté Reddit, élèves et enseignants parlent d'eux-mêmes : Top 5 problèmes que tu rencontres en tant qu'étudiant et que tu aimerais voir changer ? (Reddit — r/etudiants) ; Violences policières: un étudiant face à la brutalité de CRS (Reddit — r/france) — detail : <!-- SC_OFF --><div class=\"md\"><p>Toutes les réponses sont les bienvenues</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/just0uill3\"> /u/ju…. Le prochain relevé reprendra le fil. (Relevé automatique du 22 octobre 2026 à 23:38 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "Mediapart",
+        "Reddit — r/etudiants",
+        "Reddit — r/france"
+      ],
+      "auto": true
     }
   ]
 }
