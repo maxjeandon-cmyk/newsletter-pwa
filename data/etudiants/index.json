@@ -83,7 +83,7 @@
       "periode": "Chronique transverse — réseaux, voix et ressentis",
       "titre": "Chorus — la voix de l'intérieur",
       "paragraphes": 18,
-      "octets": 22332
+      "octets": 22364
     },
     {
       "id": "c11",
@@ -99,7 +99,7 @@
       "periode": "Chronique transverse — la répression et ses visages",
       "titre": "La répression et ses visages",
       "paragraphes": 17,
-      "octets": 19130
+      "octets": 19213
     },
     {
       "id": "c13",
@@ -251,7 +251,7 @@
       "periode": "22 octobre 2026 — suivi de la journée",
       "titre": "Le fil continue — 22 octobre 2026",
       "paragraphes": 1,
-      "octets": 1200
+      "octets": 1081
     }
   ],
   "releveSigs": [
@@ -454,7 +454,7 @@
           "periode": "22 octobre 2026 — suivi de la journée",
           "titre": "Le fil continue — 22 octobre 2026",
           "paragraphes": 1,
-          "octets": 1200
+          "octets": 1081
         },
         {
           "id": "c10",
@@ -462,7 +462,7 @@
           "periode": "Chronique transverse — réseaux, voix et ressentis",
           "titre": "Chorus — la voix de l'intérieur",
           "paragraphes": 18,
-          "octets": 22332
+          "octets": 22364
         },
         {
           "id": "c11",
@@ -478,7 +478,7 @@
           "periode": "Chronique transverse — la répression et ses visages",
           "titre": "La répression et ses visages",
           "paragraphes": 17,
-          "octets": 19130
+          "octets": 19213
         },
         {
           "id": "c13",
