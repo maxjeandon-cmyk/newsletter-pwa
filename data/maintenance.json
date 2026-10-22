@@ -1,10 +1,10 @@
 {
   "date": "22/10/2026",
-  "heure": "03:39",
+  "heure": "09:42",
   "relevesOng": {
-    "rafraichis": 9,
+    "rafraichis": 0,
     "echecs": 1,
-    "publie": true
+    "publie": false
   },
   "lyceens": {
     "nouvelles": 0,
@@ -38,8 +38,8 @@
     },
     {
       "nom": "ong-releve.js",
-      "ok": true,
-      "detail": "9 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
+      "ok": false,
+      "detail": "0 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
     },
     {
       "nom": "lyceens.js",
