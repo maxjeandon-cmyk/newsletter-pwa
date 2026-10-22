@@ -1,5 +1,5 @@
 {
-  "maj": "21/10/2026 11:40",
+  "maj": "22/10/2026 23:37",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -19,6 +19,20 @@
     "Mercredi 7 octobre (lendemain de l'acte III) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
   ],
   "version_gouvernement": [
+    {
+      "id": "amvk2b8sv-h882",
+      "date": "22/10/2026",
+      "titre": "Manifestation du 24 octobre : Emmanuel Macron recevra les organisations lycéennes vendredi à 15h",
+      "texte": "En direct - Manifestation du 24 octobre : Emmanuel Macron recevra les organisations lycéennes vendredi à 15h",
+      "source": "20 minutes / Europe 1 / Le Figaro",
+      "sources": [
+        "20 minutes",
+        "Europe 1",
+        "Le Figaro"
+      ],
+      "url": "https://www.europe1.fr/societe/en-direct-manifestation-du-24-octobre-emmanuel-macron-recevra-les-organisations-lyceennes-vendredi-a-15h-1173270?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
+      "verifie": true
+    },
     {
       "id": "amvguo2xb-d9ns",
       "date": "20/10/2026",
@@ -45,20 +59,6 @@
         "La Croix"
       ],
       "url": "https://www.la-croix.com/societe/parcoursup-2026-plus-de-neuf-lyceens-sur-dix-ont-recu-au-moins-une-proposition-d-admission-20261019",
-      "verifie": true
-    },
-    {
-      "id": "amvc7d4ug-chqi",
-      "date": "17/10/2026",
-      "titre": "Mouvement lycéen : « Combien de mains arrachées avant que le pouvoir en place agisse pour notre futur à tous ? », décla…",
-      "texte": "Une nouvelle rencontre entre les syndicats étudiants et le ministre de l’Education est prévue ce jeudi, tandis que certains établissements sont encore bloqués telle que HEC, bloquée pour la première …",
-      "source": "20 minutes / Public Sénat / Europe 1",
-      "sources": [
-        "20 minutes",
-        "Public Sénat",
-        "Europe 1"
-      ],
-      "url": "https://www.publicsenat.fr/actualites/education/mouvement-lyceen-combien-de-mains-arrachees-avant-que-le-pouvoir-en-place-agisse-pour-notre-futur-a-tous-declarent-des-etudiants-devant-hec-bloquee-pour-la-premiere",
       "verifie": true
     },
     {
