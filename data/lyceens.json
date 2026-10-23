@@ -1,5 +1,5 @@
 {
-  "maj": "23/10/2026 11:40",
+  "maj": "23/10/2026 23:39",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -51,19 +51,21 @@
       "verifie": true
     },
     {
-      "id": "amvk2b8sv-h882",
-      "date": "22/10/2026",
-      "titre": "Manifestation du 24 octobre : Emmanuel Macron recevra les organisations lycéennes vendredi à 15h",
-      "texte": "En direct - Manifestation du 24 octobre : Emmanuel Macron recevra les organisations lycéennes vendredi à 15h",
-      "source": "20 minutes / Europe 1 / Le Figaro / BFMTV / L'Humanité",
+      "id": "amvlhspco-kjex",
+      "date": "23/10/2026",
+      "titre": "Colère sociale: des représentants lycéens appellent à \"continuer à se mobiliser\" après une rencontre avec Emmanuel Macr…",
+      "texte": "Après plus d'un mois de colère des lycéens, le président de la République va recevoir ce vendredi 23 octobre les organisations lycéennes à l'Élysée pour \"écouter les revendications\", selon la préside…",
+      "source": "20 minutes / BFMTV / France 24 / RFI / Ouest-France / La Croix / L'Humanité",
       "sources": [
         "20 minutes",
-        "Europe 1",
-        "Le Figaro",
         "BFMTV",
+        "France 24",
+        "RFI",
+        "Ouest-France",
+        "La Croix",
         "L'Humanité"
       ],
-      "url": "https://www.europe1.fr/societe/en-direct-manifestation-du-24-octobre-emmanuel-macron-recevra-les-organisations-lyceennes-vendredi-a-15h-1173270?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
+      "url": "https://www.bfmtv.com/politique/direct-colere-sociale-conseil-de-defense-rencontre-avec-les-organisations-lyceennes-et-les-forces-de-l-ordre-la-journee-tres-chargee-d-emmanuel-macron-avant-une-nouvelle-mobilisation-attendue-le-24-octobre_LN-202610230108.html",
       "verifie": true
     },
     {
