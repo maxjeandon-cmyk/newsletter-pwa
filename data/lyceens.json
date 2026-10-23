@@ -1,5 +1,5 @@
 {
-  "maj": "22/10/2026 23:37",
+  "maj": "23/10/2026 05:39",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -20,15 +20,29 @@
   ],
   "version_gouvernement": [
     {
+      "id": "amvkf8zn8-i4vl",
+      "date": "23/10/2026",
+      "titre": "Mouvement social : Macron en première ligne avec les lycéens et les forces de l’ordre ce vendredi, Lecornu à Limoges",
+      "texte": "À la veille d’un « acte II » des manifestations dans toute la France, le président va recevoir les organisations lycéennes pour la première fois depuis le début de la contestation à l’Élysée, vendred…",
+      "source": "France 24 / Ouest-France",
+      "sources": [
+        "France 24",
+        "Ouest-France"
+      ],
+      "url": "https://www.ouest-france.fr/europe/france/mouvement-social-macron-en-premiere-ligne-avec-les-lyceens-et-les-forces-de-lordre-ce-vendredi-lecornu-a-limoges-85ac2024-ce68-11f1-bf87-17eca79cb13c?utm_source=fluxpublicfrance&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+      "verifie": true
+    },
+    {
       "id": "amvk2b8sv-h882",
       "date": "22/10/2026",
       "titre": "Manifestation du 24 octobre : Emmanuel Macron recevra les organisations lycéennes vendredi à 15h",
       "texte": "En direct - Manifestation du 24 octobre : Emmanuel Macron recevra les organisations lycéennes vendredi à 15h",
-      "source": "20 minutes / Europe 1 / Le Figaro",
+      "source": "20 minutes / Europe 1 / Le Figaro / BFMTV",
       "sources": [
         "20 minutes",
         "Europe 1",
-        "Le Figaro"
+        "Le Figaro",
+        "BFMTV"
       ],
       "url": "https://www.europe1.fr/societe/en-direct-manifestation-du-24-octobre-emmanuel-macron-recevra-les-organisations-lyceennes-vendredi-a-15h-1173270?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
@@ -46,19 +60,6 @@
         "Libération"
       ],
       "url": "https://www.publicsenat.fr/actualites/politique/violences-du-17-octobre-sebastien-lecornu-reconnait-les-failles-du-renseignement-et-promet-un-dispositif-massif-samedi-prochain",
-      "verifie": true
-    },
-    {
-      "id": "amvffjtit-1ium",
-      "date": "19/10/2026",
-      "titre": "Parcoursup 2026 : plus de neuf lycéens sur dix ont reçu au moins une proposition d’admission",
-      "texte": "Alors que des lycéens manifestent depuis des semaines leur mécontentement contre Parcoursup, le gouvernement partage ce lundi 19 octobre des chiffres liés à la plateforme. 91,5 % des lycéens ayant fo…",
-      "source": "Europe 1 / La Croix",
-      "sources": [
-        "Europe 1",
-        "La Croix"
-      ],
-      "url": "https://www.la-croix.com/societe/parcoursup-2026-plus-de-neuf-lyceens-sur-dix-ont-recu-au-moins-une-proposition-d-admission-20261019",
       "verifie": true
     },
     {
