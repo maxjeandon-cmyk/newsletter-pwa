@@ -751,6 +751,16 @@
       ]
     },
     {
+      "id": "nofrag",
+      "nom": "NoFrag",
+      "emoji": "🎯",
+      "categorie": "Jeux 🎮",
+      "ligne": "JV indépendant, FPS et tests",
+      "flux": [
+        "https://www.nofrag.com/feed/"
+      ]
+    },
+    {
       "id": "origames",
       "nom": "Origames",
       "emoji": "🕹️",

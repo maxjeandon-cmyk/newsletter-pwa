@@ -121,6 +121,16 @@
       ]
     },
     {
+      "id": "lundi-matin",
+      "nom": "Lundi Matin",
+      "emoji": "📮",
+      "categorie": "Culture & idées 🎭",
+      "ligne": "hebdo indépendant, idées et lectures",
+      "flux": [
+        "https://lundimatin.fr/feed/"
+      ]
+    },
+    {
       "id": "actualitte",
       "nom": "Actualitté",
       "emoji": "📚",
