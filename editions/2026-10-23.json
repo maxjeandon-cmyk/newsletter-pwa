@@ -1,0 +1,546 @@
+{
+ "date": "2026-10-23",
+ "genere_le": "2026-10-24T02:42:00.000+02:00",
+ "html": "editions/2026-10-23.html",
+ "resume_executif": [
+  "France \u2014 fusillade \u00e0 Trappes et La Verri\u00e8re : une personne tu\u00e9e, quatre bless\u00e9es, le suspect interpell\u00e9 et le parquet national antiterroriste saisi ; Emmanuel Macron re\u00e7oit les lyc\u00e9ens puis les forces de l'ordre \u00e0 la veille de l'\u00ab acte II \u00bb de samedi, encadr\u00e9 par 70.000 policiers et gendarmes, tandis que G\u00e9rald Darmanin demande \u00e0 la justice d'informer les \u00ab employeurs des pilleurs \u00bb \u2014 mesure que le B\u00e2tonnier de Paris juge contraire \u00e0 la pr\u00e9somption d'innocence.",
+  "\u00c9conomie \u2014 le verdict de Moody's sur la note de la France est attendu dans la nuit de vendredi \u00e0 samedi, l'emprunt d'\u00c9tat \u00e0 dix ans s'\u00e9tablissant \u00e0 5,03 % ; l'activit\u00e9 priv\u00e9e fran\u00e7aise replonge \u00e0 48,4 et la zone euro ralentit \u00e0 51,9 ; au Japon, l'inflation acc\u00e9l\u00e8re \u00e0 2,1 % et ouvre la voie \u00e0 un nouveau durcissement de la Banque du Japon.",
+  "Monde \u2014 les \u00c9tats-Unis pourraient frapper l'Iran \u00ab d\u00e8s ce week-end \u00bb selon l'\u00e9missaire Tom Barrack, le Brent franchissant 115 dollars ; \u00e0 H\u00e9bron, deux soldats isra\u00e9liens tu\u00e9s \u00e0 quatre jours des l\u00e9gislatives, Benjamin Netanyahu annonce une op\u00e9ration majeure en Cisjordanie ; des n\u00e9gociations Russie-Ukraine sont pr\u00e9vues en novembre \u00e0 Abou Dhabi, apr\u00e8s un \u00e9change de 270 prisonniers.",
+  "IA \u2014 la d\u00e9fiance gagne les Bourses : le Nasdaq a subi jeudi sa pire s\u00e9ance depuis juin, Meta doit lever \u00ab des centaines de milliards de dollars \u00bb, Infosys abaisse ses pr\u00e9visions malgr\u00e9 ses revenus IA en forte croissance, et l'Europe publie l'ab\u00e9c\u00e9daire de ses d\u00e9pendances (5 % des data centers mondiaux, aucun GPU de pointe).",
+  "Culture et rendez-vous \u2014 la Com\u00e9die-Fran\u00e7aise rouvre avec \u00ab Ruy Blas \u00bb ; le prix Nobel de physique Claude Cohen-Tannoudji est mort \u00e0 93 ans ; \u00ab Call of Duty : Modern Warfare 4 \u00bb sort ce vendredi en m\u00eame temps que la Paris Games Week, o\u00f9 le CNC apporte 1,5 million d'euros aux studios fran\u00e7ais en crise."
+ ],
+ "chapitres": [
+  {
+   "id": "intelligence-artificielle",
+   "emoji": "\ud83e\udd16",
+   "nom": "Intelligence artificielle",
+   "resume": "La d\u00e9fiance financi\u00e8re gagne l'\u00e9cosyst\u00e8me de l'IA : apr\u00e8s la pire s\u00e9ance du Nasdaq depuis jeudi, les Bourses asiatiques ont plong\u00e9 vendredi ; Infosys abaisse sa pr\u00e9vision annuelle malgr\u00e9 des revenus IA en forte croissance, les salari\u00e9s de Micron \u00e0 Ta\u00efwan arrachent des concessions sociales, et l'Europe dresse l'ab\u00e9c\u00e9daire de ses d\u00e9pendances \u2014 5 % des data centers mondiaux, aucun GPU de pointe."
+  },
+  {
+   "id": "spatial",
+   "emoji": "\ud83d\ude80",
+   "nom": "Spatial",
+   "resume": "Pas de lancement majeur ce vendredi : l'actualit\u00e9 spatiale passe par la finance \u2014 la d\u00e9fiance sur l'IA secoue l'\u00e9cosyst\u00e8me qui venait de porter SpaceX vers ses premiers b\u00e9n\u00e9fices \u2014, par un typhon qui ferme Taipei, et par le contexte des missions en cours : MMX en route vers les lunes de Mars, Iris\u00b2 dopant les commandes de Thales."
+  },
+  {
+   "id": "economie-pour-les-nuls",
+   "emoji": "\ud83d\udcb0",
+   "nom": "L\u2019\u00c9conomie pour les nuls",
+   "resume": "C\u00f4t\u00e9 monde : l'inflation japonaise acc\u00e9l\u00e8re \u00e0 2,1 % en septembre et ouvre la voie \u00e0 un durcissement de la Banque du Japon. C\u00f4t\u00e9 France : l'activit\u00e9 priv\u00e9e replonge \u00e0 48,4, l'\u00c9tat emprunte \u00e0 5,03 % sur dix ans et Moody's rend son verdict dans la nuit de vendredi \u00e0 samedi \u2014 notions expliqu\u00e9es pas \u00e0 pas."
+  },
+  {
+   "id": "droit-pour-les-nuls",
+   "emoji": "\u2696\ufe0f",
+   "nom": "Le Droit pour les nuls",
+   "resume": "Le procureur peut-il pr\u00e9venir votre employeur que vous \u00eates mis en cause ? L'article 11-2 du code de proc\u00e9dure p\u00e9nale, ses conditions strictes, les garde-fous de la pr\u00e9somption d'innocence \u2014 et la pol\u00e9mique ouverte par la directive de G\u00e9rald Darmanin aux parquets apr\u00e8s les pillages du 17 octobre."
+  },
+  {
+   "id": "jeu-video-pop-culture",
+   "emoji": "\ud83c\udfae",
+   "nom": "Jeu vid\u00e9o & pop culture",
+   "resume": "\u00ab Call of Duty : Modern Warfare 4 \u00bb sort ce vendredi \u2014 premi\u00e8re apparition de la licence sur une console Nintendo depuis 16 ans et absent du Game Pass \u00e0 sa sortie ; le CNC d\u00e9bloque 1,5 million d'euros suppl\u00e9mentaires pour les studios fran\u00e7ais en crise, pendant que la Paris Games Week ferme dimanche."
+  },
+  {
+   "id": "culture",
+   "emoji": "\ud83c\udfad",
+   "nom": "Culture",
+   "resume": "La Com\u00e9die-Fran\u00e7aise rouvre avec \u00ab Ruy Blas \u00bb \u2014 un Hugo augment\u00e9 d'un texte pour la paix par Julie Duclos ; Michael Morpurgo adapt\u00e9 par le studio Xilam, Sheila O'Connor rejoue \u00ab La Boum \u00bb sur sc\u00e8ne, Sacha Baron Cohen ressuscite Ali G, et Alexander Skarsg\u00e5rd se m\u00e9tamorphose sous un masque dans \u00ab Wicker \u00bb."
+  },
+  {
+   "id": "sciences",
+   "emoji": "\ud83d\udd2c",
+   "nom": "Sciences",
+   "resume": "Mort du prix Nobel de physique Claude Cohen-Tannoudji, p\u00e8re du refroidissement d'atomes par laser ; \u00e0 Madrid, le congr\u00e8s europ\u00e9en de canc\u00e9rologie aligne vaccins \u00e0 ARN, immunoth\u00e9rapies et IA d\u00e9cisionnelle ; et une troisi\u00e8me strat\u00e9gie nationale contre les perturbateurs endocriniens."
+  },
+  {
+   "id": "climat",
+   "emoji": "\ud83c\udf0d",
+   "nom": "Climat",
+   "resume": "Singapour r\u00e9clame des comptes \u00e0 dix entreprises de l'huile de palme et du bois li\u00e9es aux incendies indon\u00e9siens ; un tanker d\u00e9verse du p\u00e9trole au large des Emirats dans le d\u00e9troit d'Ormuz ; les chercheurs plaident pour reconfigurer les fili\u00e8res agricoles plut\u00f4t que prolonger la parenth\u00e8se budg\u00e9taire des plans de relance."
+  },
+  {
+   "id": "politique-francaise",
+   "emoji": "\ud83c\uddeb\ud83c\uddf7",
+   "nom": "Politique fran\u00e7aise",
+   "resume": "Fusillade \u00e0 Trappes et La Verri\u00e8re (un mort, le Pnat saisi) ; Macron re\u00e7oit les lyc\u00e9ens puis les forces de l'ordre \u00e0 la veille d'un samedi sous haute surveillance de 70.000 policiers ; LFI d\u00e9nonce une \u00ab fuite en avant autoritaire \u00bb, Darmanin veut pr\u00e9venir les employeurs des pillards, et le congr\u00e8s RN s'ouvre \u00e0 Orl\u00e9ans sous protection polici\u00e8re."
+  },
+  {
+   "id": "etats-unis",
+   "emoji": "\ud83c\uddfa\ud83c\uddf8",
+   "nom": "\u00c9tats-Unis",
+   "resume": "\u00ab Une frappe ce week-end ? Absolument \u00bb, l\u00e2che l'\u00e9missaire am\u00e9ricain Tom Barrack sur l'Iran \u2014 que Trump semble minimiser ; le Brent franchit 115 dollars ; \u00e0 onze jours des midterms, la Fed attendue mercredi et American Express supprime 5 % de ses effectifs."
+  },
+  {
+   "id": "chine",
+   "emoji": "\ud83c\udde8\ud83c\uddf3",
+   "nom": "Chine",
+   "resume": "Le bilan du s\u00e9isme au Tibet reste au moins 16 morts et des dizaines de bless\u00e9s, Xi exigeant un effort de secours maximal ; P\u00e9kin condamne les restrictions am\u00e9ricaines sur la biotechnologie et accuse Washington de \u00ab saper \u00bb la coop\u00e9ration scientifique ; Volvo Cars, contr\u00f4l\u00e9 par Geely, supprime 2.500 postes."
+  },
+  {
+   "id": "russie",
+   "emoji": "\ud83c\uddf7\ud83c\uddfa",
+   "nom": "Russie",
+   "resume": "Moscou annonce des n\u00e9gociations avec Kiev en novembre \u00e0 Abou Dhabi sous m\u00e9diation am\u00e9ricaine et salue un \u00e9change de 270 prisonniers ; Kiev fait mouvement pour une mission humanitaire \u00e0 Olechky ; un nouveau registre vise les critiques russes exil\u00e9s, derni\u00e8re marche de la r\u00e9pression."
+  },
+  {
+   "id": "geopolitique",
+   "emoji": "\ud83c\udf0f",
+   "nom": "G\u00e9opolitique mondiale",
+   "resume": "Deux soldats isra\u00e9liens tu\u00e9s \u00e0 H\u00e9bron \u00e0 quatre jours des l\u00e9gislatives : Netanyahu ordonne le bouclage de la Cisjordanie et une op\u00e9ration majeure ; au Br\u00e9sil, dernier face-\u00e0-face Lula-Flavio Bolsonaro avant le second tour de dimanche ; S\u00e9oul propose des pourparlers militaires \u00e0 Pyongyang."
+  },
+  {
+   "id": "grande-info-semaine",
+   "emoji": "\ud83d\uddde\ufe0f",
+   "nom": "Grande information de la semaine",
+   "resume": "De l'acte II de la crise sociale fran\u00e7aise au second tour br\u00e9silien, des l\u00e9gislatives isra\u00e9liennes de lundi aux midterms am\u00e9ricains du 3 novembre, du verdict Moody's au Brent \u00e0 115 dollars : la semaine 43 s'ach\u00e8ve sur un monde qui retient son souffle."
+  }
+ ],
+ "hors_chapitres": [
+  "Football \u2014 L'affiche de la 8e journ\u00e9e de Ligue 1 entre le Paris SG et Lyon, initialement pr\u00e9vue dimanche \u00e0 20h45, a \u00e9t\u00e9 d\u00e9cal\u00e9e \u00e0 lundi (20h30) \u00e0 la demande de la pr\u00e9fecture de police (S57).",
+  "NFL \u2014 \u00ab Ce n'est que le d\u00e9but \u00bb : le patron de la NFL, Roger Goodell, d\u00e9roule \u00e0 l'AFP ses ambitions parisiennes et internationales, du flag football \u00e0 la conqu\u00eate de nouveaux march\u00e9s (S54).",
+  "Formule 1 \u2014 Grand Prix des \u00c9tats-Unis \u00e0 Austin ce week-end : le directeur de Red Bull, Laurent Mekies, qualifie Max Verstappen de \u00ab point cardinal \u00bb de l'\u00e9curie \u2014 \u00ab il vit jour et nuit pour le sport automobile \u00bb (S55).",
+  "MotoGP \u2014 L'Italien Marco Bezzecchi (Aprilia) a \u00e9t\u00e9 le plus rapide des essais qualificatifs du Grand Prix d'Australie, avant un duel Marquez-Martin pour le titre \u00e0 cinq Grands Prix de la fin (S56).",
+  "Sant\u00e9 \u2014 Internat de m\u00e9decine 2026 : le rapport d'inspection conclut \u00e0 \u00ab l'absence de fraude massive \u00bb pendant les \u00e9preuves, exclut toute fuite de sujets, mais propose des \u00ab ajustements organisationnels \u00bb (S58).",
+  "Sant\u00e9/consommation \u2014 Le Conseil constitutionnel a invalid\u00e9 le gel des tarifs des compl\u00e9mentaires sant\u00e9 vot\u00e9 en d\u00e9cembre 2025 : les assureurs estiment qu'il les aurait emp\u00each\u00e9s de prendre les d\u00e9cisions \u00e9conomiques indispensables aux remboursements (S59).",
+  "Nutrition \u2014 Les aliments enrichis ne remplacent pas les bienfaits d'une alimentation diversifi\u00e9e, pr\u00e9vient l'Anses, qui rappelle les r\u00e8gles d'\u00e9valuation des all\u00e9gations sant\u00e9 par l'Efsa (S60).",
+  "Soci\u00e9t\u00e9 \u2014 Jean-Paul Huchon, ancien pr\u00e9sident socialiste de la r\u00e9gion \u00cele-de-France (1998-2015) et ancien directeur de cabinet de Michel Rocard, est mort dans la nuit de jeudi \u00e0 vendredi \u00e0 80 ans des suites d'un cancer (S61).",
+  "Hongrie \u2014 70 ans apr\u00e8s le soul\u00e8vement antisovi\u00e9tique de 1956, le Premier ministre Peter Magyar a affirm\u00e9 devant des dignitaires de plus de 40 pays que la Hongrie \u00ab appartient \u00e0 une Europe libre et d\u00e9mocratique \u00bb (S62).",
+  "Portugal \u2014 Un centre interpr\u00e9tatif consacr\u00e9 \u00e0 la dictature d'Antonio Salazar et \u00e0 la r\u00e9sistance a ouvert \u00e0 Vimieiro, ville natale du dictateur, au terme de plus de 20 ans de pol\u00e9miques (S63).",
+  "RDC \u2014 Reporters sans fronti\u00e8res d\u00e9nonce les \u00ab restrictions disproportionn\u00e9es \u00bb du r\u00e9gulateur congolais des m\u00e9dias, qui menace de sanctions les journalistes donnant la parole au FRN de l'ex-pr\u00e9sident Joseph Kabila (S64).",
+  "Venezuela \u2014 La pr\u00e9sidente par int\u00e9rim Delcy Rodriguez a re\u00e7u pour la premi\u00e8re fois l'opposante Dinorah Figuera \u00e0 l'issue d'un troisi\u00e8me cycle de n\u00e9gociations, avec engagement d'organiser des \u00e9lections (S65)."
+ ],
+ "sources": [
+  {
+   "label": "AFP \u2014 Infosys abaisse sa pr\u00e9vision de croissance malgr\u00e9 les gains de l'IA",
+   "ref": "news-afp-20261023-b8a36eb9",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Le premier long m\u00e9trage g\u00e9n\u00e9r\u00e9 par IA en Chine sort en salles",
+   "ref": "news-afp-20261023-8ec56f16",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 IA souveraine europ\u00e9enne : de quoi parle-t-on ?",
+   "ref": "news-afp-20261023-fb7c08df",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 La Chine condamne les restrictions propos\u00e9es par les \u00c9tats-Unis sur la biotechnologie",
+   "ref": "news-afp-20261023-adef2a81",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Ta\u00efwan : les salari\u00e9s de l'usine Micron de Taoyuan rejettent la prime propos\u00e9e",
+   "ref": "news-afp-20261023-0dfcdd5f",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Wall Street ouvre en baisse, entre questionnements sur l'IA et hausse du p\u00e9trole",
+   "ref": "news-afp-20261023-f4ea6d63",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 March\u00e9s en Asie : les craintes sur l'IA plombent les Bourses, le yen en profite",
+   "ref": "news-afp-20261023-8b35cfa3",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 SpaceX d\u00e9passe les attentes et devient b\u00e9n\u00e9ficiaire au 3T gr\u00e2ce au \u00ab cloud \u00bb",
+   "ref": "news-afp-20261020-e2d5bd43",
+   "fiabilite": 5,
+   "maj": "20/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Japan probe on its way to Mars moon (MMX)",
+   "ref": "news-afp-20261019-8fd6a520",
+   "fiabilite": 5,
+   "maj": "19/10/2026"
+  },
+  {
+   "label": "AFP \u2014 R\u00e9armement europ\u00e9en et constellation Iris\u00b2 dopent les commandes de Thales",
+   "ref": "news-afp-20261022-c5ae103b",
+   "fiabilite": 5,
+   "maj": "22/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Japon : l'inflation acc\u00e9l\u00e8re nettement en septembre, ouvre la voie \u00e0 un durcissement de la BoJ",
+   "ref": "news-afp-20261023-9ab9062e",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Les Bourses mondiales sans entrain, la dette fran\u00e7aise attend Moody's",
+   "ref": "news-afp-20261023-2c1dbcd9",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Zone euro : le secteur priv\u00e9 ralentit en octobre, frein\u00e9 par les manifestations en France",
+   "ref": "news-afp-20261023-996573ea",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 L'euro p\u00e2tit de donn\u00e9es \u00e9conomiques en de\u00e7\u00e0 des attentes, le dollar avance",
+   "ref": "news-afp-20261023-846598a2",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Notation de la France : un maintien de la note par Moody's jug\u00e9 peu probable",
+   "ref": "news-afp-20261022-988a5432",
+   "fiabilite": 5,
+   "maj": "22/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Violences urbaines : Darmanin demande \u00e0 la justice d'informer les \u00ab employeurs des pilleurs \u00bb",
+   "ref": "news-afp-20261023-5f92a621",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "L\u00e9gifrance \u2014 Code de proc\u00e9dure p\u00e9nale, article 11-2 (texte consolid\u00e9)",
+   "ref": "https://www.legifrance.gouv.fr",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Call of Duty : \u00ab Modern Warfare 4 \u00bb renoue avec la guerre \u00e0 grand spectacle",
+   "ref": "news-afp-20261023-19c93424",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Jeux vid\u00e9o : le CNC va verser 1,5 million d'euros suppl\u00e9mentaires aux studios fran\u00e7ais",
+   "ref": "news-afp-20261023-947e5457",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00c0 Paris, un \u00ab Ruy Blas \u00bb qui r\u00e9sonne, pour la r\u00e9ouverture de la Com\u00e9die-Fran\u00e7aise",
+   "ref": "news-afp-20261023-19c58894",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00ab Le myst\u00e8re de Lucy Lost \u00bb : la star des romans jeunesse Michael Morpurgo de retour au cin\u00e9ma",
+   "ref": "news-afp-20261023-452e59b5",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Sheila O'Connor, P\u00e9n\u00e9lope de \u00ab La Boum \u00bb, sur sc\u00e8ne 46 ans apr\u00e8s le film",
+   "ref": "news-afp-20261023-98e4ddf7",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Sacha Baron Cohen ressuscite Ali G, son \u00ab dinosaure probl\u00e9matique \u00bb",
+   "ref": "news-afp-20261023-d7a42b9a",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Dans \u00ab Wicker \u00bb, Alexander Skarsg\u00e5rd a brav\u00e9 la claustrophobie pour se m\u00e9tamorphoser",
+   "ref": "news-afp-20261023-80fe1c6b",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 D\u00e9c\u00e8s de Claude Cohen-Tannoudji, prix Nobel de physique en 1997",
+   "ref": "news-afp-20261023-1742e632",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Le physicien fran\u00e7ais Claude Cohen-Tannoudji, phare de l'optique quantique",
+   "ref": "news-afp-20261023-f1833369",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Cancer : vaccins ARN, immunoth\u00e9rapies et IA au menu du congr\u00e8s europ\u00e9en de canc\u00e9rologie",
+   "ref": "news-afp-20261023-38428297",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Perturbateurs endocriniens : une nouvelle strat\u00e9gie nationale 2026-2030",
+   "ref": "news-afp-20261023-0e6c75db",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Incendie : Singapour demande des comptes \u00e0 dix entreprises pouvant \u00eatre impliqu\u00e9es",
+   "ref": "news-afp-20261023-dd1fbfe7",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Agriculture : le \u00ab plan de relance \u00bb doit \u00eatre l'occasion de reconfigurer les fili\u00e8res",
+   "ref": "news-afp-20261023-f400d979",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Du p\u00e9trole d\u00e9vers\u00e9 d'un tanker au large des Emirats, risque de mar\u00e9e noire",
+   "ref": "news-afp-20261023-4dbdcfea",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Trappes : \u00ab le tireur manifestement tirait au hasard et avait envie de faire un carnage \u00bb (maire)",
+   "ref": "news-afp-20261023-7c46c687",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Crise sociale : Macron en premi\u00e8re ligne avec les lyc\u00e9ens et les forces de l'ordre",
+   "ref": "news-afp-20261023-c15841c0",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Manifestations : la gauche radicale accuse le gouvernement de \u00ab fuite en avant autoritaire \u00bb",
+   "ref": "news-afp-20261023-b17a5c2d",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Manifestation : le d\u00e9p\u00f4t d'objets sur la voie publique interdit \u00e0 Paris jusqu'\u00e0 lundi",
+   "ref": "news-afp-20261023-79655b45",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 S\u00e9curit\u00e9 en marge du congr\u00e8s RN : \u00ab un peu la campagne politique \u00e0 venir \u00bb (Nu\u00f1ez)",
+   "ref": "news-afp-20261023-41845b63",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Congr\u00e8s du RN : Laurent Nu\u00f1ez se rend \u00e0 Orl\u00e9ans vendredi apr\u00e8s-midi",
+   "ref": "news-afp-20261023-2dd4cf4d",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 \u00c0 Orl\u00e9ans, l'inqui\u00e9tude des commer\u00e7ants face \u00e0 la crainte de d\u00e9bordements",
+   "ref": "news-afp-20261023-cfbaa864",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Les \u00c9tats-Unis pourraient frapper l'Iran d\u00e8s ce week-end, dit un diplomate am\u00e9ricain",
+   "ref": "news-afp-20261023-212fd60f",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Les prix du p\u00e9trole grimpent, le march\u00e9 redoute des frappes am\u00e9ricaines en Iran",
+   "ref": "news-afp-20261023-16bf80ee",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Chine : un s\u00e9isme de magnitude 7 fait au moins 16 morts au Tibet",
+   "ref": "news-afp-20261023-e2fda804",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 La Chine accuse les \u00c9tats-Unis de \u00ab saper \u00bb la coop\u00e9ration scientifique",
+   "ref": "news-afp-20261023-22f21aa8",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Volvo Cars annonce 2.500 suppressions de postes",
+   "ref": "news-afp-20261023-64ce83c1",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 La Russie cr\u00e9e un registre visant des critiques exil\u00e9s",
+   "ref": "news-afp-20261023-c6a2ebb5",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 N\u00e9gociations Russie-Ukraine sous m\u00e9diation am\u00e9ricaine \u00ab pr\u00e9vues \u00bb \u00e0 Abou Dhabi en novembre",
+   "ref": "news-afp-20261023-93f09459",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 La Russie et l'Ukraine ont \u00e9chang\u00e9 270 prisonniers de guerre de chaque camp",
+   "ref": "news-afp-20261023-a294d276",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Ukraine : Kiev va prendre des mesures pour la tenue d'une \u00ab mission humanitaire \u00bb \u00e0 Olechky",
+   "ref": "news-afp-20261023-964fadab",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Cisjordanie : Netanyahu annonce une op\u00e9ration militaire majeure apr\u00e8s l'attaque d'H\u00e9bron",
+   "ref": "news-afp-20261023-8a11b004",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Cisjordanie : l'arm\u00e9e isra\u00e9lienne annonce avoir tu\u00e9 deux auteurs d'une attaque (5 bless\u00e9s)",
+   "ref": "news-afp-20261023-e011d840",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Br\u00e9sil : ultime face \u00e0 face entre Lula et Flavio Bolsonaro avant le second tour",
+   "ref": "news-afp-20261023-dd5df2fe",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Flavio Bolsonaro, l'h\u00e9ritier sur les pas de son p\u00e8re",
+   "ref": "news-afp-20261023-baa7cb7d",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 S\u00e9oul propose \u00e0 Pyongyang des pourparlers militaires sur la fronti\u00e8re",
+   "ref": "news-afp-20261023-26fb31a3",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Sept ans apr\u00e8s leur \u00ab bromance \u00bb, Trump toque \u00e0 nouveau \u00e0 la porte de Kim",
+   "ref": "news-afp-20261023-525ea7f8",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 La NFL \u00e0 Paris : \u00ab ce n'est que le d\u00e9but \u00bb, affirme Roger Goodell",
+   "ref": "news-afp-20261023-fc1784ff",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 F1 : Verstappen est \u00ab le point cardinal \u00bb de Red Bull (Mekies)",
+   "ref": "news-afp-20261023-388c2ca2",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 MotoGP : Bezzecchi sur Aprilia le plus rapide des essais qualificatifs en Australie",
+   "ref": "news-afp-20261023-6056eeba",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Mobilisation du 24 octobre : ce qui est pr\u00e9vu (transports, PSG-Lyon d\u00e9cal\u00e9)",
+   "ref": "news-afp-20261023-b0920c21",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Les autorit\u00e9s \u00e9cartent toute \u00ab fraude massive \u00bb au concours d'internat en m\u00e9decine",
+   "ref": "news-afp-20261023-9db2765b",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Le Conseil constitutionnel invalide le gel des tarifs des compl\u00e9mentaires sant\u00e9 en 2026",
+   "ref": "news-afp-20261023-6a8d6400",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Pour la sant\u00e9, une alimentation diverse plut\u00f4t que des aliments enrichis (Anses)",
+   "ref": "news-afp-20261023-bd7b47a6",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 L'ancien pr\u00e9sident PS de la r\u00e9gion \u00cele-de-France Jean-Paul Huchon est mort",
+   "ref": "news-afp-20261023-ea2c628d",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Comm\u00e9morations de 1956 : Peter Magyar affirme son ancrage europ\u00e9en",
+   "ref": "news-afp-20261023-6bed8c24",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Portugal : ouverture d'un centre consacr\u00e9 \u00e0 la dictature d'Antonio Salazar",
+   "ref": "news-afp-20261023-885f9f0f",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 RDC : RSF d\u00e9nonce \u00ab restrictions disproportionn\u00e9es \u00bb contre les m\u00e9dias",
+   "ref": "news-afp-20261023-0f831f99",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Venezuela : la pr\u00e9sidente re\u00e7oit l'opposante Figuera pour parler transition",
+   "ref": "news-afp-20261023-e8b8cd66",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Holcim rel\u00e8ve son objectif 2026, recours accru aux \u00e9nergies alternatives",
+   "ref": "news-afp-20261023-80458e33",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Violences : le pr\u00e9sident de CCI France appelle les commer\u00e7ants \u00e0 \u00ab laisser faire la police \u00bb",
+   "ref": "news-afp-20261023-e324eba4",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Concertation sur Parcoursup : les pistes pour amender le syst\u00e8me",
+   "ref": "news-afp-20261023-5a53e55a",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Iran : huit pays d'Europe et du Moyen-Orient plaident pour la paix \u00e0 Istanbul",
+   "ref": "news-afp-20261022-e7b2175a",
+   "fiabilite": 5,
+   "maj": "22/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Actualit\u00e9s du vendredi 23 octobre 2026 (bilan s\u00e9isme Tibet, Waze)",
+   "ref": "news-afp-20261023-35cc2d2f",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Macron d\u00e9nonce \u00ab des dirigeants qui font campagne sur le dos de la France \u00bb",
+   "ref": "news-afp-20261021-cf9bf158",
+   "fiabilite": 5,
+   "maj": "21/10/2026"
+  },
+  {
+   "label": "AFP \u2014 Le patronat demande au gouvernement de renoncer aux mesures de \u00ab surco\u00fbt \u00bb",
+   "ref": "news-afp-20261023-e1228432",
+   "fiabilite": 5,
+   "maj": "23/10/2026"
+  }
+ ]
+}
