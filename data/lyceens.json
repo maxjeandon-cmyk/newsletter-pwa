@@ -1,5 +1,5 @@
 {
-  "maj": "24/10/2026 11:37",
+  "maj": "24/10/2026 17:38",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -191,11 +191,12 @@
       "date": "24/10/2026",
       "titre": "Manifestations du 24 octobre : lycéens, étudiants, syndicats, Gilets jaunes… Ils se mobilisent ce samedi mais pourquoi ?",
       "texte": "Une nouvelle manifestation est prévue ce samedi 24 octobre. Les revendications sociales sont diverses. Mais avec des points communs : la défense de l’école et des services publics, du pouvoir d’achat…",
-      "source": "20 minutes / France 24 / Ouest-France",
+      "source": "20 minutes / France 24 / Ouest-France / BFMTV",
       "sources": [
         "20 minutes",
         "France 24",
-        "Ouest-France"
+        "Ouest-France",
+        "BFMTV"
       ],
       "url": "https://www.ouest-france.fr/societe/manifestation/lyceens-etudiants-syndicats-gilets-jaunes-ils-manifestent-ce-samedi-mais-pourquoi-voici-leurs-revendications-fe0974be-cefd-11f1-a953-ed5fcc297d72?utm_source=fluxpublicfrance&utm_medium=fluxrss&utm_campaign=banquedecontenu",
       "verifie": true
