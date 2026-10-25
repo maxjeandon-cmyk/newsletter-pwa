@@ -395,6 +395,36 @@
       "ligne": "Charente, quotidien rural"
     },
     {
+      "id": "la-provence",
+      "nom": "La Provence",
+      "emoji": "🌅",
+      "categorie": "Presse régionale 🗺️",
+      "flux": [
+        "https://www.laprovence.com/rss"
+      ],
+      "ligne": "Marseille, Aix, Avignon et la region Sud"
+    },
+    {
+      "id": "dna",
+      "nom": "DNA - Dernieres Nouvelles d'Alsace",
+      "emoji": "🥨",
+      "categorie": "Presse régionale 🗺️",
+      "flux": [
+        "https://www.dna.fr/rss"
+      ],
+      "ligne": "Alsace, Strasbourg et Mulhouse"
+    },
+    {
+      "id": "var-matin",
+      "nom": "Var-Matin",
+      "emoji": "🏖️",
+      "categorie": "Presse régionale 🗺️",
+      "flux": [
+        "https://www.varmatin.com/rss"
+      ],
+      "ligne": "Var, Toulon et le littoral"
+    },
+    {
       "id": "les-echos-economie",
       "nom": "Les Échos — Économie",
       "emoji": "💼",
@@ -550,7 +580,7 @@
       "emoji": "💼",
       "categorie": "Économie 💰",
       "flux": [
-        "https://www.lenouveleconomiste.fr/feed/"
+        "https://www.lenouveleconomiste.fr/rss"
       ],
       "ligne": "économie des décideurs"
     },
