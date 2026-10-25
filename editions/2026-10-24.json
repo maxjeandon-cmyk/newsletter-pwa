@@ -1,0 +1,642 @@
+{
+  "date": "2026-10-24",
+  "genere_le": "2026-10-25T03:38:00.000+02:00",
+  "html": "editions/2026-10-24.html",
+  "resume_executif": [
+    "France \u2014 \u00ab acte II \u00bb de la mobilisation pour le pouvoir d'achat : un samedi sous tr\u00e8s haute surveillance (70.000 policiers et gendarmes) qui s'est d\u00e9roul\u00e9 sans incident majeur \u00e0 la mi-journ\u00e9e \u2014 135 interpellations et 35.000 personnes compt\u00e9es sur l'espace public, contre 60.000 le 17 octobre ; le tribunal administratif de Marseille a partiellement suspendu l'interdiction de manifester dans les Bouches-du-Rh\u00f4ne, le Conseil de l'Europe a appel\u00e9 \u00e0 respecter le droit de manifester, et l'enqu\u00eate sur l'attaque raciste des Yvelines se resserre autour du profil du tireur (S1-S11).",
+    "\u00c9conomie \u2014 Moody's a maintenu vendredi soir la note de la France \u00e0 Aa3, perspective n\u00e9gative, en tablant sur \u00ab un budget 2027 r\u00e9duisant le d\u00e9ficit \u00bb ; Roland Lescure a ouvert la porte d'une hausse anticip\u00e9e du Smic avant le 1er janvier, que le Medef juge dangereuse ; la R\u00e9serve f\u00e9d\u00e9rale am\u00e9ricaine devrait maintenir ses taux mercredi (S12-S16).",
+    "Monde \u2014 Kim Jong Un a fait une visite-\u00e9clair \u00e0 Dandong, en Chine, \u00e0 la veille du pl\u00e9num du Parti communiste et du sommet de l'Apec \u00e0 Shenzhen ; en Ukraine, le d\u00e9bit Starlink a \u00e9t\u00e9 r\u00e9tabli et Elon Musk a reconnu le bridage ; le pr\u00e9sident iranien Pezeshkian rencontrera Poutine mardi \u00e0 Moscou ; Isra\u00ebl s'appr\u00eate \u00e0 voter dans un climat d\u00e9l\u00e9t\u00e8re (S17-S25, S54-S65).",
+    "IA \u2014 la d\u00e9fiance s'installe durablement dans l'\u00e9cosyst\u00e8me : Hong Kong a recul\u00e9 de plus de 3 % sur des doutes autour de l'IA, Barclays a supprim\u00e9 5.000 emplois au nom de l'efficacit\u00e9 de l'IA, Meta pr\u00e9pare une lev\u00e9e de fonds massive et les failles d\u00e9couvertes par l'IA dans PHP ont perturb\u00e9 le web mondial (S15-S21).",
+    "Culture et rendez-vous \u2014 le Ballon d'Or sera d\u00e9cern\u00e9 lundi \u00e0 Londres pour sa 70e \u00e9dition, avec French Montana et Jorja Smith en show ; la Paris Games Week ferme dimanche apr\u00e8s une semaine sous le signe de la nostalgie ; Kaylia Nemour a pris l'or aux barres asym\u00e9triques aux mondiaux de Rotterdam (S28-S35, S69-S88)."
+  ],
+  "chapitres": [
+    {
+      "id": "intelligence-artificielle",
+      "emoji": "\ud83e\udd16",
+      "nom": "Intelligence artificielle",
+      "resume": "La semaine s'ach\u00e8ve sur une double question : l'IA fait gagner en efficacit\u00e9 ceux qui l'adoptent \u2014 Barclays supprime 5.000 emplois sur ce motif \u2014 mais les Bourses commencent \u00e0 douter que les investissements massifs se transforment en profits, et la s\u00e9curit\u00e9 du web d\u00e9couvre que l'IA sait aussi trouver ses failles."
+    },
+    {
+      "id": "spatial",
+      "emoji": "\ud83d\ude80",
+      "nom": "Spatial",
+      "resume": "La NASA acc\u00e9l\u00e8re sur la Lune \u00ab avec l'urgence d'Apollo \u00bb, l'Europe encaisse les retomb\u00e9es du r\u00e9armement spatial via Iris\u00b2, et l'affaire Starlink en Ukraine rappelle qu'un r\u00e9seau de satellites priv\u00e9 est devenu une question de guerre et de diplomatie."
+    },
+    {
+      "id": "economie-pour-les-nuls",
+      "emoji": "\ud83d\udcb0",
+      "nom": "L'\u00c9conomie pour les nuls",
+      "resume": "Deux infos du jour expliqu\u00e9es simplement : Moody's a laiss\u00e9 la note de la France telle quelle \u2014 et c'est une vraie nouvelle \u2014 tandis que le gouvernement envisage d'anticiper la hausse du Smic ; c\u00f4t\u00e9 monde, la R\u00e9serve f\u00e9d\u00e9rale am\u00e9ricaine se r\u00e9unit cette semaine."
+    },
+    {
+      "id": "droit-pour-les-nuls",
+      "emoji": "\u2696\ufe0f",
+      "nom": "Le Droit pour les nuls",
+      "resume": "Le concept du jour s'imposait : le droit de manifester. Alors que la France a v\u00e9cu un samedi d'interdictions pr\u00e9fectorales partiellement suspendues par le juge, on d\u00e9crypte ce que la loi permet, ce qu'elle interdit et comment contester \u2014 textes \u00e0 l'appui."
+    },
+    {
+      "id": "jeu-video-pop-culture",
+      "emoji": "\ud83c\udfae",
+      "nom": "Jeu vid\u00e9o & pop culture",
+      "resume": "La Paris Games Week ferme dimanche : une \u00e9dition sous le signe de la nostalgie (40 ans de Zelda, 30 ans de Rayman), un CNC qui renforce le soutien aux studios fran\u00e7ais en crise, et une semaine de sorties qui a vu Call of Duty revenir sur Nintendo pour la premi\u00e8re fois en 16 ans."
+    },
+    {
+      "id": "culture",
+      "emoji": "\ud83c\udfad",
+      "nom": "Culture",
+      "resume": "Le week-end culturel est domin\u00e9 par la 70e c\u00e9r\u00e9monie du Ballon d'Or \u2014 d\u00e9localis\u00e9e pour la premi\u00e8re fois \u00e0 Londres \u2014 par les derni\u00e8res s\u00e9lections des prix litt\u00e9raires et par la saga fantasy ACOTAR qui revient en librairie apr\u00e8s cinq ans d'attente."
+    },
+    {
+      "id": "sciences",
+      "emoji": "\ud83d\udd2c",
+      "nom": "Sciences",
+      "resume": "Deux espoirs m\u00e9dicaux structurants ce samedi : l'essai de vaccin contre Ebola lanc\u00e9 en RDC face \u00e0 la pire \u00e9pid\u00e9mie de l'histoire du pays, et les r\u00e9sultats du vaccin ARN personnalis\u00e9 contre le m\u00e9lanome \u2014 au c\u0153ur d'un congr\u00e8s europ\u00e9en de canc\u00e9rologie."
+    },
+    {
+      "id": "climat",
+      "emoji": "\ud83c\udf0d",
+      "nom": "Climat",
+      "resume": "Le typhon Champi, bri\u00e8vement class\u00e9 \u00ab super-typhon \u00bb avec des vents proches de 300 km/h, a fait un mort \u00e0 Ta\u00efwan avant de viser la Chine \u2014 derni\u00e8re manifestation d'une saison Pacifique particuli\u00e8rement vive, amplifi\u00e9e par El Ni\u00f1o. Le lendemain des sommets, le d\u00e9calage entre d\u00e9clarations et mesures reste la r\u00e8gle."
+    },
+    {
+      "id": "politique-francaise",
+      "emoji": "\ud83c\uddeb\ud83c\uddf7",
+      "nom": "Politique fran\u00e7aise",
+      "resume": "Un samedi politique \u00e0 haute tension, \u00e0 six mois de la pr\u00e9sidentielle : l'\u00ab acte II \u00bb de la mobilisation sociale s'est d\u00e9roul\u00e9 sans incident majeur, le RN a tenu son congr\u00e8s \u00e0 Orl\u00e9ans dans la controverse, et un nouveau sondage place M\u00e9lenchon au second tour dans toutes les configurations."
+    },
+    {
+      "id": "etats-unis",
+      "emoji": "\ud83c\uddfa\ud83c\uddf8",
+      "nom": "\u00c9tats-Unis",
+      "resume": "Washington g\u00e8re une menace iranienne \u00ab \u00e0 un stade avanc\u00e9 \u00bb contre ses ressortissants, des tensions diplomatiques avec Cuba, et une politique int\u00e9rieure marqu\u00e9e par les \u00e9lections de mi-mandat en G\u00e9orgie \u2014 le tout \u00e0 une semaine d'une d\u00e9cision de la Fed scrut\u00e9e par les march\u00e9s."
+    },
+    {
+      "id": "chine",
+      "emoji": "\ud83c\udde8\ud83c\uddf3",
+      "nom": "Chine",
+      "resume": "La Chine pr\u00e9pare son cinqui\u00e8me pl\u00e9num sous la pression de la discipline impos\u00e9e par Xi Jinping, re\u00e7oit une visite-\u00e9clair de Kim Jong Un \u00e0 sa fronti\u00e8re, et affronte le typhon Champi sur sa c\u00f4te est \u2014 pendant que la Bourse de Hong Kong d\u00e9visse."
+    },
+    {
+      "id": "russie",
+      "emoji": "\ud83c\uddf7\ud83c\uddfa",
+      "nom": "Russie",
+      "resume": "La Russie promet une \u00ab r\u00e9ponse ferme \u00bb \u00e0 la Moldavie apr\u00e8s l'expulsion d'un diplomate, pr\u00e9pare la visite du pr\u00e9sident iranien mardi \u00e0 Moscou, et vit une nuit d'attaques de drones des deux c\u00f4t\u00e9s du front \u2014 la Crim\u00e9e priv\u00e9e d'eau et d'\u00e9lectricit\u00e9."
+    },
+    {
+      "id": "geopolitique",
+      "emoji": "\ud83c\udf10",
+      "nom": "G\u00e9opolitique mondiale",
+      "resume": "Le grand mouvement du jour est diplomatique : Ukraine et Russie se disent pr\u00eates \u00e0 reprendre des pourparlers sous m\u00e9diation am\u00e9ricaine le mois prochain, un cessez-le-feu localis\u00e9 a \u00e9t\u00e9 n\u00e9goci\u00e9 autour d'une mission humanitaire port\u00e9e par Melania Trump \u2014 pendant que le Moyen-Orient retient son souffle entre menaces am\u00e9ricaines, \u00e9lections isra\u00e9liennes et op\u00e9ration en Cisjordanie."
+    },
+    {
+      "id": "grande-info-semaine",
+      "emoji": "\ud83d\udcf0",
+      "nom": "Grande information de la semaine",
+      "resume": "Au-del\u00e0 des 24 heures, trois dossiers structurent la semaine \u00e9coul\u00e9e et la suivante : la crise sociale fran\u00e7aise qui s'installe, la reprise diplomatique sur la guerre en Ukraine, et le rendez-vous \u00e9lectoral le plus serr\u00e9 du monde occidental \u2014 le second tour br\u00e9silien de dimanche."
+    }
+  ],
+  "hors_chapitres": [
+    "Rugby \u2014 Top 14 : le Stade toulousain a trembl\u00e9 mais tenu, septi\u00e8me victoire d\u2019affil\u00e9e contre Perpignan (38-33) apr\u00e8s avoir men\u00e9 38-7 \u00e0 l\u2019heure de jeu ; en rugby \u00e0 XIII, la France a \u00e9t\u00e9 balay\u00e9e 82-0 par l\u2019Angleterre en Coupe du monde, 24e d\u00e9faite cons\u00e9cutive, tandis que les Bleues de rugby \u00e0 XV jouaient un brassard noir en hommage \u00e0 Cl\u00e9a, l\u2019adolescente morte des suites de blessures sur un terrain (S69, S70, S71).",
+    "Gymnastique \u2014 l\u2019Alg\u00e9rienne Kaylia Nemour a pris sa revanche en or aux barres asym\u00e9triques aux mondiaux de Rotterdam, la Fran\u00e7aise Elena Colas \u00e9chouant \u00e0 7/100es du podium ; Simone Biles a salu\u00e9 depuis les trav\u00e9es la performance de Skye Blakely (S72, S73).",
+    "Tennis \u2014 la finale de l\u2019ATP 250 de Lyon opposera dimanche Taylor Fritz \u00e0 Lorenzo Musetti ; \u00e0 Bruxelles, Arthur Fils s\u2019est inclin\u00e9 en trois tie-breaks contre Jan-Lennard Struff (S74, S75).",
+    "Formule 1 \u2014 Lewis Hamilton a domin\u00e9 la derni\u00e8re s\u00e9ance d\u2019essais libres du Grand Prix des \u00c9tats-Unis \u00e0 Austin devant Verstappen et Leclerc, \u00e0 vingt-quatre heures d\u2019une course o\u00f9 Kimi Antonelli peut d\u00e9crocher le titre (S76).",
+    "MotoGP \u2014 Jorge Martin a d\u00e9clar\u00e9 forfait en Australie apr\u00e8s une fracture du poignet ; Marc Marquez partira en pole et a la voie libre au championnat (S77).",
+    "Football \u2014 gros r\u00e9sultats du samedi : Tottenham a gagn\u00e9 2-0 \u00e0 Chelsea, Arsenal a battu Everton 2-0, Aston Villa a renvers\u00e9 Manchester City 2-1 ; Dortmund a battu Francfort 1-0 \u00e0 une semaine du Klassiker (S78, S79).",
+    "Ligue 1 \u2014 le clasico PSG-Lyon, initialement pr\u00e9vu dimanche, a \u00e9t\u00e9 d\u00e9cal\u00e9 \u00e0 lundi (20h30) par la pr\u00e9fecture de police en pleine mobilisation sociale (S85, S86).",
+    "Patinage artistique \u2014 retour en beaut\u00e9 de Guillaume Cizeron et Laurence Fournier Beaudry, vainqueurs de la danse au Grand Prix de France d\u2019Angers (207,57 points) ; Adam Siao Him Fa en t\u00eate du programme court (S80, S81).",
+    "NBA \u2014 les Spurs de Victor Wembanyama ont encore perdu, face \u00e0 Houston, malgr\u00e9 un public qui scandait \u00ab MVP \u00bb (S82).",
+    "Allemagne \u2014 un suspect de 33 ans a \u00e9t\u00e9 interpell\u00e9 apr\u00e8s l\u2019incendie criminel pr\u00e9sum\u00e9 du \u00ab Nid d\u2019Aigle \u00bb, le site historique d\u2019Hitler en Bavi\u00e8re ; le parquet \u00e9voque une \u00ab possible maladie psychique \u00bb et des mobiles politiques \u00e0 l\u2019\u00e9tude (S83).",
+    "Pompiers \u2014 les pompiers professionnels fran\u00e7ais ont annonc\u00e9 reconduire leur mobilisation jusqu\u2019au 4 d\u00e9cembre, faute de \u00ab r\u00e9ponses attendues \u00bb du gouvernement (S84).",
+    "Suisse \u2014 Berne a annonc\u00e9 puiser dans ses r\u00e9serves de gazole apr\u00e8s des retards de livraison depuis la France, le prix du carburant comptant parmi les plus durement touch\u00e9s par la guerre au Moyen-Orient (S87)."
+  ],
+  "sources": [
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Journ\u00e9e de mobilisation pour le pouvoir d'achat : les derniers d\u00e9veloppements \u00bb",
+      "ref": "news-afp-20261024-54c3d0bb",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Manifestations : 135 interpellations, pas d'incidents majeurs \u00e0 la mi-journ\u00e9e \u00bb",
+      "ref": "news-afp-20261024-cdb17204",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab La France sous tension pour une nouvelle journ\u00e9e de manifestations \u00bb",
+      "ref": "news-afp-20261023-5d91023b",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab L'arr\u00eat\u00e9 d'interdiction de manifester dans les Bouches-du-Rh\u00f4ne partiellement suspendu en justice \u00bb",
+      "ref": "news-afp-20261024-6de6be41",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Manifestation \u00e0 Paris : la gauche inqui\u00e8te et furieuse du changement de parcours \u00bb",
+      "ref": "news-afp-20261024-c20e5021",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Le Conseil de l'Europe appelle \u00e0 respecter le droit de manifester \u00bb",
+      "ref": "news-afp-20261024-2ab3100b",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Mobilisation du 24 octobre en France : choses vues, choses entendues \u00bb",
+      "ref": "news-afp-20261024-5ab3ea8d",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Attaque dans les Yvelines : le suspect et quatre de ses proches entendus par les enqu\u00eateurs \u00bb",
+      "ref": "news-afp-20261024-41b8d2a7",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Attaque meurtri\u00e8re en France : l'enqu\u00eate tente de cerner le profil du tireur \u00bb",
+      "ref": "news-afp-20261024-7c4529e6",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab France : Macron choque avec des propos sur une attaque raciste selon lui in\u00e9dite \u00bb",
+      "ref": "news-afp-20261024-bdfc21e4",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab France extends detention of suspected racist shooter \u00bb",
+      "ref": "news-afp-20261024-059def1e",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Actualit\u00e9s du samedi 24 octobre 2026 \u00bb (Moody's)",
+      "ref": "news-afp-20261024-b60cfe46",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Une hausse du Smic avant le 1er janvier en discussion, selon Roland Lescure \u00bb",
+      "ref": "news-afp-20261024-52454711",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AP, d\u00e9p\u00eache \u00ab Inflation, earnings reports and the mood of consumers and the Federal Reserve fill out a busy week \u00bb",
+      "ref": "news-ap-20261023-a0bd4568",
+      "fiabilite": 5,
+      "maj": "23/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Wall Street flanche sous le poids de la tech et de l'IA \u00bb",
+      "ref": "news-afp-20261022-fd7cbbc3",
+      "fiabilite": 5,
+      "maj": "22/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab La Bourse de Hong Kong recule de plus de 3 %, entra\u00een\u00e9e par la tech \u00bb",
+      "ref": "news-afp-20261022-405c3b6d",
+      "fiabilite": 5,
+      "maj": "22/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Int\u00e9gration de l'IA : la banque Barclays annonce supprimer environ 5.000 emplois \u00bb",
+      "ref": "news-afp-20261022-6480b992",
+      "fiabilite": 5,
+      "maj": "22/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab IA : Meta s'organise pour lever des fonds massifs sans que Zuckerberg perde le contr\u00f4le \u00bb",
+      "ref": "news-afp-20261021-4671524b",
+      "fiabilite": 5,
+      "maj": "21/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Des failles de s\u00e9curit\u00e9 r\u00e9v\u00e9l\u00e9es par l'IA perturbent des sites web dans le monde entier \u00bb",
+      "ref": "news-afp-20261022-dc553de3",
+      "fiabilite": 5,
+      "maj": "22/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Le premier long m\u00e9trage g\u00e9n\u00e9r\u00e9 par IA en Chine sort en salles \u00bb",
+      "ref": "news-afp-20261023-8ec56f16",
+      "fiabilite": 5,
+      "maj": "23/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab En Isra\u00ebl, derniers jours d'une campagne marqu\u00e9e par les coups bas et l'IA \u00bb",
+      "ref": "news-afp-20261024-6689197a",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AP, d\u00e9p\u00eache \u00ab NASA adopting Apollo's urgency to build a moon base and land astronauts within two years \u00bb",
+      "ref": "news-ap-20261023-8b625245",
+      "fiabilite": 5,
+      "maj": "23/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab R\u00e9armement europ\u00e9en et constellation Iris\u00b2 dopent les commandes de Thales \u00bb",
+      "ref": "news-afp-20261022-c5ae103b",
+      "fiabilite": 5,
+      "maj": "22/10/2026"
+    },
+    {
+      "label": "AP, d\u00e9p\u00eache \u00ab Musk says he was behind Starlink speed restriction after service in Ukraine is restored \u00bb",
+      "ref": "news-ap-20261024-20888d12",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Ukraine has 'stable connection' to Starlink: govt \u00bb",
+      "ref": "news-afp-20261024-ddd927a6",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "L\u00e9gifrance, Code de la s\u00e9curit\u00e9 int\u00e9rieure (texte consolid\u00e9, articles L211-1 et suivants)",
+      "ref": "https://www.legifrance.gouv.fr",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "service-public.fr, \u00ab Faire une manifestation sur la voie publique \u00bb",
+      "ref": "https://www.service-public.fr",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Paris Games Week : un petit studio fran\u00e7ais pr\u00e9sente son premier jeu o\u00f9 l'horreur se vit \u00e0 deux \u00bb",
+      "ref": "news-afp-20261022-b799278c",
+      "fiabilite": 5,
+      "maj": "22/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Jeux vid\u00e9o : le CNC va verser 1,5 million d'euros suppl\u00e9mentaires en soutien aux studios fran\u00e7ais \u00bb",
+      "ref": "news-afp-20261023-947e5457",
+      "fiabilite": 5,
+      "maj": "23/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Avec Modern Warfare 4, Call of Duty renoue avec la guerre \u00e0 grand spectacle \u00bb",
+      "ref": "news-afp-20261023-19c93424",
+      "fiabilite": 5,
+      "maj": "23/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Paris Games Week : comme les h\u00e9ros de jeux vid\u00e9o, les joueurs vieillissent aussi \u00bb",
+      "ref": "news-afp-20261022-85c8810b",
+      "fiabilite": 5,
+      "maj": "22/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Ballon d'Or : le rappeur French Montana et la chanteuse Jorja Smith se produiront \u00bb",
+      "ref": "news-afp-20261024-cea4a1b5",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Prix Femina : cinq finalistes en lice, dont trois \u00e9crivaines \u00bb",
+      "ref": "news-afp-20261023-64246b54",
+      "fiabilite": 5,
+      "maj": "23/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab La saga ph\u00e9nom\u00e8ne ACOTAR revient en librairie apr\u00e8s cinq ans d'attente \u00bb",
+      "ref": "news-afp-20261023-5a234da8",
+      "fiabilite": 5,
+      "maj": "23/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Oulipo franco-japonais : un d\u00e9fi litt\u00e9raire de 24h \u00e0 bord d'un train de luxe \u00bb",
+      "ref": "news-afp-20261022-89f56a92",
+      "fiabilite": 5,
+      "maj": "22/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Un essai de vaccin contre Ebola d\u00e9bute en R\u00e9publique d\u00e9mocratique du Congo \u00bb",
+      "ref": "news-afp-20261024-e0ef03b8",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, entretien \u00ab Cancer : vaccins ARN, immunoth\u00e9rapies et IA au menu du congr\u00e8s europ\u00e9en de canc\u00e9rologie \u00bb",
+      "ref": "news-afp-20261023-38428297",
+      "fiabilite": 5,
+      "maj": "23/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Moderna plonge \u00e0 Wall Street apr\u00e8s des fuites sur les r\u00e9sultats d'un vaccin contre le cancer de la peau \u00bb",
+      "ref": "news-afp-20261022-6d5f123b",
+      "fiabilite": 5,
+      "maj": "22/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Les autorit\u00e9s \u00e9cartent toute fraude massive au concours d'internat en m\u00e9decine \u00bb",
+      "ref": "news-afp-20261023-9db2765b",
+      "fiabilite": 5,
+      "maj": "23/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Etudes de sant\u00e9 : publication du d\u00e9cret pour revenir \u00e0 la voie unique pour la premi\u00e8re ann\u00e9e \u00bb",
+      "ref": "news-afp-20261024-f8ead17a",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Typhon Champi \u00e0 Ta\u00efwan : 56.000 foyers sans \u00e9lectricit\u00e9, un mort et des milliers d'\u00e9vacuations \u00bb",
+      "ref": "news-afp-20261024-5391cd27",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Champi, r\u00e9trograd\u00e9 en temp\u00eate tropicale, s'approche de la Chine \u00bb",
+      "ref": "news-afp-20261024-45215a65",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Pr\u00e9sidentielle : un nouveau sondage place M\u00e9lenchon au 2e tour dans toutes les configurations \u00bb",
+      "ref": "news-afp-20261024-b9c0f428",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab France : le Rassemblement national en congr\u00e8s au coeur d'une journ\u00e9e de manifestation sous haute surveillance \u00bb",
+      "ref": "news-afp-20261024-f8c6d315",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Orl\u00e9ans : Bardella r\u00e9\u00e9lu au congr\u00e8s du RN apr\u00e8s une manifestation antifasciste sans heurts \u00bb",
+      "ref": "news-afp-20261023-976cf17e",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab M\u00e9lenchon \u00e0 Macron : il est temps de c\u00e9der, apr\u00e8s il ne restera plus que la porte de sortie \u00bb",
+      "ref": "news-afp-20261024-88a6bb09",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab A Orl\u00e9ans, des manifestants inquiets d\u00e9filent dans le calme face au RN \u00bb",
+      "ref": "news-afp-20261024-e256849d",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AP, d\u00e9p\u00eache \u00ab US is reducing staffing at 4 Middle East embassies over increased threats from Iran \u00bb",
+      "ref": "news-ap-20261024-75f5f311",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Moyen-Orient : le chef du renseignement am\u00e9ricain met en garde contre des attaques visant ses concitoyens \u00bb",
+      "ref": "news-afp-20261024-fb76a384",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AP, d\u00e9p\u00eache \u00ab 2 ex-FBI officials charged with lying about involvement in investigation into Hunter Biden's laptop \u00bb",
+      "ref": "news-ap-20261023-24da3601",
+      "fiabilite": 5,
+      "maj": "23/10/2026"
+    },
+    {
+      "label": "AP, d\u00e9p\u00eache \u00ab Some US transit systems weigh whether to run trains without a human at the controls \u00bb",
+      "ref": "news-ap-20261024-5af1bd71",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AP, d\u00e9p\u00eache \u00ab Republican billionaire Rick Jackson is walking a Trump tightrope in his quest to lead Georgia \u00bb",
+      "ref": "news-ap-20261024-70e1f6ea",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Appel \u00e0 collaborer avec la CIA : Cuba ironise sur le d\u00e9sespoir des \u00c9tats-Unis \u00bb",
+      "ref": "news-afp-20261024-0e18122e",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9cryptage \u00ab Ce qu'il faut savoir sur le cinqui\u00e8me pl\u00e9num du Parti communiste chinois \u00bb",
+      "ref": "news-afp-20261024-4b4810af",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Le dirigeant Kim Jong Un de retour en Cor\u00e9e du Nord apr\u00e8s une br\u00e8ve visite \u00e0 Dandong en Chine \u00bb",
+      "ref": "news-afp-20261024-44677945",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AP, d\u00e9p\u00eache \u00ab North Korean leader Kim Jong Un visits China, South Korean news agency reports \u00bb",
+      "ref": "news-ap-20261024-74128cdb",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Cor\u00e9e du Nord : Kim exhorte son arm\u00e9e \u00e0 devenir la plus forte du monde \u00bb",
+      "ref": "news-afp-20261024-d3f353f1",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Le pr\u00e9sident iranien rencontrera Poutine mardi \u00e0 Moscou (m\u00e9dia) \u00bb",
+      "ref": "news-afp-20261024-0e42be28",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Russie : coupures d'eau et d'\u00e9lectricit\u00e9 en Crim\u00e9e apr\u00e8s une attaque ukrainienne \u00bb",
+      "ref": "news-afp-20261024-ed16f18e",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab La Russie promet une r\u00e9ponse ferme apr\u00e8s l'expulsion d'un diplomate par la Moldavie \u00bb",
+      "ref": "news-afp-20261024-14fca6c1",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Ukraine : trois morts dans une frappe ukrainienne en territoire occup\u00e9 par la Russie \u00bb",
+      "ref": "news-afp-20261024-821f6719",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AP, d\u00e9p\u00eache \u00ab Ukraine and Russia eye new peace talks \u2014 and Melania Trump's mission \u2014 but steep obstacles remain \u00bb",
+      "ref": "news-ap-20261024-7bb9e26f",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Guerre au Moyen-Orient : les Iraniens ont du mal \u00e0 se nourrir, dit Pezeshkian \u00bb",
+      "ref": "news-afp-20261024-5d9a3d6b",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AP, d\u00e9p\u00eache \u00ab Israel imposes closures across a West Bank city after attacks, and other Mideast news \u00bb",
+      "ref": "news-ap-20261024-ce6bb628",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab A Tel-Aviv, des milliers de personnes contre Netanyahu avant les \u00e9lections \u00bb",
+      "ref": "news-afp-20261024-05e3857f",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Actualit\u00e9s du samedi 24 octobre 2026 \u00bb (Br\u00e9sil : Lula et Bolsonaro mobilisent des milliers de partisans)",
+      "ref": "news-afp-20261024-a35fe58e",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Lula, Bolsonaro hold final rallies ahead of Brazil election \u00bb",
+      "ref": "news-afp-20261024-59acb054",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Lula, Bolsonaro hold calmer debate before Brazil election \u00bb",
+      "ref": "news-afp-20261024-181bf2c6",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Top 14 : Toulouse se fait peur mais l'emporte contre Perpignan \u00bb",
+      "ref": "news-afp-20261024-91fc64f6",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Rugby : humili\u00e9es la semaine pass\u00e9e, les Bleues r\u00e9sistent mieux contre la Nouvelle-Z\u00e9lande \u00bb",
+      "ref": "news-afp-20261024-258e08a7",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab England thrash France 82-0 to keep Rugby League World Cup hopes alive \u00bb",
+      "ref": "news-afp-20261024-ab979333",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Mondiaux de gym : Nemour en or aux barres asym\u00e9triques, Colas 4e \u00bb",
+      "ref": "news-afp-20261024-e607aec4",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Mondiaux de gym : Andrade et Nemour \u00e9patantes sous les yeux de Simone Biles \u00bb",
+      "ref": "news-afp-20261024-9c5aaa34",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab ATP 250 de Lyon : Musetti rejoint Fritz en finale \u00bb",
+      "ref": "news-afp-20261024-0908b877",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab ATP 250 de Bruxelles : les r\u00e9sultats des demi-finales samedi \u00bb",
+      "ref": "news-afp-20261024-52db012d",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab F1/GP des Etats-Unis : Hamilton le plus rapide des essais libres 3 \u00bb",
+      "ref": "news-afp-20261024-15fd667c",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab MotoGP : la grille de d\u00e9part du Grand Prix d'Australie \u00bb",
+      "ref": "news-afp-20261024-13389de4",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Championnat d'Angleterre : la 8e journ\u00e9e en un coup d'oeil \u00bb",
+      "ref": "news-afp-20261024-7161cd6e",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Championnat d'Allemagne : la 7e journ\u00e9e en un coup d'oeil \u00bb",
+      "ref": "news-afp-20261024-3c6022ea",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Grand Prix de France de patinage artistique : les r\u00e9sultats de samedi \u00bb",
+      "ref": "news-afp-20261024-d64ef92b",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Patinage : retour en beaut\u00e9 pour Cizeron et Fournier Beaudry au Grand Prix de France \u00bb",
+      "ref": "news-afp-20261024-26625496",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab NBA : Les Spurs de Wemby encore battus, les Knicks aussi \u00bb",
+      "ref": "news-afp-20261024-98d79ab9",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Allemagne : incendie criminel pr\u00e9sum\u00e9 du Nid d'Aigle d'Hitler, un suspect arr\u00eat\u00e9 \u00bb",
+      "ref": "news-afp-20261024-76154149",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab Nouvelle mobilisation des pompiers professionnels le 4 d\u00e9cembre \u00bb",
+      "ref": "news-afp-20261024-72c59336",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab L1 : aucun souci que le PSG joue lundi contre l'OL, pour Luis Enrique \u00bb",
+      "ref": "news-afp-20261024-050eb458",
+      "fiabilite": 5,
+      "maj": "24/10/2026"
+    },
+    {
+      "label": "AP, d\u00e9p\u00eache \u00ab PSG v Lyon French Ligue 1 game postponed due to Paris protests \u00bb",
+      "ref": "news-afp-20261023-fcc8705f",
+      "fiabilite": 5,
+      "maj": "23/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab La Suisse puise dans ses r\u00e9serves de gazole apr\u00e8s des retards de livraison depuis la France \u00bb",
+      "ref": "news-afp-20261023-9f239261",
+      "fiabilite": 5,
+      "maj": "23/10/2026"
+    },
+    {
+      "label": "AFP, d\u00e9p\u00eache \u00ab 371 livres \u00e9crits en 20 mois avec l'IA : l'autrice Coral Hart d\u00e9fend son oeuvre \u00bb",
+      "ref": "news-afp-20261022-e9ebc3a1",
+      "fiabilite": 5,
+      "maj": "22/10/2026"
+    }
+  ]
+}
