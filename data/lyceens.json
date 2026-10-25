@@ -1,5 +1,5 @@
 {
-  "maj": "24/10/2026 17:38",
+  "maj": "25/10/2026 22:36",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -19,6 +19,20 @@
     "Mercredi 7 octobre (lendemain de l'acte III) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
   ],
   "version_gouvernement": [
+    {
+      "id": "amvocl4mh-1oze",
+      "date": "25/10/2026",
+      "titre": "Des organisations lycéennes et étudiantes reçues lundi à Matignon, les ministres de l'Éducation et de l'Enseignement su…",
+      "texte": "Le Premier ministre Sébastien Lecornu va recevoir les organisations lycéennes puis étudiantes lundi en début d'après-midi. Elles espèrent des annonces concrètes face à leurs revendications. En fin d'…",
+      "source": "20 minutes / Europe 1 / BFMTV",
+      "sources": [
+        "20 minutes",
+        "Europe 1",
+        "BFMTV"
+      ],
+      "url": "https://www.bfmtv.com/societe/education/des-organisations-lyceennes-et-etudiantes-recues-lundi-a-matignon-les-ministres-de-l-education-et-de-l-enseignement-superieur-s-exprimeront-ensuite_AD-202610250373.html",
+      "verifie": true
+    },
     {
       "id": "amvkf8zn8-i4vl",
       "date": "23/10/2026",
@@ -48,23 +62,6 @@
         "Libération"
       ],
       "url": "https://www.radiofrance.fr/franceinfo/podcasts/ca-dit-quoi/ca-dit-quoi-8845422",
-      "verifie": true
-    },
-    {
-      "id": "amvlhspco-kjex",
-      "date": "23/10/2026",
-      "titre": "Colère sociale: des représentants lycéens appellent à \"continuer à se mobiliser\" après une rencontre avec Emmanuel Macr…",
-      "texte": "Après plus d'un mois de colère des lycéens, le président de la République va recevoir ce vendredi 23 octobre les organisations lycéennes à l'Élysée pour \"écouter les revendications\", selon la préside…",
-      "source": "20 minutes / BFMTV / France 24 / RFI / Ouest-France / La Croix",
-      "sources": [
-        "20 minutes",
-        "BFMTV",
-        "France 24",
-        "RFI",
-        "Ouest-France",
-        "La Croix"
-      ],
-      "url": "https://www.bfmtv.com/politique/direct-colere-sociale-conseil-de-defense-rencontre-avec-les-organisations-lyceennes-et-les-forces-de-l-ordre-la-journee-tres-chargee-d-emmanuel-macron-avant-une-nouvelle-mobilisation-attendue-le-24-octobre_LN-202610230108.html",
       "verifie": true
     },
     {
