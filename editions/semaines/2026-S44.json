@@ -1,0 +1,42 @@
+{
+  "semaine": "2026-S44",
+  "lundi": "2026-10-26",
+  "html": "editions/semaines/2026-S44.html",
+  "jours": [
+    {
+      "jour": "lundi",
+      "date": "2026-10-26",
+      "essentiel": "L\u2019\u00e9dition du lundi 26 octobre ouvre la semaine 44 : Emmanuel Macron s\u2019est rendu \u00e0 Marseille pour parler \u00ab retour de l\u2019ordre \u00bb dans une France \u00ab en \u00e9tat d\u2019\u00e9bullition \u00bb \u2014 trac\u00e9s de manif hors des centres-villes, \u00e9tat d\u2019urgence \u00e9cart\u00e9 pour l\u2019heure \u2014 pendant que Lecornu promettait aux organisations lyc\u00e9ennes \u00ab des r\u00e9ponses tr\u00e8s concr\u00e8tes \u00bb : remplacement progressif de Parcoursup, places suppl\u00e9mentaires dans le sup\u00e9rieur. Anthropic a rendu public le dossier de ce qui pourrait \u00eatre la plus grosse IPO de l\u2019histoire (16,3 milliards de dollars de revenus au S1, pertes de 8,4 milliards, 100 pages de risques), SpaceX a boucl\u00e9 40 milliards de dollars de cr\u00e9dit-bail de GPU avec Apollo, et Microsoft propose 60.000 d\u00e9parts volontaires. La BCE se r\u00e9unit jeudi face \u00e0 des rendements fran\u00e7ais au plus haut depuis 2002 \u2014 pas de bou\u00e9e attendue \u2014 et l\u2019assureur Wakam, interdit de souscription par l\u2019ACPR, passe sous pavillon am\u00e9ricain (AmTrust). Une commission de l\u2019ONU accuse Moscou de crimes contre l\u2019humanit\u00e9 et de traite d\u2019\u00eatres humains venus de 29 pays, le Kremlin refuse tout ralentissement malgr\u00e9 les n\u00e9gociations de novembre, et le diesel russe fait route vers New York malgr\u00e9 la fronde de six s\u00e9nateurs. Isra\u00ebl vote mardi sous menace iranienne, le Parlement \u00e9gyptien autorise un soutien militaire \u00e0 l\u2019Arabie saoudite face aux Houthis, et l\u2019UE salue le retour de Machado au Venezuela. Enfin, la culture pleure Ren\u00e9 Belletto, le Mus\u00e9e imaginaire d\u2019Oli ouvre sa billetterie au Grand Palais, le droit d\u00e9cryptait l\u2019interruption de garde \u00e0 vue pour troubles psychiatriques, et Phantom Blade Zero sort enfin jeudi."
+    },
+    {
+      "jour": "mardi",
+      "date": "2026-10-27",
+      "essentiel": null
+    },
+    {
+      "jour": "mercredi",
+      "date": "2026-10-28",
+      "essentiel": null
+    },
+    {
+      "jour": "jeudi",
+      "date": "2026-10-29",
+      "essentiel": null
+    },
+    {
+      "jour": "vendredi",
+      "date": "2026-10-30",
+      "essentiel": null
+    },
+    {
+      "jour": "samedi",
+      "date": "2026-10-31",
+      "essentiel": null
+    },
+    {
+      "jour": "dimanche",
+      "date": "2026-11-01",
+      "essentiel": null
+    }
+  ]
+}
