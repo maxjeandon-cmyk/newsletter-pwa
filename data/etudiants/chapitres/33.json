@@ -17,6 +17,15 @@
         "Blast",
         "Reddit — r/etudiants"
       ]
+    },
+    {
+      "id": "c33p3",
+      "texte": "6 heures ont passé depuis le relevé précédent ; le fil continue. Au soir du 26 octobre 2026, la chronique avance. Côté gouvernement, les réponses s'égrènent : Face aux lycéens et aux étudiants, le gouvernement concède sans convaincre (1 media : Mediapart — non corrobore) — detail : Sébastien Lecornu a présenté des pistes de réformes aux syndicats lycéens et étudiants, en tentant de les diviser et en donnant la primeur à la presse ainsi qu’à des créatrices de…. Autour du mouvement, les voix se croisent : En immersion à l'« université populaire » de l'ENS, une occupation en soutien au mouvement lycéen (1 media : Blast — non corrobore) — detail : REPORTAGE – La prestigieuse grande école parisienne, dédiée à l’enseignement et à la recherche, est occupée depuis le 19 octobre par ses propres étudiants, qui y ont lancé une « u…. Le prochain relevé reprendra le fil. (Relevé automatique du 26 octobre 2026 à 22:40 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "Mediapart",
+        "Blast"
+      ],
+      "auto": true
     }
   ]
 }
