@@ -3,7 +3,7 @@
   "intro": "Chronique narrative du mouvement lycéen et étudiant de l'automne 2026, écrite du point de vue des élèves : de l'amorce de Créteil au dernier acte en date, le fil s'allonge d'un relevé automatique toutes les six heures, et les chapitres transverses — la voix de l'intérieur, les revendications mot à mot, la répression, la machine gouvernementale, la longue durée, le lexique, les figures — viennent fermer le fil. Sources : la presse au plus près du mouvement — Le Média, Blast, L'Humanité, Mediapart — et la voix des réseaux en direct : les fils Reddit (r/etudiants, r/enseignants, r/france), les serveurs Discord du mouvement ; les fils TikTok, Snapchat et Instagram restent en vitrine, repris dès qu'un post ou un commentaire y est cité ; Wikipédia en colonne vertébrale factuelle.",
   "note": "Méthode : chaque paragraphe cite ses sources. Les paragraphes marqués « auto » sont des relevés bruts ajoutés par le pipeline toutes les 6 h (faits sourcés, sans réécriture) ; la rédaction narrative approfondie est assurée lors des éditions de la newsletter. Badge ✅ (corroboré par au moins deux médias distincts) et ⚠️ (une seule source) : ces distinctions s'appliquent aux relevés automatiques.",
   "maj": "26/10/2026",
-  "totalParagraphes": 179,
+  "totalParagraphes": 181,
   "chapitres": [
     {
       "id": "c1",
@@ -106,8 +106,8 @@
       "fichier": "chapitres/13.json",
       "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
       "titre": "La machine gouvernementale, vue d'en bas",
-      "paragraphes": 14,
-      "octets": 15519
+      "paragraphes": 15,
+      "octets": 16164
     },
     {
       "id": "c14",
@@ -266,13 +266,13 @@
       "fichier": "chapitres/33.json",
       "periode": "26 octobre 2026 — suivi de la journée",
       "titre": "Le fil continue — 26 octobre 2026",
-      "paragraphes": 2,
-      "octets": 1993
+      "paragraphes": 3,
+      "octets": 3193
     }
   ],
   "releveSigs": [
-    "campus|change|choix|science#",
-    "immersi|populai|soutien|univers#"
+    "concede|face|gouvern|sans#",
+    "immersi|occupat|populai|univers#"
   ],
   "sections": [
     {
@@ -485,8 +485,8 @@
           "fichier": "chapitres/33.json",
           "periode": "26 octobre 2026 — suivi de la journée",
           "titre": "Le fil continue — 26 octobre 2026",
-          "paragraphes": 2,
-          "octets": 1993
+          "paragraphes": 3,
+          "octets": 3193
         },
         {
           "id": "c10",
@@ -517,8 +517,8 @@
           "fichier": "chapitres/13.json",
           "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
           "titre": "La machine gouvernementale, vue d'en bas",
-          "paragraphes": 14,
-          "octets": 15519
+          "paragraphes": 15,
+          "octets": 16164
         },
         {
           "id": "c14",
@@ -547,8 +547,8 @@
       ]
     }
   ],
-  "releveDate": "2026-10-26T16:08:47.306Z",
-  "releveCompteur": 45,
+  "releveDate": "2026-10-26T21:40:33.283Z",
+  "releveCompteur": 46,
   "chapitreJour": {
     "id": "c33",
     "fichier": "chapitres/33.json",
