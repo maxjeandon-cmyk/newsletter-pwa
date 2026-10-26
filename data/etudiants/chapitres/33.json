@@ -12,12 +12,11 @@
     },
     {
       "id": "c33p2",
-      "texte": "6 heures ont passé depuis le relevé précédent ; le fil continue. Dans l'après-midi du 26 octobre 2026, le mouvement poursuit sa route. Les commentaires, eux, affluent : Blocus à l’ENS : en immersion à l'université populaire rue d’Ulm à Paris, en soutien aux lycéens (1 media : Blast — non corrobore) — detail : REPORTAGE – La prestigieuse grande école, dédiée à l’enseignement et à la recherche, est occupée depuis le 19 octobre par ses propres étudiants, qui y ont lancé une « université p…. Sur les réseaux, la parole des premiers concernés est directe : Le choix du campus à Sciences Po change vraiment la vie étudiante ? (Reddit — r/etudiants) — detail : <!-- SC_OFF --><div class=\"md\"><p>Je suis en psycho et je m&#39;intéresse un peu aux différents campus de Sciences Po, mais franchement à part les spécialités j&#39;arrive pas tro…. Le prochain relevé reprendra le fil. (Relevé automatique du 26 octobre 2026 à 17:08 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "Dans l'après-midi du 26 octobre, le fil de la journée reprend rue d'Ulm, à Paris. Blast s'y est glissé « en immersion » : l'École normale supérieure, « dédiée à l'enseignement et à la recherche », est « occupée depuis le 19 octobre par ses propres étudiants », qui y ont lancé une « université populaire » « en soutien aux lycéens ». Une seule voix pour ce fait, que la chronique enregistre telle quelle. Et pendant que la rue d'Ulm tient son occupation, la vie étudiante ordinaire continue de se raconter : sur r/etudiants, un étudiant en psycho se demande si « le choix du campus à Sciences Po change vraiment la vie étudiante » — il s'intéresse aux différents campus, mais, à part les spécialités, n'arrive pas trop à les départager. Le jour décline sur une occupation qui a trouvé sa grande école — et le relevé du soir dira ce que la nuit en garde.",
       "sources": [
         "Blast",
         "Reddit — r/etudiants"
-      ],
-      "auto": true
+      ]
     }
   ]
 }
