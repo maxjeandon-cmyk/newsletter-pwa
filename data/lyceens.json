@@ -1,5 +1,5 @@
 {
-  "maj": "26/10/2026 17:08",
+  "maj": "26/10/2026 22:40",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -40,10 +40,14 @@
       "date": "26/10/2026",
       "titre": "Colère des lycéens : Remplacement de Parcoursup, cinq milliards pour les bâtiments… Les propositions du gouvernement",
       "texte": "Colère des lycéens : Remplacement de Parcoursup, cinq milliards pour les bâtiments… Les propositions du gouvernement",
-      "source": "20 minutes / Europe 1",
+      "source": "20 minutes / Europe 1 / BFMTV / France Inter / RFI / La Croix",
       "sources": [
         "20 minutes",
-        "Europe 1"
+        "Europe 1",
+        "BFMTV",
+        "France Inter",
+        "RFI",
+        "La Croix"
       ],
       "url": "https://www.20minutes.fr/societe/4257736-20261026-colere-lyceens-remplacement-parcoursup-cinq-milliards-batiments-propositions-gouvernement?at_medium=display&at_campaign=149",
       "verifie": true
@@ -53,10 +57,13 @@
       "date": "26/10/2026",
       "titre": "Refonte de Parcoursup, recrutement de profs, rénovation du bâti scolaire… Ce qu’il faut retenir des annonces du gouvern…",
       "texte": "Alors que les lycéens et étudiants se mobilisent depuis un mois dans la rue pour faire entendre leur colère, l’exécutif leur adresse ce lundi des premières réponses à leurs revendications.",
-      "source": "Le Figaro / L'Humanité",
+      "source": "Le Figaro / L'Humanité / Public Sénat / BFMTV / Libération",
       "sources": [
         "Le Figaro",
-        "L'Humanité"
+        "L'Humanité",
+        "Public Sénat",
+        "BFMTV",
+        "Libération"
       ],
       "url": "https://www.lefigaro.fr/actualite-france/refonte-de-parcoursup-recrutement-de-profs-renovation-du-bati-scolaire-ce-qu-il-faut-retenir-des-annonces-du-gouvernement-en-reponse-aux-lyceens-20261026",
       "verifie": true
