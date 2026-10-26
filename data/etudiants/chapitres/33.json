@@ -5,11 +5,10 @@
   "paragraphes": [
     {
       "id": "c33p1",
-      "texte": "Plusieurs jours ont passé depuis le relevé précédent ; la chronique reprend son fil. Au matin du 26 octobre 2026, la journée s'écrit encore. La vague, elle, continue d'avancer : En Serbie, la Liste étudiante chasse du pouvoir l’autocrate Vučić (1 media : Mediapart — non corrobore) — detail : La Liste étudiante a réussi l’impossible. Dimanche 25 octobre, après deux ans de contestations commencées dans les rues, elle a emporté les législatives face au pouvoir autoritair…. Le prochain relevé reprendra le fil. (Relevé automatique du 26 octobre 2026 à 10:50 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "Le fil s’était tu un vendredi soir, au seuil d’un week-end ; il reprend ce lundi 26 octobre, et la journée s’écrit encore. Mais la vague, elle, n’attend pas les grilles françaises pour avancer : dimanche 25 octobre, en Serbie, la Liste étudiante a emporté les législatives, après deux ans de contestations commencées dans les rues — « réussi l’impossible », resume Mediapart, qui la voit chasser du pouvoir « l’autocrate Vučić ». Une seule voix pour ce fait, que la chronique enregistre telle quelle ; l’écho venu de Belgrade ne rouvre pas les blocus, mais il rappelle que la génération de 2026 ne se bat pas seule — et le fil repris attend maintenant ce que la journée en dira.",
       "sources": [
         "Mediapart"
-      ],
-      "auto": true
+      ]
     }
   ]
 }
