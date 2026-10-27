@@ -1,35 +1,35 @@
 {
-  "date": "26/10/2026",
-  "heure": "21:40",
+  "date": "27/10/2026",
+  "heure": "03:41",
   "relevesOng": {
-    "rafraichis": 0,
+    "rafraichis": 9,
     "echecs": 1,
-    "publie": false
+    "publie": true
   },
   "lyceens": {
     "nouvelles": 0,
-    "fusionnees": 4,
-    "moissonnes": 35,
+    "fusionnees": 3,
+    "moissonnes": 34,
     "total": 22,
     "publie": true
   },
   "etudiants": {
-    "items": 2,
-    "ajoutes": 1,
-    "chapitre": "c33",
+    "items": 0,
+    "ajoutes": 0,
+    "chapitre": null,
     "nouveauChapitre": false,
-    "publie": true
+    "publie": false
   },
   "verifs": [
     {
       "nom": "validate-latest.js",
-      "ok": false,
-      "detail": "  ✅ boutons avec data-resume — trouvé(s)=15\n  ✅ <script> de partage équilibré\n\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 23/10/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n1 édition(s) non conforme(s).\n"
+      "ok": true,
+      "detail": "\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 24/10/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n\nToutes les éditions récentes sont conformes. 🌱"
     },
     {
       "nom": "check-site.js",
       "ok": true,
-      "detail": "=== check-site ===\nℹ️  latest.json : 29 édition(s), plus récente 2026-10-25\nℹ️  édition 2026-10-25 : JSON OK, HTML 80583 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
+      "detail": "=== check-site ===\nℹ️  latest.json : 30 édition(s), plus récente 2026-10-26\nℹ️  édition 2026-10-26 : JSON OK, HTML 86800 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
     },
     {
       "nom": "sonde notifications",
@@ -38,22 +38,20 @@
     },
     {
       "nom": "ong-releve.js",
-      "ok": false,
-      "detail": "0 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
+      "ok": true,
+      "detail": "9 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
     },
     {
       "nom": "lyceens.js",
       "ok": true,
-      "detail": "0 nouvelle(s) info, 4 fusionnée(s) sur 35 moissonnée(s) — 22 au total"
+      "detail": "0 nouvelle(s) info, 3 fusionnée(s) sur 34 moissonnée(s) — 22 au total"
     },
     {
       "nom": "etudiants.js",
       "ok": true,
-      "detail": "2 info(s) des dernières heures, 1 paragraphe(s) ajouté(s)"
+      "detail": "0 info(s) des dernières heures, 0 paragraphe(s) ajouté(s)"
     }
   ],
-  "problemes": [
-    "validate-latest.js"
-  ],
-  "intervention": "Anomalies détectées — aucune correction automatique appliquée (éditions/ figé) : correction manuelle requise."
+  "problemes": [],
+  "intervention": "Aucune intervention nécessaire : éditions et site publics conformes."
 }
