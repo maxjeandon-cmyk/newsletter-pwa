@@ -116,11 +116,11 @@
     },
     {
       "id": "c13p15",
-      "texte": "Vue d'en bas, la machine gouvernementale tourne : Face aux lycéens et aux étudiants, le gouvernement concède sans convaincre (1 media : Mediapart — non corrobore) — détail : Sébastien Lecornu a présenté des pistes de réformes aux syndicats lycéens et étudiants, en tentant de les diviser et en donnant la primeur … (Volet automatique du 26 octobre 2026 à 22:40, chapitre « La machine gouvernementale, vue d'en bas » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "Vue d'en bas, la machine gouvernementale en vient aux concessions : « Face aux lycéens et aux étudiants, le gouvernement concède sans convaincre », relève Mediapart — Sébastien Lecornu a présenté des pistes de réformes aux syndicats lycéens et étudiants, en tentant de les diviser et en donnant la primeur à la presse. Une seule voix pour ce fait, que la chronique enregistre telle quelle ; vue des grilles, la manœuvre se lit d'elle-même — tenter de diviser ceux qui tiennent ensemble, c'est déjà admettre qu'ils tiennent.",
       "sources": [
         "Mediapart"
-      ],
-      "auto": true
+      ]
     }
   ]
 }
+

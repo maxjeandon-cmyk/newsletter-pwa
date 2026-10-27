@@ -107,7 +107,7 @@
       "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
       "titre": "La machine gouvernementale, vue d'en bas",
       "paragraphes": 15,
-      "octets": 16164
+      "octets": 16165
     },
     {
       "id": "c14",
@@ -267,7 +267,7 @@
       "periode": "26 octobre 2026 — suivi de la journée",
       "titre": "Le fil continue — 26 octobre 2026",
       "paragraphes": 3,
-      "octets": 3193
+      "octets": 2930
     }
   ],
   "releveSigs": [
@@ -486,7 +486,7 @@
           "periode": "26 octobre 2026 — suivi de la journée",
           "titre": "Le fil continue — 26 octobre 2026",
           "paragraphes": 3,
-          "octets": 3193
+          "octets": 2930
         },
         {
           "id": "c10",
@@ -518,7 +518,7 @@
           "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
           "titre": "La machine gouvernementale, vue d'en bas",
           "paragraphes": 15,
-          "octets": 16164
+          "octets": 16165
         },
         {
           "id": "c14",
