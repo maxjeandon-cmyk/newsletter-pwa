@@ -1,5 +1,5 @@
 {
-  "maj": "27/10/2026 04:41",
+  "maj": "27/10/2026 10:46",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -20,53 +20,44 @@
   ],
   "version_gouvernement": [
     {
-      "id": "amvpgb8fx-babk",
-      "date": "26/10/2026",
-      "titre": "EN DIRECT – Crise lycéenne : le gouvernement s’apprête à livrer ses «réponses très concrètes», Parcoursup pourrait être…",
-      "texte": "Après un mois de mobilisation des lycéens et des étudiants, les ministres de l’Education et de l’Enseignement supérieur doivent livrer les conclusions de l’exécutif dans une conférence de presse prév…",
-      "source": "20 minutes / Europe 1 / BFMTV / La Croix / Libération / France Inter",
+      "id": "amvqi3iic-i79l",
+      "date": "27/10/2026",
+      "titre": "\"Le droit au blocage n'existe pas\": le ministre de l'Enseignement supérieur juge que \"le travail\" des lycéens \"doit rep…",
+      "texte": "Après plus d'un mois de manifestations et de blocages, et au lendemain d'annonces censées répondre à leurs demandes, Philippe Baptiste appelle les lycéens à reprendre le chemin des cours lors de la r…",
+      "source": "20 minutes / Le Figaro / BFMTV / Libération",
       "sources": [
         "20 minutes",
-        "Europe 1",
-        "BFMTV",
-        "La Croix",
-        "Libération",
-        "France Inter"
-      ],
-      "url": "https://www.liberation.fr/societe/education/en-direct-crise-lyceenne-le-gouvernement-sapprete-a-livrer-ses-reponses-tres-concretes-parcoursup-pourrait-etre-remplace-dans-les-deux-ans-20261026_KNWOZ267WZBBDF5ESFKELFHGWM/",
-      "verifie": true
-    },
-    {
-      "id": "amvpgb8fx-33eu",
-      "date": "26/10/2026",
-      "titre": "Colère des lycéens : Remplacement de Parcoursup, cinq milliards pour les bâtiments… Les propositions du gouvernement",
-      "texte": "Colère des lycéens : Remplacement de Parcoursup, cinq milliards pour les bâtiments… Les propositions du gouvernement",
-      "source": "20 minutes / Europe 1 / BFMTV / France Inter / RFI / La Croix",
-      "sources": [
-        "20 minutes",
-        "Europe 1",
-        "BFMTV",
-        "France Inter",
-        "RFI",
-        "La Croix"
-      ],
-      "url": "https://www.20minutes.fr/societe/4257736-20261026-colere-lyceens-remplacement-parcoursup-cinq-milliards-batiments-propositions-gouvernement?at_medium=display&at_campaign=149",
-      "verifie": true
-    },
-    {
-      "id": "amvpgb8fz-7rq0",
-      "date": "26/10/2026",
-      "titre": "Refonte de Parcoursup, recrutement de profs, rénovation du bâti scolaire… Ce qu’il faut retenir des annonces du gouvern…",
-      "texte": "Alors que les lycéens et étudiants se mobilisent depuis un mois dans la rue pour faire entendre leur colère, l’exécutif leur adresse ce lundi des premières réponses à leurs revendications.",
-      "source": "Le Figaro / L'Humanité / Public Sénat / BFMTV / Libération",
-      "sources": [
         "Le Figaro",
-        "L'Humanité",
-        "Public Sénat",
         "BFMTV",
         "Libération"
       ],
-      "url": "https://www.lefigaro.fr/actualite-france/refonte-de-parcoursup-recrutement-de-profs-renovation-du-bati-scolaire-ce-qu-il-faut-retenir-des-annonces-du-gouvernement-en-reponse-aux-lyceens-20261026",
+      "url": "https://www.bfmtv.com/societe/education/le-droit-au-blocage-n-existe-pas-le-ministre-de-l-enseignement-superieur-juge-que-le-travail-des-lyceens-doit-reprendre-lundi_AD-202610270302.html",
+      "verifie": true
+    },
+    {
+      "id": "amvqi3iid-kpxz",
+      "date": "27/10/2026",
+      "titre": "Le gouvernement a répondu à « une partie » des revendications, selon les syndicats lycéens qui appellent à poursuivre l…",
+      "texte": "Les représentants des lycéens sont ressortis plutôt à moitié satisfaits de leurs échanges avec le Premier ministre. Ils appellent à poursuivre la mobilisation, pour obtenir de nouvelles avancées et p…",
+      "source": "Public Sénat / La Croix",
+      "sources": [
+        "Public Sénat",
+        "La Croix"
+      ],
+      "url": "https://www.publicsenat.fr/actualites/education/le-gouvernement-a-repondu-a-une-partie-des-revendications-selon-les-syndicats-lyceens-qui-appellent-a-poursuivre-le-mouvement",
+      "verifie": true
+    },
+    {
+      "id": "amvqi3iie-bbbj",
+      "date": "27/10/2026",
+      "titre": "Annonces du gouvernement sur les lycées, élections législatives en Israël, Harry Kane Ballon d’or… L’actu de ce mardi 2…",
+      "texte": "Annonces du gouvernement sur les lycées, élections législatives en Israël, Harry Kane Ballon d’or… L’actu de ce mardi 27 octobre au matin",
+      "source": "France Inter / Libération",
+      "sources": [
+        "France Inter",
+        "Libération"
+      ],
+      "url": "https://www.liberation.fr/international/europe/annonces-gouvernementales-pour-les-lyceens-elections-legislatives-en-israel-harry-kane-ballon-dor-lactu-de-ce-mardi-27-octobre-au-matin-20261027_CB2NTGZQ6ZGZVKKXNARGI7TGMA/",
       "verifie": true
     },
     {
