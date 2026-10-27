@@ -1,5 +1,5 @@
 {
-  "maj": "27/10/2026 10:46",
+  "maj": "27/10/2026 16:51",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -39,10 +39,11 @@
       "date": "27/10/2026",
       "titre": "Le gouvernement a répondu à « une partie » des revendications, selon les syndicats lycéens qui appellent à poursuivre l…",
       "texte": "Les représentants des lycéens sont ressortis plutôt à moitié satisfaits de leurs échanges avec le Premier ministre. Ils appellent à poursuivre la mobilisation, pour obtenir de nouvelles avancées et p…",
-      "source": "Public Sénat / La Croix",
+      "source": "Public Sénat / La Croix / Europe 1",
       "sources": [
         "Public Sénat",
-        "La Croix"
+        "La Croix",
+        "Europe 1"
       ],
       "url": "https://www.publicsenat.fr/actualites/education/le-gouvernement-a-repondu-a-une-partie-des-revendications-selon-les-syndicats-lyceens-qui-appellent-a-poursuivre-le-mouvement",
       "verifie": true
