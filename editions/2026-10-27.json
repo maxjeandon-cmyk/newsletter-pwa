@@ -31,13 +31,13 @@
     {
       "id": "droit-pour-les-nuls",
       "emoji": "\u2696",
-      "nom": "\ufe0f Le Droit pour les nuls",
+      "nom": "Le Droit pour les nuls",
       "resume": "Livreur \u00e0 v\u00e9lo sur une appli, ind\u00e9pendant sur le papier, salari\u00e9 selon la justice : la cour d\u2019appel de Paris vient de requalifier en contrat de travail le statut de deux coursiers de Tok Tok Tok. Une d\u00e9cision qui touche des dizaines de milliers de travailleurs de plateformes \u2014 et un concept juridique utile \u00e0 conna\u00eetre : la requalification du contrat."
     },
     {
       "id": "jeu-video-pop-culture",
       "emoji": "\ud83c\udfae",
-      "nom": "Jeu vid\u00e9o &amp; pop culture",
+      "nom": "Jeu vid\u00e9o & pop culture",
       "resume": "Fermeture de BioWare, p\u00e9tition g\u00e9ante pour sauver Mass Effect, et une pop culture am\u00e9ricaine entre conflit ouvert et showbusiness : le mardi s\u2019est jou\u00e9 entre la col\u00e8re des joueurs et les grandes sc\u00e8nes \u00e0 venir."
     },
     {
@@ -60,26 +60,26 @@
     },
     {
       "id": "politique-francaise",
-      "emoji": "\ud83c\uddeb",
-      "nom": "\ud83c\uddf7 Politique fran\u00e7aise",
+      "emoji": "\ud83c\uddeb\ud83c\uddf7",
+      "nom": "Politique fran\u00e7aise",
       "resume": "Entre crise lyc\u00e9enne non d\u00e9samorc\u00e9e, clivage Trappes qui remonte jusqu\u2019\u00e0 l\u2019h\u00e9micycle, S\u00e9nat qui enterre le statut de la Corse et calendrier pr\u00e9sidentiel contest\u00e9 : un mardi o\u00f9 la politique fran\u00e7aise s\u2019est tendue \u00e0 six mois du scrutin."
     },
     {
       "id": "etats-unis",
-      "emoji": "\ud83c\udde6",
-      "nom": "\ud83c\uddf7 \u00c9tats-Unis",
+      "emoji": "\ud83c\udde6\ud83c\uddf7",
+      "nom": "\u00c9tats-Unis",
       "resume": "\u00c0 sept jours des midterms, l\u2019Am\u00e9rique compte ses bulletins \u2014 plus de 30 millions de votes anticip\u00e9s \u2014, sa col\u00e8re sur les prix, et ses affaires judiciaires politiques : un mardi d\u2019attente active, entre rallies pr\u00e9sidentiels et proc\u00e8s."
     },
     {
       "id": "chine",
-      "emoji": "\ud83c\udde8",
-      "nom": "\ud83c\udde7 Chine",
+      "emoji": "\ud83c\udde8\ud83c\udde7",
+      "nom": "Chine",
       "resume": "Un match du Real Madrid, une blague sur Mao Zedong : l\u2019affaire Mbapp\u00e9 a embras\u00e9 les r\u00e9seaux chinois jusqu\u2019aux sponsors et \u00e0 la t\u00e9l\u00e9vision d\u2019\u00c9tat \u2014 pendant que le Parti communiste verrouille sa gouvernance interne."
     },
     {
       "id": "russie",
-      "emoji": "\ud83c\uddf7",
-      "nom": "\ud83c\ude02 Russie",
+      "emoji": "\ud83c\uddf7\ud83c\ude02",
+      "nom": "Russie",
       "resume": "Un t\u00e9l\u00e9phone qui sonne au Kremlin, un rapport fran\u00e7ais sur l\u2019ing\u00e9rence, une tr\u00eave \u00e0 Olechky que Moscou veut transformer en pr\u00e9c\u00e9dent : une journ\u00e9e o\u00f9 la Russie a jou\u00e9 sur les deux tableaux \u2014 l\u2019ouverture de fa\u00e7ade et la guerre continue."
     },
     {
@@ -139,8 +139,8 @@
       "maj": "26/10/2026"
     },
     {
-      "label": "S6 \u2014 AFP \u2014 Attal travaille sa \u00ab pr\u00e9sidentialisation \u00bb (r\u00e9f. AFP &#8212; d&#233;p&#234;che du 27/10/2026)",
-      "ref": "AFP &#8212; d&#233;p&#234;che du 27/10/2026",
+      "label": "S6 \u2014 AFP \u2014 Attal travaille sa \u00ab pr\u00e9sidentialisation \u00bb (r\u00e9f. AFP \u2014 d\u00e9p\u00eache du 27/10/2026)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 27/10/2026",
       "fiabilite": 5,
       "maj": "27/10/2026"
     },
@@ -157,14 +157,14 @@
       "maj": "26/10/2026"
     },
     {
-      "label": "S9 \u2014 AFP \u2014 La maire de Rouen saisit la justice apr\u00e8s une grenade pr\u00e8s d\u2019enfants (r\u00e9f. AFP &#8212; d&#233;p&#234;che du 27/10/2026)",
-      "ref": "AFP &#8212; d&#233;p&#234;che du 27/10/2026",
+      "label": "S9 \u2014 AFP \u2014 La maire de Rouen saisit la justice apr\u00e8s une grenade pr\u00e8s d\u2019enfants (r\u00e9f. AFP \u2014 d\u00e9p\u00eache du 27/10/2026)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 27/10/2026",
       "fiabilite": 5,
       "maj": "27/10/2026"
     },
     {
-      "label": "S10 \u2014 AFP \u2014 \u00ab Casseurs-payeurs \u00bb critiqu\u00e9 au S\u00e9nat (r\u00e9f. AFP &#8212; d&#233;p&#234;che du 26/10/2026)",
-      "ref": "AFP &#8212; d&#233;p&#234;che du 26/10/2026",
+      "label": "S10 \u2014 AFP \u2014 \u00ab Casseurs-payeurs \u00bb critiqu\u00e9 au S\u00e9nat (r\u00e9f. AFP \u2014 d\u00e9p\u00eache du 26/10/2026)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 26/10/2026",
       "fiabilite": 5,
       "maj": "26/10/2026"
     },
@@ -211,8 +211,8 @@
       "maj": "26/10/2026"
     },
     {
-      "label": "S18 \u2014 AP \u2014 Louisiana residents sue to unwind SpaceX tax deal (r\u00e9f. AP &#8212; d&#233;p&#234;che du 27/10/2026)",
-      "ref": "AP &#8212; d&#233;p&#234;che du 27/10/2026",
+      "label": "S18 \u2014 AP \u2014 Louisiana residents sue to unwind SpaceX tax deal (r\u00e9f. AP \u2014 d\u00e9p\u00eache du 27/10/2026)",
+      "ref": "AP \u2014 d\u00e9p\u00eache du 27/10/2026",
       "fiabilite": 5,
       "maj": "27/10/2026"
     },
@@ -247,26 +247,26 @@
       "maj": "27/10/2026"
     },
     {
-      "label": "S24 \u2014 AFP \u2014 BCE : le cr\u00e9dit est devenu plus difficile dans la zone euro (r\u00e9f. AFP &#8212; d&#233;p&#234;che du 27/10/2026)",
-      "ref": "AFP &#8212; d&#233;p&#234;che du 27/10/2026",
+      "label": "S24 \u2014 AFP \u2014 BCE : le cr\u00e9dit est devenu plus difficile dans la zone euro (r\u00e9f. AFP \u2014 d\u00e9p\u00eache du 27/10/2026)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 27/10/2026",
       "fiabilite": 5,
       "maj": "27/10/2026"
     },
     {
-      "label": "S25 \u2014 AFP \u2014 Dette fran\u00e7aise : plus fort repli de l\u2019\u00e9cart avec l\u2019Allemagne depuis mars 2020 (r\u00e9f. AFP &#8212; d&#233;p&#234;che du 26/10/2026)",
-      "ref": "AFP &#8212; d&#233;p&#234;che du 26/10/2026",
+      "label": "S25 \u2014 AFP \u2014 Dette fran\u00e7aise : plus fort repli de l\u2019\u00e9cart avec l\u2019Allemagne depuis mars 2020 (r\u00e9f. AFP \u2014 d\u00e9p\u00eache du 26/10/2026)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 26/10/2026",
       "fiabilite": 5,
       "maj": "26/10/2026"
     },
     {
-      "label": "S26 \u2014 AFP \u2014 La Bourse de Paris \u00e9volue en l\u00e9ger repli avant la Fed (r\u00e9f. AFP &#8212; d&#233;p&#234;che du 27/10/2026)",
-      "ref": "AFP &#8212; d&#233;p&#234;che du 27/10/2026",
+      "label": "S26 \u2014 AFP \u2014 La Bourse de Paris \u00e9volue en l\u00e9ger repli avant la Fed (r\u00e9f. AFP \u2014 d\u00e9p\u00eache du 27/10/2026)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 27/10/2026",
       "fiabilite": 5,
       "maj": "27/10/2026"
     },
     {
-      "label": "S27 \u2014 AFP \u2014 Insee : la confiance des m\u00e9nages au plus bas depuis juin 2013 (r\u00e9f. AFP &#8212; d&#233;p&#234;che du 26/10/2026)",
-      "ref": "AFP &#8212; d&#233;p&#234;che du 26/10/2026",
+      "label": "S27 \u2014 AFP \u2014 Insee : la confiance des m\u00e9nages au plus bas depuis juin 2013 (r\u00e9f. AFP \u2014 d\u00e9p\u00eache du 26/10/2026)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 26/10/2026",
       "fiabilite": 5,
       "maj": "26/10/2026"
     },
@@ -295,26 +295,26 @@
       "maj": "27/10/2026"
     },
     {
-      "label": "S32 \u2014 AFP \u2014 Jay-Z : prochain halftime show du Super Bowl (r\u00e9f. AFP &#8212; d&#233;p&#234;che du 27/10/2026)",
-      "ref": "AFP &#8212; d&#233;p&#234;che du 27/10/2026",
+      "label": "S32 \u2014 AFP \u2014 Jay-Z : prochain halftime show du Super Bowl (r\u00e9f. AFP \u2014 d\u00e9p\u00eache du 27/10/2026)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 27/10/2026",
       "fiabilite": 5,
       "maj": "27/10/2026"
     },
     {
-      "label": "S33 \u2014 AFP \u2014 Macklemore lance sa tourn\u00e9e \u00ab Free Palestine \u00bb apr\u00e8s sa brouille avec Ed Sheeran (r\u00e9f. AFP &#8212; d&#233;p&#234;che du 27/10/2026)",
-      "ref": "AFP &#8212; d&#233;p&#234;che du 27/10/2026",
+      "label": "S33 \u2014 AFP \u2014 Macklemore lance sa tourn\u00e9e \u00ab Free Palestine \u00bb apr\u00e8s sa brouille avec Ed Sheeran (r\u00e9f. AFP \u2014 d\u00e9p\u00eache du 27/10/2026)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 27/10/2026",
       "fiabilite": 5,
       "maj": "27/10/2026"
     },
     {
-      "label": "S34 \u2014 AFP \u2014 Goncourt : quatre finalistes dont Jaenada et Haenel (r\u00e9f. AFP &#8212; d&#233;p&#234;che du 27/10/2026)",
-      "ref": "AFP &#8212; d&#233;p&#234;che du 27/10/2026",
+      "label": "S34 \u2014 AFP \u2014 Goncourt : quatre finalistes dont Jaenada et Haenel (r\u00e9f. AFP \u2014 d\u00e9p\u00eache du 27/10/2026)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 27/10/2026",
       "fiabilite": 5,
       "maj": "27/10/2026"
     },
     {
-      "label": "S35 \u2014 AFP \u2014 Le prix D\u00e9cembre d\u00e9cern\u00e9 \u00e0 Anne Godard pour \u00ab Nous aussi \u00bb (r\u00e9f. AFP &#8212; d&#233;p&#234;che du 27/10/2026)",
-      "ref": "AFP &#8212; d&#233;p&#234;che du 27/10/2026",
+      "label": "S35 \u2014 AFP \u2014 Le prix D\u00e9cembre d\u00e9cern\u00e9 \u00e0 Anne Godard pour \u00ab Nous aussi \u00bb (r\u00e9f. AFP \u2014 d\u00e9p\u00eache du 27/10/2026)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 27/10/2026",
       "fiabilite": 5,
       "maj": "27/10/2026"
     },
@@ -367,8 +367,8 @@
       "maj": "26/10/2026"
     },
     {
-      "label": "S44 \u2014 AFP \u2014 Frontex : la r\u00e9forme propos\u00e9e par Bruxelles relance le d\u00e9bat europ\u00e9en (r\u00e9f. AFP &#8212; d&#233;p&#234;che du 27/10/2026)",
-      "ref": "AFP &#8212; d&#233;p&#234;che du 27/10/2026",
+      "label": "S44 \u2014 AFP \u2014 Frontex : la r\u00e9forme propos\u00e9e par Bruxelles relance le d\u00e9bat europ\u00e9en (r\u00e9f. AFP \u2014 d\u00e9p\u00eache du 27/10/2026)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 27/10/2026",
       "fiabilite": 5,
       "maj": "27/10/2026"
     },
@@ -397,8 +397,8 @@
       "maj": "27/10/2026"
     },
     {
-      "label": "S49 \u2014 AP \u2014 Comey faces new charges (r\u00e9f. AP &#8212; d&#233;p&#234;che du 26/10/2026)",
-      "ref": "AP &#8212; d&#233;p&#234;che du 26/10/2026",
+      "label": "S49 \u2014 AP \u2014 Comey faces new charges (r\u00e9f. AP \u2014 d\u00e9p\u00eache du 26/10/2026)",
+      "ref": "AP \u2014 d\u00e9p\u00eache du 26/10/2026",
       "fiabilite": 5,
       "maj": "26/10/2026"
     },
@@ -409,8 +409,8 @@
       "maj": "26/10/2026"
     },
     {
-      "label": "S51 \u2014 AP \u2014 Netanyahu denies seeking escalation with Iran a day before election (r\u00e9f. AP &#8212; d&#233;p&#234;che du 27/10/2026)",
-      "ref": "AP &#8212; d&#233;p&#234;che du 27/10/2026",
+      "label": "S51 \u2014 AP \u2014 Netanyahu denies seeking escalation with Iran a day before election (r\u00e9f. AP \u2014 d\u00e9p\u00eache du 27/10/2026)",
+      "ref": "AP \u2014 d\u00e9p\u00eache du 27/10/2026",
       "fiabilite": 5,
       "maj": "27/10/2026"
     },
@@ -433,8 +433,8 @@
       "maj": "26/10/2026"
     },
     {
-      "label": "S55 \u2014 AP \u2014 A look at the main issues in the Israeli election (r\u00e9f. AP &#8212; d&#233;p&#234;che du 27/10/2026)",
-      "ref": "AP &#8212; d&#233;p&#234;che du 27/10/2026",
+      "label": "S55 \u2014 AP \u2014 A look at the main issues in the Israeli election (r\u00e9f. AP \u2014 d\u00e9p\u00eache du 27/10/2026)",
+      "ref": "AP \u2014 d\u00e9p\u00eache du 27/10/2026",
       "fiabilite": 5,
       "maj": "27/10/2026"
     },
@@ -619,8 +619,8 @@
       "maj": "27/10/2026"
     },
     {
-      "label": "S86 \u2014 AFP \u2014 Le r\u00e9el br\u00e9silien plonge apr\u00e8s la r\u00e9\u00e9lection de Lula (r\u00e9f. AFP &#8212; d&#233;p&#234;che du 27/10/2026)",
-      "ref": "AFP &#8212; d&#233;p&#234;che du 27/10/2026",
+      "label": "S86 \u2014 AFP \u2014 Le r\u00e9el br\u00e9silien plonge apr\u00e8s la r\u00e9\u00e9lection de Lula (r\u00e9f. AFP \u2014 d\u00e9p\u00eache du 27/10/2026)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 27/10/2026",
       "fiabilite": 5,
       "maj": "27/10/2026"
     },
