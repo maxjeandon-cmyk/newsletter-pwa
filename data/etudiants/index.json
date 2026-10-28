@@ -83,7 +83,7 @@
       "periode": "Chronique transverse — réseaux, voix et ressentis",
       "titre": "Chorus — la voix de l'intérieur",
       "paragraphes": 22,
-      "octets": 25022
+      "octets": 25005
     },
     {
       "id": "c11",
@@ -99,7 +99,7 @@
       "periode": "Chronique transverse — la répression et ses visages",
       "titre": "La répression et ses visages",
       "paragraphes": 18,
-      "octets": 19867
+      "octets": 19785
     },
     {
       "id": "c13",
@@ -107,7 +107,7 @@
       "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
       "titre": "La machine gouvernementale, vue d'en bas",
       "paragraphes": 16,
-      "octets": 16772
+      "octets": 16725
     },
     {
       "id": "c14",
@@ -281,9 +281,9 @@
       "id": "c35",
       "fichier": "chapitres/35.json",
       "periode": "28 octobre 2026 — suivi de la journée",
-      "titre": "Le fil continue — 28 octobre 2026",
+      "titre": "L'opération déminage de Lecornu — des concessions lues comme un miroir de faiblesse",
       "paragraphes": 1,
-      "octets": 1691
+      "octets": 1110
     }
   ],
   "releveSigs": [
@@ -517,9 +517,9 @@
           "id": "c35",
           "fichier": "chapitres/35.json",
           "periode": "28 octobre 2026 — suivi de la journée",
-          "titre": "Le fil continue — 28 octobre 2026",
+          "titre": "L'opération déminage de Lecornu — des concessions lues comme un miroir de faiblesse",
           "paragraphes": 1,
-          "octets": 1691
+          "octets": 1110
         },
         {
           "id": "c10",
@@ -527,7 +527,7 @@
           "periode": "Chronique transverse — réseaux, voix et ressentis",
           "titre": "Chorus — la voix de l'intérieur",
           "paragraphes": 22,
-          "octets": 25022
+          "octets": 25005
         },
         {
           "id": "c11",
@@ -543,7 +543,7 @@
           "periode": "Chronique transverse — la répression et ses visages",
           "titre": "La répression et ses visages",
           "paragraphes": 18,
-          "octets": 19867
+          "octets": 19785
         },
         {
           "id": "c13",
@@ -551,7 +551,7 @@
           "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
           "titre": "La machine gouvernementale, vue d'en bas",
           "paragraphes": 16,
-          "octets": 16772
+          "octets": 16725
         },
         {
           "id": "c14",
