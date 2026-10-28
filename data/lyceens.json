@@ -1,5 +1,5 @@
 {
-  "maj": "28/10/2026 01:29",
+  "maj": "28/10/2026 10:35",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -19,6 +19,19 @@
     "Mercredi 7 octobre (lendemain de l'acte III) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
   ],
   "version_gouvernement": [
+    {
+      "id": "amvrx5iov-es40",
+      "date": "28/10/2026",
+      "titre": "Mouvement lycéen : « Le vrai débat derrière Parcoursup, c’est sélection ou pas sélection », affirme Marc Fesneau",
+      "texte": "Invité de la matinale de Public Sénat, le président du groupe Les Démocrates à l’Assemblée nationale, Marc Fesneau, est revenu sur les annonces du gouvernement, quelques heures avant le débat organis…",
+      "source": "Europe 1 / Public Sénat",
+      "sources": [
+        "Europe 1",
+        "Public Sénat"
+      ],
+      "url": "https://www.publicsenat.fr/actualites/education/mouvement-lyceen-le-vrai-debat-derriere-parcoursup-cest-selection-ou-pas-selection-affirme-marc-fesneau",
+      "verifie": true
+    },
     {
       "id": "amvqi3iic-i79l",
       "date": "27/10/2026",
@@ -60,20 +73,6 @@
         "BFMTV"
       ],
       "url": "https://www.liberation.fr/international/europe/annonces-gouvernementales-pour-les-lyceens-elections-legislatives-en-israel-harry-kane-ballon-dor-lactu-de-ce-mardi-27-octobre-au-matin-20261027_CB2NTGZQ6ZGZVKKXNARGI7TGMA/",
-      "verifie": true
-    },
-    {
-      "id": "amvrdn9r4-42pk",
-      "date": "27/10/2026",
-      "titre": "Parcoursup : avec la tenue d'un débat sans vote à l'Assemblée, le gouvernement tente-t-il de faire diversion ?",
-      "texte": "Mercredi 28 octobre, un débat sans vote sur le \"processus d’orientation\" des lycéens dans l'enseignement supérieur aura lieu dans l'hémicycle. Il s'inscrit dans le cadre d'une vaste campagne de désam…",
-      "source": "20 minutes / Europe 1 / Public Sénat",
-      "sources": [
-        "20 minutes",
-        "Europe 1",
-        "Public Sénat"
-      ],
-      "url": "https://www.europe1.fr/societe/parcoursup-avec-la-tenue-dun-debat-sans-vote-a-lassemblee-le-gouvernement-tente-t-il-de-faire-diversion-1187058?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
     },
     {
