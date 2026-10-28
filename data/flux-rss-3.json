@@ -1009,6 +1009,36 @@
       "flux": [
         "https://www.konbini.com/feed/"
       ]
+    },
+    {
+      "id": "basta-media",
+      "nom": "Basta !",
+      "emoji": "🌱",
+      "categorie": "Écologie & climat 🌿",
+      "ligne": "média indépendant, écologie et luttes sociales",
+      "flux": [
+        "https://basta.media/?page=backend"
+      ]
+    },
+    {
+      "id": "la-bas-si-jy-suis",
+      "nom": "Là-bas si j’y suis",
+      "emoji": "📻",
+      "categorie": "Géopolitique & idées 🧭",
+      "ligne": "radio indépendante, enquêtes et contre-récits",
+      "flux": [
+        "https://www.la-bas.org/?page=backend"
+      ]
+    },
+    {
+      "id": "le-monde-jeunesses",
+      "nom": "Le Monde — Jeunesses",
+      "emoji": "🎓",
+      "categorie": "Culture & idées 🎭",
+      "ligne": "études, lycéens et vie des jeunes par le Monde",
+      "flux": [
+        "https://www.lemonde.fr/campus/rss_full.xml"
+      ]
     }
   ]
 }
