@@ -1,5 +1,5 @@
 {
-  "maj": "27/10/2026 16:51",
+  "maj": "28/10/2026 01:29",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -53,12 +53,27 @@
       "date": "27/10/2026",
       "titre": "Annonces du gouvernement sur les lycées, élections législatives en Israël, Harry Kane Ballon d’or… L’actu de ce mardi 2…",
       "texte": "Annonces du gouvernement sur les lycées, élections législatives en Israël, Harry Kane Ballon d’or… L’actu de ce mardi 27 octobre au matin",
-      "source": "France Inter / Libération",
+      "source": "France Inter / Libération / BFMTV",
       "sources": [
         "France Inter",
-        "Libération"
+        "Libération",
+        "BFMTV"
       ],
       "url": "https://www.liberation.fr/international/europe/annonces-gouvernementales-pour-les-lyceens-elections-legislatives-en-israel-harry-kane-ballon-dor-lactu-de-ce-mardi-27-octobre-au-matin-20261027_CB2NTGZQ6ZGZVKKXNARGI7TGMA/",
+      "verifie": true
+    },
+    {
+      "id": "amvrdn9r4-42pk",
+      "date": "27/10/2026",
+      "titre": "Parcoursup : avec la tenue d'un débat sans vote à l'Assemblée, le gouvernement tente-t-il de faire diversion ?",
+      "texte": "Mercredi 28 octobre, un débat sans vote sur le \"processus d’orientation\" des lycéens dans l'enseignement supérieur aura lieu dans l'hémicycle. Il s'inscrit dans le cadre d'une vaste campagne de désam…",
+      "source": "20 minutes / Europe 1 / Public Sénat",
+      "sources": [
+        "20 minutes",
+        "Europe 1",
+        "Public Sénat"
+      ],
+      "url": "https://www.europe1.fr/societe/parcoursup-avec-la-tenue-dun-debat-sans-vote-a-lassemblee-le-gouvernement-tente-t-il-de-faire-diversion-1187058?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
     },
     {
@@ -164,19 +179,6 @@
       ],
       "url": null,
       "verifie": false
-    },
-    {
-      "id": "g9",
-      "date": "28/09/2026",
-      "titre": "Lecornu dénonce une « surenchère irresponsable » de LFI",
-      "texte": "Le Premier ministre Sébastien Lecornu a dénoncé sur X une « surenchère irresponsable » d'élus LFI qui « appellent à étendre » le mouvement de blocus des lycées, citant « tirs de mortiers, incendies, violences aux abords des établissements ».",
-      "source": "AFP / Public Sénat",
-      "sources": [
-        "AFP",
-        "Public Sénat"
-      ],
-      "url": "https://www.publicsenat.fr/actualites/politique/mouvements-des-lyceens-je-comprends-les-raisons-de-la-colere-mais-je-denonce-toutes-les-formes-de-violence-reagit-patrick-kanner",
-      "verifie": true
     }
   ],
   "faits": [
