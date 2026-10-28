@@ -2,8 +2,8 @@
   "titre": "La version des lycéens — chronique de la révolte lycéenne 2026",
   "intro": "Chronique narrative du mouvement lycéen et étudiant de l'automne 2026, écrite du point de vue des élèves : de l'amorce de Créteil au dernier acte en date, le fil s'allonge d'un relevé automatique toutes les six heures, et les chapitres transverses — la voix de l'intérieur, les revendications mot à mot, la répression, la machine gouvernementale, la longue durée, le lexique, les figures — viennent fermer le fil. Sources : la presse au plus près du mouvement — Le Média, Blast, L'Humanité, Mediapart — et la voix des réseaux en direct : les fils Reddit (r/etudiants, r/enseignants, r/france), les serveurs Discord du mouvement ; les fils TikTok, Snapchat et Instagram restent en vitrine, repris dès qu'un post ou un commentaire y est cité ; Wikipédia en colonne vertébrale factuelle.",
   "note": "Méthode : chaque paragraphe cite ses sources. Les paragraphes marqués « auto » sont des relevés bruts ajoutés par le pipeline toutes les 6 h (faits sourcés, sans réécriture) ; la rédaction narrative approfondie est assurée lors des éditions de la newsletter. Badge ✅ (corroboré par au moins deux médias distincts) et ⚠️ (une seule source) : ces distinctions s'appliquent aux relevés automatiques.",
-  "maj": "27/10/2026",
-  "totalParagraphes": 182,
+  "maj": "28/10/2026",
+  "totalParagraphes": 186,
   "chapitres": [
     {
       "id": "c1",
@@ -82,8 +82,8 @@
       "fichier": "chapitres/10.json",
       "periode": "Chronique transverse — réseaux, voix et ressentis",
       "titre": "Chorus — la voix de l'intérieur",
-      "paragraphes": 21,
-      "octets": 24428
+      "paragraphes": 22,
+      "octets": 25022
     },
     {
       "id": "c11",
@@ -98,16 +98,16 @@
       "fichier": "chapitres/12.json",
       "periode": "Chronique transverse — la répression et ses visages",
       "titre": "La répression et ses visages",
-      "paragraphes": 17,
-      "octets": 19213
+      "paragraphes": 18,
+      "octets": 19867
     },
     {
       "id": "c13",
       "fichier": "chapitres/13.json",
       "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
       "titre": "La machine gouvernementale, vue d'en bas",
-      "paragraphes": 15,
-      "octets": 16165
+      "paragraphes": 16,
+      "octets": 16772
     },
     {
       "id": "c14",
@@ -276,10 +276,20 @@
       "titre": "Le fil continue — 27 octobre 2026",
       "paragraphes": 1,
       "octets": 960
+    },
+    {
+      "id": "c35",
+      "fichier": "chapitres/35.json",
+      "periode": "28 octobre 2026 — suivi de la journée",
+      "titre": "Le fil continue — 28 octobre 2026",
+      "paragraphes": 1,
+      "octets": 1691
     }
   ],
   "releveSigs": [
-    "bouscul|ecoles|enseign|mobilis#"
+    "colere|lecornu|lyceenn|quand#",
+    "concess|extreme|miroir|pouvoir#",
+    "projet#"
   ],
   "sections": [
     {
@@ -504,12 +514,20 @@
           "octets": 960
         },
         {
+          "id": "c35",
+          "fichier": "chapitres/35.json",
+          "periode": "28 octobre 2026 — suivi de la journée",
+          "titre": "Le fil continue — 28 octobre 2026",
+          "paragraphes": 1,
+          "octets": 1691
+        },
+        {
           "id": "c10",
           "fichier": "chapitres/10.json",
           "periode": "Chronique transverse — réseaux, voix et ressentis",
           "titre": "Chorus — la voix de l'intérieur",
-          "paragraphes": 21,
-          "octets": 24428
+          "paragraphes": 22,
+          "octets": 25022
         },
         {
           "id": "c11",
@@ -524,16 +542,16 @@
           "fichier": "chapitres/12.json",
           "periode": "Chronique transverse — la répression et ses visages",
           "titre": "La répression et ses visages",
-          "paragraphes": 17,
-          "octets": 19213
+          "paragraphes": 18,
+          "octets": 19867
         },
         {
           "id": "c13",
           "fichier": "chapitres/13.json",
           "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
           "titre": "La machine gouvernementale, vue d'en bas",
-          "paragraphes": 15,
-          "octets": 16165
+          "paragraphes": 16,
+          "octets": 16772
         },
         {
           "id": "c14",
@@ -562,12 +580,12 @@
       ]
     }
   ],
-  "releveDate": "2026-10-27T15:51:16.205Z",
-  "releveCompteur": 47,
+  "releveDate": "2026-10-28T00:29:42.055Z",
+  "releveCompteur": 48,
   "chapitreJour": {
-    "id": "c34",
-    "fichier": "chapitres/34.json",
-    "date": "27/10/2026"
+    "id": "c35",
+    "fichier": "chapitres/35.json",
+    "date": "28/10/2026"
   },
   "discordInvites": {}
 }
