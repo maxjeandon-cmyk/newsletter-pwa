@@ -1,5 +1,5 @@
 {
-  "maj": "28/10/2026 10:35",
+  "maj": "28/10/2026 21:15",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -24,12 +24,27 @@
       "date": "28/10/2026",
       "titre": "Mouvement lycéen : « Le vrai débat derrière Parcoursup, c’est sélection ou pas sélection », affirme Marc Fesneau",
       "texte": "Invité de la matinale de Public Sénat, le président du groupe Les Démocrates à l’Assemblée nationale, Marc Fesneau, est revenu sur les annonces du gouvernement, quelques heures avant le débat organis…",
-      "source": "Europe 1 / Public Sénat",
+      "source": "Europe 1 / Public Sénat / L'Humanité / Libération",
       "sources": [
         "Europe 1",
-        "Public Sénat"
+        "Public Sénat",
+        "L'Humanité",
+        "Libération"
       ],
       "url": "https://www.publicsenat.fr/actualites/education/mouvement-lyceen-le-vrai-debat-derriere-parcoursup-cest-selection-ou-pas-selection-affirme-marc-fesneau",
+      "verifie": true
+    },
+    {
+      "id": "amvsjzwnh-dn95",
+      "date": "28/10/2026",
+      "titre": "Mouvement des lycéens : les organisations lycéennes reçues ce jeudi par Laurent Nuñez",
+      "texte": "Les représentants des organisations de lycéens seront reçus ce jeudi 28 octobre par Laurent Nuñez avant une nouvelle journée de mobilisation prévue samedi, a appris l'AFP auprès de l'entourage du min…",
+      "source": "Europe 1 / La Croix",
+      "sources": [
+        "Europe 1",
+        "La Croix"
+      ],
+      "url": "https://www.europe1.fr/societe/mouvement-des-lyceens-les-organisations-lyceennes-recues-ce-jeudi-par-laurent-nunez-1189587?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
     },
     {
@@ -59,20 +74,6 @@
         "Europe 1"
       ],
       "url": "https://www.publicsenat.fr/actualites/education/le-gouvernement-a-repondu-a-une-partie-des-revendications-selon-les-syndicats-lyceens-qui-appellent-a-poursuivre-le-mouvement",
-      "verifie": true
-    },
-    {
-      "id": "amvqi3iie-bbbj",
-      "date": "27/10/2026",
-      "titre": "Annonces du gouvernement sur les lycées, élections législatives en Israël, Harry Kane Ballon d’or… L’actu de ce mardi 2…",
-      "texte": "Annonces du gouvernement sur les lycées, élections législatives en Israël, Harry Kane Ballon d’or… L’actu de ce mardi 27 octobre au matin",
-      "source": "France Inter / Libération / BFMTV",
-      "sources": [
-        "France Inter",
-        "Libération",
-        "BFMTV"
-      ],
-      "url": "https://www.liberation.fr/international/europe/annonces-gouvernementales-pour-les-lyceens-elections-legislatives-en-israel-harry-kane-ballon-dor-lactu-de-ce-mardi-27-octobre-au-matin-20261027_CB2NTGZQ6ZGZVKKXNARGI7TGMA/",
       "verifie": true
     },
     {
