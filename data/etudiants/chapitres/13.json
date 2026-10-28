@@ -120,7 +120,14 @@
       "sources": [
         "Mediapart"
       ]
+    },
+    {
+      "id": "c13p16",
+      "texte": "Côté institutions, les réponses s'égrènent : Colère lycéenne : quand Lecornu plante l'opération déminage (1 media : Le Média — non corrobore) — détail : L’exécutif a reçu des influenceurs avant les principales organisations lycéennes et étudiantes. Mépris ou maladresse ? (Volet automatique du 28 octobre 2026 à 01:29, chapitre « La machine gouvernementale, vue d'en bas » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "Le Média"
+      ],
+      "auto": true
     }
   ]
 }
-
