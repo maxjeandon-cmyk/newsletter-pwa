@@ -116,6 +116,16 @@
       ],
       "fenetreHeures": 24,
       "masque": true
+    },
+    {
+      "id": "force-ouvriere",
+      "nom": "Force Ouvrière",
+      "emoji": "🛠️",
+      "flux": [
+        "https://www.force-ouvriere.fr/spip.php?page=backend"
+      ],
+      "fenetreHeures": 24,
+      "masque": true
     }
   ]
 }
