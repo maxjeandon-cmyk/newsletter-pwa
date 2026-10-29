@@ -1039,6 +1039,36 @@
       "flux": [
         "https://www.lemonde.fr/campus/rss_full.xml"
       ]
+    },
+    {
+      "id": "franceinfo-eco",
+      "nom": "franceinfo — Éco & Conso",
+      "emoji": "🛒",
+      "categorie": "Économie 💰",
+      "flux": [
+        "https://www.francetvinfo.fr/economie.rss"
+      ],
+      "ligne": "économie et conso au quotidien, service public"
+    },
+    {
+      "id": "franceinfo-politique",
+      "nom": "franceinfo — Politique",
+      "emoji": "🇫🇷",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.francetvinfo.fr/politique.rss"
+      ],
+      "ligne": "la politique au quotidien, service public"
+    },
+    {
+      "id": "l-informe",
+      "nom": "L'Informé",
+      "emoji": "💼",
+      "categorie": "Économie 💰",
+      "flux": [
+        "https://www.linforme.com/feed/"
+      ],
+      "ligne": "éco premium, enquêtes sur le privé français"
     }
   ]
 }
