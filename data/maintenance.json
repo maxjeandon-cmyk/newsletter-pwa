@@ -1,15 +1,15 @@
 {
   "date": "29/10/2026",
-  "heure": "00:53",
+  "heure": "09:53",
   "relevesOng": {
-    "rafraichis": 9,
+    "rafraichis": 0,
     "echecs": 1,
-    "publie": true
+    "publie": false
   },
   "lyceens": {
     "nouvelles": 0,
-    "fusionnees": 4,
-    "moissonnes": 29,
+    "fusionnees": 5,
+    "moissonnes": 28,
     "total": 21,
     "publie": true
   },
@@ -23,8 +23,8 @@
   "verifs": [
     {
       "nom": "validate-latest.js",
-      "ok": false,
-      "detail": "  ✅ boutons avec data-resume — trouvé(s)=15\n  ✅ <script> de partage équilibré\n\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 26/10/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n1 édition(s) non conforme(s).\n"
+      "ok": true,
+      "detail": "\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 26/10/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n\nToutes les éditions récentes sont conformes. 🌱"
     },
     {
       "nom": "check-site.js",
@@ -38,13 +38,13 @@
     },
     {
       "nom": "ong-releve.js",
-      "ok": true,
-      "detail": "9 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
+      "ok": false,
+      "detail": "0 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
     },
     {
       "nom": "lyceens.js",
       "ok": true,
-      "detail": "0 nouvelle(s) info, 4 fusionnée(s) sur 29 moissonnée(s) — 21 au total"
+      "detail": "0 nouvelle(s) info, 5 fusionnée(s) sur 28 moissonnée(s) — 21 au total"
     },
     {
       "nom": "etudiants.js",
@@ -52,8 +52,6 @@
       "detail": "0 info(s) des dernières heures, 0 paragraphe(s) ajouté(s)"
     }
   ],
-  "problemes": [
-    "validate-latest.js"
-  ],
-  "intervention": "Anomalies détectées — aucune correction automatique appliquée (éditions/ figé) : correction manuelle requise."
+  "problemes": [],
+  "intervention": "Aucune intervention nécessaire : éditions et site publics conformes."
 }
