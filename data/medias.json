@@ -87,6 +87,15 @@
         "https://www.humanite.fr/feed"
       ],
       "fenetreHeures": 24
+    },
+    {
+      "id": "streetpress",
+      "nom": "StreetPress",
+      "emoji": "🗞️",
+      "flux": [
+        "https://streetpress.com/rss.xml"
+      ],
+      "fenetreHeures": 24
     }
   ]
 }
