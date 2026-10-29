@@ -106,6 +106,16 @@
       ],
       "fenetreHeures": 24,
       "masque": true
+    },
+    {
+      "id": "cgt",
+      "nom": "CGT",
+      "emoji": "✊",
+      "flux": [
+        "https://www.cgt.fr/rss.xml"
+      ],
+      "fenetreHeures": 24,
+      "masque": true
     }
   ]
 }
