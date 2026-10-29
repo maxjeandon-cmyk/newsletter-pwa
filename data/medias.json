@@ -96,6 +96,16 @@
         "https://streetpress.com/rss.xml"
       ],
       "fenetreHeures": 24
+    },
+    {
+      "id": "cfdt",
+      "nom": "CFDT",
+      "emoji": "🤝",
+      "flux": [
+        "https://www.cfdt.fr/feed"
+      ],
+      "fenetreHeures": 24,
+      "masque": true
     }
   ]
 }
