@@ -1,16 +1,16 @@
 {
-  "date": "28/10/2026",
-  "heure": "20:14",
+  "date": "29/10/2026",
+  "heure": "00:53",
   "relevesOng": {
-    "rafraichis": 0,
+    "rafraichis": 9,
     "echecs": 1,
-    "publie": false
+    "publie": true
   },
   "lyceens": {
-    "nouvelles": 1,
-    "fusionnees": 3,
-    "moissonnes": 22,
-    "total": 22,
+    "nouvelles": 0,
+    "fusionnees": 4,
+    "moissonnes": 29,
+    "total": 21,
     "publie": true
   },
   "etudiants": {
@@ -23,13 +23,13 @@
   "verifs": [
     {
       "nom": "validate-latest.js",
-      "ok": true,
-      "detail": "\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 25/10/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n\nToutes les éditions récentes sont conformes. 🌱"
+      "ok": false,
+      "detail": "  ✅ boutons avec data-resume — trouvé(s)=15\n  ✅ <script> de partage équilibré\n\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 26/10/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n1 édition(s) non conforme(s).\n"
     },
     {
       "nom": "check-site.js",
       "ok": true,
-      "detail": "=== check-site ===\nℹ️  latest.json : 31 édition(s), plus récente 2026-10-27\nℹ️  édition 2026-10-27 : JSON OK, HTML 85866 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
+      "detail": "=== check-site ===\nℹ️  latest.json : 32 édition(s), plus récente 2026-10-28\nℹ️  édition 2026-10-28 : JSON OK, HTML 89690 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
     },
     {
       "nom": "sonde notifications",
@@ -38,13 +38,13 @@
     },
     {
       "nom": "ong-releve.js",
-      "ok": false,
-      "detail": "0 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
+      "ok": true,
+      "detail": "9 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
     },
     {
       "nom": "lyceens.js",
       "ok": true,
-      "detail": "1 nouvelle(s) info, 3 fusionnée(s) sur 22 moissonnée(s) — 22 au total"
+      "detail": "0 nouvelle(s) info, 4 fusionnée(s) sur 29 moissonnée(s) — 21 au total"
     },
     {
       "nom": "etudiants.js",
@@ -52,6 +52,8 @@
       "detail": "0 info(s) des dernières heures, 0 paragraphe(s) ajouté(s)"
     }
   ],
-  "problemes": [],
-  "intervention": "Aucune intervention nécessaire : éditions et site publics conformes."
+  "problemes": [
+    "validate-latest.js"
+  ],
+  "intervention": "Anomalies détectées — aucune correction automatique appliquée (éditions/ figé) : correction manuelle requise."
 }
