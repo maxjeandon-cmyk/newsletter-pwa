@@ -1,5 +1,5 @@
 {
-  "maj": "28/10/2026 21:15",
+  "maj": "29/10/2026 01:53",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -318,19 +318,6 @@
         "franceinfo"
       ],
       "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/reportage-si-c-est-le-seul-moyen-de-se-faire-ecouter-a-saint-denis-les-lyceens-reconduisent-le-mouvement-et-reaffirment-leurs-revendications_8222419.html",
-      "verifie": true
-    },
-    {
-      "id": "f2",
-      "date": "29/09/2026",
-      "titre": "Mardi 29/09 : 338 établissements concernés, 40 interpellations",
-      "texte": "Selon le ministère de l'Éducation, 338 établissements ont été concernés mardi 29 septembre (45 bloqués), avec 40 interpellations et 10 blessés parmi les élèves et les personnels.",
-      "source": "AFP / Wikipédia",
-      "sources": [
-        "AFP",
-        "Wikipédia"
-      ],
-      "url": "https://fr.wikipedia.org/wiki/Mouvement_lyc%C3%A9en_et_blocus_de_2026_en_France",
       "verifie": true
     }
   ],
