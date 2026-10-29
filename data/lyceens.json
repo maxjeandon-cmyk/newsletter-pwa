@@ -1,5 +1,5 @@
 {
-  "maj": "29/10/2026 10:53",
+  "maj": "29/10/2026 21:15",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -19,6 +19,19 @@
     "Mercredi 7 octobre (lendemain de l'acte III) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
   ],
   "version_gouvernement": [
+    {
+      "id": "amvtzgw3a-e00n",
+      "date": "29/10/2026",
+      "titre": "Annonces du gouvernement pour les lycéens: Cyrille Isaac-Sibille explique pourquoi elles arrivent après plusieurs semai…",
+      "texte": "Invité de Lyon Politiques ce jeudi 29 octobre, Cyrille Isaac-Sibille, député Modem de la 12e circonscription du Rhône explique pourquoi les annonces du gouvernement arrivent après des semaines de col…",
+      "source": "BFMTV / France 24",
+      "sources": [
+        "BFMTV",
+        "France 24"
+      ],
+      "url": "https://www.bfmtv.com/lyon/replay-emissions/lyon-politiques/video-annonces-du-gouvernement-pour-les-lyceens-cyrille-isaac-sibille-explique-pourquoi-elles-arrivent-apres-plusieurs-semaines-de-mobilisation_VN-202610290836.html",
+      "verifie": true
+    },
     {
       "id": "amvrx5iov-es40",
       "date": "28/10/2026",
@@ -62,20 +75,6 @@
         "Libération"
       ],
       "url": "https://www.bfmtv.com/societe/education/le-droit-au-blocage-n-existe-pas-le-ministre-de-l-enseignement-superieur-juge-que-le-travail-des-lyceens-doit-reprendre-lundi_AD-202610270302.html",
-      "verifie": true
-    },
-    {
-      "id": "amvqi3iid-kpxz",
-      "date": "27/10/2026",
-      "titre": "Le gouvernement a répondu à « une partie » des revendications, selon les syndicats lycéens qui appellent à poursuivre l…",
-      "texte": "Les représentants des lycéens sont ressortis plutôt à moitié satisfaits de leurs échanges avec le Premier ministre. Ils appellent à poursuivre la mobilisation, pour obtenir de nouvelles avancées et p…",
-      "source": "Public Sénat / La Croix / Europe 1",
-      "sources": [
-        "Public Sénat",
-        "La Croix",
-        "Europe 1"
-      ],
-      "url": "https://www.publicsenat.fr/actualites/education/le-gouvernement-a-repondu-a-une-partie-des-revendications-selon-les-syndicats-lyceens-qui-appellent-a-poursuivre-le-mouvement",
       "verifie": true
     },
     {
