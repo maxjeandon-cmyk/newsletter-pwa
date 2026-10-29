@@ -78,6 +78,15 @@
       ],
       "fenetreHeures": 24,
       "masque": true
+    },
+    {
+      "id": "l-humanite",
+      "nom": "L’Humanité",
+      "emoji": "🌹",
+      "flux": [
+        "https://www.humanite.fr/feed"
+      ],
+      "fenetreHeures": 24
     }
   ]
 }
