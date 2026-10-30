@@ -991,16 +991,6 @@
       ]
     },
     {
-      "id": "la-nouvelle-republique",
-      "nom": "La Nouvelle République",
-      "emoji": "🏰",
-      "categorie": "Presse régionale 🗺️",
-      "ligne": "Centre-Val de Loire, Tours et Orléans",
-      "flux": [
-        "https://www.lanouvellerepublique.fr/rss.xml"
-      ]
-    },
-    {
       "id": "konbini",
       "nom": "Konbini",
       "emoji": "🍿",
@@ -1066,9 +1056,29 @@
       "emoji": "💼",
       "categorie": "Économie 💰",
       "flux": [
-        "https://www.linforme.com/feed/"
+        "https://www.linforme.com/?feed=rss2"
       ],
       "ligne": "éco premium, enquêtes sur le privé français"
+    },
+    {
+      "id": "letudiant",
+      "nom": "L’Étudiant",
+      "emoji": "🎓",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.letudiant.fr/rss.xml"
+      ],
+      "ligne": "études, orientation et vie lycéenne"
+    },
+    {
+      "id": "phosphore",
+      "nom": "Phosphore",
+      "emoji": "🔦",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.phosphore.com/feed"
+      ],
+      "ligne": "magazine des 15-25 ans, études et carrière"
     }
   ]
 }
