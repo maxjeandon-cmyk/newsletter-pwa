@@ -3,7 +3,7 @@
   "intro": "Chronique narrative du mouvement lycéen et étudiant de l'automne 2026, écrite du point de vue des élèves : de l'amorce de Créteil au dernier acte en date, le fil s'allonge d'un relevé automatique toutes les six heures, et les chapitres transverses — la voix de l'intérieur, les revendications mot à mot, la répression, la machine gouvernementale, la longue durée, le lexique, les figures — viennent fermer le fil. Sources : la presse au plus près du mouvement — Le Média, Blast, L'Humanité, Mediapart — et la voix des réseaux en direct : les fils Reddit (r/etudiants, r/enseignants, r/france), les serveurs Discord du mouvement ; les fils TikTok, Snapchat et Instagram restent en vitrine, repris dès qu'un post ou un commentaire y est cité ; Wikipédia en colonne vertébrale factuelle.",
   "note": "Méthode : chaque paragraphe cite ses sources. Les paragraphes marqués « auto » sont des relevés bruts ajoutés par le pipeline toutes les 6 h (faits sourcés, sans réécriture) ; la rédaction narrative approfondie est assurée lors des éditions de la newsletter. Badge ✅ (corroboré par au moins deux médias distincts) et ⚠️ (une seule source) : ces distinctions s'appliquent aux relevés automatiques.",
   "maj": "30/10/2026",
-  "totalParagraphes": 190,
+  "totalParagraphes": 192,
   "chapitres": [
     {
       "id": "c1",
@@ -82,8 +82,8 @@
       "fichier": "chapitres/10.json",
       "periode": "Chronique transverse — réseaux, voix et ressentis",
       "titre": "Chorus — la voix de l'intérieur",
-      "paragraphes": 24,
-      "octets": 26807
+      "paragraphes": 25,
+      "octets": 27729
     },
     {
       "id": "c11",
@@ -298,15 +298,14 @@
       "fichier": "chapitres/37.json",
       "periode": "30 octobre 2026 — suivi de la journée",
       "titre": "La répression « tous azimuts » sous la loupe de Mediapart — Arthaud sur le plateau, la vie étudiante sur Reddit",
-      "paragraphes": 1,
-      "octets": 1380
+      "paragraphes": 2,
+      "octets": 2742
     }
   ],
   "releveSigs": [
-    "acte|cnews|suppres|total#",
-    "assas|etrange|etudian|influen#",
-    "decouve|dernier|mois|pret#",
-    "licence|philo|retours#"
+    "aussi|mauvais|pourquo|reputat#",
+    "canada|interna#",
+    "interdi|manifes|portabl|scelles#"
   ],
   "sections": [
     {
@@ -551,16 +550,16 @@
           "fichier": "chapitres/37.json",
           "periode": "30 octobre 2026 — suivi de la journée",
           "titre": "La répression « tous azimuts » sous la loupe de Mediapart — Arthaud sur le plateau, la vie étudiante sur Reddit",
-          "paragraphes": 1,
-          "octets": 1380
+          "paragraphes": 2,
+          "octets": 2742
         },
         {
           "id": "c10",
           "fichier": "chapitres/10.json",
           "periode": "Chronique transverse — réseaux, voix et ressentis",
           "titre": "Chorus — la voix de l'intérieur",
-          "paragraphes": 24,
-          "octets": 26807
+          "paragraphes": 25,
+          "octets": 27729
         },
         {
           "id": "c11",
@@ -613,8 +612,8 @@
       ]
     }
   ],
-  "releveDate": "2026-10-30T00:57:14.168Z",
-  "releveCompteur": 50,
+  "releveDate": "2026-10-30T19:56:02.443Z",
+  "releveCompteur": 51,
   "chapitreJour": {
     "id": "c37",
     "fichier": "chapitres/37.json",
