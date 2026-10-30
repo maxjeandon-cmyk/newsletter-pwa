@@ -11,6 +11,15 @@
         "Le Média",
         "Mediapart"
       ]
+    },
+    {
+      "id": "c37p2",
+      "texte": "Près de 19 heures ont passé depuis le relevé précédent ; la chronique reprend son fil. Au soir du 30 octobre 2026, le fil du récit continue. Les commentaires, eux, affluent : Portables sous scellés et interdiction de manifester : ces influenceurs victimes de coups de pression après leur soutien au mouvement lycéen (1 media : L'Humanité — non corrobore) — detail : Après la manifestation du 24 octobre dernier, plusieurs influenceurs ont été placés en garde à vue, voire présentés au tribunal, pour leur soutien au mouvement lycéen. Sur les réseaux, la journée se raconte de l'intérieur : Tu es étudiant·e international·e au Canada? (Reddit — r/etudiants) ; Pourquoi les BDE ont aussi mauvaise réputation alors que ça peut vraiment sauver une vie étudiante ? (Reddit — r/etudiants) — detail : <!-- SC_OFF --><div class=\"md\"><p>Ton expérience nous intéresse !</p> <p>On est une équipe étudiante de l’Université du Québec à Montréal (UQAM) et on réalise une étude pour compr…. Le prochain relevé reprendra le fil. (Relevé automatique du 30 octobre 2026 à 20:56 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "Reddit — r/etudiants",
+        "L'Humanité"
+      ],
+      "auto": true
     }
   ]
 }
