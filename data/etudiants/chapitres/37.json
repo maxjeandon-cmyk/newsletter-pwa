@@ -1,17 +1,16 @@
 {
   "id": "c37",
   "periode": "30 octobre 2026 — suivi de la journée",
-  "titre": "Le fil continue — 30 octobre 2026",
+  "titre": "La répression « tous azimuts » sous la loupe de Mediapart — Arthaud sur le plateau, la vie étudiante sur Reddit",
   "paragraphes": [
     {
       "id": "c37p1",
-      "texte": "5 heures ont passé depuis le relevé précédent ; une nouvelle journée de suivi s'ouvre, le fil continue. Dans la nuit du 29 octobre 2026 au 30 octobre 2026, la chronique avance. Dans la rue, le mouvement garde son souffle : Acte III, suppression de Cnews, Total : faut qu'on en parle avec Nathalie Arthaud (1 media : Le Média — non corrobore) ; Influenceuses, étudiantes d’Assas, étrangers: la répression tous azimuts du mouvement social (1 media : Mediapart — non corrobore) — detail : Ce soir dans Faut qu’on en parle, on reçoit Nathalie Arthaud, candidate Lutte Ouvrière à la présidentielle. Côté Reddit, élèves et enseignants parlent d'eux-mêmes : Retours d’étudiant.es sur la licence de philo (Reddit — r/etudiants) ; Prêt étudiant avec un découvert ces derniers mois : c'est possible? (Reddit — r/etudiants) — detail : <!-- SC_OFF --><div class=\"md\"><p>Les étudiants en licence de philosophie, c’est quoi vos matières ? Sur quoi vous travaillez ? Qu’est-ce qu’on y fait dans cette licence ? La trou…. Le prochain relevé reprendra le fil. (Relevé automatique du 30 octobre 2026 à 01:57 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "Dans la nuit du 29 au 30 octobre, une nouvelle journée de suivi s'ouvre, et le fil continue. Du côté de l'enquête, Mediapart publie « Influenceuses, étudiantes d'Assas, étrangers: la répression tous azimuts du mouvement social » — vue des grilles, la répression ne choisit plus ses cibles, elle les recense. À l'antenne, Le Média annonce la couleur de sa soirée : « Acte III, suppression de Cnews, Total : faut qu'on en parle avec Nathalie Arthaud » — ce soir dans « Faut qu'on en parle », on reçoit Nathalie Arthaud, candidate Lutte Ouvrière à la présidentielle. Et sur Reddit, pendant que la nuit tient les blocus, les étudiants parlent d'eux-mêmes : les « Retours d'étudiant.es sur la licence de philo » tournent sur r/etudiants, pendant qu'un autre pose la question du quotidien — « Prêt étudiant avec un découvert ces derniers mois : c'est possible? ». Le mouvement dort d'un oeil ; le relevé du matin dira si la journée tient les promesses de la nuit.",
       "sources": [
         "Reddit — r/etudiants",
         "Le Média",
         "Mediapart"
-      ],
-      "auto": true
+      ]
     }
   ]
 }
