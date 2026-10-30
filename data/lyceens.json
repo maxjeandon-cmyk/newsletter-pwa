@@ -1,5 +1,5 @@
 {
-  "maj": "29/10/2026 21:15",
+  "maj": "30/10/2026 01:57",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -24,10 +24,11 @@
       "date": "29/10/2026",
       "titre": "Annonces du gouvernement pour les lycéens: Cyrille Isaac-Sibille explique pourquoi elles arrivent après plusieurs semai…",
       "texte": "Invité de Lyon Politiques ce jeudi 29 octobre, Cyrille Isaac-Sibille, député Modem de la 12e circonscription du Rhône explique pourquoi les annonces du gouvernement arrivent après des semaines de col…",
-      "source": "BFMTV / France 24",
+      "source": "BFMTV / France 24 / Ouest-France",
       "sources": [
         "BFMTV",
-        "France 24"
+        "France 24",
+        "Ouest-France"
       ],
       "url": "https://www.bfmtv.com/lyon/replay-emissions/lyon-politiques/video-annonces-du-gouvernement-pour-les-lyceens-cyrille-isaac-sibille-explique-pourquoi-elles-arrivent-apres-plusieurs-semaines-de-mobilisation_VN-202610290836.html",
       "verifie": true
@@ -131,58 +132,22 @@
       ],
       "url": "https://www.banquedesterritoires.fr/rejoint-par-les-etudiants-le-mouvement-lyceen-prend-de-lampleur-et-le-premier-ministre-convoque-une",
       "verifie": true
-    },
-    {
-      "id": "g1",
-      "date": "30/09/2026",
-      "titre": "Geffray : « violences inqualifiables », 119 blessés élèves et personnels",
-      "texte": "Le ministre de l'Éducation nationale a dénoncé des « violences inqualifiables » et communiqué un bilan de 119 élèves et personnels blessés depuis le début des troubles, dont 34 personnels — « inédit » selon lui ; il a aussi demandé l'aide des parents (« dans la rue, les enfants sont en danger »).",
-      "source": "AFP",
-      "sources": [
-        "AFP"
-      ],
-      "url": null,
-      "verifie": false
-    },
-    {
-      "id": "g2",
-      "date": "30/09/2026",
-      "titre": "Plateforme de concertation pour les lycéens",
-      "texte": "Le gouvernement a annoncé l'ouverture lundi d'une « plateforme de concertation » à laquelle « tous les lycéens pourront contribuer », suivie d'un « événement de restitution nationale » pour « apporter des réponses structurées ».",
-      "source": "AFP / Les Français Press",
-      "sources": [
-        "AFP",
-        "Les Français Press"
-      ],
-      "url": "https://lesfrancais.press/la-jeunesse-francaise-dans-la-rue-entre-revendications-et-tensions/",
-      "verifie": true
-    },
-    {
-      "id": "g7",
-      "date": "30/09/2026",
-      "titre": "Macron accuse des politiques de « légitimer la violence »",
-      "texte": "Le président Emmanuel Macron a vertement critiqué des responsables politiques qu'il accuse de « légitimer la violence » des mouvements lycéens, visant la gauche radicale.",
-      "source": "AFP",
-      "sources": [
-        "AFP"
-      ],
-      "url": null,
-      "verifie": false
-    },
-    {
-      "id": "g8",
-      "date": "30/09/2026",
-      "titre": "Attal : les lycéens sont « de la chair à canon » pour LFI",
-      "texte": "Le candidat Renaissance Gabriel Attal accuse La France insoumise de « se servir de la jeunesse comme de la chair à canon » pour « mettre le bordel » en « instrumentalisant » les revendications des lycéens.",
-      "source": "AFP",
-      "sources": [
-        "AFP"
-      ],
-      "url": null,
-      "verifie": false
     }
   ],
   "faits": [
+    {
+      "id": "amvu9idsl-ejb6",
+      "date": "29/10/2026",
+      "titre": "Mobilisations du 31 octobre: \"Les lycéens et lycéennes ont peur d'aller manifester\", témoigne Anaïs, élève au lycée Klé…",
+      "texte": "BFMTV propose un nouveau numéro exceptionnel du FORUM BFMTV: “Blocages, vie chère : la poudrière française” présenté par Maxime Switek. La chaîne consacre une soirée spéciale pour permettre à des cit…",
+      "source": "BFMTV / Ouest-France",
+      "sources": [
+        "BFMTV",
+        "Ouest-France"
+      ],
+      "url": "https://www.bfmtv.com/societe/video-forum-bfmtv-mobilisations-du-31-octobre-les-lyceens-et-lyceennes-ont-peur-d-aller-manifester-temoigne-anais-eleve-au-lycee-kleber-de-strasbourg-et-membre-du-syndicat-les-lyceens_VN-202610290995.html",
+      "verifie": true
+    },
     {
       "id": "amvm7gg53-jw8r",
       "date": "24/10/2026",
