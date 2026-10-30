@@ -12,7 +12,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.actioncontrelafaim.org/actualites/",
       "derniere": {
-        "releve": "29/10/2026",
+        "releve": "30/10/2026",
         "points": [
           "RDC : Action contre la Faim renforce sa réponse face à l’épidémie d’Ebola",
           "Au Yémen, le miel fait vivre les communautés rurales",
@@ -32,7 +32,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.greenpeace.fr/actualites/",
       "derniere": {
-        "releve": "29/10/2026",
+        "releve": "30/10/2026",
         "points": [
           "Pure Salmon, c’est non !",
           "Quand alerter peut coûter cher",
@@ -52,7 +52,7 @@
       "lien_autre": "https://www.croix-rouge.fr/actualite",
       "libelle_autre": "Actualité nationale",
       "derniere": {
-        "releve": "29/10/2026",
+        "releve": "30/10/2026",
         "points": [
           "Devenir sauveteur secouriste du travail Savoir intervenir face à une situation d'accident du travail et porter les premiers secours.",
           "Initiation à la santé mentale Comprendre les bases de la santé mentale, déconstruire les idées reçues et savoir en prendre soin.",
@@ -71,12 +71,12 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.msf.fr/actualites",
       "derniere": {
-        "releve": "29/10/2026",
+        "releve": "30/10/2026",
         "points": [
+          "Dessiner Gaza : l'enfance marquée par la peur et la violence",
           "Haïti : MSF alerte sur l’explosion de violences à Port-au-Prince et appelle à…",
           "Soudan : au moins 36 morts et 150 blessés dans une nouvelle frappe de drone",
-          "Nord-Kivu : « Sous la surface », la détresse silencieuse des populations prises…",
-          "Yémen : la reprise des combats accroît les besoins humanitaires"
+          "Nord-Kivu : « Sous la surface », la détresse silencieuse des populations prises…"
         ]
       }
     },
@@ -90,7 +90,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://seashepherd.fr/actualites",
       "derniere": {
-        "releve": "29/10/2026",
+        "releve": "30/10/2026",
         "points": [
           "Dauphins : l’illusion d’une victoire",
           "Krill en Antarctique",
@@ -109,7 +109,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.wwf.fr/s-informer/nos-actualites",
       "derniere": {
-        "releve": "29/10/2026",
+        "releve": "30/10/2026",
         "points": [
           "25 ans d’engagement en Nouvelle-Calédonie",
           "Le WWF France et SBTN lancent un programme pour accélérer l’adoption d’objectifs scientifiques pour la nature dans le secteur financier",
@@ -129,12 +129,12 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.amnesty.fr/actualites/",
       "derniere": {
-        "releve": "29/10/2026",
+        "releve": "30/10/2026",
         "points": [
+          "La France glisse-t-elle vers des pratiques autoritaires ? 7 signes d’alerte",
           "Des journalistes agressés par des soldats israéliens en Cisjordanie occupée reçoivent le Prix Amnesty International à Bayeux",
           "Être militant contre la peine de mort sous Trump : “C’est une bataille qui va se jouer État par État”",
-          "Mouvement lycéen : des mineurs face à la répression des forces de l’ordre",
-          "Au Prix Bayeux Calvados-Normandie des correspondants de guerre, le reflet de la montée des pratiques autoritaires"
+          "Mouvement lycéen : des mineurs face à la répression des forces de l’ordre"
         ]
       }
     },
@@ -148,12 +148,12 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.oxfamfrance.org/communiques-de-presse/",
       "derniere": {
-        "releve": "29/10/2026",
+        "releve": "30/10/2026",
         "points": [
           "Le point sur la loi intégrale contre les violences sexuelles, soutenue par Oxfam",
+          "Impôts injustes : le procès !",
           "Budget 2027 : un Projet de Loi Finance catastrophique",
-          "Pacte Dutreil, la grande arnaque : pourquoi il faut le réformer",
-          "Les femmes ne sont pas à l’abri du sexisme dans les grandes entreprises européennes"
+          "Pacte Dutreil, la grande arnaque : pourquoi il faut le réformer"
         ]
       }
     },
@@ -167,7 +167,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.handicap-international.fr/fr/actualites/index",
       "derniere": {
-        "releve": "29/10/2026",
+        "releve": "30/10/2026",
         "points": [
           "Bénin : Souleyman",
           "Madagascar : Odile",
