@@ -83,7 +83,7 @@
       "periode": "Chronique transverse — réseaux, voix et ressentis",
       "titre": "Chorus — la voix de l'intérieur",
       "paragraphes": 25,
-      "octets": 27729
+      "octets": 27825
     },
     {
       "id": "c11",
@@ -299,7 +299,7 @@
       "periode": "30 octobre 2026 — suivi de la journée",
       "titre": "La répression « tous azimuts » sous la loupe de Mediapart — Arthaud sur le plateau, la vie étudiante sur Reddit",
       "paragraphes": 2,
-      "octets": 2742
+      "octets": 2493
     }
   ],
   "releveSigs": [
@@ -551,7 +551,7 @@
           "periode": "30 octobre 2026 — suivi de la journée",
           "titre": "La répression « tous azimuts » sous la loupe de Mediapart — Arthaud sur le plateau, la vie étudiante sur Reddit",
           "paragraphes": 2,
-          "octets": 2742
+          "octets": 2493
         },
         {
           "id": "c10",
@@ -559,7 +559,7 @@
           "periode": "Chronique transverse — réseaux, voix et ressentis",
           "titre": "Chorus — la voix de l'intérieur",
           "paragraphes": 25,
-          "octets": 27729
+          "octets": 27825
         },
         {
           "id": "c11",
