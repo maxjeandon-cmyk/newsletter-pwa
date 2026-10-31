@@ -1,17 +1,17 @@
 {
   "date": "31/10/2026",
-  "heure": "00:44",
+  "heure": "09:33",
   "relevesOng": {
-    "rafraichis": 9,
+    "rafraichis": 0,
     "echecs": 1,
-    "publie": true
+    "publie": false
   },
   "lyceens": {
     "nouvelles": 0,
     "fusionnees": 3,
-    "moissonnes": 13,
+    "moissonnes": 15,
     "total": 14,
-    "publie": true
+    "publie": false
   },
   "etudiants": {
     "items": 0,
@@ -24,12 +24,12 @@
     {
       "nom": "validate-latest.js",
       "ok": true,
-      "detail": "\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 28/10/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n\nToutes les éditions récentes sont conformes. 🌱"
+      "detail": "\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 29/10/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n\nToutes les éditions récentes sont conformes. 🌱"
     },
     {
       "nom": "check-site.js",
       "ok": true,
-      "detail": "=== check-site ===\nℹ️  latest.json : 34 édition(s), plus récente 2026-10-31\nℹ️  édition 2026-10-31 : JSON OK, HTML 82856 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
+      "detail": "=== check-site ===\nℹ️  latest.json : 35 édition(s), plus récente 2026-10-30\nℹ️  édition 2026-10-30 : JSON OK, HTML 86204 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
     },
     {
       "nom": "sonde notifications",
@@ -38,13 +38,13 @@
     },
     {
       "nom": "ong-releve.js",
-      "ok": true,
-      "detail": "9 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
+      "ok": false,
+      "detail": "0 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
     },
     {
       "nom": "lyceens.js",
       "ok": true,
-      "detail": "0 nouvelle(s) info, 3 fusionnée(s) sur 13 moissonnée(s) — 14 au total"
+      "detail": "0 nouvelle(s) info, 3 fusionnée(s) sur 15 moissonnée(s) — 14 au total"
     },
     {
       "nom": "etudiants.js",
