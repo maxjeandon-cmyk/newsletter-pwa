@@ -1,5 +1,5 @@
 {
-  "maj": "30/10/2026 01:57",
+  "maj": "31/10/2026 01:44",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -93,44 +93,6 @@
         "RFI"
       ],
       "url": "https://www.20minutes.fr/societe/4251181-20261004-blocus-lycees-lecornu-demande-cours-reprennent-lundi-partout-securite-permet",
-      "verifie": true
-    },
-    {
-      "id": "g3",
-      "date": "01/10/2026",
-      "titre": "« Violences urbaines », « manœuvre organisée » : la version de l'exécutif",
-      "texte": "Le gouvernement affirme que le mouvement a « basculé vers des violences urbaines » et évoque, en s'appuyant sur les services de renseignement, une « manœuvre organisée » — affirmation gouvernementale, contestée par LFI, non corroborée à ce stade.",
-      "source": "AFP / Banque des territoires",
-      "sources": [
-        "AFP",
-        "Banque des territoires"
-      ],
-      "url": "https://www.banquedesterritoires.fr/rejoint-par-les-etudiants-le-mouvement-lyceen-prend-de-lampleur-et-le-premier-ministre-convoque-une",
-      "verifie": false
-    },
-    {
-      "id": "g5",
-      "date": "01/10/2026",
-      "titre": "Budget 2027 : +1,2 milliard d'euros pour l'Éducation",
-      "texte": "Le ministre Édouard Geffray défend un budget 2027 pour l'Éducation nationale en hausse de 1,2 milliard d'euros : « on ne fait pas d'économies sur la jeunesse », la priorité à l'éducation est « objectivement préservée ».",
-      "source": "AFP",
-      "sources": [
-        "AFP"
-      ],
-      "url": null,
-      "verifie": false
-    },
-    {
-      "id": "g10",
-      "date": "01/10/2026",
-      "titre": "Cellule interministérielle de crise convoquée par Matignon",
-      "texte": "Alors que le mouvement prend de l'ampleur avec les étudiants, le Premier ministre a convoqué une cellule interministérielle de crise.",
-      "source": "Banque des territoires / AFP",
-      "sources": [
-        "Banque des territoires",
-        "AFP"
-      ],
-      "url": "https://www.banquedesterritoires.fr/rejoint-par-les-etudiants-le-mouvement-lyceen-prend-de-lampleur-et-le-premier-ministre-convoque-une",
       "verifie": true
     }
   ],
@@ -271,19 +233,6 @@
         "L'Humanité"
       ],
       "url": "https://www.linternaute.com/actualite/faits-divers/11306009-blocage-des-lycees-le-mouvement-reconduit-mais-jusqu-a-quand-la-date-d-une-grande-manifestation-avancee/",
-      "verifie": true
-    },
-    {
-      "id": "f3",
-      "date": "01/10/2026",
-      "titre": "Jeudi 01/10 : les étudiants rejoignent, une trentaine de campus bloqués",
-      "texte": "Pour l'« acte deux », les étudiants ont rejoint les lycéens ; une trentaine de campus universitaires étaient bloqués, dont Rennes 2 où le blocus a été voté.",
-      "source": "AFP / franceinfo",
-      "sources": [
-        "AFP",
-        "franceinfo"
-      ],
-      "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/reportage-si-c-est-le-seul-moyen-de-se-faire-ecouter-a-saint-denis-les-lyceens-reconduisent-le-mouvement-et-reaffirment-leurs-revendications_8222419.html",
       "verifie": true
     }
   ],
