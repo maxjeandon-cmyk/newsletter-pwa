@@ -1,0 +1,750 @@
+{
+  "date": "2026-10-30",
+  "genere_le": "2026-10-31T02:40:00+01:00",
+  "html": "editions/2026-10-30.html",
+  "resume_executif": [
+    "France \u2014 l'\u00e9conomie fran\u00e7aise est entr\u00e9e en territoire n\u00e9gatif : le PIB a recul\u00e9 de 0,1 % au troisi\u00e8me trimestre (apr\u00e8s \u22120,2 % au premier et une stagnation au deuxi\u00e8me), Roland Lescure reconnaissant que \u00ab l'\u00e9conomie fran\u00e7aise est \u00e0 l'arr\u00eat \u00bb et qu'elle \u00ab ira dans le mur \u00bb sans budget ; le budget 2027 s'est alourdi en commission \u00e0 l'Assembl\u00e9e (taxes sur les grandes entreprises vot\u00e9es, amendement LFI de +20 % pour les enseignants qui retire 8,3 milliards d'euros \u00e0 l'enseignement priv\u00e9), David Amiel pr\u00e9venant qu'il faudra \u00ab davantage d'efforts \u00bb ; et la France s'est barricad\u00e9e avant une troisi\u00e8me journ\u00e9e de mobilisation samedi, 70.000 policiers et gendarmes annonc\u00e9s pour un \u00ab risque tr\u00e8s \u00e9lev\u00e9 \u00bb qui co\u00efncide avec Halloween (S1, S29\u2013S34, S41\u2013S46).",
+    "IA et march\u00e9s \u2014 Wall Street a cl\u00f4tur\u00e9 sa semaine dans le rouge : le Nasdaq a chut\u00e9 de 2,86 % (plus de 8 % sous son pic historique de d\u00e9but octobre), Amazon et Intel ont d\u00e9\u00e7u, et le doute sur la rentabilit\u00e9 des investissements massifs dans l'IA emporte le mois ; Binance a confirm\u00e9 le plus gros piratage de l'histoire des cryptomonnaies (6,3 milliards de dollars, la moiti\u00e9 gel\u00e9e, piste nord-cor\u00e9enne), le Royaume-Uni a ouvert une enqu\u00eate sur les nouvelles conditions de Meta, et l'UE et le Canada ont scell\u00e9 \u00e0 Montr\u00e9al une alliance in\u00e9dite qui inclut l'intelligence artificielle (S2\u2013S9).",
+    "\u00c9conomie \u2014 l'Europe a r\u00e9sist\u00e9 au choc \u00e9nerg\u00e9tique de la guerre en Iran : la zone euro a affich\u00e9 +0,4 % au troisi\u00e8me trimestre, l'Allemagne a d\u00e9pass\u00e9 les attentes (+0,2 %, inflation en repli \u00e0 2,8 %) et l'Italie a vu son inflation bondir \u00e0 5,4 % ; le p\u00e9trole a fini la semaine en hausse (Brent 117,64 $, +2,40 %) sur les incidents du d\u00e9troit d'Ormuz ; et la Banque du Japon a d\u00e9clar\u00e9 atteinte sa cible d'inflation apr\u00e8s treize ans (S25, S35\u2013S38, S103).",
+    "Monde \u2014 Olechky a v\u00e9cu la plus significative tr\u00eave russo-ukrainienne de la guerre : un convoi de 25 bus et d'ambulances est entr\u00e9 dans la ville occup\u00e9e, la Russie a annonc\u00e9 la fin de sa \u00ab mission humanitaire \u00bb et la tr\u00eave court jusqu'\u00e0 dimanche ; le G20 d'Atlanta a renonc\u00e9 \u00e0 sa photo de famille, les Europ\u00e9ens refusant d'y poser aux c\u00f4t\u00e9s de Lavrov ; Nova\u00efa Gazeta, bastion de la presse ind\u00e9pendante russe, a annonc\u00e9 sa fermeture (\u00ab Ils nous ont tu\u00e9s \u00bb) ; et le d\u00e9troit d'Ormuz s'est enlis\u00e9 dans les mines \u2014 trois nouveaux p\u00e9troliers immobilis\u00e9s vendredi selon l'Iran (S59\u2013S64, S68).",
+    "Culture et sciences \u2014 le Goncourt sera d\u00e9cern\u00e9 mardi \u00ab \u00e0 l'ombre de l'IA \u00bb apr\u00e8s l'affaire Th\u00e9lyson Or\u00e9lien ; les hommages \u00e0 Patrick Stewart ont afflu\u00e9 (Hugh Jackman, William Shatner, George Takei) ; une \u00e9tude chiffre \u00e0 3.560 le nombre d'Indon\u00e9siens tu\u00e9s en septembre par la pollution des incendies ; et la COP17 biodiversit\u00e9 d'Erevan s'est achev\u00e9e sans consensus en vue (S20, S23, S76, S79)."
+  ],
+  "chapitres": [
+    {
+      "id": "intelligence-artificielle",
+      "emoji": "\ud83e\udd16",
+      "nom": "Intelligence artificielle",
+      "resume": "La question de la journ\u00e9e n'est plus \u00ab \u00e0 quoi sert l'IA \u00bb mais \u00ab qui paiera l'IA \u00bb : les Bourses mondiales ont achev\u00e9 octobre dans la chute de la tech, et le piratage record de Binance a montr\u00e9 l'envers du monde num\u00e9rique."
+    },
+    {
+      "id": "spatial",
+      "emoji": "\ud83d\ude80",
+      "nom": "Spatial",
+      "resume": "Un vendredi de lancement pour la Californie, d'images pour l'Europe et d'assemblage pour l'industrie : le spatial a tiss\u00e9 la toile entre constellation am\u00e9ricaine, programme Copernicus et fus\u00e9es europ\u00e9ennes."
+    },
+    {
+      "id": "economie-pour-les-nuls",
+      "emoji": "\ud83d\udcb0",
+      "nom": "L'\u00c9conomie pour les nuls",
+      "resume": "Petit lexique avant d'entrer : le PIB mesure la richesse produite par un pays en un trimestre ; une r\u00e9cession technique, c'est deux trimestres de recul d'affil\u00e9e ; l'inflation est la hausse g\u00e9n\u00e9rale et durable des prix ; un baril de Brent est la r\u00e9f\u00e9rence mondiale du p\u00e9trole, dont le prix s'envole quand une voie maritime strat\u00e9gique est menac\u00e9e. Aujourd'hui : l'Europe r\u00e9siste au choc du p\u00e9trole, la France s'enfonce."
+    },
+    {
+      "id": "droit-pour-les-nuls",
+      "emoji": "\u2696",
+      "nom": "Le Droit pour les nuls",
+      "resume": "Manifester, ce n'est pas un droit absolu : c'est une libert\u00e9 encadr\u00e9e par une d\u00e9claration pr\u00e9alable et un parcours que la pr\u00e9fecture peut imposer \u2014 ou interdire. Explication d'un m\u00e9canisme au c\u0153ur de l'actualit\u00e9, \u00e0 la veille d'un samedi \u00e0 \u00ab haut risque \u00bb."
+    },
+    {
+      "id": "jeu-video-pop-culture",
+      "emoji": "\ud83c\udfae",
+      "nom": "Jeu vid\u00e9o & pop culture",
+      "resume": "Zelda souffle ses 40 bougies, Call of Duty se heurte \u00e0 la m\u00e9moire des victimes, et l'horreur r\u00e8gne sur les pratiques culturelles fran\u00e7aises : la pop culture du jour navigue entre c\u00e9l\u00e9bration et repentance."
+    },
+    {
+      "id": "culture",
+      "emoji": "\ud83c\udfad",
+      "nom": "Culture",
+      "resume": "Le Goncourt sera d\u00e9cern\u00e9 mardi \u00ab \u00e0 l'ombre de l'IA \u00bb, les hommages \u00e0 Patrick Stewart affluent, et Orchestra Baobab rena\u00eet de ses cendres : la culture du vendredi regarde la litt\u00e9rature avec soup\u00e7on et la sc\u00e8ne avec tendresse."
+    },
+    {
+      "id": "sciences",
+      "emoji": "\ud83d\udd2c",
+      "nom": "Sciences",
+      "resume": "La science du jour mesure les d\u00e9g\u00e2ts de la crise \u00e9cologique \u2014 et propose des r\u00e9ponses : de la fum\u00e9e meurtri\u00e8re en Indon\u00e9sie \u00e0 la \u00ab manosph\u00e8re \u00bb trait\u00e9e comme un enjeu de sant\u00e9 publique, en passant par les for\u00eats encore inexplor\u00e9es du Gabon."
+    },
+    {
+      "id": "climat",
+      "emoji": "\ud83c\udf0d",
+      "nom": "Climat",
+      "resume": "La COP17 biodiversit\u00e9 s'ach\u00e8ve sans accord en vue, le Giec reporte ses arbitrages, et le baril s'envole : le grand \u00e9cart entre les d\u00e9clarations et les mesures n'a jamais \u00e9t\u00e9 aussi visible."
+    },
+    {
+      "id": "politique-francaise",
+      "emoji": "\ud83c\uddeb\ud83c\uddf7",
+      "nom": "Politique fran\u00e7aise",
+      "resume": "La France boucle sa semaine sous haute tension : parcours de manifestation impos\u00e9s, vitrines condamn\u00e9es, \u00e9moi politique apr\u00e8s l'attentat raciste de Trappes \u2014 et une campagne pr\u00e9sidentielle que l'on cra\u00eet d\u00e9j\u00e0 \u00ab marqu\u00e9e par la violence et les divisions \u00bb."
+    },
+    {
+      "id": "etats-unis",
+      "emoji": "\ud83c\uddfa\ud83c\uddf8",
+      "nom": "\u00c9tats-Unis",
+      "resume": "\u00c0 quatre jours des midterms du 3 novembre, l'Am\u00e9rique vote d\u00e9j\u00e0 \u00e0 un rythme record \u2014 pendant que Washington pr\u00e9pare l'apr\u00e8s-\u00e9lection, y compris militairement."
+    },
+    {
+      "id": "chine",
+      "emoji": "\ud83c\udde8\ud83c\uddf3",
+      "nom": "Chine",
+      "resume": "Des comptes fake qui se font passer pour des \u00e9lecteurs am\u00e9ricains, un accord commercial avec la Suisse : la Chine de ce vendredi cultive ses paradoxes \u2014 l'influence cach\u00e9e \u00e0 l'\u00e9tranger, l'ouverture calcul\u00e9e des march\u00e9s."
+    },
+    {
+      "id": "russie",
+      "emoji": "\ud83c\uddf7\ud83c\uddfa",
+      "nom": "Russie",
+      "resume": "La Russie de ce vendredi joue sur deux sc\u00e8nes : celle, humanitaire, d'Olechky o\u00f9 sa \u00ab mission \u00bb s'ach\u00e8ve sous tr\u00eave, et celle, diplomatique, d'un G20 o\u00f9 les Europ\u00e9ens refusent de poser \u00e0 c\u00f4t\u00e9 de Lavrov \u2014 pendant que Nova\u00efa Gazeta tire sa r\u00e9v\u00e9rence."
+    },
+    {
+      "id": "geopolitique",
+      "emoji": "\ud83c\udf10",
+      "nom": "G\u00e9opolitique",
+      "resume": "Le d\u00e9troit d'Ormuz continue de miner l'\u00e9conomie mondiale, Isra\u00ebl cherche un Premier ministre parmi 120 si\u00e8ges, et l'Afrique de l'Est s'enflamme : un vendredi o\u00f9 la tension s'installe durablement."
+    },
+    {
+      "id": "grande-info-semaine",
+      "emoji": "\u2b50",
+      "nom": "Grande information de la semaine",
+      "resume": "Une semaine qui a vu l'IA faire vaciller les Bourses, l'Espagne pleurer ses trains, la France compter ses policiers \u2014 et l'Europe chercher des alli\u00e9s au Canada."
+    }
+  ],
+  "hors_chapitres": [
+    "Sport. Ligue 1, 9e journ\u00e9e : le PSG a assomm\u00e9 Le Havre 5-1 en d\u00e9but de soir\u00e9e, Senny Mayulu marquant pour le deuxi\u00e8me match d'affil\u00e9e et le portier parisien Safonov sauv\u00e9 par son poteau \u2014 Paris conforte sa premi\u00e8re place avant de voyager \u00e0 Villarreal mardi ; Nice a battu Rennes 5-2 et Lille recevait Lens en cl\u00f4ture (S87).",
+    "Sport. NBA : les Memphis Grizzlies, port\u00e9s par leur recrue Cameron Boozer (18 points, 12 rebonds), ont gagn\u00e9 \u00e0 Portland et restent invaincus, tandis que la Nouvelle-Orl\u00e9ans a d\u00e9croch\u00e9 sa premi\u00e8re victoire de la saison (S88).",
+    "Sport. Tennis : touch\u00e9 au dos, le Fran\u00e7ais Arthur Fils (8e mondial) a abandonn\u00e9 en quart de finale de l'ATP 500 de B\u00e2le face \u00e0 Taylor Fritz (6-2, 2-0), mais reste 7e \u00e0 la course au Masters ; \u00e0 Vienne, Zverev, Medvedev et Alcaraz sont pass\u00e9s (S89).",
+    "Sport-soci\u00e9t\u00e9. Des dizaines de milliers de fans des Milwaukee Brewers ont envahi les rues de la ville pour la parade de victoire de la World Series \u2014 un titre back-to-back attendu depuis des d\u00e9cennies (S90).",
+    "Sport-\u00e9cole. Cinq basketteurs du P\u00f4le France de l'Insep ont \u00e9t\u00e9 exclus d\u00e9finitivement apr\u00e8s des violences lors d'un bizutage \u00e0 l'internat, cinq autres sportifs \u00e9tant \u00e9galement sanctionn\u00e9s (S91).",
+    "Finance-soci\u00e9t\u00e9. Monaco, la Bulgarie, la C\u00f4te d'Ivoire et la RDC ont \u00e9t\u00e9 retir\u00e9s de la \u00ab liste grise \u00bb du Gafi, l'organisme mondial de lutte contre le blanchiment, qui salue des r\u00e9formes d'exemplarit\u00e9 \u2014 la principaut\u00e9 avait \u00e9t\u00e9 \u00e9pingl\u00e9e par Moneyval en 2023 (S92).",
+    "Logement. La tr\u00eave hivernale d\u00e9bute dimanche : les expulsions locatives restent \u00e0 un niveau \u00e9lev\u00e9, l'ex-Fondation Abb\u00e9 Pierre d\u00e9non\u00e7ant une acc\u00e9l\u00e9ration depuis la loi Kasbarian de 2023, qui a raccourci les proc\u00e9dures, et le lien entre perte du logement et d\u00e9gradation de la sant\u00e9 \u2014 un tiers des personnes expuls\u00e9es perdent leur emploi (S93).",
+    "Sant\u00e9-consommation. Les autorit\u00e9s fran\u00e7aises ont suspendu l'importation et la commercialisation de pr\u00e9servatifs masculins ultra-fins du fabricant malaisien Richter Rubber Technology, avec le retrait et le rappel de 15 r\u00e9f\u00e9rences pr\u00e9sentant des d\u00e9fauts \u00ab susceptibles de causer \u00bb des d\u00e9faillances (S94).",
+    "Sport-g\u00e9opolitique. Le rallye-raid Dakar 2027 se d\u00e9roulera exceptionnellement au Portugal et au Maroc en janvier, les organisateurs A.S.O. ayant renonc\u00e9 \u00e0 l'Arabie saoudite \u00ab face aux r\u00e9cents \u00e9v\u00e9nements \u00bb au Moyen-Orient (S95).",
+    "Technologie-soci\u00e9t\u00e9. La Cor\u00e9e du Sud portera plainte contre les \u00e9tudiants surpris en train de tricher avec des lunettes connect\u00e9es \u00e0 l'examen national d'entr\u00e9e \u00e0 l'universit\u00e9 et durcira les sanctions (S96).",
+    "A\u00e9roports \u2014 l'\u00e9t\u00e9 a vu les plus longues files des contr\u00f4les automatis\u00e9s aux fronti\u00e8res de l'UE en Allemagne puis en France, selon Eurocontrol \u2014 des chiffres qui \u00ab contredisent les messages catastrophistes \u00bb des compagnies (S97).",
+    "Et Naval Group \u2014 a livr\u00e9 \u00e0 Lorient la deuxi\u00e8me des quatre fr\u00e9gates FDI command\u00e9es par la marine grecque (S98)."
+  ],
+  "sources": [
+    {
+      "label": "AFP \u2014 Actualit\u00e9s du vendredi 30 octobre 2026 (digest)",
+      "ref": "news-afp-20261030-80240f56",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Wall Street cl\u00f4ture en nette baisse, la tech d\u00e9raille (Nasdaq \u22122,86 %)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Les Bourses mondiales ach\u00e8vent le mois d'octobre sur une chute de la tech",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Nvidia's web of AI bets: smart strategy or bubble risk?",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Le Royaume-Uni ouvre une enqu\u00eate sur les nouvelles conditions de Meta pour les m\u00e9dias (CMA)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Binance promet de couvrir les pertes apr\u00e8s un piratage record de 6,3 milliards de dollars",
+      "ref": "news-afp-20261030-add66550",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Binance pr\u00e9cise avoir subi une \u00ab attaque complexe \u00bb avec \u00ab plusieurs br\u00e8ches \u00bb",
+      "ref": "news-afp-20261030-356053b1",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Le Canada veut participer au pr\u00eat de 90 milliards d'euros de l'UE \u00e0 l'Ukraine",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Canada, EU launch new alliance with deals on Ukraine, minerals, AI",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AP \u2014 Prime Minister Carney expects to conclude talks in June on making Canada EU's first associate member",
+      "ref": "AP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 US regulator bans Chinese labs from electronics testing (FCC)",
+      "ref": "news-afp-20261030-2b7972d9",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AP \u2014 Graphika finds China-linked Spamouflage accounts posing as US voters on X",
+      "ref": "news-ap-20261030-4cda9f49",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 La Chine et la Suisse scellent un accord commercial supprimant la quasi-totalit\u00e9 des droits de douane",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "SpaceX France \u2014 Starlink 15-18 : horaire du 30 octobre et direct Falcon 9",
+      "ref": "https://www.spacexfrance.com/starlink-15-18-lancement-30-octobre-2026/",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "Spaceflight Now \u2014 Live coverage: SpaceX to close out October with Halloween eve Falcon 9 launch",
+      "ref": "https://spaceflightnow.com/2026/10/",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "ScienceNow \u2014 Sentinel-3C : les premi\u00e8res images de la Terre (lancement Vega-C VV30, 15/09, images du 8/10)",
+      "ref": "https://sciencenow.fr/articles-sciencenow/exploration-spatiale/sentinel-3c-premieres-images-terre",
+      "fiabilite": 5,
+      "maj": "29/10/2026"
+    },
+    {
+      "label": "La Chronique Spatiale \u2014 \u00e9dition 30/10/2026 (ESA : nouvelle commande Galileo 2e g\u00e9n\u00e9ration ; PLD Space : trois Miura-5 ; NASA : Artemis-3 ; Themis ; MMX)",
+      "ref": "http://lachroniquespatiale.com/",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "Flight Atlas \u2014 SpaceX Launch Tracker: 123 launches in 2026 so far",
+      "ref": "https://www.flightatlas.org/trackers/spacex",
+      "fiabilite": 5,
+      "maj": "31/10/2026"
+    },
+    {
+      "label": "AFP \u2014 L'Italie inaugure une nouvelle usine de petits satellites (Stellar Hub, 140/an)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 28/10/2026",
+      "fiabilite": 5,
+      "maj": "28/10/2026"
+    },
+    {
+      "label": "AFP \u2014 La pollution due aux incendies a tu\u00e9 3.560 Indon\u00e9siens en septembre (rapport scientifique)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 La \u00ab manosph\u00e8re \u00bb devrait \u00eatre trait\u00e9e comme un enjeu de sant\u00e9 publique (The Lancet)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Botanists comb Gabon's rich rainforests with nature on the line",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Biodiversit\u00e9 : \u00e0 quelques heures de la fin de la COP17, peu d'optimisme sur un consensus (Erevan)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Climat : le Giec se r\u00e9unira d\u00e9but d\u00e9cembre pour surmonter des divergences",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 29/10/2026",
+      "fiabilite": 5,
+      "maj": "29/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Les prix du p\u00e9trole augmentent sur fond de tensions dans le d\u00e9troit d'Ormuz (Brent 117,64 $)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 La fuite de p\u00e9trole au large des \u00c9mirats ma\u00eetris\u00e9e (tanker GEM NO.2)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 \u00c9nergie : la Russie propose \u00e0 l'Afrique des centrales nucl\u00e9aires flottantes (Rosatom)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 France : l'inflation acc\u00e9l\u00e8re \u00e0 3,4 % sur un an en octobre, selon l'Insee",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 En France, le PIB recule au 3e trimestre et \u00ab l'\u00e9conomie fran\u00e7aise est \u00e0 l'arr\u00eat \u00bb",
+      "ref": "news-afp-20261030-bdc0be60",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 French economy shrinks 0.1 percent in third quarter",
+      "ref": "news-afp-20261030-1fb3a241",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Budget 2027 : les d\u00e9put\u00e9s votent plusieurs taxes sur les grandes entreprises et le pacte \u00ab Papin \u00bb ; \u00ab davantage d'efforts \u00bb, pr\u00e9vient Amiel",
+      "ref": "news-afp-20261030-405c08b1",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 \u00ab L'\u00e9conomie fran\u00e7aise est \u00e0 l'arr\u00eat \u00bb et \u00ab ira dans le mur \u00bb, dit Lescure",
+      "ref": "news-afp-20261030-0fb7b0aa",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Budget : l'enseignement catholique d\u00e9nonce la suppression de ses cr\u00e9dits en commission",
+      "ref": "news-afp-20261030-eca08e98",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Roland Lescure reconna\u00eet une phrase \u00ab malheureuse \u00bb au sujet des taxes sur le carburant",
+      "ref": "news-afp-20261030-6fea395c",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 German economy logs 0.2% growth, faster than expected (Destatis)",
+      "ref": "news-afp-20261030-cdd5b588",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AP \u2014 Europe's economy brushes off energy shock from Iran war, shows moderate growth in Q3 (+0,4 %)",
+      "ref": "news-afp-20261030-f48ab22b",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Italie : l'inflation bondit \u00e0 5,4 % sur un an en octobre (Istat)",
+      "ref": "news-afp-20261030-2cae2c78",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Zone euro : la croissance r\u00e9siste en d\u00e9pit du co\u00fbt de l'\u00e9nergie",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "L\u00e9gifrance \u2014 Code de la s\u00e9curit\u00e9 int\u00e9rieure, articles L. 211-1 \u00e0 L. 211-7 (manifestations sur la voie publique)",
+      "ref": "https://www.legifrance.gouv.fr",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "Service-Public.fr \u2014 Manifestation sur la voie publique : d\u00e9claration pr\u00e9alable",
+      "ref": "https://www.service-public.fr",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Mobilisation sociale : s\u00e9curit\u00e9 \u00ab amplifi\u00e9e \u00bb pour un samedi \u00e0 \u00ab haut risque \u00bb (70.000 forces)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Manifestations de samedi \u00e0 Paris : les parcours de la CGT et des gilets jaunes interdits par la pr\u00e9fecture de police",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Quelles r\u00e8gles pour le port d'un masque d'Halloween pendant les manifestations de samedi ?",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Mobilisation sociale : Darmanin r\u00e9it\u00e8re son message de fermet\u00e9 aux procureurs",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 France boards up ahead of Halloween protests (vitrines barricad\u00e9es)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 R\u00e9seaux sociaux : un blocage temporaire en cas de crise sociale est-il possible ?",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Commission d'enqu\u00eate sur le 17 octobre : la corapporteure Horizons d\u00e9missionne (Agn\u00e8s Firmin Le Bodo)",
+      "ref": "news-afp-20261030-43e79257",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Ruffin d\u00e9nonce l'enveloppe pr\u00e9vue pour le futur bureau de Macron",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Quatorze directions de m\u00e9dias demandent au RN de \u00ab garantir la libert\u00e9 d'information \u00bb",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 La crainte d'une campagne pr\u00e9sidentielle marqu\u00e9e par la violence et les divisions",
+      "ref": "news-afp-20261030-6c0b4d37",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Apr\u00e8s l'attentat raciste de Trappes, d\u00e9sunion politique aux rassemblements d'hommage",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Limoges : l'Assembl\u00e9e adopte un dispositif pour aider la reconstruction de la mairie",
+      "ref": "news-afp-20261030-fc7750e9",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 US midterm early voting hits record 48 million",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Pope Leo XIV voted in US midterm elections: Vatican",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Democrats push anti-corruption message in midterm homestretch",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 How Trump could interfere in US midterm elections",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AP \u2014 The Latest: Trump takes the stage for Florida rally (Daytona Beach, plus de 20 meetings en octobre)",
+      "ref": "AP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AP \u2014 AP Decision Notes: What to expect in Pennsylvania on Election Day",
+      "ref": "AP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AP \u2014 Iran says 3 tankers strike mines and catch fire in Strait of Hormuz ; des responsables am\u00e9ricains pr\u00e9parent des alli\u00e9s \u00e0 une action militaire renouvel\u00e9e apr\u00e8s les midterms",
+      "ref": "news-ap-20261030-a6685c1e",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AP \u2014 DEA approvals could bring big tax benefits for medical marijuana businesses",
+      "ref": "AP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AP \u2014 An ICE officer is charged with assault for striking a man with a car in Houston",
+      "ref": "AP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AP \u2014 Brief truce agreed by Russia and Ukraine allows aid operation and evacuations in Oleshky",
+      "ref": "news-ap-20261030-e6f9b510",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Russia announces completion of 'humanitarian mission' in Oleshky",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AP \u2014 US scraps G20 photo after European diplomats object to being pictured with Russia's Lavrov",
+      "ref": "news-ap-20261030-71b2bd30",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Russie : Kiev a repris ses frappes sur des raffineries de p\u00e9trole (deux morts)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 La RDC demande \u00e0 la Russie de l'\u00ab accompagner dans la recherche de la paix \u00bb avec le Rwanda",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 \u00ab Ils nous ont tu\u00e9s \u00bb : le journal ind\u00e9pendant russe Nova\u00efa Gazeta annonce sa fermeture",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 \u00c9lections en Isra\u00ebl : trouver une majorit\u00e9, un casse-t\u00eate pour Netanyahu et Eisenkot",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Arabie saoudite : drone houthi intercept\u00e9 vers La Mecque et la r\u00e9gion de Riyad ; les Houthis visent le palais pr\u00e9sidentiel d'Aden",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 \u00c9thiopie : au moins 25 morts dans des frappes de drones dans le nord du pays (Tigr\u00e9)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Sports chiefs face losing battle to keep sport separate from politics (athl\u00e8tes russes)",
+      "ref": "news-afp-20261030-4f3f4ce1",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Suisse : deux militants d'extr\u00eame droite condamn\u00e9s \u00e0 un an de prison avec sursis (Junge Tat)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Fuite de Bolsonaro : l'Argentine d\u00e9ment une \u00ab demande d'explications \u00bb \u00e0 sa charg\u00e9e d'affaires au Br\u00e9sil",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Polish riot police deployed after court chief suspended (crise institutionnelle)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Le prix Goncourt 2026 \u00e0 l'ombre de l'IA (affaire Th\u00e9lyson Or\u00e9lien)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Six romans parmi les finalistes du prix Renaudot, qui \u00e9carte celui de Th\u00e9lyson Or\u00e9lien",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 28/10/2026",
+      "fiabilite": 5,
+      "maj": "28/10/2026"
+    },
+    {
+      "label": "AFP \u2014 IA et litt\u00e9rature : les Fran\u00e7ais veulent de la transparence, selon un sondage",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 28/10/2026",
+      "fiabilite": 5,
+      "maj": "28/10/2026"
+    },
+    {
+      "label": "AP \u2014 Hugh Jackman, William Shatner and George Takei among those paying tribute to Patrick Stewart",
+      "ref": "AP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Eiji Aonuma insuffle \u00ab le plaisir de l'exploration \u00bb de la saga Zelda depuis 25 ans (40 ans de Zelda, refonte d'Ocarina of Time)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 28/10/2026",
+      "fiabilite": 5,
+      "maj": "28/10/2026"
+    },
+    {
+      "label": "AFP \u2014 \u00ab Call of Duty \u00bb critiqu\u00e9 pour avoir utilis\u00e9 de v\u00e9ritables images d'une bousculade mortelle \u00e0 S\u00e9oul",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 29/10/2026",
+      "fiabilite": 5,
+      "maj": "29/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Du cin\u00e9ma aux livres, l'horreur fait fr\u00e9mir les Fran\u00e7ais",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 29/10/2026",
+      "fiabilite": 5,
+      "maj": "29/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Pour la pr\u00e9sidentielle, LFI mise sur les jeux vid\u00e9o",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 28/10/2026",
+      "fiabilite": 5,
+      "maj": "28/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Apr\u00e8s un demi-si\u00e8cle, le mythique Orchestra Baobab parie sur une p\u00e9tillante nouvelle g\u00e9n\u00e9ration",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AP \u2014 Kirk Franklin assume son album \u00ab I Am What I Am \u00bb",
+      "ref": "AP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Pierce Brosnan et Helen Mirren ravis de jouer aux mafieux dans la s\u00e9rie \u00ab MobLand \u00bb (saison 2)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 28/10/2026",
+      "fiabilite": 5,
+      "maj": "28/10/2026"
+    },
+    {
+      "label": "AFP \u2014 L1 : sans ses cadres, le PSG assomme Le Havre (5-1) et consolide sa premi\u00e8re place",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 NBA : Memphis fait carton plein (Cameron Boozer), premier succ\u00e8s pour la Nouvelle-Orl\u00e9ans",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 ATP 500 de B\u00e2le : touch\u00e9 au dos, Arthur Fils abandonne en quart face \u00e0 Taylor Fritz",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AP \u2014 Brewers fans flood Milwaukee streets for a long-awaited World Series victory parade",
+      "ref": "AP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Basket : cinq sportifs exclus du P\u00f4le France apr\u00e8s des faits de bizutage (Insep)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Blanchiment : Monaco, la Bulgarie, la C\u00f4te d'Ivoire et la RDC retir\u00e9s de la liste grise du Gafi",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 La tr\u00eave hivernale d\u00e9bute dimanche, sur fond d'expulsions locatives toujours \u00e9lev\u00e9es",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Pr\u00e9servatifs d\u00e9fectueux : la France met au ban un fabricant malaisien (Richter Rubber Technology)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Le rallye-raid Dakar se d\u00e9roulera en janvier au Portugal et au Maroc (organisateur A.S.O.)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 La Cor\u00e9e du Sud va durcir les sanctions pour triche aux examens avec des lunettes connect\u00e9es",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Contr\u00f4les automatis\u00e9s : des queues surtout dans les a\u00e9roports d'Allemagne et de France (Eurocontrol)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Naval Group livre \u00e0 la Gr\u00e8ce sa deuxi\u00e8me des quatre fr\u00e9gates FDI (Nearchos)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Le recul de l'apprentissage p\u00e8se sur l'emploi salari\u00e9 (\u221225.800 postes au T3)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Rural US hospitals, collateral victims of Trump politics",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 La Banque du Japon d\u00e9clare atteinte sa cible d'inflation fix\u00e9e il y a 13 ans",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Le d\u00e9ploiement de milliers de soldats salvadoriens en Ha\u00efti, sans doute plus qu'une op\u00e9ration de sauvetage",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 29/10/2026",
+      "fiabilite": 5,
+      "maj": "29/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Suisse : les perspectives \u00e9conomiques se tassent l\u00e9g\u00e8rement en octobre (barom\u00e8tre, demande en centres de donn\u00e9es)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Oman rescues 25 from burning ship, Iran halts tankers",
+      "ref": "news-afp-20261030-8088b326",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Ormuz : deux p\u00e9troliers immobilis\u00e9s apr\u00e8s des \u00ab incidents \u00bb, selon l'Iran",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 Espagne : l'identification des victimes de la collision ferroviaire face \u00e0 l'angoisse des familles (Urda)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 30/10/2026",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "AFP \u2014 La firme de Hello Kitty se d\u00e9solidarise d'une s\u00e9rie t\u00e9l\u00e9 japonaise critiqu\u00e9e en Chine (Sanrio)",
+      "ref": "AFP \u2014 d\u00e9p\u00eache du 29/10/2026",
+      "fiabilite": 5,
+      "maj": "29/10/2026"
+    }
+  ]
+}
