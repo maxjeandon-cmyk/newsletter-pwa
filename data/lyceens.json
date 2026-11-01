@@ -1,5 +1,5 @@
 {
-  "maj": "31/10/2026 01:44",
+  "maj": "01/11/2026 01:06",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -102,10 +102,11 @@
       "date": "29/10/2026",
       "titre": "Mobilisations du 31 octobre: \"Les lycéens et lycéennes ont peur d'aller manifester\", témoigne Anaïs, élève au lycée Klé…",
       "texte": "BFMTV propose un nouveau numéro exceptionnel du FORUM BFMTV: “Blocages, vie chère : la poudrière française” présenté par Maxime Switek. La chaîne consacre une soirée spéciale pour permettre à des cit…",
-      "source": "BFMTV / Ouest-France",
+      "source": "BFMTV / Ouest-France / 20 minutes",
       "sources": [
         "BFMTV",
-        "Ouest-France"
+        "Ouest-France",
+        "20 minutes"
       ],
       "url": "https://www.bfmtv.com/societe/video-forum-bfmtv-mobilisations-du-31-octobre-les-lyceens-et-lyceennes-ont-peur-d-aller-manifester-temoigne-anais-eleve-au-lycee-kleber-de-strasbourg-et-membre-du-syndicat-les-lyceens_VN-202610290995.html",
       "verifie": true
@@ -217,22 +218,6 @@
         "Libération"
       ],
       "url": "https://www.humanite.fr/social-et-economie/lyceens/certains-eleves-sont-mitiges-sur-le-fait-de-brandir-le-drapeau-palestinien-mais-gaza-est-une-cause-noble-qui-nest-pas-assez-ecoutee-denonce-melissa-lyceenne-de-17-a",
-      "verifie": true
-    },
-    {
-      "id": "f5",
-      "date": "02/10/2026",
-      "titre": "Vendredi 02/10 : 1.747 interpellations, plus de 5.000 depuis lundi",
-      "texte": "Selon le ministre de l'Intérieur Laurent Nuñez, il y a eu 1.747 interpellations vendredi et plus de 5.000 depuis lundi en lien avec les blocages ; 735 établissements ont été concernés vendredi, soit 30 % de moins que jeudi.",
-      "source": "AFP / L'Internaute / BFMTV / La Croix / L'Humanité",
-      "sources": [
-        "AFP",
-        "L'Internaute",
-        "BFMTV",
-        "La Croix",
-        "L'Humanité"
-      ],
-      "url": "https://www.linternaute.com/actualite/faits-divers/11306009-blocage-des-lycees-le-mouvement-reconduit-mais-jusqu-a-quand-la-date-d-une-grande-manifestation-avancee/",
       "verifie": true
     }
   ],
