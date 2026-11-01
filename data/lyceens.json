@@ -1,5 +1,5 @@
 {
-  "maj": "01/11/2026 11:23",
+  "maj": "01/11/2026 20:37",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -24,11 +24,14 @@
       "date": "01/11/2026",
       "titre": "Lycées bloqués: Marius Mesnil, co-secrétaire de l'Union syndicale lycéenne, appelle les élèves \"à s'organiser\" dès ce l…",
       "texte": "La journée de mobilisation du samedi 31 octobre s'est déroulée globalement dans le calme partout en France, malgré quelques heurts entre forces de l'ordre et éléments perturbateurs. Près d'un demi-mi…",
-      "source": "Europe 1 / Le Figaro / BFMTV",
+      "source": "Europe 1 / Le Figaro / BFMTV / France 24 / Libération / Ouest-France",
       "sources": [
         "Europe 1",
         "Le Figaro",
-        "BFMTV"
+        "BFMTV",
+        "France 24",
+        "Libération",
+        "Ouest-France"
       ],
       "url": "https://www.bfmtv.com/societe/manifestations/video-lycees-bloques-marius-mesnil-co-secretaire-de-l-union-syndicale-lyceenne-appelle-les-eleves-a-s-organiser-des-ce-lundi_VN-202611010182.html",
       "verifie": true
@@ -44,6 +47,19 @@
         "La Croix"
       ],
       "url": "https://www.bfmtv.com/economie/entreprises/energie/e-leclerc-annonce-21-centimes-d-euro-par-litre-des-dimanche-cooperative-u-promet-jusqu-a-21-centimes-selon-les-stations-apres-totalenergies-les-deux-distributeurs-vont-aussi-baisser-le-prix-du-gazole-grace-au-deblocage-des-stocks-strategiques_AD-202611010209.html",
+      "verifie": true
+    },
+    {
+      "id": "amvy8fjpf-halq",
+      "date": "01/11/2026",
+      "titre": "À la veille de la rentrée, l'Élysée espère un \"retour en classe\" des lycéens et étudiants \"compte tenu des mesures déci…",
+      "texte": "Alors que les syndicats lycéens et étudiants appellent à de nouveaux blocages des établissements scolaires dès ce lundi, le président de la République souhaite un \"retour en classe\", affirme son ento…",
+      "source": "Europe 1 / BFMTV",
+      "sources": [
+        "Europe 1",
+        "BFMTV"
+      ],
+      "url": "https://www.bfmtv.com/politique/elysee/a-la-veille-de-la-rentree-l-elysee-espere-un-retour-en-classe-des-lyceens-et-etudiants-compte-tenu-des-mesures-decidees_AD-202611010352.html",
       "verifie": true
     },
     {
@@ -124,6 +140,32 @@
     }
   ],
   "faits": [
+    {
+      "id": "amvy8fjpg-ajjn",
+      "date": "01/11/2026",
+      "titre": "Lycées bloqués, appels à la grève, convergence des luttes... À quoi s'attendre pour cette nouvelle semaine de mobilisat…",
+      "texte": "Grève, blocage des établissements... Plusieurs grands rendez-vous sont annoncés par les organisations syndicales cette semaine, notamment mardi pour les lycéens et étudiants et jeudi pour une grève g…",
+      "source": "Europe 1 / BFMTV",
+      "sources": [
+        "Europe 1",
+        "BFMTV"
+      ],
+      "url": "https://www.bfmtv.com/societe/manifestations/lycees-bloques-appels-a-la-greve-convergence-des-luttes-a-quoi-s-attendre-pour-cette-nouvelle-semaine-de-mobilisation_AV-202611010357.html",
+      "verifie": true
+    },
+    {
+      "id": "amvy8fjpg-i33u",
+      "date": "01/11/2026",
+      "titre": "« Les profs manquent, l’état des toilettes est dégradé… » : en Allemagne, la Gen Z reprend les mots d’ordre du mouvemen…",
+      "texte": "Les jeunes en colère ont réussi à mobiliser, via les réseaux sociaux, des dizaines de milliers de manifestants, ce samedi dans 35 villes, contre l’austérité, le logement inabordable et la conscriptio…",
+      "source": "Europe 1 / L'Humanité",
+      "sources": [
+        "Europe 1",
+        "L'Humanité"
+      ],
+      "url": "https://www.humanite.fr/monde/allemagne/les-profs-manquent-letat-des-toilettes-est-degrade-en-allemagne-la-gen-z-reprend-les-mots-dordre-du-mouvement-lyceen-francais",
+      "verifie": true
+    },
     {
       "id": "amvu9idsl-ejb6",
       "date": "29/10/2026",
