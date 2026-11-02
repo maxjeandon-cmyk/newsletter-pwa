@@ -1,5 +1,5 @@
 {
-  "maj": "01/11/2026 20:37",
+  "maj": "02/11/2026 01:40",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -145,10 +145,11 @@
       "date": "01/11/2026",
       "titre": "Lycées bloqués, appels à la grève, convergence des luttes... À quoi s'attendre pour cette nouvelle semaine de mobilisat…",
       "texte": "Grève, blocage des établissements... Plusieurs grands rendez-vous sont annoncés par les organisations syndicales cette semaine, notamment mardi pour les lycéens et étudiants et jeudi pour une grève g…",
-      "source": "Europe 1 / BFMTV",
+      "source": "Europe 1 / BFMTV / Le Figaro",
       "sources": [
         "Europe 1",
-        "BFMTV"
+        "BFMTV",
+        "Le Figaro"
       ],
       "url": "https://www.bfmtv.com/societe/manifestations/lycees-bloques-appels-a-la-greve-convergence-des-luttes-a-quoi-s-attendre-pour-cette-nouvelle-semaine-de-mobilisation_AV-202611010357.html",
       "verifie": true
