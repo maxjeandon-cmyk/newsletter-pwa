@@ -1,17 +1,17 @@
 {
-  "date": "2026-11-01T23:48:54.228Z",
+  "date": "2026-11-02T00:40:41.543Z",
   "mode": "normal",
   "abonnements": 2,
   "envoyes": 2,
   "morts": 0,
   "resultats": [
     {
-      "domaine": "updates.push.services.mozilla.com",
+      "domaine": "web.push.apple.com",
       "ok": true,
       "status": 201
     },
     {
-      "domaine": "web.push.apple.com",
+      "domaine": "updates.push.services.mozilla.com",
       "ok": true,
       "status": 201
     }
