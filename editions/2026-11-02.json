@@ -1,0 +1,360 @@
+{
+  "date": "2026-11-02",
+  "genere_le": "2026-11-02T23:33:18.979Z",
+  "html": "editions/2026-11-02.html",
+  "resume_executif": [
+    "IA : Anthropic publie des r\u00e9sultats T3 d\u00e9ment (17 milliards de dollars de chiffre d\u2019affaires, +46 %) avant une entr\u00e9e en Bourse attendue mi-novembre, tandis que la Banque de France met en garde contre une \u00e9ventuelle \u00ab bulle \u00bb de l\u2019IA financi\u00e8re et qu\u2019OpenAI s\u2019allie au p\u00e9trolier \u00e9mirati Adnoc (S1, S2, S7).",
+    "France : reprise sous tension apr\u00e8s les vacances de la Toussaint \u2014 41 lyc\u00e9es bloqu\u00e9s lundi matin selon le minist\u00e8re \u2014 et appel intersyndical \u00e0 une grande journ\u00e9e de gr\u00e8ve le 5 novembre pour les salaires ; c\u00f4t\u00e9 budget 2027, l\u2019Assembl\u00e9e vote des amendements \u00e0 l\u2019avenir incertain et le BHV est plac\u00e9 en redressement judiciaire (S5, S6, S10, S11).",
+    "\u00c9tats-Unis : veille des midterms \u2014 les d\u00e9mocrates sont donn\u00e9s favoris pour la Chambre, le S\u00e9nat reste incertain \u2014 Donald Trump conclut sa campagne au Reflecting Pool tandis que la justice bloque ses tentatives d\u2019\u00e9carter 20 000 bulletins postaux californiens ; 60 % des Am\u00e9ricains d\u00e9sapprouvent sa gestion (S14, S15, S16, S17).",
+    "G\u00e9opolitique : l\u2019Iran se dit pr\u00eat \u00e0 rouvrir le d\u00e9troit d\u2019Ormuz en deux jours sous conditions, la Chine assure T\u00e9h\u00e9ran de son soutien, et la mission de l\u2019ONU au Sahara occidental cesse ses op\u00e9rations apr\u00e8s 35 ans au terme d\u2019un bras de fer am\u00e9ricano-russe (S19, S20, S31).",
+    "Sciences et climat : la FDA approuve un g\u00e9n\u00e9rique \u00e0 40 dollars par an du lenacapavir, injection semestrielle de pr\u00e9vention du VIH ; l\u2019ONU pr\u00e9vient que d\u00e9passer durablement 1,5 \u00b0C infligera des d\u00e9g\u00e2ts \u00ab irr\u00e9versibles \u00bb aux glaciers et \u00e0 la banquise, \u00e0 une semaine de la COP31 (S24, S26)."
+  ],
+  "chapitres": [
+    {
+      "id": "intelligence-artificielle",
+      "emoji": "\ud83e\udd16",
+      "nom": "Intelligence artificielle",
+      "resume": "L\u2019IA vit un lundi de grandes chiffres : Anthropic publie des r\u00e9sultats spectaculaires \u00e0 la veille de son introduction en Bourse, la Banque de France met en garde contre un financement de plus en plus endett\u00e9, et OpenAI signe une alliance in\u00e9dite avec une compagnie p\u00e9troli\u00e8re du Golfe."
+    },
+    {
+      "id": "spatial",
+      "emoji": "\ud83d\ude80",
+      "nom": "Spatial",
+      "resume": "Trois semaines apr\u00e8s son retour sur Terre, l\u2019astronaute fran\u00e7aise Sophie Adenot a tenu lundi une conf\u00e9rence de presse \u00e0 Paris : la Lune \u00ab la fait r\u00eaver \u00bb, et l\u2019Europe pr\u00e9pare d\u00e9j\u00e0 sa place dans le programme Art\u00e9mis."
+    },
+    {
+      "id": "economie-pour-les-nuls",
+      "emoji": "\ud83d\udcb0",
+      "nom": "L\u2019\u00c9conomie pour les nuls",
+      "resume": "Deux grandes infos du jour : c\u00f4t\u00e9 monde, les Bourses ont tangu\u00e9 sur le p\u00e9trole et l\u2019IA ; c\u00f4t\u00e9 France, le BHV a \u00e9t\u00e9 plac\u00e9 en redressement judiciaire pendant que le budget 2027 s\u2019enlisait \u00e0 l\u2019Assembl\u00e9e. D\u00e9cryptage sans jargon."
+    },
+    {
+      "id": "droit-pour-les-nuls",
+      "emoji": "\u2696\ufe0f",
+      "nom": "Le Droit pour les nuls",
+      "resume": "Le BHV, grand magasin parisien employant 700 personnes, a \u00e9t\u00e9 plac\u00e9 en redressement judiciaire lundi : que veut dire exactement cette expression qui revient d\u00e8s qu\u2019une entreprise vacille ? Mode d\u2019emploi, pi\u00e8ges et textes \u00e0 l\u2019appui."
+    },
+    {
+      "id": "jeu-video-pop-culture",
+      "emoji": "\ud83c\udfae",
+      "nom": "Jeu vid\u00e9o & pop culture",
+      "resume": "Jour maigre en sorties et annonces jeu vid\u00e9o recoup\u00e9es dans la fen\u00eatre du jour \u2014 pas de fait marquant v\u00e9rifi\u00e9 aupr\u00e8s de sources fiables, et nous n\u2019inventons rien. Mais la grande question pop culture du moment, l\u2019IA qui \u00e9crit, a atteint lundi le c\u0153ur de la vie litt\u00e9raire fran\u00e7aise."
+    },
+    {
+      "id": "culture",
+      "emoji": "\ud83c\udfad",
+      "nom": "Culture",
+      "resume": "Lundi de prix litt\u00e9raires et de deuil musical : le M\u00e9dicis a couronn\u00e9 la travers\u00e9e de la France par ses lignes \u00e0 haute tension, \u00e0 la veille du Goncourt, et la techno pleure l\u2019un de ses p\u00e8res fondateurs."
+    },
+    {
+      "id": "sciences",
+      "emoji": "\ud83d\udd2c",
+      "nom": "Sciences",
+      "resume": "Une annonce majeure pour la sant\u00e9 mondiale : la FDA am\u00e9ricaine a approuv\u00e9 un g\u00e9n\u00e9rique \u00e0 prix co\u00e9rant du lenacapavir, l\u2019injection semestrielle qui r\u00e9volutionne la pr\u00e9vention du VIH."
+    },
+    {
+      "id": "climat",
+      "emoji": "\ud83c\udf0d",
+      "nom": "Climat",
+      "resume": "\u00c0 une semaine de la COP31, l\u2019ONU publie des rapports qui r\u00e9duisent l\u2019objectif de 1,5 \u00b0C \u00e0 sa juste mesure : pour les glaces du monde, il est d\u00e9j\u00e0 \u00ab trop chaud \u00bb. Deux rapports publi\u00e9s une semaine avant la COP31 (9-20 novembre \u00e0 Antalya) dressent un \u00e9tat chiffr\u00e9 de la cryosph\u00e8re : le r\u00e9chauffement plan\u00e8te atteint d\u00e9j\u00e0 1,37 \u00b0C par rapport \u00e0 l\u2019\u00e8re pr\u00e9industrielle ; selon le r\u00e9seau europ\u00e9en\u2026"
+    },
+    {
+      "id": "politique-francaise",
+      "emoji": "\ud83c\uddeb\ud83c\uddf7",
+      "nom": "Politique fran\u00e7aise",
+      "resume": "La rentr\u00e9e post-Toussaint s\u2019ouvre sous tension : lyc\u00e9es bloqu\u00e9s \u00e7a et l\u00e0, syndicats pr\u00eats \u00e0 converger jeudi, et une pr\u00e9sidentielle 2027 qui se joue d\u00e9j\u00e0 sur la question de la primaire."
+    },
+    {
+      "id": "etats-unis",
+      "emoji": "\ud83c\uddfa\ud83c\uddf8",
+      "nom": "\u00c9tats-Unis",
+      "resume": "Veille des midterms : l\u2019Am\u00e9rique vote mardi pour renouveler le Congr\u00e8s et une partie des gouverneurs, dans un climat de tension judiciaire et de m\u00e9fiance record envers le pr\u00e9sident."
+    },
+    {
+      "id": "chine",
+      "emoji": "\ud83c\udde8\ud83c\uddf3",
+      "nom": "Chine",
+      "resume": "P\u00e9kin joue les m\u00e9diateurs au Moyen-Orient en assurant l\u2019Iran de son soutien, et pr\u00e9pare un sommet de l\u2019Apec o\u00f9 pourrait se jouer une poign\u00e9e de main Trump-Poutine. Le chef de la diplomatie Wang Yi a assur\u00e9 lundi l\u2019Iran du soutien de la Chine \u00e0 la \u00ab d\u00e9fense de sa souverainet\u00e9 et de sa s\u00e9curit\u00e9 \u00bb, recevant \u00e0 P\u00e9kin Ali Bagheri, num\u00e9ro deux du Conseil supr\u00eame de s\u00e9curit\u00e9 nationale \u2014 visite non\u2026"
+    },
+    {
+      "id": "russie",
+      "emoji": "\ud83c\uddf7\ud83c\uddfa",
+      "nom": "Russie",
+      "resume": "La tr\u00eave d\u2019Olechky s\u2019est achev\u00e9e, le front bouge pour la premi\u00e8re fois en faveur de Kiev depuis des mois, et la guerre \u00e9lectronique frappe les applications d\u2019alerte des deux c\u00f4t\u00e9s."
+    },
+    {
+      "id": "geopolitique",
+      "emoji": "\ud83c\udf10",
+      "nom": "G\u00e9opolitique mondiale",
+      "resume": "Moyen-Orient au bord du rebasculement diplomatique, mer Noire en tension, Europe sous pression budg\u00e9taire : tour d\u2019horizon des fronts du jour. T\u00e9h\u00e9ran s\u2019est dit pr\u00eat lundi \u00e0 rouvrir le d\u00e9troit d\u2019Ormuz en deux jours \u2014 contre sept initialement pr\u00e9vus \u2014 \u00ab sous conditions \u00bb, pr\u00e9sentant ce plan comme un \u00ab signe de bonne foi \u00bb et renvoyant la balle \u00e0 Washington. La pression reste maximale : Donald\u2026"
+    },
+    {
+      "id": "grande-info-semaine",
+      "emoji": "\ud83d\udcf0",
+      "nom": "Grande information de la semaine",
+      "resume": "Au-del\u00e0 des 24 heures, la semaine qui vient de s\u2019achever restera celle d\u2019une France sous tension sociale in\u00e9dite depuis 2018, d\u2019un piratage historique et d\u2019un monde qui \u00e9lit, n\u00e9gocie et se r\u00e9arme."
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1 \u2014 AFP, \u00ab Anthropic affiche croissance soutenue et finances assainies avant son entr\u00e9e en Bourse \u00bb (d\u00e9p\u00eache, r\u00e9f. news-afp-20261102-067a8b89, pas d\u2019URL publique)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S2 \u2014 AFP, \u00ab OpenAI s\u2019associe avec une compagnie p\u00e9troli\u00e8re du Golfe \u00bb (r\u00e9f. news-afp-20261102-4e70c89f)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S3 \u2014 AFP, \u00ab Sophie Adenot r\u00eave d\u2019aller sur la Lune \u00bb (r\u00e9f. news-afp-20261102-6a83f61b)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S4 \u2014 AP, \u00ab US stocks erase their rally from the morning as tech and AI stocks keep swinging \u00bb",
+      "ref": "https://apnews.com/article/stocks-markets-ai-earnings-oil-iran-048328e49e47ce7afe6c1fb9d9acf13d",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S5 \u2014 AFP, \u00ab Budget 2027 : les d\u00e9put\u00e9s votent des mesures au devenir plus qu\u2019incertain \u00bb (r\u00e9f. news-afp-20261102-0511810f)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S6 \u2014 AFP, d\u00e9p\u00eaches g\u00e9n\u00e9rales des 1er et 2 novembre 2026 (r\u00e9f. news-afp-20261102-27b2038c et news-afp-20261101-214ee91a ; BHV, gaz allemand, Juan Atkins, Glorieuses, docteurs juniors, Limoges, Pays-Bas, cagnotte, Bolsonaro, Apec)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S7 \u2014 AFP, \u00ab Europe : le gouverneur de la Banque de France alerte sur les risques des investissements massifs dans l\u2019IA \u00bb (r\u00e9f. news-afp-20261102-96c8dcbb)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S8 \u2014 AFP, \u00ab La Cor\u00e9e du Sud pr\u00e9voit un budget record pour l\u2019IA en 2027 \u00bb (r\u00e9f. news-afp-20261102-f04d0a69)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S9 \u2014 AFP, \u00ab Hausse du Smic : ce que demandent les syndicats \u00bb (r\u00e9f. news-afp-20261102-f7c2e51b)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S10 \u2014 AFP, \u00ab Mobilisation du 5 novembre en France : au tour du monde du travail \u00bb (r\u00e9f. news-afp-20261101-5b7c9b3a)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "01/11/2026"
+    },
+    {
+      "label": "S11 \u2014 AFP, \u00ab Crise dans l\u2019\u00e9ducation : blocages et manifestations en vue pour la reprise des cours \u00bb (r\u00e9f. news-afp-20261101-b0c9a4b6)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "01/11/2026"
+    },
+    {
+      "label": "S12 \u2014 AFP, \u00ab Lecornu redit \u00eatre pr\u00eat \u00e0 recevoir de nouveau les lyc\u00e9ens la semaine prochaine \u00bb (r\u00e9f. news-afp-20261102-a55ff594)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S13 \u2014 AFP, \u00ab Primaire in\u00e9luctable, juge Attal malgr\u00e9 le refus de Philippe \u00bb (r\u00e9f. news-afp-20261102-7761fa2c)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S14 \u2014 AP, \u00ab The Latest : Democrats and Republicans make a final push one day before midterm elections \u00bb",
+      "ref": "https://apnews.com/article/midterm-elections-trump-democrats-republicans-7dcb866713d99a2f0beaa9c037d09ddd",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S15 \u2014 AP, \u00ab Reflecting Pool vs the state of the economy : Trump and Dems clash in closing messages \u00bb",
+      "ref": "https://apnews.com/article/trump-vance-midterm-elections-0f444fe8f424960dd820795e20b00237",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S16 \u2014 AP, \u00ab Judge orders Trump administration to stop demanding that California officials set aside 20K ballots \u00bb",
+      "ref": "https://apnews.com/article/midterm-elections-immigration-voter-fraud-trump-48998968a23a4af2f59eaea3dba4d2f3",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S17 \u2014 AFP, \u00ab Democrats, Trump hold final rallies before midterm elections \u00bb (r\u00e9f. news-afp-20261102-5fff2cd1)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S18 \u2014 AP, \u00ab The Latest : Trump says at Iowa rally he\u2019d love for Haley Stevens to switch parties \u00bb",
+      "ref": "https://apnews.com/article/midterm-election-rogers-stevens-elsayed-trump-2897ddd53076be4fd52fca02bda5cf1b",
+      "fiabilite": 5,
+      "maj": "01/11/2026"
+    },
+    {
+      "label": "S19 \u2014 AFP, \u00ab P\u00e9kin assure soutenir l\u2019Iran dans la d\u00e9fense de sa souverainet\u00e9 \u00bb (r\u00e9f. news-afp-20261102-2fd8d49d)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S20 \u2014 AFP, \u00ab L\u2019Iran se dit pr\u00eat \u00e0 rouvrir en deux jours le d\u00e9troit d\u2019Ormuz, sous conditions \u00bb (r\u00e9f. news-afp-20261102-333d4f36)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S21 \u2014 AFP, \u00ab Ukraine : fin d\u2019une tr\u00eave exceptionnelle \u00e0 Olechky \u00bb (r\u00e9f. news-afp-20261101-729ac260)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "01/11/2026"
+    },
+    {
+      "label": "S22 \u2014 AFP, \u00ab L\u2019Ukraine et la Russie touch\u00e9es par des cyberattaques apr\u00e8s la fin de la tr\u00eave \u00bb (r\u00e9f. news-afp-20261102-f3ddbd4e)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S23 \u2014 AFP, \u00ab Russia loses ground in Ukraine in October : AFP analysis \u00bb, sur donn\u00e9es ISW (r\u00e9f. news-afp-20261102-499bbd11)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S24 \u2014 AFP, \u00ab R\u00e9chauffement climatique : d\u00e9g\u00e2ts irr\u00e9versibles sur glaciers et banquise au-del\u00e0 de 1,5 \u00b0C (ONU) \u00bb (r\u00e9f. news-afp-20261102-04ddd035)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S25 \u2014 AFP, \u00ab Afrique du Sud : les coupures d\u2019eau p\u00e8sent sur les \u00e9lections municipales \u00bb (r\u00e9f. news-afp-20261102-aa5de0f1)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S26 \u2014 AFP, \u00ab US approves cheap version of breakthrough HIV prevention shot \u00bb (r\u00e9f. news-afp-20261102-4b80f965)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S27 \u2014 AFP, \u00ab Spewing US election falsehoods, AI chatbots face scrutiny \u00bb (r\u00e9f. news-afp-20261101-390fbc8e)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "01/11/2026"
+    },
+    {
+      "label": "S28 \u2014 AFP, \u00ab Le prix M\u00e9dicis d\u00e9cern\u00e9 \u00e0 Philippe Vasset pour Dans les grandes lignes \u00bb (r\u00e9f. news-afp-20261102-4ffced8f)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S29 \u2014 AFP, \u00ab Les jeux litt\u00e9raires de l\u2019Oulipo r\u00e9sistent \u00e0 l\u2019IA \u00bb (r\u00e9f. news-afp-20261102-bdc7fc17)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S30 \u2014 AP, \u00ab Kennedy Center names the 2026 honorees as Trump renovation battle moves the show offsite \u00bb",
+      "ref": "https://apnews.com/article/kennedy-center-honors-trump-paul-anka-david-mamet-barbara-mandrell-10d6391fe8430a5974e64fe14fce6fc9",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S31 \u2014 AP, \u00ab UN\u2019s peacekeeping mission in Western Sahara ends after 35 years following US-Russia standoff \u00bb",
+      "ref": "https://apnews.com/article/western-sahara-un-peacekeepers-morocco-algeria-030e303c58207060265d8748c1db3778",
+      "fiabilite": 5,
+      "maj": "01/11/2026"
+    },
+    {
+      "label": "S32 \u2014 AFP, \u00ab Belgian PM offers to quit over budget impasse \u00bb (r\u00e9f. news-afp-20261102-6a2dccc6)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S33 \u2014 AFP, \u00ab Allemagne : condamnations apr\u00e8s les violences en marge des manifestations \u00bb (r\u00e9f. news-afp-20261101-50962c6a)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "01/11/2026"
+    },
+    {
+      "label": "S34 \u2014 AFP, \u00ab Euronaval : drones et flottes hybrides au coeur du r\u00e9armement mondial \u00bb (r\u00e9f. news-afp-20261101-08977cde)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "01/11/2026"
+    },
+    {
+      "label": "S35 \u2014 AFP, \u00ab Iliana Iotova, partisane du dialogue avec Moscou, remporte la pr\u00e9sidentielle \u00bb (r\u00e9f. news-afp-20261101-b6dfe6c3 et news-afp-20261031-17ee7d1b)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "01/11/2026"
+    },
+    {
+      "label": "S36 \u2014 AFP, \u00ab Manifestations : 20 commerces d\u00e9grad\u00e9s samedi selon CCI France \u00bb (r\u00e9f. news-afp-20261101-192ee6ae)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "01/11/2026"
+    },
+    {
+      "label": "S37 \u2014 AFP, \u00ab Prisons : 90 937 d\u00e9tenus en France au 1er octobre, nouveau record \u00bb (r\u00e9f. news-afp-20261102-aa020e15)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S38 \u2014 AFP, d\u00e9p\u00eaches sportives des 1er et 2 novembre 2026 (r\u00e9fs. news-afp-20261102-076642fd ATP, news-afp-20261101-daab9ec2 et news-afp-20261101-13cbb64a Route du Rhum, news-afp-20261101-3421e974 F1, news-afp-20261101-PO6am8q5 Top 14, news-afp-20261101-cXDHXhxx handball, news-afp-20261102-3f0d5656 tennis Kouame)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S39 \u2014 L\u00e9gifrance et service-public.fr, textes du Code de commerce et du Code du travail sur les proc\u00e9dures collectives (r\u00e9f. texte simple, pas d\u2019URL d\u2019article unique)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S40 \u2014 AFP, \u00ab Ethiopia suspends leading independent newspaper \u00bb (r\u00e9f. news-afp-20261102-ecd686c0)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    },
+    {
+      "label": "S41 \u2014 AFP, \u00ab La nouvelle carte des hippodromes en France provoque un s\u00e9isme \u00bb (r\u00e9f. news-afp-20261102-8c167e55)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "02/11/2026"
+    }
+  ],
+  "hors_chapitres": [
+    "Route du Rhum : au premier pointage de la premi\u00e8re nuit, Tom Laperche (SVR Lazartigue) menait la flotte des Ultim vers la sortie de la Manche ; Violette Dorange, victime d\u2019une collision au d\u00e9part, a d\u00fb se d\u00e9router vers Roscoff pour une escale technique (S38).",
+    "Tennis : Alexander Zverev devient officiellement num\u00e9ro 1 mondial pour la premi\u00e8re fois \u00e0 29 ans, profitant du forfait de Jannik Sinner ; Arthur Fils grimpe \u00e0 la 7e place mondiale avant le Masters 1000 de Paris, o\u00f9 l\u2019espoir Mo\u00efse Kouame (17 ans, 132e) a re\u00e7u une invitation in extremis (S38).",
+    "Rugby Top 14 : Pau a fait tomber le leader toulousain (34-14) pour la deuxi\u00e8me fois de la saison et retrouve le podium ; en handball, le PSG a largu\u00e9 Montpellier (33-23) et reste invaincu en Starligue (S38).",
+    "F1 : le GP du Mexique a \u00e9t\u00e9 interrompu au 46e tour par un drapeau rouge apr\u00e8s la violente sortie de piste de Valtteri Bottas (suspension bris\u00e9e), reparti sous protocole, avec Max Verstappen en t\u00eate devant les Ferrari (S38).",
+    "Prisons : la France a franchi un record historique de 90 937 d\u00e9tenus au 1er octobre (+7,2 % sur un an), dont 8 959 matelas pos\u00e9s au sol, pour un taux de suroccupation de 143,3 % \u2014 le pire bilan d\u2019Europe avec la Turquie (S37).",
+    "Sant\u00e9 : 3 000 \u00ab docteurs juniors \u00bb \u2014 les premiers internes de m\u00e9decine g\u00e9n\u00e9rale form\u00e9s sur quatre ans \u2014 arrivent lundi pour un an de stage en cabinets et centres de sant\u00e9, pour encourager l\u2019installation dans les d\u00e9serts m\u00e9dicaux (S6).",
+    "Soci\u00e9t\u00e9 : les femmes travailleront \u00ab gratuitement \u00bb \u00e0 partir du 19 novembre \u00e0 10 h 51 jusqu\u2019\u00e0 la fin de l\u2019ann\u00e9e, selon le calcul annuel des Glorieuses sur les in\u00e9galit\u00e9s salariales (S6).",
+    "Justice : \u00e0 Blois, le proc\u00e8s des parents d\u2019Inass Touloub, la \u00ab petite martyre de l\u2019A10 \u00bb morte en 1987, s\u2019est ouvert 39 ans apr\u00e8s les faits ; la m\u00e8re a \u00e9t\u00e9 prise \u00e0 partie \u00e0 la sortie de l\u2019audience (S6).",
+    "Justice : \u00e0 Marseille, le proc\u00e8s en appel des effondrements de la rue d\u2019Aubagne (8 morts le 5 novembre 2018) s\u2019est ouvert pour six semaines, avec pr\u00e8s de 90 parties civiles face \u00e0 15 pr\u00e9venus (S6).",
+    "Hommage : le p\u00e8re de Pengo Bossio Wangi, la victime de l\u2019attentat raciste de Trappes, souhaite que l\u2019hommage national permette une \u00ab prise de conscience \u00bb contre le racisme ; une cagnotte pour reconstruire la mairie de Limoges, d\u00e9truite le 17 octobre, a d\u00e9pass\u00e9 le million d\u2019euros (S6).",
+    "Insolite s\u00e9rieux : les Pays-Bas offrent une r\u00e9compense record de deux millions d\u2019euros pour toute information menant \u00e0 l\u2019arrestation de Jos Leijdekkers, l\u2019un des trafiquants de drogue les plus recherch\u00e9s d\u2019Europe, actuellement en Sierra Leone (S6).",
+    "Presse : l\u00c9thiopie a suspendu sine die le principal journal ind\u00e9pendant The Reporter, pays class\u00e9 148e sur 180 \u00e0 l\u2019indice de libert\u00e9 de la presse de Reporters sans fronti\u00e8res (S40)."
+  ]
+}
