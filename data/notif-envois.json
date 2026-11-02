@@ -1,9 +1,21 @@
 {
-  "date": "2026-11-02T18:31:43.526Z",
+  "date": "2026-11-02T23:35:28.730Z",
   "mode": "normal",
   "abonnements": 2,
-  "envoyes": 0,
-  "morts": 0,
-  "resultats": [],
+  "envoyes": 1,
+  "morts": 1,
+  "resultats": [
+    {
+      "domaine": "updates.push.services.mozilla.com",
+      "ok": false,
+      "status": 410,
+      "corps": "{\"code\":410,\"errno\":106,\"error\":\"Gone\",\"message\":\"No such subscription\",\"more_info\":\"http://autopush.readthedocs.io/en/latest/http.html#error-codes\"}"
+    },
+    {
+      "domaine": "web.push.apple.com",
+      "ok": true,
+      "status": 201
+    }
+  ],
   "cleMatch": true
 }
