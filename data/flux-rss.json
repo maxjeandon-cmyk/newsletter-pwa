@@ -295,6 +295,16 @@
       ]
     },
     {
+      "id": "le-huffpost",
+      "nom": "Le HuffPost",
+      "emoji": "🟢",
+      "categorie": "Presse généraliste 🇫🇷",
+      "flux": [
+        "https://www.huffingtonpost.fr/rss/all_headline.xml"
+      ],
+      "ligne": "actualité générale en continu, ton décalé"
+    },
+    {
       "id": "sud-ouest",
       "nom": "Sud Ouest",
       "emoji": "🍷",
