@@ -1,15 +1,9 @@
 {
-  "date": "2026-11-05T00:09:44.293Z",
+  "date": "2026-11-05T02:34:46.536Z",
   "mode": "normal",
   "abonnements": 1,
-  "envoyes": 1,
+  "envoyes": 0,
   "morts": 0,
-  "resultats": [
-    {
-      "domaine": "web.push.apple.com",
-      "ok": true,
-      "status": 201
-    }
-  ],
+  "resultats": [],
   "cleMatch": true
 }
