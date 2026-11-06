@@ -19,6 +19,13 @@ jobs:
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
-          # PAT fine-grained (Contents: RW, Actions: write) — permet à l'agent
-          # de déclencher le workflow Notifications push juste après publication.
-          GH_TOKEN: ${{ secrets.NOTIF_DISPATCH_TOKEN }}
+          # v40 : toutes les publications passent par GITHUB_TOKEN (Contents: RW
+          # via le bloc permissions ci-dessus) — le PAT fine-grained
+          # NOTIF_DISPATCH_TOKEN a expiré vers le 02/11/2026 : 10 runs de
+          # l agent en échec consécutif, plus aucune publication de rapport ni
+          # de relevés depuis. Perte acceptée : le déclenchement quasi
+          # instantané du workflow Notifications push après publication (un
+          # événement créé par GITHUB_TOKEN ne déclenche pas de run) — le
+          # filet horaire cron '21 * * * *' du notifier couvre l envoi dans
+          # l heure qui suit.
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
