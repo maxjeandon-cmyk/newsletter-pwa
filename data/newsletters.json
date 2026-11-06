@@ -12,12 +12,12 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.actioncontrelafaim.org/actualites/",
       "derniere": {
-        "releve": "02/11/2026",
+        "releve": "06/11/2026",
         "points": [
-          "RDC : Action contre la Faim renforce sa réponse face à l’épidémie d’Ebola",
-          "Au Yémen, le miel fait vivre les communautés rurales",
-          "Cameroun et Tchad : quand le dérèglement climatique fragilise des millions de vies",
-          "Améliorer l’accès aux soins de santé au Baloutchistan"
+          "4e édition de la Bourse multimédia pour un nouveau regard humanitaire : découvrez les quatre projets finalistes",
+          "Accéder à l’eau : un défi majeur pour les populations du nord de la Côte d’Ivoire",
+          "Intervenir face à Ebola en Ouganda : interview de Margaret Nagawa",
+          "Sages-femmes afghanes au cœur de l’accès aux soins"
         ]
       }
     },
@@ -32,12 +32,12 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.greenpeace.fr/actualites/",
       "derniere": {
-        "releve": "02/11/2026",
+        "releve": "06/11/2026",
         "points": [
+          "Forêts, océans… Quelles avancées pour la biodiversité ?",
+          "Vie chère, crise climatique : pourquoi tout est lié ?",
           "Pure Salmon, c’est non !",
-          "Quand alerter peut coûter cher",
-          "Pesticides à vie ? Non merci. Mobilisons-nous contre l’Omnibus pesticides",
-          "Changement climatique : les énergies les plus résilientes"
+          "Quand alerter peut coûter cher"
         ]
       }
     },
@@ -52,7 +52,7 @@
       "lien_autre": "https://www.croix-rouge.fr/actualite",
       "libelle_autre": "Actualité nationale",
       "derniere": {
-        "releve": "02/11/2026",
+        "releve": "06/11/2026",
         "points": [
           "Devenir sauveteur secouriste du travail Savoir intervenir face à une situation d'accident du travail et porter les premiers secours.",
           "Initiation à la santé mentale Comprendre les bases de la santé mentale, déconstruire les idées reçues et savoir en prendre soin.",
@@ -71,12 +71,12 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.msf.fr/actualites",
       "derniere": {
-        "releve": "02/11/2026",
+        "releve": "06/11/2026",
         "points": [
-          "Épidémie d'Ebola en RDC : accompagner les patients et leurs proches face au…",
-          "Dessiner Gaza : l'enfance marquée par la peur et la violence",
-          "Haïti : MSF alerte sur l’explosion de violences à Port-au-Prince et appelle à…",
-          "Soudan : au moins 36 morts et 150 blessés dans une nouvelle frappe de drone"
+          "Inde : lever les tabous autour de la santé mentale au Cachemire",
+          "Gaza : le Dr Obeid, chirurgien de MSF, doit être libéré après deux ans de…",
+          "RDC : des mesures néfastes et restrictives entravent la prise en charge des…",
+          "Épidémie d'Ebola en RDC : accompagner les patients et leurs proches face au…"
         ]
       }
     },
@@ -90,7 +90,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://seashepherd.fr/actualites",
       "derniere": {
-        "releve": "02/11/2026",
+        "releve": "06/11/2026",
         "points": [
           "Dauphins : l’illusion d’une victoire",
           "Krill en Antarctique",
@@ -109,10 +109,10 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.wwf.fr/s-informer/nos-actualites",
       "derniere": {
-        "releve": "02/11/2026",
+        "releve": "06/11/2026",
         "points": [
-          "25 ans d’engagement en Nouvelle-Calédonie",
-          "Le WWF France et SBTN lancent un programme pour accélérer l’adoption d’objectifs scientifiques pour la nature dans le secteur financier",
+          "WWF France : 25 ans d’engagement en Nouvelle-Calédonie",
+          "WWF France et SBTN : mobiliser la finance pour la nature",
           "COP17 : Passer des promesses aux résultats",
           "Le WWF France appelle à protéger et restaurer d'urgence les tourbières"
         ]
@@ -129,12 +129,12 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.amnesty.fr/actualites/",
       "derniere": {
-        "releve": "02/11/2026",
+        "releve": "06/11/2026",
         "points": [
+          "La fermeture de Novaïa Gazeta ou l’anéantissement de la presse libre en Russie",
           "Pratiques autoritaires : 7 pays où la Gen Z résiste",
           "Loi « casseurs-payeurs » : une menace pour le droit de manifester en France",
-          "La France glisse-t-elle vers des pratiques autoritaires ? 7 signes d’alerte",
-          "Des journalistes agressés par des soldats israéliens en Cisjordanie occupée reçoivent le Prix Amnesty International à Bayeux"
+          "La France glisse-t-elle vers des pratiques autoritaires ? 7 signes d’alerte"
         ]
       }
     },
@@ -148,7 +148,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.oxfamfrance.org/communiques-de-presse/",
       "derniere": {
-        "releve": "02/11/2026",
+        "releve": "06/11/2026",
         "points": [
           "Le point sur la loi intégrale contre les violences sexuelles, soutenue par Oxfam",
           "Impôts injustes : le procès !",
@@ -167,7 +167,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.handicap-international.fr/fr/actualites/index",
       "derniere": {
-        "releve": "02/11/2026",
+        "releve": "06/11/2026",
         "points": [
           "Bénin : Souleyman",
           "Madagascar : Odile",
