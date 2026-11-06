@@ -1,5 +1,5 @@
 {
-  "maj": "02/11/2026 01:40",
+  "maj": "06/11/2026 11:47",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -19,6 +19,19 @@
     "Mercredi 7 octobre (lendemain de l'acte III) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
   ],
   "version_gouvernement": [
+    {
+      "id": "amw4up19t-5t3f",
+      "date": "06/11/2026",
+      "titre": "EN DIRECT – Mouvement social : le ministre de l’Education promet des «sanctions» contre les lycéens qui empêchent l’acc…",
+      "texte": "Au lendemain de la journée de mobilisation pour le pouvoir d’achat qui a attiré le plus de manifestants depuis le début du mouvement, des appels à manifester sont maintenus pour samedi, notamment par…",
+      "source": "BFMTV / Libération",
+      "sources": [
+        "BFMTV",
+        "Libération"
+      ],
+      "url": "https://www.liberation.fr/economie/social/en-direct-mouvement-social-le-ministre-du-travail-veut-essayer-de-franchir-la-barre-du-smic-a-1-500-euros-net-20261106_ZR72ANUTFNHKXEQVFZ4574GYFM/",
+      "verifie": true
+    },
     {
       "id": "amvxommyi-aog2",
       "date": "01/11/2026",
@@ -120,26 +133,22 @@
       ],
       "url": "https://www.bfmtv.com/societe/education/le-droit-au-blocage-n-existe-pas-le-ministre-de-l-enseignement-superieur-juge-que-le-travail-des-lyceens-doit-reprendre-lundi_AD-202610270302.html",
       "verifie": true
-    },
-    {
-      "id": "g4",
-      "date": "04/10/2026",
-      "titre": "Lecornu : reprise des cours lundi « partout » où la sécurité le permet",
-      "texte": "Le Premier ministre a demandé que les cours reprennent dès lundi « partout » où la sécurité le permet, et fixé un calendrier pour répondre à une partie des revendications, à commencer par les remplacements des professeurs.",
-      "source": "20 minutes / AFP / Europe 1 / BFMTV / France 24 / RFI",
-      "sources": [
-        "20 minutes",
-        "AFP",
-        "Europe 1",
-        "BFMTV",
-        "France 24",
-        "RFI"
-      ],
-      "url": "https://www.20minutes.fr/societe/4251181-20261004-blocus-lycees-lecornu-demande-cours-reprennent-lundi-partout-securite-permet",
-      "verifie": true
     }
   ],
   "faits": [
+    {
+      "id": "amw4up19s-bxqe",
+      "date": "06/11/2026",
+      "titre": "Colère des lycéens : Deux élèves de 16 ans mis en examen pour l’incendie du lycée Nelson-Mandela de Nantes",
+      "texte": "Dans l’enquête sur l’incendie qui a détruit le hall d’entrée du lycée Nelson-Mandela de Nantes le 1er octobre, deux élèves de 16 ans ont été mis en examen",
+      "source": "20 minutes / Libération",
+      "sources": [
+        "20 minutes",
+        "Libération"
+      ],
+      "url": "https://www.20minutes.fr/justice/4260846-20261106-colere-lyceens-deux-eleves-16-ans-mis-examen-incendie-lycee-nelson-mandela-nantes?at_medium=display&at_campaign=149",
+      "verifie": true
+    },
     {
       "id": "amvy8fjpg-ajjn",
       "date": "01/11/2026",
@@ -273,21 +282,6 @@
         "BFMTV"
       ],
       "url": "https://www.europe1.fr/societe/en-direct-blocus-des-lycees-greta-thunberg-au-milieu-de-manifestants-devant-le-lycee-paul-eluard-de-saint-denis-1144064?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
-      "verifie": true
-    },
-    {
-      "id": "amv6hf8xx-kb65",
-      "date": "13/10/2026",
-      "titre": "« Certains élèves sont mitigés sur le fait de brandir le drapeau palestinien, mais Gaza est une cause noble qui n’est p…",
-      "texte": "« Certains élèves sont mitigés sur le fait de brandir le drapeau palestinien, mais Gaza est une cause noble qui n’est pas assez écoutée », dénonce Mélissa, lycéenne de 17 ans",
-      "source": "BFMTV / L'Humanité / Public Sénat / Libération",
-      "sources": [
-        "BFMTV",
-        "L'Humanité",
-        "Public Sénat",
-        "Libération"
-      ],
-      "url": "https://www.humanite.fr/social-et-economie/lyceens/certains-eleves-sont-mitiges-sur-le-fait-de-brandir-le-drapeau-palestinien-mais-gaza-est-une-cause-noble-qui-nest-pas-assez-ecoutee-denonce-melissa-lyceenne-de-17-a",
       "verifie": true
     }
   ],
