@@ -1,18 +1,19 @@
 {
-  "maj": "2026-10-12",
+  "maj": "2026-11-07",
   "source": "Copernicus Climate Change Service (C3S · ECMWF)",
-  "titre": "Septembre 2026, deuxième mois de septembre le plus chaud jamais enregistré",
-  "periode": "Bulletin du mois de septembre 2026 (newsflash du 09/10/2026, communiqué du 12/10/2026)",
-  "resume": "Septembre 2026 a été le deuxième mois de septembre le plus chaud jamais enregistré à l'échelle mondiale, à +1,63 °C au-dessus de la moyenne pré-industrielle (1850-1900) — le deuxième mois consécutif au-dessus de 1,5 °C, une première depuis novembre 2025. La température moyenne des océans extra-polaires a atteint un record pour un mois de septembre, sous un épisode El Niño qui continue de s'intensifier.",
+  "titre": "Octobre 2026, le mois d’octobre le plus chaud jamais enregistré",
+  "periode": "Bulletin du mois d’octobre 2026 (données publiées le 06/11/2026)",
+  "resume": "Octobre 2026 a été le mois d’octobre le plus chaud jamais enregistré à l’échelle mondiale, à +1,75 °C au-dessus de la moyenne pré-industrielle (1850-1900) — le troisième mois consécutif au-dessus de 1,5 °C. La température moyenne des océans extra-polaires a atteint un record pour un mois d’octobre (20,95 °C) sous un épisode El Niño exceptionnellement fort ; C3S estime à plus de 99 % la probabilité que l’année 2026 dépasse elle aussi 1,5 °C.",
   "points": [
-    "Température moyenne de l'air à la surface du globe : 16,27 °C, soit +0,82 °C au-dessus de la moyenne 1991-2020 — deuxième mois de septembre le plus chaud du jeu de données ERA5, 0,11 °C derrière septembre 2023.",
-    "+1,63 °C au-dessus de l'ère pré-industrielle (1850-1900) : deuxième mois consécutif au-dessus de 1,5 °C, une première depuis novembre 2025 ; la série devrait se poursuivre en 2027 selon C3S.",
-    "Température des océans extra-polaires (60°S–60°N) : 21,05 °C en moyenne, record pour un mois de septembre (précédent : 20,92 °C en 2023).",
-    "El Niño : la température mensuelle de la région Niño 3.4 atteint un record absolu de 29,70 °C, au-dessus des pics des épisodes très forts de 1982/1983, 1997/1998 et 2015/2016 — l'épisode en cours pourrait devenir l'un des plus forts jamais observés.",
-    "Europe : 16,26 °C sur les terres européennes (+1,54 °C), troisième mois de septembre le plus chaud ; en Europe de l'Ouest, septembre le plus chaud à égalité avec 2023 (+2,51 °C), après l'été le plus chaud jamais enregistré dans la région.",
-    "Antarctique : troisième maximum hivernal de glace de mer le plus bas jamais observé ; autour de l'Europe, températures de surface de la mer records pour un mois de septembre le long de la côte atlantique et en Méditerranée occidentale.",
-    "Sécheresses persistantes dans une grande partie de l'Europe de l'Ouest, centrale et de l'Est ; débits record-bas pour un mois de septembre sur le Rhin, le Danube, la Vistule et la Garonne-Dordogne, perturbant navigation, alimentation en eau et agriculture."
+    "Température moyenne de l’air à la surface du globe : 15,35 °C, soit +0,90 °C au-dessus de la moyenne 1991-2020 — mois d’octobre le plus chaud du jeu de données ERA5, devant le précédent record d’octobre 2023 (+0,85 °C).",
+    "+1,75 °C au-dessus de l’ère pré-industrielle (1850-1900) : troisième mois consécutif au-dessus de 1,5 °C ; avant août 2026, le dernier mois au-dessus de ce seuil était novembre 2025.",
+    "Année 2026 : avec dix mois écoulés, deuxième année la plus chaude jamais enregistrée (+0,64 °C au-dessus de la moyenne 1991-2020) ; le modèle statistique de C3S prédit qu’elle dépassera 1,5 °C avec plus de 99 % de probabilité (intervalle prédit : 1,56–1,61 °C), devenant la deuxième année civile après 2024, et sera très probablement (≈ 80 %) la deuxième plus chaude jamais enregistrée.",
+    "Température des océans extra-polaires (60°S–60°N) : 20,95 °C en moyenne, record pour un mois d’octobre — quatrième mois consécutif à établir un record pour le mois considéré.",
+    "El Niño : la température de surface de la mer dans la région Niño 3.4 atteint un record absolu de 29,94 °C ; anomalies supérieures à 3 °C sur une grande partie du Pacifique équatorial central, jusqu’à 6–7 °C au large de la côte péruvienne et des Galápagos — un épisode bien plus fort que celui d’octobre 2023.",
+    "Terres émergées du globe : 10,82 °C, troisième valeur la plus haute pour un mois d’octobre, à égalité avec octobre 2025 et derrière celles d’octobre 2023 et 2024.",
+    "Europe : 11,08 °C sur les terres européennes (+1,49 °C), deuxième mois d’octobre le plus chaud, 0,43 °C derrière celui de 2022.",
+    "Antarctique de l’Ouest : anomalies positives les plus fortes du globe, supérieures à 7 °C au-dessus de la moyenne (jusqu’à 11 °C par endroits), associées à un schéma atmosphérique typique d’El Niño ; anomalies froides marquées sur le sud de l’Amérique du Sud, le Groenland et l’Afrique du Nord."
   ],
-  "lien": "https://climate.copernicus.eu/copernicus-second-warmest-september-global-temperatures-stay-above-15degc",
+  "lien": "https://climate.copernicus.eu/surface-air-temperature-october-2026",
   "lien_rapport": "https://climate.copernicus.eu/climate-bulletins"
 }
