@@ -1,5 +1,5 @@
 {
-  "maj": "06/11/2026 21:52",
+  "maj": "07/11/2026 01:53",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -33,6 +33,19 @@
         "L'Humanité"
       ],
       "url": "https://www.liberation.fr/economie/social/en-direct-mouvement-social-le-ministre-du-travail-veut-essayer-de-franchir-la-barre-du-smic-a-1-500-euros-net-20261106_ZR72ANUTFNHKXEQVFZ4574GYFM/",
+      "verifie": true
+    },
+    {
+      "id": "amw5own9q-4wtw",
+      "date": "06/11/2026",
+      "titre": "Liste des 200 établissements à rénover : « Le gouvernement a inventé le TripAdvisor des lycées », les régions fustigent…",
+      "texte": "La liste des 200 lycées à rénover « en priorité », diffusée cette semaine par le gouvernement et issue d’une consultation mise en ligne courant octobre en réponse à la crise, a suscité la colère des …",
+      "source": "Public Sénat / franceinfo",
+      "sources": [
+        "Public Sénat",
+        "franceinfo"
+      ],
+      "url": "https://www.publicsenat.fr/actualites/politique/liste-des-200-etablissements-a-renover-le-gouvernement-a-invente-le-tripadvisor-des-lycees-les-regions-fustigent-la-methode-du-gouvernement",
       "verifie": true
     },
     {
@@ -153,6 +166,19 @@
       "verifie": true
     },
     {
+      "id": "amw5own9r-3z1g",
+      "date": "06/11/2026",
+      "titre": "Mobilisation lycéenne à Lyon : l'entrée du lycée Édouard Herriot incendiée",
+      "texte": "À Lyon, l’entrée du lycée Édouard Herriot, situé dans le centre-ville, a été incendiée vendredi 6 novembre. Une enquête a été ouverte et huit personnes ont été interpellées.",
+      "source": "Le Figaro / franceinfo",
+      "sources": [
+        "Le Figaro",
+        "franceinfo"
+      ],
+      "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/mobilisation-lyceenne-a-lyon-l-entree-du-lycee-edouard-herriot-incendiee_8271605.html#xtor=RSS-3-%5Bgeneral%5D",
+      "verifie": true
+    },
+    {
       "id": "amvy8fjpg-ajjn",
       "date": "01/11/2026",
       "titre": "Lycées bloqués, appels à la grève, convergence des luttes... À quoi s'attendre pour cette nouvelle semaine de mobilisat…",
@@ -268,23 +294,6 @@
         "BFMTV"
       ],
       "url": "https://www.lefigaro.fr/actualite-france/en-direct-colere-des-lyceens-les-eleves-mobilises-souhaitent-que-les-etudiants-et-les-gilets-jaunes-poursuivent-le-mouvement-20261014",
-      "verifie": true
-    },
-    {
-      "id": "aetumv6hfjwq-1",
-      "date": "13/10/2026",
-      "titre": "Blocus des lycées : Greta Thunberg au milieu de manifestants devant le lycée Paul-Eluard de Saint-Denis",
-      "texte": "Blocus des lycées : Greta Thunberg au milieu de manifestants devant le lycée Paul-Eluard de Saint-Denis",
-      "source": "Europe 1 / 20 minutes / Public Sénat / franceinfo / Le Figaro / BFMTV",
-      "sources": [
-        "Europe 1",
-        "20 minutes",
-        "Public Sénat",
-        "franceinfo",
-        "Le Figaro",
-        "BFMTV"
-      ],
-      "url": "https://www.europe1.fr/societe/en-direct-blocus-des-lycees-greta-thunberg-au-milieu-de-manifestants-devant-le-lycee-paul-eluard-de-saint-denis-1144064?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
     }
   ],
