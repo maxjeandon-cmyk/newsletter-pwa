@@ -12,7 +12,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.actioncontrelafaim.org/actualites/",
       "derniere": {
-        "releve": "06/11/2026",
+        "releve": "07/11/2026",
         "points": [
           "4e édition de la Bourse multimédia pour un nouveau regard humanitaire : découvrez les quatre projets finalistes",
           "Accéder à l’eau : un défi majeur pour les populations du nord de la Côte d’Ivoire",
@@ -32,7 +32,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.greenpeace.fr/actualites/",
       "derniere": {
-        "releve": "06/11/2026",
+        "releve": "07/11/2026",
         "points": [
           "Forêts, océans… Quelles avancées pour la biodiversité ?",
           "Vie chère, crise climatique : pourquoi tout est lié ?",
@@ -52,7 +52,7 @@
       "lien_autre": "https://www.croix-rouge.fr/actualite",
       "libelle_autre": "Actualité nationale",
       "derniere": {
-        "releve": "06/11/2026",
+        "releve": "07/11/2026",
         "points": [
           "Devenir sauveteur secouriste du travail Savoir intervenir face à une situation d'accident du travail et porter les premiers secours.",
           "Initiation à la santé mentale Comprendre les bases de la santé mentale, déconstruire les idées reçues et savoir en prendre soin.",
@@ -71,12 +71,12 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.msf.fr/actualites",
       "derniere": {
-        "releve": "06/11/2026",
+        "releve": "07/11/2026",
         "points": [
+          "Cisjordanie. À Hébron, 10 jours d'opérations militaires et des conséquences…",
+          "France : MSF dénonce les failles dans la prise en charge des mineurs non…",
           "Inde : lever les tabous autour de la santé mentale au Cachemire",
-          "Gaza : le Dr Obeid, chirurgien de MSF, doit être libéré après deux ans de…",
-          "RDC : des mesures néfastes et restrictives entravent la prise en charge des…",
-          "Épidémie d'Ebola en RDC : accompagner les patients et leurs proches face au…"
+          "Gaza : le Dr Obeid, chirurgien de MSF, doit être libéré après deux ans de…"
         ]
       }
     },
@@ -90,7 +90,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://seashepherd.fr/actualites",
       "derniere": {
-        "releve": "06/11/2026",
+        "releve": "07/11/2026",
         "points": [
           "Dauphins : l’illusion d’une victoire",
           "Krill en Antarctique",
@@ -109,7 +109,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.wwf.fr/s-informer/nos-actualites",
       "derniere": {
-        "releve": "06/11/2026",
+        "releve": "07/11/2026",
         "points": [
           "WWF France : 25 ans d’engagement en Nouvelle-Calédonie",
           "WWF France et SBTN : mobiliser la finance pour la nature",
@@ -129,12 +129,12 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.amnesty.fr/actualites/",
       "derniere": {
-        "releve": "06/11/2026",
+        "releve": "07/11/2026",
         "points": [
+          "Institutrice, elle résiste aux menaces des anti-droits pour continuer de protéger les enfants des violences",
           "La fermeture de Novaïa Gazeta ou l’anéantissement de la presse libre en Russie",
           "Pratiques autoritaires : 7 pays où la Gen Z résiste",
-          "Loi « casseurs-payeurs » : une menace pour le droit de manifester en France",
-          "La France glisse-t-elle vers des pratiques autoritaires ? 7 signes d’alerte"
+          "Loi « casseurs-payeurs » : une menace pour le droit de manifester en France"
         ]
       }
     },
@@ -148,12 +148,12 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.oxfamfrance.org/communiques-de-presse/",
       "derniere": {
-        "releve": "06/11/2026",
+        "releve": "07/11/2026",
         "points": [
+          "La COP31 peut-elle nous protéger du changement climatique ? Les attentes d’Oxfam France",
           "Le point sur la loi intégrale contre les violences sexuelles, soutenue par Oxfam",
           "Impôts injustes : le procès !",
-          "Budget 2027 : un Projet de Loi Finance catastrophique",
-          "Pacte Dutreil, la grande arnaque : pourquoi il faut le réformer"
+          "Budget 2027 : un Projet de Loi Finance catastrophique"
         ]
       }
     },
@@ -167,7 +167,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.handicap-international.fr/fr/actualites/index",
       "derniere": {
-        "releve": "06/11/2026",
+        "releve": "07/11/2026",
         "points": [
           "Bénin : Souleyman",
           "Madagascar : Odile",
