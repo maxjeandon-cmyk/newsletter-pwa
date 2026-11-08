@@ -145,6 +145,14 @@
       "sources": [
         "Mediapart"
       ]
+    },
+    {
+      "id": "c12p19",
+      "texte": "Sur le front policier et judiciaire, le fil des faits continue : Au lycée catholique Stanislas, des violences sexuelles sur mineurs et des années d’omerta (1 media : Mediapart — non corrobore) — détail : Le lycée privé parisien est mis en cause pour avoir fermé les yeux sur plusieurs signalements de violences sexuelles sur des élèves. Le cas… (Volet automatique du 8 novembre 2026 à 20:39, chapitre « La répression et ses visages » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "Mediapart"
+      ],
+      "auto": true
     }
   ]
 }
