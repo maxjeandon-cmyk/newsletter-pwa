@@ -1,15 +1,15 @@
 {
-  "date": "07/11/2026",
-  "heure": "19:24",
+  "date": "08/11/2026",
+  "heure": "00:32",
   "relevesOng": {
-    "rafraichis": 0,
+    "rafraichis": 9,
     "echecs": 1,
-    "publie": false
+    "publie": true
   },
   "lyceens": {
     "nouvelles": 0,
     "fusionnees": 3,
-    "moissonnes": 14,
+    "moissonnes": 11,
     "total": 19,
     "publie": false
   },
@@ -24,12 +24,12 @@
     {
       "nom": "validate-latest.js",
       "ok": true,
-      "detail": "\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 04/11/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n\nToutes les éditions récentes sont conformes. 🌱"
+      "detail": "\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 05/11/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n\nToutes les éditions récentes sont conformes. 🌱"
     },
     {
       "nom": "check-site.js",
       "ok": true,
-      "detail": "=== check-site ===\nℹ️  latest.json : 41 édition(s), plus récente 2026-11-06\nℹ️  édition 2026-11-06 : JSON OK, HTML 76309 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
+      "detail": "=== check-site ===\nℹ️  latest.json : 42 édition(s), plus récente 2026-11-07\nℹ️  édition 2026-11-07 : JSON OK, HTML 82069 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
     },
     {
       "nom": "sonde notifications",
@@ -38,13 +38,13 @@
     },
     {
       "nom": "ong-releve.js",
-      "ok": false,
-      "detail": "0 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
+      "ok": true,
+      "detail": "9 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
     },
     {
       "nom": "lyceens.js",
       "ok": true,
-      "detail": "0 nouvelle(s) info, 3 fusionnée(s) sur 14 moissonnée(s) — 19 au total"
+      "detail": "0 nouvelle(s) info, 3 fusionnée(s) sur 11 moissonnée(s) — 19 au total"
     },
     {
       "nom": "etudiants.js",
