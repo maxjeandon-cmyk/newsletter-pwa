@@ -1,5 +1,5 @@
 {
-  "maj": "07/11/2026 11:00",
+  "maj": "08/11/2026 20:39",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -19,6 +19,19 @@
     "Mercredi 7 octobre (lendemain de l'acte III) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
   ],
   "version_gouvernement": [
+    {
+      "id": "amw88kbhj-4i1w",
+      "date": "08/11/2026",
+      "titre": "Mouvement lycéen : Edouard Geffray n’a «pas l’intention de toucher» au calendrier du bac",
+      "texte": "Malgré les perturbations des deux derniers mois et une mobilisation qui ne parait pas près de s’achever, le ministre de l’Education nationale a annoncé, samedi 7 novembre, qu’il refuserait d’aménager…",
+      "source": "La Croix / Libération",
+      "sources": [
+        "La Croix",
+        "Libération"
+      ],
+      "url": "https://www.liberation.fr/societe/education/mouvement-lyceen-edouard-geffray-na-pas-lintention-de-toucher-au-calendrier-du-bac-20261108_BITWQ3QS4ZCGVNQWUT4VIRUHOI/",
+      "verifie": true
+    },
     {
       "id": "amw4up19t-5t3f",
       "date": "06/11/2026",
@@ -153,6 +166,19 @@
   ],
   "faits": [
     {
+      "id": "amw88kbhj-4l7q",
+      "date": "08/11/2026",
+      "titre": "Le lycéen de La Courneuve soupçonné d'avoir poignardé son camarade a été mis en examen et placé sous contrôle judiciaire",
+      "texte": "Son contrôle judiciaire comporte \"notamment une interdiction de paraître en Seine-Saint-Denis\", a fait savoir dimanche le procureur de Bobigny.",
+      "source": "franceinfo / Libération",
+      "sources": [
+        "franceinfo",
+        "Libération"
+      ],
+      "url": "https://www.franceinfo.fr/france/ile-de-france/seine-saint-denis/le-lyceen-de-la-courneuve-soupconne-d-avoir-poignarde-son-camarade-a-ete-mis-en-examen-et-place-sous-controle-judiciaire_8273318.html#xtor=RSS-3-%5Bgeneral%5D",
+      "verifie": true
+    },
+    {
       "id": "amw68fu49-fz4s",
       "date": "07/11/2026",
       "titre": "Acte IV des gilets jaunes, manifestation des syndicats et des lycéens… Une nouvelle journée de mobilisation sous haute …",
@@ -276,20 +302,6 @@
         "Libération"
       ],
       "url": "https://www.humanite.fr/societe/bavures-policieres/violences-policieres-a-lens-lavocat-du-lyceen-ayant-perdu-sa-main-denonce-une-enquete-menee-a-charge-contre-son-client",
-      "verifie": true
-    },
-    {
-      "id": "amv8a7gt5-eckp",
-      "date": "14/10/2026",
-      "titre": "Omar Sy juge «lamentable» la réponse des autorités à la mobilisation des lycéens",
-      "texte": "Invité de France Inter mercredi, le comédien a appelé à écouter les revendications des jeunes, mobilisés depuis la mi-septembre pour réclamer davantage de moyens pour l’éducation.",
-      "source": "Le Figaro / L'Humanité / 20 minutes",
-      "sources": [
-        "Le Figaro",
-        "L'Humanité",
-        "20 minutes"
-      ],
-      "url": "https://www.lefigaro.fr/culture/omar-sy-juge-lamentable-la-reponse-des-autorites-a-la-mobilisation-des-lyceens-20261014",
       "verifie": true
     }
   ],
