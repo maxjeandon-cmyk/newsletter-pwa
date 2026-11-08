@@ -1,7 +1,8 @@
 {
   "suite": [
     "data/flux-rss-2.json",
-    "data/flux-rss-3.json"
+    "data/flux-rss-3.json",
+    "data/flux-rss-4.json"
   ],
   "catalogue": [
     {

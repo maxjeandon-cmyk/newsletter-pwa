@@ -1,0 +1,54 @@
+{
+  "catalogue": [
+    {
+      "id": "korben",
+      "nom": "Korben",
+      "emoji": "🔧",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "astuces tech, vie privée et bidouilles, FR",
+      "flux": [
+        "https://www.korben.info/feed"
+      ]
+    },
+    {
+      "id": "destructoid",
+      "nom": "Destructoid",
+      "emoji": "🕹️",
+      "categorie": "Jeux 🎮",
+      "ligne": "JV communautaire US, tests et rétros",
+      "flux": [
+        "https://www.destructoid.com/feed/"
+      ]
+    },
+    {
+      "id": "grist",
+      "nom": "Grist",
+      "emoji": "🌲",
+      "categorie": "Écologie & climat 🌿",
+      "ligne": "climat et solutions, journalisme US",
+      "flux": [
+        "https://grist.org/feed/"
+      ]
+    },
+    {
+      "id": "gizmodo",
+      "nom": "Gizmodo",
+      "emoji": "🛸",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "tech et science, ton geek US",
+      "flux": [
+        "https://gizmodo.com/rss"
+      ]
+    },
+    {
+      "id": "mashable",
+      "nom": "Mashable",
+      "emoji": "📲",
+      "categorie": "Anglophone généraliste 🌐",
+      "ligne": "culture numérique et tendances web",
+      "flux": [
+        "https://mashable.com/feeds/rss/all"
+      ]
+    }
+  ]
+}
