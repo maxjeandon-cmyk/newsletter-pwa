@@ -1,5 +1,5 @@
 {
-  "maj": "09/11/2026 12:24",
+  "maj": "10/11/2026 00:46",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -51,10 +51,11 @@
       "date": "09/11/2026",
       "titre": "Mouvement lycéen : des cours de rattrapage possibles pendant les vacances en février ou à Pâques, annonce Edouard Geffr…",
       "texte": "Des cours de rattrapage pourront être organisés pendant les vacances scolaires « en février » ou « à Pâques », a indiqué lundi sur France 2 le ministre de l'Éducation nationale Édouard Geffray, qui a…",
-      "source": "Public Sénat / Libération",
+      "source": "Public Sénat / Libération / Europe 1",
       "sources": [
         "Public Sénat",
-        "Libération"
+        "Libération",
+        "Europe 1"
       ],
       "url": "https://www.publicsenat.fr/actualites/politique/mouvement-lyceen-des-cours-de-rattrapage-possibles-pendant-les-vacances-en-fevrier-ou-a-paques-annonce-edouard-geffray",
       "verifie": true
@@ -191,6 +192,20 @@
   ],
   "faits": [
     {
+      "id": "amw9wtzu0-5l6m",
+      "date": "10/11/2026",
+      "titre": "\"On ne rentrera jamais dans une salle avec l'extrême droite\": la première réunion du comité de réforme Parcoursup tourn…",
+      "texte": "Les responsables syndicaux ont quitté ce lundi 9 novembre la première réunion du comité de réforme de Parcoursup, dénonçant notamment la présence du syndicat étudiant UNI, qui se présente comme le \"p…",
+      "source": "20 minutes / BFMTV / Libération",
+      "sources": [
+        "20 minutes",
+        "BFMTV",
+        "Libération"
+      ],
+      "url": "https://www.bfmtv.com/societe/education/on-ne-rentrera-jamais-dans-une-salle-avec-l-extreme-droite-la-premiere-reunion-du-comite-de-reforme-parcoursup-tourne-court_AD-202611091008.html",
+      "verifie": true
+    },
+    {
       "id": "amw88kbhj-4l7q",
       "date": "08/11/2026",
       "titre": "Le lycéen de La Courneuve soupçonné d'avoir poignardé son camarade a été mis en examen et placé sous contrôle judiciaire",
@@ -313,20 +328,6 @@
         "Libération"
       ],
       "url": "https://www.humanite.fr/social-et-economie/cgt/lyceens-etudiants-syndicats-peut-on-sattendre-a-une-convergence-des-luttes-le-17-octobre",
-      "verifie": true
-    },
-    {
-      "id": "amv8a7gt5-88sz",
-      "date": "14/10/2026",
-      "titre": "Violences policières : à Lens, l’avocat du lycéen ayant perdu sa main dénonce une enquête menée « à charge » contre son…",
-      "texte": "L’avocat d’Evan, lycéen de 15 ans amputé d’une main après l’explosion d’une grenade policière le 5 octobre à Lens, a annoncé mercredi 14 octobre le dépôt d’une nouvelle plainte pour des faits « de na…",
-      "source": "Le Figaro / L'Humanité / Libération",
-      "sources": [
-        "Le Figaro",
-        "L'Humanité",
-        "Libération"
-      ],
-      "url": "https://www.humanite.fr/societe/bavures-policieres/violences-policieres-a-lens-lavocat-du-lyceen-ayant-perdu-sa-main-denonce-une-enquete-menee-a-charge-contre-son-client",
       "verifie": true
     }
   ],
