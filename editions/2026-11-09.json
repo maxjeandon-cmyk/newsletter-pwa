@@ -1,137 +1,556 @@
 {
-"date": "2026-11-09",
-"genere_le": "2026-11-08T23:42:35.138Z",
-"html": "editions/2026-11-09.html",
-"resume_executif": [
-"\u00c9tats-Unis : Donald Trump d\u00e9nonce dimanche un \u00ab gigantesque pas en arri\u00e8re dans l\u2019Histoire \u00bb apr\u00e8s la vague d\u00e9mocrate aux midterms et promet un retour \u00ab PLUS GRANDS ET PLUS FORTS QUE JAMAIS \u00bb ; il a promu le dur Stephen Miller \u00e0 la t\u00eate de son cabinet, reconna\u00eet une politique d\u2019expulsion \u00ab trop dure \u00bb, juge \u00ab tr\u00e8s improbable \u00bb une reprise de la guerre contre l\u2019Iran, tandis que T\u00e9h\u00e9ran dit ses tractations \u00e0 l\u2019arr\u00eat apr\u00e8s le \u00ab choc \u00bb des \u00e9lections am\u00e9ricaines (S1, S2, S3, S4).",
-"Isra\u00ebl et Moyen-Orient : le pr\u00e9sident Isaac Herzog a remis officiellement dimanche \u00e0 Eisenkot le mandat de former le prochain gouvernement ; le ministre de la D\u00e9fense Israel Katz assure que la mission \u00ab en Iran \u00bb n\u2019est \u00ab pas termin\u00e9e \u00bb, et les Houthis ont revendiqu\u00e9 l\u2019attaque contre le quartier d\u2019affaires de Riyad (S4, S5).",
-"France : veille de la conf\u00e9rence sociale de lundi \u00e0 Matignon \u2014 un SMIC rehauss\u00e9 \u00e0 1.500 euros nets est \u00e9voqu\u00e9, mais le ministre du Travail Jean-Pierre Farandou \u00e9carte toute hausse qui \u00ab nuirait \u00e0 l\u2019emploi \u00bb ; le budget 2027 s\u2019ouvre au S\u00e9nat (9-17 novembre) et l\u2019inflation d\u2019octobre tombe mardi (S6, S7, S8, S9, S10).",
-"\u00c9conomie : le march\u00e9 du travail am\u00e9ricain \u00ab s\u2019installe dans le vert \u00bb \u2014 moins de ch\u00f4mage, plus de cr\u00e9ations d\u2019emplois \u2014, ce qui met la R\u00e9serve f\u00e9d\u00e9rale en position de relever ses taux d\u00e9but d\u00e9cembre (la deuxi\u00e8me hausse depuis septembre) ; Wall Street tente un rebond apr\u00e8s la d\u00e9route de la veille (S11, S12, S13).",
-"Climat : la COP31 s\u2019ouvre ce lundi \u00e0 Antalya (9-20 novembre) dans un monde divis\u00e9 \u2014 \u00c9tats-Unis absents du processus, financement de l\u2019adaptation en ligne de mire, l\u2019Union europ\u00e9enne n\u2019attend \u00ab pas de r\u00e9volution \u00bb \u2014 apr\u00e8s que Copernicus a jug\u00e9 \u00ab quasi certain \u00bb le d\u00e9passement des 1,5 \u00b0C en 2026, deuxi\u00e8me ann\u00e9e la plus chaude jamais enregistr\u00e9e (S14, S15, S16, S17)."
-],
-"chapitres": [
-{"id":"intelligence-artificielle","emoji":"\ud83e\udd16","nom":"Intelligence artificielle","resume":"Jour de transition avant le Web Summit de Lisbonne qui ouvre ce lundi : OpenAI fractionne sa g\u00e9n\u00e9ration d\u2019images, Anthropic rend ses agents moins attendus, Google stabilise la communication inter-agents, et la fran\u00e7aise Mistral pousse ses mod\u00e8les en entreprise."},
-{"id":"spatial","emoji":"\ud83d\ude80","nom":"Spatial","resume":"La semaine s\u2019annonce charg\u00e9e : Starship Flight 15 vise vendredi, BepiColombo ach\u00e8ve sa route vers Mercure, et l\u2019orbite reste plus encombr\u00e9e que jamais."},
-{"id":"economie-pour-les-nuls","emoji":"\ud83d\udcb0","nom":"L\u2019\u00c9conomie pour les nuls","resume":"C\u00f4t\u00e9 monde, l\u2019emploi am\u00e9ricain donne des arguments aux banques centrales ; c\u00f4t\u00e9 France, tout se joue lundi \u00e0 Matignon et au S\u00e9nat."},
-{"id":"droit-pour-les-nuls","emoji":"\u2696\ufe0f","nom":"Le Droit pour les nuls","resume":"Le SMIC, ce salaire minimum que la conf\u00e9rence sociale de lundi pourrait rehausser : ce que dit la loi, comment elle le r\u00e9vise, et les pi\u00e8ges \u00e0 conna\u00eetre sur sa fiche de paie."},
-{"id":"jeu-video-pop-culture","emoji":"\ud83c\udfae","nom":"Jeu vid\u00e9o & pop culture","resume":"\u00c0 dix jours de GTA VI, l\u2019industrie tient sa marche de lancement, la semaine livre ses sorties, et la fan fiction mondiale traverse une crise silencieuse."},
-{"id":"culture","emoji":"\ud83c\udfad","nom":"Culture","resume":"De la r\u00e9gion parisienne \u00e0 Tokyo : l\u2019anime fran\u00e7ais franchit une premi\u00e8re, Mishima entre aux Bouffes du Nord, et la semaine culturelle s\u2019annonce dense."},
-{"id":"sciences","emoji":"\ud83d\udd2c","nom":"Sciences","resume":"Une injection pour abaisser durablement les lipides, le sommeil qui se lit dans le cerveau, et les 131 ans de la d\u00e9couverte des rayons X."},
-{"id":"climat","emoji":"\ud83c\udf0d","nom":"Climat","resume":"La COP31 s\u2019ouvre ce lundi \u00e0 Antalya : promesses contre mesures, voil\u00e0 le terrain du jour."},
-{"id":"politique-francaise","emoji":"\ud83c\uddeb\ud83c\uddf7","nom":"Politique fran\u00e7aise","resume":"Conf\u00e9rence sociale lundi, S\u00e9nat toute la semaine, sondages qui s\u2019affolent : la pr\u00e9sidentielle 2027 s\u00e9cr\u00e9te dans un pays \u00e0 cran."},
-{"id":"etats-unis","emoji":"\ud83c\uddfa\ud83c\uddf8","nom":"\u00c9tats-Unis","resume":"Le jour apr\u00e8s la d\u00e9b\u00e2cle : Trump dig\u00e8re, r\u00e9organise, contre-attaque."},
-{"id":"chine","emoji":"\ud83c\udde8\ud83c\uddf3","nom":"Chine","resume":"Entre Washington et P\u00e9kin, l\u2019accord commercial se toise \u2014 pendant que les \u00e9missions chinoises plongent pour de mauvaises raisons."},
-{"id":"russie","emoji":"\ud83c\uddf7\ud83c\uddfa","nom":"Russie","resume":"Apr\u00e8s la nuit de frappes sur l\u2019\u00e9nergie ukrainienne, Moscou mise sur l\u2019usure avant les n\u00e9gociations d\u2019Abou Dhabi."},
-{"id":"geopolitique","emoji":"\ud83c\udf10","nom":"G\u00e9opolitique mondiale","resume":"Isra\u00ebl entre en politique int\u00e9rieure pendant que la guerre contre l\u2019Iran reste en suspens."},
-{"id":"grande-info-semaine","emoji":"\ud83d\udcf0","nom":"Grande information de la semaine","resume":"La semaine qui vient de s\u2019achever a bascul\u00e9 sur trois s\u00e9ismes, et la suivante en annonce trois autres."}
-],
-"sources": [
-{"label":"S1 \u2014 AFP, \u00ab Selon Trump, la victoire des d\u00e9mocrates est un \u00ab gigantesque pas en arri\u00e8re dans l'Histoire \u00bb \u00bb","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261108-da140cd4, pas d'URL publique","fiabilite":5,"maj":"08/11/2026"},
-{"label":"S2 \u2014 AFP, \u00ab Actualit\u00e9s du samedi 7 novembre 2026 \u00bb","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261107-5258e98e, pas d'URL publique","fiabilite":5,"maj":"07/11/2026"},
-{"label":"S3 \u2014 TV5MONDE, \u00ab Donald Trump reconna\u00eet une politique d'expulsion d'immigr\u00e9s \u00ab trop dure \u00bb \u00bb","ref":"https://information.tv5monde.com/international/etats-unis-donald-trump-reconnait-une-politique-dexpulsion-dimmigres-trop-dure-apres-la-defaite-de-son-camp-aux-midterms-2845103","fiabilite":4,"maj":"07/11/2026"},
-{"label":"S4 \u2014 Times of Israel, \u00ab \u00c0 la Une \u2014 l'essentiel de l'info dimanche 8 novembre 2026 \u00bb","ref":"https://fr.timesofisrael.com/the-daily-edition/","fiabilite":4,"maj":"08/11/2026"},
-{"label":"S5 \u2014 TVA Nouvelles, \u00ab La mission d'Isra\u00ebl en Iran n'est \u00ab pas termin\u00e9e \u00bb, d\u00e9clare le ministre de la D\u00e9fense \u00bb","ref":"https://www.tvanouvelles.ca/2026/11/08/la-mission-disrael-en-iran-nest-pas-terminee-declare-le-ministre-de-la-defense","fiabilite":3,"maj":"08/11/2026"},
-{"label":"S6 \u2014 LCP-Assembl\u00e9e nationale, \u00ab Salaires, pouvoir d'achat : que peut-on attendre de la conf\u00e9rence sociale du lundi 9 novembre ? \u00bb","ref":"https://lcp.fr/actualites/salaires-pouvoir-d-achat-que-peut-on-attendre-de-la-conference-sociale-du-lundi-9","fiabilite":4,"maj":"07/11/2026"},
-{"label":"S7 \u2014 AFP, \u00ab Hausse du Smic : ne pas nuire \u00e0 l'emploi, demande Farandou \u00bb","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261107-e21619c9, pas d'URL publique","fiabilite":5,"maj":"07/11/2026"},
-{"label":"S8 \u2014 Le Conseil Malin, \u00ab Hausse du SMIC : les sc\u00e9narios de la conf\u00e9rence sociale du 9 novembre (1 500 \u20ac nets, +100 \u20ac, +150 \u20ac) \u00bb","ref":"https://www.leconseilmalin.fr/hausse-smic-conference-sociale-9-novembre-2026-scenarios-fiche-de-paie/","fiabilite":3,"maj":"08/11/2026"},
-{"label":"S9 \u2014 Public S\u00e9nat, \u00ab Budget 2027 : les points chauds lors des d\u00e9bats au S\u00e9nat du 9 au 17 novembre \u00bb","ref":"https://www.publicsenat.fr/actualites/politique/budget-2027-les-points-chauds-lors-des-debats-au-senat-du-9-au-17-novembre","fiabilite":4,"maj":"06/11/2026"},
-{"label":"S10 \u2014 WeGetFunded, \u00ab Journal des march\u00e9s du 7 novembre : Brent 98,32 dollars, inflation d'octobre attendue mardi \u00bb","ref":"https://wegetfunded.com/fr/blog/brent-98-32-dollars-f9567f/","fiabilite":2,"maj":"07/11/2026"},
-{"label":"S11 \u2014 AFP, \u00ab Le march\u00e9 du travail am\u00e9ricain s'installe dans le vert \u00bb","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261106-341b06ec, pas d'URL publique","fiabilite":5,"maj":"06/11/2026"},
-{"label":"S12 \u2014 AFP, \u00ab Moins de ch\u00f4mage, plus de cr\u00e9ations d'emplois : le march\u00e9 du travail am\u00e9ricain s'installe dans le vert \u00bb","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261106-bd8887d9, pas d'URL publique","fiabilite":5,"maj":"06/11/2026"},
-{"label":"S13 \u2014 AFP, \u00ab Wall Street tente un rebond, mais reste loin de compenser la d\u00e9route de la veille \u00bb","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261106-355efc52, pas d'URL publique","fiabilite":5,"maj":"06/11/2026"},
-{"label":"S14 \u2014 ONU Info, \u00ab COP31 : quels sont les enjeux du sommet de l'ONU sur le climat ? \u00bb","ref":"https://news.un.org/fr/story/2026/11/1159793","fiabilite":5,"maj":"05/11/2026"},
-{"label":"S15 \u2014 AFP, \u00ab COP31 : \u00e0 Antalya, un monde divis\u00e9 au chevet du climat \u00bb","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261105-eb9d525e, pas d'URL publique","fiabilite":5,"maj":"05/11/2026"},
-{"label":"S16 \u2014 AFP, \u00ab Climat : l'Europe \u00ab n'attend pas de r\u00e9volution \u00bb de la COP31 en Turquie \u00bb (\u00e9lectrification dans une d\u00e9cision formelle, demande la France)","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261106-572836d9, pas d'URL publique","fiabilite":5,"maj":"06/11/2026"},
-{"label":"S17 \u2014 AFP, \u00ab Climat : 2026 en passe de devenir la 2e la plus chaude sur la plan\u00e8te \u00bb (Copernicus : seuil de 1,5 \u00b0C \u00ab quasi certain \u00bb d\u00e9pass\u00e9)","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261106-fc6e0717, pas d'URL publique","fiabilite":5,"maj":"06/11/2026"},
-{"label":"S18 \u2014 AFP, \u00ab Route du Rhum : Tom Laperche triomphe avec un chrono record \u00bb (6 jours, 14 heures et 29 minutes)","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261108-ee54923f, pas d'URL publique","fiabilite":5,"maj":"08/11/2026"},
-{"label":"S19 \u2014 Outre-mer La 1\u00e8re, \u00ab Route du Rhum 2026 : Tom Laperche vainqueur, Thomas Coville et Louis Burton compl\u00e8tent le podium \u00bb (13e \u00e9dition)","ref":"https://la1ere.franceinfo.fr/martinique/route-du-rhum-2026-tom-laperche-vainqueur-thomas-coville-et-louis-burton-completent-le-podium-1755843.html","fiabilite":4,"maj":"08/11/2026"},
-{"label":"S20 \u2014 France 24 (EN), \u00ab Laperche wins trans-Atlantic Route du Rhum in record time \u00bb","ref":"https://www.france24.com/en/live-news/20261108-laperche-wins-route-du-rhum-in-record-time","fiabilite":4,"maj":"08/11/2026"},
-{"label":"S21 \u2014 Univers du Sport, \u00ab Scores de football du dimanche 8 novembre 2026 \u00bb (Ligue 1)","ref":"https://www.universdusport.fr/scores/","fiabilite":3,"maj":"08/11/2026"},
-{"label":"S22 \u2014 Matchendirect, \u00ab R\u00e9sultats foot du dimanche 08 novembre 2026 \u00bb (962 matchs)","ref":"https://www.matchendirect.fr/resultat-foot-08-11-2026/","fiabilite":3,"maj":"08/11/2026"},
-{"label":"S23 \u2014 AFP, \u00ab Championnat d'Angleterre : les r\u00e9sultats de la 10e journ\u00e9e \u00bb (Forest 3-1 City, Leeds 1-0 Tottenham)","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261108-6e48f6be, pas d'URL publique","fiabilite":5,"maj":"08/11/2026"},
-{"label":"S24 \u2014 AFP, \u00ab Championnat d'Espagne : les r\u00e9sultats de la 12e journ\u00e9e \u00bb (Valence 0-3 Real Madrid)","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261107-5aad8c03, pas d'URL publique","fiabilite":5,"maj":"07/11/2026"},
-{"label":"S25 \u2014 AFP, \u00ab Championnat d'Italie : les r\u00e9sultats de la 11e journ\u00e9e \u00bb (AS Rome 3-0 Sassuolo, Parme 1-2 Bologne)","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261107-a51a4db8, pas d'URL publique","fiabilite":5,"maj":"07/11/2026"},
-{"label":"S26 \u2014 AFP, \u00ab Championnat du Portugal : les r\u00e9sultats de la 11e journ\u00e9e \u00bb","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261106-ddb61396, pas d'URL publique","fiabilite":5,"maj":"06/11/2026"},
-{"label":"S27 \u2014 \u00c9quipe de France (officiel), \u00ab Les r\u00e9sultats du dimanche 08 novembre 2026 \u2014 Dakar 2026 \u00bb (Jeux olympiques de la jeunesse)","ref":"https://resultats.equipedefrance.com/dakar-2026/resultats","fiabilite":4,"maj":"08/11/2026"},
-{"label":"S28 \u2014 Vatican, \u00ab Voyage apostolique du Saint-P\u00e8re en Uruguay, en Argentine et au P\u00e9rou (6-17 novembre 2026) \u00bb","ref":"https://www.vatican.va/content/leo-xiv/fr/travels/2026/documents/uruguay-argentina-peru-6-17novembre2026.html","fiabilite":5,"maj":"06/11/2026"},
-{"label":"S29 \u2014 Sant\u00e9 publique France, \u00ab Conference 2026 \u2014 9e Rencontres de Sant\u00e9 publique France, le 9 novembre 2026 au Beffroi de Montrouge \u00bb","ref":"https://www.santepubliquefrance.fr/","fiabilite":5,"maj":"08/11/2026"},
-{"label":"S30 \u2014 AFP, \u00ab France : les estimations de vendanges 2026 revues \u00e0 la hausse, finalement sup\u00e9rieures \u00e0 2025 \u00bb","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261106-47304115, pas d'URL publique","fiabilite":5,"maj":"06/11/2026"},
-{"label":"S31 \u2014 AIToolsRecap, \u00ab AI News, 8 November 2026: Five Stories That Matter \u00bb","ref":"https://aitoolsrecap.com/Blog/ai-news-november-08-2026","fiabilite":3,"maj":"08/11/2026"},
-{"label":"S32 \u2014 Le Monde F\u00e9minin, \u00ab Revue de presse IA du 07/11/2026 \u00bb (IPO OpenAI report\u00e9e \u00e0 2027)","ref":"https://www.lemondefeminin.com/revue-presse-intelligence-artificielle-07/","fiabilite":3,"maj":"07/11/2026"},
-{"label":"S33 \u2014 CNET (fr), \u00ab GPT-6 a vol\u00e9 la vedette, mais Anthropic, Meta et Google ont \u00e9galement pr\u00e9sent\u00e9 de nouveaux mod\u00e8les d'IA \u00bb","ref":"https://fr.cnet.com/ai-1/5647/gpt-6-a-vole-la-vedette-mais-anthropic-meta-et-google-ont-egalement-presente-de-nouveaux-modeles-dia","fiabilite":4,"maj":"11/2026"},
-{"label":"S34 \u2014 Actu.ai, \u00ab Actualit\u00e9s IA de novembre 2026 \u00bb (Mistral Studio, 7 novembre)","ref":"https://www.actu.ai/archives/2026/11/","fiabilite":3,"maj":"07/11/2026"},
-{"label":"S35 \u2014 IA Actualit\u00e9, \u00ab Mistral Large 4 : le pari europ\u00e9en \u00bb (2 novembre 2026)","ref":"https://ia-actualite.fr/rubrique/modeles/","fiabilite":3,"maj":"02/11/2026"},
-{"label":"S36 \u2014 SpaceX, \u00ab Starship Flight 15 \u00bb (page officielle : lancement d\u00e8s le 13 novembre, fen\u00eatre de 75 minutes)","ref":"https://www.spacex.com/launches/starship-flight-15","fiabilite":5,"maj":"08/11/2026"},
-{"label":"S37 \u2014 Wikip\u00e9dia, \u00ab Starship flight 15 \u00bb (Booster 22, Ship 42)","ref":"https://en.wikipedia.org/wiki/Starship_flight_15","fiabilite":3,"maj":"08/11/2026"},
-{"label":"S38 \u2014 Orbital Radar, \u00ab Orbital Briefing, 8 November 2026 \u00bb (16.659 satellites actifs, 9.898 Starlink, 10 personnes dans l'espace)","ref":"https://orbitalradar.com/blog/orbital-briefing-2026-11-08","fiabilite":3,"maj":"08/11/2026"},
-{"label":"S39 \u2014 Spaceflight Now, \u00ab AST SpaceMobile unveils $1.3 billion engine deal with Firefly Aerospace \u00bb","ref":"https://spaceflightnow.com/2026/11/","fiabilite":4,"maj":"06/11/2026"},
-{"label":"S40 \u2014 ESA, \u00ab BepiColombo arrival at Mercury timeline \u00bb (insertion en orbite le 21 novembre)","ref":"https://www.esa.int/media/bepicolombo-arrival-at-mercury-timeline","fiabilite":5,"maj":"06/11/2026"},
-{"label":"S41 \u2014 NASA, blogs de la Station spatiale internationale (Exp\u00e9dition 75)","ref":"https://www.nasa.gov/blogs/spacestation/","fiabilite":5,"maj":"06/11/2026"},
-{"label":"S42 \u2014 ArianeGroup, \u00ab Arianespace lancera 36 satellites Amazon Leo le 23 novembre au plus t\u00f4t \u00bb (10e vol d'Ariane 6)","ref":"https://www.ariane.group/actualite/arianespace-lancera-36-satellites-amazon-leo-le-23-novembre-au-plus-tot-a-loccasion-du-10eme-vol-dariane-6/","fiabilite":4,"maj":"14/10/2026"},
-{"label":"S43 \u2014 ESA, \u00ab MMX lifts off to Mars's moon Phobos \u00bb (lancement du 20 octobre 2026, fus\u00e9e H3)","ref":"https://www.esa.int/media/about-us/directorates/science/space-science/mmx-lifts-off-to-mars-s-moon-phobos","fiabilite":5,"maj":"20/10/2026"},
-{"label":"S44 \u2014 BNP Paribas, Eco Flash \u00ab Banques centrales : une pause en attendant davantage d'informations \u00bb","ref":"https://economic-research.bnpparibas.com/html/fr-FR/Banques-centrales-pause-attendant-davantage-informations-29/10/2026,53882","fiabilite":4,"maj":"29/10/2026"},
-{"label":"S45 \u2014 Banque du Canada, \u00ab \u00c9conomie mondiale \u2014 Rapport sur la politique mon\u00e9taire, octobre 2026 \u00bb","ref":"https://www.banqueducanada.ca/publication/rpm/rpm-2026-10-28/economie-mondiale/","fiabilite":5,"maj":"28/10/2026"},
-{"label":"S46 \u2014 Cour des comptes, \u00ab La situation et les perspectives des finances publiques \u00bb (d\u00e9ficit 2025 : 152,5 Md\u20ac)","ref":"https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17","fiabilite":5,"maj":"2026"},
-{"label":"S47 \u2014 Agence France Tr\u00e9sor, \u00ab Besoins et ressources de financement de l'\u00c9tat en 2027 \u00bb (340 Md\u20ac d'\u00e9missions MLT nettes)","ref":"https://www.aft.gouv.fr/fr/publications/communiques-presse/29092026-besoins-et-ressources-financement-letat-en-2027-et-point","fiabilite":5,"maj":"29/09/2026"},
-{"label":"S48 \u2014 Eco3min, \u00ab Inflation en France : chiffre du mois, ventilation, r\u00e9gime \u00bb","ref":"https://eco3min.fr/inflation-france-en-direct/","fiabilite":3,"maj":"10/2026"},
-{"label":"S49 \u2014 L\u00e9gifrance, Code du travail, chapitre \u00ab Salaire minimum interprofessionnel de croissance \u00bb (articles L3231-1 \u00e0 L3231-12)","ref":"https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000006178024/2025-08-14","fiabilite":5,"maj":"version en vigueur"},
-{"label":"S50 \u2014 L\u00e9gifrance, article L3231-5 du Code du travail (modalit\u00e9s de fixation et de r\u00e9vision du SMIC)","ref":"https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902835","fiabilite":5,"maj":"version en vigueur"},
-{"label":"S51 \u2014 Giovannoni Avocat, \u00ab Arr\u00eat\u00e9 du 22 mai 2026 : revalorisation du SMIC (9,56 \u20ac brut/heure, 1.449,93 \u20ac mensuels, minimum garanti 4,35 \u20ac) \u00bb","ref":"https://www.giovannoni-avocat.fr/articles/arrete-22-mai-2026-pris-sur-fondement-articles-3231-suivants-code-travail-nouveaux-montants-smic-minimum-garanti-4.htm","fiabilite":3,"maj":"2026"},
-{"label":"S52 \u2014 Blohorn Avocats, \u00ab Revalorisation automatique du SMIC au 1er juin 2026 \u00bb","ref":"https://blohorn-avocats.fr/actualites/2026/05/revalorisation-automatique-du-smic-au-1er-juin-2026/","fiabilite":3,"maj":"19/05/2026"},
-{"label":"S53 \u2014 Service-Public.fr, fiches officielles \u00ab SMIC \u00bb et \u00ab Salaire \u00bb","ref":"https://www.service-public.gouv.fr","fiabilite":5,"maj":"version en vigueur"},
-{"label":"S54 \u2014 AFP, \u00ab Apr\u00e8s 13 ans d'attente, le ph\u00e9nom\u00e8ne \u00ab GTA VI \u00bb s'appr\u00eate \u00e0 d\u00e9ferler sur l'industrie du divertissement \u00bb","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261106-ca6bc48c, pas d'URL publique","fiabilite":5,"maj":"06/11/2026"},
-{"label":"S55 \u2014 AFP, \u00ab \u00ab Grand Theft Auto VI \u00bb : ce que l'on sait \u00bb (sortie le 19 novembre, PS5 et Xbox Series)","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261106-78e5cf01, pas d'URL publique","fiabilite":5,"maj":"06/11/2026"},
-{"label":"S56 \u2014 Warp Pipes, \u00ab L'essentiel du jeu vid\u00e9o du dimanche 8 novembre 2026 \u00bb et \u00ab Sorties du 9 au 15 novembre \u00bb (chaque info renvoie \u00e0 sa source)","ref":"https://warppipes.com/fr/","fiabilite":3,"maj":"08/11/2026"},
-{"label":"S57 \u2014 L'\u00c9claireur Fnac, \u00ab Les sorties jeux vid\u00e9o les plus attendues du mois de novembre 2026 \u00bb","ref":"https://leclaireur.fnac.com/selection/cp50160-les-sorties-jeux-video-les-plus-attendues-du-mois-de-novembre-2026/","fiabilite":3,"maj":"03/11/2026"},
-{"label":"S58 \u2014 JeuxVideo.com, calendrier des sorties","ref":"https://www.jeuxvideo.com/jeux/sorties/","fiabilite":3,"maj":"08/11/2026"},
-{"label":"S59 \u2014 RTS, \u00ab Avec le remake d'\u00ab Ocarina of Time \u00bb, Nintendo offre aux fans de Zelda un nouveau voyage dans le temps \u00bb","ref":"https://www.rts.ch/info/culture/jeux-video/","fiabilite":4,"maj":"08/11/2026"},
-{"label":"S60 \u2014 AFP, \u00ab Fan fiction : des millions de lecteurs priv\u00e9s d'histoires apr\u00e8s une cyberattaque \u00bb (AO3 ferm\u00e9e depuis le 29 octobre)","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261107-063a3a18, pas d'URL publique","fiabilite":5,"maj":"07/11/2026"},
-{"label":"S61 \u2014 AFP, \u00ab Crunchyroll, l'animation japonaise qui essaime aupr\u00e8s de la Gen Z \u00bb (Dreamland de Reno Lemaire, 21 millions d'abonn\u00e9s)","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261108-b736d100, pas d'URL publique","fiabilite":5,"maj":"08/11/2026"},
-{"label":"S62 \u2014 L'Officiel des spectacles (Stanislas Nordey met en sc\u00e8ne Mishima aux Bouffes du Nord)","ref":"https://www.offi.fr/","fiabilite":3,"maj":"08/11/2026"},
-{"label":"S63 \u2014 AlloCin\u00e9, \u00ab Sorties cin\u00e9ma du mercredi 11 novembre 2026 \u00bb (agenda)","ref":"https://www.allocine.fr/film/agenda/","fiabilite":3,"maj":"08/11/2026"},
-{"label":"S64 \u2014 Sortir \u00e0 Paris, \u00ab Que faire cette semaine \u00e0 Paris, du 9 au 15 novembre 2026 : les sorties incontournables \u00bb","ref":"https://www.sortiraparis.com/actualites/a-paris/guides/53380-que-faire-cette-semaine-a-paris-du-4-au-10-mai-2026-les-sorties-incontournables","fiabilite":3,"maj":"08/11/2026"},
-{"label":"S65 \u2014 Nature, \u00ab In Vivo CRISPR Base Editing of ANGPTL3 for Durable Lipid Lowering \u00bb (Mizoguchi et al., publi\u00e9 le 6 novembre 2026)","ref":"https://www.nature.com/articles/s41586-026-11233-9.pdf","fiabilite":5,"maj":"06/11/2026"},
-{"label":"S66 \u2014 PubMed / NEJM, \u00ab Phase 1 Trial of CRISPR-Cas9 Gene Editing Targeting ANGPTL3 \u00bb","ref":"https://pubmed.ncbi.nlm.nih.gov/41211945/","fiabilite":5,"maj":"2026"},
-{"label":"S67 \u2014 ScienceDaily, \u00ab Scientists Discover Hidden Brain Changes Linked to Common Sleep Disorders \u00bb (7 novembre 2026)","ref":"https://www.sciencedaily.com/news/","fiabilite":3,"maj":"07/11/2026"},
-{"label":"S68 \u2014 Journal de la M\u00e9t\u00e9o de l'Ain, \u00ab L'actu sciences du 2 au 8 novembre 2026 : les rayons X f\u00eatent une d\u00e9couverte historique \u00bb (8 novembre 1895)","ref":"https://www.lejma.fr/2026/10/29/lactu-sciences-du-2-au-8-novembre-2026-lunivers-se-devoile-et-les-rayons-x-fetent-une-decouverte-historique/","fiabilite":2,"maj":"08/11/2026"},
-{"label":"S69 \u2014 ONU Info, page \u00e9v\u00e9nement \u00ab Conf\u00e9rence des Nations unies sur le climat, COP31 \u2014 Antalya, 9-20 novembre 2026 \u00bb","ref":"https://news.un.org/fr/events/conference-des-nations-unies-sur-le-climat-cop31","fiabilite":5,"maj":"11/2026"},
-{"label":"S70 \u2014 informed, clearly, \u00ab COP31 Antalya : finance climatique et r\u00e9alignement g\u00e9opolitique \u00bb (300 Md$/an NCQG, trajectoire 1.300 Md$)","ref":"https://informedclearly.com/fr/environnement/46892/cop31-antalya-finance-climatique-geopolitique-2026","fiabilite":2,"maj":"11/2026"},
-{"label":"S71 \u2014 Organisation m\u00e9t\u00e9orologique mondiale, \u00ab Les niveaux des gaz \u00e0 effet de serre atteignent de nouveau des records \u00bb","ref":"https://wmo.int/fr/news/media-centre/les-niveaux-des-gaz-effet-de-serre-atteignent-de-nouveau-des-records","fiabilite":5,"maj":"27/10/2026"},
-{"label":"S72 \u2014 AFP, \u00ab Chine : les \u00e9missions de CO2 voient leur chute la plus rapide depuis le Covid \u00bb","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261106-2254f9d2, pas d'URL publique","fiabilite":5,"maj":"06/11/2026"},
-{"label":"S73 \u2014 Prudencia, \u00ab Intersyndicale : d\u00e9cisions attendues apr\u00e8s la conf\u00e9rence sociale \u00bb","ref":"https://www.prudencia.media/articles/intersyndicale__decisions_attendues_apres_la_conference_sociale_d659088e","fiabilite":3,"maj":"08/11/2026"},
-{"label":"S74 \u2014 AFP, \u00ab Mouvement social : et maintenant ? \u00bb","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261106-add660d8, pas d'URL publique","fiabilite":5,"maj":"06/11/2026"},
-{"label":"S75 \u2014 Yahoo Actualit\u00e9s, \u00ab Col\u00e8re sociale : des annonces attendues \u00e0 l'issue de la conf\u00e9rence sociale lundi, \u00ab le gouvernement fera sa part \u00bb \u00bb","ref":"https://fr.news.yahoo.com/colere-sociale-annonces-attendues-a-102806826.html","fiabilite":3,"maj":"07/11/2026"},
-{"label":"S76 \u2014 AFP, \u00ab Macron bat le record d'impopularit\u00e9 de Hollande \u00e0 l'\u00c9lys\u00e9e, selon un sondage \u00bb (Philippe 27 %, Retailleau 26 %, Lisnard +6)","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261105-5e38f706, pas d'URL publique","fiabilite":5,"maj":"05/11/2026"},
-{"label":"S77 \u2014 AFP, \u00ab Pr\u00e9sidentielle : trois quarts des sympathisants de droite et du centre veulent une primaire (sondage Odoxa) \u00bb","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261105-477b39be, pas d'URL publique","fiabilite":5,"maj":"05/11/2026"},
-{"label":"S78 \u2014 AFP, \u00ab Actualit\u00e9s du jeudi 5 novembre 2026 \u00bb (majorit\u00e9 du groupe communiste et ultramarin soutenant M\u00e9lenchon)","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261105-5fad2fe7, pas d'URL publique","fiabilite":5,"maj":"05/11/2026"},
-{"label":"S79 \u2014 Sondages-Pr\u00e9sidentielle2027.fr, intentions de vote en direct (mise \u00e0 jour du 8 novembre 2026)","ref":"https://sondages-presidentielle2027.fr/","fiabilite":3,"maj":"08/11/2026"},
-{"label":"S80 \u2014 RTS, \u00ab Midterms 2026 : Donald Trump d\u00e9nonce des \u00e9lections \u00ab truqu\u00e9es \u00bb \u00bb","ref":"https://www.rts.ch/info/monde/2026/article/midterms-2026-donald-trump-denonce-des-elections-truquees-29407527.html","fiabilite":4,"maj":"07/11/2026"},
-{"label":"S81 \u2014 France Inter, \u00ab Les d\u00e9mocrates prennent le contr\u00f4le du Congr\u00e8s, Trump reconna\u00eet la d\u00e9faite et salue un \u00ab bon boulot \u00bb \u00bb","ref":"https://www.radiofrance.fr/franceinter/podcasts/l-info-de-france-inter/aux-etats-unis-les-democrates-remportent-le-senat-et-sont-sur-le-point-de-decrocher-la-chambre-des-representants-3173878","fiabilite":4,"maj":"04/11/2026"},
-{"label":"S82 \u2014 RTS, \u00ab Midterms 2026 : d\u00e9faite historique pour Donald Trump \u00bb","ref":"https://www.rts.ch/info/monde/2026/article/midterms-2026-defaite-historique-pour-donald-trump-29405950.html","fiabilite":4,"maj":"06/11/2026"},
-{"label":"S83 \u2014 RFI, \u00ab Midterms aux \u00c9tats-Unis : raz-de-mar\u00e9e d\u00e9mocrate et revers cinglant pour Donald Trump \u00bb","ref":"https://www.rfi.fr/fr/am%C3%A9riques/20261104-midterms-aux-%C3%A9tats-unis-raz-de-mar%C3%A9e-d%C3%A9mocrate-et-revers-cinglant-pour-donald-trump","fiabilite":4,"maj":"04/11/2026"},
-{"label":"S84 \u2014 RTS, \u00ab Midterms 2026 : l'emprise de Donald Trump sur son parti s'effrite \u00bb","ref":"https://www.rts.ch/info/monde/2026/article/midterms-2026-l-emprise-de-donald-trump-sur-son-parti-s-effrite-29406694.html","fiabilite":4,"maj":"07/11/2026"},
-{"label":"S85 \u2014 Yahoo Actualit\u00e9s, \u00ab Il ne faut pas l'enterrer : pourquoi la d\u00e9faite de Trump aux midterms n'est pas une garantie de victoire d\u00e9mocrate en 2028 \u00bb","ref":"https://fr.news.yahoo.com/ne-faut-l-enterrer-pourquoi-074300922.html","fiabilite":3,"maj":"07/11/2026"},
-{"label":"S86 \u2014 France 24, \u00ab Midterms : ce que change une majorit\u00e9 d\u00e9mocrate au Congr\u00e8s pour Trump et les r\u00e9publicains \u00bb","ref":"https://www.france24.com/fr/am%C3%A9riques/20261104-midterms-ce-que-change-une-majorit%C3%A9-d%C3%A9mocrate-au-congr%C3%A8s-pour-trump-et-les-r%C3%A9publicains","fiabilite":4,"maj":"04/11/2026"},
-{"label":"S87 \u2014 Euronews, \u00ab Live \u2014 Midterms : d\u00e9faite cuisante pour Donald Trump, les d\u00e9mocrates reprennent le contr\u00f4le du Congr\u00e8s \u00bb","ref":"https://fr.euronews.com/2026/11/04/midterms-2026-les-premiers-bureaux-de-vote-ont-ferme","fiabilite":4,"maj":"04/11/2026"},
-{"label":"S88 \u2014 AFP, \u00ab Avec la vague d\u00e9mocrate au Congr\u00e8s, regain d'espoir pour l'Ukraine \u00bb","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261105-0d581fc8, pas d'URL publique","fiabilite":5,"maj":"05/11/2026"},
-{"label":"S89 \u2014 AFP, \u00ab Washington met en garde la Chine et l'appelle \u00e0 respecter les clauses de leur accord commercial \u00bb (conversation avec He Lifeng)","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261106-2563a239, pas d'URL publique","fiabilite":5,"maj":"06/11/2026"},
-{"label":"S90 \u2014 AFP, \u00ab La Chine d\u00e9ment vouloir \u00ab \u00e9touffer \u00bb les autres \u00e9conomies \u00bb","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261105-999f3db5, pas d'URL publique","fiabilite":5,"maj":"05/11/2026"},
-{"label":"S91 \u2014 Euronews, page Chine (\u00ab P\u00e9kin menace l'UE de repr\u00e9sailles \u00bb ; \u00ab Hong Kong : Joshua Wong condamn\u00e9 \u00e0 10 ans de prison suppl\u00e9mentaires \u00bb)","ref":"https://fr.euronews.com/tag/chine","fiabilite":4,"maj":"07/11/2026"},
-{"label":"S92 \u2014 AFP, \u00ab Automobile : la Chine, d'eldorado \u00e0 casse-t\u00eate pour les constructeurs allemands \u00bb","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261106-bb88cfcb, pas d'URL publique","fiabilite":5,"maj":"06/11/2026"},
-{"label":"S93 \u2014 AFP, \u00ab L'Ukraine frapp\u00e9e par des bombardements nocturnes russes \u00ab massifs \u00bb (36 missiles, 172 drones) \u00bb","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261107-d44ab8c1, pas d'URL publique","fiabilite":5,"maj":"07/11/2026"},
-{"label":"S94 \u2014 AFP, \u00ab L'Ukraine touch\u00e9e par des frappes russes \u00ab massives \u00bb contre le r\u00e9seau \u00e9nerg\u00e9tique \u00bb","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261107-f3e934f6, pas d'URL publique","fiabilite":5,"maj":"07/11/2026"},
-{"label":"S95 \u2014 AFP, \u00ab Guerre en Ukraine : l'UE doit \u00eatre associ\u00e9e \u00e0 tout r\u00e8glement, selon Kaja Kallas \u00bb","ref":"d\u00e9p\u00eache, r\u00e9f. news-afp-20261106-48710429, pas d'URL publique","fiabilite":5,"maj":"06/11/2026"}
-],
-"hors_chapitres": [
-"Voile : Tom Laperche a remport\u00e9 sa premi\u00e8re Route du Rhum dans la nuit de samedi \u00e0 dimanche, en 6 jours, 14 heures et 29 minutes \u2014 un chrono record pour la 13e \u00e9dition \u2014, devant Thomas Coville et Louis Burton ; il a b\u00e9n\u00e9fici\u00e9 d\u2019une bonification d\u2019une heure et deux minutes pour s\u2019\u00eatre temporairement d\u00e9rout\u00e9 vers Armel Le Cl\u00e9ac\u2019h, qui avait d\u00e9clench\u00e9 sa balise de d\u00e9tresse \u2014 un vainqueur accueilli triomphalement \u00e0 Pointe-\u00e0-Pitre (S18, S19, S20).",
-"Football (Ligue 1) : lors de la 10e journ\u00e9e disput\u00e9e ce dimanche, Lille a gagn\u00e9 2-1 \u00e0 Rennes, Nice 2-0 \u00e0 Angers, Brest 2-0 contre Lyon, Lorient 2-0 au Havre, Monaco a \u00e9t\u00e9 tenu en \u00e9chec 1-1 par Le Mans et Marseille s\u2019est impos\u00e9 2-1 \u00e0 Lens (S21, S22).",
-"Football (Angleterre) : 10e journ\u00e9e de Premier League \u2014 samedi, Nottingham Forest a battu Manchester City 3-1, Leeds United Tottenham 1-0, Arsenal Hull 1-0 et Fulham a accroch\u00e9 Newcastle (1-1) ; les matchs du dimanche cl\u00f4turaient la journ\u00e9e (S23).",
-"Football (Espagne, Italie, Portugal) : en Liga, le Real Madrid a brill\u00e9 samedi \u00e0 Valence (3-0) lors de la 12e journ\u00e9e ; en Serie A, l\u2019AS Rome a \u00e9cras\u00e9 Sassuolo (3-0) et Bologne s\u2019est impos\u00e9e \u00e0 Parme (2-1) ; au Portugal, la 11e journ\u00e9e s\u2019est achev\u00e9e ce week-end (S24, S25, S26).",
-"\u00c9quipe de France : pour son deuxi\u00e8me rassemblement, Zin\u00e9dine Zidane a rappel\u00e9 Kylian Mbapp\u00e9 et plusieurs cadres, en int\u00e9grant la surprise Pagis, selon le point d\u2019actualit\u00e9s de l\u2019AFP du samedi (S2).",
-"Jeux olympiques de la jeunesse : \u00e0 Dakar, la d\u00e9l\u00e9gation fran\u00e7aise disputait ce dimanche ses \u00e9preuves du jour (athl\u00e9tisme, badminton, basketball 3x3, beach handball\u2026), r\u00e9sultats en continu sur le site de l\u2019\u00e9quipe de France (S27).",
-"Religions : trois semaines apr\u00e8s son op\u00e9ration au poumon, le pape L\u00e9on XIV c\u00e9l\u00e8bre dimanche la messe du premier grand rassemblement de sa tourn\u00e9e de douze jours en Uruguay, en Argentine et au P\u00e9rou (6-17 novembre), apr\u00e8s avoir \u00e9t\u00e9 acclam\u00e9 en papamobile \u00e0 Montevideo (S28, S2).",
-"Sant\u00e9 publique : les 9es Rencontres de Sant\u00e9 publique France se tiennent ce lundi 9 novembre au Beffroi de Montrouge, avec un programme centr\u00e9 sur les donn\u00e9es, la pr\u00e9vention et l\u2019organisation des soins (S29).",
-"Agriculture : les estimations de vendanges 2026 ont \u00e9t\u00e9 revues \u00e0 la hausse par les statistiques du minist\u00e8re de l\u2019Agriculture, la r\u00e9colte s\u2019annon\u00e7ant finalement sup\u00e9rieure \u00e0 celle de 2025, notamment gr\u00e2ce au sud du pays (S30).",
-"Soci\u00e9t\u00e9 (Isra\u00ebl) : une directrice de cr\u00e8che et deux employ\u00e9es d\u2019Ariel sont accus\u00e9es de plus de 400 actes de maltraitance sur 17 b\u00e9b\u00e9s et jeunes enfants (\u00e9tranglements, contraintes physiques, gavage), selon le parquet cit\u00e9 par la presse isra\u00e9lienne du dimanche (S4)."
-]
+  "date": "2026-11-09",
+  "genere_le": "2026-11-09T23:49:37.796Z",
+  "html": "editions/2026-11-09.html",
+  "resume_executif": [
+    "France : Teddy Riner, quintuple champion olympique de judo, annonce lundi sa candidature à la présidentielle 2027 — « Je m'appelle Teddy Riner et aujourd'hui, je suis candidat » — tandis que le sondage Harris/M6-RTL creuse l'écart en tête (Le Pen 34-36 %, Mélenchon 18-19 %, Philippe en baisse) et que le budget 2027 s'ouvre au Sénat (S4, S5, S6).",
+    "Climat : la COP31 s'est ouverte lundi à Antalya (Turquie) — Antonio Guterres appelle les États à « se montrer à la hauteur », la bataille des financements commence dès l'ordre du jour, et l'OMM publie son State of the Climate Update 2026 : les pays en développement auront besoin de 305 milliards de dollars par an d'ici 2035 (S7, S8, S9, S10).",
+    "Jeu vidéo : GTA VI est ouvert au préchargement depuis midi — 212 Go, près de 8 millions de précommandes deux semaines avant la sortie du 19 novembre, attendu comme le plus grand lancement d'un produit de divertissement de l'histoire (S1, S2, S3).",
+    "Géopolitique : les négociations Ukraine-Russie reprennent mardi et mercredi à Abou Dhabi sous médiation américaine, après plus de huit mois d'interruption ; Donald Trump juge « très improbable » une reprise de la guerre contre l'Iran, dont les tractations sont « à l'arrêt » (S12, S13, S47, S48).",
+    "Intelligence artificielle : OpenAI lance GPT-6 Cyber, un modèle offensif de cybersécurité, l'offre ChatGPT Enterprise arrive sur AWS Marketplace et la française Mistral absorbe SkipLabs pour fiabiliser le code généré (S29, S30, S31)."
+  ],
+  "chapitres": [
+    {
+      "id": "intelligence-artificielle",
+      "emoji": "🤖",
+      "nom": "Intelligence artificielle",
+      "resume": "GPT-6 Cyber chez OpenAI, agents de longue haleine chez Perplexity, code fiabilisé chez Mistral : lundi annonce une journée sécurité et agents — et l'IA française continue de se structurer."
+    },
+    {
+      "id": "spatial",
+      "emoji": "🚀",
+      "nom": "Spatial",
+      "resume": "Un Falcon 9 décolle lundi soir pour l'USSF-627 depuis Vandenberg, Starship prépare son vol 15 le plus ambitieux, et Ariane 6 attend son 10e vol le 23 novembre — la semaine s'annonce chargée."
+    },
+    {
+      "id": "economie-pour-les-nuls",
+      "emoji": "💰",
+      "nom": "L’Économie pour les nuls",
+      "resume": "Côté monde, la Chine publie un paradoxe : les prix sortis d'usine accélèrent (PPI à 5,7 %) pendant que les ménages n'inflent presque plus (CPI à 0,7 %). Côté France, le PIB a reculé de 0,1 % au troisième trimestre."
+    },
+    {
+      "id": "droit-pour-les-nuls",
+      "emoji": "⚖️",
+      "nom": "Le Droit pour les nuls",
+      "resume": "La garantie légale de conformité : deux ans pour se faire réparer, remplacer ou rembourser un produit défectueux — un droit automatique, gratuit, que le Code de la consommation renforce encore le 20 novembre."
+    },
+    {
+      "id": "jeu-video-pop-culture",
+      "emoji": "🎮",
+      "nom": "Jeu vidéo & pop culture",
+      "resume": "GTA VI s'ouvre au préchargement midi pile — 212 Go, 8 millions de précommandes, boîte sans disque — pendant que la saga s'interroge sur sa propre political correctness et qu'AO3 reste fermée."
+    },
+    {
+      "id": "culture",
+      "emoji": "🎭",
+      "nom": "Culture",
+      "resume": "Le documentaire se fabrique en direct au théâtre, l'anime français affirme sa génération, le film français s'exporte en Allemagne et la semaine déborde de sorties cinéma."
+    },
+    {
+      "id": "sciences",
+      "emoji": "🔬",
+      "nom": "Sciences",
+      "resume": "Un complément vitaminé contre le psoriasis, la montagne qui paie une canicule d'automne, et un télescope infrarouge qui cartographie l'invisible : la science de ce lundi."
+    },
+    {
+      "id": "climat",
+      "emoji": "🌍",
+      "nom": "Climat",
+      "resume": "COP31, jour d'ouverture à Antalya : « se montrer à la hauteur », la bataille de l'argent commence, et l'électrification se invite en alliance controversée."
+    },
+    {
+      "id": "politique-francaise",
+      "emoji": "🇫🇷",
+      "nom": "Politique française",
+      "resume": "Teddy Riner entre en campagne par vidéo, les sondages creusent l'écart en tête, et le Sénat ouvre le marathon budgétaire : la présidentielle 2027 s'écrit dans un pays à cran."
+    },
+    {
+      "id": "etats-unis",
+      "emoji": "🇺🇸",
+      "nom": "États-Unis",
+      "resume": "Après la déroute des midterms, Trump digère, concède sur l'immigration, contre-attaque sur les enquêtes — et un républicain dépose une impeachment contre Hegseth."
+    },
+    {
+      "id": "chine",
+      "emoji": "🇨🇳",
+      "nom": "Chine",
+      "resume": "Prix sortis d'usine en forte hausse, consommation au ralenti, énergie renchérit par la guerre : Pékin gère deux économies à la fois — et se toise avec Washington sur l'accord commercial."
+    },
+    {
+      "id": "russie",
+      "emoji": "🇷🇺",
+      "nom": "Russie",
+      "resume": "Moscou reprend la table des négociations : Medinski et Riabkov siègent à Abou Dhabi, pendant que l’économie de guerre donne des signaux d’essoufflement."
+    },
+    {
+      "id": "geopolitique",
+      "emoji": "🌐",
+      "nom": "Géopolitique mondiale",
+      "resume": "Négociations ukrainiennes à Abou Dhabi, tractations iraniennes à l'arrêt, gaz touché au Kurdistan : un Moyen-Orient en pause fragile sur fond de guerre d'usure."
+    },
+    {
+      "id": "grande-info-semaine",
+      "emoji": "📰",
+      "nom": "Grande information de la semaine",
+      "resume": "Midterms américaines, Route du Rhum record, GTA VI qui approche, prix littéraires dévoilés et négociations ukrainiennes : la semaine qui vient de s'achever a déplacé les lignes."
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1 — AFP, « Jeux vidéo : les fans commencent à télécharger GTA VI, avant sa sortie le 19 novembre »",
+      "ref": "dépêche, réf. news-afp-20261109-00df43fa, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S2 — AFP, « Cinq choses à savoir sur les jeux vidéo Grand Theft Auto »",
+      "ref": "dépêche, réf. news-afp-20261109-3c5604db, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S3 — AFP, « De jeu vidéo sulfureux à divertissement de masse : GTA devient-il politiquement correct ? »",
+      "ref": "dépêche, réf. news-afp-20261109-9772dc71, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S4 — AFP, « Des tatamis à l'Élysée ? Teddy Riner candidat surprise à la présidentielle »",
+      "ref": "dépêche, réf. news-afp-20261109-c745c7dc, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S5 — AFP, « Présidentielle : Mélenchon et Le Pen en hausse, Philippe encore en baisse selon un sondage » (Harris Interactive pour M6/RTL) — repris par RTL",
+      "ref": "https://www.rtl.fr/actu/politique/presidentielle-2027-melenchon-s-installe-derriere-le-pen-glucksmann-chute-et-lisnard-cree-la-surprise-dans-un-sondage-7900692301",
+      "fiabilite": 5,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S6 — AFP, « Budget : le Sénat prend la main, l'incertitude demeure »",
+      "ref": "dépêche, réf. news-afp-20261108-8f7e7d17, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "08/11/2026"
+    },
+    {
+      "label": "S7 — AFP, « La COP31 s'ouvre avec un appel à se montrer à la hauteur face à l'urgence climatique »",
+      "ref": "dépêche, réf. news-afp-20261108-5deb635a, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "08/11/2026"
+    },
+    {
+      "label": "S8 — AFP, « À la COP31, le monde face à l'urgence climatique, et au manque d'argent »",
+      "ref": "dépêche, réf. news-afp-20261109-7c99b3fc, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S9 — ONU Info, « COP31 : quels sont les enjeux du sommet de l'ONU sur le climat ? »",
+      "ref": "https://news.un.org/fr/story/2026/11/1159793",
+      "fiabilite": 5,
+      "maj": "11/2026"
+    },
+    {
+      "label": "S10 — Organisation météorologique mondiale, « COP31 – State of Climate Update 2026 » (déclaration de Celeste Saulo)",
+      "ref": "https://wmo.int/secretariat/celeste-saulo/cop31-state-of-climate-update-2026-press-conference-statement",
+      "fiabilite": 5,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S11 — ONU Info, « COP31 : les promesses climatiques peuvent-elles enfin se traduire par des résultats ? »",
+      "ref": "https://news.un.org/fr/story/2026/11/1159809",
+      "fiabilite": 5,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S12 — AFP, « Ukraine-Russie : ce que l'on sait sur la reprise des négociations »",
+      "ref": "dépêche, réf. news-afp-20261109-8018c007, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S13 — AFP, « Rubio fait état de progrès pour l'architecture de sécurité après la guerre en Ukraine »",
+      "ref": "dépêche, réf. news-afp-20261108-c24a3f39, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "08/11/2026"
+    },
+    {
+      "label": "S14 — AFP, « L'Ukraine touchée par des frappes russes massives contre le réseau énergétique »",
+      "ref": "dépêche, réf. news-afp-20261107-f3e934f6, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "07/11/2026"
+    },
+    {
+      "label": "S15 — ONU Info, « Ukraine : à l'approche de l'hiver, l'ONU alerte sur l'escalade des frappes russes »",
+      "ref": "https://news.un.org/fr/story/2026/11/1159806",
+      "fiabilite": 5,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S16 — AFP, « Trump reconnaît une politique d'expulsions d'immigrés trop dure (interview à CBS) » — repris par France 24",
+      "ref": "https://www.france24.com/fr/info-en-continu/20261108-apr%C3%A8s-sa-d%C3%A9route-face-aux-d%C3%A9mocrates-trump-promet-de-rendre-coup-pour-coup",
+      "fiabilite": 5,
+      "maj": "08/11/2026"
+    },
+    {
+      "label": "S17 — AFP, « Selon Trump la victoire des démocrates est un gigantesque pas en arrière dans l'Histoire des États-Unis »",
+      "ref": "dépêche, réf. news-afp-20261108-da140cd4, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "08/11/2026"
+    },
+    {
+      "label": "S18 — AFP, « Le ministre de la Justice prêt à défendre tout membre de l'administration Trump visé par les démocrates »",
+      "ref": "dépêche, réf. news-afp-20261108-1b948095, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "08/11/2026"
+    },
+    {
+      "label": "S19 — Radio-Canada, « Un républicain dépose huit articles de mise en accusation contre Pete Hegseth »",
+      "ref": "https://ici.radio-canada.ca/theme/259/politique-americaine",
+      "fiabilite": 4,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S20 — AFP, « Chine : l'inflation des prix sortie d'usine accélère en octobre »",
+      "ref": "dépêche, réf. news-afp-20261109-26624464, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S21 — AFP, « Washington met en garde la Chine et l'appelle à respecter les clauses de leur accord commercial »",
+      "ref": "dépêche, réf. news-afp-20261106-2563a239, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "06/11/2026"
+    },
+    {
+      "label": "S22 — Journal de la Météo de l'Ain, « Sciences : une semaine tournée vers les étoiles, l'intelligence artificielle et les grands défis de la planète » (et brèves du 8-9 novembre : canicule dans les Alpes, avalanches, El Niño, rayons X)",
+      "ref": "https://www.lejma.fr/2026/11/09/sciences-une-semaine-tournee-vers-les-etoiles-lintelligence-artificielle-et-les-grands-defis-de-la-planete/",
+      "fiabilite": 2,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S23 — ScienceDaily, « Common Supplement Could Help Fight Psoriasis, Scientists Discover » (pantéthine, dérivé de la vitamine B5)",
+      "ref": "https://www.sciencedaily.com/",
+      "fiabilite": 3,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S24 — SpaceX, page officielle « USSF-627 Mission » (Falcon 9, Vandenberg SLC-4E, fenêtre du 9 novembre)",
+      "ref": "https://www.spacex.com/launches/ussf627",
+      "fiabilite": 5,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S25 — SpaceNexus, « SpaceX Launch Schedule November 2026 » (9 lancements au manifeste, 1 accompli)",
+      "ref": "https://spacenexus.us/launches/spacex/2026-11",
+      "fiabilite": 3,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S26 — InSpace News, « Lancement Starship – Flight 15 : date, heure et direct » (visé 13 novembre)",
+      "ref": "https://inspacenews.fr/lancement/starship-flight-15",
+      "fiabilite": 3,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S27 — Numerama, « Ce que la fusée géante Starship va tenter dans les airs minute par minute, si tout se passe bien »",
+      "ref": "https://www.numerama.com/sciences/2370717-ce-que-la-fusee-geante-starship-va-tenter-dans-les-airs-minute-par-minute-si-tout-se-passe-bien.html",
+      "fiabilite": 4,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S28 — Outre-mer La 1ère, « Arianespace : prochain lancement le 23 novembre 2026 » (36 satellites Amazon Leo, 10e vol d'Ariane 6)",
+      "ref": "https://la1ere.franceinfo.fr/guyane/arianespace-prochain-lancement-le-23-novembre-2026-1748400.html",
+      "fiabilite": 4,
+      "maj": "11/2026"
+    },
+    {
+      "label": "S29 — OpenAI, page News — annonces du 9 novembre : « GPT-6 Cyber », « Control Room », « ChatGPT Enterprise now available in AWS Marketplace », partenariat Hacktron",
+      "ref": "https://openai.com/news/",
+      "fiabilite": 5,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S30 — dcod.ch, « OpenAI lance GPT-6 Cyber et verrouille son modèle offensif »",
+      "ref": "https://dcod.ch/2026/11/09/openai-lance-gpt-6-cyber/",
+      "fiabilite": 3,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S31 — Le Monde Informatique, « Mistral rachète SkipLabs et crée une équipe dédiée aux langages »",
+      "ref": "https://www.lemondeinformatique.fr/donnees-ia/2026-11-06-mistral-rachete-skiplabs-et-cree-une-equipe-dediee-aux-langages",
+      "fiabilite": 4,
+      "maj": "06/11/2026"
+    },
+    {
+      "label": "S32 — Actu.ai, « Mistral AI rachète SkipLabs pour fiabiliser le code de ses IA »",
+      "ref": "https://www.actu.ai/mistral-ai-rachete-skiplabs-equipe-language-fiabilite-code-genere-80112.html",
+      "fiabilite": 3,
+      "maj": "11/2026"
+    },
+    {
+      "label": "S33 — Blog du Modérateur, « Perplexity lance Teammates, des agents IA pour les tâches de longue haleine » (6 novembre)",
+      "ref": "https://www.blogdumoderateur.com/ia/",
+      "fiabilite": 4,
+      "maj": "06/11/2026"
+    },
+    {
+      "label": "S34 — AFP, « Au théâtre, la fabrication en direct de documentaires poignants » (Radio Live, Aurélie Charon et Caroline Gillet)",
+      "ref": "dépêche, réf. news-afp-20261109-a4526181, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S35 — AFP, « Crunchyroll, l'animation japonaise qui essaime auprès de la Gen Z »",
+      "ref": "dépêche, réf. news-afp-20261108-b736d100, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "08/11/2026"
+    },
+    {
+      "label": "S36 — Unifrance, « Rendez-vous à la 26e Semaine du film français d'Allemagne » (9 novembre 2026)",
+      "ref": "https://www.unifrance.org/",
+      "fiabilite": 5,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S37 — AlloCiné, agenda des sorties cinéma de la semaine (Wild Horse Nine, Club Kid, Godzilla Minus Zero, Ramayana, Ma toute petite école, Carlo Acutis…)",
+      "ref": "https://www.allocine.fr/film/agenda/",
+      "fiabilite": 3,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S38 — Légifrance, Code de la consommation (en vigueur au 1er novembre 2026) — garantie légale de conformité, articles L217-3 à L217-20",
+      "ref": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006069565/",
+      "fiabilite": 5,
+      "maj": "version en vigueur"
+    },
+    {
+      "label": "S39 — Légifrance, Décret n° 2026-596 du 6 juillet 2026 modifiant le décret n° 2015-587 (contrats types de location de logement à usage de résidence principale)",
+      "ref": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000054393114/",
+      "fiabilite": 5,
+      "maj": "version consolidée"
+    },
+    {
+      "label": "S40 — gdroit, « Ce qui change au 20 novembre 2026 : les textes qui entrent en vigueur » (197 articles de 2 codes, Code de la consommation en tête)",
+      "ref": "https://gdroit.fr/veille-juridique/ce-qui-change-au-20-novembre-2026/",
+      "fiabilite": 3,
+      "maj": "11/2026"
+    },
+    {
+      "label": "S41 — Insee, Informations rapides n° 263, « Le PIB recule légèrement au troisième trimestre 2026 (-0,1 % après 0,0 %) »",
+      "ref": "https://www.insee.fr/fr/statistiques/9111036",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "S42 — AFP, « En France, le PIB recule au 3ème trimestre et l'économie française est à l'arrêt » (Roland Lescure)",
+      "ref": "dépêche, réf. news-afp-20261030-bdc0be60, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "S43 — Insee, tableau de bord de l'économie française (inflation : +3,4 % en glissement annuel en octobre 2026)",
+      "ref": "https://www.insee.fr/fr/accueil",
+      "fiabilite": 5,
+      "maj": "11/2026"
+    },
+    {
+      "label": "S44 — AFP, « Irak : attaque sur un complexe gazier au Kurdistan »",
+      "ref": "dépêche, réf. news-afp-20261108-c9ce8b02, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "08/11/2026"
+    },
+    {
+      "label": "S45 — AFP, « La Syrie n'a pas de troupes au Yémen, assure son ministre des Affaires étrangères »",
+      "ref": "dépêche, réf. news-afp-20261109-41ac42dc, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S46 — AFP, « La mission d'Israël en Iran n'est pas terminée, déclare le ministre de la Défense » (Israel Katz)",
+      "ref": "dépêche, réf. news-afp-20261108-7fac5eb7, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "08/11/2026"
+    },
+    {
+      "label": "S47 — AFP, « Guerre au Moyen-Orient : l'Iran dit que les tractations sont à l'arrêt après le choc des élections américaines »",
+      "ref": "dépêche, réf. news-afp-20261108-eae7909e, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "08/11/2026"
+    },
+    {
+      "label": "S48 — AFP, « Iran : Trump juge très improbable une reprise de la guerre avant de recevoir le Premier ministre du Qatar »",
+      "ref": "dépêche, réf. news-afp-20261108-8c1bd33d, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "08/11/2026"
+    },
+    {
+      "label": "S49 — RFI, « Guerre en Ukraine : Melania Trump, nouvelle médiatrice du conflit ? » (cessez-le-feu de Kherson)",
+      "ref": "https://www.rfi.fr/fr/tag/ukraine/",
+      "fiabilite": 4,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S50 — AFP, « Route du Rhum : Tom Laperche triomphe avec un chrono record »",
+      "ref": "dépêche, réf. news-afp-20261108-ee54923f, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "08/11/2026"
+    },
+    {
+      "label": "S51 — RFI, « Voile : Tom Laperche s'impose dans la Route du Rhum et bat le record de la traversée »",
+      "ref": "https://www.rfi.fr/fr/sports/20261108-voile-tom-laperche-s-impose-dans-la-route-du-rhum-et-bat-le-record-de-la-travers%C3%A9e",
+      "fiabilite": 4,
+      "maj": "08/11/2026"
+    },
+    {
+      "label": "S52 — France 24, « Alcaraz vainqueur, Laperche triomphe, l'OM enfonce Lens : les infos sport du week-end »",
+      "ref": "https://www.france24.com/fr/sports/20261109-alcaraz-laperche-om-lens-infos-sport-week-end",
+      "fiabilite": 4,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S53 — L'Attaquant, « Revue de presse Sport du 9 novembre 2026 » (Manchester United–Aston Villa, USM Alger, Cameroun)",
+      "ref": "https://www.lattaquant.com/revue-de-presse-sport-du-9-novembre-2026/",
+      "fiabilite": 3,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S54 — AFP, « Actualités du dimanche 8 novembre 2026 » (braquages d'entreprises de joaillerie à Besançon : 8 mises en examen, butin retrouvé)",
+      "ref": "dépêche, réf. news-afp-20261108-9b73b609, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "08/11/2026"
+    },
+    {
+      "label": "S55 — Sport.fr, « Golf : à 19 ans, Blades Brown efface Jordan Spieth et entre dans l'histoire du PGA Tour » (exploit inédit depuis 1931)",
+      "ref": "https://www.sport.fr/",
+      "fiabilite": 3,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S56 — Hospimedia, édition du 09/11/2026 (praticiens polynésiens démissionnaires, IA et santé mentale)",
+      "ref": "https://www.hospimedia.fr/edition-quotidienne/2026-11-09",
+      "fiabilite": 3,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S57 — Santé publique France, « Rencontres de Santé publique France : 9 novembre 2026 » (9e édition, ~1 200 experts, Beffroi de Montrouge)",
+      "ref": "https://www.santepubliquefrance.fr/les-actualites/rencontres-de-sante-publique-france-9-novembre-2026",
+      "fiabilite": 5,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S58 — Ameli.fr (exercice coordonné), « Antibiotiques : évaluer la pertinence de chaque prescription » (la France parmi les plus gros consommateurs d'Europe)",
+      "ref": "https://www.ameli.fr/exercice-coordonne/actualites",
+      "fiabilite": 5,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S59 — Le Quotidien du Médecin, édition du 9 novembre 2026 (« Imagerie médicale : après la radiation d'Imapôle à Lyon, un projet de reprise contesté »)",
+      "ref": "https://www.lequotidiendumedecin.fr/edition-quotidienne",
+      "fiabilite": 3,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S60 — IGN France, « Un célèbre magasin londonien se met aux couleurs de GTA 6 et vend une veste universitaire exclusive à plus de 2 000 euros »",
+      "ref": "https://fr.ign.com/",
+      "fiabilite": 3,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S61 — RTS, « Jeux vidéo : la fin des disques sur PlayStation n'en finit plus de déranger »",
+      "ref": "https://www.rts.ch/info/culture/jeux-video/",
+      "fiabilite": 4,
+      "maj": "11/2026"
+    },
+    {
+      "label": "S62 — Numerama, « Des traces du mode Master Quest dans le remake d'Ocarina of Time ont été trouvées »",
+      "ref": "https://www.numerama.com/pop-culture/jeux-video/",
+      "fiabilite": 3,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S63 — AFP, « Fan fiction : des millions de lecteurs privés d'histoires après une cyberattaque » (AO3 fermée depuis le 29 octobre)",
+      "ref": "dépêche, réf. news-afp-20261107-063a3a18, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "07/11/2026"
+    },
+    {
+      "label": "S64 — Radio France / France Culture, événements culturels (LaCinetek Film Festival, 6-7 novembre 2026)",
+      "ref": "https://www.radiofrance.fr/franceculture/evenements",
+      "fiabilite": 4,
+      "maj": "11/2026"
+    },
+    {
+      "label": "S65 — South China Morning Post, page China Economy (« China plans to boost yuan use in shipping risk-pricing »)",
+      "ref": "https://www.scmp.com/economy/china-economy",
+      "fiabilite": 4,
+      "maj": "11/2026"
+    },
+    {
+      "label": "S66 — AFP, « Automobile : la Chine, d'eldorado à casse-tête pour les constructeurs allemands »",
+      "ref": "dépêche, réf. news-afp-20261106-bb88cfcb, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "06/11/2026"
+    },
+    {
+      "label": "S67 — DG Trésor, « Brèves hebdomadaires du SER de Pékin – Semaine du 26 octobre 2026 »",
+      "ref": "https://www.tresor.economie.gouv.fr/Articles/2026/10/30/breves-hebdomadaires-du-ser-de-pekin-semaine-du-26-octobre-2026",
+      "fiabilite": 4,
+      "maj": "30/10/2026"
+    },
+    {
+      "label": "S68 — Institut de recherche stratégique (ISS), « Guerre en Ukraine : le prix payé par la Russie » (croissance 1 % en 2025, dépenses militaires 190 Md$, 7,5 % du PIB)",
+      "ref": "https://www.institut-sciences-strategiques.org/etats/russie/les-consequences-politiques-et-economiques-de-la-guerre-en-ukraine-pour-la-russie/",
+      "fiabilite": 4,
+      "maj": "2026"
+    },
+    {
+      "label": "S69 — Le Grand Continent, « Comment Poutine est en train de ruiner l'économie russe » (10 septembre 2026)",
+      "ref": "https://legrandcontinent.eu/fr/2026/09/10/comment-poutine-est-en-train-de-ruiner-leconomie-russe/",
+      "fiabilite": 4,
+      "maj": "10/09/2026"
+    },
+    {
+      "label": "S70 — AFP, « Iran : l'armée vante sa force, le Qatar salue un engagement américain à trouver un accord » (Ali Vaez, International Crisis Group)",
+      "ref": "dépêche, réf. news-afp-20261107-7a2cf7f9, pas d'URL publique",
+      "fiabilite": 5,
+      "maj": "07/11/2026"
+    },
+    {
+      "label": "S71 — Insightmag, « Prix littéraires 2026 : Goncourt, Renaudot, Femina, Médicis — le palmarès complet de la rentrée » (4 novembre 2026)",
+      "ref": "https://www.insightmag.com/actu3906/palmares-prix-litteraires-goncourt-renaudot-femina-medicis-2026/",
+      "fiabilite": 3,
+      "maj": "04/11/2026"
+    },
+    {
+      "label": "S72 — ESA, « Roman lifts off on a mission to survey the infrared sky » (contributions ESA : senseurs d'étoiles, batteries, coronographe)",
+      "ref": "https://www.esa.int/fr/media/roman-lifts-off-on-a-mission-to-survey-the-infrared-sky",
+      "fiabilite": 5,
+      "maj": "11/2026"
+    },
+    {
+      "label": "S73 — CNET France, « GPT-6 a volé la vedette, mais Anthropic, Meta et Google ont également présenté de nouveaux modèles d'IA cette semaine » (contexte des modèles d'octobre)",
+      "ref": "https://fr.cnet.com/ai-1/5647/gpt-6-a-vole-la-vedette-mais-anthropic-meta-et-google-ont-egalement-presente-de-nouveaux-modeles-dia",
+      "fiabilite": 4,
+      "maj": "10/2026"
+    },
+    {
+      "label": "S74 — IA Actualité, « Mistral Large 4 : le pari européen du modèle ouvert géant » (2 novembre 2026)",
+      "ref": "https://ia-actualite.fr/rubrique/modeles/",
+      "fiabilite": 3,
+      "maj": "02/11/2026"
+    }
+  ],
+  "hors_chapitres": [
+    "Faits divers : un butin d'or de plus de six millions d'euros retrouvé, huit personnes mises en examen, des interpellations à l'étranger — le coup de filet réalisé par les enquêteurs après deux braquages d'usines de métaux précieux destinés à la joaillerie à Besançon (S54).",
+    "Voile : Tom Laperche a fêté ce week-end à Pointe-à-Pitre sa première victoire dans la Route du Rhum, en un temps record — avec une bonification d'une heure et deux minutes pour s'être dérouté vers Armel Le Cléac'h, qui avait déclenché sa balise de détresse (S50, S51).",
+    "Football : l'OM a enfoncé Lens lors du dernier match du week-end de Ligue 1, quand Manchester United a concédé un nul spectaculaire contre Aston Villa ; l'USM Alger a remporté la Supercoupe d'Afrique (S52, S53).",
+    "Tennis : Carlos Alcaraz a été vainqueur de son tournoi du week-end, à l'heure où le golf a inscrit un exploit inédit : à 19 ans, Blades Brown a effacé Jordan Spieth et est entré dans l'histoire du PGA Tour — un exploit que la discipline n'avait plus vu depuis 1931 (S52, S55).",
+    "Santé publique : les 9es Rencontres de Santé publique France se tiennent ce lundi au Beffroi de Montrouge — une journée ouverte rassemblant près de 1 200 experts français, européens et internationaux, autour des données, de la prévention et de l'organisation des soins (S57).",
+    "Santé : les patients utilisent davantage l'intelligence artificielle en matière de santé mentale, relève l'édition du jour d'Hospimedia — un usage qui interroge les professionnels sur l'accompagnement (S56).",
+    "Santé (outre-mer) : les praticiens polynésiens ont démissionné en bloc de leurs fonctions administratives, signe de plus de tensions dans l'organisation sanitaire du territoire (S56).",
+    "Santé (praticiens) : la France reste l'un des plus gros consommateurs d'antibiotiques en Europe — la profession est appelée à évaluer la pertinence de chaque prescription, rappelle ameli.fr ce lundi (S58).",
+    "Imagerie médicale : après la radiation d'Imapôle à Lyon, le projet de reprise de l'établissement est contesté — le Conseil d'État, saisi, tranche la question de la concentration du secteur (S59).",
+    "Météo (montagne) : les premiers bulletins d'avalanches de la saison sont sortis, plusieurs massifs déjà sous surveillance, alors que la douceur de novembre s'installe avant le retour des pluies et d'un net rafraîchissement (S22)."
+  ]
 }
