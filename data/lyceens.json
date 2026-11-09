@@ -1,5 +1,5 @@
 {
-  "maj": "08/11/2026 20:39",
+  "maj": "09/11/2026 12:24",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -19,6 +19,46 @@
     "Mercredi 7 octobre (lendemain de l'acte III) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
   ],
   "version_gouvernement": [
+    {
+      "id": "amw96cg1j-h76s",
+      "date": "09/11/2026",
+      "titre": "Quatre personnes interpellées après qu'un proviseur de lycée près de Bordeaux a été touché à la tête par un projectile",
+      "texte": "\"Une scène chaotique\", selon la mairie de Bègles après qu'un proviseur a été touché à la tête par un jet de projectile, devant le lycée professionnel Émile Combes. Une plainte va être déposée par le …",
+      "source": "20 minutes / franceinfo",
+      "sources": [
+        "20 minutes",
+        "franceinfo"
+      ],
+      "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/quatre-personnes-interpellees-apres-qu-un-proviseur-de-lycee-pres-de-bordeaux-a-ete-touche-a-la-tete-par-un-projectile_8274296.html#xtor=RSS-3-%5Bgeneral%5D",
+      "verifie": true
+    },
+    {
+      "id": "amw96cg1k-26wu",
+      "date": "09/11/2026",
+      "titre": "France: Lecornu réunit partenaires sociaux, lycéens et étudiants pour tenter d'apaiser la colère sociale",
+      "texte": "Après plus d'un mois de mobilisation lycéenne et étudiante et un quatrième week-end de manifestations, le Premier ministre Sébastien Lecornu tente de répondre à la colère sociale. Ce lundi 9 novembre…",
+      "source": "20 minutes / France 24 / RFI",
+      "sources": [
+        "20 minutes",
+        "France 24",
+        "RFI"
+      ],
+      "url": "https://www.rfi.fr/fr/france/20261109-france-lecornu-r%C3%A9unit-partenaires-sociaux-lyc%C3%A9ens-et-%C3%A9tudiants-pour-tenter-d-apaiser-la-col%C3%A8re-sociale",
+      "verifie": true
+    },
+    {
+      "id": "amw96cg1k-1qtu",
+      "date": "09/11/2026",
+      "titre": "Mouvement lycéen : des cours de rattrapage possibles pendant les vacances en février ou à Pâques, annonce Edouard Geffr…",
+      "texte": "Des cours de rattrapage pourront être organisés pendant les vacances scolaires « en février » ou « à Pâques », a indiqué lundi sur France 2 le ministre de l'Éducation nationale Édouard Geffray, qui a…",
+      "source": "Public Sénat / Libération",
+      "sources": [
+        "Public Sénat",
+        "Libération"
+      ],
+      "url": "https://www.publicsenat.fr/actualites/politique/mouvement-lyceen-des-cours-de-rattrapage-possibles-pendant-les-vacances-en-fevrier-ou-a-paques-annonce-edouard-geffray",
+      "verifie": true
+    },
     {
       "id": "amw88kbhj-4i1w",
       "date": "08/11/2026",
@@ -146,21 +186,6 @@
         "La Croix"
       ],
       "url": "https://www.europe1.fr/societe/mouvement-des-lyceens-les-organisations-lyceennes-recues-ce-jeudi-par-laurent-nunez-1189587?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
-      "verifie": true
-    },
-    {
-      "id": "amvqi3iic-i79l",
-      "date": "27/10/2026",
-      "titre": "\"Le droit au blocage n'existe pas\": le ministre de l'Enseignement supérieur juge que \"le travail\" des lycéens \"doit rep…",
-      "texte": "Après plus d'un mois de manifestations et de blocages, et au lendemain d'annonces censées répondre à leurs demandes, Philippe Baptiste appelle les lycéens à reprendre le chemin des cours lors de la r…",
-      "source": "20 minutes / Le Figaro / BFMTV / Libération",
-      "sources": [
-        "20 minutes",
-        "Le Figaro",
-        "BFMTV",
-        "Libération"
-      ],
-      "url": "https://www.bfmtv.com/societe/education/le-droit-au-blocage-n-existe-pas-le-ministre-de-l-enseignement-superieur-juge-que-le-travail-des-lyceens-doit-reprendre-lundi_AD-202610270302.html",
       "verifie": true
     }
   ],
