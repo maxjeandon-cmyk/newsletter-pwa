@@ -1,5 +1,5 @@
 {
-  "maj": "10/11/2026 12:05",
+  "maj": "10/11/2026 22:17",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -19,6 +19,23 @@
     "Mercredi 7 octobre (lendemain de l'acte III) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
   ],
   "version_gouvernement": [
+    {
+      "id": "amwb6xs0n-12cr",
+      "date": "10/11/2026",
+      "titre": "Ce que l'on sait de l'agression d'une élue touchée par un jet de bouteille d'essence devant un lycée à Chelles",
+      "texte": "Une conseillère régionale d'Île-de-France et adjointe au maire, a été touchée par un jet de bouteille d'essence devant un lycée à Chelles, en Seine-et-Marne. Le ministre de l'Éducation nationale Édou…",
+      "source": "20 minutes / Europe 1 / BFMTV / franceinfo / L'Humanité / Libération",
+      "sources": [
+        "20 minutes",
+        "Europe 1",
+        "BFMTV",
+        "franceinfo",
+        "L'Humanité",
+        "Libération"
+      ],
+      "url": "https://www.bfmtv.com/police-justice/ce-que-l-on-sait-de-l-agression-d-une-elue-touchee-par-un-jet-de-bouteille-d-essence-devant-un-lycee-a-chelles_AV-202611100687.html",
+      "verifie": true
+    },
     {
       "id": "amw96cg1j-h76s",
       "date": "09/11/2026",
@@ -178,19 +195,6 @@
       ],
       "url": "https://www.publicsenat.fr/actualites/education/mouvement-lyceen-le-vrai-debat-derriere-parcoursup-cest-selection-ou-pas-selection-affirme-marc-fesneau",
       "verifie": true
-    },
-    {
-      "id": "amvsjzwnh-dn95",
-      "date": "28/10/2026",
-      "titre": "Mouvement des lycéens : les organisations lycéennes reçues ce jeudi par Laurent Nuñez",
-      "texte": "Les représentants des organisations de lycéens seront reçus ce jeudi 28 octobre par Laurent Nuñez avant une nouvelle journée de mobilisation prévue samedi, a appris l'AFP auprès de l'entourage du min…",
-      "source": "Europe 1 / La Croix",
-      "sources": [
-        "Europe 1",
-        "La Croix"
-      ],
-      "url": "https://www.europe1.fr/societe/mouvement-des-lyceens-les-organisations-lyceennes-recues-ce-jeudi-par-laurent-nunez-1189587?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
-      "verifie": true
     }
   ],
   "faits": [
@@ -199,13 +203,28 @@
       "date": "10/11/2026",
       "titre": "\"On ne rentrera jamais dans une salle avec l'extrême droite\": la première réunion du comité de réforme Parcoursup tourn…",
       "texte": "Les responsables syndicaux ont quitté ce lundi 9 novembre la première réunion du comité de réforme de Parcoursup, dénonçant notamment la présence du syndicat étudiant UNI, qui se présente comme le \"p…",
-      "source": "20 minutes / BFMTV / Libération",
+      "source": "20 minutes / BFMTV / Libération / La Croix / Mediapart",
       "sources": [
         "20 minutes",
         "BFMTV",
-        "Libération"
+        "Libération",
+        "La Croix",
+        "Mediapart"
       ],
       "url": "https://www.bfmtv.com/societe/education/on-ne-rentrera-jamais-dans-une-salle-avec-l-extreme-droite-la-premiere-reunion-du-comite-de-reforme-parcoursup-tourne-court_AD-202611091008.html",
+      "verifie": true
+    },
+    {
+      "id": "amwb6xs0r-a7i1",
+      "date": "10/11/2026",
+      "titre": "En marge d’un blocus à Aulnay-sous-Bois, un lycéen dénudé pendant son interpellation",
+      "texte": "Jeudi 5 novembre, en Seine-Saint-Denis, un élève de 15 ans a été embarqué au commissariat sans chaussures ni pantalon.",
+      "source": "franceinfo / Libération",
+      "sources": [
+        "franceinfo",
+        "Libération"
+      ],
+      "url": "https://www.liberation.fr/societe/police-justice/en-marge-dun-blocus-a-aulnay-sous-bois-un-lyceen-denude-pendant-son-interpellation-20261110_WQMYZB2Q3RDUVEZ7G6CIVV4IBE/",
       "verifie": true
     },
     {
@@ -226,10 +245,11 @@
       "date": "07/11/2026",
       "titre": "Acte IV des gilets jaunes, manifestation des syndicats et des lycéens… Une nouvelle journée de mobilisation sous haute …",
       "texte": "Après la mobilisation massive des jeunes, le mouvement ne devrait pas faiblir. 70.000 policiers et gendarmes sont mobilisés ce samedi 7 novembre et espèrent contenir de nouveaux débordements.",
-      "source": "Le Figaro / Ouest-France",
+      "source": "Le Figaro / Ouest-France / Europe 1",
       "sources": [
         "Le Figaro",
-        "Ouest-France"
+        "Ouest-France",
+        "Europe 1"
       ],
       "url": "https://www.lefigaro.fr/actualite-france/en-direct-acte-iv-des-gilets-jaunes-syndicats-mouvement-social-contre-la-vie-chere-casseurs-blacks-blocs-crs-manifestation-paris-place-de-la-concorde-20261107",
       "verifie": true
@@ -314,23 +334,6 @@
         "BFMTV"
       ],
       "url": "https://www.ouest-france.fr/societe/manifestation/lyceens-etudiants-syndicats-gilets-jaunes-ils-manifestent-ce-samedi-mais-pourquoi-voici-leurs-revendications-fe0974be-cefd-11f1-a953-ed5fcc297d72?utm_source=fluxpublicfrance&utm_medium=fluxrss&utm_campaign=banquedecontenu",
-      "verifie": true
-    },
-    {
-      "id": "amv7x5zat-hqfo",
-      "date": "14/10/2026",
-      "titre": "Lycéens, étudiants, syndicats : peut-on s’attendre à une convergence des luttes le 17 octobre ?",
-      "texte": "La CGT vient d'appeler à soutenir les appels à manifester ce 17 octobre. Va-t-on vers une grande convergence des luttes ? On en parle avec les journalistes Cyprien Boganda et Théo Bourrieau.",
-      "source": "Public Sénat / BFMTV / L'Humanité / Ouest-France / Mediapart / Libération",
-      "sources": [
-        "Public Sénat",
-        "BFMTV",
-        "L'Humanité",
-        "Ouest-France",
-        "Mediapart",
-        "Libération"
-      ],
-      "url": "https://www.humanite.fr/social-et-economie/cgt/lyceens-etudiants-syndicats-peut-on-sattendre-a-une-convergence-des-luttes-le-17-octobre",
       "verifie": true
     }
   ],
