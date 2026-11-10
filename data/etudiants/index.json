@@ -2,8 +2,8 @@
   "titre": "La version des lycéens — chronique de la révolte lycéenne 2026",
   "intro": "Chronique narrative du mouvement lycéen et étudiant de l'automne 2026, écrite du point de vue des élèves : de l'amorce de Créteil au dernier acte en date, le fil s'allonge d'un relevé automatique toutes les six heures, et les chapitres transverses — la voix de l'intérieur, les revendications mot à mot, la répression, la machine gouvernementale, la longue durée, le lexique, les figures — viennent fermer le fil. Sources : la presse au plus près du mouvement — Le Média, Blast, L'Humanité, Mediapart — et la voix des réseaux en direct : les fils Reddit (r/etudiants, r/enseignants, r/france), les serveurs Discord du mouvement ; les fils TikTok, Snapchat et Instagram restent en vitrine, repris dès qu'un post ou un commentaire y est cité ; Wikipédia en colonne vertébrale factuelle.",
   "note": "Méthode : chaque paragraphe cite ses sources. Les paragraphes marqués « auto » sont des relevés bruts ajoutés par le pipeline toutes les 6 h (faits sourcés, sans réécriture) ; la rédaction narrative approfondie est assurée lors des éditions de la newsletter. Badge ✅ (corroboré par au moins deux médias distincts) et ⚠️ (une seule source) : ces distinctions s'appliquent aux relevés automatiques.",
-  "maj": "09/11/2026",
-  "totalParagraphes": 196,
+  "maj": "10/11/2026",
+  "totalParagraphes": 198,
   "chapitres": [
     {
       "id": "c1",
@@ -90,8 +90,8 @@
       "fichier": "chapitres/11.json",
       "periode": "Chronique transverse — les revendications, mot à mot",
       "titre": "Ce qu'ils veulent — les revendications, mot à mot",
-      "paragraphes": 22,
-      "octets": 20344
+      "paragraphes": 23,
+      "octets": 21811
     },
     {
       "id": "c12",
@@ -316,13 +316,19 @@
       "titre": "Le fil continue — 9 novembre 2026",
       "paragraphes": 1,
       "octets": 1348
+    },
+    {
+      "id": "c40",
+      "fichier": "chapitres/40.json",
+      "periode": "10 novembre 2026 — suivi de la journée",
+      "titre": "Le fil continue — 10 novembre 2026",
+      "paragraphes": 1,
+      "octets": 1362
     }
   ],
   "releveSigs": [
-    "aucune|comment|sans|trouver#",
-    "avoir|imite|mali|retourn#",
-    "emissai|francai|logemen|priorit#",
-    "visa#"
+    "eteindr|propose|rien|sans#",
+    "manger|mini|pret|temps#"
   ],
   "sections": [
     {
@@ -587,6 +593,14 @@
           "octets": 1348
         },
         {
+          "id": "c40",
+          "fichier": "chapitres/40.json",
+          "periode": "10 novembre 2026 — suivi de la journée",
+          "titre": "Le fil continue — 10 novembre 2026",
+          "paragraphes": 1,
+          "octets": 1362
+        },
+        {
           "id": "c10",
           "fichier": "chapitres/10.json",
           "periode": "Chronique transverse — réseaux, voix et ressentis",
@@ -599,8 +613,8 @@
           "fichier": "chapitres/11.json",
           "periode": "Chronique transverse — les revendications, mot à mot",
           "titre": "Ce qu'ils veulent — les revendications, mot à mot",
-          "paragraphes": 22,
-          "octets": 20344
+          "paragraphes": 23,
+          "octets": 21811
         },
         {
           "id": "c12",
@@ -645,12 +659,12 @@
       ]
     }
   ],
-  "releveDate": "2026-11-09T11:25:11.212Z",
-  "releveCompteur": 53,
+  "releveDate": "2026-11-10T21:17:18.822Z",
+  "releveCompteur": 54,
   "chapitreJour": {
-    "id": "c39",
-    "fichier": "chapitres/39.json",
-    "date": "09/11/2026"
+    "id": "c40",
+    "fichier": "chapitres/40.json",
+    "date": "10/11/2026"
   },
   "discordInvites": {}
 }
