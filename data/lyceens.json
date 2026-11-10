@@ -1,5 +1,5 @@
 {
-  "maj": "10/11/2026 00:46",
+  "maj": "10/11/2026 12:05",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -37,11 +37,14 @@
       "date": "09/11/2026",
       "titre": "France: Lecornu réunit partenaires sociaux, lycéens et étudiants pour tenter d'apaiser la colère sociale",
       "texte": "Après plus d'un mois de mobilisation lycéenne et étudiante et un quatrième week-end de manifestations, le Premier ministre Sébastien Lecornu tente de répondre à la colère sociale. Ce lundi 9 novembre…",
-      "source": "20 minutes / France 24 / RFI",
+      "source": "20 minutes / France 24 / RFI / Public Sénat / La Croix / L'Humanité",
       "sources": [
         "20 minutes",
         "France 24",
-        "RFI"
+        "RFI",
+        "Public Sénat",
+        "La Croix",
+        "L'Humanité"
       ],
       "url": "https://www.rfi.fr/fr/france/20261109-france-lecornu-r%C3%A9unit-partenaires-sociaux-lyc%C3%A9ens-et-%C3%A9tudiants-pour-tenter-d-apaiser-la-col%C3%A8re-sociale",
       "verifie": true
