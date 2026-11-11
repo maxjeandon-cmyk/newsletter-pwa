@@ -10,6 +10,16 @@
         "Mediapart",
         "Reddit — r/etudiants"
       ]
+    },
+    {
+      "id": "c41p2",
+      "texte": "Près de 21 heures ont passé depuis le relevé précédent ; la chronique reprend son fil. Au soir du 11 novembre 2026, la journée s'écrit encore. La vague, elle, continue d'avancer : L’agression d’une élue lors d’un blocus lycéen suscite l’émotion et des questions (1 media : Mediapart — non corrobore) — detail : Une élue a reçu, mardi 10 novembre, une bouteille d’essence devant un lycée bloqué de Chelles, en Seine-et-Marne. Une enquête a été ouverte pour tentative d’homicide volontaire. L…. Dans les fils Reddit, les témoignages s'échangent sans intermédiaire : C'est fini les blocus ? (Reddit — r/etudiants) ; «Une hausse de 20%» : après les blocus des lycées, la demande de cours particuliers en augmentation (Reddit — r/enseignants) — detail : <!-- SC_OFF --><div class=\"md\"><p>Dans ma fac y&#39;a plus rien, tout le monde fait comme si rien ne s&#39;était passé. C&#39;est comment dans vos écoles/facs/.. ?</p> </div><!-- …. Le prochain relevé reprendra le fil. (Relevé automatique du 11 novembre 2026 à 22:55 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "Mediapart",
+        "Reddit — r/etudiants",
+        "Reddit — r/enseignants"
+      ],
+      "auto": true
     }
   ]
 }
