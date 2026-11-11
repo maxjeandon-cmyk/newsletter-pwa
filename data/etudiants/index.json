@@ -91,7 +91,7 @@
       "periode": "Chronique transverse — les revendications, mot à mot",
       "titre": "Ce qu'ils veulent — les revendications, mot à mot",
       "paragraphes": 23,
-      "octets": 21811
+      "octets": 21829
     },
     {
       "id": "c12",
@@ -323,7 +323,7 @@
       "periode": "10 novembre 2026 — suivi de la journée",
       "titre": "Le fil continue — 10 novembre 2026",
       "paragraphes": 1,
-      "octets": 1362
+      "octets": 1220
     }
   ],
   "releveSigs": [
@@ -598,7 +598,7 @@
           "periode": "10 novembre 2026 — suivi de la journée",
           "titre": "Le fil continue — 10 novembre 2026",
           "paragraphes": 1,
-          "octets": 1362
+          "octets": 1220
         },
         {
           "id": "c10",
@@ -614,7 +614,7 @@
           "periode": "Chronique transverse — les revendications, mot à mot",
           "titre": "Ce qu'ils veulent — les revendications, mot à mot",
           "paragraphes": 23,
-          "octets": 21811
+          "octets": 21829
         },
         {
           "id": "c12",

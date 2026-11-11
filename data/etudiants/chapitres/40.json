@@ -5,12 +5,11 @@
   "paragraphes": [
     {
       "id": "c40p1",
-      "texte": "Près de 34 heures ont passé depuis le relevé précédent ; la chronique reprend son fil. Au soir du 10 novembre 2026, la chronique avance. À Beauvau comme à l'Élysée, on ajuste le discours : Sans rien à proposer pour éteindre la colère, le comité de réforme Parcoursup fait un flop (1 media : Mediapart — non corrobore) — detail : Ils ont quitté la salle soit pour protester contre l’extrême droite, soit pour déplorer l’absence de propositions. Et à la fin, il n’est resté presque plus personne. L’issue du pr…. Côté Reddit, élèves et enseignants parlent d'eux-mêmes : Mini prêt étudiant le temps de manger ? (Reddit — r/etudiants) — detail : <!-- SC_OFF --><div class=\"md\"><p>on m&#39;a dit de demander ici je vais peut-être paraître un peu bête, mais bon.</p> <p>À un moment donné, je n’avais plus d’argent pour aller en…. Le prochain relevé reprendra le fil. (Relevé automatique du 10 novembre 2026 à 22:17 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "Au soir du 10 novembre, la chronique reprend son fil — et du côté du gouvernement, la réponse Parcoursup patine. « Sans rien à proposer pour éteindre la colère, le comité de réforme Parcoursup fait un flop », titre Mediapart, seule voix sur ce fait : dans la salle, les participants ont quitté les rangs « soit pour protester contre l'extrême droite, soit pour déplorer l'absence de propositions » — et « à la fin, il n'est resté presque plus personne ». Pendant que le comité s'enlise, la vie étudiante tient la conversation : sur r/etudiants, un étudiant demande un « mini prêt étudiant le temps de manger » — il n'a « plus d'argent » pour manger ; « on m'a dit de demander ici », explique-t-il, « je vais peut-être paraître un peu bête, mais bon ». Voilà, ce soir-là, les deux faces du même mouvement : le comité qui déçoit, l'argent qui manque — et le fil qui attend le jour suivant.",
       "sources": [
         "Mediapart",
         "Reddit — r/etudiants"
-      ],
-      "auto": true
+      ]
     }
   ]
 }
