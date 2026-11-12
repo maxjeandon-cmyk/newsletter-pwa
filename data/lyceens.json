@@ -1,5 +1,5 @@
 {
-  "maj": "12/11/2026 11:59",
+  "maj": "12/11/2026 22:49",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -24,10 +24,12 @@
       "date": "12/11/2026",
       "titre": "Crise étudiante : Valérie Pécresse propose de déployer «en urgence» des caméras dans 50 lycées d’Île-de-France",
       "texte": "La présidente de la région Île-de-France a décliné, jeudi 12 novembre sur RTL, une série de mesures pour répondre aux dégradations dans les lycées. Une suspension des «aides facultatives de la région…",
-      "source": "Europe 1 / Le Figaro",
+      "source": "Europe 1 / Le Figaro / 20 minutes / franceinfo",
       "sources": [
         "Europe 1",
-        "Le Figaro"
+        "Le Figaro",
+        "20 minutes",
+        "franceinfo"
       ],
       "url": "https://www.lefigaro.fr/politique/crise-etudiante-valerie-pecresse-propose-de-deployer-en-urgence-des-cameras-dans-50-lycees-d-ile-de-france-20261112",
       "verifie": true
@@ -52,10 +54,12 @@
       "date": "12/11/2026",
       "titre": "\"Une augmentation certaine du niveau de violence\": le gouvernement veut une saisine de la justice \"systématique\" pour l…",
       "texte": "\"Une augmentation certaine du niveau de violence\": le gouvernement veut une saisine de la justice \"systématique\" pour les actes délictueux près des lycées",
-      "source": "Le Figaro / BFMTV",
+      "source": "Le Figaro / BFMTV / Europe 1 / Libération",
       "sources": [
         "Le Figaro",
-        "BFMTV"
+        "BFMTV",
+        "Europe 1",
+        "Libération"
       ],
       "url": "https://www.bfmtv.com/politique/gouvernement/une-augmentation-certaine-du-niveau-de-violence-le-gouvernement-veut-une-saisine-de-la-justice-systematique-pour-les-actes-delictueux-pres-des-lycees_AD-202611120440.html",
       "verifie": true
