@@ -1,0 +1,570 @@
+{
+  "date": "2026-11-12",
+  "genere_le": "2026-11-12T23:32:56.128Z",
+  "html": "editions/2026-11-12.html",
+  "resume_executif": [
+    "Intelligence artificielle : s\u00e9isme chez Nvidia \u2014 Jensen Huang d\u00e9missionne apr\u00e8s le scandale de ses liaisons extraconjugales dont l\u2019une avec une Chinoise soup\u00e7onn\u00e9e d\u2019espionnage ; l\u2019entr\u00e9e en Bourse d\u2019Anthropic, attendue la semaine prochaine, devient le premier test de la confiance des march\u00e9s (S1, S2, S4).",
+    "Spatial : le t\u00e9lescope europ\u00e9en Euclid livre sa premi\u00e8re grande moisson \u2014 900 millions de galaxies catalogu\u00e9es, 15 000 lentilles gravitationnelles candidates, un premier pas vers la cartographie de la mati\u00e8re noire (S10).",
+    "Ukraine : les \u00e9missaires am\u00e9ricains Kushner et Witkoff rencontrent Poutine \u00e0 Moscou puis Zelensky \u00e0 Dublin \u2014 le pr\u00e9sident ukrainien \u00e9voque une \u00ab fen\u00eatre d\u2019opportunit\u00e9 \u00bb pour un cessez-le-feu avant 2027 (S51, S2).",
+    "\u00c9tats-Unis : Trump, affaibli par la d\u00e9route des midterms, s\u2019envole lundi en Asie pour l\u2019Asean \u00e0 Manille puis l\u2019Apec \u00e0 Shenzhen \u2014 o\u00f9 il attend une rencontre avec Xi Jinping et Poutine (S38, S39).",
+    "France : David Lisnard fait une entr\u00e9e fracassante dans le barom\u00e8tre pr\u00e9sidentielle (10-12 %), le S\u00e9nat cherche des compromis sur le budget 2027 et le gouvernement d\u00e9voile son plan de relance agricole (500 \u00e0 700 millions d\u2019euros) (S32, S14, S15, S60)."
+  ],
+  "chapitres": [
+    {
+      "id": "intelligence-artificielle",
+      "emoji": "\ud83e\udd16",
+      "nom": "Intelligence artificielle",
+      "resume": "S\u00e9isme \u00e0 la t\u00eate du premier concepteur mondial de puces d\u2019IA : Jensen Huang quitte Nvidia, l\u2019industrie perd son banquier, son diplomate et son porte-voix \u2014 et tout le secteur attend d\u00e9sormais l\u2019entr\u00e9e en Bourse d\u2019Anthropic, la semaine prochaine, comme premier test de la confiance des march\u00e9s."
+    },
+    {
+      "id": "spatial",
+      "emoji": "\ud83d\ude80",
+      "nom": "Spatial",
+      "resume": "900 millions de galaxies en un coup d\u2019\u0153il : le t\u00e9lescope spatial europ\u00e9en Euclid a d\u00e9voil\u00e9 jeudi ses premi\u00e8res donn\u00e9es, issues de treize mois de collecte \u2014 la premi\u00e8re pierre de la cartographie de l\u2019Univers, et une moisson pour la recherche mondiale."
+    },
+    {
+      "id": "economie-pour-les-nuls",
+      "emoji": "\ud83d\udcb0",
+      "nom": "L\u2019\u00c9conomie pour les nuls",
+      "resume": "C\u00f4t\u00e9 monde, la banque centrale de Turquie rel\u00e8ve sa pr\u00e9vision d\u2019inflation de fin d\u2019ann\u00e9e \u00e0 29,5 % ; c\u00f4t\u00e9 France, le salon du \u00ab Made in France \u00bb ouvre \u00e0 Paris dans un contexte de pouvoir d\u2019achat amaigri, pendant que le S\u00e9nat cherche des compromis sur le budget 2027 \u2014 notions expliqu\u00e9es au passage."
+    },
+    {
+      "id": "droit-pour-les-nuls",
+      "emoji": "\u2696",
+      "nom": "\ufe0f Le Droit pour les nuls",
+      "resume": "\u00ab Dark patterns \u00bb, influenceurs, monnaies virtuelles des jeux vid\u00e9o : l\u2019Union europ\u00e9enne a propos\u00e9 cette semaine un r\u00e8glement sur l\u2019\u00ab \u00e9quit\u00e9 num\u00e9rique \u00bb pour chasser les interfaces trompeuses \u2014 l\u2019occasion de comprendre ce que le droit de la consommation peut d\u00e9j\u00e0 faire pour vous en ligne."
+    },
+    {
+      "id": "jeu-video-pop-culture",
+      "emoji": "\ud83c\udfae",
+      "nom": "Jeu vid\u00e9o & pop culture",
+      "resume": "\u00c0 une semaine de la sortie officielle de GTA VI (19 novembre), le jeu est d\u00e9j\u00e0 en magasin \u2014 et le studio Rockstar voit ses 1 600 salari\u00e9s britanniques appel\u00e9s \u00e0 voter sur la reconnaissance d\u2019un syndicat : une semaine de records et de questions pour l\u2019industrie."
+    },
+    {
+      "id": "culture",
+      "emoji": "\ud83c\udfad",
+      "nom": "Culture",
+      "resume": "Nicole Kidman recevra un C\u00e9sar d\u2019honneur, le livre-programme de M\u00e9lenchon s\u2019impose en t\u00eate des ventes devant le Goncourt, des estampes \u00e9rotiques japonaises in\u00e9dites s\u2019exposent \u00e0 Paris \u2014 et le proc\u00e8s en appel de G\u00e9rard Depardieu reste tr\u00e8s incertain."
+    },
+    {
+      "id": "sciences",
+      "emoji": "\ud83d\udd2c",
+      "nom": "Sciences",
+      "resume": "L\u2019IMC ne suffit pas \u00e0 mesurer l\u2019ob\u00e9sit\u00e9, confirme une \u00e9tude publi\u00e9e dans Nature sur 844 000 adultes ; au Nigeria, le vaccin contre le paludisme fait chuter les d\u00e9c\u00e8s d\u2019enfants \u2014 et l\u2019IA am\u00e9liore la pr\u00e9vision des ouragans."
+    },
+    {
+      "id": "climat",
+      "emoji": "\ud83c\udf0d",
+      "nom": "Climat",
+      "resume": "\u00c0 Antalya, quatri\u00e8me jour de la COP31 : le Royaume-Uni cr\u00e9e la premi\u00e8re mondiale d\u2019un \u00e9missaire \u00ab pour la s\u00e9curit\u00e9 climatique \u00bb, le Climate Action Tracker parle d\u2019une \u00ab brutale v\u00e9rit\u00e9 \u00bb \u00e0 2,7 \u00b0C, et Greta Thunberg r\u00e9clame un embargo \u00e9nerg\u00e9tique turc vers Isra\u00ebl."
+    },
+    {
+      "id": "politique-francaise",
+      "emoji": "\ud83c\uddeb",
+      "nom": "\ud83c\uddf7 Politique fran\u00e7aise",
+      "resume": "\u00c0 moins de six mois de la pr\u00e9sidentielle, David Lisnard entre fracassamment dans le barom\u00e8tre (10-12 %), le S\u00e9nat cherche les compromis budg\u00e9taires et le plan de relance agricole arrive \u2014 pendant que la v\u00e9rification des chiffres de l\u2019immigration occupe le d\u00e9bat."
+    },
+    {
+      "id": "etats-unis",
+      "emoji": "\ud83c\uddfa",
+      "nom": "\ud83c\uddf8 \u00c9tats-Unis",
+      "resume": "R\u00e9duit \u00e0 l\u2019impuissance l\u00e9gislative apr\u00e8s la d\u00e9route des midterms, Donald Trump s\u2019appr\u00eate \u00e0 rappeler sur la sc\u00e8ne asiatique qu\u2019il reste le patron de la politique \u00e9trang\u00e8re \u2014 pendant qu\u2019une fusillade endeuille le centre de Washington."
+    },
+    {
+      "id": "chine",
+      "emoji": "\ud83c\udde8",
+      "nom": "\ud83c\uddf3 Chine",
+      "resume": "Le Premier ministre Li Qiang repr\u00e9sentera P\u00e9kin au sommet de l\u2019Asean \u00e0 Manille, Wang Yi promet \u00e0 Washington une coop\u00e9ration \u00ab renforc\u00e9e \u00bb avant l\u2019Apec de Shenzhen \u2014 pendant que l\u2019affaire des puces Huang relance les faucons am\u00e9ricains."
+    },
+    {
+      "id": "russie",
+      "emoji": "\ud83c\uddf7",
+      "nom": "\ud83c\uddfa Russie",
+      "resume": "Poutine re\u00e7oit les \u00e9missaires am\u00e9ricains au Kremlin et reste inflexible \u2014 troupes \u00e9trang\u00e8res en Ukraine \u00e9gales \u00ab poursuite de la guerre \u00bb ; l\u2019Europe, elle, p\u00e8se sa r\u00e9ponse et Moscou expulse quatre Fran\u00e7ais de son territoire."
+    },
+    {
+      "id": "geopolitique",
+      "emoji": "\ud83c\udf10",
+      "nom": "G\u00e9opolitique mondiale",
+      "resume": "Ukraine : les \u00e9missaires am\u00e9ricains navettent entre Moscou et Dublin, Zelensky voit une \u00ab fen\u00eatre d\u2019opportunit\u00e9 \u00bb ; Isra\u00ebl change de Premier ministre, la Cor\u00e9e du Sud assume son aide \u00e0 Kiev, et les ONG fran\u00e7aises r\u00e9clament l\u2019interdiction du commerce avec les colonies."
+    },
+    {
+      "id": "grande-info-semaine",
+      "emoji": "\ud83d\udcf0",
+      "nom": "Grande information de la semaine",
+      "resume": "Au-del\u00e0 des 24 heures : la chute de Huang, la d\u00e9route des midterms, la COP31, la piste d\u2019un cessez-le-feu en Ukraine, GTA VI et la tourn\u00e9e de L\u00e9on XIV \u2014 les grands mouvements de la semaine qui s\u2019ach\u00e8ve."
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1 \u2014 AFP, \u00ab Banquier, diplomate, porte-voix : ce que l\u2019IA perd avec la chute de Jensen Huang \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-a0954711, pas d\u2019URL publique"
+    },
+    {
+      "label": "S2 \u2014 AFP, \u00ab Actualit\u00e9s du jeudi 12 novembre 2026 \u00bb (limogeage Huang/WSJ, Zelensky \u00e0 Dublin, plan agricole, salon Made in France)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-963b30d7, pas d\u2019URL publique"
+    },
+    {
+      "label": "S3 \u2014 AP, \u00ab Advocacy groups sue AI giants to freeze new models, warning of catastrophic risks \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-ap-20261112-b2a1604f, pas d\u2019URL publique"
+    },
+    {
+      "label": "S4 \u2014 AFP, \u00ab March\u00e9s mondiaux : Nvidia met un coup d\u2019arr\u00eat au rebond des valeurs de l\u2019IA \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-d2bdd820, pas d\u2019URL publique"
+    },
+    {
+      "label": "S5 \u2014 AFP, \u00ab Robotique IA : Agile Robots revendique le leadership europ\u00e9en apr\u00e8s une lev\u00e9e de fonds \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-7e760b62, pas d\u2019URL publique"
+    },
+    {
+      "label": "S6 \u2014 AFP, \u00ab Services publics : Glucksmann pr\u00f4ne une IA souveraine pour les t\u00e2ches bureaucratiques \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-1919d1ba, pas d\u2019URL publique"
+    },
+    {
+      "label": "S7 \u2014 AFP, \u00ab Malgr\u00e9 l\u2019IA, la France devra doubler le nombre de ses ing\u00e9nieurs, selon le patron de Thales \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-eacf6258, pas d\u2019URL publique"
+    },
+    {
+      "label": "S8 \u2014 AFP, \u00ab Avant No\u00ebl, l\u2019IA se fraie une place sur le march\u00e9 du jouet \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-b22b9052, pas d\u2019URL publique"
+    },
+    {
+      "label": "S9 \u2014 AFP, \u00ab IA g\u00e9n\u00e9rative : une charte pour prot\u00e9ger les plus jeunes \u00bb",
+      "fiabilite": 5,
+      "maj": "10/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261110-a39335b8, pas d\u2019URL publique"
+    },
+    {
+      "label": "S10 \u2014 AFP, \u00ab Euclid pose les fondations d\u2019une cartographie de l\u2019Univers \u00bb (ESA, consortium, 8 articles)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-b72b6bd2, pas d\u2019URL publique"
+    },
+    {
+      "label": "S11 \u2014 AFP, \u00ab La Turquie rel\u00e8ve sa pr\u00e9vision d\u2019inflation \u00e0 29,5 % pour la fin de l\u2019ann\u00e9e \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-662eb558, pas d\u2019URL publique"
+    },
+    {
+      "label": "S12 \u2014 AFP, \u00ab Le salon du Made in France ouvre ses portes \u00e0 des portefeuilles amaigris \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-f1dbb916, pas d\u2019URL publique"
+    },
+    {
+      "label": "S13 \u2014 AFP, \u00ab Le soutien au Made in France, crit\u00e8re de vote important chez les 18-49 ans, selon un sondage \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-42422c10, pas d\u2019URL publique"
+    },
+    {
+      "label": "S14 \u2014 AFP, \u00ab Budget/S\u00e9cu : le S\u00e9nat reporte en avril les \u00e9conomies sur les cotisations patronales et alourdit le d\u00e9ficit \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-710065d4, pas d\u2019URL publique"
+    },
+    {
+      "label": "S15 \u2014 AFP, \u00ab Collectivit\u00e9s \u00e9pargn\u00e9es, d\u00e9ficit ma\u00eetris\u00e9\u2026 Le S\u00e9nat fait ses propositions sur le budget \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-cdb8fd23, pas d\u2019URL publique"
+    },
+    {
+      "label": "S16 \u2014 AFP, \u00ab Influenceurs, IA, dark patterns : l\u2019UE veut prot\u00e9ger les consommateurs en ligne \u00bb (Digital fairness act, McGrath)",
+      "fiabilite": 5,
+      "maj": "10/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261110-0a139bf6, pas d\u2019URL publique"
+    },
+    {
+      "label": "S17 \u2014 L\u00e9gifrance, Code de la consommation et loi n\u00b0 2023-451 du 9 juin 2023 (influence commerciale)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "https://www.legifrance.gouv.fr"
+    },
+    {
+      "label": "S18 \u2014 AFP, \u00ab Jeu vid\u00e9o : la saga Grand Theft Auto en chiffres \u00bb (Take-Two, Guinness World Records)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-23037656, pas d\u2019URL publique"
+    },
+    {
+      "label": "S19 \u2014 AFP, \u00ab Les salari\u00e9s du studio Rockstar (GTA VI) appel\u00e9s \u00e0 voter sur la reconnaissance d\u2019un syndicat \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-c11608e8, pas d\u2019URL publique"
+    },
+    {
+      "label": "S20 \u2014 AFP, \u00ab Jeu vid\u00e9o : GTA Online, la machine \u00e0 cash de Rockstar \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-f00e83f8, pas d\u2019URL publique"
+    },
+    {
+      "label": "S21 \u2014 AFP, \u00ab Nicole Kidman recevra un C\u00e9sar d\u2019honneur en f\u00e9vrier \u00bb (Acad\u00e9mie des C\u00e9sar, Canal+)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-1df04f7d, pas d\u2019URL publique"
+    },
+    {
+      "label": "S22 \u2014 AFP, \u00ab Le livre programme de M\u00e9lenchon plus vendu que le prix Goncourt \u00bb (Livres-Hebdo/NielsenIQ)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-7cca0542, pas d\u2019URL publique"
+    },
+    {
+      "label": "S23 \u2014 AFP, \u00ab Des estampes \u00e9rotiques japonaises expos\u00e9es pour la premi\u00e8re fois \u00e0 Paris \u00bb",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-105cf482, pas d\u2019URL publique"
+    },
+    {
+      "label": "S24 \u2014 AFP, \u00ab Le proc\u00e8s en appel de G\u00e9rard Depardieu pour agressions sexuelles tr\u00e8s incertain \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-257e0644, pas d\u2019URL publique"
+    },
+    {
+      "label": "S25 \u2014 AFP, \u00ab Ob\u00e9sit\u00e9 : une \u00e9tude confirme les limites de l\u2019IMC pour \u00e9valuer l\u2019exc\u00e8s de graisse \u00bb (Nature, 844 000 adultes)",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-be46bf8e, pas d\u2019URL publique"
+    },
+    {
+      "label": "S26 \u2014 AFP, \u00ab Dans le sud du Nigeria, l\u2019avanc\u00e9e majeure du vaccin contre le paludisme infantile \u00bb (PATH, OMS)",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-8e8586f2, pas d\u2019URL publique"
+    },
+    {
+      "label": "S27 \u2014 AFP, \u00ab AI sharpens hurricane forecasts, but humans still call the shots \u00bb",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-13e66d7c, pas d\u2019URL publique"
+    },
+    {
+      "label": "S28 \u2014 AFP, \u00ab \u00c0 la COP31, retards, \u00e9missaire pour la s\u00e9curit\u00e9 climatique, p\u00e9trole v\u00e9n\u00e9zu\u00e9lien et Greta \u00bb (CAT, 2,7 \u00b0C)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-a07ee54d, pas d\u2019URL publique"
+    },
+    {
+      "label": "S29 \u2014 AFP, \u00ab Le Royaume-Uni nomme un \u00e9missaire pour la s\u00e9curit\u00e9 climatique, une premi\u00e8re mondiale \u00bb (Burnham, Alessandri, E3G)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-7e2602b1, pas d\u2019URL publique"
+    },
+    {
+      "label": "S30 \u2014 AFP, \u00ab \u00c0 la COP31, le chef de l\u2019ONU plaide pour l\u2019extinction des \u00e9nergies fossiles, comme les dinosaures \u00bb (Guterres)",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-18124549, pas d\u2019URL publique"
+    },
+    {
+      "label": "S31 \u2014 AFP, \u00ab \u00c0 la COP31, des appels \u00e0 financer le climat plut\u00f4t que les guerres \u00bb (SIPRI, 3 000 Md$)",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-01837233, pas d\u2019URL publique"
+    },
+    {
+      "label": "S32 \u2014 AFP, \u00ab Pr\u00e9sidentielle : Lisnard donn\u00e9 \u00e0 au moins 10 %, juste derri\u00e8re Philippe et Glucksmann, selon un sondage \u00bb (OpinionWay/Les \u00c9chos)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-f3489c65, pas d\u2019URL publique"
+    },
+    {
+      "label": "S33 \u2014 AFP, \u00ab Glucksmann fustige la position de Jean-Luc M\u00e9lenchon sur l\u2019Allemagne et la Russie \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-5e3683d1, pas d\u2019URL publique"
+    },
+    {
+      "label": "S34 \u2014 AFP, \u00ab Edouard Philippe veut interdire aux magistrats le droit de se syndiquer \u00bb (Retailleau, associations)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-b3449e18, pas d\u2019URL publique"
+    },
+    {
+      "label": "S35 \u2014 AFP, \u00ab Budget : Lecornu veut faire de la question agricole un des leviers majeurs de compromis budg\u00e9taire \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-92018823, pas d\u2019URL publique"
+    },
+    {
+      "label": "S36 \u2014 AFP, \u00ab V\u00e9rification : y a-t-il, comme le dit Bardella, 500 000 nouveaux immigr\u00e9s en France chaque ann\u00e9e ? \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-43da17ca, pas d\u2019URL publique"
+    },
+    {
+      "label": "S37 \u2014 AFP, \u00ab Baisse des flux migratoires autoris\u00e9s dans les pays d\u00e9velopp\u00e9s, augmentation de 9 % en France \u00bb (rapport annuel OCDE)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-99029bfe, pas d\u2019URL publique"
+    },
+    {
+      "label": "S38 \u2014 AFP, \u00ab Exploit des d\u00e9mocrates dans le Mississippi, qui d\u00e9crochent un si\u00e8ge au S\u00e9nat \u00bb (Scott Colom, Hyde-Smith)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-f4c4da16, pas d\u2019URL publique"
+    },
+    {
+      "label": "S39 \u2014 AFP, \u00ab Trump to flex muscles on Asia tour after midterms losses \u00bb (Asean Manille 15-18 nov., Apec Shenzhen 18-19 nov.)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-3387f0e2, pas d\u2019URL publique"
+    },
+    {
+      "label": "S40 \u2014 AFP, \u00ab One dead, four wounded in downtown Washington shooting: police \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-676086bf, pas d\u2019URL publique"
+    },
+    {
+      "label": "S41 \u2014 AFP, \u00ab \u00c9tats-Unis : le march\u00e9 de l\u2019immobilier ancien plomb\u00e9 par le co\u00fbt des cr\u00e9dits \u00bb (Freddie Mac, 7,18 %)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-d4d5d8f3, pas d\u2019URL publique"
+    },
+    {
+      "label": "S42 \u2014 AFP, \u00ab Le Premier ministre chinois participera au sommet de l\u2019Asean \u00e0 Manille \u00bb (Li Qiang, Guo Jiakun, Wang Yi)",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-4c161ecc, pas d\u2019URL publique"
+    },
+    {
+      "label": "S43 \u2014 AFP, \u00ab La Chine dit aux \u00c9tats-Unis qu\u2019elle est pr\u00eate \u00e0 renforcer leur coop\u00e9ration \u00bb (Wang Yi - Rubio)",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-31789b48, pas d\u2019URL publique"
+    },
+    {
+      "label": "S44 \u2014 AFP, \u00ab La Chine soutiendra fermement Cuba pour s\u2019opposer aux sanctions \u00bb",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-4c1536db, pas d\u2019URL publique"
+    },
+    {
+      "label": "S45 \u2014 AFP, \u00ab Puces d\u2019IA : l\u2019affaire Huang relance \u00e0 Washington les partisans de la fermet\u00e9 face \u00e0 P\u00e9kin \u00bb (Moolenaar)",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-08507986, pas d\u2019URL publique"
+    },
+    {
+      "label": "S46 \u2014 AFP, \u00ab Poutine dit que la pr\u00e9sence de troupes \u00e9trang\u00e8res en Ukraine signifierait une poursuite de la guerre \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-91dbe08a, pas d\u2019URL publique"
+    },
+    {
+      "label": "S47 \u2014 AFP, \u00ab Ukraine : Poutine propose une mission humanitaire dans la ville de Kostiantynivka \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-0b12e0be, pas d\u2019URL publique"
+    },
+    {
+      "label": "S48 \u2014 AFP, \u00ab La Russie a d\u00e9truit l\u2019architecture europ\u00e9enne de s\u00e9curit\u00e9 \u00bb (Antonio Costa, Conseil europ\u00e9en)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-0150d46c, pas d\u2019URL publique"
+    },
+    {
+      "label": "S49 \u2014 AFP, \u00ab France, Germany play down push to name Europe\u2019s Russia-Ukraine envoy \u00bb (Macron, Merz, Dublin)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-6c7c9239, pas d\u2019URL publique"
+    },
+    {
+      "label": "S50 \u2014 AFP, \u00ab Ukraine : les prochaines semaines, test d\u00e9cisif sur la volont\u00e9 russe d\u2019arr\u00eater la guerre \u00bb (Costa)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-cbb54f5d, pas d\u2019URL publique"
+    },
+    {
+      "label": "S51 \u2014 AP, \u00ab US envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi \u00bb (Kushner, Witkoff, Zelensky, Rutte)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-ap-20261112-d9545344, pas d\u2019URL publique"
+    },
+    {
+      "label": "S52 \u2014 AFP, \u00ab G7 says securing Ukraine financial support pressing issue \u00bb",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-cda165ca, pas d\u2019URL publique"
+    },
+    {
+      "label": "S53 \u2014 AFP, \u00ab South Korea vows continued Ukraine aid despite POW row \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-ec84c3fa, pas d\u2019URL publique"
+    },
+    {
+      "label": "S54 \u2014 AFP, \u00ab Colonies isra\u00e9liennes : 13 ONG appellent les d\u00e9put\u00e9s \u00e0 voter le texte interdisant les \u00e9changes avec la France \u00bb (CIJ, Barrot, Dagan)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-e37ef92c, pas d\u2019URL publique"
+    },
+    {
+      "label": "S55 \u2014 AFP, \u00ab Isra\u00ebl : Eisenkot appelle Netanyahu \u00e0 faire preuve de responsabilit\u00e9 sur les d\u00e9cisions s\u00e9curitaires \u00bb",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-86b2e600, pas d\u2019URL publique"
+    },
+    {
+      "label": "S56 \u2014 AFP, \u00ab La Finlande bloque les visas pour les athl\u00e8tes russes \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-96a14565, pas d\u2019URL publique"
+    },
+    {
+      "label": "S57 \u2014 AFP, \u00ab L\u2019ambassadeur russe aux \u00c9tats-Unis est mort soudainement \u00e0 66 ans \u00bb (Dartchiev)",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-9aaf8682, pas d\u2019URL publique"
+    },
+    {
+      "label": "S58 \u2014 AFP, \u00ab Nigeria : un rassemblement de campagne de l\u2019opposant Peter Obi attaqu\u00e9 par des hommes arm\u00e9s \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-b554994c, pas d\u2019URL publique"
+    },
+    {
+      "label": "S59 \u2014 AFP, \u00ab Au P\u00e9rou, L\u00e9on XIV d\u00e9nonce la persistance d\u2019une mentalit\u00e9 machiste dans la soci\u00e9t\u00e9 \u00bb (tourn\u00e9e, messe de Lujan)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-1055a030, pas d\u2019URL publique"
+    },
+    {
+      "label": "S61 \u2014 AP, \u00ab Kane extends England goals record, Spain stays perfect and Italy beats France in the Nations League \u00bb (92e but, San Siro)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-ap-20261112-fefd95fe, pas d\u2019URL publique"
+    },
+    {
+      "label": "S62 \u2014 AFP, \u00ab Championnat des nations : mission impossible pour le XV de France face aux Springboks ? \u00bb (Dupont \u00e0 l\u2019ouverture)",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-edd2c3fe, pas d\u2019URL publique"
+    },
+    {
+      "label": "S63 \u2014 AFP, \u00ab Rugby : onze ans apr\u00e8s, le XV de France rend hommage aux victimes des attentats du 13 novembre \u00bb (Stade de France)",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-e4ef331e, pas d\u2019URL publique"
+    },
+    {
+      "label": "S64 \u2014 AFP, \u00ab D\u00e9c\u00e8s de Jean Puech, ex-ministre de l\u2019Agriculture et de la Fonction publique \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-ec529d02, pas d\u2019URL publique"
+    },
+    {
+      "label": "S65 \u2014 AFP, \u00ab Airbnb.org et la F\u00e9d\u00e9ration hospitali\u00e8re de France s\u2019allient pour aider patients et familles \u00e0 se loger pendant les soins \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-4cb58ccc, pas d\u2019URL publique"
+    },
+    {
+      "label": "S66 \u2014 AFP, \u00ab La temp\u00eate Charles balaie le Portugal sans l\u2019intensit\u00e9 redout\u00e9e \u00bb",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-6e715e68, pas d\u2019URL publique"
+    },
+    {
+      "label": "S67 \u2014 AFP, \u00ab Espagne : apr\u00e8s la gr\u00e8ve, le Parlement adopte des mesures pour prot\u00e9ger le droit au logement \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-a6104fdd, pas d\u2019URL publique"
+    },
+    {
+      "label": "S68 \u2014 AFP, \u00ab Historic ocean liner SS United States reborn as artificial reef \u00bb (Floride)",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-daf4ff51, pas d\u2019URL publique"
+    },
+    {
+      "label": "S69 \u2014 AFP, \u00ab Le Ghana d\u00e9voile de nouveaux billets de banque plus r\u00e9sistants et s\u00e9curis\u00e9s \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-cc45e038, pas d\u2019URL publique"
+    },
+    {
+      "label": "S70 \u2014 AFP, \u00ab L\u2019auteur de l\u2019attentat raciste des Yvelines a dit avoir agi pour la France \u00bb",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-b891eb99, pas d\u2019URL publique"
+    },
+    {
+      "label": "S71 \u2014 AFP, \u00ab Attentat raciste en France : le r\u00e9cit gla\u00e7ant de l\u2019auteur aux policiers \u00bb",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-4d5e0b44, pas d\u2019URL publique"
+    },
+    {
+      "label": "S72 \u2014 AFP, \u00ab Pauvret\u00e9 : pour 63 % des Fran\u00e7ais, la solidarit\u00e9 doit se m\u00e9riter (sondage) \u00bb",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-94ee37fe, pas d\u2019URL publique"
+    },
+    {
+      "label": "S73 \u2014 AFP, \u00ab Euroligue : les r\u00e9sultats de la 11e journ\u00e9e \u00bb (Paris-Fenerbah\u00e7e 111-109 ap)",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-e08079b5, pas d\u2019URL publique"
+    },
+    {
+      "label": "S74 \u2014 AFP, \u00ab Foxconn annonce un b\u00e9n\u00e9fice net en hausse de 34 % au troisi\u00e8me trimestre \u00bb",
+      "fiabilite": 5,
+      "maj": "12/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-e1852f80, pas d\u2019URL publique"
+    },
+    {
+      "label": "S75 \u2014 AFP, \u00ab L\u2019Iran accuse les \u00c9tats-Unis et Isra\u00ebl de graves dommages environnementaux pendant la guerre \u00bb",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-0e9e7f7d, pas d\u2019URL publique"
+    },
+    {
+      "label": "S76 \u2014 AFP, \u00ab Russie : incendie dans un important port p\u00e9trolier sur la Baltique apr\u00e8s une attaque de drones \u00bb (Oust-Louga) ; \u00ab Deux d\u00e9put\u00e9s et deux journalistes fran\u00e7ais interdits d\u2019entr\u00e9e en Russie \u00bb",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-652d0102 / news-afp-20261111-66439296, pas d\u2019URL publique"
+    },
+    {
+      "label": "S77 \u2014 AFP, \u00ab Ukraine-Russie : Poutine inflexible lors de sa rencontre avec les envoy\u00e9s am\u00e9ricains \u00bb (Medinski, \u00ab nouvelle Yalta \u00bb)",
+      "fiabilite": 5,
+      "maj": "11/11/2026",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261111-982c2e2b, pas d\u2019URL publique"
+    }
+  ],
+  "hors_chapitres": [
+    "Football : l\u2019Italie a battu la France 3-1 jeudi soir \u00e0 San Siro en Ligue des nations \u2014 sa premi\u00e8re victoire \u00e0 domicile contre les Bleus depuis 1962. Une doublette Esposito (deux buts, un penalty rat\u00e9 par son fr\u00e8re Sebastiano) et des erreurs fran\u00e7aises suffisent : la France perd la premi\u00e8re place du groupe au profit de l\u2019Italie et devra attendre pour valider son billet pour les quarts de finale (S61).",
+    "Rugby : d\u00e9cim\u00e9 par les blessures, au point de devoir replacer Antoine Dupont \u00e0 l\u2019ouverture, le XV de France affronte vendredi soir les Springboks au Stade de France \u2014 \u00ab mission impossible, ou presque \u00bb, face aux ma\u00eetres du rugby mondial (S62). Une c\u00e9r\u00e9monie est pr\u00e9vue d\u00e8s 8h45 devant la porte D : onze ans apr\u00e8s les attentats du 13-Novembre, c\u2019est la premi\u00e8re rencontre sportive disput\u00e9e \u00e0 cette date au Stade de France (S63).",
+    "Football international : Harry Kane a port\u00e9 son record \u00e0 92 buts avec l\u2019Angleterre (2-1 contre la Croatie, 126e s\u00e9lection), l\u2019Espagne reste invaincue (43 matchs, 2-0 contre la Tch\u00e9quie) et la Belgique s\u2019est impos\u00e9e 2-1 en Turquie (S61).",
+    "Basket : en Euroligue, le Paris Basket a battu Fenerbah\u00e7e 111-109 apr\u00e8s prolongation lors de la 11e journ\u00e9e (S73).",
+    "D\u00e9c\u00e8s : Jean Puech, ancien ministre de l\u2019Agriculture puis de la Fonction publique (1993-1995) et pr\u00e9sident de l\u2019Aveyron pendant plus de trente ans, est mort jeudi \u00e0 84 ans (S64).",
+    "Sant\u00e9-logement : Airbnb.org et la F\u00e9d\u00e9ration hospitali\u00e8re de France s\u2019allient pour aider patients et familles \u00e0 se loger pr\u00e8s des h\u00f4pitaux pendant les soins \u2014 un dispositif de \u00ab r\u00e9pit \u00bb pour les aidants (S65).",
+    "M\u00e9t\u00e9o : la temp\u00eate Charles a balay\u00e9 le Portugal et l\u2019Espagne sans l\u2019intensit\u00e9 redout\u00e9e \u2014 la d\u00e9pression s\u2019est divis\u00e9e en deux noyaux, mais le centre et le sud du Portugal sont rest\u00e9s en alerte rouge aux pluies (S66).",
+    "Espagne : le Parlement a adopt\u00e9, au lendemain d\u2019une journ\u00e9e de gr\u00e8ve g\u00e9n\u00e9rale historique pour le logement, un d\u00e9cret-loi de protection du droit au logement \u2014 dans une formation r\u00e9duite par la dissolution avant les l\u00e9gislatives du 29 novembre (S67).",
+    "Patrimoine : le paquebot SS United States, fleuron des travers\u00e9es transatlantiques du XXe si\u00e8cle, a \u00e9t\u00e9 coul\u00e9 de mani\u00e8re contr\u00f4l\u00e9e au large de la Floride pour devenir le plus grand r\u00e9cif artificiel au monde (S68).",
+    "Monnaie : le Ghana a d\u00e9voil\u00e9 des billets plus petits, plus r\u00e9sistants et dot\u00e9s de dispositifs anti-contrefa\u00e7on, qui entreront en circulation le 1er d\u00e9cembre (S69).",
+    "Soci\u00e9t\u00e9 : l\u2019auteur de l\u2019attentat raciste des Yvelines a racont\u00e9 aux enqu\u00eateurs avoir agi \u00ab pour la France \u00bb et se dit \u00ab de droite \u00bb \u2014 un r\u00e9cit gla\u00e7ant livr\u00e9 avant son proc\u00e8s (S70, S71).",
+    "Sondage : pour 63 % des Fran\u00e7ais, la solidarit\u00e9 \u00ab doit se m\u00e9riter \u00bb \u2014 alors que l\u2019OCDE rappelle qu\u2019il faut en moyenne six g\u00e9n\u00e9rations en France pour qu\u2019un enfant n\u00e9 pauvre atteigne le niveau de vie moyen (S72)."
+  ]
+}

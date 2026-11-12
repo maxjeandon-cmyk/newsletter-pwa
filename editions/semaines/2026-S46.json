@@ -1,1 +1,42 @@
-{"semaine":"2026-S46","lundi":"2026-11-09","html":"editions/semaines/2026-S46.html","jours":[{"jour":"lundi","date":"2026-11-09","essentiel":"Teddy Riner a annonc\u00e9 sa candidature \u00e0 la pr\u00e9sidentielle 2027 et un sondage Harris/M6-RTL creuse l\u2019\u00e9cart en t\u00eate (Le Pen 34-36 %, M\u00e9lenchon 18-19 %), tandis que le budget 2027 s\u2019ouvre au S\u00e9nat. La COP31 s\u2019est ouverte \u00e0 Antalya, o\u00f9 la bataille des financements commence d\u00e8s l\u2019ordre du jour et o\u00f9 l\u2019OMM chiffre \u00e0 305 milliards de dollars par an les besoins des pays en d\u00e9veloppement d\u2019ici 2035. GTA VI s\u2019est ouvert au pr\u00e9chargement \u2014 212 Go, pr\u00e8s de 8 millions de pr\u00e9commandes \u2014 \u00e0 dix jours de sa sortie du 19 novembre. Les n\u00e9gociations Ukraine-Russie reprennent mardi et mercredi \u00e0 Abou Dhabi sous m\u00e9diation am\u00e9ricaine, apr\u00e8s plus de huit mois d\u2019interruption. OpenAI lance GPT-6 Cyber en cybers\u00e9curit\u00e9 offensive, l\u2019offre ChatGPT Enterprise arrive sur AWS Marketplace et la fran\u00e7aise Mistral absorbe SkipLabs pour fiabiliser le code g\u00e9n\u00e9r\u00e9."},{"jour":"mardi","date":"2026-11-10","essentiel":"Anthropic d\u00e9voile Fable 5.2 et vise une introduction en Bourse historique (jusqu'\u00e0 64 milliards de dollars, ~1 400 milliards de valorisation). L'inflation am\u00e9ricaine d'octobre d\u00e9\u00e7oit (+0,4 %) : Wall Street finit en baisse, la Fed attendue haussi\u00e8re en d\u00e9cembre, l'Europe profite du p\u00e9trole d\u00e9tendu. SMIC port\u00e9 \u00e0 1 502 euros nets au 1er d\u00e9cembre et croissance 2026 revue \u00e0 0,3 %. Premiers pourparlers directs Ukraine-Russie \u00e0 Abou Dhabi, \u00ab tr\u00e8s productifs \u00bb selon Washington. La COP31 projette une baisse rare des \u00e9missions mondiales (-0,4 % en 2026)."},{"jour":"mercredi","date":"2026-11-11","essentiel":"France : dernier 11-Novembre d'Emmanuel Macron, la campagne en toile de fond \u2014 Marine Le Pen mart\u00e8le \u00ab l'unit\u00e9 \u00bb, Jean-Luc M\u00e9lenchon promet de ne entra\u00eener personne \u00ab dans aucune guerre \u00bb, et la pol\u00e9mique sur la comm\u00e9moration \u00e0 l'\u00e9cole oppose syndicats et gouvernement. \u00c9conomie : Moody's ne table plus que sur 0,2 % de croissance en 2026 et la Banque de France attend un quatri\u00e8me trimestre mod\u00e9r\u00e9. \u00c9tats-Unis : la Chambre enterre la destitution de Pete Hegseth (211-204) avant l'arriv\u00e9e du Congr\u00e8s d\u00e9mocrate en janvier. G\u00e9opolitique : deuxi\u00e8me journ\u00e9e de pourparlers Ukraine-Russie \u00e0 Abou Dhabi, et Moscou interdit l'entr\u00e9e \u00e0 deux d\u00e9put\u00e9s et deux journalistes fran\u00e7ais en r\u00e9ponse \u00e0 l'expulsion de Xenia Fedorova. Climat et sciences : le Global Carbon Budget confirme la baisse rare des \u00e9missions mondiales (-0,4 %), et une exoplan\u00e8te cach\u00e9e est r\u00e9v\u00e9l\u00e9e dans les images du James-Webb. Rugby : le XV de France attend l'Afrique du Sud vendredi 13 novembre, jour des 11 ans des attentats."}]}
+{
+  "semaine": "2026-S46",
+  "lundi": "2026-11-09",
+  "html": "editions/semaines/2026-S46.html",
+  "jours": [
+    {
+      "jour": "lundi",
+      "date": "2026-11-09",
+      "essentiel": "Teddy Riner a annonc\u00e9 sa candidature \u00e0 la pr\u00e9sidentielle 2027 et un sondage Harris/M6-RTL creuse l\u2019\u00e9cart en t\u00eate (Le Pen 34-36 %, M\u00e9lenchon 18-19 %), tandis que le budget 2027 s\u2019ouvre au S\u00e9nat. La COP31 s\u2019est ouverte \u00e0 Antalya, o\u00f9 la bataille des financements commence d\u00e8s l\u2019ordre du jour et o\u00f9 l\u2019OMM chiffre \u00e0 305 milliards de dollars par an les besoins des pays en d\u00e9veloppement d\u2019ici 2035. GTA VI s\u2019est ouvert au pr\u00e9chargement \u2014 212 Go, pr\u00e8s de 8 millions de pr\u00e9commandes \u2014 \u00e0 dix jours de sa sortie du 19 novembre. Les n\u00e9gociations Ukraine-Russie reprennent mardi et mercredi \u00e0 Abou Dhabi sous m\u00e9diation am\u00e9ricaine, apr\u00e8s plus de huit mois d\u2019interruption. OpenAI lance GPT-6 Cyber en cybers\u00e9curit\u00e9 offensive, l\u2019offre ChatGPT Enterprise arrive sur AWS Marketplace et la fran\u00e7aise Mistral absorbe SkipLabs pour fiabiliser le code g\u00e9n\u00e9r\u00e9."
+    },
+    {
+      "jour": "mardi",
+      "date": "2026-11-10",
+      "essentiel": "Anthropic d\u00e9voile Fable 5.2 et vise une introduction en Bourse historique (jusqu'\u00e0 64 milliards de dollars, ~1 400 milliards de valorisation). L'inflation am\u00e9ricaine d'octobre d\u00e9\u00e7oit (+0,4 %) : Wall Street finit en baisse, la Fed attendue haussi\u00e8re en d\u00e9cembre, l'Europe profite du p\u00e9trole d\u00e9tendu. SMIC port\u00e9 \u00e0 1 502 euros nets au 1er d\u00e9cembre et croissance 2026 revue \u00e0 0,3 %. Premiers pourparlers directs Ukraine-Russie \u00e0 Abou Dhabi, \u00ab tr\u00e8s productifs \u00bb selon Washington. La COP31 projette une baisse rare des \u00e9missions mondiales (-0,4 % en 2026)."
+    },
+    {
+      "jour": "mercredi",
+      "date": "2026-11-11",
+      "essentiel": "France : dernier 11-Novembre d'Emmanuel Macron, la campagne en toile de fond \u2014 Marine Le Pen mart\u00e8le \u00ab l'unit\u00e9 \u00bb, Jean-Luc M\u00e9lenchon promet de ne entra\u00eener personne \u00ab dans aucune guerre \u00bb, et la pol\u00e9mique sur la comm\u00e9moration \u00e0 l'\u00e9cole oppose syndicats et gouvernement. \u00c9conomie : Moody's ne table plus que sur 0,2 % de croissance en 2026 et la Banque de France attend un quatri\u00e8me trimestre mod\u00e9r\u00e9. \u00c9tats-Unis : la Chambre enterre la destitution de Pete Hegseth (211-204) avant l'arriv\u00e9e du Congr\u00e8s d\u00e9mocrate en janvier. G\u00e9opolitique : deuxi\u00e8me journ\u00e9e de pourparlers Ukraine-Russie \u00e0 Abou Dhabi, et Moscou interdit l'entr\u00e9e \u00e0 deux d\u00e9put\u00e9s et deux journalistes fran\u00e7ais en r\u00e9ponse \u00e0 l'expulsion de Xenia Fedorova. Climat et sciences : le Global Carbon Budget confirme la baisse rare des \u00e9missions mondiales (-0,4 %), et une exoplan\u00e8te cach\u00e9e est r\u00e9v\u00e9l\u00e9e dans les images du James-Webb. Rugby : le XV de France attend l'Afrique du Sud vendredi 13 novembre, jour des 11 ans des attentats."
+    },
+    {
+      "jour": "jeudi",
+      "date": "2026-11-12",
+      "essentiel": "S\u00e9isme dans l\u2019IA : Jensen Huang quitte Nvidia apr\u00e8s le scandale de ses liaisons extraconjugales, privant le secteur de son banquier, de son diplomate et de son porte-voix, \u00e0 une semaine de l\u2019entr\u00e9e en Bourse d\u2019Anthropic. Le t\u00e9lescope europ\u00e9en Euclid livre sa premi\u00e8re grande moisson \u2014 900 millions de galaxies catalogu\u00e9es, 15 000 lentilles gravitationnelles candidates. En Ukraine, les \u00e9missaires am\u00e9ricains Kushner et Witkoff ont rencontr\u00e9 Poutine \u00e0 Moscou puis Zelensky \u00e0 Dublin, qui croit \u00e0 une \u00ab fen\u00eatre d\u2019opportunit\u00e9 \u00bb pour un cessez-le-feu avant 2027 ; Moscou, lui, a interdit quatre Fran\u00e7ais \u2014 deux d\u00e9put\u00e9s, deux journalistes \u2014 d\u2019entr\u00e9e sur son territoire. Aux \u00c9tats-Unis, la vague d\u00e9mocrate des midterms s\u2019est confirm\u00e9e jusqu\u2019au Mississippi (premier s\u00e9nateur noir \u00e9lu depuis pr\u00e8s d\u2019un si\u00e8cle et demi) et Trump, affaibli, s\u2019envole lundi en Asie pour l\u2019Asean puis l\u2019Apec de Shenzhen. En France, David Lisnard entre fracassamment dans le barom\u00e8tre pr\u00e9sidentielle (10-12 %), le S\u00e9nat cherche des compromis sur le budget 2027 et le plan de relance agricole (500 \u00e0 700 millions d\u2019euros) a \u00e9t\u00e9 annonc\u00e9. Sport : l\u2019Italie a battu la France 3-1 en Ligue des nations \u2014 premi\u00e8re victoire \u00e0 domicile contre les Bleus depuis 1962 \u2014 et le XV de France attend les Springboks vendredi au Stade de France, jour des 11 ans des attentats."
+    },
+    {
+      "jour": "vendredi",
+      "date": "2026-11-13",
+      "essentiel": null
+    },
+    {
+      "jour": "samedi",
+      "date": "2026-11-14",
+      "essentiel": null
+    },
+    {
+      "jour": "dimanche",
+      "date": "2026-11-15",
+      "essentiel": null
+    }
+  ]
+}
