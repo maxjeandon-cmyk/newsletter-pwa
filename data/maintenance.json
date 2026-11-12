@@ -1,35 +1,35 @@
 {
-  "date": "11/11/2026",
-  "heure": "21:54",
+  "date": "12/11/2026",
+  "heure": "10:59",
   "relevesOng": {
-    "rafraichis": 0,
+    "rafraichis": 9,
     "echecs": 1,
-    "publie": false
+    "publie": true
   },
   "lyceens": {
-    "nouvelles": 1,
-    "fusionnees": 8,
-    "moissonnes": 33,
+    "nouvelles": 3,
+    "fusionnees": 5,
+    "moissonnes": 27,
     "total": 22,
     "publie": true
   },
   "etudiants": {
-    "items": 3,
-    "ajoutes": 1,
-    "chapitre": "c41",
+    "items": 0,
+    "ajoutes": 0,
+    "chapitre": null,
     "nouveauChapitre": false,
-    "publie": true
+    "publie": false
   },
   "verifs": [
     {
       "nom": "validate-latest.js",
       "ok": true,
-      "detail": "\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 08/11/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n\nToutes les éditions récentes sont conformes. 🌱"
+      "detail": "\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 09/11/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n\nToutes les éditions récentes sont conformes. 🌱"
     },
     {
       "nom": "check-site.js",
       "ok": true,
-      "detail": "=== check-site ===\nℹ️  latest.json : 45 édition(s), plus récente 2026-11-10\nℹ️  édition 2026-11-10 : JSON OK, HTML 101429 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
+      "detail": "=== check-site ===\nℹ️  latest.json : 46 édition(s), plus récente 2026-11-11\nℹ️  édition 2026-11-11 : JSON OK, HTML 78534 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
     },
     {
       "nom": "sonde notifications",
@@ -38,18 +38,18 @@
     },
     {
       "nom": "ong-releve.js",
-      "ok": false,
-      "detail": "0 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
+      "ok": true,
+      "detail": "9 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
     },
     {
       "nom": "lyceens.js",
       "ok": true,
-      "detail": "1 nouvelle(s) info, 8 fusionnée(s) sur 33 moissonnée(s) — 22 au total"
+      "detail": "3 nouvelle(s) info, 5 fusionnée(s) sur 27 moissonnée(s) — 22 au total"
     },
     {
       "nom": "etudiants.js",
       "ok": true,
-      "detail": "3 info(s) des dernières heures, 1 paragraphe(s) ajouté(s)"
+      "detail": "0 info(s) des dernières heures, 0 paragraphe(s) ajouté(s)"
     }
   ],
   "problemes": [],
