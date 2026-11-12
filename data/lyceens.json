@@ -1,5 +1,5 @@
 {
-  "maj": "11/11/2026 22:54",
+  "maj": "12/11/2026 11:59",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -19,6 +19,47 @@
     "Mercredi 7 octobre (lendemain de l'acte III) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
   ],
   "version_gouvernement": [
+    {
+      "id": "amwdfrd44-8qbd",
+      "date": "12/11/2026",
+      "titre": "Crise étudiante : Valérie Pécresse propose de déployer «en urgence» des caméras dans 50 lycées d’Île-de-France",
+      "texte": "La présidente de la région Île-de-France a décliné, jeudi 12 novembre sur RTL, une série de mesures pour répondre aux dégradations dans les lycées. Une suspension des «aides facultatives de la région…",
+      "source": "Europe 1 / Le Figaro",
+      "sources": [
+        "Europe 1",
+        "Le Figaro"
+      ],
+      "url": "https://www.lefigaro.fr/politique/crise-etudiante-valerie-pecresse-propose-de-deployer-en-urgence-des-cameras-dans-50-lycees-d-ile-de-france-20261112",
+      "verifie": true
+    },
+    {
+      "id": "amwdfrd47-fnvo",
+      "date": "12/11/2026",
+      "titre": "Tirs de mortiers, incendies, violences sur les proviseurs… Le mouvement lycéen se radicalise alors que les discussions …",
+      "texte": "Cibles directes des violences, les proviseurs appellent l’État à prendre ses responsabilités. Depuis le début du mouvement, 245 personnels ont été blessés, indique le ministre de l’Éducation qui déno…",
+      "source": "Le Figaro / franceinfo / La Croix / Libération",
+      "sources": [
+        "Le Figaro",
+        "franceinfo",
+        "La Croix",
+        "Libération"
+      ],
+      "url": "https://www.lefigaro.fr/actualite-france/mortiers-tires-a-l-interieur-des-lycees-incendies-violences-sur-les-proviseurs-le-mouvement-lyceen-se-radicalise-alors-que-les-discussions-sont-dans-l-impasse-20261112",
+      "verifie": true
+    },
+    {
+      "id": "amwdfrd48-h6eu",
+      "date": "12/11/2026",
+      "titre": "\"Une augmentation certaine du niveau de violence\": le gouvernement veut une saisine de la justice \"systématique\" pour l…",
+      "texte": "\"Une augmentation certaine du niveau de violence\": le gouvernement veut une saisine de la justice \"systématique\" pour les actes délictueux près des lycées",
+      "source": "Le Figaro / BFMTV",
+      "sources": [
+        "Le Figaro",
+        "BFMTV"
+      ],
+      "url": "https://www.bfmtv.com/politique/gouvernement/une-augmentation-certaine-du-niveau-de-violence-le-gouvernement-veut-une-saisine-de-la-justice-systematique-pour-les-actes-delictueux-pres-des-lycees_AD-202611120440.html",
+      "verifie": true
+    },
     {
       "id": "amwb6xs0n-12cr",
       "date": "10/11/2026",
@@ -150,50 +191,6 @@
         "La Croix"
       ],
       "url": "https://www.bfmtv.com/economie/entreprises/energie/e-leclerc-annonce-21-centimes-d-euro-par-litre-des-dimanche-cooperative-u-promet-jusqu-a-21-centimes-selon-les-stations-apres-totalenergies-les-deux-distributeurs-vont-aussi-baisser-le-prix-du-gazole-grace-au-deblocage-des-stocks-strategiques_AD-202611010209.html",
-      "verifie": true
-    },
-    {
-      "id": "amvy8fjpf-halq",
-      "date": "01/11/2026",
-      "titre": "À la veille de la rentrée, l'Élysée espère un \"retour en classe\" des lycéens et étudiants \"compte tenu des mesures déci…",
-      "texte": "Alors que les syndicats lycéens et étudiants appellent à de nouveaux blocages des établissements scolaires dès ce lundi, le président de la République souhaite un \"retour en classe\", affirme son ento…",
-      "source": "Europe 1 / BFMTV",
-      "sources": [
-        "Europe 1",
-        "BFMTV"
-      ],
-      "url": "https://www.bfmtv.com/politique/elysee/a-la-veille-de-la-rentree-l-elysee-espere-un-retour-en-classe-des-lyceens-et-etudiants-compte-tenu-des-mesures-decidees_AD-202611010352.html",
-      "verifie": true
-    },
-    {
-      "id": "amvtzgw3a-e00n",
-      "date": "29/10/2026",
-      "titre": "Annonces du gouvernement pour les lycéens: Cyrille Isaac-Sibille explique pourquoi elles arrivent après plusieurs semai…",
-      "texte": "Invité de Lyon Politiques ce jeudi 29 octobre, Cyrille Isaac-Sibille, député Modem de la 12e circonscription du Rhône explique pourquoi les annonces du gouvernement arrivent après des semaines de col…",
-      "source": "BFMTV / France 24 / Ouest-France",
-      "sources": [
-        "BFMTV",
-        "France 24",
-        "Ouest-France"
-      ],
-      "url": "https://www.bfmtv.com/lyon/replay-emissions/lyon-politiques/video-annonces-du-gouvernement-pour-les-lyceens-cyrille-isaac-sibille-explique-pourquoi-elles-arrivent-apres-plusieurs-semaines-de-mobilisation_VN-202610290836.html",
-      "verifie": true
-    },
-    {
-      "id": "amvrx5iov-es40",
-      "date": "28/10/2026",
-      "titre": "Mouvement lycéen : « Le vrai débat derrière Parcoursup, c’est sélection ou pas sélection », affirme Marc Fesneau",
-      "texte": "Invité de la matinale de Public Sénat, le président du groupe Les Démocrates à l’Assemblée nationale, Marc Fesneau, est revenu sur les annonces du gouvernement, quelques heures avant le débat organis…",
-      "source": "Europe 1 / Public Sénat / L'Humanité / Libération / 20 minutes / La Croix",
-      "sources": [
-        "Europe 1",
-        "Public Sénat",
-        "L'Humanité",
-        "Libération",
-        "20 minutes",
-        "La Croix"
-      ],
-      "url": "https://www.publicsenat.fr/actualites/education/mouvement-lyceen-le-vrai-debat-derriere-parcoursup-cest-selection-ou-pas-selection-affirme-marc-fesneau",
       "verifie": true
     }
   ],
