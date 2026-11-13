@@ -1,5 +1,5 @@
 {
-  "maj": "13/11/2026 11:53",
+  "maj": "13/11/2026 22:25",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -24,10 +24,11 @@
       "date": "13/11/2026",
       "titre": "Mobilisation lycéenne : les proviseurs appelés à se rassembler pour dire non à la violence",
       "texte": "Appelés à se réunir devant leur établissement, ce vendredi 13 novembre, certains proviseurs se rendront devant les rectorats. Entre menaces et dégradations, le syndicat des proviseurs SNPDEN veut tir…",
-      "source": "Europe 1 / France 24",
+      "source": "Europe 1 / France 24 / Libération",
       "sources": [
         "Europe 1",
-        "France 24"
+        "France 24",
+        "Libération"
       ],
       "url": "https://www.europe1.fr/societe/mobilisation-lyceenne-les-proviseurs-appeles-a-se-rassembler-pour-dire-non-a-la-violence-1228739?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
@@ -67,12 +68,14 @@
       "date": "12/11/2026",
       "titre": "\"Une augmentation certaine du niveau de violence\": le gouvernement veut une saisine de la justice \"systématique\" pour l…",
       "texte": "\"Une augmentation certaine du niveau de violence\": le gouvernement veut une saisine de la justice \"systématique\" pour les actes délictueux près des lycées",
-      "source": "Le Figaro / BFMTV / Europe 1 / Libération",
+      "source": "Le Figaro / BFMTV / Europe 1 / Libération / 20 minutes / La Croix",
       "sources": [
         "Le Figaro",
         "BFMTV",
         "Europe 1",
-        "Libération"
+        "Libération",
+        "20 minutes",
+        "La Croix"
       ],
       "url": "https://www.bfmtv.com/politique/gouvernement/une-augmentation-certaine-du-niveau-de-violence-le-gouvernement-veut-une-saisine-de-la-justice-systematique-pour-les-actes-delictueux-pres-des-lycees_AD-202611120440.html",
       "verifie": true
@@ -200,6 +203,19 @@
   ],
   "faits": [
     {
+      "id": "amwfhjqvo-e7tc",
+      "date": "13/11/2026",
+      "titre": "\"On vient tôt pour vérifier, voir s'il n'y a pas du matériel qui serait stocké\": Mortiers, incendies: au cœur des viole…",
+      "texte": "Une centaine de lycées fermés, des dizaines d’établissement bloqués et une série d’actes violents au sein même des établissements : après bientôt 8 semaines de mobilisation, le mouvement lycéen s’est…",
+      "source": "BFMTV / franceinfo",
+      "sources": [
+        "BFMTV",
+        "franceinfo"
+      ],
+      "url": "https://www.bfmtv.com/police-justice/video-on-vient-tot-pour-verifier-voir-s-il-n-y-a-pas-du-materiel-qui-serait-stocke-mortiers-incendies-au-c-ur-des-violences-dans-les-lycees_VN-202611130845.html",
+      "verifie": true
+    },
+    {
       "id": "amwcnqaa5-joza",
       "date": "11/11/2026",
       "titre": "Blocus des lycées : à Chelles, une situation chaotique, les parents désemparés face à une telle violence",
@@ -319,20 +335,6 @@
         "L'Humanité"
       ],
       "url": "https://www.humanite.fr/monde/allemagne/les-profs-manquent-letat-des-toilettes-est-degrade-en-allemagne-la-gen-z-reprend-les-mots-dordre-du-mouvement-lyceen-francais",
-      "verifie": true
-    },
-    {
-      "id": "amvu9idsl-ejb6",
-      "date": "29/10/2026",
-      "titre": "Mobilisations du 31 octobre: \"Les lycéens et lycéennes ont peur d'aller manifester\", témoigne Anaïs, élève au lycée Klé…",
-      "texte": "BFMTV propose un nouveau numéro exceptionnel du FORUM BFMTV: “Blocages, vie chère : la poudrière française” présenté par Maxime Switek. La chaîne consacre une soirée spéciale pour permettre à des cit…",
-      "source": "BFMTV / Ouest-France / 20 minutes",
-      "sources": [
-        "BFMTV",
-        "Ouest-France",
-        "20 minutes"
-      ],
-      "url": "https://www.bfmtv.com/societe/video-forum-bfmtv-mobilisations-du-31-octobre-les-lyceens-et-lyceennes-ont-peur-d-aller-manifester-temoigne-anais-eleve-au-lycee-kleber-de-strasbourg-et-membre-du-syndicat-les-lyceens_VN-202610290995.html",
       "verifie": true
     }
   ],
