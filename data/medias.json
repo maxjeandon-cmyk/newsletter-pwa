@@ -122,7 +122,7 @@
       "nom": "Force Ouvrière",
       "emoji": "🛠️",
       "flux": [
-        "https://www.force-ouvriere.fr/spip.php?page=backend"
+        "https://www.force-ouvriere.fr/spip.php?page=backend&id_rubrique=1"
       ],
       "fenetreHeures": 24,
       "masque": true

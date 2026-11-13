@@ -712,7 +712,7 @@
       "categorie": "Travail & syndicats 🤝",
       "ligne": "indépendant, défense des travailleurs",
       "flux": [
-        "https://www.force-ouvriere.fr/spip.php?page=backend"
+        "https://www.force-ouvriere.fr/spip.php?page=backend&id_rubrique=1"
       ]
     },
     {
