@@ -1,5 +1,5 @@
 {
-  "maj": "12/11/2026 22:49",
+  "maj": "13/11/2026 11:53",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -19,6 +19,19 @@
     "Mercredi 7 octobre (lendemain de l'acte III) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
   ],
   "version_gouvernement": [
+    {
+      "id": "amweuzxhb-8nuk",
+      "date": "13/11/2026",
+      "titre": "Mobilisation lycéenne : les proviseurs appelés à se rassembler pour dire non à la violence",
+      "texte": "Appelés à se réunir devant leur établissement, ce vendredi 13 novembre, certains proviseurs se rendront devant les rectorats. Entre menaces et dégradations, le syndicat des proviseurs SNPDEN veut tir…",
+      "source": "Europe 1 / France 24",
+      "sources": [
+        "Europe 1",
+        "France 24"
+      ],
+      "url": "https://www.europe1.fr/societe/mobilisation-lyceenne-les-proviseurs-appeles-a-se-rassembler-pour-dire-non-a-la-violence-1228739?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
+      "verifie": true
+    },
     {
       "id": "amwdfrd44-8qbd",
       "date": "12/11/2026",
@@ -182,19 +195,6 @@
         "Ouest-France"
       ],
       "url": "https://www.bfmtv.com/societe/manifestations/video-lycees-bloques-marius-mesnil-co-secretaire-de-l-union-syndicale-lyceenne-appelle-les-eleves-a-s-organiser-des-ce-lundi_VN-202611010182.html",
-      "verifie": true
-    },
-    {
-      "id": "amvxommyj-bbn2",
-      "date": "01/11/2026",
-      "titre": "E.Leclerc annonce \"21 centimes d'euro par litre\" dès dimanche, Coopérative U promet \"jusqu'à 21 centimes\" selon les sta…",
-      "texte": "E.Leclerc a annoncé samedi une baisse du prix du gazole de 21 centimes d'euro au litre à partir de ce dimanche dans ses 742 stations-service, après le déstockage de réserves stratégiques décidé par l…",
-      "source": "BFMTV / La Croix",
-      "sources": [
-        "BFMTV",
-        "La Croix"
-      ],
-      "url": "https://www.bfmtv.com/economie/entreprises/energie/e-leclerc-annonce-21-centimes-d-euro-par-litre-des-dimanche-cooperative-u-promet-jusqu-a-21-centimes-selon-les-stations-apres-totalenergies-les-deux-distributeurs-vont-aussi-baisser-le-prix-du-gazole-grace-au-deblocage-des-stocks-strategiques_AD-202611010209.html",
       "verifie": true
     }
   ],
