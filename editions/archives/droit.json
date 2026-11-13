@@ -2,6 +2,11 @@
   "domaine": "droit",
   "entrees": [
     {
+      "date": "2026-11-13",
+      "titre": "L\u2019appel et le d\u00e9sistement d\u2019appel : comment une condamnation devient d\u00e9finitive",
+      "html": "editions/archives/droit/2026-11-13.html"
+    },
+    {
       "date": "2026-11-12",
       "titre": "Dark patterns : comment la loi va chasser les interfaces trompeuses",
       "html": "editions/archives/droit/2026-11-12.html"
@@ -112,14 +117,14 @@
       "html": "editions/archives/droit/2026-10-20.html"
     },
     {
-      "date": "2026-10-18",
-      "titre": "La comparution imm\u00e9dienne : juger vite, mais \u00e0 quelles conditions",
-      "html": "editions/archives/droit/2026-10-18.html"
-    },
-    {
       "date": "2026-10-19",
       "titre": "Le recel : acheter ou garder un bien vol\u00e9 est un d\u00e9lit \u2014 textes \u00e0 l\u2019appui",
       "html": "editions/archives/droit/2026-10-19.html"
+    },
+    {
+      "date": "2026-10-18",
+      "titre": "La comparution imm\u00e9dienne : juger vite, mais \u00e0 quelles conditions",
+      "html": "editions/archives/droit/2026-10-18.html"
     },
     {
       "date": "2026-10-17",

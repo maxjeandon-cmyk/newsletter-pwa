@@ -1,0 +1,616 @@
+{
+  "date": "2026-11-13",
+  "genere_le": "2026-11-13T23:16:52.908Z",
+  "html": "editions/2026-11-13.html",
+  "resume_executif": [
+    "Intelligence artificielle : premier sommet europ\u00e9en d\u00e9di\u00e9 \u00e0 l\u2019IA \u00e0 Dublin \u2014 le patron de Mistral Arthur Mensch appelle l\u2019Europe \u00e0 \u00ab passer \u00e0 l\u2019action \u00bb ; Wall Street cl\u00f4t la semaine plomb\u00e9e par l\u2019apr\u00e8s-Jensen Huang, et le FBI d\u00e9mant\u00e8le un sch\u00e9ma d\u2019appels vid\u00e9o truqu\u00e9s nord-cor\u00e9ens \u00e0 400 millions de dollars (S1-S5, S49).",
+    "Spatial : Starship vol 15 \u2014 SpaceX tente vendredi le premier double rattrapage de l\u2019histoire d\u2019un lanceur orbital ; l\u2019\u00e9chec du rattrapage du premier \u00e9tage, amerri dans le golfe du Mexique, laisse au vaisseau Ship 42 sa tentative de retour ce week-end (S6-S8).",
+    "France : vendredi 13 \u2014 onze ans apr\u00e8s les attentats, la Nation rend son \u00ab hommage citoyen \u00bb ; 70.000 policiers et gendarmes seront mobilis\u00e9s samedi pour l\u2019acte V contre la vie ch\u00e8re, tandis que Teddy Riner ouvrait sa campagne dans un h\u00f4pital de Saint-Denis (S36-S41).",
+    "Climat : \u00e0 la COP31 d\u2019Antalya, les pays affichent des priorit\u00e9s \u00ab parfois oppos\u00e9es \u00bb, la bataille du calendrier du Giec fait rage, la Chine renonce \u00e0 accueillir la COP33 de 2028 et Al Gore d\u00e9nonce le veto \u00ab insens\u00e9 \u00bb de l\u2019Arabie saoudite (S30-S35).",
+    "G\u00e9opolitique : les alli\u00e9s de l\u2019Ukraine se donnent rendez-vous \u00e0 Berlin le 19 novembre, Kaja Kallas met les Europ\u00e9ens en garde contre les \u00ab pi\u00e8ges \u00bb russes, apr\u00e8s une nuit de drones d\u2019une \u00ab rare ampleur \u00bb \u2014 neuf morts en Russie, trois en Ukraine (S53-S57)."
+  ],
+  "chapitres": [
+    {
+      "id": "intelligence-artificielle",
+      "emoji": "\ud83e\udd16",
+      "nom": "Intelligence artificielle",
+      "resume": "Premi\u00e8re historique : les dirigeants des Vingt-Sept ont consacr\u00e9 vendredi \u00e0 Dublin leur tout premier sommet informel enti\u00e8rement d\u00e9di\u00e9 \u00e0 l\u2019intelligence artificielle, partag\u00e9s entre la n\u00e9cessit\u00e9 de rattraper les \u00c9tats-Unis et la Chine et la volont\u00e9 de prot\u00e9ger les citoyens (S1, S2). Invit\u00e9 \u00e0 s\u2019exprimer devant les chefs d\u2019\u00c9tat et de gouvernement, le Fran\u00e7ais Arthur Mensch, dirigeant de Mistral AI\u2026"
+    },
+    {
+      "id": "spatial",
+      "emoji": "\ud83d\ude80",
+      "nom": "Spatial",
+      "resume": "SpaceX a lanc\u00e9 vendredi depuis Starbase, au Texas, le quinzi\u00e8me vol d\u2019essai de Starship, la fus\u00e9e la plus haute et la plus puissante du monde \u2014 son test \u00ab le plus audacieux \u00e0 ce jour \u00bb selon l\u2019AP : l\u2019entreprise d\u2019Elon Musk visait pour la premi\u00e8re fois le rattrapage des deux \u00e9tages du v\u00e9hicule, le \u00ab Saint Graal \u00bb du lancement spatial : un lanceur enti\u00e8rement r\u00e9utilisable (S6, S7, S9). Le plan de\u2026"
+    },
+    {
+      "id": "economie-pour-les-nuls",
+      "emoji": "\ud83d\udcb0",
+      "nom": "L\u2019\u00c9conomie pour les nuls",
+      "resume": "Wall Street a termin\u00e9 la semaine en baisse vendredi, la technologie en t\u00eate de peloton des valeurs qui reculent, autour de l\u2019incertitude Nvidia (S4). Reprenons les bases : la \u00ab Bourse \u00bb, c\u2019est le march\u00e9 o\u00f9 s\u2019\u00e9changent les actions \u2014 des petits morceaux de propri\u00e9t\u00e9 d\u2019entreprise. Quand une entreprise comme Nvidia, moteur de la r\u00e9volution de l\u2019IA, perd son fondateur-dirigeant dans un scandale, les\u2026"
+    },
+    {
+      "id": "droit-pour-les-nuls",
+      "emoji": "\u2696\ufe0f",
+      "nom": "Le Droit pour les nuls",
+      "resume": "G\u00e9rard Depardieu, condamn\u00e9 en mars pour avoir agress\u00e9 sexuellement deux femmes lors du tournage du film \u00ab Les Volets verts \u00bb en 2021, devait \u00eatre rejug\u00e9 \u00e0 partir de lundi. Vendredi, \u00e0 quelques heures de l\u2019ouverture du proc\u00e8s, la star d\u00e9chue du cin\u00e9ma fran\u00e7ais s\u2019est d\u00e9sist\u00e9e : son renoncement \u00e0 l\u2019appel rend sa condamnation \u2014 18 mois de prison avec sursis \u2014 d\u00e9finitive (S14, S15). Une d\u00e9cision prise\u2026"
+    },
+    {
+      "id": "jeu-video-pop-culture",
+      "emoji": "\ud83c\udfae",
+      "nom": "Jeu vid\u00e9o & pop culture",
+      "resume": "Le rendez-vous de l\u2019ann\u00e9e du jeu vid\u00e9o approche : \u00ab Grand Theft Auto VI \u00bb sort le 19 novembre, et les chiffres donnent le vertige \u2014 la saga a \u00e9coul\u00e9 480 millions de jeux depuis son lancement, dont pr\u00e8s de 235 millions pour le seul \u00ab GTA V \u00bb, toujours parmi les meilleures ventes annuelles treize ans apr\u00e8s sa sortie de 2013 (S18). \u00c0 une semaine du lancement, plus de 1.600 salari\u00e9s britanniques de\u2026"
+    },
+    {
+      "id": "culture",
+      "emoji": "\ud83c\udfad",
+      "nom": "Culture",
+      "resume": "C\u2019est l\u2019\u00e9v\u00e9nement culturel du jour : G\u00e9rard Depardieu, multiprim\u00e9 \u2014 du \u00ab Dernier M\u00e9tro \u00bb \u00e0 \u00ab Cyrano \u00bb \u2014, a annonc\u00e9 vendredi, par son d\u00e9sistement, la fin de son proc\u00e8s en appel pour agressions sexuelles, rendant d\u00e9finitive sa condamnation \u00e0 18 mois de prison avec sursis (S14, S15). Le proc\u00e8s qui devait s\u2019ouvrir lundi n\u2019aura pas lieu : apr\u00e8s des ann\u00e9es de d\u00e9bats publics sur son comportement \u2014\u2026"
+    },
+    {
+      "id": "sciences",
+      "emoji": "\ud83d\udd2c",
+      "nom": "Sciences",
+      "resume": "Le laboratoire fran\u00e7ais Servier a annonc\u00e9 vendredi l\u2019arr\u00eat du d\u00e9veloppement clinique du sevasemten, un traitement exp\u00e9rimental, \u00ab tant dans la dystrophie musculaire de Becker que pour celle de Duchenne \u00bb \u2014 deux maladies g\u00e9n\u00e9tiques rares qui affaiblissent progressivement les muscles (S26). Explication pour n\u00e9ophytes : les dystrophies de Duchenne (la plus fr\u00e9quente et la plus s\u00e9v\u00e8re, touchant\u2026"
+    },
+    {
+      "id": "climat",
+      "emoji": "\ud83c\udf0d",
+      "nom": "Climat",
+      "resume": "Six jours apr\u00e8s son ouverture \u00e0 Antalya, en Turquie, la COP31 a publi\u00e9 vendredi un premier r\u00e9sum\u00e9 des priorit\u00e9s des diff\u00e9rents pays pour une potentielle d\u00e9cision finale \u2014 et la photographie est sans illusion : sortie des \u00e9nergies fossiles, trajectoire de l\u2019\u00e9lectricit\u00e9, financement de l\u2019adaptation : les positions restent \u00ab tr\u00e8s diverses et parfois oppos\u00e9es \u00bb (S33). La comparaison entre\u2026"
+    },
+    {
+      "id": "politique-francaise",
+      "emoji": "\ud83c\uddeb\ud83c\uddf7",
+      "nom": "Politique fran\u00e7aise",
+      "resume": "Onze ans apr\u00e8s les attentats du 13-Novembre, le pr\u00e9sident Emmanuel Macron a adress\u00e9 \u00ab aux familles et aux proches des victimes \u00bb les \u00ab pens\u00e9es fraternelles de la Nation \u00bb et appel\u00e9 \u00e0 un \u00ab hommage citoyen \u00bb \u00e0 \u00ab toutes les victimes du terrorisme \u00bb, en \u00e9cho aux c\u00e9r\u00e9monies du jour \u2014 dont celle, in\u00e9dite par sa date, organis\u00e9e au Stade de France avant la rencontre France-Afrique du Sud, premi\u00e8re\u2026"
+    },
+    {
+      "id": "etats-unis",
+      "emoji": "\ud83c\uddfa\ud83c\uddf8",
+      "nom": "\u00c9tats-Unis",
+      "resume": "Donald Trump, affaibli par la d\u00e9route r\u00e9publicaine aux midterms du 3 novembre, a menac\u00e9 le Mexique de doubler les droits de douane qui lui sont impos\u00e9s, apr\u00e8s l\u2019arriv\u00e9e sur le territoire mexicain d\u2019une caravane de plus de 1.000 migrants centram\u00e9ricains qui esp\u00e8rent entrer aux \u00c9tats-Unis (S45). La menace fait \u00e9cho \u00e0 sa m\u00e9thode tarifaire de son premier mandat \u2014 utiliser la fiscalit\u00e9 frontali\u00e8re\u2026"
+    },
+    {
+      "id": "chine",
+      "emoji": "\ud83c\udde8\ud83c\uddf3",
+      "nom": "Chine",
+      "resume": "Le feuilleton des puces am\u00e9ricaines retrouv\u00e9es en Chine a pris un tour in\u00e9dit vendredi : selon un rapport de Bloomberg repris vendredi, des puces haut de gamme de Nvidia \u2014 soumises \u00e0 des restrictions am\u00e9ricaines d\u2019exportation \u2014 ont \u00e9t\u00e9 import\u00e9es ill\u00e9galement en Chine gr\u00e2ce \u00e0 une soci\u00e9t\u00e9 fond\u00e9e par Alice Huang, l\u2019ex-ma\u00eetresse pr\u00e9sum\u00e9e du patron d\u00e9chu (S51). Le m\u00eame jour, le ministre am\u00e9ricain des\u2026"
+    },
+    {
+      "id": "russie",
+      "emoji": "\ud83c\uddf7\ud83c\uddfa",
+      "nom": "Russie",
+      "resume": "L\u2019\u00e9conomie russe a progress\u00e9 de 1 % au troisi\u00e8me trimestre sur un an, selon les donn\u00e9es pr\u00e9liminaires publi\u00e9es vendredi par l\u2019agence publique des statistiques Rosstat \u2014 mais la croissance reste \u00ab p\u00e9nalis\u00e9e par les effets de la guerre \u00bb : les d\u00e9penses militaires massives soutiennent l\u2019activit\u00e9, tout en gonflant l\u2019inflation et en provoquant des p\u00e9nuries de main-d\u2019\u0153uvre dans les secteurs non\u2026"
+    },
+    {
+      "id": "geopolitique",
+      "emoji": "\ud83c\udf10",
+      "nom": "G\u00e9opolitique mondiale",
+      "resume": "Le chef de file du dossier cette semaine : apr\u00e8s les pourparlers directs ukraino-russes d\u2019Abou Dhabi (mardi et mercredi \u2014 les premiers depuis plus de huit mois, conclus par un accord sur un nouvel \u00e9change massif de prisonniers) et le passage des \u00e9missaires am\u00e9ricains Kushner et Witkoff au Kremlin puis \u00e0 Dublin, l\u2019Allemagne a annonc\u00e9 vendredi un sommet de la \u00ab Coalition des volontaires \u00bb \u2014 les\u2026"
+    },
+    {
+      "id": "grande-info-semaine",
+      "emoji": "\ud83d\udcf0",
+      "nom": "Grande information de la semaine",
+      "resume": "L\u2019\u00e9v\u00e9nement technologique de la semaine restera la chute de Jensen Huang, fondateur et visage de Nvidia, premi\u00e8re capitalisation du monde de l\u2019IA \u2014 pouss\u00e9 vers la sortie par le scandale de liaisons dont l\u2019une avec une Chinoise soup\u00e7onn\u00e9e d\u2019espionnage, il a d\u00e9missionn\u00e9 sous pression, laissant le secteur orphelin de son \u00ab banquier, diplomate et porte-voix \u00bb (S4, S5). Wall Street a vacill\u00e9 toute la\u2026"
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1 \u2014 Euronews, \u00ab Sommet IA de Dublin : l\u2019UE cherche \u00e0 rattraper USA et Chine tout en prot\u00e9geant ses citoyens \u00bb",
+      "ref": "https://fr.euronews.com/2026/11/13/sommet-ia-de-dublin-lue-cherche-a-rattraper-usa-et-chine-tout-en-protegeant-ses-citoyens",
+      "fiabilite": 4,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S2 \u2014 Conseil de l\u2019UE, \u00ab Remarks by President Ant\u00f3nio Costa at the press conference following the informal meeting of 13 November 2026 \u00bb",
+      "ref": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/13/remarks-by-president-antonio-costa-at-the-press-conference-following-the-informal-meeting-of-heads-of-state-or-government-of-13-november-2026/",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S3 \u2014 AFP, \u00ab IA : le patron de Mistral appelle l\u2019Europe \u00e0 passer \u00e0 l\u2019action pour rester dans la course \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-3e4994cd, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S4 \u2014 Boursorama, \u00ab Wall Street recule alors que les incertitudes autour de Nvidia font chuter les valeurs technologiques \u00bb",
+      "ref": "https://www.boursorama.com/bourse/actualites/wall-street-recule-alors-que-les-incertitudes-autour-de-nvidia-font-chuter-les-valeurs-technologiques-e8f551dc59033cc9987990fe288d6e9c",
+      "fiabilite": 4,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S5 \u2014 CNBC, \u00ab Nvidia closes below $4T market cap for first time since July 2025 in Huang fallout \u00bb",
+      "ref": "https://www.cnbc.com/2026/11/13/nvidia-nvda-stock-jensen-huang-transition.html",
+      "fiabilite": 4,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S6 \u2014 AP, \u00ab SpaceX launches Starship on its boldest test flight yet as it aims for first double catch \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-ap-20261113-920f7795, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S7 \u2014 Spaceflight Now, \u00ab Live Coverage: Starship Flight 15 attempts to recover full vehicle in double launch pad catch \u00bb",
+      "ref": "https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S8 \u2014 Gizmodo, \u00ab How to Watch SpaceX\u2019s First Ever Double Starship Catch Attempt \u00bb (amerrissage du premier \u00e9tage)",
+      "ref": "https://gizmodo.com/watch-live-as-spacex-tries-to-catch-both-starship-stages-for-the-first-time-2000839576",
+      "fiabilite": 4,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S9 \u2014 France 24, \u00ab SpaceX tente une premi\u00e8re : rattraper les deux \u00e9tages de Starship \u00bb",
+      "ref": "https://www.france24.com/fr/info-en-continu/20261112-spacex-tente-une-premi%C3%A8re-rattraper-les-deux-%C3%A9tages-de-starship",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S10 \u2014 Minist\u00e8re de l\u2019\u00c9conomie, \u00ab Minerais critiques : l\u2019\u00c9tat devient le premier actionnaire au capital de la soci\u00e9t\u00e9 Eramet \u00bb",
+      "ref": "https://presse.economie.gouv.fr/minerais-critiques-letat-devient-le-premier-actionnaire-au-capital-de-la-societe-eramet/",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S11 \u2014 Eramet, communiqu\u00e9 \u00ab Lancement de l\u2019augmentation de capital \u00bb (13 novembre 2026)",
+      "ref": "https://www.eramet.com/wp-content/uploads/2026/11/2026-11-13-Eramet-CP-Lancement-de-laugmentation-de-capital-FR.pdf",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S12 \u2014 AFP, \u00ab Made in France : M\u00e9lenchon veut relancer la fili\u00e8re textile fran\u00e7aise \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-5d42182d, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S13 \u2014 20 Minutes, \u00ab Pr\u00e9sidentielle 2027 : comment M\u00e9lenchon veut relancer la fili\u00e8re textile made in France \u00bb",
+      "ref": "https://www.20minutes.fr/politique/4262619-20261113-presidentielle-2027-comment-melenchon-veut-relancer-filiere-textile-made-in-france",
+      "fiabilite": 4,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S14 \u2014 France 24, \u00ab Condamn\u00e9 pour agressions sexuelles, Depardieu renonce \u00e0 son appel juste avant son proc\u00e8s \u00bb",
+      "ref": "https://www.france24.com/fr/france/20261113-depardieu-renonce-%C3%A0-son-appel-juste-avant-son-proc%C3%A8s-pour-agressions-sexuelles",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S15 \u2014 France Inter, \u00ab Proc\u00e8s en appel de G\u00e9rard Depardieu : l\u2019acteur se d\u00e9siste, le jugement initial devrait s\u2019appliquer \u00bb",
+      "ref": "https://www.radiofrance.fr/franceinter/podcasts/l-info-de-france-inter/gerard-depardieu-renonce-a-son-proces-en-appel-2849195",
+      "fiabilite": 4,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S16 \u2014 L\u00e9gifrance, Code de proc\u00e9dure p\u00e9nale, article 501 (Section 1 : De l\u2019exercice du droit d\u2019appel, articles 496 \u00e0 509)",
+      "ref": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006576762/2001-01-01",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S17 \u2014 IGN France, \u00ab \u00c0 l\u2019aube de la sortie de GTA 6, les employ\u00e9s de Rockstar Games se pr\u00e9parent \u00e0 un vote syndical \"historique\" \u00bb",
+      "ref": "https://fr.ign.com/grand-theft-auto-6/93532/a-laube-de-la-sortie-de-gta-6-les-employes-de-rockstar-games-se-preparent-a-un-vote-syndical-histori",
+      "fiabilite": 4,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S18 \u2014 AFP, \u00ab Jeux vid\u00e9o : la saga \"Grand Theft Auto\" en chiffres \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-23037656, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "12/11/2026"
+    },
+    {
+      "label": "S19 \u2014 AFP, \u00ab Jeux vid\u00e9o : \"Paralives\", la cr\u00e9ation ind\u00e9pendante canadienne qui d\u00e9fie \"Les Sims\" \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-1da8038e, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S20 \u2014 AFP, \u00ab Mondiaux de League of Legends : longtemps maudits, \"Chovy\" et Gen.G \u00e0 une victoire de la cons\u00e9cration \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-9188b8b2, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S21 \u2014 Game Developer, \u00ab Rockstar workers to vote on unionization right as GTA VI launches \u00bb",
+      "ref": "https://www.gamedeveloper.com/business/rockstar-workers-to-vote-on-unionization-ahead-of-grand-theft-auto-vi-release",
+      "fiabilite": 4,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S22 \u2014 AFP, \u00ab Cin\u00e9ma : \"Jupiter\", un thriller au c\u0153ur de la dissuasion nucl\u00e9aire \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-8893fbb4, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S23 \u2014 AFP, \u00ab A Bollywood, le retour des fant\u00f4mes de la p\u00e8gre indienne \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-d990e0b1, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S24 \u2014 AFP, \u00ab \"Redescendre, mais pas trop\" : apr\u00e8s le sacre \u00e0 Cannes, la vie r\u00eav\u00e9e d\u2019Emmanuel Macchia \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-84527243, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S25 \u2014 AFP, \u00ab Le livre programme de M\u00e9lenchon plus vendu que le prix Goncourt \u00bb (chiffres Livres-Hebdo)",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-7cca0542, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "12/11/2026"
+    },
+    {
+      "label": "S26 \u2014 Servier, \u00ab Servier annonce les r\u00e9sultats principaux de l\u2019\u00e9tude pivot pour le sevasemten dans la dystrophie musculaire de Becker \u00bb",
+      "ref": "https://servier.com/newsroom/resultats-principaux-etude-pivot-sevasemten-becker/",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S27 \u2014 Muscular Dystrophy Association, \u00ab Statement on Servier\u2019s Decision to Discontinue Sevasemten Development \u00bb",
+      "ref": "https://www.mda.org/press-releases/statement-from-the-muscular-dystrophy-association-on-servier%E2%80%99s-decision-to-discontinue-sevasemten",
+      "fiabilite": 4,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S28 \u2014 AFP, \u00ab Nouvelle-Cal\u00e9donie : le diab\u00e8te frein\u00e9, mais la vie ch\u00e8re entrave la pr\u00e9vention \u00bb (Agence sanitaire et sociale)",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-dcbb6120, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S29 \u2014 AFP, \u00ab Pour les jeunes en situation de handicap, un long parcours jusqu\u2019au premier emploi \u00bb (\u00e9tude C\u00e9req-Agefiph)",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-5beef492, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S30 \u2014 7sur7.be, \u00ab Affaibli par un faible soutien politique, le Giec risque de perdre \"sa r\u00e9putation\", alerte son pr\u00e9sident \u00bb",
+      "ref": "https://www.7sur7.be/ecologie/affaibli-par-un-faible-soutien-politique-le-giec-risque-de-perdre-sa-reputation-alerte-son-president~adbdd02f/",
+      "fiabilite": 3,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S31 \u2014 AFP, \u00ab Climat : la Chine, qui avait envisag\u00e9 d\u2019accueillir la COP en 2028, renonce (sources \u00e0 l\u2019AFP) \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-2a0258e7, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S32 \u2014 AFP, \u00ab Al Gore fustige le pouvoir de veto \"insens\u00e9\" de l\u2019Arabie saoudite dans les n\u00e9gociations sur le climat \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-ee731b4c, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S33 \u2014 AFP, \u00ab Potentielle d\u00e9cision de la COP31 : les pays affichent leurs divergences \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-b3e8478e, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S34 \u2014 AFP, \u00ab Dans les coulisses de la COP31, la bataille de la science fait rage \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-567fe10b, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S35 \u2014 AFP, \u00ab Climat : la C\u00f4te d\u2019Ivoire veut le rapport du Giec \"le plus t\u00f4t possible\" \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-f8d3a0d7, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S36 \u2014 France 24, \u00ab Manifestations du 14 novembre : parcours, revendications, s\u00e9curit\u00e9\u2026 Ce qu\u2019il faut savoir \u00bb",
+      "ref": "https://www.france24.com/fr/france/20261113-manifestations-du-14-novembre-parcours-revendications-s%C3%A9curit%C3%A9-ce-quil-faut-savoir",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S37 \u2014 Europe 1, \u00ab Manifestations du 14 novembre : 70.000 policiers et gendarmes mobilis\u00e9s samedi dans toute la France, annonce Laurent Nu\u00f1ez \u00bb",
+      "ref": "https://www.europe1.fr/societe/manifestations-du-14-novembre-70000-policiers-et-gendarmes-mobilises-samedi-dans-toute-la-france-annonce-laurent-nunez-1231034",
+      "fiabilite": 4,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S38 \u2014 20 Minutes, \u00ab Col\u00e8re sociale : 30.000 \u00e0 60.000 manifestants attendus \u00e0 Paris pour l\u2019acte V, Lecornu annonce une discussion mensuelle avec les syndicats \u00bb",
+      "ref": "https://www.20minutes.fr/societe/4262556-20261113-direct-colere-sociale-lecornu-annonce-discussion-mois-syndicats-notamment-revalorisation-bas-salaires",
+      "fiabilite": 4,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S39 \u2014 France 24, \u00ab Teddy Riner lance sa campagne pr\u00e9sidentielle dans un h\u00f4pital de Saint-Denis \u00bb",
+      "ref": "https://www.france24.com/fr/france/20261113-teddy-riner-lance-sa-campagne-pr%C3%A9sidentielle-dans-un-h%C3%B4pital-de-saint-denis",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S40 \u2014 Europe 1, \u00ab \"J\u2019ai \u00e9cout\u00e9, j\u2019ai not\u00e9, le temps de la r\u00e9flexion va venir\" : Teddy Riner s\u2019exprime lors de sa premi\u00e8re visite de campagne \u00bb",
+      "ref": "https://www.europe1.fr/politique/jai-ecoute-jai-note-le-temps-de-la-reflexion-va-venir-teddy-riner-sexprime-lors-de-sa-premiere-visite-de-campagne-1230752",
+      "fiabilite": 4,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S41 \u2014 AFP, \u00ab Onze ans apr\u00e8s le 13-Novembre, un \"hommage citoyen\" \u00e0 \"toutes les victimes du terrorisme\" \u00bb (Macron)",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-aa1176a6, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S42 \u2014 AFP, \u00ab Visite chahut\u00e9e au salon du Made in France pour Le Pen, qui accuse M\u00e9lenchon et \"ses militants\" \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-3cc68e05, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S43 \u2014 France TV / franceinfo, \u00ab Services publics : les propositions du candidat Rapha\u00ebl Glucksmann \u00bb",
+      "ref": "https://www.france.tv/franceinfo/le-fil-info-matin/9086342-services-publics-les-propositions-du-candidat-raphael-glucksmann.html",
+      "fiabilite": 4,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S44 \u2014 AFP, \u00ab Actualit\u00e9s du vendredi 13 novembre 2026 \u00bb (Isra\u00ebl/M\u00e9lenchon, Dublin, revue du jour)",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-d09ab37a, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S45 \u2014 Radio-Canada, \u00ab Caravane de migrants au Mexique : Trump menace de doubler les droits de douane \u00bb",
+      "ref": "https://ici.radio-canada.ca/article/info/2300244/caravane-migrants-mexique-trump-menace-tarifs",
+      "fiabilite": 4,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S46 \u2014 AFP, \u00ab Il n\u2019y a \"aucune caravane\" de migrants vers les \u00c9tats-Unis, dit Mexico apr\u00e8s des menaces de Trump \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-83629016, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S47 \u2014 AFP, \u00ab Aux \u00c9tats-Unis, des d\u00e9mocrates religieux reprennent \u00e0 la droite sa mainmise sur la foi \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-c4494fae, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S48 \u2014 AFP, \u00ab Exploit des d\u00e9mocrates dans le Mississippi, qui d\u00e9crochent un si\u00e8ge au S\u00e9nat \u00bb (Scott Colom)",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-f4c4da16, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S49 \u2014 UPI, \u00ab U.S. disrupts North Korean fake video scheme tied to $400 million theft \u00bb (FBI)",
+      "ref": "https://www.upi.com/Top_News/World-News/2026/11/13/North-Korea-FBI-DOJ-cyber-hackers-video-Binance/5521794552076/",
+      "fiabilite": 3,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S50 \u2014 TV5MONDE, \u00ab Japon : Takaichi se rendra en Chine pour le sommet de l\u2019Apec, sur fond de relations d\u00e9grad\u00e9es \u00bb",
+      "ref": "https://information.tv5monde.com/international/japon-takaichi-se-rendra-en-chine-pour-le-sommet-de-lapec-sur-fond-de-relations-degradees-2845661",
+      "fiabilite": 4,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S51 \u2014 AFP, \u00ab Des puces sont parvenues en Chine gr\u00e2ce \u00e0 une soci\u00e9t\u00e9 fond\u00e9e par Alice Huang, selon Bloomberg \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-9794a4d1, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S52 \u2014 AFP, \u00ab Puces Nvidia en Chine : le ministre am\u00e9ricain des Finances rejette la responsabilit\u00e9 sur le minist\u00e8re du Commerce \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-191791e8, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S53 \u2014 AFP, \u00ab Russie : le PIB progresse de 1 % au 3e trimestre, selon des r\u00e9sultats pr\u00e9liminaires \u00bb (Rosstat)",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-e0c7cc77, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S54 \u2014 AFP, \u00ab La Russie dit avoir abattu 1.198 drones ukrainiens dans la nuit, quatre morts \u00bb / \u00ab Neuf morts en Russie, trois morts en Ukraine \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-9650709a, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S55 \u2014 Kyiv Post, \u00ab Kaja Kallas Warns Europe Against Putin\u2019s Trap in Ukraine Peace Talks \u00bb",
+      "ref": "https://www.kyivpost.com/post/90086",
+      "fiabilite": 3,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S56 \u2014 Le Boursier/Reuters, \u00ab Kushner et Witkoff s\u2019entretiennent avec Poutine apr\u00e8s les pourparlers d\u2019Abou Dhabi \u00bb",
+      "ref": "https://www.boursier.com/actualites/reuters/kushner-et-witkoff-s-entretiennent-avec-poutine-apres-les-pourparlers-d-abou-dhabi-430113.html",
+      "fiabilite": 4,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S57 \u2014 AFP, \u00ab Les alli\u00e9s de l\u2019Ukraine en sommet \u00e0 Berlin le 19 novembre \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-71287e46, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S58 \u2014 AFP, \u00ab Pays-Bas : n\u00e9gociations de crise pour \u00e9viter la chute du gouvernement \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-743104b7, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S59 \u2014 AFP, \u00ab Sommet de la Francophonie : le consensus \u00e0 l\u2019\u00e9preuve des tensions RDC-Rwanda \u00bb (Cambodge)",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-13fdb1d3, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S60 \u2014 AFP, \u00ab RDC : Ebola continue \u00e0 gagner du terrain sur fond d\u2019ins\u00e9curit\u00e9, apr\u00e8s six mois d\u2019\u00e9pid\u00e9mie \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-d6e974ed, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S61 \u2014 RFI, \u00ab Rugby : victoire majuscule des Bleus contre les doubles champions du monde en titre sud-africains \u00bb",
+      "ref": "https://www.rfi.fr/fr/sport/20261113-rugby-victoire-majuscule-des-bleus-contre-les-doubles-champions-du-monde-en-titre-sud-africains",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S62 \u2014 TV5MONDE, \u00ab P\u00e9rou : le pape L\u00e9on XIV dit sa \"joie\" de retrouver son ancien dioc\u00e8se de Chiclayo \u00bb",
+      "ref": "https://information.tv5monde.com/international/perou-le-pape-leon-xiv-dit-sa-joie-de-retrouver-son-ancien-diocese-de-chiclayo-2845670",
+      "fiabilite": 4,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S63 \u2014 AFP, \u00ab Le pape L\u00e9on XIV assure \u00eatre en train de \"surmonter\" ses probl\u00e8mes de sant\u00e9 \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-d4bd1b0c, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S64 \u2014 AFP, \u00ab Tensions et d\u00e9bordements : un campus de l\u2019universit\u00e9 Rennes 2 ferm\u00e9 jusqu\u2019\u00e0 fin novembre \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-fe7a47ea, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S65 \u2014 France 24, \u00ab Apr\u00e8s deux mois de tensions dans les lyc\u00e9es de France, les proviseurs appel\u00e9s \u00e0 se mobiliser \u00bb",
+      "ref": "https://www.france24.com/fr/france/20261113-apr%C3%A8s-deux-mois-de-tensions-dans-les-lyc%C3%A9es-de-france-les-proviseurs-appel%C3%A9s-%C3%A0-se-mobiliser",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S66 \u2014 AFP, \u00ab Mobilisation in\u00e9dite des proviseurs en France face aux violences \u00bb (SNPDEN, 81 chefs et adjoints agress\u00e9s)",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-0f0d8ba6, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S67 \u2014 AFP, \u00ab Canal Seine-Nord Europe : la justice administrative rejette un recours d\u2019opposants \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-79f06d5d, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S68 \u2014 AFP, \u00ab GB : un homme soup\u00e7onn\u00e9 d\u2019\u00eatre li\u00e9 au Hamas et recherch\u00e9 par Berlin jug\u00e9 coupable d\u2019agression \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-0bc75f72, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S69 \u2014 AFP, \u00ab France : le syst\u00e8me D des \"street medics\" dans les manifestations \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-a1f1b97c, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S70 \u2014 AFP, \u00ab Violences polici\u00e8res : les journalistes demandent \u00e0 Nu\u00f1ez le respect du droit d\u2019informer en manif \u00bb (RSF, 71 cas)",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-d659f6dc, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S71 \u2014 AFP, \u00ab Salaire de base, primes, point d\u2019indice : comment fonctionne la r\u00e9mun\u00e9ration des agents publics \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-9941a3db, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S72 \u2014 Euronews, \u00ab Panne mondiale de Microsoft : Outlook et Teams inaccessibles dans 74 pays \u00bb",
+      "ref": "https://fr.euronews.com/2026/11/13/panne-mondiale-de-microsoft-outlook-et-teams-inaccessibles-dans-74-pays",
+      "fiabilite": 4,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S73 \u2014 France 24, \u00ab Microsoft : ce que l\u2019on sait sur la panne mondiale d\u2019Outlook \u00bb (r\u00e9tablissement progressif)",
+      "ref": "https://www.france24.com/fr/am%C3%A9riques/20261113-panne-d-outlook-microsoft-confirme-le-r%C3%A9tablissement-progressif-de-ses-services",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S74 \u2014 AFP, \u00ab La panne de Microsoft a de \"graves r\u00e9percussions\" sur les services de sant\u00e9 britanniques \u00bb (syndicat GMB, NHS)",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-72b7246d, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S75 \u2014 AFP, \u00ab L\u2019Europe, un march\u00e9 \"crucial\" pour l\u2019entreprise chinoise de robotaxis Pony.ai \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-7c7441af, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S76 \u2014 AFP, \u00ab Malgr\u00e9 l\u2019IA, la France devra doubler le nombre de ses ing\u00e9nieurs, selon le patron de Thales \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-eacf6258, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S77 \u2014 AFP, \u00ab Gaza : 11 morts dans des frappes isra\u00e9liennes, jour le plus meurtrier depuis les \u00e9lections en Isra\u00ebl \u00bb (h\u00f4pital Nasser, Khan Youn\u00e8s)",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-d291ceff, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "12/11/2026"
+    },
+    {
+      "label": "S78 \u2014 AFP, \u00ab Le prochain sommet de l\u2019Otan aura lieu en Albanie, mais pas avant 2028 \u00bb (Edi Rama)",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-cefa8394, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S79 \u2014 AFP, \u00ab P\u00e9trole : le march\u00e9 devrait redevenir exc\u00e9dentaire au dernier trimestre \u00bb (AIE)",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-6614588d, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S80 \u2014 AFP, \u00ab Les march\u00e9s boursiers restent prudents, entre Nvidia et inflation am\u00e9ricaine \u00bb (prix \u00e0 la production attendus, Fed en d\u00e9cembre)",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261113-46322bd4, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S81 \u2014 AFP, \u00ab Le salon du \"Made in France\" ouvre ses portes \u00e0 des portefeuilles amaigris \u00bb (1.000 exposants)",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-f1dbb916, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "12/11/2026"
+    },
+    {
+      "label": "S82 \u2014 AFP, \u00ab Glucksmann fustige la position de Jean-Luc M\u00e9lenchon sur l\u2019Allemagne et la Russie \u00bb",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-5e36d3d1, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "12/11/2026"
+    },
+    {
+      "label": "S83 \u2014 AFP, \u00ab Paris d\u00e9nonce la \"d\u00e9cision d\u00e9magogique\" d\u2019Isra\u00ebl d\u2019interdire sur son sol le leader fran\u00e7ais de la gauche radicale \u00bb (Barrot)",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-1477abd9, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S84 \u2014 AFP, \u00ab Robotique IA : Agile Robots revendique le leadership europ\u00e9en apr\u00e8s une lev\u00e9e de fonds \u00bb (450 M\u20ac)",
+      "ref": "d\u00e9p\u00eache, r\u00e9f. news-afp-20261112-7e760b62, pas d\u2019URL publique",
+      "fiabilite": 5,
+      "maj": "12/11/2026"
+    }
+  ],
+  "hors_chapitres": [
+    "Rugby : d\u00e9cim\u00e9 par les blessures, au point de devoir replacer Antoine Dupont \u00e0 l\u2019ouverture, le XV de France a r\u00e9alis\u00e9 un exploit : victoire 21-19 contre les Springboks vendredi soir au Stade de France, premi\u00e8re victoire contre les Sud-Africains \u00e0 Paris depuis 21 ans, dans un match au sc\u00e9nario \u00e9pique \u2014 Dupont a guid\u00e9 les Bleus, d\u00e9cim\u00e9s mais inspir\u00e9s, contre les doubles champions du monde en titre (S61). Le match se jouait apr\u00e8s la c\u00e9r\u00e9monie du souvenir du 13-Novembre devant la porte D (S41, S61).",
+    "Sant\u00e9 mondiale : six mois apr\u00e8s sa d\u00e9claration officielle, l\u2019\u00e9pid\u00e9mie d\u2019Ebola continue de progresser en R\u00e9publique d\u00e9mocratique du Congo malgr\u00e9 la riposte sanitaire \u2014 confront\u00e9e ces derniers jours \u00e0 une recrudescence d\u2019attaques meurtri\u00e8res de rebelles qui compliquent la vaccination et le suivi des contacts (S60).",
+    "Religion : au P\u00e9rou, le pape L\u00e9on XIV a retrouv\u00e9 vendredi son ancien dioc\u00e8se de Chiclayo, o\u00f9 une foule a brav\u00e9 une chaleur \u00e9crasante pour sa messe ; op\u00e9r\u00e9 il y a quelques semaines d\u2019un cancer du poumon, il a assur\u00e9 \u00eatre en train de \u00ab surmonter \u00bb ses probl\u00e8mes de sant\u00e9, apr\u00e8s avoir appel\u00e9 \u00e0 Lima \u00e0 la \u00ab r\u00e9paration \u00bb des abus commis dans l\u2019\u00c9glise (S62, S63).",
+    "\u00c9ducation : le campus de l\u2019universit\u00e9 Rennes 2 est ferm\u00e9 jusqu\u2019\u00e0 fin novembre en raison de \u00ab tensions et d\u00e9bordements \u00bb li\u00e9s \u00e0 la mobilisation sociale ; la pr\u00e9sidence demande de la bienveillance pour le contr\u00f4le continu et pr\u00e9vient de \u00ab fortes incertitudes \u00bb sur une r\u00e9ouverture rapide (S64).",
+    "\u00c9ducation (2) : les proviseurs se mobilisent comme rarement : apr\u00e8s deux mois de mouvement lyc\u00e9en, le SNPDEN \u2014 premier syndicat des personnels de direction \u2014 d\u00e9nonce \u00ab une telle violence dirig\u00e9e vers les personnes \u00bb jamais vue : 81 chefs d\u2019\u00e9tablissement et adjoints agress\u00e9s, des coll\u00e8gues \u00ab bless\u00e9s, hospitalis\u00e9s ou \u00e9puis\u00e9s \u00bb, \u00ab on est exsangues \u00bb ; les proviseurs r\u00e9clament des r\u00e9ponses concr\u00e8tes et financ\u00e9es aux revendications des lyc\u00e9ens (S65, S66).",
+    "Justice-environnement : le tribunal administratif a rejet\u00e9 un recours d\u2019opposantes au canal Seine-Nord Europe, \u00e9cartant \u00ab les tr\u00e8s nombreuses critiques \u00bb contre l\u2019\u00e9tude d\u2019impact du projet \u2014 une d\u00e9cision qui d\u00e9gage une pi\u00e8ce ma\u00eetresse du dossier du futur canal \u00e0 grand gabarit entre la Seine et le nord de l\u2019Europe (S67).",
+    "Justice internationale : au Royaume-Uni, un homme de 40 ans soup\u00e7onn\u00e9 de liens avec le Hamas et vis\u00e9 par une proc\u00e9dure d\u2019extradition demand\u00e9e par Berlin pour un projet d\u2019attentat contre la communaut\u00e9 juive en Allemagne, a \u00e9t\u00e9 reconnu coupable d\u2019avoir bless\u00e9 un huissier de justice \u00e0 l\u2019arme blanche (S68).",
+    "Soci\u00e9t\u00e9 : casque sur la t\u00eate, masque \u00e0 gaz au cou et croix rouge bien visible : dans les cort\u00e8ges du mouvement, les \u00ab street medics \u00bb, secouristes b\u00e9n\u00e9voles sans statut l\u00e9gal, bricolent et financent eux-m\u00eames leur \u00e9quipement pour soigner manifestants et forces de l\u2019ordre \u2014 un syst\u00e8me D qui interpelle sur la prise en charge des bless\u00e9s en manifestation (S69).",
+    "Libert\u00e9 de la presse : Reporters sans fronti\u00e8res a recens\u00e9 71 cas de journalistes entrav\u00e9s dans leur couverture des manifestations en France depuis le d\u00e9but du mouvement lyc\u00e9en et social \u2014 dont 44 violences physiques ; une intersyndicale a demand\u00e9 au ministre de l\u2019Int\u00e9rieur de \u00ab rappeler \u00e0 l\u2019ordre \u00bb les forces de l\u2019ordre, et plusieurs plaintes p\u00e9nales ont \u00e9t\u00e9 d\u00e9pos\u00e9es (S70).",
+    "Travail : pour suivre les discussions gouvernementales sur les salaires, un d\u00e9cryptage de l\u2019AFP d\u00e9taille la r\u00e9mun\u00e9ration des agents publics : salaire de base, primes, \u00ab point d\u2019indice \u00bb (l\u2019unit\u00e9 de valeur de la grille salariale) \u2014 et les particularit\u00e9s des carri\u00e8res de cat\u00e9gorie C, dont les 11e \u00e9chelons sont au c\u0153ur des discussions actuelles (S71)."
+  ]
+}

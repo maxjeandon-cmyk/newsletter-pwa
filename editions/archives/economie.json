@@ -2,6 +2,11 @@
   "domaine": "economie",
   "entrees": [
     {
+      "date": "2026-11-13",
+      "titre": "Nvidia fait chuter Wall Street c\u00f4t\u00e9 monde, l\u2019\u00c9tat devient premier actionnaire d\u2019Eramet c\u00f4t\u00e9 France",
+      "html": "editions/archives/economie/2026-11-13.html"
+    },
+    {
       "date": "2026-11-12",
       "titre": "Inflation turque relev\u00e9e \u00e0 29,5 % c\u00f4t\u00e9 monde, \u00ab Made in France \u00bb et budget au S\u00e9nat c\u00f4t\u00e9 France",
       "html": "editions/archives/economie/2026-11-12.html"
@@ -112,14 +117,14 @@
       "html": "editions/archives/economie/2026-10-20.html"
     },
     {
-      "date": "2026-10-18",
-      "titre": "Diesel russe et l\u00e9gislatives c\u00f4t\u00e9 monde, dette qui menace d\u2019\u00e9touffer la France c\u00f4t\u00e9 Cour des comptes",
-      "html": "editions/archives/economie/2026-10-18.html"
-    },
-    {
       "date": "2026-10-19",
       "titre": "FMI \u00e0 Bangkok et l\u2019inflation \u00ab imp\u00f4t sur les pauvres \u00bb c\u00f4t\u00e9 monde, dette qui menace d\u2019\u00e9touffer la France c\u00f4t\u00e9 Cour des comptes",
       "html": "editions/archives/economie/2026-10-19.html"
+    },
+    {
+      "date": "2026-10-18",
+      "titre": "Diesel russe et l\u00e9gislatives c\u00f4t\u00e9 monde, dette qui menace d\u2019\u00e9touffer la France c\u00f4t\u00e9 Cour des comptes",
+      "html": "editions/archives/economie/2026-10-18.html"
     },
     {
       "date": "2026-10-17",
