@@ -51,6 +51,16 @@
       ]
     },
     {
+      "id": "toms-guide-fr",
+      "nom": "Tom's Guide FR",
+      "emoji": "💻",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "High-tech grand public, tests et bons plans",
+      "flux": [
+        "https://www.tomsguide.fr/feeds/"
+      ]
+    },
+    {
       "id": "javascript-weekly",
       "nom": "JavaScript Weekly",
       "emoji": "🟨",
@@ -99,6 +109,16 @@
         "https://www.ladn.eu/feed/"
       ],
       "ligne": "magazine digital, innovation et culture"
+    },
+    {
+      "id": "medisite",
+      "nom": "Medisite",
+      "emoji": "🔬",
+      "categorie": "Sciences 🔬",
+      "ligne": "Santé et médecine au quotidien, faits vérifiés",
+      "flux": [
+        "https://www.medisite.fr/rss.xml"
+      ]
     },
     {
       "id": "cnrs-le-journal",
