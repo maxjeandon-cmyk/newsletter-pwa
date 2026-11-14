@@ -1,5 +1,5 @@
 {
-  "maj": "13/11/2026 22:25",
+  "maj": "14/11/2026 11:18",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -24,13 +24,27 @@
       "date": "13/11/2026",
       "titre": "Mobilisation lycéenne : les proviseurs appelés à se rassembler pour dire non à la violence",
       "texte": "Appelés à se réunir devant leur établissement, ce vendredi 13 novembre, certains proviseurs se rendront devant les rectorats. Entre menaces et dégradations, le syndicat des proviseurs SNPDEN veut tir…",
-      "source": "Europe 1 / France 24 / Libération",
+      "source": "Europe 1 / France 24 / Libération / Le Figaro",
       "sources": [
         "Europe 1",
         "France 24",
-        "Libération"
+        "Libération",
+        "Le Figaro"
       ],
       "url": "https://www.europe1.fr/societe/mobilisation-lyceenne-les-proviseurs-appeles-a-se-rassembler-pour-dire-non-a-la-violence-1228739?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
+      "verifie": true
+    },
+    {
+      "id": "amwg96an6-eim9",
+      "date": "13/11/2026",
+      "titre": "Colère lycéenne : Des consignes pour systématiser les sanctions disciplinaires contre les bloqueurs",
+      "texte": "Parmi les actes susceptibles de sanctions disciplinaires, figurent les appels « à la violence, dégradation des biens, blocage de l’accès à des espaces intérieurs de l’établissement, violence physique…",
+      "source": "20 minutes / La Croix",
+      "sources": [
+        "20 minutes",
+        "La Croix"
+      ],
+      "url": "https://www.20minutes.fr/societe/4262773-20261113-colere-lyceenne-consignes-systematiser-sanctions-disciplinaires-bloqueurs?at_medium=display&at_campaign=149",
       "verifie": true
     },
     {
@@ -53,12 +67,13 @@
       "date": "12/11/2026",
       "titre": "Tirs de mortiers, incendies, violences sur les proviseurs… Le mouvement lycéen se radicalise alors que les discussions …",
       "texte": "Cibles directes des violences, les proviseurs appellent l’État à prendre ses responsabilités. Depuis le début du mouvement, 245 personnels ont été blessés, indique le ministre de l’Éducation qui déno…",
-      "source": "Le Figaro / franceinfo / La Croix / Libération",
+      "source": "Le Figaro / franceinfo / La Croix / Libération / Mediapart",
       "sources": [
         "Le Figaro",
         "franceinfo",
         "La Croix",
-        "Libération"
+        "Libération",
+        "Mediapart"
       ],
       "url": "https://www.lefigaro.fr/actualite-france/mortiers-tires-a-l-interieur-des-lycees-incendies-violences-sur-les-proviseurs-le-mouvement-lyceen-se-radicalise-alors-que-les-discussions-sont-dans-l-impasse-20261112",
       "verifie": true
@@ -182,23 +197,6 @@
       ],
       "url": "https://www.publicsenat.fr/actualites/politique/liste-des-200-etablissements-a-renover-le-gouvernement-a-invente-le-tripadvisor-des-lycees-les-regions-fustigent-la-methode-du-gouvernement",
       "verifie": true
-    },
-    {
-      "id": "amvxommyi-aog2",
-      "date": "01/11/2026",
-      "titre": "Lycées bloqués: Marius Mesnil, co-secrétaire de l'Union syndicale lycéenne, appelle les élèves \"à s'organiser\" dès ce l…",
-      "texte": "La journée de mobilisation du samedi 31 octobre s'est déroulée globalement dans le calme partout en France, malgré quelques heurts entre forces de l'ordre et éléments perturbateurs. Près d'un demi-mi…",
-      "source": "Europe 1 / Le Figaro / BFMTV / France 24 / Libération / Ouest-France",
-      "sources": [
-        "Europe 1",
-        "Le Figaro",
-        "BFMTV",
-        "France 24",
-        "Libération",
-        "Ouest-France"
-      ],
-      "url": "https://www.bfmtv.com/societe/manifestations/video-lycees-bloques-marius-mesnil-co-secretaire-de-l-union-syndicale-lyceenne-appelle-les-eleves-a-s-organiser-des-ce-lundi_VN-202611010182.html",
-      "verifie": true
     }
   ],
   "faits": [
@@ -207,10 +205,11 @@
       "date": "13/11/2026",
       "titre": "\"On vient tôt pour vérifier, voir s'il n'y a pas du matériel qui serait stocké\": Mortiers, incendies: au cœur des viole…",
       "texte": "Une centaine de lycées fermés, des dizaines d’établissement bloqués et une série d’actes violents au sein même des établissements : après bientôt 8 semaines de mobilisation, le mouvement lycéen s’est…",
-      "source": "BFMTV / franceinfo",
+      "source": "BFMTV / franceinfo / La Croix",
       "sources": [
         "BFMTV",
-        "franceinfo"
+        "franceinfo",
+        "La Croix"
       ],
       "url": "https://www.bfmtv.com/police-justice/video-on-vient-tot-pour-verifier-voir-s-il-n-y-a-pas-du-materiel-qui-serait-stocke-mortiers-incendies-au-c-ur-des-violences-dans-les-lycees_VN-202611130845.html",
       "verifie": true
