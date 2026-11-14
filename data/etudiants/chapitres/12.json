@@ -152,6 +152,14 @@
       "sources": [
         "Mediapart"
       ]
+    },
+    {
+      "id": "c12p20",
+      "texte": "Côté répression, la liste des visages s'allonge : Les proviseurs dénoncent les violences et «la réponse de l’État» aux lycéens (1 media : Mediapart — non corrobore) — détail : Près de 2 000 chefs d’établissement et adjoints se sont rassemblés vendredi 13 novembre partout en France pour dénoncer les violences subie… (Volet automatique du 14 novembre 2026 à 11:18, chapitre « La répression et ses visages » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "Mediapart"
+      ],
+      "auto": true
     }
   ]
 }
