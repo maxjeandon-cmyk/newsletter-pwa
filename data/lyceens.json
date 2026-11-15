@@ -1,5 +1,5 @@
 {
-  "maj": "14/11/2026 20:54",
+  "maj": "15/11/2026 21:23",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -52,12 +52,13 @@
       "date": "12/11/2026",
       "titre": "Crise étudiante : Valérie Pécresse propose de déployer «en urgence» des caméras dans 50 lycées d’Île-de-France",
       "texte": "La présidente de la région Île-de-France a décliné, jeudi 12 novembre sur RTL, une série de mesures pour répondre aux dégradations dans les lycées. Une suspension des «aides facultatives de la région…",
-      "source": "Europe 1 / Le Figaro / 20 minutes / franceinfo",
+      "source": "Europe 1 / Le Figaro / 20 minutes / franceinfo / L'Humanité",
       "sources": [
         "Europe 1",
         "Le Figaro",
         "20 minutes",
-        "franceinfo"
+        "franceinfo",
+        "L'Humanité"
       ],
       "url": "https://www.lefigaro.fr/politique/crise-etudiante-valerie-pecresse-propose-de-deployer-en-urgence-des-cameras-dans-50-lycees-d-ile-de-france-20261112",
       "verifie": true
@@ -202,6 +203,19 @@
   ],
   "faits": [
     {
+      "id": "amwia7k2d-5baj",
+      "date": "15/11/2026",
+      "titre": "Mouvement lycéen : le proviseur du lycée Paul-Éluard à Saint-Denis qui avait fait entrer la BAC dans son établissement …",
+      "texte": "Les représentants élus des personnels du lycée Paul-Éluard à Saint-Denis (Seine-Saint-Denis) ont annoncé le départ du proviseur Xavier Artaud. Le 15 octobre, il avait convoqué un élève dans son burea…",
+      "source": "L'Humanité / Libération",
+      "sources": [
+        "L'Humanité",
+        "Libération"
+      ],
+      "url": "https://www.humanite.fr/societe/mouvement-lyceen/mouvement-lyceen-le-proviseur-du-lycee-paul-eluard-a-saint-denis-demissionne-sous-la-pression-des-parents-et-enseignants",
+      "verifie": true
+    },
+    {
       "id": "amwfhjqvo-e7tc",
       "date": "13/11/2026",
       "titre": "\"On vient tôt pour vérifier, voir s'il n'y a pas du matériel qui serait stocké\": Mortiers, incendies: au cœur des viole…",
@@ -322,19 +336,6 @@
         "Le Figaro"
       ],
       "url": "https://www.bfmtv.com/societe/manifestations/lycees-bloques-appels-a-la-greve-convergence-des-luttes-a-quoi-s-attendre-pour-cette-nouvelle-semaine-de-mobilisation_AV-202611010357.html",
-      "verifie": true
-    },
-    {
-      "id": "amvy8fjpg-i33u",
-      "date": "01/11/2026",
-      "titre": "« Les profs manquent, l’état des toilettes est dégradé… » : en Allemagne, la Gen Z reprend les mots d’ordre du mouvemen…",
-      "texte": "Les jeunes en colère ont réussi à mobiliser, via les réseaux sociaux, des dizaines de milliers de manifestants, ce samedi dans 35 villes, contre l’austérité, le logement inabordable et la conscriptio…",
-      "source": "Europe 1 / L'Humanité",
-      "sources": [
-        "Europe 1",
-        "L'Humanité"
-      ],
-      "url": "https://www.humanite.fr/monde/allemagne/les-profs-manquent-letat-des-toilettes-est-degrade-en-allemagne-la-gen-z-reprend-les-mots-dordre-du-mouvement-lyceen-francais",
       "verifie": true
     }
   ],
