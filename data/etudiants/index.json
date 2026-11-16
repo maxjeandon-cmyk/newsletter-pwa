@@ -2,8 +2,8 @@
   "titre": "La version des lycéens — chronique de la révolte lycéenne 2026",
   "intro": "Chronique narrative du mouvement lycéen et étudiant de l'automne 2026, écrite du point de vue des élèves : de l'amorce de Créteil au dernier acte en date, le fil s'allonge d'un relevé automatique toutes les six heures, et les chapitres transverses — la voix de l'intérieur, les revendications mot à mot, la répression, la machine gouvernementale, la longue durée, le lexique, les figures — viennent fermer le fil. Sources : la presse au plus près du mouvement — Le Média, Blast, L'Humanité, Mediapart — et la voix des réseaux en direct : les fils Reddit (r/etudiants, r/enseignants, r/france), les serveurs Discord du mouvement ; les fils TikTok, Snapchat et Instagram restent en vitrine, repris dès qu'un post ou un commentaire y est cité ; Wikipédia en colonne vertébrale factuelle.",
   "note": "Méthode : chaque paragraphe cite ses sources. Les paragraphes marqués « auto » sont des relevés bruts ajoutés par le pipeline toutes les 6 h (faits sourcés, sans réécriture) ; la rédaction narrative approfondie est assurée lors des éditions de la newsletter. Badge ✅ (corroboré par au moins deux médias distincts) et ⚠️ (une seule source) : ces distinctions s'appliquent aux relevés automatiques.",
-  "maj": "14/11/2026",
-  "totalParagraphes": 202,
+  "maj": "17/11/2026",
+  "totalParagraphes": 204,
   "chapitres": [
     {
       "id": "c1",
@@ -98,8 +98,8 @@
       "fichier": "chapitres/12.json",
       "periode": "Chronique transverse — la répression et ses visages",
       "titre": "La répression et ses visages",
-      "paragraphes": 20,
-      "octets": 21225
+      "paragraphes": 21,
+      "octets": 21879
     },
     {
       "id": "c13",
@@ -340,10 +340,22 @@
       "titre": "Le fil continue — 14 novembre 2026",
       "paragraphes": 1,
       "octets": 1027
+    },
+    {
+      "id": "c43",
+      "fichier": "chapitres/43.json",
+      "periode": "17 novembre 2026 — suivi de la journée",
+      "titre": "Le fil continue — 17 novembre 2026",
+      "paragraphes": 1,
+      "octets": 1666
     }
   ],
   "releveSigs": [
-    "denonce|provise|reponse|violenc#"
+    "autrefo|facs|plus|sanctua#",
+    "droit|recherc#",
+    "entre|etudes|jonglez|sport#",
+    "etude|provenc|questio|uniquem#",
+    "handica|recherc|situati#"
   ],
   "sections": [
     {
@@ -632,6 +644,14 @@
           "octets": 1027
         },
         {
+          "id": "c43",
+          "fichier": "chapitres/43.json",
+          "periode": "17 novembre 2026 — suivi de la journée",
+          "titre": "Le fil continue — 17 novembre 2026",
+          "paragraphes": 1,
+          "octets": 1666
+        },
+        {
           "id": "c10",
           "fichier": "chapitres/10.json",
           "periode": "Chronique transverse — réseaux, voix et ressentis",
@@ -652,8 +672,8 @@
           "fichier": "chapitres/12.json",
           "periode": "Chronique transverse — la répression et ses visages",
           "titre": "La répression et ses visages",
-          "paragraphes": 20,
-          "octets": 21225
+          "paragraphes": 21,
+          "octets": 21879
         },
         {
           "id": "c13",
@@ -690,12 +710,12 @@
       ]
     }
   ],
-  "releveDate": "2026-11-14T10:18:46.433Z",
-  "releveCompteur": 57,
+  "releveDate": "2026-11-16T23:44:42.204Z",
+  "releveCompteur": 58,
   "chapitreJour": {
-    "id": "c42",
-    "fichier": "chapitres/42.json",
-    "date": "14/11/2026"
+    "id": "c43",
+    "fichier": "chapitres/43.json",
+    "date": "17/11/2026"
   },
   "discordInvites": {}
 }
