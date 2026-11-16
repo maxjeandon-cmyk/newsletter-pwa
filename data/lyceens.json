@@ -1,5 +1,5 @@
 {
-  "maj": "15/11/2026 21:23",
+  "maj": "16/11/2026 01:59",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -19,6 +19,33 @@
     "Mercredi 7 octobre (lendemain de l'acte III) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
   ],
   "version_gouvernement": [
+    {
+      "id": "amwik2ga5-3bub",
+      "date": "15/11/2026",
+      "titre": "Blocages à Paris : la préfecture durcit le ton et interdit les rassemblements autour de certains lycées et universités",
+      "texte": "Face à la multiplication des blocages et des violences aux abords des établissements scolaires, la préfecture de police de Paris a pris un arrêté interdisant les rassemblements non déclarés dans un r…",
+      "source": "Europe 1 / Le Figaro / BFMTV",
+      "sources": [
+        "Europe 1",
+        "Le Figaro",
+        "BFMTV"
+      ],
+      "url": "https://www.lefigaro.fr/actualite-france/blocages-a-paris-la-prefecture-durcit-le-ton-et-interdit-les-rassemblements-autour-de-certains-lycees-et-universites-20261115",
+      "verifie": true
+    },
+    {
+      "id": "amwik2ga6-6pn6",
+      "date": "15/11/2026",
+      "titre": "Mobilisation lycéenne: \"Ce que je refuse, dans la réponse apportée par le gouvernement, c'est le mensonge\", déclare Lau…",
+      "texte": "Chaque jour, les sondages consolident un peu plus l'hypothèse d'un second tour entre Marine Le Pen et Jean-Luc Mélenchon. Dans les rangs de la droite et du centre, l'épineuse question de la primaire …",
+      "source": "BFMTV / L'Humanité",
+      "sources": [
+        "BFMTV",
+        "L'Humanité"
+      ],
+      "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-mobilisation-lyceenne-ce-que-je-refuse-dans-la-reponse-apportee-par-le-gouvernement-c-est-le-mensonge-declare-laurence-garnier-senatrice-lr-et-porte-parole-de-bruno-retailleau_VN-202611150439.html",
+      "verifie": true
+    },
     {
       "id": "amweuzxhb-8nuk",
       "date": "13/11/2026",
@@ -170,35 +197,6 @@
       ],
       "url": "https://www.liberation.fr/societe/education/mouvement-lyceen-edouard-geffray-na-pas-lintention-de-toucher-au-calendrier-du-bac-20261108_BITWQ3QS4ZCGVNQWUT4VIRUHOI/",
       "verifie": true
-    },
-    {
-      "id": "amw4up19t-5t3f",
-      "date": "06/11/2026",
-      "titre": "EN DIRECT – Mouvement social : le ministre de l’Education promet des «sanctions» contre les lycéens qui empêchent l’acc…",
-      "texte": "Au lendemain de la journée de mobilisation pour le pouvoir d’achat qui a attiré le plus de manifestants depuis le début du mouvement, des appels à manifester sont maintenus pour samedi, notamment par…",
-      "source": "BFMTV / Libération / 20 minutes / Europe 1 / L'Humanité",
-      "sources": [
-        "BFMTV",
-        "Libération",
-        "20 minutes",
-        "Europe 1",
-        "L'Humanité"
-      ],
-      "url": "https://www.liberation.fr/economie/social/en-direct-mouvement-social-le-ministre-du-travail-veut-essayer-de-franchir-la-barre-du-smic-a-1-500-euros-net-20261106_ZR72ANUTFNHKXEQVFZ4574GYFM/",
-      "verifie": true
-    },
-    {
-      "id": "amw5own9q-4wtw",
-      "date": "06/11/2026",
-      "titre": "Liste des 200 établissements à rénover : « Le gouvernement a inventé le TripAdvisor des lycées », les régions fustigent…",
-      "texte": "La liste des 200 lycées à rénover « en priorité », diffusée cette semaine par le gouvernement et issue d’une consultation mise en ligne courant octobre en réponse à la crise, a suscité la colère des …",
-      "source": "Public Sénat / franceinfo",
-      "sources": [
-        "Public Sénat",
-        "franceinfo"
-      ],
-      "url": "https://www.publicsenat.fr/actualites/politique/liste-des-200-etablissements-a-renover-le-gouvernement-a-invente-le-tripadvisor-des-lycees-les-regions-fustigent-la-methode-du-gouvernement",
-      "verifie": true
     }
   ],
   "faits": [
@@ -207,10 +205,11 @@
       "date": "15/11/2026",
       "titre": "Mouvement lycéen : le proviseur du lycée Paul-Éluard à Saint-Denis qui avait fait entrer la BAC dans son établissement …",
       "texte": "Les représentants élus des personnels du lycée Paul-Éluard à Saint-Denis (Seine-Saint-Denis) ont annoncé le départ du proviseur Xavier Artaud. Le 15 octobre, il avait convoqué un élève dans son burea…",
-      "source": "L'Humanité / Libération",
+      "source": "L'Humanité / Libération / Le Figaro",
       "sources": [
         "L'Humanité",
-        "Libération"
+        "Libération",
+        "Le Figaro"
       ],
       "url": "https://www.humanite.fr/societe/mouvement-lyceen/mouvement-lyceen-le-proviseur-du-lycee-paul-eluard-a-saint-denis-demissionne-sous-la-pression-des-parents-et-enseignants",
       "verifie": true
