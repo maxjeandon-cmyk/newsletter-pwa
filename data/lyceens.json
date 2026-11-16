@@ -1,5 +1,5 @@
 {
-  "maj": "16/11/2026 01:59",
+  "maj": "17/11/2026 00:44",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -20,15 +20,33 @@
   ],
   "version_gouvernement": [
     {
+      "id": "amwjwugev-cmgd",
+      "date": "16/11/2026",
+      "titre": "Lycée Nelson-Mandela de Nantes : les cours de nouveau suspendus jusqu'à mercredi",
+      "texte": "La direction du lycée Nelson-Mandela de Nantes indique que les cours sont de nouveau suspendus dans l'établissement jusqu'à mercredi pour raison de sécurité. « Compte tenu du contexte actuel lié au m…",
+      "source": "20 minutes / Europe 1 / franceinfo / La Croix / Libération",
+      "sources": [
+        "20 minutes",
+        "Europe 1",
+        "franceinfo",
+        "La Croix",
+        "Libération"
+      ],
+      "url": "https://www.europe1.fr/societe/lycee-nelson-mandela-de-nantes-les-cours-de-nouveau-suspendus-jusqua-mercredi-1238220?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
+      "verifie": true
+    },
+    {
       "id": "amwik2ga5-3bub",
       "date": "15/11/2026",
       "titre": "Blocages à Paris : la préfecture durcit le ton et interdit les rassemblements autour de certains lycées et universités",
       "texte": "Face à la multiplication des blocages et des violences aux abords des établissements scolaires, la préfecture de police de Paris a pris un arrêté interdisant les rassemblements non déclarés dans un r…",
-      "source": "Europe 1 / Le Figaro / BFMTV",
+      "source": "Europe 1 / Le Figaro / BFMTV / franceinfo / La Croix",
       "sources": [
         "Europe 1",
         "Le Figaro",
-        "BFMTV"
+        "BFMTV",
+        "franceinfo",
+        "La Croix"
       ],
       "url": "https://www.lefigaro.fr/actualite-france/blocages-a-paris-la-prefecture-durcit-le-ton-et-interdit-les-rassemblements-autour-de-certains-lycees-et-universites-20261115",
       "verifie": true
@@ -66,10 +84,11 @@
       "date": "13/11/2026",
       "titre": "Colère lycéenne : Des consignes pour systématiser les sanctions disciplinaires contre les bloqueurs",
       "texte": "Parmi les actes susceptibles de sanctions disciplinaires, figurent les appels « à la violence, dégradation des biens, blocage de l’accès à des espaces intérieurs de l’établissement, violence physique…",
-      "source": "20 minutes / La Croix",
+      "source": "20 minutes / La Croix / Europe 1",
       "sources": [
         "20 minutes",
-        "La Croix"
+        "La Croix",
+        "Europe 1"
       ],
       "url": "https://www.20minutes.fr/societe/4262773-20261113-colere-lyceenne-consignes-systematiser-sanctions-disciplinaires-bloqueurs?at_medium=display&at_campaign=149",
       "verifie": true
@@ -184,19 +203,6 @@
       ],
       "url": "https://www.publicsenat.fr/actualites/politique/mouvement-lyceen-des-cours-de-rattrapage-possibles-pendant-les-vacances-en-fevrier-ou-a-paques-annonce-edouard-geffray",
       "verifie": true
-    },
-    {
-      "id": "amw88kbhj-4i1w",
-      "date": "08/11/2026",
-      "titre": "Mouvement lycéen : Edouard Geffray n’a «pas l’intention de toucher» au calendrier du bac",
-      "texte": "Malgré les perturbations des deux derniers mois et une mobilisation qui ne parait pas près de s’achever, le ministre de l’Education nationale a annoncé, samedi 7 novembre, qu’il refuserait d’aménager…",
-      "source": "La Croix / Libération",
-      "sources": [
-        "La Croix",
-        "Libération"
-      ],
-      "url": "https://www.liberation.fr/societe/education/mouvement-lyceen-edouard-geffray-na-pas-lintention-de-toucher-au-calendrier-du-bac-20261108_BITWQ3QS4ZCGVNQWUT4VIRUHOI/",
-      "verifie": true
     }
   ],
   "faits": [
@@ -205,11 +211,12 @@
       "date": "15/11/2026",
       "titre": "Mouvement lycéen : le proviseur du lycée Paul-Éluard à Saint-Denis qui avait fait entrer la BAC dans son établissement …",
       "texte": "Les représentants élus des personnels du lycée Paul-Éluard à Saint-Denis (Seine-Saint-Denis) ont annoncé le départ du proviseur Xavier Artaud. Le 15 octobre, il avait convoqué un élève dans son burea…",
-      "source": "L'Humanité / Libération / Le Figaro",
+      "source": "L'Humanité / Libération / Le Figaro / Europe 1",
       "sources": [
         "L'Humanité",
         "Libération",
-        "Le Figaro"
+        "Le Figaro",
+        "Europe 1"
       ],
       "url": "https://www.humanite.fr/societe/mouvement-lyceen/mouvement-lyceen-le-proviseur-du-lycee-paul-eluard-a-saint-denis-demissionne-sous-la-pression-des-parents-et-enseignants",
       "verifie": true
