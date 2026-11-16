@@ -1,0 +1,526 @@
+{
+  "date": "2026-11-15",
+  "genere_le": "2026-11-16T00:05:53.494Z",
+  "html": "editions/2026-11-15.html",
+  "resume_executif": [
+    "Intelligence artificielle : \u00e0 trois jours de l\u2019entr\u00e9e en Bourse d\u2019Anthropic, Dario Amodei continue de vendre la s\u00e9curit\u00e9 comme premier argument, Microsoft a \u00ab compl\u00e8tement r\u00e9tabli \u00bb son service apr\u00e8s la panne mondiale de la semaine et OpenAI pr\u00e9pare la suite de sa famille GPT-6 (S1-S5).",
+    "Spatial : vingt-quatre heures calmes apr\u00e8s l\u2019exploit de samedi \u2014 retour sur la capture du vaisseau Starship au Texas et sur le programme Artemis, dont l\u2019Europe pr\u00e9pare la mission d\u2019alunissage de 2027 (S7-S11).",
+    "France : Marine Le Pen reste \u00ab tr\u00e8s largement en t\u00eate \u00bb des intentions de vote, la fonction publique appelle \u00e0 la gr\u00e8ve mardi et le mouvement social a perdu de l\u2019affluence samedi, tandis que le budget 2027 s\u2019ouvre au S\u00e9nat (S12-S20).",
+    "Climat : le d\u00e9passement des 1,5 \u00b0C est jug\u00e9 in\u00e9vitable par les scientifiques, \u00e0 la veille de la reprise minist\u00e9rielle de la COP31 d\u2019Antalya o\u00f9 les priorit\u00e9s des pays restent \u00ab diverses et parfois oppos\u00e9es \u00bb (S21-S25).",
+    "G\u00e9opolitique : Volodymyr Zelensky affirme que Washington a propos\u00e9 des concessions territoriales contre l\u2019adh\u00e9sion de l\u2019Ukraine \u00e0 l\u2019Otan ; Isra\u00ebl annonce avoir tu\u00e9 un commandant du Hamas \u00e0 Gaza ; un sommet in\u00e9dit Trump-Xi-Poutine est attendu jeudi \u00e0 Shenzhen (S26-S38)."
+  ],
+  "chapitres": [
+    {
+      "id": "intelligence-artificielle",
+      "emoji": "\ud83e\udd16",
+      "nom": "Intelligence artificielle",
+      "resume": "Dimanche d\u2019avant-Bourse : alors qu\u2019Anthropic pr\u00e9pare pour jeudi l\u2019une des introductions les plus importantes de l\u2019histoire, Dario Amodei continue de vendre la s\u00e9curit\u00e9 de l\u2019IA comme premier argument devant les investisseurs, Microsoft a \u00ab compl\u00e8tement r\u00e9tabli \u00bb ses services apr\u00e8s la panne mondiale de la semaine et OpenAI s\u2019appr\u00eate \u00e0 prolonger la famille GPT-6 (S1-S5)."
+    },
+    {
+      "id": "spatial",
+      "emoji": "\ud83d\ude80",
+      "nom": "Spatial",
+      "resume": "Vingt-quatre heures calmes sur les pas de tir apr\u00e8s l\u2019exploit de samedi : la NASA et ses partenaires pr\u00e9parent la suite \u2014 l\u2019Europe peaufine sa place dans Artemis, dont le pilote de la mission d\u2019alunissage de 2027 est l\u2019astronaute de l\u2019ESA Luca Parmitano, et l\u2019ISS continue sa rotation d\u2019\u00e9quipages et de cargos (S7-S11)."
+    },
+    {
+      "id": "economie-pour-les-nuls",
+      "emoji": "\ud83d\udcb0",
+      "nom": "L\u2019\u00c9conomie pour les nuls",
+      "resume": "C\u00f4t\u00e9 monde, l\u2019argent de l\u2019IA d\u00e9fraie l\u2019actualit\u00e9 : l\u2019entr\u00e9e en Bourse d\u2019Anthropic, attendue jeudi, s\u2019annonce parmi les plus importantes de l\u2019histoire, et la Chine annonce un exc\u00e9dent commercial qui d\u00e9passe les 1.000 milliards de dollars port\u00e9 par le boom de l\u2019IA. C\u00f4t\u00e9 France, le gouvernement promet des mesures de pouvoir d\u2019achat \u00ab sans aggraver les comptes \u00bb, \u00e0 quelques jours de l\u2019examen du\u2026"
+    },
+    {
+      "id": "droit-pour-les-nuls",
+      "emoji": "\u2696\ufe0f",
+      "nom": "Le Droit pour les nuls",
+      "resume": "Mise en examen, d\u00e9tention provisoire : deux affaires du jour \u2014 l\u2019\u00e9crou du suspect du meurtre d\u2019un commer\u00e7ant en Ard\u00e8che et le \u00ab crypto-rapt \u00bb de 900.000 euros en bitcoins dans les Yvelines \u2014 offrent l\u2019occasion de comprendre les \u00e9tapes qui m\u00e8nent d\u2019une interpellation \u00e0 un proc\u00e8s, et ce que la loi exige avant d\u2019enfermer quelqu\u2019un (S5, S62, S63)."
+    },
+    {
+      "id": "jeu-video-pop-culture",
+      "emoji": "\ud83c\udfae",
+      "nom": "Jeu vid\u00e9o & pop culture",
+      "resume": "J-4 : Grand Theft Auto VI s\u2019appr\u00eate \u00e0 d\u00e9ferler sur l\u2019industrie du divertissement jeudi 19 novembre, avec des pr\u00e9commandes qui explosent d\u00e9j\u00e0 les records, tandis que la nouvelle version de The Legend of Zelda: Ocarina of Time confirme le triomphe de la Nintendo Switch 2 sur les critiques (S44-S48)."
+    },
+    {
+      "id": "culture",
+      "emoji": "\ud83c\udfad",
+      "nom": "Culture",
+      "resume": "Semaine de sorties en demi-teinte avant les grosses machines de fin d\u2019ann\u00e9e : au cin\u00e9ma, Scrooge de Ti West et la com\u00e9die noire d\u2019Albert Dupontel Il faut br\u00fbler maman ; en librairies, la saison des prix litt\u00e9raires touche \u00e0 sa fin avec le Goncourt 2026 d\u00e9cern\u00e9 \u00e0 Philippe Jaenada ; en musique, les sorties du vendredi 13 font la part belle \u00e0 la pop ind\u00e9pendante (S49-S57)."
+    },
+    {
+      "id": "sciences",
+      "emoji": "\ud83d\udd2c",
+      "nom": "Sciences",
+      "resume": "La semaine scientifique a \u00e9t\u00e9 marqu\u00e9e par l\u2019annonce d\u2019une th\u00e9rapie CRISPR sur le point d\u2019obtenir la premi\u00e8re autorisation de la FDA am\u00e9ricaine, par un outil d\u2019IA capable de \u00ab lire \u00bb l\u2019int\u00e9rieur des r\u00e9seaux de neurones et par des travaux qui explorent des voies inattendues, du psoriasis \u00e0 l\u2019effet La Ni\u00f1a sur l\u2019\u00e9conomie mondiale (S58-S60)."
+    },
+    {
+      "id": "climat",
+      "emoji": "\ud83c\udf0d",
+      "nom": "Climat",
+      "resume": "\u00c0 la veille de la reprise minist\u00e9rielle de la COP31, le message scientifique du jour est sans appel : le d\u00e9passement des 1,5 \u00b0C est jug\u00e9 in\u00e9vitable par les auteurs du Global Carbon Budget, alors que les pays affichent \u00e0 Antalya des priorit\u00e9s \u00ab diverses et parfois oppos\u00e9es \u00bb sur la sortie des \u00e9nergies fossiles et le financement de l\u2019adaptation (S21-S25)."
+    },
+    {
+      "id": "politique-francaise",
+      "emoji": "\ud83c\uddeb\ud83c\uddf7",
+      "nom": "Politique fran\u00e7aise",
+      "resume": "Marine Le Pen reste \u00ab tr\u00e8s largement en t\u00eate \u00bb des intentions de vote \u00e0 six mois de la pr\u00e9sidentielle, \u00c9douard Philippe se dit pr\u00eat \u00e0 une r\u00e9union de la droite et du centre sans primaire, la fonction publique appelle \u00e0 la gr\u00e8ve mardi et le gouvernement promet des mesures de pouvoir d\u2019achat en tordant le bras du budget (S5, S12-S20)."
+    },
+    {
+      "id": "etats-unis",
+      "emoji": "\ud83c\uddfa\ud83c\uddf8",
+      "nom": "\u00c9tats-Unis",
+      "resume": "Le ciel am\u00e9ricain se remet difficilement de la panne de la Federal Aviation Administration \u2014 plus de 18.000 vols annul\u00e9s entre vendredi et samedi \u2014 que Donald Trump impute \u00e0 son pr\u00e9d\u00e9cesseur, tandis que les r\u00e9publicains dig\u00e8rent leur d\u00e9faite aux midterms et que le pr\u00e9sident pr\u00e9pare sa tourn\u00e9e asiatique de la semaine (S5, S32-S37)."
+    },
+    {
+      "id": "chine",
+      "emoji": "\ud83c\udde8\ud83c\uddf3",
+      "nom": "Chine",
+      "resume": "La puissance commerciale chinoise bat des records \u2014 l\u2019exc\u00e9dent d\u00e9passe 1.000 milliards de dollars, port\u00e9 par le boom de l\u2019IA \u2014 pendant que le pouvoir verrouille : condamnation d\u2019un ex-d\u00e9put\u00e9 pro-d\u00e9mocratie de Macao \u00e0 douze ans et demi de prison, et pr\u00e9paration du sommet de Shenzhen o\u00f9 Xi Jinping recevra Trump et Poutine jeudi (S36-S41)."
+    },
+    {
+      "id": "russie",
+      "emoji": "\ud83c\uddf7\ud83c\uddfa",
+      "nom": "Russie",
+      "resume": "L\u2019Estonie, membre de l\u2019OTAN et de l\u2019UE, a annonc\u00e9 la fermeture compl\u00e8te de sa fronti\u00e8re avec la Russie \u00e0 partir du 1er d\u00e9cembre, apr\u00e8s avoir d\u00e9jou\u00e9 une tentative d\u2019incendie d\u2019une usine de drones attribu\u00e9e au renseignement militaire russe (GRU) \u2014 un signal sans pr\u00e9c\u00e9dent dans les relations entre Moscou et son voisinage europ\u00e9en (S5, S31)."
+    },
+    {
+      "id": "geopolitique",
+      "emoji": "\ud83c\udf10",
+      "nom": "G\u00e9opolitique",
+      "resume": "Volodymyr Zelensky affirme que Washington a propos\u00e9 des concessions territoriales \u00e0 Kiev en \u00e9change d\u2019une adh\u00e9sion de l\u2019Ukraine \u00e0 l\u2019Otan, Isra\u00ebl annonce avoir \u00ab neutralis\u00e9 \u00bb un commandant de la brigade de Rafah dans le sud de Gaza, et un sommet in\u00e9dit Trump-Xi-Poutine se pr\u00e9pare jeudi \u00e0 Shenzhen \u2014 l\u2019Iran au menu, l\u2019Ukraine absente (S5, S26-S38)."
+    },
+    {
+      "id": "grande-info-semaine",
+      "emoji": "\ud83d\udcf0",
+      "nom": "Grande information de la semaine",
+      "resume": "La semaine du 9 au 15 novembre aura \u00e9t\u00e9 celle des tables de n\u00e9gociation : pourparlers Ukraine-Russie repris apr\u00e8s plus de huit mois, sommet in\u00e9dit Trump-Xi-Poutine annonc\u00e9 \u00e0 Shenzhen, COP31 \u00e0 mi-parcours \u00e0 Antalya \u2014 pendant que l\u2019industrie de l\u2019IA vivait sa temp\u00eate Nvidia, la France rendait hommage aux victimes du 13-Novembre et que GTA VI s\u2019appr\u00eate \u00e0 sortir jeudi (S21-S38, S43-S48)."
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1 \u2014 AFP, \u00ab Avant la Bourse : le patron d\u2019Anthropic fait toujours de la s\u00e9curit\u00e9 de l\u2019IA son premier argument de vente \u00bb (d\u00e9p\u00eache, IPO attendue jeudi, intransigeance sur les recrutements)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "14/11/2026"
+    },
+    {
+      "label": "S2 \u2014 France 24, \u00ab Panne de Microsoft : le g\u00e9ant am\u00e9ricain affirme que ses services sont enti\u00e8rement r\u00e9tablis \u00bb",
+      "ref": "https://www.france24.com/fr/%C3%A9co-tech/20261114-les-services-de-microsoft-sont-quasiment-r%C3%A9tablis-l-entreprise-se-dit-profond%C3%A9ment-d%C3%A9sol%C3%A9e",
+      "fiabilite": 4,
+      "maj": "14/11/2026"
+    },
+    {
+      "label": "S3 \u2014 CBC/Reuters, \u00ab Microsoft services fully restored after global outage \u00bb",
+      "ref": "https://www.cbc.ca/lite/story/9.7422072",
+      "fiabilite": 4,
+      "maj": "14/11/2026"
+    },
+    {
+      "label": "S4 \u2014 AP, \u00ab Microsoft says services fully restored after hourslong global outage \u00bb (d\u00e9p\u00eache, tribunaux et pharmacies touch\u00e9s, gouvernements de Singapour, Japon, Gr\u00e8ce et Norv\u00e8ge affect\u00e9s)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "14/11/2026"
+    },
+    {
+      "label": "S5 \u2014 AFP, \u00ab Actualit\u00e9s du dimanche 15 novembre 2026 \u00bb (d\u00e9p\u00eache du soir : Cusco, Gaza, Yvelines, ciel am\u00e9ricain, Estonie, en bref)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S6 \u2014 AFP, \u00ab Actualit\u00e9s du dimanche 15 novembre 2026 \u00bb (d\u00e9p\u00eache du matin : L\u00e9on XIV \u00e0 Cusco, Le Pen en t\u00eate, commandant du Hamas tu\u00e9 \u00e0 Al-Mawasi)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S7 \u2014 AFP, \u00ab SpaceX rattrape l\u2019\u00e9tage sup\u00e9rieur de sa m\u00e9gafus\u00e9e Starship, une premi\u00e8re \u00bb (d\u00e9p\u00eache du 12/11 : vol 15, 14 tours de Terre, plus de 22 heures, \u00e9chec du retour Super Heavy)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "12/11/2026"
+    },
+    {
+      "label": "S8 \u2014 ESA, \u00ab ESA astronaut Luca Parmitano joins NASA\u2019s Artemis III mission as pilot \u00bb",
+      "ref": "https://www.esa.int/Newsroom/Press_Releases/ESA_astronaut_Luca_Parmitano_joins_NASA_s_Artemis_III_Mission_as_Pilot",
+      "fiabilite": 5,
+      "maj": "09/06/2026"
+    },
+    {
+      "label": "S9 \u2014 ESA, page mission \u00ab Artemis III \u00bb",
+      "ref": "https://www.esa.int/articles/about-us/directorates/human-and-robotic-exploration/moon/artemis/artemis-iii",
+      "fiabilite": 5,
+      "maj": "01/11/2026"
+    },
+    {
+      "label": "S10 \u2014 NASA, \u00ab NASA\u2019s SpaceX Crew-13 Launches to International Space Station \u00bb",
+      "ref": "https://www.nasa.gov/news-release/nasas-spacex-crew-13-launches-to-international-space-station/",
+      "fiabilite": 5,
+      "maj": "01/10/2026"
+    },
+    {
+      "label": "S11 \u2014 Air &amp; Cosmos, \u00ab L\u2019agence spatiale europ\u00e9enne annonce une tr\u00e8s riche ann\u00e9e 2026 \u00bb",
+      "ref": "https://air-cosmos.latribune.fr/article/espace/7109786095523/l-agence-spatiale-europeenne-annonce-une-tres-riche-annee-2026",
+      "fiabilite": 4,
+      "maj": "08/01/2026"
+    },
+    {
+      "label": "S12 \u2014 AFP, \u00ab R\u00e9pondre aux attentes sur le pouvoir d\u2019achat sans aggraver les comptes : l\u2019exercice d\u00e9licat du gouvernement \u00bb (d\u00e9p\u00eache : efforts budg\u00e9taires suppl\u00e9mentaires, S\u00e9nat \u00e0 partir du 20 novembre)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S13 \u2014 Cour des comptes, \u00ab La situation et les perspectives des finances publiques \u00bb (d\u00e9ficit 2025 \u00e0 152,5 milliards d\u2019euros, 5,1 points de PIB)",
+      "ref": "https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17",
+      "fiabilite": 5,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S14 \u2014 budget.gouv.fr, \u00ab Finances publiques : r\u00e9sultats 2025 et perspectives 2026 et 2027 \u00bb",
+      "ref": "https://www.budget.gouv.fr/reperes/finances_publiques/articles/finances-publiques-resultats-perspectives",
+      "fiabilite": 5,
+      "maj": "27/03/2026"
+    },
+    {
+      "label": "S15 \u2014 AFP, \u00ab Pr\u00e9sidentielle : Le Pen largement en t\u00eate, M\u00e9lenchon 2e, Riner \u00e0 4,5 %, selon un sondage \u00bb (d\u00e9p\u00eache : Retailleau 4-9 %, Zemmour 3,5-4,5 %, second tour 55-45)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "14/11/2026"
+    },
+    {
+      "label": "S16 \u2014 SP2027, \u00ab Sondages pr\u00e9sidentielle 2027 \u2014 intentions de vote en direct \u00bb (agr\u00e9gateur ind\u00e9pendant, MAJ 15/11/2026)",
+      "ref": "https://sondages-presidentielle2027.fr/",
+      "fiabilite": 3,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S17 \u2014 Orange/6medis, \u00ab Les trois infos \u00e0 retenir de ce dimanche 15 novembre \u00bb (gr\u00e8ve du 17, interdiction de rassemblement autour de lyc\u00e9es et universit\u00e9s, coca\u00efne intercept\u00e9e)",
+      "ref": "https://actu.orange.fr/france/les-trois-infos-a-retenir-de-ce-dimanche-15-novembre-l-express-via-6medis-CNT000002tJGB4.html",
+      "fiabilite": 4,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S18 \u2014 20 Minutes, archives du 15 novembre 2026",
+      "ref": "https://www.20minutes.fr/archives/2026/11-15",
+      "fiabilite": 4,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S19 \u2014 AFP, \u00ab Actualit\u00e9s du samedi 14 novembre 2026 \u00bb (d\u00e9p\u00eache : acte V, revendications vari\u00e9es, un peu moins d\u2019affluence)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "14/11/2026"
+    },
+    {
+      "label": "S20 \u2014 AFP, \u00ab Les syndicats de fonctionnaires sortent remont\u00e9s de Matignon, la CFDT rejoint l\u2019appel \u00e0 la gr\u00e8ve le 17 novembre \u00bb (d\u00e9p\u00eache : \u00ab une r\u00e9union pour rien \u00bb)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S21 \u2014 AFP, \u00ab Climat : le monde tiraill\u00e9 sur le cap \u00e0 tenir apr\u00e8s l\u2019in\u00e9vitable d\u00e9passement des 1,5 \u00b0C \u00bb (d\u00e9p\u00eache : Pierre Friedlingstein, Global Carbon Budget, \u00ab aucun doute \u00bb)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S22 \u2014 TV5MONDE, \u00ab Climat : ce que les pays n\u00e9gocient \u00e0 la COP31 face au d\u00e9passement des 1,5 \u00b0C \u00bb",
+      "ref": "https://information.tv5monde.com/environnement/climat-ce-que-les-pays-negocient-la-cop31-face-au-depassement-des-15degc-2845876",
+      "fiabilite": 4,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S23 \u2014 Citepa, \u00ab Vue d\u2019ensemble : quelles sont les avanc\u00e9es \u00e0 la COP-31 \u00bb (ministres lundi 16/mardi 17 novembre)",
+      "ref": "https://www.citepa.org/vue-densemble-des-autres-sujets-quelles-sont-les-avancees-a-la-cop-31/",
+      "fiabilite": 4,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S24 \u2014 AFP, \u00ab Potentielle d\u00e9cision de la COP31 : les pays affichent leurs divergences \u00bb (d\u00e9p\u00eache : fossiles, \u00e9lectricit\u00e9, adaptation)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S25 \u2014 ONU Info, \u00ab COP31 : quelles ambitions climatiques dans un monde fragment\u00e9 ? \u00bb",
+      "ref": "https://news.un.org/fr/story/2026/11/1159793",
+      "fiabilite": 5,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S26 \u2014 AFP, \u00ab Zelensky affirme que les \u00c9tats-Unis ont propos\u00e9 des concessions territoriales en \u00e9change d\u2019une adh\u00e9sion de l\u2019Ukraine \u00e0 l\u2019Otan \u00bb (d\u00e9p\u00eache : \u00ab mise tout \u00bb sur la campagne d\u2019hiver)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "14/11/2026"
+    },
+    {
+      "label": "S27 \u2014 AFP, \u00ab Macron affirme que \u201cceux qui veulent rationner\u201d l\u2019aide \u00e0 l\u2019Ukraine veulent \u201cl\u2019obliger \u00e0 une paix injuste\u201d \u00bb (d\u00e9p\u00eache)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "14/11/2026"
+    },
+    {
+      "label": "S28 \u2014 AFP, \u00ab Pourparlers sur l\u2019Ukraine : les Europ\u00e9ens seront repr\u00e9sent\u00e9s par cinq pays \u00bb (d\u00e9p\u00eache)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S29 \u2014 AFP, \u00ab Pourparlers sur l\u2019Ukraine : l\u2019UE pas dupe des \u201cpi\u00e8ges\u201d que lui tend la Russie \u00bb (d\u00e9p\u00eache : Kaja Kallas)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S30 \u2014 Euronews, dossier \u00ab Guerre Russie / Ukraine \u00bb (drones russes sur un h\u00f4pital de Kyiv, rencontre Kushner-Witkoff-Zelensky en Irlande)",
+      "ref": "https://fr.euronews.com/tag/conflit-russie-ukraine",
+      "fiabilite": 4,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S31 \u2014 Al Jazeera, page \u00ab Russia-Ukraine war \u00bb (Estonia to close border crossings with Russia after alleged arson attack)",
+      "ref": "https://www.aljazeera.com/tag/ukraine-russia-crisis/",
+      "fiabilite": 4,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S32 \u2014 AFP, \u00ab Pagaille a\u00e9rienne aux \u00c9tats-Unis au lendemain d\u2019une panne sur des infrastructures v\u00e9tustes \u00bb (d\u00e9p\u00eache : plus de 17.000 vols annul\u00e9s en moins de 24 heures)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "14/11/2026"
+    },
+    {
+      "label": "S33 \u2014 AFP, \u00ab Aux \u00c9tats-Unis, des d\u00e9mocrates religieux reprennent \u00e0 la droite sa mainmise sur la foi \u00bb (d\u00e9p\u00eache : James Talarico, Adam Hamilton)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S34 \u2014 AFP, \u00ab Il n\u2019y a \u201caucune caravane\u201d de migrants vers les \u00c9tats-Unis, dit Mexico apr\u00e8s des menaces de Trump \u00bb (d\u00e9p\u00eache : 24 caravanes d\u00e9sagr\u00e9g\u00e9es, Claudia Sheinbaum)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S36 \u2014 AFP, \u00ab Une rencontre entre Trump, Xi et Poutine aura lieu jeudi en Chine (Maison Blanche) \u00bb (d\u00e9p\u00eache)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S37 \u2014 France 24, \u00ab Donald Trump, Xi Jinping et Vladimir Poutine vont se rencontrer jeudi en Chine \u00bb",
+      "ref": "https://www.france24.com/fr/asie-pacifique/20261114-donald-trump-xi-jinping-vladimir-poutine-vont-se-rencontrer-jeudi-chine",
+      "fiabilite": 4,
+      "maj": "14/11/2026"
+    },
+    {
+      "label": "S38 \u2014 AFP, \u00ab Trump va discuter de l\u2019Iran, mais pas de l\u2019Ukraine, avec Xi et Poutine lors de leur rencontre en Chine (responsable am\u00e9ricain) \u00bb (d\u00e9p\u00eache)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S39 \u2014 Euronews, page Chine (\u00ab L\u2019exc\u00e9dent commercial chinois d\u00e9passe 1.000 milliards de dollars gr\u00e2ce au boom de l\u2019IA \u00bb)",
+      "ref": "https://fr.euronews.com/location/asie/chine",
+      "fiabilite": 4,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S40 \u2014 RFI, page Chine (\u00ab La Chine condamne Au Kam San, ex-d\u00e9put\u00e9 pro-d\u00e9mocratie de Macao, \u00e0 12 ans et demi de prison \u00bb)",
+      "ref": "https://www.rfi.fr/fr/tag/chine/",
+      "fiabilite": 4,
+      "maj": "06/11/2026"
+    },
+    {
+      "label": "S41 \u2014 AFP, \u00ab Rugby : exploit gallois, victorieux de la Nouvelle-Z\u00e9lande pour la premi\u00e8re fois depuis 1953 \u00bb (d\u00e9p\u00eache : 35-28, cinq essais)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "14/11/2026"
+    },
+    {
+      "label": "S42 \u2014 AFP, \u00ab Rugby : Le point sur le Championnat des nations \u00bb (d\u00e9p\u00eache : r\u00e9sultats des 5e et 6e journ\u00e9es, week-end final \u00e0 Twickenham fin novembre)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S43 \u2014 AFP, \u00ab Coupe de France : Metz chute d\u2019entr\u00e9e au 7e tour \u00bb (d\u00e9p\u00eache : Saint-Di\u00e9 Kellermann 1-0, Saint-\u00c9tienne et Nantes qualifi\u00e9s)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S44 \u2014 JeuxVideo.com, \u00ab M\u00eame pas sorti, les ventes de GTA 6 d\u00e9passent d\u00e9j\u00e0 les ventes de lancement de GTA 5 \u00bb",
+      "ref": "https://www.jeuxvideo.com/news/2113912/meme-pas-sorti-les-ventes-de-gta-6-depassent-deja-les-ventes-de-lancement-de-gta-5.htm",
+      "fiabilite": 4,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S45 \u2014 GTABase, \u00ab GTA 6 s\u2019appr\u00eate \u00e0 battre tous les records de pr\u00e9commandes avant sa sortie le 19 novembre \u00bb",
+      "ref": "https://www.gtabase.com/fr/articles/gta-6/gta-6-sapprete-a-battre-tous-les-records-de-precommandes-avant-sa-sortie-le-19-novembre",
+      "fiabilite": 3,
+      "maj": "04/11/2026"
+    },
+    {
+      "label": "S46 \u2014 Wikip\u00e9dia, \u00ab The Legend of Zelda: Ocarina of Time (jeu vid\u00e9o de 2026) \u00bb (Metacritic 96/100, OpenCritic 99 %) (https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Ocarina_of_Time_(2026_video_game))",
+      "ref": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Ocarina_of_Time_(2026_video_game",
+      "fiabilite": 3,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S47 \u2014 Nintendo, \u00ab The Legend of Zelda: Ocarina of Time is now available \u00bb",
+      "ref": "https://www.nintendo.com/us/whatsnew/its-time-experience-the-legend-of-zelda-ocarina-of-time-reborn-exclusively-for-nintendo-switch-2/",
+      "fiabilite": 5,
+      "maj": "05/11/2026"
+    },
+    {
+      "label": "S48 \u2014 France 24, \u00ab Apr\u00e8s 13 ans d\u2019attente, le ph\u00e9nom\u00e8ne \u201cGTA VI\u201d s\u2019appr\u00eate \u00e0 d\u00e9ferler sur l\u2019industrie du divertissement \u00bb",
+      "ref": "https://www.france24.com/fr/info-en-continu/20261106-apr%C3%A8s-13-ans-d-attente-le-ph%C3%A9nom%C3%A8ne-gta-vi-s-appr%C3%AAte-%C3%A0-d%C3%A9ferler-sur-l-industrie-du-divertissement",
+      "fiabilite": 4,
+      "maj": "06/11/2026"
+    },
+    {
+      "label": "S49 \u2014 AlloCin\u00e9, \u00ab Sorties cin\u00e9ma cette semaine \u00bb",
+      "ref": "https://www.allocine.fr/film/sorties-semaine/",
+      "fiabilite": 4,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S50 \u2014 Cinefil, \u00ab Sorties cin\u00e9ma de la semaine du 11 novembre 2026 : 30 films \u00bb (Scrooge, Comment braquer une banque, 15/18)",
+      "ref": "https://www.cinefil.com/sorties-cinema-de-la-semaine",
+      "fiabilite": 3,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S51 \u2014 SensCritique, \u00ab Sorties de la semaine \u00bb (Il faut br\u00fbler maman, Albert Dupontel, 1 h 35, sortie 10/11)",
+      "ref": "https://www.senscritique.com/films/cette-semaine",
+      "fiabilite": 3,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S52 \u2014 Livres Hebdo, \u00ab Sur les \u00e9crans cette semaine \u00bb (Scrooge, Les anneaux de pouvoir, Being Heumann)",
+      "ref": "https://www.livreshebdo.fr/thematiques/sur-les-ecrans-cette-semaine",
+      "fiabilite": 4,
+      "maj": "10/11/2026"
+    },
+    {
+      "label": "S53 \u2014 L\u2019\u00c9claireur Fnac, \u00ab Tous les prix litt\u00e9raires de la rentr\u00e9e 2026 \u00bb",
+      "ref": "https://leclaireur.fnac.com/selection/cp36004-tous-les-prix-litteraires-de-la-rentree-2026/",
+      "fiabilite": 4,
+      "maj": "10/11/2026"
+    },
+    {
+      "label": "S54 \u2014 \u00c9dition Livre France, \u00ab Prix Goncourt 2026 \u00bb (Philippe Jaenada, L\u2019Inconnue du quai de Javel ; 461 romans recens\u00e9s)",
+      "ref": "https://www.edition-livre-france.fr/prix-goncourt/",
+      "fiabilite": 3,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S55 \u2014 NPR/LPM, \u00ab New Music Friday: The best albums out Nov. 13 \u00bb (Emma Ogier, Lost Highway)",
+      "ref": "https://www.lpm.org/music/2026-11-13/new-music-friday-the-best-albums-out-nov-13",
+      "fiabilite": 4,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S56 \u2014 Benzine Magazine, \u00ab Les sorties d\u2019albums du 13 novembre 2026 \u00bb (Wavves, Tami Hart)",
+      "ref": "https://www.benzinemag.net/2026/11/13/les-sorties-dalbums-13-novembre-2026/",
+      "fiabilite": 3,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S57 \u2014 PossibleMusics, \u00ab Les 10 albums de la semaine (13 novembre 2026) \u00bb (J.Bernardt, Jake Bugg, Matt Elliott)",
+      "ref": "https://possiblemusics.com/2026/11/14/les-10-albums-de-la-semaine-13-novembre-2026-j-bernardt-jake-bugg-matt-elliott/",
+      "fiabilite": 3,
+      "maj": "14/11/2026"
+    },
+    {
+      "label": "S58 \u2014 Nature, \u00ab Latest science news \u00bb (th\u00e9rapie CRISPR vers une premi\u00e8re autorisation FDA ; IA \u00ab mechanic \u00bb explorant la bo\u00eete noire des r\u00e9seaux de neurones)",
+      "ref": "https://www.nature.com/news/press",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S59 \u2014 ScienceDaily, \u00ab Top Science News \u00bb (compl\u00e9ment commun contre le psoriasis)",
+      "ref": "https://www.sciencedaily.com/",
+      "fiabilite": 3,
+      "maj": "09/11/2026"
+    },
+    {
+      "label": "S60 \u2014 CNRS, Le Journal (\u00ab La Ni\u00f1a pourrait davantage affecter l\u2019\u00e9conomie \u00bb ; \u00ab La France, future terre d\u2019asile des donn\u00e9es scientifiques sur le climat ? \u00bb)",
+      "ref": "https://lejournal.cnrs.fr/",
+      "fiabilite": 5,
+      "maj": "10/11/2026"
+    },
+    {
+      "label": "S61 \u2014 L\u00e9gifrance, Code de proc\u00e9dure p\u00e9nale (articles 9-1, 80-1, 137 et suivants, 144)",
+      "ref": "https://www.legifrance.gouv.fr/",
+      "fiabilite": 5,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S62 \u2014 RTL, \u00ab Tu\u00e9 en pleine rue pour un t\u00e9l\u00e9phone portable : un homme de 22 ans mis en examen et plac\u00e9 en d\u00e9tention pour le meurtre d\u2019un p\u00e2tissier en Ard\u00e8che \u00bb",
+      "ref": "https://www.rtl.fr/actu/justice-faits-divers/tue-en-pleine-rue-pour-un-telephone-portable-un-homme-de-22-ans-mis-en-examen-et-place-en-detention-pour-le-meurtre-d-un-patissier-en-ardeche-7900696410",
+      "fiabilite": 4,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S63 \u2014 20 Minutes, \u00ab Ard\u00e8che : un homme de 22 ans mis en examen et \u00e9crou\u00e9 apr\u00e8s le meurtre d\u2019un commer\u00e7ant \u00bb",
+      "ref": "https://www.20minutes.fr/faits_divers/4262993-20261115-ardeche-homme-22-ans-mis-examen-ecroue-apres-meurtre-commercant",
+      "fiabilite": 4,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S64 \u2014 AFP, \u00ab Liban : saisie d\u2019armes dans un d\u00e9p\u00f4t de la banlieue sud de Beyrouth \u00bb (d\u00e9p\u00eache)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "13/11/2026"
+    },
+    {
+      "label": "S65 \u2014 Institut de sciences strat\u00e9giques, dossier \u00ab Guerre en Ukraine : le prix pay\u00e9 par la Russie \u00bb (croissance 1 %, d\u00e9fense 7,5 % du PIB)",
+      "ref": "https://www.institut-sciences-strategiques.org/etats/russie/les-consequences-politiques-et-economiques-de-la-guerre-en-ukraine-pour-la-russie/",
+      "fiabilite": 4,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S66 \u2014 AFP, \u00ab Elite de basket : Chalon et Cholet se relancent, Bourg-en-Bresse patauge \u00bb (d\u00e9p\u00eache : Roanne 90-77)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "14/11/2026"
+    },
+    {
+      "label": "S67 \u2014 AFP, \u00ab Volley : les r\u00e9sultats de la 6e journ\u00e9e de la Volstar masculine \u00bb (d\u00e9p\u00eache)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S68 \u2014 AFP, \u00ab Premi\u00e8re ligue f\u00e9minine : les r\u00e9sultats de la 9e journ\u00e9e \u00bb (d\u00e9p\u00eache : Paris FC 2-1 au Havre, PSG 2-0, OL Lyonnes 1-0)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "14/11/2026"
+    },
+    {
+      "label": "S69 \u2014 Wikip\u00e9dia, \u00ab GPT-6.1 \u00bb (GPT-6.1 Terra le 26/10/2026 ; GPT-6.2 attendu fin novembre 2026)",
+      "ref": "https://en.wikipedia.org/wiki/GPT-6.1",
+      "fiabilite": 3,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S70 \u2014 Le Soleil, \u00ab L\u2019Ukraine et la Russie entament des pourparlers de paix sous l\u2019\u00e9gide des \u00c9tats-Unis \u00bb",
+      "ref": "https://www.lesoleil.com/monde/2026/11/10/l-ukraine-et-la-russie-entament-des-pourparlers-de-paix-sous-l-egide-des-etats-unis-XXRHRNNLCREOPBFRHRVQDLXS5E/",
+      "fiabilite": 4,
+      "maj": "10/11/2026"
+    }
+  ],
+  "hors_chapitres": [
+    "Tennis : le num\u00e9ro 1 mondial Alexander Zverev a survol\u00e9 son entr\u00e9e en mati\u00e8re dans le Masters ATP de Turin (15-22 novembre), dominant l\u2019Espagnol Rafael Jodar 6-4, 6-4 dimanche.",
+    "Coupe de France : Metz (L2) a \u00e9t\u00e9 \u00e9limin\u00e9 d\u00e8s son entr\u00e9e en lice au 7e tour par Saint-Di\u00e9 Kellermann, club de R\u00e9gional 1 (6e division), sur un contre \u00e0 la 85e minute (1-0) ; Saint-\u00c9tienne et Nantes ont assur\u00e9 leur qualification.",
+    "Rugby : exploit gallois \u2014 le pays de Galles a battu la Nouvelle-Z\u00e9lande samedi (35-28) pour la premi\u00e8re fois depuis 1953, avec cinq essais et une d\u00e9fense acharn\u00e9e en fin de match, lors de la 5e journ\u00e9e du Championnat des nations.",
+    "Basket : \u00e0 la 8e journ\u00e9e du championnat \u00c9lite, l\u2019\u00c9lan Chalon et Cholet ont retrouv\u00e9 la victoire, tandis que Bourg-en-Bresse a subi \u00e0 domicile la loi de Roanne (90-77) \u2014 une troisi\u00e8me d\u00e9faite de suite pour les hommes de Fr\u00e9d\u00e9ric Fauthoux.",
+    "Volley : la 6e journ\u00e9e de la Volstar masculine s\u2019est achev\u00e9e dimanche \u2014 succ\u00e8s nets de Chaumont sur Toulouse (3-0), de S\u00e8te sur Royan (3-0) et de Nice \u00e0 Narbonne (3-0), Tours ayant battu Saint-Nazaire 3-1.",
+    "Football f\u00e9minin : \u00e0 la 9e journ\u00e9e de Premi\u00e8re ligue, le Paris FC a gagn\u00e9 au Havre (2-1), le PSG s\u2019est impos\u00e9 chez les Marseillaises (2-0) et les OL Lyonnes ont battu Saint-Malo (1-0).",
+    "Pape : accueilli par des milliers de fid\u00e8les en habits traditionnels \u2014 \u00ab Bienvenido, Tayta Le\u00f3n ! \u00bb en quechua \u2014, L\u00e9on XIV a \u00e9t\u00e9 re\u00e7u dimanche \u00e0 Cusco, dans les Andes p\u00e9ruviennes, pour une \u00e9tape \u00e9prouvante de sa tourn\u00e9e en Am\u00e9rique du Sud, un mois apr\u00e8s son op\u00e9ration pour un cancer du poumon.",
+    "Police des mers : une embarcation semi-submersible contenant plusieurs tonnes de coca\u00efne a \u00e9t\u00e9 intercept\u00e9e dans l\u2019Atlantique par la Marine nationale, apr\u00e8s que son \u00e9quipage a activ\u00e9 le m\u00e9canisme de sabordage de l\u2019engin \u2014 une op\u00e9ration d\u00e9crite comme \u00ab in\u00e9dite \u00bb par le minist\u00e8re des Arm\u00e9es et la pr\u00e9fecture de la Martinique.",
+    "R\u00e9publique tch\u00e8que : des centaines de milliers de Tch\u00e8ques ont manifest\u00e9 \u00e0 Prague contre le projet du gouvernement nationaliste d\u2019Andrej Babis de r\u00e9former le financement des m\u00e9dias publics, d\u00e9nonc\u00e9 comme une menace pour la libert\u00e9 de la presse.",
+    "Jordanie : un nageur isra\u00e9lien a tent\u00e9 de \u00ab s\u2019infiltrer par la mer \u00bb dans le royaume, rel\u00e8vent les archives du 15 novembre de 20 Minutes."
+  ]
+}
