@@ -159,6 +159,14 @@
       "sources": [
         "Mediapart"
       ]
+    },
+    {
+      "id": "c12p21",
+      "texte": "La répression, elle, continue de nourrir la colère : Mouvement étudiant : autrefois des sanctuaires, les facs de plus en plus envahies par la police (1 media : Blast — non corrobore) — détail : Plus de vingt interventions policières ont été recensées sur les campus depuis le début du mouvement étudiant. Traditionnellement préservés… (Volet automatique du 17 novembre 2026 à 00:44, chapitre « La répression et ses visages » — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "sources": [
+        "Blast"
+      ],
+      "auto": true
     }
   ]
 }
