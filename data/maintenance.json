@@ -1,24 +1,24 @@
 {
   "date": "16/11/2026",
-  "heure": "11:07",
+  "heure": "23:44",
   "relevesOng": {
-    "rafraichis": 0,
+    "rafraichis": 9,
     "echecs": 1,
-    "publie": false
+    "publie": true
   },
   "lyceens": {
     "nouvelles": 1,
-    "fusionnees": 4,
-    "moissonnes": 34,
+    "fusionnees": 5,
+    "moissonnes": 22,
     "total": 22,
-    "publie": false
+    "publie": true
   },
   "etudiants": {
-    "items": 0,
-    "ajoutes": 0,
-    "chapitre": null,
-    "nouveauChapitre": false,
-    "publie": false
+    "items": 5,
+    "ajoutes": 1,
+    "chapitre": "c43",
+    "nouveauChapitre": true,
+    "publie": true
   },
   "verifs": [
     {
@@ -38,22 +38,20 @@
     },
     {
       "nom": "ong-releve.js",
-      "ok": false,
-      "detail": "0 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
+      "ok": true,
+      "detail": "9 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
     },
     {
       "nom": "lyceens.js",
-      "ok": false,
-      "detail": "publication : GitHub 500 : "
+      "ok": true,
+      "detail": "1 nouvelle(s) info, 5 fusionnée(s) sur 22 moissonnée(s) — 22 au total"
     },
     {
       "nom": "etudiants.js",
       "ok": true,
-      "detail": "0 info(s) des dernières heures, 0 paragraphe(s) ajouté(s)"
+      "detail": "5 info(s) des dernières heures, 1 paragraphe(s) ajouté(s)"
     }
   ],
-  "problemes": [
-    "relevé lycéens"
-  ],
+  "problemes": [],
   "intervention": "Aucune intervention nécessaire : éditions et site publics conformes."
 }
