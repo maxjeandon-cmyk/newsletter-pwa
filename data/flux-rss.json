@@ -466,6 +466,16 @@
       "ligne": "entrepreneurs, réussite et classements"
     },
     {
+      "id": "contrepoints",
+      "nom": "Contrepoints",
+      "emoji": "🧭",
+      "categorie": "Économie 💰",
+      "flux": [
+        "https://www.contrepoints.org/feed"
+      ],
+      "ligne": "webzine libéral, économie et libertés"
+    },
+    {
       "id": "l-obs-economie",
       "nom": "L’Obs — Économie",
       "emoji": "💼",

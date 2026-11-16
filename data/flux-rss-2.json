@@ -477,7 +477,7 @@
       "categorie": "Spatial 🚀",
       "ligne": "agence spatiale européenne, exploration",
       "flux": [
-        "https://www.esa.int/rssfeed/Our_Activities/Space_News"
+        "https://www.esa.int/rss/news.rss"
       ]
     },
     {
