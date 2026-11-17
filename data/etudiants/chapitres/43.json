@@ -5,12 +5,11 @@
   "paragraphes": [
     {
       "id": "c43p1",
-      "texte": "Plusieurs jours ont passé depuis le relevé précédent ; la chronique reprend son fil. Dans la nuit du 16 novembre 2026 au 17 novembre 2026, la chronique avance. Côté forces de l'ordre, les tensions ne faiblissent pas : Mouvement étudiant : autrefois des sanctuaires, les facs de plus en plus envahies par la police (1 media : Blast — non corrobore) — detail : Plus de vingt interventions policières ont été recensées sur les campus depuis le début du mouvement étudiant. Traditionnellement préservés des interventions des forces de l’ordre…. Côté Reddit, élèves et enseignants parlent d'eux-mêmes : Recherche étudiants en situation de handicap (Reddit — r/etudiants) ; Questionnaire de fin d'étude, ETUDIANTS AIX EN PROVENCE UNIQUEMENT (Reddit — r/etudiants) ; Recherche des étudiants en droit (Reddit — r/etudiants) ; Étudiants qui jonglez entre études, sport et projets perso : c’est quoi votre plus gros blocage ? (Reddit — r/etudiants) — detail : <!-- SC_OFF --><div class=\"md\"><p>Bonjour à toutes et à tous !<br/> Je suis étudiante en L3 de psycho et je dois réaliser un entretien auprès d’un.e étudiant.e en situation de han…. Le prochain relevé reprendra le fil. (Relevé automatique du 17 novembre 2026 à 00:44 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "Plusieurs jours ont passé depuis le relevé précédent ; la chronique reprend son fil. Dans la nuit du 16 au 17 novembre, un titre arrête la lecture : « autrefois des sanctuaires, les facs de plus en plus envahies par la police », titre Blast — « plus de vingt interventions policières » ont été recensées sur les campus depuis le début du mouvement étudiant, des lieux « traditionnellement préservés » des interventions des forces de l'ordre. Une seule voix pour ce fait, que la chronique enregistre telle quelle. Et sur Reddit, pendant que la nuit tient le fil, la vie étudiante continue de s'écrire entre pairs : une « Recherche étudiants en situation de handicap » s'ouvre pour un entretien, un « Questionnaire de fin d'étude, ETUDIANTS AIX EN PROVENCE UNIQUEMENT » appelle ses répondants, une « Recherche des étudiants en droit » cherche ses témoignages, et une autre voix demande — « Étudiants qui jonglent entre études, sport et projets perso : c'est quoi votre plus gros blocage ? ». Le mouvement dort d'un œil ; au matin, le relevé dira si les facs envahies réveillent la journée du 17 novembre.",
       "sources": [
-        "Reddit — r/etudiants",
-        "Blast"
-      ],
-      "auto": true
+        "Blast",
+        "Reddit — r/etudiants"
+      ]
     }
   ]
 }

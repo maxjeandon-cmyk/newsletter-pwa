@@ -99,7 +99,7 @@
       "periode": "Chronique transverse — la répression et ses visages",
       "titre": "La répression et ses visages",
       "paragraphes": 21,
-      "octets": 21879
+      "octets": 21925
     },
     {
       "id": "c13",
@@ -347,7 +347,7 @@
       "periode": "17 novembre 2026 — suivi de la journée",
       "titre": "Le fil continue — 17 novembre 2026",
       "paragraphes": 1,
-      "octets": 1666
+      "octets": 1425
     }
   ],
   "releveSigs": [
@@ -649,7 +649,7 @@
           "periode": "17 novembre 2026 — suivi de la journée",
           "titre": "Le fil continue — 17 novembre 2026",
           "paragraphes": 1,
-          "octets": 1666
+          "octets": 1425
         },
         {
           "id": "c10",
@@ -673,7 +673,7 @@
           "periode": "Chronique transverse — la répression et ses visages",
           "titre": "La répression et ses visages",
           "paragraphes": 21,
-          "octets": 21879
+          "octets": 21925
         },
         {
           "id": "c13",
