@@ -49,6 +49,26 @@
       "flux": [
         "https://mashable.com/feeds/rss/all"
       ]
+    },
+    {
+      "id": "le-figaro-economie",
+      "nom": "Le Figaro Économie",
+      "emoji": "💰",
+      "categorie": "Économie 💰",
+      "ligne": "économie et entreprises, quotidien FR",
+      "flux": [
+        "https://www.lefigaro.fr/rss/figaro_economie.xml"
+      ]
+    },
+    {
+      "id": "radio-classique",
+      "nom": "Radio Classique",
+      "emoji": "🎼",
+      "categorie": "Culture & idées 🎭",
+      "ligne": "musique classique et culture, FR",
+      "flux": [
+        "https://www.radioclassique.fr/feed/"
+      ]
     }
   ]
 }

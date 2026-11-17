@@ -406,16 +406,6 @@
       "ligne": "Charente, quotidien rural"
     },
     {
-      "id": "la-provence",
-      "nom": "La Provence",
-      "emoji": "🌅",
-      "categorie": "Presse régionale 🗺️",
-      "flux": [
-        "https://www.laprovence.com/rss"
-      ],
-      "ligne": "Marseille, Aix, Avignon et la region Sud"
-    },
-    {
       "id": "dna",
       "nom": "DNA - Dernieres Nouvelles d'Alsace",
       "emoji": "🥨",
@@ -431,7 +421,7 @@
       "emoji": "🏖️",
       "categorie": "Presse régionale 🗺️",
       "flux": [
-        "https://www.varmatin.com/rss"
+        "https://www.nicematin.com/var/rss"
       ],
       "ligne": "Var, Toulon et le littoral"
     },
