@@ -1,5 +1,5 @@
 {
-  "maj": "17/11/2026 00:44",
+  "maj": "17/11/2026 12:45",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -24,13 +24,14 @@
       "date": "16/11/2026",
       "titre": "Lycée Nelson-Mandela de Nantes : les cours de nouveau suspendus jusqu'à mercredi",
       "texte": "La direction du lycée Nelson-Mandela de Nantes indique que les cours sont de nouveau suspendus dans l'établissement jusqu'à mercredi pour raison de sécurité. « Compte tenu du contexte actuel lié au m…",
-      "source": "20 minutes / Europe 1 / franceinfo / La Croix / Libération",
+      "source": "20 minutes / Europe 1 / franceinfo / La Croix / Libération / L'Humanité",
       "sources": [
         "20 minutes",
         "Europe 1",
         "franceinfo",
         "La Croix",
-        "Libération"
+        "Libération",
+        "L'Humanité"
       ],
       "url": "https://www.europe1.fr/societe/lycee-nelson-mandela-de-nantes-les-cours-de-nouveau-suspendus-jusqua-mercredi-1238220?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
       "verifie": true
