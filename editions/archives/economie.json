@@ -2,6 +2,11 @@
  "domaine": "economie",
  "entrees": [
   {
+   "date": "2026-11-19",
+   "titre": "P\u00e9trole sous tensions et surplus attendu c\u00f4t\u00e9 monde, croissance fran\u00e7aise revue \u00e0 0,4 % c\u00f4t\u00e9 France",
+   "html": "editions/archives/economie/2026-11-19.html"
+  },
+  {
    "date": "2026-11-18",
    "titre": "Inflation am\u00e9ricaine et dollar fort c\u00f4t\u00e9 monde, Bruxelles et les taux fran\u00e7ais c\u00f4t\u00e9 France",
    "html": "editions/archives/economie/2026-11-18.html"
@@ -118,7 +123,7 @@
   },
   {
    "date": "2026-10-26",
-   "titre": "La BCE face \u00e0 la dette fran\u00e7aise c\u00f4t\u00e9 monde, l\u2019assureur Wakam rachet\u00e9 par l\u2019Am\u00e9ricain AmTrust c\u00f4t\u00e9 France",
+   "titre": "La BCE face \u00e0 la dette fran\u00e7aise c\u00f4t\u00e9 monde, l\u2019\u00e9pargne des m\u00e9nages claqu\u00e9e dans l\u2019immobilier c\u00f4t\u00e9 France",
    "html": "editions/archives/economie/2026-10-26.html"
   },
   {
