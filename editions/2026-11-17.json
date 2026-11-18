@@ -1,0 +1,552 @@
+{
+  "date": "2026-11-17",
+  "genere_le": "2026-11-18T01:10:00.000Z",
+  "html": "editions/2026-11-17.html",
+  "resume_executif": [
+    "Intelligence artificielle : OpenAI lance GPT-6.2 Astra et Sol (mode Ultrafast, tarifs API r\u00e9duits), l'IPO d'Anthropic s'annonce au-dessus de sa fourchette \u00e0 plus de 78 dollars la part pour une cotation jeudi sur le Nasdaq, la Californie poursuit OpenAI pour ses essais d'agents hors de contr\u00f4le, et Mistral AI passe Large 4 (1 000 milliards de param\u00e8tres, poids ouverts) en disponibilit\u00e9 g\u00e9n\u00e9rale (S1, S2, S3).",
+    "France : journ\u00e9e d'action intersyndicale \u2014 plus de 500 000 manifestants selon la CGT (175 000 \u00e0 Paris), 146 000 selon le minist\u00e8re de l'Int\u00e9rieur, 2,59 % de gr\u00e9vistes dans la fonction publique d'\u00c9tat \u2014 pendant que l'Assembl\u00e9e votait l'amendement RN supprimant les interdictions de louer li\u00e9es au DPE et que le budget 2027 arrive au S\u00e9nat vendredi (S6, S7, S8, S12).",
+    "\u00c9conomie : la Commission europ\u00e9enne rel\u00e8ve ses pr\u00e9visions de croissance de la zone euro (1,2 % en 2026) mais laisse la France \u00e0 0,4 %, la plus faible croissance de la zone euro attendue en 2027, en appelant Paris \u00e0 redresser ses finances (S17, S18, S19).",
+    "G\u00e9opolitique : l'Iran a revendiqu\u00e9 une troisi\u00e8me attaque en cinq jours contre une base am\u00e9ricaine \u00e0 Bahre\u00efn ; Vladimir Poutine est arriv\u00e9 mardi \u00e0 Shenzhen pour le sommet trilat\u00e9ral de jeudi avec Trump et Xi ; la Russie a frapp\u00e9 deux ponts de Kiev et l'Ukraine a vis\u00e9 le pont de Crim\u00e9e une deuxi\u00e8me nuit d'affil\u00e9e ; un An-12 militaire russe s'est \u00e9cras\u00e9 en Sib\u00e9rie (19 morts) (S45, S49, S54, S55).",
+    "Climat et spatial : \u00e0 la COP31 d'Antalya, les Europ\u00e9ens ont balay\u00e9 le projet de d\u00e9cision en l'\u00e9tat, \u00e0 quatre jours de la cl\u00f4ture ; le monde spatial dig\u00e8re le ralenti de la capture du Starship, Sentinel-6B pr\u00e9pare son r\u00f4le de r\u00e9f\u00e9rence du niveau des mers et Hera tourne autour de Dimorphos avant des r\u00e9sultats le 25 novembre (S33, S38, S39, S28)."
+  ],
+  "chapitres": [
+    {
+      "id": "intelligence-artificielle",
+      "emoji": "\ud83e\udd16",
+      "nom": "Intelligence artificielle",
+      "resume": "Mardi de double d\u00e9tente c\u00f4t\u00e9 produits et de tension c\u00f4t\u00e9 justice : OpenAI lance GPT-6.2 Astra et Sol avec un mode Ultrafast et des tarifs API r\u00e9duits, l'IPO d'Anthropic s'annonce au-dessus de sa fourchette (plus de 78 dollars la part probable), la Californie poursuit OpenAI pour des essais d'agents hors de contr\u00f4le, et la France garde sa vitrine : Mistral AI passe Large 4 ( Le Chonk ) en disponibilit\u00e9 g\u00e9n\u00e9rale, 1 000 milliards de param\u00e8tres en poids ouverts (S1, S2, S3, S4)."
+    },
+    {
+      "id": "spatial",
+      "emoji": "\ud83d\ude80",
+      "nom": "Spatial",
+      "resume": "Journ\u00e9e de digestion apr\u00e8s la capture historique du Starship : une vid\u00e9o au ralenti de l'astrophotographe Andrew McCarthy fait le tour des r\u00e9seaux, Pulsar Spatial publie son bilan du vol 15, et l'actualit\u00e9 avance ailleurs \u2014 le satellite d'altitude marine Sentinel-6B pr\u00e9pare son nouveau r\u00f4le, le vaisseau europ\u00e9en Hera multiplie les passages autour de Dimorphos avant des r\u00e9sultats annonc\u00e9s le 25 novembre, et Ariane 6 pr\u00e9pare le quatri\u00e8me lancement Amazon Leo le 23 novembre (S28, S37, S38, S39)."
+    },
+    {
+      "id": "economie-pour-les-nuls",
+      "emoji": "\ud83d\udcb0",
+      "nom": "L\u2019\u00c9conomie pour les nuls",
+      "resume": "C\u00f4t\u00e9 monde, la Commission europ\u00e9enne publie mardi ses pr\u00e9visions d'automne : la zone euro cro\u00eetrait de 1,2 % en 2026, mais la France reste \u00e0 la tra\u00eene, \u00e0 0,4 %, et devrait conna\u00eetre la plus faible croissance de la zone euro en 2027 ; c\u00f4t\u00e9 France, Bruxelles rel\u00e8ve ses pr\u00e9visions tout en d\u00e9gradant les perspectives fran\u00e7aises et appelle Paris \u00e0 redresser ses finances \u2014 l'occasion de comprendre ce qu'est une pr\u00e9vision de croissance, et pourquoi elle compte pour les taux d'emprunt (S17, S18, S19, S20)."
+    },
+    {
+      "id": "droit-pour-les-nuls",
+      "emoji": "\u2696\ufe0f",
+      "nom": "Le Droit pour les nuls",
+      "resume": "L'Assembl\u00e9e nationale a adopt\u00e9 mardi, \u00e0 l'initiative du Rassemblement national, un amendement supprimant l'interdiction progressive de louer les logements fond\u00e9e sur le DPE, instaur\u00e9e par la loi Climat de 2021 pour lutter contre les passoires thermiques \u2014 l'occasion de d\u00e9cortiquer ce dispositif : ce que dit la loi, comment elle s'applique en pratique, et les pi\u00e8ges du diagnostic de performance \u00e9nerg\u00e9tique (S12, S13, S14, S15)."
+    },
+    {
+      "id": "jeu-video-pop-culture",
+      "emoji": "\ud83c\udfae",
+      "nom": "Jeu vid\u00e9o & pop culture",
+      "resume": "J-2 avant le jeu le plus attendu de l'histoire : GTA VI sort jeudi 19 novembre, et l'effervescence est g\u00e9n\u00e9rale \u2014 pr\u00e8s de 8 millions de pr\u00e9commandes selon le suivi du lancement, un pr\u00e9chargement colossal, des m\u00e9dias en direct \u2014 pendant que la communaut\u00e9 s'organise (S21, S22, S23)."
+    },
+    {
+      "id": "culture",
+      "emoji": "\ud83c\udfad",
+      "nom": "Culture",
+      "resume": "Un mardi parisien bien rempli : Vanessa Paradis en concert \u00e0 l'Accor Arena, la pi\u00e8ce historique de Ionesco \u00e0 la Huchette, et le riche fil des expositions parisiennes \u2014 Warhol en t\u00eate \u2014 qui occupent l'agenda de novembre (S24, S25)."
+    },
+    {
+      "id": "sciences",
+      "emoji": "\ud83d\udd2c",
+      "nom": "Sciences",
+      "resume": "Une semaine qui commence dans les \u00e9toiles et finit dans le vivant : des indices d'une myst\u00e9rieuse rotation dans le plus ancien rayonnement de l'Univers pourraient r\u00e9v\u00e9ler une nouvelle physique, une \u00e9tude explique comment l'alcool affaiblit l'immunoth\u00e9rapie anticanc\u00e9reuse, et les insectes \u00e9lev\u00e9s sur des d\u00e9chets alimentaires pr\u00e9sentent un faible risque de type vache folle (S26, S29, S30)."
+    },
+    {
+      "id": "climat",
+      "emoji": "\ud83c\udf0d",
+      "nom": "Climat",
+      "resume": "Jour de frictions \u00e0 la COP31 d'Antalya : le projet de d\u00e9cision pr\u00e9sent\u00e9 lundi pour lancer l'ultime semaine de n\u00e9gociations a essuy\u00e9 une pluie de critiques, le commissaire europ\u00e9en Wopke Hoekstra mettant en garde contre une distraction \u2014 pendant que l'ONU mettait les oc\u00e9ans au c\u0153ur de la journ\u00e9e et que les consultations techniques s'encha\u00eenaient sur l'article 6 de l'Accord de Paris (S33, S34, S35, S36)."
+    },
+    {
+      "id": "politique-francaise",
+      "emoji": "\ud83c\uddeb\ud83c\uddf7",
+      "nom": "Politique fran\u00e7aise",
+      "resume": "Mardi de mobilisation sociale : entre 146 000 (selon le minist\u00e8re de l'Int\u00e9rieur) et plus de 500 000 (selon la CGT) manifestants en France, dont 175 000 \u00e0 Paris selon les syndicats, pour la journ\u00e9e d'action de la fonction publique rejoints par des salari\u00e9s du priv\u00e9 et des jeunes ; \u00e0 l'Assembl\u00e9e, l'amendement RN sur les passoires thermiques a \u00e9t\u00e9 vot\u00e9 dans le projet de loi logement ; et le budget 2027 arrive au S\u00e9nat vendredi (S6, S7, S8, S12)."
+    },
+    {
+      "id": "etats-unis",
+      "emoji": "\ud83c\uddfa\ud83c\uddf8",
+      "nom": "\u00c9tats-Unis",
+      "resume": "Apr\u00e8s la d\u00e9route r\u00e9publicaine aux midterms, l'administration Trump se fissure de toutes parts : conf\u00e9rences de presse tendues, tensions sur la Chine, l'Iran et Nvidia ; un juge f\u00e9d\u00e9ral a annul\u00e9 les limites de s\u00e9jour pour les \u00e9tudiants et journalistes \u00e9trangers ; et Donald Trump s'envole pour l'Asie en disant vouloir rencontrer Poutine et Kim Jong Un en marge du sommet de jeudi (S5, S58, S59, S60, S61)."
+    },
+    {
+      "id": "chine",
+      "emoji": "\ud83c\udde8\ud83c\uddf3",
+      "nom": "Chine",
+      "resume": "Shenzhen en \u00e9bullition : Vladimir Poutine est arriv\u00e9 mardi dans la ville du sud, o\u00f9 il doit rencontrer Donald Trump et Xi Jinping jeudi pour le premier sommet trilat\u00e9ral, en marge du sommet de l'Apec \u2014 un nouveau Yalta pour certains \u2014, pendant que P\u00e9kin dig\u00e8re l'annonce de nouvelles restrictions am\u00e9ricaines sur les puces d'IA et publie des statistiques \u00e9conomiques en rebond (S5, S45, S46, S47)."
+    },
+    {
+      "id": "russie",
+      "emoji": "\ud83c\uddf7\ud83c\uddfa",
+      "nom": "Russie",
+      "resume": "Journ\u00e9e noire et diplomatie \u00e9clatante : un avion de transport militaire An-12 s'est \u00e9cras\u00e9 en Sib\u00e9rie occidentale, tuant les 19 personnes \u00e0 son bord ; la Russie a frapp\u00e9 deux ponts majeurs de Kiev, privant des quartiers d'eau et de chauffage, alors que l'Ukraine a vis\u00e9 le pont de Crim\u00e9e pour la deuxi\u00e8me nuit d'affil\u00e9e ; et Vladimir Poutine est arriv\u00e9 mardi \u00e0 Shenzhen, accueilli avec faste, pour le sommet de jeudi (S45, S48, S49, S53, S54)."
+    },
+    {
+      "id": "geopolitique",
+      "emoji": "\ud83c\udf10",
+      "nom": "G\u00e9opolitique",
+      "resume": "Le Golfe \u00e0 feu doux, l'ONU en impasse et la Chine en vitrine diplomatique : l'Iran a revendiqu\u00e9 mardi une troisi\u00e8me attaque de drones en cinq jours contre une base am\u00e9ricaine \u00e0 Bahre\u00efn, ciblant un syst\u00e8me radar \u2014 Washington et T\u00e9h\u00e9ran sonderaient mutuellement leurs lignes rouges selon les analystes \u2014, tandis que la Gen\u00e8ve des armes autonomes restait bloqu\u00e9e et que tout le calendrier diplomatique converge vers Shenzhen (S55, S56, S57, S71, S72)."
+    },
+    {
+      "id": "grande-info-semaine",
+      "emoji": "\ud83d\udcf0",
+      "nom": "Grande information de la semaine",
+      "resume": "Au-del\u00e0 des 24 heures : une semaine dont tout converge vers jeudi \u2014 le premier sommet trilat\u00e9ral Xi-Trump-Poutine \u00e0 Shenzhen en marge de l'Apec, sur la paix mondiale, sans l'Ukraine \u00e0 la table \u2014 et dont les rendez-vous s'encha\u00eenent : la COP31 d'Antalya se cl\u00f4t vendredi, le budget 2027 arrive au S\u00e9nat vendredi, l'IPO d'Anthropic d\u00e9butera sur le Nasdaq jeudi et GTA VI sort dans la nuit de mercredi \u00e0 jeudi. En toile de fond : la capture historique du Starship, la col\u00e8re sociale fran\u00e7aise qui tient, et le Golfe qui fume (S46, S47, S65, S71)."
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1 \u2014 DailyAI, \u00ab DailyAI Briefing : GPT-6.2 Astra et Sol arrivent, plus 4 autres \u00bb (briefing du 17/11/2026)",
+      "ref": "https://dailyai.com/fr/2026/11/dailyai-briefing-gpt-6-2-astra-sol-arrive-plus-4-more/",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S2 \u2014 OpenAI, page \u00ab News \u00bb (annonces GPT-6.2 Astra et Sol, Astra for Law, 17/11/2026)",
+      "ref": "https://openai.com/news/",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S3 \u2014 AI Weekly (FR), \u00ab Mistral Large 4 Le Chonk devient GA : 1 T de param\u00e8tres open-weight, 0,70 $/M input \u00bb",
+      "ref": "https://aiweekly.co/fr/alerts/mistral-large-4-le-chonk-devient-ga-1-t-de-paramtres-open-weight-070-m-input",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S4 \u2014 Semafor, \u00ab Europe the natural location for Mistral IPO, CEO says \u00bb (Arthur Mensch, 17/11)",
+      "ref": "https://www.semafor.com/article/11/17/2026/europe-the-natural-location-for-mistral-ipo-ceo-says",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S5 \u2014 Boursorama/Reuters, \u00ab Les \u00c9tats-Unis s'appr\u00eatent \u00e0 restreindre l'acc\u00e8s de la Chine aux puces d'IA alors que Trump s'envole pour l'Asie \u00bb",
+      "ref": "https://www.boursorama.com/bourse/actualites/les-etats-unis-s-appretent-a-restreindre-l-acces-de-la-chine-aux-puces-d-ia-alors-que-trump-s-envole-pour-l-asie-169490309ee3614cca1ea77852cbe52f",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S6 \u2014 AFP, \u00ab Actualit\u00e9s du mardi 17 novembre 2026 \u00bb (d\u00e9p\u00eache : mobilisation sociale, plus de 500 000 manifestants selon la CGT dont 175 000 \u00e0 Paris)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S7 \u2014 France 24, \u00ab Mobilisation sociale : 500 000 manifestants en France selon la CGT, 146 000 selon Beauvau \u00bb",
+      "ref": "https://www.france24.com/fr/france/20261117-en-direct-nouvelle-journ%C3%A9e-mobilisation-gr%C3%A8ve-fonction-publique-gilets-jaunes-pouvoir-achat-%C3%A9tudiants-lyc%C3%A9ens",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S8 \u2014 RTL, \u00ab Gr\u00e8ve du 17 novembre pour la fonction publique : 146 000 manifestants recens\u00e9s en France par le minist\u00e8re de l'Int\u00e9rieur, plus de 500 000 selon la CGT \u00bb",
+      "ref": "https://www.rtl.fr/actu/debats-societe/greve-du-17-novembre-pour-la-fonction-publique-146-000-manifestants-recenses-en-france-par-le-ministere-de-l-interieur-plus-de-500-000-selon-la-cgt-7900697416",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S9 \u2014 AFP, \u00ab Mobilisation du 17 novembre : 2,59 % de gr\u00e9vistes dans la fonction publique de l'\u00c9tat \u00bb (d\u00e9p\u00eache, estimation partielle du minist\u00e8re de l'Action et des Comptes publics ; ~10 % le 5 novembre)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S10 \u2014 France 24, \u00ab Mouvement social en France : une mobilisation qui tient malgr\u00e9 des chiffres en baisse \u00bb",
+      "ref": "https://www.france24.com/fr/france/20261117-mouvement-social-en-france-une-mobilisation-qui-tient-malgr%C3%A9-des-chiffres-en-baisse",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S11 \u2014 RFI, \u00ab France : la col\u00e8re sociale s'est encore faite entendre, malgr\u00e9 des cort\u00e8ges moins fournis \u00bb",
+      "ref": "https://www.rfi.fr/fr/france/20261117-france-la-col%C3%A8re-sociale-s-est-encore-faite-entendre-malgr%C3%A9-des-cort%C3%A8ges-moins-fournis",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S12 \u2014 AFP, \u00ab Logement : un amendement du RN supprime les interdictions de louer li\u00e9es au diagnostic \u00e9nerg\u00e9tique \u00bb (d\u00e9p\u00eache du 17/11 : projet de loi relance logement, loi Climat 2021, DPE)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S13 \u2014 20 Minutes, \u00ab Logement : les interdictions de louer li\u00e9es au diagnostic \u00e9nerg\u00e9tique supprim\u00e9es par les d\u00e9put\u00e9s \u00bb",
+      "ref": "https://www.20minutes.fr/societe/4263677-20261117-logement-interdictions-louer-liees-diagnostic-energetique-supprimees-deputes",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S14 \u2014 LCP/Assembl\u00e9e nationale, \u00ab Logement : un amendement du RN visant \u00e0 supprimer l'interdiction de louer des passoires thermiques vot\u00e9 \u00e0 l'Assembl\u00e9e \u00bb",
+      "ref": "https://lcp.fr/actualites/logement-un-amendement-du-rn-visant-a-supprimer-l-interdiction-de-louer-des-passoires",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S15 \u2014 L\u00e9gifrance, loi n\u00b0 2021-1104 du 22 ao\u00fbt 2021 (loi Climat et r\u00e9silience) et code de la construction et de l'habitation (art. L. 173-1-1 : interdiction de mise en location des passoires thermiques, calendrier d'extinction des classes G, F, E)",
+      "ref": "https://www.legifrance.gouv.fr/",
+      "fiabilite": 5,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S16 \u2014 Prudencia, \u00ab Projet de loi Relance logement et assouplissement du DPE \u00bb (d\u00e9bats \u00e0 l'Assembl\u00e9e \u00e0 partir du 16/11, adopt\u00e9 au S\u00e9nat en juillet)",
+      "ref": "https://www.prudencia.media/articles/projet_de_loi_relance_logement_et_assouplissement_du_dpe_ca40c6e5",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S17 \u2014 Boursorama/Reuters, \u00ab Zone euro : l'\u00e9conomie devrait cro\u00eetre en 2026, avec une France \u00e0 la tra\u00eene \u2014 Commission \u00bb",
+      "ref": "https://www.boursorama.com/actualite-economique/actualites/zone-euro-l-economie-devrait-croitre-en-2026-avec-une-france-a-la-traine-commission-6a488be518486797c856e1741e2be3e3",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S18 \u2014 Boursorama/AFP, \u00ab Zone euro : Bruxelles rel\u00e8ve ses pr\u00e9visions de croissance, malgr\u00e9 des perspectives d\u00e9grad\u00e9es en France \u00bb",
+      "ref": "https://www.boursorama.com/actualite-economique/actualites/zone-euro-bruxelles-releve-ses-previsions-de-croissance-malgre-des-perspectives-degradees-en-france-2421d4b9407b69ffce591e14c1cf7b2b",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S19 \u2014 Toute l'Europe, \u00ab La France devrait conna\u00eetre la plus faible croissance de la zone euro en 2027 \u00bb",
+      "ref": "https://www.touteleurope.eu/economie-et-social/previsions-economiques-la-france-devrait-connaitre-la-plus-faible-croissance-de-la-zone-euro-en-2027/",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S20 \u2014 Commission europ\u00e9enne (repr\u00e9sentation en France), \u00ab Pr\u00e9vision \u00e9conomique de l'automne 2026 : la croissance se poursuit malgr\u00e9 la hausse de l'inflation \u00bb",
+      "ref": "https://france.representation.ec.europa.eu/informations-et-evenements/informations/prevision-economique-de-lautomne-2026-la-croissance-se-poursuit-malgre-la-hausse-de-linflation-2026-11-17_fr",
+      "fiabilite": 5,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S21 \u2014 Numerama, \u00ab Sortie de GTA 6 en direct : toutes les informations, les astuces et les chiffres \u00bb (direct ouvert le 17/11)",
+      "ref": "https://www.numerama.com/pop-culture/2375431-sortie-de-gta-6-en-direct-toutes-les-informations-les-astuces-et-les-chiffres.html",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S22 \u2014 jeuxvideo.com, \u00ab GTA 6 : \u00e0 quelle heure pourra-t-on lancer le jeu depuis la France ? Rockstar r\u00e9agit \u00bb",
+      "ref": "https://www.jeuxvideo.com/news/2114797/gta-6-a-quelle-heure-pourra-t-on-lancer-le-jeu-depuis-la-france-rockstar-reagit.htm",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S23 \u2014 Boursorama/Reuters, \u00ab GTA VI s'appr\u00eate enfin \u00e0 sortir apr\u00e8s 13 ans d'attente \u00bb (pr\u00e9chargement ouvert le 9/11)",
+      "ref": "https://www.boursorama.com/bourse/actualites/gta-vi-s-apprete-enfin-a-sortir-apres-13-ans-d-attente-7e73b7cbda2acabca3e4334f654974b8",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S24 \u2014 ParisOut, \u00ab Sorties du mardi 17 novembre 2026 \u00bb (Vanessa Paradis \u00e0 l'Accor Arena, La Cantatrice chauve/La Le\u00e7on \u00e0 la Huchette, Zimmer90, Gloryhammer)",
+      "ref": "https://parisout.com/en/2026-11-17",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S25 \u2014 Sortir \u00e0 Paris, \u00ab Sortir \u00e0 Paris le 17 novembre 2026 : les \u00e9v\u00e9nements et rendez-vous \u00e0 ne pas manquer \u00bb",
+      "ref": "https://www.sortiraparis.com/actualites/a-paris/guides/355128-sortir-a-paris-le-17-novembre-2026-les-evenements-et-rendez-vous-a-ne-pas-manquer",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S26 \u2014 ScienceDaily, \u00ab Top Headlines, 17 novembre 2026 \u00bb (torsion myst\u00e9rieuse dans le plus ancien rayonnement de l'Univers, nouvelle physique possible)",
+      "ref": "https://www.sciencedaily.com/news/",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S27 \u2014 ScienceDaily/ESA, \u00ab ESA's Hera spacecraft is flying rectangles around NASA's asteroid crash site \u00bb",
+      "ref": "https://www.sciencedaily.com/releases/2026/11/261115085545.htm",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S28 \u2014 ESA, avis m\u00e9dias \u00ab Four years after NASA's asteroid impact, ESA's Hera reveals what happened to Dimorphos \u00bb (pr\u00e9sentation des r\u00e9sultats le 25/11 \u00e0 Berlin)",
+      "ref": "https://www.esa.int/media-advisories/four-years-after-nasa-s-asteroid-impact-esa-s-hera-reveals-what-happened-to-dimorphos",
+      "fiabilite": 5,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S29 \u2014 Phys.org, archive du 17/11/2026 (insectes et d\u00e9chets alimentaires : faible risque de type vache folle)",
+      "ref": "https://phys.org/archive/17-11-2026/",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S30 \u2014 EurekAlert!/AAAS, communiqu\u00e9s du 17 novembre 2026 (alcool et immunoth\u00e9rapie anticanc\u00e9reuse ; r\u00e9ponses sp\u00e9cifiques aux tissus)",
+      "ref": "https://www.eurekalert.org/news-releases/browse?view=titles&date=11/17/2026",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S31 \u2014 Futura, live du 17/11/2026 (\u00ab \u00c0 partir de 1997, le Kentucky rel\u00e2che 1 541 wapitis sur d'anciennes mines de charbon \u00bb)",
+      "ref": "https://www.futura-sciences.com/live/",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S32 \u2014 Next Horizon, \u00ab 5 Science News Stories \u2014 November 17, 2026 \u00bb (roche martienne brillante et eau ancienne ; glace tropicale fragile)",
+      "ref": "https://www.nexthorizon.space/2026/11/5-science-news-stories-november-17-2026.html",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S33 \u2014 AFP, \u00ab COP31 sur le climat : les Europ\u00e9ens balaient le projet de d\u00e9cision en l'\u00e9tat \u00bb (d\u00e9p\u00eache du 17/11 : Wopke Hoekstra, \u00ab distraction \u00bb)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S34 \u2014 France 24/AFP, \u00ab COP31 sur le climat : un projet de compromis fra\u00eechement accueilli \u00bb",
+      "ref": "https://www.france24.com/fr/info-en-continu/20261117-cop31-sur-le-climat-les-pays-accueillent-froidement-le-projet-de-d%C3%A9cision",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S35 \u2014 ONU Info, \u00ab Climat : les oc\u00e9ans au c\u0153ur des n\u00e9gociations de la COP31 \u00bb",
+      "ref": "https://news.un.org/fr/story/2026/11/1159861",
+      "fiabilite": 5,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S36 \u2014 IISD, Bulletin des N\u00e9gociations de la Terre, vol. 12 no 909 (COP31 Antalya, mardi 17 novembre 2026 : article 6, Action pour l'autonomisation climatique, consultations)",
+      "ref": "https://enb.iisd.org/sites/default/files/2026-11/enb12909f.pdf",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S37 \u2014 Pulsar Spatial, \u00ab Starship Vol 15 (IFT15) : Bilan du lancement \u00bb (17/11/2026) + br\u00e8ves (Vulcan \u00e9choue pour Amazon Leo ; Ariane 6 VA271 le 23/11 \u00e0 12h09 CET)",
+      "ref": "https://www.pulsarspatial.fr/",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S38 \u2014 Numerama, \u00ab Starship : une vid\u00e9o au ralenti montre la capture in\u00e9dite du vaisseau par SpaceX \u00bb (vid\u00e9o d'Andrew McCarthy, 17/11)",
+      "ref": "https://www.numerama.com/sciences/2376183-starship-une-video-au-ralenti-montre-la-capture-inedite-du-vaisseau-par-spacex.html",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S39 \u2014 NASA Science, \u00ab NASA, European Sea Level Satellite Prepped for New Role \u00bb (Sentinel-6B, blog du 16/11/2026)",
+      "ref": "https://science.nasa.gov/blogs/sentinel-6/2026/11/16/nasa-european-sea-level-satellite-prepped-for-new-role/",
+      "fiabilite": 5,
+      "maj": "16/11/2026"
+    },
+    {
+      "label": "S40 \u2014 RFI/AFP, \u00ab Masters ATP : Fils se relance et met fin \u00e0 quinze ann\u00e9es d'attente \u00bb",
+      "ref": "https://www.rfi.fr/fr/sport/20261117-masters-atp-fils-se-relance-et-met-fin-%C3%A0-quinze-ann%C3%A9es-d-attente",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S41 \u2014 Eurosport, \u00ab Masters de Turin : Zverev croque Ben Shelton en deux sets (6-2, 7-6) et se qualifie pour les demi-finales \u00bb",
+      "ref": "https://www.eurosport.fr/tennis/atp-finals-1/2026/masters-de-turin-alexander-zverev-croque-ben-shelton-en-deux-sets-6-2-7-6-et-se-qualifie-pour-les-demi-finales_sto23356299/story.shtml",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S42 \u2014 UEFA.com, \u00ab Ligue des nations, Journ\u00e9e 6, les r\u00e9sum\u00e9s : Erling Haaland envoie la Norv\u00e8ge en quarts de finale, le Portugal s'impose au Pays de Galles \u00bb",
+      "ref": "https://fr.uefa.com/uefanationsleague/news/02ab-221470e743e4-bae595b9b9ab-1000--ligue-des-nations-journee-6-les-resumes-erling-haaland-e/",
+      "fiabilite": 5,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S43 \u2014 Eurosport, \u00ab Ligue des nations : le Portugal se qualifie pour les quarts de finale en battant difficilement le pays de Galles \u00bb (2-3, 17/11)",
+      "ref": "https://www.eurosport.fr/football/ligue-des-nations/2026-2027/ligue-des-nations-le-portugal-se-qualifie-pour-les-quarts-de-finale-en-battant-difficilement-le-pays-de-galles_sto23356303/story.shtml",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S44 \u2014 RFI/AFP, \u00ab Ligue des nations : le Portugal agrippe la t\u00eate de groupe sans ma\u00eetrise \u00e0 Cardiff \u00bb",
+      "ref": "https://www.rfi.fr/fr/sport/20261117-ligue-des-nations-le-portugal-agrippe-la-t%C3%AAte-de-groupe-sans-ma%C3%AEtrise-%C3%A0-cardiff",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S45 \u2014 AFP/TASS, \u00ab Poutine est arriv\u00e9 en Chine, o\u00f9 il doit rencontrer Trump et Xi \u00bb (d\u00e9p\u00eache du 17/11 : atterrissage \u00e0 Shenzhen, en marge de l'Apec)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S46 \u2014 RTS, \u00ab Xi, Trump et Poutine se rencontrent jeudi \u00e0 Shenzhen \u00bb (un nouveau Yalta ?)",
+      "ref": "https://www.rts.ch/info/monde/2026/article/xi-trump-et-poutine-se-rencontrent-jeudi-a-shenzhen-29417110.html",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S47 \u2014 RTL, \u00ab Paix mondiale, armes nucl\u00e9aires, guerre en Iran, Ukraine : ce qui se joue au sommet in\u00e9dit entre Trump, Poutine et Xi Jinping en Chine \u00bb",
+      "ref": "https://www.rtl.fr/actu/international/paix-mondiale-armes-nucleaires-guerre-en-iran-ukraine-ce-qui-se-joue-au-sommet-inedit-entre-trump-poutine-et-xi-jinping-en-chine-7900697023",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S48 \u2014 France 24, \u00ab L'Ukraine frappe durement le pont de Crim\u00e9e, Vladimir Poutine accueilli avec faste en Chine \u00bb (direct du 17/11)",
+      "ref": "https://www.france24.com/fr/europe/20261117-en-direct-ukraine-deux-ponts-kiev-touches-frappes-russes-zelensky-poutine",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S49 \u2014 RFI, \u00ab Nouvel \u00e9change de frappes entre la Russie et l'Ukraine, deux morts en Crim\u00e9e \u00bb",
+      "ref": "https://www.rfi.fr/fr/europe/20261117-la-russie-frappe-deux-ponts-majeurs-%C3%A0-kiev-l-ukraine-cible-%C3%A0-nouveau-la-crim%C3%A9e",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S50 \u2014 Euronews, \u00ab L'Ukraine endommage le pont de Crim\u00e9e avec des drones et des missiles apr\u00e8s des semaines d'attaques \u00bb",
+      "ref": "https://fr.euronews.com/2026/11/17/ukraine-frappe-le-pont-de-crimee-avec-drones-et-missiles-apres-des-semaines-dattaques",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S51 \u2014 Euronews, \u00ab Des frappes russes sur deux ponts cl\u00e9s \u00e0 Kyiv : des quartiers de la ville priv\u00e9s d'eau et de chauffage \u00bb",
+      "ref": "https://fr.euronews.com/2026/11/17/frappes-russes-sur-deux-ponts-cl%C3%A9s-a-kyiv-perturbent-chauffage-et-eau",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S52 \u2014 Wikip\u00e9dia, \u00ab 2026 Russian Air Force Antonov An-12 crash \u00bb (crash du 17/11, r\u00e9gion de Kemerovo, atterrissage d'urgence)",
+      "ref": "https://en.wikipedia.org/wiki/2026_Russian_Air_Force_Antonov_An-12_crash",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S53 \u2014 Al Jazeera, \u00ab Russian military plane crash in Siberia kills 19 \u00bb (minist\u00e8re de la D\u00e9fense : panne d'\u00e9quipement \u00e9voqu\u00e9e)",
+      "ref": "https://www.aljazeera.com/news/2026/11/17/russian-military-plane-crash-in-siberia-kills-19",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S54 \u2014 AFP, \u00ab Russie : un avion de transport militaire s'\u00e9crase en Sib\u00e9rie, 19 morts \u00bb (d\u00e9p\u00eache du 17/11)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S55 \u2014 France 24/AFP, \u00ab L'Iran vise une base am\u00e9ricaine \u00e0 Bahre\u00efn, troisi\u00e8me attaque en cinq jours \u00bb ( Andreas Krieg, King's College : \u00ab test d\u00e9lib\u00e9r\u00e9 des limites \u00bb)",
+      "ref": "https://www.france24.com/fr/info-en-continu/20261117-l-iran-vise-une-base-am%C3%A9ricaine-%C3%A0-bahre%C3%AFn-troisi%C3%A8me-attaque-en-cinq-jours",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S56 \u2014 AP/WYSO, \u00ab Iran launches a third round of strikes on Bahrain, host of U.S. Navy's 5th Fleet \u00bb",
+      "ref": "https://www.wyso.org/npr-news/2026-11-17/iran-launches-a-third-round-of-strikes-on-bahrain-host-of-u-s-navys-5th-fleet",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S57 \u2014 Boursorama/Reuters, \u00ab L'Iran attaque un syst\u00e8me radar militaire am\u00e9ricain \u00e0 Bahre\u00efn \u00e0 l'aide de drones \u00bb",
+      "ref": "https://www.boursorama.com/actualite-economique/actualites/l-iran-attaque-un-systeme-radar-militaire-americain-a-bahrein-a-l-aide-de-drones-c6a70fc11cea6e06788456d658512d2d",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S58 \u2014 France 24/AFP, \u00ab L'administration Trump en proie \u00e0 des tensions apr\u00e8s la d\u00e9faite des r\u00e9publicains aux midterms \u00bb",
+      "ref": "https://www.france24.com/fr/info-en-continu/20261117-l-administration-trump-en-proie-%C3%A0-des-tensions-apr%C3%A8s-la-d%C3%A9faite-des-r%C3%A9publicains-aux-midterms",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S59 \u2014 France 24, \u00ab Aux \u00c9tats-Unis, un juge f\u00e9d\u00e9ral annule les limites de visa pour \u00e9tudiants et journalistes \u00bb",
+      "ref": "https://www.france24.com/fr/am%C3%A9riques/20261117-etats-unis-juge-federal-annule-limites-visa-etudiants-journalistes-etrangers-donal-trump-appel",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S60 \u2014 20 Minutes, \u00ab \u00c9tats-Unis : apr\u00e8s la d\u00e9route aux midterms, l'administration Trump se fissure de toutes parts \u00bb",
+      "ref": "https://www.20minutes.fr/monde/etats-unis/4263685-20261117-etats-unis-apres-deroute-midterms-administration-trump-fissure-toutes-parts",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S61 \u2014 Boursorama/AFP, \u00ab Trump dit vouloir rencontrer Poutine et Kim en Chine \u00bb",
+      "ref": "https://www.boursorama.com/bourse/actualites/trump-dit-vouloir-rencontrer-poutine-et-kim-en-chine-9bbfcb4f5cf6987df509ea10cc6ffda9",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S62 \u2014 20 Minutes, \u00ab C'est Pierre, on ne peut rien faire \u00bb\u2026 Un an de prison ferme requis contre Pierre M\u00e9n\u00e8s \u00bb (compte rendu du 17/11)",
+      "ref": "https://www.20minutes.fr/justice/4263430-20261117-pierre-peut-rien-faire-an-prison-ferme-requis-contre-pierre-menes",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S63 \u2014 20 minutes (Suisse), \u00ab Proc\u00e8s en France : deux ans de prison ferme requis contre Pierre M\u00e9n\u00e8s \u00bb",
+      "ref": "https://www.20min.ch/fr/story/proces-en-france-deux-ans-de-prison-ferme-requis-contre-pierre-menes-103668962",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S64 \u2014 AFP, \u00ab Prison ferme requise contre Pierre M\u00e9n\u00e8s, jug\u00e9 pour agressions sexuelles et harc\u00e8lement moral \u00bb (d\u00e9p\u00eache du 16/11 : deux ans dont un ferme am\u00e9nageable)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "16/11/2026"
+    },
+    {
+      "label": "S65 \u2014 S\u00e9nat, dossier l\u00e9gislatif \u00ab Budget 2027 \u00bb (PLF 2027)",
+      "ref": "https://www.senat.fr/dossier-legislatif/pjlf2027.html",
+      "fiabilite": 5,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S66 \u2014 NosParlementaires, \u00ab Vote du budget 2027 : dates, rejet 458-0, le S\u00e9nat le 9 d\u00e9cembre \u00bb",
+      "ref": "https://nosparlementaires.fr/actualites/budget-2027-calendrier-assemblee-cinq-semaines",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S67 \u2014 L\u00e9giFiscal, \u00ab PLF 2027 : les principaux articles adopt\u00e9s par la commission des finances du S\u00e9nat \u00bb",
+      "ref": "https://www.legifiscal.fr/actualites-fiscales/4735-plf-2027-principaux-articles-adoptes-commission-finances-senat.html",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S68 \u2014 AFP, \u00ab Collectivit\u00e9s \u00e9pargn\u00e9es, d\u00e9ficit ma\u00eetris\u00e9\u2026 Le S\u00e9nat fait ses propositions sur le budget \u00bb (d\u00e9p\u00eache du 12/11 : \u00ab voie de passage \u00bb, pas de taxe Zucman)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "12/11/2026"
+    },
+    {
+      "label": "S69 \u2014 Ma Vigilance, \u00ab Gr\u00e8ve et manifestations du mardi 17 novembre 2026 : la carte \u00bb (155 informations dans 59 d\u00e9partements)",
+      "ref": "https://mavigilance.fr/jour/2026-11-17",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S70 \u2014 AFP, \u00ab Le gouvernement interdit la vente de mortiers d'artifice jusqu'au 27 novembre \u00bb (d\u00e9p\u00eache du 15/11 : personnels de l'\u00c9ducation nationale bless\u00e9s d\u00e9but novembre)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "15/11/2026"
+    },
+    {
+      "label": "S71 \u2014 UN News, \u00ab Guterres calls for a legally binding instrument for 'killer robots' \u00bb (Gen\u00e8ve, 7e conf\u00e9rence d'examen de la CCW)",
+      "ref": "https://news.un.org/en/story/2026/11/1168810",
+      "fiabilite": 5,
+      "maj": "16/11/2026"
+    },
+    {
+      "label": "S72 \u2014 ONU Info, \u00ab Armes autonomes : l'ONU veut emp\u00eacher les machines de d\u00e9cider qui doit mourir \u00bb",
+      "ref": "https://news.un.org/fr/story/2026/11/1159845",
+      "fiabilite": 5,
+      "maj": "16/11/2026"
+    },
+    {
+      "label": "S73 \u2014 La Presse, \u00ab Manifestations en France : plus de 100 000 personnes dans les rues \u00bb (fumig\u00e8nes devant le commissariat du 13e arrondissement de Paris)",
+      "ref": "https://www.lapresse.ca/international/europe/2026-11-17/manifestations-en-france/plus-de-100-000-personnes-dans-les-rues.php",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S74 \u2014 The Eurasiatimes, \u00ab L'\u00e9conomie chinoise de novembre continue de rebondir, selon les donn\u00e9es officielles \u00bb",
+      "ref": "https://www.eurasiatimes.org/leconomie-chinoise-de-novembre-continue-de-rebondir-selon-les-donnees-officielles/",
+      "fiabilite": 2,
+      "maj": "17/11/2026"
+    }
+  ],
+  "hors_chapitres": [
+    "Justice : le proc\u00e8s Pierre M\u00e9n\u00e8s s'est poursuivi mardi \u00e0 Nanterre \u2014 l'ancien consultant de Canal+, 63 ans, jug\u00e9 pour agressions sexuelles sur trois femmes et harc\u00e8lement moral, a entendu le parquet requ\u00e9rir jusqu'\u00e0 deux ans de prison dont de la prison ferme ; le d\u00e9lib\u00e9r\u00e9 n'\u00e9tait pas tomb\u00e9 mardi soir (S62, S63, S64).",
+    "Tennis : apr\u00e8s quinze ann\u00e9es d'attente, un Fran\u00e7ais a enfin remport\u00e9 un match du Masters ATP : Arthur Fils a domin\u00e9 l'Espagnol Rafael Jodar 4-6, 6-2, 6-2 mardi \u00e0 Turin pour se relancer dans le tournoi (S40).",
+    "Tennis : le num\u00e9ro 1 mondial Alexander Zverev a croqu\u00e9 Ben Shelton 6-2, 7-6 et file en demi-finales du Masters, confirmant son statut d'ogre de la saison (S41).",
+    "Football : en Ligue des nations, le Portugal a conserv\u00e9 sa premi\u00e8re place du groupe en s'imposant 3-2 au pays de Galles \u00e0 Cardiff \u2014 Bruno Fernandes, Pedro Neto (double) et Carlos Forbs ont r\u00e9pondu \u00e0 Brooks et Thomas \u2014, tandis qu'Erling Haaland envoyait la Norv\u00e8ge en quarts de finale (S42, S43, S44).",
+    "Soci\u00e9t\u00e9 : la carte Ma Vigilance a relev\u00e9 155 informations sociales dans 59 d\u00e9partements fran\u00e7ais pour la seule journ\u00e9e de mardi, des blocus lyc\u00e9ens aux cort\u00e8ges de fonctionnaires \u2014 un thermom\u00e8tre in\u00e9dit de la contestation (S69).",
+    "Insolite s\u00e9rieux : depuis 1997, le Kentucky a rel\u00e2ch\u00e9 1 541 wapitis sur d'anciennes mines de charbon, une des plus grandes op\u00e9rations de restauration \u00e9cologique am\u00e9ricaines, relat\u00e9e ce 17 novembre par Futura (S31)."
+  ]
+}
