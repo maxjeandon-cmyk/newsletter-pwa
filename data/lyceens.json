@@ -1,5 +1,5 @@
 {
-  "maj": "17/11/2026 23:51",
+  "maj": "18/11/2026 23:34",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -19,6 +19,19 @@
     "Mercredi 7 octobre (lendemain de l'acte III) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
   ],
   "version_gouvernement": [
+    {
+      "id": "amwmp8mqx-foso",
+      "date": "18/11/2026",
+      "titre": "Mouvement lycéen : avec plus de 3 000 conseils de discipline en deux mois, le gouvernement sort un nouvel outil répress…",
+      "texte": "Le gouvernement met en œuvre tous les outils répressifs à sa disposition pour intimider les lycéens en lutte. Aux violences policières, aux fichages et aux gardes à vue s’ajoutent déjà 3 000 sanction…",
+      "source": "La Croix / L'Humanité",
+      "sources": [
+        "La Croix",
+        "L'Humanité"
+      ],
+      "url": "https://www.humanite.fr/societe/education-nationale/mouvement-lyceen-avec-plus-de-3-000-conseils-de-discipline-en-deux-mois-le-gouvernement-sort-un-nouvel-outil-repressif-de-sa-manche",
+      "verifie": true
+    },
     {
       "id": "amwjwugev-cmgd",
       "date": "16/11/2026",
@@ -189,20 +202,6 @@
         "L'Humanité"
       ],
       "url": "https://www.rfi.fr/fr/france/20261109-france-lecornu-r%C3%A9unit-partenaires-sociaux-lyc%C3%A9ens-et-%C3%A9tudiants-pour-tenter-d-apaiser-la-col%C3%A8re-sociale",
-      "verifie": true
-    },
-    {
-      "id": "amw96cg1k-1qtu",
-      "date": "09/11/2026",
-      "titre": "Mouvement lycéen : des cours de rattrapage possibles pendant les vacances en février ou à Pâques, annonce Edouard Geffr…",
-      "texte": "Des cours de rattrapage pourront être organisés pendant les vacances scolaires « en février » ou « à Pâques », a indiqué lundi sur France 2 le ministre de l'Éducation nationale Édouard Geffray, qui a…",
-      "source": "Public Sénat / Libération / Europe 1",
-      "sources": [
-        "Public Sénat",
-        "Libération",
-        "Europe 1"
-      ],
-      "url": "https://www.publicsenat.fr/actualites/politique/mouvement-lyceen-des-cours-de-rattrapage-possibles-pendant-les-vacances-en-fevrier-ou-a-paques-annonce-edouard-geffray",
       "verifie": true
     }
   ],
