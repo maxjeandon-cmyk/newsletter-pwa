@@ -2,7 +2,7 @@
   "titre": "La version des lycéens — chronique de la révolte lycéenne 2026",
   "intro": "Chronique narrative du mouvement lycéen et étudiant de l'automne 2026, écrite du point de vue des élèves : de l'amorce de Créteil au dernier acte en date, le fil s'allonge d'un relevé automatique toutes les six heures, et les chapitres transverses — la voix de l'intérieur, les revendications mot à mot, la répression, la machine gouvernementale, la longue durée, le lexique, les figures — viennent fermer le fil. Sources : la presse au plus près du mouvement — Le Média, Blast, L'Humanité, Mediapart — et la voix des réseaux en direct : les fils Reddit (r/etudiants, r/enseignants, r/france), les serveurs Discord du mouvement ; les fils TikTok, Snapchat et Instagram restent en vitrine, repris dès qu'un post ou un commentaire y est cité ; Wikipédia en colonne vertébrale factuelle.",
   "note": "Méthode : chaque paragraphe cite ses sources. Les paragraphes marqués « auto » sont des relevés bruts ajoutés par le pipeline toutes les 6 h (faits sourcés, sans réécriture) ; la rédaction narrative approfondie est assurée lors des éditions de la newsletter. Badge ✅ (corroboré par au moins deux médias distincts) et ⚠️ (une seule source) : ces distinctions s'appliquent aux relevés automatiques.",
-  "maj": "17/11/2026",
+  "maj": "18/11/2026",
   "totalParagraphes": 206,
   "chapitres": [
     {
@@ -99,7 +99,7 @@
       "periode": "Chronique transverse — la répression et ses visages",
       "titre": "La répression et ses visages",
       "paragraphes": 22,
-      "octets": 22590
+      "octets": 22714
     },
     {
       "id": "c13",
@@ -347,7 +347,7 @@
       "periode": "17 novembre 2026 — suivi de la journée",
       "titre": "Le fil continue — 17 novembre 2026",
       "paragraphes": 2,
-      "octets": 2268
+      "octets": 2355
     }
   ],
   "releveSigs": [
@@ -645,7 +645,7 @@
           "periode": "17 novembre 2026 — suivi de la journée",
           "titre": "Le fil continue — 17 novembre 2026",
           "paragraphes": 2,
-          "octets": 2268
+          "octets": 2355
         },
         {
           "id": "c10",
@@ -669,7 +669,7 @@
           "periode": "Chronique transverse — la répression et ses visages",
           "titre": "La répression et ses visages",
           "paragraphes": 22,
-          "octets": 22590
+          "octets": 22714
         },
         {
           "id": "c13",
