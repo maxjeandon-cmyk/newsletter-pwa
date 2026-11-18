@@ -12,7 +12,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.actioncontrelafaim.org/actualites/",
       "derniere": {
-        "releve": "17/11/2026",
+        "releve": "18/11/2026",
         "points": [
           "Comment le partenariat a permis aux communautés de retrouver l’accès à un service vital après le séisme",
           "Comment le groupe de femmes Sengenge renforce la sécurité alimentaire et la résilience à West Pokot",
@@ -32,7 +32,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.greenpeace.fr/actualites/",
       "derniere": {
-        "releve": "17/11/2026",
+        "releve": "18/11/2026",
         "points": [
           "Forêts, océans… Quelles avancées pour la biodiversité ?",
           "Vie chère, crise climatique : pourquoi tout est lié ?",
@@ -52,7 +52,7 @@
       "lien_autre": "https://www.croix-rouge.fr/actualite",
       "libelle_autre": "Actualité nationale",
       "derniere": {
-        "releve": "17/11/2026",
+        "releve": "18/11/2026",
         "points": [
           "Devenir sauveteur secouriste du travail Savoir intervenir face à une situation d'accident du travail et porter les premiers secours.",
           "Initiation à la santé mentale Comprendre les bases de la santé mentale, déconstruire les idées reçues et savoir en prendre soin.",
@@ -71,12 +71,12 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.msf.fr/actualites",
       "derniere": {
-        "releve": "17/11/2026",
+        "releve": "18/11/2026",
         "points": [
+          "Tuberculose : une étude MSF prouve l’efficacité d’un traitement plus court pour…",
+          "Malawi : pourquoi le cancer du col de l'utérus fait-il autant de victimes ?",
           "Gaza : MSF réagit à la convocation du Dr Pitti par l’Ordre régional des…",
-          "Épidémie de diphtérie au Nigeria : les défaillances de la vaccination menacent…",
-          "Haïti : en Basse-Artibonite la situation alarmante du système de santé",
-          "Gaza : MSF dénonce une nouvelle attaque meurtrière contre l’hôpital Nasser"
+          "Épidémie de diphtérie au Nigeria : les défaillances de la vaccination menacent…"
         ]
       }
     },
@@ -90,7 +90,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://seashepherd.fr/actualites",
       "derniere": {
-        "releve": "17/11/2026",
+        "releve": "18/11/2026",
         "points": [
           "Dauphins : l’illusion d’une victoire",
           "Krill en Antarctique",
@@ -109,12 +109,12 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.wwf.fr/s-informer/nos-actualites",
       "derniere": {
-        "releve": "17/11/2026",
+        "releve": "18/11/2026",
         "points": [
+          "800 millions d’euros de recettes carbone non investis dans le climat",
           "WWF France : 25 ans d’engagement en Nouvelle-Calédonie",
           "WWF France et SBTN : mobiliser la finance pour la nature",
-          "COP17 : Passer des promesses aux résultats",
-          "Le WWF France appelle à protéger et restaurer d'urgence les tourbières"
+          "COP17 : Passer des promesses aux résultats"
         ]
       }
     },
@@ -129,12 +129,12 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.amnesty.fr/actualites/",
       "derniere": {
-        "releve": "17/11/2026",
+        "releve": "18/11/2026",
         "points": [
+          "Soudan : enquête sur les frappes de drones qui visent la population civile à El Obeid",
           "Exposition « Histoire(s) » : une traversée inédite dans l’œuvre du photographe Guillaume Herbaut",
           "« Rights Now », nouvelle saison : notre podcast qui décrypte les mécanismes des dérives autoritaires",
-          "Institutrice, elle résiste aux menaces des anti-droits pour continuer de protéger les enfants des violences",
-          "La fermeture de Novaïa Gazeta ou l’anéantissement de la presse libre en Russie"
+          "Institutrice, elle résiste aux menaces des anti-droits pour continuer de protéger les enfants des violences"
         ]
       }
     },
@@ -148,7 +148,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.oxfamfrance.org/communiques-de-presse/",
       "derniere": {
-        "releve": "17/11/2026",
+        "releve": "18/11/2026",
         "points": [
           "La COP31 peut-elle nous protéger du changement climatique ? Les attentes d’Oxfam France",
           "Le point sur la loi intégrale contre les violences sexuelles, soutenue par Oxfam",
@@ -167,7 +167,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.handicap-international.fr/fr/actualites/index",
       "derniere": {
-        "releve": "17/11/2026",
+        "releve": "18/11/2026",
         "points": [
           "Bénin : Souleyman",
           "Madagascar : Odile",
