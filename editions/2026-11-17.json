@@ -539,6 +539,30 @@
       "ref": "https://www.eurasiatimes.org/leconomie-chinoise-de-novembre-continue-de-rebondir-selon-les-donnees-officielles/",
       "fiabilite": 2,
       "maj": "17/11/2026"
+    },
+    {
+      "label": "S75 \u2014 20 Minutes, \u00ab Zecler : si la vid\u00e9o n'avait pas exist\u00e9, il aurait \u00e9t\u00e9 condamn\u00e9 \u00bb... A la barre, les aveux accablants des policiers (proc\u00e8s de Paris, 17/11)",
+      "ref": "https://www.20minutes.fr/justice/4263278-20261117-zecler-si-video-existe-condamne-barre-aveux-accablants-policiers",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S76 \u2014 La 1\u00e8re (France Info), \u00ab Unicef France suspend la mission d'ambassadeur de Teddy Riner, candidat \u00e0 la pr\u00e9sidentielle \u00bb (d\u00e9claration \u00e0 l'AFP, 17/11)",
+      "ref": "https://la1ere.franceinfo.fr/unicef-france-suspend-la-mission-d-ambassadeur-de-teddy-riner-candidat-a-la-presidentielle-1758780.html",
+      "fiabilite": 5,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S77 \u2014 Le Quotidien du M\u00e9decin, \u00ab Gaz lacrymog\u00e8nes : plus de 10 000 t\u00e9moignages font \u00e9merger des risques pour la sant\u00e9 gyn\u00e9cologique \u00bb (une du 17/11)",
+      "ref": "https://cancerologie.lequotidiendumedecin.fr/actu-medicale/gaz-lacrymogenes-plus-de-10-000-temoignages-font-emerger-des-risques-pour-la-sante-gynecologique",
+      "fiabilite": 4,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S78 \u2014 RTL, \u00ab EuroMillions : les r\u00e9sultats du mardi 17 novembre 2026 \u00bb (FDJ, jackpot de 26 millions d'euros non remport\u00e9)",
+      "ref": "https://www.rtl.fr/actu/debats-societe/euromillions-les-resultats-du-mardi-17-novembre-2026-7900697476",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
     }
   ],
   "hors_chapitres": [
@@ -547,6 +571,10 @@
     "Tennis : le num\u00e9ro 1 mondial Alexander Zverev a croqu\u00e9 Ben Shelton 6-2, 7-6 et file en demi-finales du Masters, confirmant son statut d'ogre de la saison (S41).",
     "Football : en Ligue des nations, le Portugal a conserv\u00e9 sa premi\u00e8re place du groupe en s'imposant 3-2 au pays de Galles \u00e0 Cardiff \u2014 Bruno Fernandes, Pedro Neto (double) et Carlos Forbs ont r\u00e9pondu \u00e0 Brooks et Thomas \u2014, tandis qu'Erling Haaland envoyait la Norv\u00e8ge en quarts de finale (S42, S43, S44).",
     "Soci\u00e9t\u00e9 : la carte Ma Vigilance a relev\u00e9 155 informations sociales dans 59 d\u00e9partements fran\u00e7ais pour la seule journ\u00e9e de mardi, des blocus lyc\u00e9ens aux cort\u00e8ges de fonctionnaires \u2014 un thermom\u00e8tre in\u00e9dit de la contestation (S69).",
-    "Insolite s\u00e9rieux : depuis 1997, le Kentucky a rel\u00e2ch\u00e9 1 541 wapitis sur d'anciennes mines de charbon, une des plus grandes op\u00e9rations de restauration \u00e9cologique am\u00e9ricaines, relat\u00e9e ce 17 novembre par Futura (S31)."
+    "Insolite s\u00e9rieux : depuis 1997, le Kentucky a rel\u00e2ch\u00e9 1 541 wapitis sur d'anciennes mines de charbon, une des plus grandes op\u00e9rations de restauration \u00e9cologique am\u00e9ricaines, relat\u00e9e ce 17 novembre par Futura (S31).",
+    "Justice : au proc\u00e8s du passage \u00e0 tabac de Michel Zecler en 2020, l'un des trois policiers accus\u00e9s a reconnu devant le tribunal de Paris que, sans la vid\u00e9o de surveillance, le producteur aurait pu \u00eatre condamn\u00e9 pour des faits qu'il n'a pas commis \u2014 des aveux accablants au c\u0153ur de l'audience (S75).",
+    "Soci\u00e9t\u00e9 : l'Unicef France a annonc\u00e9 suspendre la mission d'ambassadeur du judoka Teddy Riner, quintuple champion olympique, apr\u00e8s sa candidature surprise \u00e0 la pr\u00e9sidentielle 2027 annonc\u00e9e le 9 novembre \u2014 une question d'ind\u00e9pendance et de neutralit\u00e9 politique, pr\u00e9cise l'ONG (S76).",
+    "Sant\u00e9 : plus de 10 000 t\u00e9moignages font \u00e9merger des risques pour la sant\u00e9 gyn\u00e9cologique des gaz lacrymog\u00e8nes \u2014 cycles menstruels perturb\u00e9s, interruptions spontan\u00e9es de grossesse \u2014 un sujet en une de l'\u00e9dition du soir du Quotidien du M\u00e9decin (S77).",
+    "Consommation : le jackpot de 26 millions d'euros de l'EuroMillions n'a pas \u00e9t\u00e9 remport\u00e9 au tirage de mardi soir (tirage n\u00b0 1999) ; il remonte en attente du prochain tirage de vendredi (S78)."
   ]
 }
