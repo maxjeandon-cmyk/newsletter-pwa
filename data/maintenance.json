@@ -1,15 +1,15 @@
 {
-  "date": "18/11/2026",
-  "heure": "22:34",
+  "date": "19/11/2026",
+  "heure": "11:32",
   "relevesOng": {
-    "rafraichis": 0,
+    "rafraichis": 9,
     "echecs": 1,
-    "publie": false
+    "publie": true
   },
   "lyceens": {
-    "nouvelles": 1,
-    "fusionnees": 3,
-    "moissonnes": 10,
+    "nouvelles": 0,
+    "fusionnees": 4,
+    "moissonnes": 7,
     "total": 22,
     "publie": true
   },
@@ -24,12 +24,12 @@
     {
       "nom": "validate-latest.js",
       "ok": true,
-      "detail": "\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 16/11/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n\nToutes les éditions récentes sont conformes. 🌱"
+      "detail": "\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 17/11/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n\nToutes les éditions récentes sont conformes. 🌱"
     },
     {
       "nom": "check-site.js",
       "ok": true,
-      "detail": "=== check-site ===\nℹ️  latest.json : 53 édition(s), plus récente 2026-11-18\nℹ️  édition 2026-11-18 : JSON OK, HTML 77614 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
+      "detail": "=== check-site ===\nℹ️  latest.json : 54 édition(s), plus récente 2026-11-19\nℹ️  édition 2026-11-19 : JSON OK, HTML 81604 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
     },
     {
       "nom": "sonde notifications",
@@ -38,13 +38,13 @@
     },
     {
       "nom": "ong-releve.js",
-      "ok": false,
-      "detail": "0 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
+      "ok": true,
+      "detail": "9 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
     },
     {
       "nom": "lyceens.js",
       "ok": true,
-      "detail": "1 nouvelle(s) info, 3 fusionnée(s) sur 10 moissonnée(s) — 22 au total"
+      "detail": "0 nouvelle(s) info, 4 fusionnée(s) sur 7 moissonnée(s) — 22 au total"
     },
     {
       "nom": "etudiants.js",
