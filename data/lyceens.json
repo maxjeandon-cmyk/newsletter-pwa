@@ -1,5 +1,5 @@
 {
-  "maj": "19/11/2026 12:32",
+  "maj": "19/11/2026 23:39",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -19,6 +19,33 @@
     "Mercredi 7 octobre (lendemain de l'acte III) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
   ],
   "version_gouvernement": [
+    {
+      "id": "amwo4uap2-eb1c",
+      "date": "19/11/2026",
+      "titre": "Violences autour de lycées : des tirs de mortiers dans des établissements à Amiens, Argenteuil, Goussainville et Lyon, …",
+      "texte": "Après des tirs de mortiers à l'intérieur ou près de lycées, huit personnes ont été légèrement blessées jeudi matin à Lyon et dans sa banlieue et neuf autres à Amiens. Le gouvernement avait interdit j…",
+      "source": "20 minutes / Europe 1",
+      "sources": [
+        "20 minutes",
+        "Europe 1"
+      ],
+      "url": "https://www.europe1.fr/faits-divers/violences-autour-de-lycees-des-tirs-de-mortiers-dans-des-etablissements-a-amiens-argenteuil-goussainville-et-lyon-des-blesses-legers-1240378?at_medium=RSS%20feeds&amp;at_campaign=Flux%20Generique",
+      "verifie": true
+    },
+    {
+      "id": "amwo4uap2-j0na",
+      "date": "19/11/2026",
+      "titre": "Une professeure d'économie de Grenoble convoquée le 26 novembre au rectorat \"pour recueillir son point de vue\", après u…",
+      "texte": "Une enseignante de sciences économiques et sociales (SES) de Grenoble est convoquée au rectorat après que plusieurs familles ont saisi la proviseure du lycée Louise-Michel de Grenoble au sujet d'un d…",
+      "source": "franceinfo / Mediapart / Libération",
+      "sources": [
+        "franceinfo",
+        "Mediapart",
+        "Libération"
+      ],
+      "url": "https://www.franceinfo.fr/societe/education/une-professeure-d-economie-de-grenoble-convoquee-le-26-novembre-au-rectorat-pour-recueillir-son-point-de-vue-apres-un-devoir-faisant-echo-au-mouvement-lyceen_8290589.html#xtor=RSS-3-%5Bfrance%5D",
+      "verifie": true
+    },
     {
       "id": "amwmp8mqx-foso",
       "date": "18/11/2026",
@@ -172,36 +199,6 @@
         "Libération"
       ],
       "url": "https://www.bfmtv.com/police-justice/ce-que-l-on-sait-de-l-agression-d-une-elue-touchee-par-un-jet-de-bouteille-d-essence-devant-un-lycee-a-chelles_AV-202611100687.html",
-      "verifie": true
-    },
-    {
-      "id": "amw96cg1j-h76s",
-      "date": "09/11/2026",
-      "titre": "Quatre personnes interpellées après qu'un proviseur de lycée près de Bordeaux a été touché à la tête par un projectile",
-      "texte": "\"Une scène chaotique\", selon la mairie de Bègles après qu'un proviseur a été touché à la tête par un jet de projectile, devant le lycée professionnel Émile Combes. Une plainte va être déposée par le …",
-      "source": "20 minutes / franceinfo",
-      "sources": [
-        "20 minutes",
-        "franceinfo"
-      ],
-      "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/quatre-personnes-interpellees-apres-qu-un-proviseur-de-lycee-pres-de-bordeaux-a-ete-touche-a-la-tete-par-un-projectile_8274296.html#xtor=RSS-3-%5Bgeneral%5D",
-      "verifie": true
-    },
-    {
-      "id": "amw96cg1k-26wu",
-      "date": "09/11/2026",
-      "titre": "France: Lecornu réunit partenaires sociaux, lycéens et étudiants pour tenter d'apaiser la colère sociale",
-      "texte": "Après plus d'un mois de mobilisation lycéenne et étudiante et un quatrième week-end de manifestations, le Premier ministre Sébastien Lecornu tente de répondre à la colère sociale. Ce lundi 9 novembre…",
-      "source": "20 minutes / France 24 / RFI / Public Sénat / La Croix / L'Humanité",
-      "sources": [
-        "20 minutes",
-        "France 24",
-        "RFI",
-        "Public Sénat",
-        "La Croix",
-        "L'Humanité"
-      ],
-      "url": "https://www.rfi.fr/fr/france/20261109-france-lecornu-r%C3%A9unit-partenaires-sociaux-lyc%C3%A9ens-et-%C3%A9tudiants-pour-tenter-d-apaiser-la-col%C3%A8re-sociale",
       "verifie": true
     }
   ],
