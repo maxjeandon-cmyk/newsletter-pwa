@@ -1,0 +1,724 @@
+{
+ "date": "2026-11-20",
+ "genere_le": "2026-11-19T23:55:28.187Z",
+ "html": "editions/2026-11-20.html",
+ "resume_executif": [
+  "G\u00e9opolitique : premier sommet trilat\u00e9ral de l'histoire entre Donald Trump, Xi Jinping et Vladimir Poutine \u00e0 Shenzhen, conclu par une \u00ab d\u00e9claration en faveur de la paix \u00bb et un engagement sur la \u00ab stabilit\u00e9 strat\u00e9gique \u00bb, les trois premi\u00e8res puissances nucl\u00e9aires se disant dans une \u00ab position unique \u00bb pour r\u00e9duire les arsenaux (S1)(S2)(S3)).",
+  "Ukraine : le jour m\u00eame, Kyiv a repris la main \u00e0 Berlin, o\u00f9 la \u00ab coalition des volontaires \u00bb (une trentaine d'alli\u00e9s, Zelensky, \u00e9missaires am\u00e9ricains Kushner et Witkoff) a r\u00e9affirm\u00e9 son soutien et promis de l'argent et des armes pour 2027, pendant que Moscou disait avoir invit\u00e9 \u00ab des Europ\u00e9ens \u00bb \u00e0 venir n\u00e9gocier (S4)(S5)(S6)).",
+  "Intelligence artificielle : Anthropic a boucl\u00e9 jeudi la plus grosse introduction en Bourse de l'histoire (plus de 81 milliards de dollars lev\u00e9s, cl\u00f4ture Nasdaq \u00e0 environ 1 800 milliards), et Deutsche Telekom a annonc\u00e9 100 millions d'euros investis dans la fran\u00e7aise Mistral AI pour l'IA souveraine (S7)(S8)(S9)).",
+  "\u00c9conomie : \u00ab presque tous \u00bb les banquiers centraux am\u00e9ricains jugent un rel\u00e8vement des taux \u00ab in\u00e9luctable \u00bb, le gouverneur Waller voulant \u00ab frapper les esprits \u00bb \u2014 et c\u00f4t\u00e9 fran\u00e7ais, Roland Lescure admet que la croissance de 1 % pr\u00e9vue pour 2027 est \u00ab \u00e0 risque \u00bb face \u00e0 un d\u00e9ficit \u00e0 5 % \u00ab pas n\u00e9gociable \u00bb (S10)(S11)(S12)).",
+  "Climat et jeu vid\u00e9o : \u00e0 la veille de sa cl\u00f4ture, la COP31 d'Antalya a vu dispara\u00eetre toute mention des \u00e9nergies fossiles de son projet de d\u00e9cision finale, une \u00ab COP fant\u00f4me \u00bb selon les ONG \u2014 pendant que \u00ab GTA VI \u00bb, sorti jeudi apr\u00e8s treize ans d'attente, \u00e9tait encens\u00e9 par la critique et pl\u00e9biscit\u00e9 par les joueurs (S13)(S14))."
+ ],
+ "chapitres": [
+  {
+   "id": "intelligence-artificielle",
+   "emoji": "\ud83e\udd16",
+   "nom": "Intelligence artificielle",
+   "resume": "La journ\u00e9e a \u00e9t\u00e9 historique pour l'intelligence artificielle : Anthropic, la maison m\u00e8re de Claude, a r\u00e9alis\u00e9 jeudi la plus grande introduction en Bourse jamais enregistr\u00e9e, tandis que la souverainet\u00e9 num\u00e9rique europ\u00e9enne avan\u00e7ait concr\u00e8tement avec l'investissement de 100 millions d'euros de Deutsche Telekom dans la fran\u00e7aise Mistral AI."
+  },
+  {
+   "id": "spatial",
+   "emoji": "\ud83d\ude80",
+   "nom": "Spatial",
+   "resume": "C\u00f4t\u00e9 espace, la journ\u00e9e a \u00e9t\u00e9 faite de patience et de rendez-vous manqu\u00e9s : un cargo Dragon retenu en station spatiale par la m\u00e9t\u00e9o, un t\u00e9lescope qui d\u00e9voile ses premi\u00e8res images et la fin programm\u00e9e d'un v\u00e9t\u00e9ran de l'observation terrestre dessinent une actualit\u00e9 spatiale \u00e0 double vitesse, entre routine op\u00e9rationnelle et grands jalons scientifiques."
+  },
+  {
+   "id": "economie-pour-les-nuls",
+   "emoji": "\ud83d\udcb0",
+   "nom": "L\u2019\u00c9conomie pour les nuls",
+   "resume": "Deux dossiers dominent l'actualit\u00e9 \u00e9conomique : la R\u00e9serve f\u00e9d\u00e9rale am\u00e9ricaine, dont les comptes rendus montrent une majorit\u00e9 pr\u00eate \u00e0 relever \u00e0 nouveau les taux, et la France, dont la pr\u00e9vision de croissance pour 2027 vient d'\u00eatre reconnue \u00ab \u00e0 risque \u00bb par son propre ministre de l'\u00c9conomie. Deux histoires de confiance, \u00e0 deux vitesses."
+  },
+  {
+   "id": "droit-pour-les-nuls",
+   "emoji": "\u2696\ufe0f",
+   "nom": "Le Droit pour les nuls",
+   "resume": "Pioch\u00e9 dans l'actualit\u00e9 juridique du jour : d\u00e8s ce vendredi 20 novembre, le cr\u00e9dit \u00e0 la consommation change de visage. La transposition de la directive europ\u00e9enne CCD2 entre en vigueur et durcit la protection des emprunteurs, au moment m\u00eame o\u00f9 le pouvoir d'achat \u2014 et donc l'endettement des m\u00e9nages \u2014 est au c\u0153ur de tous les d\u00e9bats."
+  },
+  {
+   "id": "jeu-video-pop-culture",
+   "emoji": "\ud83c\udfae",
+   "nom": "Jeu vid\u00e9o & pop culture",
+   "resume": "C'est l'\u00e9v\u00e9nement pop culture de l'ann\u00e9e, et il s'est produit ce jeudi : \u00ab GTA VI \u00bb, le jeu le plus cher jamais produit, est enfin sorti apr\u00e8s treize ans d'attente, deux reports et des fuites \u2014 et la plan\u00e8te enti\u00e8re semble s'y \u00eatre plong\u00e9e d'un seul mouvement, des pr\u00e9commandes records aux cong\u00e9s pos\u00e9s en masse."
+  },
+  {
+   "id": "culture",
+   "emoji": "\ud83c\udfad",
+   "nom": "Culture",
+   "resume": "La journ\u00e9e culturelle a \u00e9t\u00e9 men\u00e9e par deux symboles : un nouveau James Bond officiellement nomm\u00e9 en la personne de Robert Pattinson, et la sortie cin\u00e9ma la plus attendue de d\u00e9cembre qui approche \u00e0 grands pas. Ajoutons les prix litt\u00e9raires qui continuent d'animer la rentr\u00e9e : le d\u00e9cor est plant\u00e9 pour un mois de d\u00e9cembre charg\u00e9."
+  },
+  {
+   "id": "sciences",
+   "emoji": "\ud83d\udd2c",
+   "nom": "Sciences",
+   "resume": "Deux \u00e9tudes publi\u00e9es cette semaine secouent les manuels : la d\u00e9couverte d'une famille de virus g\u00e9ants dans les intestins humains et animaux, cousins inattendus du virus de la variole, et un inventaire in\u00e9dit des toxines fongiques dans les aliments v\u00e9g\u00e9taux."
+  },
+  {
+   "id": "climat",
+   "emoji": "\ud83c\udf0d",
+   "nom": "Climat",
+   "resume": "La COP31 d'Antalya entre dans son dernier jour avec un projet d'accord \u00ab fant\u00f4me \u00bb : apr\u00e8s des jours de consultations, l'Australie, coorganisatrice, a publi\u00e9 jeudi un texte qui efface toute mention des \u00e9nergies fossiles, creusant l'\u00e9cart entre les promesses des dirigeants et la r\u00e9alit\u00e9 des n\u00e9gociations."
+  },
+  {
+   "id": "politique-francaise",
+   "emoji": "\ud83c\uddeb\ud83c\uddf7",
+   "nom": "Politique fran\u00e7aise",
+   "resume": "Le Parlement continue d'absorber le budget 2027, la pr\u00e9sidentielle s'anime \u00e0 gauche comme autour du judoka Teddy Riner, et un chiffre est venu rappeler jeudi le co\u00fbt des violences urbaines d'octobre. Une journ\u00e9e o\u00f9 l'argent public reste la seule vraie affaire politique."
+  },
+  {
+   "id": "etats-unis",
+   "emoji": "\ud83c\uddfa\ud83c\uddf8",
+   "nom": "\u00c9tats-Unis",
+   "resume": "L'Am\u00e9rique de l'apr\u00e8s-midterm continue de se recomposer \u00e0 Washington, pendant que son pr\u00e9sident \u00e9crit \u00e0 Shenzhen ce qu'il appelle d\u00e9j\u00e0 de l'Histoire \u2014 avec une sant\u00e9 publique qui vient, elle, de franchir un seuil in\u00e9dit \u00e0 rebours."
+  },
+  {
+   "id": "chine",
+   "emoji": "\ud83c\udde8\ud83c\uddf3",
+   "nom": "Chine",
+   "resume": "La Chine est, ces 24 heures, le centre op\u00e9rationnel du monde : elle accueille \u00e0 Shenzhen le sommet de l'Apec et le premier sommet trilat\u00e9ral de l'histoire avec les pr\u00e9sidents am\u00e9ricain et russe, tout en multipliant les gestes commerciaux et technologiques \u00e0 destination du reste de la plan\u00e8te."
+  },
+  {
+   "id": "russie",
+   "emoji": "\ud83c\uddf7\ud83c\uddfa",
+   "nom": "Russie",
+   "resume": "Pour Vladimir Poutine, la journ\u00e9e a \u00e9t\u00e9 celle d'un triomphe de mise en sc\u00e8ne : premier rang de la photo de groupe \u00e0 Shenzhen, \u00ab \u00e0 l'aise avec ses amis \u00bb Trump et Xi, le pr\u00e9sident russe n'a pas cach\u00e9 son plaisir de revenir \u00ab sur le devant de la sc\u00e8ne internationale \u00bb \u2014 pendant que son \u00e9conomie de guerre continue, elle, de s'\u00e9puiser en silence."
+  },
+  {
+   "id": "geopolitique",
+   "emoji": "\ud83c\udf10",
+   "nom": "G\u00e9opolitique",
+   "resume": "Deux sommets, deux visions du monde, le m\u00eame jour : \u00e0 Shenzhen, les trois plus grandes puissances nucl\u00e9aires ont sign\u00e9 leur d\u00e9claration commune ; \u00e0 Berlin, la coalition des volontaires pour l'Ukraine s'est r\u00e9unie au m\u00eame moment. Rarement l'architecture de l'ordre international aura \u00e9t\u00e9 aussi visible en une seule journ\u00e9e."
+  },
+  {
+   "id": "grande-info-semaine",
+   "emoji": "\ud83d\udcf0",
+   "nom": "Grande information de la semaine",
+   "resume": "Vue d'ensemble des grands moments du 16 au 19 novembre, au-del\u00e0 des 24 heures : une semaine de recompositions g\u00e9opolitiques, de records financiers et de sorties in\u00e9dites, \u00e0 une vitesse qui rend le quotidien presque vertigineux."
+  }
+ ],
+ "sources": [
+  {
+   "label": "S1 \u2014 AFP, d\u00e9p\u00eache du 19/11/2026 \u00ab \u00c9tats-Unis, Chine et Russie dans une position unique pour r\u00e9duire les armes nucl\u00e9aires, dit Trump \u00bb (r\u00e9f\u00e9rence interne news-afp-20261119-033542be)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S2 \u2014 RFI, \u00ab \u00c0 Shenzhen, Trump, Xi et Poutine adoptent une \u00ab d\u00e9claration de paix \u00bb apr\u00e8s leur rencontre tripartite \u00bb",
+   "ref": "https://www.rfi.fr/fr/asie-pacifique/20261119-shenzen-trump-estime-%C3%A9crire-l-histoire-c%C3%B4t%C3%A9s-poutine-xi-rencontre-tripartite",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S3 \u2014 France 24, \u00ab Ce qu'il faut retenir du sommet in\u00e9dit entre Donald Trump, Xi Jinping et Vladimir Poutine \u00bb",
+   "ref": "https://www.france24.com/fr/asie-pacifique/20261119-ce-qu-il-faut-retenir-du-sommet-in%C3%A9dit-entre-donald-trump-xi-jinping-et-vladimir-poutine",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S4 \u2014 RFI, \u00ab Guerre en Ukraine : r\u00e9unie \u00e0 Berlin, la coalition des volontaires r\u00e9affirme son soutien \u00e0 Kiev \u00bb",
+   "ref": "https://www.rfi.fr/fr/europe/20261119-guerre-en-ukraine-la-coalition-des-volontaires-r%C3%A9unie-%C3%A0-berlin-pour-r%C3%A9affirmer-son-soutien-%C3%A0-kiev",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S5 \u2014 AFP, d\u00e9p\u00eache du 19/11/2026 \u00ab Zelensky est arriv\u00e9 \u00e0 Berlin pour la r\u00e9union des alli\u00e9s de l'Ukraine \u00bb (une trentaine d'alli\u00e9s, argent et armes pour 2027 ; r\u00e9f\u00e9rence interne news-afp-20261119-46188e93)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S6 \u2014 AFP, d\u00e9p\u00eache du 19/11/2026 \u00ab Les alli\u00e9s de l'Ukraine en sommet \u00e0 Berlin, apr\u00e8s celui du trio Xi-Trump-Poutine \u00bb (Poutine dit avoir invit\u00e9 \u00ab des Europ\u00e9ens \u00bb \u00e0 Moscou ; r\u00e9f\u00e9rence interne news-afp-20261118-5cdc9d98)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S7 \u2014 CNBC, \u00ab Anthropic IPO raises over $81 billion in largest offering on record \u00bb (fixation \u00e0 83 dollars, record devant SpaceX)",
+   "ref": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
+   "fiabilite": 5,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S8 \u2014 CNBC, couverture en direct \u00ab Anthropic IPO: ANT stock price and Nasdaq debut \u00bb (cl\u00f4ture du premier jour \u00e0 1 800 milliards de capitalisation)",
+   "ref": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S9 \u2014 AFP, d\u00e9p\u00eache du 19/11/2026 \u00ab IA : Deutsche Telekom investit 100 millions d'euros dans Mistral \u00bb (r\u00e9f\u00e9rence interne news-afp-20261119-a957a3fc)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S10 \u2014 Boursorama (d\u00e9p\u00eache AFP), \u00ab Un rel\u00e8vement des taux directeurs semble in\u00e9luctable, selon \u00abpresque tous\u00bb les banquiers centraux am\u00e9ricains \u00bb (compte rendu de la r\u00e9union de fin octobre)",
+   "ref": "https://www.boursorama.com/actualite-economique/actualites/un-relevement-des-taux-directeurs-semble-ineluctable-selon-presque-tous-les-banquiers-centraux-americains-6f3b6532b71a7fbd33de5054eb6a1634",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S11 \u2014 AFP, d\u00e9p\u00eache du 18/11/2026 \u00ab Inflation am\u00e9ricaine : un responsable de la Fed plaide pour \u00ab frapper les esprits \u00bb \u00bb (gouverneur Christopher Waller ; r\u00e9f\u00e9rence interne news-afp-20261118-fb3fa935)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S12 \u2014 France 24 (d\u00e9p\u00eache AFP), \u00ab La pr\u00e9vision de croissance de 1 % pour 2027 \u00ab est \u00e0 risque \u00bb, reconna\u00eet Lescure \u00bb",
+   "ref": "https://www.france24.com/fr/info-en-continu/20261118-la-pr%C3%A9vision-de-croissance-de-1-pour-2027-est-%C3%A0-risque-reconna%C3%AEt-lescure",
+   "fiabilite": 5,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S13 \u2014 Euronews (FR), \u00ab COP31 : un projet d'accord efface toute mention des combustibles fossiles \u00bb (d\u00e9tails : texte all\u00e9g\u00e9 moiti\u00e9 moins long, engagement 35 x 35, financement de l'adaptation)",
+   "ref": "https://fr.euronews.com/2026/11/19/cop31-un-projet-daccord-efface-toute-mention-des-combustibles-fossiles",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S14 \u2014 France 24, \u00ab \u00ab Un r\u00e9alisme qui d\u00e9fie l'entendement \u00bb : la presse extatique apr\u00e8s la sortie de GTA VI \u00bb",
+   "ref": "https://www.france24.com/fr/%C3%A9co-tech/20261119-un-r%C3%A9alisme-qui-d%C3%A9fie-l-entendement-la-presse-extatique-apr%C3%A8s-la-sortie-de-gta-vi-jeux-vid%C3%A9o-test",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S15 \u2014 AP, \u00ab Anthropic prices its IPO at $83 per share, valuing the AI giant at $1.5 trillion \u00bb",
+   "ref": "https://apnews.com/article/anthropic-ipo-pricing-70b660ddf900d90bbf484ecdf1fb441c",
+   "fiabilite": 5,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S16 \u2014 AFP, d\u00e9p\u00eache du 18/11/2026 \u00ab Anthropic set to price IPO in key test for AI boom \u00bb (plus de 5 000 employ\u00e9s, jackpot estim\u00e9 \u00e0 plus de 200 milliards de dollars par SaaStr ; r\u00e9f\u00e9rence interne news-afp-20261118-c64f28c4)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S17 \u2014 OpenAI, page officielle \u00ab GPT-6 Astra: a new generation of intelligence \u00bb (mise \u00e0 jour du 17/11/2026 : mod\u00e8les GPT-6.2 Astra et Sol)",
+   "ref": "https://openai.com/index/gpt-6-astra/",
+   "fiabilite": 5,
+   "maj": "17/11/2026"
+  },
+  {
+   "label": "S18 \u2014 AFP, d\u00e9p\u00eache du 16/11/2026 \u00ab La Californie attaque OpenAI en justice pour d\u00e9faut de s\u00e9curisation de son IA \u00bb (r\u00e9f\u00e9rence interne news-afp-20261116-14b529fc)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "16/11/2026"
+  },
+  {
+   "label": "S19 \u2014 Deutsche Telekom, communiqu\u00e9 \u00ab Deutsche Telekom advances sovereign AI in Germany: T.Capital Tech Fund invests in Mistral \u00bb",
+   "ref": "https://www.telekom.com/en/newsroom/latest-updates/media-information/2026/11/deutsche-telekom-advances-sovereign-ai-in-germany",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S20 \u2014 Yahoo Finance, \u00ab Deutsche Telekom invests \u20ac100 million in French AI start-up Mistral \u00bb",
+   "ref": "https://finance.yahoo.com/technology/ai/articles/deutsche-telekom-invests-100-million-141833941.html",
+   "fiabilite": 4,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S21 \u2014 tagesschau, march\u00e9 du 19/11/2026 \u00ab Deutsche Telekom steigt bei KI-Start-up Mistral ein \u00bb",
+   "ref": "https://www.tagesschau.de/wirtschaft/finanzen/mistral-telekom-ki-anthropic-marktbericht-100.html",
+   "fiabilite": 4,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S22 \u2014 DiY/H24, \u00e9dition du 19/11/2026 (contexte : Mistral Large 4 en disponibilit\u00e9 g\u00e9n\u00e9rale, ~4 milliards d'euros de datacenters France/Su\u00e8de, OVHcloud lance \u00ab Olala \u00bb)",
+   "ref": "https://diyeah24.fr/editions/2026-11-19.html",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S23 \u2014 NASA, blog Space Station, \u00ab NASA, SpaceX Stand Down from Dragon's Undocking on Wednesday \u00bb (m\u00e9t\u00e9o d\u00e9favorable, plus de 6 300 livres de science \u00e0 bord)",
+   "ref": "https://www.nasa.gov/blogs/spacestation/2026/11/18/nasa-spacex-stand-down-from-dragons-undocking-on-wednesday/",
+   "fiabilite": 5,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S24 \u2014 NASA, communiqu\u00e9 m\u00e9dias \u00ab NASA to Cover 35th SpaceX Resupply Mission Space Station Departure \u00bb",
+   "ref": "https://www.nasa.gov/news-release/nasa-to-cover-35th-spacex-resupply-mission-space-station-departure/",
+   "fiabilite": 5,
+   "maj": "17/11/2026"
+  },
+  {
+   "label": "S25 \u2014 NASA, blog Space Station (bloc \u00ab Featured \u00bb au 18/11 : premi\u00e8res images du t\u00e9lescope Roman \u00e0 d\u00e9couvrir, fin de mission du satellite Terra, ESCAPADE en route vers Mars)",
+   "ref": "https://www.nasa.gov/blogs/spacestation/",
+   "fiabilite": 5,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S26 \u2014 NASASpaceFlight, \u00ab Launch Preview: Ariane 6 to launch Amazon satellites, Falcon 9 to launch government missions \u00bb (USSF-317)",
+   "ref": "https://www.nasaspaceflight.com/2026/11/launch-preview-111626/",
+   "fiabilite": 4,
+   "maj": "16/11/2026"
+  },
+  {
+   "label": "S27 \u2014 Pulsar Spatial, calendrier des lancements (Ariane 6 VA271 vis\u00e9 le 23/11/2026)",
+   "ref": "https://www.pulsarspatial.fr/",
+   "fiabilite": 3,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S28 \u2014 Spaceflight Now, 18/11/2026, enqu\u00eate sur l'\u00e9chec de Vulcan : alimentation insuffisante en carburant vers les moteurs du booster",
+   "ref": "",
+   "fiabilite": 4,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S29 \u2014 Zonebourse, \u00ab Un rel\u00e8vement des taux directeurs semble in\u00e9luctable (minutes Fed) \u00bb",
+   "ref": "https://www.zonebourse.com/actualite-bourse/un-relevement-des-taux-directeurs-semble-ineluctable-minutes-fed-ce785edddc8af521",
+   "fiabilite": 4,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S30 \u2014 Boursorama (d\u00e9p\u00eache AFP), \u00ab D\u00e9ficit : la Commission europ\u00e9enne appelle Paris et Bruxelles \u00e0 redresser leurs finances publiques \u00bb",
+   "ref": "https://www.boursorama.com/actualite-economique/actualites/deficit-la-commission-europeenne-appelle-paris-et-bruxelles-redresser-leurs-finances-publiques-a89ca8885adf54c20d9efb5202fea61d",
+   "fiabilite": 5,
+   "maj": "17/11/2026"
+  },
+  {
+   "label": "S31 \u2014 Minist\u00e8re de l'\u00c9conomie (DAJ), \u00ab La r\u00e9forme du cr\u00e9dit \u00e0 la consommation entre en vigueur le 20 novembre 2026 \u00bb (directive CCD2, ordonnances et d\u00e9crets de transposition)",
+   "ref": "https://www.economie.gouv.fr/daj/la-reforme-du-credit-la-consommation-entre-en-vigueur-le-20-novembre-2026",
+   "fiabilite": 5,
+   "maj": "29/10/2026"
+  },
+  {
+   "label": "S32 \u2014 gdroit, veille juridique \u00ab Ce qui change au 20 novembre 2026 : les textes qui entrent en vigueur \u00bb",
+   "ref": "https://gdroit.fr/veille-juridique/ce-qui-change-au-20-novembre-2026/",
+   "fiabilite": 3,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S33 \u2014 Service-Public, actualit\u00e9 \u00ab Rep\u00e8res \u2013 Ce qui change en novembre 2026 \u00bb",
+   "ref": "https://www.service-public.gouv.fr/particuliers/actualites/A17785",
+   "fiabilite": 5,
+   "maj": "12/11/2026"
+  },
+  {
+   "label": "S34 \u2014 France 24 (vid\u00e9o), \u00ab La superproduction GTA VI enfin entre les mains des joueurs \u00bb",
+   "ref": "https://www.france24.com/fr/vid%C3%A9o/20261119-la-superproduction-gta-vi-enfin-entre-les-mains-des-joueurs",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S35 \u2014 AP, \u00ab After a 13-year wait, Grand Theft Auto VI arrives with enormous hype and expectations \u00bb (premi\u00e8re bande-annonce : 93 millions de vues en 24 heures)",
+   "ref": "https://apnews.com/article/grand-theft-auto-6-video-game-release-6e255c930da6de820e539721f4682253",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S36 \u2014 AFP, d\u00e9p\u00eache du 18/11/2026 \u00ab Les joueurs du monde entier plongent dans la superproduction GTA VI \u00bb (hausse mondiale de 32 % des cong\u00e9s pos\u00e9s le 19/11 selon RH Remote ; r\u00e9f\u00e9rence interne news-afp-20261118-63e57373)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S37 \u2014 Numerama, rubrique jeux vid\u00e9o (19/11) : PlayStation Network \u00ab flanche \u00e0 quelques heures de la sortie de GTA 6 \u00bb, 55 troph\u00e9es list\u00e9s, prix de Battlefield 6 en chute sur PS5",
+   "ref": "https://www.numerama.com/pop-culture/jeux-video/",
+   "fiabilite": 4,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S38 \u2014 Polygon, \u00ab The Game Awards Announces Game of the Year 2026 Nominees \u00bb (c\u00e9r\u00e9monie du 10 d\u00e9cembre)",
+   "ref": "https://www.polygon.com/game-awards-2026-nominees-list-game-of-the-year/",
+   "fiabilite": 4,
+   "maj": "17/11/2026"
+  },
+  {
+   "label": "S39 \u2014 CBC News, \u00ab Grand Theft Auto VI nominated for game of the year, even though it isn't out yet \u00bb (huit nominations)",
+   "ref": "https://www.cbc.ca/news/entertainment/game-of-the-year-9.7425430",
+   "fiabilite": 4,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S40 \u2014 RFI (Reportage France), \u00ab Entre impatience et attentes tr\u00e8s fortes, les joueurs fran\u00e7ais pr\u00eats pour la sortie de GTA VI \u00bb",
+   "ref": "https://www.rfi.fr/fr/podcasts/reportage-france/20261119-entre-impatience-et-attentes-tr%C3%A8s-fortes-les-joueurs-fran%C3%A7ais-pr%C3%AAts-pour-la-sortie-de-gta-vi",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S41 \u2014 RTS, \u00ab GTA VI vendu sans disque : est-on encore propri\u00e9taire de son jeu ? \u00bb",
+   "ref": "https://www.rts.ch/info/culture/jeux-video/",
+   "fiabilite": 4,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S42 \u2014 AFP, d\u00e9p\u00eache du 17/11/2026 \u00ab La folie GTA VI gagne l'Asie malgr\u00e9 plusieurs obstacles \u00bb (march\u00e9 gris, serveurs \u00e0 Hong Kong ; r\u00e9f\u00e9rence interne news-afp-20261117-79220b90)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "17/11/2026"
+  },
+  {
+   "label": "S43 \u2014 James Bond 007 (site officiel), \u00ab Robert Pattinson Is James Bond \u00bb (Denis Villeneuve \u00e0 la r\u00e9alisation, sc\u00e9nario de Steven Knight, producers Amy Pascal et David Heyman)",
+   "ref": "https://www.007.com/robert-pattinson-is-the-new-james-bond",
+   "fiabilite": 5,
+   "maj": "16/11/2026"
+  },
+  {
+   "label": "S44 \u2014 MI6-HQ, \u00ab Official - Robert Pattinson is James Bond \u00bb (septi\u00e8me 007 de la saga, Bond 26 attendu en 2028)",
+   "ref": "https://www.mi6-hq.com/sections/articles/bond-26-robert-pattinson-announcement",
+   "fiabilite": 4,
+   "maj": "16/11/2026"
+  },
+  {
+   "label": "S45 \u2014 AFP, d\u00e9p\u00eache du 17/11/2026 \u00ab Robert Pattinson, un Bond plus sombre et subtil ? \u00bb (r\u00e9f\u00e9rence interne news-afp-20261117-a5e1f56a)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "17/11/2026"
+  },
+  {
+   "label": "S46 \u2014 AlloCin\u00e9, sorties et films \u00e0 l'affiche (Ast\u00e9rix \u2013 Le Royaume de Nubie le 2 d\u00e9cembre 2026, \u00ab Un bon patron \u00bb de Philippe de Chauveron, \u00ab L'Affaire Marie-Claire \u00bb de Lauriane Escaffre et Yvo Muller)",
+   "ref": "https://www.allocine.fr/",
+   "fiabilite": 4,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S47 \u2014 Radio-Canada/AFP, \u00ab Le prix Goncourt attribu\u00e9 \u00e0 Philippe Jaenada pour L'inconnue du quai de Javel \u00bb (Flammarion, le 3/11/2026)",
+   "ref": "https://ici.radio-canada.ca/article/info/2297742/prix-goncourt-jaenada-litterature",
+   "fiabilite": 5,
+   "maj": "03/11/2026"
+  },
+  {
+   "label": "S48 \u2014 Acad\u00e9mie de Rennes, \u00ab Prix Goncourt des Lyc\u00e9ens 2026 \u00bb (39e \u00e9dition, 16 ouvrages s\u00e9lectionn\u00e9s le 29/09/2026)",
+   "ref": "https://goncourt-lyceens.ac-rennes.fr/spip.php?article2978",
+   "fiabilite": 5,
+   "maj": "29/09/2026"
+  },
+  {
+   "label": "S49 \u2014 Nature, \u00ab Closest relatives of poxviruses prevail in human and animal guts worldwide \u00bb (18/11/2026, egovirus)",
+   "ref": "https://www.nature.com/articles/s41586-026-11283-z",
+   "fiabilite": 5,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S50 \u2014 Vidal (d\u00e9p\u00eache AFP), \u00ab D\u00e9couverte de virus g\u00e9ants intestinaux, une piste sur l'origine de la variole \u00bb",
+   "ref": "https://www.vidal.fr/actualites/38617-decouverte-de-virus-geants-intestinaux-une-piste-sur-l-origine-de-la-variole.html",
+   "fiabilite": 4,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S51 \u2014 ScienceDaily, \u00ab Scientists Tested 212 Plant-based Foods. Every Single One Contained Fungal Toxins \u00bb (19/11/2026)",
+   "ref": "https://www.sciencedaily.com/news/",
+   "fiabilite": 4,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S52 \u2014 AFP, d\u00e9p\u00eache du 19/11/2026 \u00ab COP31 : les \u00e9nergies fossiles disparaissent du projet de d\u00e9cision finale \u00bb (recul d\u00e9nonc\u00e9 par les ONG ; r\u00e9f\u00e9rence interne news-afp-20261119-d15ff09c)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S53 \u2014 TV5MONDE (AFP), \u00ab COP31 : les \u00e9nergies fossiles disparaissent du projet de d\u00e9cision finale \u00bb",
+   "ref": "https://information.tv5monde.com/economie/cop31-sur-le-climat-les-energies-fossiles-disparaissent-du-projet-de-decision-finale-2846353",
+   "fiabilite": 4,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S54 \u2014 AFP, d\u00e9p\u00eache du 18/11/2026 \u00ab Climat : le scientifique star Johan Rockstr\u00f6m exhorte le monde \u00e0 d\u00e9fendre la science \u00bb (COP31 ; r\u00e9f\u00e9rence interne news-afp-20261118-e50c5cb0)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S55 \u2014 Outre-mer La 1\u00e8re (Copernicus), \u00ab Climat : 2026 en passe de devenir la 2e la plus chaude sur la plan\u00e8te \u00bb (d\u00e9passement des 1,5 \u00b0C quasi certain)",
+   "ref": "https://la1ere.franceinfo.fr/climat-2026-en-passe-de-devenir-la-2e-la-plus-chaude-sur-la-planete-1755201.html",
+   "fiabilite": 4,
+   "maj": "06/11/2026"
+  },
+  {
+   "label": "S56 \u2014 NASA (Earth Observatory, \u00ab Featured \u00bb du 18/11), image du jour \u00ab El Ni\u00f1o Rains Paint the Atacama \u00bb",
+   "ref": "https://www.nasa.gov/blogs/spacestation/",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S57 \u2014 Actualit\u00e9 parlementaire (AFP / Public S\u00e9nat, 18/11/2026) : le S\u00e9nat adopte le budget de la S\u00e9curit\u00e9 sociale 2027, d\u00e9ficit ramen\u00e9 \u00e0 14 milliards d'euros, d\u00e9sindexation des retraites rejet\u00e9e \u00e0 l'unanimit\u00e9",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S58 \u2014 Vie-publique.fr, dossier \u00ab Budget 2027 : projet de loi de finances \u00bb (texte transmis au S\u00e9nat, pr\u00e9sent\u00e9 le 1er octobre par Roland Lescure et David Amiel)",
+   "ref": "https://www.vie-publique.fr/loi/305240-budget-2027-projet-de-loi-de-finances-plf",
+   "fiabilite": 5,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S59 \u2014 AFP, d\u00e9p\u00eache du 17/11/2026 \u00ab Budget : sous les radars, les discussions avancent autour de l'effort des retrait\u00e9s en 2027 \u00bb (ouverture concert\u00e9e avec le S\u00e9nat ; r\u00e9f\u00e9rence interne news-afp-20261117-d37d2df4)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "17/11/2026"
+  },
+  {
+   "label": "S60 \u2014 France 24, \u00ab Co\u00fbt des violences urbaines du 17 octobre en France : 207 millions d'euros, selon France Assureurs \u00bb",
+   "ref": "https://www.france24.com/fr/info-en-continu/20261119-co%C3%BBt-des-violences-urbaines-du-17-octobre-en-france-207-millions-d-euros-selon-france-assureurs",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S61 \u2014 20 Minutes, \u00ab Violences du 17 octobre : une facture de 207 millions d'euros de d\u00e9g\u00e2ts selon les assureurs \u00bb",
+   "ref": "https://www.20minutes.fr/societe/4264151-20261119-violences-17-octobre-facture-207-millions-euros-selon-assureurs",
+   "fiabilite": 4,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S62 \u2014 AFP, bulletin \u00ab Actualit\u00e9s du 18/11/2026 \u00bb : \u00ab Pr\u00e9sidentielle : Tondelier fait un pas vers M\u00e9lenchon \u00bb (Mal plac\u00e9e dans les sondages, la candidate \u00e9cologiste fait \u00ab se d\u00e9gager encore plus le chemin pour Jean-Luc M\u00e9lenchon \u00e0 gauche \u00bb)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S63 \u2014 Outre-mer La 1\u00e8re (AFP), \u00ab Unicef France suspend la mission d'ambassadeur de Teddy Riner, candidat \u00e0 la pr\u00e9sidentielle \u00bb (candidature annonc\u00e9e le 9/11, ambassadeur depuis f\u00e9vrier 2018)",
+   "ref": "https://la1ere.franceinfo.fr/unicef-france-suspend-la-mission-d-ambassadeur-de-teddy-riner-candidat-a-la-presidentielle-1758780.html",
+   "fiabilite": 5,
+   "maj": "17/11/2026"
+  },
+  {
+   "label": "S64 \u2014 France 24, \u00ab L'administration Trump en proie \u00e0 des tensions apr\u00e8s la d\u00e9faite des r\u00e9publicains aux midterms \u00bb",
+   "ref": "https://www.france24.com/fr/info-en-continu/20261117-l-administration-trump-en-proie-%C3%A0-des-tensions-apr%C3%A8s-la-d%C3%A9faite-des-r%C3%A9publicains-aux-midterms",
+   "fiabilite": 5,
+   "maj": "17/11/2026"
+  },
+  {
+   "label": "S65 \u2014 AFP via Europe 1 / TV5MONDE (18/11), entretien Trump : il reconna\u00eet des erreurs (immigration ; la guerre en Iran \u00ab a contribu\u00e9 \u00bb \u00e0 la d\u00e9faite) et \u00e9carte une reprise du conflit",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S66 \u2014 France 24 (d\u00e9p\u00eache AFP), \u00ab Apr\u00e8s les midterms, Hakeem Jeffries d\u00e9sign\u00e9 par les d\u00e9mocrates pour devenir speaker de la Chambre \u00bb",
+   "ref": "https://www.france24.com/fr/am%C3%A9riques/20261118-apr%C3%A8s-les-midterms-hakeem-jeffries-d%C3%A9sign%C3%A9-par-les-d%C3%A9mocrates-pour-devenir-speaker",
+   "fiabilite": 5,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S67 \u2014 AFP, d\u00e9p\u00eache du 17/11/2026 \u00ab La d\u00e9route \u00e9lectorale de Trump met ses alli\u00e9s latino-am\u00e9ricains dans l'embarras \u00bb (r\u00e9f\u00e9rence interne news-afp-20261117-69bb5bc5)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "17/11/2026"
+  },
+  {
+   "label": "S68 \u2014 France 24, \u00ab Rougeole : les \u00c9tats-Unis perdent leur statut de pays ayant \u00e9limin\u00e9 la maladie \u00bb",
+   "ref": "https://www.france24.com/fr/am%C3%A9riques/20261117-les-%C3%A9tats-unis-perdent-leur-statut-de-pays-qui-a-%C3%A9limin%C3%A9-la-rougeole",
+   "fiabilite": 5,
+   "maj": "17/11/2026"
+  },
+  {
+   "label": "S69 \u2014 ONU Info, \u00ab Rougeole : les \u00c9tats-Unis, le Mexique et la Bolivie perdent leur statut de pays ayant \u00e9limin\u00e9 la maladie \u00bb (Organisation panam\u00e9ricaine de la sant\u00e9)",
+   "ref": "https://news.un.org/fr/story/2026/11/1159864",
+   "fiabilite": 4,
+   "maj": "17/11/2026"
+  },
+  {
+   "label": "S70 \u2014 The Washington Post, page Donald Trump (analyse : au sommet, Trump, Poutine et Xi veulent lever les limites pesant sur eux-m\u00eames)",
+   "ref": "https://www.washingtonpost.com/donald-trump/",
+   "fiabilite": 4,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S71 \u2014 RFI, page Donald Trump (19/11) : visite de Pete Hegseth au Venezuela, \u00ab Caracas est sous pression militaire de Washington \u00bb",
+   "ref": "https://www.rfi.fr/fr/tag/donald-trump/",
+   "fiabilite": 4,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S72 \u2014 Radio-Canada, \u00ab Trump, Poutine, Xi adoptent une \u00ab d\u00e9claration en faveur de la paix \u00bb apr\u00e8s leur sommet \u00bb",
+   "ref": "https://ici.radio-canada.ca/article/info/2301744/trump-poutine-xi-declaration-paix-rencontre-chine",
+   "fiabilite": 4,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S73 \u2014 gov.cn (Xinhua), \u00ab Full text: China-Russia-U.S. Heads of State Declaration toward Peace \u00bb (Shenzhen, 19/11/2026)",
+   "ref": "https://english.www.gov.cn/news/202611/19/content_WS6afeda1ac6d00ca5f9a0e790.html",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S74 \u2014 CAAC (administration de l'aviation civile chinoise), \u00ab China's Independently Developed 10-tonne Electric Aircraft Completes First Piloted Flight \u00bb (16/11/2026)",
+   "ref": "https://www.caac.gov.cn/English/News/202611/t20261116_232073.html",
+   "fiabilite": 5,
+   "maj": "16/11/2026"
+  },
+  {
+   "label": "S75 \u2014 Euronews, \u00ab L'avion \u00e9lectrique chinois CE-25A r\u00e9ussit son premier vol habit\u00e9 \u00bb (Comac, 19 places)",
+   "ref": "https://fr.euronews.com/2026/11/15/avion-electrique-chinois-ce-25a-de-comac-reussit-son-premier-vol-habite",
+   "fiabilite": 4,
+   "maj": "15/11/2026"
+  },
+  {
+   "label": "S76 \u2014 AFP, d\u00e9p\u00eache du 17/11/2026 \u00ab Chine et Canada s'entendent sur de nouvelles r\u00e9ductions des droits de douane \u00bb (r\u00e9f\u00e9rence interne news-afp-20261117-8e6cfe55)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "17/11/2026"
+  },
+  {
+   "label": "S77 \u2014 AFP, d\u00e9p\u00eache du 19/11/2026 \u00ab En Chine, Poutine au centre du jeu des grandes puissances \u00bb (premier rang de la photo de groupe, \u00ab amis \u00bb ; r\u00e9f\u00e9rence interne news-afp-20261119-ed82aa4c)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S78 \u2014 AFP, d\u00e9p\u00eache du 18/11/2026 \u00ab Trump et Poutine en Chine avant un sommet in\u00e9dit avec Xi \u00bb (honneurs \u00ab in\u00e9dits depuis des d\u00e9cennies \u00bb, sanctions ayant \u00ab \u00e9chou\u00e9 \u00e0 d\u00e9truire \u00bb l'\u00e9conomie russe, rejet de l'isolement ; r\u00e9f\u00e9rence interne news-afp-20261118-7fcaae70)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S79 \u2014 RFI (d\u00e9p\u00eache AFP, 18/11/2026), \u00ab Ukraine : quatre morts dans une attaque de drones russes sur le centre d'Odessa \u00bb",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S80 \u2014 Institut de relations internationales et strat\u00e9giques, \u00ab Guerre en Ukraine : le prix pay\u00e9 par la Russie \u00bb (croissance 2025 \u00e0 1 %, d\u00e9penses militaires de 190 milliards de dollars en 2025 selon le SIPRI, recettes p\u00e9tro-gazi\u00e8res en baisse)",
+   "ref": "https://www.institut-sciences-strategiques.org/etats/russie/les-consequences-politiques-et-economiques-de-la-guerre-en-ukraine-pour-la-russie/",
+   "fiabilite": 4,
+   "maj": "18/02/2026"
+  },
+  {
+   "label": "S81 \u2014 AFP, d\u00e9p\u00eache du 19/11/2026 \u00ab Verbatim de la d\u00e9claration commune apr\u00e8s le sommet entre Trump, Poutine et Xi \u00bb (r\u00e9f\u00e9rence interne news-afp-20261119-deae2409)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S82 \u2014 Le Grand Continent, \u00ab Le texte int\u00e9gral de la rencontre Xi, Trump et Poutine \u00e0 Shenzhen \u00bb (sommet pr\u00e9sent\u00e9 comme un \u00ab nouveau Yalta \u00bb)",
+   "ref": "https://legrandcontinent.eu/fr/2026/11/19/le-texte-integral-de-la-rencontre-xi-trump-et-poutine-a-shenzhen/",
+   "fiabilite": 4,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S83 \u2014 AFP, d\u00e9p\u00eache du 19/11/2026 \u00ab Les \u00e9missaires am\u00e9ricains Kushner et Witkoff arrivent au sommet des alli\u00e9s de l'Ukraine \u00e0 Berlin \u00bb (r\u00e9f\u00e9rence interne news-afp-20261119-84d4bdc9)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S84 \u2014 AFP, d\u00e9p\u00eache du 18/11/2026 \u00ab L'UE propose un nouveau pr\u00eat de 45 milliards d'euros \u00e0 l'Ukraine pour 2027 \u00bb (reprise RFI ; r\u00e9f\u00e9rence interne news-afp-20261118-5cdc9d98 pour le sommet de Berlin)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S85 \u2014 Ukrinform, \u00ab Sybiha outlines Ukraine's expectations for Trump-Xi-Putin meeting \u00bb (18/11/2026)",
+   "ref": "https://www.ukrinform.net/rubric-polytics/4185981-sybiha-outlines-ukraines-expectations-for-trumpxiputin-meeting.html",
+   "fiabilite": 4,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S86 \u2014 Interfax-Ukraine, Sybiha : \u00ab pas de fausse impression pour Poutine d'un retour \u00e0 l'\u00e8re du partage des sph\u00e8res d'influence \u00bb",
+   "ref": "https://en.interfax.com.ua/news/general/1238495.html",
+   "fiabilite": 4,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S87 \u2014 AFP, d\u00e9p\u00eache du 19/11/2026 \u00ab Un quart des enfants du monde vivent dans une zone de conflit, un record (ONG) \u00bb (environ 260 millions d'enfants concern\u00e9s en Afrique ; r\u00e9f\u00e9rence interne news-afp-20261119-ab8fdc39)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S88 \u2014 Sant\u00e9 publique France, bulletin national des infections respiratoires aigu\u00ebs, semaine 46 (09-15/11/2026), publi\u00e9 le 18/11/2026",
+   "ref": "https://invs.santepubliquefrance.fr/sites/default/files/2026-11/bullnat_ira_20261118.pdf",
+   "fiabilite": 5,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S89 \u2014 AFP, d\u00e9p\u00eache du 18/11/2026 \u00ab La grippe approche, deux r\u00e9gions de l'Hexagone en pr\u00e9-\u00e9pid\u00e9mie \u00bb (\u00cele-de-France et Hauts-de-France ; r\u00e9f\u00e9rence interne news-afp-20261118-65e6a6a8)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S90 \u2014 Pourquoi Docteur, \u00ab La grippe arrive : deux r\u00e9gions m\u00e9tropolitaines en pr\u00e9-\u00e9pid\u00e9mie \u00bb",
+   "ref": "https://www.pourquoidocteur.fr/Articles/Question-d-actu/56343-La-grippe-arrive-regions-metropolitaines-pre-epidemie",
+   "fiabilite": 3,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S91 \u2014 France 24, \u00ab Mort de l'ancien patron de Canal+ Bertrand M\u00e9heut \u00bb (d\u00e9p\u00eache AFP)",
+   "ref": "https://www.france24.com/fr/info-en-continu/20261119-mort-de-l-ancien-patron-de-canal-bertrand-m%C3%A9heut",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S92 \u2014 Save the Children, \u00ab A record high of nearly one in four children now live in conflict zones \u00bb (rapport \u00ab Stop the War on Children 2026 \u00bb)",
+   "ref": "https://www.savethechildren.net/news/record-high-nearly-one-four-children-now-live-conflict-zones-save-children-report",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S93 \u2014 tagesschau, \u00ab Save the Children : fast jedes vierte Kind lebt in einem Konfliktgebiet \u00bb",
+   "ref": "https://www.tagesschau.de/ausland/kinder-konfliktgebiete-106.html",
+   "fiabilite": 4,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S94 \u2014 AFP, d\u00e9p\u00eaches du 18/11/2026 \u00ab Ligue des champions f\u00e9minine : le PSG craque en fin de match \u00e0 Chelsea (1-0) \u00bb (r\u00e9f\u00e9rence interne news-afp-20261118-ff715d46)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S95 \u2014 ESPN, \u00ab Paris FC 2-1 HB K\u00f8ge \u00bb (Ligue des champions f\u00e9minine, phase de ligue, 19/11/2026)",
+   "ref": "https://www.espn.co.uk/football/match/_/gameId/401916977/hb-k%C3%B8ge-paris-fc",
+   "fiabilite": 4,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S96 \u2014 Orange Sports, \u00ab Le top de l'actu sportive du 18 novembre \u00bb (F1 \u2013 Bearman et le flou chez Haas ; WEC \u2013 Peugeot ; handball \u2013 Valentini proche de quitter Metz)",
+   "ref": "https://sports.orange.fr/plus-de-sport/article/le-top-de-l-actu-sportive-du-18-novembre-exclu-CNT000002tOp8f.html",
+   "fiabilite": 3,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S97 \u2014 Presse Agence, \u00ab BPCO \u00e0 Guyancourt : un d\u00e9fi sportif national le 21 novembre \u00bb (sensibilisation \u00e0 la maladie pulmonaire obstructive chronique)",
+   "ref": "https://presseagence.fr/guyancourt-sante-un-defi-sportif-national-pour-sensibiliser-a-la-bpco/",
+   "fiabilite": 3,
+   "maj": "18/11/2026"
+  },
+  {
+   "label": "S98 \u2014 AFP, d\u00e9p\u00eache du 17/11/2026 \u00ab Les journalistes qui suivent l'\u00c9lys\u00e9e demandent au prochain pr\u00e9sident de pouvoir travailler librement \u00bb (livre publi\u00e9 mardi ; r\u00e9f\u00e9rence interne news-afp-20261117-2f4799fc)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "17/11/2026"
+  },
+  {
+   "label": "S99 \u2014 AFP, d\u00e9p\u00eaches des 17 et 19/11/2026, proc\u00e8s du passage \u00e0 tabac de Michel Zecler (les trois policiers reconnaissent des coups \u00ab ill\u00e9gitimes \u00bb et pr\u00e9sentent des excuses, mais leur r\u00e9cit reste contest\u00e9)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S100 \u2014 FHF \u00cele-de-France, \u00ab Congr\u00e8s r\u00e9gional de la FHF \u00cele-de-France le 19 novembre 2026 \u00bb",
+   "ref": "https://www.fhf.fr/en-regions/ile-de-france/nos-actualites/congres-regional-de-la-fhf-ile-de-france-le-19-novembre-2026",
+   "fiabilite": 4,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S101 \u2014 AFP, d\u00e9p\u00eache du 19/11/2026 \u00ab Ligue 2 : d\u00e9placement p\u00e9rilleux du leader Saint-\u00c9tienne \u00e0 Reims \u00bb (choc de la 13e journ\u00e9e samedi, Nancy (2e) \u00e0 l'affiche la veille ; r\u00e9f\u00e9rence interne news-afp-20261119-??)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S102 \u2014 AFP, bulletin \u00ab Actualit\u00e9s du jeudi 19 novembre 2026 \u00bb (co\u00fbt des violences urbaines d'octobre, suite du proc\u00e8s Zecler, Ligue 2 ; r\u00e9f\u00e9rence interne news-afp-20261119-f784a902)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  }
+ ],
+ "hors_chapitres": [
+  "Sant\u00e9 publique : la grippe se profile en France, o\u00f9 l'\u00cele-de-France et les Hauts-de-France sont pass\u00e9es en pr\u00e9-\u00e9pid\u00e9mie, les signaux augmentant en m\u00e9decine de ville comme \u00e0 l'h\u00f4pital selon le bulletin de Sant\u00e9 publique France publi\u00e9 mercredi (S88)(S89)(S90)).",
+  "M\u00e9dias : Bertrand M\u00e9heut, patron embl\u00e9matique de Canal+, est mort ; son d\u00e9c\u00e8s a \u00e9t\u00e9 annonc\u00e9 jeudi par l'actuel PDG du groupe, Maxime Saada (S91)).",
+  "Enfance en guerre : pr\u00e8s d'un quart des enfants du monde \u2014 une population record \u2014 vit d\u00e9sormais dans une zone de conflit, selon le rapport annuel de Save the Children publi\u00e9 jeudi ; l'Afrique concentre \u00e0 elle seule environ 260 millions d'enfants concern\u00e9s (S92)(S87)(S93)).",
+  "Football, Ligue des champions f\u00e9minine : le PSG s'est inclin\u00e9 0-1 en toute fin de match \u00e0 Chelsea mercredi \u2014 au bord de l'\u00e9limination avant l'ultime journ\u00e9e \u2014 tandis que le Paris FC a battu HB K\u00f8ge 2-1 jeudi, une double affiche au sommet (S94)(S95)).",
+  "Sport m\u00e9caniques et handball : en F1, Oliver Bearman regrette le flou chez Haas sur son avenir ; en endurance, Peugeot explore ses options ; au handball, l'entra\u00eeneur de Metz, Emmanuel Valentini, pourrait quitter le club \u2014 le r\u00e9sum\u00e9 du top sportif du 18/11 (S96)).",
+  "Sant\u00e9 et initiatives : un d\u00e9fi sportif national de sensibilisation \u00e0 la BPCO (maladie pulmonaire obstructive chronique) se tiendra \u00e0 Guyancourt ce week-end, pour rapprocher l'activit\u00e9 physique et la maladie respiratoire (S97)).",
+  "Presse : dans un livre publi\u00e9 mardi, les journalistes qui suivent l'\u00c9lys\u00e9e demandent au prochain pr\u00e9sident de la R\u00e9publique de \u00ab respecter \u00bb leur m\u00e9tier et de pouvoir travailler librement, apr\u00e8s dix ans de relation \u00ab complexe \u00bb avec Emmanuel Macron (S98)).",
+  "Justice : au proc\u00e8s du passage \u00e0 tabac de Michel Zecler, les trois policiers accus\u00e9s ont reconnu des coups \u00ab ill\u00e9gitimes \u00bb et pr\u00e9sent\u00e9 des excuses \u2014 mais leur r\u00e9cit reste contest\u00e9 \u00e0 l'audience, le producteur ayant \u00e9t\u00e9 violent\u00e9 en novembre 2020 apr\u00e8s un faux proc\u00e8s-verbal (S99)).",
+  "Sant\u00e9, syst\u00e8me de soins : la F\u00e9d\u00e9ration hospitali\u00e8re de France \u00cele-de-France tenait jeudi son congr\u00e8s r\u00e9gional annuel, rendez-vous des directions des h\u00f4pitaux franciliens, alors que l'h\u00f4pital public reste sous tension budg\u00e9taire (S100)).",
+  "Football, Ligue 2 : leader au classement, Saint-\u00c9tienne s'attend \u00e0 un d\u00e9placement p\u00e9rilleux samedi \u00e0 Reims (4e), tandis que le choc Nancy (2e) - Lens attendu la veille compl\u00e9tera la 13e journ\u00e9e (S101)(S102))."
+ ]
+}
