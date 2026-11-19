@@ -931,26 +931,6 @@
       "ligne": "portail grand public, actualité et pratiques"
     },
     {
-      "id": "journal-du-geek",
-      "nom": "Journal du Geek",
-      "emoji": "💻",
-      "categorie": "Tech & numérique 💻",
-      "flux": [
-        "https://www.journaldugeek.com/feed/"
-      ],
-      "ligne": "high-tech, culture geek et numérique"
-    },
-    {
-      "id": "toms-hardware-fr",
-      "nom": "Tom's Hardware FR",
-      "emoji": "🧩",
-      "categorie": "Tech & numérique 💻",
-      "flux": [
-        "https://www.tomshardware.fr/feed/"
-      ],
-      "ligne": "hardware, composants et tests PC"
-    },
-    {
       "id": "sciencepost",
       "nom": "Sciencepost",
       "emoji": "🔬",
