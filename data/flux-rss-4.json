@@ -69,6 +69,36 @@
       "flux": [
         "https://www.radioclassique.fr/feed/"
       ]
+    },
+    {
+      "id": "the-register",
+      "nom": "The Register",
+      "emoji": "🦅",
+      "categorie": "Tech & numérique 💻",
+      "flux": [
+        "https://www.theregister.com/headlines.atom"
+      ],
+      "ligne": "informatique et industry IT, ton mordant UK"
+    },
+    {
+      "id": "20-minutes-economie",
+      "nom": "20 Minutes — Économie",
+      "emoji": "⏱️",
+      "categorie": "Économie 💰",
+      "flux": [
+        "https://www.20minutes.fr/feeds/rss-economie.xml"
+      ],
+      "ligne": "économie et conso en bref, FR"
+    },
+    {
+      "id": "20-minutes-sciences",
+      "nom": "20 Minutes — Sciences",
+      "emoji": "⏱️",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.20minutes.fr/feeds/rss-sciences.xml"
+      ],
+      "ligne": "sciences en bref, FR"
     }
   ]
 }
