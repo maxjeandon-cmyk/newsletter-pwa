@@ -99,6 +99,26 @@
         "https://www.20minutes.fr/feeds/rss-sciences.xml"
       ],
       "ligne": "sciences en bref, FR"
+    },
+    {
+      "id": "mediacites",
+      "nom": "Médiacités",
+      "emoji": "🔍",
+      "categorie": "Presse régionale 🗺️",
+      "ligne": "journalisme denquete local (Lille, Lyon, Nantes, Toulouse, Paris), FR",
+      "flux": [
+        "https://www.mediacites.fr/feed/"
+      ]
+    },
+    {
+      "id": "eos-agu",
+      "nom": "Eos",
+      "emoji": "🔬",
+      "categorie": "Sciences 🔬",
+      "ligne": "magazine des geosciences de l AGU, recherche terre et climat, EN",
+      "flux": [
+        "https://eos.org/feed"
+      ]
     }
   ]
 }
