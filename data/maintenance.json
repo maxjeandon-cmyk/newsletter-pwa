@@ -1,24 +1,24 @@
 {
-  "date": "20/11/2026",
-  "heure": "22:14",
+  "date": "21/11/2026",
+  "heure": "10:56",
   "relevesOng": {
-    "rafraichis": 0,
+    "rafraichis": 9,
     "echecs": 1,
-    "publie": false
+    "publie": true
   },
   "lyceens": {
     "nouvelles": 0,
     "fusionnees": 0,
-    "moissonnes": 2,
+    "moissonnes": 1,
     "total": 22,
     "publie": false
   },
   "etudiants": {
-    "items": 1,
-    "ajoutes": 1,
-    "chapitre": "c45",
-    "nouveauChapitre": true,
-    "publie": true
+    "items": 0,
+    "ajoutes": 0,
+    "chapitre": null,
+    "nouveauChapitre": false,
+    "publie": false
   },
   "verifs": [
     {
@@ -38,18 +38,18 @@
     },
     {
       "nom": "ong-releve.js",
-      "ok": false,
-      "detail": "0 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
+      "ok": true,
+      "detail": "9 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
     },
     {
       "nom": "lyceens.js",
       "ok": true,
-      "detail": "0 nouvelle(s) info, 0 fusionnée(s) sur 2 moissonnée(s) — 22 au total"
+      "detail": "0 nouvelle(s) info, 0 fusionnée(s) sur 1 moissonnée(s) — 22 au total"
     },
     {
       "nom": "etudiants.js",
       "ok": true,
-      "detail": "1 info(s) des dernières heures, 1 paragraphe(s) ajouté(s)"
+      "detail": "0 info(s) des dernières heures, 0 paragraphe(s) ajouté(s)"
     }
   ],
   "problemes": [],
