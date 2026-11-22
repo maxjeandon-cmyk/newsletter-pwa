@@ -119,6 +119,26 @@
       "flux": [
         "https://eos.org/feed"
       ]
+    },
+    {
+      "id": "hacker-news",
+      "nom": "Hacker News",
+      "emoji": "🔎",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "pensee du jour de la tech US (Y Combinator), agregateur communautaire, EN",
+      "flux": [
+        "https://hnrss.org/frontpage"
+      ]
+    },
+    {
+      "id": "phoronix",
+      "nom": "Phoronix",
+      "emoji": "🐧",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "tests et actualites Linux et materiel open source, EN",
+      "flux": [
+        "https://www.phoronix.com/rss.php"
+      ]
     }
   ]
 }
