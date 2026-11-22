@@ -1,0 +1,580 @@
+{
+ "date": "2026-11-21",
+ "genere_le": "2026-11-22T01:30:54.123Z",
+ "html": "editions/2026-11-21.html",
+ "resume_executif": [
+  "Spatial : BepiColombo a \u00e9t\u00e9 captur\u00e9 par la gravit\u00e9 de Mercure samedi, huit ans apr\u00e8s son d\u00e9part de Kourou \u2014 la premi\u00e8re mission de l'ESA et de la JAXA en orbite autour de la plan\u00e8te la moins explor\u00e9e du syst\u00e8me solaire (S10)(S11)(S12).",
+  "France : sixi\u00e8me samedi cons\u00e9cutif de mobilisation contre la vie ch\u00e8re, en nette baisse (82 500 manifestants selon l'Int\u00e9rieur, 150 000 selon les organisateurs) ; Fran\u00e7ois Ruffin a retir\u00e9 sa candidature \u00e0 la pr\u00e9sidentielle, \u00ab prenant acte de l'impasse \u00bb d'une gauche sans primaire (S1)(S3)(S5)(S6).",
+  "G\u00e9opolitique : apr\u00e8s des missiles russes tomb\u00e9s en Pologne vendredi, l'OTAN a promis samedi de d\u00e9fendre la Pologne ; les frappes russes ont touch\u00e9 Kryvy\u00ef R\u00ef, la ville natale de Zelensky, tuant un gar\u00e7on de sept ans et une jeune secouriste de 20 ans (S23)(S27)(S28).",
+  "IA : un math\u00e9maticien d'Anthropic affirme avoir d\u00e9montr\u00e9 l'hypoth\u00e8se de Riemann \u00ab avec l'aide de l'IA \u00bb \u2014 250 000 pages que personne n'a encore v\u00e9rifi\u00e9es \u2014 quand l'IPO d'Anthropic bouclait son premier jour de cotation avec 17,1 % de hausse et que Google sortait Gemini 4 Neon (S39)(S40)(S41).",
+  "\u00c9conomie et climat : l'AIE voit la demande de p\u00e9trole reculer de 2,7 millions de barils par jour en 2026 face \u00e0 un exc\u00e9dent d'offre, le climat des affaires fran\u00e7ais repart \u00e0 la baisse (95, \u22122 points), et la COP31 joue les prolongations \u00e0 Antalya, toujours sans compromis sur les fossiles (S9)(S44)(S21)."
+ ],
+ "chapitres": [
+  {
+   "id": "intelligence-artificielle",
+   "emoji": "\ud83e\udd16",
+   "nom": "Intelligence artificielle",
+   "resume": "Journ\u00e9e vertigineuse : un math\u00e9maticien d'Anthropic affirme avoir r\u00e9solu le plus c\u00e9l\u00e8bre probl\u00e8me ouvert des math\u00e9matiques \u00ab avec l'aide de l'IA \u00bb, pendant que la jeune pousse engrangeait un premier jour de Bourse record et que Google ripostait en ouvrant l'\u00e8re de Gemini 4."
+  },
+  {
+   "id": "spatial",
+   "emoji": "\ud83d\ude80",
+   "nom": "Spatial",
+   "resume": "Le jour o\u00f9 l'Europe et le Japon s'installent autour de Mercure : apr\u00e8s huit ans de voyage et 9,9 milliards de kilom\u00e8tres, la sonde BepiColombo a \u00e9t\u00e9 captur\u00e9e samedi par la gravit\u00e9 de la plan\u00e8te la moins explor\u00e9e du syst\u00e8me solaire."
+  },
+  {
+   "id": "economie-pour-les-nuls",
+   "emoji": "\ud83d\udcb0",
+   "nom": "L'\u00c9conomie pour les nuls",
+   "resume": "Deux histoires de confiance se partagent la journ\u00e9e c\u00f4t\u00e9 \u00e9conomie : le p\u00e9trole mondial, dont personne ne veut assez alors que tout le monde en produit trop, et la France, dont les chefs d'entreprise croisent de plus en plus les bras."
+  },
+  {
+   "id": "droit-pour-les-nuls",
+   "emoji": "\u2696\ufe0f",
+   "nom": "Le Droit pour les nuls",
+   "resume": "Pioch\u00e9 dans l'actualit\u00e9 juridique du jour : demain lundi, le Conseil constitutionnel tiendra sa quatorzi\u00e8me audience d\u00e9localis\u00e9e au tribunal judiciaire de Bobigny, enti\u00e8rement consacr\u00e9e \u00e0 la question prioritaire de constitutionnalit\u00e9 \u2014 l'occasion r\u00eav\u00e9e de comprendre ce proc\u00e8s bizarre o\u00f9 ce n'est pas vous qu'on juge, mais la loi elle-m\u00eame (S49)."
+  },
+  {
+   "id": "jeu-video-pop-culture",
+   "emoji": "\ud83c\udfae",
+   "nom": "Jeu vid\u00e9o & pop culture",
+   "resume": "Un record absolu pour GTA VI, des joueurs partag\u00e9s entre l'extase et l'agacement : le jeu le plus attendu de l'histoire vient de pulv\u00e9riser tous les records de lancement, et la pop culture enti\u00e8re continue de tourner autour de lui ce week-end."
+  },
+  {
+   "id": "culture",
+   "emoji": "\ud83c\udfad",
+   "nom": "Culture",
+   "resume": "Entre records vid\u00e9oludiques et rendez-vous de fin d'ann\u00e9e, la derni\u00e8re ligne droite culturelle avant d\u00e9cembre s'annonce dense c\u00f4t\u00e9 francophone : cin\u00e9ma mercredi, disques en rayons, th\u00e9\u00e2tres \u00e0 l'affiche et classiques \u00e0 red\u00e9couvrir."
+  },
+  {
+   "id": "sciences",
+   "emoji": "\ud83d\udd2c",
+   "nom": "Sciences",
+   "resume": "Horloges quantiques, \u00e9toiles aval\u00e9es, th\u00e9ories de l'\u00e9volution \u00e9branl\u00e9es : la journ\u00e9e scientifique de samedi d\u00e9friche une fois de plus les marges du savoir \u2014 avec, en fil rouge, la difficult\u00e9 croissante \u00e0 distinguer la science de ses outils."
+  },
+  {
+   "id": "climat",
+   "emoji": "\ud83c\udf0d",
+   "nom": "Climat",
+   "resume": "La COP31 s'\u00e9ternise \u00e0 Antalya : samedi, la s\u00e9ance de cl\u00f4ture s'achevait sans document final, des ministres pliaient bagage et une partie de la presse parlait d\u00e9j\u00e0 de \u00ab la pire COP de tous les temps \u00bb \u2014 pendant que la plan\u00e8te, elle, ne n\u00e9gocie pas."
+  },
+  {
+   "id": "politique-francaise",
+   "emoji": "\ud83c\uddeb\ud83c\uddf7",
+   "nom": "Politique fran\u00e7aise",
+   "resume": "Six semaines de contestation, un retrait \u00e0 gauche et un budget en chantier : samedi, la politique fran\u00e7aise a vibr\u00e9 sur trois lignes \u2014 la rue, la pr\u00e9sidentielle et les comptes publics."
+  },
+  {
+   "id": "etats-unis",
+   "emoji": "\ud83c\uddfa\ud83c\uddf8",
+   "nom": "\u00c9tats-Unis",
+   "resume": "De retour de Chine o\u00f9 il a serr\u00e9 la main de Xi Jinping et de Vladimir Poutine, Donald Trump affronte une opinion divis\u00e9e, une maison politique en \u00e9bullition post-midterms et une diplomatie iranienne au ralenti \u2014 le tout dans un pays qui traverse une crise de confiance sanitaire silencieuse."
+  },
+  {
+   "id": "chine",
+   "emoji": "\ud83c\udde8\ud83c\uddf3",
+   "nom": "Chine",
+   "resume": "Le lendemain du sommet de Shenzhen, la Chine savoure sa position de centre du monde et soigne son agenda r\u00e9gional, entre multilat\u00e9ralisme revendiqu\u00e9 et industries triomphantes."
+  },
+  {
+   "id": "russie",
+   "emoji": "\ud83c\uddf7\ud83c\uddfa",
+   "nom": "Russie",
+   "resume": "De Shenzhen aux frappes sur Kryvy\u00ef R\u00ef : Vladimir Poutine a pass\u00e9 la semaine \u00e0 retrouver le premier rang de la sc\u00e8ne internationale \u2014 et le week-end \u00e0 tenir une promesse sinistre, celle d'une riposte \u00ab douloureuse \u00bb apr\u00e8s l'attaque ukrainienne contre le pont de Crim\u00e9e."
+  },
+  {
+   "id": "geopolitique",
+   "emoji": "\ud83c\udf10",
+   "nom": "G\u00e9opolitique",
+   "resume": "Deux missiles russes tomb\u00e9s en Pologne, une OTAN saisie, des frappes crois\u00e9es UA-Russie et une Europe dans la rue : rarement l'architecture de la s\u00e9curit\u00e9 continentale aura \u00e9t\u00e9 aussi visible en un seul week-end."
+  },
+  {
+   "id": "grande-info-semaine",
+   "emoji": "\ud83d\udcf0",
+   "nom": "Grande information de la semaine",
+   "resume": "Vue d'ensemble des grands moments du 16 au 21 novembre, au-del\u00e0 des 24 heures : une semaine o\u00f9 les grandes puissances, les march\u00e9s et la rue ont tous chang\u00e9 de vitesse en m\u00eame temps."
+  }
+ ],
+ "sources": [
+  {
+   "label": "S1 \u2014 RTL, \u00ab Mobilisation du 21 novembre : 150 000 personnes ont manifest\u00e9 en France selon les organisateurs, 82 500 selon le minist\u00e8re \u00bb",
+   "ref": "https://www.rtl.fr/actu/debats-societe/mobilisation-du-21-novembre-150-000-personnes-ont-manifeste-en-france-selon-le-ministere-82-500-selon-le-ministere-7900699011",
+   "fiabilite": 4,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S2 \u2014 RTL, \u00ab Manifestations du 21 novembre : 8 ans des Gilets jaunes, 70 000 policiers et gendarmes\u2026 que s'attendre pour l'acte VI ? \u00bb",
+   "ref": "https://www.rtl.fr/actu/politique/manifestations-du-21-novembre-8-ans-des-gilets-jaunes-70-000-policiers-et-gendarmes-a-quoi-s-attendre-pour-l-acte-vi-samedi-7900698820",
+   "fiabilite": 4,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S3 \u2014 TV5MONDE (d\u00e9p\u00eache AFP), \u00ab Syndicats, jeunesse et gilets jaunes un peu moins mobilis\u00e9s pour le sixi\u00e8me samedi de manifestation \u00bb",
+   "ref": "https://information.tv5monde.com/france/syndicats-jeunesse-et-gilets-jaunes-un-peu-moins-mobilises-pour-le-sixieme-samedi-de-manifestation-2846617",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S4 \u2014 Minist\u00e8re de l'Int\u00e9rieur, communiqu\u00e9 \u00ab Bilan de la mobilisation du 21 novembre 2026 \u00bb",
+   "ref": "https://www.interieur.gouv.fr/actualites/communiques-de-presse/bilan-de-mobilisation-du-21-novembre-2026",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S5 \u2014 France 24, \u00ab Pr\u00e9sidentielle : prenant \u00ab acte de l'impasse \u00bb de sa campagne, Fran\u00e7ois Ruffin retire sa candidature \u00bb",
+   "ref": "https://www.france24.com/fr/france/20261121-pr%C3%A9sidentielle-prenant-acte-de-l-impasse-de-sa-campagne-fran%C3%A7ois-ruffin-retire-sa-candidature",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S6 \u2014 RFI, \u00ab Pr\u00e9sidentielle 2027 : Fran\u00e7ois Ruffin jette l'\u00e9ponge, faute de primaire de toute la gauche \u00bb",
+   "ref": "https://www.rfi.fr/fr/france/20261121-pr%C3%A9sidentielle-2027-fran%C3%A7ois-ruffin-jette-l-%C3%A9ponge-faute-de-primaire-de-toute-la-gauche",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S7 \u2014 France 24 (d\u00e9p\u00eache AFP), \u00ab Pr\u00e9sidentielle : Ruffin renonce, le paysage se clarifie \u00e0 gauche \u00bb",
+   "ref": "https://www.france24.com/fr/info-en-continu/20261121-pr%C3%A9sidentielle-ruffin-renonce-le-paysage-se-clarifie-%C3%A0-gauche",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S8 \u2014 Hospimedia, \u00e9dition du 21/11/2026 (\u00ab PLFSS 2027 : le projet de budget de la s\u00e9curit\u00e9 sociale\u2026 \u00bb, pr\u00e9vision budg\u00e9taire de l'enseignement sup\u00e9rieur et de la recherche \u00ab tr\u00e8s contrainte \u00bb)",
+   "ref": "https://www.hospimedia.fr/edition-quotidienne/2026-11-21",
+   "fiabilite": 4,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S9 \u2014 AFP, d\u00e9p\u00eache du 20/11/2026 \u00ab Le climat des affaires repart \u00e0 la baisse en novembre, dans tous les secteurs, selon l'Insee \u00bb (indicateur \u00e0 95, \u22122 points ; r\u00e9f\u00e9rence interne news-IqIgSdKr)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "20/11/2026"
+  },
+  {
+   "label": "S10 \u2014 ESA, page officielle \u00ab BepiColombo entering orbit around Mercury \u00bb",
+   "ref": "https://www.esa.int/media/about-us/directorates/science/bepicolombo-entering-orbit-around-mercury",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S11 \u2014 Observatoire de Paris - PSL (laboratoire LIRA), \u00ab BepiColombo's rendezvous with Mercury : orbit insertion on the 21st of November \u00bb (instruments VIHI et SORBET, man\u0153uvres, calendrier)",
+   "ref": "https://lira.observatoiredeparis.psl.edu/BepiColombo-s-rendezvous-with-Mercury-orbit-insertion-on-the-21st-of-November",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S12 \u2014 Eos (AGU), \u00ab BepiColombo Arrives at Mercury \u00bb",
+   "ref": "https://eos.org/research-and-developments/bepicolombo-arrives-at-mercury",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S13 \u2014 ScienceDaily, \u00ab Top News \u00bb du 21/11/2026 (horloges atomiques et flux multiples du temps ; JWST et l'\u00e9toile aval\u00e9e dans Androm\u00e8de ; th\u00e9orie de l'\u00e9volution contredite ; arbre g\u00e9n\u00e9alogique humain selon Monash ; cercueil romain de Westminster ; Voyager 1 ; t\u00e9lescope \u00e0 rayons X)",
+   "ref": "https://www.sciencedaily.com/news/top/",
+   "fiabilite": 4,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S14 \u2014 Space.com (via Yahoo Tech), \u00ab European-Japanese BepiColombo probe arrives in orbit around Mercury today \u00bb (s\u00e9paration des orbiters les 9-10 d\u00e9cembre, science en avril 2027)",
+   "ref": "https://tech.yahoo.com/science/articles/european-japanese-bepicolombo-probe-arrives-110000455.html",
+   "fiabilite": 4,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S15 \u2014 RFI (d\u00e9p\u00eache AFP), \u00ab Les ventes de GTA VI ont atteint 3,79 milliards de dollars le jour de sa sortie, un \"record\" \u00bb",
+   "ref": "https://www.rfi.fr/fr/%C3%A9conomie/20261121-les-ventes-de-gta-vi-ont-atteint-3-79-milliards-de-dollars-le-jour-de-sa-sortie-un-record",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S16 \u2014 France 24, \u00ab \"GTA VI\" s'offre un lancement record et surpasse la tourn\u00e9e de Taylor Swift \u00bb",
+   "ref": "https://www.france24.com/fr/culture/20261121-gta-vi-s-offre-un-lancement-record-mais-agace-une-partie-des-joueurs",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S17 \u2014 Boursorama (d\u00e9p\u00eache AFP), \u00ab \"GTA VI\" pulv\u00e9rise le record de ventes au lancement et agace une partie des joueurs \u00bb",
+   "ref": "https://www.boursorama.com/bourse/actualites/gta-vi-pulverise-le-record-de-ventes-au-lancement-et-agace-une-partie-des-joueurs-c8b81baee2bd91e62b51787a49842efa",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S18 \u2014 AFP, d\u00e9p\u00eache du 20/11/2026 \u00ab GTA VI pulv\u00e9rise le record de ventes au lancement \u00bb (3,79 milliards de dollars le premier jour ; r\u00e9f\u00e9rence interne news-yk5yPpTI)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "20/11/2026"
+  },
+  {
+   "label": "S19 \u2014 Xinhua (fran\u00e7ais), \u00ab La s\u00e9ance de cl\u00f4ture de la COP31 s'ach\u00e8ve, le document final est attendu au cours du week-end \u00bb",
+   "ref": "https://french.news.cn/20261121/c03ec3386dd34c9bb4ca2aae6f5d5c67/c.html",
+   "fiabilite": 4,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S20 \u2014 La Presse, \u00ab La Presse en Turquie | \"La pire COP de tous les temps\" \u00bb",
+   "ref": "https://www.lapresse.ca/actualites/environnement/2026-11-21/la-presse-en-turquie/la-pire-cop-de-tous-les-temps.php",
+   "fiabilite": 4,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S21 \u2014 AFP, d\u00e9p\u00eache du 21/11/2026 \u00ab Climat : suspense \u00e0 la COP31, qui tra\u00eene en longueur \u00bb (ministres partants, pavillons d\u00e9mont\u00e9s ; r\u00e9f\u00e9rence interne news-WwALMCV5)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S22 \u2014 Connaissance des \u00c9nergies (d\u00e9p\u00eache AFP), \u00ab La COP31 cherche encore un accord malgr\u00e9 le blocage sur les fossiles \u00bb",
+   "ref": "https://www.connaissancedesenergies.org/afp/climat-suspense-a-la-cop31-qui-traine-en-longueur-261121",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S23 \u2014 Euronews, \u00ab Bombardements meurtriers sur l'Ukraine et la ville de naissance de Volodymyr Zelensky \u00bb (bilan d\u00e9taill\u00e9 de Kryvy\u00ef R\u00ef, frappes ukrainiennes)",
+   "ref": "https://fr.euronews.com/2026/11/21/bombardements-meurtriers-sur-lukraine-et-la-ville-de-naissance-de-volodymyr-zelensky",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S24 \u2014 Al Jazeera, \u00ab Russian strike kills two, wounds 60, in Zelenskyy's hometown \u00bb",
+   "ref": "https://www.aljazeera.com/news/2026/11/21/russian-strike-kills-two-wounds-60-in-zelenskyys-hometown",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S25 \u2014 AFP, \u00ab Warsaw says Russian missiles hit Poland, denounces \"intentional provocation\" \u00bb",
+   "ref": "https://www.afp.com/en/warsaw-says-russian-missiles-hit-poland-denounces-intentional-provocation",
+   "fiabilite": 5,
+   "maj": "20/11/2026"
+  },
+  {
+   "label": "S26 \u2014 France 24, \u00ab Poland slams Russian 'provocation' as missiles land near European military drills \u00bb",
+   "ref": "https://www.france24.com/en/europe/20261120-poland-says-russian-missile-hit-its-territory-during-attack-on-ukraine",
+   "fiabilite": 5,
+   "maj": "20/11/2026"
+  },
+  {
+   "label": "S27 \u2014 AFP (via recherche connect\u00e9e), \u00ab NATO chief pledges to defend Poland after Russian missile incursion \u00bb \u2014 Mark Rutte, samedi ; instance d\u00e9cisionnaire de l'Alliance saisie (r\u00e9f\u00e9rence interne news-dtnIkqnz)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S28 \u2014 Al Jazeera, d\u00e9cryptage \u00ab Russian missiles hit Poland : what happened, and could NATO respond ? \u00bb",
+   "ref": "https://www.aljazeera.com/news/2026/11/21/russian-missiles-hit-poland-what-happened-and-could-nato-respond",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S29 \u2014 ABC News, \u00ab Russia delivers 'painful response' to Ukraine for Crimea bridge strike, killing eight \u00bb",
+   "ref": "https://www.abc.net.au/news/2026-11-20/ukraine-russia-crimea-strikes-bridge-kyiv-power-outage-poland/107411538",
+   "fiabilite": 5,
+   "maj": "20/11/2026"
+  },
+  {
+   "label": "S30 \u2014 20 Minutes, \u00ab Apr\u00e8s l'attaque sur le pont de Crim\u00e9e, Poutine annonce des \"repr\u00e9sailles encore plus douloureuses\" \u00bb",
+   "ref": "https://www.20minutes.fr/monde/ukraine/4264188-20261119-guerre-ukraine-apres-attaque-pont-crimee-poutine-annonce-represailles-encore-plus-douloureuses",
+   "fiabilite": 4,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S31 \u2014 AFP, d\u00e9p\u00eache du 21/11/2026 \u00ab Une pluie de missiles et drones russes s'abat sur l'Ukraine, au moins neuf morts \u00bb (r\u00e9f\u00e9rence interne news-eua3TbBD)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S32 \u2014 AP, \u00ab Trump defends calling Putin a friend but says he \"can't speak\" to whether he's a friend to the US \u00bb",
+   "ref": "https://apnews.com/article/trump-putin-us-russia-friend-961f5a5b381dc7555c7bedfdd20581d8",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S33 \u2014 AFP (via recherche connect\u00e9e), \u00ab Trump says his \"fantastic relationships\" with Xi, Putin keep US secure \u00bb (r\u00e9f\u00e9rence interne news-7LFT0ieY)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S34 \u2014 CBS News, suivi en direct \u00ab Trump says he wants \"permanent\" deal with Iran ; warns next move may not come until 2027 \u00bb",
+   "ref": "https://www.cbsnews.com/live-updates/iran-war-trump-tehran-denies-chemical-weapons/",
+   "fiabilite": 4,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S35 \u2014 AP, \u00ab Trump insists Iran won't make an 'acceptable' deal as concerns grow about next steps \u00bb",
+   "ref": "https://apnews.com/article/iran-war-trump-diplomacy-attacks-8fd6dcd6dc4a1a77437cedc4567fbee8",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S36 \u2014 NPR (via WVXU), \u00ab Trump orders federal contractors to check with White House before responding to Congress \u00bb",
+   "ref": "https://www.wvxu.org/news-from-npr/2026-11-21/trump-orders-federal-contractors-to-check-with-white-house-before-responding-to-congress",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S37 \u2014 AFP (via recherche connect\u00e9e), \u00ab Trump faces tumult at home after Xi-Putin \"embarrassment\" \u00bb et \u00ab Trump defends \"fantastic\" ties with Xi, Putin after summit backlash \u00bb (r\u00e9f\u00e9rences internes news-ZeJ5zkL9 et news-xTaRTJkF)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S38 \u2014 Maison-Blanche, \u00ab At Press Briefing, President Trump Touts Historic Wins for Americans, Signals Deal-Making on Healthcare \u00bb",
+   "ref": "https://www.whitehouse.gov/releases/2026/11/at-press-briefing-president-trump-touts-historic-wins-for-americans-signals-deal-making-on-healthcare/",
+   "fiabilite": 4,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S39 \u2014 AP, \u00ab Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI \u00bb",
+   "ref": "https://apnews.com/article/anthropic-claude-math-solution-ai-4fe8b69a891f160f9e7f0c85af8c55c8",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S40 \u2014 AIBriefs, \u00ab AI News Briefing for Saturday, November 21, 2026 \u00bb (preuve Lean de 17,4 millions de lignes / 250 000 pages ; Gemini 4 Neon ; politique d'usage OpenAI ; projet de divulgation Maison-Blanche/Tr\u00e9sor sur les mod\u00e8les ouverts chinois selon Reuters ; Tencent Hy4 ; d\u00e9mission de Jensen Huang)",
+   "ref": "https://aibriefs.news/briefing/2026-11-21",
+   "fiabilite": 3,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S41 \u2014 AOYii, \u00ab AI Daily \u2014 Nov 21, 2026 \u00bb (cotation ANT : ouverture 111,50 $, sommet 115,10 $, cl\u00f4ture 97,17 $, +17,1 %, 81,3 Md$ ; Gemini Mac computer-use ; OpenAI Live Dictation)",
+   "ref": "https://www.aoyii.com/ai-daily-20261121/",
+   "fiabilite": 3,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S42 \u2014 Reuters (via recherche connect\u00e9e), \u00ab IA : Mistral pr\u00e9voit de doubler ses effectifs en Asie-Pacifique \u00bb (r\u00e9f\u00e9rence interne news-5DllDdQT)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S43 \u2014 Deutsche Telekom (communiqu\u00e9), \u00ab Deutsche Telekom advances sovereign AI in Germany : T.Capital Tech Fund invests in Mistral \u00bb",
+   "ref": "https://www.telekom.com/en/newsroom/latest-updates/media-information/2026/11/deutsche-telekom-advances-sovereign-ai-in-germany",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S44 \u2014 Agence internationale de l'\u00e9nergie (AIE), \u00ab Oil Market Report \u2014 November 2026 \u00bb (demande 2026 : \u22122,7 Mb/j ; rebond 2027 : +2 Mb/j)",
+   "ref": "https://www.iea.org/reports/oil-market-report-november-2026",
+   "fiabilite": 5,
+   "maj": "12/11/2026"
+  },
+  {
+   "label": "S45 \u2014 AFP, d\u00e9p\u00eache du 21/11/2026 \u00ab Le p\u00e9trole avance, entre impasse g\u00e9opolitique et surplus d'offre \u00bb (enqu\u00eate NYT sur une possible campagne de bombardements en Iran ; r\u00e9f\u00e9rence interne news-g0UY40DA)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S46 \u2014 FinScans, \u00ab Les cours du p\u00e9trole font face \u00e0 des pr\u00e9visions d'exc\u00e9dent alors que le WTI et le Brent \u00e9voluent sous leurs sommets d'octobre \u00bb",
+   "ref": "https://finscans.com/fr/news/2026/11/21/les-cours-du-petrole-font-face-a-des-previsions-dexcedent",
+   "fiabilite": 3,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S47 \u2014 L\u00e9gifrance, Journal officiel n\u00b0 0272 du 21 novembre 2026 (86 textes, dont d\u00e9cret n\u00b0 2026-1071 du 18/11/2026 sur les liaisons a\u00e9riennes d'obligation de service public)",
+   "ref": "https://www.legifrance.gouv.fr/jorf/jo/2026/11/21/0272",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S48 \u2014 Kohen Avocats, \u00ab Journal officiel du samedi 21 novembre 2026 \u00bb",
+   "ref": "https://kohenavocats.com/journal-officiel/21-novembre-2026/",
+   "fiabilite": 3,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S49 \u2014 fildactu.fr (archives du Conseil constitutionnel), \u00ab Le Conseil constitutionnel \u00e0 Bobigny pour une nouvelle audience d\u00e9localis\u00e9e de question prioritaire de constitutionnalit\u00e9 \u00bb (14e audience d\u00e9localis\u00e9e, tribunal judiciaire de Bobigny, 24/11/2026)",
+   "ref": "https://www.fildactu.fr/droit/journal/2026-11-21",
+   "fiabilite": 3,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S50 \u2014 L\u00e9gifrance, Constitution du 4 octobre 1958, article 61-1 ; loi organique n\u00b0 2009-1523 du 10 d\u00e9cembre 2009 ; d\u00e9cret n\u00b0 2010-1639 du 23 d\u00e9cembre 2010",
+   "ref": "https://www.legifrance.gouv.fr/Droit-francais/Constitution",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S51 \u2014 LCP-Assembl\u00e9e nationale, \u00ab Fran\u00e7ois Ruffin se retire de la pr\u00e9sidentielle 2027 sans soutenir aucun des candidats de gauche encore en lice \u00bb",
+   "ref": "https://lcp.fr/actualites/francois-ruffin-se-retire-de-la-presidentielle-2027-sans-soutenir-aucun-des-candidats-de",
+   "fiabilite": 4,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S52 \u2014 NRmagazine, \u00ab Sorties cin\u00e9ma du 25 novembre 2026 : les films annonc\u00e9s \u00bb (18 films)",
+   "ref": "https://www.nrmagazine.com/cinema/sorties-cinema/semaine/2026-11-25",
+   "fiabilite": 3,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S53 \u2014 Cinezik, calendrier des sorties de la semaine du 25/11/2026 (\u00ab Un bon petit soldat \u00bb de St\u00e9phane Briz\u00e9, BO Bertrand Blessing ; \u00ab Hexed \u2014 \u00c0 la crois\u00e9e des mondes \u00bb)",
+   "ref": "https://www.cinezik.org/cinema/cinema.php?semaine=25-11-2026",
+   "fiabilite": 3,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S54 \u2014 Metalzone, \u00ab Sorties rock et metal du 20 novembre 2026 : Down revient apr\u00e8s dix-neuf ans, Trivium et Suicide Silence sortent leurs nouveaux albums \u00bb",
+   "ref": "https://www.metalzone.fr/sorties/241897-albums-ep-singles-rock-metal-20-novembre-2026/",
+   "fiabilite": 3,
+   "maj": "20/11/2026"
+  },
+  {
+   "label": "S55 \u2014 Cultures Carrefour, \u00ab Sorties albums novembre 2026 : Pomme, Take That, ATEEZ\u2026 le calendrier \u00bb",
+   "ref": "https://cult.carrefour.fr/sorties-albums-novembre-2026/",
+   "fiabilite": 3,
+   "maj": "11/2026"
+  },
+  {
+   "label": "S56 \u2014 TVA Nouvelles, \u00ab Culture \u2014 archives du samedi 21 novembre 2026 \u00bb (Michel Tremblay revient au th\u00e9\u00e2tre \u00e0 84 ans)",
+   "ref": "https://www.tvanouvelles.ca/actualite/culture/archives/2026/11/21",
+   "fiabilite": 4,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S57 \u2014 SensCritique, \u00ab Sorties du mercredi 25/11/2026 \u00bb (\u00ab Paper Tiger \u00bb, \u00ab Mon beau-p\u00e8re, ma belle-fille et moi \u00bb)",
+   "ref": "https://www.senscritique.com/films/sorties-cinema/2026/semaine/47",
+   "fiabilite": 4,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S58 \u2014 Cine974, \u00ab Les sorties cin\u00e9ma en France du mercredi 25 novembre 2026 \u00bb (\u00ab Forty Love \u00bb de Sacha Gallo)",
+   "ref": "https://www.cine974.com/sorties-cinema/en-france/2026-11-25/",
+   "fiabilite": 3,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S59 \u2014 RFI, \u00ab Rugby : la France balaye l'Argentine et retrouvera l'Afrique du Sud en finale du Championnat des nations \u00bb",
+   "ref": "https://www.rfi.fr/fr/sports/20261121-rugby-france-vs-argentine",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S60 \u2014 Eurosport, \u00ab Championnat des nations, 6e journ\u00e9e : revivez la victoire des Bleus face \u00e0 l'Argentine (45-17, Stade de France) \u00bb",
+   "ref": "https://www.eurosport.fr/rugby/nations-championship/2026/france-argentine_mtc21881267/live.shtml",
+   "fiabilite": 4,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S61 \u2014 20 Minutes, direct \u00ab Championnat des nations \u00bb (Irlande h\u00e9ro\u00efque face aux Springboks, Fidji, Angleterre et All Blacks)",
+   "ref": "https://www.20minutes.fr/sport/rugby/4264246-20261121-direct-championnat-nations-angleterre-etouffe-all-blacks-ecosse-mene-face-japon-suivez-matchs-journee",
+   "fiabilite": 4,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S62 \u2014 RFI (d\u00e9p\u00eache AFP), \u00ab Masters ATP : Alcaraz laisse passer l'orage et renverse Shelton \u00bb (3-6, 6-3, 7-6 [7/1], demi-finale \u00e0 Turin)",
+   "ref": "https://www.rfi.fr/fr/sport/20261121-masters-atp-alcaraz-laisse-passer-l-orage-et-renverse-shelton",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S63 \u2014 FFT, \u00ab Billie Jean King Cup 2026 : les Bleues men\u00e9es par l'Australie \u00bb (Clara Burel et Diane Parry battues, barrage au Portel)",
+   "ref": "https://www.fft.fr/actualites/billie-jean-king-cup-france-australie-premiere-journee-burel-parry-defaite-gibson-hunter",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S64 \u2014 CNews, \u00ab Inondations dans le Pas-de-Calais : le niveau de la Canche a atteint son maximum, pr\u00e8s de 800 personnes \u00e9vacu\u00e9es \u00bb",
+   "ref": "https://www.cnews.fr/france/2026-11-21/inondations-dans-le-pas-de-calais-le-niveau-de-la-canche-atteint-son-maximum-pres",
+   "fiabilite": 4,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S65 \u2014 AFP, d\u00e9p\u00eache du 21/11/2026 \u00ab Crues : la Canche a atteint son maximum, des d\u00e9bordements attendus en Normandie \u00bb (Vigicrues ; r\u00e9f\u00e9rence interne news-kt9IsVhF)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S66 \u2014 AFP, d\u00e9p\u00eache du 21/11/2026 \u00ab Ligue 2 : les r\u00e9sultats de la 13e journ\u00e9e \u00bb (Saint-\u00c9tienne 1-0 \u00e0 Reims, Montpellier battu \u00e0 Laval ; r\u00e9f\u00e9rence interne news-ICk48bUZ)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S67 \u2014 ESPN, \u00ab Reims 0-1 St. \u00c9tienne (Nov 21, 2026) \u00bb (but de Zuriko Davitashvili, 61e)",
+   "ref": "https://www.espn.com/soccer/match/_/gameId/401876684/saint-etienne-stade-de-reims",
+   "fiabilite": 4,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S68 \u2014 AFP, d\u00e9p\u00eache du 21/11/2026 \u00ab Manifestations \u00e0 travers l'Europe contre la guerre et pour la jeunesse \u00bb (Milan, Londres, Amsterdam, Lausanne ; r\u00e9f\u00e9rence interne news-8ylPK6HS)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S69 \u2014 Boursorama (d\u00e9p\u00eache AFP), \u00ab Manifestations \u00e0 travers l'Europe contre la guerre et pour la jeunesse \u00bb",
+   "ref": "https://www.boursorama.com/actualite-economique/actualites/manifestations-a-travers-l-europe-contre-la-guerre-et-pour-la-jeunesse-b8f4cede6482b9ada0a685050ebed687",
+   "fiabilite": 5,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S70 \u2014 Xinhua (fran\u00e7ais), page Chine du 21/11/2026 (Xi Jinping : la Chine \u00ab pr\u00eate \u00e0 renforcer sa coop\u00e9ration avec la Malaisie \u00bb)",
+   "ref": "https://french.news.cn/chine/index.htm",
+   "fiabilite": 4,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S71 \u2014 gov.cn, texte int\u00e9gral \u00ab China-Russia-U.S. Heads of State Declaration toward Peace \u00bb (Shenzhen, 19/11/2026)",
+   "ref": "https://english.www.gov.cn/news/202611/19/content_WS6afeda1ac6d00ca5f9a0e790.html",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S72 \u2014 AFP (via recherche connect\u00e9e), \u00ab Ukraine : l'Europe va rejoindre \"bient\u00f4t\" les n\u00e9gociations de paix, dit Merz \u00bb (chancelier allemand Friedrich Merz, sommet de Berlin ; r\u00e9f\u00e9rence interne news-aCOl7cwx)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S73 \u2014 Institut de relations internationales et strat\u00e9giques (IRIS), \u00ab Guerre en Ukraine : le prix pay\u00e9 par la Russie \u00bb (croissance 2025 : 1 % ; d\u00e9penses militaires : 190 Md$ selon le SIPRI)",
+   "ref": "https://www.institut-sciences-strategiques.org/etats/russie/les-consequences-politiques-et-economiques-de-la-guerre-en-ukraine-pour-la-russie/",
+   "fiabilite": 4,
+   "maj": "18/02/2026"
+  },
+  {
+   "label": "S74 \u2014 DiY/H24, \u00e9ditions du 19, 20 et 22/11/2026 (contexte : sommet trilat\u00e9ral de Shenzhen et coalition de Berlin, IPO Anthropic, Deutsche Telekom-Mistral, e-blocus et Nintendo, Game Awards, Unicef-Teddy Riner, PLFSS 2027 et croissance \u00ab \u00e0 risque \u00bb, rougeole aux \u00c9tats-Unis, 2026 deuxi\u00e8me ann\u00e9e la plus chaude (Copernicus), p\u00e9troliers de l'Ormuz, folie GTA VI en Asie, ventes de jeux aux adultes, r\u00e9f\u00e9rendum de Barnham, Cap-Vert, proc\u00e8s Chahinez Daoud)",
+   "ref": "https://diyeah24.fr/editions/2026-11-22.html",
+   "fiabilite": 5,
+   "maj": "22/11/2026"
+  },
+  {
+   "label": "S76 \u2014 NFSI Analyse des risques g\u00e9opolitiques, \u00ab Le sommet de Shenzhen fa\u00e7on\u2026 \u00bb (Chine, 21/11/2026)",
+   "ref": "https://nationfiles.com/fr/country/chn/news/n51845/",
+   "fiabilite": 3,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S77 \u2014 AFP (via recherche connect\u00e9e), \u00ab Verbatim de la d\u00e9claration commune apr\u00e8s le sommet entre Trump, Poutine et Xi \u00bb (r\u00e9f\u00e9rence interne news-Pu3dlGfR)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "19/11/2026"
+  },
+  {
+   "label": "S78 \u2014 RTL, \u00ab \"Je prends acte de l'impasse\" : Fran\u00e7ois Ruffin retire sa candidature \u00e0 la pr\u00e9sidentielle 2027 et souhaite \"bonne campagne\" aux candidats de gauche \u00bb",
+   "ref": "https://www.rtl.fr/actu/politique/je-prends-acte-de-l-impasse-francois-ruffin-retire-sa-candidature-a-la-presidentielle-2027-et-souhaite-bonne-campagne-aux-candidats-de-gauche-7900699015",
+   "fiabilite": 4,
+   "maj": "21/11/2026"
+  },
+  {
+   "label": "S79 \u2014 Euronews (FR), \u00ab L'avion \u00e9lectrique chinois CE-25A r\u00e9ussit son premier vol habit \u00bb (Comac, 19 places, 16/11/2026)",
+   "ref": "https://fr.euronews.com/2026/11/15/avion-electrique-chinois-ce-25a-de-comac-reussit-son-premier-vol-habite",
+   "fiabilite": 4,
+   "maj": "15/11/2026"
+  }
+ ],
+ "hors_chapitres": [
+  "Rugby, Championnat des nations : la France a balay\u00e9 l'Argentine 45\u201317 au Stade de France et rejoindra l'Afrique du Sud \u2014 tombeuse samedi d'une Irlande h\u00e9ro\u00efque \u2014 en finale de la comp\u00e9tition (S59)(S60)(S61).",
+  "Football, Ligue 2 : le leader Saint-\u00c9tienne s'est impos\u00e9 1\u20130 \u00e0 Reims gr\u00e2ce \u00e0 Zuriko Davitashvili (61e) et prend le large en t\u00eate, tandis que Montpellier (3e) a conc\u00e9d\u00e9 une deuxi\u00e8me d\u00e9faite d'affil\u00e9e sur la pelouse de Laval (1\u20130) (S66)(S67).",
+  "Tennis, Masters ATP : Carlos Alcaraz a renvers\u00e9 Ben Shelton (3\u20136, 6\u20133, 7\u20136 [7/1]) en demi-finale \u00e0 Turin malgr\u00e9 un d\u00e9but compl\u00e8tement rat\u00e9, et vise une treizi\u00e8me victoire cons\u00e9cutive en finale dimanche (S62).",
+  "Tennis, Billie Jean King Cup : la France est dos au mur au Portel apr\u00e8s les deux premiers simples perdus contre l'Australie \u2014 Clara Burel et Diane Parry se sont inclin\u00e9es samedi (2\u20130 pour les Australiennes) (S63).",
+  "Inondations : le niveau de la Canche, dans le Pas-de-Calais, a atteint son maximum avec pr\u00e8s de 800 personnes \u00e9vacu\u00e9es depuis jeudi selon la pr\u00e9fecture ; la Lys est pass\u00e9e en vigilance orange samedi matin, et Vigicrues attend des d\u00e9bordements en Normandie (S64)(S65).",
+  "Manifestations en Europe : de Milan \u00e0 Londres en passant par Amsterdam et Lausanne, des dizaines de milliers de manifestants se sont mobilis\u00e9s vendredi et dans le week-end contre la \u00ab militarisation \u00bb de la soci\u00e9t\u00e9 et pour l'avenir des jeunes (S68)(S69).",
+  "Soci\u00e9t\u00e9 britannique : le village de Barnham a vot\u00e9 en faveur de son \u00ab ind\u00e9pendance \u00bb du Royaume-Uni (257 voix) lors d'un r\u00e9f\u00e9rendum symbolique contre un centre d'accueil de demandeurs d'asile, sans valeur juridique (S74).",
+  "Cap-Vert : la commission \u00e9lectorale a confirm\u00e9 la r\u00e9\u00e9lection du pr\u00e9sident sortant Jos\u00e9 Maria Neves pour un second mandat de cinq ans (S74).",
+  "Justice : le proc\u00e8s en appel de l'ex-mari de Chahinez Daoud, br\u00fbl\u00e9e vive en 2021, s'est ouvert ; la d\u00e9fense demande que l'alt\u00e9ration du discernement reconnue chez l'accus\u00e9 soit au c\u0153ur des d\u00e9bats, jusqu'au 27 novembre (S74).",
+  "Consommation : les adolescents et adultes repr\u00e9sentent d\u00e9sormais un tiers des ventes de jeux en France, un niveau in\u00e9dit qui compense la baisse des naissances \u00e0 quelques semaines de No\u00ebl (S74)."
+ ]
+}
