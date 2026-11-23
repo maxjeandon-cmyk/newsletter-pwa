@@ -1,5 +1,5 @@
 {
-  "maj": "20/11/2026 12:29",
+  "maj": "23/11/2026 13:26",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -19,6 +19,19 @@
     "Mercredi 7 octobre (lendemain de l'acte III) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
   ],
   "version_gouvernement": [
+    {
+      "id": "amwt8p87y-4lio",
+      "date": "23/11/2026",
+      "titre": "Colère des lycéens : Peu d’établissements bloqués mais davantage de violences avec 98 élèves blessés la semaine dernière",
+      "texte": "Le ministre de l’Éducation nationale, Édouard Geffray, a fait état ce lundi sur LCI de 98 élèves et d’une « trentaine » de professionnels blessés la semaine dernière",
+      "source": "20 minutes / Libération",
+      "sources": [
+        "20 minutes",
+        "Libération"
+      ],
+      "url": "https://www.20minutes.fr/societe/4265035-20261123-colere-lyceens-peu-etablissements-bloques-davantage-violences-98-eleves-blesses?at_medium=display&at_campaign=149",
+      "verifie": true
+    },
     {
       "id": "amwo4uap2-eb1c",
       "date": "19/11/2026",
@@ -183,23 +196,6 @@
         "La Croix"
       ],
       "url": "https://www.bfmtv.com/politique/gouvernement/une-augmentation-certaine-du-niveau-de-violence-le-gouvernement-veut-une-saisine-de-la-justice-systematique-pour-les-actes-delictueux-pres-des-lycees_AD-202611120440.html",
-      "verifie": true
-    },
-    {
-      "id": "amwb6xs0n-12cr",
-      "date": "10/11/2026",
-      "titre": "Ce que l'on sait de l'agression d'une élue touchée par un jet de bouteille d'essence devant un lycée à Chelles",
-      "texte": "Une conseillère régionale d'Île-de-France et adjointe au maire, a été touchée par un jet de bouteille d'essence devant un lycée à Chelles, en Seine-et-Marne. Le ministre de l'Éducation nationale Édou…",
-      "source": "20 minutes / Europe 1 / BFMTV / franceinfo / L'Humanité / Libération",
-      "sources": [
-        "20 minutes",
-        "Europe 1",
-        "BFMTV",
-        "franceinfo",
-        "L'Humanité",
-        "Libération"
-      ],
-      "url": "https://www.bfmtv.com/police-justice/ce-que-l-on-sait-de-l-agression-d-une-elue-touchee-par-un-jet-de-bouteille-d-essence-devant-un-lycee-a-chelles_AV-202611100687.html",
       "verifie": true
     }
   ],
