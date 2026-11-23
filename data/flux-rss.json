@@ -1004,6 +1004,46 @@
         "https://www.tomshardware.fr/feed/"
       ],
       "ligne": "matériel, composants et tests"
+    },
+    {
+      "id": "futura-sciences",
+      "nom": "Futura Sciences",
+      "emoji": "🔭",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.futura-sciences.com/rss/actualites.xml"
+      ],
+      "ligne": "sciences et découvertes vulgarisées"
+    },
+    {
+      "id": "le-monde-sciences",
+      "nom": "Le Monde — Sciences",
+      "emoji": "🔬",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.lemonde.fr/sciences/rss_full.xml"
+      ],
+      "ligne": "les sciences par le Monde"
+    },
+    {
+      "id": "spacenews",
+      "nom": "SpaceNews",
+      "emoji": "🚀",
+      "categorie": "Spatial 🚀",
+      "flux": [
+        "https://spacenews.com/feed/"
+      ],
+      "ligne": "industrie et politique spatiales"
+    },
+    {
+      "id": "les-inrocks-culture",
+      "nom": "Les Inrockuptibles",
+      "emoji": "🎭",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.lesinrocks.com/feed/"
+      ],
+      "ligne": "musique, cinéma et idées par Les Inrocks"
     }
   ]
 }
