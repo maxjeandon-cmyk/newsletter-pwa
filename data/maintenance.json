@@ -1,10 +1,10 @@
 {
-  "date": "22/11/2026",
-  "heure": "21:01",
+  "date": "23/11/2026",
+  "heure": "01:39",
   "relevesOng": {
-    "rafraichis": 0,
+    "rafraichis": 9,
     "echecs": 1,
-    "publie": false
+    "publie": true
   },
   "lyceens": {
     "nouvelles": 0,
@@ -23,13 +23,13 @@
   "verifs": [
     {
       "nom": "validate-latest.js",
-      "ok": true,
-      "detail": "\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 20/11/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n\nToutes les éditions récentes sont conformes. 🌱"
+      "ok": false,
+      "detail": "  ✅ boutons avec data-resume — trouvé(s)=15\n  ✅ <script> de partage équilibré\n\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 20/11/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n1 édition(s) non conforme(s).\n"
     },
     {
       "nom": "check-site.js",
-      "ok": true,
-      "detail": "=== check-site ===\nℹ️  latest.json : 57 édition(s), plus récente 2026-11-22\nℹ️  édition 2026-11-22 : JSON OK, HTML 93249 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
+      "ok": false,
+      "detail": "=== check-site ===\nℹ️  latest.json : 57 édition(s), plus récente 2026-11-22\nℹ️  édition 2026-11-22 : JSON OK, HTML 63754 octets, structure OK\nℹ️  site public joignable (1461 octets)\n❌ editions/2026-11-22.html incomplet (pas de </html>)\n\n1 problème(s) — publication à corriger."
     },
     {
       "nom": "sonde notifications",
@@ -38,8 +38,8 @@
     },
     {
       "nom": "ong-releve.js",
-      "ok": false,
-      "detail": "0 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
+      "ok": true,
+      "detail": "9 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
     },
     {
       "nom": "lyceens.js",
@@ -52,6 +52,9 @@
       "detail": "0 info(s) des dernières heures, 0 paragraphe(s) ajouté(s)"
     }
   ],
-  "problemes": [],
-  "intervention": "Aucune intervention nécessaire : éditions et site publics conformes."
+  "problemes": [
+    "validate-latest.js",
+    "check-site.js"
+  ],
+  "intervention": "Anomalies détectées — aucune correction automatique appliquée (éditions/ figé) : correction manuelle requise."
 }
