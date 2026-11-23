@@ -1,52 +1,58 @@
 {
-  "semaines": [
-    {
-      "semaine": "2026-S47",
-      "lundi": "2026-11-16",
-      "json": "editions/semaines/2026-S47.json",
-      "html": "editions/semaines/2026-S47.html"
-    },
-    {
-      "semaine": "2026-S46",
-      "lundi": "2026-11-09",
-      "json": "editions/semaines/2026-S46.json",
-      "html": "editions/semaines/2026-S46.html"
-    },
-    {
-      "semaine": "2026-S45",
-      "lundi": "2026-11-02",
-      "json": "editions/semaines/2026-S45.json",
-      "html": "editions/semaines/2026-S45.html"
-    },
-    {
-      "semaine": "2026-S44",
-      "lundi": "2026-10-26",
-      "json": "editions/semaines/2026-S44.json",
-      "html": "editions/semaines/2026-S44.html"
-    },
-    {
-      "semaine": "2026-S43",
-      "lundi": "2026-10-19",
-      "json": "editions/semaines/2026-S43.json",
-      "html": "editions/semaines/2026-S43.html"
-    },
-    {
-      "semaine": "2026-S42",
-      "lundi": "2026-10-12",
-      "json": "editions/semaines/2026-S42.json",
-      "html": "editions/semaines/2026-S42.html"
-    },
-    {
-      "semaine": "2026-S41",
-      "lundi": "2026-10-05",
-      "json": "editions/semaines/2026-S41.json",
-      "html": "editions/semaines/2026-S41.html"
-    },
-    {
-      "semaine": "2026-S40",
-      "lundi": "2026-09-28",
-      "json": "editions/semaines/2026-S40.json",
-      "html": "editions/semaines/2026-S40.html"
-    }
-  ]
+ "semaines": [
+  {
+   "semaine": "2026-S48",
+   "lundi": "2026-11-23",
+   "json": "editions/semaines/2026-S48.json",
+   "html": "editions/semaines/2026-S48.html"
+  },
+  {
+   "semaine": "2026-S47",
+   "lundi": "2026-11-16",
+   "json": "editions/semaines/2026-S47.json",
+   "html": "editions/semaines/2026-S47.html"
+  },
+  {
+   "semaine": "2026-S46",
+   "lundi": "2026-11-09",
+   "json": "editions/semaines/2026-S46.json",
+   "html": "editions/semaines/2026-S46.html"
+  },
+  {
+   "semaine": "2026-S45",
+   "lundi": "2026-11-02",
+   "json": "editions/semaines/2026-S45.json",
+   "html": "editions/semaines/2026-S45.html"
+  },
+  {
+   "semaine": "2026-S44",
+   "lundi": "2026-10-26",
+   "json": "editions/semaines/2026-S44.json",
+   "html": "editions/semaines/2026-S44.html"
+  },
+  {
+   "semaine": "2026-S43",
+   "lundi": "2026-10-19",
+   "json": "editions/semaines/2026-S43.json",
+   "html": "editions/semaines/2026-S43.html"
+  },
+  {
+   "semaine": "2026-S42",
+   "lundi": "2026-10-12",
+   "json": "editions/semaines/2026-S42.json",
+   "html": "editions/semaines/2026-S42.html"
+  },
+  {
+   "semaine": "2026-S41",
+   "lundi": "2026-10-05",
+   "json": "editions/semaines/2026-S41.json",
+   "html": "editions/semaines/2026-S41.html"
+  },
+  {
+   "semaine": "2026-S40",
+   "lundi": "2026-09-28",
+   "json": "editions/semaines/2026-S40.json",
+   "html": "editions/semaines/2026-S40.html"
+  }
+ ]
 }

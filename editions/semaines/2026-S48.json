@@ -1,0 +1,42 @@
+{
+ "semaine": "2026-S48",
+ "lundi": "2026-11-23",
+ "html": "editions/semaines/2026-S48.html",
+ "jours": [
+  {
+   "jour": "lundi",
+   "date": "2026-11-23",
+   "essentiel": "Les Bourses mondiales ont pari\u00e9 sur le rebond apr\u00e8s une semaine de correction sur l'IA : Paris +0,75 % et Francfort +0,92 % \u00e0 la mi-s\u00e9ance apr\u00e8s l'annonce du retour de Jensen Huang \u00e0 la t\u00eate de Nvidia, sous la pression de Donald Trump qui assure que le patron n'\u00e9tait \u00ab pas au courant \u00bb de la contrebande de puces vers la Chine. En France, l'\u00e9dition nationale de Choose France a c\u00e9l\u00e9br\u00e9 273 projets et pr\u00e8s de 15 milliards d'euros d'investissements, Emmanuel Macron confirmant par ailleurs \u00ab explorer l'id\u00e9e \u00bb d'une r\u00e8gle d'or budg\u00e9taire dans la Constitution, quand la mobilisation sociale se poursuivait \u2014 98 lyc\u00e9ens bless\u00e9s la semaine derni\u00e8re selon le ministre de l'\u00c9ducation, appel intersyndical du 26 novembre dans le sup\u00e9rieur \u2014 et que l'activit\u00e9 du secteur priv\u00e9 tombait \u00e0 son plus bas depuis six mois. Le lendemain de l'\u00e9chec de la COP31 d'Antalya, l'indignation gagnait les acteurs du climat, l'Arabie saoudite passait sous le feu des critiques et la Chine se disait \u00ab d\u00e9\u00e7ue \u00bb tout en jugeant la transition verte \u00ab irr\u00e9versible \u00bb. Volodymyr Zelensky a appel\u00e9 \u00e0 des n\u00e9gociations de paix incluant l'Europe \u00ab le plus t\u00f4t possible \u00bb et revendiqu\u00e9 l'attaque de deux navires russes au large de la Libye ; l'Otan a promis de d\u00e9fendre ses alli\u00e9s \u00ab jusque dans l'espace \u00bb apr\u00e8s la r\u00e9v\u00e9lation d'un projet russe de satellite nucl\u00e9aire. Et la banque Delubac a r\u00e9v\u00e9l\u00e9 une cyberattaque avec fuite de donn\u00e9es client\u00e8le, tandis que le hacker de GTA VI \u00e9tait condamn\u00e9 \u00e0 sept ans de prison, quelques jours apr\u00e8s le lancement record du jeu de Rockstar."
+  },
+  {
+   "jour": "mardi",
+   "date": "2026-11-24",
+   "essentiel": null
+  },
+  {
+   "jour": "mercredi",
+   "date": "2026-11-25",
+   "essentiel": null
+  },
+  {
+   "jour": "jeudi",
+   "date": "2026-11-26",
+   "essentiel": null
+  },
+  {
+   "jour": "vendredi",
+   "date": "2026-11-27",
+   "essentiel": null
+  },
+  {
+   "jour": "samedi",
+   "date": "2026-11-28",
+   "essentiel": null
+  },
+  {
+   "jour": "dimanche",
+   "date": "2026-11-29",
+   "essentiel": null
+  }
+ ]
+}
