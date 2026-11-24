@@ -109,609 +109,609 @@
  ],
  "sources": [
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab L\u2019action Anthropic passe sous son prix d\u2019introduction en Bourse \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-fc7df647)",
+   "label": "S1 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab L\u2019action Anthropic passe sous son prix d\u2019introduction en Bourse \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-fc7df647)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Wall Street ouvre en recul, min\u00e9e par Nvidia \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-9402824b)",
+   "label": "S2 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Wall Street ouvre en recul, min\u00e9e par Nvidia \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-9402824b)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Nvidia : Washington cible le d\u00e9tournement de puces vers la Chine \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-cade4560)",
+   "label": "S3 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Nvidia : Washington cible le d\u00e9tournement de puces vers la Chine \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-cade4560)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Le chef de l\u2019ONU appelle \u00e0 \u00e9tablir d\u2019ici un an un m\u00e9canisme limitant les risques pos\u00e9s par l\u2019IA \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-b6bca58e)",
+   "label": "S4 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Le chef de l\u2019ONU appelle \u00e0 \u00e9tablir d\u2019ici un an un m\u00e9canisme limitant les risques pos\u00e9s par l\u2019IA \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-b6bca58e)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Les rabbins d\u2019Europe s\u2019inqui\u00e8tent de l\u2019antis\u00e9mitisme propag\u00e9 par l\u2019IA \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-2c83e816)",
+   "label": "S5 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Les rabbins d\u2019Europe s\u2019inqui\u00e8tent de l\u2019antis\u00e9mitisme propag\u00e9 par l\u2019IA \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-2c83e816)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Temp\u00eate politique autour de Trump apr\u00e8s le rappel de Huang \u00e0 la t\u00eate de Nvidia \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-68519b93)",
+   "label": "S6 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Temp\u00eate politique autour de Trump apr\u00e8s le rappel de Huang \u00e0 la t\u00eate de Nvidia \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-68519b93)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab \u201cJe serai un meilleur PDG cette fois-ci\u201d : retour de Jensen Huang chez Nvidia apr\u00e8s le scandale \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-3957d282)",
+   "label": "S7 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab \u201cJe serai un meilleur PDG cette fois-ci\u201d : retour de Jensen Huang chez Nvidia apr\u00e8s le scandale \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-3957d282)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Les Bourses mondiales bondissent apr\u00e8s le retour de Jensen Huang \u00e0 la t\u00eate de Nvidia \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-9b21d345)",
+   "label": "S8 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Les Bourses mondiales bondissent apr\u00e8s le retour de Jensen Huang \u00e0 la t\u00eate de Nvidia \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-9b21d345)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Les Bourses d\u2019Asie continuent de chuter face aux inqui\u00e9tudes sur l\u2019IA, S\u00e9oul en t\u00eate \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-11b15b70)",
+   "label": "S9 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Les Bourses d\u2019Asie continuent de chuter face aux inqui\u00e9tudes sur l\u2019IA, S\u00e9oul en t\u00eate \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-11b15b70)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Royaume-Uni : vaste essai de d\u00e9pistage du cancer du sein assist\u00e9 par l\u2019IA \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-fa7faf99)",
+   "label": "S10 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Royaume-Uni : vaste essai de d\u00e9pistage du cancer du sein assist\u00e9 par l\u2019IA \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-fa7faf99)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab L\u2019IA, nouvel outil des recruteurs pour d\u00e9nicher les jeunes talents du football \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-f0680c9b)",
+   "label": "S11 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab L\u2019IA, nouvel outil des recruteurs pour d\u00e9nicher les jeunes talents du football \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-f0680c9b)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AP, d\u00e9p\u00eache du 24/11/2026 \u00ab Tech stocks wane a day after a Huang rally as Anthropic tumbles below its initial offering price \u00bb (r\u00e9f\u00e9rence interne news-ap-20261124-88d5591d)",
+   "label": "S12 \u2014 AP, d\u00e9p\u00eache du 24/11/2026 \u00ab Tech stocks wane a day after a Huang rally as Anthropic tumbles below its initial offering price \u00bb (r\u00e9f\u00e9rence interne news-ap-20261124-88d5591d)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Berlin se dit \u201cchoqu\u00e9\u201d par \u201cl\u2019intervention\u201d de Trump en faveur du patron de Nvidia \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-6b16c615)",
+   "label": "S13 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Berlin se dit \u201cchoqu\u00e9\u201d par \u201cl\u2019intervention\u201d de Trump en faveur du patron de Nvidia \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-6b16c615)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Guyane : Ariane 6 r\u00e9ussit son dixi\u00e8me vol en d\u00e9ployant 36 satellites Amazon Leo \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-ba064963)",
+   "label": "S14 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Guyane : Ariane 6 r\u00e9ussit son dixi\u00e8me vol en d\u00e9ployant 36 satellites Amazon Leo \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-ba064963)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab D\u00e9collage mercredi du premier astronaute \u00e9tranger d\u2019une mission spatiale chinoise \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-66701a97)",
+   "label": "S15 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab D\u00e9collage mercredi du premier astronaute \u00e9tranger d\u2019une mission spatiale chinoise \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-66701a97)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Le fonds am\u00e9ricain Cerberus ach\u00e8te une filiale spatiale am\u00e9ricaine d\u2019Airbus \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-fd03c057)",
+   "label": "S16 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Le fonds am\u00e9ricain Cerberus ach\u00e8te une filiale spatiale am\u00e9ricaine d\u2019Airbus \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-fd03c057)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Belgique : inauguration de la plus grande usine de satellites en Europe \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-e81de9bb)",
+   "label": "S17 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Belgique : inauguration de la plus grande usine de satellites en Europe \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-e81de9bb)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab L\u2019Otan se dit pr\u00eate \u00e0 se d\u00e9fendre, apr\u00e8s un article sur un projet de satellite nucl\u00e9aire russe \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-dbe5d24c)",
+   "label": "S18 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab L\u2019Otan se dit pr\u00eate \u00e0 se d\u00e9fendre, apr\u00e8s un article sur un projet de satellite nucl\u00e9aire russe \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-dbe5d24c)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Le p\u00e9trole se stabilise avec des espoirs sur la diplomatie au Moyen-Orient \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-e4a297e1)",
+   "label": "S19 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Le p\u00e9trole se stabilise avec des espoirs sur la diplomatie au Moyen-Orient \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-e4a297e1)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Le programme d\u2019emprunts de la France r\u00e9alis\u00e9 pour 2026, selon Lescure \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-057a18b3)",
+   "label": "S20 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Le programme d\u2019emprunts de la France r\u00e9alis\u00e9 pour 2026, selon Lescure \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-057a18b3)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab La livre soutenue par l\u2019anticipation d\u2019un nouveau tour de vis de la Banque d\u2019Angleterre \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-12e41289)",
+   "label": "S21 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab La livre soutenue par l\u2019anticipation d\u2019un nouveau tour de vis de la Banque d\u2019Angleterre \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-12e41289)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Budget : le S\u00e9nat approuve et allonge un dispositif pour inciter aux dons d\u2019argent entre g\u00e9n\u00e9rations \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-bab2f671)",
+   "label": "S22 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Budget : le S\u00e9nat approuve et allonge un dispositif pour inciter aux dons d\u2019argent entre g\u00e9n\u00e9rations \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-bab2f671)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Budget : Lecornu tend la main aux parlementaires pour un compromis, sans toucher au d\u00e9ficit \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-37cf7db6)",
+   "label": "S23 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Budget : Lecornu tend la main aux parlementaires pour un compromis, sans toucher au d\u00e9ficit \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-37cf7db6)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Budget : Amiel verrait \u201cun paradoxe\u201d \u00e0 ce qu\u2019il n\u2019y ait pas de compromis \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-b03e7be3)",
+   "label": "S24 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Budget : Amiel verrait \u201cun paradoxe\u201d \u00e0 ce qu\u2019il n\u2019y ait pas de compromis \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-b03e7be3)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Budget : le S\u00e9nat revoit la niche fiscale des retrait\u00e9s, sans la supprimer \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-2fcae1c7)",
+   "label": "S25 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Budget : le S\u00e9nat revoit la niche fiscale des retrait\u00e9s, sans la supprimer \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-2fcae1c7)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab La remont\u00e9e des taux d\u2019int\u00e9r\u00eat fait reculer les prix des logements anciens au troisi\u00e8me trimestre \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-6a439b4f)",
+   "label": "S26 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab La remont\u00e9e des taux d\u2019int\u00e9r\u00eat fait reculer les prix des logements anciens au troisi\u00e8me trimestre \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-6a439b4f)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Zone euro : le secteur priv\u00e9 maintient sa croissance, malgr\u00e9 les manifestations en France \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-3684f5c2)",
+   "label": "S27 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Zone euro : le secteur priv\u00e9 maintient sa croissance, malgr\u00e9 les manifestations en France \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-3684f5c2)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab France : l\u2019activit\u00e9 du secteur priv\u00e9 en novembre au plus bas depuis six mois (PMI flash) \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-ebeaa243)",
+   "label": "S28 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab France : l\u2019activit\u00e9 du secteur priv\u00e9 en novembre au plus bas depuis six mois (PMI flash) \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-ebeaa243)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab El Ni\u00f1o : l\u2019essentiel de la semaine \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-f6ace40f)",
+   "label": "S29 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab El Ni\u00f1o : l\u2019essentiel de la semaine \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-f6ace40f)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "L\u00e9gifrance, Code g\u00e9n\u00e9ral des imp\u00f4ts (articles 666 et 779)",
+   "label": "S30 \u2014 L\u00e9gifrance, Code g\u00e9n\u00e9ral des imp\u00f4ts (articles 666 et 779)",
    "ref": "https://www.legifrance.gouv.fr",
-   "fiabilite": "5/5",
-   "maj": "consult\u00e9 le 24/11/2026"
+   "fiabilite": 5,
+   "maj": "24/11/2026"
   },
   {
-   "label": "service-public.fr, fiches successions et don manuel",
+   "label": "S31 \u2014 service-public.fr, fiches successions et don manuel",
    "ref": "https://www.service-public.fr",
-   "fiabilite": "5/5",
-   "maj": "consult\u00e9 le 24/11/2026"
-  },
-  {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab \u201cGTA VI\u201d marque \u201cle plus grand lancement de l\u2019histoire de PlayStation\u201d (Sony) \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-c2caef6e)",
-   "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Le hacker qui avait fait fuiter des vid\u00e9os de GTA VI condamn\u00e9 \u00e0 sept ans de prison \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-099e2477)",
+   "label": "S32 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab \u201cGTA VI\u201d marque \u201cle plus grand lancement de l\u2019histoire de PlayStation\u201d (Sony) \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-c2caef6e)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
+   "maj": "24/11/2026"
+  },
+  {
+   "label": "S33 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Le hacker qui avait fait fuiter des vid\u00e9os de GTA VI condamn\u00e9 \u00e0 sept ans de prison \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-099e2477)",
+   "ref": "",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AP, d\u00e9p\u00eache du 24/11/2026 \u00ab \u201cThe Blood of Dawnwalker\u201d and \u201cGrand Theft Auto VI\u201d lead the AP\u2019s list of 2026 top video games \u00bb (r\u00e9f\u00e9rence interne news-ap-20261124-8ab56ad6)",
+   "label": "S34 \u2014 AP, d\u00e9p\u00eache du 24/11/2026 \u00ab \u201cThe Blood of Dawnwalker\u201d and \u201cGrand Theft Auto VI\u201d lead the AP\u2019s list of 2026 top video games \u00bb (r\u00e9f\u00e9rence interne news-ap-20261124-8ab56ad6)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AP, d\u00e9p\u00eache du 23/11/2026 \u00ab \u201cGrand Theft Auto VI\u201d lives up to its hype with compelling characters and spectacular action \u00bb (r\u00e9f\u00e9rence interne news-ap-20261123-252481eb)",
+   "label": "S35 \u2014 AP, d\u00e9p\u00eache du 23/11/2026 \u00ab \u201cGrand Theft Auto VI\u201d lives up to its hype with compelling characters and spectacular action \u00bb (r\u00e9f\u00e9rence interne news-ap-20261123-252481eb)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AP, d\u00e9p\u00eache du 24/11/2026 \u00ab U2 says their new album is about \u2018defiant joy\u2019 \u00bb (r\u00e9f\u00e9rence interne news-ap-20261124-cfecdabd)",
+   "label": "S36 \u2014 AP, d\u00e9p\u00eache du 24/11/2026 \u00ab U2 says their new album is about \u2018defiant joy\u2019 \u00bb (r\u00e9f\u00e9rence interne news-ap-20261124-cfecdabd)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Plus que cinq pr\u00e9tendants au Goncourt des lyc\u00e9ens 2026, dont Sylvain Prudhomme \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-55e7adab)",
+   "label": "S37 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Plus que cinq pr\u00e9tendants au Goncourt des lyc\u00e9ens 2026, dont Sylvain Prudhomme \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-55e7adab)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab France : la justice se prononce jeudi sur le renvoi de G\u00e9rard Depardieu en proc\u00e8s pour viols \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-1f82f5df)",
+   "label": "S38 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab France : la justice se prononce jeudi sur le renvoi de G\u00e9rard Depardieu en proc\u00e8s pour viols \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-1f82f5df)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Un concert du rappeur Don Toliver \u00e9vacu\u00e9 apr\u00e8s la diffusion d\u2019une \u201csubstance inconnue\u201d \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-dd58c81d)",
+   "label": "S39 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Un concert du rappeur Don Toliver \u00e9vacu\u00e9 apr\u00e8s la diffusion d\u2019une \u201csubstance inconnue\u201d \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-dd58c81d)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Iran lashes singer dozens of times over concert \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-a1d2db44)",
+   "label": "S40 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Iran lashes singer dozens of times over concert \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-a1d2db44)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab A Dallas, un cin\u00e9ma fait revivre le jour de l\u2019assassinat de JFK \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-76a78691)",
+   "label": "S41 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab A Dallas, un cin\u00e9ma fait revivre le jour de l\u2019assassinat de JFK \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-76a78691)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Syria group rejects planned film about \u201cCaesar\u201d civil war whistleblower \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-17f15942)",
+   "label": "S42 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Syria group rejects planned film about \u201cCaesar\u201d civil war whistleblower \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-17f15942)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab \u201cPolluants \u00e9ternels\u201d : des taux \u00e9lev\u00e9s dans le sang des salari\u00e9s de la chimie, selon une \u00e9tude \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-f03f9b55)",
+   "label": "S43 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab \u201cPolluants \u00e9ternels\u201d : des taux \u00e9lev\u00e9s dans le sang des salari\u00e9s de la chimie, selon une \u00e9tude \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-f03f9b55)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Les alertes canicules dans l\u2019Hexagone associ\u00e9es \u00e0 une baisse de mortalit\u00e9, surtout des plus \u00e2g\u00e9s \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-6af310b6)",
+   "label": "S44 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Les alertes canicules dans l\u2019Hexagone associ\u00e9es \u00e0 une baisse de mortalit\u00e9, surtout des plus \u00e2g\u00e9s \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-6af310b6)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Face aux dangers du protoxyde d\u2019azote, le gouvernement outille les maires \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-b83f1e1e)",
+   "label": "S45 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Face aux dangers du protoxyde d\u2019azote, le gouvernement outille les maires \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-b83f1e1e)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Pesticides/UE : 52 soci\u00e9t\u00e9s savantes demandent la suspension du projet Omnibus \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-82838add)",
+   "label": "S46 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Pesticides/UE : 52 soci\u00e9t\u00e9s savantes demandent la suspension du projet Omnibus \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-82838add)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Pesticides illimit\u00e9s : vote repouss\u00e9 \u00e0 2027 au Parlement europ\u00e9en \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-84b7211b)",
+   "label": "S47 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Pesticides illimit\u00e9s : vote repouss\u00e9 \u00e0 2027 au Parlement europ\u00e9en \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-84b7211b)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Accidents du travail : le passeport pr\u00e9vention ouvert \u00e0 l\u2019ensemble des actifs \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-982bda43)",
+   "label": "S48 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Accidents du travail : le passeport pr\u00e9vention ouvert \u00e0 l\u2019ensemble des actifs \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-982bda43)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 22/11/2026 \u00ab Climat : indignation et appels aux r\u00e9formes apr\u00e8s le \u201cterrible\u201d \u00e9chec de la COP31 \u00bb (r\u00e9f\u00e9rence interne news-afp-20261122-491a3b24)",
+   "label": "S49 \u2014 AFP, d\u00e9p\u00eache du 22/11/2026 \u00ab Climat : indignation et appels aux r\u00e9formes apr\u00e8s le \u201cterrible\u201d \u00e9chec de la COP31 \u00bb (r\u00e9f\u00e9rence interne news-afp-20261122-491a3b24)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "22/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Quel avenir pour les discussions climatiques apr\u00e8s l\u2019\u00e9chec de la COP31 ? \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-b8b6b96f)",
+   "label": "S50 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Quel avenir pour les discussions climatiques apr\u00e8s l\u2019\u00e9chec de la COP31 ? \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-b8b6b96f)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Echec de la COP31 : P\u00e9kin se dit d\u00e9\u00e7ue, mais assure que la transition verte est \u201cirr\u00e9versible\u201d \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-ca1c3056)",
+   "label": "S51 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Echec de la COP31 : P\u00e9kin se dit d\u00e9\u00e7ue, mais assure que la transition verte est \u201cirr\u00e9versible\u201d \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-ca1c3056)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Le p\u00e9trole chute avec l\u2019anticipation d\u2019un surplus d\u2019offre malgr\u00e9 le conflit au Moyen-Orient \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-a6cb482b)",
+   "label": "S52 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Le p\u00e9trole chute avec l\u2019anticipation d\u2019un surplus d\u2019offre malgr\u00e9 le conflit au Moyen-Orient \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-a6cb482b)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Lisnard double Philippe dans un sondage, Le Pen perd jusqu\u2019\u00e0 5 points \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-3414c218)",
+   "label": "S53 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Lisnard double Philippe dans un sondage, Le Pen perd jusqu\u2019\u00e0 5 points \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-3414c218)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Pr\u00e9sidentielle : \u00c9douard Philippe, les creux de l\u2019automne et l\u2019impr\u00e9vu Lisnard \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-0532a9b1)",
+   "label": "S54 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Pr\u00e9sidentielle : \u00c9douard Philippe, les creux de l\u2019automne et l\u2019impr\u00e9vu Lisnard \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-0532a9b1)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab France : \u00c9douard Philippe, candidat \u00e0 la pr\u00e9sidentielle, vis\u00e9 par une enqu\u00eate \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-6e365d5c)",
+   "label": "S55 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab France : \u00c9douard Philippe, candidat \u00e0 la pr\u00e9sidentielle, vis\u00e9 par une enqu\u00eate \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-6e365d5c)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab France : pas de visites \u00e0 l\u2019\u00e9tranger pour Marine Le Pen durant la campagne pr\u00e9sidentielle \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-16b0afec)",
+   "label": "S56 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab France : pas de visites \u00e0 l\u2019\u00e9tranger pour Marine Le Pen durant la campagne pr\u00e9sidentielle \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-16b0afec)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Le Pen esquisse sa \u201cgrande r\u00e9forme territoriale\u201d et promet une \u201cpolitique des campagnes\u201d \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-10091b32)",
+   "label": "S57 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Le Pen esquisse sa \u201cgrande r\u00e9forme territoriale\u201d et promet une \u201cpolitique des campagnes\u201d \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-10091b32)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Philippe a vot\u00e9 pour Lisnard \u00e0 l\u2019AMF mais l\u2019\u00e9gratigne dans la course \u00e0 l\u2019\u00c9lys\u00e9e \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-6c5303d9)",
+   "label": "S58 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Philippe a vot\u00e9 pour Lisnard \u00e0 l\u2019AMF mais l\u2019\u00e9gratigne dans la course \u00e0 l\u2019\u00c9lys\u00e9e \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-6c5303d9)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Pr\u00e9sidentielle en France : centre et droite cherchent candidat unique d\u00e9sesp\u00e9r\u00e9ment \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-dea7b496)",
+   "label": "S59 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Pr\u00e9sidentielle en France : centre et droite cherchent candidat unique d\u00e9sesp\u00e9r\u00e9ment \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-dea7b496)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Mouvement lyc\u00e9en : l\u2019Inspection g\u00e9n\u00e9rale recommande un cadre national de gestion des blocages \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-106f91a8)",
+   "label": "S60 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Mouvement lyc\u00e9en : l\u2019Inspection g\u00e9n\u00e9rale recommande un cadre national de gestion des blocages \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-106f91a8)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Mouvement lyc\u00e9en : 98 lyc\u00e9ens bless\u00e9s la semaine derni\u00e8re, 280 professionnels depuis le d\u00e9but du mouvement \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-c84a6ad2)",
+   "label": "S61 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Mouvement lyc\u00e9en : 98 lyc\u00e9ens bless\u00e9s la semaine derni\u00e8re, 280 professionnels depuis le d\u00e9but du mouvement \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-c84a6ad2)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Propos de ministres sur le mouvement lyc\u00e9en : le syndicat des agents de l\u2019Education saisit la CJR \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-052940b6)",
+   "label": "S62 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Propos de ministres sur le mouvement lyc\u00e9en : le syndicat des agents de l\u2019Education saisit la CJR \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-052940b6)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Crise sociale : plus de 300 gendarmes bless\u00e9s depuis mi-septembre \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-e4958fdb)",
+   "label": "S63 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Crise sociale : plus de 300 gendarmes bless\u00e9s depuis mi-septembre \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-e4958fdb)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Mouvement lyc\u00e9en : l\u2019USL pointe \u201cun regain du mouvement\u201d \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-f60f97f7)",
+   "label": "S64 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Mouvement lyc\u00e9en : l\u2019USL pointe \u201cun regain du mouvement\u201d \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-f60f97f7)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab L\u2019essayiste Natacha Polony assure avoir la moiti\u00e9 des 500 parrainages \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-e0b2f930)",
+   "label": "S65 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab L\u2019essayiste Natacha Polony assure avoir la moiti\u00e9 des 500 parrainages \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-e0b2f930)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Industrie : la France va se doter de \u201cstocks strat\u00e9giques\u201d de minerais critiques \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-b8042c84)",
+   "label": "S66 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Industrie : la France va se doter de \u201cstocks strat\u00e9giques\u201d de minerais critiques \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-b8042c84)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab La France renforce son aide aux Afghanes face \u00e0 l\u2019\u201capartheid de genre\u201d \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-c30d63c4)",
+   "label": "S67 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab La France renforce son aide aux Afghanes face \u00e0 l\u2019\u201capartheid de genre\u201d \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-c30d63c4)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Vid\u00e9o de jeunes \u00e0 l\u2019Assembl\u00e9e : Braun-Pivet condamne, LFI r\u00e9plique \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-d85f3b0f)",
+   "label": "S68 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Vid\u00e9o de jeunes \u00e0 l\u2019Assembl\u00e9e : Braun-Pivet condamne, LFI r\u00e9plique \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-d85f3b0f)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Trump demande au minist\u00e8re de la Justice de requ\u00e9rir la peine capitale pour les meurtriers d\u2019enfants \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-73a9a078)",
+   "label": "S69 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Trump demande au minist\u00e8re de la Justice de requ\u00e9rir la peine capitale pour les meurtriers d\u2019enfants \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-73a9a078)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 22/11/2026 \u00ab Ukraine says Russian strikes kill 14 in Kyiv region \u00bb (r\u00e9f\u00e9rence interne news-afp-20261122-a370ccc6)",
+   "label": "S70 \u2014 AFP, d\u00e9p\u00eache du 22/11/2026 \u00ab Ukraine says Russian strikes kill 14 in Kyiv region \u00bb (r\u00e9f\u00e9rence interne news-afp-20261122-a370ccc6)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "22/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Mark Carney partage la sc\u00e8ne avec un com\u00e9dien moquant Donald Trump \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-fe75e84)",
+   "label": "S71 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Mark Carney partage la sc\u00e8ne avec un com\u00e9dien moquant Donald Trump \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-fe75e84)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Chine : le chef du parti communiste \u00e0 Shanghai vis\u00e9 par une enqu\u00eate \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-0515bef1)",
+   "label": "S72 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Chine : le chef du parti communiste \u00e0 Shanghai vis\u00e9 par une enqu\u00eate \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-0515bef1)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab L\u2019UE limite les importations de voitures hybrides chinoises \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-d1bf6f8a)",
+   "label": "S73 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab L\u2019UE limite les importations de voitures hybrides chinoises \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-d1bf6f8a)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Le Mexique demande \u00e0 la Chine de r\u00e9duire son d\u00e9s\u00e9quilibre commercial \u201ccroissant\u201d \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-120377f4)",
+   "label": "S74 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Le Mexique demande \u00e0 la Chine de r\u00e9duire son d\u00e9s\u00e9quilibre commercial \u201ccroissant\u201d \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-120377f4)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab La France promeut la \u201cco-construction\u201d \u00e9conomique avec l\u2019Afrique \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-484446c2)",
+   "label": "S75 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab La France promeut la \u201cco-construction\u201d \u00e9conomique avec l\u2019Afrique \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-484446c2)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 22/11/2026 \u00ab T\u00e9l\u00e9coms : P\u00e9kin fustige une interdiction am\u00e9ricaine visant des g\u00e9ants chinois \u00bb (r\u00e9f\u00e9rence interne news-afp-20261122-c6bc330d)",
+   "label": "S76 \u2014 AFP, d\u00e9p\u00eache du 22/11/2026 \u00ab T\u00e9l\u00e9coms : P\u00e9kin fustige une interdiction am\u00e9ricaine visant des g\u00e9ants chinois \u00bb (r\u00e9f\u00e9rence interne news-afp-20261122-c6bc330d)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "22/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab \u2018Hopes of 250 million\u2019 for Pakistani on China space mission \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-87340b83)",
+   "label": "S77 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab \u2018Hopes of 250 million\u2019 for Pakistani on China space mission \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-87340b83)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab La Russie dit avoir abattu pr\u00e8s de 700 drones ukrainiens dans la nuit \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-2829abc2)",
+   "label": "S78 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab La Russie dit avoir abattu pr\u00e8s de 700 drones ukrainiens dans la nuit \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-2829abc2)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab La Finlande convoque l\u2019ambassadeur russe, condamne les attaques de cibles civiles en Ukraine \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-a4f5c637)",
+   "label": "S79 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab La Finlande convoque l\u2019ambassadeur russe, condamne les attaques de cibles civiles en Ukraine \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-a4f5c637)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Fermeture de la fronti\u00e8re Estonie-Russie : le charg\u00e9 d\u2019affaires estonien convoqu\u00e9 \u00e0 Moscou \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-26ddd4ae)",
+   "label": "S80 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Fermeture de la fronti\u00e8re Estonie-Russie : le charg\u00e9 d\u2019affaires estonien convoqu\u00e9 \u00e0 Moscou \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-26ddd4ae)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab \u201cFlotte fant\u00f4me\u201d russe : le p\u00e9trolier DF Peak pourra quitter La R\u00e9union, son propri\u00e9taire condamn\u00e9 \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-d34bd478)",
+   "label": "S81 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab \u201cFlotte fant\u00f4me\u201d russe : le p\u00e9trolier DF Peak pourra quitter La R\u00e9union, son propri\u00e9taire condamn\u00e9 \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-d34bd478)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Le Tadjikistan se retire de la Cour p\u00e9nale internationale \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-96d95051)",
+   "label": "S82 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Le Tadjikistan se retire de la Cour p\u00e9nale internationale \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-96d95051)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Menaces sur le trait\u00e9 d\u2019interdiction des mines antipersonnel \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-96e41c0e)",
+   "label": "S83 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Menaces sur le trait\u00e9 d\u2019interdiction des mines antipersonnel \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-96e41c0e)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AP, d\u00e9p\u00eache du 24/11/2026 \u00ab A Russian strike on Ukraine kills 2 and wounds children as Kyiv explains its attack in Libya \u00bb (r\u00e9f\u00e9rence interne news-ap-20261124-98cf725e)",
+   "label": "S84 \u2014 AP, d\u00e9p\u00eache du 24/11/2026 \u00ab A Russian strike on Ukraine kills 2 and wounds children as Kyiv explains its attack in Libya \u00bb (r\u00e9f\u00e9rence interne news-ap-20261124-98cf725e)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Ukraine : Zelensky veut des n\u00e9gociations de paix incluant l\u2019Europe \u201cle plus t\u00f4t possible\u201d \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-6976d8d7)",
+   "label": "S85 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Ukraine : Zelensky veut des n\u00e9gociations de paix incluant l\u2019Europe \u201cle plus t\u00f4t possible\u201d \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-6976d8d7)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Tripoli r\u00e9clame des explications \u00e0 Kiev apr\u00e8s les attaques contre des navires russes pr\u00e8s de Benghazi \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-dcba6c4b)",
+   "label": "S86 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Tripoli r\u00e9clame des explications \u00e0 Kiev apr\u00e8s les attaques contre des navires russes pr\u00e8s de Benghazi \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-dcba6c4b)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Libye : l\u2019Ukraine dit avoir attaqu\u00e9 deux bateaux russes (Zelensky) \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-b1d53d49)",
+   "label": "S87 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Libye : l\u2019Ukraine dit avoir attaqu\u00e9 deux bateaux russes (Zelensky) \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-b1d53d49)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab L\u2019Otan va d\u00e9ployer un avion de reconnaissance AWACS en Pologne \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-be66d058)",
+   "label": "S88 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab L\u2019Otan va d\u00e9ployer un avion de reconnaissance AWACS en Pologne \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-be66d058)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab L\u2019Iran r\u00e9clame aux Etats-Unis 290 milliards de dollars de d\u00e9dommagements \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-dd841bfd)",
+   "label": "S89 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab L\u2019Iran r\u00e9clame aux Etats-Unis 290 milliards de dollars de d\u00e9dommagements \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-dd841bfd)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Iran : le rial plonge sur le march\u00e9 noir apr\u00e8s de nouvelles sanctions am\u00e9ricaines \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-3f42b829)",
+   "label": "S90 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Iran : le rial plonge sur le march\u00e9 noir apr\u00e8s de nouvelles sanctions am\u00e9ricaines \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-3f42b829)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Venezuela : la dette publique repr\u00e9sente 242 % du PIB \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-ea9fe1f2)",
+   "label": "S91 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Venezuela : la dette publique repr\u00e9sente 242 % du PIB \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-ea9fe1f2)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab CAN-2025 : le TAS a rendu justice au sport \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-a4dcc290)",
+   "label": "S92 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab CAN-2025 : le TAS a rendu justice au sport \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-a4dcc290)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Foot : la Coupe du monde f\u00e9minine 2031 aura lieu aux \u00c9tats-Unis, au Mexique, au Costa Rica et en Jama\u00efque \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-3cc5306b)",
+   "label": "S93 \u2014 AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Foot : la Coupe du monde f\u00e9minine 2031 aura lieu aux \u00c9tats-Unis, au Mexique, au Costa Rica et en Jama\u00efque \u00bb (r\u00e9f\u00e9rence interne news-afp-20261123-3cc5306b)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "23/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Foot : la Copa America 2028 aura lieu aux Etats-Unis \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-5b29da09)",
+   "label": "S94 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Foot : la Copa America 2028 aura lieu aux Etats-Unis \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-5b29da09)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Biathlon : Braisaz-Bouchet s\u2019est pr\u00e9par\u00e9e \u00e0 l\u2019\u00e9cart du groupe France \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-5dcde7b9)",
+   "label": "S95 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Biathlon : Braisaz-Bouchet s\u2019est pr\u00e9par\u00e9e \u00e0 l\u2019\u00e9cart du groupe France \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-5dcde7b9)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Ligue des champions : \u201cCette Roma me rappelle France 98\u201d, pr\u00e9vient Candela \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-296a5bcf)",
+   "label": "S96 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Ligue des champions : \u201cCette Roma me rappelle France 98\u201d, pr\u00e9vient Candela \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-296a5bcf)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Office Depot France : fermeture d\u00e9finitive des 27 magasins et du site internet \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-7ea8219b)",
+   "label": "S97 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Office Depot France : fermeture d\u00e9finitive des 27 magasins et du site internet \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-7ea8219b)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Quitter son conjoint violent co\u00fbte jusqu\u2019\u00e0 16 800 euros les trois premiers mois \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-94395b68)",
+   "label": "S98 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Quitter son conjoint violent co\u00fbte jusqu\u2019\u00e0 16 800 euros les trois premiers mois \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-94395b68)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab La soci\u00e9t\u00e9 Technip Energies France jug\u00e9e pour trois homicides involontaires \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-57f95c48)",
+   "label": "S99 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab La soci\u00e9t\u00e9 Technip Energies France jug\u00e9e pour trois homicides involontaires \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-57f95c48)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab La guerre bouleverse l\u2019\u00e9conomie de la mer \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-a3f6fb17)",
+   "label": "S100 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab La guerre bouleverse l\u2019\u00e9conomie de la mer \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-a3f6fb17)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   },
   {
-   "label": "AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Pas d\u2019accord sur la compl\u00e9mentaire sant\u00e9 dans la fonction publique hospitali\u00e8re \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-31a252c8)",
+   "label": "S101 \u2014 AFP, d\u00e9p\u00eache du 24/11/2026 \u00ab Pas d\u2019accord sur la compl\u00e9mentaire sant\u00e9 dans la fonction publique hospitali\u00e8re \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-31a252c8)",
    "ref": "",
-   "fiabilite": "5/5",
+   "fiabilite": 5,
    "maj": "24/11/2026"
   }
  ]
