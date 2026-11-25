@@ -1,0 +1,730 @@
+{
+  "date": "2026-11-25",
+  "genere_le": "2026-11-25T23:50:52.168Z",
+  "html": "editions/2026-11-25.html",
+  "resume_executif": [
+    "March\u00e9s : l'administration Trump a propos\u00e9 mercredi de nouveaux droits de douane sur 14 partenaires commerciaux \u2014 jusqu'\u00e0 20 % pour la Chine, 15 % pour l'Union europ\u00e9enne \u2014 provoquant une d\u00e9route boursi\u00e8re mondiale : MSCI -2,35 %, Nasdaq -3,9 %, S&P 500 -2,7 %, Nvidia autour de -8 % ; l'UE rejette \u00ab fortement \u00bb le fondement de ces taxes (S1)(S2)(S3)(S6).",
+    "France : le Conseil des ministres a pr\u00e9sent\u00e9 le d\u00e9cret de revalorisation du SMIC (+1,6 % au 1er d\u00e9cembre, environ 1 502 \u20ac nets pour 12,51 \u20ac brut de l'heure), l'Insee note un moral des m\u00e9nages toujours d\u00e9grad\u00e9, et l'Inspection g\u00e9n\u00e9rale livre un premier rapport officiel sur des \u00e9l\u00e8ves mobilis\u00e9s \u00ab politis\u00e9s et favoris\u00e9s \u00bb \u2014 plus de 400 exclus d\u00e9finitifs depuis septembre (S11)(S13)(S14)(S16)(S22)(S24)(S25).",
+    "Spatial : la Chine a lanc\u00e9 Shenzhou-24 emportant le premier astronaute \u00e9tranger vers la station Tiangong (un Pakistanais), l'ESA a pr\u00e9sent\u00e9 \u00e0 Berlin les premi\u00e8res images d\u00e9taill\u00e9es de l'ast\u00e9ro\u00efde Dimorphos apr\u00e8s l'impact de la sonde DART, et la station spatiale internationale attend une livraison de Thanksgiving pour jeudi (S41)(S42)(S44)(S45)(S46)(S47).",
+    "Iran-Y\u00e9men : les Gardiens de la r\u00e9volution iraniens ont revendiqu\u00e9 deux p\u00e9troliers min\u00e9s et en feu dans le d\u00e9troit d'Ormuz, les Houthis ont vis\u00e9 la raffinerie saoudienne de Ras Tanura en repr\u00e9sailles aux frappes sur Hode\u00efda, et Isra\u00ebl accuse T\u00e9h\u00e9ran de developper des armes chimiques \u2014 d\u00e9menti imm\u00e9diat de l'Iran (S81)(S87)(S88)(S85)(S86).",
+    "IA : Bruxelles a annonc\u00e9 un fonds souverain de 50 milliards d'euros pour l'IA et l'informatique quantique, des salari\u00e9s d'OpenAI et d'Anthropic s'alarmment de mod\u00e8les internes jug\u00e9s trop puissants pour \u00eatre publi\u00e9s, et OpenAI a montr\u00e9 GPT-6 concevant des prot\u00e9ines actives \u2014 pendant que Nvidia efface la moiti\u00e9 de son rebond de lundi (S33)(S34)(S36)(S37)(S38)(S39)."
+  ],
+  "chapitres": [
+    {
+      "id": "intelligence-artificielle",
+      "emoji": "\ud83e\udd16",
+      "nom": "Intelligence artificielle",
+      "resume": "Une journ\u00e9e \u00e0 double visage : pendant que Bruxelles annonce un fonds souverain de 50 milliards d'euros pour l'IA et le quantique (S33)(S34), les salari\u00e9s d'OpenAI et d'Anthropic s'alarment publiquement de mod\u00e8les internes qu'ils jugent trop puissants pour \u00eatre publi\u00e9s (S37), et Wall Street poursuit sa digestion du cycle IA \u2014 Nvidia efface la moiti\u00e9 de son rebond de lundi (S1)(S98)."
+    },
+    {
+      "id": "spatial",
+      "emoji": "\ud83d\ude80",
+      "nom": "Spatial",
+      "resume": "Journ\u00e9e historique c\u00f4t\u00e9 chinois : Shenzhou-24 a d\u00e9coll\u00e9 du d\u00e9sert de Gobi emportant le premier astronaute \u00e9tranger vers la station Tiangong \u2014 le Pakistanais Muhammad Zeeshan Ali, \u00ab les espoirs de 250 millions de Pakistanais \u00bb \u2014 tandis que l'ESA pr\u00e9sentait \u00e0 Berlin les premi\u00e8res images d\u00e9taill\u00e9es de Dimorphos apr\u00e8s l'impact de la sonde DART de la NASA (S41)(S42)(S44)(S45)."
+    },
+    {
+      "id": "economie-pour-les-nuls",
+      "emoji": "\ud83d\udcb0",
+      "nom": "L\u2019\u00c9conomie pour les nuls",
+      "resume": "Le grand refrain du jour s'appelle droits de douane : Washington veut taxer jusqu'\u00e0 20 % des importations chinoises et 15 % des europ\u00e9ennes, et les Bourses du monde entier se sont effondr\u00e9es ; c\u00f4t\u00e9 fran\u00e7ais, le SMIC montera de 1,6 % au 1er d\u00e9cembre, environ 1 502 \u20ac nets, et le groupe de spiritueux R\u00e9my Cointreau a annonc\u00e9 vouloir r\u00e9duire ses effectifs de 12 \u00e0 15 % (S1)(S2)(S14)(S15)(S30)(S31)."
+    },
+    {
+      "id": "droit-pour-les-nuls",
+      "emoji": "\u2696\ufe0f",
+      "nom": "Le Droit pour les nuls",
+      "resume": "Piqu\u00e9 dans l'actualit\u00e9 du jour : le Conseil des ministres a pr\u00e9sent\u00e9 le d\u00e9cret de revalorisation du SMIC (+1,6 % au 1er d\u00e9cembre) \u2014 l'occasion de comprendre comment la loi fixe, r\u00e9vis\u00e9 et prot\u00e8ge le salaire minimum, les m\u00e9canismes d'indexation automatique, la diff\u00e9rence entre brut et net, et les pi\u00e8ges les plus courants, textes de code du travail \u00e0 l'appui (S12)(S13)(S17)(S18)."
+    },
+    {
+      "id": "jeu-video-pop-culture",
+      "emoji": "\ud83c\udfae",
+      "nom": "Jeu vid\u00e9o & pop culture",
+      "resume": "Une semaine apr\u00e8s son lancement historique, GTA VI continue de broyer les records \u2014 3,79 milliards de dollars de ventes le premier jour, plus grand lancement de l'histoire de PlayStation selon Sony \u2014 pendant que la pop culture dig\u00e8re le ph\u00e9nom\u00e8ne : redistribution aux artistes, plateformes musicales chassant les titres g\u00e9n\u00e9r\u00e9s par IA, d\u00e9bats communautaires \u00e0 mi-chemin entre euphorie et agacement\u2026"
+    },
+    {
+      "id": "culture",
+      "emoji": "\ud83c\udfad",
+      "nom": "Culture",
+      "resume": "La rentr\u00e9e cin\u00e9 du mercredi est dense : Paper Tiger de James Gray (la plus personnelle de ses films, avec Adam Driver et Scarlett Johansson), Un bon petit soldat de St\u00e9phane Briz\u00e9, le Disney de No\u00ebl Billie, le retour des Focker et le documentaire Cavalier d'or \u2014 pendant que l'actualit\u00e9 musicale chasse l'IA des plateformes et que la Fnac publie ses romans de novembre (S36)(S93)(S95)(S96)(S97)."
+    },
+    {
+      "id": "sciences",
+      "emoji": "\ud83d\udd2c",
+      "nom": "Sciences",
+      "resume": "La science du jour se joue en laboratoire comme \u00e0 l'\u00e9chelle mondiale du VIH : Nature titre qu'un vaccin puissant contre le VIH est enfin \u00ab \u00e0 port\u00e9e de main \u00bb gr\u00e2ce aux super-anticorps, l'ANRS confirme la durabilit\u00e9 \u00e0 long terme de la r\u00e9ponse immunitaire d'un candidat vaccin, et les premi\u00e8res livraisons de l\u00e9nacapavir g\u00e9n\u00e9rique \u2014 l'outil de pr\u00e9vention le plus efficace \u2014 arrivent dans plusieurs\u2026"
+    },
+    {
+      "id": "climat",
+      "emoji": "\ud83c\udf0d",
+      "nom": "Climat",
+      "resume": "Le pape L\u00e9on XIV a jug\u00e9 \u00ab pr\u00e9occupant \u00bb l'\u00e9chec de la COP31 d'Antalya, quatre jours apr\u00e8s sa cl\u00f4ture sans accord final, tandis que les mesures objectives continuent de battre des records : selon Copernicus, la Terre vient d'encha\u00eener six jours cons\u00e9cutifs au-dessus de +2 \u00b0C par rapport \u00e0 l'\u00e8re pr\u00e9industrielle \u2014 une premi\u00e8re (S52)(S53)(S54)(S55)(S56)(S57)."
+    },
+    {
+      "id": "politique-francaise",
+      "emoji": "\ud83c\uddeb\ud83c\uddf7",
+      "nom": "Politique fran\u00e7aise",
+      "resume": "Conseil des ministres du jour : un projet de loi d'adaptation au droit de l'UE (54 textes transpos\u00e9s, interdiction des produits issus du travail forc\u00e9, Arcom charg\u00e9e du r\u00e8glement europ\u00e9en des m\u00e9dias) et le d\u00e9cret SMIC ; l'Inspection g\u00e9n\u00e9rale remet son premier rapport sur les \u00e9l\u00e8ves mobilis\u00e9s, d\u00e9crits comme \u00ab politis\u00e9s et favoris\u00e9s \u00bb ; et les syndicats appellent \u00e0 la gr\u00e8ve dans le sup\u00e9rieur jeudi\u2026"
+    },
+    {
+      "id": "etats-unis",
+      "emoji": "\ud83c\uddfa\ud83c\uddf8",
+      "nom": "\u00c9tats-Unis",
+      "resume": "Sept jours de vacance? Non : moins d'un mois apr\u00e8s sa d\u00e9faite aux midterms, Donald Trump a annonc\u00e9 de nouveaux droits de douane \u00ab pour lutter contre les surcapacit\u00e9s industrielles \u00bb \u2014 14 partenaires vis\u00e9s dont la Chine (jusqu'\u00e0 20 %) et l'UE (15 %) \u2014 faisant chuter les indices am\u00e9ricains de 2 \u00e0 4 %, tandis que la confiance des consommateurs grimpait pourtant \u00e0 son plus haut depuis pr\u00e8s de deux\u2026"
+    },
+    {
+      "id": "chine",
+      "emoji": "\ud83c\udde8\ud83c\uddf3",
+      "nom": "Chine",
+      "resume": "P\u00e9kin a vivement r\u00e9agi aux nouveaux tarifs am\u00e9ricains \u2014 \u00ab la pr\u00e9tendue surcapacit\u00e9 est un faux probl\u00e8me \u00bb, tonne le porte-parole du minist\u00e8re des Affaires \u00e9trang\u00e8res \u2014 ; sur le front int\u00e9rieur, la Chine met en vigueur ses premi\u00e8res normes nationales pour la robotique humano\u00efde, durcit la lutte contre la d\u00e9sinformation g\u00e9n\u00e9r\u00e9e par IA et pr\u00e9pare sa grande vitrine a\u00e9ronautique de Zhuhai\u2026"
+    },
+    {
+      "id": "russie",
+      "emoji": "\ud83c\uddf7\ud83c\uddfa",
+      "nom": "Russie",
+      "resume": "La D\u00e9fense russe revendique 305 drones abattus pendant la nuit au-dessus de 14 r\u00e9gions \u2014 avec un mort en Samara et soixante-dix immeubles priv\u00e9s de courant \u00e0 Novokou\u00efbychevsk ; le Kremlin refuse de commenter les estimations de 700 000 morts russes en Ukraine issues de donn\u00e9es pirat\u00e9es, et le rouble reste sous pression \u00e0 82,17 pour un dollar (S81)(S82)."
+    },
+    {
+      "id": "geopolitique",
+      "emoji": "\ud83c\udf10",
+      "nom": "G\u00e9opolitique",
+      "resume": "Nuit noire sur l'Ukraine : neuf morts et 59 bless\u00e9s dans des frappes russes visant l'\u00e9nergie (112 drones), tandis que Kyiv frappe trois raffineries russes \u2014 le raffinage russe a chut\u00e9 de 45 % depuis fin octobre ; autour du Golfe, les Gardiens de la r\u00e9volution revendiquent deux p\u00e9troliers min\u00e9s dans l'Ormuz et les Houthis visent Ras Tanura apr\u00e8s les frappes saoudiennes sur Hode\u00efda\u2026"
+    },
+    {
+      "id": "grande-info-semaine",
+      "emoji": "\ud83d\udcf0",
+      "nom": "Grande information de la semaine",
+      "resume": "La semaine qui s'ach\u00e8ve restera comme celle des pics : GTA VI a pulveris\u00e9 tous les records du divertissement (3,79 milliards de dollars en un jour), l'IA a fait vaciller les march\u00e9s mondiaux (Nvidia, AMD, Micron), la COP31 s'est achev\u00e9e en \u00e9chec retentissant, et les droits de douane de Trump ont rouvert la guerre commerciale mondiale \u2014 pendant que l'Ukraine entrait dans sa cinqui\u00e8me guerre de\u2026"
+    }
+  ],
+  "sources": [
+    {
+      "label": "S1 - Reuters via Boursorama, \u00ab Les march\u00e9s boursiers mondiaux s'effondrent alors que les droits de douane impos\u00e9s par Trump secouent les march\u00e9s \u00bb",
+      "ref": "https://www.boursorama.com/bourse/actualites/les-marches-boursiers-mondiaux-s-effondrent-alors-que-les-droits-de-douane-imposes-par-trump-secouent-les-marches-et-que-la-vague-haussiere-liee-a-l-ia-s-essouffle-6e4a8b0cd90efac68497ccd9cb700fcd",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S2 - Al Jazeera, \u00ab World reacts to Trump's new tariffs as US stocks tumble \u00bb",
+      "ref": "https://www.aljazeera.com/economy/2026/11/25/world-reacts-to-trumps-new-tariffs-as-us-stocks-tumble",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S3 - RFI, \u00ab L'administration Trump veut instaurer de nouveaux droits de douane contre ses principaux partenaires commerciaux \u00bb",
+      "ref": "https://www.rfi.fr/fr/am%C3%A9riques/20261125-l-administration-trump-veut-instaurer-de-nouveaux-droits-de-douane-contre-ses-principaux-partenaires-commerciaux",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S4 - Euronews, \u00ab US proposes new tariffs on 14 major trading partners, the EU included \u00bb",
+      "ref": "https://www.euronews.com/2026/11/25/us-proposes-new-tariffs-on-14-major-trading-partners-the-eu-included",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S5 - AP, \u00ab US to hike tariffs on China, EU, Brazil and others over subsidized factories \u00bb",
+      "ref": "https://apnews.com/article/trump-tariffs-china-european-union-367083ea32f71fd7f70029ba7df66bf0",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S6 - AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab L'UE rejette \"fortement\" le fondement des nouveaux droits de douane am\u00e9ricains \u00bb (r\u00e9f\u00e9rence interne news-7iTfyEw0)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S7 - Boursorama, \u00ab Trump annonce de nouveaux droits de douane... sans se laisser d\u00e9courager par sa d\u00e9faite aux \u00e9lections de mi-mandat \u00bb",
+      "ref": "https://www.boursorama.com/bourse/actualites/trump-annonce-de-nouveaux-droits-de-douane-pour-lutter-contre-les-surcapacites-industrielles-sans-se-laisser-decourager-par-sa-defaite-aux-elections-de-mi-mandat-91b45111106af364ea8dc443bb0a8cb8",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S8 - CaixaBank Research, \u00ab Financial Markets Daily Report \u2014 25 November 2026 \u00bb",
+      "ref": "https://www.caixabankresearch.com/en/publications/financial-markets-daily-report/25-november-2026",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S9 - HLB Group, \u00ab Global Markets Research \u2014 Daily Market Highlights, 25 Nov 2026 \u00bb",
+      "ref": "https://www.hlb.com.my/content/dam/hlb/my/docs/pdf/Global_Markets/daily-market-watch/2026/25-11-2026.pdf",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S10 - 20 Minutes, \u00ab En direct Guerre en Ukraine : apr\u00e8s son \"ami\" Poutine en Chine, Trump rencontre le chef de l'Otan en Floride \u00bb",
+      "ref": "https://www.20minutes.fr/monde/ukraine/4265543-20261125-direct-guerre-ukraine-president-bielorusse-pret-accompagner-zelensky-moscou-discuter",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S11 - info.gouv.fr, \u00ab Compte rendu du Conseil des ministres du 25 novembre 2026 \u00bb",
+      "ref": "https://www.info.gouv.fr/conseil-des-ministres/compte-rendu-du-conseil-des-ministres-du-25-11-2026",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S12 - \u00c9lys\u00e9e, \u00ab Compte rendu du Conseil des ministres du 25 novembre 2026 \u00bb",
+      "ref": "https://www.elysee.fr/emmanuel-macron/2026/11/25/compte-rendu-du-conseil-des-ministres-du-25-novembre-2026",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S13 - Minist\u00e8re du Travail, \u00ab Communiqu\u00e9 du conseil des ministres sur le projet de d\u00e9cret portant rel\u00e8vement du salaire minimum de croissance \u00bb",
+      "ref": "https://travail-emploi.gouv.fr/communique-du-conseil-des-ministres-sur-le-projet-de-decret-portant-relevement-du-salaire-minimum-de-croissance",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S14 - TPE Actu, \u00ab Smic d\u00e9cembre 2026 : +1,6 %, environ 1 502 \u20ac nets \u00bb",
+      "ref": "https://tpeactu.fr/2026/11/25/smic-augmentation-decembre-2026-1502-euros/",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S15 - Presse Agence, \u00ab Le SMIC franchira les 1 500 \u20ac nets d\u00e8s le 1er d\u00e9cembre \u00bb",
+      "ref": "https://presseagence.fr/paris-jean-pierre-farandou-le-smic-franchira-les-1500-euros-nets-des-le-1er-decembre/",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S16 - AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Le moral des m\u00e9nages reste d\u00e9grad\u00e9 en novembre, selon l'Insee \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-6afe640e)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S17 - L\u00e9gifrance, Code du travail, chapitre \u00ab Salaire minimum interprofessionnel de croissance \u00bb, articles L3231-1 \u00e0 L3231-12",
+      "ref": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000006178024/2025-07-02",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S18 - L\u00e9gifrance, Code du travail, article L3231-5 (garantie du pouvoir d'achat)",
+      "ref": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902835",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S19 - Code du travail num\u00e9rique, article L3231-5",
+      "ref": "https://code.travail.gouv.fr/code-du-travail/l3231-5",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S20 - LCP / Assembl\u00e9e nationale, \u00ab Questions au Gouvernement du mercredi 25 novembre 2026 \u00bb",
+      "ref": "https://lcp.fr/programmes/questions-au-gouvernement/questions-au-gouvernement-du-mercredi-25-novembre-2026-444464",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S21 - Vid\u00e9os Assembl\u00e9e nationale, 1re s\u00e9ance du 25 novembre 2026 (QAG, d\u00e9bat Opecst d\u00e9carbonation des transports, syst\u00e8mes d'armes autonomes)",
+      "ref": "https://videos.assemblee-nationale.fr/video.19759655_6b06d851d3113.1ere-seance--questions-au-gouvernement--debat-sur-le-rapport-de-l-opecst-sur-la-decarbonation-des--25-novembre-2026",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S22 - 20 Minutes, \u00ab Blocage des lyc\u00e9es : Politis\u00e9s et favoris\u00e9s, un rapport de l'\u00c9ducation nationale dresse le profil des \u00e9l\u00e8ves mobilis\u00e9s \u00bb",
+      "ref": "https://www.20minutes.fr/societe/4265580-20261125-blocage-lycees-politises-favorises-rapport-education-nationale-dresse-profil-eleves-mobilises",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S23 - Cidj, \u00ab Mouvement lyc\u00e9en : un premier rapport officiel sans les \u00e9l\u00e8ves \u00bb",
+      "ref": "https://www.cidj.com/s-engager/s-engager-pour-une-cause/mouvement-lyceen-un-premier-rapport-officiel-sans-les-eleves",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S24 - AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Mouvement lyc\u00e9en : l'Inspection g\u00e9n\u00e9rale recommande un cadre national de gestion des blocages \u00bb (r\u00e9f\u00e9rence interne news-1zYCPsv4)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S25 - CNEWS avec AFP, \u00ab Blocus des lyc\u00e9es : plus de 400 \u00e9l\u00e8ves exclus d\u00e9finitivement de leur \u00e9tablissement \u00bb",
+      "ref": "https://www.cnews.fr/france/2026-11-25/blocus-des-lycees-plus-de-400-eleves-exclus-definitivement-de-leur-etablissement",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S26 - AFP, d\u00e9p\u00eache du 23/11/2026 \u00ab Actualit\u00e9s du lundi 23 novembre 2026 \u00bb (appel intersyndical du 26 novembre dans le sup\u00e9rieur) (r\u00e9f\u00e9rence interne news-afp-20261123-5a600758)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "23/11/2026"
+    },
+    {
+      "label": "S27 - AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Nouvel appel \u00e0 la gr\u00e8ve dans la fonction publique le 1er d\u00e9cembre \u00bb (r\u00e9f\u00e9rence interne news-ahdITSG5)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S28 - AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Pr\u00e9sidentielle : Marylise L\u00e9on appelle \u00e0 changer la date du scrutin \u00bb (r\u00e9f\u00e9rence interne news-Mc6F9Cvr)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S29 - Sondax, \u00ab Sondage pr\u00e9sidentielle 2027 : moyenne et derniers sondages (m\u00e0j 25/11) \u00bb",
+      "ref": "https://sondax.fr/",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S30 - Boursorama, \u00ab R\u00e9my Cointreau d\u00e9voile ses objectifs \u00e0 moyen terme dans le cadre de son plan de redressement \u00bb",
+      "ref": "https://www.boursorama.com/bourse/actualites/remy-cointreau-devoile-ses-objectifs-a-moyen-terme-dans-le-cadre-de-son-plan-de-redressement-533bc5380dc2995dc7c2bf1cbb43d67c",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S31 - France 24, \u00ab Remy Cointreau to cut jobs as profits fall further \u00bb",
+      "ref": "https://www.france24.com/en/live-news/20261125-remy-cointreau-to-cut-jobs-as-profits-fall-further",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S32 - France 24, \u00ab \"Cartel des parfums\" : l'UE et Londres infligent pr\u00e8s de 600 millions d'euros d'amendes \u00e0 trois industriels \u00bb",
+      "ref": "https://www.france24.com/fr/info-en-continu/20261125-cartel-des-parfums-l-ue-et-londres-infligent-pres-de-600-millions-d-euros-d-amendes-%C3%A0-trois-industriels",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S33 - AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab L'UE veut cr\u00e9er un fonds souverain de 50 milliards d'euros pour l'IA et l'informatique quantique \u00bb (r\u00e9f\u00e9rence interne news-zaU8aorz)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S34 - Boursorama (AFP), \u00ab L'UE veut cr\u00e9er un fonds souverain pour investir dans le quantique et l'IA \u00bb",
+      "ref": "https://www.boursorama.com/actualite-economique/actualites/l-ue-veut-creer-un-fonds-souverain-pour-investir-dans-le-quantique-et-l-ia-01756afe679c9d035f6cf36c00d95ccb",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S35 - RFI, \u00ab EU plans 50-bn-euro investment in AI, quantum computing \u00bb",
+      "ref": "https://www.rfi.fr/en/international-news/20261125-after-ai-eu-bets-on-quantum-as-next-big-thing",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S36 - ActuIA, \u00ab Veille IA du 25 novembre 2026 : 21 br\u00e8ves \u00bb",
+      "ref": "https://www.actuia.com/veille/2026-11-25/",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S37 - Museum of AI, \u00ab AI news, 25 November: OpenAI and Anthropic staff warn unreleased models may be too powerful to release \u00bb",
+      "ref": "https://aimuseum.se/pages/daily/2026-11-25-ainews.html",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S38 - The Neuron, \u00ab Everything That Happened in AI Today \u2014 November 25, 2026 \u00bb",
+      "ref": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-november-25-2026/",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S39 - OFCS / Conf\u00e9d\u00e9ration suisse, \u00ab Cyberattaques impliquant des agents IA : premiers cas confirm\u00e9s en Suisse \u00bb",
+      "ref": "https://www.bacs.admin.ch/fr/26-ki-agenten-1-fr",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S40 - ICTjournal, \u00ab Les cyberattaques men\u00e9es par des agents IA touchent d\u00e9sormais la Suisse \u00bb",
+      "ref": "https://www.ictjournal.ch/news/2026-11-25/cest-officiel-les-cyberattaques-menees-par-des-agents-ia-touchent-desormais-la",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S41 - The Straits Times, \u00ab China's Shenzhou-24 space flight takes off with Pakistani national as first foreign astronaut \u00bb",
+      "ref": "https://www.straitstimes.com/asia/east-asia/chinas-shenzhou-24-space-flight-takes-off-with-pakistani-national-as-first-foreign-astronaut",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S42 - Xinhua (french.news.cn), \u00ab Lancement r\u00e9ussi du vaisseau spatial habit\u00e9 Shenzhou-24 \u00bb",
+      "ref": "https://french.news.cn/20261125/95dbfa8bd3014c569c7f7a5f20e7fd5f/c.html",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S43 - Reuters via Boursorama, \u00ab Lancement r\u00e9ussi pour le vaisseau Shenzhou-24 et sa mission habit\u00e9e \u00bb",
+      "ref": "https://www.boursorama.com/actualite-economique/actualites/lancement-reussi-pour-le-vaisseau-shenzhou-24-et-sa-mission-habitee-728fa6ef21f4be4178f6b73aee9a5a55",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S44 - AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab D\u00e9collage de la mission chinoise Shenzhou-24, un astronaute pakistanais \u00e0 bord \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-8fe68796)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S45 - ESA, \u00ab Four years after NASA's asteroid impact, ESA's Hera reveals what happened to Dimorphos \u00bb",
+      "ref": "https://www.esa.int/media-advisories/four-years-after-nasa-s-asteroid-impact-esa-s-hera-reveals-what-happened-to-dimorphos",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S46 - NASA, \u00ab Crew Works Biomedical Research Day Before Thanksgiving Space Delivery \u00bb",
+      "ref": "https://www.nasa.gov/blogs/spacestation/2026/11/25/crew-works-biomedical-research-day-before-thanksgiving-space-delivery/",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S47 - ScienceDaily / ESA, \u00ab A space telescope hunting for dark matter just discovered something unexpected \u00bb",
+      "ref": "https://www.sciencedaily.com/releases/2026/11/261124055852.htm",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S48 - Nature, \u00ab A powerful HIV vaccine is finally within reach \u2014 thanks to these super antibodies \u00bb",
+      "ref": "https://www.nature.com/articles/d41586-026-03718-4",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S49 - ANRS MIE, \u00ab Vaccin pr\u00e9ventif contre le VIH : la dur\u00e9e de la r\u00e9ponse immunitaire confirm\u00e9e \u00e0 long terme \u00bb",
+      "ref": "https://anrs.fr/actualites/actualites/vaccin-vih-reponse-immunitaire/",
+      "fiabilite": 4,
+      "maj": "23/09/2026"
+    },
+    {
+      "label": "S50 - Communiqu\u00e9 (Europe Says), \u00ab Les premi\u00e8res livraisons de l\u00e9nacapavir g\u00e9n\u00e9rique destin\u00e9 \u00e0 la pr\u00e9vention du VIH arrivent dans plusieurs pays \u00bb",
+      "ref": "https://www.europesays.com/ch-fr/410295/",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S51 - AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab VIH : la riposte mondiale sous pression malgr\u00e9 des avanc\u00e9es (Onusida) \u00bb (r\u00e9f\u00e9rence interne news-8sD9jcb1)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S52 - Vatican News, \u00ab Le Pape d\u00e9plore l'absence d'engagements concrets \u00e0 l'issue de la COP31 \u00bb",
+      "ref": "https://www.vaticannews.va/fr/pape/news/2026-11/pape-leon-xiv-cop-31-climat-turquie-appel-audience-generale.html",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S53 - Cathobel, \u00ab L\u00e9on XIV d\u00e9plore l'absence d'engagements \u00e0 l'issue de la COP31 \u00bb",
+      "ref": "https://www.cathobel.be/2026/11/audience-generale-le-pape-leon-deplore-labsence-dengagements-concrets-a-lissue-de-la-cop31/",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S54 - ONU Info, \u00ab La COP31 s'ach\u00e8ve sans accord final, les \u00e9nergies fossiles au c\u0153ur des divergences \u00bb",
+      "ref": "https://news.un.org/fr/story/2026/11/1159887",
+      "fiabilite": 5,
+      "maj": "22/11/2026"
+    },
+    {
+      "label": "S55 - Pollar, \u00ab Six jours cons\u00e9cutifs au-dessus de 2 \u00b0C, une premi\u00e8re (donn\u00e9es Copernicus) \u00bb",
+      "ref": "https://pollar.news/fr/evenement/six-jours-au-dessus-de-2-c",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S56 - Pacte pour le Climat, \u00ab Une seule journ\u00e9e \u00e0 2,12 \u00b0C au-dessus du niveau pr\u00e9industriel : ce que signifie le nouveau record \u00bb",
+      "ref": "https://www.pacte-climat.eu/une-seule-journee-a-212c-au-dessus-du-niveau-preindustriel-ce-que-signifie-le-nouveau-record/28691/",
+      "fiabilite": 3,
+      "maj": "23/11/2026"
+    },
+    {
+      "label": "S57 - M\u00e9t\u00e9o Actus / M\u00e9t\u00e9ocity, \u00ab 2026 sera sans doute la deuxi\u00e8me ann\u00e9e la plus chaude jamais enregistr\u00e9e selon Copernicus \u00bb",
+      "ref": "https://actus.meteocity.com/actualites-meteo/2026-sera-sans-doute-la-deuxieme-annee-la-plus-chaude-jamais-enregistree-selon-copernicus-15072",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S58 - RFI, \u00ab Ligue des champions : premier accroc pour le PSG, exploit de Lille face au Bayern \u00bb",
+      "ref": "https://www.rfi.fr/fr/sport/20261125-ligue-des-champions-premier-accroc-pour-le-psg-exploit-de-lille-face-au-bayern",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S59 - France 24, \u00ab Ligue des champions : premi\u00e8re difficult\u00e9 pour le PSG, Lille signe un exploit face au Bayern \u00bb",
+      "ref": "https://www.france24.com/fr/sports/20261125-ligue-des-champions-premi%C3%A8re-difficult%C3%A9-pour-le-psg-lille-signe-un-exploit-face-au-bayern",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S60 - CNEWS, \u00ab Ligue des champions : les r\u00e9sultats complets de la 5e journ\u00e9e de la phase de ligue \u00bb",
+      "ref": "https://www.cnews.fr/sport/2026-11-25/ligue-des-champions-les-resultats-complets-de-la-5e-journee-de-la-phase-de-ligue",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S61 - RTS, \u00ab Ligue des champions : tous les r\u00e9sum\u00e9s du mercredi 25 novembre \u00bb",
+      "ref": "https://www.rts.ch/sport/2026/article/ligue-des-champions-tous-les-resumes-du-mercredi-25-novembre-29427722.html",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S62 - FC Barcelone, \u00ab Sabah 1-4 FC Barcelone \u00bb",
+      "ref": "https://www.fcbarcelona.fr/fr/futbol/primer-equip/resultats",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S63 - UNODC, \u00ab Five women killed every hour by a partner or close relative in 2025 \u00bb",
+      "ref": "https://www.unodc.org/unodc/press/releases/2026/November/five-women-killed-every-hour-by-a-partner-or-close-relative-in-2025.html",
+      "fiabilite": 5,
+      "maj": "24/11/2026"
+    },
+    {
+      "label": "S64 - ONU Femmes, \u00ab En 2025, cinq femmes ont \u00e9t\u00e9 tu\u00e9es chaque heure par leur partenaire ou un membre de leur famille \u00bb",
+      "ref": "https://www.unwomen.org/fr/nouvelles/communique-de-presse/2026/11/en-2025-cinq-femmes-ont-ete-tuees-chaque-heure-par-leur-partenaire-ou-un-membre-de-leur-famille",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S65 - 20 Minutes, \u00ab F\u00e9minicides, viols, harc\u00e8lement... Les chiffres affolants des violences contre les femmes \u00bb",
+      "ref": "https://www.20minutes.fr/societe/4265581-20261125-feminicides-viols-harcelement-chiffres-affolants-violences-faites-femmes",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S66 - ICI, \u00ab Violences faites aux femmes : le 25 novembre, une journ\u00e9e pour sensibiliser et informer sur les dispositifs d'aide \u00bb",
+      "ref": "https://www.ici.fr/infos/societe/violences-faites-aux-femmes-le-25-novembre-une-journee-pour-sensibiliser-et-informer-sur-les-dispositifs-d-aide-1381713",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S67 - Boursorama (AFP), \u00ab Selon l'OCDE, la France consacre 11,3 % de son PIB aux d\u00e9penses de sant\u00e9 \u00bb",
+      "ref": "https://www.boursorama.com/actualite-economique/actualites/selon-l-ocde-la-france-consacre-11-3-de-son-pib-aux-depenses-de-sante-4cad95ca7a5436371bfc48ac440f107e",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S68 - OCDE, \u00ab Health at a Glance: Europe 2026 \u2014 Health expenditure in relation to GDP \u00bb",
+      "ref": "https://www.oecd.org/en/publications/health-at-a-glance-europe-2026_64707ff8-en/full-report/health-expenditure-in-relation-to-gdp_974f2aa1.html",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S69 - Sant\u00e9 publique France, \u00ab Infections respiratoires aigu\u00ebs (grippe, bronchiolite, covid-19) \u2014 bulletin du 25 novembre 2026, semaine 47 \u00bb",
+      "ref": "https://invs.santepubliquefrance.fr/sites/default/files/2026-11/bullnat_ira_20261125.pdf",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S70 - AFP, \u00ab Global disaster misinfo fuels panic-buying at chain stores \u00bb",
+      "ref": "https://www.afp.com/en/global-disaster-misinfo-fuels-panic-buying-chain-stores",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S71 - Le Matin, \u00ab Rumeurs d'apocalypse : les achats de panique explosent dans le monde \u00bb",
+      "ref": "https://www.lematin.ch/story/reseaux-sociaux-des-rumeurs-d-apocalypse-declenchent-un-pic-d-achats-de-panique-103673445",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S72 - Viralmag, \u00ab D\u00e9couverte n\u00e9olithique exceptionnelle \u00e0 Champigny-sur-Marne \u00bb",
+      "ref": "https://viralmag.fr/decouverte-neolithique-exceptionnelle-a-champigny-sur-marne/",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S73 - FDJ, \u00ab R\u00e9sultat LOTO \u2014 tirage du mercredi 25 novembre 2026 \u00bb",
+      "ref": "https://www.fdj.fr/jeux-de-tirage/loto/resultats/mercredi-16-septembre-2026",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S74 - AFP via Zonebourse, \u00ab Des frappes de drones tuent 19 civils dans le sud-est du Soudan \u00bb",
+      "ref": "https://www.zonebourse.com/actualite-bourse/des-frappes-de-drones-tuent-19-civils-dans-le-sud-est-du-soudan-selon-une-organisation-de-defense-d-ce7851dbd08df625",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S75 - Saxo Banque, \u00ab Market Quick Take \u2014 Chip stocks slump again in New York and Seoul (25 November 2026) \u00bb",
+      "ref": "https://www.home.saxo/fr-ch/content/articles/macro/market-quick-take---chip-stocks-slump-again-in-new-york-and-seoul---25-november-2026-25112026",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S76 - UOB Group, \u00ab Markets Overview \u2014 Wednesday, 25 November 2026 \u00bb",
+      "ref": "https://www.uobgroup.com/assets/web-resources/research/pdf/MO_261125.pdf",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S77 - China Daily Brief, \u00ab Daily Brief \u2014 Wednesday, November 25, 2026 \u00bb",
+      "ref": "https://chinadailybrief.com/daily-brief",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S78 - Boursorama, \u00ab Droits de douane : P\u00e9kin met en garde Washington contre de nouvelles surtaxes \u00bb",
+      "ref": "https://www.boursorama.com/actualite-economique/actualites/droits-de-douane-pekin-met-en-garde-washington-contre-de-nouvelles-surtaxes-d5e9dc79ad7eb8426667c30d912ab175",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S79 - Euronews, \u00ab Ukraine : la Russie cible les sites \u00e9nerg\u00e9tiques, Kyiv attaque trois raffineries russes \u00bb",
+      "ref": "https://fr.euronews.com/2026/11/25/ukraine-la-russie-cible-les-sites-energetiques-kyiv-attaque-trois-raffineries-russes",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S80 - Just Security, \u00ab Early Edition: November 25, 2026 \u00bb (compilation Reuters, BBC et AFP) \u00bb,",
+      "ref": "https://www.justsecurity.org/165910/early-edition-november-25-2026/",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S81 - Veille Russie / Point Presse, \u00ab Journal de Russie \u2014 \u00e9dition du mercredi 25 novembre 2026 \u00bb",
+      "ref": "https://point-presse-russie.fr/",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S82 - AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Le Kremlin sans commentaire sur les estimations de 700.000 morts russes en Ukraine \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-999375b7)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S83 - AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Soldats fran\u00e7ais en Ukraine : \"pas notre guerre\", estime Teddy Riner \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-be253bff)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S84 - AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Des familles de Tunisiens port\u00e9s disparus en Russie r\u00e9clament des nouvelles sur leur sort \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-5896d279)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S85 - AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab L'Iran accuse Isra\u00ebl de chercher \u00e0 tromper les \u00c9tats-Unis en affirmant que T\u00e9h\u00e9ran d\u00e9veloppe des armes chimiques \u00bb (r\u00e9f\u00e9rence interne news-UncIWZHJ)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S86 - Institut Sciences Strat\u00e9giques, \u00ab Chimique : Isra\u00ebl accuse l'Iran sans preuve publique \u00bb",
+      "ref": "https://www.institut-sciences-strategiques.org/etats/iran/israel-accuse-l-iran-d-un-programme-d-armes-chimiques-et-envisage-une-frappe-preventive/",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S87 - France 24, \u00ab Au Y\u00e9men, l'Arabie saoudite attaque Hode\u00efda, les Houthis menacent de repr\u00e9sailles \u00bb",
+      "ref": "https://www.france24.com/fr/moyen-orient/20261125-yemen-arabie-saoudite-attaque-hodeida-houthis-menacent-represailles",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S88 - Connaissance des \u00c9nergies (AFP), \u00ab Les Houthis menacent des ports saoudiens apr\u00e8s des frappes sur Hodeida \u00bb",
+      "ref": "https://www.connaissancedesenergies.org/afp/nouvelles-frappes-au-yemen-les-houthis-menacent-riyad-de-represailles-261125",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S89 - Business Wire, \u00ab Grand Theft Auto VI Shatters Entertainment Box Office Records with $3.79 Billion in Day One Retail Sales \u00bb",
+      "ref": "https://www.businesswire.com/news/home/20261120446139/en/Grand-Theft-Auto-VI-Shatters-Entertainment-Box-Office-Records-with-%243.79-Billion-in-Day-One-Retail-Sales",
+      "fiabilite": 4,
+      "maj": "20/11/2026"
+    },
+    {
+      "label": "S90 - RFI, \u00ab Les ventes de GTA VI ont atteint 3,79 milliards de dollars le jour de sa sortie, un \"record\" \u00bb",
+      "ref": "https://www.rfi.fr/fr/%C3%A9conomie/20261121-les-ventes-de-gta-vi-ont-atteint-3-79-milliards-de-dollars-le-jour-de-sa-sortie-un-record",
+      "fiabilite": 4,
+      "maj": "21/11/2026"
+    },
+    {
+      "label": "S91 - France 24, \" \u00ab GTA VI \u00bb s'offre un lancement record et surpasse la tourn\u00e9e de Taylor Swift \"",
+      "ref": "https://www.france24.com/fr/culture/20261121-gta-vi-s-offre-un-lancement-record-mais-agace-une-partie-des-joueurs",
+      "fiabilite": 4,
+      "maj": "21/11/2026"
+    },
+    {
+      "label": "S92 - AFP, d\u00e9p\u00eache du 21/11/2026 \u00ab \"GTA VI\" marque \"le plus grand lancement de l'histoire de PlayStation\" (Sony) \u00bb (r\u00e9f\u00e9rence interne news-IdJn34C1)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "21/11/2026"
+    },
+    {
+      "label": "S93 - Nr Magazine, \u00ab Films \u00e0 voir au cin\u00e9ma cette semaine : notre s\u00e9lection du 25 novembre 2026 \u00bb",
+      "ref": "https://www.nrmagazine.com/films-a-voir-au-cinema-cette-semaine-notre-selection-du-25-novembre-2026/",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S94 - L'Officiel des spectacles, \u00ab Sorties cin\u00e9ma de la semaine du mercredi 25 novembre 2026 \u00bb",
+      "ref": "https://www.offi.fr/cinema/nouveautes.html",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S95 - SuperDeluxeEdition, \u00ab Out This Week \u2014 on 27 November 2026 \u00bb",
+      "ref": "https://superdeluxeedition.com/news/out-this-week-on-27-november-2026/",
+      "fiabilite": 3,
+      "maj": "23/11/2026"
+    },
+    {
+      "label": "S96 - L'\u00c9claireur Fnac, \u00ab Le top des nouveaut\u00e9s de novembre \u2014 Romans \u00bb",
+      "ref": "https://leclaireur.fnac.com/selection/cp53317-le-top-des-nouveautes-de-novembre-romans/",
+      "fiabilite": 3,
+      "maj": "17/11/2026"
+    },
+    {
+      "label": "S97 - Critique Film, \u00ab Les sorties du 25 novembre 2026 \u00bb",
+      "ref": "https://www.critique-film.fr/les-sorties-du-25-novembre-2026/",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S98 - Boursorama (Reuters), \u00ab Wall Street vue en nette baisse avec l'IA, l'Europe efface ses gains \u00bb",
+      "ref": "https://www.boursorama.com/bourse/actualites/wall-street-vue-en-nette-baisse-avec-l-ia-l-europe-efface-ses-gains-c3af865179683d77c7b4ea6fa90d9a6d",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S99 - Sondage RTL",
+      "ref": "https://www.rtl.fr/actu/politique/sondage-rtl-presidentielle-2027-david-lisnard-confirme-sa-percee-et-depasse-edouard-philippe-le-duel-melenchon-le-pen-se-consolide-7900699122",
+      "fiabilite": 4,
+      "maj": "23/11/2026"
+    },
+    {
+      "label": "S100 - Reuters via Gate, \u00ab Trump proposes China tariffs as S&P 500 and Nasdaq futures fall 2-3 % \u00bb",
+      "ref": "https://www.gate.com/fr/news/detail/trump-proposes-china-tariffs-as-sp-500-and-nasdaq-futures-fall-2-3-25861103",
+      "fiabilite": 3,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S101 - AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Pro D2 : Provence Rugby pour reprendre sa marche en avant \u00bb (r\u00e9f\u00e9rence interne news-0bPEPJsG)",
+      "ref": "",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S102 - RFI, \u00ab La Cor\u00e9e du Nord expulse un diplomate suisse apr\u00e8s des sanctions contre un camp accus\u00e9 de \u00abrussifier\u00bb des enfants ukrainiens \u00bb",
+      "ref": "https://www.rfi.fr/fr/asie-pacifique/20261125-la-cor%C3%A9e-du-nord-expulse-un-diplomate-suisse-apr%C3%A8s-des-sanctions-contre-un-camp-accus%C3%A9-de-russifier-des-enfants-ukrainiens",
+      "fiabilite": 5,
+      "maj": "25/11/2026"
+    },
+    {
+      "label": "S103 - Euronews, \u00ab Cor\u00e9e du Nord : un diplomate suisse expuls\u00e9, le nouveau bureau de Pyongyang ferm\u00e9 \u00bb",
+      "ref": "https://fr.euronews.com/2026/11/25/coree-du-nord-un-diplomate-suisse-expulse-le-nouveau-bureau-de-pyongyang-ferme",
+      "fiabilite": 4,
+      "maj": "25/11/2026"
+    }
+  ],
+  "hors_chapitres": [
+    "Sport, Ligue des champions (5e journ\u00e9e). Jusqu'ici imp\u00e9rial, le PSG a connu son premier accroc de la saison, accroch\u00e9 \u00e0 domicile par la Roma ; Lille a sign\u00e9 l'exploit de la soir\u00e9e en faisant tomber le Bayern Munich, aid\u00e9 par un but contre son camp de Pavlovic ; le Bar\u00e7a a cartonn\u00e9 \u00e0 Bakou (4-1 contre Sabah) et Manchester United a conc\u00e9d\u00e9 le nul contre le Sporting (S58)(S59)(S60)(S62).",
+    "Violences faites aux femmes, chiffres mondiaux. \u00c0 la veille de la journ\u00e9e internationale, l'ONUDC rapporte que 47 000 femmes et filles ont \u00e9t\u00e9 tu\u00e9es en 2025 par un partenaire ou un proche \u2014 cinq femmes chaque heure dans le monde \u2014 un f\u00e9minicide qui recule bien plus lentement que l'homicide en g\u00e9n\u00e9ral (S63)(S64).",
+    "Violences faites aux femmes, France. Un rapport de la Mission interminist\u00e9rielle publi\u00e9 mercredi dresse un tableau sombre : plus d'une centaine de f\u00e9minicides l'an dernier, 272 000 femmes victimes de viol en 2024, 1,3 million victimes de harc\u00e8lement sexuel ; environ 90 manifestations \u00e9taient pr\u00e9vues mercredi, dont un hommage aux victimes sur la tombe du Soldat inconnu (S65)(S66).",
+    "Sant\u00e9, l'OCDE compare. La France consacrait en 2024 11,3 % de son PIB aux d\u00e9penses de sant\u00e9, la 4e part la plus \u00e9lev\u00e9e d'Europe derri\u00e8re l'Allemagne (12,2 %) et l'Autriche (11,7 %) \u2014 mais elle n'est que 10e en d\u00e9penses par habitant, et les patients fran\u00e7ais se disent moins satisfaits que la moyenne europ\u00e9enne (S67)(S68).",
+    "Sant\u00e9 publique, hiver qui s'installe. Le bulletin hebdomadaire de Sant\u00e9 publique France publi\u00e9 mercredi montre les infections respiratoires (grippe, bronchiolite, covid-19) en nette augmentation sur la semaine 47, principalement chez les plus jeunes (S69).",
+    "Insolite s\u00e9rieux, achats de panique. Des th\u00e9ories virales pr\u00e9disant une \u00ab crise mondiale \u00bb imminente d\u00e9clenchent depuis plusieurs semaines une vague d'achats panique plan\u00e9taire \u2014 r\u00e9serves d'eau, conserves, batteries \u2014 sur les r\u00e9seaux sociaux comme dans les cha\u00eenes de distribution, alerte l'AFP, plusieurs pays faisant \u00e9tat de ruptures cibl\u00e9es (S70)(S71).",
+    "Arch\u00e9ologie. \u00c0 Champigny-sur-Marne (Val-de-Marne), un chantier immobilier a mis au jour onze tombes vieilles de 6 500 ans et une statue-menhir d'environ 9,7 tonnes \u2014 une d\u00e9couverte n\u00e9olithique jug\u00e9e exceptionnelle par les arch\u00e9ologues (S72).",
+    "Faits de vie, Loto. Personne n'a d\u00e9croch\u00e9 le jackpot de 4 millions d'euros au tirage du mercredi \u2014 la cagnotte remonte \u00e0 5 millions d'euros pour samedi (S73).",
+    "Soudan. Des frappes de drones ont tu\u00e9 19 civils dans le sud-est du pays, selon une organisation de d\u00e9fense des droits humains, dans une guerre civile qui s'est intensifi\u00e9e ces derni\u00e8res semaines (S74).",
+    "Sport, rugby. En Pro D2, Provence Rugby, battu pour la premi\u00e8re fois de la saison lors de la 11e journ\u00e9e et retomb\u00e9 au 2e rang, devra r\u00e9agir vendredi contre Montauban \u2014 la hi\u00e9rarchie reste claire en haut du classement au tiers du championnat (r\u00e9f\u00e9rence interne AFP, S101)."
+  ]
+}
