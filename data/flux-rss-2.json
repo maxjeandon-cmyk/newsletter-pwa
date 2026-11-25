@@ -131,16 +131,6 @@
       "ligne": "recherche publique française vulgarisée"
     },
     {
-      "id": "futura-sciences",
-      "nom": "Futura Sciences",
-      "emoji": "🔭",
-      "categorie": "Sciences 🔬",
-      "flux": [
-        "https://www.futura-sciences.com/rss/actualites.xml"
-      ],
-      "ligne": "sciences et espace, grand public"
-    },
-    {
       "id": "science-vie",
       "nom": "Science & Vie",
       "emoji": "🧬",
@@ -149,16 +139,6 @@
         "https://www.science-et-vie.com/feed/"
       ],
       "ligne": "vulgarisation centenaire"
-    },
-    {
-      "id": "le-monde-sciences",
-      "nom": "Le Monde — Sciences",
-      "emoji": "🧪",
-      "categorie": "Sciences 🔬",
-      "flux": [
-        "https://www.lemonde.fr/sciences/rss_full.xml"
-      ],
-      "ligne": "les sciences par le Monde"
     },
     {
       "id": "franceinfo-sciences",
@@ -439,16 +419,6 @@
         "https://www.nasa.gov/rss/dyn/breaking_news.rss"
       ],
       "ligne": "l'agence spatiale américaine"
-    },
-    {
-      "id": "spacenews",
-      "nom": "SpaceNews",
-      "emoji": "🌑",
-      "categorie": "Spatial 🚀",
-      "flux": [
-        "https://spacenews.com/feed/"
-      ],
-      "ligne": "industrie spatiale, business"
     },
     {
       "id": "spaceflight-now",
@@ -899,16 +869,6 @@
         "https://www.telerama.fr/rss/une.xml"
       ],
       "ligne": "culture et sorties, critiques"
-    },
-    {
-      "id": "les-inrockuptibles",
-      "nom": "Les Inrockuptibles",
-      "emoji": "🎸",
-      "categorie": "Culture & idées 🎭",
-      "flux": [
-        "https://www.lesinrocks.com/feed/"
-      ],
-      "ligne": "pop, musique et cinéma"
     },
     {
       "id": "slate-fr",

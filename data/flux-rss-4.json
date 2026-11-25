@@ -139,6 +139,46 @@
       "flux": [
         "https://www.phoronix.com/rss.php"
       ]
+    },
+    {
+      "id": "actuia",
+      "nom": "ActuIA",
+      "emoji": "🤖",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "actualite de lintelligence artificielle, FR",
+      "flux": [
+        "https://www.actuia.com/feed/"
+      ]
+    },
+    {
+      "id": "developpez-ia",
+      "nom": "Développez — IA",
+      "emoji": "🤖",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "actu et tutoriels IA et data, FR",
+      "flux": [
+        "https://intelligence-artificielle.developpez.com/rss.php"
+      ]
+    },
+    {
+      "id": "ubergizmo",
+      "nom": "Ubergizmo",
+      "emoji": "🔌",
+      "categorie": "Tech & numérique 💻",
+      "ligne": "actualite tech et gadgets, EN",
+      "flux": [
+        "https://www.ubergizmo.com/feed/"
+      ]
+    },
+    {
+      "id": "ign-france",
+      "nom": "IGN France",
+      "emoji": "🎮",
+      "categorie": "Jeux 🎮",
+      "ligne": "jeux video, tests et pop culture, FR",
+      "flux": [
+        "https://fr.ign.com/feed.xml"
+      ]
     }
   ]
 }
