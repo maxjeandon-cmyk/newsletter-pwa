@@ -1,5 +1,5 @@
 {
-  "maj": "25/11/2026 13:46",
+  "maj": "26/11/2026 00:36",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -19,6 +19,19 @@
     "Mercredi 7 octobre (lendemain de l'acte III) : cours perturbés dans 459 lycées ; usage des grenades assourdissantes suspendu ; le policier auteur du tir tendu au visage d un élève est mis en examen ; à Lens, la mère du lycéen amputé annonce porter plainte ; Laurent Nuñez juge « excessif » de parler de répression policière."
   ],
   "version_gouvernement": [
+    {
+      "id": "amwwripaq-1xtw",
+      "date": "25/11/2026",
+      "titre": "Plus de 400 lycéens définitivement exclus de leur établissement depuis le début de la mobilisation",
+      "texte": "Quelque 3 000 procédures disciplinaires avaient été engagées dans le cadre des violences commises lors de la mobilisation lycéenne entre septembre et le 1er novembre, a indiqué ce mercredi 25 novembr…",
+      "source": "La Croix / Libération",
+      "sources": [
+        "La Croix",
+        "Libération"
+      ],
+      "url": "https://www.liberation.fr/societe/education/plus-de-400-lyceens-definitivement-exclus-de-leur-etablissement-depuis-le-debut-de-la-mobilisation-20261125_AVZFGSRE7RAFBEAIX7Z3EJNGHA/",
+      "verifie": true
+    },
     {
       "id": "amwt8p87y-4lio",
       "date": "23/11/2026",
@@ -179,23 +192,6 @@
         "BFMTV"
       ],
       "url": "https://www.lefigaro.fr/actualite-france/mortiers-tires-a-l-interieur-des-lycees-incendies-violences-sur-les-proviseurs-le-mouvement-lyceen-se-radicalise-alors-que-les-discussions-sont-dans-l-impasse-20261112",
-      "verifie": true
-    },
-    {
-      "id": "amwdfrd48-h6eu",
-      "date": "12/11/2026",
-      "titre": "\"Une augmentation certaine du niveau de violence\": le gouvernement veut une saisine de la justice \"systématique\" pour l…",
-      "texte": "\"Une augmentation certaine du niveau de violence\": le gouvernement veut une saisine de la justice \"systématique\" pour les actes délictueux près des lycées",
-      "source": "Le Figaro / BFMTV / Europe 1 / Libération / 20 minutes / La Croix",
-      "sources": [
-        "Le Figaro",
-        "BFMTV",
-        "Europe 1",
-        "Libération",
-        "20 minutes",
-        "La Croix"
-      ],
-      "url": "https://www.bfmtv.com/politique/gouvernement/une-augmentation-certaine-du-niveau-de-violence-le-gouvernement-veut-une-saisine-de-la-justice-systematique-pour-les-actes-delictueux-pres-des-lycees_AD-202611120440.html",
       "verifie": true
     }
   ],
