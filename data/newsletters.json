@@ -12,7 +12,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.actioncontrelafaim.org/actualites/",
       "derniere": {
-        "releve": "25/11/2026",
+        "releve": "26/11/2026",
         "points": [
           "Comment le partenariat a permis aux communautés de retrouver l’accès à un service vital après le séisme",
           "Comment le groupe de femmes Sengenge renforce la sécurité alimentaire et la résilience à West Pokot",
@@ -32,12 +32,12 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.greenpeace.fr/actualites/",
       "derniere": {
-        "releve": "25/11/2026",
+        "releve": "26/11/2026",
         "points": [
+          "Fossilflation : comment le pétrole et le gaz alimentent l’inflation ?",
           "Forêts, océans… Quelles avancées pour la biodiversité ?",
           "Vie chère, crise climatique : pourquoi tout est lié ?",
-          "Pure Salmon, c’est non !",
-          "Quand alerter peut coûter cher"
+          "Pure Salmon, c’est non !"
         ]
       }
     },
@@ -52,7 +52,7 @@
       "lien_autre": "https://www.croix-rouge.fr/actualite",
       "libelle_autre": "Actualité nationale",
       "derniere": {
-        "releve": "25/11/2026",
+        "releve": "26/11/2026",
         "points": [
           "Devenir sauveteur secouriste du travail Savoir intervenir face à une situation d'accident du travail et porter les premiers secours.",
           "Initiation à la santé mentale Comprendre les bases de la santé mentale, déconstruire les idées reçues et savoir en prendre soin.",
@@ -71,12 +71,12 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.msf.fr/actualites",
       "derniere": {
-        "releve": "25/11/2026",
+        "releve": "26/11/2026",
         "points": [
+          "« Depuis, la vie n’a plus de sens » : en Haïti, MSF dénonce un nombre alarmant…",
+          "Ebola : derrière le masque, la voix de nos soignants en RDC",
           "Afghanistan : la crise nutritionnelle s’aggrave, les moyens diminuent",
-          "Soudan du Sud : MSF suspend ses activités à Yei River après l’enlèvement de…",
-          "RDC : MSF appelle à la protection des populations civiles et des structures de…",
-          "« Nous ne dormons jamais » : en Cisjordanie, Israël organise la peur et détruit…"
+          "Soudan du Sud : MSF suspend ses activités à Yei River après l’enlèvement de…"
         ]
       }
     },
@@ -90,7 +90,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://seashepherd.fr/actualites",
       "derniere": {
-        "releve": "25/11/2026",
+        "releve": "26/11/2026",
         "points": [
           "éolien en mer : 10 idées reçues à l’épreuve de la science",
           "Dauphins : l’illusion d’une victoire",
@@ -109,7 +109,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.wwf.fr/s-informer/nos-actualites",
       "derniere": {
-        "releve": "25/11/2026",
+        "releve": "26/11/2026",
         "points": [
           "Pêche durable : Didier Gascuel ouvre les voies d'une pêche durable",
           "800 millions d’euros de recettes carbone non investis dans le climat",
@@ -129,12 +129,12 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.amnesty.fr/actualites/",
       "derniere": {
-        "releve": "25/11/2026",
+        "releve": "26/11/2026",
         "points": [
+          "Génocide à Gaza : les voix des femmes qui se battent pour leur survie",
           "Le génocide des Rohingyas commis par l’État du Myanmar reconnu par la Cour internationale de justice",
           "Soudan : enquête sur les frappes de drones qui visent la population civile à El Obeid",
-          "Exposition « Histoire(s) » : une traversée inédite dans l’œuvre du photographe Guillaume Herbaut",
-          "« Rights Now », nouvelle saison : notre podcast qui décrypte les mécanismes des dérives autoritaires"
+          "Exposition « Histoire(s) » : une traversée inédite dans l’œuvre du photographe Guillaume Herbaut"
         ]
       }
     },
@@ -148,7 +148,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.oxfamfrance.org/communiques-de-presse/",
       "derniere": {
-        "releve": "25/11/2026",
+        "releve": "26/11/2026",
         "points": [
           "Bilan COP31 : ce ne sont pas les COP qui échouent, ce sont certains États qui les sabotent",
           "Le point sur la loi intégrale contre les violences sexuelles, soutenue par Oxfam",
@@ -167,7 +167,7 @@
       "libelle": "S’abonner",
       "lien_actu": "https://www.handicap-international.fr/fr/actualites/index",
       "derniere": {
-        "releve": "25/11/2026",
+        "releve": "26/11/2026",
         "points": [
           "Bénin : Souleyman",
           "Madagascar : Odile",
