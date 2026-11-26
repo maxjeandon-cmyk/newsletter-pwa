@@ -179,6 +179,36 @@
       "flux": [
         "https://fr.ign.com/feed.xml"
       ]
+    },
+    {
+      "id": "telerama",
+      "nom": "Télérama",
+      "emoji": "🎬",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.telerama.fr/rss/television.xml"
+      ],
+      "ligne": "television, cinema et culture par la reference culturelle francaise"
+    },
+    {
+      "id": "espace-sciences",
+      "nom": "Espace Sciences",
+      "emoji": "🔆",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.espace-sciences.org/rss.xml"
+      ],
+      "ligne": "mediation scientifique, actualites et recherche (Bretagne) et pour tous"
+    },
+    {
+      "id": "sky-news",
+      "nom": "Sky News",
+      "emoji": "🇬🇧",
+      "categorie": "Anglophone généraliste 🌐",
+      "flux": [
+        "https://feeds.skynews.com/feeds/rss/home.xml"
+      ],
+      "ligne": "info generale britannique en continu"
     }
   ]
 }
