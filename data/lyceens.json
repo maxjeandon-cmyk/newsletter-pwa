@@ -1,5 +1,5 @@
 {
-  "maj": "26/11/2026 13:22",
+  "maj": "27/11/2026 00:48",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -202,12 +202,14 @@
       "date": "26/11/2026",
       "titre": "Prix Goncourt des lycéens 2026 : Lilia Hassaine récompensée pour « JE », Charlotte Brontë revisitée après #MeToo",
       "texte": "Dans JE, récompensé ce jeudi 26 novembre 2026 du prix Goncourt des lycéens, Lilia Hassaine revisite de manière étonnante le destin d’Antoinette Cosway, personnage furtif de Jane Eyre. Le mariage de l…",
-      "source": "Le Figaro / BFMTV / La Croix / Libération",
+      "source": "Le Figaro / BFMTV / La Croix / Libération / Europe 1 / L'Humanité",
       "sources": [
         "Le Figaro",
         "BFMTV",
         "La Croix",
-        "Libération"
+        "Libération",
+        "Europe 1",
+        "L'Humanité"
       ],
       "url": "https://www.la-croix.com/culture/je-de-lilia-hassaine-charlotte-bronte-revisitee-apres-metoo-20260824",
       "verifie": true
