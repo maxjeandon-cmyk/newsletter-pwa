@@ -1,15 +1,15 @@
 {
-  "date": "25/11/2026",
-  "heure": "23:36",
+  "date": "26/11/2026",
+  "heure": "12:22",
   "relevesOng": {
-    "rafraichis": 9,
+    "rafraichis": 0,
     "echecs": 1,
-    "publie": true
+    "publie": false
   },
   "lyceens": {
     "nouvelles": 1,
-    "fusionnees": 1,
-    "moissonnes": 7,
+    "fusionnees": 2,
+    "moissonnes": 17,
     "total": 22,
     "publie": true
   },
@@ -24,12 +24,12 @@
     {
       "nom": "validate-latest.js",
       "ok": true,
-      "detail": "\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 22/11/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n\nToutes les éditions récentes sont conformes. 🌱"
+      "detail": "\n[Cohérence]\n  ✅ date dans le HTML — recherche de « 23/11/2026 »\n\n48/48 contrôles passés (format 14 chapitres)\nÉdition conforme — publication validée. 🌱\n\nToutes les éditions récentes sont conformes. 🌱"
     },
     {
       "nom": "check-site.js",
       "ok": true,
-      "detail": "=== check-site ===\nℹ️  latest.json : 59 édition(s), plus récente 2026-11-24\nℹ️  édition 2026-11-24 : JSON OK, HTML 100833 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
+      "detail": "=== check-site ===\nℹ️  latest.json : 60 édition(s), plus récente 2026-11-25\nℹ️  édition 2026-11-25 : JSON OK, HTML 104181 octets, structure OK\nℹ️  site public joignable (1461 octets)\n\nSite et édition conformes. 🌱"
     },
     {
       "nom": "sonde notifications",
@@ -38,13 +38,13 @@
     },
     {
       "nom": "ong-releve.js",
-      "ok": true,
-      "detail": "9 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
+      "ok": false,
+      "detail": "0 rafraîchi(s), 1 échec(s) — relevé précédent conservé pour les sites muets"
     },
     {
       "nom": "lyceens.js",
       "ok": true,
-      "detail": "1 nouvelle(s) info, 1 fusionnée(s) sur 7 moissonnée(s) — 22 au total"
+      "detail": "1 nouvelle(s) info, 2 fusionnée(s) sur 17 moissonnée(s) — 22 au total"
     },
     {
       "nom": "etudiants.js",
