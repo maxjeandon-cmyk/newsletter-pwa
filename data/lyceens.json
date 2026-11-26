@@ -1,5 +1,5 @@
 {
-  "maj": "26/11/2026 00:36",
+  "maj": "26/11/2026 13:22",
   "titre": "Révolte lycéenne — France 2026",
   "intro": "Mouvement lycéen et étudiant : blocus des lycées, revendications sur les moyens de l'éducation, réponse du gouvernement. Quatre lectures ici : la chronique « Version des Lycéens » (le fil jour après jour, écrit du point de vue des élèves, chapitres transverses en fin de fil), la « Version du gouvernement », les « Faits multisources » (les seules informations corroborées par plusieurs médias indépendants) et la « Chronologie résumée » des jalons.",
   "note": "Badge ✅ vérifié : information corroborée par au moins deux médias indépendants. Badge ⚠️ non vérifié : une seule source à ce stade — une piste, pas un fait. Les déclarations sont attribuées à leurs auteurs, jamais reformulées.",
@@ -24,10 +24,11 @@
       "date": "25/11/2026",
       "titre": "Plus de 400 lycéens définitivement exclus de leur établissement depuis le début de la mobilisation",
       "texte": "Quelque 3 000 procédures disciplinaires avaient été engagées dans le cadre des violences commises lors de la mobilisation lycéenne entre septembre et le 1er novembre, a indiqué ce mercredi 25 novembr…",
-      "source": "La Croix / Libération",
+      "source": "La Croix / Libération / France Inter",
       "sources": [
         "La Croix",
-        "Libération"
+        "Libération",
+        "France Inter"
       ],
       "url": "https://www.liberation.fr/societe/education/plus-de-400-lyceens-definitivement-exclus-de-leur-etablissement-depuis-le-debut-de-la-mobilisation-20261125_AVZFGSRE7RAFBEAIX7Z3EJNGHA/",
       "verifie": true
@@ -197,6 +198,21 @@
   ],
   "faits": [
     {
+      "id": "amwxivyf5-7ntm",
+      "date": "26/11/2026",
+      "titre": "Prix Goncourt des lycéens 2026 : Lilia Hassaine récompensée pour « JE », Charlotte Brontë revisitée après #MeToo",
+      "texte": "Dans JE, récompensé ce jeudi 26 novembre 2026 du prix Goncourt des lycéens, Lilia Hassaine revisite de manière étonnante le destin d’Antoinette Cosway, personnage furtif de Jane Eyre. Le mariage de l…",
+      "source": "Le Figaro / BFMTV / La Croix / Libération",
+      "sources": [
+        "Le Figaro",
+        "BFMTV",
+        "La Croix",
+        "Libération"
+      ],
+      "url": "https://www.la-croix.com/culture/je-de-lilia-hassaine-charlotte-bronte-revisitee-apres-metoo-20260824",
+      "verifie": true
+    },
+    {
       "id": "amww4b1w2-gw0e",
       "date": "25/11/2026",
       "titre": "Deux adolescents de 17 ans placés en garde à vue après l'incendie volontaire d'un lycée d'Aix-en-Provence",
@@ -320,19 +336,6 @@
         "Libération"
       ],
       "url": "https://www.20minutes.fr/justice/4260846-20261106-colere-lyceens-deux-eleves-16-ans-mis-examen-incendie-lycee-nelson-mandela-nantes?at_medium=display&at_campaign=149",
-      "verifie": true
-    },
-    {
-      "id": "amw5own9r-3z1g",
-      "date": "06/11/2026",
-      "titre": "Mobilisation lycéenne à Lyon : l'entrée du lycée Édouard Herriot incendiée",
-      "texte": "À Lyon, l’entrée du lycée Édouard Herriot, situé dans le centre-ville, a été incendiée vendredi 6 novembre. Une enquête a été ouverte et huit personnes ont été interpellées.",
-      "source": "Le Figaro / franceinfo",
-      "sources": [
-        "Le Figaro",
-        "franceinfo"
-      ],
-      "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/mobilisation-lyceenne-a-lyon-l-entree-du-lycee-edouard-herriot-incendiee_8271605.html#xtor=RSS-3-%5Bgeneral%5D",
       "verifie": true
     }
   ],
