@@ -1,0 +1,642 @@
+{
+ "date": "2026-11-26",
+ "genere_le": "2026-11-26T23:14:25.000Z",
+ "html": "editions/2026-11-26.html",
+ "resume_executif": [
+  "IA : le patron d'Anthropic Dario Amodei a d\u00e9menti vouloir voir l'humanit\u00e9 \u00ab c\u00e9der son libre arbitre \u00bb \u00e0 l'IA, tandis que l'Union europ\u00e9enne a annonc\u00e9 un fonds souverain de 50 milliards d'euros pour l'IA et l'informatique quantique \u2014 et que les centres antipoison fran\u00e7ais cherchent la parade face aux appels d\u00e9clench\u00e9s par les r\u00e9ponses d'assistants IA (S1)(S2)(S3).",
+  "Spatial : la mission chinoise Shenzhou-24 a emmen\u00e9 le premier astronaute \u00e9tranger \u2014 un Pakistanais \u2014 vers la station Tiangong, et la sonde europ\u00e9enne Hera a d\u00e9voil\u00e9 ses premi\u00e8res images de l'ast\u00e9ro\u00efde Dimorphos, quatre ans apr\u00e8s la mission DART (S14)(S15)(S16).",
+  "\u00c9conomie : la banque centrale de Cor\u00e9e du Sud a relev\u00e9 son taux directeur \u00e0 3,25 % (plus haut depuis deux ans) et les donn\u00e9es am\u00e9ricaines montrent une \u00e9conomie en surchauffe ; c\u00f4t\u00e9 fran\u00e7ais, le S\u00e9nat a approuv\u00e9 la surtaxe d'environ 5 milliards d'euros demand\u00e9e aux grandes entreprises (S21)(S22)(S25).",
+  "France : le maire de Cannes David Lisnard grimpe \u00e0 12 % dans les sondages de la pr\u00e9sidentielle pendant qu'\u00c9douard Philippe d\u00e9gringole, de nouveaux \u00e9crits compromettants pour Jordan Bardella sont publi\u00e9s, et RSF demande la suspension de CNews apr\u00e8s l'attentat de Trappes (S10)(S11)(S12).",
+  "G\u00e9opolitique : Donald Trump a appel\u00e9 Vladimir Poutine \u00e0 \u00ab mettre fin \u00e0 toute agression militaire \u00bb en Europe, une raffinerie russe a \u00e9t\u00e9 tr\u00e8s endommag\u00e9e par un drone ukrainien, et une attaque de drones attribu\u00e9e \u00e0 l'Iran a tu\u00e9 deux Italiens au Kowe\u00eft (S68)(S63)(S13)."
+ ],
+ "chapitres": [
+  {
+   "id": "intelligence-artificielle",
+   "emoji": "\ud83e\udd16",
+   "nom": "Intelligence artificielle",
+   "resume": "Amodei d\u00e9ment le \u00ab libre arbitre \u00bb c\u00e9d\u00e9 \u00e0 l'IA (S1), l'UE d\u00e9bloque 50 milliards d'euros pour l'IA et le quantique (S2), les centres antipoison d\u00e9bord\u00e9s par les r\u00e9ponses d'assistants IA (S3), l'Inrae pr\u00e9pare un agent pour les agriculteurs (S4), la Malaisie poursuit Google (S5) et l'IA entre dans la boucle militaire de l'Otan (S6)."
+  },
+  {
+   "id": "spatial",
+   "emoji": "\ud83d\ude80",
+   "nom": "Spatial",
+   "resume": "Premier astronaute \u00e9tranger \u2014 pakistanais \u2014 \u00e0 bord de Tiangong via Shenzhou-24 (S14)(S15), Xi Jinping d\u00e9fend l'\u00ab utilisation pacifique \u00bb de l'espace (S16), la sonde Hera livre ses premi\u00e8res images de Dimorphos (S17), le Japon d\u00e9voile un rover lunaire de recherche d'eau (S18), et un million de satellites jusqu'en 2040 ? (S19)."
+  },
+  {
+   "id": "economie-pour-les-nuls",
+   "emoji": "\ud83d\udcb0",
+   "nom": "L\u2019\u00c9conomie pour les nuls",
+   "resume": "C\u00f4t\u00e9 monde : la banque centrale de Cor\u00e9e du Sud rel\u00e8ve son taux directeur \u00e0 3,25 %, et l'\u00e9conomie am\u00e9ricaine montre tous les signes de la surchauffe (S21)(S22). C\u00f4t\u00e9 France : le S\u00e9nat approuve la surtaxe d'environ 5 milliards d'euros sur les grandes entreprises, et l'\u00c9tat paie toujours tr\u00e8s cher pour se financer (S25)(S26)."
+  },
+  {
+   "id": "droit-pour-les-nuls",
+   "emoji": "\u2696\ufe0f",
+   "nom": "Le Droit pour les nuls",
+   "resume": "Le conseil de discipline et l'exclusion d\u00e9finitive du lyc\u00e9e, \u00e9clair\u00e9s par les plus de 400 exclus du mouvement lyc\u00e9en (S30) et la contestation de la mesure de Val\u00e9rie P\u00e9cresse en \u00cele-de-France (S31) : composition (R. 511-20), proc\u00e9dure, recours \u2014 textes \u00e0 l'appui (S33)(S35)."
+  },
+  {
+   "id": "jeu-video-pop-culture",
+   "emoji": "\ud83c\udfae",
+   "nom": "Jeu vid\u00e9o & pop culture",
+   "resume": "Rockstar : les salari\u00e9s rejettent la reconnaissance d'un syndicat (S36) ; la franchise GTA et son dernier opus divisent les fans, \u00ab trop gentil \u00bb pour certains (S37)."
+  },
+  {
+   "id": "culture",
+   "emoji": "\ud83c\udfad",
+   "nom": "Culture",
+   "resume": "Le Goncourt des lyc\u00e9ens couronne \u00ab JE \u00bb de Lilia Hassaine, revisitation de Jane Eyre (S39) ; C\u00e9dric Klapisch recevra un C\u00e9sar d'honneur (S40) ; Depardieu sera bien jug\u00e9 pour viol (S41) ; le th\u00e9\u00e2tre revendiqu\u00e9 par le jeune metteur en sc\u00e8ne S\u00e9bastien Kheroufi (S42)."
+  },
+  {
+   "id": "sciences",
+   "emoji": "\ud83d\udd2c",
+   "nom": "Sciences",
+   "resume": "Mine de lithium dans l'Allier : l'impact environnemental \u00ab sous-estim\u00e9 \u00bb selon une \u00e9tude (S44) ; l'Anses tranchera mi-janvier sur la d\u00e9rogation insecticide betteraves (S45) ; 47 milliards de reais de subventions fossiles point\u00e9es au Br\u00e9sil (S46) ; d\u00e9bat sur le cr\u00e9dit imp\u00f4t recherche (S47)."
+  },
+  {
+   "id": "climat",
+   "emoji": "\ud83c\udf0d",
+   "nom": "Climat",
+   "resume": "Apr\u00e8s l'\u00e9chec de la COP31 d'Antalya, le pape juge la situation \u00ab pr\u00e9occupante \u00bb (S49), Monique Barbut estime que la Chine \u00ab doit aussi faire sa part \u00bb du financement climatique (S50), et la France revendique 15 % de l'effort \u2014 pendant que le Br\u00e9sil est \u00e9pingl\u00e9 pour 7 milliards d'euros de subventions fossiles (S46)."
+  },
+  {
+   "id": "politique-francaise",
+   "emoji": "\ud83c\uddeb\u0001F1F7",
+   "nom": "Politique fran\u00e7aise",
+   "resume": "Lisnard monte \u00e0 12 %, Philippe d\u00e9gringole (S10) ; de nouveaux \u00e9crits compromettants pour Bardella (S11) ; RSF demande la suspension de CNews (S12) ; 3 100 violences sur des \u00e9lus en 2026, +24 % (S52) ; lancement des \u00ab Millionnaires patriotes \u00bb (S53)."
+  },
+  {
+   "id": "etats-unis",
+   "emoji": "\ud83c\uddfa\u0001F1F8",
+   "nom": "\u00c9tats-Unis",
+   "resume": "Nouveaux droits de douane sur les usines \u00ab subventionn\u00e9es \u00bb en pr\u00e9paration (S80), Thanksgiving sous les temp\u00eates avec la Macy's parade report\u00e9e (S81), et Washington retarde ses annonces sur sa pr\u00e9sence militaire en Europe (S82)."
+  },
+  {
+   "id": "chine",
+   "emoji": "\ud83c\udde8\u0001F1F3",
+   "nom": "Chine",
+   "resume": "Huawei reconnu coupable de vol de secrets industriels aux \u00c9tats-Unis, P\u00e9kin crie \u00e0 l'entrave (S58) ; tensions navales avec le Japon autour d'\u00eelots disput\u00e9s (S59) ; P\u00e9kin se r\u00e9serve des mesures face aux droits de douane (S60) ; critique de l'accord de d\u00e9fense Philippines-Australie (S61)."
+  },
+  {
+   "id": "russie",
+   "emoji": "\ud83c\uddf7\u0001F1FA",
+   "nom": "Russie",
+   "resume": "Poutine tiendra sa conf\u00e9rence annuelle le 10 d\u00e9cembre avant le G20 de Miami (S62) ; une raffinerie tr\u00e8s endommag\u00e9e par un drone ukrainien (S63) ; 250 d\u00e9pouilles de soldats remises \u00e0 l'Ukraine (S64) ; une espionne pr\u00e9sum\u00e9e jug\u00e9e \u00e0 Berlin (S65)."
+  },
+  {
+   "id": "geopolitique",
+   "emoji": "\ud83e\udded",
+   "nom": "G\u00e9opolitique mondiale",
+   "resume": "Trump appelle Poutine \u00e0 \u00ab mettre fin \u00e0 toute agression militaire \u00bb en Europe (S68)(S69) ; une raffinerie russe frapp\u00e9e (S63) ; deux Italiens tu\u00e9s au Kowe\u00eft dans une attaque de drones attribu\u00e9e \u00e0 l'Iran (S43) ; 14 morts au Soudan (S44) ; la Cor\u00e9e du Nord expulse le chef du bureau suisse (S72)."
+  },
+  {
+   "id": "grande-info-semaine",
+   "emoji": "\ud83d\udcf0",
+   "nom": "Grande information de la semaine",
+   "resume": "Au-del\u00e0 des 24 heures : l'\u00e9chec de la COP31, la correction boursi\u00e8re mondiale de l'IA, la marche vers la pr\u00e9sidentielle 2027, le mouvement lyc\u00e9en et ses 400 exclus d\u00e9finitifs, l'UE sous pression budg\u00e9taire et l'envol chinois vers Tiangong."
+  }
+ ],
+ "hors_chapitres": [
+  "Sport, football. Le PSG a \u00e9t\u00e9 tenu en \u00e9chec \u00e0 domicile par la Roma (2-2) en Ligue des champions et perd la premi\u00e8re place de la phase de ligue au profit du Real Madrid, seule \u00e9quipe \u00e0 cinq victoires (S75).",
+  "Sport, football. Lille s'est offert le scalp du Bayern Munich (2-1), premi\u00e8re victoire en Ligue des champions cette saison \u2014 de quoi relancer les espoirs de qualification du Losc (S76).",
+  "Sport, rugby. Le Championnat des nations vit ses six finales en trois jours ce week-end ; le XV de France y affrontera l'Afrique du Sud en grande finale dimanche, priv\u00e9e du Sud-Africain Pieter-Steph du Toit, forfait (S77)(S78).",
+  "Sport, football. En Ligue 1, le Paris FC poursuit son inexorable mont\u00e9e en puissance sous la houlette de l'Anglais Steve Rosenior, qui a impos\u00e9 un jeu \u00ab en une ou deux touches de balle \u00bb (S79).",
+  "Sport, biathlon. La Coupe du monde 2026-2027 ouvre jeudi \u00e0 Kontiolahti, en Finlande (S80).",
+  "Sant\u00e9. Le prix des bo\u00eetes de parac\u00e9tamol fabriqu\u00e9es en France (Doliprane, Dafalgan, Efferalgan) sera revaloris\u00e9 \u00e0 compter de d\u00e9but juillet au titre de la souverainet\u00e9 sanitaire, apr\u00e8s des ann\u00e9es de gel tarifaire (S81).",
+  "Sant\u00e9 publique. Les d\u00e9penses de sant\u00e9 repr\u00e9sentaient 11,3 % du PIB fran\u00e7ais en 2024 \u2014 la quatri\u00e8me part la plus \u00e9lev\u00e9e d'Europe \u2014 mais la France n'est que dixi\u00e8me en d\u00e9penses par habitant, selon une \u00e9tude (S82).",
+  "Solidarit\u00e9. 38 Palestiniens de Gaza ont \u00e9t\u00e9 \u00e9vacu\u00e9s vers la France cette semaine, pour l'essentiel dans le cadre de dispositifs de r\u00e9unification familiale, selon le minist\u00e8re (S83).",
+  "Insolite s\u00e9rieux, arch\u00e9ologie. Ath\u00e8nes expose une s\u00e9pulture collective de jeunes ex\u00e9cut\u00e9s il y a 2 700 ans, les \u00ab captifs de Faliro \u00bb, dont les squelettes ont \u00e9t\u00e9 d\u00e9plac\u00e9s pour \u00eatre pr\u00e9serv\u00e9s (S43).",
+  "Transports. Le train Oxyg\u00e8ne (Paris-Clermont, Paris-Toulouse) a \u00e9t\u00e9 d\u00e9voil\u00e9 au public, mais sa date de lancement reste incertaine : le dossier de s\u00e9curit\u00e9 sera envoy\u00e9 \u00e0 l'EPSF \u00ab probablement en f\u00e9vrier ou d\u00e9but mars \u00bb, selon une source SNCF (S84).",
+  "Transports, \u00c9tats-Unis. Un avion-cargo a fait une sortie de piste \u00e0 l'a\u00e9roport international de Miami, entra\u00eenant la fermeture de toutes les pistes sauf une en pleine p\u00e9riode de forte affluence (S85).",
+  "Soci\u00e9t\u00e9. \u00c0 Mayotte, des habitants bloquent les routes avec des bambous \u00e0 Ouangani apr\u00e8s \u00ab trois morts en une semaine \u00bb \u2014 \u00ab on veut \u00eatre entendus \u00bb, r\u00e9sume une manifestante (S86)."
+ ],
+ "sources": [
+  {
+   "label": "S1 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Le patron d'Anthropic se d\u00e9fend de vouloir c\u00e9der le libre arbitre humain \u00e0 l'IA \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-550ee8e0)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S2 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab L'UE veut cr\u00e9er un fonds souverain de 50 milliards d'euros pour l'IA et l'informatique quantique \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-6a217aa1)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S3 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Manger du moisi, c'est grave ? Quand les r\u00e9ponses de l'IA embolisent les centres antipoison \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-cc8739f9)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S4 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab L'Inrae va d\u00e9velopper un agent IA pour accompagner les agriculteurs face aux transitions \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-f9815267)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S5 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab La Malaisie poursuit Google pour des contenus nocifs sur Youtube \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-34c1e464)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S6 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab L'IA va aussi aider l'Otan \u00e0 parler la m\u00eame langue \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-85c4022d)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S7 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Bureau Veritas grimpe en Bourse apr\u00e8s des informations sur l'int\u00earet du fonds Advent \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-17dee724)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S8 \u2014 AFP, d\u00e9p\u00eache du 20/11/2026 \u00ab IA : Mistral pr\u00e9voit de doubler ses effectifs en Asie-Pacifique \u00bb (r\u00e9f\u00e9rence interne news-afp-20261120-94d93488)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S9 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Un juge am\u00e9ricain ordonne la lib\u00e9ration sous caution d'un ex-ing\u00e9nieur saoudien dans le dossier OpenAI \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-98fbe2cf)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S10 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Pr\u00e9sidentielle : Lisnard donn\u00e9 \u00e0 12 %, Philippe d\u00e9gringole \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-6bee21f0)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S11 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Ecrits antis\u00e9mites : Le Monde et Mediapart r\u00e9v\u00e8lent de nouveaux \u00e9l\u00e9ments compromettants pour Bardella \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-08fe4042)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S12 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab RSF demande la suspension de la cha\u00eene CNews, d\u00e9non\u00e7ant un p\u00e9ril d\u00e9mocratique \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-45f378d1)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S13 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Une attaque de drones attribu\u00e9e \u00e0 l'Iran tue deux Italiens au Kowe\u00eft \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-a09fd3bb)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S14 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab D\u00e9collage de la mission spatiale chinoise Shenzhou-24, un astronaute \u00e9tranger \u00e0 bord \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-cbaf6219)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S15 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Un astronaute pakistanais rejoint la station chinoise Tiangong, une premi\u00e8re \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-8fe68796)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S16 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Espace : la Chine souhaite d\u00e9fendre son utilisation pacifique, dit Xi \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-3af5d8d1)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S17 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Premi\u00e8res images de l'ast\u00e9ro\u00efde Dimorphos et d\u00e9j\u00e0 des surprises \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-185c140f)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S18 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Mission de recherche d'eau sur la Lune : le Japon d\u00e9voile un prototype de rover \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-c4fcfcb2)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S19 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Un million de satellites dans l'espace : est-ce possible ? \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-80194370)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S20 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab L'UE veut cr\u00e9er un fonds souverain pour investir dans le quantique et l'IA \u00bb (r\u00e9f\u00e9rence interne news-afp-20261124-aa35ea14)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S21 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Cor\u00e9e du Sud : la BOK rel\u00e8ve son taux directeur \u00e0 3,25 %, son plus haut en deux ans \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-78cd836e)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S22 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Aux Etats-Unis, croissance et inflation flambent de concert \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-04e97a19)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S23 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Les Bourses mondiales attendent l'inflation am\u00e9ricaine, la tech en souffrance \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-6ce4949c)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S24 \u2014 AP, d\u00e9p\u00eache du 25/11/2026 \u00ab US plans to hike tariffs on China, EU, Brazil and others over subsidized factories \u00bb (r\u00e9f\u00e9rence interne news-ap-20261125-69b0d4a4)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S25 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Budget : le S\u00e9nat approuve l'effort de 5 milliards demand\u00e9 aux grandes entreprises \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-c4587aee)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S26 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Affaire Lyhanna, attentat de Trappes, C\u00e9line Dion \u00e0 Paris : 10 \u00e9v\u00e9nements marquants de 2026 en France \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-61867c80)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S27 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Budget de l'UE : la France veut pas un euro de moins pour la politique agricole commune, pr\u00e9vient Macron \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-e1a4601d)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S28 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab France's Le Pen slams underhanded tactics in EU budget fight \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-0dd45cd6)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S29 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab EU leaders lock horns on budget as French elections loom \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-a545d7c1)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S30 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Mouvement lyc\u00e9en : plus de 400 \u00e9l\u00e8ves exclus d\u00e9finitivement de leur \u00e9tablissement \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-00b3bee3)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S31 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Lyc\u00e9es : la LDH saisit la justice contre la suspension des aides aux auteurs de d\u00e9gradations voulue par P\u00e9cresse \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-57e840c6)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S32 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Tirs de mortier : des lyc\u00e9ens inquiets pour leur s\u00e9curit\u00e9 interpellent les autorit\u00e9s \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-27b5cab4)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S33 \u2014 L\u00e9gifrance, Code de l'\u00e9ducation, sous-section 3 : le conseil de discipline de l'\u00e9tablissement (articles R. 511-20 \u00e0 D. 511-43)",
+   "ref": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006071191/LEGISCTA000024276431/",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S34 \u2014 L\u00e9gifrance, Code de l'\u00e9ducation, article R. 511-45 (conseil de discipline d\u00e9partemental)",
+   "ref": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000025164932/2026-10-08",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S35 \u2014 Cabinet Kohen Avocats, \u00ab Convoqu\u00e9 devant le conseil de discipline : exclusion temporaire, sursis, mesure conservatoire et recours \u00bb",
+   "ref": "https://kohenavocats.com/conseil-discipline-college-lycee-convocation-exclusion-temporaire-sursis-recours-2026/",
+   "fiabilite": 3,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S36 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Les salari\u00e9s de l'\u00e9diteur de GTA VI rejettent la reconnaissance d'un syndicat \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-b2e270a3)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S37 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab GTA trop gentil ? Certains fans rejettent le virage pris par la franchise dans son dernier opus \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-38fef5d3)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S38 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Entre mouvements sociaux et pr\u00e9sidentielle, le secteur du tourisme en France craint les frimas \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-ebfbce3a)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S39 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Le Goncourt des lyc\u00e9ens d\u00e9cern\u00e9 \u00e0 JE de Lilia Hassaine, qui revisite un roman culte \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-ee3cd5d2)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S40 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Le r\u00e9alisateur C\u00e9dric Klapisch recevra un C\u00e9sar d'honneur en f\u00e9vrier \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-8e294f25)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S41 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Le renvoi en proc\u00e8s de Depardieu pour viol sur Charlotte Arnould confirm\u00e9 \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-0b869a55)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S42 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Le th\u00e9\u00e2tre nous appartient \u00e0 nous aussi, revendique le jeune metteur en sc\u00e8ne S\u00e9bastien Kheroufi \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-8a81f6ed)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S43 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Gr\u00e8ce : une s\u00e9pulture collective de jeunes ex\u00e9cut\u00e9s il y a 2.700 ans expos\u00e9e \u00e0 Ath\u00e8nes \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-14f1ddc9)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S44 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Mine de lithium dans l'Allier : l'impact environnemental sous-estim\u00e9 selon une \u00e9tude \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-cae6d7b8)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S45 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab D\u00e9rogation pour un insecticide pour les betteraves : d\u00e9cision de l'Anses mi-janvier \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-18ea6e62)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S46 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Br\u00e9sil : des ONG pointent le co\u00fbt pour le climat des subventions sur les carburants \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-bf1763e8)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S47 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Le ministre de l'Enseignement sup\u00e9rieur d\u00e9fend le cr\u00e9dit imp\u00f4t recherche \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-bba5f31b)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S48 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Eau, \u00e9nergie, transports : public et priv\u00e9 doivent investir massivement dans les infrastructures, selon une \u00e9tude \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-683d721a)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S49 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Crise climatique : le pape juge pr\u00e9occupant l'\u00e9chec de la COP31 \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-c8c0b012)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S50 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab La Chine doit aussi faire sa part dans le financement climatique, estime Monique Barbut \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-816ecabc)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S51 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab David Lisnard, candidat \u00e0 la pr\u00e9sidentielle, largement r\u00e9\u00e9lu \u00e0 la t\u00eate de l'Association des maires de France \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-d5c5dab0)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S52 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Actualit\u00e9s du mercredi 25 novembre 2026 : 3.100 faits de violences sur des \u00e9lus comptabilis\u00e9s depuis le d\u00e9but 2026 \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-3342445a)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S53 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Fiscalit\u00e9 des plus riches : le mouvement des Millionnaires patriotes se lance en France \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-5f7a3f67)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S54 \u2014 AP, d\u00e9p\u00eache du 26/11/2026 \u00ab Heavy rain, wind and flooding plague much of US on Thanksgiving holiday \u00bb (r\u00e9f\u00e9rence interne news-ap-20261126-10effa03)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S55 \u2014 AP, d\u00e9p\u00eache du 25/11/2026 \u00ab What's closed on Thanksgiving and when stores reopen on Black Friday \u00bb (r\u00e9f\u00e9rence interne news-ap-20261125-619fc6a3)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S56 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Les \u00c9tats-Unis retardent leurs annonces sur leur pr\u00e9sence militaire en Europe \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-b13441ce)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S57 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Le Salvadorien symbole des expulsions sous Trump quitte de lui-m\u00eame les \u00c9tats-Unis \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-30e5f891)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S58 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Le g\u00e9ant chinois Huawei reconnu coupable de vol de secrets industriels aux \u00c9tats-Unis \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-290c35ce)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S59 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Japon et Chine s'accusent mutuellement d'intrusion pr\u00e8s d'\u00eelots disput\u00e9s \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-7e67cbce)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S60 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Droits de douane am\u00e9ricains : la Chine dit se r\u00e9server le droit de prendre des mesures \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-752677ca)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S61 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Ing\u00e9rence et tensions : la Chine critique l'accord de d\u00e9fense Philippines-Australie \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-f3b19d5e)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S62 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Russie : Poutine fera son bilan de l'ann\u00e9e le 10 d\u00e9cembre, devant la presse et la population \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-5e4bbaa4)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S63 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Une raffinerie du sud-ouest de la Russie tr\u00e8s endommag\u00e9e apr\u00e8s une attaque de drone ukrainienne \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-c26a84dd)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S64 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab L'Ukraine a re\u00e7u 250 d\u00e9pouilles de soldats pr\u00e9sum\u00e9s remises par la Russie \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-11c2eab2)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S65 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Une Germano-Ukrainienne, suspect\u00e9e d'espionner pour la Russie, jug\u00e9e \u00e0 Berlin \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-5b71a110)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S66 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab L'\u00e9missaire am\u00e9ricain Jared Kushner met en garde contre une escalade de la guerre en Ukraine \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-4c05ca89)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S67 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab N\u00e9gociations sur l'Ukraine : une place pour les Europ\u00e9ens s'ils passent \u00e0 Moscou \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-b8137ac6)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S68 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Trump dit souhaiter que Poutine mette fin \u00e0 toute agression militaire en Europe \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-385a85c4)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S69 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Trump et le secr\u00e9taire g\u00e9n\u00e9ral de l'Otan exhortent la Russie \u00e0 ne pas \u00e9tendre la guerre \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-e9265d97)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S70 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Ukraine : cinq morts dans une attaque ukrainienne de drone en territoire occup\u00e9 \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-6f7fe4ce)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S71 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Soudan : au moins 14 morts dont des enfants dans une attaque de drones \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-44d8a7ae)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S72 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab La Cor\u00e9e du Nord expulse le chef du bureau diplomatique suisse \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-9386173f)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S73 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Syrie : un attentat au v\u00e9hicule pi\u00e9g\u00e9 fait deux morts \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-39da4835)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S74 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Le prince h\u00e9ritier saoudien participera au sommet du G20 aux \u00c9tats-Unis \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-20538f6a)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S75 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Ligue des champions : le Paris SG tenu en \u00e9chec par la Roma perd la premi\u00e8re place \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-fc2f71c2)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S76 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Ligue des champions : Lille-Bayern, une victoire fondatrice du projet Ancelotti ? \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-bb95ae3a)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S77 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Championnat des nations : six finales en trois jours, l'Europe en force \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-a011b910)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S78 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Championnat des nations : le Sud-Africain Pieter-Steph du Toit forfait en finale contre la France \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-d4aa571f)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S79 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Ligue 1 : au Paris FC, les ressorts d'une inexorable mont\u00e9e en puissance \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-e826aca0)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S80 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Coupe du monde de biathlon : le palmar\u00e8s de la derni\u00e8re \u00e9dition \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-c81cafad)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S81 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Parac\u00e9tamol : le prix des bo\u00eetes fabriqu\u00e9es en France revaloris\u00e9 \u00e0 l'\u00e9t\u00e9 \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-4be6f33a)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S82 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab D\u00e9penses de sant\u00e9 : la France 4e d'Europe en part de PIB, 10e en d\u00e9penses par habitant \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-f8254b54)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S83 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab 38 Palestiniens de Gaza \u00e9vacu\u00e9s vers la France \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-274f43a6)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S84 \u2014 AFP, d\u00e9p\u00eache du 25/11/2026 \u00ab Paris-Clermont, Paris-Toulouse : le train Oxyg\u00e8ne d\u00e9voil\u00e9 au public, date de lancement encore incertaine \u00bb (r\u00e9f\u00e9rence interne news-afp-20261125-edc45469)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S85 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Etats-Unis : un avion-cargo fait une sortie de piste \u00e0 Miami \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-517c97a6)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S86 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab On veut \u00eatre entendus : \u00e0 Mayotte, des habitants bloquent les routes apr\u00e8s trois morts en une semaine \u00bb (r\u00e9f\u00e9rence interne news-afp-20261126-fe67c6f2)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S87 \u2014 DiY/H24, \u00e9dition du 25/11/2026 (r\u00e9sum\u00e9 ex\u00e9cutif : SMIC +1,6 %, rapport officiel sur les \u00e9l\u00e8ves, PMI flash)",
+   "ref": "https://maxjeandon-cmyk.github.io/newsletter-pwa/editions/2026-11-25.html",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S88 \u2014 DiY/H24, \u00e9dition du 24/11/2026 (r\u00e9sum\u00e9 ex\u00e9cutif : Ariane 6, dixi\u00e8me vol, 36 satellites)",
+   "ref": "https://maxjeandon-cmyk.github.io/newsletter-pwa/editions/2026-11-24.html",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  }
+ ]
+}
