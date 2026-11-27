@@ -209,6 +209,16 @@
         "https://feeds.skynews.com/feeds/rss/home.xml"
       ],
       "ligne": "info generale britannique en continu"
+    },
+    {
+      "id": "the-conversation-fr",
+      "nom": "The Conversation France",
+      "emoji": "🎓",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://theconversation.com/fr/articles.atom"
+      ],
+      "ligne": "analyses par chercheurs, FR"
     }
   ]
 }
