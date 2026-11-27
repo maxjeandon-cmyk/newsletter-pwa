@@ -5,11 +5,10 @@
   "paragraphes": [
     {
       "id": "c46p1",
-      "texte": "Plusieurs jours ont passé depuis le relevé précédent ; la chronique reprend son fil. Dans la nuit du 26 novembre 2026 au 27 novembre 2026, la chronique avance. La répression, elle, continue de nourrir la colère : 500 lycéens blessés : la jeunesse paie le prix de la répression (1 media : Le Média — non corrobore) — detail : Faut qu'on en Parle du 26 novembre 2026. Le prochain relevé reprendra le fil. (Relevé automatique du 27 novembre 2026 à 00:48 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "Plusieurs jours ont passé depuis le relevé précédent ; la chronique reprend son fil. Dans la nuit du 26 au 27 novembre, un seul titre la ranime : « 500 lycéens blessés : la jeunesse paie le prix de la répression », titre Le Média dans son « Faut qu’on en Parle » du 26 novembre. Une seule voix pour ce bilan, que la chronique enregistre telle quelle — mais la répression continue de nourrir la colère, et la nuit s’apprête à compter ce que les jours ont coûté. Le fil attend le matin.",
       "sources": [
         "Le Média"
-      ],
-      "auto": true
+      ]
     }
   ]
 }
