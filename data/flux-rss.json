@@ -1,9 +1,4 @@
 {
-  "suite": [
-    "data/flux-rss-2.json",
-    "data/flux-rss-3.json",
-    "data/flux-rss-4.json"
-  ],
   "catalogue": [
     {
       "id": "le-monde-a-la-une",
@@ -1026,6 +1021,26 @@
       "ligne": "les sciences par le Monde"
     },
     {
+      "id": "le-monde-planete",
+      "nom": "Le Monde — Planète",
+      "emoji": "🌍",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://www.lemonde.fr/planete/rss_full.xml"
+      ],
+      "ligne": "environnement et biodiversité par le Monde"
+    },
+    {
+      "id": "bbc-science-environnement",
+      "nom": "BBC — Science & Environment",
+      "emoji": "🇬🇧",
+      "categorie": "Sciences 🔬",
+      "flux": [
+        "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"
+      ],
+      "ligne": "sciences et environnement par la BBC"
+    },
+    {
       "id": "spacenews",
       "nom": "SpaceNews",
       "emoji": "🚀",
@@ -1036,6 +1051,26 @@
       "ligne": "industrie et politique spatiales"
     },
     {
+      "id": "spaceflight-now",
+      "nom": "Spaceflight Now",
+      "emoji": "🛰️",
+      "categorie": "Spatial 🚀",
+      "flux": [
+        "https://spaceflightnow.com/feed/"
+      ],
+      "ligne": "lancements et missions en direct"
+    },
+    {
+      "id": "nasa-communiques",
+      "nom": "NASA — Communiqués",
+      "emoji": "🛰️",
+      "categorie": "Spatial 🚀",
+      "flux": [
+        "https://www.nasa.gov/news-release/feed/"
+      ],
+      "ligne": "communiqués officiels de la NASA"
+    },
+    {
       "id": "les-inrocks-culture",
       "nom": "Les Inrockuptibles",
       "emoji": "🎭",
@@ -1044,6 +1079,16 @@
         "https://www.lesinrocks.com/feed/"
       ],
       "ligne": "musique, cinéma et idées par Les Inrocks"
+    },
+    {
+      "id": "france-24-culture",
+      "nom": "France 24 — Culture",
+      "emoji": "🎨",
+      "categorie": "Culture & idées 🎭",
+      "flux": [
+        "https://www.france24.com/fr/culture/rss"
+      ],
+      "ligne": "culture par France 24"
     }
   ]
 }
