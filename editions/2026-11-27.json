@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "genere_le": "2026-11-28T01:32:44.853Z",
+ "genere_le": "2026-11-28T01:34:20.952Z",
  "html": "editions/2026-11-27.html",
  "resume_executif": [
   "IA : Anthropic a r\u00e9\u00e9crit l'API de Claude en Rust (70 % de CPU en moins, premier jeton 20 % plus rapide, m\u00e9thode de v\u00e9rification publi\u00e9e), OpenAI a contre-poursuivi Apple pour vol de secrets commerciaux, et l'\u00c9tat fran\u00e7ais s'est dot\u00e9 d'une autorit\u00e9 de r\u00e9f\u00e9rence de l'IA et du num\u00e9rique (S1)(S3)(S7).",
@@ -20,7 +20,7 @@
    "id": "spatial",
    "emoji": "\ud83d\ude80",
    "nom": "Spatial",
-   "resume": "x"
+   "resume": "L'ESA a tenu vendredi son briefing d'arriv\u00e9e de BepiColombo, six jours apr\u00e8s l'insertion de la double sonde europ\u00e9o-japonaise sur l'orbite de Mercure, premi\u00e8re mission \u00e0 orbiter la plan\u00e8te avec deux engins (S9)(S10). Cygnus XL doit d\u00e9coller dimanche vers l'ISS, et un r\u00e9capitulatif de lancements fait \u00e9tat d'Ariane et Soyouz pla\u00e7ant 32 satellites Amazon Leo en orbite le 27/11, \u00e0 confirmer (S11)(S13)."
   },
   {
    "id": "economie-pour-les-nuls",
@@ -33,6 +33,66 @@
    "emoji": "\u2696\ufe0f",
    "nom": "Le Droit pour les nuls",
    "resume": "La Cour de cassation a jug\u00e9 le 25 novembre qu'un salari\u00e9 n'a pas besoin de prouver qu'il est personnellement vis\u00e9 pour \u00eatre reconnu victime de harc\u00e8lement moral : subir un environnement professionnel d\u00e9grad\u00e9 suffit (S25). Explication d'une d\u00e9cision utile \u00e0 tous, textes \u00e0 l'appui (S26)."
+  },
+  {
+   "id": "jeu-video-pop-culture",
+   "emoji": "\ud83c\udfae",
+   "nom": "Jeu vid\u00e9o & pop culture",
+   "resume": "GTA VI se serait \u00e9coul\u00e9 \u00e0 53 millions d'exemplaires en une semaine selon l'estimation d'Alinea Analytics (75,7 % sur PS5, environ 4,7 milliards de dollars), \u00e0 distinguer des chiffres officiels de Take-Two. La bande originale sign\u00e9e Justice a propuls\u00e9 le duo fran\u00e7ais en t\u00eate des \u00e9coutes mondiales sur Spotify (S28)(S29)."
+  },
+  {
+   "id": "culture",
+   "emoji": "\ud83c\udfad",
+   "nom": "Culture",
+   "resume": "Le monde de la musique pleure Jean-Claude Vannier, arrangeur indissociable de Gainsbourg, mort \u00e0 83 ans \u00e0 Paris. Les sorties du jour : Louane, Peter Gabriel, Bj\u00f6rk, Christophe Willem et Calogero ; et ce week-end, le Grand Tasting au Louvre et le Salon du livre jeunesse de Montreuil (S31)(S34)(S35)."
+  },
+  {
+   "id": "sciences",
+   "emoji": "\ud83d\udd2c",
+   "nom": "Sciences",
+   "resume": "Nature publie que l'aire de Wernicke, connue pour traiter les mots entendus, joue aussi un r\u00f4le cl\u00e9 dans une t\u00e2che cognitive voisine, d\u00e9cod\u00e9e enfin gr\u00e2ce \u00e0 des enregistrements c\u00e9r\u00e9braux. Une plante apparent\u00e9e au tabac a \u00e9t\u00e9 amen\u00e9e \u00e0 synth\u00e9tiser le paclitaxel, m\u00e9dicament de chimioth\u00e9rapie (S37)."
+  },
+  {
+   "id": "climat",
+   "emoji": "\ud83c\udf0d",
+   "nom": "Climat",
+   "resume": "La temp\u00e9rature mondiale a franchi pour la premi\u00e8re fois le seuil des 2 \u00b0C au-dessus des niveaux pr\u00e9industriels pendant sept jours cons\u00e9cutifs, avec un pic \u00e0 2,25 \u00b0C, selon des donn\u00e9es reprises vendredi. Pendant ce temps, la France vivait un \u00e9pisode de grand froid avec jusqu'\u00e0 7,3 \u00b0C sous les normales de saison (S40)(S41)."
+  },
+  {
+   "id": "politique-francaise",
+   "emoji": "\ud83c\uddeb\ud83c\uddf7",
+   "nom": "Politique fran\u00e7aise",
+   "resume": "R\u00e9cession officialis\u00e9e, perspective S&P n\u00e9gative : le gouvernement navigue \u00e0 vue sur le plan \u00e9conomique. Le Smic est revaloris\u00e9 de 1,6 % au 1er d\u00e9cembre, un Acte VII de la mobilisation sociale est attendu samedi, et une convention citoyenne sur les finances publiques s'est ouverte (S16)(S20)(S43)(S44)."
+  },
+  {
+   "id": "etats-unis",
+   "emoji": "\ud83c\uddfa\ud83c\uddf8",
+   "nom": "\u00c9tats-Unis",
+   "resume": "Donald Trump a r\u00e9clam\u00e9 une enqu\u00eate apr\u00e8s la r\u00e9vision \u00e0 la hausse des chiffres de la croissance am\u00e9ricaine (\u00ab erreur massive \u00bb), tout en changeant de ton sur l'Ukraine : il souhaite d\u00e9sormais que Poutine \u00ab mette fin \u00e0 toute agression militaire \u00bb en Europe (S21)(S50)."
+  },
+  {
+   "id": "chine",
+   "emoji": "\ud83c\udde8\ud83c\uddf3",
+   "nom": "Chine",
+   "resume": "P\u00e9kin a r\u00e9affirm\u00e9 son soutien aux march\u00e9s : Shanghai a gagn\u00e9 3,73 % et Shenzhen 7,24 %, et les places europ\u00e9ennes ont suivi. Les arm\u00e9es chinoise et russe ont tenu une consultation strat\u00e9gique, et Ta\u00efwan vote samedi sous tension (S54)(S55)(S58)."
+  },
+  {
+   "id": "russie",
+   "emoji": "\ud83c\uddf7\ud83c\uddfa",
+   "nom": "Russie",
+   "resume": "Vladimir Poutine a inaugur\u00e9 un nouveau sous-marin nucl\u00e9aire \u00e0 Severodvinsk, promettant cinq engins similaires d'ici 2030. L'\u00e9conomie de guerre plie sous les frappes ukrainiennes sur les raffineries, et le Kremlin somme l'Arm\u00e9nie de choisir entre l'UE et Moscou (S59)(S60)(S63)."
+  },
+  {
+   "id": "geopolitique",
+   "emoji": "\ud83e\udded",
+   "nom": "G\u00e9opolitique mondiale",
+   "resume": "Volodymyr Zelensky a compar\u00e9 Poutine \u00e0 Hitler en critiquant l' \u00ab amiti\u00e9 \u00bb de Donald Trump, qui demande \u00e0 Moscou de \u00ab mettre fin \u00e0 toute agression militaire \u00bb en Europe. L'Ukraine a frapp\u00e9 une usine de carburant de missiles dans l'oblast de Toula, et Macron a martel\u00e9 \u00ab l'Europe unie \u00bb derri\u00e8re Kiev (S65)(S50)(S61)(S67)."
+  },
+  {
+   "id": "grande-info-semaine",
+   "emoji": "\ud83d\udcf0",
+   "nom": "Grande information de la semaine",
+   "resume": "La semaine restera marqu\u00e9e par l'entr\u00e9e en Bourse record d'Anthropic (119,5 milliards de dollars lev\u00e9s au total), la d\u00e9signation de Pablo Hern\u00e1ndez de Cos \u00e0 la t\u00eate de la BCE et les 53 millions d'exemplaires estim\u00e9s de GTA VI en une semaine (S76)(S75)(S28)."
   }
  ],
  "hors_chapitres": [
