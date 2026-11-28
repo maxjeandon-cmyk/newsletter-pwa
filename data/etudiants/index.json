@@ -107,7 +107,7 @@
       "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
       "titre": "La machine gouvernementale, vue d'en bas",
       "paragraphes": 17,
-      "octets": 17413
+      "octets": 17213
     },
     {
       "id": "c14",
@@ -282,7 +282,8 @@
       "fichier": "chapitres/35.json",
       "periode": "28 octobre 2026 — suivi de la journée",
       "titre": "L'opération déminage de Lecornu — des concessions lues comme un miroir de faiblesse",
-      "paragraphes": 1,
+      "paragraphes":
+ 1,
       "octets": 1110
     },
     {
@@ -379,7 +380,7 @@
       "periode": "28 novembre 2026 — suivi de la journée",
       "titre": "Le fil continue — 28 novembre 2026",
       "paragraphes": 1,
-      "octets": 1162
+      "octets": 1035
     }
   ],
   "releveSigs": [
@@ -411,6 +412,7 @@
         {
           "id": "c3",
           "fichier": "chapitres/03.json",
+
           "periode": "lundi 28 septembre 2026",
           "titre": "Sortie d'Île-de-France — 180 établissements, la France découvre ses lycéens",
           "paragraphes": 3,
@@ -697,7 +699,8 @@
           "octets": 961
         },
         {
-          "id": "c46",
+    
+      "id": "c46",
           "fichier": "chapitres/46.json",
           "periode": "27 novembre 2026 — suivi de la journée",
           "titre": "Le fil continue — 27 novembre 2026",
@@ -710,7 +713,7 @@
           "periode": "28 novembre 2026 — suivi de la journée",
           "titre": "Le fil continue — 28 novembre 2026",
           "paragraphes": 1,
-          "octets": 1162
+          "octets": 1035
         },
         {
           "id": "c10",
@@ -742,7 +745,7 @@
           "periode": "Chronique transverse — la réponse de l'État vue d'en bas",
           "titre": "La machine gouvernementale, vue d'en bas",
           "paragraphes": 17,
-          "octets": 17413
+          "octets": 17213
         },
         {
           "id": "c14",
@@ -755,7 +758,8 @@
         {
           "id": "c15",
           "fichier": "chapitres/15.json",
-          "periode": "Chronique transverse — le lexique du mouvement",
+          "periode"
+: "Chronique transverse — le lexique du mouvement",
           "titre": "Lexique d'une révolte — les mots de 2026",
           "paragraphes": 4,
           "octets": 7391

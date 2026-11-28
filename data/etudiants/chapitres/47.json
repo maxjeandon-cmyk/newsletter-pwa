@@ -5,11 +5,10 @@
   "paragraphes": [
     {
       "id": "c47p1",
-      "texte": "Près de 24 heures ont passé depuis le relevé précédent ; la chronique reprend son fil. Dans la nuit du 27 novembre 2026 au 28 novembre 2026, le fil du récit continue. Côté mobilisation, l'élan ne retombe pas : À Lille, les fermetures de l’université à répétition crispent, isolent et inquiètent les étudiants (1 media : Mediapart — non corrobore) ; Contre les blocages, le ministère veut confier l’exclusion des lycéens aux directeurs académiques (1 media : Mediapart — non corrobore) — detail : Depuis près de deux mois, les portes de la majorité des campus lillois restent closes, symptôme d’une politique de fermetures administratives qui dure et éloigne durablement le co…. Le prochain relevé reprendra le fil. (Relevé automatique du 28 novembre 2026 à 00:25 — faits repris de la presse, des fils Reddit et des serveurs Discord, non reformulés.)",
+      "texte": "La nuit du 27 au 28 novembre referme la journée sans refermer le fil. À Lille, une seule enquête tient la nuit ouverte : Mediapart y décrit des fermetures de l'université « à répétition » qui crispent, isolent et inquiètent les étudiants — depuis près de deux mois, les portes de la majorité des campus lillois restent closes, symptôme d'une politique de fermetures administratives qui dure. Et le même média apporte, côté gouvernement, la nouvelle qui compte pour les blocus : contre les blocages, le ministère veut confier l'exclusion des lycéens aux directeurs académiques. La nuit s'achève sur ce double mouvement — les portes closes du nord, l'exclusion désormais confiée aux directeurs académiques — et le chapitre du 28 novembre attend son matin.",
       "sources": [
         "Mediapart"
-      ],
-      "auto": true
+      ]
     }
   ]
 }
