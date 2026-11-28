@@ -1,0 +1,523 @@
+{
+ "date": "2026-11-27",
+ "genere_le": "2026-11-28T01:32:44.853Z",
+ "html": "editions/2026-11-27.html",
+ "resume_executif": [
+  "IA : Anthropic a r\u00e9\u00e9crit l'API de Claude en Rust (70 % de CPU en moins, premier jeton 20 % plus rapide, m\u00e9thode de v\u00e9rification publi\u00e9e), OpenAI a contre-poursuivi Apple pour vol de secrets commerciaux, et l'\u00c9tat fran\u00e7ais s'est dot\u00e9 d'une autorit\u00e9 de r\u00e9f\u00e9rence de l'IA et du num\u00e9rique (S1)(S3)(S7).",
+  "Spatial : l'ESA a c\u00e9l\u00e9br\u00e9 vendredi l'arriv\u00e9e de BepiColombo, premi\u00e8re mission \u00e0 orbiter Mercure avec deux vaisseaux, pendant que Cygnus XL pr\u00e9parait son cargo du dimanche vers l'ISS (S9)(S11).",
+  "\u00c9conomie : la France est officiellement entr\u00e9e en r\u00e9cession (PIB \u20130,2 % au troisi\u00e8me trimestre apr\u00e8s une stagnation), l'inflation est repass\u00e9e sous les 3 % (2,9 %) et S&P a abaiss\u00e9 la perspective de la note A+ \u00e0 n\u00e9gative, d\u00e9ficit 2026 estim\u00e9 \u00e0 5,5 % du PIB (S16)(S18)(S19).",
+  "France : le Smic monte de 1,6 % au 1er d\u00e9cembre (12,51 euros brut de l'heure), un Acte VII de la mobilisation sociale est attendu samedi et une convention citoyenne sur les finances publiques r\u00e9unit 158 personnes tir\u00e9es au sort (S43)(S44)(S45).",
+  "Ukraine : Volodymyr Zelensky a compar\u00e9 Vladimir Poutine \u00e0 Adolf Hitler en critiquant l' \u00ab amiti\u00e9 \u00bb de Donald Trump, qui demande d\u00e9sormais \u00e0 Moscou de \u00ab mettre fin \u00e0 toute agression militaire \u00bb en Europe (S65)(S50)."
+ ],
+ "chapitres": [
+  {
+   "id": "intelligence-artificielle",
+   "emoji": "\ud83e\udd16",
+   "nom": "Intelligence artificielle",
+   "resume": "Anthropic a r\u00e9\u00e9crit l'API de Claude en Rust (70 % de CPU en moins, premier jeton 20 % plus rapide) et publi\u00e9 sa m\u00e9thode de v\u00e9rification. OpenAI a d\u00e9pos\u00e9 une contre-poursuite contre Apple pour vol de secrets commerciaux, et l'\u00c9tat fran\u00e7ais s'est dot\u00e9 d'une autorit\u00e9 de r\u00e9f\u00e9rence de l'IA et du num\u00e9rique (S1)(S3)(S7)."
+  },
+  {
+   "id": "spatial",
+   "emoji": "\ud83d\ude80",
+   "nom": "Spatial",
+   "resume": "x"
+  },
+  {
+   "id": "economie-pour-les-nuls",
+   "emoji": "\ud83d\udcb0",
+   "nom": "L'\u00c9conomie pour les nuls",
+   "resume": "La France est officiellement entr\u00e9e en r\u00e9cession : le PIB a recul\u00e9 de 0,2 % au troisi\u00e8me trimestre apr\u00e8s une stagnation au deuxi\u00e8me, selon les comptes d\u00e9taill\u00e9s publi\u00e9s par l'Insee. L'inflation est repass\u00e9e sous les 3 % (2,9 % sur un an) gr\u00e2ce \u00e0 la baisse des prix de l'\u00e9nergie, et S&P a abaiss\u00e9 la perspective de la note A+ \u00e0 n\u00e9gative (S15)(S17)(S19)."
+  },
+  {
+   "id": "droit-pour-les-nuls",
+   "emoji": "\u2696\ufe0f",
+   "nom": "Le Droit pour les nuls",
+   "resume": "La Cour de cassation a jug\u00e9 le 25 novembre qu'un salari\u00e9 n'a pas besoin de prouver qu'il est personnellement vis\u00e9 pour \u00eatre reconnu victime de harc\u00e8lement moral : subir un environnement professionnel d\u00e9grad\u00e9 suffit (S25). Explication d'une d\u00e9cision utile \u00e0 tous, textes \u00e0 l'appui (S26)."
+  }
+ ],
+ "hors_chapitres": [
+  "Sport, football. Brest a battu le Paris FC (1-0, but de Luck Zogb\u00e9) vendredi en ouverture de la 12e journ\u00e9e de Ligue 1 et monte provisoirement sur le podium ; le Paris FC reste deuxi\u00e8me \u00e0 trois longueurs du PSG (S70).",
+  "Sport, football europ\u00e9en. Le parquet de Marseille a ouvert deux enqu\u00eates apr\u00e8s les affrontements avant OM-Levski Sofia (Ligue Europa, 1-0) : violences volontaires aggrav\u00e9es du c\u00f4t\u00e9 des supporters marseillais, incitation \u00e0 la haine apr\u00e8s des saluts nazis c\u00f4t\u00e9 bulgare ; Emmanuel Macron a condamn\u00e9 les violences, la Bulgarie s'indigne (S44)(S71).",
+  "Sport, rugby. Thomas Ramos, bless\u00e9 et absent des terrains depuis fin septembre, retrouve sa place \u00e0 l'arri\u00e8re du XV de France pour la finale du Championnat des nations, dimanche contre les doubles champions du monde sud-africains (S44).",
+  "Soci\u00e9t\u00e9, migration. \u00ab Entre huit et dix \u00bb migrants morts et six gri\u00e8vement bless\u00e9s ont \u00e9t\u00e9 retrouv\u00e9s dans une embarcation au large des \u00eeles Canaries, selon le service espagnol de sauvetage maritime (S44).",
+  "Soci\u00e9t\u00e9, libert\u00e9s publiques. Les pr\u00e9fectures de Haute-Garonne, d'Ari\u00e8ge et du Gers ont interdit au pol\u00e9miste Dieudonn\u00e9 de se produire vendredi et samedi sur leur territoire, apr\u00e8s l'annonce d'un spectacle dans la r\u00e9gion toulousaine (S44).",
+  "\u00c9conomie des transports. La compagnie norv\u00e9gienne \u00e0 bas co\u00fbt Norse Atlantic, frapp\u00e9e par la flamb\u00e9e des prix du k\u00e9ros\u00e8ne li\u00e9e \u00e0 la guerre au Moyen-Orient, a annonc\u00e9 un d\u00e9p\u00f4t de bilan apr\u00e8s la r\u00e9siliation de ses contrats de location d'avions (S44).",
+  "Faits divers, transport. Treize personnes ont \u00e9t\u00e9 l\u00e9g\u00e8rement bless\u00e9es dans une collision entre un TER et un camion pr\u00e8s de Troyes (Aube) ; la ligne Troyes-Paris a \u00e9t\u00e9 interrompue (S71).",
+  "Justice. D\u00e9raillement de Cl\u00e9on (Seine-Maritime) : un homme d'une vingtaine d'ann\u00e9es, pr\u00e9sentant une \u00ab d\u00e9ficience intellectuelle prononc\u00e9e \u00bb, a \u00e9t\u00e9 mis en examen vendredi pour blessures involontaires (44 bless\u00e9s en septembre) apr\u00e8s avoir avou\u00e9 avoir tent\u00e9 de voler un coupon de rail, et plac\u00e9 sous contr\u00f4le judiciaire strict ; l'hypoth\u00e8se d'une ing\u00e9rence \u00e9trang\u00e8re est \u00e9cart\u00e9e (S72).",
+  "Sant\u00e9 publique. La Cour des comptes pointe les fragilit\u00e9s financi\u00e8res des entrep\u00f4ts de donn\u00e9es hospitaliers, dans un rapport relay\u00e9 vendredi (S74).",
+  "Sant\u00e9 publique. Les \u00e9tats g\u00e9n\u00e9raux de la sant\u00e9 et de la protection sociale, lanc\u00e9s il y a un an, d\u00e9voilent leurs premiers r\u00e9sultats : une dizaine de priorit\u00e9s, dont une politique pluriannuelle de la sant\u00e9 et de l'autonomie et l'\u00e9galit\u00e9 territoriale (S74).",
+  "Justice, soci\u00e9t\u00e9. L'ex-mari de Chahinez Daoud, br\u00fbl\u00e9e vive en 2021 pr\u00e8s de Bordeaux, a \u00e9t\u00e9 condamn\u00e9 \u00e0 la r\u00e9clusion criminelle pour assassinat (S45).",
+  "Consommation. Un emmental r\u00e2p\u00e9 fait l'objet d'un rappel national en raison d'un risque de verre (S73)."
+ ],
+ "sources": [
+  {
+   "label": "S1 \u2014 AIToolsRecap, \u00ab AI News November 27 2026 : Rust, MCP, Robots \u00bb",
+   "ref": "https://aitoolsrecap.com/Blog/ai-news-november-27-2026",
+   "fiabilite": 4,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S2 \u2014 The Neuron, digest \u00ab Everything That Happened in AI Today - Friday, November 27 \u00bb",
+   "ref": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-november-27-2026/",
+   "fiabilite": 4,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S3 \u2014 DataAIHub Daily, 27/11/2026 (Reuters, The Decoder, ABC7 Los Angeles, BNN Bloomberg)",
+   "ref": "https://www.dataaihub.co/daily/2026-11-27",
+   "fiabilite": 3,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S4 \u2014 Distill Intelligence, AI Leaders Weekly Briefing, 27/11/2026",
+   "ref": "https://www.distillintelligence.com/briefings/ai-leaders-2026-11-27",
+   "fiabilite": 3,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S5 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Le patron d'Anthropic se d\u00e9fend de vouloir c\u00e9der le libre arbitre humain \u00e0 l'IA \u00bb (r\u00e9f\u00e9rence interne news-NmX4GKaF)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S6 \u2014 AIBriefs, briefing du 27/11/2026 (centre national de cybers\u00e9curit\u00e9 suisse)",
+   "ref": "https://aibriefs.news/briefing/2026-11-27",
+   "fiabilite": 4,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S7 \u2014 D\u00e9cret n\u00b0 2026-1087 du 26/11/2026 relatif \u00e0 l'autorit\u00e9 de r\u00e9f\u00e9rence de l'intelligence artificielle et du num\u00e9rique de l'\u00c9tat, JORF n\u00b0 277 du 27/11/2026",
+   "ref": "https://www.legifrance.gouv.fr/jorf/jo/2026/11/27/0277",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S8 \u2014 Emerjable, \u00ab AI News Updates Today: Latest AI News (Nov 27, 2026) \u00bb",
+   "ref": "https://www.emerjable.com/ai-news-updates/",
+   "fiabilite": 3,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S9 \u2014 ESA, invitation-presse \u00ab Briefing on BepiColombo arrival at Mercury on 27 November \u00bb",
+   "ref": "https://www.esa.int/fr/media-advisories/media-invitation-briefing-on-bepicolombo-arrival-at-mercury-on-27-november",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S10 \u2014 France 24, \u00ab Apr\u00e8s huit ans de voyage, la sonde BepiColombo a atteint l'orbite de Mercure \u00bb",
+   "ref": "https://www.france24.com/fr/europe/20261122-apr%C3%A8s-huit-ans-de-voyage-la-mission-bepicolombo-est-entr%C3%A9e-dans-l-orbite-de-mercure",
+   "fiabilite": 5,
+   "maj": "22/11/2026"
+  },
+  {
+   "label": "S11 \u2014 InSpace News, \u00ab Cygnus XL : lancement du cargo vers l'ISS pr\u00e9vu dimanche \u00bb",
+   "ref": "https://inspacenews.fr/",
+   "fiabilite": 4,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S12 \u2014 Destination-Orbite, calendrier des lancements (Electron KS, 27/11/2026)",
+   "ref": "https://destination-orbite.net/astronautique/lancements/",
+   "fiabilite": 4,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S13 \u2014 YouTube, \u00ab R\u00e9sum\u00e9 - Lancements 27.11.26 - Ariane/Soyouz \u00bb",
+   "ref": "https://www.youtube.com/watch?v=_MLLwmpGfkM",
+   "fiabilite": 2,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S14 \u2014 SpacePolicyOnline, \u00ab What's Happening in Space Policy, November 22-29, 2026 \u00bb",
+   "ref": "https://spacepolicyonline.com/news/whats-happening-in-space-policy-november-22-29-2026/",
+   "fiabilite": 4,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S15 \u2014 Insee, Comptes nationaux trimestriels au troisi\u00e8me trimestre 2026 (IR n\u00b0 292)",
+   "ref": "https://www.insee.fr/fr/statistiques/9171329?sommaire=9100803",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S16 \u2014 France 24, \u00ab La France entre en r\u00e9cession, le PIB continue de reculer \u00bb",
+   "ref": "https://www.france24.com/fr/france/20261127-la-france-entre-en-r%C3%A9cession-le-pib-continue-de-reculer",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S17 \u2014 Insee, Informations rapides n\u00b0 295, prix \u00e0 la consommation novembre 2026 (r\u00e9sultats provisoires)",
+   "ref": "https://www.insee.fr/fr/statistiques/9161375",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S18 \u2014 Euronews, \u00ab L'inflation ralentit \u00e0 +2,9 % en novembre gr\u00e2ce \u00e0 la forte baisse des prix de l'\u00e9nergie \u00bb",
+   "ref": "https://fr.euronews.com/2026/11/27/france-linflation-ralentit-a-29-en-novembre-grace-a-la-forte-baisse-des-prix-de-lenergie",
+   "fiabilite": 4,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S19 \u2014 S&P Global Ratings, \u00ab France Outlook Revised To Negative On Budgetary Consolidation Risks ; A+/A-1 Ratings Affirmed \u00bb, 27/11/2026",
+   "ref": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3668694",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S20 \u2014 France 24, \u00ab Dette : S&P maintient la note de la France mais menace de la d\u00e9grader \u00bb",
+   "ref": "https://www.france24.com/fr/info-en-continu/20261127-dette-s-p-maintient-la-note-de-la-france-mais-menace-de-la-d%C3%A9grader-1",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S21 \u2014 Boursorama avec Media Services, \u00ab Une erreur massive : Donald Trump r\u00e9clame une enqu\u00eate apr\u00e8s la r\u00e9vision \u00e0 la hausse des chiffres de la croissance aux \u00c9tats-Unis \u00bb",
+   "ref": "https://www.boursorama.com/actualite-economique/actualites/une-erreur-massive-donald-trump-reclame-une-enquete-apres-la-revision-a-la-hausse-des-chiffres-de-la-croissance-aux-etats-unis-0b6965838b199c0e9bbdc621447f3c4f",
+   "fiabilite": 4,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S22 \u2014 Boursorama (Reuters), \u00ab L'Europe finit dans le vert, se redresse apr\u00e8s des jours agit\u00e9s \u00bb",
+   "ref": "https://www.boursorama.com/bourse/actualites/l-europe-finit-dans-le-vert-se-redresse-apres-des-jours-agites-7a90b76fa80051ac5f520514c134a130",
+   "fiabilite": 4,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S23 \u2014 Moneyvox, \u00ab +0,58 % pour le CAC 40, OPA, IA... Le journal de la Bourse du vendredi 27 novembre 2026 \u00bb",
+   "ref": "https://www.moneyvox.fr/bourse/actualites/111472/0-58-pour-le-cac-40-opa-ia-le-journal-de-la-bourse-du-vendredi-27-novembre-2026",
+   "fiabilite": 4,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S24 \u2014 Cr\u00e9dit Agricole, \u00c9tudes \u00e9conomiques, \u00ab Monde - L'actualit\u00e9 de la semaine - 27 novembre 2026 \u00bb",
+   "ref": "https://etudes-economiques.credit-agricole.com/fr/monde-lactualite-de-la-semaine-27-novembre-2026",
+   "fiabilite": 4,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S25 \u2014 Cour de cassation, chambre sociale, 25/11/2026, n\u00b0 25-11.038 (r\u00e9sum\u00e9 de presse ; r\u00e9f\u00e9rence interne news-Bc4A7hli)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S26 \u2014 L\u00e9gifrance, Code du travail, chapitre II \u00ab Harc\u00e8lement moral \u00bb (articles L1152-1 \u00e0 L1152-6)",
+   "ref": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000006177845/2026-01-02/",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S27 \u2014 Service-public.fr, \u00ab Quelle revalorisation pour le Smic \u00e0 compter du 1er d\u00e9cembre ? \u00bb (26/11/2026)",
+   "ref": "https://www.service-public.gouv.fr/particuliers/actualites/A17008",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S28 \u2014 GTAVIFRANCE, \u00ab GTA 6 : Alinea estime les ventes \u00e0 53 millions, dont 75,7 % sur PS5 \u00bb",
+   "ref": "https://gtavifrance.com/journal/2026-11-27-ventes-53-millions-estimation-alinea.html",
+   "fiabilite": 3,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S29 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Justice confie sa fiert\u00e9 d'avoir cr\u00e9\u00e9 la musique de GTA VI \u00bb (r\u00e9f\u00e9rence interne news-hPEDzjpK)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S30 \u2014 Pro-Gamer, \u00ab Sorties jeux vid\u00e9o novembre 2026 \u00bb",
+   "ref": "https://pro-gamer.fr/sorties-jeux-video/novembre-2026/",
+   "fiabilite": 3,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S31 \u2014 AFP, d\u00e9p\u00eache du 27/11/2026 \u00ab D\u00e9c\u00e8s du compositeur Jean-Claude Vannier, arrangeur indissociable de Gainsbourg \u00bb (r\u00e9f\u00e9rence interne news-beHdM2xn)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S32 \u2014 France 24, \u00ab D\u00e9c\u00e8s du compositeur Jean-Claude Vannier, arrangeur indissociable de Gainsbourg \u00bb",
+   "ref": "https://www.france24.com/fr/info-en-continu/20261127-d%C3%A9c%C3%A8s-du-compositeur-jean-claude-vannier-arrangeur-indissociable-de-gainsbourg",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S33 \u2014 RFI, \u00ab Jean-Claude Vannier, mort d'un arrangeur et compositeur star \u00bb",
+   "ref": "https://www.rfi.fr/fr/musique/20261127-jean-claude-vannier-mort-d-un-arrangeur-star",
+   "fiabilite": 4,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S34 \u2014 WhatListen, \u00ab Les sorties du jour : Louane, Christophe Willem, Peter Gabriel... ce qui arrive ce vendredi 27 novembre 2026 \u00bb",
+   "ref": "https://whatlisten.com/pop/17217-les-sorties-du-jour-louane-christophe-willem-peter-gabriel-ce-qui-arrive-ce-vendredi-27-novembre-2026",
+   "fiabilite": 3,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S35 \u2014 evous.fr Paris, \u00ab Sorties \u00e0 Paris : week-end des 27, 28 et 29 novembre 2026 \u00bb",
+   "ref": "https://paris.evous.fr/sorties/week-end/du-27-28-et-29-novembre-2026/",
+   "fiabilite": 3,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S36 \u2014 Euronews, \u00ab G\u00e9rard Depardieu sera bien jug\u00e9 pour viol sur la com\u00e9dienne Charlotte Arnould \u00bb (26/11/2026)",
+   "ref": "https://fr.euronews.com/2026/11/26/gerard-depardieu-sera-bien-juge-pour-viol-sur-la-comedienne-charlotte-arnould",
+   "fiabilite": 4,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S37 \u2014 Nature, Research Highlights, 27/11/2026 (aire de Wernicke ; paclitaxel v\u00e9g\u00e9tal ; fosse des Mariannes)",
+   "ref": "https://www.nature.com/nature/articles?type=research-highlight&year=2026",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S38 \u2014 EurekAlert, communiqu\u00e9s du 27/11/2026 (MIT ; University of Reading)",
+   "ref": "https://www.eurekalert.org/news-releases/browse?view=summaries&date=11/27/2026",
+   "fiabilite": 4,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S39 \u2014 ScienceDaily, Top Science News, 27/11/2026",
+   "ref": "https://www.sciencedaily.com/",
+   "fiabilite": 4,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S40 \u2014 Entrevue.fr, \u00ab R\u00e9chauffement climatique : la plan\u00e8te franchit le seuil des 2 \u00b0C pendant sept jours cons\u00e9cutifs \u00bb",
+   "ref": "https://entrevue.fr/environnement/rechauffement-climatique-la-planete-franchit-le-seuil-des-2-c-pendant-sept/",
+   "fiabilite": 3,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S41 \u2014 Weatheo, \u00ab Grand froid en France : jusqu'\u00e0 7,3 \u00b0C sous les normales les 27 et 28 novembre 2026 \u00bb",
+   "ref": "https://weatheo.com/fr/actualites-meteo/grand-froid-france-26-novembre-2026",
+   "fiabilite": 3,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S42 \u2014 Sud Radio, \u00ab La m\u00e9t\u00e9o du vendredi 27 novembre 2026 \u00bb (donn\u00e9es M\u00e9t\u00e9o-France)",
+   "ref": "https://www.sudradio.fr/sud-radio/la-meteo-du-vendredi-27-novembre-2026-gelees-marquees-froid-persistant-et-soleil-genereux-sur-une-partie-de-la-france",
+   "fiabilite": 3,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S43 \u2014 D\u00e9cret n\u00b0 2026-1082 du 25/11/2026 portant rel\u00e8vement du salaire minimum de croissance, JORF du 26/11/2026",
+   "ref": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000055143987",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S44 \u2014 AFP, d\u00e9p\u00eache \u00ab Actualit\u00e9s du vendredi 27 novembre 2026 \u00bb (r\u00e9f\u00e9rence interne news-G2PjeLw3)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S45 \u2014 AFP, d\u00e9p\u00eache \u00ab Actualit\u00e9s du vendredi 27 novembre 2026 \u00bb (r\u00e9f\u00e9rence interne news-ZEaimWfm)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S46 \u2014 AFP, d\u00e9p\u00eache du 27/11/2026 \u00ab L'aide fran\u00e7aise \u00e0 l'Ukraine, loin d'\u00eatre en pointe \u00bb (r\u00e9f\u00e9rence interne news-9wVdqCFF)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S47 \u2014 RTL, interview de Nicolas Dupont-Aignan, 27/11/2026 (r\u00e9f\u00e9rence interne news-Vwq6mO0R)",
+   "ref": "",
+   "fiabilite": 4,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S48 \u2014 Maire-info, \u00ab \u00c9dition du vendredi 27 novembre 2026 \u00bb (d\u00e9bat de cl\u00f4ture du 108e Congr\u00e8s de l'AMF)",
+   "ref": "https://www.maire-info.com/_print2.php?date=20261127",
+   "fiabilite": 4,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S49 \u2014 AFP, d\u00e9p\u00eache du 27/11/2026 \u00ab Les a\u00e9roports fran\u00e7ais plaident contre une politique de d\u00e9croissance \u00bb (r\u00e9f\u00e9rence interne news-5L39agFd)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S50 \u2014 Boursorama (AFP), \u00ab Trump dit souhaiter que Poutine mette fin \u00e0 toute agression militaire en Europe \u00bb",
+   "ref": "https://www.boursorama.com/actualite-economique/actualites/trump-dit-souhaiter-que-poutine-mette-fin-a-toute-agression-militaire-en-europe-763b5f3806b37d415fa61b33f3b631d2",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S51 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Le ministre turc de la D\u00e9fense aux \u00c9tats-Unis la semaine prochaine \u00bb (r\u00e9f\u00e9rence interne news-ckYkzk84)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S52 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Les \u00c9tats-Unis retardent leurs annonces sur leur pr\u00e9sence militaire en Europe \u00bb (r\u00e9f\u00e9rence interne news-X413gs0j)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S53 \u2014 AFP, d\u00e9p\u00eache du 27/11/2026 \u00ab Mexique : la pr\u00e9sidente Sheinbaum consolide une alliance avec Washington pour frapper les narcotrafiquants \u00bb (r\u00e9f\u00e9rence interne news-pNJmV5mw)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S54 \u2014 AFP, d\u00e9p\u00eache du 27/11/2026 \u00ab Bourses : la tech et P\u00e9kin relancent les march\u00e9s mondiaux \u00bb (r\u00e9f\u00e9rence interne news-TmGGQfYF)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S55 \u2014 Xinhua (fran\u00e7ais), \u00ab Les arm\u00e9es chinoise et russe tiennent une consultation strat\u00e9gique par vid\u00e9oconf\u00e9rence \u00bb",
+   "ref": "https://french.news.cn/20261127/c083968fd44f4a799e53f5b9adbb847e/c.html",
+   "fiabilite": 3,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S56 \u2014 Xinhua (fran\u00e7ais), \u00ab La Chine exhorte les pays ext\u00e9rieurs \u00e0 la r\u00e9gion \u00e0 cesser de s'ing\u00e9rer dans la question de la mer de Chine m\u00e9ridionale \u00bb",
+   "ref": "https://french.news.cn/20261127/dc2f729bc2474405a7705dc19b63819f/c.html",
+   "fiabilite": 3,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S57 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Golfs somm\u00e9s de fermer : vers un nouveau tour de vis en Chine ? \u00bb (r\u00e9f\u00e9rence interne news-FlPT4ZTh)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S58 \u2014 AFP, d\u00e9p\u00eache du 27/11/2026 \u00ab Elections locales \u00e0 Ta\u00efwan o\u00f9 les autorit\u00e9s craignent des interf\u00e9rences de P\u00e9kin \u00bb (r\u00e9f\u00e9rence interne news-w7JEbXKs)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S59 \u2014 AFP via TVA Nouvelles, \u00ab Vladimir Poutine inaugure un nouveau sous-marin nucl\u00e9aire \u00bb",
+   "ref": "https://www.tvanouvelles.ca/2026/11/27/vladimir-poutine-inaugure-un-nouveau-sous-marin-nucleaire",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S60 \u2014 Veille Russie (Point Presse Russie), \u00ab Journal de Russie - \u00c9dition du vendredi 27 novembre 2026 \u00bb",
+   "ref": "https://point-presse-russie.fr/",
+   "fiabilite": 4,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S61 \u2014 FranceIntel, \u00ab L'Ukraine frappe une usine de carburant de missiles en Russie \u00bb (d'apr\u00e8s The Kyiv Independent)",
+   "ref": "https://franceintel.fr/article/2026-11-27-lukraine-frappe-une-usine-de-carburant-d-3152ac",
+   "fiabilite": 3,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S62 \u2014 L'Automobiliste, \u00ab Les frappes ukrainiennes causent de graves p\u00e9nuries : Moscou envisage d'ouvrir le carburant militaire aux civils \u00bb",
+   "ref": "https://lautomobiliste.fr/27/11/2026/les-frappes-ukrainiennes-causent-de-graves-penuries-moscou-envisage-douvrir-le-carburant-militaire-aux-civils/",
+   "fiabilite": 3,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S63 \u2014 AFP, d\u00e9p\u00eache du 27/11/2026 \u00ab Le Kremlin exhorte l'Arm\u00e9nie \u00e0 choisir entre l'UE et une alliance \u00e9conomique dirig\u00e9e par Moscou \u00bb (r\u00e9f\u00e9rence interne news-Rf8vhs8c)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S64 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Russie : Poutine fera son bilan de l'ann\u00e9e le 10 d\u00e9cembre \u00bb (r\u00e9f\u00e9rence interne news-pNwXUUNt)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S65 \u2014 France 24, \u00ab Trump se consid\u00e8re l'ami de Poutine ? Pour Zelensky, cela revient \u00e0 se dire ami d'Hitler \u00bb",
+   "ref": "https://www.france24.com/fr/europe/20261127-trump-se-consid%C3%A8re-ami-poutine-pour-zelensky-cela-revient-se-dire-ami-hitler",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S66 \u2014 AFP, d\u00e9p\u00eache du 27/11/2026 \u00ab Poutine qualifi\u00e9 d'ami par Trump : pour Zelensky, c'est comme se dire ami d'Hitler (interview BBC) \u00bb (r\u00e9f\u00e9rence interne news-MXg1xSOq)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S67 \u2014 20 Minutes, direct \u00ab Guerre en Ukraine : Zelensky compare Poutine \u00e0 Hitler et critique Trump au passage \u00bb",
+   "ref": "https://www.20minutes.fr/monde/ukraine/4266173-20261127-direct-guerre-ukraine-macron-martele-europe-unie-derriere-ukraine",
+   "fiabilite": 4,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S68 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab De plus en plus de bombardements ukrainiens lointains contre les forces russes \u00bb (ONG Acled ; r\u00e9f\u00e9rence interne news-auQqKJo0)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S69 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab Une raffinerie du sud-ouest de la Russie tr\u00e8s endommag\u00e9e apr\u00e8s une attaque de drone ukrainienne \u00bb (r\u00e9f\u00e9rence interne news-QlqKrSQi)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S70 \u2014 RFI (AFP), \u00ab L1 : Brest repousse le Paris FC et s'invite sur le podium \u00bb",
+   "ref": "https://www.rfi.fr/fr/sport/20261127-l1-brest-repousse-le-paris-fc-et-s-invite-sur-le-podium",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S71 \u2014 RTL, \u00ab Justice et faits divers \u00bb, actualit\u00e9s du 27/11/2026 (OM-Levski Sofia ; Charlotte Arnould ; TER de l'Aube)",
+   "ref": "https://www.rtl.fr/actu/justice-faits-divers",
+   "fiabilite": 4,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S72 \u2014 AFP, d\u00e9p\u00eache du 27/11/2026 \u00ab D\u00e9raillement d'un train en France : un homme d\u00e9ficient intellectuel mis en examen \u00bb (r\u00e9f\u00e9rence interne news-8s6tTyiE)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S73 \u2014 20 Minutes, archives du 27/11/2026 (Smic ; OM ; rappel emmental)",
+   "ref": "https://www.20minutes.fr/archives/2026/11-27",
+   "fiabilite": 3,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S74 \u2014 Hospimedia, \u00ab \u00c9dition du 2026-11-27 \u00bb (Cour des comptes ; \u00e9tats g\u00e9n\u00e9raux de la sant\u00e9)",
+   "ref": "https://www.hospimedia.fr/edition-quotidienne/2026-11-27",
+   "fiabilite": 4,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S75 \u2014 Conseil de l'Union europ\u00e9enne, communiqu\u00e9 du 26/11/2026 \u00ab Le Conseil europ\u00e9en propose Pablo Hern\u00e1ndez de Cos comme prochain pr\u00e9sident de la Banque centrale europ\u00e9enne \u00bb",
+   "ref": "https://www.consilium.europa.eu/fr/press/press-releases/2026/11/26/european-council-puts-forward-pablo-hernandez-de-cos-as-next-president-of-the-european-central-bank/",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  },
+  {
+   "label": "S76 \u2014 \u00c9ditions Francis Lefebvre, \u00ab La semaine de l'actualit\u00e9 p\u00e9nale \u00bb (pourvoi \u00c9ric Zemmour, 27/11/2026)",
+   "ref": "https://www.efl.fr/actualite/semaine-actualite-penale_fa40a3f9e-04ae-4318-95ab-4c9677f4f3a4",
+   "fiabilite": 4,
+   "maj": "27/11/2026"
+  },
+  {
+   "label": "S77 \u2014 AFP, d\u00e9p\u00eache du 26/11/2026 \u00ab UE : la pression monte pour boucler le budget avant la pr\u00e9sidentielle fran\u00e7aise \u00bb (r\u00e9f\u00e9rence interne news-QzrhWEGd)",
+   "ref": "",
+   "fiabilite": 5,
+   "maj": "26/11/2026"
+  }
+ ],
+ "questions_ouvertes": [
+  "La perspective n\u00e9gative de S&P se transformera-t-elle en vraie d\u00e9gradation en 2027, et le prochain budget suffira-t-il \u00e0 l'\u00e9viter ?",
+  "Le changement de ton de Donald Trump envers Vladimir Poutine est-il un tournant diplomatique durable ou une variation de plus dans la guerre des signaux ?",
+  "Comment la nouvelle autorit\u00e9 de r\u00e9f\u00e9rence fran\u00e7aise de l'IA articulera-t-elle son action avec la r\u00e9gulation europ\u00e9enne et les contraintes am\u00e9ricaines sur les puces ?",
+  "Le seuil des 2 \u00b0C franchi sept jours d'affil\u00e9e : \u00e0 partir de quand les engagements climatiques des \u00c9tats seront-ils recalibr\u00e9s sur ce r\u00e9el ?",
+  "L'Acte VII de samedi relancera-t-il la mobilisation sociale, alors que la participation du 21 novembre \u00e9tait en baisse notable ?"
+ ]
+}
